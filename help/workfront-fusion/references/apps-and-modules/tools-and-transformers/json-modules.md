@@ -81,10 +81,9 @@ Wenn das JSON-Zeichenfolgenfeld einen Sammlungscode `{ ... }`, ist die Ausgabe e
 >
 >```
 >{
->       "name" : "Peter",
+>    "name" : "Peter",
 >
->    
-   "ID" : 1
+>    "ID" : 1
 >}
 >```
 >
@@ -98,16 +97,15 @@ Wenn das JSON-Zeichenfolgenfeld ein Array-`[ ... ]` enthält, ist die Ausgabe ei
 >
 >```
 >[
->   {
->       "name" : "Peter",
->       "ID" : 1
->   },
+>  {
+>    "name" : "Peter",
+>    "ID" : 1
+>  },
 >
->  
- {
->       "name" : "Mike",
->       "ID" : 2
->   }
+>  {
+>    "name" : "Mike",
+>    "ID" : 2
+>  }
 >]
 >```
 >
@@ -237,49 +235,48 @@ Dieses Aktionsmodul wandelt ein -Objekt in eine JSON-Zeichenfolge um.
 >**Beispiel:** Das folgende Beispiel zeigt, wie Datensätze von [!DNL Google Sheets] in das JSON-Format umgewandelt werden:
 >
 >1. Platzieren Sie das Modul [!DNL Google Sheets] > [!UICONTROL Select rows] in Ihrem Szenario, um die Daten abzurufen. Richten Sie das -Modul ein, um Zeilen aus Ihrer [!DNL Google] Tabelle abzurufen. Legen Sie &#x200B;**[!UICONTROL Maximum number of returned rows]**) auf eine kleine Zahl fest, die zu Testzwecken jedoch größer als 1 ist (z. B. drei). Führen Sie das [!DNL Google Sheets] aus, indem Sie mit der rechten Maustaste darauf klicken und &quot;**[!UICONTROL Run this module only]**&quot; auswählen. Überprüfen Sie die Ausgabe des Moduls.
+>1. Schließen Sie das [!UICONTROL Array Aggregator] nach dem [!DNL Google Sheets] an. Wählen Sie im Setup des Moduls das [!DNL Google Sheets] im Feld **[!UICONTROL Source node]** aus. Lassen Sie die anderen Felder so, wie sie für den Moment sind.
+>1. Verbinden Sie [!UICONTROL JSON] > [!UICONTROL Create JSON] nach dem [!UICONTROL Array Aggregator]. Die Einrichtung des Moduls erfordert eine Datenstruktur, die das JSON-Format beschreibt. Klicken Sie auf **[!UICONTROL Add]** , um die Einrichtung der Datenstruktur zu öffnen. Die einfachste Möglichkeit, diese Datenstruktur zu erstellen, besteht darin, sie automatisch aus einem JSON-Beispiel zu generieren. Klicken Sie auf **[!UICONTROL Generator]** und fügen Sie Ihr JSON-Beispiel in das Feld **[!UICONTROL Sample data]** ein:
 >
-1. Schließen Sie das [!UICONTROL Array Aggregator] nach dem [!DNL Google Sheets] an. Wählen Sie im Setup des Moduls das [!DNL Google Sheets] im Feld **[!UICONTROL Source node]** aus. Lassen Sie die anderen Felder so, wie sie für den Moment sind.
+>     **Beispiel:**
 >
-1. Verbinden Sie [!UICONTROL JSON] > [!UICONTROL Create JSON] nach dem [!UICONTROL Array Aggregator]. Die Einrichtung des Moduls erfordert eine Datenstruktur, die das JSON-Format beschreibt. Klicken Sie auf **[!UICONTROL Add]** , um die Einrichtung der Datenstruktur zu öffnen. Die einfachste Möglichkeit, diese Datenstruktur zu erstellen, besteht darin, sie automatisch aus einem JSON-Beispiel zu generieren. Klicken Sie auf **[!UICONTROL Generator]** und fügen Sie Ihr JSON-Beispiel in das Feld **[!UICONTROL Sample data]** ein:
+>     ```
+>     {
+>     
+>     "books": [
+>     
+>     {
+>     
+>     "id": "ID",
+>     
+>     "title": "Title",
+>     
+>     "author": "Author"
+>     
+>     }
+>     
+>     ]
+>     
+>     }
+>     
+>     ```
 >
-**Beispiel:**
+>1. Klicken Sie auf **[!UICONTROL Save]**. Das [!UICONTROL Specification] Feld in der Datenstruktur enthält jetzt die generierte Struktur.
+>1. Ändern Sie den Namen Ihrer Datenstruktur in etwas Spezifischeres und klicken Sie auf **[!UICONTROL Save]**. Ein Feld, das dem Stamm-Array-Attribut entspricht, wird im Setup des JSON-Moduls als zuordnungsfähiges Feld angezeigt.
 >
-```
-{
-
-"books": [
-
-{
-
-"id": "ID",
-
-"title": "Title",
-
-"author": "Author"
-
-}
-
-]
-
-}
-```
+>1. Klicken Sie auf die Schaltfläche **[!UICONTROL Map]** neben dem Feld und ordnen Sie das `Array[]` aus der Array-Aggregator-Ausgabe zu.
 >
-1. Klicken Sie auf **[!UICONTROL Save]**. Das [!UICONTROL Specification] Feld in der Datenstruktur enthält jetzt die generierte Struktur.
-1. Ändern Sie den Namen Ihrer Datenstruktur in etwas Spezifischeres und klicken Sie auf **[!UICONTROL Save]**. Ein Feld, das dem Stamm-Array-Attribut entspricht, wird im Setup des JSON-Moduls als zuordnungsfähiges Feld angezeigt.
+>1. Klicken Sie auf **[!UICONTROL OK]** , um die Einrichtung des [!UICONTROL JSON] zu schließen.
 >
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Map]** neben dem Feld und ordnen Sie das `Array[]` aus der Array-Aggregator-Ausgabe zu.
+>1. Öffnen Sie die Einrichtung des [!UICONTROL Array Aggregator]. Ändern Sie die **[!UICONTROL Target structure]** von [!UICONTROL Custom] in das Feld des [!UICONTROL JSON]-Moduls, das dem Stamm-Array-Attribut entspricht. Ordnen Sie Elemente aus dem [!DNL Google Sheets] den entsprechenden Feldern zu.
 >
-1. Klicken Sie auf **[!UICONTROL OK]** , um die Einrichtung des [!UICONTROL JSON] zu schließen.
+>1. Klicken Sie auf **[!UICONTROL OK]** , um die Einrichtung des [!UICONTROL Array Aggregator] zu schließen.
 >
-1. Öffnen Sie die Einrichtung des [!UICONTROL Array Aggregator]. Ändern Sie die **[!UICONTROL Target structure]** von [!UICONTROL Custom] in das Feld des [!UICONTROL JSON]-Moduls, das dem Stamm-Array-Attribut entspricht. Ordnen Sie Elemente aus dem [!DNL Google Sheets] den entsprechenden Feldern zu.
+>1. Führen Sie das Szenario aus.
 >
-1. Klicken Sie auf **[!UICONTROL OK]** , um die Einrichtung des [!UICONTROL Array Aggregator] zu schließen.
+>Das [!UICONTROL JSON]-Modul gibt das richtige JSON-Format aus.
 >
-1. Führen Sie das Szenario aus.
->
-Das [!UICONTROL JSON]-Modul gibt das richtige JSON-Format aus.
->
-1. Öffnen Sie die Einrichtung des [!DNL Google Sheets] und erhöhen Sie die [!UICONTROL Maximum number of returned rows], sodass sie größer ist als die Anzahl der Zeilen in Ihrer Tabelle, um alle Daten zu verarbeiten.
+>1. Öffnen Sie die Einrichtung des [!DNL Google Sheets] und erhöhen Sie die [!UICONTROL Maximum number of returned rows], sodass sie größer ist als die Anzahl der Zeilen in Ihrer Tabelle, um alle Daten zu verarbeiten.
 
 ## Fehlerbehebung
 
@@ -293,6 +290,6 @@ Wenn Sie bedingte Anweisungen wie `if` in Ihrer JSON-Datei verwenden, setzen Sie
 
 >[!INFO]
 >
-**Beispiel:**
+>**Beispiel:**
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
