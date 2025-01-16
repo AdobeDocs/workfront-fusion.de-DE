@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
+source-git-commit: 27c1d38d4c9e4b47d2d9da094b005a0e72ce9bd0
 workflow-type: tm+mt
-source-wordcount: '2727'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
 <table style="table-layout:auto">
@@ -32,35 +34,37 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration], [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung]</p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Workfront Proof-Informationen
 
@@ -100,11 +104,11 @@ Sie können direkt aus einem [!DNL Workfront Fusion]-Modul heraus eine Verbindun
                 <td>Einen Namen für die Verbindung eingeben</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL connections.environmentType]</td>
+                <td  role="rowheader">[!UICONTROL Environment]</td>
                 <td>Wählen Sie aus, ob es sich um eine Produktionsumgebung oder eine Nicht-Produktionsumgebung wie Vorschau oder Sandbox handelt.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL connections.authenticationType]</td>
+                <td role="rowheader">[!UICONTROL Type]</td>
                 <td>Wählen Sie aus, ob dies ein Service-Konto oder ein persönliches Konto ist.</td>
             </tr>
             <tr>
@@ -125,7 +129,7 @@ Sie können direkt aus einem [!DNL Workfront Fusion]-Modul heraus eine Verbindun
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Production, Preview, or Custom Environment]</td>
-                <td>Wählen Sie eine Verbindung zu einer Produktions-, Vorschau- oder benutzerdefinierten Umgebung aus.</td>
+                <td>Die Produktions-, Vorschau- oder benutzerdefinierte Umgebung, mit der Sie eine Verbindung herstellen möchten.</td>
             </tr>
         </tbody>
     </table>
@@ -147,9 +151,61 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Trigger
 
-* [Korrekturabzüge ansehen](#watch-proofs)
 * [Auf PDF-Zusammenfassung achten](#watch-for-pdf-summary)
 * [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [Korrekturabzüge ansehen](#watch-proofs)
+
+#### [!UICONTROL Watch for PDF Summary]
+
+Dieses Instant Trigger-Modul führt ein Szenario aus, wenn jemand eine PDF-Zusammenfassung für einen Korrekturabzug erstellt.
+
+In diesem Modul ist ein Webhook erforderlich.
+
+Das Modul gibt alle Standardfelder zurück, die mit dem Korrekturabzug verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Außerdem wird ein neues Ereignisabonnement für PDF-Zusammenfassungen erstellt und der Inhalt des `pdf_url`-Attributs ausgegeben, das in der Payload gesendet wird. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+
+Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Webhook name]</td> 
+   <td>Namen für den neuen Webhook eingeben oder zuordnen</td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Workfront Proof]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch Proof Activity]
+
+Dieses Trigger-Modul führt ein Szenario aus, wenn eine bestimmte Aktivität in einem Korrekturabzug stattfindet.
+
+Das Modul gibt alle Standardfelder zurück, die mit dem Korrekturabzug verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Außerdem wird ein neues Ereignisabonnement für PDF-Zusammenfassungen erstellt und der Inhalt des `pdf_url`-Attributs ausgegeben, das in der Payload gesendet wird. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+
+Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Workfront Proof]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Activity type]</td> 
+   <td>Wählen Sie aus, ob Sie eine neue Entscheidung (einschließlich Änderungen des Korrekturabzugsstatus) oder nur Änderungen des Gesamtstatus des Korrekturabzugs anzeigen möchten.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Limit]</td> 
+   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Watch Proofs]
 
@@ -173,71 +229,15 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td role="rowheader">Datensatztyp</td> 
-   <td>Wählen Sie den Typ [!DNL Workfront Proof] Datensatzes aus, den das Modul überwachen soll.</td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Ausgaben</td> 
-   <td> <p>Wählen Sie die Informationen aus, die im Ausgabepaket für dieses Modul enthalten sein sollen.</p> </td> 
+   <td>Wählen Sie aus, ob Sie nach neuen Korrekturabzügen oder nach neuen allgemeinen Korrekturabzugsentscheidungen suchen möchten.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Grenze</td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch for PDF Summary]
-
-Dieses Instant Trigger-Modul führt ein Szenario aus, wenn jemand eine PDF-Zusammenfassung für einen Korrekturabzug erstellt.
-
-In diesem Modul ist ein Webhook erforderlich.
-
-Das Modul gibt alle Standardfelder zurück, die mit dem Korrekturabzug verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Außerdem wird ein neues Ereignisabonnement für PDF-Zusammenfassungen erstellt und der Inhalt des in der Payload gesendeten Attributs „pdf_url“ ausgegeben. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Workfront Proof]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Webhook]</td> 
-   <td>Sie können einen vorhandenen Webhook auswählen oder einen neuen erstellen. Weitere Informationen finden Sie unter <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class=„MCXref xref“&gt;Instant Trigger (Webhooks) in [!DNL Adobe Workfront Fusion]</a>. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch Proof Activity]
-
-Dieses Trigger-Modul führt ein Szenario aus, wenn eine bestimmte Aktivität in einem Korrekturabzug stattfindet.
-
-Das Modul gibt alle Standardfelder zurück, die mit dem Korrekturabzug verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Außerdem wird ein neues Ereignisabonnement für PDF-Zusammenfassungen erstellt und der Inhalt des `pdf_url`-Attributs ausgegeben, das in der Payload gesendet wird. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Workfront Proof]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Activity type]</td> 
-   <td>Wählen Sie aus, ob Sie eine neue Entscheidung (einschließlich [!UICONTROL proof] Statusänderungen) oder nur die Änderungen des Gesamtstatus des Korrekturabzugs anzeigen möchten.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Elemente pro Seite</td> 
+   <td> <p>Um die Ergebnisse zu paginieren, geben Sie die Anzahl der zurückgegebenen Ergebnisse ein, die auf jeder Ergebnisseite angezeigt werden sollen, oder mappen Sie sie. Diese Zahl muss kleiner oder gleich 100 sein.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -253,6 +253,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 * [[!UICONTROL Upload File]](#upload-file)
 
 #### [!UICONTROL Create Proof]
+
+<!--Cannot test Jan 2025-->
 
 Dieses Aktionsmodul erstellt einen neuen Korrekturabzug oder eine neue Version eines Korrekturabzugs in [!DNL Workfront Proof].
 
@@ -372,7 +374,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>Geben Sie an, ob für den erstellten Korrekturabzug eine Anmeldung erforderlich sein soll. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>Geben Sie an, ob für den erstellten Korrekturabzug eine Anmeldung erforderlich sein soll. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Resolution ID]</td> 
@@ -400,6 +402,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
  </tbody> 
 </table>
+
+
 
 #### [!UICONTROL Custom API Call]
 
@@ -459,7 +463,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Geben Sie die eindeutige ID des Korrekturabzugs ein, die auf der Seite [!UICONTROL Proof Details] zu finden ist. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p>--> </td> 
+   <td> <p>Geben Sie die eindeutige ID des Korrekturabzugs ein, die auf der Seite [!UICONTROL Proof Details] zu finden ist.  </td> 
   </tr> 
  </tbody> 
 </table>
@@ -557,11 +561,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Geben Sie die eindeutige ID des Korrekturabzugs ein, die auf der Seite [!UICONTROL Proof Details] zu finden ist. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p> --></td> 
+   <td> <p>Geben Sie die eindeutige ID des Korrekturabzugs ein, die auf der Seite [!UICONTROL Proof Details] zu finden ist. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
-   <td> <p>Geben Sie die Frist an, bis zu der der Korrekturabzug erstellt werden soll. Verwenden Sie das folgende Datumsformat:</p> <p><code>YYYY-MM-DD hh:mm</code></p> </td> 
+   <td> <p>Geben Sie die Frist an, bis zu der der Korrekturabzug erstellt werden soll. Verwenden Sie das Datumsformat <code>YYYY-MM-DD hh:mm</code>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Default email notifications for subscribers]</td> 
@@ -585,7 +589,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>Wählen Sie aus, ob Personen, die nicht Teilnehmer sind, den Testversand abonnieren dürfen.<br>Wenn Sie diese Option auswählen, können Sie auch die [!UICONTROL Default Role] für Abonnentinnen und Abonnenten auswählen, wie in dieser Tabelle beschrieben.</td> 
+   <td>Wählen Sie aus, ob Personen, die nicht Teilnehmer sind, den Testversand abonnieren dürfen.<br>Wenn Sie diese Option auswählen, können Sie auch eine Option im Feld [!UICONTROL Default Role] auswählen.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -613,7 +617,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>Geben Sie an, ob für den erstellten Korrekturabzug eine Anmeldung erforderlich sein soll. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>Geben Sie an, ob für den erstellten Korrekturabzug eine Anmeldung erforderlich sein soll. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show Versions Like]</td> 
@@ -718,25 +722,3 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Workflow Templates]
-
-Dieses Suchmodul listet alle verfügbaren Workflow-Vorlagen auf.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Workfront Proof]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Outputs]</td> 
-   <td> <p>Wählen Sie die Informationen aus, die im Ausgabepaket für dieses Modul enthalten sein sollen.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Vorlagen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
