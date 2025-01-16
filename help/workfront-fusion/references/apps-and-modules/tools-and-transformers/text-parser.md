@@ -1,0 +1,290 @@
+---
+title: Text-Parser
+description: Sie können das Text-Parser-Tool verwenden, um Text zur Verwendung in anderen  [!DNL Adobe Workfront Fusion] -Modulen zu analysieren. Der Text-Parser benötigt keine Verbindung.
+author: Becky
+feature: Workfront Fusion, Digital Content and Documents
+exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
+source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+workflow-type: tm+mt
+source-wordcount: '1153'
+ht-degree: 0%
+
+---
+
+# [!UICONTROL Text parser]
+
+Sie können die [!UICONTROL Text parser tool] verwenden, um Text zur Verwendung in anderen [!DNL Adobe Workfront Fusion]-Szenario-Modulen zu analysieren. Die [!UICONTROL Text parser] erfordert keine Verbindung.
+
+## Zugriffsanforderungen
+
+Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
+  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
+   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td>
+   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Oder</p>
+   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration], [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung]</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Oder</p>
+   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+
+Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
+## Text-Parser-API-Informationen
+
+Der Text-Parser-Connector verwendet Folgendes:
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">API-Tag</td> 
+   <td>v2</td> 
+  </tr>
+ </tbody> 
+ </table>
+
+## [!UICONTROL Text parser] Module und ihre Felder
+
+Beim Konfigurieren [!UICONTROL Text parser] Module zeigt [!DNL Adobe Workfront Fusion] die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+
+Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+### Transformatoren
+
+* [[!UICONTROL Get Elements from HTML]](#get-elements-from-html)
+* [[!UICONTROL Get Elements from text]](#get-elements-from-text)
+* [[!UICONTROL HTML to Text]](#html-to-text)
+* [[!UICONTROL Match Pattern]](#match-pattern)
+* [[!UICONTROL Replace]](#replace)
+
+#### [!UICONTROL Get Elements from HTML]
+
+Ruft die gewünschten Elemente aus dem HTML-Code ab.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Continue the execution of the route even if the module finds no matches]</td> 
+   <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass das Modul das Szenario nicht stoppt, wenn es keine Ergebnisse zurückgibt.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Element type]</td> 
+   <td> <p> Wählen Sie den Elementtyp aus, den Sie aus dem HTML-Code abrufen möchten. </p> 
+    <ul> 
+     <li>[!UICONTROL Image]</li> 
+     <li>[!UICONTROL Link]</li> 
+     <li>[!UICONTROL iFrame element(s)]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL HTML] </td> 
+   <td> <p>Geben Sie den HTML-Code ein, von dem Sie die angegebenen Elementtypen abrufen möchten, oder ordnen Sie ihn zu.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get Elements from text]
+
+Analysiert Elemente aus Text anhand des angegebenen Musters.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Input text]</td> 
+   <td> <p>Geben Sie den Text ein, den Sie analysieren möchten, oder mappen Sie ihn.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Pattern]</td> 
+   <td> <p>Wählen Sie aus dem Text das Muster aus, das die zu analysierenden Elemente enthält.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
+   <td> <p>Aktivieren Sie dieses Kontrollkästchen, um doppelte Vorkommen eines Textelements zu ignorieren.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL HTML to Text]
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL HTML] </td> 
+   <td> <p>Geben Sie den HTML-Code ein, den Sie in Nur-Text konvertieren möchten.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Line break] </td> 
+   <td> <p>Wählen Sie den Zeilenumbruchtyp aus.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Uppercase headings]</p> </td> 
+   <td> <p>Aktivieren Sie diese Option, um in Überschriften-Tags eingeschlossenen Text (z. B. &lt;h2&gt; &lt;/h2&gt;) in Großbuchstaben zu konvertieren.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Match Pattern]
+
+Mit dem [!UICONTROL Match pattern] Modul können Sie Zeichenfolgenelemente suchen und extrahieren, die einem Suchmuster aus einem bestimmten Text entsprechen. Dieses Modul verwendet reguläre Ausdrücke (auch als Regex oder Regex bezeichnet).
+
+Ein regulärer Ausdruck ist eine Sequenz von Zeichen, in der jedes Zeichen entweder ein Metazeichen mit einer speziellen Bedeutung oder ein reguläres Zeichen mit einer wörtlichen Bedeutung ist. Diese Zeichen und Metazeichen identifizieren ein Muster, das für die Suche nach Text verwendet werden kann. Wenn Sie beispielsweise nach Namen suchen möchten, können Sie einen regulären Ausdruck einrichten, um nach einem Muster zu suchen, das aus zwei aufeinander folgenden Wörtern besteht, die mit Großbuchstaben beginnen. Reguläre Ausdrücke sind ein leistungsstarkes Tool zum Suchen und Bearbeiten von Text.
+
+Eine Diskussion über reguläre Ausdrücke würde den Rahmen dieses Artikels sprengen. Wir empfehlen die folgenden Ressourcen:
+
+* Eine vollständige Liste der Metazeichen finden Sie unter [Reguläre Ausdrücke](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) in MDN-Webdokumenten.
+* Für ein Tutorial zum Erstellen regulärer Ausdrücke empfehlen wir [RegexOne](https://regexone.com/).
+* Zum Experimentieren mit regulären Ausdrücken empfehlen wir die Website [Reguläre Ausdrücke 101](https://regex101.com/). Wählen Sie im linken Bedienfeld das ECMAScript (JavaScript)-FLAVOR aus.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Pattern] </td> 
+   <td> <p>Geben Sie das Muster für reguläre Ausdrücke ein. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code> extrahiert alle Ziffern im angegebenen Text.</p> <p>Hinweis:  <p>Das Muster muss mindestens eine Erfassungsgruppe in Klammern <code>()</code>. Wenn das Muster keine Erfassungsgruppen enthält, ist das Ausgabepaket leer.</p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Global match]</td> 
+   <td> <p>Aktivieren Sie diese Option, um alle Übereinstimmungen im Text abzurufen. Jede Übereinstimmung wird in einem separaten Bundle ausgegeben. Wenn diese Option deaktiviert ist, ruft das Modul nur den ersten Eintrag ab.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Case sensitive]</td> 
+   <td> <p> Aktivieren Sie diese Einstellung, damit bei Text zwischen Groß- und Kleinschreibung unterschieden wird.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Multiline] </td> 
+   <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass die Anfangs- und Endmetazeichen (<code>^</code> und <code>$</code>) mit dem Beginn oder Ende jeder Zeile übereinstimmen, nicht nur mit dem Anfang oder Ende der gesamten Eingabezeichenfolge.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Singleline]</td> 
+   <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Punkt (.) mit Zeilenumbruchzeichen (<code>\n</code>) übereinstimmt.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass das Modul das Szenario nicht stoppt, wenn es keine Ergebnisse zurückgibt.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Text] </td> 
+   <td> <p>Geben Sie den Text ein, der dem Muster entsprechen soll, oder ordnen Sie ihn zu.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Replace]
+
+Durchsucht den eingegebenen Text nach einem angegebenen Wert oder regulären Ausdruck und ersetzt das Ergebnis durch den neuen Wert.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Pattern] </td> 
+   <td> <p>Geben Sie den Suchbegriff ein. Sie können auch einen regulären Ausdruck verwenden. Weitere Informationen zum regulären Ausdruck finden Sie im <a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a> Modul .</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL New value]</td> 
+   <td> <p> Geben Sie einen Wert ein, der den Suchbegriff ersetzt.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Global match]</td> 
+   <td> <p>Aktivieren Sie diese Option, um alle Übereinstimmungen im Text abzurufen. Jede Übereinstimmung wird in einem separaten Bundle ausgegeben. Wenn diese Option deaktiviert ist, ruft das Modul nur den ersten Eintrag ab.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Case sensitive]</td> 
+   <td> <p> Aktivieren Sie diese Einstellung, damit bei Text zwischen Groß- und Kleinschreibung unterschieden wird.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Multiline] </td> 
+   <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass die Anfangs- und Endmetazeichen (<code>^</code> und <code>$</code>) mit dem Beginn oder Ende jeder Zeile übereinstimmen, nicht nur mit dem Anfang oder Ende der gesamten Eingabezeichenfolge.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Singleline]</td> 
+   <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Punkt (.) mit Zeilenumbruchzeichen (<code>\n</code>) übereinstimmt.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Text] </td> 
+   <td> <p>Geben Sie den zu suchenden Text ein.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Daten-Scraping
+
+Beim Daten-Scraping (manchmal auch als Web-Scraping, Datenextraktion oder Web-Sammeln bezeichnet) werden Daten von Websites erfasst und in Ihrer lokalen Datenbank oder in Tabellen gespeichert. Wenn Sie Daten von einer Website kratzen möchten und mit regulären Ausdrücken nicht vertraut sind, können Sie ein Tool zum Kratzen von Daten verwenden.
+
+Wenn das Tool zum Daten-Scraping eine REST-API bereitstellt, können Sie über unsere universellen [[!UICONTROL HTTP]-Module und ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)Webhooks[-](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) eine Verbindung mit ihr herstellen.
+
+## Fehlerbehebung beim Text-Parser
+
+Verwenden Sie diese Informationen, wenn Sie keinen Text-Parser erhalten können, um eine Ausgabe zu erzeugen.
+
+>[!BEGINSHADEBOX]
+
+Beispiel:
+
+Das Modul sollte den Dateityp eines Dateidokuments „filename.docx“ analysieren, und die Dateinamenerweiterung variiert von DOCX zu PDF zu CSV.
+
+Der Ausdruck, den Sie in diesem Fall verwenden können, lautet [!DNL \..+]
+
+Dieser reguläre Ausdruck führt normalerweise zu einer vollständigen Übereinstimmung.
+
+Die Implementierung dieses Ausdrucks in Ihrem Text-Parser führt jedoch nicht zu einer Übereinstimmung:
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+
+Der Grund dafür ist, dass das „i“ nur die Anzahl der Übereinstimmungen pro Übereinstimmung anzeigt. In diesem Fall haben wir also 2 Übereinstimmungen, daher gibt es nach dem „i“ einen numerischen Wert 1 und 2. Der Anwendungsfall hierfür besteht darin, dass Sie, falls Sie Daten jemals mit dem zweiten übereinstimmenden Wert abgleichen oder durch einen Filter übergeben müssen, angeben können, welcher Wert durch den numerischen Wert dargestellt wird.
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+
+Um die Übereinstimmungswerte abzurufen, die Sie benötigen, um dem zu analysierenden Teil Klammern hinzuzufügen (z. B. um nur aus „filename.docx“ - „docx“ zu extrahieren), sollten die Klammern gemäß dem Regex-Ausdruck, den wir für dieses Szenario verwenden, auf \ angewendet werden.(.+)
+
+Erfasst das DOCX, platziert es in einer Gruppe und lässt das &quot;.“ Raus damit.
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+
+In der im folgenden Bild gezeigten Ausgabe entspricht die Erfassungsgruppe einem beliebigen Zeichen (mit Ausnahme der Zeilenumbrüche).
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+
+Eine weitere Problemumgehung, die auch Regex enthält, ist die Verwendung der Funktion Ersetzen .
+
+`{{replace("abcdefghijklmno pqr stuvw xyz.docx"; "/.\./"; ".")}}`
+
+Ersetzen Sie dann `abcdefghijklmno pqr stuvw xyz.docx` durch die eigentliche Dateinamenvariable .
+
+>[!ENDSHADEBOX]
