@@ -3,9 +3,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 99f2e558db3d2b126adf748d7e013a4a39735bcd
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -456,8 +456,8 @@ Dieses Suchmodul gibt alle Datensätze des ausgewählten Typs zurück, auf die z
        <li> <p><b>[!UICONTROL Line items]</b> </p> <p>Wählen Sie die ID des Modells aus, das die [!DNL line] Elemente enthält, die Sie abrufen möchten, oder ordnen Sie sie zu.</p> </li> 
        <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>Wählen Sie die ID der Workspace und die Modell-ID aus bzw. ordnen Sie sie zu, die die Modelllisten enthalten, die Sie abrufen möchten.</p> </li> 
        <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>Wählen Sie die ID der Workspace aus, die den abzurufenden Modellkalender enthält, oder ordnen Sie sie zu.</p> </li> 
-       <li> <p><b>Modellversionen</b> </p> </li> 
-       <li> <p>Wählen Sie die ID [!UICONTROL ] Modells, das die Modellversionen enthält, die Sie abrufen möchten, oder ordnen Sie sie zu.</p> </li> 
+       <li> <p><b>[!UICONTROL Model versions]</b> </p> </li> 
+       <li> <p>Wählen Sie die ID des Modells aus, das die Modellversionen enthält, die Sie abrufen möchten, oder ordnen Sie sie zu.</p> </li> 
        <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>Wählen Sie aus, ob Sie die Ansicht nach Modul oder nach Modell auswählen möchten, und wählen Sie dann die ID des Moduls oder Modells aus, das die abzurufende Ansicht enthält, oder ordnen Sie sie zu.</p> </li> 
       </ul> 

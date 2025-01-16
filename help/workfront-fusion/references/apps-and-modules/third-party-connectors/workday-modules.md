@@ -5,9 +5,9 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 8bd08379fc88c4d4f31ba1faba922869d7957b4a
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '888'
 ht-degree: 1%
 
 ---
@@ -166,7 +166,7 @@ Dieses Aktionsmodul erstellt einen einzelnen Datensatz in [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xre[!DNL ]f" >Verbinden von [!DNL Workday] mit [!DNL Workfront Fusion]</a>.</td>
+            <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record Type]</td>
@@ -195,7 +195,7 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatz in [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#Connect" class="MCXref xre[!DNL ]f" >Verbinden von [!DNL Workday] mit [!DNL Workfront Fusion]</a>.</td>
+            <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record type]</td>
@@ -231,7 +231,7 @@ Das Modul gibt den Status-Code zusammen mit den Kopfzeilen und dem Hauptteil des
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!DNL Connection]</p> </td> 
-            <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#Connect" class="MCXref xre[!DNL ]f" >Verbinden von [!DNL Workday] mit [!DNL Workfront Fusion]</a>.</td>
+            <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit [!DNL Workfront Fusion]</a>.</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -272,8 +272,8 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Workday].
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] zu Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">Datensatztyp</td>
-            <td>Wählen Sie den Typ des Datensatzes aus[!UICONTROL ] den Sie aktualisieren möchten.</td>
+            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td>Wählen Sie den Typ des Datensatzes aus, den Sie aktualisieren möchten.</td>
         </tr>
         <tr>
             <td role="rowheader">[!UICONTROL ID] </td>

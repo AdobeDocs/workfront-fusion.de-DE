@@ -4,9 +4,9 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie die Markdown-M
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1e95c93213c48aea9297a82669fb2012dbb27601
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 1%
 
 ---
@@ -74,7 +74,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>Aktivieren Sie diese Option, um den GitHub-Markdown in HTML zu konvertieren.</p> <p>Weitere Informationen finden Sie in der Mar[!DNL ]kdown-Anleitung in der [!DNL GitHub].</p> </td> 
+   <td> <p>Aktivieren Sie diese Option, um den GitHub-Markdown in HTML zu konvertieren.</p> <p>Weitere Informationen finden Sie in der Markdown-Anleitung in der [!DNL GitHub].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sanitize]</td> 

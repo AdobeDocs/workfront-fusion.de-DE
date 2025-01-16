@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 0581601a254a9492f4166d78eb0f11868d390f24
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Um [!DNL Gmail]-Module verwenden zu können, müssen Sie über ein [!DNL Gmail]-
 
 ### Verbinden von [!DNL Gmail] mit [!DNL Workfront Fusion] mithilfe von[!DNL  Google Workspace] {#connect-gmail-to-workfront-fusion-using-g-suite}
 
-Anweisungen zum Verbinden Ihres [!DNL Google Workspace]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Verbindung erstellen - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md.
+Anweisungen zum Verbinden Ihres [!DNL Google Workspace]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Verbindung erstellen - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
 ### Verbinden von [!DNL Gmail] mit [!DNL Workfront Fusion] über [!DNL gmail.com] oder [!DNL googlemail].com {#connect-gmail-to-workfront-fusion-using-gmail-com-or-googlemail-com}
 

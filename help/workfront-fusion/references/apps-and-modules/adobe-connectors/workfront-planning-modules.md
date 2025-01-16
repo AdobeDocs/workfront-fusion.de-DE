@@ -4,7 +4,7 @@ description: Mit den  [!DNL Adobe Workfront Planning] -Modulen können Sie ein  
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: cf2a4515ecd5e239e3370a6a0a3ffe70ecce3770
+source-git-commit: 1972e445e7d4d3e4441feeda72ba9523fd1d9ff4
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Der Adobe Workfront Planning-Connector verwendet Folgendes:
  </tbody> 
  </table>
 
-## Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]
+## Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] {#create-a-connection-to-adobe-workfront-planning}
 
 Sie können direkt aus einem [!DNL Workfront Fusion]-Modul heraus eine Verbindung zu Ihrem [!DNL Workfront Planning]-Konto herstellen.
 
@@ -139,7 +139,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz, ein Datensatztyp 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Object type]</td>
@@ -193,7 +193,7 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatztyp in Workfront Planning a
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -214,7 +214,7 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Work
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -275,7 +275,7 @@ Diese Aktion erstellt in Workfront Planning einen einzigen Datensatz.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -303,7 +303,7 @@ Dieses Aktionsmodul löscht den angegebenen Datensatz in Workfront Planning.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -326,7 +326,7 @@ This action module retrieves all records from an [!DNL Adobe Workfront Planning]
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
      <tr>
       <td role="rowheader">
@@ -349,7 +349,7 @@ Dieses Aktionsmodul ruft einen einzelnen Datensatz aus [!DNL Adobe Workfront Pla
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Record ID]</td>
@@ -368,7 +368,7 @@ Dieses Aktionsmodul ruft alle Datensätze des angegebenen Typs ab.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Workspace]</td>
@@ -396,7 +396,7 @@ Dieses Aktionsmodul ruft eine Liste von Datensatztypen in einem [!DNL Adobe Work
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
     </tr>
   </tbody>
 </table>
@@ -411,7 +411,7 @@ Diese Aktion aktualisiert einen einzelnen Datensatz in Workfront Planning.
   <tbody>
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
     </tr>
      <tr>
       <td role="rowheader">

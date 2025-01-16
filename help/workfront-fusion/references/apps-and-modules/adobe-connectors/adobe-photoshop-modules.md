@@ -4,9 +4,9 @@ description: Mit den Adobe Photoshop-Modulen können Sie ein Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 371adb5a5558674ecb8aa38b503b8a958c9fc5f5
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3714'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Photoshop]:
               <p>Geben Sie das Kennwort für die Datei ein.</p>
             </li>
             <li value="5">
-              <p>Klicken Sie <b>Speichern</b>, um die Datei zu extrahieren und zur [!UICONTROL ]-Verbindungseinrichtung zurückzukehren.</p>
+              <p>Klicken Sie <b>Speichern</b>, um die Datei zu extrahieren und zur Verbindungseinrichtung zurückzukehren.</p>
             </li>
           </ol>
         </td>

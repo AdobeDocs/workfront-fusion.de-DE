@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2727'
 ht-degree: 0%
 
 ---
@@ -696,8 +696,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Workfront Proof]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>Suchen nach</td> 
-   <td> <p>Wählen [!UICONTROL ] den Typ des Datensatzes aus, nach dem das Modul suchen soll.</p> 
+   <td>[!UICONTROL Search for]</td> 
+   <td> <p>Wählen Sie den Typ des Datensatzes aus, nach dem das Modul suchen soll.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>Geben Sie den Namen des Korrekturabzugs ein, nach dem Sie suchen möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Empfängers ein, nach dem Sie suchen möchten.</p> </li> 
