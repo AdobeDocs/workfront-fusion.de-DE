@@ -4,9 +4,9 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2604'
 ht-degree: 0%
 
 ---
@@ -234,6 +234,7 @@ Dieses Feldmodul startet ein Trigger, wenn ein Feld in [!DNL Salesforce] aktuali
 * [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
 * [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
+* [Datei hochladen](#upload-file)
 
 #### [!UICONTROL Create a Record]
 
@@ -498,6 +499,41 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
  </tbody> 
 </table>
+
+#### Datei hochladen
+
+Dieses Aktionsmodul lädt eine einzelne Datei in Salesforce hoch.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu[!DNL  Adobe Workfront Fusion] - Grundlegende Anweisungen</a></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document linking]</td> 
+   <td>Auswählen, ob ein Inhaltsdokument-Link angewendet werden soll.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL linkedEntityId]</td> 
+   <td>Bei Verwendung der Dokumentverknüpfung geben Sie die ID des verknüpften Objekts ein oder mappen Sie sie.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ShareType]</td> 
+   <td>Wenn Sie die Dokumentverknüpfung verwenden, wählen Sie Berechtigungen für die Datei aus.<ul><li><b>Viewer-Berechtigung</b><p>Der/die Benutzende kann die Datei anzeigen.</p></li><li><b>Berechtigung des Mitarbeiters</b><p>Der Benutzer kann die Datei anzeigen und bearbeiten.</p></li><li><b>Abgeleitete Berechtigungen</b><p>Berechtigungen basieren auf den Berechtigungen des Benutzers für den zugehörigen Datensatz, z. B. eine Bibliothek.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Visibility]</td> 
+   <td>Wenn Sie die Dokumentverknüpfung verwenden, geben Sie die Sichtbarkeit des Dokuments ein oder mappen Sie sie.<ul><li><b>Alle Benutzer</b><p>Verfügbar für alle Benutzer mit Berechtigungen</p></li><li><b>Interne Benutzer</b><p>Verfügbar für interne Benutzer mit Berechtigungen.</p></li><li><b>SharedUsers</b><p>Verfügbar für Benutzer, die den Feed sehen können, an den die Datei gesendet wird.</p></li></ul></td> 
+  </tr>
 
 ### Suchvorgänge
 

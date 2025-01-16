@@ -4,9 +4,9 @@ description: Unterstützung für große Dateien ist derzeit für die Workfront- 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 4422a0d9236c4fe783b3b8d2757a86c91bcca748
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,9 @@ Für die erste Version unterstützen die folgenden Connectoren große Dateien.
 * Adobe Experience Manager Assets > Dokument hochladen
 * Workfront Proof > Datei hochladen
 * Adobe Authenticator > Erstellen eines benutzerdefinierten API-Aufrufs
+* SharePoint > Datei erstellen und SharePoint > Datei abrufen
+* Salesforce > Datei hochladen
+* AWS S3 > Datei hochladen und AWS S3 > Datei abrufen
 * HTTP
 
 In zukünftigen Versionen werden weitere Connectoren unterstützt.
