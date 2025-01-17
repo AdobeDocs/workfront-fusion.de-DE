@@ -4,10 +4,10 @@ description: Unterstützung für große Dateien ist derzeit für die Workfront- 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
+source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 0%
+source-wordcount: '1021'
+ht-degree: 1%
 
 ---
 
@@ -27,15 +27,26 @@ Um größere Dateien zu verarbeiten, müssen Ihre Szenarien aktualisiert werden.
 
 ## Connectoren, die große Dateien unterstützen
 
-Für die erste Version unterstützen die folgenden Connectoren große Dateien.
+Derzeit unterstützen die folgenden Connectoren große Dateien.
 
-* Workfront > Dokument hochladen
-* Adobe Experience Manager Assets > Dokument hochladen
-* Workfront Proof > Datei hochladen
-* Adobe Authenticator > Erstellen eines benutzerdefinierten API-Aufrufs
-* SharePoint > Datei erstellen und SharePoint > Datei abrufen
-* Salesforce > Datei hochladen
-* AWS S3 > Datei hochladen und AWS S3 > Datei abrufen
+* Workfront
+   * Dokument hochladen
+   * Dokument herunterladen
+* Adobe Experience Manager Assets
+   * Dokument hochladen
+* Workfront-Korrekturabzug
+   * Datei hochladen
+   * Testversand herunterladen
+* Adobe Authenticator
+   * Erstellen eines benutzerdefinierten API-Aufrufs
+* SharePoint
+   * Erstellen einer Datei
+   * Datei abrufen
+* Salesforce
+   * Datei hochladen
+* AWS S3
+   * Datei hochladen
+   * Datei abrufen
 * HTTP
 
 In zukünftigen Versionen werden weitere Connectoren unterstützt.
@@ -74,7 +85,7 @@ Nein, die Anzahl der von einem Modul ausgeführten Vorgänge ist gleich.
 
 ### Wann wird die Benutzeroberfläche von Fusion aktualisiert, um Dateiübertragungsdaten anzuzeigen?
 
-Wir arbeiten aktiv an Aktualisierungen der Benutzeroberfläche von Fusion für die Dateiübertragung auf der Detailseite für das Dashboard und die Ausführung des Szenarios mit einer geplanten Veröffentlichung im 1. Quartal 2025.
+Diese Funktion wurde bereits abgeschlossen und für die Produktion bereitgestellt.
 
 ### Welche Denkansätze gibt es für die neuen Dateiverarbeitungsbeschränkungen, die mir beim Entwerfen von Szenarien helfen?
 
