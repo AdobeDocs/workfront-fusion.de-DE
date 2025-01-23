@@ -4,9 +4,9 @@ description: Mit den  [!DNL Adobe Workfront Planning] -Modulen können Sie ein  
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1972e445e7d4d3e4441feeda72ba9523fd1d9ff4
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Sie können direkt aus einem [!DNL Workfront Fusion]-Modul heraus eine Verbindun
 
 ## [!DNL Adobe Workfront Planning] Module und ihre Felder
 
-### Trigger
+### Auslöser
 
 #### Ereignisse ansehen
 
@@ -228,7 +228,7 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Work
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>

@@ -4,7 +4,7 @@ description: Sie können den Adobe Workfront Fusion Adobe Workfront-Connector ve
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
 source-wordcount: '6208'
 ht-degree: 3%
@@ -104,7 +104,7 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Geben Sie Ihre Workfront-Client-ID ein. Diese finden Sie im Bereich OAuth2-Anwendungen des Bereichs Setup in Workfront. Wenn Sie in Workfront kein Client-Geheimnis für Ihr OAuth2-Programm haben, können Sie ein anderes generieren. Anweisungen hierzu finden Sie in der Dokumentation zu Workfront.</td>
+        <td>Geben Sie Ihr Workfront-Client-Geheimnis ein. Diese finden Sie im Bereich OAuth2-Anwendungen des Bereichs Setup in Workfront. Wenn Sie in Workfront kein Client-Geheimnis für Ihr OAuth2-Programm haben, können Sie ein anderes generieren. Anweisungen hierzu finden Sie in der Dokumentation zu Workfront.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
@@ -144,7 +144,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 * [Aktionen](#actions)
 * [Suchvorgänge](#searches)
 
-### Trigger
+### Auslöser
 
 <!--
 * [Watch Events](#watch-events) 
