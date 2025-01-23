@@ -4,9 +4,9 @@ description: Um eine HTTP [!DNL Adobe Workfront Fusion] S-Anfrage an Server zu s
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: d9d3f21279ba89f544adc0ffa9345543907aa777
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1980'
 ht-degree: 0%
 
 ---
@@ -36,44 +36,48 @@ Weitere Informationen zur OAuth 2.0-Authentifizierung finden Sie unter [OAuth 2.
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
-<table style="table-layout:auto">  
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] Plan*</td> 
-   <td> <p>[!UICONTROL Pro] oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration] </p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## Erstellen einer Verbindung für eine [!DNL OAuth] Anfrage
++++
+
+## Erstellen einer Verbindung für eine [!DNL OAuth]
 
 * [Allgemeine Anweisungen zum Erstellen einer Verbindung im HTTP > Erstellen eines OAuth 2.0-Anfragemoduls](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
 * [Anweisungen zum Erstellen einer Verbindung zu Google im HTTP >[!UICONTROL Make] eines OAuth 2.0-Anfragemoduls](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
@@ -87,9 +91,9 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
       | Nord- und Südamerika/APAC | `https://app.workfrontfusion.com/oauth/cb/oauth2` |
       |---|---|
-      | EMEA | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
+      | **EMEA** | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
 
-   1. Nachdem Sie den Client erstellt haben, zeigt der angegebene Dienst zwei Schlüssel an: `[!UICONTROL Client ID]` und `[!UICONTROL Client Secret]`. Einige Dienste nennen diese `[!UICONTROL App Key]` und `[!UICONTROL App Secret]` . Speichern Sie den Schlüssel und die geheimen Daten an einem sicheren Speicherort, damit Sie sie beim Erstellen der Verbindung in Workfront Fusion bereitstellen können.
+   1. Nachdem Sie den Client erstellt haben, zeigt der angegebene Dienst zwei Schlüssel an: `[!UICONTROL Client ID]` und `[!UICONTROL Client Secret]`. Einige Dienste nennen diese `[!UICONTROL App Key]` und `[!UICONTROL App Secret]`. Speichern Sie den Schlüssel und die geheimen Daten an einem sicheren Speicherort, damit Sie sie beim Erstellen der Verbindung in Workfront Fusion bereitstellen können.
 
 1. Die `[!UICONTROL Authorize URI]` und `[!UICONTROL Token URI]` finden Sie in der API-Dokumentation des jeweiligen Service. Dies sind URL-Adressen, über die [!DNL Workfront Fusion] mit dem [!DNL target]-Service kommuniziert. Die Adressen dienen zur OAuth-Autorisierung.
 
@@ -97,20 +101,8 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
    >
    >Wenn der Service den impliziten Fluss verwendet, benötigen Sie nur die `[!UICONTROL Authorize URI]` .
 
-   >[!INFO]
-   >
-   >**Beispiel:** Yahoo-Adressen:
-   >
-   >* Autorisierungs-URI:
-   >
-   >`https://api.login.yahoo.com/oauth2/request_auth`
-   >
-   >* Token-URI:
-   >
-   >`https://api.login.yahoo.com/oauth2/get_token`
-
 1. (Bedingt) Wenn der Ziel-Service Bereiche (Zugriffsrechte) verwendet, überprüfen Sie, wie der Service einzelne Bereiche trennt, und stellen Sie sicher, dass Sie das Trennzeichen in den erweiterten Einstellungen entsprechend festlegen. Wenn das Trennzeichen nicht richtig festgelegt ist, kann [!DNL Workfront Fusion] die Verbindung nicht erstellen, und es wird ein Fehler wegen ungültigem Bereich angezeigt.
-1. Nachdem Sie die oben genannten Schritte ausgeführt haben, können Sie in [!DNL Workfront Fusion] mit der Erstellung der OAuth-Verbindung beginnen. Fügen Sie das OAuth 2.0-HTTP(S)-Anfrage- und Antwortverarbeitungsmodul zu Ihrem Szenario hinzu.
+1. Nachdem Sie die oben genannten Schritte ausgeführt haben, können Sie in [!DNL Workfront Fusion] mit der Erstellung der OAuth-Verbindung beginnen. Fügen Sie Ihrem Szenario das Modul HTTP > OAuth 2-Anfrage erstellen hinzu.
 1. Klicken Sie im Feld Verbindung des Moduls auf **[!UICONTROL Add]**.
 
 1. Füllen Sie die folgenden Felder aus, um eine Verbindung zu erstellen:
@@ -122,6 +114,14 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
      <tr> 
       <td role="rowheader">[!UICONTROL Connection name] </td> 
       <td> <p>Geben Sie den Namen der Verbindung ein.</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Environment] </td> 
+      <td> <p>Wählen Sie aus, ob Sie eine Produktions- oder Nicht-Produktionsumgebung verwenden.</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Type] </td> 
+      <td> <p>Wählen Sie aus, ob Sie ein Service-Konto oder ein persönliches Konto verwenden.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
@@ -224,15 +224,15 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
     </tbody> 
    </table>
 
-1. Klicken Sie auf **[!UICONTROL Continue]** , um die Verbindungseinstellungen zu speichern.
-1. Fahren Sie mit [Einrichtung des OAuth 2.0-Anforderungsmoduls](#oauth-20-request-module-setup) fort.
+1. Klicken Sie auf **[!UICONTROL Continue]** , um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Fahren Sie fort mit [Konfigurieren des OAuth 2.0-Anforderungsmoduls](#configure-the-make-an-oauth-20-request-module).
 
 ### Anweisungen zum Erstellen einer Verbindung zu [!DNL Google] finden Sie in der [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request module]
 
 Im folgenden Beispiel wird gezeigt, wie Sie das Modul [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0]-Anfrage verwenden, um eine Verbindung zu [!DNL Google] herzustellen.
 
-1. Stellen Sie sicher, dass Sie ein Projekt erstellt, OAuth-Einstellungen konfiguriert und Ihre Anmeldeinformationen wie in [Verbinden [!DNL Adobe Workfront Fusion] mit [!DNL Google Services]  unter Verwenden eines benutzerdefinierten OAuth-Clients ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
-1. Öffnen Sie das Modul [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request].
+1. Stellen Sie sicher, dass Sie ein Projekt erstellt, OAuth-Einstellungen konfiguriert und Ihre Anmeldeinformationen generiert haben, wie in Artikel [Verbinden [!DNL Adobe Workfront Fusion] mit [!DNL Google Services]  unter Verwendung eines benutzerdefinierten OAuth-Clients ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+1. Öffnen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] .
 1. Klicken Sie **[!UICONTROL Add]** neben dem Feld Verbindung .
 1. Geben Sie die folgenden Werte ein:
 
@@ -242,7 +242,15 @@ Im folgenden Beispiel wird gezeigt, wie Sie das Modul [!UICONTROL HTTP] > [!UICO
     <tbody> 
      <tr> 
       <td role="rowheader">[!UICONTROL Connection name] </td> 
-      <td> <p>Geben Sie den Namen der Verbindung ein.</p> </td> 
+      <td> <p>Geben Sie einen Namen für die Verbindung ein.</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Environment] </td> 
+      <td> <p>Wählen Sie aus, ob Sie eine Produktions- oder Nicht-Produktionsumgebung verwenden.</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Type] </td> 
+      <td> <p>Wählen Sie aus, ob Sie ein Service-Konto oder ein persönliches Konto verwenden.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
@@ -266,11 +274,11 @@ Im folgenden Beispiel wird gezeigt, wie Sie das Modul [!UICONTROL HTTP] > [!UICO
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client ID] </td> 
-      <td> <p>Geben Sie Ihre [!DNL Google]-Client-ID ein. </p> <p>Informationen zum Erstellen einer Client-ID finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create2" class="MCXref xref">Erstellen von OAuth</a> in <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md" class="MCXref xref">[!DNL Connect Adobe Workfront Fusion] zu [!DNL Google Services] mit einem benutzerdefinierten OAuth-Client</a>.</p> </td> 
+      <td> <p>Geben Sie Ihre [!DNL Google]-Client-ID ein. </p> <p>Informationen zum Erstellen einer Client-ID finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create-oauth-credentials" class="MCXref xref">Erstellen von OAuth</a> im Artikel [!DNL Connect Adobe Workfront Fusion] zum [!DNL Google Services] mit einem benutzerdefinierten OAuth-Client</a>.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client Secret]</td> 
-      <td> <p>Geben Sie Ihr [!DNL Google]-Client-Geheimnis ein. </p> <p>Informationen zum Erstellen geheimer Client-Schlüssel finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create2" class="MCXref xref">Erstellen von OAuth</a> in <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md" class="MCXref xref">[!DNL Connect Adobe Workfront Fusion] zu [!DNL Google] Services mithilfe eines benutzerdefinierten OAuth-Clients</a>.</p> </td> 
+      <td> <p>Geben Sie Ihr [!DNL Google]-Client-Geheimnis ein. </p> <p>Informationen zum Erstellen geheimer Client-Daten finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create-oauth-credentials" class="MCXref xref">Erstellen von OAuth</a> im Artikel [!DNL Connect Adobe Workfront Fusion] zu [!DNL Google] Services mithilfe eines benutzerdefinierten OAuth-Clients</a>.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Authorize parameters]</p> </td> 
@@ -280,23 +288,17 @@ Im folgenden Beispiel wird gezeigt, wie Sie das Modul [!UICONTROL HTTP] > [!UICO
    </table>
 
 1. Klicken Sie auf **[!UICONTROL Continue]** , um die Verbindungseinstellungen zu speichern.
-1. Fahren Sie mit [Einrichtung des OAuth 2.0-Anforderungsmoduls](#oauth-20-request-module-setup) fort.
+1. Fahren Sie fort mit [Konfigurieren des OAuth 2.0-Anforderungsmoduls](#configure-the-make-an-oauth-20-request-module).
 
-<!--### Instructions for connecting to [!DNL Microsoft Graph API] via the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module 
+## Konfigurieren des OAuth 2.0-Anforderungsmoduls
 
-For instructions regarding [!DNL Microsoft Graph API], see [Call the [!DNL MS Graph REST API] via the [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md).-->
+Nachdem Sie eine OAuth 2.0-Verbindung hergestellt haben, fahren Sie mit dem Einrichten des Moduls wie gewünscht fort. Alle Autorisierungs-Token sind automatisch in dieser Anfrage und in jeder anderen Anfrage enthalten, die dieselbe Verbindung verwendet.
 
-## Einrichtung des OAuth 2.0-Anforderungsmoduls
-
-Wenn Sie eine [!DNL Oauth 2].0-Verbindung hergestellt haben, wie unter [Erstellen einer Verbindung für eine  [!DNL OAuth] -Anfrage](#creating-a-connection-for-an-oauth-request) beschrieben, fahren Sie mit dem Einrichten des Moduls wie gewünscht fort. Alle Autorisierungs-Token sind automatisch in dieser Anfrage und in jeder anderen Anfrage enthalten, die dieselbe Verbindung verwendet.
-
-Beim Konfigurieren des Moduls [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request] zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren des Moduls [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zu einem anderen Modul in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-<!--
-<img src="" style="width: 350;height: 74;">
--->
+![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto">  
  <col> 
@@ -304,11 +306,11 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
  <tbody> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Informationen zum Einrichten einer Verbindung finden Sie unter <a href="#creating-a-connection-for-an-oauth-request" class="MCXref xref">Erstellen einer Verbindung für eine OAuth</a>Anfrage in diesem Artikel.</p> </td> 
+   <td> <p>Informationen zum Einrichten einer Verbindung finden Sie unter <a href="#create-a-connection-for-an-oauth-request" class="MCXref xref">Erstellen einer Verbindung für eine OAuth</a>Anfrage in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx]) </td> 
-   <td> <p>Mit dieser Option können Sie die Fehlerbehandlung einrichten.</p> <p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Fehlerbehandlung in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx)] </td> 
+   <td> <p>Mit dieser Option können Sie die Fehlerbehandlung einrichten.</p> <p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Fehlerbehandlung</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -316,7 +318,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 
@@ -340,7 +342,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>Die [!UICONTROL Multipart/form-data] ist eine mehrteilige HTTP-Anfrage, die zum Senden von Dateien und Daten verwendet wird. Es wird häufig verwendet, um Dateien auf den Server hochzuladen.</p> <p>Fügen Sie Felder hinzu, die in der Anfrage gesendet werden sollen. Jedes Feld muss ein Schlüssel-Wert-Paar enthalten.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Geben Sie den Schlüssel und den Wert ein, die innerhalb des Anfragetexts gesendet werden sollen.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] oder [!UICONTROL Google Drive] &gt; [!UICONTROL Download a File)]), oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt;[!UICONTROL Get a File]), oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -358,7 +360,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> Laden Sie Ihr Zertifikat hoch, wenn Sie TLS mit Ihrem selbstsignierten Zertifikat verwenden möchten.</p> </td> 
+   <td> <p>Um ein selbstsigniertes Zertifikat oder einen privaten Schlüssel für TLS zu verwenden, klicken Sie auf <b>Extrahieren</b> und geben Sie die Datei und das Kennwort des Zertifikats oder des privaten Schlüssels an.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
