@@ -4,9 +4,9 @@ description: Unterstützung für große Dateien ist derzeit für die Workfront- 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
+source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -15,15 +15,11 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Die Funktion für große Dateien steht nur Kunden von Workfront Ultimate zur Verfügung und umfasst einen schrittweisen Rollout. Alle Fusion-Organisationen mit einem Workfront Ultimate-Plan verfügen ab Januar 2025 über umfangreiche Dateifunktionen.
+>Die Funktion für große Dateien steht nur Unternehmen mit Workfront Ultimate zur Verfügung.
 
 Erweiterte Datenübertragungsfunktionen sind jetzt in Workfront Fusion verfügbar, sodass in Szenarien deutlich größere Dateien verarbeitet werden können.
 
 Um größere Dateien zu verarbeiten, müssen Ihre Szenarien aktualisiert werden.
-
->[!NOTE]
->
->Diese Funktion steht nur Benutzenden des Ultimate Workfront-Pakets zur Verfügung.
 
 ## Connectoren, die große Dateien unterstützen
 
