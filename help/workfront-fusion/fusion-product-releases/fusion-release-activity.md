@@ -4,7 +4,7 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: product-releases
 title: Versionsaktivität von Adobe Workfront Fusion - Übersicht
-description: Adobe Workfront Fusion verbindet Ihre Apps und Web-Services nahtlos, sodass Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen.
+description: Adobe Workfront Fusion verbindet Ihre Anwendungen und Web-Services nahtlos, sodass Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -12,13 +12,13 @@ exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
 source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 # Versionsaktivität von Adobe Workfront Fusion - Übersicht
 
-Adobe Workfront Fusion verbindet Ihre Apps und Web-Services nahtlos, sodass Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen.
+Adobe Workfront Fusion verbindet Ihre Anwendungen und Web-Services nahtlos, sodass Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen.
 
 ## Fusion-Versionen im Jahr 2025
 
