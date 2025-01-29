@@ -4,9 +4,9 @@ description: Der  [!DNL Adobe Workfront Fusion Tools]  enthält mehrere nützlic
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
+source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1994'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Dieses Modul kann beispielsweise für Kontakte oder andere Listen verwendet werd
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bundle]</td> 
-   <td> <p>Erstellen benutzerdefinierter Bundles durch Hinzufügen von Array-Elementen. Das Array besteht aus den Name-Wert-Paaren.</p> </td> 
+   <td> <p>Erstellen benutzerdefinierter Bundles durch Hinzufügen von Array-Elementen. Klicken Sie für jedes Element, das Sie dem Bundle hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Namen und den Wert des Elements ein.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -97,32 +97,30 @@ Dieses Modul kann beispielsweise für Kontakte oder andere Listen verwendet werd
 
 Dieses Modul ruft Werte ab, die zuvor vom [!UICONTROL Set Variable]- oder [!UICONTROL Set Multiple Variables]-Modul erstellt wurden.
 
-Dieses Modul kann Variablen lesen, die an einer beliebigen Stelle im Szenario festgelegt wurden, selbst wenn die Variable auf einer anderen Route festgelegt wurde als der Ort, an dem sich das [!UICONTROL Get Multiple Variables] Modul befindet. Die einzige Anforderung besteht darin, dass das Modul [!UICONTROL Tools] > [!UICONTROL Set Variable] oder [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] vor dem Modul [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables] ausgeführt wird. Weitere Informationen zur Reihenfolge, in der Module ausgeführt werden, finden Sie unter [Router-Modul in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Dieses Modul kann Variablen lesen, die an einer beliebigen Stelle im Szenario festgelegt wurden, selbst wenn die Variable auf einer anderen Route festgelegt wurde als der Ort, an dem sich das [!UICONTROL Get Multiple Variables] Modul befindet. Die einzige Anforderung besteht darin, dass das Modul [!UICONTROL Tools] > [!UICONTROL Set Variable] oder [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] vor dem Modul [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables] ausgeführt wird. Weitere Informationen über die Reihenfolge, in der die Module ausgeführt werden, finden Sie unter [Hinzufügen eines Routermoduls und Konfigurieren von Routen](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Variables]</td>
-        <td>Fügen Sie die Variablen hinzu, die das Modul erhalten soll.</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Variable name]</td>
-        <td>Ordnen Sie jeder Variablen, die Sie hinzufügen, den Namen der Variablen zu, die Sie abrufen möchten.</td>
+        <td>Klicken Sie für jede Variable, die das Modul abrufen soll, auf <b>Element hinzufügen</b> und geben Sie den Namen der Variablen ein.</td>
     </tr>
 </table>
 
->[!INFO]
->
->**Beispiele** Im Folgenden finden Sie mögliche Verwendungszwecke der [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)]-Module:
->
->* So speichern Sie einen berechneten Wert für die spätere Verwendung, auch in einer anderen Route. Dies ist nützlich, wenn der Wert in mehreren Modulen verwendet wird und die Formel zur Berechnung des Werts zu komplex ist.
->* So debuggen Sie eine Formel. Wenn eine in einem Modul verwendete Formel scheinbar kein korrektes Ergebnis liefert, kopieren Sie die Formel und fügen Sie sie in ein [!UICONTROL Set Variable] ein, das Sie vor dem entsprechenden Modul einfügen. Trennen Sie die Verbindung zum/zu den Modul(en) nach dem [!UICONTROL Set Variable] Modul und führen Sie das Szenario aus. Überprüfen Sie die Ausgabe des [!UICONTROL Set Variable]-Moduls, passen Sie die Formel an oder vereinfachen Sie sie, führen Sie das Szenario erneut aus und fahren Sie damit fort, bis das Problem behoben ist.
+>[!BEGINSHADEBOX]
+
+**Beispiele** Im Folgenden finden Sie mögliche Verwendungszwecke der [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)]-Module:
+
+* So speichern Sie einen berechneten Wert für die spätere Verwendung, auch in einer anderen Route. Dies ist nützlich, wenn der Wert in mehreren Modulen verwendet wird und die Formel zur Berechnung des Werts zu komplex ist.
+* So debuggen Sie eine Formel. Wenn eine in einem Modul verwendete Formel scheinbar kein korrektes Ergebnis liefert, kopieren Sie die Formel und fügen Sie sie in ein [!UICONTROL Set Variable] ein, das Sie vor dem entsprechenden Modul einfügen. Trennen Sie die Verbindung zum/zu den Modul(en) nach dem [!UICONTROL Set Variable] Modul und führen Sie das Szenario aus. Überprüfen Sie die Ausgabe des [!UICONTROL Set Variable]-Moduls, passen Sie die Formel an oder vereinfachen Sie sie, führen Sie das Szenario erneut aus und fahren Sie damit fort, bis das Problem behoben ist.
+
+>[!ENDSHADEBOX]
 
 
 #### [!UICONTROL Get Variable]
 
 Dieses Modul ruft einen Wert ab, der zuvor vom [!UICONTROL Set Variable]- oder [!UICONTROL Set Multiple Variables]-Modul erstellt wurde.
 
-Dieses Modul kann Variablen lesen, die an einer beliebigen Stelle im Szenario festgelegt wurden, selbst wenn die Variable auf einer anderen Route festgelegt wurde als der Ort, an dem sich das [!UICONTROL Get Variable] Modul befindet. Die einzige Anforderung besteht darin, dass das Modul [!UICONTROL Tools] > [!UICONTROL Set Variable] oder [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] vor dem Modul [!UICONTROL Tools] > [!UICONTROL Get Variable] ausgeführt wird. Weitere Informationen zur Reihenfolge, in der Module ausgeführt werden, finden Sie unter [Router-Modul in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Dieses Modul kann Variablen lesen, die an einer beliebigen Stelle im Szenario festgelegt wurden, selbst wenn die Variable auf einer anderen Route festgelegt wurde als der Ort, an dem sich das [!UICONTROL Get Variable] Modul befindet. Die einzige Anforderung besteht darin, dass das Modul [!UICONTROL Tools] > [!UICONTROL Set Variable] oder [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] vor dem Modul [!UICONTROL Tools] > [!UICONTROL Get Variable] ausgeführt wird. Weitere Informationen über die Reihenfolge, in der die Module ausgeführt werden, finden Sie unter [Hinzufügen eines Routermoduls und Konfigurieren von Routen](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -137,7 +135,7 @@ Dieses Modul kann Variablen lesen, die an einer beliebigen Stelle im Szenario fe
 
 #### [!UICONTROL Increment function]
 
-Dieses Modul gibt einen Wert zurück, der nach jedem Modulvorgang um 1 inkrementiert wird.
+Dieses Modul gibt einen Wert zurück, der nach jedem Zyklus oder jeder Ausführung eines Szenarios um 1 erhöht wird.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -145,7 +143,7 @@ Dieses Modul gibt einen Wert zurück, der nach jedem Modulvorgang um 1 inkrement
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reset a value]</td> 
-   <td> <p>Wählen Sie aus, wann das Modul den Wert erhöhen soll. </p> 
+   <td> <p>Wählen Sie aus, wann das Modul den Wert zurücksetzen soll. Dies ist der Fall, wenn der Wert beim ersten Wert von vorne beginnen soll.</p> 
     <ul> 
      <li>[!UICONTROL After one cycle]</li> 
      <li>[!UICONTROL After one scenario run]</li> 
@@ -155,27 +153,30 @@ Dieses Modul gibt einen Wert zurück, der nach jedem Modulvorgang um 1 inkrement
  </tbody> 
 </table>
 
->[!INFO]
->
->**Beispiel:**
->
->Eines der Ziele des Moduls ist die Implementierung einer „Round-Robin“-Zuweisung von Aufgaben, Leads, E-Mails usw. an Benutzer in einer Gruppe. Der Algorithmus wählt die Verantwortlichen aus einer Gruppe in einer rationalen Reihenfolge aus, normalerweise von oben nach unten in einer Liste. Wenn der Algorithmus das Ende der Liste erreicht, würde er dem Benutzer an oberster Stelle der Liste die nächste Zuweisung zuweisen und weitere Zuweisungen in der Liste nach unten vornehmen.
->
->Im folgenden Szenario wird nach jeder Ausführung eines Szenarios mit ungeraden Zahlen eine E-Mail an den ersten Empfänger und nach jeder Ausführung eines Szenarios mit geraden Zahlen an den zweiten Empfänger gesendet.
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-email-350x246.gif)
->
->1. So erstellen Sie dieses Szenario:
->1. Setzen Sie das **[!UICONTROL Reset a value]** des Moduls auf Nie.
->1. Route für ungerade Werte festlegen Den Filter für diese Route mit der Modulusmathematikfunktion festlegen, die `1` entspricht:
->
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd-350x459.png)
->
->  **Hinweis**: Vergessen Sie nicht, den [!UICONTROL Equal to]-Operator vom Standardoperator [!UICONTROL Text] zum [!UICONTROL Numeric]-Operator zu ändern.
->
->1. Legen Sie die Route für gerade Werte mit der mathematischen Modulusfunktion fest, die `0` entspricht:
->
->Die Inkrementfunktion fügt bei jeder Ausführung des Szenarios einen hinzu. Die Filter überprüfen das Inkrement und reagieren auf seinen Wert, um sicherzustellen, dass die E-Mails gleichmäßig verteilt werden.
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+Dieses Modul kann verwendet werden, um eine „Round Robin“-Zuweisung von Aufgaben, Leads, E-Mails usw. an Benutzer in einer Gruppe zu implementieren. Der Algorithmus wählt die Verantwortlichen aus einer Gruppe in einer rationalen Reihenfolge aus, normalerweise von oben nach unten in einer Liste. Wenn der Algorithmus das Ende der Liste erreicht, würde er dem Benutzer an oberster Stelle der Liste die nächste Zuweisung zuweisen und weitere Zuweisungen in der Liste nach unten vornehmen.
+
+Im folgenden Szenario wird nach jeder Ausführung eines Szenarios mit ungeraden Zahlen eine E-Mail an den ersten Empfänger und nach jeder Ausführung eines Szenarios mit geraden Zahlen an den zweiten Empfänger gesendet.
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+
+So erstellen Sie dieses Szenario:
+
+1. Setzen Sie das **[!UICONTROL Reset a value]** des Moduls auf Nie.
+1. Route für ungerade Werte festlegen Den Filter für diese Route mit der Modulusmathematikfunktion festlegen, die `1` entspricht:
+
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+
+**Hinweis**: Vergessen Sie nicht, den [!UICONTROL Equal to]-Operator vom Standardoperator [!UICONTROL Text] zum [!UICONTROL Numeric]-Operator zu ändern.
+
+1. Legen Sie die Route für gerade Werte mit der mathematischen Modulusfunktion fest, die `0` entspricht:
+
+Die Inkrementfunktion fügt bei jeder Ausführung des Szenarios einen hinzu. Die Filter überprüfen das Inkrement und reagieren auf seinen Wert, um sicherzustellen, dass die E-Mails gleichmäßig verteilt werden.
+
+>[!ENDSHADEBOX]
 
 #### [!UICONTROL Set Multiple Variables]
 
@@ -187,21 +188,13 @@ Dieses Modul erstellt Variablen, die von anderen Modulen in der Route zugeordnet
  <tbody> 
   <tr> 
    <td>[!UICONTROL Variables]</td> 
-   <td>Fügen Sie die Variablen hinzu, die das Modul festlegen soll.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable name] </td> 
-   <td>Geben Sie für jede Variable den Variablennamen ein. Dieser Name wird angezeigt, wenn die Variable in anderen Modulen zugeordnet wird. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable value] </td> 
-   <td>Geben Sie für jede Variable den Wert für die Variable ein. </td> 
+   <td>Klicken Sie für jede Variable, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Namen und den Wert der Variablen ein.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>Wählen Sie aus, wie lange die Variablen gültig bleiben sollen (Wert beibehalten).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: Die Variable ist für einen Zyklus gültig. Nützlich, wenn mehrere Webhooks in einem Szenario empfangen werden (mehr Webhooks = mehr Zyklen). </li> 
+     <li><strong>[!UICONTROL One cycle]</strong>: Die Variable ist für einen Zyklus gültig. Dies ist nützlich, wenn mehrere Webhooks in einem Szenario ausgeführt werden, da mehr Webhooks mehr Zyklen erstellen. </li> 
      <li><strong>[!UICONTROL One execution]</strong>: Die Variable ist für die Ausführung eines einzigen Szenarios gültig. Eine Ausführung kann einen oder mehrere Zyklen enthalten.</li> 
     </ul> </td> 
   </tr> 
@@ -254,7 +247,7 @@ Diese Funktion kann beispielsweise nützlich sein, wenn Sie die Last des [!DNL t
 
 >[!TIP]
 >
->Wenn Sie den Fluss für längere Zeiträume anhalten möchten, empfehlen wir, Ihr Szenario in zwei Szenarien zu unterteilen:
+>Wenn Sie den Fluss für längere Zeiträume anhalten möchten, empfehlen wir, Ihr Szenario in zwei Szenarien aufzuteilen:
 >
 >* Das erste Szenario würde den Teil vor der Pause enthalten.
 >* Das zweite Szenario würde den darauffolgenden Teil enthalten.
@@ -358,19 +351,21 @@ Dieses Modul führt Werte aus den ausgewählten Feldern empfangener Bundles in e
    <td> <p>Definieren Sie einen Ausdruck, der ein oder mehrere zugeordnete Elemente enthält. Die aggregierten Daten werden unter Gruppen mit demselben Ausdruckswert getrennt. Jede Gruppe gibt als separates Bundle aus, das einen Schlüssel mit dem ausgewerteten Ausdruck und dem aggregierten Text enthält. Auf diese Weise können Sie den Schlüssel als Filter in nachfolgenden Modulen verwenden.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
-   <td> <p> Geben Sie den Text ein, den das Modul aggregieren soll, oder ordnen Sie ihn zu.</p> </td> 
-  </tr> 
-  <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
    <td>Wählen Sie diese Option, um das Szenario anzuhalten, wenn keine Ergebnisse vorliegen.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Text]</td> 
+   <td> <p> Geben Sie den Text ein, den das Modul aggregieren soll, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**Beispiel** Sie können den Text-Aggregator verwenden, um weitere Werte (z. B. Kundennamen oder Notizen) in ein einzelnes Bundle einzufügen und eine E-Mail zu senden, die alle Werte im Textkörper der E-Mail oder im E-Mail-Betreff enthält.
+>[!BEGINSHADEBOX]
+
+**Beispiel** Sie können den Text-Aggregator verwenden, um weitere Werte (z. B. Kundennamen oder Notizen) in ein einzelnes Bundle einzufügen und eine E-Mail zu senden, die alle Werte im Textkörper der E-Mail oder im E-Mail-Betreff enthält.
+
+>[!ENDSHADEBOX]
 
 ### Transformatoren
 
@@ -443,7 +438,7 @@ Prüft den Eingabewert auf Übereinstimmung mit der bereitgestellten Werteliste.
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> <p>Wenn die Eingabe einen in das [!UICONTROL Pattern] Feld eingegebenen Wert enthält, wird der in das [!UICONTROL Output] Feld eingegebene Wert zurückgegeben.</p> <p>Wenn die Eingabe mit keinem der Werte übereinstimmt, die Sie in einem [!UICONTROL Pattern] festgelegt haben, tritt einer der folgenden Fälle auf:</p> 
+   <td> Klicken Sie für jeden hinzuzufügenden Fall auf <b>Element hinzufügen</b> und geben Sie das Muster und die Ausgabe des Elements ein. <p>Wenn die Eingabe einen in das [!UICONTROL Pattern] Feld eingegebenen Wert enthält, wird der in das [!UICONTROL Output] Feld eingegebene Wert zurückgegeben.</p> <p>Wenn die Eingabe mit keinem der Werte übereinstimmt, die Sie in einem [!UICONTROL Pattern] festgelegt haben, tritt einer der folgenden Fälle auf:</p> 
     <ul> 
      <li>Der Wert aus dem [!UICONTROL Else] Feld wird zurückgegeben</li> 
      <li>Wenn das Feld [!UICONTROL Else] keinen Wert enthält, wird keine Ausgabe zurückgegeben.</li> 
