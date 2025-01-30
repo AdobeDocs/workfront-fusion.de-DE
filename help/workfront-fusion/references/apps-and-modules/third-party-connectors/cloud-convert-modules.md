@@ -4,9 +4,9 @@ description: CloudConvert-Module
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2498'
 ht-degree: 0%
 
 ---
@@ -541,7 +541,7 @@ Trigger, wenn ein Vorgang in Ihrem Konto oder einer Aufgabe erstellt wird, abges
 >* Wenn Sie mit dem Array-Aggregator arbeiten (z. B. wenn Sie viele Dateien in verschiedenen Formaten haben, die konvertiert werden sollen), verwenden Sie die Option **[!UICONTROL I don't know the input format]** im Dialogfeld [!UICONTROL Add a task] . Andernfalls wird der Fehler zurückgegeben.
 >* Verknüpfen von Aufgaben innerhalb des Auftrags (Name > Eingabe, Name > Eingabe usw.):
 >
->  ![](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
+>  ![Name über Aufträge hinweg verknüpfen](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### Aufgaben
 
@@ -745,13 +745,13 @@ URL: `/v2/tasks`
 
 Methode: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
+![API-Beispieleingabe](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
 
 Treffer der Suche finden Sie in der Modulausgabe unter [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL data].
 
 In unserem Beispiel wurden 6 Aufgaben zurückgegeben:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![API-Beispielausgabe](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -817,6 +817,6 @@ In der folgenden Tabelle finden Sie mögliche Fehler und deren Lösungen:
 >1. Öffnen Sie die Einstellungen des Moduls.
 >1. Konfigurieren Sie das Modul wie unten gezeigt:
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
+>   ![CloudConvert-Beispiel](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
 >
 >1. Stellen Sie sicher, dass Sie alle Einstellungen im Feld Konversions- und Engine-spezifische Optionen einbeziehen: Suchen Sie für jede Einstellung aus Schritt 5 den entsprechenden Parameter aus Schritt 13 und den entsprechenden Wert.

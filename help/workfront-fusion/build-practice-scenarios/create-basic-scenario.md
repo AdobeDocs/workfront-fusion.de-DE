@@ -7,9 +7,9 @@ description: Erfahren Sie, wie Sie mit Adobe Workfront Fusion ein einfaches Auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 8884aef2237ad358c774110b81ac17b9efb386d4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1315'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
    Der Name wird direkt unter dem Modul angezeigt. Darunter finden Sie [!DNL Workfront Fusion] kurze Beschreibung der Art der Aktion, die vom Modul ausgeführt wird.
 
-   ![](assets/module-renamed-wf.png)
+   ![Modul umbenannt](assets/module-renamed-wf.png)
 
 1. Fahren Sie mit [Hinzufügen und konfigurieren Sie das zweite Modul](#add-and-configure-the-second-module) fort.
 
@@ -191,9 +191,9 @@ Bei diesem Szenario würde ein erfolgreicher Test dazu führen, dass die Anfrage
 >
 >1. Schließen Sie den **[!UICONTROL Notes]**.
 >
->     Nachdem Sie einem Szenario eine Anmerkung hinzugefügt haben, wird auf dem **[!UICONTROL Notes]** unten im Szenario-Editor ein orangefarbener Punkt ![](assets/notes-icon-w-dot.png).
+>     Nachdem Sie einem Szenario eine Anmerkung hinzugefügt haben, wird ein orangefarbener Punkt auf dem **[!UICONTROL Notes]** (![ mit Punkt) ](assets/notes-icon-w-dot.png) unteren Rand des Szenario-Editors angezeigt.
 >
->1. Klicken Sie auf das **[!UICONTROL Notes]** Symbol ![](assets/notes-icon-w-dot.png) , um Ihre Notizen anzuzeigen.
+>1. Klicken Sie auf das **[!UICONTROL Notes]**-Symbol ![Notes-Symbol mit Punkt](assets/notes-icon-w-dot.png), um Ihre Notizen anzuzeigen.
 >
 
 ## Aktivieren des Szenarios

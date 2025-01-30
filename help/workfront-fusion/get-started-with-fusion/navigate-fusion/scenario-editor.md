@@ -4,9 +4,9 @@ description: Mit dem Szenario-Editor können Sie Szenarien in einer visuellen Be
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '547'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Mit dem Szenario-Editor können Sie Szenarien in einer visuellen Benutzeroberfläche erstellen und bearbeiten.
 
-![](assets/scenario-editor.jpg)
+![Szenario-Editor](assets/scenario-editor.jpg)
 
 ## Zugriffsanforderungen
 
@@ -71,7 +71,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 ## Öffnen Sie den Szenario-Editor und fügen Sie ein Modul hinzu:
 
-1. Klicken Sie im linken Bedienfeld auf **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) .
+1. Klicken Sie **[!UICONTROL Scenarios]** linken ](assets/scenarios-icon.png) auf ![Szenario-Symbol).
 1. Klicken Sie auf das Fragezeichensymbol ![Fragesymbol](assets/question-mark-full-size.png), suchen Sie nach der App oder dem Service, mit der bzw. dem Sie beginnen möchten, und klicken Sie darauf. Detaillierte Informationen zum Konfigurieren eines Moduls finden Sie unter [Modul konfigurieren](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ## Verfügbare Szenario-Editor-Aktionen

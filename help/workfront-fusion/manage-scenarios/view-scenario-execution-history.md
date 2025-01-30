@@ -4,9 +4,9 @@ description: Der Ordner [!UICONTROL Incomplete executions] speichert Szenario-Au
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Die Registerkarte [!UICONTROL History] zeigt mehr Details an, als auf der Seite 
 
    Oder
 
-   Wenn Sie an dem Szenario im Szenario-Editor arbeiten, klicken Sie auf den linken Pfeil ![](assets/exit-editing-arrow.png) der oberen linken Ecke des Fensters.
+   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil zum Beenden der Bearbeitung](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
 1. Klicken Sie **Verlauf** neben dem Namen des Szenarios.
    ![Registerkarte „Verlauf“](assets/history-tab.png)
@@ -115,7 +115,7 @@ Die Registerkarte [!UICONTROL History] zeigt mehr Details an, als auf der Seite 
 
    Oder
 
-   Wenn Sie an dem Szenario im Szenario-Editor arbeiten, klicken Sie auf den linken Pfeil ![](assets/exit-editing-arrow.png) der oberen linken Ecke des Fensters.
+   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil zum Beenden der Bearbeitung](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL History]** im rechten Bedienfeld.
 1. (Optional) Klicken Sie auf die Ausführung im rechten Bedienfeld, um detaillierte Informationen zu einer ausgewählten Szenario-Ausführung zu erhalten.
@@ -133,7 +133,7 @@ Die Registerkarte [!UICONTROL History] zeigt mehr Details an, als auf der Seite 
 Sie können den Ausführungsverlauf filtern, um nur Ausführungen mit den angegebenen Werten anzuzeigen.
 
 1. Öffnen Sie den vollständigen Seitenverlauf für ein Szenario, wie in [Szenario-Ausführungsverlauf auf der Registerkarte [!UICONTROL History] anzeigen](#view-scenario-history-on-the-history-tab) in diesem Artikel beschrieben.
-1. Klicken Sie auf das [!UICONTROL filter] Symbol ![](assets/fusion-scenario-filter-icon.png) in der Kopfzeile der Spalte, nach der Sie filtern möchten.
+1. Klicken Sie in der Kopfzeile der Spalte![ nach ](assets/fusion-scenario-filter-icon.png) Sie filtern möchten, auf das [!UICONTROL filter]-Symbol (Szenariofiltersymbol).
 1. Geben Sie im Dialogfeld [!UICONTROL filter] die Werte ein, nach denen Sie filtern möchten.
 1. Klicken Sie auf **[!UICONTROL Save]**.
 

@@ -4,9 +4,9 @@ description: Ein Iterator-Modul ist ein spezieller Modultyp, der ein Array in ei
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
@@ -63,11 +63,11 @@ Weitere Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [[!DNL
 
 Das allgemeine Iteratormodul hat ein einzelnes Feld: das [!UICONTROL Array]. Dieses Feld enthält das Array, das konvertiert oder in separate Bundles aufgeteilt werden soll.
 
-![](assets/set-up-iterator.jpg)
+![Iterator einrichten](assets/set-up-iterator.jpg)
 
 Andere Connectoren können für diesen Iterator spezifische Iteratormodule enthalten. Diese enthalten ein Source-Modulfeld , mit dem Sie das Modul auswählen können, das das Array ausgibt, das Sie iterieren möchten.
 
-![](assets/specialized-iterators.jpg)
+![Spezialisierte Iteratoren](assets/specialized-iterators.jpg)
 
 Weitere Informationen finden Sie unter [Modul konfigurieren](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
@@ -79,7 +79,7 @@ Weitere Informationen finden Sie unter [Modul konfigurieren](/help/workfront-fus
 
   E-Mails können ein Array von Anhängen enthalten. Das [!UICONTROL Iterator] Modul nach dem ersten Modul ermöglicht dem Szenario die separate Verarbeitung jeder Anlage. Das [!UICONTROL Iterator]-Modul teilt das Array von Anlagen in einzelne Pakete auf. Jedes Bundle mit einer Anlage wird dann einzeln in einem ausgewählten [!DNL Dropbox]-Ordner gespeichert. Das [!UICONTROL Array] Feld im Iterator-Modul sollte das `Attachments`-Array enthalten.
 
-  ![](assets/attachments-array.jpg)
+  ![Attachments-Array](assets/attachments-array.jpg)
 
 >[!ENDSHADEBOX]
 
@@ -90,7 +90,7 @@ Weitere Informationen finden Sie unter [Modul konfigurieren](/help/workfront-fus
 
 Wenn ein [!UICONTROL Iterator]-Modul keine Informationen über die Struktur der Elemente des Arrays hat, zeigt das Zuordnungsbedienfeld in den Modulen nach dem [!UICONTROL Iterator]-Modul nur zwei Elemente unter dem [!UICONTROL Iterator]-Modul an: `Total number of bundles` und `Bundle order position`.
 
-![](assets/mapping-panel-doesnt-display.png)
+![Zuordnungsbereich wird nicht angezeigt](assets/mapping-panel-doesnt-display.png)
 
 Dies liegt daran, dass jedes Modul für die Bereitstellung von Informationen über von ihm ausgegebene Elemente verantwortlich ist, sodass diese Elemente im Zuordnungsbereich in den nachfolgenden Modulen ordnungsgemäß angezeigt werden können. In einigen Fällen können jedoch mehrere Module diese Informationen nicht bereitstellen. Beispielsweise würden [!UICONTROL JSON] > [!UICONTROL Parse JSON] oder [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] mit fehlender Datenstruktur die Informationen nicht bereitstellen.
 
@@ -100,11 +100,11 @@ Die Lösung besteht darin, das Szenario manuell auszuführen. Dadurch wird das M
 
 Ein Szenario umfasst beispielsweise ein Modul [!UICONTROL JSON] > [!UICONTROL Parse JSON] ohne Datenstruktur.
 
-![](assets/json-parse-json.png)
+![JSON analysieren](assets/json-parse-json.png)
 
 Ein mit diesem JSON-Modul verbundenes [!UICONTROL Iterator]-Modul kann die Ausgabe des Moduls nicht dem Array-Feld im Setup-Bedienfeld des [!UICONTROL Iterator]-Moduls zuordnen.
 
-![](assets/connect-iterator-module.png)
+![Iterator-Modul verbinden](assets/connect-iterator-module.png)
 
 So beheben Sie das Problem:
 
@@ -120,8 +120,8 @@ Starten Sie das Szenario manuell im Szenario-Editor.
 
 Nachdem die [!UICONTROL JSON] > [!UICONTROL Parse JSON] ausgeführt wurde, kann sie Informationen über ihre Ausgaben an alle nachfolgenden Module, einschließlich des Iterator-Moduls, senden. Das Zuordnungsbedienfeld bei der Einrichtung des Iterators zeigt dann die folgenden Elemente an:
 
-![](assets/mapping-panel-displays-items.png)
+![Das Zuordnungsbedienfeld zeigt Elemente an](assets/mapping-panel-displays-items.png)
 
 Darüber hinaus zeigt das Zuordnungsbedienfeld in den Modulen, die nach dem [!UICONTROL Iterator] verbunden sind, die im -Array enthaltenen Elemente an:
 
-![](assets/items-contained-in-array.png)
+![Im Array enthaltene Elemente](assets/items-contained-in-array.png)

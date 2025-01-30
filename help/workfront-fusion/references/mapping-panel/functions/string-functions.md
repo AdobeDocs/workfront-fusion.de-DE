@@ -4,9 +4,9 @@ description: Die folgenden Zeichenfolgenfunktionen sind im Bedienfeld "Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Reguläre Ausdrücke (in `/.../` eingeschlossen) können als Suchzeichenfolge ve
 
 **Beispiel:**
 
-![](assets/replace---1-350x31.png)
+![Ersetzen](assets/replace---1-350x31.png)
 
 Alle diese Zahlen X X X X werden durch X ersetzt
 
@@ -121,11 +121,11 @@ Die Ersatzzeichenfolge kann die folgenden speziellen Ersetzungsmuster enthalten:
 
 **Beispiele:**
 
-![](assets/variable-value-350x63.png)
+![Variablenwert](assets/variable-value-350x63.png)
 
 Gibt zurück: Telefonnummer `+420777111222`
 
-![](assets/variable-value---2-350x55.png)
+![Variablenrückgabe](assets/variable-value---2-350x55.png)
 
 Gibt zurück: Telefonnummer: `+420777111222`
 

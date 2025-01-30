@@ -4,9 +4,9 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 9e560995ff9f58a76bbecc521f7d2eef9d47fa48
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -84,11 +84,11 @@ Sie können ein [!DNL Microsoft Word Template]-Modul verwenden, um Daten aus meh
 
 Sie können beispielsweise diese [!DNL Microsoft Word] verwenden:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
+![Word-Vorlage vor](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
 
 So erstellen Sie dieses Dokument:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
+![Word-Vorlage ausgefüllt](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
 
 ## Über Wert-Tags
 
@@ -110,7 +110,7 @@ Ein einfaches Wert-Tag wird einfach durch einen entsprechenden Wert ersetzt. Der
 
 Richten Sie dazu das Modul wie folgt ein:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
+![Einfacher Wert der Word-Vorlage](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
 
 ### Bedingungs-Tag {#condition-tag}
 
@@ -125,7 +125,7 @@ Sie können ein Bedingungs-Tag verwenden, um Text einzuschließen, der nur geren
 
 Richten Sie dazu das Modul wie folgt ein:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
+![Word-Vorlage bedingt](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
 
 Im Dokument würde die Telefonnummer wie folgt angezeigt:
 
@@ -148,7 +148,7 @@ Sie können ein Schleifen-Tag, auch als Abschnittstags bezeichnet, verwenden, um
 Richten Sie dazu das Modul wie folgt ein:
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
+![Füllen Sie ein Dokument aus](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
 
 Das Modul würde das folgende Dokument erstellen:
 

@@ -4,9 +4,9 @@ description: Szenario-Details in [!DNL Adobe Workfront Fusion]
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '539'
 ht-degree: 1%
 
 ---
@@ -77,11 +77,11 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
    Oder
 
-   Wenn Sie im Szenario-Editor an dem Szenario arbeiten, klicken Sie auf den linken Pfeil ![](assets/exit-editing-arrow.png) der oberen linken Ecke des Fensters.
+   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil „Bearbeitung beenden](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
 1. Auf der angezeigten Seite können Sie die in der folgenden Tabelle aufgelisteten Elemente überprüfen:
 
-   ![](assets/scenario-detail-350x207.png)
+   ![Szenario-Detail](assets/scenario-detail-350x207.png)
 
    <table style="table-layout:auto"> 
     <col> 

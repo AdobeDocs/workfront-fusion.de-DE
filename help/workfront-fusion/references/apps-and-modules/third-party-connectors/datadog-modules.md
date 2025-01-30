@@ -4,9 +4,9 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -213,10 +213,10 @@ URL: `/v1/dashboard`
 
 Methode: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
+![Beispiel für einen Datadog-API-Aufruf](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
 
 Das Ergebnis finden Sie in der Modulausgabe unter Bundle > Hauptteil > Dashboards.
 
 In unserem Beispiel wurden drei Dashboards zurückgegeben:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
+![Datadog-API-Antwort](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)

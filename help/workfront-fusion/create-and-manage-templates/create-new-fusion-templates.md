@@ -4,9 +4,9 @@ description: Sie können neue Szenariovorlagen in  [!DNL Adobe] Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: 9cb9bd04-e9ae-4162-a1b9-d71566582b7a
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -71,16 +71,16 @@ Sie können eine Vorlage in einem Prozess erstellen, der dem Erstellen eines Sze
 
 ### Erstellen einer Vorlage
 
-1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Templates]** ![](assets/templates-icon.png) .
+1. Klicken Sie **[!UICONTROL Templates]** linken ](assets/templates-icon.png) auf ![Vorlagensymbol).
 1. Klicken Sie oben rechts auf **[!UICONTROL Create a new template]** .
 1. (Optional) Benennen Sie die Vorlage um, indem Sie die **[!UICONTROL New template name]** in der oberen linken Ecke ersetzen.
-1. (Optional) Um die Sprache Ihrer Vorlage zu ändern, klicken Sie auf **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) und wählen Sie die Sprache aus der Dropdown-Liste Sprache aus.
+1. (Optional) Um die Sprache Ihrer Vorlage zu ändern, klicken Sie auf **[!UICONTROL Set up a template]** ![Symbol Szenarioeinstellungen](assets/scenario-settings-icon.png) und wählen Sie die Sprache aus der Dropdown-Liste Sprache aus.
 
    >[!IMPORTANT]
    >
    >Die Sprachauswahl entspricht den in den Systemeinstellungen verfügbaren Sprachen und betrifft nur den Namen der öffentlichen Vorlage und deren Beschreibung. Sie können eine Vorlagensprache nicht mehr ändern, nachdem die Vorlage gespeichert wurde.
 
-1. (Optional) Um eine Beschreibung der Vorlage einzugeben, klicken Sie auf **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) und geben Sie die Beschreibung ein.
+1. (Optional) Um eine Beschreibung der Vorlage einzugeben, klicken Sie auf **[!UICONTROL Set up a template]** ![Symbol Szenario-Einstellungen](assets/scenario-settings-icon.png) und geben Sie die Beschreibung ein.
 1. Fügen Sie Apps, Module und Tools hinzu, wobei dieselben Prozesse verwendet werden wie beim Hinzufügen von Modulen zu einem Szenario.
 
    Anweisungen finden Sie in den Artikeln unter [Module hinzufügen](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -94,7 +94,7 @@ Sie können eine Vorlage in einem Prozess erstellen, der dem Erstellen eines Sze
    >Wenn Ihre Vorlage Module enthält, für die das Hinzufügen der Verbindung, der Anmeldeinformationen oder anderer vertraulicher Informationen zum Datenschutz erforderlich ist, werden diese Informationen nicht für die Vorlagenbenutzer freigegeben.
 
 1. (Optional) Klicken Sie auf **[!UICONTROL Run once]** , um Ihre Vorlage zu testen.
-1. Klicken Sie auf das **[!UICONTROL Save]** Symbol ![](assets/save-icon.png) , um die Vorlage zu speichern.
+1. Klicken Sie auf das **[!UICONTROL Save]**-Symbol ![Speichersymbol](assets/save-icon.png), um die Vorlage zu speichern.
 
 Wenn Sie Ihre Vorlage speichern, wird sie für Ihre Team-Mitglieder sichtbar. Wenn Sie möchten, dass Ihre Vorlage außerhalb Ihres Teams zugänglich ist, müssen Sie eine Anfrage einreichen, um sie genehmigen und veröffentlichen zu lassen. Die Anfrage wird zur Genehmigung an das Adobe Workfront Fusion-Team gesendet. Nach der Genehmigung ist die Vorlage für andere Benutzer außerhalb Ihres Teams zugänglich.
 
@@ -113,13 +113,13 @@ Informationen zum Veröffentlichen von Vorlagen finden Sie unter [Publish und Fr
 
    Das Szenario wird in eine neue Vorlagenseite kopiert.
 1. (Optional) Benennen Sie die Vorlage um, indem Sie die **[!UICONTROL New template name]** in der oberen linken Ecke ersetzen.
-1. (Optional) Um die Sprache Ihrer Vorlage zu ändern, klicken Sie auf **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) und wählen Sie die Sprache aus der Dropdown-Liste Sprache aus.
+1. (Optional) Um die Sprache Ihrer Vorlage zu ändern, klicken Sie auf **[!UICONTROL Set up a template]** ![Symbol Szenarioeinstellungen](assets/scenario-settings-icon.png) und wählen Sie die Sprache aus der Dropdown-Liste Sprache aus.
 
    >[!IMPORTANT]
    >
    >Die Sprachauswahl entspricht den in den Systemeinstellungen verfügbaren Sprachen und betrifft nur den Namen der öffentlichen Vorlage und deren Beschreibung. Sie können eine Vorlagensprache nicht mehr ändern, nachdem die Vorlage gespeichert wurde.
 
-1. (Optional) Um eine Beschreibung der Vorlage einzugeben, klicken Sie auf **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) und geben Sie die Beschreibung ein.
+1. (Optional) Um eine Beschreibung der Vorlage einzugeben, klicken Sie auf **[!UICONTROL Set up a template]** ![Symbol Szenario-Einstellungen](assets/scenario-settings-icon.png) und geben Sie die Beschreibung ein.
 1. Bearbeiten Sie Apps, Module und Tools nach Bedarf, indem Sie dieselben Prozesse verwenden wie beim Hinzufügen von Modulen zu einem Szenario.
 
    Anweisungen finden Sie in den Artikeln unter [Module hinzufügen](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -131,7 +131,7 @@ Informationen zum Veröffentlichen von Vorlagen finden Sie unter [Publish und Fr
    >Wenn Ihre Vorlage Module enthält, für die das Hinzufügen der Verbindung, der Anmeldeinformationen oder anderer vertraulicher Informationen zum Datenschutz erforderlich ist, werden diese Informationen nicht für die Vorlagenbenutzer freigegeben.
 
 1. (Optional) Klicken Sie auf **[!UICONTROL Run once]** , um Ihre Vorlage zu testen.
-1. Klicken Sie auf das **[!UICONTROL Save]**-Symbol ![](assets/save-icon.png).
+1. Klicken Sie auf das **[!UICONTROL Save]**-Symbol ![Speichersymbol](assets/save-icon.png).
 
 ## Einrichten [!UICONTROL Wizard] Funktionen {#set-up-wizard-functionality}
 

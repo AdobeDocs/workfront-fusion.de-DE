@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: 86b0d7b16a4ed7e15888f6ee1a58f0279e96fb70
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,13 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL All Templates]** .
 1. Klicken Sie rechts neben der Vorlage, die Sie bearbeiten möchten, auf **[!UICONTROL Detail]** .
 1. (Optional) Benennen Sie die Vorlage um, indem Sie **Optionen** in der oberen rechten Ecke klicken und **Umbenennen** auswählen.
-1. (Optional) Um die Sprache Ihrer Vorlage zu ändern, klicken Sie auf **[!UICONTROL Create a new template]** ![](assets/fusion-scenario-settings-icon.png) und wählen Sie die Sprache aus der Dropdown-Liste Sprache aus.
+1. (Optional) Um die Sprache Ihrer Vorlage zu ändern, klicken Sie auf **[!UICONTROL Create a new template]** ![Symbol Szenario-Einstellungen](assets/fusion-scenario-settings-icon.png) und wählen Sie die Sprache aus der Dropdownliste Sprache aus.
 
    >[!IMPORTANT]
    >
    >Die Sprachauswahl entspricht den in den Systemeinstellungen verfügbaren Sprachen und betrifft nur den Namen der öffentlichen Vorlage und deren Beschreibung. Sie können eine Vorlagensprache nicht mehr ändern, nachdem die Vorlage gespeichert wurde.
 
-1. (Optional) Um die Vorlagenbeschreibung zu bearbeiten, klicken Sie auf **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png) und geben Sie die Beschreibung ein.
+1. (Optional) Um die Vorlagenbeschreibung zu bearbeiten, klicken Sie auf **[!UICONTROL Set up a template]** ![Symbol Szenario-Einstellungen](assets/fusion-scenario-settings-icon.png) und geben Sie die Beschreibung ein.
 1. Fügen Sie Apps, Module und Tools auf die gleiche Weise hinzu oder bearbeiten Sie sie wie beim Erstellen eines Standardszenarios.
 
    Informationen zum Hinzufügen von kontextueller Hilfe zu den Modulen finden Sie unter [Einrichten [!UICONTROL Wizard] Funktionen](#set-up-wizard-functionality) in diesem Artikel.
@@ -91,7 +91,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    >Wenn Ihre Vorlage Module enthält, für die das Hinzufügen der Verbindung, der Anmeldeinformationen oder anderer vertraulicher Informationen zum Datenschutz erforderlich ist, werden diese Informationen nicht für die Vorlagenbenutzer freigegeben.
 
 1. (Optional) Klicken Sie auf **[!UICONTROL Run once]** , um die Vorlage zu testen.
-1. Klicken Sie auf das **[!UICONTROL Save]**-Symbol ![](assets/save-icon.png).
+1. Klicken Sie auf das **[!UICONTROL Save]**-Symbol ![Speichersymbol](assets/save-icon.png).
 
 
 ## Einrichten [!UICONTROL Wizard] Funktionen

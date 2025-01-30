@@ -4,9 +4,9 @@ description: Mit dem Router-Modul können Sie Ihren Fluss in mehrere Routen verz
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -71,13 +71,13 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 1. Klicken Sie im Szenario-Editor auf den rechten Griff des Moduls, nach dem Sie den Router hinzufügen möchten.
 1. Wählen Sie **[!UICONTROL Flow Control]** > **Router** in der angezeigten Modulliste aus.
 
-   ![](assets/connect-the-router-350x108.png)
+   ![Route verbinden](assets/connect-the-router-350x108.png)
 
    Oder
 
    Um das Router-Modul zwischen zwei Modulen einzufügen, klicken Sie auf das Schraubenschlüssel-Symbol unter der Route, die die beiden Module verbindet, und wählen Sie **[!UICONTROL Add a router]** aus dem Menü.
 
-   ![](assets/insert-router-350x191.png)
+   ![Router einfügen](assets/insert-router-350x191.png)
 1. Fügen Sie dem Router die erste Route hinzu, indem Sie auf den rechten Griff des Routers klicken und ein Modul hinzufügen, ähnlich wie beim Hinzufügen eines beliebigen Moduls.
 1. Um eine weitere Route hinzuzufügen, klicken Sie auf das Routermodul. Eine Route wird angezeigt. Fügen Sie dieser Route nach Bedarf Module hinzu.
 
@@ -125,13 +125,13 @@ Sie können im Filterbedienfeld eine Ausweichroute aktivieren.
 1. Fügen Sie im Feld Titel des angezeigten Bedienfelds einen Titel hinzu. Diese Beschriftung wird im Szenario angezeigt.
 1. Aktivieren Sie das Kontrollkästchen Fallback-Route .
 
-   ![](assets/fallback-route-350x260.png)
+   ![Fallback-Route](assets/fallback-route-350x260.png)
 
 1. Klicken Sie auf **[!UICONTROL OK]** , um die Filtereinrichtung zu speichern.
 
 Die Ausweichroute wird im Router-Modul mit einem anderen Pfeil gekennzeichnet:
 
-![](assets/arrow-sign-in-router-module-350x361.png)
+![Arrow-Anmelde-Router](assets/arrow-sign-in-router-module-350x361.png)
 
 ## Beispiel: `if/else` Anwendungsfall
 
@@ -141,10 +141,10 @@ Ein typischer Anwendungsfall der Ausweichroute besteht darin, den Fluss mit eine
 
 In diesem Beispiel wird die erste Route mit einem Filter konfiguriert. Dies stellt die `if` dar.
 
-![](assets/set-up-a-filter-2-350x242.png)
+![Richten Sie einen Filter in der Route ein](assets/set-up-a-filter-2-350x242.png)
 
 Die zweite Route ist als Ausweichroute konfiguriert. Dies stellt die `else` dar.
 
-![](assets/enable-fallback-route-option-350x238.png)
+![Fallback-Option aktivieren](assets/enable-fallback-route-option-350x238.png)
 
 >[!ENDSHADEBOX]

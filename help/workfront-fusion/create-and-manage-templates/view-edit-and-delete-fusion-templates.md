@@ -7,9 +7,9 @@ description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: a252de430a3c712c48c1677433ce6176292bc6ce
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Anweisungen zum Erstellen eines Szenarios aus einer Vorlage finden Sie unter [Er
 
 Sie können alle Vorlagen bearbeiten, die auf der Registerkarte [!UICONTROL Team templates] verfügbar sind.
 
-1. Klicken Sie auf das **[!UICONTROL Templates]**-Symbol ![](assets/templates-icon.png) im seitlichen Navigationsmenü.
+1. Klicken Sie im seitlichen Navigationsmenü auf ![Vorlagensymbol](assets/templates-icon.png) (**[!UICONTROL Templates]**).
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Team templates]** .
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Private]** .
 1. Klicken Sie auf die Vorlage, die Sie bearbeiten möchten.
@@ -128,7 +128,7 @@ Sie können alle Vorlagen bearbeiten, die auf der Registerkarte [!UICONTROL Team
    Klicken Sie auf das Vorlagendiagramm.
 
 1. Nehmen Sie Änderungen in der Vorlage vor. Sie können auf alle Optionen zugreifen, die beim Erstellen der Vorlage verfügbar waren. Informationen zu diesen Optionen finden Sie unter [Erstellen neuer Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md).
-1. Klicken Sie auf das **[!UICONTROL Save]**-Symbol ![](assets/save-icon.png).
+1. Klicken Sie auf das **[!UICONTROL Save]**-Symbol ![Speichersymbol](assets/save-icon.png).
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Sie können nur Vorlagen löschen, die noch nicht genehmigt sind. Wenn Sie eine 
 
 Beachten Sie, dass eine Vorlage nach dem Löschen nicht wiederhergestellt werden kann. Teamvorlagen sind für alle Mitglieder Ihres Teams verfügbar. Bevor Sie also eine Vorlage löschen, sollten Sie sich an Ihre Teams wenden, um sicherzustellen, dass die Vorlage nicht benötigt wird.
 
-1. Klicken Sie auf das **[!UICONTROL Templates]**-Symbol ![](assets/templates-icon.png) im seitlichen Navigationsmenü.
+1. Klicken Sie im seitlichen Navigationsmenü auf ![Vorlagensymbol](assets/templates-icon.png) (**[!UICONTROL Templates]**).
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Team templates]** .
 1. Klicken Sie **[!UICONTROL Delete]** neben dem Vorlagennamen
 

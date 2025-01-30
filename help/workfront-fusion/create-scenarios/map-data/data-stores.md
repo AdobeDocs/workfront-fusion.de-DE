@@ -4,9 +4,9 @@ description: Ein Datenspeicher, ähnlich einer Datenbank oder einer einfachen Ta
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1215'
 ht-degree: 1%
 
 ---
@@ -197,8 +197,8 @@ Sie können die Eigenschaften und Inhalte eines vorhandenen Datenspeichers im [!
 
 Zu den Eigenschaften eines Datenspeichers gehören die Datenstruktur, die der Datenspeicher verwendet, sowie die Größe des Datenspeichers.
 
-1. Klicken Sie auf **[!UICONTROL Data stores]** ![](assets/data-store-icon.png) im linken Navigationsbereich, um den [!UICONTROL Data stores] zu öffnen.
-1. Klicken Sie auf **[!UICONTROL Edit]** ![](assets/data-store-edit.png) neben dem Datenspeicher, den Sie bearbeiten möchten.
+1. Klicken Sie **[!UICONTROL Data stores]** linken ](assets/data-store-icon.png) auf ![Datenspeichersymbol), um den [!UICONTROL Data stores] zu öffnen.
+1. Klicken Sie **[!UICONTROL Edit]** ![Datenspeicher bearbeiten](assets/data-store-edit.png) neben dem Datenspeicher, den Sie bearbeiten möchten.
 1. (Optional) Wenn Sie die von diesem Datenspeicher verwendete Datenstruktur in eine andere vorhandene Datenstruktur ändern möchten, wählen Sie sie aus der Dropdown-Liste **[!UICONTROL Data structure]** aus.
 
    Oder
@@ -210,7 +210,7 @@ Zu den Eigenschaften eines Datenspeichers gehören die Datenstruktur, die der Da
 
 ### Bearbeiten des Inhalts eines Datenspeichers
 
-1. Klicken Sie auf das **[!UICONTROL Data Store]**-Symbol ![](assets/data-store-icon.png) im linken Navigationsbereich, um den [!UICONTROL Data Store] zu öffnen.
+1. Klicken Sie im linken Navigationsbereich auf das **[!UICONTROL Data Store]** ![Datenspeichersymbol](assets/data-store-icon.png), um den [!UICONTROL Data Store] zu öffnen.
 1. Klicken Sie **[!UICONTROL Browse]** neben dem Datenspeicher, den Sie bearbeiten möchten.
 1. (Optional) Sortieren Sie die Spalten neu, indem Sie sie an die gewünschte Position ziehen.
 1. (Optional) [!UICONTROL Edit] Sie eine einzelne Zelle, indem Sie auf das **[!UICONTROL Edit]** in dieser Zelle klicken und dann den gewünschten Wert eingeben.

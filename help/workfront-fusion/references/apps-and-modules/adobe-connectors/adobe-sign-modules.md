@@ -4,9 +4,9 @@ description: Mit den  [!DNL Adobe Acrobat Sign] -Modulen können Sie ein  [!DNL 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5488'
+source-wordcount: '5501'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Neue Benutzer in [!DNL Adobe Sign] sollten einige der Einschränkungen bei der A
 
 [!DNL Adobe Sign] brauchen ein Feld, mit dem Sie arbeiten können. Es gibt einige Optionen dafür, aber die einfachste und häufigste ist das Hochladen eines vorübergehenden Dokuments und das anschließende Zuordnen dieses Dokuments zu Ihrer Vereinbarung.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![Adobe Sign-Empfehlungen](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## [!DNL Adobe Acrobat Sign] Module und ihre Felder
 
@@ -941,11 +941,11 @@ Laden Sie ein vorübergehendes Dokument hoch. Ein vorübergehendes Dokument steh
 
 **Beispiel** In diesem Workflow wird das zu signierende Dokument (zuvor von Workfront heruntergeladen) als vorübergehendes Dokument hochgeladen.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
+(/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
 
 Das [!UICONTROL Upload document]-Modul gibt dem Dokument eine [!DNL Adobe Acrobat Sign]-ID, die in späteren Modulen referenziert werden kann. Wenn die Vereinbarung erstellt wird, wird die ID des hochgeladenen Dokuments in das Feld [!UICONTROL Files to send] eingefügt.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
+![Sign-Beispiel](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
 +++
 

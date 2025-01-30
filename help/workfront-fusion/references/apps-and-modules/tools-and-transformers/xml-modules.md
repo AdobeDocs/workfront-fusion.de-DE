@@ -4,9 +4,9 @@ description: Die XML-App ermöglicht es, einen im XML-Format formatierten Text m
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1302'
 ht-degree: 2%
 
 ---
@@ -95,7 +95,7 @@ Das Modul [!UICONTROL XML] > [!UICONTROL Parse XML] analysiert einen XML-formati
 >
 >   **URL**: URL der XML-Datei (z. B. `https://siftrss.com/f/rqLy05ayMBJ`)
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+>   ![Beispiel für URL einer XML-Datei](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 >
 >1. Klicken Sie auf **[!UICONTROL OK]**&#x200B;, um die Konfiguration des Moduls zu speichern und zu schließen.
 1. Fügen Sie das Modul [!UICONTROL XML] > [!UICONTROL Parse XML] hinzu, verbinden Sie es nach dem Modul [!UICONTROL HTTP] > [!UICONTROL Get a file] und konfigurieren Sie es wie folgt:
@@ -143,7 +143,7 @@ Standardmäßig legt das Modul [!UICONTROL XML] > [!UICONTROL Parse XML] Attribu
 
 wird in dieses Bundle konvertiert:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![XML in Bundle konvertiert](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 ## XML erstellen
 
@@ -198,7 +198,7 @@ Die Einrichtung des Moduls erfordert eine Datenstruktur, die die Struktur der XM
 >
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Generator]** und fügen Sie Ihr XML-Beispiel in das Feld [!UICONTROL Sample data] ein:
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+![Beispieldatenfeld](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 >
 1. Klicken Sie auf **[!UICONTROL Save]**. Das Feld Spezifikation in der Datenstruktur enthält jetzt die generierte Struktur.
 1. Ändern Sie den Namen Ihrer Datenstruktur in etwas Spezifischeres und klicken Sie auf **[!UICONTROL Save]**. Ein Feld, das dem Stamm-Array-Attribut entspricht, wird im Setup des JSON-Moduls als zuordnungsfähiges Feld angezeigt.

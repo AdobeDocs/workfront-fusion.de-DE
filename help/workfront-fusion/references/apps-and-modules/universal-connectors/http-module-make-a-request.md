@@ -4,9 +4,9 @@ description: Das Adobe Workfront Fusion HTTP &gt; Make a Request-Modul ist ein u
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 4377870d9441a3e84c51a547f17f154a78fb8f59
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 >
 >**Beispiel:** Dieses Beispiel zeigt, wie Sie das Modul so einrichten, dass es eine [!UICONTROL POST]-Anfrage mit JSON-Payload sendet:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+>![Beispiel für eine Anfrage](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: Bei einigen Trigger-Modulen können Sie das erste Bundle auswählen
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
    Klicken Sie mit der rechten Maustaste auf das Symbol für das Modul Trigger und wählen Sie **Startpunkt auswählen**.
 
-   ![](assets/choose-where-to-start.png)
+   ![Wählen Sie, wo Sie beginnen möchten](assets/choose-where-to-start.png)
 
 1. Wählen Sie im angezeigten **[!UICONTROL Choose where to start]** eine Option aus.
 

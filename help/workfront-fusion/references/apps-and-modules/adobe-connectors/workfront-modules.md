@@ -4,9 +4,9 @@ description: Sie können den Adobe Workfront Fusion Adobe Workfront-Connector ve
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '6208'
+source-wordcount: '6213'
 ht-degree: 3%
 
 ---
@@ -2068,7 +2068,7 @@ Die folgenden Operatoren sind im Filter Workfront > Ereignisse beobachten verfü
 >
 >Mit dem Ereignisfilter können Sie den Webhook so einrichten, dass der Trigger für das Szenario erstellt wird, wenn ein Problem Ana zugewiesen wird, wenn das Problem erstellt wird. Ana hat die userID b378489d8f7cd3cee0539260720a84b7.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
+>![Ereignisfilter](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
 >
 >Wenn an einem Tag 100 Probleme erstellt werden, aber nur zwei davon Ana zugewiesen sind, wird das Szenario zweimal ausgeführt.
 >
@@ -2076,7 +2076,7 @@ Die folgenden Operatoren sind im Filter Workfront > Ereignisse beobachten verfü
 >
 >Um Ereignisse so zu filtern, dass nur Ana zugewiesene Probleme verarbeitet werden, können Sie nach dem [!UICONTROL Watch Events]-Modul einen Filter erstellen.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
+>![Ohne Ereignisfilter](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >
 >Wenn an einem Tag 100 Probleme erstellt werden, aber nur zwei davon Ana zugewiesen sind, wird das Szenario 100-mal ausgeführt. 98 der Ausführungen würden am Trigger anhalten, aber das Filtermodul verbraucht weiterhin Daten und führt Vorgänge in allen Ausführungen aus.
 

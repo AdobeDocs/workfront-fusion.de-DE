@@ -4,9 +4,9 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3314'
 ht-degree: 0%
 
 ---
@@ -829,7 +829,7 @@ Sie können ein Szenario zu einer bestimmten Zeit vor einem Ereignis mithilfe vo
 
 1. Verwenden Sie das Modul [!UICONTROL Google Calendar] >[!UICONTROL Update an event] , um eine E-Mail-Erinnerung zu Ihrem Ereignis hinzuzufügen:
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
+   ![Ereignisszenario vor Trigger ](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. Erstellen Sie ein neues Szenario, das mit dem Modul [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook] beginnt.
 
@@ -847,11 +847,11 @@ Sie können ein Szenario zu einer bestimmten Zeit vor einem Ereignis mithilfe vo
    1. Klicken Sie auf die Blase über dem Modul, um die Ausgabe des Moduls zu überprüfen.
    1. Erweitern Sie das `Text` und kopieren Sie den Bestätigungs-Code:
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
+      ![Bestätigungs-Code](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. Fügen Sie in Gmail den Bestätigungs-Code in das Bearbeitungsfeld ein und klicken Sie auf&#x200B;**[!UICONTROL Verify]**:
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
+      ![Code einfügen](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. Öffnen Sie die Registerkarte **[!UICONTROL Filters and Blocked Addresses]** .
    1. Klicken Sie auf **[!UICONTROL Create a new filter]**.

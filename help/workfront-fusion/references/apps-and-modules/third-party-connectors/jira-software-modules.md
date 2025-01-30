@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1883'
 ht-degree: 1%
 
 ---
@@ -186,7 +186,7 @@ Um einen privaten Schlüssel für Ihre [!DNL Workfront Fusion Jira]-Verbindung z
 #### Konfigurieren der Client-App als Verbraucher in [!DNL Jira]
 
 1. Melden Sie sich bei Ihrer [!DNL Jira] an.
-1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL [!DNL Jira] Settings]** ![](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]** > **[!UICONTROL Application links]**.
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL [!DNL Jira] Settings]** ![Jira settings icon](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]** > **[!UICONTROL Application links]**.
 1. Geben Sie in das Feld **[!UICONTROL Enter the URL of the application you want to link]** ein.
 
    ```

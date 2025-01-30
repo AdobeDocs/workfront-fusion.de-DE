@@ -4,9 +4,9 @@ description: In einigen Szenarien müssen Sie nur mit Bundles arbeiten, die best
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Sie müssen beide Module zu einem Szenario hinzufügen, bevor Sie einen Filter z
 
    Wenn der Filter beispielsweise Dateien in [!DNL Adobe Workfront] übergeben soll, die mit XML enden, geben Sie **[!UICONTROL File name]** in das erste Feld ein und .**[!UICONTROL xml]** im zweiten Kästchen. Im Dropdown-Menü zwischen ihnen würden Sie **[!UICONTROL Ends with (case insensitive)]** auswählen. Dieser Filter würde für eingehende Bundles des ersten Moduls (Workfront) gelten. Nur Bundles mit XML-Dateien würden an das nächste Modul weitergegeben.
 
-   ![](assets/set-up-filter-box.png)
+   ![Filter einrichten](assets/set-up-filter-box.png)
 
 1. Klicken Sie auf **[!DNL OK]**.
 
@@ -110,7 +110,7 @@ Um einen Filter zu kopieren, ohne Module zu kopieren, können Sie das Fusion Dev
 
    Wenn das DevTool-Symbol nicht angezeigt wird, finden Sie unter [Debuggen eines Szenarios](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) Anweisungen zum Öffnen des DevTools.
 
-1. Klicken Sie auf das **[!UICONTROL Tools]**-Symbol ![](assets/devtools-tools-icon.png) in der linken Seitenleiste.
+1. Klicken Sie auf das **[!UICONTROL Tools]**-Symbol ![DevTool](assets/devtools-tools-icon.png) in der linken Seitenleiste.
 
 1. Klicken Sie auf **[!UICONTROL Copy Filter]** und konfigurieren Sie dann das **[!UICONTROL Copy Filter]**-Tool im rechten Bedienfeld:
 

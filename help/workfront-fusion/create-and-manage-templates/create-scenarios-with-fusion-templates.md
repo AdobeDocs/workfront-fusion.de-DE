@@ -4,9 +4,9 @@ description: Mit der Funktion "Adobe Workfront FusionTemplates“ können Sie be
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Sie müssen eine Vorlage erstellen, bevor Sie sie verwenden können.
 
 ## Erstellen eines Szenarios aus einer Vorlage
 
-1. Klicken Sie auf das **[!UICONTROL Templates]**-Symbol ![](assets/templates-icon.png) linken Navigationsbereich.
+1. Klicken Sie im linken Navigationsbereich auf das **[!UICONTROL Templates]** ![Vorlagensymbol](assets/templates-icon.png).
 1. Klicken Sie auf die Registerkarte, die die Vorlage enthält, die Sie verwenden möchten (öffentliche Vorlagen oder Teamvorlagen).
 1. Klicken Sie auf die Vorlage, die Sie verwenden möchten, um mit der Erstellung eines Szenarios zu beginnen. Sie können das Suchfeld in der oberen rechten Ecke verwenden, um die Vorlage anhand ihres Namens oder des Namens der darin enthaltenen App zu finden.
 1. (Bedingt) Wenn Sie Mitglied mehrerer Organisationen oder Teams sind, wählen Sie die Organisation oder das Team aus, für die Sie Ihr Szenario erstellen möchten, und klicken Sie auf **[!UICONTROL Continue]**.
@@ -78,4 +78,4 @@ Sie müssen eine Vorlage erstellen, bevor Sie sie verwenden können.
 
    Informationen zum Erstellen eines Szenarios finden Sie unter [Workflow zum Erstellen eines Szenarios](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
-1. Klicken Sie auf das **[!UICONTROL Save]** Symbol ![](assets/save-icon.png) , um Ihr Szenario zu speichern. Das Szenario wird im Szenario-Bereich von Workfront Fusion gespeichert.
+1. Klicken Sie auf das **[!UICONTROL Save]** Symbol ![Speichern](assets/save-icon.png), um Ihr Szenario zu speichern. Das Szenario wird im Szenario-Bereich von Workfront Fusion gespeichert.

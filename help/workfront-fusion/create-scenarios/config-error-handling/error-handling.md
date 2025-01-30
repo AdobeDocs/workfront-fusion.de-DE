@@ -4,9 +4,9 @@ description: Wenn bei der Ausführung eines Szenarios Fehler auftreten, liegt di
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ So fügen Sie einem Modul einen Fehler-Handler hinzu:
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Klicken Sie mit der rechten Maustaste auf das Modul, dem Sie eine Fehler-Handler-Route hinzufügen möchten, und wählen Sie **[!UICONTROL Add error handler]**:
 
-   ![](assets/error-handler-route.png)
+   ![Fehler-Handler-Route](assets/error-handler-route.png)
 
    Dem Modul wird eine Fehler-Handler-Route hinzugefügt. Wenn das Modul das letzte Modul in einer Route ist, folgt der Fehler-Handler direkt dem Modul. Wenn das Modul danach weitere Module hat, wird eine separate Fehler-Handler-Route hinzugefügt.
 

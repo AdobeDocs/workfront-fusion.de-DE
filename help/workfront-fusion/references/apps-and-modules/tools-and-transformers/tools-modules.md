@@ -4,9 +4,9 @@ description: Der  [!DNL Adobe Workfront Fusion Tools]  enthält mehrere nützlic
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Der [!DNL Adobe Workfront Fusion Tools] Abschnitt enthält mehrere nützliche Module, die Ihr Szenario verbessern können.
 
-[!UICONTROL Tools] Module sind in der Liste der Apps oder über das [!UICONTROL Tools]-Symbol ![](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) am unteren Bildschirmrand verfügbar.
+[!UICONTROL Tools] Module sind in der Liste der Apps oder über das [!UICONTROL Tools]-Symbol ![Werkzeugsymbol](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) am unteren Bildschirmrand verfügbar.
 
 ## Zugriffsanforderungen
 
@@ -161,14 +161,14 @@ Dieses Modul kann verwendet werden, um eine „Round Robin“-Zuweisung von Aufg
 
 Im folgenden Szenario wird nach jeder Ausführung eines Szenarios mit ungeraden Zahlen eine E-Mail an den ersten Empfänger und nach jeder Ausführung eines Szenarios mit geraden Zahlen an den zweiten Empfänger gesendet.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![Beispiel-E-Mail](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 So erstellen Sie dieses Szenario:
 
 1. Setzen Sie das **[!UICONTROL Reset a value]** des Moduls auf Nie.
 1. Route für ungerade Werte festlegen Den Filter für diese Route mit der Modulusmathematikfunktion festlegen, die `1` entspricht:
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![Ungerade Zahlen](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
 **Hinweis**: Vergessen Sie nicht, den [!UICONTROL Equal to]-Operator vom Standardoperator [!UICONTROL Text] zum [!UICONTROL Numeric]-Operator zu ändern.
 

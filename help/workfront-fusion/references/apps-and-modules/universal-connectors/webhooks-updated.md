@@ -4,9 +4,9 @@ description: Ein Webhook ist ein HTTP-Aufruf, der von einem Ereignis ausgelöst 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: d5ab7dc135206a7269ad4fa0b5c02bf77b97d873
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Sie können die Beispieldaten auch über das Modul [!UICONTROL HTTP] > [!UICONTR
     </tbody> 
    </table>
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
+   ![Neues Szenario einrichten](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. Öffnen Sie das Szenario mit dem Modul [!UICONTROL Webhooks] in einer separaten Browser-Registerkarte oder einem separaten Fenster.
 1. Klicken Sie im Modul Webhooks auf **[!UICONTROL Redetermine data structure]**.
@@ -132,7 +132,7 @@ Sie können die Beispieldaten auch über das Modul [!UICONTROL HTTP] > [!UICONTR
 
    Eine &quot;[!UICONTROL Successfully determined]&quot;-Meldung bedeutet, dass das Modul die Datenstruktur erfolgreich ermittelt hat.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
+   ![Erfolgreich ermittelt](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
 1. Klicken Sie auf **[!UICONTROL OK]** , um die Datenstruktur zu speichern.
 
@@ -241,7 +241,7 @@ Sie können einen bestimmten Kopfzeilenwert mit der Kombination aus `map()`- und
 >
 >Das folgende Beispiel zeigt eine Formel, die den Wert der `authorization`-Kopfzeile aus dem `Headers[]`-Array extrahiert. Die Formel wird in einem Filter verwendet, der den extrahierten Wert mit dem angegebenen Text vergleicht, damit nur Webhooks übergeben werden, wenn eine Übereinstimmung vorliegt.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
+>![Filter einrichten](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
 >Weitere Informationen zum Abrufen eines Array-Elements mit einem bestimmten Schlüssel finden Sie unter [Zuordnen eines Array-Elements mit einem bestimmten Schlüssel](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key) im Artikel Zuordnen eines Arrays .
 
@@ -311,11 +311,11 @@ Die maximale Wartezeit für das Senden einer Antwort beträgt 40 Sekunden. Wenn 
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![Benutzerdefinierte Kopfzeilen](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >Dadurch wird eine HTML-Antwort erzeugt, die in einem Webbrowser angezeigt wird:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
+>![HEML-Antwort](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
 ### Redirect-Beispiel
 
@@ -342,7 +342,7 @@ Die maximale Wartezeit für das Senden einer Antwort beträgt 40 Sekunden. Wenn 
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
+>![Webhook-Antwort](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
 ## Webhook-Deaktiviert
 
@@ -360,6 +360,6 @@ Deaktivierte Webhooks werden automatisch gelöscht und von der Registrierung ent
 
 Wenn einige Elemente im Bedienfeld Zuordnung bei der Einrichtung der Module fehlen, die dem Modul [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] folgen, klicken Sie auf das Modul **[!UICONTROL Webhooks]>[!UICONTROL Custom Webhook]** , um das Modul zu öffnen, und klicken Sie auf **[!UICONTROL Re-determine data structure]**:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
+![Datenstruktur neu bestimmen](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Führen Sie dann die Schritte aus, die im Abschnitt [Konfigurieren der Datenstruktur des Webhooks](#configure-the-webhook-s-data-structure) in diesem Artikel beschrieben sind.

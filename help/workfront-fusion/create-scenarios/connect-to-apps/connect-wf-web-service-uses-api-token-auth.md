@@ -4,9 +4,9 @@ description: Einige Services lassen keine Integrationslösungen wie Adobe Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '958'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ Weitere Informationen zu den JSON-Modulen finden Sie unter [JSON-](/help/workfro
 
 1. Geben Sie die Werte ein, aus denen Sie JSON erstellen möchten, oder ordnen Sie sie zu.
 
-   ![](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
+   ![JSON-Werte](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
 
 1. Verbinden Sie das Modul JSON > JSON erstellen mit dem Modul HTTP > Anfrage stellen .
 1. Ordnen Sie die JSON-Zeichenfolge aus dem Modul JSON erstellen dem Inhaltsfeld Anfrage im Feld HTTP > Modul Anfrage erstellen zu.

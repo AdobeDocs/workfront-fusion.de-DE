@@ -7,9 +7,9 @@ description: Verwalten gesperrter Szenarien in [!DNL Adobe Workfront Fusion]
 author: Becky
 feature: Workfront Fusion
 exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -92,4 +92,4 @@ So entsperren Sie ein gesperrtes Szenario manuell:
 1. Klicken Sie oben rechts im Bildschirm auf **[!UICONTROL Options]** .
 1. Wählen Sie **[!UICONTROL Unlock execution]** aus.
 1. Klicken Sie auf **[!UICONTROL Unlock]**.
-   ![](assets/unlock-scenario.png)
+   ![Szenario entsperren](assets/unlock-scenario.png)

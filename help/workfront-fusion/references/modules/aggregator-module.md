@@ -4,9 +4,9 @@ description: Ein Aggregator-Modul ist ein Modultyp, der dazu dient, mehrere Date
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Wenn ein [!UICONTROL Aggregator] ausgeführt wird, bewirkt es Folgendes:
 
 Die folgende Abbildung zeigt eine typische Einrichtung des [!UICONTROL Aggregator] :
 
-![](assets/array-aggregator.png)
+![Array-Aggregator](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -113,7 +113,7 @@ Die folgende Abbildung zeigt eine typische Einrichtung des [!UICONTROL Aggregato
 
 Dieses Beispielszenario zeigt, wie Sie alle E-Mail-Anhänge komprimieren und die ZIP-Datei in [!DNL Dropbox] hochladen.
 
-![](assets/dropbox-archive.png)
+Beispiel für das ![Dropbox-Archiv](assets/dropbox-archive.png)
 
 Das folgende Szenario zeigt, wie man:
 
@@ -129,4 +129,4 @@ Das folgende Szenario zeigt, wie man:
 
 Nachfolgend finden Sie ein Beispiel für die Einrichtung des Aggregators [!UICONTROL Archive] > [!UICONTROL Create an archive]:
 
-![](assets/archive-create-an-archive.png)
+![Erstellen eines Archivs](assets/archive-create-an-archive.png)

@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Workfront Fusion ermöglicht die Automatisierung einfacher oder komplexer Workfl
 
 In diesem Beispiel tritt ein Trigger auf, wenn sich ein angegebenes Feld in einer Aufgabe oder einem Problem in [!DNL Workfront] ändert. Nach der Auslösung ruft das Szenario Informationen im zugehörigen Projekt ab und erstellt eine maßgeschneiderte Aktualisierung für eine Person, die einer bestimmten Rolle im Projekt zugewiesen wurde.
 
-![](assets/fusion-template-example.png)
+![Beispiel für eine Vorlage](assets/fusion-template-example.png)
 
 +++
 
@@ -90,7 +90,7 @@ Viele Anwendungen verfügen über dedizierte [!DNL Workfront Fusion]. Wenn für 
 
 In diesem Beispiel tritt beim Szenario ein Trigger auf, wenn ein(e) Benutzende(r) zu einer [!DNL Excel] Tabelle hinzugefügt wird. Das Szenario prüft, ob sich der Benutzer in [!DNL Workfront] befindet. Andernfalls wird der Benutzer in [!DNL Workfront] erstellt und seine Workfront-Benutzer-ID wird wieder in die Tabelle eingefügt.
 
-![](assets/fusion-integration-example.png)
+![Integrationsbeispiel](assets/fusion-integration-example.png)
 
 Eine Liste der dedizierten Connectoren finden Sie unter [Fusion-Programme und ihre Modulverweise: Artikelindex](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 

@@ -5,9 +5,9 @@ description: In diesem Artikel wird erläutert, wie ein Szenario ausgeführt wir
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Der erste Schritt des Szenarios, der vom ersten Modul ausgeführt wird, besteht 
 
 Wenn das erste Modul ein Bundle zurückgibt, durchläuft das Bundle den Rest des Szenarios. In diesem Beispiel würde das Bundle an das zweite Modul gehen, das die Anfrage in ein Projekt konvertiert.
 
-![](assets/example-execution-flow-wf-only.png)
+![Ausführungsfluss des Workfront-Szenarios](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ Der erste Schritt des Szenarios, der vom ersten Modul ausgeführt wird, besteht 
 
 Wenn ein Bundle zurückgegeben wird, durchläuft das Bundle den Rest des Szenarios. In diesem Beispiel besteht der Rest des Szenarios aus dem zweiten Modul , das das Bundle in den [!DNL Dropbox] Ordner hochlädt.
 
-![](assets/example-execution-flow-wf-dropbox.png)
+![Ausführungsfluss des Integrationsszenarios](assets/example-execution-flow-wf-dropbox.png)
 
 Wenn das erste Modul mehrere Bundles zurückgibt, wird das erste Bundle in [!DNL Dropbox] hochgeladen, bevor das zweite Bundle hochgeladen wird. Dann wird das zweite Bundle hochgeladen, dann das dritte und so weiter.
 
@@ -71,7 +71,7 @@ Für jedes Modul durchläuft das Bundle einen 4-stufigen Prozess, bevor es zum n
 
 Nach Abschluss eines Szenario-Durchgangs zeigt jedes Modul ein Symbol mit der Anzahl der ausgeführten Vorgänge an. Sie können auf dieses Symbol klicken, um die detaillierten Informationen zu den verarbeiteten Bundles für jeden Schritt im Prozess anzuzeigen. Sie können sehen, welche Moduleinstellungen verwendet wurden und welche Bundles von den einzelnen Modulen zurückgegeben wurden.
 
-![](assets/Info-processed-bundles.png)
+![Verarbeitete Bundles](assets/Info-processed-bundles.png)
 
 In diesem Beispiel erhielt das Modul Eingabeinformationen wie:
 

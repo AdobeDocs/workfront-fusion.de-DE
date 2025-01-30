@@ -4,9 +4,9 @@ description: Bei der Zuordnung werden die Ausgaben eines Moduls, strukturiert in
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ Wenn Sie auf ein Feld klicken, in das Sie einen Wert einfügen können, der von 
 
 Einzelnes Element
 
-![](assets/map-single.png)
+![Einzelnes Element zuordnen](assets/map-single.png)
 
 Mehrere Elemente mit Text
 
-![](assets/map-multiple-with-text.png)
+![Mehrere Elemente zuordnen](assets/map-multiple-with-text.png)
 
 Funktion mit mehreren Elementen und Text
 
-![](assets/map-formula-with-text.png)
+![Formel mit Text zuordnen](assets/map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -56,11 +56,11 @@ Anweisungen zum Zuordnen finden Sie in den Artikeln unter [Zuordnungsdaten: Arti
 
 Wenn Sie in ein Feld klicken, in dem Sie Daten zuordnen können, wird das Zuordnungsbedienfeld geöffnet.
 
-Auf der ersten Registerkarte ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) werden die Elemente angezeigt, die Sie aus anderen Modulen zuordnen können.
+Auf der ersten Registerkarte ![Aus anderen Modulen zuordnen](assets/toolbar-icon-functions-you-map-from-other-modules.png) werden die Elemente angezeigt, die Sie aus anderen Modulen zuordnen können.
 
 Die anderen Registerkarten umfassen Funktionen, Operatoren und Schlüsselwörter, die Sie zum Erstellen von Formeln verwenden können. Diese sind je nach Datentyp in verschiedene Registerkarten unterteilt.
 
-![](assets/mapping-panel-blank.png)
+![Zuordnungsbereich](assets/mapping-panel-blank.png)
 
 
 Weitere Informationen zu Funktionsregisterkarten finden Sie unter [Funktionsübersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
@@ -73,13 +73,13 @@ Elemente können mehrere Werte verschiedener Typen enthalten. Hierbei handelt es
 
 Bundles vom Typ Sammlung werden in der Modulausgabe `(Collection)` neben der Bundle-Beschriftung angezeigt.
 
-![](assets/collection.png)
+![Sammlung](assets/collection.png)
 
 In den meisten Fällen ordnen Sie die Elemente der Sammlung zu, anstatt das Element zuzuordnen, das die gesamte Sammlung darstellt.
 
 Um das Element einer Sammlung im Zuordnungsbereich zu finden, klicken Sie auf den Pfeil neben der Sammlung.
 
-![](assets/collection-dropdown.png)
+![Sammlungs-Dropdown](assets/collection-dropdown.png)
 
 Weitere Informationen zu Sammlungen finden Sie unter [Elementdatentypen](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -93,6 +93,6 @@ Bundles vom Typ Array werden `(Array)` neben der Bundle-Beschriftung in der Modu
 
 Im Zuordnungsbereich werden Arrays mit eckigen Klammern angezeigt. Ein Element vom Typ Array kann durch die eckigen Klammern am Ende der Beschriftung des Elements identifiziert werden. Um ein bestimmtes Array-Element im Zuordnungsbereich zu finden, klicken Sie auf den Pfeil neben dem Array.
 
-![](assets/array.png)
+![Array](assets/array.png)
 
 Informationen und Anweisungen zum Zuordnen von Arrays und Array-Elementen finden Sie unter [Zuordnen von Arrays und Array-Elementen](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

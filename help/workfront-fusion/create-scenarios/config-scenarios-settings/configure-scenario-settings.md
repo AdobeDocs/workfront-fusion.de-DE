@@ -5,9 +5,9 @@ description: Sie können bestimmte Einstellungen für Szenarien im Bedienfeld Sz
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3afa631a44c6dae8b1e6def6f842a9ced9de741e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Klicken Sie unten links auf der Seite auf das Zahnradsymbol.
 
-   ![](assets/scenario-settings-350x221.png)
+   ![Szenario-Einstellungen](assets/scenario-settings-350x221.png)
 
    Im angezeigten [!UICONTROL Scenario settings] können Sie verschiedene erweiterte Einstellungen für das Szenario konfigurieren.
 1. Aktivieren oder deaktivieren Sie die Szenario-Einstellungen nach Bedarf. Siehe [Optionen für Szenarioeinstellungen](#scenario-settings-options) unten.
@@ -162,13 +162,13 @@ Das Festlegen weiterer Zyklen kann nützlich sein, wenn Sie eine Verbindungsunte
 
 **Beispiele:** [!DNL Workfront] > [!UICONTROL Watch record] sucht nach neuen Problemen, die auftreten, und [!DNL Workfront] >[!UICONTROL Convert object] konvertiert die neue Anfrage in ein Projekt und weist ihr die entsprechende Vorlage zu.
 
-![](assets/scenario-settings-ex-1-350x157.png)
+![Szenario-Einstellungen](assets/scenario-settings-ex-1-350x157.png)
 
 Eine [!UICONTROL more cycles] wird nur angewendet, wenn Sie die Ausführung des Szenarios planen. Wenn Sie die Schaltfläche [!UICONTROL Run once] verwenden, werden die Zykluseinstellungen berücksichtigt.
 
 #### Die maximale Anzahl von Zyklen ist auf 1 festgelegt (Standard)
 
-![](assets/max-number-cycles-1-350x201.png)
+![Maximale Zyklenanzahl](assets/max-number-cycles-1-350x201.png)
 
 Die maximale Anzahl von Zyklen im Modul Workfront > Datensätze überwachen ist auf `10` festgelegt.
 Wenn 100 Anfragen an [!DNL Workfront] gesendet werden und das Feld Maximale Anzahl von Zyklen auf 10 festgelegt ist, werden 90 Dateien nach einer Szenario-Ausführung nicht verarbeitet. Die nächsten 10 Dateien werden im nächsten geplanten Szenario verarbeitet.
@@ -183,7 +183,7 @@ Alle Dateien werden innerhalb eines Szenario-Durchgangs verarbeitet.
 
 Die bereits ausgeführten Zyklen werden in den Details des Szenarios angezeigt:
 
-![](assets/scenario-detail-350x207.png)
+![Szenario-Detail](assets/scenario-detail-350x207.png)
 
 Weitere Informationen zu dieser Seite finden Sie unter [Szenariodetails](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 

@@ -4,9 +4,9 @@ description: Mit der Funktion "Adobe Workfront Fusion-Vorlagen“ können Sie be
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Sie müssen eine Teamvorlage erstellen, bevor Sie sie verwenden können.
 
 ## Erstellen eines Szenarios aus einer Vorlage
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Klicken Sie auf die Registerkarte, die die gewünschte Vorlage enthält (**Öffentliche Vorlagen** oder **Teamvorlagen**).
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach einer bestimmten Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf die Vorlage, die Sie zum Erstellen eines Szenarios verwenden möchten.
@@ -84,6 +84,6 @@ Sie müssen eine Teamvorlage erstellen, bevor Sie sie verwenden können.
 
 1. Wenn Sie alle für die Vorlage erforderlichen Einstellungen konfiguriert haben, erhalten Sie eine Benachrichtigung, dass Ihre Vorlage startbereit ist, und die Optionen für das Standardszenario werden am unteren Bildschirmrand angezeigt. Sie können jetzt mit dem Erstellen Ihres Szenarios fortfahren.
 
-1. Klicken Sie auf **Speichern**-Symbol ![](assets/save-icon.png) unten auf dem Bildschirm, um Ihr Szenario zu speichern.
+1. Klicken Sie auf **Speichern**-Symbol ![Speichern](assets/save-icon.png) unten auf dem Bildschirm, um Ihr Szenario zu speichern.
 
    Das Szenario wird im Bereich Szenarien von Workfront Fusion gespeichert.

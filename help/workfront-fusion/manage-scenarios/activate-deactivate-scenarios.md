@@ -4,10 +4,10 @@ description: In diesem Artikel wird beschrieben, warum aktive oder deaktivierte 
 author: Becky
 feature: Workfront Fusion
 exl-id: ecfcab45-5492-4e20-af8d-63ec9d233046
-source-git-commit: d79f8ac6d678a874e05e606d7b9ff7c812d93db1
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 2%
+source-wordcount: '303'
+ht-degree: 1%
 
 ---
 
@@ -87,7 +87,7 @@ Anweisungen zum Erstellen eines Szenarios finden Sie unter [Workflow zum Erstell
 
 ## Aktivieren oder Deaktivieren eines Szenarios:
 
-1. Klicken Sie im linken Bedienfeld auf **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) und dann auf das Szenario, um es zu öffnen.
+1. Klicken Sie **[!UICONTROL Scenarios]** linken ](assets/scenarios-icon.png) auf ![Szenario-Symbol) und klicken Sie dann auf das Szenario, um es zu öffnen.
 1. Klicken Sie auf die Ein-/Aus-Schaltfläche in der oberen rechten Ecke der Seite mit den Szenario-Details.
 
    ![Umschalter zur Aktivierung von Details](assets/active-toggle-details-page.png)
@@ -96,4 +96,4 @@ Anweisungen zum Erstellen eines Szenarios finden Sie unter [Workflow zum Erstell
 
    Klicken Sie auf das Diagramm, um den Szenario-Editor aufzurufen, und klicken Sie dann in der linken unteren Ecke des Fensters auf den Umschalter **[!UICONTROL On/Off]** .
 
-   ![](assets/on-off-switch.jpg)
+   ![Ein-Aus-Schalter](assets/on-off-switch.jpg)

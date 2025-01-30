@@ -4,9 +4,9 @@ description: Viele Services stellen Webhooks bereit, mit denen sofortige Benachr
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 4c0f050e40d28f236d6086e7dccea53d49252aa8
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Viele Services stellen Webhooks bereit, mit denen sofortige Benachrichtigungen bereitgestellt werden können, sobald eine bestimmte Änderung (ein bestimmtes Ereignis) im Service eintritt. Für die Verarbeitung dieser Ereignisse wird die Verwendung von Sofort-Triggern empfohlen. Instant Trigger zeigen das `Instant`-Tag in der Modulliste für einen bestimmten Connector an.
 
-![](assets/instant.png)
+![Instant](assets/instant.png)
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Eine Videoeinführung zu Webhooks in Workfront Fusion finden Sie unter:
 
 Wenn Sie einen Instant Trigger konfigurieren, werden Sie aufgefordert, bei dessen Ausführung auszuwählen.
 
-![](assets/schedule-setting.png)
+![Zeitplaneinstellung](assets/schedule-setting.png)
 
 Wählen Sie `Immediately` aus, um das Szenario sofort auszuführen, wenn [!DNL Workfront Fusion] neue Ereignisse vom Service erhält. Diese Ereignisse werden sofort an eine Warteschlange gesendet und dann im Szenario einzeln in der gleichen Reihenfolge verarbeitet, in der die Daten empfangen werden.
 
@@ -62,7 +62,7 @@ Weitere Informationen zu Zyklen finden Sie unter [Szenarioausführung, Zyklen un
 
 Wenn Sie eine andere Zeitplaneinstellung als [!UICONTROL Immediately] verwenden, wird das Szenario in den von Ihnen angegebenen Intervallen ausgeführt. Da während des Intervalls mehrere Webhooks in der Warteschlange gesammelt werden können, empfehlen wir, die [!UICONTROL Maximum number of cycles]-Option auf einen höheren Wert als den Standardwert 1 festzulegen, um mehr Webhooks in einer Szenario-Ausführung zu verarbeiten:
 
-1. Klicken Sie unten ![](assets/scenario-settings-icon.png) Ihrem Szenario auf das Symbol [!UICONTROL Scenario settings] .
+1. Klicken Sie auf das Symbol [!UICONTROL Scenario settings] ![Szenario-Einstellungen](assets/scenario-settings-icon.png) am unteren Rand Ihres Szenarios.
 1. Geben Sie im sich öffnenden Bedienfeld **[!UICONTROL Scenario settings]** eine Zahl in das Feld **[!UICONTROL Max number of cycles]** ein, um die Anzahl der Ereignisse aus der Warteschlange anzugeben, die bei jeder Ausführung des Szenarios ausgeführt werden sollen.
 
 Die in der Warteschlange verbleibenden Ereignisse werden bei der nächsten Ausführung des Szenarios bis zu der im Feld Maximale Anzahl von Zyklen festgelegten Anzahl verarbeitet.

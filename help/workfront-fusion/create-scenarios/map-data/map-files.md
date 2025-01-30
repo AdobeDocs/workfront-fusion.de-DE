@@ -4,9 +4,9 @@ description: Einige Module können Dateien verarbeiten. Diese Module können ent
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -92,10 +92,10 @@ Zuordnen einer Datei:
 1. Suchen Sie im Zielmodul, dem Ziel, dem Sie die Zuordnung zuordnen, den Bereich **Source-**.
 1. Um eine Ausgabedatei einem vorherigen Modul zuzuordnen, wählen Sie das Modul aus, das die Datei ausgibt.
 
-   ![](assets/wf-download-document.png)
+   ![Workfront-Dokument herunterladen](assets/wf-download-document.png)
 
 1. Um den Namen und die Daten manuell zuzuordnen, wählen Sie „Zuordnen“ aus und geben Sie dann den Namen und die Daten der Datei ein bzw. ordnen Sie sie zu.
 
-   ![](assets/use-the-map-option.png)
+   ![Verwenden der Zuordnungsoption](assets/use-the-map-option.png)
 
 1. Fahren Sie mit der Konfiguration des Moduls fort oder klicken Sie auf **OK**.

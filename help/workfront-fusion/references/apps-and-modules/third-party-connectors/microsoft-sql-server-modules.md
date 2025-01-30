@@ -4,9 +4,9 @@ description: Sie können verwenden [!DNL Adobe Workfront Fusion]  um eine Verbin
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,6 @@ Wenn ein anderes Modul versucht, auf dieselben Daten zuzugreifen, muss es warten
 
 Aktivieren Sie die automatische Bestätigung. Der automatische Commit beendet (übergibt) jede Transaktion unmittelbar nach Abschluss der Modulausführung.
 
-1. Klicken Sie unten ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) Bildschirm auf das Symbol [!UICONTROL Scenario settings] .
+1. Klicken Sie auf das Symbol [!UICONTROL Scenario settings] ![Szenario-Einstellungen](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) unten auf dem Bildschirm.
 1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Auto commit]** .
 1. Klicken Sie auf **[!UICONTROL OK]** , um die Szenario-Einstellungen zu speichern.

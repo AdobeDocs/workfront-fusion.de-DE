@@ -4,9 +4,9 @@ description: Sie können Module, Modulgruppen oder ganze Szenarien in Adobe Work
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Beim Klonen eines Szenarios wird eine Kopie des Szenarios erstellt, die Sie dann
 
       Oder
 
-      Wenn Sie an dem Szenario im Szenario-Editor arbeiten, klicken Sie auf den linken Pfeil ![](assets/exit-editing-arrow.png) der oberen linken Ecke des Fensters.
+      Wenn Sie an dem Szenario im Szenario-Editor arbeiten, klicken Sie auf den Pfeil nach links ![Beenden der Bearbeitung](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
 1. Klicken Sie mit der rechten Maustaste oben rechts auf der Seite auf **[!UICONTROL Options]**.
 1. Wählen Sie **[!UICONTROL Clone]** aus.

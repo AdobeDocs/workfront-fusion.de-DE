@@ -4,9 +4,9 @@ description: Eine Datenstruktur ist ein Dokument, in dem das Format der an Adobe
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 1%
 
 ---
@@ -24,4 +24,4 @@ Unterstützte Datentypen werden im Artikel [Datentypen](/help/workfront-fusion/r
 
 Nicht immer müssen Datenstrukturen erstellt werden. Sie können es einfacher machen, indem Sie eine Vorlage aus unserem integrierten Generator verwenden. Durch die Bereitstellung eines Datenmusters erstellt der Generator automatisch eine Datenstruktur basierend auf der von Ihnen eingegebenen Stichprobe. Die erstellte Datenstruktur kann dann manuell geändert werden.
 
-![](assets/data-structure-generator-350x341.jpg)
+![Datenstruktur-Generator](assets/data-structure-generator-350x341.jpg)

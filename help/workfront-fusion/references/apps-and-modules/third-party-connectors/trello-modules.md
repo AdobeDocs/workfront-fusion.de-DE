@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '4256'
+source-wordcount: '4259'
 ht-degree: 0%
 
 ---
@@ -1212,7 +1212,7 @@ Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
 
 Wenn Sie eine Karte bearbeiten oder einen neuen Kommentar erstellen möchten, müssen Sie die ID der Karte oder deren Shortlink kennen. Diese Informationen können Sie der Ausgabe des [!UICONTROL New Card]-Triggers entnehmen. Den Shortlink für eine Karte erhalten Sie auch, indem Sie die Karte öffnen und auf die Schaltfläche [!UICONTROL Share] klicken. Der Shortlink befindet sich im [!UICONTROL Link to this card] am Ende der URL nach dem `https://trello.com/c/`.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
+![Freigeben und mehr](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 
 ### So finden Sie IDs anderer Objekte in [!DNL Trello]
 

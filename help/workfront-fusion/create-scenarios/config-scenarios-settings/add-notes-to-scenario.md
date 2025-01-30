@@ -5,9 +5,9 @@ description: Wir empfehlen die optionale, aber nützliche Vorgehensweise, Hinwei
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ Wir empfehlen die optionale, aber nützliche Vorgehensweise, Hinweise zu jedem M
 
 1. Schließen Sie den **[!UICONTROL Notes]**.
 
-   Nachdem Sie einem Szenario eine Anmerkung hinzugefügt haben, wird auf dem **[!UICONTROL Notes]** unten im Szenario-Editor ein orangefarbener Punkt ![](assets/notes-icon-w-dot.png).
+   Nachdem Sie einem Szenario eine Anmerkung hinzugefügt haben, wird ein orangefarbener Punkt auf dem **[!UICONTROL Notes]** (![ mit Punkt) ](assets/notes-icon-w-dot.png) unteren Rand des Szenario-Editors angezeigt.
 
-1. Klicken Sie auf das **[!UICONTROL Notes]** Symbol ![](assets/notes-icon-w-dot.png) , um Ihre Notizen anzuzeigen.
+1. Klicken Sie auf das **[!UICONTROL Notes]**-Symbol ![Notes-Symbol mit Punkt](assets/notes-icon-w-dot.png), um Ihre Notizen anzuzeigen.

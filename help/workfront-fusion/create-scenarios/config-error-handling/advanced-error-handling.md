@@ -4,9 +4,9 @@ description: Sie können Ihrer Fehlerbehandlungsroute erweiterte Techniken zur F
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 +++
 
-## Filtern
+## Filterung
 
 Es gibt zwei Arten der Filterung, die bei einer Fehler-Handler-Route erfolgen kann.
 
@@ -89,11 +89,11 @@ Dieses Beispielszenario zeigt, wie diese Filter bei der Fehlerbehandlung funktio
 
 Wenn Sie die Dropbox > Ordnermodul erstellen verwenden und bereits ein Ordner mit demselben Namen vorhanden ist, gibt das Modul einen DataError aus:
 
-![](assets/dropbox.png)
+![Fehler beim Dropbox](assets/dropbox.png)
 
 Das vollständige Szenario funktioniert wie folgt:
 
-![](assets/dropbox-scenario.png)
+![Dropbox-Szenario](assets/dropbox-scenario.png)
 
 1. Das Modul Werkzeuge > Variable festlegen enthält den Ordnernamen
 1. Das Modul HTTP > Datei abrufen ruft die Datei ab, die in den Ordner hochgeladen werden muss
@@ -111,19 +111,19 @@ Nachfolgend finden Sie eine detaillierte Erklärung der Datenfehler-Route.
 
 Um den vorhandenen Ordner in Ihren nachfolgenden Modulen zu verwenden, z. B. zum Hochladen einer Datei, müssen Sie eine Fehler-Handler-Route zum -Modul hinzufügen und den Ordnerpfad abrufen, der dem folgenden Fortsetzungsanweisungsmodul zugeordnet werden soll:
 
-![](assets/add-error-handler-route.png)
+![Fehler-Handler-Route hinzufügen](assets/add-error-handler-route.png)
 
 Der Filter für die erste Route ist so eingestellt, dass nur der bestimmte Fehler (DataError) verarbeitet wird, der angezeigt wird, wenn bereits ein Ordner mit demselben Namen vorhanden ist:
 
-![](assets/condition.png)
+![Bedingung](assets/condition.png)
 
 Dropbox > Alle Dateien in einem Ordnermodul auflisten ist so konfiguriert, dass alle Ordner im Zielordner zurückgegeben werden. Der folgende Filter übergibt nur den Filter, den wir ursprünglich erstellen wollten. (Der Ordnername wird unter 33 gespeichert. Element „Ordnername“.)
 
-![](assets/condition2.png)
+![Bedingung](assets/condition2.png)
 
 Die Fortsetzungsanweisung liefert dann den Ordnerpfad als Ausgabe für das fehlgeschlagene Modul. Beachten Sie, dass die Ordner-ID leer gelassen wurde, da sie vom Modul Hochladen einer Datei nicht benötigt wird.
 
-![](assets/flow-control.png)
+![Flusskontrolle](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -137,7 +137,7 @@ Beispiel:
 
 Eine verschachtelte Fehler-Handler-Route mit Filtern:
 
-![](assets/nested-error-handling-route.png)
+![Verschachtelte Route zur Fehlerbehandlung](assets/nested-error-handling-route.png)
 
 In diesem Szenario wird die zweite Fehler-Handler-Route unter der ersten Fehler-Handler-Route verschachtelt.
 

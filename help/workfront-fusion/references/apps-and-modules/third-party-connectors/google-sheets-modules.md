@@ -4,9 +4,9 @@ description: So verwenden Sie  [!DNL Google Sheets] -mit [!DNL Adobe Workfront F
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3372'
 ht-degree: 0%
 
 ---
@@ -726,7 +726,7 @@ Verwenden Sie das [!UICONTROL Search Rows (Advanced)] und verwenden Sie diese Fo
 1. Führen Sie das Szenario aus.
 1. Wählen Sie in Google Sheets **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**… aus der Hauptmenüleiste aus.
 
-1. Klicken Sie im [!UICONTROL Drawing] Fenster oben ![](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) im Fenster auf das **[!UICONTROL Text box]**.
+1. Klicken Sie im Fenster [!UICONTROL Drawing] oben im Fenster auf ![ Symbol **[!UICONTROL Text box]** Textfeld](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png).
 1. Gestalten Sie eine Schaltfläche und klicken Sie oben rechts auf die Schaltfläche **[!UICONTROL Save and Close]** :
 1. Die Schaltfläche wird in Ihrem Arbeitsblatt platziert. Klicken Sie auf die drei vertikalen Punkte in der oberen rechten Ecke der Schaltfläche:
 1. Wählen Sie **[!UICONTROL Assign script..].** aus dem Menü.
@@ -750,7 +750,7 @@ Verwenden Sie das [!UICONTROL Search Rows (Advanced)] und verwenden Sie diese Fo
 
 Wenn Sie einen Datumswert ohne Formatierung in einer Tabelle speichern, wird er in der Tabelle als Text im ISO 8601-Format angezeigt. [!DNL Google Sheets] Formeln oder Funktionen, die mit Datumsangaben arbeiten, die diesen Text nicht verstehen (Beispiel: Formel `=A1+10`), zeigen jedoch den folgenden Fehler an:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
+![Fehler](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
 Damit [!DNL Google Sheets] das Datum besser verstehen können, formatieren Sie es mit der [[!UICONTROL formatDate]-Funktion (Datum; Format; [Zeitzone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatda). Das richtige Format, das als zweites Argument an die Funktion übergeben wird, hängt von den Gebietsschemaeinstellungen der Tabelle ab.
 
@@ -764,7 +764,7 @@ So bestimmen Sie das richtige Format:
 
 **Beispiel** Die Verwendung `MM/DD/YYYY HH:mm:ss` Formats für das Gebietsschema der Vereinigten Staaten:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![Gebietsschema-Zeitformel](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 ## Nutzung [!DNL Google Sheets] Funktionen
 

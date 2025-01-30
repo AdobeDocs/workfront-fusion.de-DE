@@ -4,9 +4,9 @@ description: Die folgenden Datums- und Uhrzeitfunktionen sind im Zuordnungsberei
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1800'
 ht-degree: 1%
 
 ---
@@ -333,7 +333,7 @@ Die Funktion `formatDate` gibt eine Textdarstellung des angegebenen Datumswerts 
 
 **Beispiele:** In diesen Beispielen wurden sowohl das Szenario als auch die Web-Zeitzone auf `Europe/Prague` festgelegt.
 
-![](assets/date&time-functions-examples-350x61.png)
+![Beispiel für eine Datums-/Uhrzeitfunktion](assets/date&time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -463,7 +463,7 @@ Dieser Abschnitt ist für [!DNL Workfront Fusion] von der [!DNL Exceljet]-Websei
 
 Wenn Sie ein Datum berechnen müssen, das dem n-ten Wochentag im Monat entspricht (z. B. erster Dienstag, dritter Freitag usw.), können Sie die folgende Formel verwenden:
 
-![](assets/date&time-functions-calc-nth-day-350x31.png)
+![n-ten Tag berechnen](assets/date&time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -510,7 +510,7 @@ Wenn Sie nur einen bestimmten Fall berechnen möchten, z. B. jeden zweiten Mittw
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![](assets/nth-day-variable-value-350x33.png)
+![n-ter Tag-Variablenwert](assets/nth-day-variable-value-350x33.png)
 
 #### Erklärung:
 
@@ -521,7 +521,7 @@ Wenn Sie nur einen bestimmten Fall berechnen möchten, z. B. jeden zweiten Mittw
 
 Eine Möglichkeit besteht darin, den folgenden Ausdruck zu verwenden:
 
-![](assets/calculate-days-between-dates-350x68.png)
+![Tage zwischen Datumsangaben berechnen](assets/calculate-days-between-dates-350x68.png)
 
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
@@ -541,7 +541,7 @@ Wenn Sie einen Datumsbereich angeben, z. B. in einem Suchmodul, und der Bereich 
 
 Die folgende Formel zeigt eine Möglichkeit, den letzten Tag des Vormonats zu berechnen:
 
-![](assets/last-day-prev-month.png)
+![Letzter Tag des Vormonats](assets/last-day-prev-month.png)
 
 ```
 {{addDays(setDate(now; 1); -1)}}
@@ -553,7 +553,7 @@ In einigen Fällen müssen Sie nicht nur den letzten Tag des Monats berechnen, s
 
 Diese Formel zeigt eine Möglichkeit, die letzte Millisekunde des Vormonats zu berechnen:
 
-![](assets/last-millisecond-prev-month-350x45.png)
+![Letzte Millisekunde des Vormonats](assets/last-millisecond-prev-month-350x45.png)
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
@@ -561,7 +561,7 @@ Diese Formel zeigt eine Möglichkeit, die letzte Millisekunde des Vormonats zu b
 
 Wenn Sie das Ergebnis benötigen, um Ihre Zeitzoneneinstellung zu verwenden, lassen Sie das UTC-Argument weg:
 
-![](assets/omit-utc-argument-350x45.png)
+![UTC auslassen](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 

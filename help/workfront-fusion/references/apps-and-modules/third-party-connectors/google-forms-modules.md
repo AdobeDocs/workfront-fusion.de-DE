@@ -4,9 +4,9 @@ description: Mit  [!DNL Adobe Workfront Fusion Google Forms]  Modulen können Si
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Damit Sie mit Ihren Formularantworten arbeiten können, muss eine Tabelle aus Ih
 
 1. Öffnen Sie das Formular.
 1. Wechseln Sie zur Registerkarte **[!UICONTROL Responses]** .
-1. Klicken Sie auf das **[!UICONTROL Create Spreadsheet]**-Symbol ![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
+1. Klicken Sie auf das **[!UICONTROL Create Spreadsheet]**-Symbol ![Tabellensymbol](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Wählen Sie aus, ob Sie eine neue Tabelle oder eine vorhandene Tabelle erstellen möchten
 1. Klicken Sie auf **[!UICONTROL Create]**.
@@ -98,11 +98,11 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Trigger](#triggers)
+* [Auslöser](#triggers)
 * [Aktionen](#actions)
 * [Suchvorgänge](#searches)
 
-### Trigger
+### Auslöser
 
 #### [!UICONTROL Watch Responses]
 

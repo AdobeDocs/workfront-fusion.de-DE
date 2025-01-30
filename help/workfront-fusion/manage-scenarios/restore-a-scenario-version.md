@@ -4,9 +4,9 @@ description: Sie können eine frühere Version eines Szenarios wiederherstellen.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 ## Szenario-Version wiederherstellen
 
 1. Öffnen Sie Ihr Szenario.
-1. Klicken Sie auf das [!UICONTROL More]-Symbol ![](assets/more-icon.png) unten im Bildschirm und dann auf **[!UICONTROL Previous Versions]**.
+1. Klicken Sie auf das [!UICONTROL More] Symbol ![Mehr](assets/more-icon.png) unten auf dem Bildschirm und dann auf **[!UICONTROL Previous Versions]**.
 
 1. Klicken Sie auf die **[!UICONTROL Pick the version]** und dann auf die Version, die Sie wiederherstellen möchten.
 1. Klicken Sie auf **[!UICONTROL OK]**.

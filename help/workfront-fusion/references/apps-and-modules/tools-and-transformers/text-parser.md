@@ -4,9 +4,9 @@ description: Sie können das Text-Parser-Tool verwenden, um Text zur Verwendung 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4fa892b7875af2fcabaf26b375925af7a8cad2a0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -267,21 +267,21 @@ Dieser reguläre Ausdruck führt normalerweise zu einer vollständigen Übereins
 
 Die Implementierung dieses Ausdrucks in Ihrem Text-Parser führt jedoch nicht zu einer Übereinstimmung:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![Keine Übereinstimmung](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
 Der Grund dafür ist, dass das „i“ nur die Anzahl der Übereinstimmungen pro Übereinstimmung anzeigt. In diesem Fall haben wir also 2 Übereinstimmungen, daher gibt es nach dem „i“ einen numerischen Wert 1 und 2. Der Anwendungsfall hierfür besteht darin, dass Sie, falls Sie Daten jemals mit dem zweiten übereinstimmenden Wert abgleichen oder durch einen Filter übergeben müssen, angeben können, welcher Wert durch den numerischen Wert dargestellt wird.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![Übereinstimmung](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
 Um die Übereinstimmungswerte abzurufen, die Sie benötigen, um dem zu analysierenden Teil Klammern hinzuzufügen (z. B. um nur aus „filename.docx“ - „docx“ zu extrahieren), sollten die Klammern gemäß dem Regex-Ausdruck, den wir für dieses Szenario verwenden, auf \ angewendet werden.(.+)
 
 Erfasst das DOCX, platziert es in einer Gruppe und lässt das &quot;.“ Raus damit.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![Treffer abrufen](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 In der im folgenden Bild gezeigten Ausgabe entspricht die Erfassungsgruppe einem beliebigen Zeichen (mit Ausnahme der Zeilenumbrüche).
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![Ausgabe](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 Eine weitere Problemumgehung, die auch Regex enthält, ist die Verwendung der Funktion Ersetzen .
 
