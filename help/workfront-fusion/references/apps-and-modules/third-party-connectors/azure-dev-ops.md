@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 66378d6f937f3b3b173447bd36fdef991d9956af
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration] </p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Voraussetzungen
 
@@ -104,6 +108,7 @@ Der Azure DevOps-Connector verwendet Folgendes:
         </tr>
     </table>
 
+1. Um eine Azure DevOps-App-ID oder einen geheimen Client-Schlüssel einzugeben, klicken Sie auf <b>Erweiterte Einstellungen anzeigen</b> und geben Sie diese in die sich öffnenden Felder ein.
 1. Klicken Sie auf **[!UICONTROL Continue]** , um die Einrichtung der Verbindung abzuschließen und mit der Erstellung des Szenarios fortzufahren.
 
 ## [!UICONTROL Azure DevOps] Module und ihre Felder
@@ -134,7 +139,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Webhook für das Modul auswählen oder hinzufügen.</p> <!--<p>For more information on webhooks in trigger modules, see <a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/)." class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>.</p> <p>For information on how to create a webhook, see <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webhooks</a>.--></p> </td> 
+   <td> <p>Webhook für das Modul auswählen oder hinzufügen.</p> <p>Weitere Informationen zu Webhooks in Trigger-Modulen finden Sie unter <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Instant Trigger (Webhooks)</a>.</p> <p>Informationen zum Erstellen eines Webhooks finden Sie unter <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webhooks</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,54 +153,6 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 * [Datensatz lesen](#read-record)
 * [Aktualisieren eines Arbeitselements](#update-a-work-item)
 * [[!UICONTROL Upload an attachment]](#upload-an-attachment)
-
-#### [!UICONTROL Custom API Call]
-
-Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Azure DevOps]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, die von den anderen [!DNL Azure DevOps] nicht durchgeführt werden kann.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Azure DevOps]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Azure DevOps] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Base URL]</td> 
-   <td> <p>Wählen Sie die Basis-URL aus, mit der Sie eine Verbindung zu Ihrem [!DNL Azure DevOps]-Konto herstellen, oder ordnen Sie sie zu</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Relative URL]</td> 
-   <td> <p>Geben Sie die relative URL ein, mit der Sie sich für diesen API-Aufruf verbinden möchten.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>{organization}/_apis[/{area}]/{resource}</code> </p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL API Version]</td> 
-   <td>Wählen Sie die Version der [!DNL Azure DevOps]-API aus, mit der Sie sich für diesen API-Aufruf verbinden möchten, oder ordnen Sie sie zu. Wenn keine Version ausgewählt ist, stellt [!DNL Workfront Fusion] eine Verbindung zu [!DNL Azure DevOps] API-Version 5.1 her.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
 
 #### [!UICONTROL Create a record]
 
@@ -221,7 +178,7 @@ Das Modul gibt die Objekt-ID für das neu erstellte Arbeitselement oder die URL 
        <li> <p><strong>[!UICONTROL Description]</strong>: Geben Sie eine Beschreibung für das neue Projekt ein oder ordnen Sie sie zu. </p> </li> 
        <li> <p><strong>[!UICONTROL Visibility]</strong>: Wählen Sie aus, ob Ihr Projekt öffentlich oder privat sein soll. Benutzer müssen bei Ihrer Organisation angemeldet sein und Zugriff auf das Projekt erhalten haben, damit sie mit einem privaten Projekt interagieren können. Öffentliche Projekte sind für Benutzer sichtbar, die nicht bei Ihrer Organisation angemeldet sind.</p> </li> 
        <li> <p><strong>[!UICONTROL Version control]</strong>: Wählen Sie aus, ob das Projekt [!DNL Git] oder [!UICONTROL Team Foundation Version Control (TFCV)] für die Versionskontrolle verwenden soll.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong>: Wählen Sie den Arbeitsprozess aus, den Sie für das Projekt verwenden möchten. Die Optionen sind [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] und [!UICONTROL Agile].</p> <p>Weitere Informationen zu [!DNL Azure DevOps]-Prozessen finden Sie unter <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Prozess auswählen</a> in der [!DNL Azure DevOps].</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong>: Wählen Sie den Arbeitsprozess aus, den Sie für das Projekt verwenden möchten. Die Optionen sind [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)] und [!UICONTROL Agile].</p> <p>Weitere Informationen zu [!DNL Azure DevOps]-Prozessen finden Sie unter <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Standardprozesse und Prozessvorlagen</a> in der [!DNL Azure DevOps].</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Füllen Sie die folgenden Felder aus:</p> 
       <ul> 
@@ -230,6 +187,54 @@ Das Modul gibt die Objekt-ID für das neu erstellte Arbeitselement oder die URL 
        <li> <p><strong>[!UICONTROL Other fields]</strong>: Geben Sie in diesen Feldern den Wert ein, den das Arbeitselement für eine bestimmte Eigenschaft haben soll. Die verfügbaren Felder hängen vom Typ des Arbeitselements ab.</p> </li> 
       </ul> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Custom API Call]
+
+Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Azure DevOps]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, die von den anderen [!DNL Azure DevOps] nicht durchgeführt werden kann.
+
+Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Azure DevOps]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Azure DevOps] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Base URL]</td> 
+   <td> <p>Wählen Sie die Basis-URL aus, mit der Sie eine Verbindung zu Ihrem [!DNL Azure DevOps]-Konto herstellen, oder ordnen Sie sie zu</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Relative URL]</td> 
+   <td> <p>Geben Sie die relative URL ein, mit der Sie sich für diesen API-Aufruf verbinden möchten.</p> <p><b>Beispiel: </b><code>{organization}/_apis[/{area}]/{resource}</code> </p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!UICONTROL API Version]</td> 
+   <td>Wählen Sie die Version der [!DNL Azure DevOps]-API aus, mit der Sie sich für diesen API-Aufruf verbinden möchten, oder ordnen Sie sie zu. Wenn keine Version ausgewählt ist, stellt [!DNL Workfront Fusion] eine Verbindung zu [!DNL Azure DevOps] API-Version 5.1 her.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -259,10 +264,6 @@ Das -Modul gibt den Dateiinhalt des Anhangs zurück.
 
 Dieses Aktionsmodul verknüpft zwei Arbeitselemente und definiert die Beziehung zwischen ihnen.
 
-Das Modul gibt die ID des Hauptarbeitselements und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
@@ -281,7 +282,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Link Type]</td> 
-   <td> <p>Definieren Sie die Beziehung zwischen den Arbeitselementen, die Sie verknüpfen möchten.</p> <p>Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops">Link-Typreferenz</a> in der [!UICONTROL Azure DevOps].</p> </td> 
+   <td> <p>Definieren Sie die Beziehung zwischen den Arbeitselementen, die Sie verknüpfen möchten.</p> <p>Weitere Informationen finden Sie <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops">Referenzhandbuch für Link-Typen</a> in der [!UICONTROL Azure DevOps].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment]</td> 

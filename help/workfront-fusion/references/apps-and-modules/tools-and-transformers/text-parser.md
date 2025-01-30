@@ -4,9 +4,9 @@ description: Sie können das Text-Parser-Tool verwenden, um Text zur Verwendung 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 4fa892b7875af2fcabaf26b375925af7a8cad2a0
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,44 @@ Sie können die [!UICONTROL Text parser tool] verwenden, um Text zur Verwendung 
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
-   <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration], [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung]</p>
+   <p>Keine Workfront Fusion-Lizenzanforderung.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Text-Parser-API-Informationen
 
@@ -218,7 +220,7 @@ Durchsucht den eingegebenen Text nach einem angegebenen Wert oder regulären Aus
   </tr> 
   <tr> 
    <td>[!UICONTROL New value]</td> 
-   <td> <p> Geben Sie einen Wert ein, der den Suchbegriff ersetzt.</p> </td> 
+   <td> <p> Geben Sie den Wert ein, den Sie den Suchbegriff ersetzen möchten.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Global match]</td> 
