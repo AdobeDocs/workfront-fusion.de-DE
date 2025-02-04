@@ -4,14 +4,18 @@ description: Der Szenario-Scoring-Experte kann Ihnen dabei helfen sicherzustelle
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 1ac1c4358901ef81bb7375c24fcdf1a44119af13
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 1%
 
 ---
 
 # Ausführen des Szenario-Scoring-Experten
+
+>[!IMPORTANT]
+>
+>Der Experte für Szenario-Bewertung wurde vorübergehend deaktiviert.
 
 Der Szenario-Scoring-Experte kann Ihnen dabei helfen sicherzustellen, dass Ihr Szenario so konfiguriert ist, dass es den Best Practices entspricht. Er prüft Ihr Szenario und gibt Empfehlungen für dessen Struktur und Organisation.
 
