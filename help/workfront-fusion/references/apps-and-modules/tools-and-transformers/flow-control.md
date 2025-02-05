@@ -4,9 +4,9 @@ description: Beim Erstellen oder Bearbeiten eines Szenarios können Sie Einstell
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -17,56 +17,77 @@ Beim Erstellen oder Bearbeiten eines Szenarios können Sie Einstellungen konfigu
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
-   <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration], [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung]</p>
+   <p>Keine Workfront Fusion-Lizenzanforderung.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Repeater
 
 Sie können ein [!UICONTROL Repeater] Modul verwenden, um eine Aufgabe eine bestimmte Anzahl von Malen zu wiederholen. Ein [!UICONTROL Repeater] Modul erzeugt Pakete, eines nach dem anderen.
 
+
+<table>
+    <tr>
+        <td>[!UICONTROL Initial value]</td>
+        <td>Geben Sie den Wert ein, den das Modul in der ersten Iteration haben soll, oder ordnen Sie ihn zu. Der Standardwert ist 1.</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Repeats]</td>
+        <td>Geben Sie die Anzahl der Wiederholungen des Moduls ein oder mappen Sie sie. Diese Zahl muss größer oder gleich 0 und kleiner oder gleich 10.000 sein.</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Step]</td>
+        <td>Dies ist die Zahl, um die das Modul den Wert erhöht. Der Standardwert ist 1.</td>
+    </tr>
+</table>
+
+>[!BEGINSHADEBOX]
+
 Sie können beispielsweise ein [!UICONTROL Repeater] verwenden, um fünf E-Mails mit den Betreffen „Hallo 1“, „Hallo 2“ usw. zu senden, indem Sie das Modul **[!UICONTROL Email]>[!UICONTROL Send me an email]** mit dem [!UICONTROL Repeater] verbinden.
 
-So verwenden Sie ein [!UICONTROL Repeater]:
-
 1. Klicken Sie auf das [!UICONTROL Flow Control] ![Fluss-](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif)-Symbol) unten im Bildschirm und klicken Sie dann im angezeigten Menü auf **[!UICONTROL Repeater]**.
-1. Klicken Sie auf das Bundle [!UICONTROL Repeater] und dann in dem angezeigten Feld auf **[!UICONTROL Connect automatically]** .
-1. Geben Sie in das [!UICONTROL Flow Control] Feld die gewünschte Anzahl von Wiederholungen (ausgegebene Bundles) in das Feld **[!UICONTROL Repeats]** ein.
+1. Klicken Sie auf das [!UICONTROL Repeater] und dann in dem angezeigten Feld auf **[!UICONTROL Connect automatically]** .
 
-   In unserem E-Mail-Beispiel würden Sie 5 eingeben.
+   Das Repeater-Modul wird geöffnet.
+
+1. Geben Sie im Feld **[!UICONTROL Repeats]** die Anzahl der Wiederholungen (ausgegebene Bundles) ein, die das Modul produzieren soll.
+
+   In diesem Beispiel geben Sie 5 ein.
 
    ![Repeater](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
@@ -81,17 +102,13 @@ So verwenden Sie ein [!UICONTROL Repeater]:
 
    ![Repeater](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
-| Element | Beschreibung |
-|---|---|
-| [!UICONTROL Initial value] | Geben Sie die Zahl ein, die das Modul in der ersten Iteration als `i` festlegen soll, oder ordnen Sie sie zu. Der Standardwert ist 1. |
-| [!UICONTROL Repeats] | Geben Sie die Anzahl der Wiederholungen des Moduls ein oder mappen Sie sie. Diese Zahl muss größer oder gleich 0 und kleiner oder gleich 10.000 sein. |
-| [!UICONTROL Step] | Dies ist die Zahl, um die das Modul den Wert von `i` erhöht. Der Standardwert ist 1. |
 
-{style="table-layout:auto"}
 
 >[!NOTE]
 >
 >Die Anzahl der Wiederholungen wird nicht durch den Wert von `i` bestimmt, wie dies bei der Programmierung in einer Schleife der Fall wäre. Das Modul wiederholt die im Feld [!UICONTROL Repeats] angegebene Anzahl. Der Wert `i` ändert sich mit jeder Iteration des [!DNL repeater] Moduls und kann späteren Modulen zugeordnet werden. Im obigen Beispiel wird der Wert von `i` der „Hello“-Nachricht zugeordnet, was zu Meldungen mit dem Wert „Hello 1“, „Hello 2“ usw. führt.
+
+>[!ENDSHADEBOX]
 
 ## [!UICONTROL Iterator]
 
@@ -105,9 +122,9 @@ Ein Array-Aggregator ist ein spezieller Modultyp, mit dem mehrere Bundles zu ein
 
 Mit dem [!UICONTROL Router] Modul können Sie Ihren Fluss in mehrere Routen verzweigen und die Daten innerhalb jeder Route unterschiedlich verarbeiten. Sobald ein [!UICONTROL Router] ein Bundle erhält, leitet es es es an jede verbundene Route in der Reihenfolge weiter, in der die Routen an das [!UICONTROL Router]-Modul angehängt wurden. Weitere Informationen finden Sie unter [Router-Modul in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
-<!--
-<div>
-<h2>Directives</h2>
-<p>The error handling directives allow you to control how your scenario reacts to errors. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md" class="MCXref xref">Advanced error handling in Adobe Workfront Fusion</a> and <a href="/help/workfront-fusion/references/errors/directives-for-error-handling.md" class="MCXref xref">Directives for error handling in Adobe Workfront Fusion</a>.</p>
-</div>
--->
+## Anweisungen
+
+Mit den Anweisungen zur Fehlerbehandlung können Sie steuern, wie Ihr Szenario auf Fehler reagiert.
+
+Informationen zu Anweisungen zur Fehlerbehandlung finden Sie unter [Anweisungen für die Fehlerbehandlung](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+

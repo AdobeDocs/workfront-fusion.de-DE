@@ -4,9 +4,9 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 810ed58f56296e0154190db660ff86091091e460
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2526'
 ht-degree: 0%
 
 ---
@@ -727,7 +727,7 @@ Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu, z. B. <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
