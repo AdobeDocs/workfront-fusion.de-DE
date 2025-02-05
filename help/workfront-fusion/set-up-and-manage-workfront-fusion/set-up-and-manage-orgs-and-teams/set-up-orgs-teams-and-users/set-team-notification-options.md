@@ -4,9 +4,9 @@ description: Die Optionen für E-Mail-Benachrichtigungen werden auf Team-Ebene f
 author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 410676b7def1e36de12fee9d6df79feba566d741
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
@@ -89,7 +89,7 @@ Die Optionen für E-Mail-Benachrichtigungen werden auf Team-Ebene festgelegt.
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Scenario deactivation]</p> </td> 
-      <td><p>Erhalten Sie eine E-Mail, wenn ein Szenario deaktiviert wird.</p><p><b>Hinweis:</b> Sie werden nur dann über die Deaktivierung des Szenarios benachrichtigt, wenn das Szenario aufgrund von Fehlern automatisch deaktiviert wurde. Sie erhalten keine Benachrichtigungen über Szenarien, die manuell deaktiviert werden.</p><p>In einigen Fällen kann ein Szenario vom [!DNL Workfront Fusion]-Engineering-Team deaktiviert werden, da das Szenario Leistungs- oder andere Probleme verursacht. In diesen Fällen erhalten Sie keine Benachrichtigungen in [!DNL Workfront Fusion]. </p></td>
+      <td><p>Erhalten Sie eine E-Mail, wenn ein Szenario deaktiviert wird.</p><p>In einigen Fällen kann ein Szenario vom [!DNL Workfront Fusion]-Engineering-Team deaktiviert werden, da das Szenario Leistungs- oder andere Probleme verursacht. In diesen Fällen erhalten Sie keine Benachrichtigungen in [!DNL Workfront Fusion]. </p></td>
 
 </tr>
 </tbody>
