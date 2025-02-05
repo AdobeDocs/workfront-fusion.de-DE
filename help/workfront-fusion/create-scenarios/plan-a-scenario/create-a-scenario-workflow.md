@@ -4,9 +4,9 @@ description: Diesem allgemeinen Workflow folgen, um ein Szenario zu erstellen
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0029e6a79c6fb7479ddd0948c773349efa075403
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,26 @@ Beim Erstellen oder Bearbeiten eines Szenarios können die folgenden Tastaturbef
    <td role="rowheader">[!UICONTROL Run Once]</td> 
    <td>Strg+Umschalt+Eingabe</td> 
    <td><span style="font-weight: normal;">Befehl+Umschalt+Eingabe</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td>F12</td> 
+   <td><span style="font-weight: normal;">Strg+Fn+F12</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td>Strg+C</td> 
+   <td><span style="font-weight: normal;">Befehl+C</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td>Strg+V</td> 
+   <td><span style="font-weight: normal;">Befehl+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td>Umschalt+Ziehen</td> 
+   <td><span style="font-weight: normal;">Umschalt+Ziehen</span> </td> 
   </tr> 
  </tbody> 
 </table>
