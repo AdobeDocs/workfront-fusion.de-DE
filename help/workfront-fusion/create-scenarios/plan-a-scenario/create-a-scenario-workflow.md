@@ -4,9 +4,9 @@ description: Diesem allgemeinen Workflow folgen, um ein Szenario zu erstellen
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 0029e6a79c6fb7479ddd0948c773349efa075403
+source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -139,35 +139,41 @@ Beim Erstellen oder Bearbeiten eines Szenarios können die folgenden Tastaturbef
   <tr> 
    <td role="rowheader">[!UICONTROL Save] </td> 
    <td>Strg+Umschalt+S</td> 
-   <td><span style="font-weight: normal;">Befehl+Umschalt+S</span> </td> 
+   <td>Befehl+Umschalt+S</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Run Once]</td> 
    <td>Strg+Umschalt+Eingabe</td> 
-   <td><span style="font-weight: normal;">Befehl+Umschalt+Eingabe</span> </td> 
+   <td>Befehlstaste+Umschalt+Eingabe</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
    <td>F12</td> 
-   <td><span style="font-weight: normal;">Strg+Fn+F12</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Copy]</td> 
-   <td>Strg+C</td> 
-   <td><span style="font-weight: normal;">Befehl+C</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
-   <td>Strg+V</td> 
-   <td><span style="font-weight: normal;">Befehl+V</span> </td> 
+   <td>Strg+Fn+F12</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
    <td>Umschalt+Ziehen</td> 
-   <td><span style="font-weight: normal;">Umschalt+Ziehen</span> </td> 
+   <td>Umschalt+Ziehen</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td>Strg+C</td> 
+   <td>Befehl+C</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td>Strg+V</td> 
+   <td>Befehl+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Einfügen von cURL in das Szenario zum Erstellen eines HTTP-Moduls</td> 
+   <td colspan="2">Kopieren Sie cURL und fügen Sie dann an einer beliebigen Stelle im Szenario-Editor ein.<p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">Verwenden von cURL zum Hinzufügen eines HTTP-Moduls</a>.</td> 
   </tr> 
  </tbody> 
 </table>
+
+
 
 
 
