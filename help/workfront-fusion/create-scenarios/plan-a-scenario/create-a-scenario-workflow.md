@@ -4,9 +4,9 @@ description: Diesem allgemeinen Workflow folgen, um ein Szenario zu erstellen
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: c34adf455ce01da52c321d3f997a58f8251d97bf
+source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ Szenarien werden entsprechend den Anforderungen Ihres Unternehmens erstellt, mit
 * [Szenarioeinstellungen konfigurieren](#onfigure-scenario-settings)
 * [Testen und Überarbeiten](#test-and-revise)
 * [Aktivieren des Szenarios](#activate-the-scenario)
+* [Tastaturbefehle für das Workfront Fusion-Szenario](#workfront-fusion-scenario-keyboard-shortcuts)
 
 Tastaturbefehle
 
