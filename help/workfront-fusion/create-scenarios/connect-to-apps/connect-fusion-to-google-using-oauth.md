@@ -4,7 +4,7 @@ description: Sie können Adobe Workfront Fusion verwenden, um mithilfe eines ben
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 1%
@@ -84,7 +84,7 @@ So erstellen Sie ein Projekt in Google Cloud Platform:
 
 1. Beginnen Sie mit der Erstellung eines Projekts auf Google Cloud Platform.
 
-   Anweisungen finden Sie unter [Erstellen eines Google Cloud-Projekts](https://developers.google.com/workspace/guides/create-project) in der Google-Dokumentation.
+   Anweisungen finden Sie unter [Erstellen eines Google Cloud-Projekts](https://developers.google.com/workspace/guides/create-project) in der Dokumentation zu Google.
 1. Beim Aktivieren von APIs müssen Sie die Google Drive-API sowie die API aller Google-Apps aktivieren, die Sie verwenden möchten (z. B. die Google Sheets-API).
 1. Erstellen Sie das Projekt fertig.
 1. Fahren Sie mit dem Abschnitt [Konfigurieren der OAuth-](#configure-oauth-consent-settings)&quot; in diesem Artikel fort.
