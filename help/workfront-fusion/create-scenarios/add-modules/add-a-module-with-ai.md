@@ -4,9 +4,9 @@ description: Sie können KI verwenden, um eine Textaufforderung einzugeben, die 
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 9d29abc82a3bb09affc4d17d7ea214d7bb850294
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -68,6 +68,15 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 +++
 
+## Voraussetzungen
+
+Ihr Unternehmen muss die folgenden Voraussetzungen erfüllen, um diese Funktion nutzen zu können:
+
+* Ihr Unternehmen muss am Workfront AI Assistant Beta-Programm teilgenommen haben.
+* Adobe muss eine unterzeichnete Adobe Gen AI-Vereinbarung für Ihr Unternehmen haben.
+
+  Weitere Informationen zum Unterzeichnen der Vereinbarung finden Sie unter [Unterschreiben der Adobe Gen AI-](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)) im Artikel KI-Assistent - Übersicht in der Dokumentation zu Workfront.
+
 ## Derzeit unterstützte KI-Modulanwendungen
 
 Die Fusion-KI kann derzeit Module generieren, die eine Verbindung zu den folgenden Anwendungen herstellen:
@@ -95,15 +104,8 @@ Die Fusion-KI kann derzeit Module generieren, die eine Verbindung zu den folgend
 1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
 1. Wählen Sie das Szenario aus, in dem Sie ein Modul hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
-1. Klicken Sie auf das Symbol ![Mit KI generieren](assets/generate-with-ai-icon-beta.png) unten auf der Seite des Szenario-Editors.
-
-   Oder
-
-   Beginnen Sie mit dem Hinzufügen eines Moduls und wählen **Mit KI generieren** aus der Liste der Programme aus. Diese Option wird nicht angezeigt, wenn Sie das erste (Trigger-)Modul zu einem Szenario hinzufügen.
-
-   Das Bedienfeld KI-Assistent wird geöffnet.
-1. (Bedingt) Wenn Sie zum ersten Mal KI zum Hinzufügen eines Szenario-Segments verwenden, lesen Sie die angezeigte Vereinbarung und klicken Sie auf **Zustimmen**.
-1. Geben Sie in das Feld eine Eingabeaufforderung ein.
+1. Klicken Sie auf **KI** Assistent![ Symbol KI-Assistent](assets/ai-assistant-icon.png) in der oberen rechten Ecke des Bildschirms.
+1. Geben Sie im Bedienfeld „KI-Assistent“ eine Textaufforderung ein.
 
    Tipps zu Eingabeaufforderungen finden Sie unter [Tipps zum Erstellen von Eingabeaufforderungen für Szenariosegmente](#tips-for-creating-prompts-for-scenario-segments) in diesem Artikel.
 
