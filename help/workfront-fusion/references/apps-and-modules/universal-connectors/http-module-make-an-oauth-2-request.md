@@ -4,7 +4,7 @@ description: Um eine HTTP [!DNL Adobe Workfront Fusion] S-Anfrage an Server zu s
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: d9d3f21279ba89f544adc0ffa9345543907aa777
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 ## Erstellen einer Verbindung für eine [!DNL OAuth]
 
 * [Allgemeine Anweisungen zum Erstellen einer Verbindung im HTTP > Erstellen eines OAuth 2.0-Anfragemoduls](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
-* [Anweisungen zum Erstellen einer Verbindung zu Google im HTTP >[!UICONTROL Make] eines OAuth 2.0-Anfragemoduls](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
+* [Anweisungen zum Erstellen einer Verbindung zu Google finden Sie unter http > [!UICONTROL Make] eines OAuth 2.0-Anfragemoduls](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
 * [Anleitung zum Herstellen einer Verbindung zur Microsoft Graph API über HTTP > Erstellen einer OAuth 2.0-Anfrage](#instructions-for-connecting-to-microsoft-graph-api-via-the-http--make-an-oauth-20-request-module)
 
 ### Allgemeine Anweisungen zum Erstellen einer Verbindung im Modul [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]
