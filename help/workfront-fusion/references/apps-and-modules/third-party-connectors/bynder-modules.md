@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,10 @@ Der Binder-Connector verwendet Folgendes:
 
 ## Verbinden von [!DNL Bynder] mit Workfront Fusion  {#connect-bynder-to-workfront-fusion}
 
+>[!NOTE]
+>
+>Bunter verwendet den Gewährungstyp Autorisierungs-Code/Aktualisierungstoken. Dies ist der einzige Gewährungstyp, den der Fusion Bunter-Connector verwendet.
+
 * [Erstellen einer Verbindung zu [!DNL Bynder] von [!DNL Workfront Fusion]](#create-a-connection-to-bynder-from-workfront-fusion)
 * [Generieren eines [!UICONTROL Client ID] und [!UICONTROL Client Secret] in [!DNL Bynder] (optional)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
@@ -107,9 +111,10 @@ Anweisungen zum Erstellen einer App in [!DNL Bynder] finden Sie unter [OAuth 2.0
 
 >[!NOTE]
 >
->Geben Sie beim Erstellen der App in [!DNL Bynder] Folgendes als `redirect uri` ein:
+>* Geben Sie beim Erstellen der App in [!DNL Bynder] Folgendes als `redirect uri` ein:
 >
->`https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>* Bunter verwendet den Gewährungstyp Autorisierungs-Code/Aktualisierungstoken. Dies ist der einzige Gewährungstyp, den der Fusion Bunter-Connector verwendet.
 
 ## [!DNL Bynder] Module und ihre Felder
 
