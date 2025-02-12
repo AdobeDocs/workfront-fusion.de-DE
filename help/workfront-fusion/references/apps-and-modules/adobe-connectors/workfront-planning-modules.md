@@ -4,9 +4,9 @@ description: Mit den  [!DNL Adobe Workfront Planning] -Modulen können Sie ein  
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 06ba97ec4245f9620f013711df9a77b76abb20be
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1395'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,54 @@ Mit den [!DNL Adobe Workfront Planning]-Modulen können Sie einen Trigger erstel
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration] </p>
-   </td>  
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+## Voraussetzungen
+
+Für den Zugriff auf Workfront Planning sind folgende Voraussetzungen erforderlich:
+
+* Ein neues Workfront-Paket und eine neue Lizenz. Workfront Planning ist nicht für ältere Workfront-Pakete oder -Lizenzen verfügbar.
+* Ein Workfront-Planungspaket.
+* Die Workfront-Instanz Ihres Unternehmens muss in das einheitliche Adobe-Erlebnis integriert werden.
 
 ## Informationen zur Adobe Workfront Planning-API
 
@@ -110,7 +122,7 @@ Sie können direkt aus einem [!DNL Workfront Fusion]-Modul heraus eine Verbindun
           <td>Geben Sie Ihre [!DNL Adobe] [!UICONTROL Client Secret] ein. Diese finden Sie im [!UICONTROL Credentials details] Abschnitt der [!DNL Adobe Developer Console].
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]<p>(Optional)</p></td>
+          <td role="rowheader">[!UICONTROL Authentication URL]</td>
           <td>Geben Sie die URL ein, die Ihre Workfront-Instanz zur Authentifizierung dieser Verbindung verwenden soll. <p>Der Standardwert ist <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
@@ -119,9 +131,22 @@ Sie können direkt aus einem [!DNL Workfront Fusion]-Modul heraus eine Verbindun
         </tr>
       </tbody>
     </table>
+
 1. Klicken Sie auf **[!UICONTROL Continue]** , um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 ## [!DNL Adobe Workfront Planning] Module und ihre Felder
+
+Beim Konfigurieren von Workfront-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service können zusätzlich dazu weitere Workfront-Felder angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+
+Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+
+![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+* [Auslöser](#triggers)
+* [Aktionen](#actions)
+* [Suchvorgänge](#searches)
+* [Nicht kategorisiert](#uncategorized)
 
 ### Auslöser
 
@@ -199,7 +224,7 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatztyp in Workfront Planning a
       <td role="rowheader">
         <p>[!UICONTROL Record type ID]</p>
       </td>
-      <td>Geben Sie die ID des Felds ein, das Sie löschen möchten, oder ordnen Sie sie zu.</td> 
+      <td>Geben Sie die ID des Datensatztyps ein, den Sie löschen möchten, oder ordnen Sie sie zu.</td> 
       </tr>
   </tbody>
 </table>
@@ -253,14 +278,54 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Work
   </tbody>
 </table>
 
-<!--
-### Searches
 
-#### Search records
+### Suchvorgänge
 
-This action module retrieves a list of records based on criteria you specify.
+#### Datensätze suchen
 
--->
+Dieses Aktionsmodul ruft eine Liste von Datensätzen basierend auf von Ihnen angegebenen Kriterien ab.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Geben Sie die Workspace ein, die die zu durchsuchenden Datensätze enthält, oder ordnen Sie sie zu.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Wählen Sie den Datensatztyp aus, den Sie suchen möchten.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record Fields]</p>
+      </td>
+      <td>Suchen Sie für jedes Feld, das Sie bei der Suche verwenden möchten, dieses Feld, wählen Sie den Operator aus und geben Sie den Wert ein, nach dem Sie suchen möchten, oder mappen Sie ihn. Felder sind je nach ausgewähltem Datensatztyp verfügbar.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Condition for filters]</p>
+      </td>
+      <td>Bedingung für die Filter auswählen:<ul><li><b>UND</b><p>Das Modul gibt Datensätze zurück, <b> (alle</b> der von Ihnen ausgewählten Feldwerte erfüllen.</p></li><li><b>ODER</b><p>Das Modul gibt Datensätze zurück, <b> (beliebige</b> der ausgewählten Feldwerte erfüllen.</p></li></ul></td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Limit]</p>
+      </td>
+   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+      </tr>
+  </tbody>
+</table>
+
 
 ### Nicht kategorisiert
 
@@ -287,7 +352,7 @@ Diese Aktion erstellt in Workfront Planning einen einzigen Datensatz.
       <td role="rowheader">
         <p>Andere Felder</p>
       </td>
-      <td>Diese Felder basieren auf dem von Ihnen ausgewählten Datensatztyp.</td> 
+      <td>Geben Sie die Werte ein, die der neue Datensatz haben soll. Diese Felder basieren auf dem von Ihnen ausgewählten Datensatztyp.</td> 
       </tr>
      <tr>
   </tbody>
@@ -313,31 +378,6 @@ Dieses Aktionsmodul löscht den angegebenen Datensatz in Workfront Planning.
       </tr>
   </tbody>
 </table>
-
-<!--
-
-### Get all records
-
-This action module retrieves all records from an [!DNL Adobe Workfront Planning] account.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned records]</p>
-      </td>
-      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-      </tr>
-  </tbody>
-</table>
-
--->
 
 ### Datensatz abrufen
 
@@ -378,11 +418,11 @@ Dieses Aktionsmodul ruft alle Datensätze des angegebenen Typs ab.
       <td role="rowheader">[!UICONTROL Record type]</td>
       <td>Wählen Sie den Typ des Datensatzes aus, den Sie abrufen möchten.</td>
     </tr>
-     <tr>
+     <!--<tr>
       <td role="rowheader">
         <p>[!UICONTROL Maximum number of returned records]</p>
       </td>
-      <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> -->
   </tbody>
 </table>
 
@@ -397,6 +437,10 @@ Dieses Aktionsmodul ruft eine Liste von Datensatztypen in einem [!DNL Adobe Work
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning] finden Sie unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Workfront Planning]</a> in diesem Artikel.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>Wählen Sie den Arbeitsbereich aus, der die Datensatztypen enthält, die Sie abrufen möchten, oder ordnen Sie ihn zu.</td>
     </tr>
   </tbody>
 </table>
@@ -423,7 +467,7 @@ Diese Aktion aktualisiert einen einzelnen Datensatz in Workfront Planning.
       <td role="rowheader">
         <p>Andere Felder</p>
       </td>
-      <td>Diese Felder basieren auf dem von Ihnen ausgewählten Datensatztyp.</td> 
+      <td>Geben Sie die neuen Werte ein, die der Datensatz haben soll. Diese Felder basieren auf dem von Ihnen ausgewählten Datensatztyp.</td> 
       </tr>
      <tr>
   </tbody>
