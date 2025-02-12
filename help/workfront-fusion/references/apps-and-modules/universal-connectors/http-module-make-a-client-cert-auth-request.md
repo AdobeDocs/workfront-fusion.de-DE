@@ -1,12 +1,12 @@
 ---
-title: HTTP &gt; Erstellen eines Clientzertifikatautorisierungsanforderungsmoduls
+title: HTTP > Modul für Client-Zertifikatautorisierungsanfragen erstellen
 description: Mit  [!DNL Adobe Workfront Fusion]  Modul können Sie eine HTTP-Anfrage mit HTTP-Client-Zertifikatautorisierung konfigurieren und an einen Server senden. Die empfangene HTTP-Antwort ist dann im Ausgabepaket enthalten.
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -64,9 +64,9 @@ Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
-## [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] Modulkonfiguration
+## [!UICONTROL HTTP] > Konfiguration des [!UICONTROL Make a Client Certificate Authorization request]
 
-Beim Konfigurieren des Moduls [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] zeigt [!DNL Adobe Workfront Fusion] die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren des Moduls [!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] zeigt [!DNL Adobe Workfront Fusion] die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zu einem anderen Modul in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

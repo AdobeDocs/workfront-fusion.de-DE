@@ -4,7 +4,7 @@ description: Mit  [!DNL Adobe Workfront Fusion Google Team Drive]  Modulen könn
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-### Trigger
+### Auslöser
 
 #### [!UICONTROL Watch Files]
 
@@ -162,7 +162,7 @@ Lädt eine Datei auf das angegebene freigegebene Laufwerk hoch.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Geben Sie die Datei an, die Sie auf das freigegebene Laufwerk hochladen möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt;[!UICONTROL Get a File] oder [!UICONTROL Dropbox] &gt;[!UICONTROL Get a file)], oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </td> 
+   <td> <p>Geben Sie die Datei an, die Sie auf das freigegebene Laufwerk hochladen möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] oder [!UICONTROL Dropbox] &gt; [!UICONTROL Get a file)]), oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title]</td> 

@@ -1,12 +1,12 @@
 ---
 title: Aufrufen der MS Graph REST-API
-description: Aufrufen der MS Graph REST-API über das Adobe Workfront Fusion HTTP &gt; Erstellen eines OAuth 2.0-Anfragemoduls
+description: Aufrufen der MS Graph REST API über das Adobe Workfront Fusion HTTP &> Erstellen eines OAuth 2.0-Anfragemoduls
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '679'
 ht-degree: 2%
 
 ---
