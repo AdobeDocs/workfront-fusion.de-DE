@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: da0c82d66bcd90a9e676f54c93252218f9b1de99
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1648'
 ht-degree: 3%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 3%
 * {#fusion-release-activity} der Fusionsfreigabeaktivität
    * [Adobe Workfront Fusion-Versionsaktivität](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion-Versionen - {#fusion-releases-2025} 2025
+      * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 10. Februar 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 20. Januar 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 13. Januar 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 6. Januar 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
@@ -229,7 +230,7 @@ ht-degree: 3%
    * [Erstellen neuer Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Erstellen von Szenarien mit Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [Anzeigen, Bearbeiten und Löschen von Vorlagen](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
-   * [Publish- und Freigabevorlagen](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
+   * [Veröffentlichen und Freigeben von Vorlagen](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Derzeit verfügbare Adobe Workfront Fusion-Vorlagen](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
    * [Häufig gestellte Fragen zu [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Verweise {#references}
@@ -289,7 +290,7 @@ ht-degree: 3%
          * [SFTP-Module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
          * [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
          * [Verwenden von gegenseitigem TLS in HTTP-Modulen in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
-      * Adobe-Anschlüsse {#adobe-connectors}
+      * Adobe Connectors-{#adobe-connectors}
          * [Adobe Acrobat Sign-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Adobe Authenticator-Modul](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
          * [Adobe Campaign-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
@@ -298,7 +299,7 @@ ht-degree: 3%
          * [Adobe Experience Manager Forms-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
          * [Adobe Firefly-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
          * [Adobe Frame.io-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
-         * [Adobe I/O-Ereignismodule](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+         * [Adobe I/O Events-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
          * [Adobe Journey Optimizer-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
          * [Adobe Lightroom-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
          * [Adobe Marketo-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
