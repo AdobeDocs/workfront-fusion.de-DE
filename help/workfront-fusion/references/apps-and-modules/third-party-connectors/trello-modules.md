@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
 workflow-type: tm+mt
-source-wordcount: '4259'
+source-wordcount: '4320'
 ht-degree: 0%
 
 ---
@@ -21,42 +21,46 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration] </p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Voraussetzungen
 
@@ -107,9 +111,9 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Pinnwände
 
-+++ **[!UICONTROL Watch Boards]**
++++ **[!UICONTROL Archive or Unarchive a Board]**
 
-Dieses Trigger-Modul beginnt ein Szenario, wenn eine neue Pinnwand hinzugefügt wird.
+Dieses Aktionsmodul schließt (archiviert) oder öffnet eine angegebene Pinnwand erneut (archiviert).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -120,8 +124,50 @@ Dieses Trigger-Modul beginnt ein Szenario, wenn eine neue Pinnwand hinzugefügt 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Die maximale Anzahl an Boards, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</p> </td> 
+   <td role="rowheader">[!UICONTROL Board ID]</td> 
+   <td> <p> Geben Sie die ID der Pinnwand ein, die Sie schließen oder erneut öffnen möchten, oder mappen Sie sie.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
+   <td> <p> Wählen Sie aus, ob Sie die Pinnwand schließen (archivieren) oder erneut öffnen (Archivierung aufheben) möchten.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Assign a Member to a Board]**
+
+Dieses Aktionsmodul weist einem Board, das Sie angeben, ein Mitglied zu.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Board ID]</td> 
+   <td> <p> Wählen Sie die Pinnwand aus, der Sie ein Mitglied hinzufügen möchten.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Email address]</td> 
+   <td> <p> Geben Sie die E-Mail-Adresse des Mitglieds ein, das Sie der Pinnwand hinzufügen möchten, oder ordnen Sie sie zu.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
+   <td> <p>Wählen Sie den Typ des Elements aus, das das neue Element sein soll.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Admin]</strong>: Ein Board-Administrator kann jede Board-Aktion ausführen.</li> 
+     <li><strong>[!UICONTROL Normal]</strong>: Ein normales Mitglied ist einfach ein Mitglied des Board.</li> 
+     <li><strong>[!UICONTROL Observer]</strong>: Ein Beobachter ist ein Mitglied mit schreibgeschütztem Zugriff auf das Board. <br>Beobachter stehen nur Teams mit [!UICONTROL Trello Business Class] zur Verfügung.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Full name]</td> 
+   <td> <p> Geben Sie den vollständigen Namen des Benutzers ein, den Sie der Pinnwand hinzufügen möchten, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -150,18 +196,18 @@ Dieses Aktionsmodul erstellt eine neue Pinnwand mit den ausgewählten Einstellun
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Geben Sie die ID der Organisation ein oder mappen Sie sie. Die Organisations-ID kann mit einem anderen Modul abgerufen werden, z. B. mit dem Modul Aktivitäten beobachten .</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/id-of-org.png"> </p> </td> 
+   <td> <p>Geben Sie die ID der Organisation ein oder mappen Sie sie. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
-   <td> <p>Die Boards haben für jede Berechtigungsstufe unterschiedliche Abstimmungs- und Kommentierungsregeln. Beispiel: Wenn Ihr Board [!UICONTROL Private] ist und Sie die Abstimmungs- und Kommentierungsregeln auf [!UICONTROL All] setzen, erhalten Sie einen Fehler. </p> <p>Abstimmungen und Kommentare sind für jede Berechtigungsstufe auf die folgenden Gruppen beschränkt:</p> 
+   <td> <p>Die Boards haben für jede Berechtigungsstufe unterschiedliche Abstimmungs- und Kommentierungsregeln. Wenn Ihr Board beispielsweise [!UICONTROL Private] ist und Sie die Abstimmungs- und Kommentierungsregeln auf [!UICONTROL All] festgelegt haben, erhalten Sie einen Fehler. </p> <p>Abstimmungen und Kommentare sind für jede Berechtigungsstufe auf die folgenden Gruppen beschränkt:</p> 
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
-      —&gt;Mitglieder, Mitglieder und Beobachter</li> 
+      Mitglieder, Mitglieder und Beobachter</li> 
      <li><strong>[!UICONTROL For organization]</strong>: 
-      —&gt;Mitglieder, Mitglieder und Beobachter, Organisationsmitglieder</li> 
+      Mitglieder, Mitglieder und Beobachter, Mitglieder der Organisation</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
-      —&gt;Mitglieder, Mitglieder und Beobachter, Organisationsmitglieder, alle</li> 
+      Mitglieder, Mitglieder und Beobachter, Organisationsmitglieder, Alle</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -201,11 +247,15 @@ Dieses Aktionsmodul erstellt eine neue Pinnwand mit den ausgewählten Einstellun
    <td> <p>Wählen Sie die Hintergrundfarbe oder den benutzerdefinierten Hintergrund aus.</p> <p>Hinweis: Benutzerdefinierte Hintergründe stehen nur [!UICONTROL Trello Gold and Business Class] Abonnenten zur Verfügung.</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Background ID]</td> 
+   <td> <p> Wenn Sie ausgewählt haben, einen benutzerdefinierten Hintergrund im Feld "[!UICONTROL Background]" zu verwenden, geben Sie die ID des Hintergrunds, den Sie verwenden möchten, ein oder ordnen Sie ihn zu.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>Wählen Sie zwischen zwei Modi für die Kartenalterung. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Regular]</strong>: Karten werden mit zunehmendem Alter immer transparenter. </li> 
-     <li><strong>[!UICONTROL Pirate]</strong>: Karten werden reißen, gelb und brechen wie eine alte Piratenkarte, während sie altern.</li> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>: Karten werden reißen, gelb und brechen wie eine alte Piratenkarte, während sie altern.</li> 
+     <li><strong>[!UICONTROL Regular mode ]</strong>: Karten werden mit zunehmendem Alter immer transparenter. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -217,8 +267,10 @@ Dieses Aktionsmodul erstellt eine neue Pinnwand mit den ausgewählten Einstellun
 
 Dieses Aktionsmodul bearbeitet die Einstellungen einer vorhandenen Pinnwand.
 
-<table style="table-layout:auto"> 
- <col> 
+>[!SUCCESS]
+>
+><table style="table-layout:auto">
+<col> 
  <col> 
  <tbody> 
   <tr> 
@@ -235,26 +287,26 @@ Dieses Aktionsmodul bearbeitet die Einstellungen einer vorhandenen Pinnwand.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New description]</td> 
-   <td> <p> Geben Sie bei Bedarf eine neue Pinnwand-Beschreibung ein oder mappen Sie sie.</p> </td> 
+   <td> <p> Eine neue Pinnwand-Beschreibung eingeben oder zuordnen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Geben Sie die eindeutige [!UICONTROL Trello]-ID der Pinnwand ein, die das Modul bearbeiten soll, oder mappen Sie sie. Sie können die Pinnwand-ID mit einem anderen Modul abrufen, z. B. mit dem Modul [!DNL Watch Activities] .</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/org-id.png"> </p> </td> 
+   <td> <p>Geben Sie die eindeutige [!UICONTROL Trello]-ID der Pinnwand ein, die das Modul bearbeiten soll, oder mappen Sie sie.  </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subscribe] </td> 
-   <td> <p>Wählen Sie eine Option aus, um anzugeben, ob der handelnde Benutzer das Board abonniert hat.</p> </td> 
+   <td> <p>Wählen Sie eine Option, um anzugeben, ob der Benutzer, dem die von diesem Modul verwendete Verbindung gehört, die Pinnwand abonniert hat.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
    <td> <p>Die Boards haben für jede Berechtigungsstufe unterschiedliche Abstimmungs- und Kommentierungsregeln. Beispiel: Wenn Ihr Board [!UICONTROL Private] ist und Sie die Abstimmungs- und Kommentierungsregeln auf [!UICONTROL All] setzen, erhalten Sie einen Fehler. </p> <p>Abstimmungen und Kommentare sind für jede Berechtigungsstufe auf die folgenden Gruppen beschränkt:</p> 
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
-      —&gt;Mitglieder, Mitglieder und Beobachter</li> 
+      Mitglieder, Mitglieder und Beobachter</li> 
      <li><strong>[!UICONTROL For organization]</strong>: 
-      —&gt;Mitglieder, Mitglieder und Beobachter, Organisationsmitglieder</li> 
+      Mitglieder, Mitglieder und Beobachter, Mitglieder der Organisation</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
-      —&gt;Mitglieder, Mitglieder und Beobachter, Organisationsmitglieder, alle</li> 
+      Mitglieder, Mitglieder und Beobachter, Organisationsmitglieder, Alle</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -289,8 +341,8 @@ Dieses Aktionsmodul bearbeitet die Einstellungen einer vorhandenen Pinnwand.
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>Wählen Sie zwischen zwei Modi für die Kartenalterung. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Regular]</strong>: Karten werden mit zunehmendem Alter immer transparenter. </li> 
-     <li><strong>[!UICONTROL Pirate]</strong>: Karten werden reißen, gelb und brechen wie eine alte Piratenkarte, während sie altern.</li> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>: Karten werden reißen, gelb und brechen wie eine alte Piratenkarte, während sie altern.</li> 
+     <li><strong>[!UICONTROL Regular mode]</strong>: Karten werden mit zunehmendem Alter immer transparenter. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -307,6 +359,7 @@ Dieses Aktionsmodul bearbeitet die Einstellungen einer vorhandenen Pinnwand.
   </tr> 
  </tbody> 
 </table>
+
 
 +++
 
@@ -364,69 +417,6 @@ Dieses Suchmodul ruft Informationen zu einer Pinnwand ab, die Sie angeben.
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Board]**
-
-Dieses Aktionsmodul schließt eine von Ihnen angegebene Pinnwand oder öffnet sie erneut.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Board ID]</td> 
-   <td> <p> Geben Sie die ID der Pinnwand ein, die Sie schließen oder erneut öffnen möchten, oder mappen Sie sie.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
-   <td> <p> Wählen Sie aus, ob Sie die Pinnwand schließen (archivieren) oder erneut öffnen (Archivierung aufheben) möchten.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Assign a Member to a Board]**
-
-Dieses Aktionsmodul weist einem Board, das Sie angeben, ein Mitglied zu.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Board ID]</td> 
-   <td> <p> Wählen Sie die Pinnwand aus, der Sie ein Mitglied hinzufügen möchten.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Email address]</td> 
-   <td> <p> Geben Sie die E-Mail-Adresse des Mitglieds ein, das Sie der Pinnwand hinzufügen möchten, oder ordnen Sie sie zu.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
-   <td> <p>Wählen Sie den Typ des Mitglieds aus, das Sie der Pinnwand hinzufügen möchten.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Admin]</strong>: Ein Board-Administrator kann jede Board-Aktion ausführen.</li> 
-     <li><strong>[!UICONTROL Normal]</strong>: Ein normales Mitglied ist einfach ein Mitglied des Board.</li> 
-     <li><strong>[!UICONTROL Observer]</strong>: Ein Beobachter ist ein Mitglied mit schreibgeschütztem Zugriff auf das Board. <br>Beobachter stehen nur Teams mit [!UICONTROL Trello Business Class] zur Verfügung.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Full name]</td> 
-   <td> <p> Geben Sie den vollständigen Namen des Benutzers ein, den Sie der Pinnwand hinzufügen möchten.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Unassign a Member from a Board]**
 
 Dieses Aktionsmodul entfernt ein Mitglied aus einer Pinnwand.
@@ -452,11 +442,9 @@ Dieses Aktionsmodul entfernt ein Mitglied aus einer Pinnwand.
 
 +++
 
-### Listen
++++ **[!UICONTROL Watch Boards]**
 
-+++ **[!UICONTROL Watch cards moved to a list]**
-
-Dieses Kartenmodul wird aktiviert, wenn eine Trigger in eine bestimmte Liste verschoben wird.
+Dieses Trigger-Modul beginnt ein Szenario, wenn eine neue Pinnwand hinzugefügt wird.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -467,21 +455,15 @@ Dieses Kartenmodul wird aktiviert, wenn eine Trigger in eine bestimmte Liste ver
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Board]</td> 
-   <td>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie auf Karten überprüfen möchten.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL List]</td> 
-   <td>Wählen Sie die Liste aus, die Sie auf Karten überwachen möchten.</td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Die maximale Anzahl an Karten, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</p>  </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Pinnwänden ein, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
+
+### Listen
 
 +++ **[!UICONTROL Create a List]**
 
@@ -509,7 +491,7 @@ Dieses Aktionsmodul erstellt eine Liste auf einer Pinnwand, für die Sie angeben
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy list]</td> 
-   <td> <p> Wählen Sie aus, wie Sie die ID der zu kopierenden Liste eingeben möchten.</p> 
+   <td> <p> Wenn Sie eine Liste kopieren, wählen Sie aus, wie Sie die ID der zu kopierenden Liste eingeben möchten.</p> 
     <ul> 
      <li> <p><strong>Manuell eingeben</strong> </p> <p>Geben Sie im Feld <strong>[!UICONTROL List ID]</strong> die ID der Liste ein, die Sie kopieren möchten, oder mappen Sie sie zu.<br></p> </li> 
      <li> <p><strong>Auswählen</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie kopieren möchten, und klicken Sie dann auf die Liste.</p> </li> 
@@ -578,11 +560,9 @@ Dieses Aktionsmodul ruft Details zu einer bestimmten Liste ab.
 
 +++
 
-### Karten
++++ **[!UICONTROL Watch cards moved to a list]**
 
-+++ **[!UICONTROL Watch cards]**
-
-Dieses Kartenmodul wird aktiviert, wenn eine neue Trigger hinzugefügt wird.
+Dieses Kartenmodul wird aktiviert, wenn eine Trigger in eine bestimmte Liste verschoben wird.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -593,17 +573,76 @@ Dieses Kartenmodul wird aktiviert, wenn eine neue Trigger hinzugefügt wird.
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watched object]</td> 
-   <td> <p>Wählen Sie den Ort aus, an dem Sie auf Karten achten möchten.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL All cards]</strong> </li> 
-     <li> <p><strong>Karten auf einer bestimmten Pinnwand</strong> </p> <p>Wählen Sie die Pinnwand aus, die Sie auf Karten überwachen möchten</p> </li> 
-     <li> <p><strong>[!UICONTROL Cards on specific list]</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie auf Karten überprüfen möchten, und wählen Sie dann die Liste aus.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Board]</td> 
+   <td>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie auf Karten überprüfen möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL List]</td> 
+   <td>Wählen Sie die Liste aus, die Sie auf Karten überwachen möchten.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Die maximale Anzahl an Karten, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
+### Karten
+
++++ **[!UICONTROL Add an Attachment]**
+
+Dieses Aktionsmodul fügt der ausgewählten Karte einen Anhang hinzu.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter card ID]</td> 
+   <td> <p> Wählen Sie aus, wie Sie die ID der Karte eingeben möchten, der Sie einen Anhang hinzufügen möchten.</p> 
+    <ul> 
+     <li> <p><strong>Manuell eingeben</strong> </p> <p>Geben Sie im Feld <strong>[!UICONTROL Card ID]</strong> die ID der Karte ein, der Sie einen Anhang hinzufügen möchten, oder mappen Sie sie zu.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Wählen Sie die Pinnwand aus, auf der sich die Karte befindet, der Sie eine Anlage hinzufügen möchten, wählen Sie dann die Liste mit der Karte aus und klicken Sie auf die Karte.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Attachment type]</p> </td> 
+   <td> <p>Wählen Sie aus, ob Sie die Datei direkt hochladen oder eine URL zur Datei angeben möchten.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
+     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL zur Datei und einen Namen für den Anhang an.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Archive or Unarchive a Card]**
+
+Dieses Aktionsmodul archiviert oder sendet eine Karte zurück an die Pinnwand.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Card ID]</td> 
+   <td> <p> Geben Sie die ID der Karte ein, die Sie archivieren oder an die Pinnwand zurücksenden möchten, oder mappen Sie sie.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
+   <td> <p> Wählen Sie aus, ob Sie die Karte schließen (Archiv) oder an die Pinnwand zurücksenden möchten (Archivierung aufheben).</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -627,16 +666,16 @@ Dieses Aktionsmodul erstellt eine Karte in einer ausgewählten Liste.
    <td> <p> Wählen Sie aus, wie Sie die ID der Liste eingeben möchten, der Sie eine Karte hinzufügen möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Geben Sie im Feld <strong>[!UICONTROL List ID]</strong> die ID der Liste ein, der Sie eine Karte hinzufügen möchten, oder mappen Sie sie.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie kopieren möchten, und klicken Sie dann auf die Liste.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Liste enthält, der Sie eine Karte hinzufügen möchten, und wählen Sie dann die Liste aus.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Labels] </td> 
-   <td> <p>Geben Sie für jeden Titel, den Sie der Karte hinzufügen möchten, die ID des Titels ein. Die ID kann z. B. mithilfe des [!UICONTROL Retrieve Labels] abgerufen werden.</p> </td> 
+   <td> <p>Klicken Sie für jede Beschriftung, die Sie der Karte hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die ID der Beschriftung ein.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Members]</td> 
-   <td>Geben Sie für jedes Mitglied, das Sie der Karte hinzufügen möchten, die ID des Mitglieds ein. </td> 
+   <td>Klicken Sie für jedes Mitglied, das Sie der Karte hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die ID des Mitglieds ein. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -648,7 +687,7 @@ Dieses Aktionsmodul erstellt eine Karte in einer ausgewählten Liste.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Wählen Sie aus, ob Sie die Karte oben hinzufügen oder unten in der Liste [!UICONTROL append] möchten.</p> </td> 
+   <td> <p>Wählen Sie aus, ob Sie die Karte oben hinzufügen möchten oder ob Sie die Karte am Ende der Liste anhängen möchten.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
@@ -664,18 +703,14 @@ Dieses Aktionsmodul erstellt eine Karte in einer ausgewählten Liste.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Source file]</p> </td> 
-   <td> <p>Geben Sie Informationen zu einer Datei ein, die Sie der Karte als Anhang hinzufügen möchten, oder ordnen Sie sie zu.</p> 
-    <ul> 
-     <li>[!UICONTROL File name]: Geben Sie den Dateinamen einschließlich der Dateierweiterung ein oder ordnen Sie ihn zu.</li> 
-     <li> 
-     <p>Wählen Sie eine Datei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Datei zu</p> 
+   <td> <p>Geben Sie Informationen zu einer Datei ein, die Sie der Karte als Anhang hinzufügen möchten, oder ordnen Sie sie zu. Wählen Sie eine Datei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Datei zu</p> 
      <p>Hinweis: Pro Anhang gibt es eine Beschränkung von 10 MB für Datei-Uploads. [!UICONTROL Business Class]- und [!UICONTROL Trello Gold]-Mitglieder haben jedoch eine Dateiuploadbegrenzung von 250 MB pro Anhang.</p> 
      </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy card]</td> 
-   <td> <p> Wählen Sie aus, wie Sie die ID der zu kopierenden Karte eingeben möchten.</p> 
+   <td> <p> Wenn Sie eine neue Karte als Kopie einer vorhandenen Karte erstellen, wählen Sie aus, wie Sie die ID der Karte eingeben möchten, die Sie kopieren möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Geben Sie im Feld <strong>[!UICONTROL Card ID]</strong> die ID der Karte ein, die Sie kopieren möchten, oder mappen Sie sie zu.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Karte enthält, die Sie kopieren möchten, und klicken Sie auf die Liste mit der Karte. Wählen Sie dann die Karte aus.</p> </li> 
@@ -720,7 +755,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Karte.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Labels] </td> 
-   <td> <p>Fügen Sie die IDs aller Kennzeichnungen hinzu, die Sie der Karte hinzufügen möchten. </p> </td> 
+   <td> <p>Klicken Sie für jede Beschriftung, die Sie der Karte hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die ID der Beschriftung ein.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
@@ -732,11 +767,11 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Karte.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
-   <td> <p> Wenn diese Option aktiviert ist, wird die Karte am Fälligkeitsdatum als abgeschlossen markiert.</p> </td> 
+   <td> <p> Aktivieren Sie diese Option, um die Karte am Fälligkeitsdatum als abgeschlossen zu markieren.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Members] </td> 
-   <td> <p>Fügen Sie die ID aller Mitglieder hinzu, die Sie der Karte hinzufügen möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td> <p>Klicken Sie für jedes Mitglied, das Sie der Karte hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die ID des Mitglieds ein oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachment cover ID]</p> </td> 
@@ -813,14 +848,14 @@ Dieses Aktionsmodul gibt Karten zurück, die mit der Suchanfrage übereinstimmen
      <li><code><strong>due:day</strong></code> <p>Gibt Karten zurück, die innerhalb von 24 Stunden fällig sind. Der <code>due:</code>-Operator kann auch mit anderen Zeitrahmen verwendet werden, z. B. <code>due:week</code>, <code>due:month</code> oder <code>due:overdue</code>. Sie können auch nach einem bestimmten Tagesbereich suchen. Das Hinzufügen von <code>due:14</code> zur Suche umfasst beispielsweise Karten, die in den nächsten 14 Tagen fällig sind.</p> </li> 
      <li><code><strong>created:day</strong></code> <p>Gibt Karten zurück, die in den letzten 24 Stunden erstellt wurden. Der <code> created:</code>Operator kann auch mit anderen Zeitrahmen wie <code>created:week</code> oder <code>created:month</code> verwendet werden. Sie können auch nach einem bestimmten Tagesbereich suchen. Wenn Sie beispielsweise <code>created:14</code> zur Suche hinzufügen, werden auch die Karten einbezogen, die in den letzten 14 Tagen erstellt wurden.</p> </li> 
      <li><code><strong>edited:day</strong></code> <p>Gibt die Karten zurück, die in den letzten 24 Stunden bearbeitet wurden. Der <code>edited:</code> Operator kann auch mit anderen Zeitrahmen verwendet werden, z. B. <code>edited:week</code> oder <code>edited:month</code>. Sie können auch nach einem bestimmten Tagesbereich suchen. Wenn Sie beispielsweise der Suche <code>edited:21</code> hinzufügen, werden die Karten berücksichtigt, die in den letzten 21 Tagen bearbeitet wurden.</p> </li> 
-     <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>Gibt Karten zurück, die mit dem Text der Kartenbeschreibungen, Checklisten, Kommentare oder Namen übereinstimmen. Beispielsweise gibt comment:„FIX IT“ Karten mit „FIX IT“ in einem Kommentar zurück.</p> </li> 
+     <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>Gibt Karten zurück, die mit dem Text der Kartenbeschreibungen, Checklisten, Kommentare oder Namen übereinstimmen. Beispielsweise gibt <code>comment:"FIX IT"</code> in einem Kommentar Karten mit „FEHLERBEHEBUNG“ zurück.</p> </li> 
      <li><code><strong>is:open</strong> and <strong>is:archived</strong></code> <p>Gibt offene oder archivierte Karten zurück. Wenn keines von beiden angegeben ist, gibt [!UICONTROL Trello] beide Typen zurück.</p> </li> 
      <li><code><strong>is:starred</strong> </code> <p>Enthält nur Karten auf mit Sternen versehenen Pinnwänden.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned cards]</td> 
-   <td> <p> Die maximale Anzahl an Karten, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben. Dieser Wert muss kleiner oder gleich 1.000 sein.</p> </td> 
+   <td> <p> Geben Sie die maximale Anzahl an Karten ein, die Sie während eines Ausführungszyklus zurückgeben [!DNL Workfront Fusion], oder mappen Sie sie. Dieser Wert muss kleiner oder gleich 1.000 sein.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -828,16 +863,16 @@ Dieses Aktionsmodul gibt Karten zurück, die mit der Suchanfrage übereinstimmen
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cards] </td> 
-   <td> <p>Fügen Sie alle Karten hinzu, nach denen Sie gezielt suchen möchten.</p> </td> 
+   <td> <p>Um nach bestimmten Karten zu suchen<b> klicken Sie auf </b>Element hinzufügen“ und fügen Sie die ID der Karte hinzu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Card]**
++++ **[!UICONTROL Watch cards]**
 
-Dieses Aktionsmodul archiviert oder sendet eine Karte zurück an die Pinnwand.
+Dieses Kartenmodul wird aktiviert, wenn eine neue Trigger hinzugefügt wird.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -848,45 +883,17 @@ Dieses Aktionsmodul archiviert oder sendet eine Karte zurück an die Pinnwand.
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Card ID]</td> 
-   <td> <p> Geben Sie die ID der Karte ein, die Sie archivieren oder an die Pinnwand zurücksenden möchten, oder mappen Sie sie.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
-   <td> <p> Wählen Sie aus, ob Sie die Karte schließen (Archiv) oder an die Pinnwand zurücksenden möchten (Archivierung aufheben).</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Add an Attachment]**
-
-Dieses Aktionsmodul fügt der ausgewählten Karte einen Anhang hinzu.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Enter card ID]</td> 
-   <td> <p> Wählen Sie aus, wie Sie die ID der Karte eingeben möchten, zu der Sie Details abrufen möchten.</p> 
+   <td role="rowheader">[!UICONTROL Watched object]</td> 
+   <td> <p>Wählen Sie den Ort aus, an dem Sie auf Karten achten möchten.</p> 
     <ul> 
-     <li> <p><strong>Manuell eingeben</strong> </p> <p>Geben Sie im Feld <strong>[!UICONTROL Card ID]</strong> die ID der Karte ein, zu der Sie Details abrufen möchten, oder mappen Sie sie zu.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Wählen Sie die Pinnwand aus, auf der sich die Karte befindet, zu der Sie Details abrufen möchten, wählen Sie dann die Liste aus, auf der sich die Karte befindet, und wählen Sie dann die Karte aus.</p> </li> 
+     <li><strong>[!UICONTROL All cards]</strong> </li> 
+     <li> <p><strong>Karten auf einer bestimmten Pinnwand</strong> </p> <p>Wählen Sie die Pinnwand aus, die Sie auf Karten überwachen möchten</p> </li> 
+     <li> <p><strong>[!UICONTROL Cards on specific list]</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie auf Karten überprüfen möchten, und wählen Sie dann die Liste aus.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachment type]</p> </td> 
-   <td> <p>Wählen Sie aus, ob Sie die Datei direkt hochladen oder eine URL zur Datei angeben möchten.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
-     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL zur Datei und einen Namen für den Anhang an.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>Die maximale Anzahl an Karten, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -894,18 +901,6 @@ Dieses Aktionsmodul fügt der ausgewählten Karte einen Anhang hinzu.
 +++
 
 ### Abonnenten
-
-+++ **[!UICONTROL Assign a Member to a Board]**
-
-Siehe &quot;[!UICONTROL Assign a Member to a Board]&quot; unter [Pinnwände](#boards).
-
-+++
-
-+++ **[!UICONTROL Unassign a Member from a Board]**
-
-Siehe &quot;[!UICONTROL Unassign a Member from a Board]&quot; unter [Pinnwände](#boards).
-
-+++
 
 +++ **[!UICONTROL Add a Member to a Card]**
 
@@ -929,6 +924,12 @@ Dieses Aktionsmodul fügt das angegebene Mitglied zur angegebenen Karte hinzu.
   </tr> 
  </tbody> 
 </table>
+
++++
+
++++ **[!UICONTROL Assign a Member to a Board]**
+
+Siehe &quot;[!UICONTROL Assign a Member to a Board]&quot; unter [Pinnwände](#boards).
 
 +++
 
@@ -958,6 +959,12 @@ Dieses Aktionsmodul ruft Informationen zu [!UICONTROL Trello] Mitgliedern ab.
   </tr> 
  </tbody> 
 </table>
+
++++
+
++++ **[!UICONTROL Unassign a Member from a Board]**
+
+Siehe &quot;[!UICONTROL Unassign a Member from a Board]&quot; unter [Pinnwände](#boards).
 
 +++
 
@@ -1107,38 +1114,6 @@ Dieses Aktionsmodul fügt einer ausgewählten Karte einen Titel hinzu.
 
 ### Kommentare
 
-+++ **[!UICONTROL Watch Comments]**
-
-Ruft Kommentardetails ab, wenn ein neuer Kommentar an einer angegebenen Position vorhanden ist.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Watched object]</td> 
-   <td> <p>Wählen Sie den Ort aus, auf den Sie nach Kommentaren achten möchten.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL All cards] überall</strong> </li> 
-     <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>Pinnwand auswählen, auf der Kommentare angezeigt werden sollen</p> </li> 
-     <li> <p><strong>[!UICONTROL List]</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie auf Kommentare überwachen möchten, und wählen Sie dann die Liste aus.</p> </li> 
-     <li><strong>[!UICONTROL Card]</strong> </li> 
-     <li>Wählen Sie die Pinnwand aus, die die Karte enthält, die Sie auf Kommentare überwachen möchten, wählen Sie dann die Liste aus, die die Karte enthält, und wählen Sie dann die Karte aus.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Die maximale Anzahl von Kommentaren, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Create a Comment in a Card]**
 
 Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
@@ -1197,6 +1172,38 @@ Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
   <tr> 
    <td role="rowheader">[!UICONTROL Before] </td> 
    <td> <p>Legen Sie das Enddatum des Zeitraums fest, in dem der Kommentar erstellt wurde. Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Watch Comments]**
+
+Ruft Kommentardetails ab, wenn ein neuer Kommentar an einer angegebenen Position vorhanden ist.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Watched object]</td> 
+   <td> <p>Wählen Sie den Ort aus, auf den Sie nach Kommentaren achten möchten.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL All cards] überall</strong> </li> 
+     <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>Pinnwand auswählen, auf der Kommentare angezeigt werden sollen</p> </li> 
+     <li> <p><strong>[!UICONTROL List]</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie auf Kommentare überwachen möchten, und wählen Sie dann die Liste aus.</p> </li> 
+     <li><strong>[!UICONTROL Card]</strong> </li> 
+     <li>Wählen Sie die Pinnwand aus, die die Karte enthält, die Sie auf Kommentare überwachen möchten, wählen Sie dann die Liste aus, die die Karte enthält, und wählen Sie dann die Karte aus.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>Die maximale Anzahl von Kommentaren, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,9 +4,9 @@ description: Viele  [!DNL Adobe Workfront Fusion]  erfordern beim Erstellen eine
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,8 @@ So erstellen Sie eine Verbindung innerhalb eines [!DNL Workfront Fusion]:
 
 1. Klicken Sie auf **[!UICONTROL Add]** neben dem Feld [!UICONTROL Connection] , um das **[!UICONTROL Create a connection]** zu öffnen.
 1. (Optional) Ändern Sie die **[!UICONTROL Connection name]**.
+1. Wählen Sie im Feld Umgebung aus, ob es sich um eine Produktions- oder Nicht-Produktionsumgebung handelt. Diese Information wird im Bereich Verbindungen von Fusion angezeigt.
+1. Wählen Sie im Feld Typ aus, ob es sich um einen Dienst oder ein persönliches Konto handelt. Diese Information wird im Bereich Verbindungen von Fusion angezeigt.
 1. (Bedingt) Wenn für die App erweiterte Verbindungseinstellungen wie eine ID, ein Schlüssel oder eine [!UICONTROL secret] erforderlich sind, geben Sie diese Informationen ein.
 
    Möglicherweise müssen Sie auf **[!UICONTROL Show advanced settings]** klicken, um die Felder anzuzeigen, in die Sie diese Art von Informationen eingeben können.
