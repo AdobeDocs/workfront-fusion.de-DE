@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
+source-git-commit: 46bb455ecc0820dc68468f9f810bd51074c224fa
 workflow-type: tm+mt
-source-wordcount: '4320'
+source-wordcount: '4370'
 ht-degree: 0%
 
 ---
@@ -872,7 +872,7 @@ Dieses Aktionsmodul gibt Karten zurück, die mit der Suchanfrage übereinstimmen
 
 +++ **[!UICONTROL Watch cards]**
 
-Dieses Kartenmodul wird aktiviert, wenn eine neue Trigger hinzugefügt wird.
+Dieses Kartenmodul startet ein Trigger, wenn eine neue Karte hinzugefügt wird.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -893,7 +893,7 @@ Dieses Kartenmodul wird aktiviert, wenn eine neue Trigger hinzugefügt wird.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Die maximale Anzahl an Karten, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -947,7 +947,7 @@ Dieses Aktionsmodul ruft Informationen zu [!UICONTROL Trello] Mitgliedern ab.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
-   <td> <p>Geben Sie den vollständigen Namen oder Benutzernamen des Benutzers ein, den Sie suchen möchten.</p> </td> 
+   <td> <p>Geben Sie den Namen oder Benutzernamen des Benutzers ein, den Sie suchen möchten.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -955,7 +955,7 @@ Dieses Aktionsmodul ruft Informationen zu [!UICONTROL Trello] Mitgliedern ab.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned members]</td> 
-   <td> <p> Die maximale Anzahl an Mitgliedern, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -996,11 +996,11 @@ Dieses Aktionsmodul erstellt eine Checkliste für die ausgewählte Karte.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Wählen Sie aus, ob Sie die Checkliste oben oder [!UICONTROL append the] Checkliste unten auf der Karte hinzufügen möchten.</p> </td> 
+   <td> <p>Wählen Sie aus, ob Sie die Checkliste oben hinzufügen möchten oder ob Sie die Checkliste am unteren Rand der Karte anhängen möchten.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter checklist ID]</p> </td> 
-   <td> <p>Geben Sie die ID einer Quell-Checkliste ein, die Sie in die neue kopieren möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td> <p>Wenn Sie die Checkliste durch Kopieren einer vorhandenen Checkliste erstellen, geben Sie die ID einer Quell-Checkliste, die Sie kopieren möchten, in die neue ein oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1021,7 +1021,7 @@ Dieses Aktionsmodul fügt ein Element zu einer bestimmten Checkliste hinzu.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter checklist ID]</td> 
-   <td> <p> Wählen Sie aus, wie Sie die ID der Checkliste eingeben möchten, der Sie ein Element hinzufügen möchten.</p> 
+   <td> <p> Wenn Sie eine neue Checkliste durch Kopieren einer vorhandenen Checkliste erstellen, wählen Sie aus, wie Sie die ID der Checkliste eingeben möchten, der Sie ein Element hinzufügen möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Geben Sie im Feld <strong>[!UICONTROL Checklist ID]</strong> die ID der Karte ein, der Sie eine Checkliste hinzufügen möchten, oder mappen Sie diese.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Karte enthält, der Sie eine Checkliste hinzufügen möchten, wählen Sie dann die Liste aus, die die Karte enthält, wählen Sie dann die Karte aus und klicken Sie auf die Checkliste.</p> </li> 
@@ -1136,7 +1136,7 @@ Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment] </td> 
-   <td> <p>Geben Sie den Kommentar ein, den Sie der ausgewählten Karte hinzufügen möchten.</p> </td> 
+   <td> <p>Geben Sie den Kommentar ein, den Sie der ausgewählten Karte hinzufügen möchten, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1180,7 +1180,7 @@ Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
 
 +++ **[!UICONTROL Watch Comments]**
 
-Ruft Kommentardetails ab, wenn ein neuer Kommentar an einer angegebenen Position vorhanden ist.
+Dieses Trigger-Modul startet ein Szenario, wenn ein Kommentar hinzugefügt wird.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1203,7 +1203,7 @@ Ruft Kommentardetails ab, wenn ein neuer Kommentar an einer angegebenen Position
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Die maximale Anzahl von Kommentaren, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Kommentaren ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1223,4 +1223,4 @@ Wenn Sie eine Karte bearbeiten oder einen neuen Kommentar erstellen möchten, m�
 
 ### So finden Sie IDs anderer Objekte in [!DNL Trello]
 
-Pinnwand-, Listen- und Kommentar-IDs können nur über Trigger abgerufen werden. Auf der [!DNL trello.com]-Website werden diese IDs nicht angezeigt.
+Pinnwand-, Listen- und Kommentar-IDs können nur über Trigger abgerufen werden. Auf der [!DNL `trello.com`]-Website werden diese IDs nicht angezeigt.
