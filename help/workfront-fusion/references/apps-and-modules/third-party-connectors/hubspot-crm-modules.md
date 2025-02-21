@@ -4,9 +4,9 @@ description: Die  [!DNL Adobe Workfront Fusion] HubSpot CRM-Module ermöglichen 
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
 workflow-type: tm+mt
-source-wordcount: '5661'
+source-wordcount: '5530'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,46 @@ Mit den [!DNL Adobe Workfront Fusion] [!DNL HubSpot CRM]-Modulen können Sie Ere
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration] </p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Voraussetzungen
 
@@ -107,19 +111,17 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 * [Formulare](#forms)
 * [Social Media (Broadcast)](#social-media-broadcast)
 * [Blog-Beiträge](#blog-posts)
-  <!--* [Workflows]-->
+  <!--* [Workflows]()-->
 * [Abonnements](#subscriptions)
-  <!--* [Associations](#associations)-->
+  <!--* [Associations]()-->
 * [Sonstige](#other)
-
-+++**CRM-Objekte**
 
 ### CRM-Objekte
 
-* [CRM-Objekte suchen](#search-for-crm-objects)
-* [CRM-Objekte überwachen](#watch-crm-objects)
+<!--* [Search for CRM objects](#search-for-crm-objects)
+* [Watch CRM objects](#watch-crm-objects)-->
 
-#### [!UICONTROL Search for CRM Objects]
++++ **[!UICONTROL Search for CRM Objects]**
 
 Dieses Suchmodul sucht nach CRM-Objekten anhand benutzerdefinierter Eigenschaften oder anhand einer Abfrage. Um nach Produkten oder Zeileneinträgen zu suchen, verwenden Sie eine spezielle Verbindung mit einem erforderlichen benutzerdefinierten Bereich.
 
@@ -166,7 +168,9 @@ Dieses Suchmodul sucht nach CRM-Objekten anhand benutzerdefinierter Eigenschafte
  </tbody> 
 </table>
 
-#### CRM-Objekte überwachen
++++
+
++++ **CRM-Objekte ansehen**
 
 Dieses Trigger-Modul startet ein Szenario, wenn ein CRM-Objekt erstellt oder aktualisiert wird.
 
@@ -203,20 +207,18 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein CRM-Objekt erstellt oder akt
 
 +++
 
-+++**Datensätze (Abschlüsse, Kontakte und Unternehmen)**
-
 ### Datensätze (Abschlüsse, Kontakte und Unternehmen)
 
-* [Erstellen eines Datensatzes](#create-a-record)
+<!--* [Create a Record](#create-a-record)
 * [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
 * [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Get a Record]](#get-a-record)
 * [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [Einträge auflisten](#list-records)
+* [List Records](#list-records)
 * [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)
+* [[!UICONTROL Watch Records]](#watch-records)-->
 
-#### Erstellen eines Datensatzes
++++ **Datensatz erstellen**
 
 Mit diesem Aktionsmodul wird ein Kontakt, eine Firma oder ein Abschluss erstellt.
 
@@ -239,7 +241,9 @@ Mit diesem Aktionsmodul wird ein Kontakt, eine Firma oder ein Abschluss erstellt
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Record (Legacy)]
++++
+
++++ **[!UICONTROL Create a Record (Legacy)]**
 
 Mit diesem Aktionsmodul wird ein Kontakt, ein Unternehmen oder ein Abschluss erstellt.
 
@@ -262,7 +266,9 @@ Mit diesem Aktionsmodul wird ein Kontakt, ein Unternehmen oder ein Abschluss ers
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Record]
++++
+
++++ **[!UICONTROL Delete a Record]**
 
 Dieses Aktionsmodul löscht einen Kontakt, ein Unternehmen oder einen Abschluss.
 
@@ -285,7 +291,9 @@ Dieses Aktionsmodul löscht einen Kontakt, ein Unternehmen oder einen Abschluss.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record]
++++
+
++++ [!UICONTROL Get a Record]
 
 Dieses Aktionsmodul ruft Details zu einem Kontakt, einem Unternehmen oder einem Abschluss ab.
 
@@ -321,7 +329,9 @@ Dieses Aktionsmodul ruft Details zu einem Kontakt, einem Unternehmen oder einem 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record Property]
++++
+
++++ **[!UICONTROL Get a Record Property]**
 
 Dieses Aktionsmodul ruft Metadaten für eine bestimmte Datensatzeigenschaft über ihren (internen) Namen ab.
 
@@ -348,7 +358,9 @@ Dieses Aktionsmodul ruft Metadaten für eine bestimmte Datensatzeigenschaft übe
  </tbody> 
 </table>
 
-#### Einträge auflisten
++++
+
++++ **Einträge auflisten**
 
 Dieses Suchmodul gibt eine Liste von Kontakten, Unternehmen oder Angeboten zurück. Die Ausgabe ist auf 5.000 Kontakte, 12.500 Unternehmen oder 12.500 Angebote beschränkt.
 
@@ -371,12 +383,13 @@ Dieses Suchmodul gibt eine Liste von Kontakten, Unternehmen oder Angeboten zurü
     <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
-  </tr>
-
-</tbody> 
+  </tr> 
+ </tbody> 
 </table>
 
-#### [!UICONTROL Update a Record]
++++
+
++++ **[!UICONTROL Update a Record]**
 
 Dieses Aktionsmodul aktualisiert einen Kontakt, ein Unternehmen oder einen Abschluss.
 
@@ -415,7 +428,9 @@ Dieses Aktionsmodul aktualisiert einen Kontakt, ein Unternehmen oder einen Absch
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Records]
++++
+
++++ **[!UICONTROL Watch Records]**
 
 Dieses Kontaktmodul startet ein Trigger, wenn ein Kontakt, ein Unternehmen oder ein Abschluss innerhalb der letzten 30 Tage geändert oder erstellt wurde. Die Ausgabe ist auf 10.000 Datensätze beschränkt.
 
@@ -448,12 +463,10 @@ Dieses Kontaktmodul startet ein Trigger, wenn ein Kontakt, ein Unternehmen oder 
 
 +++
 
-+++**Kontakte**
-
 ### Kontakte
 
-* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [Kontakt erstellen/aktualisieren](#createupdate-a-contact)
+<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
+* [Create/Update a contact](#createupdate-a-contact)
 * [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
 * [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
 * [[!UICONTROL List Contacts]](#list-contacts)
@@ -461,9 +474,9 @@ Dieses Kontaktmodul startet ein Trigger, wenn ein Kontakt, ein Unternehmen oder 
 * [[!UICONTROL Merge contacts]](#merge-contacts)
 * [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
 * [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Zu einer Liste hinzugefügte Kontakte ansehen](#watch-contacts-added-to-a-list)
+* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
-#### [!UICONTROL Add Contacts to a List]
++++ **[!UICONTROL Add Contacts to a List]**
 
 Dieses Modul fügt Kontakteinträge, die bereits im System erstellt wurden, einer Kontaktliste hinzu.
 
@@ -490,7 +503,9 @@ Dieses Modul fügt Kontakteinträge, die bereits im System erstellt wurden, eine
  </tbody> 
 </table>
 
-#### Kontakt erstellen/aktualisieren
++++
+
++++ **Kontakt erstellen/aktualisieren**
 
 Dieses Aktionsmodul erstellt einen Kontakt, wenn es nicht in einem Portal vorhanden ist. Wenn der Kontakt im Portal vorhanden ist, wird er von diesem Modul mit den angegebenen Werten aktualisiert.
 
@@ -509,7 +524,9 @@ Dieses Aktionsmodul erstellt einen Kontakt, wenn es nicht in einem Portal vorhan
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Contact (Legacy)]
++++
+
++++ **[!UICONTROL Create/Update a Contact (Legacy)]**
 
 Erstellt einen Kontakt, wenn er noch nicht in einem Portal vorhanden ist, oder aktualisiert ihn mit den neuesten Eigenschaftswerten, wenn er noch in einem Portal vorhanden ist.
 
@@ -528,7 +545,9 @@ Erstellt einen Kontakt, wenn er noch nicht in einem Portal vorhanden ist, oder a
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Group of Contacts]
++++
+
++++ **[!UICONTROL Create/Update a Group of Contacts]**
 
 Erstellt eine Gruppe von Kontakten oder aktualisiert sie, falls sie bereits existieren. Die Leistung ist am besten, wenn die Batch-Größe auf 100 Kontakte oder weniger begrenzt ist. Änderungen, die über diesen Endpunkt vorgenommen wurden, werden asynchron verarbeitet. Es kann also mehrere Minuten dauern, bis Änderungen auf Kontakteinträge angewendet werden.
 
@@ -555,7 +574,9 @@ Erstellt eine Gruppe von Kontakten oder aktualisiert sie, falls sie bereits exis
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts]
++++
+
++++ **[!UICONTROL List Contacts]**
 
 Gibt alle im Portal erstellten Kontakte aus. Die Ausgabe ist auf 5000 Kontakte begrenzt. Um vorherige oder nächste Kontakte aufzulisten, können Sie den [!UICONTROL advanced]-Parameter verwenden, um die Liste zu versetzen.
 
@@ -582,7 +603,9 @@ Gibt alle im Portal erstellten Kontakte aus. Die Ausgabe ist auf 5000 Kontakte b
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts of a Company]
++++
+
++++ **[!UICONTROL List Contacts of a Company]**
 
 Ruft eine Liste der Kontakte im Unternehmen ab. Die Ausgabe ist auf 5000 Kontakte begrenzt. Um vorherige oder nächste Kontakte aufzulisten, können Sie den [!UICONTROL advanced]-Parameter verwenden, um die Liste zu versetzen.
 
@@ -609,7 +632,9 @@ Ruft eine Liste der Kontakte im Unternehmen ab. Die Ausgabe ist auf 5000 Kontakt
  </tbody> 
 </table>
 
-#### [!UICONTROL Merge contacts]
++++
+
++++ **[!UICONTROL Merge contacts]**
 
 Dieses Aktionsmodul führt Kontakte zusammen
 
@@ -632,7 +657,9 @@ Dieses Aktionsmodul führt Kontakte zusammen
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a Contact from a List]
++++
+
++++ **[!UICONTROL Remove a Contact from a List]**
 
 Entfernt einen Kontakt aus einer Kontaktliste.
 
@@ -659,7 +686,9 @@ Entfernt einen Kontakt aus einer Kontaktliste.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for Contacts]
++++
+
++++ **[!UICONTROL Search for Contacts]**
 
 Ruft mithilfe der Suchabfrage eine Liste von Kontakten ab.
 
@@ -682,7 +711,9 @@ Ruft mithilfe der Suchabfrage eine Liste von Kontakten ab.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch contacts added to a list]
++++
+
++++ **[!UICONTROL Watch contacts added to a list]**
 
 Dieses Kontaktmodul startet ein Trigger, wenn ein neuer Kontakt zu einer Liste hinzugefügt wird. Dies ist nur für Benutzer mit einem Paid Marketing-Konto verfügbar.
 
@@ -711,14 +742,12 @@ Dieses Kontaktmodul startet ein Trigger, wenn ein neuer Kontakt zu einer Liste h
 
 +++
 
-+++**Angebote**
-
 ### Angebote
 
-* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)
+<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
+* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
 
-#### [!UICONTROL Get a Deal's CRM Pipeline]
++++ **[!UICONTROL Get a Deal's CRM Pipeline]**
 
 Gibt eine bestimmte Abschluss-Pipeline zurück.
 
@@ -741,7 +770,9 @@ Gibt eine bestimmte Abschluss-Pipeline zurück.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Deal/Ticket Pipelines]
++++
+
++++ **[!UICONTROL List Deal/Ticket Pipelines]**
 
 Gibt alle Angebots- und Ticket-Pipelines für ein bestimmtes Portal zurück.
 
@@ -762,11 +793,9 @@ Gibt alle Angebots- und Ticket-Pipelines für ein bestimmtes Portal zurück.
 
 +++
 
-+++**Firmen**
-
 ### Firmen
 
-#### [!UICONTROL Search for Companies by domain]
++++ **[!UICONTROL Search for Companies by domain]**
 
 Ruft eine Liste von Unternehmen ab, die auf einer exakten Übereinstimmung mit der Domain-Eigenschaft basieren.
 
@@ -795,16 +824,14 @@ Ruft eine Liste von Unternehmen ab, die auf einer exakten Übereinstimmung mit d
 
 +++
 
-+++**Interaktionen**
-
 ### Interaktionen
 
-* [Verknüpfen einer Interaktion mit einem CRM-Objekt](#associate-an-engagement-with-a-crm-object)
-* [Erstellen einer Interaktion](#create-an-engagement)
-* [Interaktion löschen](#delete-an-engagement)
-* [Interaktionen beobachten](#watch-engagements)
+<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
+* [Create an Engagement](#create-an-engagement)
+* [Delete an Engagement](#delete-an-engagement)
+* [Watch Engagements](#watch-engagements)-->
 
-#### Verknüpfen einer Interaktion mit einem CRM-Objekt
++++ **Interaktion mit einem CRM-Objekt verknüpfen**
 
 Dieses Aktionsmodul verknüpft eine Interaktion mit einem Kontakt, einem Unternehmen oder einem Abschluss.
 
@@ -831,7 +858,9 @@ Dieses Aktionsmodul verknüpft eine Interaktion mit einem Kontakt, einem Unterne
  </tbody> 
 </table>
 
-#### Erstellen einer Interaktion
++++
+
++++ **Interaktion erstellen**
 
 Dieses Aktionsmodul erstellt eine Interaktion (z. B. eine Notiz, Aufgabe oder Aktivität) mit einem CRM-Objekt in HubSpot. Interaktionen sind jede Interaktion mit einem Kontakt, der im CRM protokolliert werden soll.
 
@@ -898,7 +927,7 @@ Dieses Aktionsmodul erstellt eine Interaktion (z. B. eine Notiz, Aufgabe oder Ak
  </tbody> 
 </table>
 
-##### E-Mail-Metadaten
+#### E-Mail-Metadaten
 
 <table style="table-layout:auto"> 
  <col> 
@@ -944,7 +973,7 @@ Dieses Aktionsmodul erstellt eine Interaktion (z. B. eine Notiz, Aufgabe oder Ak
  </tbody> 
 </table>
 
-##### Metadaten aufrufen
+#### Metadaten aufrufen
 
 <table style="table-layout:auto"> 
  <col> 
@@ -986,7 +1015,7 @@ Dieses Aktionsmodul erstellt eine Interaktion (z. B. eine Notiz, Aufgabe oder Ak
  </tbody> 
 </table>
 
-##### Meeting-Felder
+#### Meeting-Felder
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1012,7 +1041,7 @@ Dieses Aktionsmodul erstellt eine Interaktion (z. B. eine Notiz, Aufgabe oder Ak
  </tbody> 
 </table>
 
-##### Aufgabenfelder
+#### Aufgabenfelder
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1038,7 +1067,9 @@ Dieses Aktionsmodul erstellt eine Interaktion (z. B. eine Notiz, Aufgabe oder Ak
  </tbody> 
 </table>
 
-#### Interaktion löschen
++++
+
++++ **Interaktion löschen**
 
 Dieses Aktionsmodul löscht eine Interaktion anhand ihrer ID.
 
@@ -1057,7 +1088,9 @@ Dieses Aktionsmodul löscht eine Interaktion anhand ihrer ID.
  </tbody> 
 </table>
 
-#### Interaktionen beobachten
++++
+
++++ **Interaktionen ansehen**
 
 Dieses Portmodul startet ein Trigger, wenn in einem Portal ein neues Projekt erstellt wird. Dieses Modul gibt nur die Datensätze zurück, die in den letzten 30 Tagen erstellt wurden, oder die 10.000 zuletzt erstellten Datensätze.
 
@@ -1082,16 +1115,14 @@ Dieses Portmodul startet ein Trigger, wenn in einem Portal ein neues Projekt ers
 
 +++
 
-+++**Ereignisse und Benachrichtigungen**
-
 ### Ereignisse und Benachrichtigungen
 
-* [Erstellen/Aktualisieren eines Timeline-Ereignisses](#create--update-a-timeline-event)
-* [Auflisten der Zeitleisten-Ereignistypen](#list-timeline-event-types)
-* [Kalenderereignisse ansehen](#watch-calendar-events)
-* [Benachrichtigungen beobachten](#watch-notifications)
+<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
+* [List Timeline Event Types](#list-timeline-event-types)
+* [Watch Calendar Events](#watch-calendar-events)
+* [Watch Notifications](#watch-notifications)-->
 
-#### Erstellen/Aktualisieren eines Timeline-Ereignisses
++++ **Erstellen/Aktualisieren eines Zeitleistenereignisses**
 
 Dieses Aktionsmodul erstellt oder aktualisiert ein Zeitleistenereignis. Dieses Modul kann nur mit einer Entwicklerverbindung verwendet werden, die Ihre Benutzerkennung, Ihren HubSpot-API-Schlüssel, Ihre Client-ID und Ihr Client-Geheimnis enthält.
 
@@ -1134,7 +1165,9 @@ Dieses Aktionsmodul erstellt oder aktualisiert ein Zeitleistenereignis. Dieses M
  </tbody> 
 </table>
 
-#### Auflisten der Zeitleisten-Ereignistypen
++++
+
++++ **Auflisten der Zeitleisten-Ereignistypen**
 
 Dieses Suchmodul gibt eine Liste aller Zeitleistenereignisse für eine bestimmte Anwendung zurück. Dieses Modul kann nur mit einer Entwicklerverbindung verwendet werden, die Ihre Benutzerkennung, Ihren HubSpot-API-Schlüssel, Ihre Client-ID und Ihr Client-Geheimnis enthält.
 
@@ -1153,7 +1186,9 @@ Dieses Suchmodul gibt eine Liste aller Zeitleistenereignisse für eine bestimmte
  </tbody> 
 </table>
 
-#### Kalenderereignisse ansehen
++++
+
++++ **Kalenderereignisse ansehen**
 
 Dieses Kalendermodul startet ein Trigger, wenn einem Kalender ein neues Ereignis hinzugefügt wird. Es umfasst bis zu 500 Aufgaben im Intervall zwischen dem Start- und dem Enddatum. Dieses Modul kann nur mit einer Entwicklerverbindung verwendet werden, die Ihre Benutzerkennung, Ihren HubSpot-API-Schlüssel, Ihre Client-ID und Ihr Client-Geheimnis enthält.
 
@@ -1184,7 +1219,9 @@ Dieses Kalendermodul startet ein Trigger, wenn einem Kalender ein neues Ereignis
  </tbody> 
 </table>
 
-#### Benachrichtigungen beobachten
++++
+
++++ **Benachrichtigungen ansehen**
 
 Dieses Trigger-Modul startet ein Szenario, wenn eine neue Benachrichtigung über Änderungen gesendet wird.  Es umfasst bis zu 500 Aufgaben im Intervall zwischen dem Start- und dem Enddatum. Dieses Modul kann nur mit einer Entwicklerverbindung verwendet werden, die Ihre Benutzerkennung, Ihren HubSpot-API-Schlüssel, Ihre Client-ID und Ihr Client-Geheimnis enthält. Pro Entwickleranwendung kann in HubSpot nur eine Webhook-URL verwendet werden.
 
@@ -1215,19 +1252,17 @@ Um einen Webhook für dieses Modul zu erstellen, klicken Sie **Hinzufügen** neb
 
 +++
 
-+++**Dateien**
-
 ### Dateien
 
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [Löschen einer Datei](#delete-a-file)
+<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [Delete a File](#delete-a-file)
 * [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [Dateien auflisten](#list-files)
+* [List Files](#list-files)
 * [[!UICONTROL Move a File]](#move-a-file)
-* [Datei hochladen](#upload-a-file)
-* [Dateien ansehen](#watch-files)
+* [Upload a file](#upload-a-file)
+* [Watch files](#watch-files)-->
 
-#### [!UICONTROL Create a Folder]
++++ **[!UICONTROL Create a Folder]**
 
 Dieses Modul erstellt einen Ordner.
 
@@ -1250,7 +1285,9 @@ Dieses Modul erstellt einen Ordner.
  </tbody> 
 </table>
 
-#### Löschen einer Datei
++++
+
++++ **Datei löschen**
 
 Dieses Aktionsmodul löscht dauerhaft eine Datei und alle zugehörigen Daten und Miniaturen aus dem Datei-Manager.
 
@@ -1269,7 +1306,9 @@ Dieses Aktionsmodul löscht dauerhaft eine Datei und alle zugehörigen Daten und
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Folder]
++++
+
++++ **[!UICONTROL Delete a Folder]**
 
 Markiert einen Ordner als gelöscht.
 
@@ -1288,7 +1327,9 @@ Markiert einen Ordner als gelöscht.
  </tbody> 
 </table>
 
-#### Dateien auflisten
++++
+
++++ **Dateien auflisten**
 
 Dieses Suchmodul gibt eine Liste der im Datei-Manager gespeicherten Dateien zurück.
 
@@ -1315,7 +1356,9 @@ Dieses Suchmodul gibt eine Liste der im Datei-Manager gespeicherten Dateien zur�
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
++++
+
++++ **[!UICONTROL Move a File]**
 
 Verschiebt eine Datei in einen anderen Ordner.
 
@@ -1342,7 +1385,9 @@ Verschiebt eine Datei in einen anderen Ordner.
  </tbody> 
 </table>
 
-#### Datei hochladen
++++
+
++++ **Datei hochladen**
 
 Dieses Aktionsmodul lädt eine Datei in den Datei-Manager hoch.
 
@@ -1373,7 +1418,9 @@ Dieses Aktionsmodul lädt eine Datei in den Datei-Manager hoch.
  </tbody> 
 </table>
 
-### Dateien ansehen
++++
+
++++ **Dateien ansehen**
 
 Dieses Dateimodul startet ein Trigger, wenn eine neue Datei im Dateimanager gespeichert wird.
 
@@ -1402,15 +1449,13 @@ Dieses Dateimodul startet ein Trigger, wenn eine neue Datei im Dateimanager gesp
 
 +++
 
-+++**Aufgaben**
-
 ### Aufgaben
 
-* [Kalenderaufgabe erstellen](#create-a-calendar-task)
-* [Kalenderaufgabe löschen](#create-a-calendar-task)
-* [Aufgabenereignisse beobachten](#watch-task-events)
+<!--* [Create a Calendar Task](#create-a-calendar-task)
+* [Delete a Calendar Task](#create-a-calendar-task)
+* [Watch Task Events](#watch-task-events)-->
 
-#### Kalenderaufgabe erstellen
++++ **Kalenderaufgabe erstellen**
 
 Dieses Aktionsmodul erstellt eine neue Aufgabe für einen Kalender. Die in diesem Modul verwendete Verbindung muss die Anmeldeinformationen eines Benutzers mit einem Paid-Marketing-Konto verwenden.
 
@@ -1453,7 +1498,9 @@ Dieses Aktionsmodul erstellt eine neue Aufgabe für einen Kalender. Die in diese
  </tbody> 
 </table>
 
-#### Kalenderaufgabe löschen
++++
+
++++ **Kalenderaufgabe löschen**
 
 Dieses Aktionsmodul löscht eine Kalenderaufgabe. Die in diesem Modul verwendete Verbindung muss die Anmeldeinformationen eines Benutzers mit einem Paid-Marketing-Konto verwenden.
 
@@ -1472,7 +1519,9 @@ Dieses Aktionsmodul löscht eine Kalenderaufgabe. Die in diesem Modul verwendete
  </tbody> 
 </table>
 
-#### Aufgabenereignisse beobachten
++++
+
++++ **Aufgabenereignisse ansehen**
 
 Dieses Kalendermodul startet ein Trigger, wenn ein neues Aufgabenereignis in einem Kalender vorhanden ist. Die in diesem Modul verwendete Verbindung muss die Anmeldeinformationen eines Benutzers mit einem Paid-Marketing-Konto verwenden. Das -Modul gibt bis zu 500 Ereignisse zurück.
 
@@ -1501,14 +1550,12 @@ Dieses Kalendermodul startet ein Trigger, wenn ein neues Aufgabenereignis in ein
 
 +++
 
-+++**Benutzende**
-
 ### Benutzende
 
-* [Besitzer abrufen](#get-an-owner)
-* [Besitzer der Liste](#list-owners)
+<!--* [Get an Owner](#get-an-owner)
+* [List Owners](#list-owners)-->
 
-#### Besitzer abrufen
++++ **Erhalten Sie einen Besitzer**
 
 Dieses Aktionsmodul gibt Details zu einem Eigentümer zurück.
 
@@ -1527,7 +1574,9 @@ Dieses Aktionsmodul gibt Details zu einem Eigentümer zurück.
  </tbody> 
 </table>
 
-#### Besitzer der Liste
++++
+
++++ **Besitzer auflisten**
 
 Dieses Suchmodul gibt eine Liste aller Eigentümer in einem HubSpot-Konto zurück.
 
@@ -1544,20 +1593,18 @@ Dieses Suchmodul gibt eine Liste aller Eigentümer in einem HubSpot-Konto zurüc
 
 +++
 
-+++**Tickets**
-
 ### Tickets
 
 <!--* [Create a Ticket]-->
-* [Löschen eines Tickets](#delete-a-ticket)
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
+<!--* [Delete a Ticket](#delete-a-ticket)-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
 
 <!-- Create a Ticket Need to find a working connection-->
 
-#### [!UICONTROL Delete a Ticket]
++++ **[!UICONTROL Delete a Ticket]**
 
 Löscht ein vorhandenes Ticket anhand seiner ID.
 
@@ -1576,6 +1623,8 @@ Löscht ein vorhandenes Ticket anhand seiner ID.
  </tbody> 
 </table>
 
++++
+
 <!-- Get a Ticket  Need to find a working connection-->
 
 <!-- List Tickets  Need to find a working connection-->
@@ -1584,18 +1633,14 @@ Löscht ein vorhandenes Ticket anhand seiner ID.
 
 <!-- Watch Tickets Need to find a working connection-->
 
-+++
-
-+++**Forms**
-
 ### Formulare
 
-* [Datei über Formular hochladen](#get-a-file-uploaded-via-form)
-* [Forms auflisten](#list-forms)
-  <!--* [Submit Data to a Form]-->
-  <!--* [Watch Submissions for a Form]-->
+<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
+* [List Forms](#list-forms)-->
+<!--* [Submit Data to a Form]-->
+<!--* [Watch Submissions for a Form]-->
 
-#### Datei über Formular hochladen
++++ **Datei per Formular hochladen**
 
 Dieses Aktionsmodul gibt eine Datei zurück, die über ein Formular hochgeladen wurde.
 
@@ -1614,7 +1659,9 @@ Dieses Aktionsmodul gibt eine Datei zurück, die über ein Formular hochgeladen 
  </tbody> 
 </table>
 
-#### Forms auflisten
++++
+
++++ **Forms auflisten**
 
 Dieses Aktionsmodul gibt alle Formulare zurück, die in dem Konto erstellt wurden, das mit der für dieses Modul verwendeten Verbindung verknüpft ist.
 
@@ -1633,23 +1680,21 @@ Dieses Aktionsmodul gibt alle Formulare zurück, die in dem Konto erstellt wurde
  </tbody> 
 </table>
 
++++
+
 <!--#### Submit Data to a Form Need to find a working connection-->
 
 
 
 &lt;!—#### Übermittlungen für ein Formular beobachten - Es muss eine funktionierende Verbindung gefunden werden>—>
 
-+++
-
-+++**Social Media (Broadcast)**
-
 ### Social Media (Broadcast)
 
-* [Broadcast-Nachricht abbrechen](#cancel-a-broadcast-message)
-* [Erstellen einer Broadcast-Nachricht](#create-a-broadcast-message)
-* [Broadcast-Nachrichten ansehen](#watch-broadcast-messages)
+<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
+* [Create a Broadcast Message](#create-a-broadcast-message)
+* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
-#### Broadcast-Nachricht abbrechen
++++ **Abbrechen einer Broadcast-Nachricht**
 
 Dieses Aktionsmodul bricht eine geplante Übertragung ab, z. B. einen Tweet oder einen Facebook-Beitrag.
 
@@ -1668,7 +1713,9 @@ Dieses Aktionsmodul bricht eine geplante Übertragung ab, z. B. einen Tweet oder
  </tbody> 
 </table>
 
-#### Erstellen einer Broadcast-Nachricht
++++
+
++++ **Erstellen einer Broadcast-Nachricht**
 
 Dieses Aktionsmodul erstellt eine Nachricht und veröffentlicht sie sofort in dem angegebenen Social-Media-Kanal.
 
@@ -1707,7 +1754,9 @@ Dieses Aktionsmodul erstellt eine Nachricht und veröffentlicht sie sofort in de
  </tbody> 
 </table>
 
-#### Broadcast-Nachrichten ansehen
++++
+
++++ **Broadcast-Nachrichten ansehen**
 
 Dieses Trigger-Modul startet ein Szenario, wenn eine Nachricht von HubSpot an den angegebenen Social-Media-Kanal gesendet wird.
 
@@ -1740,22 +1789,20 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine Nachricht von HubSpot an de
 
 +++
 
-+++**Blog-Beiträge**
-
 ### Blog-Beiträge
 
 <!--* [Create a Blog Post]-->
-* [Blogpost löschen](#delete-a-blog-post)
-  <!--* [List Blog Posts]-->
-* [Publish/Veröffentlichung eines Blogposts aufheben](#publish--unpublish-a-blog-post)
-  <!--* [Watch Blog Posts]-->
+<!--* [Delete a Blog Post](#delete-a-blog-post)-->
+<!--* [List Blog Posts]-->
+&lt;!—* [Blogpost veröffentlichen/Veröffentlichung aufheben](#publish--unpublish-a-blog-post)—>
+<!--* [Watch Blog Posts]-->
 
 <!--
 #### Create a Blog Post May need connection
 -->
 
 
-#### Blogpost löschen
++++ **Blogpost löschen**
 
 Dieses Aktionsmodul löscht einen einzelnen Blogpost.
 
@@ -1774,11 +1821,13 @@ Dieses Aktionsmodul löscht einen einzelnen Blogpost.
  </tbody> 
 </table>
 
++++
+
 <!--#### List Blog Posts May need connection
 
 This search module retrieves posts from a HubSpot blog.-->
 
-#### Publish / Veröffentlichung eines Blogposts aufheben
++++ **Veröffentlichen/Rückgängigmachen der Veröffentlichung eines Blogposts**
 
 Dieses Aktionsmodul plant oder bricht die Veröffentlichung eines Blogposts ab.
 
@@ -1801,9 +1850,9 @@ Dieses Aktionsmodul plant oder bricht die Veröffentlichung eines Blogposts ab.
  </tbody> 
 </table>
 
-<!--#### Watch Blog PostsMay need connection-->
-
 +++
+
+<!--#### Watch Blog PostsMay need connection-->
 
 <!--+++**Workflows**>
 
@@ -1818,14 +1867,12 @@ Dieses Aktionsmodul plant oder bricht die Veröffentlichung eines Blogposts ab.
 
 <!--+++-->
 
-+++**Abonnements**
-
 ### Abonnements
 
-* [E-Mail-Abonnement aktualisieren](#update-email-subscription)
-* [Zeitleiste für Abonnements für ein Portal ansehen](#watch-subscriptions-timeline-for-a-portal)
+<!--* [Update Email Subscription](#update-email-subscription)
+* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
-#### E-Mail-Abonnement aktualisieren
++++ **E-Mail-Abonnement aktualisieren**
 
 Dieses Aktionsmodul aktualisiert ein E-Mail-Abonnement in HubSpot.
 
@@ -1856,7 +1903,9 @@ Dieses Aktionsmodul aktualisiert ein E-Mail-Abonnement in HubSpot.
  </tbody> 
 </table>
 
-#### Zeitleiste für Abonnements für ein Portal ansehen
++++
+
++++ **Zeitleiste für Abonnements für ein Portal ansehen**
 
 Dieses Portmodul startet ein Trigger-Szenario, wenn dem Portal ein neues E-Mail-Zeitleistenabonnement hinzugefügt wird.
 
@@ -1909,11 +1958,9 @@ This action module associates two CRM objects.-->
 
 <!--+++-->
 
-+++**Sonstige**
-
 ### Sonstige
 
-#### [!UICONTROL Make an API Call]
++++ **[!UICONTROL Make an API Call]**
 
 Ermöglicht die Durchführung eines benutzerdefinierten API-Aufrufs.
 
