@@ -4,10 +4,10 @@ description: Mit  [!DNL Adobe Workfront Fusion]  Modul können Sie eine HTTP-Anf
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: c2680972c616a90b55fdaf2c907920e435f23469
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 0%
+source-wordcount: '847'
+ht-degree: 1%
 
 ---
 
@@ -105,7 +105,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
    <td> <p>Der HTTP-Hauptteil sind die Datenbytes, die in einer HTTP-Transaktionsnachricht unmittelbar nach den -Headern übertragen werden, falls welche verwendet werden sollen.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>Der Rohtexttyp ist im Allgemeinen für die meisten HTTP-Textkörperanforderungen geeignet, selbst in Situationen, in denen in der Entwicklerdokumentation keine zu sendenden Daten angegeben sind.</p> <p>Geben Sie ein Formular zum Analysieren der Daten im Feld [!UICONTROL Content type] an.</p> <p>Trotz des ausgewählten Inhaltstyps gibt das Modul Daten in jedem Format ein, das in der Entwicklerdokumentation festgelegt oder erforderlich ist.</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Dieser Texttyp dient zum [!UICONTROL POST] von Daten mithilfe von <code>application/x-www-form-urlencoded</code>.</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code> besteht der Text der an den Server gesendeten HTTP-Nachricht im Wesentlichen aus einer Abfragezeichenfolge. Schlüssel und Werte werden in Schlüssel-Wert-Paaren codiert, die durch <code>&amp;</code> getrennt sind, wobei zwischen Schlüssel und Wert ein <code>=</code> besteht. </p> <p>Verwenden Sie für Binärdaten stattdessen <code>[!UICONTROL multipart/form-data]</code> .</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>Dieser Texttyp dient zum [!UICONTROL POST] von Daten mithilfe von <code>application/x-www-form-urlencoded</code>.</p> <p><code>[!UICONTROL application/x-www-form-urlencoded]</code> besteht der Text der an den Server gesendeten HTTP-Nachricht im Wesentlichen aus einer Abfragezeichenfolge. Schlüssel und Werte werden in Schlüssel-Wert-Paaren codiert, die durch <code>&amp;</code> getrennt sind, wobei zwischen Schlüssel und Wert ein <code>=</code> besteht. </p> <p>Verwenden Sie für Binärdaten stattdessen <code>[!UICONTROL multipart/form-data]</code> .</p> <p>Klicken Sie für jedes Schlüssel-Wert-Paar, das Sie hinzufügen möchten, im Feld Felder auf <b>Element hinzufügen</b> und geben Sie den Schlüssel und den Wert ein.</p>
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>Beispiel: </b></span></span> 
        <p>Beispiel für das daraus resultierende HTTP-Anfrageformat:</p> 
@@ -114,7 +114,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>Die [!UICONTROL Multipart/form-data] ist eine mehrteilige HTTP-Anfrage, die zum Senden von Dateien und Daten verwendet wird. Es wird häufig verwendet, um Dateien auf den Server hochzuladen.</p> <p>Fügen Sie Felder hinzu, die in der Anfrage gesendet werden sollen. Jedes Feld muss ein Schlüssel-Wert-Paar enthalten.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Geben Sie den Schlüssel und den Wert ein, die innerhalb des Anfragetexts gesendet werden sollen.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt; [!UICONTROL Get a File] oder [!UICONTROL Google Drive] &gt; [!UICONTROL Download a File)]), oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten. Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Datei zu.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -132,7 +132,25 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> Laden Sie Ihr Zertifikat hoch, wenn Sie TLS mit Ihrem selbstsignierten Zertifikat verwenden möchten.</p> </td> 
+   <td> <p>So fügen Sie ein selbstsigniertes Zertifikat hinzu:</p>
+          <ol>
+            <li value="1">
+              <p>Klicken Sie auf <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li value="2">
+              <p>Wählen Sie den zu extrahierenden Dateityp aus.</p>
+            </li>
+            <li value="3">
+              <p>Wählen Sie die Datei aus, die das - oder -Zertifikat enthält.</p>
+            </li>
+            <li value="4">
+              <p>Geben Sie das Kennwort für die Datei ein.</p>
+            </li>
+            <li value="5">
+              <p>Klicken Sie auf <b>[!UICONTROL Save]</b> , um die Datei zu extrahieren und zur Moduleinrichtung zurückzukehren.</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
@@ -156,7 +174,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>Aktivieren Sie diese Option, um gegenseitiges TLS in der HTTP-Anfrage zu verwenden.</p> <p>Weitere Informationen zu gegenseitigem TLS finden Sie unter <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Verwenden von gegenseitigem TLS in HTTP-Modulen in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Aktivieren Sie diese Option, um gegenseitiges TLS in der HTTP-Anfrage zu verwenden.</p> <p>Weitere Informationen zu gegenseitigen TLS finden Sie unter <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Verwenden von gegenseitigen TLS in HTTP-Modulen</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
