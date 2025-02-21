@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
+source-git-commit: 1861522827aa782877f612bf3f9dc522f6ca221e
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration] </p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Voraussetzungen
 
@@ -113,7 +117,9 @@ Anweisungen zum Erstellen einer App in [!DNL Bynder] finden Sie unter [OAuth 2.0
 >
 >* Geben Sie beim Erstellen der App in [!DNL Bynder] Folgendes als `redirect uri` ein:
 >
->   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * US-Cluster: `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * EU-Cluster: `https://app-eu.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * Azure-Cluster: `https://app-az.workfrontfusion.com/oauth/cb/workfront-bynder`
 >* Bunter verwendet den Gewährungstyp Autorisierungs-Code/Aktualisierungstoken. Dies ist der einzige Gewährungstyp, den der Fusion Bunter-Connector verwendet.
 
 ## [!DNL Bynder] Module und ihre Felder
@@ -130,15 +136,61 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Aktionen
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
 * [[!UICONTROL Add a tag to assets]](#add-a-tag-to-assets)
-* [[!UICONTROL Remove a tag] aus Assets](#remove-a-tag-from-assets)
+* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Download asset]](#download-asset)
+* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
+* [[!UICONTROL Remove a tag] aus Assets](#remove-a-tag-from-assets)
+* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
+* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
 * [[!UICONTROL Upload asset]](#upload-asset)
+
+#### [!UICONTROL Add a tag to assets]
+
+Dieses Aktionsmodul fügt einem oder mehreren Assets ein Tag hinzu
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>Geben Sie die ID des Tags ein, das Sie zu Assets hinzufügen möchten, oder ordnen Sie sie zu.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>Klicken Sie für jedes Asset, das Sie taggen möchten, auf <strong>[!UICONTROL Add item]</strong> und geben Sie dann die Asset-ID ein oder ordnen Sie sie zu.</p> </td> 
+  </tr> 
+ </tbody> 
+ </table>
+
+#### [!UICONTROL Add assets to a collection]
+
+Dieses Aktionsmodul fügt ein oder mehrere Assets zu einer Sammlung hinzu.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>Geben Sie die ID der Sammlung ein, der Sie Assets hinzufügen möchten, oder mappen Sie sie.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>Klicken Sie für jedes Asset, das Sie der Sammlung hinzufügen möchten, auf <strong>[!UICONTROL Add item]</strong> und geben Sie dann die Asset-ID ein oder ordnen Sie sie zu.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call]
 
@@ -162,7 +214,7 @@ Das Modul gibt einen Status-Code zusammen mit den Kopfzeilen und dem Hauptteil d
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
+   <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -178,6 +230,29 @@ Das Modul gibt einen Status-Code zusammen mit den Kopfzeilen und dem Hauptteil d
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download asset]
+
+Dieses Aktionsmodul lädt ein einzelnes Asset herunter.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td>Geben Sie die ID des Assets ein, das Sie herunterladen möchten, oder mappen Sie sie.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset version]</td> 
+   <td> <p>Geben Sie die Version des Assets ein, das Sie herunterladen möchten, oder ordnen Sie sie zu. Um die neueste Version des Assets herunterzuladen, lassen Sie das Feld leer.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -201,6 +276,52 @@ Dieses Aktionsmodul liest die Metadaten eines Assets.
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
    <td> <p>Wählen Sie die Informationen aus, die im Ausgabepaket für dieses Modul enthalten sein sollen.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Remove a tag from assets]
+
+Dieses Aktionsmodul entfernt ein Tag aus einem oder mehreren Assets
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>Geben Sie die ID des Tags ein, das Sie aus Assets entfernen möchten, oder ordnen Sie sie zu.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>Klicken Sie für jedes Asset, aus dem Sie ein Tag entfernen möchten, auf <strong>[!UICONTROL Add item]</strong> und geben Sie dann die Asset-ID ein oder ordnen Sie sie zu.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Remove assets from collection]
+
+Dieses Aktionsmodul entfernt ein oder mehrere Assets aus einer Sammlung.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>Geben Sie die ID der Sammlung ein, aus der Sie Assets entfernen möchten, oder mappen Sie sie.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>Klicken Sie für jedes Asset, das Sie aus der Sammlung entfernen möchten, auf <strong>[!UICONTROL Add item]</strong> und geben Sie dann die Asset-ID ein oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -232,121 +353,6 @@ Dieses Aktionsmodul aktualisiert die Metadaten eines vorhandenen Assets.
  </tbody> 
 </table>
 
-#### [!UICONTROL Add assets to a collection]
-
-Dieses Aktionsmodul fügt ein oder mehrere Assets zu einer Sammlung hinzu.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>Geben Sie die ID der Sammlung ein, der Sie Assets hinzufügen möchten, oder mappen Sie sie.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Klicken Sie für jedes Asset, das Sie der Sammlung hinzufügen möchten, auf <strong>[!UICONTROL Add item]</strong> und geben Sie dann die Asset-ID ein oder ordnen Sie sie zu.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove assets from collection]
-
-Dieses Aktionsmodul entfernt ein oder mehrere Assets aus einer Sammlung.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>Geben Sie die ID der Sammlung ein, aus der Sie Assets entfernen möchten, oder mappen Sie sie.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Klicken Sie für jedes Asset, das Sie aus der Sammlung entfernen möchten, auf <strong>[!UICONTROL Add item]</strong> und geben Sie dann die Asset-ID ein oder ordnen Sie sie zu.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a tag to assets]
-
-Hinzufügen eines Tags zu einem oder mehreren Assets
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>Geben Sie die ID des Tags ein, das Sie zu Assets hinzufügen möchten, oder ordnen Sie sie zu.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Klicken Sie für jedes Asset, das Sie taggen möchten, auf <strong>[!UICONTROL Add item]</strong> und geben Sie dann die Asset-ID ein oder ordnen Sie sie zu.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove a tag from assets]
-
-Entfernen eines Tags aus einem oder mehreren Assets
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>Geben Sie die ID des Tags ein, das Sie aus Assets entfernen möchten, oder ordnen Sie sie zu.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>Klicken Sie für jedes Asset, aus dem Sie ein Tag entfernen möchten, auf <strong>[!UICONTROL Add item]</strong> und geben Sie dann die Asset-ID ein oder ordnen Sie sie zu.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download asset]
-
-Dieses Aktionsmodul lädt ein einzelnes Asset herunter.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td>Geben Sie die ID des Assets ein, das Sie herunterladen möchten, oder mappen Sie sie.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset version]</td> 
-   <td> <p>Geben Sie die Version des Assets ein, das Sie herunterladen möchten, oder ordnen Sie sie zu. Um die neueste Version des Assets herunterzuladen, lassen Sie das Feld leer.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Upload asset]
 
 Dieses Aktionsmodul lädt ein einzelnes Asset hoch.
@@ -371,13 +377,17 @@ Dieses Aktionsmodul lädt ein einzelnes Asset hoch.
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asynchronous file upload]</td> 
+   <td>Aktivieren Sie diese Option beim Hochladen großer Dateien. Dadurch wird verhindert, dass große Dateien die Ausführung des Szenarios blockieren.</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### Suchvorgänge
 
 * [[!UICONTROL List record]](#list-record)
-* [[!UICONTROL Search for assets]](#search-for-assets)
+* [[!UICONTROL Search Assets]](#search-assets)
 
 #### [!UICONTROL List record]
 
@@ -411,7 +421,7 @@ Dieses Suchmodul ruft alle Elemente eines bestimmten Typs ab.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for assets]
+#### [!UICONTROL Search Assets]
 
 Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Assets.
 
@@ -424,12 +434,12 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Assets.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Criteria]</td> 
+   <td role="rowheader">[!UICONTROL Search criteria]</td> 
    <td> <p>Geben Sie die Suchkriterien ein. </p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>Wählen Sie das Feld aus, das Sie für Ihre Suche verwenden möchten</p> </li> 
      <li> <p><strong>[!UICONTROL Logical Operator]</strong> </p> <p>Wählen Sie den Operator aus, den Sie für Ihre Suche verwenden möchten.</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Geben Sie den Wert, nach dem im ausgewählten Feld gesucht werden soll, ein oder ordnen Sie ihn zu. Der Werttyp sollte mit dem Datentyp des ausgewählten Felds übereinstimmen. </p> <p>Weitere Informationen zu Datentypen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Elementdatentypen in [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Geben Sie den Wert, nach dem im ausgewählten Feld gesucht werden soll, ein oder ordnen Sie ihn zu. Der Werttyp sollte mit dem Datentyp des ausgewählten Felds übereinstimmen. </p> <p>Weitere Informationen zu Datentypen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Elementdatentypen</a>.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -469,21 +479,17 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Asset erstellt oder aktualis
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
-  <tr> <!--
-    <td role="rowheader">Event type</td>
-   --> <!--
-    <td>Select whether you want to start the scenario when a new asset is created or when an existing asset is updated.</td>
-   --> 
+  <tr> 
+    <td role="rowheader">Ereignistyp</td>
+    <td>Wählen Sie aus, ob das Szenario gestartet werden soll, wenn ein neues Asset erstellt oder ein vorhandenes Asset aktualisiert wird.</td>
   </tr> 
   <tr>
      <td role="rowheader">[!UICONTROL Collections]</td>
    <td> <p>Wählen Sie die Sammlung aus, die Sie auf neue Assets überwachen möchten. Um alle Sammlungen zu sehen, lassen Sie dieses Feld leer.</p> </td> 
   </tr> 
-  <tr> <!--
-    <td role="rowheader">Outputs</td>
-   --> <!--
-    <td>Select the fields that you want to include in the output.</td>
-   --> 
+  <tr> 
+    <td role="rowheader">Ausgaben</td>
+    <td>Wählen Sie die Felder aus, die Sie in die Ausgabe aufnehmen möchten.</td>
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Limit]</td>

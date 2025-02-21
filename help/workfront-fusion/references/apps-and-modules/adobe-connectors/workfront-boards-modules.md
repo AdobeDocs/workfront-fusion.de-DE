@@ -4,10 +4,10 @@ description: Sie können den Adobe Workfront Boards-Connector verwenden, um Ihre
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
 workflow-type: tm+mt
-source-wordcount: '2439'
-ht-degree: 1%
+source-wordcount: '2659'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +25,8 @@ Sie können die Adobe Workfront-Pinnwand-Module verwenden, um Datensätze zu les
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
 <table style="table-layout:auto">
@@ -32,29 +34,29 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Packstück</td>
-  <td> <p>Beliebig</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td>
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration], [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung]</p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -62,6 +64,7 @@ Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Z
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
++++
 
 ## Voraussetzungen
 
@@ -148,51 +151,6 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 * [Tags](#tags)
 * [Kommentare](#comments)
 * [Sonstige](#other)
-
-<!--
-
-### Watch
-
-#### Watch events
-
-This trigger module starts a scenario when an event occurs on a board.
-
-1. Click **[!UICONTROL Add]** to the right of the **Webhook** box.
-
-1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.
-
-   When you are configuring this module, the following fields display.
-
-   <table style="table-layout:auto"> 
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td>[!UICONTROL Webhook name]</td> 
-      <td>(Optional) Type a new name for the webhook</td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Connection]</td> 
-      <td> <p>You can use an existing Workfront connection to connect to Workfront Boards, or you can use a specific Workfront Boards connection. </p><p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Create a connection to Workfront Boards</a> in this article.</p> </td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Object type]</td> 
-      <td>Select the type of [!DNL Workfront] object that you want the module to watch.</td> 
-     </tr> 
-     <tr> 
-      <td> <p>[!UICONTROL Objects to watch]</p> </td> 
-      <td> Select whether you want to trigger a scenario when there is a new object, an updated object, a new or updated object, or a deleted object. </td> 
-     </tr> 
-     <tr data-mc-conditions=""> 
-      <td>Exclude events made by this connection</td> 
-      <td>Enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-After the webhook is created, you can view the address of the endpoint that events are sent to.
-
--->
 
 ### Karten
 
@@ -298,7 +256,7 @@ Dieses Aktionsmodul verschiebt eine Karte in eine andere Spalte auf derselben Pi
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>Geben Sie die ID der Pinnwand ein, die die Karte enthält, die Sie verschieben möchten, oder ordnen Sie sie zu.<p>Die Karten-ID finden Sie in der URL, wenn Sie die Karte in Workfront anzeigen.</p></td> 
+   <td>Geben Sie die ID der Pinnwand ein, die die Karte enthält, die Sie verschieben möchten, oder ordnen Sie sie zu.<p>Die Pinnwand-ID finden Sie in der URL, wenn Sie die Pinnwand in Workfront anzeigen.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination column ID]</td> 
@@ -327,6 +285,10 @@ Dieses Aktionsmodul ruft Informationen zu einer bestimmten Karte ab.
    <td>[!UICONTROL Card ID]</td> 
    <td>Geben Sie die ID der Karte ein, die Sie lesen möchten, oder mappen Sie sie.<p>Die Karten-ID finden Sie in der URL, wenn Sie die Karte in Workfront anzeigen.</p></td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL Card ID]</td> 
+   <td>Geben Sie die ID der Pinnwand ein, die die Karte enthält, die Sie lesen möchten, oder ordnen Sie sie zu.<p>Die Pinnwand-ID finden Sie in der URL, wenn Sie die Pinnwand in Workfront anzeigen.</p></td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -348,15 +310,29 @@ Dieses Aktionsmodul aktualisiert die Informationen für eine von Ihnen angegeben
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>Geben Sie die ID der Pinnwand ein, die die Karte enthält, die Sie aktualisieren möchten, oder ordnen Sie sie zu.<p>Die Karten-ID finden Sie in der URL, wenn Sie die Karte in Workfront anzeigen.</p></td> 
+   <td>Geben Sie die ID der Pinnwand ein, die die Karte enthält, die Sie aktualisieren möchten, oder ordnen Sie sie zu.<p>Die Pinnwand-ID finden Sie in der URL, wenn Sie die Pinnwand in Workfront anzeigen.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Name]</td> 
    <td>Geben Sie einen neuen Namen für die Karte ein oder mappen Sie ihn.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL Description]</td> 
    <td>Geben Sie eine neue Beschreibung für die Karte ein oder mappen Sie sie.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Estimation]</td> 
+   <td>Geben Sie eine Schätzung der Zeit ein, die zum Ausfüllen dieser Karte benötigt wird, oder mappen Sie sie.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Due date]</td> 
+   <td>Geben Sie das Fälligkeitsdatum für diese Karte ein oder mappen Sie es.</p>
+   <p>Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang in [!DNL Adobe Workfront Fusion]</a>.</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Status]</td> 
+   <td>Wählen Sie einen neuen Status für die Karte aus.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -383,8 +359,8 @@ Dieses Aktionsmodul erstellt eine Pinnwand in Workfront. Sie können den Typ der
    <td>Geben Sie einen Namen für die neue Pinnwand ein oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type]</td> 
-   <td>Wählen Sie die Art der Pinnwand aus, die Sie erstellen möchten.</td> 
+   <td>[!UICONTROL Template]</td> 
+   <td>Wählen Sie die Vorlage für den Pinnwand-Typ aus, den Sie erstellen möchten.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -438,10 +414,6 @@ Dieses Aktionsmodul erstellt eine neue Spalte auf der angegebenen Pinnwand.
    <td>[!UICONTROL Column name]</td> 
    <td>Geben Sie einen neuen Namen für die Spalte ein oder ordnen Sie ihn zu.</td> 
   </tr> 
-  <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
-   <td>Geben Sie eine neue Fertigungsgrenze für die Spalte ein oder ordnen Sie sie zu.</td> 
-  </tr> 
  </tbody> 
 </table>
 
@@ -488,12 +460,16 @@ Dieses Aktionsmodul aktualisiert den Namen oder die WIP-Beschränkung der angege
    <td>[!UICONTROL Column Name]</td> 
    <td>Geben Sie den Namen der abzurufenden Spalte ein oder ordnen Sie ihn zu.</td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL WIP Limit]</td> 
+   <td>Geben Sie eine neue Fertigungsgrenze für die Spalte ein oder ordnen Sie sie zu.</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### Tags
 
-* [Hinzufügen eines Tags zu einer Karte](#add-card-tag)
+* [Hinzufügen eines Tags zu einer Karte](#add-a-tag-to-a-card)
 * [Erstellen eines Tags](#create-a-tag)
 
 #### Hinzufügen eines Tags zu einer Karte
@@ -638,5 +614,45 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Workfront Boa
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
+ </tbody> 
+</table>
+
+
+#### Erstellen eines benutzerdefinierten GraphQL-API-Aufrufs
+
+Dieses Aktionsmodul führt eine benutzerdefinierte GraphQL-Anfrage an die Workfront Boards-API durch.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+      <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer [!DNL Workfront] App mit [!DNL Workfront Fusion] finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront-</a>) in diesem Artikel.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Wählen Sie die Methode für diesen Aufruf. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td> <p>Geben Sie einen Namen für diesen Vorgang ein. Dies kann das Tracking und Debugging des Aufrufs vereinfachen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td> <p>Auswählen, ob die Variablen aus einem Formular oder aus einer Sammlung stammen sollen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables]</td> 
+   <td> <p>Klicken Sie für jede Variable, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Schlüssel und den Wert der Variablen ein.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+   </tr> 
  </tbody> 
 </table>
