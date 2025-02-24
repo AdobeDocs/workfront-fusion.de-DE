@@ -4,9 +4,9 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: 160e503adeca5404e18fd0cba9f475fee8510a48
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '2315'
 ht-degree: 0%
 
 ---
@@ -93,23 +93,17 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [-Events](#events)
-* [Kalender](#calendars)
-* [Zugriffssteuerungsregeln](#access-control-rules)
-* [Iteratoren (veraltet)](#iterators-deprecated)
-* [Sonstige](#other)
 
-### -Events
+* [Auslöser](#triggers)
+* [Aktionen](#actions)
+* [Iteratoren](#iterators)
 
-* [[!UICONTROL Watch events]](#watch-events)
-* [[!UICONTROL Search events]](#search-events)
-* [[!UICONTROL Get an event]](#get-an-event)
-* [[!UICONTROL Create an event]](#create-an-event)
-* [[!UICONTROL Update an event]](#update-an-event)
-* [[!UICONTROL Delete an event]](#delete-an-event)
+### Auslöser
 
+* [Ereignisse ansehen](#watch-events)
+* [Ereignisse ansehen (Sofort)](#watch-events-instant)
 
-#### [!UICONTROL Watch events]
+#### Ereignisse ansehen
 
 Dieses Kalendermodul führt ein Trigger aus, wenn ein neues Ereignis in dem von Ihnen angegebenen Kalender hinzugefügt, aktualisiert, gelöscht, gestartet oder beendet wird. Das Modul gibt alle Standardfelder zurück, die mit dem Datensatz oder den Datensätzen verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
@@ -121,15 +115,15 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundanweisungen</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Calendar] </td> 
    <td> <p>Wählen Sie den Kalender aus, mit dem das Modul arbeiten soll.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Watch Events]</td> 
-   <td> <p>Wählen Sie aus, ob Sie Ereignisse nach Erstellungsdatum, Aktualisierungsdatum, Startdatum oder Enddatum beobachten möchten.</p> </td> 
+   <td>[!UICONTROL Watch]</td> 
+   <td> <p>Wählen Sie aus, ob nur neue Ereignisse oder neue Ereignisse und alle Änderungen angesehen werden sollen.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show deleted events]</td> 
@@ -137,77 +131,45 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td>[!UICONTROL Query] </td> 
-   <td> <p>Geben Sie den Text ein, nach dem Sie suchen möchten.</p> </td> 
+   <td> <p>Geben Sie den Text ein, für den Sie Ergebnisse zurückgeben möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL Maximum number of events]</td> 
    <td> <p> Legen Sie die maximale Anzahl von Ereignissen fest, mit denen [!DNL Workfront Fusion] während eines Zyklus arbeitet (die Anzahl der Wiederholungen pro Szenario-Ausführung). Wenn der Wert zu hoch eingestellt ist, kann die Verbindung auf der Seite des angegebenen Drittanbieterdienstes unterbrochen werden (Zeitüberschreitung). [!DNL Workfront Fusion] hat darauf keinen Einfluss. Es wird empfohlen, einen niedrigeren Wert festzulegen und entweder einen höheren Wert für die maximale Anzahl an Zyklen zu definieren oder das Szenario häufiger auszuführen.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search events]
+#### Ereignisse ansehen (Sofort)
 
-Dieses Aktionsmodul sucht im ausgewählten Kalender nach einem Ereignis.
-
-Sie geben den Kalender und die Parameter der Suche an.
-
-Das Modul gibt die ID des Ereignisses und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
+Dieses Ereignismodul verwendet einen Mailhook, um eine E-Mail-Trigger zu erstellen, den Sie als Ereigniseinladung verwenden können. Das Modul startet ein Szenario basierend auf Ereignissen, zu denen die E-Mail-Adresse eingeladen wird.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a></td> 
+   <td>[!UICONTROL Mailhook] </td> 
+   <td> <p>Wählen Sie den Mailhook aus, den Sie für dieses Modul verwenden möchten. Um einen neuen Mailhook zu erstellen, klicken Sie auf <b>Hinzufügen</b> und geben Sie die Verbindung ein, die Sie für den Mailhook verwenden möchten.</p><p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundanweisungen</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Calendar ID]</td> 
-   <td> <p>Wählen Sie den Kalender aus, den Sie durchsuchen möchten.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Start date]</td> 
-   <td> <p> Datum des Starts des Ereignisses eingeben oder zuordnen. Dieses Modul ruft auch Ereignisse ab, die vor diesem Datum beginnen und noch am eingegebenen Startdatum auftreten. </p> <p>Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL End date]</td> 
-   <td> <p> Datum eingeben oder zuordnen, an dem das Ereignis endet. </p> <p> Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Single events]</td> 
-   <td> <p> Aktivieren Sie diese Option, um wiederkehrende Ereignisse als einzelne Instanzen zu behandeln. Wenn Sie beispielsweise eine wöchentliche Besprechung haben und diese Option aktiviert ist, gibt das Modul jede wöchentliche Besprechung als separates Ereignis zurück.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Query]</td> 
-   <td> <p>Geben Sie den Suchbegriff ein, nach dem Sie suchen möchten, oder ordnen Sie ihn zu. </p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Order by]</td> 
-   <td> <p>Auswahl der Reihenfolge der im Ergebnis zurückgegebenen Ereignisse.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Start Time]</strong>: Sortieren nach Startdatum und -zeit (aufsteigend). Dies ist nur bei der Abfrage einzelner Ereignisse verfügbar.</li> 
-     <li><strong>[!UICONTROL Updated Time]</strong>: Sortieren nach der Zeit der letzten Änderung (aufsteigend).</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>Legen Sie die maximale Anzahl von Ereignissen fest, [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgegeben werden.</p> </td> 
+   <td>[!UICONTROL Maximum number of events]</td> 
+   <td> <p> Legen Sie die maximale Anzahl von Ereignissen fest, mit denen [!DNL Workfront Fusion] während eines Zyklus arbeitet (die Anzahl der Wiederholungen pro Szenario-Ausführung). Wenn der Wert zu hoch eingestellt ist, kann die Verbindung auf der Seite des angegebenen Drittanbieterdienstes unterbrochen werden (Zeitüberschreitung). [!DNL Workfront Fusion] hat darauf keinen Einfluss. Es wird empfohlen, einen niedrigeren Wert festzulegen und entweder einen höheren Wert für die maximale Anzahl an Zyklen zu definieren oder das Szenario häufiger auszuführen.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an event]
+### Aktionen
 
-Dieses Aktionsmodul gibt die Metadaten für ein einzelnes Ereignis im angegebenen Kalender zurück.
+* [Kalender erstellen](#create-a-calendar)
+* [Ereignis erstellen](#create-an-event)
+* [Ereignis löschen](#delete-an-event)
+* [Ereignisse abrufen](#get-events)
+* [Aktualisieren eines Ereignisses](#update-an-event)
 
-Sie geben den Kalender und das Ereignis an.
+#### Kalender erstellen
 
-Das Modul gibt die ID des Ereignisses und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
+Dieses Aktionsmodul erstellt einen Kalender, der mit dem Konto verknüpft ist.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -215,15 +177,15 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundanweisungen</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Calendar ID]</td> 
-   <td> <p>Geben Sie die ID des Kalenders ein, der das Ereignis enthält, das Sie erhalten möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td>[!UICONTROL Color] </td> 
+   <td> <p>Farbe auswählen, die mit dem Kalender verknüpft werden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Event ID] </td> 
-   <td> <p>Geben Sie die Ereignis-ID des vorhandenen [!DNL Google Calendar] ein, das Sie erhalten möchten.</p> </td> 
+   <td>[!UICONTROL Calendar name] </td> 
+   <td> <p>Geben Sie einen Namen für den neuen Kalender ein oder mappen Sie ihn.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -247,15 +209,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Create an Event]</td> 
-   <td> <p>Wählen Sie aus, wie Sie das Ereignis erstellen möchten.</p> 
-    <ul> 
-     <li><b>[!UICONTROL In Detail]</b><p>Mit dieser Option können Sie weitere Details zum Ereignis eingeben.<br></p></li> 
-     <li><b>[!UICONTROL Quickly]</b><p>Sie müssen nur den Kalender auswählen und einen Namen für das Ereignis eingeben. Sie können Zeit- und Ortsangaben in den Namen aufnehmen, und [!DNL Google Calendar] planen das Ereignis für diesen Ort und diese Uhrzeit.</p></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Calendar ID]</td> 
+   <td>[!UICONTROL Calendar]</td> 
    <td> <p>Wählen Sie den Kalender aus, in dem das Ereignis angezeigt werden soll.</p> </td> 
   </tr> 
   <tr> 
@@ -272,15 +226,15 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td>[!UICONTROL Start date]</td> 
-   <td> <p>Wenn es sich um ein ganztägiges Ereignis handelt, geben Sie das Startdatum des Ereignisses ein. </p> <p>Eine Liste der unterstützten Datumsformate finden Sie unter "<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Geben Sie das Startdatum und die Uhrzeit des Ereignisses ein oder ordnen Sie sie zu. </p> <p>Eine Liste der unterstützten Datumsformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL End date]</td> 
-   <td> <p> Wenn es sich um ein ganztägiges Ereignis handelt, geben Sie das Enddatum des Ereignisses ein. </p> <p>Eine Liste der unterstützten Datumsformate finden Sie unter "<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref"> in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p> Geben Sie das Enddatum und die Endzeit des Ereignisses ein oder mappen Sie sie. </p> <p>Eine Liste der unterstützten Datumsformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Description]</td> 
-   <td>Geben Sie eine Beschreibung für das Ereignis ein oder mappen Sie sie. Dieses Feld unterstützt das HTML.</td> 
+   <td>Geben Sie eine Beschreibung für das Ereignis ein oder mappen Sie sie. Dieses Feld unterstützt HTML.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Location]</td> 
@@ -292,11 +246,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td>[!UICONTROL Reminder] </td> 
-   <td> <p>Erinnerung für das Ereignis hinzufügen. Wählen Sie für jede Erinnerung die Methode aus, mit der Sie erinnert werden möchten, und legen Sie fest, wie lange (in Minuten) das Ereignis dauern soll, an das Sie erinnert werden möchten.</p> </td> 
+   <td> <p>Erinnerung für das Ereignis hinzufügen. Klicken Sie für jede Erinnerung, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie dann die Methode aus, mit der Sie erinnert werden möchten, und legen Sie fest, wie lange (in Minuten) das Ereignis dauern soll, bevor Sie erinnert werden.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Attendees]</td> 
-   <td>Fügen Sie die Teilnehmer zum Ereignis hinzu. Geben Sie für jeden Teilnehmer seinen Namen und seine E-Mail-Adresse ein bzw. mappen Sie diese.</td> 
+   <td>Fügen Sie die Teilnehmer zum Ereignis hinzu. Klicken Sie für jeden Teilnehmer auf <b>Teilnehmer hinzufügen</b> und geben Sie dann seinen Namen und seine E-Mail-Adresse ein oder mappen Sie diese.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show me as]</td> 
@@ -326,37 +280,6 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update an event]
-
-Dieses Aktionsmodul ändert ein vorhandenes Ereignis.
-
-Kalender und Ereignis-ID angeben.
-
-Das Modul gibt die ID des Ereignisses und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Calendar] </td> 
-   <td> <p>Wählen Sie den Kalender aus, mit dem Sie arbeiten möchten.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Event ID] </td> 
-   <td> <p>Geben Sie die Ereignis-ID aus dem zuvor erstellten [!DNL Google Calendar] ein, das Sie aktualisieren möchten.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-Sie können die Ereignisinformationen aktualisieren, indem Sie neue Werte in das gewünschte Feld eingeben. Einzelheiten zu den einzelnen Feldern finden Sie unter [[!UICONTROL Create an event]](#create-an-event).
-
 #### [!UICONTROL Delete an event]
 
 Dieses Aktionsmodul löscht ein Ereignis.
@@ -373,430 +296,26 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundanweisungen</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Calendar ID]</td> 
+   <td>[!UICONTROL Calendar]</td> 
    <td> <p>Wählen Sie den Kalender aus, der das Ereignis enthält, das Sie löschen möchten.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Event ID]</td> 
    <td> <p> Geben Sie die Ereignis-ID aus einem zuvor erstellten [!DNL Google Calendar] ein, das Sie löschen möchten.</p> </td> 
   </tr> 
-  <tr> 
-   <td>[!UICONTROL Send notification about the event deletion]</td> 
-   <td>Wählen Sie aus, ob Sie Benachrichtigungen über die Löschung des Ereignisses an alle Gäste, Gäste, die [!DNL Google Calendar] nicht verwenden, oder an niemanden senden möchten.</td> 
-  </tr> 
  </tbody> 
 </table>
 
-### Kalender
+#### [!UICONTROL Get events]
 
-* [[!UICONTROL List calendars]](#list-calendars)
-* [[!UICONTROL Get a calendar]](#get-a-calendar)
-* [[!UICONTROL Create a calendar]](#create-a-calendar)
-* [[!UICONTROL Update a calendar]](#update-a-calendar)
-* [[!UICONTROL Delete a calendar]](#delete-a-calendar)
-* [[!UICONTROL Clear a calendar]](#clear-a-calendar)
+Dieses Modul ruft Informationen zu Ereignissen im ausgewählten Kalender basierend auf den von Ihnen angegebenen Kriterien ab.
 
-#### [!UICONTROL List calendars]
+Sie geben den Kalender und die Parameter der Suche an.
 
-Dieses Aktionsmodul gibt die Kalender aus der Kalenderliste eines Benutzers zurück.
-
-Das Modul gibt die ID des Kalenders und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Minimum access role]</td> 
-   <td> <p>Wählen Sie die Mindestzugriffsrolle für den Benutzer aus. Das Modul gibt Kalender zurück, die auf dieser Mindestzugriffsrolle basieren.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Free Busy Reader]</strong>: Der Benutzer kann Frei/Gebucht-Informationen lesen. </li> 
-     <li><strong>[!UICONTROL Owner]</strong>: Der Benutzer kann Ereignisse lesen und ändern und auf Kontrolllisten zugreifen. </li> 
-     <li><strong>[!UICONTROL Reader]</strong>: Der Benutzer kann Ereignisse lesen, die nicht privat sind. </li> 
-     <li><strong>[!UICONTROL Writer]</strong>: Der Benutzer kann Ereignisse lesen und ändern.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Show hidden calendars]</td> 
-   <td>Aktivieren Sie diese Option, um ausgeblendete Kalender in die vom Modul zurückgegebene Liste aufzunehmen.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Legen Sie die maximale Anzahl von Kalendern fest, [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgegeben werden.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a calendar]
-
-Dieses Aktionsmodul ruft einen Kalender ab.
-
-Sie geben die ID des Kalenders an, den Sie abrufen möchten.
-
-Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td> <p>Wählen Sie den Kalender aus, den Sie abrufen möchten.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create a calendar]
-
-Dieses Aktionsmodul erstellt einen neuen Kalender.
-
-Sie geben einen Namen für den Kalender an.
-
-Das Modul gibt die ID des Kalenders und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Calendar name]</td> 
-   <td> <p> Geben Sie einen Namen für den neuen Kalender ein.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Update a calendar]
-
-Dieses Aktionsmodul aktualisiert einen Kalender.
-
-Sie geben die ID des Kalenders an, den Sie aktualisieren möchten.
-
-Das Modul gibt die ID des Kalenders und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Calendar ID]</td> 
-   <td> <p>Wählen Sie den Kalender aus, den Sie aktualisieren möchten.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Calendar name]</td> 
-   <td> <p> Geben Sie einen neuen Namen für den Kalender ein.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a calendar]
-
-Dieses Aktionsmodul löscht einen Kalender.
-
-Sie geben die ID des Kalenders an, den Sie löschen möchten.
-
-Das Modul gibt die ID des Kalenders und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td> <p>Geben Sie die ID des Kalenders ein, den Sie löschen möchten, oder mappen Sie sie.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Clear a calendar]
-
-Dieses Aktionsmodul entfernt alle Ereignisse aus dem primären Kalender eines Kontos.
-
-Sie geben die Verbindung an, die eine Verbindung zu dem Konto herstellt, das den Kalender enthält, den Sie löschen möchten.
-
-Das Modul gibt die ID des Kalenders und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### Zugriffssteuerungsregeln
-
-* [[!UICONTROL List access control rules]](#list-access-control-rules)
-* [[!UICONTROL Get an access control rule]](#get-an-access-control-rule)
-* [[!UICONTROL Create an access control rule]](#create-an-access-control-rule)
-* [[!UICONTROL Update an access control rule]](#update-an-access-control-rule)
-* [[!UICONTROL Delete an access control rule]](#delete-an-access-control-rule)
-
-#### [!UICONTROL List access control rules]
-
-Dieses Aktionsmodul gibt die Regeln in der Zugriffssteuerungsliste für einen Kalender zurück.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td> <p>Wählen Sie den Kalender aus, der die Zugriffssteuerungsregeln enthält, die Sie abrufen möchten.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Legen Sie die maximale Anzahl von Ergebnissen fest, [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgegeben werden.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get an access control rule]
-
-Dieses Aktionsmodul gibt die Metadaten einer Zugriffssteuerungsregel zurück.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar ID]</td> 
-   <td> <p>Wählen Sie den Kalender aus, der die Zugriffssteuerungsregel enthält, die Sie abrufen möchten.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Access control rule ID]</td> 
-   <td>Wählen Sie die Zugriffssteuerungsregel aus, die Sie abrufen möchten.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create an access control rule]
-
-Dieses Aktionsmodul erstellt eine neue Zugriffssteuerungsregel.
-
-Sie geben einen Namen für den Kalender an.
-
-Das Modul gibt die ID der Zugriffssteuerungsregel und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Calendar ID]</td> 
-   <td> <p>Wählen Sie den Kalender aus, in dem Sie eine Zugriffssteuerungsregel erstellen möchten.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Role]</td> 
-   <td> <p>Wählen Sie die Rolle aus, die der Zugriffsregel zugewiesen werden soll. </p> 
-    <ul> 
-     <li><strong>[!UICONTROL Free Busy Reader]</strong>: Der Benutzer kann Frei/Gebucht-Informationen lesen. </li> 
-     <li><strong>[!UICONTROL Owner]</strong>: Der Benutzer kann Ereignisse lesen und ändern und auf Kontrolllisten zugreifen. </li> 
-     <li><strong>[!UICONTROL Reader]</strong>: Der Benutzer kann Ereignisse lesen, die nicht privat sind. </li> 
-     <li><strong>[!UICONTROL Writer]</strong>: Der Benutzer kann Ereignisse lesen und ändern.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Type]</td> 
-   <td> <p>Wählen Sie den Typ des Umfangs aus. </p> 
-    <ul> 
-     <li><strong>[!UICONTROL Default]</strong>: Der öffentliche Bereich. Dies ist der Standardwert. </li> 
-     <li><strong>[!UICONTROL User]</strong>: Beschränkt den Umfang auf einen einzelnen Benutzer. </li> 
-     <li><strong>[!UICONTROL Group]</strong>: Beschränkt den Umfang auf eine Gruppe. </li> 
-     <li><strong>[!UICONTROL Domain]</strong>: Beschränkt den Umfang auf eine Domain. </li> 
-    </ul> <p>Hinweis: Die dem [!UICONTROL Default] oder der Öffentlichkeit gewährten Berechtigungen gelten für alle Benutzer, unabhängig davon, ob sie authentifiziert sind oder nicht.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Value]</td> 
-   <td>Geben Sie je nach Bereichstyp die E-Mail-Adresse eines Benutzers oder einer Gruppe oder den Namen einer Domain ein.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Send notifications]</td> 
-   <td> <p>Aktivieren Sie diese Option, um Benachrichtigungen über die Zugriffsänderung zu senden. </p> <p>Hinweis: Es gibt keine Benachrichtigungen zum Entfernen des Zugriffs. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Update an access control rule]
-
-Dieses Aktionsmodul aktualisiert eine Zugriffssteuerungsregel.
-
-Sie geben einen Namen für den Kalender an.
-
-Das Modul gibt die ID der Zugriffssteuerungsregel und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Calendar ID]</td> 
-   <td> <p>Wählen Sie den Kalender aus, der die Zugriffssteuerungsregel enthält, die Sie aktualisieren möchten.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Access control rule ID]</td> 
-   <td>Wählen Sie die Zugriffssteuerungsregel aus, die Sie aktualisieren möchten.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Role]</td> 
-   <td> <p>Wählen Sie die Rolle aus, die der Zugriffsregel zugewiesen werden soll. </p> 
-    <ul> 
-     <li><strong>[!UICONTROL None]</strong>: Diese Rolle bietet keinen Zugriff.</li> 
-     <li><strong>[!UICONTROL Free Busy Reader]</strong>: Der Benutzer kann Frei/Gebucht-Informationen lesen. </li> 
-     <li><strong>[!UICONTROL Owner]</strong>: Der Benutzer kann Ereignisse lesen und ändern und auf Kontrolllisten zugreifen. </li> 
-     <li><strong>[!UICONTROL Reader]</strong>: Der Benutzer kann Ereignisse lesen, die nicht privat sind. </li> 
-     <li><strong>[!UICONTROL Writer]</strong>: Der Benutzer kann Ereignisse lesen und ändern.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Send notifications]</td> 
-   <td> <p>Aktivieren Sie diese Option, um Benachrichtigungen über die Zugriffsänderung zu senden. </p> <p>Hinweis: Es gibt keine Benachrichtigungen zum Entfernen des Zugriffs. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete an access control rule]
-
-Dieses Aktionsmodul löscht eine Zugriffssteuerungsregel.
-
-Sie geben einen Namen für den Kalender an.
-
-Das Modul gibt die ID der Zugriffssteuerungsregel und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
-
-Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Calendar ID]</td> 
-   <td> <p>Wählen Sie die ID des Kalenders aus, der die zu löschende Zugriffssteuerungsregel enthält, oder ordnen Sie sie zu.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Access control rule ID]</td> 
-   <td>Wählen Sie die ID der Zugriffssteuerungsregel aus, die Sie löschen möchten, oder ordnen Sie sie zu.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-### Iteratoren (veraltet)
-
-Die [!UICONTROL iterate attachments]- und [!UICONTROL iterate attendees]-Module werden nicht mehr unterstützt. Um Anlagen oder Teilnehmer zu iterieren, verwenden Sie das Modul [!UICONTROL Flow Control] > [!UICONTROL Iterator] . Weitere Informationen finden Sie unter [Iterator-Modul](/help/workfront-fusion/references/modules/iterator-module.md)
-
-### Sonstige
-
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Get Free/Busy Information]](#get-freebusy-information)
-
-#### [!UICONTROL Make an API Call]
-
-Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundlegende Anweisungen</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td>Geben Sie einen Pfad relativ zu <code>https://www.googleapis.com/calendar</code> ein. Beispiel: <code>/v3/users/me/calendarList</code></td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   td&gt; <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p> Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:   <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>">  
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get Free/Busy Information]
-
-Dieses Aktionsmodul gibt Frei- und Belegt-Informationen für eine Reihe von Kalendern zurück.
-
-Das Modul gibt die ID des Kalenders und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+Das Modul gibt die ID der Ereignisse und aller zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
 Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
@@ -809,19 +328,165 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Minimum time]</td> 
-   <td> <p> Geben Sie den Beginn des Intervalls ein, für das Sie Informationen abrufen möchten.</p> <p> Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td>[!UICONTROL Calendar]</td> 
+   <td> <p>Wählen Sie den Kalender aus, für den Sie Ereignisse abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum time]</td> 
-   <td> <p> Geben Sie das Ende des Intervalls ein, für das Sie Informationen abrufen möchten. </p> <p>Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td>[!UICONTROL Start date]</td> 
+   <td> <p> Datum des Starts des Ereignisses eingeben oder zuordnen. Dieses Modul ruft auch Ereignisse ab, die vor diesem Datum beginnen und noch am eingegebenen Startdatum auftreten. </p> <p>Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Calendars]</td> 
-   <td> <p>Klicken Sie für jeden Kalender, aus dem Sie Informationen abrufen möchten, auf <strong>Hinzufügen</strong> und geben Sie die Kalender-ID ein oder mappen Sie sie.</p> </td> 
+   <td>[!UICONTROL End date]</td> 
+   <td> <p> Datum eingeben oder zuordnen, an dem das Ereignis endet. </p> <p> Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Single events]</td> 
+   <td> <p> Aktivieren Sie diese Option, um wiederkehrende Ereignisse als einzelne Instanzen zu behandeln. Wenn Sie beispielsweise eine wöchentliche Besprechung haben und diese Option aktiviert ist, gibt das Modul jede wöchentliche Besprechung als separates Ereignis zurück.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Query]</td> 
+   <td> <p>Geben Sie den Suchbegriff ein, nach dem Sie suchen möchten, oder ordnen Sie ihn zu. </p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Order by]</td> 
+   <td> <p>Auswahl der Reihenfolge der im Ergebnis zurückgegebenen Ereignisse.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Start Time]</strong>: Sortieren nach Startdatum und -zeit (aufsteigend). Dies ist nur bei der Abfrage einzelner Ereignisse verfügbar.</li> 
+     <li><strong>[!UICONTROL Updated Time]</strong>: Sortieren nach der Zeit der letzten Änderung (aufsteigend).</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Mazimum number of returned events]</td> 
+   <td> <p>Legen Sie die maximale Anzahl von Ereignissen fest, [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgegeben werden.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+#### [!UICONTROL Update an event]
+
+Dieses Aktionsmodul ändert ein vorhandenes Ereignis.
+
+Kalender und Ereignis-ID angeben.
+
+Das Modul gibt die ID des Ereignisses und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+
+Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Calendar]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Adobe [!DNL Workfront Fusion] - Grundanweisungen</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Calendar] </td> 
+   <td> <p>Wählen Sie den Kalender aus, mit dem Sie arbeiten möchten.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Event ID] </td> 
+   <td> <p>Geben Sie die Ereignis-ID aus dem zuvor erstellten [!DNL Google Calendar] ein, das Sie aktualisieren möchten.</p> </td> 
+  </tr>   <tr> 
+   <td>[!UICONTROL Event name]</td> 
+   <td> <p> Geben Sie einen Namen für das Ereignis ein oder mappen Sie ihn. </p> <p>Hinweis: Wenn Sie [!UICONTROL Quick add] im Feld [!UICONTROL Create an event] ausgewählt haben, können Sie Datum und Uhrzeit des Ereignisses einbeziehen und [!DNL Workfront Fusion] das Ereignis für dieses Datum und diese Uhrzeit erstellen. Beispiel: <code>Appointment at Capitol Hill on June 3rd 10am-10:25am</code>. Wenn Sie [!UICONTROL Quick add] ausgewählt haben, aber kein Datum und keine Uhrzeit in den Ereignisnamen aufnehmen, wird das Ereignis aus der aktuellen Zeit erstellt und dauert eine Stunde.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL All day event]</td> 
+   <td>Aktivieren Sie diese Option, wenn das Ereignis ein ganztägiges Ereignis ist (keine Start- und Endzeiten erfordert).</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Start date]</td> 
+   <td> <p>Geben Sie das Startdatum und die Uhrzeit des Ereignisses ein oder ordnen Sie sie zu. </p> <p>Eine Liste der unterstützten Datumsformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL End date]</td> 
+   <td> <p> Geben Sie das Enddatum und die Endzeit des Ereignisses ein oder mappen Sie sie. </p> <p>Eine Liste der unterstützten Datumsformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Description]</td> 
+   <td>Geben Sie eine Beschreibung für das Ereignis ein oder mappen Sie sie. Dieses Feld unterstützt HTML.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Location]</td> 
+   <td>Geben Sie einen Ort für das Ereignis im Textformular ein.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Use the default reminder settings for this event]</td> 
+   <td>Aktivieren Sie diese Option, um die standardmäßigen Erinnerungseinstellungen zu verwenden. Wenn Sie eine benutzerdefinierte Erinnerung im Feld [!UICONTROL Reminder] festlegen, wird dieser Wert auf Nein festgelegt.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Reminder] </td> 
+   <td> <p>Erinnerung für das Ereignis hinzufügen. Klicken Sie für jede Erinnerung, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie dann die Methode aus, mit der Sie erinnert werden möchten, und legen Sie fest, wie lange (in Minuten) das Ereignis dauern soll, bevor Sie erinnert werden.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Attendees]</td> 
+   <td>Fügen Sie die Teilnehmer zum Ereignis hinzu. Klicken Sie für jeden Teilnehmer auf <b>Teilnehmer hinzufügen</b> und geben Sie dann seinen Namen und seine E-Mail-Adresse ein oder mappen Sie diese.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Show me as]</td> 
+   <td>Wählen Sie aus, ob Personen, die Ihren Kalender anzeigen, Sie während dieses Ereignisses als beschäftigt oder verfügbar anzeigen sollen.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Visibility] </td> 
+   <td> <p>Sichtbarkeit dieses Ereignisses auswählen. </p> 
+    <ul> 
+     <li> <p><b>[!UICONTROL Default]</b></p> <p>Das Ereignis hat die Sichtbarkeit, die Sie in Ihren Kalendereinstellungen festgelegt haben.</p> </li> 
+     <li> <p><b>[!UICONTROL Public]</b></p> <p>Jeder, für den der Kalender freigegeben ist, kann dieses Ereignis sehen.</p> </li> 
+     <li> <p><b>[!UICONTROL Private]</b></p> <p>Nur Teilnehmer können diese Veranstaltung sehen.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Send notification about the event creation]</td> 
+   <td> <p>Wählen Sie aus, ob Benachrichtigungen über die Erstellung eines neuen Ereignisses an alle Gäste, nicht [!DNL Google Calendar] Gäste oder an niemanden gesendet werden sollen.</p> <p>Tipp: Es wird empfohlen, die Option [!UICONTROL None] nur für Anwendungsfälle der Migration zu verwenden.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Guests can modify the event]</td> 
+   <td> <p>Aktivieren Sie diese Option, wenn Gäste dieses Ereignis ändern können sollen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Recurrence]</td> 
+   <td>Fügen Sie alle Wiederholungsregeln hinzu, die Sie auf dieses Ereignis anwenden möchten. Für jede Regel ist eine Liste mit [!UICONTROL RRULE], [!UICONTROL EXRULE], [!UICONTROL RDATE] und [!UICONTROL EXDATE] für ein wiederkehrendes Ereignis erforderlich. Beachten Sie, dass [!UICONTROL DTSTART] und [!UICONTROL DTEND] Zeilen in diesem Feld nicht zulässig sind. Ereignisstart- und -endzeiten werden in den Feldern Beginn und Ende angegeben. Dieses Feld wird für einzelne Ereignisse oder Instanzen wiederkehrender Ereignisse weggelassen. Weitere Informationen finden Sie unter <a href="https://tools.ietf.org/html/rfc5545#section-3.8.5">RFC5545</a>.</td> 
+  </tr>
+
+</tbody> 
+</table>
+
+### Iteratoren
+
+#### Anlagen iterieren
+
+Dieses Aktionsmodul durchläuft Anlagen zu einem Ereignis und gibt jede Anlage in einem separaten Bundle aus.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Source module] </td> 
+   <td> Wählen Sie in diesem Szenario das Modul aus, das das Ereignis ausgibt, das die Anlagen enthält, die Sie iterieren möchten. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Iterieren von Teilnehmern
+
+Dieses Aktionsmodul durchläuft die Teilnehmer für ein Ereignis und gibt jeden Teilnehmer in einem separaten Bundle aus.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Source module] </td> 
+   <td> Wählen Sie in diesem Szenario das Modul aus, das das Ereignis ausgibt, das die Teilnehmer enthält, die Sie iterieren möchten. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+
+
 
 ## Trigger eines Szenarios vor einem Ereignis
 
