@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 1219642306c03cb0aa6037493ce2f02ced80b99d
+source-git-commit: a3494479614a4930427842fa68e6b586edca0833
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '2248'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Bevor Sie den [!DNL Adobe Firefly]-Connector verwenden können, müssen Sie sich
 
 ## Adobe Firefly-API-Informationen
 
-Der Adobe Firefly-Anschluss verwendet Folgendes:
+Der Adobe Firefly-Connector verwendet Folgendes:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -136,6 +136,8 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 Dieses Aktionsmodul erweitert ein Bild, optional mit Inhalten aus einer von Ihnen angegebenen Eingabeaufforderung.
 
+Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version dieses Moduls ist veraltet und wird in naher Zukunft entfernt.
+
 <table style="table-layout:auto"> 
  <col> 
  <col> 
@@ -153,29 +155,43 @@ Dieses Aktionsmodul erweitert ein Bild, optional mit Inhalten aus einer von Ihne
    <td>Geben Sie eine Zahl zwischen 1 und 4 ein. Das Modul generiert diese Anzahl von erweiterten Bildvarianten.</td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Source]</td> 
+   <td>Wählen Sie aus, wie Sie die Quelldatei bereitstellen:<ul><li><p><b>Datei</b></p><p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Referenzbilddatei und die Referenzbilddatei der Quelldatei zu.</p></li><li><p><b>Vordefinierte URL</b></p><p>Geben Sie die URL des Quellbilds ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Expanded image format]</td> 
    <td>Wählen Sie das Dateiformat aus, in dem das erweiterte Bild gespeichert werden soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>  <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Bilddateinamen und die Bilddatei (Daten) der Quelldatei zu.</p> </td> 
+   <td role="rowheader">[!UICONTROL Expand by]</td> 
+   <td>  <p>Wählen Sie aus, ob Sie das Bild mithilfe der Bildplatzierung oder einer Maske erweitern möchten.</p> 
+   <ul>
+   <li><b>Platzierung</b><p>Geben Sie die horizontale und vertikale Ausrichtung sowie den Einzug des platzierten Bildes von den Kanten ein.</p></li>
+   <li><b>Maske</b><p>Wählen Sie die Quelldatei für die Maske und ob die Maske invertiert werden soll.</p></li>
+   </ul>
+</td> 
 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
-   <td>Wählen Sie die Größe aus, die das erweiterte Bild haben soll.</td> 
+   <td>Wählen Sie die Höhe und Breite aus, die das erweiterte Bild sein soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>Klicken Sie für jeden Seed, den Sie verwenden möchten, auf <b>Element hinzufügen</b> und geben Sie eine Ganzzahl ein oder mappen Sie sie. Sie können denselben Startwert in einem anderen Modul zum Erweitern eines Bildes verwenden, um ein ähnliches Bild mit verschiedenen Stilen zu generieren. </td> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>Klicken Sie für jedes Bild, das das Modul generiert, auf <b>Element hinzufügen</b> und geben Sie eine Ganzzahl ein oder mappen Sie sie. Sie können denselben Startwert in einem anderen Modul zum Erweitern eines Bildes verwenden, um ein ähnliches Bild mit verschiedenen Stilen zu generieren. Die Anzahl der hinzugefügten Testadressen muss der Anzahl der Varianten im Feld entsprechen.</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Bild ausfüllen
+### Ein Bild erweitern (veraltet)
+
+Dieses Modul ist veraltet und wird in naher Zukunft entfernt. Verwenden Sie stattdessen das Modul Bild erweitern .
+
+### Bild ausfüllen
 
 Dieses Aktionsmodul füllt den maskierten Bereich eines Bildes aus, optional mit Inhalten aus einer von Ihnen angegebenen Eingabeaufforderung.
 
+Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version dieses Moduls ist veraltet und wird in naher Zukunft entfernt.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -184,6 +200,14 @@ Dieses Aktionsmodul füllt den maskierten Bereich eines Bildes aus, optional mit
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Firefly]</a> in diesem Artikel.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td>Wählen Sie aus, wie Sie die Bildquelldatei bereitstellen:<ul><li><p><b>Datei</b></p><p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Referenzbilddatei und die Referenzbilddatei der Quelldatei zu.</p></li><li><p><b>Vordefinierte URL</b></p><p>Geben Sie die URL des Quellbilds ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Mask > Source]</td> 
+   <td>Wählen Sie aus, wie Sie die Maskenquelldatei bereitstellen:<ul><li><p><b>Datei</b></p><p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Referenzbilddatei und die Referenzbilddatei der Quelldatei zu.</p></li><li><p><b>Vordefinierte URL</b></p><p>Geben Sie die URL des Quellbilds ein oder mappen Sie sie.</p></li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
@@ -197,30 +221,31 @@ Dieses Aktionsmodul füllt den maskierten Bereich eines Bildes aus, optional mit
    <td role="rowheader">[!UICONTROL Filled image format]</td> 
    <td>Wählen Sie das Dateiformat aus, in dem das ausgefüllte Bild gespeichert werden soll.</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Image]</td> 
-   <td>  <p> Klicken Sie für jedes Bild, das Sie ausfüllen möchten, auf <b>Bild hinzufügen</b> und wählen Sie dann eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Bilddateinamen und die Bilddaten der Quelldatei zu.</p> </td> 
-</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mask]</td> 
-   <td>  <p>  Klicken Sie für jede Maske, die Sie verwenden möchten, auf <b>Maske hinzufügen</b>. Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Quelldatei und die Maskendaten der Quelldatei zu. Die Maskendatei stellt die benutzerdefinierte Maske dar, die mit generierten Inhalten gefüllt wird.</p> </td> 
-</td> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>Klicken Sie für jedes Bild, das das Modul generiert, auf <b>Element hinzufügen</b> und geben Sie eine Ganzzahl ein oder mappen Sie sie. Sie können denselben Startwert in einem anderen Modul zum Erweitern eines Bildes verwenden, um ein ähnliches Bild mit verschiedenen Stilen zu generieren. Die Anzahl der hinzugefügten Testadressen muss der Anzahl der Varianten im Feld entsprechen.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
    <td>Wählen Sie die Größe aus, in der das Bild ausgefüllt werden soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seeds]</td> 
-   <td>Klicken Sie für jedes Bild, das das Modul generiert, auf <b>Element hinzufügen<b> und geben Sie eine Ganzzahl ein oder mappen Sie sie. Sie können denselben Startwert in einem anderen Modul zum Erweitern eines Bildes verwenden, um ein ähnliches Bild mit verschiedenen Stilen zu generieren. Die Anzahl der hinzugefügten Testadressen muss der Anzahl der Varianten im Feld entsprechen.</td> 
+   <td role="rowheader">[!UICONTROL Locale]</td> 
+   <td>Wenn ein Gebietsschema bereitgestellt wird, generiert das Modul Inhalte, die für das angegebene Gebietsschema relevanter sind. <p>Das Gebietsschema muss im ISO-639-1-Sprachcode und in der ISO-3166-1-Region angegeben werden.</p><p> Beispiel: <code>en-US</code></p></td> 
   </tr> 
  </tbody> 
 </table>
 
+### Bild ausfüllen (veraltet)
+
+Dieses Modul ist veraltet und wird in naher Zukunft entfernt. Verwenden Sie stattdessen das Modul Bild ausfüllen .
+
 ## Bild erzeugen
 
 Dieses Aktionsmodul generiert ein - und -Bild basierend auf einer von Ihnen angegebenen Eingabeaufforderung. Sie können auch ein optionales Referenzbild angeben. Das generierte Bild entspricht dem Stil des Referenzbilds.
+
+Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version dieses Moduls ist veraltet und wird in naher Zukunft entfernt.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -232,7 +257,7 @@ Dieses Aktionsmodul generiert ein - und -Bild basierend auf einer von Ihnen ange
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
-   <td>Geben Sie eine Eingabeaufforderung für das Bild ein, das Sie erstellen möchten, oder ordnen Sie sie zu. Weitere Details in der Eingabeaufforderung ermöglichen Ihnen mehr Kontrolle darüber, was im Bild angezeigt wird.</td> 
+   <td>Geben Sie eine Eingabeaufforderung für das Bild ein, das Sie generieren möchten, oder ordnen Sie sie zu. Weitere Details in der Eingabeaufforderung ermöglichen Ihnen mehr Kontrolle darüber, was im Bild angezeigt wird.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Number of variations]</td> 
@@ -240,16 +265,27 @@ Dieses Aktionsmodul generiert ein - und -Bild basierend auf einer von Ihnen ange
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Generated image format]</td> 
-   <td>Wählen Sie das Dateiformat aus, in dem das erweiterte Bild gespeichert werden soll. Wenn Sie Standard auswählen, wird das Dateiformat JPEG, wenn kein Referenzbild angegeben wird. Wenn ein Referenzbild bereitgestellt wird, ist das Dateiformat des generierten Bildes mit dem Referenzbild identisch.</td> 
+   <td>Wählen Sie das Dateiformat aus, in dem das erweiterte Bild gespeichert werden soll. Wenn Sie Standard auswählen, lautet das Dateiformat JPEG , wenn kein Referenzbild angegeben wird. Wenn ein Referenzbild bereitgestellt wird, ist das Dateiformat des generierten Bildes mit dem Referenzbild identisch.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>  <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Referenzbilddatei und die Referenzbilddatei (Daten) der Quelldatei zu. Das generierte Bild wird entsprechend dem Stil des Referenzbilds erstellt.</p> </td> 
-</td> 
+   <td role="rowheader">[!UICONTROL Structure > Image reference]</td> 
+    <td>Wählen Sie aus, wie Sie die Quelldatei für die Struktur des neuen Bildes bereitstellen:<ul><li><p><b>Datei</b></p><p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Referenzbilddatei und die Referenzbilddatei der Quelldatei zu.</p></li><li><p><b>Vordefinierte URL</b></p><p>Geben Sie die URL des Quellbilds ein oder mappen Sie sie.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presets]</td> 
-   <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabestile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Adobe-Entwicklerdokumentation.</td> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly der Struktur des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Wählen Sie aus, wie Sie die Quelldatei für den Stil des neuen Bildes bereitstellen:<ul><li><p><b>Datei</b></p><p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Referenzbilddatei und die Referenzbilddatei der Quelldatei zu.</p></li><li><p><b>Vordefinierte URL</b></p><p>Geben Sie die URL des Quellbilds ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly dem Stil des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabenstile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Entwicklerdokumentation für Adobe.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Negative prompt]</td> 
@@ -261,17 +297,13 @@ Dieses Aktionsmodul generiert ein - und -Bild basierend auf einer von Ihnen ange
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>Ganzzahl eingeben oder zuordnen. Sie können denselben Startwert in einem anderen Modul zum Erweitern eines Bildes verwenden, um ein ähnliches Bild mit verschiedenen Stilen zu generieren. </td> 
+   <td>Klicken Sie für jedes Bild, das das Modul generiert, auf <b>Element hinzufügen</b> und geben Sie eine Ganzzahl ein oder mappen Sie sie. Sie können denselben Startwert in einem anderen Modul zum Erweitern eines Bildes verwenden, um ein ähnliches Bild mit verschiedenen Stilen zu generieren. Die Anzahl der hinzugefügten Testadressen muss der Anzahl der Varianten im Feld entsprechen.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
    <td>Wählen Sie die Größe aus, in der das generierte Bild angezeigt werden soll.</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Strength]</td> 
-   <td>Geben Sie eine Ganzzahl ein, die die Intensität darstellt, mit der das generierte Bild dem Stil des Vorgabenstils oder Referenzbilds entspricht, oder mappen Sie sie. </td> 
-  </tr> 
-  <tr> 
+   <tr> 
    <td role="rowheader">[!UICONTROL Visual intensity]</td> 
    <td>Geben Sie eine Ganzzahl ein, die die Gesamtintensität der vorhandenen visuellen Eigenschaften des Fotos darstellt, oder mappen Sie sie. </td> 
   </tr> 
@@ -279,9 +311,110 @@ Dieses Aktionsmodul generiert ein - und -Bild basierend auf einer von Ihnen ange
    <td role="rowheader">[!UICONTROL Locale]</td> 
    <td>Wenn ein Gebietsschema bereitgestellt wird, generiert das Modul Inhalte, die für das angegebene Gebietsschema relevanter sind. <p>Das Gebietsschema muss im ISO-639-1-Sprachcode und in der ISO-3166-1-Region angegeben werden.</p><p> Beispiel: <code>en-US</code></p></td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tileable]</td> 
+   <td>Aktivieren Sie diese Einstellung, um ein Bild zu erstellen, das beliebig oft wiederholt werden kann.</td> 
+  </tr> 
  </tbody> 
 </table>
 
+### Erstellen eines Bildes (veraltet)
+
+Dieses Modul ist veraltet und wird in naher Zukunft entfernt. Verwenden Sie stattdessen das Modul Bild erzeugen .
+
+### Zusammengesetztes Objekt erzeugen
+
+Dieses Aktionsmodul kombiniert von Firefly generierte Bilder, um eine Bildkomposition zu erstellen.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Firefly]</a> in diesem Artikel.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>Geben Sie eine Eingabeaufforderung für das Bild ein, das Sie generieren möchten, oder ordnen Sie sie zu. Weitere Details in der Eingabeaufforderung ermöglichen Ihnen mehr Kontrolle darüber, was im Bild angezeigt wird.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td>Geben Sie eine Zahl zwischen 1 und 4 ein. Das Modul generiert diese Anzahl von Bildvarianten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Content classs]</td> 
+   <td>Wählen Sie aus, ob das generierte Bild eher einem Foto oder einer Kunst ähneln soll.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+    <td>Wählen Sie aus, wie Sie die Quelldatei für die Struktur des neuen Bildes bereitstellen:<ul><li><p><b>Datei</b></p><p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Referenzbilddatei und die Referenzbilddatei der Quelldatei zu.</p></li><li><p><b>Vordefinierte URL</b></p><p>Geben Sie die URL des Quellbilds ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td>Wählen Sie das Dateiformat aus, in dem das erweiterte Bild gespeichert werden soll. Wenn Sie Standard auswählen, lautet das Dateiformat JPEG , wenn kein Referenzbild angegeben wird. Wenn ein Referenzbild bereitgestellt wird, ist das Dateiformat des generierten Bildes mit dem Referenzbild identisch.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Wählen Sie aus, wie Sie die Quelldatei für den Stil des neuen Bildes bereitstellen:<ul><li><p><b>Datei</b></p><p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Referenzbilddatei und die Referenzbilddatei der Quelldatei zu.</p></li><li><p><b>Vordefinierte URL</b></p><p>Geben Sie die URL des Quellbilds ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly dem Stil des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabenstile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Entwicklerdokumentation für Adobe.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size]</td> 
+   <td>Wählen Sie die Größe aus, die der generierte Verbund sein soll. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Erzeugen ähnlicher Bilder
+
+Dieses Aktionsmodul generiert Bilder, die dem von Ihnen angegebenen Quellbild ähneln.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Firefly]</a> in diesem Artikel.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td>Geben Sie eine Zahl zwischen 1 und 4 ein. Das Modul generiert diese Anzahl von Bildvarianten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td>Wählen Sie das Dateiformat aus, in dem das erweiterte Bild gespeichert werden soll. Wenn Sie Standard auswählen, lautet das Dateiformat JPEG , wenn kein Referenzbild angegeben wird. Wenn ein Referenzbild bereitgestellt wird, ist das Dateiformat des generierten Bildes mit dem Referenzbild identisch.</td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+    <td>Wählen Sie aus, wie Sie die Quelldatei für die Struktur des neuen Bildes bereitstellen:<ul><li><p><b>Datei</b></p><p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Referenzbilddatei und die Referenzbilddatei der Quelldatei zu.</p></li><li><p><b>Vordefinierte URL</b></p><p>Geben Sie die URL des Quellbilds ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Wählen Sie aus, wie Sie die Quelldatei für den Stil des neuen Bildes bereitstellen:<ul><li><p><b>Datei</b></p><p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Referenzbilddatei und die Referenzbilddatei der Quelldatei zu.</p></li><li><p><b>Vordefinierte URL</b></p><p>Geben Sie die URL des Quellbilds ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size]</td> 
+   <td>Wählen Sie die Größe aus, die der generierte Verbund sein soll. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>Klicken Sie für jedes Bild, das das Modul generiert, auf <b>Element hinzufügen</b> und geben Sie eine Ganzzahl ein oder mappen Sie sie. Sie können denselben Startwert in einem anderen Modul zum Erweitern eines Bildes verwenden, um ein ähnliches Bild mit verschiedenen Stilen zu generieren. Die Anzahl der hinzugefügten Testadressen muss der Anzahl der Varianten im Feld entsprechen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tileable]</td> 
+   <td>Aktivieren Sie diese Einstellung, um ein Bild zu erstellen, das beliebig oft wiederholt werden kann.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 ### Erstellen eines benutzerdefinierten API-Aufrufs
