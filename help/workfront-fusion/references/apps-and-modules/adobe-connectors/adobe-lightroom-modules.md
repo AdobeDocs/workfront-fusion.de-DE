@@ -4,9 +4,9 @@ description: Mit den Adobe Lightroom-Modulen können Sie ein Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -190,10 +190,10 @@ Dieses Aktionsmodul ruft eine Lightroom-Server-Versions-ID ab und zeigt an, ob d
 
 * [Erstellen einer Asset-Originaldatei](#create-an-asset-external-xmp-develop-setting-file)
 * [Erstellen von Assets](#create-an-asset)
-* [Erstellen einer Einstellungsdatei für die externe XMP-Entwicklung eines Assets](#create-an-asset-external-xmp-develop-setting-file)
+* [Erstellen einer Asset-Einstellungsdatei für die externe XMP-Entwicklung](#create-an-asset-external-xmp-develop-setting-file)
 * [Erzeugen von Ausgabedarstellungen für eine Originaldatei](#generate-renditions-for-an-original-file)
 * [Abrufen eines Katalog-Assets](#get-a-catalog-asset)
-* [Abrufen der neuesten Einstellung für die Entwicklung externer Asset-XMP](#get-the-latest-asset-external-xmp-develop-setting-file)
+* [Abrufen der neuesten externen XMP-Entwicklungseinstellung für Assets](#get-the-latest-asset-external-xmp-develop-setting-file)
 * [Abrufen der neuesten Asset-Ausgabedarstellung](#get-the-latest-asset-rendition)
 * [Abrufen von Assets](#retrieve-assets)
 
@@ -295,7 +295,7 @@ Dieses Aktionsmodul erstellt ein neues Asset mit anfänglichen Metadaten und Imp
   </tbody>
 </table>
 
-#### Erstellen einer Einstellungsdatei für die externe XMP-Entwicklung eines Assets
+#### Erstellen einer Asset-Einstellungsdatei für die externe XMP-Entwicklung
 
 Dieses Aktionsmodul unterstützt zwei Workflows. Der erste Workflow besteht darin, die externe XMP-Entwicklungseinstellungsdatei für das Asset hochzuladen. Der zweite Workflow besteht darin, eine externe XMP-Entwicklungseinstellungsdatei zu erstellen, indem Sie sie aus der externen XMP-Entwicklungseinstellungsdatei eines anderen Assets kopieren.
 
@@ -407,9 +407,9 @@ Dieses Aktionsmodul ruft Informationen zu einem einzelnen Asset in einem Katalog
 </table>
 
 
-#### Abrufen der neuesten Einstellungsdatei für die externe Asset-XMP-Entwicklung
+#### Abrufen der neuesten Asset-Einstellungsdatei für die externe XMP-Entwicklung
 
-Dieses Aktionsmodul ruft die neueste externe XMP-Einstellungsdatei für Assets ab.
+Dieses Aktionsmodul ruft die neueste externe XMP-Asset-Einstellungsdatei ab.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -428,7 +428,7 @@ Dieses Aktionsmodul ruft die neueste externe XMP-Einstellungsdatei für Assets a
     <tr>
       <td role="rowheader">[!UICONTROL Asset ID]</td>
       <td>
-        <p>Geben Sie die ID des Assets ein, das mit der XMP-Entwicklungseinstellungsdatei verknüpft ist, oder ordnen Sie sie zu.</p>
+        <p>Geben Sie die ID des Assets ein, das mit der XMP-Einstellungsdatei für Entwicklungseinstellungen verknüpft ist, oder ordnen Sie sie zu.</p>
       </td>
     </tr>
   </tbody>
@@ -455,7 +455,7 @@ Dieses Aktionsmodul ruft die neueste Asset-Ausgabedarstellung des angegebenen Ty
     <tr>
       <td role="rowheader">[!UICONTROL Asset ID]</td>
       <td>
-        <p>Geben Sie die ID des Assets ein, das mit der XMP-Entwicklungseinstellungsdatei verknüpft ist, oder ordnen Sie sie zu.</p>
+        <p>Geben Sie die ID des Assets ein, das mit der XMP-Einstellungsdatei für Entwicklungseinstellungen verknüpft ist, oder ordnen Sie sie zu.</p>
       </td>
     </tr>
     <tr>
@@ -500,7 +500,7 @@ Dieses Aktionsmodul ruft Assets ab, die dem Benutzer gehören, dessen Anmeldeinf
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
       <td>
-        <p>Legen Sie die maximale Anzahl von Assets fest, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben. Diese Zahl muss kleiner oder gleich 100 sein.</p>
+        <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll.</p>
       </td>
     </tr>
     <tr>
