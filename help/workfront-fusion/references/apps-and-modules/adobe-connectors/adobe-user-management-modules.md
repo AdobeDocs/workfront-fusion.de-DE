@@ -8,7 +8,7 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 640fec2de63ad59ba89fae5373f85b8147d8dac0
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 2%
@@ -117,9 +117,9 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe User Management]:
 
 
 
-## Adobe von User Management-Modulen und ihren Feldern
+## Adobe User Management-Module und ihre Felder
 
-Beim Konfigurieren von Adobe User Management-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus werden möglicherweise zusätzliche Adobe-Benutzerverwaltungsfelder angezeigt, abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von Adobe User Management-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus werden möglicherweise weitere Adobe-Benutzerverwaltungsfelder angezeigt, je nach Faktoren wie Ihrer Zugriffsebene in der App oder im Service. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -287,7 +287,7 @@ Dieses Aktionsmodul erstellt einen neuen Benutzer in der Organisation.
   </tr> 
   <tr> 
    <td role="rowheader">Anmeldung</td> 
-   <td>Wenn Sie einen Benutzer mit einer Federated ID erstellen, wählen Sie den Anmeldetyp aus.</td> 
+   <td>Wenn Sie eine Benutzerin oder einen Benutzer mit einer Federated ID erstellen, wählen Sie den Anmeldetyp aus.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">E-Mail</td> 
@@ -295,11 +295,11 @@ Dieses Aktionsmodul erstellt einen neuen Benutzer in der Organisation.
   </tr> 
   <tr> 
    <td role="rowheader">Domäne</td> 
-   <td>Wenn Sie einen Benutzer mit einer Federated ID mit einer domänenbasierten Anmeldung erstellen, geben Sie die Domain ein bzw. ordnen Sie sie zu.</td> 
+   <td>Wenn Sie einen Benutzer mit einer Federated ID mit einer Domain-basierten Anmeldung erstellen, geben Sie die Domain ein oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Benutzerin oder Benutzer</td> 
-   <td>Wenn Sie einen Benutzer mit einer Federated ID mit einer domänenbasierten Anmeldung erstellen, geben Sie den Benutzer ein, den dieser neue Benutzer repräsentieren soll, oder ordnen Sie ihn zu.</td> 
+   <td>Wenn Sie einen Benutzer mit einer Federated ID mit einer Domain-basierten Anmeldung erstellen, geben Sie den Benutzer ein, den dieser neue Benutzer repräsentieren soll, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Vorname</td> 
@@ -319,7 +319,7 @@ Dieses Aktionsmodul erstellt einen neuen Benutzer in der Organisation.
   </tr> 
   <tr> 
    <td role="rowheader">Verwenden von Adobe ID</td> 
-   <td>Wenn „true“, wird die Benutzer-ID so interpretiert, dass sie auf eine bestehende Adobe ID verweist, selbst wenn ein Unternehmen oder eine Federated ID mit demselben Namen vorhanden ist.</td> 
+   <td>Wenn „true“, wird die Benutzer-ID so interpretiert, dass sie auf eine bestehende Adobe ID verweist, selbst wenn eine Enterprise oder Federated ID mit demselben Namen vorhanden ist.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -528,13 +528,15 @@ Dieses Aktionsmodul aktualisiert eine vorhandene Benutzergruppe.
    <td role="rowheader">Name der ursprünglichen Gruppe</td> 
    <td>Geben Sie die aktualisierte Beschreibung der Gruppe ein oder mappen Sie sie.</td> 
   </tr> 
- </tbody>
+ </tbody> 
+ </table>
 
 ### Sonstige
 
-Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Adobe User Management-API durch.
 
 #### Erstellen eines benutzerdefinierten API-Aufrufs
+
+Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Adobe User Management-API durch.
 
 <table style="table-layout:auto"> 
   <col/>
