@@ -8,9 +8,9 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Projekte in de
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 284e5bda7fef82bac02f3200efe1662fd55586bf
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1386'
 ht-degree: 2%
 
 ---
@@ -106,7 +106,7 @@ Wählen Sie auf der Adobe Admin Console-Seite die Registerkarte Produkte in der 
 
 So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Storage]:
 
-1. Klicken Sie **[!UICONTROL Add]** neben dem Feld Verbindung .
+1. Klicken Sie in einem beliebigen Modul **[!UICONTROL Hinzufügen]** neben dem Feld Verbindung .
 
 1. Füllen Sie die folgenden Felder aus:
 
@@ -117,30 +117,30 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Storage]:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td role="rowheader">[!UICONTROL Verbindungstyp]</td>
         <td>Wählen Sie <code>Server to server</code> aus.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
           <p>Geben Sie einen Namen für diese Verbindung ein.</p>
         </td>
         </tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Geben Sie Ihre [!UICONTROL Adobe] [!UICONTROL Client ID] ein. Diese finden Sie im [!UICONTROL Credential details] Abschnitt des Projekts in der [!DNL Adobe Developer Console].</td>
+        <td role="rowheader">[!UICONTROL Client-ID]</td>
+        <td>Geben Sie Ihre [!UICONTROL Adobe] [!UICONTROL Client-ID] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des Projekts in der [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Geben Sie Ihre [!DNL Adobe] [!UICONTROL Client Secret] ein. Diese finden Sie im [!UICONTROL Credential details] Abschnitt des Projekts in der [!DNL Adobe Developer Console].</td>
+        <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
+        <td>Geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des Projekts in der [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
+        <td role="rowheader">[!UICONTROL IMS-Organisations-ID]</td>
         <td>Geben Sie Ihre Adobe IMS-Organisations-ID ein oder mappen Sie sie. Dies ist eine Zeichenfolge der Form <code> 123abc@AdobeOrg</code>, wobei der Abschnitt vor dem @ eine hexadezimale Zahl ist. Sie finden diesen Wert als Teil des URL-Pfads für Ihr Unternehmen in der Adobe Admin Console oder in der Adobe.IO-Konsole für Ihre User Management-Integration.</td>
         </tr>
       </tbody>
     </table>
 
-1. Klicken Sie auf **[!UICONTROL Continue]** , um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 ## Adobe-Speichermodule und ihre Felder
 

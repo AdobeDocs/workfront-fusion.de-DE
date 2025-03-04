@@ -4,9 +4,9 @@ description: Mit  [!DNL Adobe Workfront Fusion SFTP]  Modulen können Sie Datei�
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '2077'
 ht-degree: 0%
 
 ---
@@ -71,15 +71,15 @@ Um Ihr SFTP-Konto mit [!DNL Workfront Fusion] zu verbinden, müssen Sie eine Ver
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection name]</td> 
+   <td role="rowheader">[!UICONTROL Verbindungsname]</td> 
    <td> <p> Geben Sie den Namen für Ihre SFTP-Verbindung ein.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader">[!UICONTROL Environment]</td>
+    <td role="rowheader">[!UICONTROL Umgebung]</td>
     <td>Wählen Sie aus, ob Sie eine Verbindung zu einer Produktions- oder Nicht-Produktionsumgebung herstellen.</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Type]</td>
+    <td role="rowheader">[!UICONTROL Typ]</td>
     <td>Wählen Sie aus, ob Sie eine Verbindung zu einem Service-Konto oder einem persönlichen Konto herstellen möchten.</td>
   </tr>
   <tr>
@@ -91,29 +91,29 @@ Um Ihr SFTP-Konto mit [!DNL Workfront Fusion] zu verbinden, müssen Sie eine Ver
    <td> <p>Geben Sie den SFTP-Server-Port ein. Beispiel: 22.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Auth type]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Authentifizierungstyp]</p> </td> 
    <td> <p>Wählen Sie die Autorisierungsmethode aus, die Sie für die Verbindung mit dem SFTP-Server verwenden möchten.</p> 
     <ul> 
-     <li><strong>[!UICONTROL User name and password]</strong>: Geben Sie Ihre Anmeldedaten ein.</li> 
-     <li> <p><strong>[!UICONTROL User name and key]</strong>: Geben Sie Ihren Benutzernamen und den privaten Schlüssel/das private Zertifikat ein</p> <p>Laden Sie den privaten Schlüssel hoch, um die Client-seitige Autorisierung zu verwenden, oder laden Sie Ihr Zertifikat (P12- oder PFX-Datei) hoch, wenn Sie TLS mit Ihrem selbstsignierten Zertifikat verwenden möchten. Wenn Sie die Client-seitige Zertifikatautorisierung verwenden, können Sie Ihr CA-Zertifikat hier eingeben.</p> <p>[!DNL Workfront Fusion] speichert und speichert keine Daten (Dateien, Passwörter), die Sie hier angeben. Datei und Passwort werden nur zum Extrahieren eines privaten Schlüssels/Zertifikats verwendet.</p> </li> 
+     <li><strong>[!UICONTROL Benutzername und Kennwort]</strong>: Geben Sie Ihre Anmeldedaten ein.</li> 
+     <li> <p><strong>[!UICONTROL Benutzername und Schlüssel]</strong>: Geben Sie Ihren Benutzernamen und den privaten Schlüssel/das Zertifikat ein</p> <p>Laden Sie den privaten Schlüssel hoch, um die Client-seitige Autorisierung zu verwenden, oder laden Sie Ihr Zertifikat (P12- oder PFX-Datei) hoch, wenn Sie TLS mit Ihrem selbstsignierten Zertifikat verwenden möchten. Wenn Sie die Client-seitige Zertifikatautorisierung verwenden, können Sie Ihr CA-Zertifikat hier eingeben.</p> <p>[!DNL Workfront Fusion] speichert und speichert keine Daten (Dateien, Passwörter), die Sie hier angeben. Datei und Passwort werden nur zum Extrahieren eines privaten Schlüssels/Zertifikats verwendet.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Key exchange algorithms] </td> 
+   <td role="rowheader">[!UICONTROL Schlüsselaustauschalgorithmen] </td> 
    <td> <p>Sie können eine Reihe von Algorithmen für den Schlüsselaustausch eingeben. Das Modul priorisiert Algorithmen basierend auf der Reihenfolge, in der sie hinzugefügt wurden. Klicken Sie für jeden Algorithmus, den Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie den Algorithmus aus.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Ciphers] </td> 
+   <td role="rowheader">[!UICONTROL-Chiffren] </td> 
    <td> <p>Sie können einen Satz von Chiffren für den Schlüsselaustausch eingeben. Das Modul priorisiert Chiffren basierend auf der Reihenfolge, in der sie hinzugefügt wurden. Klicken Sie für jede Chiffre, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie die Chiffre aus.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Klicken Sie nach der Eingabe der Verbindungsinformationen auf **[!UICONTROL Continue]** , um eine Verbindung herzustellen.
+Klicken Sie nach Eingabe der Verbindungsinformationen auf **[!UICONTROL Weiter]**, um eine Verbindung herzustellen.
 
-## [!UICONTROL SFTP] Module und ihre Felder
+## [!UICONTROL SFTP]-Module und ihre Felder
 
-Beim Konfigurieren [!UICONTROL SFTP] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!UICONTROL SFTP] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!UICONTROL SFTP]-Modulen zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können zusätzliche [!UICONTROL SFTP]-Felder angezeigt werden, abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -124,7 +124,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 * [Überwachen von Dateien in einem Ordner](#watch-files-in-a-folder)
 * [Überwachen von Unterordnern in einem Ordner](#watch-subfolders-in-a-folder)
 
-#### [!UICONTROL Watch Files in a Folder]
+#### [!UICONTROL Dateien in einem Ordner ansehen]
 
 Gibt Dateien mit Details zurück, wenn eine Datei in einem angegebenen Ordner erstellt oder geändert wird.
 
@@ -133,11 +133,11 @@ Gibt Dateien mit Details zurück, wenn eine Datei in einem angegebenen Ordner er
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, den Sie beobachten möchten. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben oder einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -145,13 +145,13 @@ Gibt Dateien mit Details zurück, wenn eine Datei in einem angegebenen Ordner er
    <td> <p> Geben Sie die Puffergröße in Byte ein. Der Wert definiert die Größe der vom Server übertragenen Blöcke. Einige Server können Probleme verursachen oder Dateien beschädigen, wenn der Wert zu hoch ist.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned files]</td> 
+   <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Dateien]</td> 
    <td> <p> Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Subfolders in a Folder]
+#### [!UICONTROL Überwachen von Unterordnern in einem Ordner]
 
 Gibt Ordner mit Details zurück, wenn ein Ordner in einem angegebenen Ordner erstellt oder geändert wird.
 
@@ -160,15 +160,15 @@ Gibt Ordner mit Details zurück, wenn ein Ordner in einem angegebenen Ordner ers
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, den Sie beobachten möchten, oder ordnen Sie ihn zu. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned files]</td> 
+   <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Dateien]</td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -187,62 +187,62 @@ Gibt Ordner mit Details zurück, wenn ein Ordner in einem angegebenen Ordner ers
 * [Aktualisieren von Dateiberechtigungen](#update-file-permissions)
 * [Datei hochladen](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Erstellen eines Ordners]
 
-Erstellt einen neuen Ordner am angegebenen Speicherort.
+Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
 
 >[!NOTE]
 >
->Wenn der Ordner bereits vorhanden ist, gibt das Modul einen Fehler aus. Um den Fluss ununterbrochen fortzusetzen, fügen Sie eine Fehler-Handler-Route an das Modul an, um den Fehler zu erfassen, und verwenden Sie die [!UICONTROL Resume]-Anweisung, um den Fluss fortzusetzen. Informationen zum Anhängen einer Fehler-Handler-Route finden Sie unter [Fehlerbehandlung in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Informationen zur Fehler-Handler-Route finden Sie unter [Anweisungen für die Fehlerbehandlung in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+>Wenn der Ordner bereits vorhanden ist, gibt das Modul einen Fehler aus. Um den Fluss ununterbrochen fortzusetzen, fügen Sie eine Fehler-Handler-Route an das Modul an, um den Fehler zu erfassen, und verwenden Sie die [!UICONTROL Resume]-Direktive, um den Fluss fortzusetzen. Informationen zum Anhängen einer Fehler-Handler-Route finden Sie unter [Fehlerbehandlung in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). Informationen zur Fehler-Handler-Route finden Sie unter [Anweisungen für die Fehlerbehandlung in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Geben Sie einen vorhandenen Ordner als Speicherort für den neuen Ordner an. Sie können einen absoluten Pfad wie <code>/home/user/file.txt</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder Name]</td> 
+   <td>[!UICONTROL Ordnername]</td> 
    <td> <p> Geben Sie den Ordnernamen ein.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissions]</p> </td> 
+   <td> <p>[!UICONTROL-Berechtigungen]</p> </td> 
    <td> <p>Festlegen der gewünschten Ordnerberechtigungen. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Datei löschen]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[!UICONTROL Dateipfad]</td> 
    <td> <p> Geben Sie den Pfad zu der Datei ein, die Sie löschen möchten. Sie können einen absoluten Pfad wie <code>/home/user/file.txt</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./file.txt</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL Löschen eines Ordners]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -252,7 +252,7 @@ Erstellt einen neuen Ordner am angegebenen Speicherort.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Datei abrufen]
 
 Dieses Modul ruft Dateidetails ab, einschließlich der Daten einer Datei.
 
@@ -261,21 +261,21 @@ Dieses Modul ruft Dateidetails ab, einschließlich der Daten einer Datei.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Buffer Size [B]]</td> 
+   <td>[!UICONTROL Puffergröße [B]]</td> 
    <td> <p> Geben Sie die Puffergröße in Byte ein. Der Wert definiert die Größe der vom Server übertragenen Blöcke. Einige Server können Probleme verursachen oder Dateien beschädigen, wenn der Wert zu hoch ist.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path] </td> 
+   <td>[!UICONTROL Dateipfad] </td> 
    <td> <p>Geben Sie den Pfad zur Datei ein. Sie können einen absoluten Pfad wie <code>/home/user/file.txt</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./file.txt</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get files]
+#### [!UICONTROL Dateien abrufen]
 
 Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
 
@@ -284,103 +284,103 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Buffer Size [B]]</td> 
+   <td>[!UICONTROL Puffergröße [B]]</td> 
    <td> <p> Geben Sie die Puffergröße in Byte ein. Der Wert definiert die Größe der vom Server übertragenen Blöcke. Einige Server können Probleme verursachen oder Dateien beschädigen, wenn der Wert zu hoch ist.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, der die Dateien oder Ordner enthält, die Sie auflisten möchten, oder ordnen Sie ihn zu. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Search] </td> 
+   <td>[!UICONTROL Suche] </td> 
    <td> <p>Geben Sie den Suchbegriff ein oder ordnen Sie ihn zu. Wenn Sie beispielsweise nach Dateien mit der Dateierweiterung .txt suchen möchten, geben Sie <code>.txt</code> ein. Sie können auch den Namen der Datei eingeben oder zuordnen, nach der Sie suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort By]</td> 
+   <td>[!UICONTROL sortieren nach]</td> 
    <td> <p> Wählen Sie aus, ob die Ergebnisse nach Dateiname, Größe, Datum des letzten Zugriffs oder Datum der letzten Änderung sortiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort Order]</td> 
+   <td>[!UICONTROL Sortierreihenfolge]</td> 
    <td> <p> Wählen Sie aus, ob das Ergebnis in auf- oder absteigender Reihenfolge zurückgegeben werden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Continue the execution of the route even if the module returns no results]</p> </td> 
+   <td> <p>[!UICONTROL Die Routenausführung auch dann fortsetzen, wenn das Modul keine Ergebnisse zurückgibt]</p> </td> 
    <td>Aktivieren Sie diese Option, um sicherzustellen, dass das Modul das Szenario nicht beendet, wenn es keine Ergebnisse zurückgibt.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List a folder's content]
+#### [!UICONTROL Den Inhalt eines Ordners auflisten]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Show] </td> 
+   <td>[!UICONTROL Anzeigen] </td> 
    <td> <p>Wählen Sie aus, ob Sie Dateien, Ordner oder beides abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, der die Dateien oder Ordner enthält, die Sie auflisten möchten, oder ordnen Sie ihn zu. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Search] </td> 
+   <td>[!UICONTROL Suche] </td> 
    <td> <p>Geben Sie den Suchbegriff ein oder ordnen Sie ihn zu. Wenn Sie beispielsweise nach Dateien mit der Dateierweiterung .txt suchen möchten, geben Sie <code>.txt</code> ein. Sie können auch den Namen der Datei eingeben oder zuordnen, nach der Sie suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort By]</td> 
+   <td>[!UICONTROL sortieren nach]</td> 
    <td> <p> Wählen Sie aus, ob die Ergebnisse nach Dateiname, Größe, Datum des letzten Zugriffs oder Datum der letzten Änderung sortiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort Order] </td> 
+   <td>[!UICONTROL Sortierreihenfolge] </td> 
    <td> <p>Wählen Sie aus, ob das Ergebnis in auf- oder absteigender Reihenfolge zurückgegeben werden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Continue the execution of the route even if the module returns no results]</p> </td> 
+   <td> <p>[!UICONTROL Die Routenausführung auch dann fortsetzen, wenn das Modul keine Ergebnisse zurückgibt]</p> </td> 
    <td>Aktivieren Sie diese Option, um sicherzustellen, dass das Modul das Szenario nicht beendet, wenn es keine Ergebnisse zurückgibt.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
+#### [!UICONTROL Verschieben einer Datei]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[!UICONTROL Dateipfad]</td> 
    <td> <p> Geben Sie den Pfad zur zu verschiebenden Datei ein. Sie können einen absoluten Pfad wie <code>/home/user/file.txt</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./file.txt</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New Folder]</td> 
+   <td>[!UICONTROL Neuer Ordner]</td> 
    <td> <p> Geben Sie den Pfad zum neuen Speicherort der Datei ein. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Rename a File]
+#### [!UICONTROL Datei umbenennen]
 
 Benennt eine Datei um.
 
@@ -389,21 +389,21 @@ Benennt eine Datei um.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[!UICONTROL Dateipfad]</td> 
    <td> <p> Geben Sie den Pfad zu der Datei ein, die Sie umbenennen möchten. Sie können einen absoluten Pfad wie <code>/home/user/file.txt</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./file.txt</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New file name]</td> 
+   <td>[!UICONTROL Neuer Dateiname]</td> 
    <td> <p> Geben Sie den neuen Namen für die Datei ein, einschließlich der Dateierweiterung.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update file permissions]
+#### [!UICONTROL Aktualisieren von Dateiberechtigungen]
 
 Ermöglicht das Ändern der Dateiberechtigungen.
 
@@ -412,21 +412,21 @@ Ermöglicht das Ändern der Dateiberechtigungen.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[!UICONTROL Dateipfad]</td> 
    <td> <p> Geben Sie den Pfad zur zu verschiebenden Datei ein. Sie können einen absoluten Pfad wie <code>/home/user/file.txt</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./file.txt</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissions]</p> </td> 
+   <td> <p>[!UICONTROL-Berechtigungen]</p> </td> 
    <td> <p>Legen Sie die gewünschten Dateiberechtigungen fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL Datei hochladen]
 
 Mit diesem Modul können Sie eine Datei auf den SFTP-Server hochladen.
 
@@ -435,19 +435,19 @@ Mit diesem Modul können Sie eine Datei auf den SFTP-Server hochladen.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Geben Sie einen vorhandenen Ordner als Speicherort für die Datei an. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source File]</td> 
+   <td>[!UICONTROL Source-Datei]</td> 
    <td> <p> Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissions]</p> </td> 
+   <td> <p>[!UICONTROL-Berechtigungen]</p> </td> 
    <td> <p>Legen Sie die gewünschten Berechtigungen für die Datei oder den Ordner fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
