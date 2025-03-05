@@ -4,9 +4,9 @@ description: CloudConvert-Module
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '3037'
 ht-degree: 0%
 
 ---
@@ -25,20 +25,20 @@ In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, d
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td> <p>[!UICONTROL-Plan], [!UICONTROL-Arbeit]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
    <td>
    <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration] </p>
+   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Aktuelle Produktanforderung: Wenn Sie über den [!DNL Adobe Workfront] [!UICONTROL Select] oder [!UICONTROL Prime] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu nutzen. [!DNL Workfront Fusion] ist im [!DNL Workfront] [!UICONTROL Ultimate] enthalten.</p>
    <p>Oder</p>
    <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
    </td> 
@@ -73,16 +73,16 @@ Der CloudConvert-Connector verwendet Folgendes:
 
 Um Ihr [!DNL CloudConvert]-Konto mit [!DNL Workfront Fusion] zu verbinden, müssen Sie den API-Schlüssel von Ihrem [!DNL CloudConvert]-Konto abrufen.
 
-1. Melden Sie sich bei Ihrem [!DNL CloudConvert] Konto an und öffnen Sie Ihre [!UICONTROL Dashboard].
-1. Öffnen Sie den Abschnitt **[!UICONTROL Authorization]>[!UICONTROL API Keys]** .
-1. Klicken Sie auf **[!UICONTROL Create New API key]**.
-1. Geben Sie den Namen für den API-Schlüssel ein, aktivieren Sie die gewünschten Bereiche und klicken Sie dann auf **[!UICONTROL Create]**.
+1. Melden Sie sich bei Ihrem [!DNL CloudConvert] Konto an und öffnen Sie Ihr [!UICONTROL Dashboard].
+1. Öffnen Sie den **[!UICONTROL Autorisierung] > [!UICONTROL API-Schlüssel]**.
+1. Klicken Sie **[!UICONTROL Neuen API-Schlüssel erstellen]**.
+1. Geben Sie den Namen für den API-Schlüssel ein, aktivieren Sie die gewünschten Bereiche und klicken Sie dann auf **[!UICONTROL Erstellen]**.
 1. Kopieren Sie das bereitgestellte Token und bewahren Sie es an einem sicheren Ort auf.
-1. Beginnen Sie [!DNL Workfront Fusion] mit der Erstellung eines Szenarios und öffnen Sie das **[!UICONTROL Create a connection]**-Dialogfeld des [!DNL CloudConvert].
+1. Beginnen Sie [!DNL Workfront Fusion] mit der Erstellung eines Szenarios und öffnen Sie das Dialogfeld **[!UICONTROL Verbindung erstellen]** des [!DNL CloudConvert].
 
    Anweisungen finden Sie unter [Erstellen eines Szenarios in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-1. Geben Sie das Token ein, das Sie in Schritt 5 gespeichert haben, und klicken Sie dann auf **[!UICONTROL Continue]** , um die Verbindung herzustellen.
+1. Geben Sie das Token ein, das Sie in Schritt 5 gespeichert haben, und klicken Sie dann auf **[!UICONTROL Weiter]**, um die Verbindung herzustellen.
 
 ## [!DNL CloudConvert] Module und ihre Felder {#cloudconvert-modules-and-their-fields}
 
@@ -100,14 +100,14 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 ### Allgemeine Aufgaben
 
 * [Erfassen einer Website](#capture-a-website)
-* [[!UICONTROL Convert a file]](#convert-a-file)
+* [[!UICONTROL Datei konvertieren]](#convert-a-file)
 * [Erstellen eines Archivs](#create-an-archive)
 * [Dateien zusammenführen](#merge-files)
 * [Datei optimieren](#optimize-a-file)
 
-#### [!UICONTROL Capture a Website]
+#### [!UICONTROL Erfassen einer Website]
 
-Dieses Aktionsmodul erfasst eine bestimmte Website und speichert sie im PDF-, JPG- oder PNG-Format.
+Dieses Aktionsmodul erfasst eine angegebene Website und speichert sie im PDF-, JPG- oder PNG-Format.
 
 Geben Sie die URL der Website und andere Informationen an, z. B. wo die Informationen gespeichert werden sollen.
 
@@ -118,7 +118,7 @@ Das Modul gibt die ID der Datei und aller zugehörigen Felder sowie alle benutze
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -126,29 +126,29 @@ Das Modul gibt die ID der Datei und aller zugehörigen Felder sowie alle benutze
    <td>Geben Sie die URL der Website ein, die Sie erfassen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Format] </td> 
+   <td role="rowheader">[!UICONTROL Ausgabeformat] </td> 
    <td>Wählen Sie aus, ob Sie die erfasste Website im PNG-, JPG- oder PDF-Format speichern möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File Name] </td> 
+   <td role="rowheader">[!UICONTROL Dateiname] </td> 
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers] </td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen] </td> 
    <td> <p>(Optional) Definieren Sie Anfrage-Header. </p> <p>Dies ist beispielsweise nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Conversion and engine specific options] </p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Konvertierungs- und Engine-spezifische Optionen] </p> </td> 
    <td>Geben Sie Konversions- und Engine-spezifische Optionen an. Informationen zu den verfügbaren Optionen finden Sie in der Dokumentation zur <a href="https://cloudconvert.com/api/v2/convert#convert-tasks">[!DNL CloudConvert]-</a> für <code>input_format</code> und <code>output_format</code>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a file] </td> 
+   <td role="rowheader">[!UICONTROL Datei herunterladen] </td> 
    <td> <p>Aktivieren Sie diese Option, wenn Sie auch Dateidaten in die Ausgabe des Moduls aufnehmen möchten.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Convert a file]
+#### [!UICONTROL Datei konvertieren]
 
 Konvertiert eine Datei in ein ausgewähltes Ausgabeformat.
 
@@ -157,27 +157,27 @@ Konvertiert eine Datei in ein ausgewähltes Ausgabeformat.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Input file]</td> 
+   <td role="rowheader">[!UICONTROL Eingabedatei]</td> 
    <td>Wählen Sie aus, ob Sie eine Datei mit [!DNL Workfront Fusion] hochladen möchten, oder geben Sie die URL an, von der die Datei hochgeladen werden soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Upload a file]</td> 
+   <td role="rowheader">[!UICONTROL Datei hochladen]</td> 
    <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Import a File from URL]</td> 
+   <td role="rowheader">[!UICONTROL Datei von URL importieren]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie konvertieren möchten.</p> </li> 
-     <li> <p><strong>[!UICONTROL Headers]</strong></p> <p>Definieren Sie Anfrage-Header (optional). Dies ist beispielsweise dann nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist.</p> </li> 
+     <li> <p><strong>[!UICONTROL-Kopfzeilen]</strong></p> <p>Definieren Sie Anfrage-Header (optional). Dies ist beispielsweise dann nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Format]</td> 
+   <td role="rowheader">[!UICONTROL-Format]</td> 
    <td>Wählen Sie aus, ob Sie das Eingabeformat der zu konvertierenden Datei angeben möchten. Wenn kein Wert angegeben ist, wird die Erweiterung der Eingabedatei als Eingabeformat verwendet.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -185,25 +185,25 @@ Konvertiert eine Datei in ein ausgewähltes Ausgabeformat.
    <td>Das aktuelle Format der Datei auswählen.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Output Format]</td> 
+   <td role="rowheader">[!UICONTROL Ausgabeformat]</td> 
    <td>Wählen Sie das Zieldateiformat aus, in das Sie die Datei konvertieren möchten.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL File Name]</td> 
+   <td role="rowheader">[!UICONTROL Dateiname]</td> 
    <td>Wählen Sie einen Dateinamen (einschließlich Erweiterung) für die Ziel-Ausgabedatei.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader"> <p>[!UICONTROL Conversion and engine specific options] </p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Konvertierungs- und Engine-spezifische Optionen] </p> </td> 
    <td>Geben Sie Konversions- und Engine-spezifische Optionen an. Informationen zu den verfügbaren Optionen finden Sie in der Dokumentation zur <a href="https://cloudconvert.com/api/v2/convert#convert-tasks">[!DNL CloudConvert]-</a> für <code>input_format</code> und <code>output_format</code>.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Download a file] </td> 
+   <td role="rowheader">[!UICONTROL Datei herunterladen] </td> 
    <td> <p>Aktivieren Sie diese Option, wenn Sie auch Dateidaten in die Ausgabe des Moduls aufnehmen möchten.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create an Archive]
+#### [!UICONTROL Erstellen eines Archivs]
 
 Ermöglicht das Hinzufügen einer oder mehrerer Dateien zum ZIP, RAR, 7Z, TAR, TAR.GZ oder TAR.BZ2 Archiv.
 
@@ -212,84 +212,84 @@ Ermöglicht das Hinzufügen einer oder mehrerer Dateien zum ZIP, RAR, 7Z, TAR, T
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Input Files]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Eingabedateien]</p> </td> 
    <td> <p>Geben Sie die Dateien an, die Sie dem Archiv hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Upload a File]</td> 
+   <td role="rowheader">[!UICONTROL Datei hochladen]</td> 
    <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Import a file from URL]</p> </td> 
-   <td> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie archivieren möchten.</p> <p><strong>[!UICONTROL Headers]</strong> </p> <p>Definieren Sie Anfrage-Header (optional). Dies ist beispielsweise dann nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Datei von URL importieren]</p> </td> 
+   <td> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie archivieren möchten.</p> <p><strong>[!UICONTROL-Kopfzeilen]</strong> </p> <p>Definieren Sie Anfrage-Header (optional). Dies ist beispielsweise dann nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Format]</td> 
+   <td role="rowheader">[!UICONTROL Ausgabeformat]</td> 
    <td> <p> Zielformat der archivierten Datei auswählen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
+   <td role="rowheader">[!UICONTROL Dateiname]</td> 
    <td> <p> Geben Sie den Dateinamen (einschließlich Erweiterung) der Zielausgabedatei ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conversion and engine specific options] </td> 
+   <td role="rowheader">[!UICONTROL Konvertierungs- und Engine-spezifische Optionen] </td> 
    <td> <p>Geben Sie Konversions- und Engine-spezifische Optionen an. Informationen zu den verfügbaren Optionen finden Sie in der Dokumentation zur <a href="https://cloudconvert.com/api/v2/convert#convert-tasks">[!DNL CloudConvert]-</a> für <code>input_format</code> und <code>output_format</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a File]</td> 
+   <td role="rowheader">[!UICONTROL Datei herunterladen]</td> 
    <td> <p>Aktivieren Sie diese Option, wenn Sie auch Dateidaten in die Ausgabe des Moduls aufnehmen möchten.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Merge Files]
+#### [!UICONTROL Dateien zusammenführen]
 
-Führt mindestens zwei Dateien zu einer PDF zusammen. Wenn Eingabedateien keine PDF sind, werden sie automatisch in PDF konvertiert.
+Führt mindestens zwei Dateien in einer PDF zusammen. Wenn Eingabedateien keine PDFs sind, werden sie automatisch in PDF konvertiert.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Input Files]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Eingabedateien]</p> </td> 
    <td> <p>Geben Sie die Dateien an, die zusammengeführt werden sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Upload a File]</td> 
+   <td role="rowheader">[!UICONTROL Datei hochladen]</td> 
    <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Import a file from URL]</p> </td> 
-   <td> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie archivieren möchten.</p> <p><strong>[!UICONTROL Headers]</strong> </p> <p>Definieren Sie Anfrage-Header (optional). Dies ist beispielsweise dann nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Datei von URL importieren]</p> </td> 
+   <td> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie archivieren möchten.</p> <p><strong>[!UICONTROL-Kopfzeilen]</strong> </p> <p>Definieren Sie Anfrage-Header (optional). Dies ist beispielsweise dann nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Format]</td> 
+   <td role="rowheader">[!UICONTROL Ausgabeformat]</td> 
    <td> <p> Zielformat der zusammengeführten Datei auswählen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
+   <td role="rowheader">[!UICONTROL Dateiname]</td> 
    <td> <p> Geben Sie den Dateinamen (einschließlich Erweiterung) der Zielausgabedatei ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conversion and engine specific options] </td> 
+   <td role="rowheader">[!UICONTROL Konvertierungs- und Engine-spezifische Optionen] </td> 
    <td> <p>Geben Sie Konversions- und Engine-spezifische Optionen an. Informationen zu den verfügbaren Optionen finden Sie in der Dokumentation zur <a href="https://cloudconvert.com/api/v2/convert#convert-tasks">[!DNL CloudConvert]-</a> für <code>input_format</code> und <code>output_format</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a File]</td> 
+   <td role="rowheader">[!UICONTROL Datei herunterladen]</td> 
    <td> <p>Aktivieren Sie diese Option, wenn Sie auch Dateidaten in die Ausgabe des Moduls aufnehmen möchten.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Optimize a File]
+#### [!UICONTROL Datei optimieren]
 
 Dieses Aktionsmodul optimiert und komprimiert eine Datei im PDF-, PNG- oder JPG-Format.
 
@@ -304,19 +304,19 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Input File]</td> 
+   <td role="rowheader">[!UICONTROL Eingabedatei]</td> 
    <td>Wählen Sie aus, ob Sie eine Datei mit Workfront Fusion hochladen möchten, oder geben Sie die URL an, von der die Datei hochgeladen werden soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Upload a File]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Datei hochladen]</p> </td> 
    <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Import a file from URL] </td> 
+   <td role="rowheader">[!UICONTROL Datei von URL importieren] </td> 
    <td> 
     <ul> 
      <li><strong>[!UICONTROL URL]</strong>: Geben Sie die URL der Datei ein, die Sie konvertieren möchten.</li> 
@@ -324,10 +324,10 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Optimization for] </td> 
+   <td role="rowheader">[!UICONTROL Optimierung für] </td> 
    <td> <p>Wählen Sie das Optimierungsprofil für spezifische Zielanforderungen aus.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Web]</strong>: Optimierung für das Web (Standard)</p> 
+     <li> <p><strong>[!UICONTROL Web]</strong>: Web-Optimierung (Standard)</p> 
       <ul> 
        <li>Entfernen redundanter und unnötiger Daten aus dem Web</li> 
        <li>Downsample, Clip und intelligente Komprimierung von Bildern</li> 
@@ -336,7 +336,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
       </ul> </li> 
     </ul> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Print]</strong>: Optimierung für den Druck</p> 
+     <li> <p><strong>[!UICONTROL print]</strong>: Optimierung für den Druck</p> 
       <ul> 
        <li> <p>Entfernen Sie redundante und unnötige Daten für den Druck</p> </li> 
        <li> <p>Downsample, Clip und intelligente Komprimierung von Bildern</p> </li> 
@@ -349,12 +349,12 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
        <li> <p>Bilder intelligent komprimieren</p> </li> 
        <li> <p>Zusammenführen und Untergruppen von Schriftarten</p> </li> 
       </ul> </li> 
-     <li> <p><strong>[!UICONTROL Scanned images]</strong>: Optimierung für gescannte Bilder</p> 
+     <li> <p><strong>[!UICONTROL Gescannte Bilder]</strong>: Optimierung für gescannte Bilder</p> 
       <ul> 
-       <li> <p>Profil optimiert für PDF, die hauptsächlich aus Rasterbildern bestehen</p> </li> 
+       <li> <p>Profil optimiert für PDFs, die hauptsächlich aus Rasterbildern bestehen</p> </li> 
        <li> <p>Komprimieren Sie die Bilder, ohne die visuelle Qualität erheblich zu beeinträchtigen.</p> </li> 
       </ul> </li> 
-     <li> <p><strong>[!UICONTROL maximal size reduction]</strong>: Optimierung für maximale Größenreduzierung</p> 
+     <li> <p><strong>[!UICONTROL maximale Größenreduktion]</strong>: Optimierung für maximale Größenreduktion</p> 
       <ul> 
        <li> <p>Maximal mögliche Komprimierung verwenden</p> </li> 
        <li> <p>Kann die visuelle Qualität beeinträchtigen</p> </li> 
@@ -362,19 +362,19 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Input format] </td> 
+   <td role="rowheader">[!UICONTROL Eingabeformat] </td> 
    <td>Wählen Sie das Format der Eingabedatei aus, die Sie optimieren möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
+   <td role="rowheader">[!UICONTROL Dateiname]</td> 
    <td> <p>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Conversion and engine specific options]</td> 
+   <td role="rowheader">[!UICONTROL Konvertierungs- und Engine-spezifische Optionen]</td> 
    <td> <p>Geben Sie Konversions- und Engine-spezifische Optionen an. Informationen zu den verfügbaren Optionen finden Sie in der Dokumentation zur <a href="https://cloudconvert.com/api/v2/convert#convert-tasks">[!DNL CloudConvert]-</a> für <code>input_format</code> und <code>output_format</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a file]</td> 
+   <td role="rowheader">[!UICONTROL Datei herunterladen]</td> 
    <td> <p>Aktivieren Sie diese Option, wenn Sie auch Dateidaten in die Ausgabe des Moduls aufnehmen möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -382,34 +382,34 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 ### Jobs
 
-* [[!UICONTROL Create a Job (advanced)]](#create-a-job-advanced)
-* [[!UICONTROL New Job Event]](#new-job-event)
-* [[!UICONTROL List Jobs]](#list-jobs)
-* [[!UICONTROL Get a Job]](#get-a-job)
-* [[!UICONTROL Delete a Job]](#delete-a-job)
+* [[!UICONTROL Erstellen eines Auftrags (erweitert)]](#create-a-job-advanced)
+* [[!UICONTROL Neues Auftragsereignis]](#new-job-event)
+* [[!UICONTROL Aufträge auflisten]](#list-jobs)
+* [[!UICONTROL Such dir einen Job]](#get-a-job)
+* [[!UICONTROL Auftrag löschen]](#delete-a-job)
 
-#### [!UICONTROL Create a Job (advanced)]
+#### [!UICONTROL Erstellen eines Auftrags (erweitert)]
 
-Dieses Modul erstellt einen Auftrag. Ein Auftrag kann eine oder mehrere Aufgaben sein, die im Feld [!UICONTROL Name] identifiziert und mithilfe des Felds [!UICONTROL Input] miteinander verknüpft werden.
+Dieses Modul erstellt einen Auftrag. Ein Auftrag kann eine oder mehrere Aufgaben sein, die im Feld [!UICONTROL Name] identifiziert und mithilfe des Felds [!UICONTROL Eingabe] miteinander verknüpft werden.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Input Files]</td> 
+   <td role="rowheader">[!UICONTROL Eingabedateien]</td> 
    <td> <p>Wählen Sie aus, ob Sie eine Datei mit [!DNL Workfront Fusion] hochladen möchten, oder geben Sie die URL an, von der die Datei hochgeladen werden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Upload a File]</td> 
+   <td role="rowheader">[!UICONTROL Datei hochladen]</td> 
    <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Import a File from URL]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Datei von URL importieren]</p> </td> 
    <td> 
     <ul> 
      <li><strong>[!UICONTROL URL]</strong>: Geben Sie die URL der Datei ein, die Sie verarbeiten möchten.</li> 
@@ -417,18 +417,18 @@ Dieses Modul erstellt einen Auftrag. Ein Auftrag kann eine oder mehrere Aufgaben
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Tasks]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Aufgaben]</p> </td> 
    <td> <p>Fügen Sie Aufgaben hinzu, die innerhalb des Auftrags ausgeführt werden sollen.</p> <p>Beschreibungen der Felder der Vorgänge finden Sie im entsprechenden Abschnitt.</p> 
     <ul> 
-     <li><a href="#convert-a-file" class="MCXref xref">[!UICONTROL Convert a file]</a> </li> 
-     <li><a href="#capture-a-website" class="MCXref xref">[!UICONTROL Capture a Websit]E</a> </li> 
-     <li><a href="#optimize-a-file" class="MCXref xref">[!UICONTROL Optimize a File]</a> </li> 
-     <li><a href="#create-an-archive" class="MCXref xref">[!UICONTROL Create an Archive]</a> </li> 
-     <li><a href="#merge-files" class="MCXref xref">[!UICONTROL Merge Files]</a> </li> 
+     <li><a href="#convert-a-file" class="MCXref xref">[!UICONTROL Datei konvertieren]</a> </li> 
+     <li><a href="#capture-a-website" class="MCXref xref">[!UICONTROL, um eine Website zu erfassen]e</a> </li> 
+     <li><a href="#optimize-a-file" class="MCXref xref">[!UICONTROL Datei optimieren]</a> </li> 
+     <li><a href="#create-an-archive" class="MCXref xref">[!UICONTROL Archiv erstellen]</a> </li> 
+     <li><a href="#merge-files" class="MCXref xref">[!UICONTROL Dateien zusammenführen]</a> </li> 
     </ul> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Execute a Command]</strong> </p> <p>Weitere Informationen zum Ausführen eines Befehls finden Sie in der <a href="https://cloudconvert.com/api/v2/command#command-tasks">[!DNL CloudConvert] API-Dokumentation</a>.</p> </li> 
-     <li> <p><strong>[!UICONTROL Export a File to Temporary URL]</strong> </p> <p> Geben Sie den Aufgabennamen und den Namen der Eingabeaufgabe an (z. B. „Konversion„).</p> </li> 
+     <li> <p><strong>[!UICONTROL Befehl ausführen]</strong> </p> <p>Weitere Informationen zum Ausführen eines Befehls finden Sie in der <a href="https://cloudconvert.com/api/v2/command#command-tasks">[!DNL CloudConvert] API-Dokumentation</a>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Datei in temporäre URL exportieren]</strong> </p> <p> Geben Sie den Aufgabennamen und den Namen der Eingabeaufgabe an (z. B. „Konversion„).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -438,7 +438,7 @@ Dieses Modul erstellt einen Auftrag. Ein Auftrag kann eine oder mehrere Aufgaben
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Job]
+#### [!UICONTROL Auftrag löschen]
 
 Dieses Modul löscht einen Auftrag einschließlich aller Aufgaben und Daten.
 
@@ -451,17 +451,17 @@ Dieses Modul löscht einen Auftrag einschließlich aller Aufgaben und Daten.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Job ID]</td> 
+   <td role="rowheader">[!UICONTROL Vorgangs-ID]</td> 
    <td> <p>Geben Sie die ID des Auftrags ein, den Sie löschen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Job]
+#### [!UICONTROL Such dir einen Job]
 
 Dieses Modul ruft Auftragsdetails ab.
 
@@ -470,17 +470,17 @@ Dieses Modul ruft Auftragsdetails ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Job ID]</td> 
+   <td role="rowheader">[!UICONTROL Vorgangs-ID]</td> 
    <td> <p>Geben Sie die ID des Auftrags ein, zu dem Sie Details abrufen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Jobs]
+#### [!UICONTROL Aufträge auflisten]
 
 Dieses Modul ruft alle Aufträge ab, die in Ihrem Konto ausgeführt wurden.
 
@@ -489,7 +489,7 @@ Dieses Modul ruft alle Aufträge ab, die in Ihrem Konto ausgeführt wurden.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -503,14 +503,14 @@ Dieses Modul ruft alle Aufträge ab, die in Ihrem Konto ausgeführt wurden.
  </tbody> 
 </table>
 
-#### [!UICONTROL New Job Event]
+#### [!UICONTROL Neues Auftragsereignis]
 
 Trigger, wenn ein Vorgang in Ihrem Konto oder einer Aufgabe erstellt wird, abgeschlossen wird oder fehlschlägt.
 
 >[!NOTE]
 >
->* Der vom [!UICONTROL Create a Job (advanced)] Modul erstellte Auftrag besteht aus *mehreren* Aufgaben.
->* Der [!UICONTROL New Job Event] Trigger wird auch ausgelöst, wenn eine *individuelle* Aufgabe erstellt, abgeschlossen oder fehlgeschlagen wird.
+>* Der vom Modul [!UICONTROL Auftrag erstellen (erweitert)] erstellte Auftrag besteht aus *mehreren* Aufgaben.
+>* Der [!UICONTROL Neues Auftragsereignis]-Trigger wird auch ausgelöst, wenn eine *individuelle* Aufgabe erstellt wurde, abgeschlossen wurde oder fehlgeschlagen ist.
 >
 
 <table style="table-layout:auto">
@@ -518,19 +518,19 @@ Trigger, wenn ein Vorgang in Ihrem Konto oder einer Aufgabe erstellt wird, abges
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Webhhook name]</td> 
+   <td role="rowheader">[!UICONTROL Webhook-Name]</td> 
    <td>Den Webhook-Namen eingeben. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Output Format] </td> 
+   <td role="rowheader">[!UICONTROL Ausgabeformat] </td> 
    <td>Wählen Sie aus, ob Sie die erfasste Website im PNG-, JPG- oder PDF-Format speichern möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Event]</td> 
+   <td role="rowheader">[!UICONTROL-Ereignis]</td> 
    <td>Wählen Sie aus, ob das Modul ausgelöst wird, wenn der Auftrag oder die Aufgabe erstellt wird, abgeschlossen wird oder fehlschlägt.</td> 
   </tr> 
  </tbody> 
@@ -538,21 +538,21 @@ Trigger, wenn ein Vorgang in Ihrem Konto oder einer Aufgabe erstellt wird, abges
 
 >[!NOTE]
 >
->* Wenn Sie mit dem Array-Aggregator arbeiten (z. B. wenn Sie viele Dateien in verschiedenen Formaten haben, die konvertiert werden sollen), verwenden Sie die Option **[!UICONTROL I don't know the input format]** im Dialogfeld [!UICONTROL Add a task] . Andernfalls wird der Fehler zurückgegeben.
+>* Wenn Sie mit dem Array-Aggregator arbeiten (z. B. müssen Sie viele Dateien in verschiedenen Formaten konvertieren), verwenden Sie die Option **[!UICONTROL ich kenne das Eingabeformat nicht]** im Dialogfeld [!UICONTROL Aufgabe hinzufügen]. Andernfalls wird der Fehler zurückgegeben.
 >* Verknüpfen von Aufgaben innerhalb des Auftrags (Name > Eingabe, Name > Eingabe usw.):
 >
 >  ![Name über Aufträge hinweg verknüpfen](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### Aufgaben
 
-* [[!UICONTROL Get a Task]](#get-a-task)
-* [[!UICONTROL Download a File]](#download-a-file)
-* [[!UICONTROL List Tasks]](#list-tasks)
-* [[!UICONTROL Retry a Task]](#retry-a-task)
-* [[!UICONTROL Cancel a Task]](#cancel-a-task)
-* [[!UICONTROL Delete a Task]](#delete-a-task)
+* [[!UICONTROL Aufgabe abrufen]](#get-a-task)
+* [[!UICONTROL Datei herunterladen]](#download-a-file)
+* [[!UICONTROL Aufgaben auflisten]](#list-tasks)
+* [[!UICONTROL Aufgabe wiederholen]](#retry-a-task)
+* [[!UICONTROL Aufgabe abbrechen]](#cancel-a-task)
+* [[!UICONTROL Aufgabe löschen]](#delete-a-task)
 
-#### [!UICONTROL Cancel a Task]
+#### [!UICONTROL Aufgabe abbrechen]
 
 Mit diesem Modul wird eine Aufgabe mit dem Status Warten oder Verarbeiten abgebrochen.
 
@@ -561,17 +561,17 @@ Mit diesem Modul wird eine Aufgabe mit dem Status Warten oder Verarbeiten abgebr
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Task ID]</td> 
+   <td role="rowheader">[!UICONTROL Aufgaben-ID]</td> 
    <td> <p> Geben Sie die ID der Aufgabe ein, die Sie abbrechen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Task]
+#### [!UICONTROL Aufgabe löschen]
 
 Aufgabe einschließlich aller Daten löschen
 
@@ -584,17 +584,17 @@ Aufgabe einschließlich aller Daten löschen
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Task ID]</td> 
+   <td role="rowheader">[!UICONTROL Aufgaben-ID]</td> 
    <td> <p> Geben Sie die ID der Aufgabe ein (zuordnen), die Sie löschen möchten.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Download a File]
+#### [!UICONTROL Datei herunterladen]
 
 Dieses Modul ruft den Dateinamen und die Dateidaten von der angegebenen Aufgabe ab.
 
@@ -603,17 +603,17 @@ Dieses Modul ruft den Dateinamen und die Dateidaten von der angegebenen Aufgabe 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Task ID]</td> 
+   <td role="rowheader">[!UICONTROL Aufgaben-ID]</td> 
    <td> <p> Geben Sie die ID der Aufgabe ein, von der Sie die Datei herunterladen möchten, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Task]
+#### [!UICONTROL Aufgabe abrufen]
 
 Dieses Modul ruft Aufgabendetails ab.
 
@@ -622,17 +622,17 @@ Dieses Modul ruft Aufgabendetails ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Task ID]</td> 
+   <td role="rowheader">[!UICONTROL Aufgaben-ID]</td> 
    <td> <p>Geben Sie die ID der Aufgabe ein, zu der Sie Details abrufen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Tasks]
+#### [!UICONTROL Aufgaben auflisten]
 
 Dieses Modul ruft alle Aufgaben in Ihrem Konto basierend auf den Filtereinstellungen ab.
 
@@ -641,7 +641,7 @@ Dieses Modul ruft alle Aufgaben in Ihrem Konto basierend auf den Filtereinstellu
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -649,12 +649,12 @@ Dieses Modul ruft alle Aufgaben in Ihrem Konto basierend auf den Filtereinstellu
    <td> <p>Aufgabenstatus auswählen, um die zurückgegebenen Aufgaben zu filtern nach.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Job ID] </td> 
+   <td role="rowheader">[!UICONTROL Vorgangs-ID] </td> 
    <td> <p>Geben Sie die Auftrags-ID ein oder ordnen Sie sie zu, um nur Aufgaben innerhalb des angegebenen Auftrags zurückzugeben.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Operation] </td> 
-   <td> <p>Geben Sie den Vorgangstyp ein, um nur Aufgaben mit dem angegebenen Vorgang zurückzugeben. </p> <p>Hinweis: Verwenden Sie das Modul [!UICONTROL List Possible Operations] zum Abrufen von Vorgängen.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Vorgang] </td> 
+   <td> <p>Geben Sie den Vorgangstyp ein, um nur Aufgaben mit dem angegebenen Vorgang zurückzugeben. </p> <p>Hinweis: Verwenden Sie das Modul [!UICONTROL List Possible Operations], um Vorgänge abzurufen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -663,7 +663,7 @@ Dieses Modul ruft alle Aufgaben in Ihrem Konto basierend auf den Filtereinstellu
  </tbody> 
 </table>
 
-#### [!UICONTROL Retry a Task]
+#### [!UICONTROL Aufgabe wiederholen]
 
 Dieses Modul erstellt eine neue Aufgabe basierend auf den Einstellungen (Payload) einer anderen Aufgabe.
 
@@ -672,11 +672,11 @@ Dieses Modul erstellt eine neue Aufgabe basierend auf den Einstellungen (Payload
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Task ID]</td> 
+   <td role="rowheader">[!UICONTROL Aufgaben-ID]</td> 
    <td> <p> Geben Sie die ID der Aufgabe ein, aus der Sie eine neue Aufgabe erstellen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -684,10 +684,10 @@ Dieses Modul erstellt eine neue Aufgabe basierend auf den Einstellungen (Payload
 
 ### Sonstige
 
-* [[!UICONTROL Get My Info]](#get-my-info)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Meine Infos abrufen]](#get-my-info)
+* [[!UICONTROL Erstellen eines API-Aufrufs]](#make-an-api-call)
 
-#### [!UICONTROL Get My Info]
+#### [!UICONTROL Meine Infos abrufen]
 
 Ruft authentifizierte Kontodetails zum aktuellen Benutzer ab.
 
@@ -696,13 +696,13 @@ Ruft authentifizierte Kontodetails zum aktuellen Benutzer ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL CloudConvert]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-cloudconvert-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL CloudConvert] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Erstellen eines API-Aufrufs]
 
 Ermöglicht die Durchführung eines benutzerdefinierten API-Aufrufs.
 
@@ -711,27 +711,27 @@ Ermöglicht die Durchführung eines benutzerdefinierten API-Aufrufs.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [Fusion App]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a></p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres CloudConvert-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
    <td> <p>Geben Sie einen Pfad relativ zu <code>https://api.cloudconvert.com/</code> ein. Beispiel: <code>/v2/tasks</code></p> <p>Eine Liste der verfügbaren Endpunkte finden Sie in der Dokumentation zur <a href="https://cloudconvert.com/api/v2">[!DNL CloudConvert] API v2</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    td&gt; <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion 2.0 fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL body]</td> 
    <td> <p>Fügen Sie den Hauptteil des API-Aufrufs in Form eines standardmäßigen JSON-Objekts hinzu. Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
   </tr> 
  </tbody> 
@@ -768,23 +768,23 @@ In der folgenden Tabelle finden Sie mögliche Fehler und deren Lösungen:
  </thead> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL The output file size exceeds the limit allowed for your scenario.]</span> </p> </td> 
+   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL Die Größe der Ausgabedatei überschreitet das für Ihr Szenario zulässige Limit.]</span> </p> </td> 
    <td> <p>Siehe Dateigrößenbeschränkungen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL You have exceeded the maximum conversion time.]</span> </p> </td> 
+   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL Sie haben die maximale Konvertierungszeit überschritten.]</span> </p> </td> 
    <td> <p>Der kostenlose [!DNL CloudConvert] bietet täglich 25 Konversionsminuten. Wenn Ihre Nutzung die Grenze des kostenlosen Plans überschreitet, können Sie zu einem (Prepaid-) Paket oder Abonnement wechseln.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL Failed to read frame size: Could not seek to 1508. �/output/JLIADSA00137P0.mp3: Invalid argument.]</span> </p> </td> 
+   <td role="rowheader"> <p><span style="font-weight: normal;">[!UICONTROL konnte die Rahmengröße nicht lesen: Es konnte nicht nach 1508 gesucht werden. �/output/JLIADSA00137P0.mp3: Ungültiges Argument.]</span> </p> </td> 
    <td> <p>Dieser Fehler wird z.B. beim Konvertieren von Dateien aus MP3 in WAV ausgelöst. Stellen Sie sicher, dass Sie die richtige Region ausgewählt haben, da sie Verweise auf -Dateien findet, aber nicht nur auf die richtige Datei.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL RuntimeError:] </p> <p><span style="font-weight: normal;">[!UICONTROL Maximum number of repeats exceeded.]</span> </p> </td> 
-   <td> <p>Suchen Sie den entsprechenden [!DNL CloudConvert] Auftrag in der Liste der Aufträge im [!DNL CloudConvert]-Dashboard und überprüfen Sie die Dauer des Auftrags:</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-duration-350x177.png" style="width: 350;height: 177;"> </p> <p>Die maximale Wartezeit des Moduls [!DNL CloudConvert] &gt; [!UICONTROL Convert a File] ist auf 3 Minuten festgelegt. Wenn die Dauer des Auftrags 3 Minuten überschreitet (möglicherweise aufgrund einer temporären Überlastung des [!DNL CloudConvert]-Services), gibt das Modul den oben genannten Fehler aus.</p> <p>Erwägen Sie in diesem Fall eine der folgenden Optionen:</p> 
+   <td role="rowheader"> <p>[!UICONTROL RuntimeError:] </p> <p><span style="font-weight: normal;">[!UICONTROL Maximale Anzahl von Wiederholungen überschritten.]</span> </p> </td> 
+   <td> <p>Suchen Sie den entsprechenden [!DNL CloudConvert] Auftrag in der Liste der Aufträge im [!DNL CloudConvert]-Dashboard und überprüfen Sie die Dauer des Auftrags:</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-duration-350x177.png" style="width: 350;height: 177;"> </p> <p>Der Timeout des Moduls [!DNL CloudConvert] &gt; [!UICONTROL Convert a File] ist auf 3 Minuten festgelegt. Wenn die Dauer des Auftrags 3 Minuten überschreitet (möglicherweise aufgrund einer temporären Überlastung des [!DNL CloudConvert]-Services), gibt das Modul den oben genannten Fehler aus.</p> <p>Erwägen Sie in diesem Fall eine der folgenden Optionen:</p> 
     <ul> 
-     <li>Aktivieren Sie die Option <strong>[!UICONTROL Allow storing of Incomplete Executions]</strong> in den Szenario-Einstellungen, um die unvollständigen Ausführungen für eine spätere manuelle Auflösung zu speichern. Optional können Sie eine Fehlerbehandlungsroute an das [!DNL CloudConvert] mit der [!UICONTROL Break] anhängen, um die unvollständigen Ausführungen automatisch aufzulösen.</li> 
-     <li>Deaktivieren Sie die Option <strong>[!UICONTROL Download a file] </strong> Modul [!DNL CloudConvert] &gt; [!UICONTROL Convert a file] . In diesem Fall wartet das Modul nicht auf das Konvertierungsergebnis. Um das Konvertierungsergebnis zu erhalten, erstellen Sie ein neues Szenario und verwenden Sie den Trigger [!DNL CloudConvert] &gt; [!UICONTROL New Job Event] .</li> 
+     <li>Aktivieren Sie die Option <strong>[!UICONTROL Speicherung unvollständiger Ausführungen zulassen</strong> in den Szenarioeinstellungen, um die unvollständigen Ausführungen für eine spätere manuelle Auflösung zu speichern. Optional können Sie dem [!DNL CloudConvert]-Modul mit der [!UICONTROL Break]-Direktive eine Fehlerbehandlungsroute anhängen, um die unvollständigen Ausführungen automatisch aufzulösen.</li> 
+     <li>Deaktivieren Sie die Option <strong>[!UICONTROL Datei herunterladen</strong> im Modul [!DNL CloudConvert] &gt; [!UICONTROL Datei konvertieren]. In diesem Fall wartet das Modul nicht auf das Konvertierungsergebnis. Um das Konvertierungsergebnis zu erhalten, erstellen Sie ein neues Szenario und verwenden Sie den Trigger [!DNL CloudConvert] &gt; [!UICONTROL New Job Event].</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -797,22 +797,22 @@ In der folgenden Tabelle finden Sie mögliche Fehler und deren Lösungen:
 >**Beispiel:** Konvertieren eines Videos aus dem MOV- in das MP4-Format
 >
 >1. [https://cloudconvert.com/video-converter](https://>cloudconvert.com/video-converter) besuchen
->1. Klicken Sie auf **[!UICONTROL Select File]** und wählen Sie Ihre Beispiel-MOV-Datei.
->1. Klicken Sie auf das Dropdown-Menü neben **[!UICONTROL Convert to]** und wählen Sie **[!UICONTROL MP4]** aus.
+>1. Klicken Sie **[!UICONTROL Datei auswählen]** und wählen Sie Ihre MOV-Beispieldatei aus.
+>1. Klicken Sie auf das Dropdown-Menü neben **[!UICONTROL Konvertieren in]** und wählen Sie **[!UICONTROL MP4]**.
 >
->1. Klicken Sie auf das Symbol **[!UICONTROL wrench]** .
+>1. Klicken Sie auf **[!UICONTROL Symbol]** Schraubenschlüssel“.
 >1. Konfigurieren Sie die MP4-Komprimierungseinstellungen nach Bedarf.
->1. Klicken Sie auf **[!UICONTROL Convert]**.
->1. Nachdem die Konvertierung abgeschlossen ist, klicken Sie auf **[!UICONTROL Download]**.
+>1. Klicken Sie **[!UICONTROL Konvertieren]**.
+>1. Klicken Sie nach Abschluss der Konvertierung auf **[!UICONTROL Herunterladen]**.
 >1. Sehen Sie sich das konvertierte Video an.
 >1. Wiederholen Sie die Schritte 1 bis 8, bis Sie die optimalen Konvertierungseinstellungen für Schritt 5 gefunden haben.
 >1. [https://cloudconvert.com/api/v2/convert#convert-tasks](https://cloudconvert.com/api/v2/convert#convert-tasks) besuchen
 >1. Wählen Sie **[!UICONTROL mov]** für das Feld **[!UICONTROL input_format]** aus.
 >
->1. Wählen Sie **[!UICONTROL mp4]** für das Feld **[!UICONTROL output_format]** aus.
+>1. Wählen Sie **[!UICONTROL mp4]** für das Feld **[!UICONTROL output_format]**.
 >
 >1. Eine Liste aller möglichen Parameter wie video_codec, crf, etc. wird angezeigt.
->1. Fügen Sie in Workfront Fusion 2.0 das Modul **[!UICONTROL CloudConvert]** > **[!UICONTROL Convert a File]** in Ihr Szenario ein.
+>1. Fügen Sie in Workfront Fusion 2.0 das Modul **[!UICONTROL CloudConvert]** > **[!UICONTROL Datei konvertieren]** in Ihr Szenario ein.
 >
 >1. Öffnen Sie die Einstellungen des Moduls.
 >1. Konfigurieren Sie das Modul wie unten gezeigt:

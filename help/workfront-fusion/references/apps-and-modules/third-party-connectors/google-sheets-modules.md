@@ -4,9 +4,9 @@ description: So verwenden Sie  [!DNL Google Sheets] -mit [!DNL Adobe Workfront F
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 994dffd83d5b7d8b72396f147df352dfb74d6219
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3957'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Auslöser
 
-#### [!UICONTROL Watch Rows]
+#### [!UICONTROL Zeilen ansehen]
 
 Ruft Werte aus neu hinzugefügten Zeilen im Arbeitsblatt ab.
 
@@ -112,11 +112,11 @@ Das Modul ruft nur neue Zeilen ab, die noch nicht ausgefüllt wurden. Der Trigge
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Spreadsheet] </td> 
+   <td role="rowheader">[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie die Tabelle aus, die die Tabelle enthält, die Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -124,28 +124,28 @@ Das Modul ruft nur neue Zeilen ab, die noch nicht ausgefüllt wurden. Der Trigge
    <td> <p>Wählen Sie das Blatt aus, auf das Sie eine neue Zeile überwachen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table contains headers]</td> 
+   <td role="rowheader">[!UICONTROL Tabelle enthält Kopfzeilen]</td> 
    <td> <p> Wählen Sie aus, ob das Arbeitsblatt eine Kopfzeile enthält.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Yes]</strong> </p> <p>Das Modul ruft die Kopfzeile nicht als Ausgabedaten ab. </p> <p>Variablennamen in der Ausgabe werden von den Kopfzeilen aufgerufen.</p> </li> 
-     <li> <p><strong>[!UICONTROL No]</strong> </p> <p>Das Modul ruft auch die erste Tabellenzeile ab</p> <p>Variablennamen in der Ausgabe werden als A, B, C, D usw. bezeichnet.</p> </li> 
+     <li> <p><strong>[!UICONTROL Nein]</strong> </p> <p>Das Modul ruft auch die erste Tabellenzeile ab</p> <p>Variablennamen in der Ausgabe werden als A, B, C, D usw. bezeichnet.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Row with headers] </td> 
+   <td role="rowheader">[!UICONTROL Zeile mit Überschriften] </td> 
    <td> <p>Geben Sie den Bereich der Kopfzeile ein. Beispiel: <code>A1:F1</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL First table row]</td> 
+   <td role="rowheader">[!UICONTROL Erste Tabellenzeile]</td> 
    <td> <p>Geben Sie den Bereich der ersten Zeile der Tabelle ein. Beispiel: <code>A1:F1</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Value render option]</p> </td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>Die Werte werden in der Antwort entsprechend der Zellenformatierung berechnet und formatiert. Die Formatierung basiert auf dem Gebietsschema der Tabelle, nicht auf dem Gebietsschema des anfragenden Benutzers. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"$1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>Die Werte werden berechnet, in der Antwort jedoch nicht formatiert. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> die Zahl <code>"1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>Die Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"=A1"</code> zurück.</p> </li><ul></td> 
+   <td role="rowheader"> <p>[!UICONTROL Wert renderoption]</p> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL formatierter Wert]</p> <p>Die Werte werden in der Antwort entsprechend der Zellenformatierung berechnet und formatiert. Die Formatierung basiert auf dem Gebietsschema der Tabelle, nicht auf dem Gebietsschema des anfragenden Benutzers. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"$1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatierter Wert]</p> <p>Die Werte werden berechnet, in der Antwort jedoch nicht formatiert. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> die Zahl <code>"1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL-Formel]</p> <p>Die Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"=A1"</code> zurück.</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Date and time render option]</p> </td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Die Felder „Datum“, „Uhrzeit“, „Datum/Uhrzeit“ und „Dauer“ werden als Dubletten im Format „Seriennummer“ ausgegeben, wie es von Lotus 1-2-3 populär gemacht wird. Der ganze Zahlenteil des Werts (links vom Dezimaltrennzeichen) zählt die Tage seit dem 30. Dezember 1899. Der Bruchteil (rechts neben der Dezimalstelle) zählt die Zeit als einen Bruchteil des Tages. Zum Beispiel wäre der 1. Januar 1900 mittags 2,5, 2 weil es 2 Tage nach dem 30. Dezember 1899 ist, und .5 weil mittags ein halber Tag ist. 1. Februar 1900 um 15 Uhr wäre 33.625 Uhr. Damit wird das Jahr 1900 korrekt als Schaltjahr behandelt.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Die Felder für Datum, Uhrzeit, Datum/Uhrzeit und Dauer werden als Zeichenfolgen im angegebenen Zahlenformat ausgegeben (das vom Gebietsschema der Tabelle abhängt).</p></li><ul> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Render-Option Datum und Uhrzeit]</p> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Seriennummer]</p> <p>Die Felder „Datum“, „Uhrzeit“, „Datum/Uhrzeit“ und „Dauer“ werden als Dubletten im Format „Seriennummer“ ausgegeben, wie es von Lotus 1-2-3 populär gemacht wird. Der ganze Zahlenteil des Werts (links vom Dezimaltrennzeichen) zählt die Tage seit dem 30. Dezember 1899. Der Bruchteil (rechts neben der Dezimalstelle) zählt die Zeit als einen Bruchteil des Tages. Zum Beispiel wäre der 1. Januar 1900 mittags 2,5, 2 weil es 2 Tage nach dem 30. Dezember 1899 ist, und .5 weil mittags ein halber Tag ist. 1. Februar 1900 um 15 Uhr wäre 33.625 Uhr. Damit wird das Jahr 1900 korrekt als Schaltjahr behandelt.</p> </li><li><p style="font-weight: bold;">[!UICONTROL formatierter String]</p> <p>Die Felder für Datum, Uhrzeit, Datum/Uhrzeit und Dauer werden als Zeichenfolgen im angegebenen Zahlenformat ausgegeben (das vom Gebietsschema der Tabelle abhängt).</p></li><ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -156,19 +156,19 @@ Das Modul ruft nur neue Zeilen ab, die noch nicht ausgefüllt wurden. Der Trigge
 
 ### Aktionen
 
-* [[!UICONTROL Add a Row]](#add-a-row)
-* [[!UICONTROL Add a Sheet]](#add-a-sheet)
-* [[!UICONTROL Clear a Cell]](#clear-a-cell)
-* [[!UICONTROL Clear a Row]](#clear-a-row)
-* [[!UICONTROL Create a Spreadsheet]](#create-a-spreadsheet)
-* [[!UICONTROL Delete a Row]](#delete-a-row)
-* [[!UICONTROL Delete a Sheet]](#delete-a-sheet)
-* [[!UICONTROL Get a Cell]](#get-a-cell)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Update a Cell]](#update-a-cell)
-* [[!UICONTROL Update a Row]](#update-a-row)
+* [[!UICONTROL Zeile hinzufügen]](#add-a-row)
+* [[!UICONTROL Tabelle hinzufügen]](#add-a-sheet)
+* [[!UICONTROL Zelle löschen]](#clear-a-cell)
+* [[!UICONTROL Zeile löschen]](#clear-a-row)
+* [[!UICONTROL Erstellen einer Tabelle]](#create-a-spreadsheet)
+* [[!UICONTROL Zeile löschen]](#delete-a-row)
+* [[!UICONTROL Tabelle löschen]](#delete-a-sheet)
+* [[!UICONTROL Zelle abrufen]](#get-a-cell)
+* [[!UICONTROL Erstellen eines API-Aufrufs]](#make-an-api-call)
+* [[!UICONTROL Zelle aktualisieren]](#update-a-cell)
+* [[!UICONTROL Zeile aktualisieren]](#update-a-row)
 
-#### [!UICONTROL Add a Row]
+#### [!UICONTROL Zeile hinzufügen]
 
 Dieses Modul fügt eine Zeile zu einem Blatt hinzu.
 
@@ -183,15 +183,15 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Mode]</td> 
+   <td>[!UICONTROL-Modus]</td> 
    <td> <p>Wählen Sie aus, ob Sie die Tabelle und das Blatt manuell oder durch Zuordnung auswählen möchten.</p> <p>Hinweis: Die manuelle Zuordnung ist beispielsweise dann nützlich, wenn in einem [!DNL Workfront Fusion] Szenario eine neue Tabelle erstellt wird und Sie der neu erstellten Tabelle direkt im Szenario Daten hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie die [!DNL Google] Tabelle aus.</p> </td> 
   </tr> 
   <tr> 
@@ -199,41 +199,41 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
    <td> <p>Wählen Sie das Blatt aus, dem Sie eine Zeile hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column Range]</td> 
+   <td>[!UICONTROL Spaltenbereich]</td> 
    <td>Wählen Sie den Spaltenbereich aus, mit dem Sie arbeiten möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Table contains headers]</td> 
+   <td>[!UICONTROL Tabelle enthält Kopfzeilen]</td> 
    <td> <p> Wählen Sie aus, ob das Arbeitsblatt die Kopfzeile enthält.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Yes]</strong> </p> <p>Das Modul ruft die Kopfzeile nicht als Ausgabedaten ab. </p> <p>Variablennamen in der Ausgabe werden von den Kopfzeilen aufgerufen.</p> </li> 
-     <li> <p><strong>[!UICONTROL No]</strong> </p> <p>Das Modul ruft auch die erste Tabellenzeile ab</p> <p>Variablennamen in der Ausgabe werden als A, B, C, D usw. bezeichnet.</p> </li> 
+     <li> <p><strong>[!UICONTROL Nein]</strong> </p> <p>Das Modul ruft auch die erste Tabellenzeile ab</p> <p>Variablennamen in der Ausgabe werden als A, B, C, D usw. bezeichnet.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Values] </td> 
+   <td>[!UICONTROL-Werte] </td> 
    <td> <p>Geben Sie die gewünschten Zellen der Zeile ein, die Sie hinzufügen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value input option]</td> 
+   <td>[!UICONTROL-Werteingabeoption]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>Die Werte werden analysiert, als ob der Benutzer sie in die Benutzeroberfläche eingegeben hätte. Zahlen bleiben Zahlen, Zeichenfolgen können jedoch nach denselben Regeln, die bei der Eingabe von Text in eine Zelle über die [!DNL Google Sheets]-Benutzeroberfläche angewendet werden, in Zahlen, Daten oder andere Formate konvertiert werden.</p> </li> 
-     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> Die vom Benutzer eingegebenen Werte werden nicht geparst und so gespeichert, wie sie eingegeben wurden. </p> </li> 
+     <li> <p><strong>[!UICONTROL Benutzer entered]</strong></p> <p>Die Werte werden analysiert, als ob der Benutzer sie in die Benutzeroberfläche eingegeben hätte. Zahlen bleiben Zahlen, Zeichenfolgen können jedoch nach denselben Regeln, die bei der Eingabe von Text in eine Zelle über die [!DNL Google Sheets]-Benutzeroberfläche angewendet werden, in Zahlen, Daten oder andere Formate konvertiert werden.</p> </li> 
+     <li> <p><strong>[!UICONTROL RAW]</strong> </p> <p> Die vom Benutzer eingegebenen Werte werden nicht geparst und so gespeichert, wie sie eingegeben wurden. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Insert data option]</td> 
+   <td>[!UICONTROL Option zum Einfügen von Daten]</td> 
    <td> <p>Geben Sie an, wie vorhandene Daten bei der Eingabe neuer Daten geändert werden. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Insert rows]</strong></p> <p>Für die neuen Daten werden Zeilen eingefügt.</p> </li> 
+     <li> <p><strong>[!UICONTROL Zeilen einfügen]</strong></p> <p>Für die neuen Daten werden Zeilen eingefügt.</p> </li> 
      <li> <p><strong>[!UICONTROL Overwrite]</strong> </p> <p>Die neuen Daten überschreiben vorhandene Daten in den Bereichen, in denen sie geschrieben werden. Durch Hinzufügen von Daten am Ende des Arbeitsblatts werden neue Zeilen oder Spalten eingefügt, damit die Daten geschrieben werden können.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Add a Sheet]
+#### [!UICONTROL Tabelle hinzufügen]
 
 Erstellt eine neue Tabelle in einer ausgewählten Tabelle.
 
@@ -242,25 +242,25 @@ Erstellt eine neue Tabelle in einer ausgewählten Tabelle.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie das Google-Arbeitsblatt aus, dem Sie ein Arbeitsblatt hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Properties]</td> 
+   <td>[!UICONTROL Eigenschaften]</td> 
    <td> 
     <ul> 
-     <li> <p style="font-weight: bold;">[!UICONTROL Title]</p> <p>Geben Sie den Namen der neuen Tabelle ein.</p> </li> 
+     <li> <p style="font-weight: bold;">[!UICONTROL Titel]</p> <p>Geben Sie den Namen der neuen Tabelle ein.</p> </li> 
      <li> <p style="font-weight: bold;">[!UICONTROL Index]</p> <p>Die Position des Blatts eingeben. Der Standardwert ist 0 (wodurch das Blatt an erster Stelle steht).</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Clear a Cell]
+#### [!UICONTROL Zelle löschen]
 
 Löscht einen Wert aus einer angegebenen Zelle.
 
@@ -269,11 +269,11 @@ Löscht einen Wert aus einer angegebenen Zelle.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie das Google-Arbeitsblatt aus, das das Arbeitsblatt enthält, aus dem Sie eine Zelle löschen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -281,13 +281,13 @@ Löscht einen Wert aus einer angegebenen Zelle.
    <td> <p>Wählen Sie die Tabelle aus, aus der Sie eine Zelle löschen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Cell] </td> 
+   <td>[!UICONTROL Zelle] </td> 
    <td> <p>Geben Sie die ID der Zelle ein, die Sie löschen möchten, oder mappen Sie sie. Beispiel: <code>A5</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Clear a Row]
+#### [!UICONTROL Zeile löschen]
 
 Löscht Werte aus einer angegebenen Zeile.
 
@@ -296,11 +296,11 @@ Löscht Werte aus einer angegebenen Zeile.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie die [!DNL Google] Tabelle aus, die das Blatt enthält, aus dem Sie eine Zeile löschen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -308,24 +308,24 @@ Löscht Werte aus einer angegebenen Zeile.
    <td> <p> Wählen Sie die Tabelle aus, deren Daten Sie löschen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Row number]</td> 
+   <td>[!UICONTROL Zeilennummer]</td> 
    <td> <p>Geben Sie die Nummer der Zeile ein, aus der Sie Daten löschen möchten. Beispiel: <code> 23</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Spreadsheet]
+#### [!UICONTROL Erstellen einer Tabelle]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Title] </td> 
+   <td>[!UICONTROL Titel] </td> 
    <td> <p>Geben Sie den Namen einer neuen Tabelle ein.</p> </td> 
   </tr> 
   <tr> 
@@ -338,25 +338,25 @@ Löscht Werte aus einer angegebenen Zeile.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Recalculation interval]</td> 
-   <td> <p>Die Wartezeit, bevor flüchtige Funktionen neu berechnet werden:</p> <ul><li><p style="font-weight: bold;">[!UICONTROL On change]</p> <p>Flüchtige Funktionen werden bei jeder Änderung aktualisiert.</p></li><li> <p style="font-weight: bold;">[!UICONTROL On change and every minute]</p> <p>Flüchtige Funktionen werden bei jeder Änderung und jede Minute aktualisiert.</p></li> <li><p style="font-weight: bold;">[!UICONTROL On change and hourly]</p> <p>Volatile Funktionen werden bei jeder Änderung und stündlich aktualisiert.</p></li></ul> </td> 
+   <td>[!UICONTROL Neuberechnungsintervall]</td> 
+   <td> <p>Die Wartezeit, bevor flüchtige Funktionen neu berechnet werden:</p> <ul><li><p style="font-weight: bold;">[!UICONTROL bei Änderung]</p> <p>Flüchtige Funktionen werden bei jeder Änderung aktualisiert.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Bei Änderung und jede Minute]</p> <p>Flüchtige Funktionen werden bei jeder Änderung und jede Minute aktualisiert.</p></li> <li><p style="font-weight: bold;">[!UICONTROL Bei Änderung und stündlich]</p> <p>Volatile Funktionen werden bei jeder Änderung und stündlich aktualisiert.</p></li></ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Time zone]</td> 
+   <td>[!UICONTROL Zeitzone]</td> 
    <td> <p> Wählen Sie die Zeitzone der Tabelle aus.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Number format]</td> 
-   <td> <p>Wählen Sie das Standardformat aller Zellen im Arbeitsblatt aus.</p> <p><strong>[!UICONTROL Text]</strong>: Textformatierung. Beispiel: <code>1000. 12</code></p> <p><strong>[!UICONTROL Number]</strong>: Formatierung von Zahlen. Beispiel: <code>1,000.12</code></p> <p><strong>[!UICONTROL Percent]</strong>: Prozentformatierung. Beispiel: <code>10. 12%</code></p> <p><strong>[!UICONTROL Currency]</strong>: Währungsformatierung. Beispiel: <code>$1,000.12</code></p> <p><strong>[!UICONTROL Date]</strong>: Datumsformatierung. Beispiel: <code>9/26/2008</code></p> <p><strong>[!UICONTROL Time]</strong>: Zeitformatierung. Beispiel: <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL Date time]</strong>: Formatierung von Datum und Uhrzeit. Beispiel: <code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong>: Wissenschaftliche Zahlenformatierung. Beispiel: <code>1. 01E+03</code></p> </td> 
+   <td>[!UICONTROL Zahlenformat]</td> 
+   <td> <p>Wählen Sie das Standardformat aller Zellen im Arbeitsblatt aus.</p> <p><strong>[!UICONTROL Text]</strong>: Textformatierung. Beispiel: <code>1000. 12</code></p> <p><strong>[!UICONTROL number]</strong>: Zahlenformatierung. Beispiel: <code>1,000.12</code></p> <p><strong>[!UICONTROL Percent]</strong>: Formatierung in Prozent. Beispiel: <code>10. 12%</code></p> <p><strong>[!UICONTROL currency]</strong>: Währungsformatierung. Beispiel: <code>$1,000.12</code></p> <p><strong>[!UICONTROL date]</strong>: Datumsformatierung. Beispiel: <code>9/26/2008</code></p> <p><strong>[!UICONTROL Time]</strong>: Zeitformatierung. Beispiel: <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL Datum/Uhrzeit]</strong>: Formatierung von Datum und Uhrzeit. Beispiel: <code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong>: Wissenschaftliche Zahlenformatierung. Beispiel: <code>1. 01E+03</code></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Sheets] </td> 
-   <td> <p>Klicken Sie für jedes Arbeitsblatt, das Sie dem Arbeitsblatt hinzufügen möchten, auf <strong>[!UICONTROL Add item]</strong> und geben Sie einen Titel für das Arbeitsblatt und dessen Index ein oder mappen Sie ihn. Ein Index von 0 stellt das erste Blatt dar.</p> </td> 
+   <td> <p>Klicken Sie für jedes Blatt, das Sie dem Arbeitsblatt hinzufügen möchten, auf <strong>[!UICONTROL Element hinzufügen]</strong> und geben Sie einen Titel für das Blatt und den Index des Blatts ein oder mappen Sie ihn. Ein Index von 0 stellt das erste Blatt dar.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Row]
+#### [!UICONTROL Zeile löschen]
 
 Löscht eine angegebene Zeile.
 
@@ -365,11 +365,11 @@ Löscht eine angegebene Zeile.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie das Google-Arbeitsblatt aus, das das Arbeitsblatt enthält, aus dem Sie eine Zeile löschen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -383,7 +383,7 @@ Löscht eine angegebene Zeile.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Sheet]
+#### [!UICONTROL Tabelle löschen]
 
 Löscht eine bestimmte Tabelle.
 
@@ -392,11 +392,11 @@ Löscht eine bestimmte Tabelle.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie die [!DNL Google] Tabelle aus.</p> </td> 
   </tr> 
   <tr> 
@@ -406,7 +406,7 @@ Löscht eine bestimmte Tabelle.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Cell]
+#### [!UICONTROL Zelle abrufen]
 
 Ruft einen Wert aus einer ausgewählten Zelle ab.
 
@@ -415,11 +415,11 @@ Ruft einen Wert aus einer ausgewählten Zelle ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie die [!DNL Google] Tabelle aus.</p> </td> 
   </tr> 
   <tr> 
@@ -427,12 +427,12 @@ Ruft einen Wert aus einer ausgewählten Zelle ab.
    <td> <p>Wählen Sie das Blatt aus, das die Zelle enthält, aus der Sie Daten abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Cell] </td> 
+   <td>[!UICONTROL Zelle] </td> 
    <td> <p>Geben Sie die ID der Zelle ein, von der Sie Daten abrufen möchten. Beispiel: <code>A6</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>Die Werte werden in der Antwort entsprechend der Zellenformatierung berechnet und formatiert. Die Formatierung basiert auf dem Gebietsschema der Tabelle, nicht auf dem Gebietsschema des anfragenden Benutzers. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"$1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>Die Werte werden berechnet, in der Antwort jedoch nicht formatiert. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> die Zahl <code>"1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>Die Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"=A1"</code> zurück.</p> </li><ul></td> 
+   <td>[!UICONTROL Wert renderoption]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL formatierter Wert]</p> <p>Die Werte werden in der Antwort entsprechend der Zellenformatierung berechnet und formatiert. Die Formatierung basiert auf dem Gebietsschema der Tabelle, nicht auf dem Gebietsschema des anfragenden Benutzers. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"$1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatierter Wert]</p> <p>Die Werte werden berechnet, in der Antwort jedoch nicht formatiert. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> die Zahl <code>"1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL-Formel]</p> <p>Die Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"=A1"</code> zurück.</p> </li><ul></td> 
   </tr> 
   <tr> 
    <td>[!DNL Date and time render option]</td> 
@@ -441,7 +441,7 @@ Ruft einen Wert aus einer ausgewählten Zelle ab.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Erstellen eines API-Aufrufs]
 
 Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchführen.
 
@@ -450,27 +450,27 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [Fusion App]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu [!DNL Adobe Workfront Fusion] herstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Google Sheets-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu [!DNL Adobe Workfront Fusion] herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
    <td>Geben Sie einen Pfad relativ zu <code>https://sheets.googleapis.com/v4/</code> ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Methode]</p> </td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 
    <td> <p> Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL body]</td> 
    <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:   <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -479,18 +479,18 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Cell]
+#### [!UICONTROL Zelle aktualisieren]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie die [!DNL Google] Tabelle aus.</p> </td> 
   </tr> 
   <tr> 
@@ -498,25 +498,25 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
    <td> <p>Wählen Sie die Tabelle aus, in der Sie eine Zelle aktualisieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Cell] </td> 
+   <td>[!UICONTROL Zelle] </td> 
    <td> <p>Geben Sie die ID der Zelle ein, die Sie aktualisieren möchten. Beispiel: <code>A5</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value]</td> 
+   <td>[!UICONTROL-Wert]</td> 
    <td> <p>Geben Sie den neuen Wert für die Zelle ein.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value input option]</td> 
+   <td>[!UICONTROL-Werteingabeoption]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>Die Werte werden analysiert, als ob der Benutzer sie in die Benutzeroberfläche eingegeben hätte. Zahlen bleiben Zahlen, Zeichenfolgen können jedoch nach denselben Regeln, die bei der Eingabe von Text in eine Zelle über die [!DNL Google Sheets]-Benutzeroberfläche angewendet werden, in Zahlen, Daten oder andere Formate konvertiert werden.</p> </li> 
-     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> Die vom Benutzer eingegebenen Werte werden nicht geparst und so gespeichert, wie sie eingegeben wurden. </p> </li> 
+     <li> <p><strong>[!UICONTROL Benutzer entered]</strong></p> <p>Die Werte werden analysiert, als ob der Benutzer sie in die Benutzeroberfläche eingegeben hätte. Zahlen bleiben Zahlen, Zeichenfolgen können jedoch nach denselben Regeln, die bei der Eingabe von Text in eine Zelle über die [!DNL Google Sheets]-Benutzeroberfläche angewendet werden, in Zahlen, Daten oder andere Formate konvertiert werden.</p> </li> 
+     <li> <p><strong>[!UICONTROL RAW]</strong> </p> <p> Die vom Benutzer eingegebenen Werte werden nicht geparst und so gespeichert, wie sie eingegeben wurden. </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Row]
+#### [!UICONTROL Zeile aktualisieren]
 
 Mit diesem Modul können Sie den Zelleninhalt in einer ausgewählten Zeile ändern.
 
@@ -525,15 +525,15 @@ Mit diesem Modul können Sie den Zelleninhalt in einer ausgewählten Zeile ände
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Mode]</td> 
-   <td> <p>Wählen Sie aus, ob Sie die Tabelle und das Blatt manuell oder durch Zuordnung auswählen möchten.</p> <p>Hinweis: Die manuelle Zuordnung ist beispielsweise dann nützlich, wenn im [!UICONTROL Workfront Fusion] Szenario eine neue Tabelle erstellt wird und Sie der neu erstellten Tabelle direkt im Szenario Daten hinzufügen möchten.</p> </td> 
+   <td>[!UICONTROL-Modus]</td> 
+   <td> <p>Wählen Sie aus, ob Sie die Tabelle und das Blatt manuell oder durch Zuordnung auswählen möchten.</p> <p>Hinweis: Die manuelle Zuordnung ist beispielsweise dann nützlich, wenn im Szenario [!UICONTROL Workfront Fusion] eine neue Tabelle erstellt wird und Sie der neu erstellten Tabelle direkt im Szenario Daten hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie die [!DNL Google] Tabelle aus.</p> </td> 
   </tr> 
   <tr> 
@@ -541,27 +541,27 @@ Mit diesem Modul können Sie den Zelleninhalt in einer ausgewählten Zeile ände
    <td> <p>Wählen Sie das Blatt aus, in dem Sie eine Zeile aktualisieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Row number]</td> 
+   <td>[!UICONTROL Zeilennummer]</td> 
    <td> <p> Geben Sie die Nummer der Zeile ein, die Sie aktualisieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Table contains headers]</td> 
+   <td>[!UICONTROL Tabelle enthält Kopfzeilen]</td> 
    <td> <p> Wählen Sie aus, ob das Arbeitsblatt die Kopfzeile enthält.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Yes]</strong> </p> <p>Das Modul ruft die Kopfzeile nicht als Ausgabedaten ab. </p> <p>Variablennamen in der Ausgabe werden von den Kopfzeilen aufgerufen.</p> </li> 
-     <li> <p><strong>[!UICONTROL No]</strong> </p> <p>Das Modul ruft auch die erste Tabellenzeile ab</p> <p>Variablennamen in der Ausgabe werden als A, B, C, D usw. bezeichnet.</p> </li> 
+     <li> <p><strong>[!UICONTROL Nein]</strong> </p> <p>Das Modul ruft auch die erste Tabellenzeile ab</p> <p>Variablennamen in der Ausgabe werden als A, B, C, D usw. bezeichnet.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Values] </td> 
+   <td>[!UICONTROL-Werte] </td> 
    <td> <p>Geben Sie die Werte in die gewünschten Zellen der Zeile ein, die Sie ändern (aktualisieren) möchten, oder ordnen Sie sie ihnen zu.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value input option]</td> 
+   <td>[!UICONTROL-Werteingabeoption]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL User entered]</strong></p> <p>Die Werte werden analysiert, als ob der Benutzer sie in die Benutzeroberfläche eingegeben hätte. Zahlen bleiben Zahlen, Zeichenfolgen können jedoch nach denselben Regeln, die bei der Eingabe von Text in eine Zelle über die [!DNL Google Sheets]-Benutzeroberfläche angewendet werden, in Zahlen, Daten oder andere Formate konvertiert werden.</p> </li> 
-     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> Die vom Benutzer eingegebenen Werte werden nicht geparst und so gespeichert, wie sie eingegeben wurden. </p> </li> 
+     <li> <p><strong>[!UICONTROL Benutzer entered]</strong></p> <p>Die Werte werden analysiert, als ob der Benutzer sie in die Benutzeroberfläche eingegeben hätte. Zahlen bleiben Zahlen, Zeichenfolgen können jedoch nach denselben Regeln, die bei der Eingabe von Text in eine Zelle über die [!DNL Google Sheets]-Benutzeroberfläche angewendet werden, in Zahlen, Daten oder andere Formate konvertiert werden.</p> </li> 
+     <li> <p><strong>[!UICONTROL RAW]</strong> </p> <p> Die vom Benutzer eingegebenen Werte werden nicht geparst und so gespeichert, wie sie eingegeben wurden. </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -569,23 +569,23 @@ Mit diesem Modul können Sie den Zelleninhalt in einer ausgewählten Zeile ände
 
 ### Suchvorgänge
 
-* [[!UICONTROL Get Range Values]](#get-range-values)
-* [[!UICONTROL List Sheets]](#list-sheets)
-* [[!UICONTROL Search Rows]](#search-rows)
-* [[!UICONTROL Search Rows (Advanced)]](#search-rows-advanced)
+* [[!UICONTROL Bereichswerte abrufen]](#get-range-values)
+* [[!UICONTROL Arbeitsblätter auflisten]](#list-sheets)
+* [[!UICONTROL Zeilen suchen]](#search-rows)
+* [[!UICONTROL Suchzeilen (erweitert)]](#search-rows-advanced)
 
-#### [!UICONTROL Get Range Values]
+#### [!UICONTROL Bereichswerte abrufen]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie die [!DNL Google] Tabelle aus.</p> </td> 
   </tr> 
   <tr> 
@@ -593,29 +593,29 @@ Mit diesem Modul können Sie den Zelleninhalt in einer ausgewählten Zeile ände
    <td> <p>Wählen Sie die Tabelle aus, aus der Sie den Bereichsinhalt abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Range] </td> 
+   <td>[!UICONTROL-Bereich] </td> 
    <td> <p>Geben Sie den Bereich ein, den Sie erhalten möchten. Beispiel: <code>A1:D25</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Table contains headers]</td> 
+   <td>[!UICONTROL Tabelle enthält Kopfzeilen]</td> 
    <td> <p>Aktivieren Sie dieses Kontrollkästchen, wenn das Blatt eine Kopfzeile hat</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Row with headers]</td> 
+   <td>[!UICONTROL Zeile mit Überschriften]</td> 
    <td>Geben Sie den Bereich der Tabellenüberschriften ein. Beispiel <code>A1:F1</code>. Wenn Sie das Feld leer lassen, behandelt [!DNL Workfront Fusion] die erste Zeile des angegebenen Bereichs als Kopfzeile.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>Die Werte werden in der Antwort entsprechend der Zellenformatierung berechnet und formatiert. Die Formatierung basiert auf dem Gebietsschema der Tabelle, nicht auf dem Gebietsschema des anfragenden Benutzers. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"$1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>Die Werte werden berechnet, in der Antwort jedoch nicht formatiert. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> die Zahl <code>"1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>Die Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"=A1"</code> zurück.</p> </li><ul></td> 
+   <td>[!UICONTROL Wert renderoption]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL formatierter Wert]</p> <p>Die Werte werden in der Antwort entsprechend der Zellenformatierung berechnet und formatiert. Die Formatierung basiert auf dem Gebietsschema der Tabelle, nicht auf dem Gebietsschema des anfragenden Benutzers. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"$1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatierter Wert]</p> <p>Die Werte werden berechnet, in der Antwort jedoch nicht formatiert. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> die Zahl <code>"1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL-Formel]</p> <p>Die Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"=A1"</code> zurück.</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Die Felder „Datum“, „Uhrzeit“, „Datum/Uhrzeit“ und „Dauer“ werden als Dubletten im Format „Seriennummer“ ausgegeben, wie es von Lotus 1-2-3 populär gemacht wird. Der ganze Zahlenteil des Werts (links vom Dezimaltrennzeichen) zählt die Tage seit dem 30. Dezember 1899. Der Bruchteil (rechts neben der Dezimalstelle) zählt die Zeit als einen Bruchteil des Tages. Zum Beispiel wäre der 1. Januar 1900 mittags 2,5, 2 weil es 2 Tage nach dem 30. Dezember 1899 ist, und .5 weil mittags ein halber Tag ist. 1. Februar 1900 um 15 Uhr wäre 33.625 Uhr. Damit wird das Jahr 1900 korrekt als Schaltjahr behandelt.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Die Felder für Datum, Uhrzeit, Datum/Uhrzeit und Dauer werden als Zeichenfolgen im angegebenen Zahlenformat ausgegeben (das vom Gebietsschema der Tabelle abhängt).</p></li><ul> </td> 
+   <td>[!UICONTROL Render-Option Datum und Uhrzeit]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Seriennummer]</p> <p>Die Felder „Datum“, „Uhrzeit“, „Datum/Uhrzeit“ und „Dauer“ werden als Dubletten im Format „Seriennummer“ ausgegeben, wie es von Lotus 1-2-3 populär gemacht wird. Der ganze Zahlenteil des Werts (links vom Dezimaltrennzeichen) zählt die Tage seit dem 30. Dezember 1899. Der Bruchteil (rechts neben der Dezimalstelle) zählt die Zeit als einen Bruchteil des Tages. Zum Beispiel wäre der 1. Januar 1900 mittags 2,5, 2 weil es 2 Tage nach dem 30. Dezember 1899 ist, und .5 weil mittags ein halber Tag ist. 1. Februar 1900 um 15 Uhr wäre 33.625 Uhr. Damit wird das Jahr 1900 korrekt als Schaltjahr behandelt.</p> </li><li><p style="font-weight: bold;">[!UICONTROL formatierter String]</p> <p>Die Felder für Datum, Uhrzeit, Datum/Uhrzeit und Dauer werden als Zeichenfolgen im angegebenen Zahlenformat ausgegeben (das vom Gebietsschema der Tabelle abhängt).</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Sheets]
+#### [!UICONTROL Arbeitsblätter auflisten]
 
 Dieses Modul gibt eine Liste aller Blätter in einer Tabelle zurück.
 
@@ -624,17 +624,17 @@ Dieses Modul gibt eine Liste aller Blätter in einer Tabelle zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie die [!DNL Google] Tabelle aus, die die Tabellen enthält, die Sie auflisten möchten.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Rows]
+#### [!UICONTROL Zeilen suchen]
 
 Durchsucht Zeilen mithilfe der Filteroptionen.
 
@@ -643,11 +643,11 @@ Durchsucht Zeilen mithilfe der Filteroptionen.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [Fusion App]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu [!DNL Adobe Workfront Fusion] herstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Google Sheets-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu [!DNL Adobe Workfront Fusion] herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie die [!DNL Google] Tabelle aus.</p> </td> 
   </tr> 
   <tr> 
@@ -655,41 +655,41 @@ Durchsucht Zeilen mithilfe der Filteroptionen.
    <td> <p>Wählen Sie das Blatt aus, in dem Sie die Zeilen durchsuchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Table contains headers]</td> 
-   <td> <p> Wählen Sie aus, ob das Arbeitsblatt die Kopfzeile enthält. Wenn die Option [!UICONTROL Yes] ausgewählt ist, ruft das Modul die Kopfzeile nicht ab, da Ausgabedaten und Variablennamen in der Ausgabe von den Kopfzeilen aufgerufen werden. Wenn die Option [!UICONTROL No] ausgewählt ist, ruft das Modul auch die erste Tabellenzeile ab und die Variablennamen in der Ausgabe werden nur A, B, C, D usw. genannt.</p> </td> 
+   <td>[!UICONTROL Tabelle enthält Kopfzeilen]</td> 
+   <td> <p> Wählen Sie aus, ob das Arbeitsblatt die Kopfzeile enthält. Wenn die Option [!UICONTROL Yes] ausgewählt ist, ruft das Modul die Kopfzeile nicht ab, da die Ausgabedaten und Variablennamen in der Ausgabe von den Kopfzeilen aufgerufen werden. Wenn die Option [!UICONTROL No] ausgewählt ist, ruft das Modul auch die erste Tabellenzeile ab, und die Variablennamen in der Ausgabe werden nur A, B, C, D usw. genannt.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Column range]</td> 
+   <td>[!UICONTROL Spaltenbereich]</td> 
    <td>Wählen Sie den Spaltenbereich aus, mit dem Sie arbeiten möchten. Beispiel: <code>A-F</code></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Filter]</td> 
+   <td>[!UICONTROL filter]</td> 
    <td> <p>Legen Sie den Filter fest, den Sie zum Suchen nach Zeilen verwenden möchten.</p> <!--<p>For more information about filters, see <a href="/help/workfront-fusion/create-scenarios/add-modules/" class="MCXref xref">Add a filter to a scenario in [!UICONTROL Adobe Workfront Fusion]</a>.</p>--> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort order]</td> 
+   <td>[!UICONTROL Sortierreihenfolge]</td> 
    <td>Wählen Sie aus, ob auf- oder absteigend sortiert werden soll.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Order by]</td> 
+   <td>[!UICONTROL Sortieren nach]</td> 
    <td>Wählen Sie die Spalte aus, nach der Sie sortieren möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Value render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Formatted value]</p> <p>Die Werte werden in der Antwort entsprechend der Zellenformatierung berechnet und formatiert. Die Formatierung basiert auf dem Gebietsschema der Tabelle, nicht auf dem Gebietsschema des anfragenden Benutzers. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"$1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatted value]</p> <p>Die Werte werden berechnet, in der Antwort jedoch nicht formatiert. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> die Zahl <code>"1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Formula]</p> <p>Die Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"=A1"</code> zurück.</p> </li><ul></td> 
+   <td>[!UICONTROL Wert renderoption]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL formatierter Wert]</p> <p>Die Werte werden in der Antwort entsprechend der Zellenformatierung berechnet und formatiert. Die Formatierung basiert auf dem Gebietsschema der Tabelle, nicht auf dem Gebietsschema des anfragenden Benutzers. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"$1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL Unformatierter Wert]</p> <p>Die Werte werden berechnet, in der Antwort jedoch nicht formatiert. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> die Zahl <code>"1.23"</code> zurück.</p></li><li> <p style="font-weight: bold;">[!UICONTROL-Formel]</p> <p>Die Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1.23</code> ist und <code>A2</code> als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>"=A1"</code> zurück.</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Date and time render option]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Serial number]</p> <p>Die Felder „Datum“, „Uhrzeit“, „Datum/Uhrzeit“ und „Dauer“ werden als Dubletten im Format „Seriennummer“ ausgegeben, wie es von Lotus 1-2-3 populär gemacht wird. Der ganze Zahlenteil des Werts (links vom Dezimaltrennzeichen) zählt die Tage seit dem 30. Dezember 1899. Der Bruchteil (rechts neben der Dezimalstelle) zählt die Zeit als einen Bruchteil des Tages. Zum Beispiel wäre der 1. Januar 1900 mittags 2,5, 2 weil es 2 Tage nach dem 30. Dezember 1899 ist, und .5 weil mittags ein halber Tag ist. 1. Februar 1900 um 15 Uhr wäre 33.625 Uhr. Damit wird das Jahr 1900 korrekt als Schaltjahr behandelt.</p> </li><li><p style="font-weight: bold;">[!UICONTROL Formatted string]</p> <p>Die Felder für Datum, Uhrzeit, Datum/Uhrzeit und Dauer werden als Zeichenfolgen im angegebenen Zahlenformat ausgegeben (das vom Gebietsschema der Tabelle abhängt).</p></li><ul> </td> 
+   <td>[!UICONTROL Render-Option Datum und Uhrzeit]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Seriennummer]</p> <p>Die Felder „Datum“, „Uhrzeit“, „Datum/Uhrzeit“ und „Dauer“ werden als Dubletten im Format „Seriennummer“ ausgegeben, wie es von Lotus 1-2-3 populär gemacht wird. Der ganze Zahlenteil des Werts (links vom Dezimaltrennzeichen) zählt die Tage seit dem 30. Dezember 1899. Der Bruchteil (rechts neben der Dezimalstelle) zählt die Zeit als einen Bruchteil des Tages. Zum Beispiel wäre der 1. Januar 1900 mittags 2,5, 2 weil es 2 Tage nach dem 30. Dezember 1899 ist, und .5 weil mittags ein halber Tag ist. 1. Februar 1900 um 15 Uhr wäre 33.625 Uhr. Damit wird das Jahr 1900 korrekt als Schaltjahr behandelt.</p> </li><li><p style="font-weight: bold;">[!UICONTROL formatierter String]</p> <p>Die Felder für Datum, Uhrzeit, Datum/Uhrzeit und Dauer werden als Zeichenfolgen im angegebenen Zahlenformat ausgegeben (das vom Gebietsschema der Tabelle abhängt).</p></li><ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned rows]</td> 
+   <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Zeilen]</td> 
    <td>Legen Sie die maximale Anzahl von Zeilen fest, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Rows (Advanced)]
+#### [!UICONTROL Suchzeilen (erweitert)]
 
 Gibt Ergebnisse zurück, die den angegebenen Kriterien entsprechen.
 
@@ -698,11 +698,11 @@ Gibt Ergebnisse zurück, die den angegebenen Kriterien entsprechen.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL-Tabelle] </td> 
    <td> <p>Wählen Sie das Google-Arbeitsblatt aus, das das zu durchsuchende Arbeitsblatt enthält.</p> </td> 
   </tr> 
   <tr> 
@@ -710,7 +710,7 @@ Gibt Ergebnisse zurück, die den angegebenen Kriterien entsprechen.
    <td> <p>Wählen Sie das Blatt aus, das die Zeilen enthält, nach denen Sie suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Query]</td> 
+   <td>[!UICONTROL-Abfrage]</td> 
    <td> <p>Verwenden Sie die [!DNL Google Charts Query Language]. Beispiel: <code>select * where B = "John"</code></p> <p>Weitere Informationen zu [!DNL Google Charts Query Language] finden Sie unter <a href="https://developers.google.com/chart/interactive/docs/querylanguage">Abfrage-</a>" in der [!DNL Google].</p> </td> 
   </tr> 
  </tbody> 
@@ -731,7 +731,7 @@ Weitere Informationen finden Sie unter [developers.google.com/sheets/api/limits]
 
 ### Leere Zellen aus einer [!DNL Google Sheet] abrufen
 
-Um leere Zellen zu erhalten, können Sie das Modul [!UICONTROL Search Rows (Advanced)] verwenden. Verwenden Sie diese Formel, um leere Spalten abzurufen.
+Um leere Zellen zu erhalten, können Sie das Modul [!UICONTROL Zeilen suchen (Erweitert)] verwenden. Verwenden Sie diese Formel, um leere Spalten abzurufen.
 
 ```
 select * where E is null
@@ -741,18 +741,18 @@ Dabei ist „E“ die Spalte und „ist null“ die Bedingung. Sie können eine 
 
 ### Schaltfläche in einem Blatt hinzufügen, um ein Szenario auszuführen
 
-1. Fügen Sie [!DNL Workfront Fusion] das Modul **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** in das Szenario ein und konfigurieren Sie es. Anweisungen finden Sie unter [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
+1. Fügen Sie [!DNL Workfront Fusion] das Modul **[!UICONTROL Webhook]** > **[!UICONTROL Custom Webhooks]** in das Szenario ein und konfigurieren Sie es. Anweisungen finden Sie unter [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
 1. Kopieren Sie die URL des Webhooks.
 1. Führen Sie das Szenario aus.
-1. Wählen Sie in Google Sheets **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**… aus der Hauptmenüleiste aus.
+1. Wählen Sie in Google Sheets **[!UICONTROL Einfügen]** > **[!UICONTROL Zeichnen]**… aus der Hauptmenüleiste aus.
 
-1. Klicken Sie im Fenster [!UICONTROL Drawing] oben im Fenster auf ![ Symbol **[!UICONTROL Text box]** Textfeld](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png).
-1. Gestalten Sie eine Schaltfläche und klicken Sie oben rechts auf die Schaltfläche **[!UICONTROL Save and Close]** :
+1. Klicken Sie [!UICONTROL  Fenster ]Zeichnung“ auf das Symbol **[!UICONTROL Textfeld]** (![Textfeld](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) oben im Fenster.
+1. Entwerfen Sie eine Schaltfläche und klicken Sie auf **[!UICONTROL Schaltfläche „Speichern und]**&quot; in der oberen rechten Ecke:
 1. Die Schaltfläche wird in Ihrem Arbeitsblatt platziert. Klicken Sie auf die drei vertikalen Punkte in der oberen rechten Ecke der Schaltfläche:
-1. Wählen Sie **[!UICONTROL Assign script..].** aus dem Menü.
+1. Wählen Sie **[!UICONTROL Skript zuweisen..].** aus dem Menü.
 1. Geben Sie den Namen Ihres Skripts (Funktion) ein, z. B. `runScenario`, und klicken Sie auf **[!UICONTROL OK]**:
-1. Wählen Sie in der Hauptmenüleiste **[!UICONTROL Tools]** > **[!UICONTROL Script editor]** aus.
+1. Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Skript-]**) in der Hauptmenüleiste aus.
 
 1. Fügen Sie den folgenden Code ein:
 
@@ -765,7 +765,7 @@ Dabei ist „E“ die Spalte und „ist null“ die Bedingung. Sie können eine 
      }
      ```
 
-1. Drücken Sie **[!UICONTROL Ctrl+S]**, um die Skriptdatei zu speichern, geben Sie einen Projektnamen ein und klicken Sie auf **[!UICONTROL OK]**.
+1. Drücken Sie **[!UICONTROL Strg+S]**, um die Skriptdatei zu speichern, geben Sie einen Projektnamen ein und klicken Sie auf **[!UICONTROL OK]**.
 
 1. Wechseln Sie zurück zu [!DNL Google Sheets] und klicken Sie auf Ihre neue Schaltfläche.
 1. Gewähren Sie dem Skript die erforderliche Autorisierung:
@@ -779,15 +779,15 @@ Wenn Sie einen Datumswert ohne Formatierung in einer Tabelle speichern, wird er 
 
 Damit [!DNL Google Sheets] das Datum besser verstehen können, formatieren Sie es mit der Funktion `formatDate` . Das richtige Format, das als zweites Argument an die Funktion übergeben wird, hängt von den Gebietsschemaeinstellungen der Tabelle ab.
 
-Weitere Informationen zu dieser Funktion finden Sie unter [[!UICONTROL formatDate] (Datum; Format; [Zeitzone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone) im Artikel Datums- und Zeitfunktionen.
+Weitere Informationen zu dieser Funktion finden Sie unter [[!UICONTROL formatDate] (Datum; Format; [Zeitzone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatdate-date-format-timezone) im Artikel Datums- und Uhrzeitfunktionen.
 
 So bestimmen Sie das richtige Format:
 
-1. Wählen Sie in Google Sheets **[!UICONTROL File]** > **[!UICONTROL Spreadsheet]** aus dem Hauptmenü, um das Gebietsschema zu überprüfen und festzulegen.
+1. Wählen Sie in Google Sheets **[!UICONTROL Datei]** > **[!UICONTROL Tabelle]** Einstellungen aus dem Hauptmenü aus, um das Gebietsschema zu überprüfen und festzulegen.
 
-1. Nachdem Sie das richtige Gebietsschema überprüft oder festgelegt haben, bestimmen Sie das entsprechende Datums- und Zeitformat, indem Sie **[!UICONTROL Format]** > **[!UICONTROL Number]** aus dem Hauptmenü auswählen. Das Format wird neben dem Datums-/Uhrzeitmenüpunkt angezeigt:
+1. Nachdem Sie das richtige Gebietsschema überprüft oder festgelegt haben, bestimmen Sie das entsprechende Datums- und Uhrzeitformat, indem Sie **[!UICONTROL Format]** > **[!UICONTROL Number]** aus dem Hauptmenü auswählen. Das Format wird neben dem Datums-/Uhrzeitmenüpunkt angezeigt:
 
-1. Um das richtige Format zu erstellen, das an die [!UICONTROL formatDate()]-Funktion übergeben werden soll, verwenden Sie die Liste der [Token zur Datums- und Zeitformatierung](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md).
+1. Um das richtige Format zu erstellen, das an die Funktion [!UICONTROL formatDate()] übergeben werden soll, lesen Sie die Liste der [Token zur Datums- und Zeitformatierung](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md).
 
 >[!BEGINSHADEBOX]
 
@@ -808,6 +808,6 @@ Um eine integrierte Funktion aus Google Sheets zu verwenden, können Sie sie nut
 Wenn eine Zeichenfolge von Zahlen, die Sie als Text verwenden, in einem [!DNL Google] Arbeitsblatt als Datum interpretiert wird, können Sie die Zahl als einfachen Text vorformatieren, um dies zu verhindern. Wenn Sie beispielsweise 1-2019 eingeben und als Text beabsichtigen, interpretiert Google dies möglicherweise als Datum.
 
 1. Markieren Sie [!DNL Google Sheets] die Spalte oder Zelle, die die Zahl oder die Zahlen enthält.
-1. Klicken Sie auf **[!UICONTROL Format]** > **[!UICONTROL Number]** > **[!UICONTROL Plain text]**.
+1. Klicken Sie auf **[!UICONTROL Format]** > **[!UICONTROL Zahl]** > **[!UICONTROL Nur Text]**.
 
 Eine weitere Problemumgehung in [!DNL Workfront Fusion] besteht darin, vor einer Zahl ein Apostroph (&#39;) einzugeben, z. B. &#39;1-2019 oder &#39;1/47. Das Apostroph wird in der Zelle nicht angezeigt, nachdem die Daten von [!DNL Workfront Fusion] gesendet wurden.

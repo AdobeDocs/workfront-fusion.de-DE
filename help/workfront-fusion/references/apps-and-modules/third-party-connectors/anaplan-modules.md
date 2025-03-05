@@ -3,10 +3,10 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 0%
+source-wordcount: '1859'
+ht-degree: 1%
 
 ---
 
@@ -20,6 +20,8 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
 <table style="table-layout:auto">
@@ -27,41 +29,43 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration] </p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Voraussetzungen
 
 Bevor Sie den [!DNL Anaplan]-Connector verwenden können, müssen Sie sicherstellen, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Sie müssen über ein aktives [!UICONTROL Anaplan] verfügen.
+* Sie müssen über ein aktives [!UICONTROL Anaplan]-Konto verfügen.
 * Sie müssen Arbeitsbereiche, Modelle und andere [!DNL Anaplan] Objekte in Ihrem [!UICONTROL Anaplan]-Konto konfigurieren, bevor [!DNL Workfront Fusion] mit ihnen interagieren können.
 
 ## Anaplan-API-Informationen
@@ -91,7 +95,7 @@ Der Anaplan-Connector verwendet Folgendes:
 
 So erstellen Sie eine Verbindung für Ihre [!DNL Anaplan]:
 
-1. Klicken Sie **[!UICONTROL Add]** neben dem [!UICONTROL Connection].
+1. Klicken Sie **[!UICONTROL Hinzufügen]** neben dem Feld [!UICONTROL Verbindung].
 1. Wählen Sie den Verbindungstyp aus.
 
    <table style="table-layout:auto">
@@ -99,17 +103,17 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Anaplan]:
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!DNL Anaplan] [!UICONTROL Basic]</td> 
-      <td> <p>Für eine [!DNL Anaplan] [!UICONTROL Basic] Verbindung sind nur eine E-Mail-Adresse und ein Kennwort erforderlich, um die Verbindung herzustellen. </p> <p>Geben Sie einen Namen für die Verbindung ein und dann Ihre E-Mail-Adresse und das Passwort Ihres [!DNL Anaplan] Kontos.</p> </td> 
+      <td role="rowheader">[!DNL Anaplan] [!UICONTROL Allgemein]</td> 
+      <td> <p>Für eine [!DNL Anaplan] [!UICONTROL Basic]-Verbindung sind nur eine E-Mail-Adresse und ein Kennwort erforderlich, um die Verbindung herzustellen. </p> <p>Geben Sie einen Namen für die Verbindung ein und dann Ihre E-Mail-Adresse und das Passwort Ihres [!DNL Anaplan] Kontos.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!DNL Anaplan] [!UICONTROL CA Certificate]</td> 
-      <td> <p>Eine [!DNL Anaplan] [!UICONTROL CA Certificate]-Verbindung erfordert eine [!UICONTROL Certificate Key], eine [!UICONTROL Encoded Data] und eine [!UICONTROL Encoded Signed Data]. Sie können diese in Ihrem [!DNL Anaplan]-Konto generieren. Anweisungen hierzu finden Sie in der [!DNL Anaplan].</p> <p>Geben Sie einen Namen für die Verbindung ein und geben Sie dann die [!UICONTROL Certificate Key], [!UICONTROL Encoded Data] und [!UICONTROL Encoded Signed Data] ein, die Sie in Ihrem [!DNL Anaplan]-Konto generiert haben.</p> </td> 
+      <td role="rowheader">[!DNL Anaplan] [!UICONTROL CA-Zertifikat]</td> 
+      <td> <p>Eine [!DNL Anaplan] [!UICONTROL CA Certificate]-Verbindung erfordert einen [!UICONTROL Certificate Key], [!UICONTROL Encoded Data] und [!UICONTROL Encoded Signed Data]. Sie können diese in Ihrem [!DNL Anaplan]-Konto generieren. Anweisungen hierzu finden Sie in der [!DNL Anaplan].</p> <p>Geben Sie einen Namen für die Verbindung ein und geben Sie dann den [!UICONTROL Zertifikatschlüssel], [!UICONTROL Codierte Daten] und [!UICONTROL Codierte Signierte Daten] ein, die Sie in Ihrem [!DNL Anaplan]-Konto generiert haben.</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Klicken Sie auf **[!UICONTROL Continue]** , um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 ## [!DNL Anaplan] Module und ihre Felder
 
@@ -138,7 +142,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz des ausgewählten 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -151,27 +155,27 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz des ausgewählten 
   </tr> 
   <tr> 
    <td role="rowheader">Grenze</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, denen das Modul während jedes Szenario-Ausführungszyklus [Aktion] zugeordnet werden soll.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Aktionen
 
-* [[!UICONTROL Create a list item]](#create-a-list-item)
-* [[!UICONTROL Make a custom API Call]](#make-a-custom-api-call)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Run an action]](#run-an-action)
-* [[!UICONTROL Update a record]](#update-a-record)
-* [[!UICONTROL Upload a file]](#upload-a-file)
+* [[!UICONTROL Listenelement erstellen]](#create-a-list-item)
+* [[!UICONTROL Erstellen eines benutzerdefinierten API-Aufrufs]](#make-a-custom-api-call)
+* [[!UICONTROL Datensatz lesen]](#read-a-record)
+* [[!UICONTROL Aktion ausführen]](#run-an-action)
+* [[!UICONTROL Aktualisieren eines Datensatzes]](#update-a-record)
+* [[!UICONTROL Datei hochladen]](#upload-a-file)
 
-#### [!UICONTROL Create a list item]
+#### [!UICONTROL Listenelement erstellen]
 
 Dieses Aktionsmodul fügt ein neues Element zu einer Liste in Anaplan hinzu.
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Connection]</td>
+        <td>[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -179,11 +183,11 @@ Dieses Aktionsmodul fügt ein neues Element zu einer Liste in Anaplan hinzu.
         <td>Wählen Sie die ID der Anaplan Workspace aus, die die Liste enthält, der Sie ein Element hinzufügen möchten, oder ordnen Sie sie zu.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Model ID]</td>
+        <td>[!UICONTROL Modell-ID]</td>
         <td>Wählen Sie die ID des Modells aus, das die Liste enthält, der Sie ein Element hinzufügen möchten, oder ordnen Sie sie zu.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL List ID]</td>
+        <td>[!UICONTROL Listen-ID]</td>
         <td>Wählen Sie die ID der Liste aus, in der Sie ein Element erstellen möchten, oder ordnen Sie sie zu.</td>
     </tr>
     <tr>
@@ -191,7 +195,7 @@ Dieses Aktionsmodul fügt ein neues Element zu einer Liste in Anaplan hinzu.
         <td>Geben Sie einen Namen für das neue Element ein.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Code]</td>
+        <td>[!UICONTROL-Code]</td>
         <td>Geben Sie den Code für den neuen Artikel ein. Codes sind benutzergenerierte Codes, mit denen Sie zwischen Zeileneinträgen mit demselben Namen unterscheiden können.</td>
     </tr>
     <tr>
@@ -199,16 +203,16 @@ Dieses Aktionsmodul fügt ein neues Element zu einer Liste in Anaplan hinzu.
         <td>Geben Sie den Namen des übergeordneten Elements ein, unter dem Sie das neue Element erstellen möchten.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Properties]</td>
+        <td>[!UICONTROL Eigenschaften]</td>
         <td>Wenn die Liste, der Sie ein Element hinzufügen möchten, über benutzerdefinierte Eigenschaften verfügt, wählen Sie die Eigenschaften aus, denen Sie Werte hinzufügen möchten, und fügen Sie dann die Werte hinzu.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Subsets]</td>
-        <td>Wenn die Liste, der Sie Elemente hinzufügen möchten, benutzerdefinierte Teilmengen enthält, wählen Sie die Teilmengen aus, denen Sie das Element hinzufügen möchten, und wählen Sie dann <b>[!UICONTROL Yes]</b> aus, um das neue Element zu dieser Teilmenge hinzuzufügen.</td>
+        <td>[!UICONTROL Teilmengen]</td>
+        <td>Wenn die Liste, der Sie Elemente hinzufügen möchten, benutzerdefinierte Teilmengen enthält, wählen Sie die Teilmengen aus, denen Sie das Element hinzufügen möchten, und wählen Sie dann <b>[!UICONTROL Ja]</b> aus, um das neue Element zu dieser Teilmenge hinzuzufügen.</td>
     </tr>
 </table>
 
-#### [!UICONTROL Make a custom API Call]
+#### [!UICONTROL Erstellen eines benutzerdefinierten API-Aufrufs]
 
 In diesem Modul können Sie einen benutzerdefinierten API-Aufruf an die [!DNL Anaplan]-API durchführen.
 
@@ -217,7 +221,7 @@ In diesem Modul können Sie einen benutzerdefinierten API-Aufruf an die [!DNL An
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -225,19 +229,19 @@ In diesem Modul können Sie einen benutzerdefinierten API-Aufruf an die [!DNL An
    <td> <p>Pfad eingeben für <code>https://api.anaplan.com/2/0/</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Methode]</p> </td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] Fügt automatisch Autorisierungskopfzeilen hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String] </td> 
+   <td role="rowheader">[!UICONTROL Abfragezeichenfolge] </td> 
    <td> <p>Geben Sie die Abfragezeichenfolge der Anfrage ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL body]</td> 
    <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -246,7 +250,7 @@ In diesem Modul können Sie einen benutzerdefinierten API-Aufruf an die [!DNL An
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL Löschen eines Datensatzes]
 
 Dieses Aktionsmodul löscht einen vorhandenen Datensatz.
 
@@ -255,7 +259,7 @@ Dieses Aktionsmodul löscht einen vorhandenen Datensatz.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -263,7 +267,7 @@ Dieses Aktionsmodul löscht einen vorhandenen Datensatz.
    <td>Wählen Sie die ID der Anaplan Workspace aus, die das zu löschende Objekt enthält, oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td role="rowheader">[!UICONTROL Modell-ID]</td> 
    <td>Geben Sie die ID des Modells ein, das das zu löschende Objekt enthält, oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
@@ -272,13 +276,13 @@ Dieses Aktionsmodul löscht einen vorhandenen Datensatz.
     <ul> 
      <li> <p><b>Aktion</b> </p> <p>Wählen Sie die zu löschende Aktion aus oder ordnen Sie sie zu.</p> </li> 
      <li> <p><b>Listenelement</b> </p> <p>Wählen Sie die Liste aus, aus der Sie ein Element löschen möchten, und geben Sie dann die ID oder den Code des Elements ein, das Sie löschen möchten, oder ordnen Sie sie zu</p>  </li> 
-     <li> <p><b>[!UICONTROL File]</b> </p> <p>Wählen Sie die zu löschende Datei aus oder ordnen Sie sie zu.</p> </li> 
+     <li> <p><b>[!UICONTROL-Datei]</b> </p> <p>Wählen Sie die zu löschende Datei aus oder ordnen Sie sie zu.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL Datensatz lesen]
 
 Dieses Aktionsmodul liest einen einzelnen Datensatz.
 
@@ -287,15 +291,15 @@ Dieses Aktionsmodul liest einen einzelnen Datensatz.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
    <td> <p>Typ des zu lesenden Datensatzes auswählen.</p> 
     <ul> 
      <li> <p><b>Modell</b> </p> <p>Wählen Sie die ID des Modells aus, das Sie lesen möchten, oder ordnen Sie sie zu</p> </li> 
-     <li> <p><b>Modellliste</b> </p> <p>Wählen Sie die IDs der Workspace und des Modells aus, die die zu lesende Liste enthalten, oder ordnen Sie sie zu und wählen Sie dann die Liste aus. Wählen Sie im Feld [!UICONTROL Data type] aus, ob Sie Daten oder Metadaten lesen möchten.</p> </li> 
+     <li> <p><b>Modellliste</b> </p> <p>Wählen Sie die IDs der Workspace und des Modells aus, die die zu lesende Liste enthalten, oder ordnen Sie sie zu und wählen Sie dann die Liste aus. Wählen Sie im Feld [!UICONTROL Datentyp] aus, ob Sie Daten oder Metadaten lesen möchten.</p> </li> 
      <li> <p><b>Modellversion</b> </p> <p>Wählen Sie die ID des Modells aus, das Sie lesen möchten, oder ordnen Sie sie zu.</p> </li> 
      <li> <p><b>Benutzer</b> </p> <p>Wählen Sie aus, ob Sie Daten zum Eigentümer des verwendeten Kontos oder zu einem anderen Benutzer zurückgeben möchten. Wenn Sie einen anderen Benutzer auswählen, wählen Sie dessen Namen aus.</p> </li> 
      <li> <p><b>Workspace</b> </p> <p>Wählen Sie die ID der Workspace aus, die Sie lesen möchten, oder ordnen Sie sie zu.</p> </li> 
@@ -304,7 +308,7 @@ Dieses Aktionsmodul liest einen einzelnen Datensatz.
  </tbody> 
 </table>
 
-#### [!UICONTROL Run an action]
+#### [!UICONTROL Aktion ausführen]
 
 Dieses Aktionsmodul importiert, exportiert, löscht oder verarbeitet eine Aktion.
 
@@ -313,29 +317,29 @@ Dieses Aktionsmodul importiert, exportiert, löscht oder verarbeitet eine Aktion
      <col/>
      <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL Connection]</td>
-        <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect Anaplan to Workfront Fusion]</a> diesem Artikel.</td>
+        <td role="rowheader">[!UICONTROL-Verbindung]</td>
+        <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect Anaplan to Workfront Fusion]</a> in diesem Artikel.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Workspace ID]</td>
         <td>Wählen Sie die ID der [!DNL Anaplan] Workspace aus, in der Sie die Aktion durchführen möchten, oder ordnen Sie sie zu</td>
       </tr>
       <tr >
-        <td role="rowheader">[!UICONTROL Model ID]</td>
+        <td role="rowheader">[!UICONTROL Modell-ID]</td>
         <td>Wählen Sie die ID des Modells aus, in dem Sie die Aktion durchführen möchten, oder ordnen Sie sie zu.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Action type]</td>
+        <td role="rowheader">[!UICONTROL Aktionstyp]</td>
         <td>
           <p>Wählen Sie die Aktion aus, die Sie durchführen möchten</p>
             <ul>
               <li>
-                <p><b>[!UICONTROL Delete]</b>
+                <p><b>[!UICONTROL DELETE]</b>
                 </p>
                 <p>Geben Sie die ID der Aktion ein, die Sie löschen möchten, oder ordnen Sie sie zu.</p>
               </li>
               <li>
-                <p><b>[!UICONTROL Export]</b>
+                <p><b>[!UICONTROL export]</b>
                 </p>
                 <p>Geben Sie die ID der Exportdefinition ein, die Sie verwenden möchten, oder ordnen Sie sie zu. Sie können in die folgenden Dateiformate exportieren:</p>
                   <ul>
@@ -351,12 +355,12 @@ Dieses Aktionsmodul importiert, exportiert, löscht oder verarbeitet eine Aktion
                   </ul>
                 </li>
                 <li>
-                  <p><b>[!UICONTROL Import] </b>
+                  <p><b>[!UICONTROL Import]-</b>
                   </p>
                   <p style="font-weight: normal;">Geben Sie die ID der Importdefinition ein, die Sie verwenden möchten, oder mappen Sie sie zu.</p>
                 </li>
                 <li>
-                 <p><b>[!UICONTROL Process]</b>
+                 <p><b>[!UICONTROL-Prozess]</b>
                  </p>
                   <p>Geben Sie die ID des Prozesses ein, den Sie verwenden möchten, oder ordnen Sie sie zu. </p>
                 </li>
@@ -367,7 +371,7 @@ Dieses Aktionsmodul importiert, exportiert, löscht oder verarbeitet eine Aktion
       </table>
 
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL Aktualisieren eines Datensatzes]
 
 Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!UICONTROL Anaplan].
 
@@ -376,37 +380,37 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!UICONTROL Anapla
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den Sie aktualisieren möchten.</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL List item]</b> </p> <p>Informationen zu Feldern finden <a href="#create-a-list-item" class="MCXref xref"> unter „Listenelement erstellen</a> in diesem Artikel.</p> </li> 
-     <li> <p><b>[!UICONTROL Module cell data]</b> </p> <p>Wenn Sie Zelldaten aktualisieren, werden auch alle nachgelagerten Berechnungen aktualisiert, die diese Daten verwenden.</p> <p>Füllen Sie die folgenden Felder aus:</p> 
+     <li> <p><b>[!UICONTROL Listenelement]</b> </p> <p>Informationen zu Feldern finden <a href="#create-a-list-item" class="MCXref xref"> unter „Listenelement erstellen</a> in diesem Artikel.</p> </li> 
+     <li> <p><b>[!UICONTROL Module Cell Data]</b> </p> <p>Wenn Sie Zelldaten aktualisieren, werden auch alle nachgelagerten Berechnungen aktualisiert, die diese Daten verwenden.</p> <p>Füllen Sie die folgenden Felder aus:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Model ID]</b> </p> <p>Wählen Sie das Modell aus, das die zu aktualisierende Zelle enthält, oder ordnen Sie es zu.</p> </li> 
-       <li> <p><b>[!UICONTROL Module ID]</b> </p> <p>Wählen Sie das Modul aus, das die zu aktualisierende Zelle enthält, oder ordnen Sie es zu</p> </li> 
-       <li> <p><b>[!UICONTROL Line item name]</b> </p> <p>Wählen Sie den Zeileneintrag der Zelle aus, die Sie aktualisieren möchten, oder ordnen Sie ihn zu</p> </li> 
+       <li> <p><b>[!UICONTROL MODULE ID]</b> </p> <p>Wählen Sie das Modul aus, das die zu aktualisierende Zelle enthält, oder ordnen Sie es zu</p> </li> 
+       <li> <p><b>[!UICONTROL Zeilenname]</b> </p> <p>Wählen Sie den Zeileneintrag der Zelle aus, die Sie aktualisieren möchten, oder ordnen Sie ihn zu</p> </li> 
        <li> <p style="font-weight: bold;">[!UICONTROL Dimension ID]</p> <p>Wählen Sie die Dimension aus, die sich im Zeileneintrag befindet, oder ordnen Sie sie zu.</p> 
        <p><b>Hinweis: </b> 
        <ul>
        <li> Dimension-Schlüssel (Wert) muss entweder <code>dimensionName</code> (Weiter) oder <code>dimensionId</code> (ID) sein.</li>
        <li>Elementschlüssel (Wert) muss <code>itemName</code> (Text), <code>itemCode</code> (Text) oder <code>itemId</code> (ID) sein.</li>
-       <li>Dimensionen- und Elementschlüssel müssen vom gleichen Typ sein (Text oder ID).
+       <li>Dimension- und Elementschlüssel müssen vom gleichen Typ sein (Text oder ID).
        </ul>
         </p> 
-        <p>Suchen Sie in der [!DNL Anaplan Anapedia] nach Dimensionen, um Informationen zu Dimensionen zu erhalten.</p> </li> 
-       <li> <p><b>[!UICONTROL Value]</b> </p> <p>Geben Sie den neuen Wert für die Zelle ein oder mappen Sie ihn.</p> </li> 
+        <p>Suchen Sie für Informationen zu Dimensionen in der [!DNL Anaplan Anapedia] nach Dimensionen .</p> </li> 
+       <li> <p><b>[!UICONTROL value]</b> </p> <p>Geben Sie den neuen Wert für die Zelle ein oder mappen Sie ihn.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Model current fiscal year]</b> </p> <p>Geben Sie die Workspace-ID und Modell-ID des Modells ein, für das Sie das Geschäftsjahr aktualisieren möchten, und geben Sie dann das neue Jahr für das Modell ein oder ordnen Sie es zu.</p> </li> 
+     <li> <p><b>[!UICONTROL Modell aktuelles Geschäftsjahr]</b> </p> <p>Geben Sie die Workspace-ID und Modell-ID des Modells ein, für das Sie das Geschäftsjahr aktualisieren möchten, und geben Sie dann das neue Jahr für das Modell ein oder ordnen Sie es zu.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Datei hochladen]
 
 Dieses Aktionsmodul lädt eine Datei in Anaplan hoch. Die Datei muss bereits in Anaplan hochgeladen worden sein. Sie können dieses Modul verwenden, um es an zusätzliche Stellen in Anaplan hochzuladen.
 <table style="table-layout:auto">
@@ -414,7 +418,7 @@ Dieses Aktionsmodul lädt eine Datei in Anaplan hoch. Die Datei muss bereits in 
 <col>
 <tbody>
 <tr>
-<td role="rowheader">[!UICONTROL Connection]</td>
+<td role="rowheader">[!UICONTROL-Verbindung]</td>
 <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</td>
 </tr>
 <tr>
@@ -422,11 +426,11 @@ Dieses Aktionsmodul lädt eine Datei in Anaplan hoch. Die Datei muss bereits in 
 <td>Wählen Sie die ID der [!DNL Anaplan] Workspace aus, in die Sie eine Datei hochladen möchten, oder ordnen Sie sie zu.</td>
 </tr>
 <tr>
-<td role="rowheader">[!UICONTROL Model ID]</td>
+<td role="rowheader">[!UICONTROL Modell-ID]</td>
 <td>Wählen Sie die ID des Modells aus, in das Sie eine Datei hochladen möchten, oder ordnen Sie sie zu.</td>
 </tr>
 <tr>
-<td role="rowheader">[!UICONTROL File ID]</td>
+<td role="rowheader">[!UICONTROL Datei-ID]</td>
 <td>Wählen Sie die ID der Datei aus, die Sie hochladen möchten, oder ordnen Sie sie zu.</td>
 </tr>
 </tbody>
@@ -435,7 +439,7 @@ Dieses Aktionsmodul lädt eine Datei in Anaplan hoch. Die Datei muss bereits in 
 
 ### Suchvorgänge
 
-#### [!UICONTROL Get record]
+#### [!UICONTROL Datensatz abrufen]
 
 Dieses Suchmodul gibt alle Datensätze des ausgewählten Typs zurück, auf die zugegriffen werden kann.
 
@@ -444,27 +448,27 @@ Dieses Suchmodul gibt alle Datensätze des ausgewählten Typs zurück, auf die z
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record types]</td> 
+   <td role="rowheader">[!UICONTROL Datensatztypen]</td> 
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den Sie abrufen möchten.</p> 
       <ul> 
-       <li> <p><b>[!UICONTROL Workspaces]</b> </p> </li> 
-       <li> <p><b>[!UICONTROL Models]</b> </p> </li> 
-       <li> <p><b>[!UICONTROL Line items]</b> </p> <p>Wählen Sie die ID des Modells aus, das die [!DNL line] Elemente enthält, die Sie abrufen möchten, oder ordnen Sie sie zu.</p> </li> 
-       <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>Wählen Sie die ID der Workspace und die Modell-ID aus bzw. ordnen Sie sie zu, die die Modelllisten enthalten, die Sie abrufen möchten.</p> </li> 
-       <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>Wählen Sie die ID der Workspace aus, die den abzurufenden Modellkalender enthält, oder ordnen Sie sie zu.</p> </li> 
-       <li> <p><b>[!UICONTROL Model versions]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL Workspace]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL-Modelle]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL Zeileneinträge]</b> </p> <p>Wählen Sie die ID des Modells aus, das die [!DNL line] Elemente enthält, die Sie abrufen möchten, oder ordnen Sie sie zu.</p> </li> 
+       <li> <p><b>[!UICONTROL Modelllisten]</b> </p> <p>Wählen Sie die ID der Workspace und die Modell-ID aus bzw. ordnen Sie sie zu, die die Modelllisten enthalten, die Sie abrufen möchten.</p> </li> 
+       <li> <p><b>[!UICONTROL Modellkalender]</b> </p> <p>Wählen Sie die ID der Workspace aus, die den abzurufenden Modellkalender enthält, oder ordnen Sie sie zu.</p> </li> 
+       <li> <p><b>[!UICONTROL Modellversionen]</b> </p> </li> 
        <li> <p>Wählen Sie die ID des Modells aus, das die Modellversionen enthält, die Sie abrufen möchten, oder ordnen Sie sie zu.</p> </li> 
-       <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL Benutzer]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>Wählen Sie aus, ob Sie die Ansicht nach Modul oder nach Modell auswählen möchten, und wählen Sie dann die ID des Moduls oder Modells aus, das die abzurufende Ansicht enthält, oder ordnen Sie sie zu.</p> </li> 
       </ul> 
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Return workspace size]</td> 
+   <td role="rowheader">[!UICONTROL Arbeitsbereichsgröße zurückgeben]</td> 
    <td>Aktivieren Sie diese Option, um eine Schätzung der aktuellen Größe des Arbeitsbereichs zurückzugeben. Diese Schätzung basiert auf den Größen aller im Arbeitsbereich enthaltenen Module.</td> 
   </tr> 
  </tbody> 
