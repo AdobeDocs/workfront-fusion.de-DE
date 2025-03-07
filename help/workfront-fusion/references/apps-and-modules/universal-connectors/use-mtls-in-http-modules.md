@@ -4,18 +4,14 @@ description: Sie können Mutual TLS in Ihren Adobe Workfront Fusion-HTTP-Modulen
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1fa1ef68267d971a2769400a031b333de2f684ce
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # Verwenden von gegenseitigem TLS in HTTP-Modulen in [!DNL Adobe Workfront Fusion]
-
->[!NOTE]
->
->Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfront-Lizenz eine [!DNL Adobe Workfront Fusion].
 
 ## Gegenseitige TLS - Übersicht
 
@@ -35,45 +31,48 @@ Das gegenseitige TLS ermöglicht es, dass diese Identitätsbestätigung in beide
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td> 
-   <td> <p>[!UICONTROL Pro] oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration] </p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-&#42;Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-&#42;&#42;Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Bereitstellen Ihres [!DNL Workfront Fusion] öffentlichen Zertifikats
-
 
 Wenn Sie über eine HTTP-Anfrage eine Verbindung zu einem Webdienst herstellen, benötigt der Webdienst in der Regel ein [!DNL Workfront Fusion] öffentliches Zertifikat zur Überprüfung. Auf diese Weise kann der Webdienst das in der HTTP-Anfrage dargestellte Zertifikat mit dem in der Datei enthaltenen vergleichen, um sicherzustellen, dass sich das Zertifikat auf der Zulassungsliste des Webdienstes befindet.
 
@@ -85,7 +84,7 @@ Anweisungen zum Hochladen des [!DNL Adobe Workfront Fusion] öffentlichen Zertif
 
 Über die folgenden Links können Sie die öffentlichen Workfront Fusion-Zertifikate herunterladen:
 
-### Zertifikate für den 23. April 2023-7. Mai 2024
+### Zertifikate für den 23. April 2024-7. Mai 2025
 
 >[!IMPORTANT]
 >
@@ -101,32 +100,17 @@ Anweisungen zum Hochladen des [!DNL Adobe Workfront Fusion] öffentlichen Zertif
 
   Zur Verwendung in der EU
 
-<!--
-
-### Certificates for November 14, 2022 - July 15, 2023
-
->[!IMPORTANT]
->
->* These [!DNL Workfront Fusion] public certificates expire on July 15, 2023.
->* These are wildcard mTLS certificates.
-
-* [Download [!DNL Workfront Fusion] Certificate 2023](https://cdn.experience.workfront.com/Documentation/Workfront+Fusion+2.0+public+certificates/app_workfrontfusion_com-jul-15-2023+updated.cer)
-* [Download [!DNL Workfront Fusion] EU Certificate 2023](https://cdn.experience.workfront.com/Documentation/Workfront+Fusion/app-eu_workfrontfusion_com-jul-15-2023.cer)
-
-   For use in the EU 
-
-   -->
 
 ## Aktivieren von gegenseitigem TLS in [!DNL Workfront Fusion] HTTP-Modulen
 
 Alle [!DNL Workfront Fusion] [!UICONTROL HTTP]-Anfragemodule haben die Möglichkeit, gegenseitiges TLS zu aktivieren.
 
-So aktivieren Sie gegenseitiges TLS in einem [!UICONTROL HTTP]:
+So aktivieren Sie gegenseitiges TLS in einem [!UICONTROL HTTP]-Anfragemodul:
 
-1. Fügen Sie Ihrem Szenario ein [!UICONTROL HTTP]-Anfragemodul hinzu.
+1. Fügen Sie Ihrem [!UICONTROL  ein ]HTTP“-Anfragemodul hinzu.
 1. Starten Sie die Konfiguration des Moduls.
 
-   <!--For instructions on configuring an [!UICONTROL HTTP] request module, see the appropriate article under [[!UICONTROL Universal connectors] modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/).-->
+   Anweisungen zum Konfigurieren eines [!UICONTROL HTTP]-Anfragemoduls finden Sie im entsprechenden Artikel unter [Universelle Connectoren](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-1. Aktivieren Sie **[!UICONTROL Show advanced settings]** unten im Modul.
-1. **[!UICONTROL Use Mutual TLS]** aktivieren.
+1. Aktivieren Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]** unten im Modul.
+1. Aktivieren **[!UICONTROL Gegenseitige TLS verwenden]**.
