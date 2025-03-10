@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 632128bdcb6f8b8361f5a28e4a5fb527eb274d54
+source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4088'
 ht-degree: 0%
 
 ---
@@ -207,8 +207,6 @@ Dieses Aktionsmodul kopiert eine Datei an einen neuen Speicherort
  </tbody> 
 </table>
 
-<!-- Start audit here-->
-
 #### [!UICONTROL Ordner erstellen]
 
 Dieses Aktionsmodul erstellt einen neuen Ordner im angegebenen Laufwerk.
@@ -255,7 +253,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner im angegebenen Laufwerk.
 
 #### [!UICONTROL Löschen einer Datei/eines Ordners]
 
-Dieses Aktionsmodul löscht die ausgewählte Datei.
+Dieses Aktionsmodul löscht die ausgewählte Datei oder den ausgewählten Ordner.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -730,7 +728,7 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf aus.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL-Methode]</td> 
-   td&gt; <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
+   <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
