@@ -4,9 +4,9 @@ description: Die folgenden öffentlichen Vorlagen sind derzeit in Adobe Workfron
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 47f1e2b6a812f4ac44e2daf08cb1937f1ef02981
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,15 @@ Diese Vorlagen automatisieren Workfront-Prozesse und -Workflows.
 
 ### [!BADGE Neu!]{type=Informative}
 
+<!--New March 12, 2025-->
+
+Löschen Sie archivierte Karten aus einer bestimmten Spalte auf einer bestimmten Pinnwand nach Bedarf.
+
+### Workfront-Pinnwände > Erstellen einer standardmäßigen Checkliste basierend auf der Spalte Pinnwände .
+
 Diese Fusion-Vorlage erstellt eine Standard-Checkliste für alle Karten, die eine bestimmte Spalte auf einer bestimmten Pinnwand zeitlich festgelegt eingeben.
 
-### [!BADGE Neu!]{type=Informative}
-
-<!--new Aug 1. 2024-->
+### Workfront > Workfront-Boards : Erstellen einer Pinnwand mit einer benutzerdefinierten Konfiguration
 
 Dieses Szenario wird durch die Erstellung eines neuen Projekts ausgelöst. In diesem Szenario können Sie eine Pinnwand mit dem Namen nach dem Projekt erstellen, Spalten je nach Ihren Anforderungen umbenennen oder erstellen, benutzerdefinierte Tags erstellen und einen Aufnahmespaltenfilter mit dem ursprünglichen Projekt verknüpfen.  Tausende von zusätzlichen Änderungen könnten vorgenommen werden, aber ab hier können Sie die Möglichkeiten sehen, einen Ausgangspunkt für die Standardisierung des Board Ihres Unternehmens zu erstellen.
 
@@ -57,7 +61,7 @@ Mit dieser Vorlage können Sie Notizen und Antworten aus einem Problem oder eine
 
 Diese Automatisierung überwacht neue Projekte in Programmen mit benutzerdefinierten Formularen. Anschließend werden diese benutzerdefinierten Programmformulare und -felder zu den neuen Projekten hinzugefügt.
 
-### Workfront - Kopieren von benutzerdefinierten Portfolio-Forms- und -Felddaten in verknüpfte neue Projekte
+### Workfront - Kopieren Sie benutzerdefinierte Portfolio-Forms- und -Felddaten in verknüpfte neue Projekte
 
 Diese Automatisierung überwacht neue Projekte in Portfolios mit benutzerdefinierten Formularen. Anschließend werden diese benutzerdefinierten Portfolioformulare und -felder zu den neuen Projekten hinzugefügt.
 
@@ -97,6 +101,12 @@ Diese Vorlage erfasst wöchentlich montags um 6 Uhr ET eine Projekt-Grundlinie f
 
 Diese Vorlagen automatisieren Workflows, die Workfront mit Workfront Proof kombinieren.
 
+### [!BADGE Neu!]{type=Informative}
+
+<!--New March 12, 2025-->
+
+Diese Vorlage überwacht Projekte, deren Status mit „Abgelehnt“, „Abgeschlossen“ oder „Inaktiv“ übereinstimmt. Anschließend werden alle Benutzenden mit ausstehenden Korrekturabzugsentscheidungen in Schreibgeschützt geändert. Schließlich werden die Korrekturabzüge gesperrt und eine Aktualisierung an die Dokumente gesendet.
+
 ### Workfront Proof > Workfront - Projekt-Update zur Korrekturabzugsentscheidung
 
 Wenn eine Entscheidung über einen Korrekturabzug getroffen wird, der einem Projekt direkt hinzugefügt wird, erfasst diese Automatisierung Informationen über die Korrekturabzugsentscheidung, z. B. wer die Entscheidung getroffen hat, und spiegelt diesen Fortschritt dann im entsprechenden Workfront-Projekt als Aktualisierung wider.
@@ -131,15 +141,15 @@ Diese Vorlagen unterstützen die Integration von Workfront mit Marketo.
 
 ### Genehmigen des Marketo Engage-E-Mail-Entwurfs mit Workfront-Genehmigungs-Workflows
 
-Dies ist Teil der Integration zwischen Workfront und Marketo Engage. Diese Vorlage erkennt, ob ein E-Mail-Korrekturabzug in Workfront genehmigt wurde, und aktualisiert dann die entsprechende E-Mail in Marketo Engage als genehmigt.
+Dies ist Teil der Integration zwischen Workfront und Marketo Engage zur Überprüfung und Genehmigung. Diese Vorlage erkennt, ob ein E-Mail-Korrekturabzug in Workfront genehmigt wurde, und aktualisiert dann die entsprechende E-Mail in Marketo Engage als genehmigt.
 
 ### Aufnahme von Anfragen zu Marketing-Kampagnen in Workfront und Automatisierung der Kampagnenerstellung in Marketo Engage
 
-Dieses Szenario bietet eine programmgesteuerte Möglichkeit, E-Mail- und Webinar-Kampagnen auf Marketo Engage basierend auf einer in Workfront gestellten Anfrage zu erstellen. Durch den Einsatz der Automatisierung zum Erstellen, Organisieren und Konfigurieren von Kampagnen können Teams die Effizienz verbessern.
+Dieses Szenario bietet eine programmgesteuerte Möglichkeit, E-Mail- und Webinar-Kampagnen in Marketo Engage auf Grundlage einer in Workfront gestellten Anfrage zu erstellen. Durch den Einsatz der Automatisierung zum Erstellen, Organisieren und Konfigurieren von Kampagnen können Teams die Effizienz verbessern.
 
 ### Überprüfen eines E-Mail-Korrekturabzugs für Ihren Marketo Engage-E-Mail-Entwurf in Workfront
 
-Diese Vorlage erkennt, ob eine Workfront-Aufgabe den Status Bereit für Überprüfung erhalten hat, und exportiert dann den E-Mail-Entwurf von Marketo Engage, um ihn als Korrekturabzug in Workfront zu speichern.
+Diese Vorlage erkennt, ob eine Workfront-Aufgabe den Status Bereit für Überprüfung erhalten hat, und exportiert dann den E-Mail-Entwurf aus Marketo Engage, um ihn als Korrekturabzug in Workfront zu speichern.
 
 ## Workfront-SharePoint-Vorlagen
 
