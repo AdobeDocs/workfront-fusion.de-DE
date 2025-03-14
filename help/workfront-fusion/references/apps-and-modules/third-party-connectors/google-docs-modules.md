@@ -4,9 +4,9 @@ description: Mit den Adobe Workfront Fusion [!DNL Google Docs] Modulen können S
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: eac874d588e026cab3a01017d32e291d5c8b7b74
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4045'
 ht-degree: 0%
 
 ---
@@ -498,8 +498,12 @@ Dieses Aktionsmodul ersetzt Text in einem Dokument.
     </ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Dokument-ID]</td> 
+   <td> <p>Ordnen Sie das Dokument zu, in dem Sie Text ersetzen möchten, oder wählen Sie es aus.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Text ersetzen]</p> </td> 
-   <td> <p>Fügen Sie jeden Text hinzu, den Sie ersetzen möchten.</p> 
+   <td> <p>Klicken Sie für jedes Textstück, das Sie ersetzen möchten, auf <b>Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Alter Text, der ersetzt werden soll]</strong> </p> <p>Geben Sie den Text ein, den Sie ersetzen möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL Neuer einzufügender Text]</strong> </p> <p>Geben Sie den neuen Text ein.</p> </li> 
@@ -538,8 +542,12 @@ Dieses Aktionsmodul ersetzt ein vorhandenes Bild. Das Seitenverhältnis des Orig
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Bild-URL]</p> </td> 
-   <td> <p>Geben Sie die URL des neuen Bildes, das das vorhandene Bild ersetzen soll, ein oder mappen Sie sie.</p> <p>Bilder werden in der Reihenfolge aufgelistet, in der sie im Dokument angezeigt werden. Beispielsweise ist <code>Body: Image No. 1</code> das erste Bild im Dokument.</p> </td> 
+   <td role="rowheader">[!UICONTROL Dokument-ID]</td> 
+   <td> <p>Ordnen Sie das Dokument zu, in dem Sie ein Bild ersetzen möchten, oder wählen Sie es aus.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Images Replacement]</p> </td> 
+   <td> Klicken Sie für jedes Bild, das Sie ersetzen möchten, auf <b>Element hinzufügen</b> und geben Sie die vorhandene Bild-ID ein. Geben Sie dann die URL des neuen Bildes ein, das das vorhandene Bild ersetzen soll, oder mappen Sie sie. <p>Bilder werden in der Reihenfolge aufgelistet, in der sie im Dokument angezeigt werden. Beispielsweise ist <code>Body: Image No. 1</code> das erste Bild im Dokument.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -579,8 +587,48 @@ Dieses Ordnermodul gibt Dokumentdetails zurück, wenn ein neues Trigger erstellt
 
 ### Sonstige
 
-* [[!UICONTROL Erstellen eines API-Aufrufs]](#make-an-api-call)
 * [[!UICONTROL Alle Links in einem Dokument können angeklickt werden]](#make-all-links-in-a-document-clickable)
+* [[!UICONTROL Erstellen eines API-Aufrufs]](#make-an-api-call)
+
+#### [!UICONTROL Alle Links in einem Dokument können angeklickt werden]
+
+Dieses Aktionsmodul findet alle Links im Dokument und macht sie anklickbar.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Alle Links in einem Dokument erstellen]</p> </td> 
+   <td> 
+    <ul> 
+     <li><strong>[!UICONTROL By Mapping]</strong> <br>Wählen Sie diese Option, um die Dokumentvorlage zuzuordnen.</li> 
+     <li><strong>[!UICONTROL By Dropdown]</strong> Wählen <br> diese Option, um das Dokument aus dem Dropdown-Menü auszuwählen.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Laufwerk auswählen]</td> 
+   <td> <p>Wählen Sie den Laufwerkstyp aus, auf dem sich das Dokument befindet, auf das Links geklickt werden sollen. Diese Option ist verfügbar, wenn Sie im vorherigen Feld [!UICONTROL By Dropdown] ausgewählt haben.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Wählen Sie den Ordner aus, in dem sich das Dokument befindet, auf das Links geklickt werden sollen.</p> </li> 
+     <li> <p><strong>[!UICONTROL für mich freigegeben]</strong> </p> <p>Wählen Sie den Ordner aus, in dem sich das Dokument befindet, auf das Links geklickt werden sollen.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (nur für [!DNL Google Workspace] Benutzer verfügbar)</p> <p>Wählen Sie aus, ob Sie [!UICONTROL Domain-Administratorzugriff verwenden] möchten. Bei Auswahl von [!UICONTROL Yes] wird die Anfrage als Domain-Administrator ausgegeben, und alle freigegebenen Laufwerke, deren Administrator der Anforderer ist, werden zurückgegeben.</p> <p>Wählen Sie das freigegebene Laufwerk aus, auf dem sich das Dokument befindet, auf das Sie Links klicken möchten, und wählen Sie dann das Dokument aus.</p> <p>Hinweis: Wenn Sie die Option [!DNL Google Docs] in diesem Feld ausgewählt haben und kein [!DNL Google Workspace] Benutzer sind, wird der <code>[400] Invalid Value</code> zurückgegeben.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
+   <td> <p>Wählen Sie das Laufwerk aus, das das Dokument enthält, in dem Links aktualisiert werden sollen, und wählen Sie dann ein Dokument aus. Diese Option ist verfügbar, wenn Sie [!DNL My Drive] im Feld [!UICONTROL Laufwerk auswählen] ausgewählt haben.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Dokument-ID]</td> 
+   <td> <p> Wählen Sie das Dokument aus, in dem Sie die Links aktualisieren möchten, oder ordnen Sie es zu.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Erstellen eines API-Aufrufs]
 
@@ -620,6 +668,8 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
 **Beispiel:** Der folgende API-Aufruf ruft die Details für das angegebene Dokument in Ihrer Google Docs ab:
 
 **URL:**
@@ -636,42 +686,4 @@ Details zum abgerufenen Dokument finden Sie in der Ausgabe des Moduls unter [!UI
 
 ![API-Aufrufausgabe](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
-#### [!UICONTROL Alle Links in einem Dokument können angeklickt werden]
-
-Dieses Aktionsmodul findet alle Links im Dokument und macht sie anklickbar.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Alle Links in einem Dokument erstellen]</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>[!UICONTROL By Mapping]</strong> <br>Wählen Sie diese Option, um die Dokumentvorlage zuzuordnen.</li> 
-     <li><strong>[!UICONTROL By Dropdown]</strong> Wählen <br> diese Option, um das Dokument aus dem Dropdown-Menü auszuwählen.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Laufwerk auswählen]</td> 
-   <td> <p>Wählen Sie den Laufwerkstyp aus, auf dem sich das Dokument befindet, auf das Links geklickt werden sollen. Diese Option ist verfügbar, wenn Sie im vorherigen Feld [!UICONTROL By Dropdown] ausgewählt haben.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Wählen Sie den Ordner aus, in dem sich das Dokument befindet, auf das Sie auf Links klicken möchten, und wählen Sie dann das Dokument aus.</p> </li> 
-     <li> <p><strong>[!UICONTROL für mich freigegeben]</strong> </p> <p>Wählen Sie den Ordner aus, in dem sich das Dokument befindet, auf das Sie auf Links klicken möchten, und wählen Sie dann das Dokument aus.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (nur für [!DNL Google Workspace] Benutzer verfügbar)</p> <p>Wählen Sie aus, ob Sie [!UICONTROL Domain-Administratorzugriff verwenden] möchten. Bei Auswahl von [!UICONTROL Yes] wird die Anfrage als Domain-Administrator ausgegeben, und alle freigegebenen Laufwerke, deren Administrator der Anforderer ist, werden zurückgegeben.</p> <p>Wählen Sie das freigegebene Laufwerk aus, auf dem sich das Dokument befindet, auf das Sie Links klicken möchten, und wählen Sie dann das Dokument aus.</p> <p>Hinweis: Wenn Sie die Option [!DNL Google Docs] in diesem Feld ausgewählt haben und kein [!DNL Google Workspace] Benutzer sind, wird der <code>[400] Invalid Value</code> zurückgegeben.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
-   <td> <p>Wählen Sie das Laufwerk aus, das das Dokument enthält, in dem Links aktualisiert werden sollen, und wählen Sie dann ein Dokument aus. Diese Option ist verfügbar, wenn Sie [!DNL My Drive] im Feld [!UICONTROL Laufwerk auswählen] ausgewählt haben.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Dokument-ID]</td> 
-   <td> <p> Wählen Sie das Dokument aus, in dem Sie die Links aktualisieren möchten, oder ordnen Sie es zu.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]

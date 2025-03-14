@@ -4,9 +4,9 @@ description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung und
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 ## Webhooks
 
 * Die standardmäßige Maximalgröße einer Payload beträgt **5 MB**.
-* Webhooks sind auf **100 Anfragen pro Sekunde beschränkt**. Wenn diese Grenze erreicht ist, sendet Workfront Fusion den Status 429 ([!UICONTROL Too Many Requests]).
-* [!DNL Workfront Fusion] speichert Webhook-Payloads 30 Tage lang. Der Zugriff auf eine Webhook-Payload mehr als 30 Tage nach dem Empfang führt zum Fehler &quot;[!UICONTROL Failed to read file from storage.]&quot;
+* Webhooks sind auf **100 Anfragen pro Sekunde beschränkt**. Wenn dieses Limit erreicht ist, sendet Workfront Fusion den Status 429 ([!UICONTROL Zu viele Anfragen]).
+* [!DNL Workfront Fusion] speichert Webhook-Payloads 30 Tage lang. Der Zugriff auf eine Webhook-Payload mehr als 30 Tage nach dem Empfang führt zu dem Fehler &quot;[!UICONTROL Fehler beim Lesen der Datei aus dem Speicher.]&quot;
 * Webhooks werden automatisch deaktiviert, wenn einer der folgenden Punkte zutrifft:
 
    * Der Webhook wurde seit mehr als 5 Tagen mit keinem Szenario verbunden
@@ -76,3 +76,17 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 ## Weitere Zustellversuche
 
 * Wenn bei Verwendung des Break-Moduls und Angabe der Wiederholungsanweisung ein Szenario innerhalb eines Zeitrahmens von 2 Minuten 10-mal nacheinander fehlschlägt, wird das Szenario automatisch deaktiviert.
+
+## Rekursion
+
+Rekursionen treten auf, wenn in einem Szenario eine neue Ausführung von sich selbst in Trigger gesetzt wird, wodurch eine neue Ausführung in einer Endlosschleife Trigger wird usw.
+
+Beispielsweise wird ein Szenario ausgelöst, wenn eine Aufgabe erstellt wird, und dieses Szenario erstellt eine Aufgabe. Bei der neu erstellten Aufgabe wird das Szenario erneut Trigger, wodurch eine andere Aufgabe erstellt wird. Bei jeder Erstellung einer Aufgabe wird das Szenario ausgelöst und bei jeder Ausführung des Szenarios wird eine Aufgabe erstellt.
+
+Rekursionen können Leistungsprobleme sowohl für die Organisation, der das rekursive Szenario gehört, als auch für andere Organisationen verursachen.
+
+Beachten Sie Folgendes bezüglich der Rekursion:
+
+* **Wenn ein Szenario eine Rekursion verursacht, wird es vom Fusion Engineering-Team deaktiviert, um weitere Leistungsprobleme zu vermeiden.**
+* Da die Rekursion ein Ergebnis des Szenario-Designs ist, müssen Sie Ihre Szenarien so entwerfen, dass das Szenario keine das Szenario Trigger Aktionen enthält.
+
