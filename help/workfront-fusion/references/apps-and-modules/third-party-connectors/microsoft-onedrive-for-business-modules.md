@@ -4,9 +4,9 @@ description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows a
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -68,7 +68,7 @@ Um [!DNL Microsoft OneDrive for Business] mit [!DNL Adobe Workfront Fusion] verw
 
 ## Verbinden des [!DNL Microsoft OneDrive for Business]-Services mit [!DNL Workfront Fusion]
 
-Anweisungen zum Verbinden Ihres [!DNL Microsoft OneDrive for Business]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung zu [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Anweisungen zum Verbinden Ihres [!DNL Microsoft OneDrive for Business]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung mit [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -89,10 +89,10 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Auslöser
 
-* [[!UICONTROL Watch files]](#watch-files)
-* [[!UICONTROL Watch folders]](#watch-folders)
+* [[!UICONTROL Dateien ansehen]](#watch-files)
+* [[!UICONTROL Ordner ansehen]](#watch-folders)
 
-#### [!UICONTROL Watch files]
+#### [!UICONTROL Dateien ansehen]
 
 Dieses Dateimodul wird aktiviert, wenn eine neue Trigger-Datei in einem überwachten Ordner hinzugefügt oder aktualisiert wird.
 
@@ -101,29 +101,29 @@ Dieses Dateimodul wird aktiviert, wenn eine neue Trigger-Datei in einem überwac
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Drive ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Laufwerk-ID]</p> </td> 
    <td> <p>Wählen Sie das Laufwerk aus, das Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td> <p> Wählen Sie den Ordner aus, den Sie beobachten möchten. In einem Szenario können Sie nur einen Ordner überwachen.</p> <p>Tipp: Um mehrere Ordner anzusehen, erstellen Sie für jeden Ordner ein unabhängiges Szenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL I want to watch]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL, die ich beobachten möchte]</p> </td> 
    <td> <p>Wählen Sie aus, ob nur neue Dateien und alle Änderungen oder nur neue Dateien angezeigt werden sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned rows]</td> 
+   <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Zeilen]</td> 
    <td> <p> Legen Sie die maximale Anzahl von Ergebnissen fest, die das Modul während eines Zyklus zurückgeben soll.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch folders]
+#### [!UICONTROL Ordner ansehen]
 
 Dieses Ordnermodul wird aktiviert, wenn dem überwachten Trigger ein neuer Ordner hinzugefügt wird.
 
@@ -132,23 +132,23 @@ Dieses Ordnermodul wird aktiviert, wenn dem überwachten Trigger ein neuer Ordne
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Drive ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Laufwerk-ID]</p> </td> 
    <td> <p>Wählen Sie das Laufwerk aus, das Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td> <p> Wählen Sie den Ordner aus, den Sie beobachten möchten. In einem Szenario können Sie nur einen Ordner überwachen.</p> <p>Tipp: Um mehrere Ordner zu verfolgen, erstellen Sie für jeden Ordner ein unabhängiges Szenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL I want to watch]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL, die ich beobachten möchte]</p> </td> 
    <td> <p>Wählen Sie aus, ob nur neue Ordner und alle Änderungen oder nur neue Ordner angezeigt werden sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum number of returned rows]</td> 
+   <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Zeilen]</td> 
    <td> <p> Legen Sie die maximale Anzahl von Ergebnissen fest, die das Modul während eines Zyklus zurückgeben soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -156,14 +156,14 @@ Dieses Ordnermodul wird aktiviert, wenn dem überwachten Trigger ein neuer Ordne
 
 ### Aktionen
 
-* [[!UICONTROL Create a folder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Delete a folder]](#delete-a-folder)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Get a sharing link]](#get-a-sharing-link)
-* [[!UICONTROL Upload a file]](#upload-a-file)
+* [[!UICONTROL Erstellen eines Ordners]](#create-a-folder)
+* [[!UICONTROL Datei löschen]](#delete-a-file)
+* [[!UICONTROL Löschen eines Ordners]](#delete-a-folder)
+* [[!UICONTROL Datei abrufen]](#get-a-file)
+* [[!UICONTROL Erhalten Sie einen Freigabe-Link]](#get-a-sharing-link)
+* [[!UICONTROL Datei hochladen]](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Erstellen eines Ordners]
 
 Erstellt einen Ordner im angegebenen übergeordneten Ordner.
 
@@ -173,25 +173,25 @@ Erstellt einen Ordner im angegebenen übergeordneten Ordner.
  <col> 
  <tbody> 
   <tr> 
-   <td><strong>[!UICONTROL Connection]</strong> </td> 
+   <td><strong>[!UICONTROL-Verbindung]</strong> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL Drive ID]</strong> </td> 
+   <td><strong>[!UICONTROL Laufwerk-ID]</strong> </td> 
    <td> <p>Wählen Sie das Laufwerk aus, auf dem Sie einen neuen Ordner erstellen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL Folder]</strong> </td> 
+   <td><strong>[!UICONTROL-Ordner]</strong> </td> 
    <td> <p>Wählen Sie den Ordner aus, in dem Sie einen neuen Ordner erstellen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL Folder name]</strong> </td> 
+   <td><strong>[!UICONTROL Ordnername]</strong> </td> 
    <td>Geben Sie einen Namen für den neuen Ordner ein oder ordnen Sie ihn zu.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Datei löschen]
 
 Dieses Aktionsmodul verschiebt die angegebene Datei in den Papierkorb.
 
@@ -201,21 +201,21 @@ Dieses Aktionsmodul verschiebt die angegebene Datei in den Papierkorb.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL Laufwerk-ID]</td> 
    <td> <p>Wählen Sie das Laufwerk aus, von dem Sie eine Datei löschen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL Datei-ID]</td> 
    <td> <p>Geben Sie die ID der Datei ein, die Sie löschen möchten. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL Löschen eines Ordners]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -223,21 +223,21 @@ Dieses Aktionsmodul verschiebt die angegebene Datei in den Papierkorb.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL Laufwerk-ID]</td> 
    <td> <p>Wählen Sie das Laufwerk aus, von dem Sie eine Datei löschen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder ID]</td> 
+   <td>[!UICONTROL Ordner-ID]</td> 
    <td> <p>Geben Sie die ID des Ordners ein, den Sie löschen möchten, oder ordnen Sie sie zu. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Datei abrufen]
 
 Dieses Aktionsmodul ruft die Datei mit der angegebenen ID ab.
 
@@ -247,21 +247,21 @@ Dieses Aktionsmodul ruft die Datei mit der angegebenen ID ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL Laufwerk-ID]</td> 
    <td> <p>Wählen Sie das Laufwerk aus, von dem Sie eine Datei abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL Datei-ID]</td> 
    <td> <p>Geben Sie die ID der Datei ein, die Sie abrufen möchten. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a sharing link]
+#### [!UICONTROL Erhalten Sie einen Freigabe-Link]
 
 Dieses Modul ruft einen Link ab, den Sie freigeben können, um Zugriff auf die angegebene Datei zu gewähren.
 
@@ -271,29 +271,29 @@ Dieses Modul ruft einen Link ab, den Sie freigeben können, um Zugriff auf die a
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL Laufwerk-ID]</td> 
    <td> <p>Wählen Sie das Laufwerk aus, auf das Sie eine Datei hochladen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Enter]</td> 
+   <td>[!UICONTROL EINGABETASTE]</td> 
    <td> <p>Wählen Sie aus, ob Sie eine Datei anhand der Datei-ID oder des Dateipfads auswählen möchten. Geben Sie die Datei-ID oder den Pfad in das Feld ein, das angezeigt wird.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permission type]</p> </td> 
+   <td> <p>[!UICONTROL Berechtigungstyp]</p> </td> 
    <td> <p>Wählen Sie aus, ob Personen, die den Link erhalten, Lese-/Schreibberechtigungen oder Leseberechtigungen erhalten sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Scope]</td> 
+   <td>[!UICONTROL-Umfang]</td> 
    <td> <p> Wählen Sie aus, ob die Datei für alle Personen zugänglich sein soll, die über den Link verfügen, oder nur für Mitglieder Ihres Unternehmens.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Datei hochladen]
 
 Dieses Aktionsmodul lädt eine Binär- oder Textdatei in einen angegebenen Ordner hoch
 
@@ -303,28 +303,28 @@ Dieses Aktionsmodul lädt eine Binär- oder Textdatei in einen angegebenen Ordne
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Drive ID]</td> 
+   <td>[!UICONTROL Laufwerk-ID]</td> 
    <td> <p>Wählen Sie das Laufwerk aus, auf das Sie eine Datei hochladen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den Ordner im Laufwerk aus.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>[!UICONTROL Source-Datei]</p> </td> 
    <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL If the file with the same name exists]</td> 
+   <td>[!UICONTROL Wenn die gleichnamige Datei existiert]</td> 
    <td> <p> Wählen Sie aus, was Sie tun möchten, wenn bereits eine Datei mit demselben Namen wie die Datei vorhanden ist, die Sie hochladen möchten.</p> 
     <ul> 
-     <li>[!UICONTROL Replace the existing file]</li> 
-     <li>[!UICONTROL Rename the new file]</li> 
-     <li>[!UICONTROL End with an error]</li> 
+     <li>[!UICONTROL Vorhandene Datei ersetzen]</li> 
+     <li>[!UICONTROL Neue Datei umbenennen]</li> 
+     <li>[!UICONTROL Mit Fehler beenden]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 

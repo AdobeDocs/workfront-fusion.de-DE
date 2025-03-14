@@ -5,9 +5,9 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -92,7 +92,7 @@ Der Workday-Connector verwendet Folgendes:
 
 ## [!DNL Workday] mit [!DNL Workfront Fusion] verbinden
 
-1. Klicken Sie in einem [!DNL Workfront Fusion] auf [!UICONTROL Add] neben dem Feld [!UICONTROL Connection] .
+1. Klicken Sie in einem [!DNL Workfront Fusion] Modul [!UICONTROL Hinzufügen] neben dem Feld [!UICONTROL Verbindung]
 
 2. Füllen Sie die folgenden Felder aus:
 
@@ -102,12 +102,12 @@ Der Workday-Connector verwendet Folgendes:
         <tbody>
             <tr>
                 <td role="rowheader">
-                    <p role="rowheader">[!UICONTROL Connection name]</p>
+                    <p role="rowheader">[!UICONTROL Verbindungsname]</p>
                 </td>
                 <td>Einen Namen für die Verbindung eingeben</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Workday host]</td>
+                <td  role="rowheader">[!UICONTROL Workday-Host]</td>
                 <td>Geben Sie die Adresse Ihres [!DNL Workday]-Hosts ohne <code>https://</code> ein. Beispiel: <code>mycompany.workday.com</code>.</td>
             </tr>
             <tr>
@@ -115,26 +115,26 @@ Der Workday-Connector verwendet Folgendes:
                 <td>Geben Sie die Adresse Ihrer [!DNL Workday] Webservices ohne <code>https://</code> ein. Beispiel: <code>mycompany-services.workday.com</code>.</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Tenant name]</td>
+                <td  role="rowheader">[!UICONTROL Mandantenname]</td>
                 <td>Geben Sie den Mandanten für dieses [!DNL Workday] ein. Ihr Mandant ist die Kennung Ihres Unternehmens und ist in der URL zu sehen, mit der Sie sich bei Workday anmelden. Beispiel: Im <code>https://www.myworkday.com/mycompany</code> Adresse wird der Mandant <code>mycompany</code>.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Client ID]</td>
+                <td role="rowheader">[!UICONTROL Client-ID]</td>
                 <td>Geben Sie die Client-ID für die [!DNL Workday] ein, die diese Verbindung verwendet. Dies erhalten Sie, wenn Sie das Programm in [!DNL Workday] erstellen.</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Client Secret]</td>
+                <td  role="rowheader">[!UICONTROL Client-Geheimnis]</td>
                 <td>Geben Sie das Client-Geheimnis für die [!DNL Workday]-Anwendung ein, die diese Verbindung verwendet. Dies erhalten Sie, wenn Sie das Programm in [!DNL Workday] erstellen.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Session timeout (min)]</td>
+                <td role="rowheader">[!UICONTROL Sitzungs-Timeout (Min.)]</td>
                 <td >Geben Sie die Anzahl der Minuten ein, nach denen Ihr Autorisierungs-Token abläuft.</td>
             </tr>
         </tbody>
     </table>
 
 
-3. Klicken Sie auf [!UICONTROL Continue] , um die Verbindung zu speichern und zum Modul zurückzukehren
+3. Klicken Sie [!UICONTROL Fortfahren], um die Verbindung zu speichern und zum Modul zurückzukehren
 
 ## [!DNL Workday] Module und ihre Felder
 
@@ -151,16 +151,16 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Aktion
 
-* [[!UICONTROL Create a record]](#create-a-record)
+* [[!UICONTROL Datensatz erstellen]](#create-a-record)
 
-* [[!UICONTROL Delete a record]](#delete-a-record)
+* [[!UICONTROL Löschen eines Datensatzes]](#delete-a-record)
 
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
+* [[!UICONTROL Erstellen eines benutzerdefinierten API-Aufrufs]](#make-a-custom-api-call)
 
-* [[!UICONTROL Update a record]](#update-a-record)
+* [[!UICONTROL Aktualisieren eines Datensatzes]](#update-a-record)
 
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL Datensatz erstellen]
 
 Dieses Aktionsmodul erstellt einen einzelnen Datensatz in [!DNL Workday].
 
@@ -169,11 +169,11 @@ Dieses Aktionsmodul erstellt einen einzelnen Datensatz in [!DNL Workday].
     <col/>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL Connection]</td>
+            <td role="rowheader">[!UICONTROL-Verbindung]</td>
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td  role="rowheader">[!UICONTROL Datensatztyp]</td>
             <td>Wählen Sie den Typ des Datensatzes aus, den Sie erstellen möchten.</td>
         </tr>
         <tr>
@@ -181,13 +181,13 @@ Dieses Aktionsmodul erstellt einen einzelnen Datensatz in [!DNL Workday].
             <td>Geben Sie die ID des Datensatzes ein, den Sie erstellen möchten, oder ordnen Sie sie zu.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td role="rowheader">[!UICONTROL Unterressourcen-ID]</td>
             <td >Geben Sie die ID der Unterressource ein, die Sie erstellen möchten, oder mappen Sie sie.</td>
         </tr>
     </tbody>
 </table>
 
-#### [!UICONTROL Delete a record]
+#### [!UICONTROL Löschen eines Datensatzes]
 
 Dieses Aktionsmodul löscht einen einzelnen Datensatz in [!DNL Workday].
 
@@ -198,19 +198,19 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatz in [!DNL Workday].
     </col>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL Connection]</td>
+            <td role="rowheader">[!UICONTROL-Verbindung]</td>
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record type]</td>
+            <td  role="rowheader">[!UICONTROL Datensatztyp]</td>
             <td>Wählen Sie den Typ des Datensatzes aus, den Sie löschen möchten.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Specific record type]</td>
+            <td role="rowheader">[!UICONTROL Spezifischer Datensatztyp]</td>
             <td>Wählen Sie den spezifischen Typ des Datensatzes aus, den Sie löschen möchten. Diese basieren auf dem von Ihnen ausgewählten Datensatztyp.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td  role="rowheader">[!UICONTROL Unterressourcen-ID]</td>
             <td>Geben Sie die ID der Teilressource ein, die Sie löschen möchten, oder mappen Sie sie.</td>
         </tr>
         <tr>
@@ -221,7 +221,7 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatz in [!DNL Workday].
 </table>
 
 
-### [!UICONTROL Make a custom API call]
+### [!UICONTROL Erstellen eines benutzerdefinierten API-Aufrufs]
 
 Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Workday]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, die von den anderen [!DNL Workday] nicht durchgeführt werden kann.
 
@@ -242,19 +242,19 @@ Das Modul gibt den Status-Code zusammen mit den Kopfzeilen und dem Hauptteil des
    <td>Geben Sie einen Pfad relativ zu <code style="color: #ff1493;">https://&lt;tenantHostname>/api/&lt;serviceName>/&lt;version>/&lt;tenant></code> ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] Fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL body]</td> 
    <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -263,7 +263,7 @@ Das Modul gibt den Status-Code zusammen mit den Kopfzeilen und dem Hauptteil des
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### [!UICONTROL Aktualisieren eines Datensatzes]
 
 Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Workday].
 
@@ -272,11 +272,11 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Workday].
     <col/>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] zu Workfront Fusion]</a></td>
+            <td role="rowheader">[!UICONTROL-Verbindung]</td>
+            <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td  role="rowheader">[!UICONTROL Datensatztyp]</td>
             <td>Wählen Sie den Typ des Datensatzes aus, den Sie aktualisieren möchten.</td>
         </tr>
         <tr>
@@ -284,7 +284,7 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Workday].
             <td>Geben Sie die ID des Datensatzes ein, den Sie aktualisieren möchten, oder mappen Sie sie.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Subresource ID]</td>
+            <td role="rowheader">[!UICONTROL Unterressourcen-ID]</td>
             <td >Geben Sie die ID der Unterressource ein, die Sie aktualisieren möchten, oder mappen Sie sie.</td>
         </tr>
     </tbody>
@@ -292,12 +292,12 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Workday].
 
 ### Suchen
 
-* [[!UICONTROL Read a record]](#read-a-record)
+* [[!UICONTROL Datensatz lesen]](#read-a-record)
 
-* [[!UICONTROL List records]](#list-records)
+* [[!UICONTROL Einträge auflisten]](#list-records)
 
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL Datensatz lesen]
 
 Dieses Aktionsmodul liest einen einzelnen Datensatz.
 
@@ -308,15 +308,15 @@ Dieses Aktionsmodul liest einen einzelnen Datensatz.
     </col>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] zu Workfront Fusion]</a></td>
+            <td role="rowheader">[!UICONTROL-Verbindung]</td>
+            <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Record type]</td>
+            <td  role="rowheader">[!UICONTROL Datensatztyp]</td>
             <td>Wählen Sie den Typ des Datensatzes aus, den Sie löschen möchten.</td>
         </tr>
         <tr>
-            <td role="rowheader">[!UICONTROL Specific record type]</td>
+            <td role="rowheader">[!UICONTROL Spezifischer Datensatztyp]</td>
             <td>Wählen Sie den Datensatztyp aus, den Sie lesen möchten. Diese basieren auf dem von Ihnen ausgewählten Datensatztyp.</td>
         </tr>
         <tr>
@@ -326,7 +326,7 @@ Dieses Aktionsmodul liest einen einzelnen Datensatz.
     </tbody>
 </table>
 
-#### [!UICONTROL List records]
+#### [!UICONTROL Einträge auflisten]
 
 Dieses Suchmodul ruft eine Liste von Datensätzen des angegebenen Typs ab.
 
@@ -335,11 +335,11 @@ Dieses Suchmodul ruft eine Liste von Datensätzen des angegebenen Typs ab.
       <col/>
       <tbody>
           <tr>
-              <td role="rowheader">[!UICONTROL Connection]</td>
+              <td role="rowheader">[!UICONTROL-Verbindung]</td>
               <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit [!DNL Workfront Fusion]</a></td>
           </tr>
           <tr>
-              <td  role="rowheader">[!UICONTROL Record Type]</td>
+              <td  role="rowheader">[!UICONTROL Datensatztyp]</td>
               <td>Wählen Sie den Typ des Datensatzes aus, den Sie abrufen möchten.</td>
           </tr>
           <tr>

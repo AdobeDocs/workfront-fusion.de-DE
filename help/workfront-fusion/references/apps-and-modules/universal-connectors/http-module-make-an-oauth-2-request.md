@@ -4,7 +4,7 @@ description: Um eine HTTP [!DNL Adobe Workfront Fusion] S-Anfrage an Server zu s
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2256'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 

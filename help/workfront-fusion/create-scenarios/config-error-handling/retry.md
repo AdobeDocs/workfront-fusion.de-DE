@@ -4,9 +4,9 @@ description: Manchmal ist es nützlich, ein fehlerhaftes Modul erneut auszuführ
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -60,7 +60,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 +++
 
-## Problemumgehungen für die [!UICONTROL Retry] Fehlerbehandlungsrichtlinie
+## Problemumgehungen für die [!UICONTROL Wiederholen]-Fehlerbehandlungsanweisung
 
 Workfront Fusion bietet derzeit nicht die `retry` Fehlerbehandlungsanweisung. Verwenden Sie eine der folgenden Problemumgehungen, um die Funktionalität für weitere Zustellversuche zu imitieren.
 
@@ -80,9 +80,9 @@ Anweisungen zum Beheben unvollständiger Ausführungen finden Sie unter [Anzeige
 #### Nachteile
 
 * Das Mindestintervall für weitere Zustellversuche beträgt eine Minute.
-* Wenn das Modul mehrere Bundles verarbeitet und die Verarbeitung eines Bundles fehlschlägt, wird die partielle Ausführung (nur das Bundle, das den Fehler verursacht hat) in den Ordner „Unvollständige Ausführungen“ verschoben und für weitere Zustellversuche gemäß den Einstellungen der [!UICONTROL Break]-Anweisung geplant. Die aktuelle Ausführung wird jedoch fortgesetzt und das Modul verarbeitet weiterhin die nachfolgenden Bundles.
+* Wenn das Modul mehrere Bundles verarbeitet und die Verarbeitung eines Bundles fehlschlägt, wird die partielle Ausführung (nur das Bundle, das den Fehler verursacht hat) in den Ordner „Unvollständige Ausführungen“ verschoben und für weitere Zustellversuche gemäß den Einstellungen der [!UICONTROL break]-Anweisung geplant. Die aktuelle Ausführung wird jedoch fortgesetzt und das Modul verarbeitet weiterhin die nachfolgenden Bundles.
 
-  Um zu verhindern, dass das Szenario erneut ausgeführt wird, bis die im Ordner „Unvollständige Ausführungen“ gespeicherte Ausführung erfolgreich aufgelöst wurde, aktivieren Sie die Option &quot;[!UICONTROL Sequential processing]&quot; im [!UICONTROL Scenario settings].
+  Um zu verhindern, dass das Szenario erneut ausgeführt wird, bis die im Ordner „Unvollständige Ausführungen“ gespeicherte Ausführung erfolgreich aufgelöst wurde, aktivieren Sie die Option &quot;[!UICONTROL Sequenzielle Verarbeitung]&quot; in den [!UICONTROL Szenario-Einstellungen].
 
 Weitere Informationen zu unvollständigen Ausführungen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -92,37 +92,37 @@ Die Problemumgehung für das Repeater-Modul ist komplexer, kann aber besser ange
 
 #### Konfigurieren der Fehler-Handler-Route
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie die Problemumgehung hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Klicken Sie auf das **Flusssteuerung**-Symbol ![Flusssteuerung](assets/flow-control-icon.png) und wählen Sie **Repeater** aus.
-1. Legen Sie im Repeater-Modul für das Feld **[!UICONTROL Repeats]** die maximale Anzahl der Wiederholungsversuche für das Szenario fest.
-1. Schließen Sie das potenziell fehlerhafte Modul an das **[!UICONTROL Repeater]** an.
+1. Legen Sie im Repeater-Modul für das **[!UICONTROL Wiederholungen]** die maximale Anzahl der Wiederholungen für das Szenario fest.
+1. Schließen Sie das potenziell fehlerhafte Modul nach dem **[!UICONTROL Repeater]** an.
 1. Hängen Sie eine Fehler-Handler-Route an das Modul mit dem potenziellen Fehler an.
 
    Anweisungen finden Sie unter [Fehlerbehandlung hinzufügen](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md).
-1. Fügen Sie das Modul **[!UICONTROL Tools]>[!UICONTROL Sleep]** zur Fehler-Handler-Route hinzu und legen Sie sein **[!UICONTROL Delay]** auf die Anzahl der Sekunden zwischen den Wiederholungsversuchen fest.
+1. Fügen Sie das Modul **[!UICONTROL Tools] > [!UICONTROL Sleep]** zur Fehler-Handler-Route hinzu und legen Sie **[!UICONTROL Feld Verzögerung]** auf die Anzahl der Sekunden zwischen den Wiederholungsversuchen fest.
 
-1. Fügen Sie die **[!UICONTROL Ignore]** nach dem Modul **[!UICONTROL Tools]>[!UICONTROL Sleep]** hinzu.
+1. Fügen Sie die Direktive **[!UICONTROL Ignore]** nach dem Modul **[!UICONTROL Tools] > [!UICONTROL Sleep]** hinzu.
 1. Fahren Sie [Konfigurieren der Standardroute](#configure-the-default-route) fort.
 
 #### Konfigurieren der Standardroute
 
-1. Fügen Sie das Modul **[!UICONTROL Tools]>[!UICONTROL Set variable]** in einer separaten Route (kein Fehler-Handler) nach dem Modul hinzu, das möglicherweise fehlschlägt, und konfigurieren Sie es so, dass das Ergebnis des Moduls in einer Variablen namens gespeichert wird, z. B. `Result`.
+1. Fügen Sie das Modul **[!UICONTROL Tools] > [!UICONTROL Variable festlegen]** in einer separaten Route (kein Fehler-Handler) nach dem potenziell fehlerhaften Modul hinzu und konfigurieren Sie es so, dass das Ergebnis des Moduls in einer Variablen namens gespeichert wird, z. B. `Result`.
 
-1. Fügen Sie das **[!UICONTROL Array aggregator]** Modul nach dem **[!UICONTROL Tools]>[!UICONTROL Set variable]** hinzu und wählen Sie das **[!DNL Repeater]** Modul in seinem Feld Source-Modul aus.
+1. Fügen Sie das Modul **[!UICONTROL Array]** nach **[!UICONTROL Tools] > [!UICONTROL Variable festlegen]** hinzu und wählen Sie das Modul **[!DNL Repeater]** in seinem Feld Source-Modul aus.
 
-1. Fügen Sie das Modul **[!UICONTROL Tools]>[!UICONTROL Get variable]** nach dem Modul **[!UICONTROL Array aggregator]** hinzu und ordnen Sie ihm den Wert der Variablen `Result` zu.
+1. Fügen Sie das Modul **[!UICONTROL Tools] > [!UICONTROL Variable abrufen]** nach dem Modul **[!UICONTROL Array-Aggregator]** hinzu und ordnen Sie ihm den Wert der `Result`-Variablen zu.
 
-1. Fügen Sie das Modul **[!UICONTROL Tools]>[!UICONTROL Get variable]** zwischen das Modul **[!UICONTROL Repeater]** und das Modul mit dem potenziellen Fehler ein und ordnen Sie ihm den Wert der Variablen `Result` zu.
+1. Fügen Sie das Modul **[!UICONTROL Tools] > [!UICONTROL GET variable]** zwischen dem **[!UICONTROL Repeater]**-Modul und dem möglicherweise fehlerhaften Modul ein und ordnen Sie ihm den Wert der `Result`-Variable zu.
 
-1. Fügen Sie einen Filter zwischen diesem Modul **[!UICONTROL Tools]>[!UICONTROL Get variable]** und dem Modul ein, das möglicherweise fehlschlägt, sodass der Vorgang nur fortgesetzt wird, wenn die Variable `Result` nicht vorhanden ist.
+1. Fügen Sie einen Filter zwischen diesem Modul **[!UICONTROL Tools] > [!UICONTROL Variable abrufen]** und dem Modul ein, das möglicherweise fehlschlägt, und fahren Sie nur fort, wenn die `Result` nicht vorhanden ist.
 
 >[!BEGINSHADEBOX]
 
 **Beispiel:**
 
-In diesem Beispielszenario stellt das Modul [!UICONTROL HTTP] > [!UICONTROL Make a request] das Modul dar, das möglicherweise fehlschlägt:
+In diesem Beispielszenario stellt das Modul [!UICONTROL HTTP] > [!UICONTROL Anfrage stellen] das Modul dar, das möglicherweise fehlschlägt:
 
 ![HTTP-Anfrage stellen](assets/http-make-request.png)
 

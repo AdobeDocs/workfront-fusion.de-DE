@@ -4,7 +4,7 @@ description: Sie können Ihre Team-Verbindungen im Bereich Verbindungen anzeigen
 author: Becky
 feature: Workfront Fusion
 exl-id: b7e4d3ac-ccbe-4ee2-ba73-b37032980696
-source-git-commit: d79f8ac6d678a874e05e606d7b9ff7c812d93db1
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 

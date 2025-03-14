@@ -4,7 +4,7 @@ description: Sie können Adobe Workfront Fusion verwenden, um mithilfe eines ben
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
-source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 

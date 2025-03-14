@@ -4,9 +4,9 @@ description: Sie können Ihrer Fehlerbehandlungsroute erweiterte Techniken zur F
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -87,9 +87,9 @@ Informationen dazu, wie Fusion verschiedene Datentypen auswertet und verarbeitet
 
 Dieses Beispielszenario zeigt, wie diese Filter bei der Fehlerbehandlung funktionieren.
 
-Wenn Sie die Dropbox > Ordnermodul erstellen verwenden und bereits ein Ordner mit demselben Namen vorhanden ist, gibt das Modul einen DataError aus:
+Wenn Sie Dropbox > Ordnermodul erstellen verwenden und bereits ein Ordner mit demselben Namen vorhanden ist, gibt das Modul einen DataError aus:
 
-![Fehler beim Dropbox](assets/dropbox.png)
+![Fehler in Dropbox](assets/dropbox.png)
 
 Das vollständige Szenario funktioniert wie folgt:
 
@@ -101,9 +101,9 @@ Das vollständige Szenario funktioniert wie folgt:
 1. Die Route des Fehler-Handlers (transparente Blasen) enthält einen Router zum Filtern der Fehler
 Die erste Route ist für einen bestimmten Fehlertyp mit der Bezeichnung `DataError`.
 
-   1. Wenn ein `DataError` stattfindet und die Fehlerdetails den Filter durchlaufen, listet der Dropbox > Alle Dateien/Unterordner in einem Ordnermodul alle Ordner in Dropbox auf.
+   1. Wenn ein `DataError` stattfindet und die Fehlerdetails den Filter durchlaufen, listet Dropbox unter Alle Dateien/Unterordner in einem Ordnermodul alle Ordner in Dropbox auf.
    1. Der nachfolgende Filter entspricht den Ordnernamen.
-   1. Die **resume**-Direktive gibt die Ordner-ID und den Ordnerpfad des bestehenden Ordners an, und die Ausführung des Szenarios wird von der Dropbox > Erstellen eines Ordnermoduls fortgesetzt. Anstatt jedoch einen neuen Ordner zu erstellen, verwendet Fusion die Werte aus der Fortsetzungsanweisung, um zum nächsten Modul zu wechseln und die Datei in den vorhandenen Ordner hochzuladen.
+   1. Die **resume**-Direktive gibt die Ordner-ID und den Ordnerpfad des bestehenden Ordners an, und die Ausführung des Szenarios wird über Dropbox > Ordnermodul erstellen fortgesetzt. Anstatt jedoch einen neuen Ordner zu erstellen, verwendet Fusion die Werte aus der Fortsetzungsanweisung, um zum nächsten Modul zu wechseln und die Datei in den vorhandenen Ordner hochzuladen.
 
 1. Die zweite Route ist für alle anderen Fehler und endet mit der Rollback-Direktive, was dazu führt, dass das Szenario sofort gestoppt wird
 
@@ -141,8 +141,8 @@ Eine verschachtelte Fehler-Handler-Route mit Filtern:
 
 In diesem Szenario wird die zweite Fehler-Handler-Route unter der ersten Fehler-Handler-Route verschachtelt.
 
-Wenn beim Dropbox > Ordnermodul erstellen ein Fehler auftritt, wird die Ausführung auf die erste Route verschoben. Wenn der `DataError Takes Place` übergeben wird, wird das nächste Modul ausgeführt, gefolgt vom Fortsetzungsanweisungsmodul, wenn auf der Dropbox kein Fehler auftritt > Alle Dateien/Unterordner in einem Ordnermodul auflisten.
+Wenn beim Modul Dropbox > Ordner erstellen ein Fehler auftritt, wird die Ausführung auf die erste Route verschoben. Wenn der `DataError Takes Place` übergeben wird, wird das nächste Modul ausgeführt, gefolgt vom Fortsetzungsanweisungsmodul, wenn in Dropbox kein Fehler auftritt > Alle Dateien/Unterordner in einem Ordnermodul auflisten.
 
-Wenn jedoch ein Fehler auf der Dropbox > Alle Dateien/Unterordner in einem Ordnermodul auflisten auftritt, wechselt die Ausführung zu Fehler-Handler-Route 2 und endet mit der [!UICONTROL Ignore]-Anweisung. Das [!UICONTROL Resume directive]-Modul wird in diesem Fall nicht ausgeführt.
+Wenn jedoch in Dropbox unter Alle Dateien/Unterordner in einem Ordnermodul auflisten ein Fehler auftritt, wechselt die Ausführung zu Fehler-Handler-Route 2 und endet mit der [!UICONTROL Ignore]-Anweisung. Das [!UICONTROL Resume-Direktive]-Modul wird in diesem Fall nicht ausgeführt.
 
 >[!ENDSHADEBOX]

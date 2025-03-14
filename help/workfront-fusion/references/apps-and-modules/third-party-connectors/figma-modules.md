@@ -4,9 +4,9 @@ description: Mit den  [!DNL Adobe Workfront Fusion] -Figma-Modulen können Sie L
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -93,7 +93,7 @@ Der Figma-Connector verwendet Folgendes:
 
 So erstellen Sie eine Verbindung für Ihre Figma-Module:
 
-1. Klicken Sie in einem beliebigen Figma-Modul **[!UICONTROL Add]** neben dem Feld Verbindung .
+1. Klicken Sie in einem beliebigen Figma-Modul **[!UICONTROL Hinzufügen]** neben dem Feld Verbindung .
 
 1. Füllen Sie die folgenden Felder aus:
 
@@ -104,24 +104,24 @@ So erstellen Sie eine Verbindung für Ihre Figma-Module:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td role="rowheader">[!UICONTROL Verbindungstyp]</td>
         <td>
           <p> Wählen Sie für neue Verbindungen <code>Figma</code> ohne das Legacy-Tag aus. </p><p>Die Figma änderte im Januar 2025 ihre Authentifizierungspflichten. Der <code>Figma</code> Verbindungstyp erfüllt die neuen Anforderungen. Der <code>Figma (Legacy)</code> Verbindungstyp wird in Zukunft entfernt.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
           <p>Geben Sie einen Namen für diese Verbindung ein.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Geben Sie Ihre [!UICONTROL Figme] [!UICONTROL Client ID] ein.</td>
+        <td role="rowheader">[!UICONTROL Client-ID]</td>
+        <td>Geben Sie Ihre [!UICONTROL-Grafik] [!UICONTROL-Client-ID] ein.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Geben Sie Ihre Figma-[!UICONTROL Client Secret] ein.</td>
+        <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
+        <td>Geben Sie Ihr Figma [!UICONTROL Client Secret] ein.</td>
         </tr>
         <tr>
         <td role="rowheader">Benutzerdefinierte Bereiche</td>
@@ -134,7 +134,7 @@ So erstellen Sie eine Verbindung für Ihre Figma-Module:
       </tbody>
     </table>
 
-1. Klicken Sie auf **[!UICONTROL Continue]** , um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 
 
@@ -164,7 +164,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 * [Kommentar posten](#post-a-comment)
 
 
-#### [!UICONTROL Delete a comment]
+#### [!UICONTROL Kommentar löschen]
 
 Dieses Aktionsmodul löscht einen einzelnen Kommentar aus einer Datei.
 
@@ -173,22 +173,22 @@ Dieses Aktionsmodul löscht einen einzelnen Kommentar aus einer Datei.
   <col />
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL File ID]</td>
+      <td role="rowheader">[!UICONTROL Datei-ID]</td>
       <td>Geben Sie die Datei-ID der Datei ein, zu der Sie einen Kommentar hinzufügen möchten, oder mappen Sie sie. </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Comment ID]</td>
+      <td role="rowheader">[!UICONTROL Kommentar-ID]</td>
       <td>Geben Sie den Text des Kommentars ein, den Sie löschen möchten.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List comments]
+#### [!UICONTROL Kommentare auflisten]
 
 Dieses Suchmodul listet alle Kommentare auf, die an eine einzelne Datei in [!DNL Figma] angehängt sind.
 
@@ -197,32 +197,32 @@ Dieses Suchmodul listet alle Kommentare auf, die an eine einzelne Datei in [!DNL
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL File ID]</td>
+      <td role="rowheader">[!UICONTROL Datei-ID]</td>
       <td>
         <p>Geben Sie die Datei-ID der Datei ein, für die Sie Kommentare abrufen möchten, oder mappen Sie sie. </p>
         <ul>
           <li>
-            <p>Wenn Sie die ID nicht kennen, klicken Sie auf <b>[!UICONTROL Find Files]</b> und geben Sie die ID des Projekts, mit dem die Datei verknüpft ist, ein oder ordnen Sie sie zu. Wählen Sie dann die Datei aus.</p>
+            <p>Wenn Sie die ID nicht kennen, klicken Sie auf <b>[!UICONTROL Dateien suchen]</b> und geben Sie die ID des Projekts, mit dem die Datei verknüpft ist, ein oder mappen Sie sie. Wählen Sie dann die Datei aus.</p>
           </li>
           <li>
-            <p>Wenn Sie die Projekt-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Find Projects]</b> und geben Sie die ID des Teams ein, dem das Projekt gehört, dem die Datei zugeordnet ist, oder ordnen Sie sie zu. Wählen Sie dann das Projekt aus und wählen Sie die Datei aus.</p>
+            <p>Wenn Sie die Projekt-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Projekte suchen]</b> und geben Sie die ID des Teams ein, dem das Projekt gehört, dem die Datei zugeordnet ist, oder mappen Sie sie. Wählen Sie dann das Projekt aus und wählen Sie die Datei aus.</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned comments]</td>
+      <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Kommentare]</td>
       <td>Geben Sie die maximale Anzahl von Kommentaren ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td>
     </tr>
   </tbody>
 </table>
 
 
-#### [!UICONTROL Post a comment]
+#### [!UICONTROL Kommentar posten]
 
 Dieses Aktionsmodul postet einen Kommentar in eine Figma-Datei.
 
@@ -231,25 +231,25 @@ Dieses Aktionsmodul postet einen Kommentar in eine Figma-Datei.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
-      <td  role="rowheader">[!UICONTROL File ID]</td>
+      <td  role="rowheader">[!UICONTROL Datei-ID]</td>
       <td>
         <p>Geben Sie die Datei-ID der Datei ein, an die Sie einen Kommentar senden möchten, oder mappen Sie sie. </p>
         <ul>
           <li>
-            <p>Wenn Sie die Datei-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Find Files]</b> und geben Sie die ID des Projekts, mit dem die Datei verknüpft ist, ein oder ordnen Sie sie zu. Wählen Sie dann die Datei aus.</p>
+            <p>Wenn Sie die Datei-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Dateien suchen]</b> und geben Sie die ID des Projekts, mit dem die Datei verknüpft ist, ein oder mappen Sie sie. Wählen Sie dann die Datei aus.</p>
           </li>
           <li>
-            <p>Wenn Sie versuchen, die Datei-ID zu finden und die Projekt-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Find Projects]</b> und geben Sie die ID des Teams ein, dem das Projekt gehört, dem die Datei zugeordnet ist, oder mappen Sie sie. Wählen Sie das Projekt und dann die Datei aus.</p>
+            <p>Wenn Sie versuchen, die Datei-ID zu finden und die Projekt-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Projekte suchen]</b> und geben Sie die ID des Teams ein, dem das Projekt gehört, dem die Datei zugeordnet ist, oder ordnen Sie sie zu. Wählen Sie das Projekt und dann die Datei aus.</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Comment]</td>
+      <td role="rowheader">[!UICONTROL-Kommentar]</td>
       <td>Geben Sie den Text des Kommentars ein.</td>
     </tr>
   </tbody>
@@ -267,7 +267,7 @@ Dieses Aktionsmodul postet einen Kommentar in eine Figma-Datei.
 * [Auflisten von Projekten](#list-projects)
 
 
-#### [!UICONTROL Get a file or image]
+#### [!UICONTROL Datei oder Bild abrufen]
 
 Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer Figmabibliothek ab
 
@@ -276,37 +276,37 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Object type]</td>
+      <td role="rowheader">[!UICONTROL Objekttyp]</td>
       <td>
         <p>Wählen Sie den Typ des Objekts aus, das Sie abrufen möchten.</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL File]</b>
+            <p><b>[!UICONTROL-Datei]</b>
             </p>
-            <p>Das -Modul gibt das Dokument zurück, auf das von [!UICONTROL Key] als JSON-Objekt verwiesen wird. Der Dateischlüssel kann aus einer beliebigen Figmadatei-URL geparst werden.</p>
-            <p>Felder finden Sie unter <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Get a file or image: File]</a>.</p>
+            <p>Das Modul gibt das Dokument zurück, auf das [!UICONTROL Key] als JSON-Objekt verweist. Der Dateischlüssel kann aus einer beliebigen Figmadatei-URL geparst werden.</p>
+            <p>Felder finden Sie unter <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Datei oder Bild abrufen: Datei]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL File nodes]</b>
+            <p><b>[!UICONTROL-Dateiknoten]</b>
             </p>
-            <p>Gibt die Knoten zurück, auf die von IDs als JSON-Objekt verwiesen wird. Die Knoten werden aus der [!DNL Figma] abgerufen, auf die von [!UICONTROL Key] verwiesen wird.</p>
-            <p>Felder finden Sie unter <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Get a file or image: File nodes]</a>.</p>
+            <p>Gibt die Knoten zurück, auf die von IDs als JSON-Objekt verwiesen wird. Die Knoten werden aus der [!DNL Figma]-Datei abgerufen, auf die der [!UICONTROL-Schlüssel] verweist.</p>
+            <p>Felder finden Sie unter <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Datei oder Bild abrufen: Dateiknoten]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Image]</b>
+            <p><b>[!UICONTROL image]</b>
             </p>
             <p>Das Modul rendert Bilder aus einer -Datei.</p>
-            <p>Felder finden Sie unter <a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Get a file or image: Image]</a>.</p>
+            <p>Felder finden Sie unter <a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Datei oder Bild abrufen: Bild]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL Image fills]</b>
+            <p><b>[!UICONTROL Bildfüllungen]</b>
             </p>
             <p>Das Modul gibt Download-Links für alle Bilder zurück, die in Bildausfüllungen in einem Dokument vorhanden sind. Bildfüllungen sind die Darstellungen [!DNL Figma] vom Benutzer bereitgestellten Bilder. Wenn Sie ein Bild in [!DNL Figma] ziehen, erstellt [!DNL Figma] ein Rechteck mit einer einzigen Füllung, die das Bild darstellt, und die Benutzenden können das Rechteck (und die Eigenschaften der Füllung) transformieren.</p>
-            <p>Felder finden Sie unter <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Get a file or image: Image fills]</a>.</p>
+            <p>Felder finden Sie unter <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Datei oder Bild abrufen: Bilddateien]</a>.</p>
           </li>
         </ul>
       </td>
@@ -322,22 +322,22 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Version ID]</td>
+      <td role="rowheader">[!UICONTROL Versions-ID]</td>
       <td>Geben Sie die Version der Datei ein, die das Modul zurückgeben soll, oder ordnen Sie sie zu. Lassen Sie dieses Feld für das aktuelle Modul leer.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Node IDs]</td>
+      <td role="rowheader">[!UICONTROL Knoten-IDs]</td>
       <td>
         <p>Um nur eine Teilmenge des Dokuments zurückzugeben, geben Sie die Knoten ein, die das Modul zurückgeben soll. Das -Modul gibt die aufgelisteten Knoten, ihre untergeordneten Elemente und alles zurück, was sich zwischen dem Stammknoten und den aufgelisteten Knoten befindet.</p>
-        <p>Klicken Sie für jeden Knoten, den Sie zurückgeben möchten, auf <b>[!UICONTROL Add]</b> und geben Sie den Text des Knotens ein.</p>
+        <p>Klicken Sie für jeden Knoten, den Sie zurückgeben möchten, auf <b>[!UICONTROL Hinzufügen]</b> und geben Sie den Text des Knotens ein.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Depth]</td>
+      <td role="rowheader">[!UICONTROL-Tiefe]</td>
       <td>
         <p>Geben Sie eine Ganzzahl ein, die darstellt, wie tief in der Dokumentstruktur Sie Ergebnisse zurückgeben möchten, oder ordnen Sie sie zu. </p>
         <div class="example"><span class="autonumber"><span><b>Beispiel: </b></span></span>
@@ -358,11 +358,11 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       <td>Um Vektordaten zurückzugeben, geben Sie <code>paths</code> ein.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Plugin data]</td>
+      <td role="rowheader">[!UICONTROL Plugin-Daten]</td>
       <td>Eine kommagetrennte Liste von Plug-in-IDs und/oder die Zeichenfolge "[!UICONTROL shared]". Alle Daten, die im Dokument vorhanden sind, das von diesen Plug-ins geschrieben wurde, werden in das Ergebnis in den <code>pluginData</code>- und <code>sharedPluginData</code>-Eigenschaften aufgenommen.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Branch data]</td>
+      <td role="rowheader">[!UICONTROL Verzweigungsdaten]</td>
       <td>Aktivieren Sie diese Option, um Metadaten der Verzweigung für die angeforderte Datei zurückzugeben. Wenn es sich bei der Datei um eine Verzweigung handelt, wird der Schlüssel der Hauptdatei in die zurückgegebene Antwort aufgenommen. Wenn die Datei Verzweigungen hat, werden deren Metadaten in die zurückgegebene Antwort aufgenommen. Standard: <code>false</code>.</td>
     </tr>
   </tbody>
@@ -375,22 +375,22 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Node IDs]</td>
+      <td role="rowheader">[!UICONTROL Knoten-IDs]</td>
       <td>
         <p>Geben Sie die Knoten ein, die das Modul zurückgeben und konvertieren soll</p>
-        <p>Klicken Sie für jeden Knoten, den Sie zurückgeben möchten, auf <b>[!UICONTROL Add]</b> und geben Sie den Text des Knotens ein.</p>
+        <p>Klicken Sie für jeden Knoten, den Sie zurückgeben möchten, auf <b>[!UICONTROL Hinzufügen]</b> und geben Sie den Text des Knotens ein.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Version ID]</td>
+      <td role="rowheader">[!UICONTROL Versions-ID]</td>
       <td>Geben Sie die Version der Datei ein, die das Modul zurückgeben soll, oder ordnen Sie sie zu. Lassen Sie dieses Feld für das aktuelle Modul leer.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Depth]</td>
+      <td role="rowheader">[!UICONTROL-Tiefe]</td>
       <td>
         <p>Geben Sie eine Ganzzahl ein, die darstellt, wie tief in der Dokumentstruktur Sie Ergebnisse zurückgeben möchten, oder ordnen Sie sie zu. </p>
         <div class="example"><span class="autonumber"><span><b>Beispiel: </b></span></span>
@@ -411,7 +411,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       <td>Um Vektordaten zurückzugeben, geben Sie <code>paths</code> ein.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Plugin data]</td>
+      <td role="rowheader">[!UICONTROL Plugin-Daten]</td>
       <td>Eine kommagetrennte Liste von Plug-in-IDs und/oder die Zeichenfolge „shared“. Alle Daten, die im Dokument vorhanden sind, das von diesen Plug-ins geschrieben wurde, werden in das Ergebnis in den Eigenschaften pluginData und sharedPluginData aufgenommen.</td>
     </tr>
   </tbody>
@@ -425,14 +425,14 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Node IDs]</td>
+      <td role="rowheader">[!UICONTROL Knoten-IDs]</td>
       <td>
         <p>Geben Sie die Knoten ein, die das Modul rendern soll.</p>
-        <p>Klicken Sie für jeden Knoten, den Sie rendern möchten, auf <b>[!UICONTROL Add]</b> und geben Sie den Text des Knotens ein.</p>
+        <p>Klicken Sie für jeden Knoten, den Sie rendern möchten, auf <b>[!UICONTROL Hinzufügen]</b> und geben Sie den Text des Knotens ein.</p>
       </td>
     </tr>
     <tr>
@@ -440,7 +440,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       <td>Um das Bild zu skalieren, geben Sie den Skalierungsfaktor ein oder mappen Sie ihn. Diese Zahl muss zwischen 0,01 und 4 liegen.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Format]</td>
+      <td role="rowheader">[!UICONTROL-Format]</td>
       <td>
         <p>Wählen Sie das Format für die Bildausgabe aus.</p>
         <ul>
@@ -464,11 +464,11 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       <td>Aktivieren Sie diese Option, um ID-Attribute für alle SVG-Elemente einzuschließen. Standard: [!UICONTROL false].</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SVG - Simplify Stroke]</td>
+      <td role="rowheader">[!UICONTROL SVG - Strich vereinfachen]</td>
       <td>Aktivieren Sie diese Option, um innere/äußere Konturen zu vereinfachen und wenn möglich das Konturattribut anstelle von &lt;Maske&gt; zu verwenden. Standard: [!UICONTROL true].</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Use absolute bounds]</td>
+      <td role="rowheader">[!UICONTROL Absolute Grenzen verwenden]</td>
       <td>Aktivieren Sie diese Option, um die vollständigen Abmessungen des Knotens zu verwenden, unabhängig davon, ob er abgeschnitten wird oder ob der Raum um ihn herum leer ist. Hiermit können Sie Textknoten ohne Zuschnitt exportieren. Standard: [!UICONTROL false].</td>
     </tr>
     <tr>
@@ -485,44 +485,44 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL File key]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
   </tbody>
 </table>
 
-### [!UICONTROL List file version history]
+### [!UICONTROL Dateiversionsverlauf auflisten]
 
-Dieses Suchmodul gibt den Versionsverlauf einer einzelnen Datei in [!UICONTROL Figma] zurück.
+Dieses Suchmodul gibt den Versionsverlauf einer einzelnen Datei in „Figma.
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     <tr>
-      <td role="rowheader">[!UICONTROL File ID]</td>
+      <td role="rowheader">[!UICONTROL Datei-ID]</td>
       <td>
         <p>Geben Sie die Datei-ID der Datei ein, für die Sie den Versionsverlauf abrufen möchten, oder ordnen Sie sie zu. </p>
         <ul>
           <li>
-            <p>Wenn Sie die Datei-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Find Files]</b> und geben Sie die ID des Projekts, mit dem die Datei verknüpft ist, ein oder ordnen Sie sie zu. Wählen Sie dann die Datei aus.</p>
+            <p>Wenn Sie die Datei-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Dateien suchen]</b> und geben Sie die ID des Projekts, mit dem die Datei verknüpft ist, ein oder mappen Sie sie. Wählen Sie dann die Datei aus.</p>
           </li>
           <li>
-            <p>Wenn Sie versuchen, die Datei-ID zu finden und die Projekt-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Find Projects]</b> und geben Sie die ID des Teams ein, dem das Projekt gehört, dem die Datei zugeordnet ist, oder mappen Sie sie. Wählen Sie das Projekt und dann die Datei aus.</p>
+            <p>Wenn Sie versuchen, die Datei-ID zu finden und die Projekt-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Projekte suchen]</b> und geben Sie die ID des Teams ein, dem das Projekt gehört, dem die Datei zugeordnet ist, oder ordnen Sie sie zu. Wählen Sie das Projekt und dann die Datei aus.</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned files]</td>
+      <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Dateien]</td>
       <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List project files]
+#### [!UICONTROL Projektdateien auflisten]
 
 Dieses Suchmodul gibt eine Liste aller Dateien im angegebenen Projekt zurück.
 
@@ -531,28 +531,28 @@ Dieses Suchmodul gibt eine Liste aller Dateien im angegebenen Projekt zurück.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL File ID]</td>
+      <td role="rowheader">[!UICONTROL Datei-ID]</td>
       <td>
         <p>Geben Sie die Projekt-ID für das Projekt ein, für das Sie Dateien abrufen möchten, oder ordnen Sie sie zu. </p>
         <ul>
           <li>
-            <p>Wenn Sie die Projekt-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Find Projects]</b> und geben Sie die ID des Teams ein, dem das Projekt zugeordnet ist, oder ordnen Sie sie zu. Wählen Sie dann das Projekt aus.</p>
+            <p>Wenn Sie die Projekt-ID nicht kennen, klicken Sie auf <b>[!UICONTROL Projekte suchen]</b> und geben Sie die ID des Teams ein, dem das Projekt zugeordnet ist, oder mappen Sie sie, und wählen Sie dann das Projekt aus.</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned files]</td>
+      <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Dateien]</td>
       <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td>
     </tr>
   </tbody>
 </table>
 
-#### [!UICONTROL List projects]
+#### [!UICONTROL Projekte auflisten]
 
 Dieses Suchmodul gibt eine Liste aller Projekte innerhalb des angegebenen Teams zurück.
 
@@ -561,15 +561,15 @@ Dieses Suchmodul gibt eine Liste aller Projekte innerhalb des angegebenen Teams 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Team ID]</td>
+      <td role="rowheader">[!UICONTROL Team-ID]</td>
       <td>Geben Sie die Projekt-ID des Projekts ein, für das Sie Dateien abrufen möchten, oder ordnen Sie sie zu. Die Team-ID finden Sie in der URL der Team-Seite in Figma</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned projects]</td>
+      <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Projekte]</td>
       <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td>
     </tr>
   </tbody>
@@ -578,7 +578,7 @@ Dieses Suchmodul gibt eine Liste aller Projekte innerhalb des angegebenen Teams 
 
 ### Komponenten und Stile
 
-#### [!UICONTROL Get a style or component]
+#### [!UICONTROL Abrufen eines Stils oder einer Komponente]
 
 Dieses Aktionsmodul ruft einen einzelnen Stil, eine einzelne Komponente oder einen Satz von Stilen oder Komponenten ab.
 
@@ -587,7 +587,7 @@ Dieses Aktionsmodul ruft einen einzelnen Stil, eine einzelne Komponente oder ein
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
@@ -595,31 +595,31 @@ Dieses Aktionsmodul ruft einen einzelnen Stil, eine einzelne Komponente oder ein
       <td>Wählen Sie den Typ des Objekts aus, das Sie abrufen möchten.</td>
     </tr>
     <tr>
-      <td role="rowheader">&lt;[!UICONTROL Object> key]</td>
+      <td role="rowheader">&lt;[!UICONTROL Object&gt;-Schlüssel]</td>
       <td>Geben Sie den Schlüssel (eindeutige Kennung) des Objekts ein, das Sie abrufen möchten.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Team ID]</td>
+      <td role="rowheader">[!UICONTROL Team-ID]</td>
       <td>Beim Abrufen einer Team-Komponente oder eines Team-Komponentensatzes geben Sie die ID des Teams ein, mit dem der Datensatz oder die Datensätze verknüpft sind, oder ordnen Sie sie zu.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Page Size]</td>
+      <td role="rowheader">[!UICONTROL Seitengröße]</td>
       <td>Beim Abrufen einer Team-Komponente oder eines Team-Komponentensatzes geben Sie die Zahl oder die Ergebnisse ein, die pro Seite zurückgegeben werden sollen, oder ordnen Sie sie zu. Standardwert: 30.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL After]</td>
+      <td role="rowheader">[!UICONTROL nach]</td>
       <td>
-        <p>Beim Abrufen einer Team-Komponente oder eines Team-Komponentensatzes geben Sie die Nummer des Ergebnisses ein, nach der das Abrufen der Ergebnisse beginnen soll, oder mappen Sie diese. Dies kann mit dem Feld [!UICONTROL Page Size] kombiniert werden, um Ergebnisse zu paginieren.</p>
+        <p>Beim Abrufen einer Team-Komponente oder eines Team-Komponentensatzes geben Sie die Nummer des Ergebnisses ein, nach der das Abrufen der Ergebnisse beginnen soll, oder mappen Sie diese. Dies kann mit dem Feld [!UICONTROL Seitengröße] kombiniert werden, um die Ergebnisse zu paginieren.</p>
         <p>Dieser Wert entspricht nicht den Objekt-IDs.</p>
-        <p>Dieses Feld kann nicht in Kombination mit dem [!UICONTROL Before] Feld verwendet werden.</p>
+        <p>Dieses Feld kann nicht in Kombination mit dem Feld [!UICONTROL Before] verwendet werden.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Before]</td>
+      <td role="rowheader">[!UICONTROL davor]</td>
       <td>
-        <p>Beim Abrufen einer Team-Komponente oder eines Team-Komponentensatzes geben Sie die Nummer des Ergebnisses ein, vor der das Abrufen der Ergebnisse beginnen soll, oder mappen Sie sie. Dies kann mit dem Feld [!UICONTROL Page Size] kombiniert werden, um Ergebnisse zu paginieren.</p>
+        <p>Beim Abrufen einer Team-Komponente oder eines Team-Komponentensatzes geben Sie die Nummer des Ergebnisses ein, vor der das Abrufen der Ergebnisse beginnen soll, oder mappen Sie sie. Dies kann mit dem Feld [!UICONTROL Seitengröße] kombiniert werden, um die Ergebnisse zu paginieren.</p>
         <p>Dieser Wert entspricht nicht den Objekt-IDs.</p>
-        <p>Dieses Feld kann nicht in Kombination mit dem [!UICONTROL After] Feld verwendet werden.</p>
+        <p>Dieses Feld kann nicht in Kombination mit dem Feld [!UICONTROL After] verwendet werden.</p>
       </td>
     </tr>
   </tbody>
@@ -633,7 +633,7 @@ Dieses Aktionsmodul ruft einen einzelnen Stil, eine einzelne Komponente oder ein
 * [Ereignisse ansehen](#watch-events)
 
 
-#### [!UICONTROL Make an API call]
+#### [!UICONTROL Erstellen eines API-Aufrufs]
 
 Mit diesem Aktionsmodul können Sie die Figma-API benutzerdefiniert authentifiziert aufrufen, ohne die Authentifizierung durchdenken zu müssen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, die von den anderen Figma-Modulen nicht durchgeführt werden kann.
 
@@ -642,7 +642,7 @@ Mit diesem Aktionsmodul können Sie die Figma-API benutzerdefiniert authentifizi
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
@@ -653,11 +653,11 @@ Mit diesem Aktionsmodul können Sie die Figma-API benutzerdefiniert authentifizi
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Method]</td>
+      <td role="rowheader">[!UICONTROL-Methode]</td>
       <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -665,14 +665,14 @@ Mit diesem Aktionsmodul können Sie die Figma-API benutzerdefiniert authentifizi
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Query String]</td>
+      <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td>
       <td>
         <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"name":"something-urgent"}</code></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
+      <td role="rowheader">[!UICONTROL body]</td>
    <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -680,7 +680,7 @@ Mit diesem Aktionsmodul können Sie die Figma-API benutzerdefiniert authentifizi
   </tbody>
 </table>
 
-#### [!UICONTROL Watch events]
+#### [!UICONTROL Ereignisse ansehen]
 
 Dieses Teammodul startet ein Szenario, wenn eines der folgenden Trigger für ein bestimmtes Team in Ihrem [!DNL Figma] Teambereich eintritt:
 
@@ -705,13 +705,13 @@ Dieses Teammodul startet ein Szenario, wenn eines der folgenden Trigger für ein
         <p>So fügen Sie einen neuen Webhook hinzu:</p>
         <ol>
           <li>
-            <p>Klicken Sie <b>[!UICONTROL Add]</b> neben dem Feld [!UICONTROL Webhook] .</p>
+            <p>Klicken Sie auf <b>[!UICONTROL Hinzufügen]</b> neben dem Feld [!UICONTROL Webhook].</p>
           </li>
           <li>
             <p>Geben Sie einen Namen für den Webhook ein.</p>
           </li>
           <li>
-            <p>Wählen Sie die Verbindung aus, die Sie für diesen Webhook verwenden möchten. Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen.</a></p>
+            <p>Wählen Sie die Verbindung aus, die Sie für diesen Webhook verwenden möchten. Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung mit [!UICONTROL Adobe Workfront Fusion] - Grundanweisungen.</a></p>
           </li>
           <li>
             <p>Wählen Sie den Ereignistyp aus, den das Modul überwachen soll.</p>
@@ -726,7 +726,7 @@ Dieses Teammodul startet ein Szenario, wenn eines der folgenden Trigger für ein
             <p>Geben Sie eine Beschreibung für den Webhook ein.</p>
           </li>
           <li>
-            <p>Klicken Sie auf <b>[!UICONTROL Save]</b> , um den Webhook zu speichern und zum Modul zurückzukehren.</p>
+            <p>Klicken Sie auf <b>[!UICONTROL Speichern]</b>, um den Webhook zu speichern und zum Modul zurückzukehren.</p>
           </li>
         </ol>
       </td>

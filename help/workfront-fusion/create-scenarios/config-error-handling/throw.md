@@ -8,9 +8,9 @@ description: In einigen Fällen empfiehlt es sich, die Ausführung des Szenarios
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -72,7 +72,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 ## Problemumgehung für `throw`
 
-Um einen Fehler bedingt auszulösen, können Sie ein Modul so konfigurieren, dass es während seines Vorgangs absichtlich fehlschlägt. Eine Möglichkeit besteht darin, das Modul [!UICONTROL JSON] > [!UICONTROL Parse JSON] zu verwenden, das so konfiguriert ist, dass es optional einen Fehler auslöst (in diesem Fall `BundleValidationError`):
+Um einen Fehler bedingt auszulösen, können Sie ein Modul so konfigurieren, dass es während seines Vorgangs absichtlich fehlschlägt. Eine Möglichkeit besteht darin, das Modul [!UICONTROL JSON] > [!UICONTROL Parse JSON] zu verwenden, das so konfiguriert ist, dass es optional einen Fehler auslöst (in diesem `BundleValidationError`):
 
 ![JSON-Fehler](assets/json-parse-json.png)
 

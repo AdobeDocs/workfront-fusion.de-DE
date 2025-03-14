@@ -4,9 +4,9 @@ description: Mit  [!DNL Adobe Workfront Fusion Google Drive]  Modulen können Si
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '2041'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -91,11 +91,11 @@ Der Google Drive-Connector verwendet Folgendes:
 
 ## Verbinden von [!DNL Google Drive] mit [!DNL Workfront Fusion]
 
-Wenn Sie [!DNL @gmail.com] oder [!DNL @googlemail.com] Benutzer verwenden, müssen Sie einen OAuth-Client auf dem [!DNL Google Cloud Platform] erstellen, um Ihre [!UICONTROL Client ID] und [!UICONTROL Client Secret] abzurufen.
+Wenn Sie [!DNL @gmail.com] oder [!DNL @googlemail.com] Benutzer verwenden, müssen Sie einen OAuth-Client für den [!DNL Google Cloud Platform] erstellen, um Ihre [!UICONTROL Client-ID] und [!UICONTROL Client-Geheimnis] abzurufen.
 
-Eine schrittweise Anleitung zum Erstellen des OAuth-Clients (und zum Abrufen von [!UICONTROL Client ID] und [!UICONTROL Client Secret]) finden Sie unter [Verbinden [!DNL Adobe Workfront Fusion] mit [!DNL Google Services] Verwenden eines benutzerdefinierten OAuth-Clients](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+Eine schrittweise Anleitung zum Erstellen des OAuth-Clients (und zum Abrufen von [!UICONTROL Client-ID] und [!UICONTROL Client-Geheimnis]) finden Sie unter [Verbinden [!DNL Adobe Workfront Fusion] mit [!DNL Google Services] Verwenden eines benutzerdefinierten OAuth-Clients](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
-Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung zu [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung mit [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 ## [!DNL Google Drive] Module und ihre Felder
 
@@ -112,12 +112,12 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Auslöser
 
-* [[!UICONTROL Watch all files]](#watch-all-files)
-* [[!UICONTROL Watch comments]](#watch-comments)
-* [[!UICONTROL Watch files in folder]](#watch-files-in-folder)
-* [[!UICONTROL Watch shared files]](#watch-shared-files)
+* [[!UICONTROL Alle Dateien ansehen]](#watch-all-files)
+* [[!UICONTROL Kommentare ansehen]](#watch-comments)
+* [[!UICONTROL Dateien im Ordner ansehen]](#watch-files-in-folder)
+* [[!UICONTROL Freigegebene Dateien ansehen]](#watch-shared-files)
 
-#### [!UICONTROL Watch all files]
+#### [!UICONTROL Alle Dateien ansehen]
 
 Dieses Dateimodul startet ein Szenario, wenn eine Trigger in Ihrem [!DNL Google Drive] hinzugefügt oder geändert wird.
 
@@ -126,14 +126,14 @@ Dieses Dateimodul startet ein Szenario, wenn eine Trigger in Ihrem [!DNL Google 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL What files to watch]</td> 
+   <td>[!UICONTROL Welche Dateien beobachtet werden]</td> 
    <td> <p>Wählen Sie aus, welchen Dateityp Sie beobachten möchten.</p> 
     <ul> 
-     <li>[!UICONTROL All]</li> 
+     <li>[!UICONTROL ALL]</li> 
      <li>[!DNL Google Documents]</li> 
      <li>[!DNL Google Spreadsheets]</li> 
      <li>[!DNL Google Slides]</li> 
@@ -141,33 +141,33 @@ Dieses Dateimodul startet ein Szenario, wenn eine Trigger in Ihrem [!DNL Google 
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] Zu formatierende Dateien]</td>
+    <td >[!UICONTROL [!DNL Google Documents] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Documents] konvertieren möchten.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] Zu formatierende Dateien]</td>
+    <td>[!UICONTROL [!DNL Google Spreadsheets] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Spreadsheets] konvertieren möchten.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] Zu formatierende Dateien]</td>
+    <td>[!UICONTROL [!DNL Google Slides] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Slides] konvertieren möchten.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] Zu formatierende Dateien]</td>
+    <td>[!UICONTROL [!DNL Google Drawings] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Drawings] konvertieren möchten.</td>
   </tr>  
   <tr> 
-   <td>[!UICONTROL Watch]</td> 
+   <td>[!UICONTROL Uhr]</td> 
    <td>Wählen Sie aus, ob neue Dateien und alle Änderungen oder nur neue Dateien angesehen werden sollen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of downloaded files]</td> 
+   <td>[!UICONTROL Maximale Anzahl heruntergeladener Dateien]</td> 
    <td>Legen Sie die maximale Anzahl von Ergebnissen fest, die [!DNL Workfront Fusion] während eines Zyklus herunterladen (die Anzahl der Wiederholungen pro Szenario-Ausführung).</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Comments]
+#### [!UICONTROL Kommentare ansehen]
 
 Dieses Trigger-Modul startet ein Szenario, wenn ein Kommentar zur ausgewählten Datei hinzugefügt oder geändert wird.
 
@@ -176,25 +176,25 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Kommentar zur ausgewählten 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File]</td> 
+   <td>[!UICONTROL-Datei]</td> 
    <td>Wählen Sie die Datei aus, die auf Kommentare überwacht werden soll.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Watch]</td> 
+   <td>[!UICONTROL Uhr]</td> 
    <td>Wählen Sie aus, ob Sie alle Änderungen oder nur neue Kommentare überwachen möchten</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned comments]</td> 
+   <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Kommentare]</td> 
    <td>Legen Sie die maximale Anzahl von Kommentaren fest, die [!DNL Workfront Fusion] während eines Zyklus zurückgeben (die Anzahl der Wiederholungen pro Szenario-Durchgang).</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch files in folder]
+#### [!UICONTROL Dateien im Ordner ansehen]
 
 Dieses Ordnermodul startet ein Trigger-Szenario, wenn eine Datei im angegebenen Ordner hinzugefügt oder geändert wird.
 
@@ -203,18 +203,18 @@ Dieses Ordnermodul startet ein Trigger-Szenario, wenn eine Datei im angegebenen 
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL Connection] </td>
+    <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr>
-    <td>[!UICONTROL Select the folder to be watched]</td>
+    <td>[!UICONTROL Wählen Sie den zu überwachenden Ordner aus]</td>
     <td >Wählen Sie den Ordner auf Ihrem Laufwerk aus, in dem die Dateien überwacht werden sollen.</td>
   </tr> 
   <tr> 
-    <td>[!UICONTROL What files to watch]</td>
+    <td>[!UICONTROL Welche Dateien beobachtet werden]</td>
    <td> <p>Wählen Sie aus, welchen Dateityp Sie beobachten möchten.</p> 
     <ul> 
-     <li>[!UICONTROL All]</li> 
+     <li>[!UICONTROL ALL]</li> 
      <li>[!DNL Google Documents]</li> 
      <li>[!DNL Google Spreadsheets]</li> 
      <li>[!DNL Google Slides]</li> 
@@ -222,33 +222,33 @@ Dieses Ordnermodul startet ein Trigger-Szenario, wenn eine Datei im angegebenen 
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] Zu formatierende Dateien]</td>
+    <td >[!UICONTROL [!DNL Google Documents] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Documents] konvertieren möchten.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] Zu formatierende Dateien]</td>
+    <td>[!UICONTROL [!DNL Google Spreadsheets] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Spreadsheets] konvertieren möchten.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] Zu formatierende Dateien]</td>
+    <td>[!UICONTROL [!DNL Google Slides] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Slides] konvertieren möchten.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] Zu formatierende Dateien]</td>
+    <td>[!UICONTROL [!DNL Google Drawings] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Drawings] konvertieren möchten.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Watch]</td>
+    <td>[!UICONTROL Uhr]</td>
     <td>Wählen Sie aus, ob neue Dateien und alle Änderungen oder nur neue Dateien angesehen werden sollen.</td>
   </tr> 
   <tr> 
-    <td>[!UICONTROL Maximum number of downloaded files]</td>
+    <td>[!UICONTROL Maximale Anzahl heruntergeladener Dateien]</td>
     <td>Legen Sie die maximale Anzahl von Ergebnissen fest, die [!DNL Workfront Fusion] während eines Zyklus herunterladen (die Anzahl der Wiederholungen pro Szenario-Ausführung).</td>
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch shared files]
+#### [!UICONTROL Freigegebene Dateien ansehen]
 
 Trigger, wenn eine neue Datei für Sie freigegeben oder eine vorhandene freigegebene Datei aktualisiert wird.
 
@@ -257,18 +257,18 @@ Trigger, wenn eine neue Datei für Sie freigegeben oder eine vorhandene freigege
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Select the folder to be watched]</td> 
+   <td>[!UICONTROL Wählen Sie den zu überwachenden Ordner aus]</td> 
    <td>Wählen Sie den freigegebenen Ordner aus, in dem die Dateien überwacht werden sollen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL What files to watch]</td> 
+   <td>[!UICONTROL Welche Dateien beobachtet werden]</td> 
    <td> <p>Wählen Sie aus, welchen Dateityp Sie beobachten möchten.</p> 
     <ul> 
-     <li>[!UICONTROL All]</li> 
+     <li>[!UICONTROL ALL]</li> 
      <li>[!DNL Google Documents]</li> 
      <li>[!DNL Google Spreadsheets]</li> 
      <li>[!DNL Google Slides]</li> 
@@ -276,27 +276,27 @@ Trigger, wenn eine neue Datei für Sie freigegeben oder eine vorhandene freigege
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] Zu formatierende Dateien]</td>
+    <td >[!UICONTROL [!DNL Google Documents] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Documents] konvertieren möchten.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] Zu formatierende Dateien]</td>
+    <td>[!UICONTROL [!DNL Google Spreadsheets] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Spreadsheets] konvertieren möchten.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] Zu formatierende Dateien]</td>
+    <td>[!UICONTROL [!DNL Google Slides] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Slides] konvertieren möchten.</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] Zu formatierende Dateien]</td>
+    <td>[!UICONTROL [!DNL Google Drawings] Dateien ins Format konvertieren]</td>
     <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Drawings] konvertieren möchten.</td>
   </tr> 
   <tr> 
-   <td>[!UICONTROL Watch]</td> 
+   <td>[!UICONTROL Uhr]</td> 
    <td>Wählen Sie aus, ob neue Dateien und alle Änderungen oder nur neue Dateien angesehen werden sollen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of downloaded files]</td> 
+   <td>[!UICONTROL Maximale Anzahl heruntergeladener Dateien]</td> 
    <td>Legen Sie die maximale Anzahl von Ergebnissen fest, die [!DNL Workfront Fusion] während eines Zyklus herunterladen (die Anzahl der Wiederholungen pro Szenario-Ausführung).</td> 
   </tr> 
  </tbody> 
@@ -304,17 +304,17 @@ Trigger, wenn eine neue Datei für Sie freigegeben oder eine vorhandene freigege
 
 ### Aktionen
 
-* [[!UICONTROL Copy a file]](#copy-a-file)
-* [[!UICONTROL Create a fFolder]](#create-a-folder)
-* [[!UICONTROL Delete a file]](#delete-a-file)
-* [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Get a share link]](#get-a-share-link)
-* [[!UICONTROL Move a file to trash]](#move-a-filefolder-to-trash)
-* [[!UICONTROL Search for Files/Folders]](#search-for-filesfolders)
-* [[!UICONTROL Update a File]](#update-a-file)
-* [[!UICONTROL Upload a File]](#upload-a-file)
+* [[!UICONTROL Kopieren einer Datei]](#copy-a-file)
+* [[!UICONTROL Erstellen eines fFolder]](#create-a-folder)
+* [[!UICONTROL Datei löschen]](#delete-a-file)
+* [[!UICONTROL Datei abrufen]](#get-a-file)
+* [[!UICONTROL Link freigeben]](#get-a-share-link)
+* [[!UICONTROL Verschieben einer Datei in den Papierkorb]](#move-a-filefolder-to-trash)
+* [[!UICONTROL Suchen nach Dateien/Ordnern]](#search-for-filesfolders)
+* [[!UICONTROL Aktualisieren einer Datei]](#update-a-file)
+* [[!UICONTROL Datei hochladen]](#upload-a-file)
 
-#### [!UICONTROL Copy a file]
+#### [!UICONTROL Kopieren einer Datei]
 
 Dieses Aktionsmodul kopiert eine Datei an den neuen Speicherort.
 
@@ -323,33 +323,33 @@ Dieses Aktionsmodul kopiert eine Datei an den neuen Speicherort.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das Ziel aus, in das Sie eine Datei kopieren möchten.</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Target folder]</td> 
+   <td>[!UICONTROL Zielordner]</td> 
    <td>Wählen Sie den Ordner aus, der die Datei enthält, die Sie kopieren möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL Datei-ID]</td> 
    <td>Ordnen Sie die ID der Datei zu, die Sie kopieren möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL The name of the copy]</td> 
+   <td>[!UICONTROL Der Name der Kopie]</td> 
    <td>Geben Sie einen Titel für die neue Datei ein. Lassen Sie dieses Feld leer, wenn Sie den ursprünglichen Dateinamen nicht ändern möchten.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL Erstellen eines Ordners]
 
 Dieses Aktionsmodul erstellt einen Ordner am angegebenen Speicherort.
 
@@ -358,33 +358,33 @@ Dieses Aktionsmodul erstellt einen Ordner am angegebenen Speicherort.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das Ziel aus, an dem Sie einen Ordner erstellen möchten.</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New folder location]</td> 
+   <td>[!UICONTROL Speicherort des neuen Ordners]</td> 
    <td>Navigieren Sie zu der Position, an der Sie einen neuen Ordner erstellen möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL The name of the new folder]</td> 
+   <td>[!UICONTROL Der Name des neuen Ordners]</td> 
    <td>Geben Sie einen Namen für den Ordner ein, den Sie erstellen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Share folder]</td> 
-   <td>Wählen Sie diese Option aus, wenn Sie den Ordner für alle mit dem [!UICONTROL Share] Link freigeben möchten. Andernfalls ist der Freigabe-Link nur für den Eigentümer.</td> 
+   <td>[!UICONTROL Freigabeordner]</td> 
+   <td>Wählen Sie diese Option aus, wenn Sie den Ordner für alle mit dem Link [!UICONTROL Share] freigeben möchten. Andernfalls ist der Freigabe-Link nur für den Eigentümer.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL Datei löschen]
 
 Dieses Aktionsmodul löscht dauerhaft eine Datei oder einen Ordner.
 
@@ -393,17 +393,17 @@ Dieses Aktionsmodul löscht dauerhaft eine Datei oder einen Ordner.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL Datei-ID]</td> 
    <td>Ordnen Sie die ID der Datei zu, die Sie löschen möchten.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL Datei abrufen]
 
 Dieses Aktionsmodul ruft die Datei mit der angegebenen ID ab.
 
@@ -412,33 +412,33 @@ Dieses Aktionsmodul ruft die Datei mit der angegebenen ID ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Documents] Zu formatierende Dateien]</td> 
+   <td>[!UICONTROL [!DNL Google Documents] Dateien ins Format konvertieren]</td> 
    <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Documents] konvertieren möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Spreadsheets] Zu formatierende Dateien]</td> 
+   <td>[!UICONTROL [!DNL Google Spreadsheets] Dateien ins Format konvertieren]</td> 
    <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Spreadsheets] konvertieren möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Slides] Zu formatierende Dateien]</td> 
+   <td>[!UICONTROL [!DNL Google Slides] Dateien ins Format konvertieren]</td> 
    <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Slides] konvertieren möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert [!DNL Google Drawings] Zu formatierende Dateien]</td> 
+   <td>[!UICONTROL [!DNL Google Drawings] Dateien ins Format konvertieren]</td> 
    <td>Wählen Sie das Dateiformat aus, in das Sie [!DNL Google Drawings] konvertieren möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL Datei-ID]</td> 
    <td>Ordnen Sie die ID der Datei zu, die Sie abrufen möchten.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a share link]
+#### [!UICONTROL Link freigeben]
 
 Dieses Aktionsmodul ruft den Freigabe-Link für eine Datei in Google Drive ab.
 
@@ -447,17 +447,17 @@ Dieses Aktionsmodul ruft den Freigabe-Link für eine Datei in Google Drive ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL Datei-ID]</td> 
    <td>Ordnen Sie die ID der Datei zu, für die Sie den Freigabe-Link abrufen möchten.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a file to trash]
+#### [!UICONTROL Verschieben einer Datei in den Papierkorb]
 
 Dieses Aktionsmodul verschiebt eine Datei oder einen Ordner in den Papierkorb.
 
@@ -466,17 +466,17 @@ Dieses Aktionsmodul verschiebt eine Datei oder einen Ordner in den Papierkorb.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL Datei-ID]</td> 
    <td>Ordnen Sie die ID der Datei zu, die Sie in den Papierkorb verschieben möchten.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for Files/Folders]
+#### [!UICONTROL Suchen nach Dateien/Ordnern]
 
 Dieses Suchmodul sucht anhand von Suchkriterien nach Dateien oder Ordnern.
 
@@ -485,57 +485,57 @@ Dieses Suchmodul sucht anhand von Suchkriterien nach Dateien oder Ordnern.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das zu durchsuchende Ziellaufwerk aus.</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL List a folder]</td> 
+   <td>[!UICONTROL Ordner auflisten]</td> 
    <td>Navigieren Sie zu dem Ordner, in dem Sie nach den Dateien oder Ordnern suchen möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Retrieve]</td> 
+   <td>[!UICONTROL abrufen]</td> 
    <td> <p> Wählen Sie aus, ob Sie nach Dateien, Ordnern oder beidem suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Search]</p> </td> 
+   <td> <p>[!UICONTROL Suche]</p> </td> 
    <td> <p>Wählen Sie den Typ der Suche aus, die Sie durchführen möchten.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Search within file/folder names]</strong> </p> 
+     <li> <p><strong>[!UICONTROL Suche innerhalb von Datei-/Ordnernamen]</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Geben Sie einen Teil des Dateinamens oder des vollständigen Dateinamens (einschließlich des Suffix) ein, nach dem gesucht werden soll.</p> </li> 
-       <li> <p><strong>[!UICONTROL Search Options]</strong> </p> <p>Wählen Sie aus, ob Sie nach dem genauen Begriff suchen möchten oder ob Sie nach Namen suchen möchten, die den Suchbegriff enthalten.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Geben Sie einen Teil des Dateinamens oder des vollständigen Dateinamens (einschließlich des Suffix) ein, nach dem gesucht werden soll.</p> </li> 
+       <li> <p><strong>[!UICONTROL Suchoptionen]</strong> </p> <p>Wählen Sie aus, ob Sie nach dem genauen Begriff suchen möchten oder ob Sie nach Namen suchen möchten, die den Suchbegriff enthalten.</p> </li> 
       </ul> </li> 
-     <li> <p><strong>[!UICONTROL Fulltext] Suche</strong> </p> 
+     <li> <p><strong>[!UICONTROL Volltext]-Suche</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Geben Sie einen beliebigen Suchbegriff ein, den Sie in Ihrem [!DNL Google Drive] suchen möchten.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Geben Sie einen beliebigen Suchbegriff ein, den Sie in Ihrem [!DNL Google Drive] suchen möchten.</p> </li> 
       </ul> </li> 
      <li> <p><strong>Benutzerdefinierte Suchanfrage eingeben</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL Query]</strong> </p> <p>Geben Sie die benutzerdefinierte Suchabfrage ein. Weitere Informationen finden Sie im [!UICONTROL Search for Files] Abschnitt dieses Artikels.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Geben Sie die benutzerdefinierte Suchabfrage ein. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Nach Dateien suchen] dieses Artikels.</p> </li> 
        <li> <p><strong>Fügen Sie den oben ausgewählten Ordner zur Abfrage hinzu</strong> </p> <p>Sucht in der übergeordneten Sammlung nach dem Ordner. Dadurch werden alle Dateien und Ordner gefunden, die sich direkt in dem oben ausgewählten Ordner befinden.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</td> 
    <td>Legen Sie die maximale Anzahl von Dateien oder Ordnern fest, die [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgeben.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td>[!UICONTROL Die Routenausführung auch dann fortsetzen, wenn das Modul keine Ergebnisse zurückgibt]</td> 
    <td>Aktivieren Sie diese Option, um sicherzustellen, dass das Szenario nicht angehalten wird, wenn das Modul keine Ergebnisse zurückgibt.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a File]
+#### [!UICONTROL Aktualisieren einer Datei]
 
 Dieses Aktionsmodul aktualisiert die Metadaten oder Inhalte einer Datei.
 
@@ -544,45 +544,45 @@ Dieses Aktionsmodul aktualisiert die Metadaten oder Inhalte einer Datei.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Destination]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das Ziel aus, das die Datei enthält, die Sie aktualisieren möchten.</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Move to a folder]</td> 
+   <td>[!UICONTROL In Ordner verschieben]</td> 
    <td>Wenn Sie die Datei in einen bestimmten Ordner verschieben möchten, wählen Sie den Ordner aus, in den Sie die Datei verschieben möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
+   <td>[!UICONTROL Datei-ID]</td> 
    <td>Ordnen Sie die ID der Datei zu, die Sie aktualisieren möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Title]</td> 
+   <td>[!UICONTROL Titel]</td> 
    <td>Geben Sie einen Titel für die aktualisierte Datei ein.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Change a file content]</td> 
+   <td>[!UICONTROL Dateiinhalt ändern]</td> 
    <td>Wählen Sie aus, ob Sie den Inhalt der Datei ersetzen möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL Source-Datei]</td> 
    <td>Wenn Sie den Inhalt ersetzen, wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Conver a file]</td> 
+   <td>[!UICONTROL Datei konvertieren]</td> 
    <td>Aktivieren Sie diese Option, um die Datei in das entsprechende Google-Dateiformat zu konvertieren.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL Datei hochladen]
 
 Lädt eine Datei in Ihr [!DNL Google Drive] hoch.
 
@@ -591,7 +591,7 @@ Lädt eine Datei in Ihr [!DNL Google Drive] hoch.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
@@ -603,19 +603,19 @@ Lädt eine Datei in Ihr [!DNL Google Drive] hoch.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Target folder]</td> 
+   <td>[!UICONTROL Zielordner]</td> 
    <td>Wählen Sie den Ordner aus, in den Sie eine Datei hochladen möchten. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL Source-Datei]</td> 
    <td>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Title]</td> 
+   <td>[!UICONTROL Titel]</td> 
    <td>Geben Sie einen Titel für die neue Datei ein.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Convert a file]</td> 
+   <td>[!UICONTROL Datei konvertieren]</td> 
    <td>Wenn diese Option aktiviert ist, kann das Modul Dateien in das entsprechende [!DNL Google] konvertieren.</td> 
   </tr> 
  </tbody> 

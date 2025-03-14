@@ -4,9 +4,9 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -70,7 +70,7 @@ Um [!DNL Miscrosoft Word Templates] mit [!DNL Adobe Workfront Fusion] verwenden 
 
 ## Verbinden des [!DNL Office]-Services mit [!DNL Workfront Fusion]
 
-Anweisungen zum Verbinden Ihres [!DNL Office]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung zu [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Anweisungen zum Verbinden Ihres [!DNL Office]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung mit [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ Eine [!DNL Microsoft Word] ist ein reguläres [!DNL Microsoft Word]-Dokument (.d
 
 ### Einfaches Wert-Tag {#simple-value-tag}
 
-Ein einfaches Wert-Tag wird einfach durch einen entsprechenden Wert ersetzt. Der Name des Tags entspricht dem Wert des [!UICONTROL Key], der in doppelten geschweiften Klammern steht, z. B. `{{name}}`.
+Ein einfaches Wert-Tag wird einfach durch einen entsprechenden Wert ersetzt. Der Name des Tags entspricht dem Wert [!UICONTROL Schlüssel], der in geschweiften Klammern steht, z. B. `{{name}}`.
 
 **Beispiel** Um ein Dokument zu erstellen, in dem „Hallo Petr!“ steht, können Sie ein [!DNL Microsoft Word Template] Modul verwenden, um die folgende Vorlage zu erstellen:
 
@@ -164,7 +164,7 @@ Für diese Module ist keine Verbindung erforderlich.
 * [Füllen Sie ein Dokument aus](#fill-out-a-document)
 * [Ausfüllen eines Dokuments mit einem Datenstapel](#fill-a-document-with-a-batch-of-data)
 
-### [!UICONTROL Fill out a document] {#fill-out-a-document}
+### [!UICONTROL Füllen Sie ein Dokument aus] {#fill-out-a-document}
 
 Mit diesem Transformatormodul können Sie ein Dokument mit von Ihnen angegebenen Daten füllen. Es kann mit einfachen Werten, Tags, bedingten Tags oder Schleifen-Tags verwendet werden.
 
@@ -173,27 +173,27 @@ Mit diesem Transformatormodul können Sie ein Dokument mit von Ihnen angegebenen
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
+   <td role="rowheader">[!UICONTROL Start-Trennzeichen des zu ersetzenden Textes]</td> 
    <td> <p>Geben Sie die Zeichen ein, die den Anfang des zu ersetzenden Textes markieren sollen. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>&#91;&#91;</code> eingeben, um <code>[[replace_me]]</code> zu ersetzen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL End-Trennzeichen des zu ersetzenden Textes]</p> </td> 
    <td> <p>Geben Sie die Zeichen ein, die am Ende des zu ersetzenden Textes stehen sollen. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span>Zu ersetzende <code>&#93;&#93;</code> eingeben <code>[[replace_me]]</code></p>. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Source-Datei]</td> 
    <td> <p> Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
+   <td role="rowheader">[!UICONTROL Name der ausgefüllten Datei]</td> 
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data source]</td> 
+   <td role="rowheader">[!UICONTROL-Datenquelle]</td> 
    <td> <p>Wählen Sie eine Option aus, um anzugeben, ob die von Ihnen verwendeten Daten aus einem Formular oder aus einer Rohdatenerfassung (nicht verarbeitete Computerdaten) stammen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
+   <td role="rowheader">[!UICONTROL-Werte]</td> 
    <td> <p>Dies muss ein Array von Sammlungen sein, wobei:</p> 
     <ul> 
      <li>Jede Sammlung entspricht einem Dateneintrag und enthält ein Element <code>entry</code></li> 
@@ -203,7 +203,7 @@ Mit diesem Transformatormodul können Sie ein Dokument mit von Ihnen angegebenen
     </ul> 
     <p>Einen Eintrag hinzufügen:</p>
     <ol> 
-     <li> Klicken Sie auf <b>[!UICONTROL Add Item]</b>. </li> 
+     <li> Klicken Sie auf <b>[!UICONTROL Element hinzufügen]</b>. </li> 
      <li>Wählen Sie den Werttyp des Eintrags aus.</li> 
      <li>Fügen Sie den Namen und Wert hinzu. Weitere Informationen finden Sie im Beispiel für den ausgewählten Wertetyp in diesem Artikel. 
       <ul> 
@@ -216,7 +216,7 @@ Mit diesem Transformatormodul können Sie ein Dokument mit von Ihnen angegebenen
  </tbody> 
 </table>
 
-### [!UICONTROL Fill a document with a batch of data] {#fill-a-document-with-a-batch-of-data}
+### [!UICONTROL Füllen eines Dokuments mit einem Datenstapel] {#fill-a-document-with-a-batch-of-data}
 
 Dieses Aggregator-Modul ist nützlich, wenn Ihre Dateneinträge als separate Bundles vorliegen. Mit diesem Modul können Sie einfach die für das Wertefeld erforderliche Struktur einrichten und jedem Wertelement Elemente zuordnen. Im Gegensatz zum Modul Dokument ausfüllen erlaubt das Feld Werte im Modul Dokument mit einem Batch von Daten ausfüllen nur einen einzigen Eintrag, der Variablen enthält.
 
@@ -231,35 +231,35 @@ Dieses Aggregator-Modul ist besonders nützlich für die Erstellung von Listen o
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Source-Modul]</td> 
    <td>Wählen Sie das Modul aus, das die Quelle Ihres Textes ist.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Start delimiter of the text being replaced]</td> 
+   <td role="rowheader">[!UICONTROL Start-Trennzeichen des zu ersetzenden Textes]</td> 
    <td> <p>Geben Sie die Zeichen ein, die den Anfang des zu ersetzenden Textes markieren sollen. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>&#91;&#91;</code> eingeben, um <code>[[replace_me]]</code> zu ersetzen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL End delimiter of the text being replaced]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL End-Trennzeichen des zu ersetzenden Textes]</p> </td> 
    <td> <p>Geben Sie die Zeichen ein, die am Ende des zu ersetzenden Textes stehen sollen. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>&#93;&#93;</code> eingeben, um <code>[[replace_me]]</code> zu ersetzen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Group by]</td> 
+   <td role="rowheader">[!UICONTROL Gruppieren nach]</td> 
    <td> Definieren Sie einen Ausdruck, der ein oder mehrere zugeordnete Elemente enthält. Die aggregierten Daten werden unter Gruppen mit demselben Ausdruckswert getrennt. Jede Gruppe gibt als separates Bundle aus, das einen Schlüssel mit dem ausgewerteten Ausdruck und dem aggregierten Text enthält. Auf diese Weise können Sie den Schlüssel als Filter in nachfolgenden Modulen verwenden.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stop processing after an empty aggregation]</td> 
+   <td role="rowheader">[!UICONTROL Verarbeitung nach einer leeren Aggregation anhalten]</td> 
    <td>Aktivieren Sie diese Option, um die Verarbeitung zu stoppen, wenn eine Aggregation keine Bundles enthält.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Source-Datei]</td> 
    <td> <p> Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of filled out file]</td> 
+   <td role="rowheader">[!UICONTROL Name der ausgefüllten Datei]</td> 
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
+   <td role="rowheader">[!UICONTROL-Werte]</td> 
    <td> <p>Dies muss ein Array von Sammlungen sein, wobei:</p> 
     <ul> 
      <li>Jede Sammlung entspricht einem Dateneintrag und enthält ein Element <code>entry</code></li> 
@@ -269,7 +269,7 @@ Dieses Aggregator-Modul ist besonders nützlich für die Erstellung von Listen o
     </ul> 
     <p>Einen Eintrag hinzufügen:</p>
     <ol> 
-     <li> Klicken Sie auf <b>[!UICONTROL Add Item]</b>. </li> 
+     <li> Klicken Sie auf <b>[!UICONTROL Element hinzufügen]</b>. </li> 
      <li>Wählen Sie den Werttyp des Eintrags aus.</li> 
      <li>Fügen Sie den Namen und Wert hinzu. Weitere Informationen finden Sie im Beispiel für den ausgewählten Wertetyp in diesem Artikel. 
       <ul> 

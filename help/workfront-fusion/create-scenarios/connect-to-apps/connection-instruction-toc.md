@@ -4,7 +4,7 @@ description: Eine Verbindung muss den Anforderungen entsprechen, die von der API
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -64,11 +64,11 @@ In den meisten Fällen können Sie das Modul verwenden, um eine Verbindung mit w
 
 Anweisungen zum Erstellen einer Verbindung ohne besondere Überlegungen finden Sie unter [Verbindung erstellen - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
-## Herstellen einer Verbindung zu einer Adobe-App oder einem Service
+## Herstellen einer Verbindung mit einer Adobe-App oder einem Service
 
-Um eine Verbindung zu einer Adobe-App oder einem Service herzustellen, benötigen Sie möglicherweise Informationen von der Adobe Admin Console, z. B. Ihre Organisations-ID oder die ID des technischen Kontos.
+Um eine Verbindung zu einer Adobe-App oder einem Service herzustellen, benötigen Sie möglicherweise Informationen aus der Adobe Admin Console, z. B. Ihre Organisations-ID oder die ID des technischen Kontos.
 
-Sie können auch das Adobe Authenticator-Modul verwenden, um eine Verbindung zu einer beliebigen Adobe-API über eine einzige Verbindung herzustellen. So können Sie einfacher eine Verbindung zu Adobe-Produkten herstellen, die noch keinen dedizierten Fusion-Connector haben.
+Sie können auch das Adobe Authenticator-Modul verwenden, um über eine einzige Verbindung eine Verbindung zu einer beliebigen Adobe-API herzustellen. Dadurch können Sie einfacher eine Verbindung zu Adobe-Produkten herstellen, die noch keinen dedizierten Fusion-Connector haben.
 
 Spezifische Anweisungen finden Sie [im Artikel zum -Connector](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-adobe-products).
 

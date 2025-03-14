@@ -4,10 +4,10 @@ description: Mit den  [!DNL Adobe Campaign] -Modulen können Sie ein auf  [!DNL 
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 9bcda2cc1a5f483a8db49eae8e4f3d10f0d39c67
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 0%
+source-wordcount: '1307'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -88,7 +88,7 @@ Der Adobe Campaign-Connector verwendet Folgendes:
 >
 >Weitere Informationen zu den neuen Verbindungsanforderungen von Campaign finden Sie unter [Migration technischer Campaign-Benutzerinnen und -Benutzer zu Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) in der Campaign-Dokumentation.
 
-1. Klicken Sie in einem beliebigen [!DNL Adobe Campaign] auf **[!UICONTROL Add]** neben dem Feld [!UICONTROL Connection] .
+1. Klicken Sie in einem [!DNL Adobe Campaign] Modul **[!UICONTROL Hinzufügen]** neben dem Feld [!UICONTROL Verbindung].
 1. Füllen Sie die folgenden Felder aus:
    <table style="table-layout:auto"> 
       <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
@@ -97,40 +97,40 @@ Der Adobe Campaign-Connector verwendet Folgendes:
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection type]</td>
+          <td role="rowheader">[!UICONTROL Verbindungstyp]</td>
           <td>
             <p>Wählen Sie aus, ob Sie eine Basisverbindung oder eine Server-zu-Server-Verbindung erstellen.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td role="rowheader">[!UICONTROL Verbindungsname]</td>
           <td>
             <p>Geben Sie einen Namen für diese Verbindung ein.</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Base URL]</td>
+          <td role="rowheader">[!UICONTROL Basis-URL]</td>
           <td>Geben Sie die Basis-URL ein, mit der Sie eine Verbindung zu Ihrer [!DNL Adobe Campaign]-Instanz herstellen.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Username]</td>
+          <td role="rowheader">[!UICONTROL Benutzername]</td>
           <td>Wenn Sie eine Basisverbindung erstellen, geben Sie Ihren Adobe Campaign-Benutzernamen ein.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Password]</td>
+          <td role="rowheader">[!UICONTROL Kennwort]</td>
           <td>Wenn Sie eine Basisverbindung erstellen, geben Sie Ihr Adobe Campaign-Kennwort ein.</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>Wenn Sie eine Server-zu-Server-Verbindung erstellen, geben Sie Ihre [!DNL Adobe] [!UICONTROL Client ID] ein. Diese finden Sie im [!UICONTROL Credentials details] Abschnitt der [!DNL Adobe Developer Console].</td>
+          <td role="rowheader">[!UICONTROL Client-ID]</td>
+          <td>Wenn Sie eine Server-zu-Server-Verbindung erstellen, geben Sie Ihre [!DNL Adobe] [!UICONTROL Client ID] ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Wenn Sie eine Server-zu-Server-Verbindung erstellen, geben Sie Ihre [!DNL Adobe] [!UICONTROL Client Secret] ein. Diese finden Sie im [!UICONTROL Credentials details] Abschnitt der [!DNL Adobe Developer Console].
+          <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
+          <td>Wenn Sie eine Server-zu-Server-Verbindung erstellen, geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].
         </tr>
      </tbody>
     </table>
-1. Klicken Sie auf **[!UICONTROL Continue]** , um die Verbindung zu erstellen, und kehren Sie zum Modul zurück.
+1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu erstellen, und kehren Sie zum Modul zurück.
 
 ## [!DNL Adobe Campaign] Module und ihre Felder
 
@@ -184,15 +184,15 @@ This scheduled trigger module starts a scenario when a record changes.
 
 ### Aktionen
 
-* [[!UICONTROL Create a record]](#create-a-record)
-* [[!UICONTROL Delete a record]](#delete-record)
-* [[!UICONTROL Make a custom API call]](#make-a-custom-api-call)
-* [[!UICONTROL Perform an action]](#perform-an-action)
-* [[!UICONTROL Read a record]](#read-a-record)
-* [[!UICONTROL Subscribe or unsubscribe]](#subscribe-or-unsubscribe)
-* [[!UICONTROL Update a record]](#update-record)
+* [[!UICONTROL Datensatz erstellen]](#create-a-record)
+* [[!UICONTROL Löschen eines Datensatzes]](#delete-record)
+* [[!UICONTROL Erstellen eines benutzerdefinierten API-Aufrufs]](#make-a-custom-api-call)
+* [[!UICONTROL Durchführen einer Aktion]](#perform-an-action)
+* [[!UICONTROL Datensatz lesen]](#read-a-record)
+* [[!UICONTROL An- oder Abmelden]](#subscribe-or-unsubscribe)
+* [[!UICONTROL Aktualisieren eines Datensatzes]](#update-record)
 
-#### [!UICONTROL Create a record]
+#### [!UICONTROL Datensatz erstellen]
 
 Dieses Aktionsmodul erstellt einen neuen Datensatz in [!DNL Adobe Campaign].
 
@@ -201,25 +201,25 @@ Dieses Aktionsmodul erstellt einen neuen Datensatz in [!DNL Adobe Campaign].
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td role="rowheader">[!UICONTROL-Verbindung]</td>
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Campaign]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL-Ressource]</td> 
    <td>Wählen Sie den Typ [!DNL Adobe Campaign] Datensatzes aus, den Sie erstellen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Fields] </td> 
+   <td role="rowheader">[!UICONTROL-Felder] </td> 
    <td>Wählen Sie die Felder aus, für die Sie Werte festlegen möchten, wenn der Datensatz erstellt wird, und füllen Sie dann die Werte für diese Felder aus. Felder variieren je nach ausgewähltem Datensatztyp.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Custom fields]</td> 
-   <td> Klicken Sie für jedes benutzerdefinierte Feld, das Sie zum neuen Datensatz hinzufügen möchten, auf <b>[!UICONTROL Add item]</b> und geben Sie den Namen und den Wert des Felds ein oder mappen Sie ihn. </td> 
+   <td role="rowheader">[!UICONTROL Benutzerdefinierte Felder]</td> 
+   <td> Klicken Sie für jedes benutzerdefinierte Feld, das Sie dem neuen Datensatz hinzufügen möchten, auf <b>[!UICONTROL Element hinzufügen]</b> und geben Sie den Namen und Wert des Feldes ein oder mappen Sie ihn. </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Record]
+#### [!UICONTROL Datensatz löschen]
 
 Dieses Aktionsmodul löscht einen einzelnen Datensatz aus [!DNL Adobe Campaign].
 
@@ -228,11 +228,11 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatz aus [!DNL Adobe Campaign].
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td role="rowheader">[!UICONTROL-Verbindung]</td>
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Campaign]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL-Ressource]</td> 
    <td>Wählen Sie den Ressourcentyp aus, den Sie löschen möchten.</td> 
   </tr> 
   <tr> 
@@ -242,7 +242,7 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatz aus [!DNL Adobe Campaign].
  </tbody> 
 </table>
 
-#### [!UICONTROL Make a custom API call]
+#### [!UICONTROL Erstellen eines benutzerdefinierten API-Aufrufs]
 
 Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Campaign]-API durch
 
@@ -251,35 +251,35 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Camp
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Campaign]</a> in diesem Artikel.</td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Action]</td>
+      <td role="rowheader">[!UICONTROL-Aktion]</td>
       <td><p>Wählen Sie die Aktion aus, die der API-Aufruf ausführen soll.</p>
-      <p>[!UICONTROL Execute query]</p>
-      <p>[!UICONTROL Write]</p>
-      <p>[!UICONTROL Get entity if more recent]</p>
-      <p>[!UICONTROL Select all]</p>
-      <p>[!UICONTROL Push event]</p>
+      <p>[!UICONTROL Abfrage ausführen]</p>
+      <p>[!UICONTROL schreiben]</p>
+      <p>[!UICONTROL Entität aus neuerer Zeit abrufen]</p>
+      <p>[!UICONTROL Alle auswählen]</p>
+      <p>[!UICONTROL Push-Ereignis]</p>
     </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] Fügt automatisch die Kopfzeile des [!UICONTROL x-security]-Tokens hinzu.</p>
+        <p>[!DNL Workfront Fusion] fügt automatisch die Kopfzeile des [!UICONTROL x-security]-Tokens hinzu.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL XML Body]</td>
+      <td role="rowheader">[!UICONTROL XML-Hauptteil]</td>
    <td> <p>Fügen Sie den Hauptteil des API-Aufrufs in XML hinzu, ohne das Sitzungselement zu verwenden. </td>     </tr>
   </tbody>
 </table>
 
 
-#### [!UICONTROL Perform an action]
+#### [!UICONTROL Durchführen einer Aktion]
 
 Dieses Aktionsmodul führt eine ausgewählte Aktion für ein Objekt in der [!DNL Adobe Campaign]-API aus.
 
@@ -290,25 +290,25 @@ Informationen zu bestimmten Aktionen und Feldern finden Sie unter [[!DNL Adobe C
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td role="rowheader">[!UICONTROL-Verbindung]</td>
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Campaign]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Action]</td> 
+   <td role="rowheader">[!UICONTROL-Aktion]</td> 
    <td><p>Wählen Sie die Aktion aus, die mit dem Objekt durchgeführt werden soll.</p>
    <ul>
-   <li><p><b>[!DNL List]</b></p><p> Informationen zu verfügbaren Feldern finden Sie unter <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> in diesem Artikel. </p></li>
-     <li><p><b>[!UICONTROL Get]</b></p><p> Informationen zu verfügbaren Feldern finden Sie unter <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> in diesem Artikel. </p></li> 
-   <li><p><b>[!UICONTROL Create]</b></p><p> Informationen zu verfügbaren Feldern finden Sie unter <a href="#create-a-record" class="MCXref xref" >[!UICONTROL Create a record]</a> in diesem Artikel. </p></li>
-   <li><p><b>[!UICONTROL Update]</b></p><p> Informationen zu verfügbaren Feldern finden Sie unter <a href="#update-record" class="MCXref xref" >[!UICONTROL Update a record]</a> in diesem Artikel. </p></li>
-   <li><p><b>[!UICONTROL Delete]</b></p><p> Informationen zu verfügbaren Feldern finden Sie unter <a href="#delete-record" class="MCXref xref" >[!UICONTROL Delete a record]</a> in diesem Artikel. </p></li>
+   <li><p><b>[!DNL List]</b></p><p> Verfügbare Felder finden Sie unter <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> in diesem Artikel. </p></li>
+     <li><p><b>[!UICONTROL GET]</b></p><p> Verfügbare Felder finden Sie unter <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> in diesem Artikel. </p></li> 
+   <li><p><b>[!UICONTROL Erstellen]</b></p><p> Verfügbare Felder finden Sie unter <a href="#create-a-record" class="MCXref xref" >[!UICONTROL, Datensatz erstellen]</a> in diesem Artikel. </p></li>
+   <li><p><b>[!UICONTROL aktualisieren]</b></p><p> Informationen zu verfügbaren Feldern finden Sie unter <a href="#update-record" class="MCXref xref" >[!UICONTROL Aktualisieren eines Datensatzes]</a> in diesem Artikel. </p></li>
+   <li><p><b>[!UICONTROL Löschen]</b></p><p> Verfügbare Felder finden Sie unter <a href="#delete-record" class="MCXref xref" >[!UICONTROL Datensatz löschen]</a> in diesem Artikel. </p></li>
    </ul>
    </td>
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Read a record]
+#### [!UICONTROL Datensatz lesen]
 
 Dieses Aktionsmodul liest einen Datensatz aus [!DNL Adobe Campaign].
 
@@ -317,11 +317,11 @@ Dieses Aktionsmodul liest einen Datensatz aus [!DNL Adobe Campaign].
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td role="rowheader">[!UICONTROL-Verbindung]</td>
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Campaign]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL-Ressource]</td> 
    <td>Wählen Sie den Typ [!DNL Adobe Campaign] Datensatzes aus, den Sie lesen möchten.</td> 
   </tr> 
     <tr> 
@@ -329,18 +329,18 @@ Dieses Aktionsmodul liest einen Datensatz aus [!DNL Adobe Campaign].
    <td>Geben Sie die Zuordnungs-ID des Datensatzes ein, den Sie lesen möchten.</td> 
   </tr> 
  <tr> 
-   <td role="rowheader">[!UICONTROL Fields to include in output] </td> 
+   <td role="rowheader">[!UICONTROL-Felder, die in die Ausgabe aufgenommen werden sollen] </td> 
    <td>Wählen Sie die Felder aus, die Sie in die Ausgabe des Moduls aufnehmen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Custom fields to include in output]</td> 
-   <td>Klicken Sie für jedes benutzerdefinierte Feld, das Sie in die Ausgabe aufnehmen möchten, auf <b>[!UICONTROL Add]</b> und geben Sie den Namen des benutzerdefinierten Felds ein.</td> 
+   <td role="rowheader">[!Benutzerdefinierte UICONTROL-Felder, die in die Ausgabe aufgenommen werden sollen]</td> 
+   <td>Klicken Sie für jedes benutzerdefinierte Feld, das Sie in die Ausgabe aufnehmen möchten, auf <b>[!UICONTROL Hinzufügen]</b> und geben Sie den Namen des benutzerdefinierten Felds ein.</td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### [!UICONTROL Subscribe or unsubscribe]
+#### [!UICONTROL An- oder Abmelden]
 
 Dieses Aktionsmodul meldet eine Benutzerin bzw. einen Benutzer an oder ab für einen Informations-Service.
 
@@ -349,25 +349,25 @@ Dieses Aktionsmodul meldet eine Benutzerin bzw. einen Benutzer an oder ab für e
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td role="rowheader">[!UICONTROL-Verbindung]</td>
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Campaign]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Subscribe or unsubscribe]</td> 
+   <td role="rowheader">[!UICONTROL An- oder Abmelden]</td> 
    <td>Wählen Sie aus, ob Sie den Informations-Service abonnieren oder abmelden möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Service name]</td> 
+   <td role="rowheader">[!UICONTROL Dienstname]</td> 
    <td>Wählen Sie den Service aus, den Sie abonnieren oder abbestellen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Recipient email address] </td> 
+   <td role="rowheader">[!UICONTROL Empfänger-E-Mail-Adresse] </td> 
    <td>Geben Sie die E-Mail-Adresse des Benutzers ein, den Sie für den Informations-Service abonnieren oder abmelden möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update record]
+#### [!UICONTROL Eintrag aktualisieren]
 
 Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Adobe Campaign].
 
@@ -376,11 +376,11 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Adobe Campai
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td role="rowheader">[!UICONTROL-Verbindung]</td>
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Campaign]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL-Ressource]</td> 
    <td>Wählen Sie den Typ [!DNL Adobe Campaign] Datensatzes aus, den Sie erstellen möchten.</td> 
   </tr> 
     <tr> 
@@ -388,19 +388,19 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Adobe Campai
    <td>Geben Sie die Zuordnungs-ID des Datensatzes ein, den Sie aktualisieren möchten.</td> 
   </tr> 
 <tr> 
-   <td role="rowheader">[!UICONTROL Fields] </td> 
+   <td role="rowheader">[!UICONTROL-Felder] </td> 
    <td>Wählen Sie die Felder aus, für die Sie Werte aktualisieren möchten, und füllen Sie dann die Werte für diese Felder aus. Felder variieren je nach ausgewähltem Datensatztyp.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Custom fields]</td> 
-   <td> Klicken Sie für jedes benutzerdefinierte Feld, das Sie aktualisieren möchten, auf <b>[!UICONTROL Add item]</b> und geben Sie den Namen und den Wert des Felds ein oder ordnen Sie ihn zu. </td> 
+   <td role="rowheader">[!UICONTROL Benutzerdefinierte Felder]</td> 
+   <td> Klicken Sie für jedes benutzerdefinierte Feld, das Sie aktualisieren möchten, auf <b>[!UICONTROL Element hinzufügen]</b> und geben Sie den Namen und den Wert des Felds ein oder ordnen Sie ihn zu. </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Suchvorgänge
 
-#### [!UICONTROL Search]
+#### [!UICONTROL Suche]
 
 Dieses Suchmodul gibt Datensätze basierend auf den angegebenen Kriterien zurück.
 
@@ -409,15 +409,15 @@ Dieses Suchmodul gibt Datensätze basierend auf den angegebenen Kriterien zurüc
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td role="rowheader">[!UICONTROL-Verbindung]</td>
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Campaign]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td role="rowheader">[!UICONTROL-Ressource]</td> 
    <td>Wählen Sie den Typ [!DNL Adobe Campaign] Datensatzes aus, den Sie erstellen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search criteria]</td> 
+   <td role="rowheader">[!UICONTROL Suchkriterien]</td> 
    <td>Geben Sie die Felder und Werte ein, die die Suche verwenden soll. Felder hängen von der ausgewählten Ressource ab.</td> 
   </tr> 
   <tr> 

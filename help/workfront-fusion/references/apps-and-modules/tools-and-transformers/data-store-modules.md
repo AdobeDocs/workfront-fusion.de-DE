@@ -4,14 +4,14 @@ description: Ein  [!DNL Adobe Workfront Fusion] -Datenspeicher, ähnlich einer D
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Data store]
+# [!UICONTROL Datenspeicher] Module
 
 Ein [!DNL Adobe Workfront Fusion] Datenspeicher, ähnlich einer Datenbank oder einer einfachen Tabelle, kann Daten aus Szenarien speichern und ermöglicht so die Übertragung von Daten zwischen einzelnen Szenarien oder Szenarioausführungen. Sie können einen Datenspeicher verwenden, um während der Synchronisierung neue Daten aus verschiedenen Systemen zu speichern.
 
@@ -44,7 +44,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Keine Workfront Fusion-Lizenzanforderung</p>
    </td> 
   </tr> 
   <tr> 
@@ -66,11 +66,11 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 ## Voraussetzungen
 
-Um [!UICONTROL Data Store] Module verwenden zu können, müssen Sie zunächst einen Datenspeicher erstellen.
+Um [!UICONTROL Datenspeicher]-Module verwenden zu können, müssen Sie zunächst einen Datenspeicher erstellen.
 
 Informationen zum Erstellen von Datenspeichern finden Sie unter [Erstellen und Verwalten von Datenspeichern](/help/workfront-fusion/create-scenarios/map-data/data-stores.md).
 
-## [!UICONTROL Data store] Module und ihre Felder
+## [!UICONTROL Datenspeicher]-Module und ihre Felder
 
 Beim Konfigurieren von Datenspeichermodulen zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere Datenspeicherfelder angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
@@ -90,7 +90,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 * [Datensätze suchen](#search-records)
 * [Aktualisieren eines Datensatzes](#update-a-record)
 
-### [!UICONTROL Add/Replace a Record]
+### [!UICONTROL Datensatz hinzufügen/ersetzen]
 
 Dieses Aktionsmodul fügt einen Datensatz hinzu oder ersetzt ihn.
 
@@ -100,7 +100,7 @@ Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle be
 
 >[!NOTE]
 >
->Das Modul gibt einen Fehler aus, wenn Sie versuchen, einen Datensatz hinzuzufügen, der sich bereits unter demselben Namen im Datenspeicher befindet, und die Option [!UICONTROL Overwrite an existing record] ist deaktiviert.
+>Das Modul gibt einen Fehler aus, wenn Sie versuchen, einen Datensatz hinzuzufügen, der sich bereits unter demselben Namen im Datenspeicher befindet, und die Option [!UICONTROL Vorhandenen Datensatz überschreiben] ist deaktiviert.
 
 Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
@@ -109,25 +109,25 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>[!UICONTROL Datenspeicher]</td> 
    <td> <p> Wählen Sie den Datenspeicher aus, in dem Sie einen Datensatz erstellen möchten, oder fügen Sie ihn hinzu. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul hinzufügen oder ersetzen soll. Der Schlüssel kann später zum Abrufen des Datensatzes verwendet werden. Wenn Sie dieses Feld leer lassen, wird automatisch ein Schlüssel generiert.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Overwrite an existing record] </td> 
+   <td>[!UICONTROL Vorhandenen Datensatz überschreiben] </td> 
    <td> <p>Aktivieren Sie diese Option, um den Datensatz zu überschreiben. Der Datensatz, den Sie überschreiben möchten, muss im obigen Feld Schlüssel angegeben werden.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record] </td> 
+   <td>[!UICONTROL-Eintrag] </td> 
    <td> <p>Geben Sie die gewünschten Werte in die Felder des Datensatzes ein.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Check the Existence of a Record]
+### [!UICONTROL Überprüfen Sie, ob ein Datensatz vorhanden ist]
 
 Dieses Aktionsmodul gibt an, ob ein bestimmter Datensatz vorhanden ist.
 
@@ -138,17 +138,17 @@ Sie geben den Datenspeicher und den Schlüssel des Datensatzes an.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>[!UICONTROL Datenspeicher] </td> 
    <td> <p>Wählen Sie den Datenspeicher aus, den Sie auf das Vorhandensein des Datensatzes überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, auf dessen Existenz das Modul prüfen soll.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Count Records]
+### [!UICONTROL Datensätze zählen]
 
 Dieses Aktionsmodul nummeriert die Datensätze in einem Datenspeicher.
 
@@ -161,13 +161,13 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>[!UICONTROL Datenspeicher] </td> 
    <td> <p>Wählen Sie den Datenspeicher aus, der die Datensätze enthält, die gezählt werden sollen.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a Record]
+### [!UICONTROL Löschen eines Datensatzes]
 
 Dieses Aktionsmodul löscht einen Datensatz.
 
@@ -180,17 +180,17 @@ Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle be
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>[!UICONTROL Datenspeicher] </td> 
    <td> <p>Wählen Sie den Datenspeicher aus, den Sie auf das Vorhandensein des Datensatzes überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul löschen soll.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Delete All Records]
+### [!UICONTROL Alle Datensätze löschen]
 
 Dieses Aktionsmodul löscht alle Datensätze aus einem bestimmten Datenspeicher.
 
@@ -201,13 +201,13 @@ Sie geben den Datenspeicher an.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
+   <td>[!UICONTROL Datenspeicher] </td> 
    <td> <p>Wählen Sie den Datenspeicher aus, aus dem Sie alle Datensätze löschen möchten.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Get a Record]
+### [!UICONTROL Datensatz abrufen]
 
 Dieses Aktionsmodul ruft einen Datensatz ab.
 
@@ -220,17 +220,17 @@ Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle be
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>[!UICONTROL Datenspeicher]</td> 
    <td> <p> Wählen Sie den Datenspeicher aus, aus dem Sie einen Datensatz abrufen möchten</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul abrufen soll.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Search Records]
+### [!UICONTROL Datensätze suchen]
 
 Dieses Suchmodul sucht in einem -Objekt im Datenspeicher nach Datensätzen, die mit der von Ihnen angegebenen Suchabfrage übereinstimmen.
 
@@ -243,29 +243,29 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>[!UICONTROL Datenspeicher]</td> 
    <td> <p> Wählen Sie den zu durchsuchenden Datenspeicher aus.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>[!UICONTROL filter]</p> </td> 
    <td> <p>Filter für die Suche festlegen.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Sort]</p> </td> 
-   <td> <p style="font-weight: normal;">Füllen Sie für jedes Feld, nach dem Sie sortieren möchten, die folgenden Felder aus:</p> <p style="font-weight: bold;">[!UICONTROL Key]</p> <p>Wählen Sie den Spaltennamen aus, nach dem die Ergebnisse sortiert werden sollen.</p> <p style="font-weight: bold;">[!UICONTROL Order]</p> <p>Wählen Sie aus, ob die Ergebnisse in auf- oder absteigender Reihenfolge sortiert werden sollen.</p> </td> 
+   <td> <p>[!UICONTROL sort]</p> </td> 
+   <td> <p style="font-weight: normal;">Füllen Sie für jedes Feld, nach dem Sie sortieren möchten, die folgenden Felder aus:</p> <p style="font-weight: bold;">[!UICONTROL-Schlüssel]</p> <p>Wählen Sie den Spaltennamen aus, nach dem die Ergebnisse sortiert werden sollen.</p> <p style="font-weight: bold;">[!UICONTROL-Reihenfolge]</p> <p>Wählen Sie aus, ob die Ergebnisse in auf- oder absteigender Reihenfolge sortiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
    <td> <p> Legen Sie die maximale Anzahl von Suchergebnissen fest, [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgegeben werden.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td>[!UICONTROL Die Routenausführung auch dann fortsetzen, wenn das Modul keine Ergebnisse zurückgibt]</td> 
    <td> <p> Wenn diese Option aktiviert ist, wird die Route, zu der dieses Modul gehört, auch dann weiter verarbeitet, wenn dieses Modul keine Ergebnisse zurückgibt.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Update a Record]
+### [!UICONTROL Aktualisieren eines Datensatzes]
 
 Dieses Aktionsmodul aktualisiert einen Datensatz.
 
@@ -280,19 +280,19 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store]</td> 
+   <td>[!UICONTROL Datenspeicher]</td> 
    <td> <p> Wählen Sie den Datenspeicher aus, in dem Sie einen Datensatz erstellen möchten, oder fügen Sie ihn hinzu. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul aktualisieren soll.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Insert missing record] </td> 
+   <td>[!UICONTROL Fehlenden Eintrag einfügen] </td> 
    <td> <p>Aktivieren Sie diese Option, um einen neuen Datensatz zu erstellen, wenn der Datensatz mit dem angegebenen Schlüssel noch nicht vorhanden ist.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Record]</td> 
+   <td>[!UICONTROL-Eintrag]</td> 
    <td> <p> Geben Sie die gewünschten Werte in die Felder des Datensatzes ein, die Sie aktualisieren möchten.</p> </td> 
   </tr> 
  </tbody> 

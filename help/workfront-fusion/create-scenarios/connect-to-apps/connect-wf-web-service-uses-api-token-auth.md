@@ -4,7 +4,7 @@ description: Einige Services lassen keine Integrationslösungen wie Adobe Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 1%
@@ -40,7 +40,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -109,7 +109,7 @@ Um einen Webservice mit Ihrem Workfront Fusion-Szenario zu verbinden, müssen Si
      </tr> 
      <tr> 
       <td role="rowheader"> Methode</td> 
-      <td> <p><code>POST</code> </p> <p>Die verwendete Methode hängt vom entsprechenden Endpunkt ab. Der Pushover-Endpunkt für das Pushen von Nachrichten verwendet die POST -Methode.</p> </td> 
+      <td> <p><code>POST</code> </p> <p>Die verwendete Methode hängt vom entsprechenden Endpunkt ab. Der Pushover-Endpunkt für das Pushen von Nachrichten verwendet die POST-Methode.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p> Kopfzeilen</p> </td> 

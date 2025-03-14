@@ -4,9 +4,9 @@ description: Sie können Ihre Team-Verbindungen im Bereich Verbindungen anzeigen
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: 945fd574afef0cfdd8b36ba5a24f5262e772ed8b
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '224'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 Sie können Szenarioelemente in den folgenden Bereichen in Ihrem [!DNL Adobe Workfront Fusion]-Konto speichern und löschen:
 
-* [!UICONTROL Scenario]
-* [!UICONTROL Connections]
+* [!UICONTROL Szenario]
+* [!UICONTROL Verbindungen]
 * [!UICONTROL Webhooks]
-* [!UICONTROL Keys]
-* [!UICONTROL Devices]
-* [!UICONTROL Data stores]
-* [!UICONTROL User profiles]
+* [!UICONTROL keys]
+* [!UICONTROL Geräte]
+* [!UICONTROL Datenspeicher]
+* [!UICONTROL Benutzerprofile]
 
 
 ## Zugriffsanforderungen
@@ -45,7 +45,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -82,7 +82,7 @@ So löschen Sie Szenarioelemente:
 
 1. Klicken Sie auf den Bereich im linken Bedienfeld .
 
-   Wenn Sie beispielsweise ein Szenario löschen möchten, klicken Sie im linken Bereich auf **[!UICONTROL Scenario]** .
+   Wenn Sie beispielsweise ein Szenario löschen möchten, klicken Sie im linken ]**auf**[!UICONTROL  Szenario“.
 
-1. Klicken Sie auf den Abwärtspfeil rechts neben dem Element, das Sie löschen möchten, und klicken Sie dann auf **[!UICONTROL Delete]**.
-1. Klicken Sie zur Bestätigung auf **[!UICONTROL Really]** .
+1. Klicken Sie auf den Abwärtspfeil rechts neben dem Element, das Sie löschen möchten, und klicken Sie dann auf **[!UICONTROL Löschen]**.
+1. Klicken Sie **[!UICONTROL &quot;]**&quot; zur Bestätigung.

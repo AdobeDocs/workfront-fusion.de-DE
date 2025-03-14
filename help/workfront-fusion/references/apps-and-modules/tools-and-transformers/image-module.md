@@ -4,7 +4,7 @@ description: Mit Adobe Workfront Fusion-Bildmodulen können Sie Informationen zu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-source-git-commit: 3834bb9c7f07e0097783c44558fd656d455337b4
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Keine Workfront Fusion-Lizenzanforderung</p>
    </td> 
   </tr> 
   <tr> 

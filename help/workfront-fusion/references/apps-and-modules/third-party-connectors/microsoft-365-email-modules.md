@@ -4,16 +4,16 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2823'
 ht-degree: 0%
 
 ---
 
 # [!DNL Microsoft Office 365 Email]
 
-In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Workflows automatisieren, die [!UICONTROL Microsoft Office 365 Email] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem [!DNL Adobe Workfront Fusion] können Sie Workflows automatisieren, die [!UICONTROL Microsoft Office 365 Email] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
 ## Zugriffsanforderungen
 
@@ -36,7 +36,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -87,7 +87,7 @@ Der Microsoft Office 365 E-Mail-Connector verwendet Folgendes:
 
 ## Verbinden des [!DNL Office 365 Email]-Services mit [!DNL Workfront Fusion]
 
-Anweisungen zum Verbinden Ihres [!DNL Office 365 Email]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung zu [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Anweisungen zum Verbinden Ihres [!DNL Office 365 Email]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung mit [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -110,16 +110,16 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Nachricht
 
-* [[!UICONTROL Create and Send a Message (legacy)]](#create-and-send-a-message)
-* [[!UICONTROL Delete a Message]](#delete-a-message)
-* [[!UICONTROL Get a message]](#get-a-message)
-* [[!UICONTROL Move a Message]](#move-a-message)
-* [[!UICONTROL Search messages]](#search-messages)
-* [[!UICONTROL Watch Messages]](#watch-messages)
+* [[!UICONTROL Erstellen und Senden einer Nachricht (veraltet)]](#create-and-send-a-message)
+* [[!UICONTROL Löschen einer Nachricht]](#delete-a-message)
+* [[!UICONTROL Nachricht abrufen]](#get-a-message)
+* [[!UICONTROL Nachricht verschieben]](#move-a-message)
+* [[!UICONTROL Nachrichten suchen]](#search-messages)
+* [[!UICONTROL Nachrichten ansehen]](#watch-messages)
 
 
 
-#### [!UICONTROL Create and Send a Message (legacy)]
+#### [!UICONTROL Erstellen und Senden einer Nachricht (veraltet)]
 
 Dieses Aktionsmodul erstellt und sendet eine E-Mail-Nachricht.
 
@@ -128,69 +128,69 @@ Dieses Aktionsmodul erstellt und sendet eine E-Mail-Nachricht.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Subject]</td> 
+   <td role="rowheader">[!UICONTROL Betreff]</td> 
    <td> <p>Geben Sie die Betreffzeile der Nachricht ein oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body content]</td> 
+   <td role="rowheader">[!UICONTROL Hauptteilinhalt]</td> 
    <td> <p>Geben Sie den Nachrichtentext der E-Mail ein oder mappen Sie ihn.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Importance]</td> 
+   <td role="rowheader">[!UICONTROL Wichtigkeit]</td> 
    <td> <p>Wichtigkeit der E-Mail auswählen</p> 
     <ul> 
-     <li>[!UICONTROL Low]</li> 
-     <li>[!UICONTROL Normal]</li> 
-     <li>[!UICONTROL High]</li> 
+     <li>[!UICONTROL Niedrig]</li> 
+     <li>[!UICONTROL normal]</li> 
+     <li>[!UICONTROL Hoch]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL an Empfänger]</p> </td> 
    <td> <p>Klicken Sie für jeden Empfänger, an den Sie die E-Mail senden möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL CC Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL CC Empfänger]</p> </td> 
    <td> <p><p>Klicken Sie für jeden Empfänger, an den Sie eine Kopie der E-Mail senden möchten, auf <b>Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Bcc Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL BCC-Empfänger]</p> </td> 
    <td> <p>Klicken Sie für jeden Empfänger, an den Sie eine Kopie der E-Mail senden möchten, ohne dass andere Empfänger ihre Namen oder E-Mail-Adressen sehen können, <b>Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Anlagen]</p> </td> 
    <td> <p>Klicken Sie für jeden Anhang, den Sie der E-Mail hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
+     <li> <p><strong>[!UICONTROL Source-Datei]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Internet Message Headers]</td> 
+   <td role="rowheader">[!UICONTROL Internet-Nachrichtenkopfzeilen]</td> 
    <td> <p>Klicken Sie für jede Kopfzeile, die Sie der E-Mail hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen der Kopfzeile ein</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Geben Sie einen Wert für die Kopfzeile ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen der Kopfzeile ein</p> </li> 
+     <li> <p><strong>[!UICONTROL value]</strong> </p> <p>Geben Sie einen Wert für die Kopfzeile ein.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Message]
+#### [!UICONTROL Löschen einer Nachricht]
 
 Dieses Aktionsmodul löscht eine vorhandene E-Mail-Nachricht.
 
@@ -199,21 +199,21 @@ Dieses Aktionsmodul löscht eine vorhandene E-Mail-Nachricht.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Von E-Mail-Adresse]</td> 
    <td> <p> Um eine freigegebene E-Mail-Adresse zu verwenden, geben Sie die Adresse hier ein. Der Benutzer, dessen Anmeldeinformationen in der für dieses Modul verwendeten Verbindung verwendet werden, muss Zugriff auf den freigegebenen Ordner haben.<p>Lassen Sie dieses Feld leer, um die E-Mail-Adresse des Verbindungseigentümers zu verwenden.</p></p> </td> 
   </tr> 
-   <td role="rowheader">[!UICONTROL Message ID]</td> 
+   <td role="rowheader">[!UICONTROL Nachrichten-ID]</td> 
    <td> <p> Wählen Sie die ID der Nachricht aus, die Sie löschen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a message]
+#### [!UICONTROL Nachricht abrufen]
 
 Dieses Aktionsmodul ruft die Metadaten einer bestimmten Nachricht ab
 
@@ -222,25 +222,25 @@ Dieses Aktionsmodul ruft die Metadaten einer bestimmten Nachricht ab
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Von E-Mail-Adresse]</td> 
    <td> <p> Um eine freigegebene E-Mail-Adresse zu verwenden, geben Sie die Adresse hier ein. Der Benutzer, dessen Anmeldeinformationen in der für dieses Modul verwendeten Verbindung verwendet werden, muss Zugriff auf den freigegebenen Ordner haben.<p>Lassen Sie dieses Feld leer, um die E-Mail-Adresse des Verbindungseigentümers zu verwenden.</p></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Message ID]</td> 
+   <td role="rowheader">[!UICONTROL Nachrichten-ID]</td> 
    <td> <p> Wählen Sie die ID der Nachricht aus, für die Sie Metadaten abrufen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get MIME contents]</td> 
-   <td>Aktivieren Sie diese Option, um Daten über den MIME-Inhalt der Nachricht abzurufen. [!UICONTROL MIME] Inhalte können Bilder, Audio, Video oder andere Dateitypen umfassen.</td> 
+   <td role="rowheader">[!UICONTROL MIME-Inhalte abrufen]</td> 
+   <td>Aktivieren Sie diese Option, um Daten über den MIME-Inhalt der Nachricht abzurufen. [!UICONTROL MIME]-Inhalte können Bilder, Audio, Video oder andere Dateitypen enthalten.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a Message]
+#### [!UICONTROL Nachricht verschieben]
 
 Dieses Aktionsmodul verschiebt eine E-Mail-Nachricht in einen ausgewählten Ordner im Postfach.
 
@@ -249,21 +249,21 @@ Dieses Aktionsmodul verschiebt eine E-Mail-Nachricht in einen ausgewählten Ordn
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Message ID]</td> 
+   <td role="rowheader">[!UICONTROL Nachrichten-ID]</td> 
    <td> <p> Wählen Sie die ID der Nachricht aus, die Sie in einen anderen Ordner verschieben möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mail Folder] </td> 
+   <td role="rowheader">[!UICONTROL Mail-Ordner] </td> 
    <td> <p>Wählen Sie die ID des Ordners aus, in den Sie die Nachricht verschieben möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search messages]
+#### [!UICONTROL Nachrichten suchen]
 
 Dieses Suchmodul sucht anhand bestimmter Kriterien nach Nachrichten.
 
@@ -272,29 +272,29 @@ Dieses Suchmodul sucht anhand bestimmter Kriterien nach Nachrichten.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Von E-Mail-Adresse]</td> 
    <td> <p> Um eine freigegebene E-Mail-Adresse zu verwenden, geben Sie die Adresse hier ein. Der Benutzer, dessen Anmeldeinformationen in der für dieses Modul verwendeten Verbindung verwendet werden, muss Zugriff auf den freigegebenen Ordner haben.<p>Lassen Sie dieses Feld leer, um die E-Mail-Adresse des Verbindungseigentümers zu verwenden.</p></p> </td> 
   </tr> 
 <tr> 
-   <td role="rowheader">[!UICONTROL Mail Folder]</td> 
+   <td role="rowheader">[!UICONTROL Mail-Ordner]</td> 
    <td> <p>Wählen Sie den Ordner aus, der die zu durchsuchenden Nachrichten enthält.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search]</td> 
+   <td role="rowheader">[!UICONTROL Suche]</td> 
    <td>Geben Sie Ihre Suchanfrage ein. Informationen zum Schreiben einer Suchanfrage finden Sie im [!DNL Microsoft] Support-Artikel <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Search Mail and People in [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Sortieren nach]</td> 
    <td> <p>Wählen Sie aus, wie Sie die Ergebnisse sortieren möchten:</p> 
     <ul> 
-     <li>[!UICONTROL Subject (Ascending or descending)]</li> 
-     <li>[!UICONTROL Created Date Time (Ascending or descending)]</li> 
-     <li>[!UICONTROL Last Modified Date Time (Ascending or descending)]</li> 
-     <li>[!UICONTROL Received Date Time (Ascending or descending)]</li> 
+     <li>[!UICONTROL Betreff (aufsteigend oder absteigend)]</li> 
+     <li>[!UICONTROL Erstellungsdatum Uhrzeit (aufsteigend oder absteigend)]</li> 
+     <li>[!UICONTROL Datum der letzten Änderung (aufsteigend oder absteigend)]</li> 
+     <li>[!UICONTROL Received Date Time (aufsteigend oder absteigend)]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -304,7 +304,7 @@ Dieses Suchmodul sucht anhand bestimmter Kriterien nach Nachrichten.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Messages]
+#### [!UICONTROL Nachrichten ansehen]
 
 Dieses Trigger-Modul startet ein Szenario, wenn eine neue E-Mail-Nachricht gesendet oder empfangen wird.
 
@@ -313,24 +313,24 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue E-Mail-Nachricht gesen
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Watch Messages]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Nachrichten ansehen]</p> </td> 
    <td> <p>Wählen Sie die Nachrichten aus, die Sie beobachten möchten:</p> 
     <ul> 
-     <li>[!UICONTROL Only Unread]</li> 
-     <li>[!UICONTROL Only read]</li> 
-     <li>[!UICONTROL All]</li> 
+     <li>[!UICONTROL only unread]</li> 
+     <li>[!UICONTROL Nur lesen]</li> 
+     <li>[!UICONTROL ALL]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mail Folder]</td> 
+   <td role="rowheader">[!UICONTROL Mail-Ordner]</td> 
    <td> <p>Wählen Sie den Ordner aus, der die Nachrichten enthält, die Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search]</td> 
+   <td role="rowheader">[!UICONTROL Suche]</td> 
    <td>Geben Sie Ihre Suchanfrage ein. Das -Modul gibt Nachrichten zurück, die mit dieser Abfrage übereinstimmen. Informationen zum Schreiben einer Suchanfrage finden Sie im [!DNL Microsoft] Support-Artikel <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Search Mail and People in [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
@@ -346,7 +346,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue E-Mail-Nachricht gesen
 * [Nachrichtenentwurf senden](#send-a-draft-message)
 * [Aktualisieren einer Nachricht](#update-a-message)
 
-#### [!UICONTROL Create a Draft Message]
+#### [!UICONTROL Nachrichtenentwurf erstellen]
 
 Dieses Aktionsmodul erstellt eine neue E-Mail-Nachricht als Entwurf.
 
@@ -355,69 +355,69 @@ Dieses Aktionsmodul erstellt eine neue E-Mail-Nachricht als Entwurf.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Subject]</td> 
+   <td role="rowheader">[!UICONTROL Betreff]</td> 
    <td> <p>Geben Sie die Betreffzeile der Nachricht ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body Content Type]</td> 
-   <td>Wählen Sie aus, ob der Nachrichteninhalt HTML oder Text ist.</td> 
+   <td role="rowheader">[!UICONTROL Hauptteil-Inhaltstyp]</td> 
+   <td>Wählen Sie aus, ob der Nachrichtentext HTML oder Text enthält.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body content]</td> 
+   <td role="rowheader">[!UICONTROL Hauptteilinhalt]</td> 
    <td> <p>Geben Sie den Nachrichtentext der E-Mail ein oder mappen Sie ihn.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Importance]</td> 
+   <td role="rowheader">[!UICONTROL Wichtigkeit]</td> 
    <td> <p>Wichtigkeit der E-Mail auswählen</p> 
     <ul> 
-     <li>[!UICONTROL Low]</li> 
-     <li>[!UICONTROL Normal]</li> 
-     <li>[!UICONTROL High]</li> 
+     <li>[!UICONTROL Niedrig]</li> 
+     <li>[!UICONTROL normal]</li> 
+     <li>[!UICONTROL Hoch]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL an Empfänger]</p> </td> 
    <td> <p>Klicken Sie für jeden Empfänger, an den Sie die E-Mail senden möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL CC Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL CC Empfänger]</p> </td> 
    <td> <p><p>Klicken Sie für jeden Empfänger, an den Sie eine Kopie der E-Mail senden möchten, auf <b>Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Bcc Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL BCC-Empfänger]</p> </td> 
    <td> <p>Klicken Sie für jeden Empfänger, an den Sie eine Kopie der E-Mail senden möchten, ohne dass andere Empfänger ihre Namen oder E-Mail-Adressen sehen können, <b>Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Anlagen]</p> </td> 
    <td> <p>Klicken Sie für jeden Anhang, den Sie der E-Mail hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
+     <li> <p><strong>[!UICONTROL Source-Datei]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Von E-Mail-Adresse]</td> 
    <td> <p> Um eine freigegebene E-Mail-Adresse zu verwenden, geben Sie die Adresse hier ein. Der Benutzer, dessen Anmeldeinformationen in der für dieses Modul verwendeten Verbindung verwendet werden, muss Zugriff auf den freigegebenen Ordner haben.<p>Lassen Sie dieses Feld leer, um die E-Mail-Adresse des Verbindungseigentümers zu verwenden.</p></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Send a Draft Message]
+#### [!UICONTROL Nachrichtenentwurf senden]
 
 Dieses Aktionsmodul sendet eine E-Mail-Nachricht, die sich derzeit im Entwurf befindet.
 
@@ -426,21 +426,21 @@ Dieses Aktionsmodul sendet eine E-Mail-Nachricht, die sich derzeit im Entwurf be
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Von E-Mail-Adresse]</td> 
    <td> <p> Um eine freigegebene E-Mail-Adresse zu verwenden, geben Sie die Adresse hier ein. Der Benutzer, dessen Anmeldeinformationen in der für dieses Modul verwendeten Verbindung verwendet werden, muss Zugriff auf den freigegebenen Ordner haben.<p>Lassen Sie dieses Feld leer, um die E-Mail-Adresse des Verbindungseigentümers zu verwenden.</p></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Draft Message ID]</td> 
+   <td role="rowheader">[!UICONTROL Entwurfs-Nachrichten-ID]</td> 
    <td> <p> Wählen Sie die Nachrichten-ID des Entwurfs aus, den Sie senden möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Message]
+#### [!UICONTROL Aktualisieren einer Nachricht]
 
 Dieses Aktionsmodul aktualisiert eine vorhandene Nachricht.
 
@@ -449,71 +449,71 @@ Dieses Aktionsmodul aktualisiert eine vorhandene Nachricht.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Von E-Mail-Adresse]</td> 
    <td> <p> Um eine freigegebene E-Mail-Adresse zu verwenden, geben Sie die Adresse hier ein. Der Benutzer, dessen Anmeldeinformationen in der für dieses Modul verwendeten Verbindung verwendet werden, muss Zugriff auf den freigegebenen Ordner haben.<p>Lassen Sie dieses Feld leer, um die E-Mail-Adresse des Verbindungseigentümers zu verwenden.</p></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter a message ID]</td> 
+   <td role="rowheader">[!UICONTROL Nachrichtenkennung eingeben]</td> 
    <td> <p>Wählen Sie aus, wie Sie die zu aktualisierende Nachricht identifizieren möchten:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter Manually]</strong> </p> <p>Geben Sie die Nachrichten-ID ein oder mappen Sie sie.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Wählen Sie den Ordner aus, der die zu aktualisierende Nachricht enthält, und wählen Sie dann die Nachricht aus</p> </li> 
+     <li> <p><strong>[!UICONTROL Manuell eingeben]</strong> </p> <p>Geben Sie die Nachrichten-ID ein oder mappen Sie sie.</p> </li> 
+     <li> <p><strong>[!UICONTROL Aus der Liste auswählen]</strong> </p> <p>Wählen Sie den Ordner aus, der die zu aktualisierende Nachricht enthält, und wählen Sie dann die Nachricht aus</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Subject]</td> 
+   <td role="rowheader">[!UICONTROL Betreff]</td> 
    <td> <p>Geben Sie die Betreffzeile der Nachricht ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body content]</td> 
+   <td role="rowheader">[!UICONTROL Hauptteilinhalt]</td> 
    <td> <p>Geben Sie den Nachrichtentext der E-Mail ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Importance]</td> 
+   <td role="rowheader">[!UICONTROL Wichtigkeit]</td> 
    <td> <p>Wichtigkeit der E-Mail auswählen</p> 
     <ul> 
-     <li>[!UICONTROL Low]</li> 
-     <li>[!UICONTROL Normal]</li> 
-     <li>[!UICONTROL High]</li> 
+     <li>[!UICONTROL Niedrig]</li> 
+     <li>[!UICONTROL normal]</li> 
+     <li>[!UICONTROL Hoch]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL an Empfänger]</p> </td> 
    <td> <p>Klicken Sie für jeden Empfänger, an den Sie die E-Mail senden möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL CC Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL CC Empfänger]</p> </td> 
    <td> <p><p>Klicken Sie für jeden Empfänger, an den Sie eine Kopie der E-Mail senden möchten, auf <b>Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Bcc Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL BCC-Empfänger]</p> </td> 
    <td> <p>Klicken Sie für jeden Empfänger, an den Sie eine Kopie der E-Mail senden möchten, ohne dass andere Empfänger ihre Namen oder E-Mail-Adressen sehen können, <b>Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Anlagen]</p> </td> 
    <td> <p>Klicken Sie für jeden Anhang, den Sie der E-Mail hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
+     <li> <p><strong>[!UICONTROL Source-Datei]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mark it as Read]</td> 
+   <td role="rowheader">[!UICONTROL Als gelesen markieren]</td> 
    <td>Aktivieren Sie diese Option, um die aktualisierte Nachricht als gelesen zu markieren.</td> 
   </tr> 
  </tbody> 
@@ -521,10 +521,10 @@ Dieses Aktionsmodul aktualisiert eine vorhandene Nachricht.
 
 ### Anhang
 
-* [[!UICONTROL Download an Attachment]](#download-an-attachment)
-* [[!UICONTROL List Attachments]](#list-attachments)
+* [[!UICONTROL Anlage herunterladen]](#download-an-attachment)
+* [[!UICONTROL Anhänge auflisten]](#list-attachments)
 
-#### [!UICONTROL Download an Attachment]
+#### [!UICONTROL Anlage herunterladen]
 
 Dieses Modul lädt den angegebenen Anhang herunter.
 
@@ -533,25 +533,25 @@ Dieses Modul lädt den angegebenen Anhang herunter.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Von E-Mail-Adresse]</td> 
    <td> <p> Um eine freigegebene E-Mail-Adresse zu verwenden, geben Sie die Adresse hier ein. Der Benutzer, dessen Anmeldeinformationen in der für dieses Modul verwendeten Verbindung verwendet werden, muss Zugriff auf den freigegebenen Ordner haben.<p>Lassen Sie dieses Feld leer, um die E-Mail-Adresse des Verbindungseigentümers zu verwenden.</p></p> </td> 
   </tr> 
-   <td role="rowheader">[!UICONTROL Message ID]</td> 
+   <td role="rowheader">[!UICONTROL Nachrichten-ID]</td> 
    <td> <p> Wählen Sie die ID der Nachricht aus, die den Anhang enthält, den Sie herunterladen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Attachment ID]</td> 
+   <td role="rowheader">[!UICONTROL Anhang-ID]</td> 
    <td> <p>Geben Sie die ID des Anhangs ein, den Sie herunterladen möchten, oder mappen Sie sie. Sie können diese Idee mithilfe des Moduls „Listenanhänge“ finden.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Attachments]
+#### [!UICONTROL Anhänge auflisten]
 
 Dieses Modul ruft eine Liste von Anhängen ab, die zur angegebenen Nachricht gehören.
 
@@ -560,15 +560,15 @@ Dieses Modul ruft eine Liste von Anhängen ab, die zur angegebenen Nachricht geh
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Von E-Mail-Adresse]</td> 
    <td> <p> Um eine freigegebene E-Mail-Adresse zu verwenden, geben Sie die Adresse hier ein. Der Benutzer, dessen Anmeldeinformationen in der für dieses Modul verwendeten Verbindung verwendet werden, muss Zugriff auf den freigegebenen Ordner haben.<p>Lassen Sie dieses Feld leer, um die E-Mail-Adresse des Verbindungseigentümers zu verwenden.</p></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Message ID]</td> 
+   <td role="rowheader">[!UICONTROL Nachrichten-ID]</td> 
    <td> <p> Wählen Sie die ID der Nachricht aus, von der Sie Anhänge abrufen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
@@ -580,11 +580,11 @@ Dieses Modul ruft eine Liste von Anhängen ab, die zur angegebenen Nachricht geh
 
 ### Sonstige
 
-* [[!UICONTROL Add an Attachment]](#add-an-attachment)
+* [[!UICONTROL Anlage hinzufügen]](#add-an-attachment)
 * [Erstellen und Senden einer Nachricht](#create-and-send-a-message)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Erstellen eines API-Aufrufs]](#make-an-api-call)
 
-#### [!UICONTROL Add an Attachment]
+#### [!UICONTROL Anlage hinzufügen]
 
 Dieses Modul fügt einer Nachricht einen großen Anhang hinzu.
 
@@ -593,25 +593,25 @@ Dieses Modul fügt einer Nachricht einen großen Anhang hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Von E-Mail-Adresse]</td> 
    <td> <p> Um eine freigegebene E-Mail-Adresse zu verwenden, geben Sie die Adresse hier ein. Der Benutzer, dessen Anmeldeinformationen in der für dieses Modul verwendeten Verbindung verwendet werden, muss Zugriff auf den freigegebenen Ordner haben.<p>Lassen Sie dieses Feld leer, um die E-Mail-Adresse des Verbindungseigentümers zu verwenden.</p></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Message ID]</td> 
+   <td role="rowheader">[!UICONTROL Nachrichten-ID]</td> 
    <td> <p> Wählen Sie die ID der Nachricht aus, der Sie einen Anhang hinzufügen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Source-Datei]</td> 
    <td> <p>Wählen Sie eine Datei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create and Send a Message]
+#### [!UICONTROL Erstellen und Senden einer Nachricht]
 
 Dieses Aktionsmodul erstellt und sendet eine E-Mail-Nachricht.
 
@@ -620,65 +620,65 @@ Dieses Aktionsmodul erstellt und sendet eine E-Mail-Nachricht.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Subject]</td> 
+   <td role="rowheader">[!UICONTROL Betreff]</td> 
    <td> <p>Geben Sie die Betreffzeile der Nachricht ein oder mappen Sie sie.</p> </td> 
   </tr> 
-   <td role="rowheader">[!UICONTROL Body content]</td> 
+   <td role="rowheader">[!UICONTROL Hauptteilinhalt]</td> 
    <td> <p>Geben Sie den Nachrichtentext der E-Mail ein oder mappen Sie ihn.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Importance]</td> 
+   <td role="rowheader">[!UICONTROL Wichtigkeit]</td> 
    <td> <p>Wichtigkeit der E-Mail auswählen</p> 
     <ul> 
-     <li>[!UICONTROL Low]</li> 
-     <li>[!UICONTROL Normal]</li> 
-     <li>[!UICONTROL High]</li> 
+     <li>[!UICONTROL Niedrig]</li> 
+     <li>[!UICONTROL normal]</li> 
+     <li>[!UICONTROL Hoch]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL an Empfänger]</p> </td> 
    <td> <p>Klicken Sie für jeden Empfänger, an den Sie die E-Mail senden möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL CC Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL CC Empfänger]</p> </td> 
    <td> <p><p>Klicken Sie für jeden Empfänger, an den Sie eine Kopie der E-Mail senden möchten, auf <b>Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Bcc Recipients]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL BCC-Empfänger]</p> </td> 
    <td> <p>Klicken Sie für jeden Empfänger, an den Sie eine Kopie der E-Mail senden möchten, ohne dass andere Empfänger ihre Namen oder E-Mail-Adressen sehen können, <b>Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie die E-Mail-Adresse des Kontakts ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen des Kontakts ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Anlagen]</p> </td> 
    <td> <p>Klicken Sie für jeden Anhang, den Sie der E-Mail hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
+     <li> <p><strong>[!UICONTROL Source-Datei]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Internet Message Headers]</td> 
+   <td role="rowheader">[!UICONTROL Internet-Nachrichtenkopfzeilen]</td> 
    <td> <p>Fügen Sie die Nachrichtenkopfzeilen für die E-Mail hinzu.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Geben Sie den Namen der Kopfzeile ein</p> </li> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Geben Sie einen Wert für die Kopfzeile ein.</p> </li> 
+     <li> <p><strong>[!UICONTROL name]</strong> </p> <p>Geben Sie den Namen der Kopfzeile ein</p> </li> 
+     <li> <p><strong>[!UICONTROL E-Mail-Adresse]</strong> </p> <p>Geben Sie einen Wert für die Kopfzeile ein.</p> </li> 
     </ul> </td> 
   </tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td role="rowheader">[!UICONTROL Von E-Mail-Adresse]</td> 
    <td> <p> Um eine freigegebene E-Mail-Adresse zu verwenden, geben Sie die Adresse hier ein. Der Benutzer, dessen Anmeldeinformationen in der für dieses Modul verwendeten Verbindung verwendet werden, muss Zugriff auf den freigegebenen Ordner haben.<p>Lassen Sie dieses Feld leer, um die E-Mail-Adresse des Verbindungseigentümers zu verwenden.</p></p> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -687,7 +687,7 @@ Dieses Aktionsmodul erstellt und sendet eine E-Mail-Nachricht.
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Erstellen eines API-Aufrufs]
 
 Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
 
@@ -696,7 +696,7 @@ Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -704,19 +704,19 @@ Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
    <td> <p>Geben Sie einen Pfad relativ zu <code>https://graph.microsoft.com</code> ein. Beispiel:<code> /v1.0/me/messages</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Methode]</p> </td> 
    td&gt; <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 
    <td> <p> Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL body]</td> 
    <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 

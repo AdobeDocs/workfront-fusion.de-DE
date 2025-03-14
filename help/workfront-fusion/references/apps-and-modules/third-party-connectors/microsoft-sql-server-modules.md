@@ -4,9 +4,9 @@ description: Sie können verwenden [!DNL Adobe Workfront Fusion]  um eine Verbin
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -60,7 +60,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 ## Verbinden des [!DNL Microsoft SQL Server]-Services mit [!DNL Workfront Fusion]
 
-Anweisungen zum Verbinden Ihres [!DNL Microsoft SQL Server]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung zu [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+Anweisungen zum Verbinden Ihres [!DNL Microsoft SQL Server]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung mit [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Weitere Informationen zum Erstellen einer gespeicherten Prozedur finden Sie in d
 >
 >[!DNL Workfront Fusion] unterstützt nicht mehrere Recordsets. Nur der erste wird verarbeitet.
 
-## Fehlerbehebung bei [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Lock wait timeout exceeded; try restarting transaction]
+## Fehlerbehebung für Fehler [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Sperrwartezeitlimit überschritten; versuchen Sie, die Transaktion neu zu starten]
 
 Dieser Fehler tritt auf, wenn Sie dieselben Daten mithilfe mehrerer Module ändern. Sie wird durch SQL-Transaktionen verursacht.
 
@@ -94,6 +94,6 @@ Wenn ein anderes Modul versucht, auf dieselben Daten zuzugreifen, muss es warten
 
 Aktivieren Sie die automatische Bestätigung. Der automatische Commit beendet (übergibt) jede Transaktion unmittelbar nach Abschluss der Modulausführung.
 
-1. Klicken Sie auf das Symbol [!UICONTROL Scenario settings] ![Szenario-Einstellungen](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) unten auf dem Bildschirm.
-1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Auto commit]** .
-1. Klicken Sie auf **[!UICONTROL OK]** , um die Szenario-Einstellungen zu speichern.
+1. Klicken Sie auf [!UICONTROL Szenario]-Symbol ![Szenario-Einstellungen](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) unten auf dem Bildschirm.
+1. Aktivieren Sie **[!UICONTROL Kontrollkästchen]** Automatisch bestätigen“.
+1. Klicken Sie **[!UICONTROL OK]**, um die Szenario-Einstellungen zu speichern.

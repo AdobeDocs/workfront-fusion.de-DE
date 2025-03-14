@@ -4,16 +4,16 @@ description: Die  [!DNL Adobe Workfront Fusion] -HTTP-App bietet verschiedene Mo
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
 
 # HTTP > Andere Module
 
-Die [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] App bietet verschiedene Module für die Kommunikation auf der Grundlage des Hypertext Transfer Protocol (HTTP). HTTP ist die Grundlage der Datenkommunikation für das World Wide Web. Sie können die Module verwenden, um Web-Seiten und -Dateien herunterzuladen, Webhooks und API-Endpunkte aufzurufen usw.
+Die [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP]-App bietet verschiedene Module für die Kommunikation auf der Grundlage des Hypertext Transfer Protocol (HTTP)-Protokolls. HTTP ist die Grundlage der Datenkommunikation für das World Wide Web. Sie können die Module verwenden, um Web-Seiten und -Dateien herunterzuladen, Webhooks und API-Endpunkte aufzurufen usw.
 
 Die richtige Auswahl des Moduls hängt vom Authentifizierungs-/Autorisierungsmechanismus der Ressource ab, auf die Sie zugreifen möchten. Im Folgenden finden Sie Beispiele für -Module
 
@@ -50,7 +50,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -76,18 +76,18 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 Spezifische Anweisungen für das Anforderungsmodul finden Sie in den folgenden Artikeln:
 
-* [[!UICONTROL HTTP] > [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Anfrage stellen] Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Erstellen einer einfachen Autorisierungsanfrage]-Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0-Anfrage stellen] Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Erstellen einer Client-Zertifikatautorisierungsanfrage] Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Erstellen einer API-Schlüssel-Autorisierungsanfrage]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 
 ## Andere Aktionsmodule
 
-* [[!UICONTROL Get a File]](#get-a-file)
-* [[!UICONTROL Resolve a target URL]](#resolve-a-target-url)
+* [[!UICONTROL Datei abrufen]](#get-a-file)
+* [[!UICONTROL Auflösen einer Ziel-URL]](#resolve-a-target-url)
 
-### [!UICONTROL Get a File]
+### [!UICONTROL Datei abrufen]
 
 Dieses Aktionsmodul lädt eine Datei von der angegebenen URL herunter. Nachdem die Datei heruntergeladen wurde, können Sie die Datei mit anderen Modulen im Szenario weiter verarbeiten (die Dateidaten zuordnen).
 
@@ -96,7 +96,7 @@ Dieses Aktionsmodul lädt eine Datei von der angegebenen URL herunter. Nachdem d
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
+   <td role="rowheader">[!UICONTROL Alle Status als Fehler auswerten (außer 2xx und 3xx )] </td> 
    <td> <p>Mit dieser Option können Sie die Fehlerbehandlung einrichten.</p> <p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Fehlerbehandlung in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -104,13 +104,13 @@ Dieses Aktionsmodul lädt eine Datei von der angegebenen URL herunter. Nachdem d
    <td> <p>Geben Sie die URL der Datei ein, die Sie herunterladen möchten, oder mappen Sie sie. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules] </td> 
+   <td role="rowheader">[!UICONTROL - Cookies für andere HTTP-Module freigeben] </td> 
    <td> <p>Aktivieren Sie diese Option, wenn die Cookies für diese Website für andere Module verfügbar sein sollen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Resolve a target URL]
+### [!UICONTROL Auflösen einer Ziel-URL]
 
 Dieses Aktionsmodul löst eine Kette von HTTP-Umleitungen auf und gibt eine Ziel-URL zurück.
 
@@ -123,15 +123,15 @@ Dieses Aktionsmodul löst eine Kette von HTTP-Umleitungen auf und gibt eine Ziel
    <td> <p>Geben Sie die URL ein, die Sie auflösen möchten, oder ordnen Sie sie zu, z. B. eine [!DNL bit.ly] URL.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method] </td> 
-   <td> <p>Wählen Sie aus, ob Sie die [!UICONTROL HEAD]- oder die [!UICONTROL GET] verwenden möchten.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Methode] </td> 
+   <td> <p>Wählen Sie aus, ob Sie die Methode [!UICONTROL HEAD] oder die Methode [!UICONTROL GET] verwenden möchten.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Iterator-Module
 
-### [!UICONTROL Retrieve headers]
+### [!UICONTROL Kopfzeilen abrufen]
 
 Dieses Modul gibt jede Kopfzeile (Name und Wert) des angegebenen HTTP-Moduls in einem separaten Bundle zurück.
 
@@ -140,7 +140,7 @@ Dieses Modul gibt jede Kopfzeile (Name und Wert) des angegebenen HTTP-Moduls in 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Source-Modul]</td> 
    <td> <p> Wählen Sie das Modul aus, aus dem Sie die Kopfzeilen abrufen möchten.</p> </td> 
   </tr> 
  </tbody> 

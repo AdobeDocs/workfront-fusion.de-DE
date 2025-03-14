@@ -4,9 +4,9 @@ description: Mit den Adobe Workfront Fusion Google-Folien-Modulen können Sie Pr
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: c9c2957aad4c885a622a80b9f25303517db0c506
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1970'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -102,16 +102,16 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Präsentation
 
-* [[!UICONTROL Add/Delete a Slide]](#adddelete-a-slide)
-* [[!UICONTROL Create a Presentation From a Template]](#create-a-presentation-from-a-template)
-* [[!UICONTROL Get a Page/Thumbnail]](#get-a-pagethumbnail)
-* [[!UICONTROL Get a Presentation]](#get-a-presentation)
-* [[!UICONTROL List Presentations]](#list-presentations)
-* [[!UICONTROL Refresh a Chart]](#refresh-a-chart)
-* [[!UICONTROL Upload an Image To a Presentation]](#upload-an-image-to-a-presentation)
-* [[!UICONTROL Watch Presentations]](#watch-presentations)
+* [[!UICONTROL Hinzufügen/Löschen einer Folie]](#adddelete-a-slide)
+* [[!UICONTROL Erstellen einer Präsentation aus einer Vorlage]](#create-a-presentation-from-a-template)
+* [[!UICONTROL Abrufen einer Seite/Miniaturansicht]](#get-a-pagethumbnail)
+* [[!UICONTROL Präsentation abrufen]](#get-a-presentation)
+* [[!UICONTROL Präsentationen auflisten]](#list-presentations)
+* [[!UICONTROL Aktualisieren eines Diagramms]](#refresh-a-chart)
+* [[!UICONTROL Laden Sie ein Bild in eine Präsentation hoch]](#upload-an-image-to-a-presentation)
+* [[!UICONTROL Präsentationen ansehen]](#watch-presentations)
 
-#### [!UICONTROL Add/Delete a Slide]
+#### [!UICONTROL Hinzufügen/Löschen einer Folie]
 
 Dieses Aktionsmodul erstellt eine Folie oder löscht eine vorhandene Folie in der angegebenen Präsentation.
 
@@ -120,11 +120,11 @@ Dieses Aktionsmodul erstellt eine Folie oder löscht eine vorhandene Folie in de
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select the method]</td> 
+   <td role="rowheader">[!UICONTROL Methode auswählen]</td> 
    <td> <p>Wählen Sie aus, ob Sie eine neue Folie hinzufügen oder eine Folie löschen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -140,19 +140,19 @@ Dieses Aktionsmodul erstellt eine Folie oder löscht eine vorhandene Folie in de
    <td> <p>Wenn Sie eine Folie löschen und die Folie manuell eingeben möchten, geben Sie die Folien-ID ein oder ordnen Sie sie zu. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Predefined layout type]</td> 
+   <td role="rowheader">[!UICONTROL vordefinierter Layouttyp]</td> 
    <td> <p> Wählen Sie das vordefinierte Folien-Layout aus, das die hinzugefügte Folie verwenden soll. Geben Sie Werte für alle zusätzlichen Felder an (z. B. [!UICONTROL Title]).</p> 
     <ul> 
-     <li>[!UICONTROL Blank layout, with no placeholders]</li> 
-     <li>[!UICONTROL Layout with a caption at the bottom]</li> 
-     <li>[!UICONTROL Layout with a title and subtitle]</li> 
-     <li>[!UICONTROL Layout with a title and body]</li> 
-     <li>[!UICONTROL Layout with a title and two columns]</li> 
-     <li>[!UICONTROL Layout with only a title]</li> 
-     <li>[!UICONTROL Layout with a section title]</li> 
-     <li>[!UICONTROL Layout with a title and subtitle on one side and description on the other]</li> 
-     <li>[!UICONTROL Layout with one title and one body, arranged in a single column]</li> 
-     <li>[!UICONTROL Layout with a main point]</li> 
+     <li>[!UICONTROL Leeres Layout, ohne Platzhalter]</li> 
+     <li>[!UICONTROL Layout mit einer Beschriftung am unteren Rand]</li> 
+     <li>[!UICONTROL Layout mit Titel und Untertitel]</li> 
+     <li>[!UICONTROL Layout mit Titel und Textkörper]</li> 
+     <li>[!UICONTROL Layout mit einem Titel und zwei Spalten]</li> 
+     <li>[!UICONTROL Layout mit nur einem Titel]</li> 
+     <li>[!UICONTROL Layout mit Abschnittstitel]</li> 
+     <li>[!UICONTROL Layout mit Titel und Untertitel auf der einen Seite und Beschreibung auf der anderen Seite]</li> 
+     <li>[!UICONTROL-Layout mit einem Titel und einem Hauptteil, in einer einzigen Spalte angeordnet]</li> 
+     <li>[!UICONTROL Layout mit einem Hauptpunkt]</li> 
      <li>[!DNL Layout with a big number heading]</li> 
     </ul> <p>Dieses Feld ist verfügbar, wenn Sie eine Folie hinzufügen ausgewählt haben.</p> </td> 
   </tr> 
@@ -163,7 +163,7 @@ Dieses Aktionsmodul erstellt eine Folie oder löscht eine vorhandene Folie in de
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Presentation From a Template]
+#### [!UICONTROL Erstellen einer Präsentation aus einer Vorlage]
 
 Dieses Aktionsmodul erstellt eine neue Präsentation, indem es eine Präsentation kopiert und alle Tags wie `{{Name}}` ersetzt, `{{Email}}` mit den bereitgestellten Daten.
 
@@ -172,57 +172,57 @@ Dieses Aktionsmodul erstellt eine neue Präsentation, indem es eine Präsentatio
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Title] </td> 
+   <td role="rowheader">[!UICONTROL Titel] </td> 
    <td> <p>Geben Sie einen Namen für die neue Präsentation ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Copy a Presentation]</td> 
+   <td role="rowheader">[!UICONTROL Präsentation kopieren]</td> 
    <td> <p> Wählen Sie die Option, wenn Sie eine vorhandene Präsentation kopieren:</p> 
     <ul> 
-     <li>[!UICONTROL By Mapping]</li> 
-     <li>[!UICONTROL By Dropdown]</li> 
+     <li>[!UICONTROL nach Zuordnung]</li> 
+     <li>[!UICONTROL nach Dropdown]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Copy of Existing Presentation ID]</td> 
-   <td> <p> Geben Sie den Pfad oder die Präsentations-ID einer vorhandenen Präsentation ein, die Sie kopieren möchten. Dieses Feld wird angezeigt, wenn Sie die [!UICONTROL By Mapping] erstellen.</p> </td> 
+   <td role="rowheader">[!UICONTROL Kopie der vorhandenen Präsentations-ID]</td> 
+   <td> <p> Geben Sie den Pfad oder die Präsentations-ID einer vorhandenen Präsentation ein, die Sie kopieren möchten. Dieses Feld wird angezeigt, wenn Sie die Präsentation erstellen [!UICONTROL By Mapping].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td role="rowheader">[!UICONTROL Laufwerk auswählen]</td> 
    <td> <p>Wählen Sie die [!DNL Google Drive] aus, in der sich die aufzulistenden Präsentationen befinden:</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Freigegebenes Laufwerk</li> 
-    </ul> <p>Dieses Feld wird angezeigt, wenn Sie die [!UICONTROL By Dropdown] erstellen.</p> </td> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
+     <li>[!UICONTROL [!DNL Google] freigegebenes Laufwerk]</li> 
+    </ul> <p>Dieses Feld wird angezeigt, wenn Sie die Präsentation erstellen [!UICONTROL By Dropdown].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td role="rowheader">[!UICONTROL Präsentations-ID]</td> 
    <td> <p> Wählen Sie die Präsentation aus oder geben Sie die Präsentations-ID der Präsentation ein, die Sie als Vorlage verwenden möchten, oder mappen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values] </td> 
+   <td role="rowheader">[!UICONTROL-Werte] </td> 
    <td> <p>Fügen Sie die Werte hinzu:</p> 
     <ul> 
-     <li><strong>[!UICONTROL Tag]</strong>: Geben Sie das Tag ein, das Sie in der Präsentation ersetzen möchten. Beispiel: <code>&#123;&#123;Name&#125;&#125;</code></li> 
+     <li><strong>[!UICONTROL Tag]</strong>: Geben Sie den Tag ein, den Sie in der Präsentation ersetzen möchten. Beispiel: <code>&#123;&#123;Name&#125;&#125;</code></li> 
      <li><strong>[!UICONTROL Replaced Value]</strong>: Geben Sie den Wert ein, durch den das vorhandene Tag ersetzt werden soll. Wenn beispielsweise eine Zeichenfolge in der Präsentation <code>&#123;&#123;Name&#125;&#125;</code> und der ersetzte Wert Sample ist, wird die <code>&#123;&#123;Name&#125;&#125;</code> durch <code>Sample</code> ersetzt.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL New Drive Location]</td> 
+   <td role="rowheader">[!UICONTROL neuer Laufwerkspeicherort]</td> 
    <td> <p>Wählen Sie die [!DNL Google Drive] aus, in der Sie die neue Präsentation speichern oder hinzufügen möchten:</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Freigegebenes Laufwerk</li> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
+     <li>[!UICONTROL [!DNL Google] freigegebenes Laufwerk]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL New Document's Location]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Speicherort des neuen Dokuments]</p> </td> 
    <td> <p>Wählen Sie den Ordner aus, in dem Sie die Präsentation speichern oder hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -230,13 +230,13 @@ Dieses Aktionsmodul erstellt eine neue Präsentation, indem es eine Präsentatio
    <td> <p>Wählen Sie aus, ob Sie die Präsentation freigeben möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sharing with Other's Email Address]</td> 
+   <td role="rowheader">[!UICONTROL Freigabe für E-Mail-Adresse anderer Benutzer]</td> 
    <td> <p> Geben Sie die E-Mail-Adresse ein, mit der Sie die Präsentation teilen möchten. Wenn Sie die Option Freigegeben aktivieren, ohne eine E-Mail in dieses Feld einzugeben, kann die Präsentation für alle freigegeben werden.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Page/Thumbnail]
+#### [!UICONTROL Abrufen einer Seite/Miniaturansicht]
 
 Dieses Aktionsmodul ruft die neueste Version der angegebenen Seite oder der Miniaturansicht einer Seite in der Präsentation ab.
 
@@ -245,29 +245,29 @@ Dieses Aktionsmodul ruft die neueste Version der angegebenen Seite oder der Mini
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter a Presentation and Page ID]</td> 
+   <td role="rowheader">[!UICONTROL - Eine Präsentation und Seiten-ID eingeben]</td> 
    <td> <p> Wählen Sie aus, ob Sie eine Präsentation und Seiten-ID manuell eingeben möchten, oder wählen Sie sie aus einer Liste aus.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td role="rowheader">[!UICONTROL Präsentations-ID]</td> 
    <td> <p> Wählen Sie die Präsentations-ID aus, die Sie abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Page Object ID]</td> 
+   <td role="rowheader">[!UICONTROL Seitenobjekt-ID]</td> 
    <td> <p> Wählen Sie die Folie aus, für die Sie die Details des Seitenobjekts anzeigen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Show Page Thumbnail]</td> 
+   <td role="rowheader">[!UICONTROL Seitenminiaturansicht anzeigen]</td> 
    <td> <p> Aktivieren Sie das Kontrollkästchen, wenn Sie die Informationen über die Miniaturansicht der Seite anzeigen möchten.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Presentation]
+#### [!UICONTROL Präsentation abrufen]
 
 Dieses Aktionsmodul ruft die neueste Version einer angegebenen Präsentation ab.
 
@@ -276,26 +276,26 @@ Dieses Aktionsmodul ruft die neueste Version einer angegebenen Präsentation ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td role="rowheader">[!UICONTROL Laufwerk auswählen]</td> 
    <td> <p>Wählen Sie die [!DNL Google Drive] aus, in der sich die aufzulistenden Präsentationen befinden:</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Freigegebenes Laufwerk</li> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
+     <li>[!UICONTROL [!DNL Google] freigegebenes Laufwerk]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td role="rowheader">[!UICONTROL Präsentations-ID]</td> 
    <td> <p> Wählen Sie die Präsentation aus, die Sie abrufen möchten.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Presentations]
+#### [!UICONTROL Präsentationen auflisten]
 
 Dieses Modul ruft eine Liste aller Präsentationen am angegebenen Ort ab.
 
@@ -304,20 +304,20 @@ Dieses Modul ruft eine Liste aller Präsentationen am angegebenen Ort ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive location]</td> 
+   <td role="rowheader">[!UICONTROL Speicherort des Laufwerks auswählen]</td> 
    <td> <p>Wählen Sie die [!DNL Google Drive] aus, in der sich die aufzulistenden Präsentationen befinden:</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Freigegebenes Laufwerk</li> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
+     <li>[!UICONTROL [!DNL Google] freigegebenes Laufwerk]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID]</td> 
+   <td role="rowheader">[!UICONTROL Ordner-ID]</td> 
    <td> <p>Wählen Sie den Ordnerspeicherort der Präsentationen aus, die Sie auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -327,7 +327,7 @@ Dieses Modul ruft eine Liste aller Präsentationen am angegebenen Ort ab.
  </tbody> 
 </table>
 
-#### [!UICONTROL Refresh a Chart]
+#### [!UICONTROL Aktualisieren eines Diagramms]
 
 Dieses Aktionsmodul aktualisiert die Diagrammdaten, die in einer durch die ID angegebenen Präsentation gespeichert sind.
 
@@ -336,34 +336,34 @@ Dieses Aktionsmodul aktualisiert die Diagrammdaten, die in einer durch die ID an
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter a Presentation ID]</td> 
+   <td role="rowheader">[!UICONTROL Präsentations-ID eingeben]</td> 
    <td> <p> Wählen Sie aus, ob Sie eine Präsentations-ID manuell eingeben oder aus einer Liste auswählen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td role="rowheader">[!UICONTROL Laufwerk auswählen]</td> 
    <td> <p>Wenn Sie die Präsentation aus einer Liste auswählen, wählen Sie die [!DNL Google Drive] aus, in der sich die Präsentationen befinden, die Sie auflisten möchten:</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Freigegebenes Laufwerk</li> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
+     <li>[!UICONTROL [!DNL Google] freigegebenes Laufwerk]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td role="rowheader">[!UICONTROL Präsentations-ID]</td> 
    <td> <p>Wählen Sie die Präsentation aus oder geben Sie die Präsentations-ID der Präsentation ein bzw. mappen Sie sie, die das Diagramm enthält, das Sie aktualisieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Chart Object ID]</td> 
+   <td role="rowheader">[!UICONTROL Diagrammobjekt-ID]</td> 
    <td> <p> Wenn Sie Daten manuell eingeben, geben Sie die ID des Diagramms ein, das Sie aktualisieren möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload an Image To a Presentation]
+#### [!UICONTROL Laden Sie ein Bild in eine Präsentation hoch]
 
 Lädt ein Bild mit den bereitgestellten Daten hoch.
 
@@ -372,32 +372,32 @@ Lädt ein Bild mit den bereitgestellten Daten hoch.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a Presentation]</td> 
+   <td role="rowheader">[!UICONTROL Präsentation wählen]</td> 
    <td> <p>Wählen Sie aus, wie Sie die Präsentation auswählen möchten, in die Sie ein Bild hochladen.</p> 
     <ul> 
-     <li>[!UICONTROL By Mapping]</li> 
+     <li>[!UICONTROL nach Zuordnung]</li> 
      <li>[!DNL By Dropdown]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td role="rowheader">[!UICONTROL Laufwerk auswählen]</td> 
    <td> <p>Wenn Sie aus einem Dropdown-Menü auswählen, wählen Sie die [!DNL Google Drive] aus, in der sich die Präsentation befindet, der Sie ein Bild hinzufügen möchten:</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Freigegebenes Laufwerk</li> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
+     <li>[!UICONTROL [!DNL Google] freigegebenes Laufwerk]</li> 
     </ul>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td role="rowheader">[!UICONTROL Präsentations-ID]</td> 
    <td> <p> Wählen Sie die Präsentations-ID der Präsentation aus, in die Sie ein Bild hochladen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select the Method]</td> 
+   <td role="rowheader">[!UICONTROL Methode auswählen]</td> 
    <td> <p> Wählen Sie aus, wie Sie das Bild ersetzen möchten.</p>
    <ul>
    <li><p><b>Laden Sie ein Bild hoch, indem Sie das Text-Tag ersetzen</b></p><p>Klicken Sie im Feld Werte für jedes Bild, das Sie hochladen möchten, auf <b>Element hinzufügen</b> und geben Sie den Tag des Bildes und die URL des neuen Bildes ein.</p></li>
@@ -408,7 +408,7 @@ Lädt ein Bild mit den bereitgestellten Daten hoch.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Presentations]
+#### [!UICONTROL Präsentationen ansehen]
 
 Dieses Trigger-Modul startet ein Szenario, wenn eine neue Präsentation erstellt oder aktualisiert wird.
 
@@ -417,15 +417,15 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue Präsentation erstellt
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watch] </td> 
+   <td role="rowheader">[!UICONTROL Uhr] </td> 
    <td> <p>Wählen Sie die Option aus, um die Präsentationen anzusehen:</p> 
     <ul> 
-     <li> <p>[!UICONTROL Created Date]</p> </li> 
-     <li> <p>[!UICONTROL Modified Date]</p> </li> 
+     <li> <p>[!UICONTROL Erstellungsdatum]</p> </li> 
+     <li> <p>[!UICONTROL Änderungsdatum]</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -437,10 +437,10 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue Präsentation erstellt
 
 ### Sonstige
 
-* [[!UICONTROL Insert Links in a Presentation]](#insert-links-in-a-presentation)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Einfügen von Links in eine Präsentation]](#insert-links-in-a-presentation)
+* [[!UICONTROL Erstellen eines API-Aufrufs]](#make-an-api-call)
 
-#### [!UICONTROL Insert Links in a Presentation]
+#### [!UICONTROL Einfügen von Links in eine Präsentation]
 
 Dieses Modul macht alle Links in einer Präsentation klickbar oder fügt einen Link in alle passenden Eingabetexte ein.
 
@@ -449,42 +449,42 @@ Dieses Modul macht alle Links in einer Präsentation klickbar oder fügt einen L
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a Presentation]</td> 
+   <td role="rowheader">[!UICONTROL Präsentation wählen]</td> 
    <td> <p>Wählen Sie aus, wie Sie die Präsentation auswählen möchten, in die Sie ein Bild hochladen.</p> 
     <ul> 
-     <li>[!UICONTROL By Mapping]</li> 
-     <li>[!UICONTROL By Dropdown]</li> 
+     <li>[!UICONTROL nach Zuordnung]</li> 
+     <li>[!UICONTROL nach Dropdown]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td role="rowheader">[!UICONTROL Laufwerk auswählen]</td> 
    <td> <p>Wählen Sie die [!DNL Google Drive] aus, in der sich die aufzulistenden Präsentationen befinden:</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Freigegebenes Laufwerk</li> 
-    </ul> <p>Dieses Feld wird angezeigt, wenn Sie die [!UICONTROL By Dropdown] erstellen.</p> </td> 
+     <li>[!UICONTROL Mein Laufwerk]</li> 
+     <li>[!UICONTROL für mich freigegeben]</li> 
+     <li>[!UICONTROL [!DNL Google] freigegebenes Laufwerk]</li> 
+    </ul> <p>Dieses Feld wird angezeigt, wenn Sie die Präsentation erstellen [!UICONTROL By Dropdown].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td role="rowheader">[!UICONTROL Präsentations-ID]</td> 
    <td> <p>Wählen Sie den Ordnerspeicherort der Präsentationen aus, die Sie auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select]</td> 
+   <td role="rowheader">[!UICONTROL select]</td> 
    <td> <p>Wählen Sie aus, ob alle Links in einer Präsentation klickbar sein sollen oder ob Sie einen Link in alle Übereinstimmungseingabetexte einfügen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Text Inputs]</td> 
+   <td role="rowheader">[!UICONTROL Texteingaben]</td> 
    <td>Wenn Sie einen Link einfügen, klicken Sie für jedes Textelement, für das Sie einen Link hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Text und den zugehörigen Link ein. Jedes Mal, wenn das Element in der Präsentation angezeigt wird, wird es automatisch mit der angegebenen Site verknüpft.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Erstellen eines API-Aufrufs]
 
 Führt einen beliebigen autorisierten API-Aufruf aus.
 
@@ -493,7 +493,7 @@ Führt einen beliebigen autorisierten API-Aufruf aus.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -501,19 +501,19 @@ Führt einen beliebigen autorisierten API-Aufruf aus.
    <td> <p>Geben Sie einen Pfad relativ zu <code>https://developers.google.com/slides/</code> ein. z. B. Präsentation.</p> <p>Eine Liste der verfügbaren Endpunkte finden Sie in der <a href="https://developers.google.com/slides/reference/rest">[!DNL Google Slides] API-Dokumentation</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Geben Sie die gewünschten Anfrage-Header ein. Sie müssen keine Autorisierungskopfzeilen hinzufügen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 
    <td> <p> Geben Sie die Abfragezeichenfolge der Anfrage ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL body]</td> 
    <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 

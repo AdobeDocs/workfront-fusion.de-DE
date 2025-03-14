@@ -4,9 +4,9 @@ description: Wenn bei der Ausführung eines Szenarios Fehler auftreten, liegt di
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -77,10 +77,10 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 So fügen Sie einem Modul einen Fehler-Handler hinzu:
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie eine Fehlerbehandlungsroute hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
-1. Klicken Sie mit der rechten Maustaste auf das Modul, dem Sie eine Fehler-Handler-Route hinzufügen möchten, und wählen Sie **[!UICONTROL Add error handler]**:
+1. Klicken Sie mit der rechten Maustaste auf das Modul, nach dem Sie eine Fehler-Handler-Route hinzufügen möchten, und wählen Sie **[!UICONTROL Fehler-Handler hinzufügen]**:
 
    ![Fehler-Handler-Route](assets/error-handler-route.png)
 
@@ -114,16 +114,16 @@ Es gibt fünf Anweisungen, die in die folgenden Kategorien unterteilt werden kö
 
 Die folgenden Anweisungen stellen sicher, dass ein Szenario weiterhin ausgeführt wird:
 
-* **[!UICONTROL Resume]**: Ermöglicht die Angabe einer Ersatzausgabe für das Modul mit dem Fehler. Der Ausführungsstatus des Szenarios wird als erfolgreich markiert.
-* **[!UICONTROL Ignore]**: Ignoriert den Fehler. Der Ausführungsstatus des Szenarios wird als erfolgreich markiert.
-* **[!UICONTROL Break]**: Speichert die Eingabe von unvollständigen Ausführungen in die Warteschlange. Der Ausführungsstatus des Szenarios wird als Warnung gekennzeichnet.
+* **[!UICONTROL Fortsetzen]**: Ermöglicht die Angabe einer Ersatzausgabe für das Modul mit dem Fehler. Der Ausführungsstatus des Szenarios wird als erfolgreich markiert.
+* **[!UICONTROL Ignorieren]**: Ignoriert den Fehler. Der Ausführungsstatus des Szenarios wird als erfolgreich markiert.
+* **[!UICONTROL break]**: Speichert die Eingabe bei unvollständigen Ausführungen in die Warteschlange. Der Ausführungsstatus des Szenarios wird als Warnung gekennzeichnet.
 
   Weitere Informationen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 Wenn die Ausführung eines Szenarios bei einem Fehler beendet werden soll, verwenden Sie eine der folgenden Anweisungen:
 
 * **[!UICONTROL Rollback]**: Hält die Ausführung des Szenarios sofort an und markiert seinen Status als Fehler.
-* **[!UICONTROL Commit]**: Hält die Ausführung des Szenarios sofort an und markiert seinen Status als Erfolg.
+* **[!UICONTROL Bestätigen]**: Hält die Ausführung des Szenarios sofort an und markiert seinen Status als Erfolg.
 
 ## Ressourcen
 

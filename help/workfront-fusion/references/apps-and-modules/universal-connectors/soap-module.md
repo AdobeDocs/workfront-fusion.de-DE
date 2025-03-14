@@ -4,16 +4,16 @@ description: Sie können das SOAP-Modul verwenden, um eine Verbindung zu SOAP-AP
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 3a27a51e10438e6cf8862bf28b1d58273bbaff36
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL SOAP]
+# [!UICONTROL SOAP]-Modul
 
-Sie können das Modul [!UICONTROL SOAP] verwenden, um eine Verbindung zu [!UICONTROL SOAP] APIs in [!UICONTROL Adobe Workfront Fusion] herzustellen.
+Sie können das Modul [!UICONTROL SOAP] verwenden, um eine Verbindung zu [!UICONTROL SOAP]-APIs in [!UICONTROL Adobe Workfront Fusion herzustellen].
 
 ## SOAP-Modul und seine Felder
 
@@ -46,7 +46,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -91,21 +91,21 @@ Dieses Aktionsmodul führt eine SOAP-Aktion basierend auf der von Ihnen angegebe
    <td> Wählen Sie die WSDL aus, die das Modul verwenden soll. Um eine WSDL zu erstellen, klicken <b> auf „Hinzufügen</b> neben dem Feld und füllen Sie die Felder aus. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTTP headers]</td> 
+   <td>[!UICONTROL HTTP-Kopfzeilen]</td> 
    <td> Klicken Sie für jede HTTP-Kopfzeile, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Namen und den Wert der Kopfzeile ein.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL SOAP headers]</td> 
+   <td>[!UICONTROL SOAP-Kopfzeilen]</td> 
    <td> Klicken Sie für jede SOAP-Kopfzeile, die Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie den Namen, den Wert, den Namespace und das XMLNS der Kopfzeile ein.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Force SOAP headers]</td> 
+   <td>[!UICONTROL SOAP-Kopfzeilen erzwingen]</td> 
    <td> Aktivieren Sie diese Option, um Kopfzeilen für SOAP 1.2 zu konfigurieren. </td> 
   </tr> 
   </tbody> 
 </table>
 
-## Einschränkungen des [!UICONTROL SOAP] Moduls
+## Einschränkungen des [!UICONTROL SOAP]-Moduls
 
 >[!NOTE]
 >
@@ -124,7 +124,7 @@ Das [!UICONTROL SOAP]-Modul befindet sich derzeit in der Beta-Phase und unterst�
 
 **Beispiel:**
 
-Folgendes würde von [!UICONTROL Workfront Fusion] nicht richtig erkannt:
+Folgendes würde von [!UICONTROL Workfront Fusion nicht korrekt erkannt]:
 
 ```
 <complexType name="ArrayOfFloat">
@@ -137,16 +137,16 @@ Folgendes würde von [!UICONTROL Workfront Fusion] nicht richtig erkannt:
 </complexType>
 ```
 
-Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `wsdl:arrayType`, die in [!UICONTROL Workfront Fusion] noch nicht unterstützt werden.
+Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `wsdl:arrayType`, die in [!UICONTROL Workfront Fusion noch nicht unterstützt ].
 
 >[!ENDSHADEBOX]
 
 ## Abhilfe
 
-Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder verschiedene Fehler in der Konfiguration des Moduls ausgibt, können Sie stattdessen das Modul Universal **[!UICONTROL HTTP]>[!UICONTROL Make a request]** verwenden:
+Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder verschiedene Fehler in der Modulkonfiguration auslöst, können Sie stattdessen das Modul Universal **[!UICONTROL HTTP] > [!UICONTROL Anfrage]** verwenden:
 
 1. Erstellen Sie [!DNL Workfront Fusion] ein neues Szenario.
-1. Fügen Sie das Modul **[!UICONTROL HTTP]>[!UICONTROL Make a request]** in das Szenario ein.
+1. Fügen Sie das Modul **[!UICONTROL HTTP] > [!UICONTROL Anfrage stellen]** in das Szenario ein.
 1. Öffnen Sie die Konfiguration des Moduls und füllen Sie die folgenden Felder aus:
 
    <table style="table-layout:auto"> 
@@ -154,20 +154,20 @@ Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder ve
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Method]</td> 
+      <td role="rowheader">[!UICONTROL-Methode]</td> 
       <td> <p>[!UICONTROL POST]</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
-      <td role="rowheader">[!UICONTROL Body type]</td> 
-      <td> <p>[!UICONTROL Raw]</p> </td>
+      <td role="rowheader">[!UICONTROL Texttyp]</td> 
+      <td> <p>[!UICONTROL Roh]</p> </td>
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Content type]</td> 
+      <td role="rowheader">[!UICONTROL Content-Typ]</td> 
       <td> <p>[!UICONTROL XML (application/xml)]</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Parse response]</td> 
-      <td>[!UICONTROL Enabled]</td> 
+      <td>[!UICONTROL aktiviert]</td> 
      </tr> 
     </tbody> 
    </table>
@@ -186,15 +186,15 @@ Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder ve
 
 1. Kopieren Sie nach dem Auffinden die URL aus dem `location`.
 1. Fügen Sie [!DNL Workfront Fusion] die URL in das URL-Feld des HTTP-Moduls ein.
-1. Öffnen Sie [Online [!UICONTROL SOAP] Client](https://wsdlbrowser.com/) in einem neuen Webbrowser-Fenster/-Registerkarte.
+1. Öffnen Sie [Online [!UICONTROL SOAP] Client](https://wsdlbrowser.com/) in einem neuen Webbrowserfenster/-tab.
 1. Fügen Sie die WSDL-URL in das Feld WSDL-URL ein.
-1. Klicken Sie auf **[!UICONTROL Browse]**.
+1. Klicken Sie **[!UICONTROL Durchsuchen]**.
 1. Wählen Sie aus der Liste der Funktionen links aus, z. B. `getLanguages`.
-1. Kopieren Sie den Inhalt des [!UICONTROL Request XML] Textbereichs.
-1. Fügen Sie [!UICONTROL Workfront Fusion] den kopierten Inhalt in das URL-Feld des Moduls ein.
+1. Kopieren Sie den Inhalt des Textbereichs [!UICONTROL Anfrage]XML).
+1. Fügen Sie in [!UICONTROL Workfront Fusion] den kopierten Inhalt in das URL-Feld des Moduls ein.
 1. Geben Sie Werte für ausgewählte Parameter an, indem Sie die Fragezeichen durch die tatsächlichen Werte ersetzen:
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
-1. Schließen Sie die Konfiguration des Moduls, indem Sie auf **[!UICONTROL OK]** klicken.
+1. Schließen Sie die Modulkonfiguration, indem Sie auf **[!UICONTROL OK]** klicken.
 1. Führen Sie das Szenario oder Modul aus.

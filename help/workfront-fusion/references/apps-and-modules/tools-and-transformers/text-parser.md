@@ -4,16 +4,16 @@ description: Sie können das Text-Parser-Tool verwenden, um Text zur Verwendung 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Text parser]
+# [!UICONTROL Text-Parser]
 
-Sie können die [!UICONTROL Text parser tool] verwenden, um Text zur Verwendung in anderen [!DNL Adobe Workfront Fusion]-Szenario-Modulen zu analysieren. Die [!UICONTROL Text parser] erfordert keine Verbindung.
+Sie können das [!UICONTROL Text-Parser-Tool] verwenden, um Text zur Verwendung in anderen [!DNL Adobe Workfront Fusion]-Szenario-Modulen zu analysieren. Der [!UICONTROL Text-Parser] erfordert keine Verbindung.
 
 ## Zugriffsanforderungen
 
@@ -36,7 +36,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Keine Workfront Fusion-Lizenzanforderung</p>
    </td> 
   </tr> 
   <tr> 
@@ -71,9 +71,9 @@ Der Text-Parser-Connector verwendet Folgendes:
  </tbody> 
  </table>
 
-## [!UICONTROL Text parser] Module und ihre Felder
+## [!UICONTROL Text-Parser] Module und ihre Felder
 
-Beim Konfigurieren [!UICONTROL Text parser] Module zeigt [!DNL Adobe Workfront Fusion] die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!UICONTROL Text-Parser]-Modulen zeigt [!DNL Adobe Workfront Fusion] die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -81,13 +81,13 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Transformatoren
 
-* [[!UICONTROL Get Elements from HTML]](#get-elements-from-html)
-* [[!UICONTROL Get Elements from text]](#get-elements-from-text)
-* [[!UICONTROL HTML to Text]](#html-to-text)
-* [[!UICONTROL Match Pattern]](#match-pattern)
-* [[!UICONTROL Replace]](#replace)
+* [[!UICONTROL Elemente aus HTML abrufen]](#get-elements-from-html)
+* [[!UICONTROL Elemente aus Text abrufen]](#get-elements-from-text)
+* [[!UICONTROL HTML in Text]](#html-to-text)
+* [[!UICONTROL Übereinstimmungsmuster]](#match-pattern)
+* [[!UICONTROL Ersetzen]](#replace)
 
-#### [!UICONTROL Get Elements from HTML]
+#### [!UICONTROL Elemente aus HTML abrufen]
 
 Ruft die gewünschten Elemente aus dem HTML-Code ab.
 
@@ -96,26 +96,26 @@ Ruft die gewünschten Elemente aus dem HTML-Code ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module finds no matches]</td> 
+   <td>[!UICONTROL Die Routenausführung auch dann fortsetzen, wenn das Modul keine Übereinstimmungen findet]</td> 
    <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass das Modul das Szenario nicht stoppt, wenn es keine Ergebnisse zurückgibt.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Element type]</td> 
+   <td>[!UICONTROL Elementtyp]</td> 
    <td> <p> Wählen Sie den Elementtyp aus, den Sie aus dem HTML-Code abrufen möchten. </p> 
     <ul> 
-     <li>[!UICONTROL Image]</li> 
+     <li>[!UICONTROL Bild]</li> 
      <li>[!UICONTROL Link]</li> 
-     <li>[!UICONTROL iFrame element(s)]</li> 
+     <li>[!UICONTROL iFrame-Element(e)]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL HTML] </td> 
-   <td> <p>Geben Sie den HTML-Code ein, von dem Sie die angegebenen Elementtypen abrufen möchten, oder ordnen Sie ihn zu.</p> </td> 
+   <td> <p>Geben Sie den HTML-Code ein, aus dem Sie die angegebenen Elementtypen abrufen möchten, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get Elements from text]
+#### [!UICONTROL Elemente aus Text abrufen]
 
 Analysiert Elemente aus Text anhand des angegebenen Musters.
 
@@ -124,21 +124,21 @@ Analysiert Elemente aus Text anhand des angegebenen Musters.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Input text]</td> 
+   <td>[!UICONTROL Eingabetext]</td> 
    <td> <p>Geben Sie den Text ein, den Sie analysieren möchten, oder mappen Sie ihn.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pattern]</td> 
+   <td>[!UICONTROL Muster]</td> 
    <td> <p>Wählen Sie aus dem Text das Muster aus, das die zu analysierenden Elemente enthält.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
+   <td>[!UICONTROL Doppelte Vorkommen ignorieren]</td> 
    <td> <p>Aktivieren Sie dieses Kontrollkästchen, um doppelte Vorkommen eines Textelements zu ignorieren.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL HTML to Text]
+#### [!UICONTROL HTML in Text]
 
 <table style="table-layout:auto"> 
  <col> 
@@ -149,19 +149,19 @@ Analysiert Elemente aus Text anhand des angegebenen Musters.
    <td> <p>Geben Sie den HTML-Code ein, den Sie in Nur-Text konvertieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Line break] </td> 
+   <td>[!UICONTROL Zeilenumbruch] </td> 
    <td> <p>Wählen Sie den Zeilenumbruchtyp aus.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Uppercase headings]</p> </td> 
+   <td> <p>[!UICONTROL Großbuchstaben]</p> </td> 
    <td> <p>Aktivieren Sie diese Option, um in Überschriften-Tags eingeschlossenen Text (z. B. &lt;h2&gt; &lt;/h2&gt;) in Großbuchstaben zu konvertieren.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Match Pattern]
+#### [!UICONTROL Übereinstimmungsmuster]
 
-Mit dem [!UICONTROL Match pattern] Modul können Sie Zeichenfolgenelemente suchen und extrahieren, die einem Suchmuster aus einem bestimmten Text entsprechen. Dieses Modul verwendet reguläre Ausdrücke (auch als Regex oder Regex bezeichnet).
+Das [!UICONTROL Match pattern]-Modul ermöglicht es, Zeichenfolgenelemente zu finden und zu extrahieren, die einem Suchmuster aus einem bestimmten Text entsprechen. Dieses Modul verwendet reguläre Ausdrücke (auch als Regex oder Regex bezeichnet).
 
 Ein regulärer Ausdruck ist eine Sequenz von Zeichen, in der jedes Zeichen entweder ein Metazeichen mit einer speziellen Bedeutung oder ein reguläres Zeichen mit einer wörtlichen Bedeutung ist. Diese Zeichen und Metazeichen identifizieren ein Muster, das für die Suche nach Text verwendet werden kann. Wenn Sie beispielsweise nach Namen suchen möchten, können Sie einen regulären Ausdruck einrichten, um nach einem Muster zu suchen, das aus zwei aufeinander folgenden Wörtern besteht, die mit Großbuchstaben beginnen. Reguläre Ausdrücke sind ein leistungsstarkes Tool zum Suchen und Bearbeiten von Text.
 
@@ -176,37 +176,37 @@ Eine Diskussion über reguläre Ausdrücke würde den Rahmen dieses Artikels spr
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Pattern] </td> 
+   <td>[!UICONTROL Muster] </td> 
    <td> <p>Geben Sie das Muster für reguläre Ausdrücke ein. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code> extrahiert alle Ziffern im angegebenen Text.</p> <p>Hinweis:  <p>Das Muster muss mindestens eine Erfassungsgruppe in Klammern <code>()</code>. Wenn das Muster keine Erfassungsgruppen enthält, ist das Ausgabepaket leer.</p> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Global match]</td> 
+   <td>[!UICONTROL Globale Übereinstimmung]</td> 
    <td> <p>Aktivieren Sie diese Option, um alle Übereinstimmungen im Text abzurufen. Jede Übereinstimmung wird in einem separaten Bundle ausgegeben. Wenn diese Option deaktiviert ist, ruft das Modul nur den ersten Eintrag ab.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Case sensitive]</td> 
+   <td>[!UICONTROL Groß-/Kleinschreibung beachten]</td> 
    <td> <p> Aktivieren Sie diese Einstellung, damit bei Text zwischen Groß- und Kleinschreibung unterschieden wird.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Multiline] </td> 
+   <td>[!UICONTROL multiline] </td> 
    <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass die Anfangs- und Endmetazeichen (<code>^</code> und <code>$</code>) mit dem Beginn oder Ende jeder Zeile übereinstimmen, nicht nur mit dem Anfang oder Ende der gesamten Eingabezeichenfolge.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Singleline]</td> 
+   <td>[!UICONTROL SingleLine]</td> 
    <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Punkt (.) mit Zeilenumbruchzeichen (<code>\n</code>) übereinstimmt.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td>[!UICONTROL Die Routenausführung auch dann fortsetzen, wenn das Modul keine Ergebnisse zurückgibt]</td> 
    <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass das Modul das Szenario nicht stoppt, wenn es keine Ergebnisse zurückgibt.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text] </td> 
+   <td>[!UICONTROL-Text] </td> 
    <td> <p>Geben Sie den Text ein, der dem Muster entsprechen soll, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Replace]
+#### [!UICONTROL Ersetzen]
 
 Durchsucht den eingegebenen Text nach einem angegebenen Wert oder regulären Ausdruck und ersetzt das Ergebnis durch den neuen Wert.
 
@@ -215,31 +215,31 @@ Durchsucht den eingegebenen Text nach einem angegebenen Wert oder regulären Aus
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Pattern] </td> 
-   <td> <p>Geben Sie den Suchbegriff ein. Sie können auch einen regulären Ausdruck verwenden. Weitere Informationen zum regulären Ausdruck finden Sie im <a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a> Modul .</p> </td> 
+   <td>[!UICONTROL Muster] </td> 
+   <td> <p>Geben Sie den Suchbegriff ein. Sie können auch einen regulären Ausdruck verwenden. Weitere Informationen zum regulären Ausdruck finden Sie im <a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a>-Modul.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New value]</td> 
+   <td>[!UICONTROL Neuer Wert]</td> 
    <td> <p> Geben Sie den Wert ein, den Sie den Suchbegriff ersetzen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Global match]</td> 
+   <td>[!UICONTROL Globale Übereinstimmung]</td> 
    <td> <p>Aktivieren Sie diese Option, um alle Übereinstimmungen im Text abzurufen. Jede Übereinstimmung wird in einem separaten Bundle ausgegeben. Wenn diese Option deaktiviert ist, ruft das Modul nur den ersten Eintrag ab.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Case sensitive]</td> 
+   <td>[!UICONTROL Groß-/Kleinschreibung beachten]</td> 
    <td> <p> Aktivieren Sie diese Einstellung, damit bei Text zwischen Groß- und Kleinschreibung unterschieden wird.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Multiline] </td> 
+   <td>[!UICONTROL multiline] </td> 
    <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass die Anfangs- und Endmetazeichen (<code>^</code> und <code>$</code>) mit dem Beginn oder Ende jeder Zeile übereinstimmen, nicht nur mit dem Anfang oder Ende der gesamten Eingabezeichenfolge.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Singleline]</td> 
+   <td>[!UICONTROL SingleLine]</td> 
    <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Punkt (.) mit Zeilenumbruchzeichen (<code>\n</code>) übereinstimmt.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text] </td> 
+   <td>[!UICONTROL-Text] </td> 
    <td> <p>Geben Sie den zu suchenden Text ein.</p> </td> 
   </tr> 
  </tbody> 
@@ -249,7 +249,7 @@ Durchsucht den eingegebenen Text nach einem angegebenen Wert oder regulären Aus
 
 Beim Daten-Scraping (manchmal auch als Web-Scraping, Datenextraktion oder Web-Sammeln bezeichnet) werden Daten von Websites erfasst und in Ihrer lokalen Datenbank oder in Tabellen gespeichert. Wenn Sie Daten von einer Website kratzen möchten und mit regulären Ausdrücken nicht vertraut sind, können Sie ein Tool zum Kratzen von Daten verwenden.
 
-Wenn das Tool zum Daten-Scraping eine REST-API bereitstellt, können Sie über unsere universellen [[!UICONTROL HTTP]-Module und ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)Webhooks[-](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) eine Verbindung mit ihr herstellen.
+Wenn das Tool zum Daten-Scraping eine REST-API bereitstellt, können Sie über unsere universellen [[!UICONTROL HTTP]-Module](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors) und [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)-Module eine Verbindung herstellen.
 
 ## Fehlerbehebung beim Text-Parser
 

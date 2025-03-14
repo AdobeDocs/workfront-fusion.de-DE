@@ -8,7 +8,7 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Projekte in de
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 61a523398f00a9d9439b9e74bfbd1ae3f94b0749
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '1386'
 ht-degree: 2%
@@ -44,7 +44,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
@@ -260,7 +260,7 @@ Dieses Aktionsmodul sendet eine Einladung, um einem neuen Benutzer Zugriff auf e
    <td>Geben Sie die ID des Assets ein, zu dem Sie den Benutzer einladen möchten, oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Funktion</td> 
+   <td role="rowheader">Rolle</td> 
    <td>Wählen Sie die Rolle aus, die der neu eingeladene Benutzer für das Asset haben soll.<ul><li>Besitzerin bzw. Besitzer</li><li>Bearbeiterin bzw. Bearbeiter</li><li>Viewer</li></ul></td> 
   </tr> 
   <tr> 

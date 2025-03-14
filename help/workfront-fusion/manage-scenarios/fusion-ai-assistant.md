@@ -4,7 +4,7 @@ description: KI-Assistent in Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -70,7 +70,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 Adobe muss eine unterzeichnete Adobe Gen AI-Vereinbarung in der Datei haben.
 
-Weitere Informationen zum Unterzeichnen der Vereinbarung finden Sie unter [Unterschreiben der Adobe Gen AI-](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)) im Artikel KI-Assistent - Übersicht in der Dokumentation zu Workfront.
+Weitere Informationen zum Unterzeichnen des Vertrags finden Sie unter [Unterschreiben des Adobe Gen AI-](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)) im Artikel KI-Assistent - Übersicht in der Workfront-Dokumentation.
 
 ## Abrufen von Informationen aus dem KI-Assistenten
 
