@@ -4,9 +4,9 @@ description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung und
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
+source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 
 Rekursionen treten auf, wenn in einem Szenario eine neue Ausführung von sich selbst in Trigger gesetzt wird, wodurch eine neue Ausführung in einer Endlosschleife Trigger wird usw.
 
-Beispielsweise wird ein Szenario ausgelöst, wenn eine Aufgabe erstellt wird, und dieses Szenario erstellt eine Aufgabe. Bei der neu erstellten Aufgabe wird das Szenario erneut Trigger, wodurch eine andere Aufgabe erstellt wird. Bei jeder Erstellung einer Aufgabe wird das Szenario ausgelöst und bei jeder Ausführung des Szenarios wird eine Aufgabe erstellt.
+Beispielsweise wird ein Szenario ausgelöst, wenn eine Aufgabe erstellt wird, und dieses Szenario erstellt zwei Aufgaben. Bei den neu erstellten Aufgaben wird das Szenario erneut Trigger, sodass vier neue Aufgaben erstellt werden. Bei jeder Erstellung einer Aufgabe wird das Szenario ausgelöst und bei jeder Ausführung des Szenarios verdoppelt sich die Anzahl der Aufgaben. Die Anzahl der Aufgaben steigt exponentiell.
 
 Rekursionen können Leistungsprobleme sowohl für die Organisation, der das rekursive Szenario gehört, als auch für andere Organisationen verursachen.
 
