@@ -4,9 +4,9 @@ description: Sie können den Adobe Workfront Fusion Adobe Workfront-Connector ve
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
 workflow-type: tm+mt
-source-wordcount: '6684'
+source-wordcount: '7075'
 ht-degree: 2%
 
 ---
@@ -849,6 +849,79 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 </table>
 
 Hier finden Sie eine Liste der Workfront-Objekttypen, für die Sie dieses Modul in [Workfront-Objekttypen verwenden können, die für jedes Workfront-Modul verfügbar sind](#workfront-object-types-available-for-each-workfront-module).
+
++++
+
++++ **Payload-Version für Ereignisse aktualisieren**
+
+Workfront hat kürzlich eine neue Version seines Ereignisabonnement-Services veröffentlicht. Die neue Version ist keine Änderung der Workfront-API, sondern eine Änderung der Ereignisabonnementfunktion. Dieses Aktionsmodul aktualisiert die für dieses Szenario verwendete Ereignis-Payload-Version.
+
+Weitere Informationen zur neuen Ereignisabonnementversion finden Sie unter [Ereignisabonnementversion](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) in der Workfront-Dokumentation
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Version]</td> 
+   <td> Wählen Sie die Version des Ereignisabonnements aus, die Sie für diese Payload verwenden möchten. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
++++
+
++++ **Aktualisieren eines Datensatzes (mit Anhängen benutzerdefinierter Formulare)**
+
+
+Dieses Aktionsmodul aktualisiert ein Objekt, z. B. ein Projekt, eine Aufgabe oder ein Problem. Mit dem Modul können Sie auswählen, welche der Objektfelder im Modul verfügbar sind.
+
+Sie geben die ID des Datensatzes an.
+
+Das Modul gibt die ID des -Objekts und alle zugehörigen Felder zusammen mit allen benutzerdefinierten Feldern und Werten zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+
+Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
+
+<table style="table-layout:auto">
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL ID]</td> 
+   <td> <p>Geben Sie die eindeutige Workfront-ID des Datensatzes ein, den Sie aktualisieren möchten.</p> <p>Um die ID abzurufen, öffnen Sie das Workfront-Objekt in Ihrem Browser und kopieren Sie den Text am Ende der URL nach „ID=". Beispiel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Record Type]</td> 
+   <td> <p>Wählen Sie den Typ des Workfront-Eintrags aus, den das Modul aktualisieren soll.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!DNL Select fields to map]</td> 
+   <td>Wählen Sie die Felder aus, die für die Dateneingabe verfügbar sein sollen. Auf diese Weise können Sie diese Felder verwenden, ohne die nicht benötigten Felder durchscrollen zu müssen. Anschließend können Sie Daten in diese Felder eingeben oder zuordnen.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!DNL Attach Custom Form]</td> 
+   <td>Wählen Sie die benutzerdefinierten Formulare aus, die Sie an den neuen Datensatz anhängen möchten. Nachdem Sie das Formular ausgewählt haben, geben Sie die Daten für die Felder in diesem Formular ein.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Hier finden Sie eine Liste der Workfront-Objekttypen, für die Sie dieses Modul in [Workfront-Objekttypen verwenden können, die für jedes Workfront-Modul verfügbar sind](#workfront-object-types-available-for-each-workfront-module).
+
+>[!NOTE]
+>
+> Bei der Eingabe von Text für ein benutzerdefiniertes Feld oder ein [!UICONTROL Hinweis]-Objekt (Kommentar oder Antwort) können Sie HTML-Tags im Feld [!UICONTROL Notizentext] verwenden, um Rich-Text zu erstellen, z. B. fett oder kursiv gedruckten Text.
+
 
 +++
 
