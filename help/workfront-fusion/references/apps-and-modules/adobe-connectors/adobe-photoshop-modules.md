@@ -4,9 +4,9 @@ description: Mit den Adobe Photoshop-Modulen können Sie ein Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: ad5701c5484da802dea8668c9c4aad58a6dba3eb
+source-git-commit: db1d6f5bf29063b069681395c6ff6d3554c67dc3
 workflow-type: tm+mt
-source-wordcount: '4352'
+source-wordcount: '4359'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,8 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 Bevor Sie den [!DNL Adobe Photoshop]-Connector verwenden können, müssen Sie sicherstellen, dass die folgenden Voraussetzungen erfüllt sind:
 
 * Sie müssen über ein aktives [!DNL Adobe Photoshop] verfügen.
-* Sie müssen über eine Client-ID und ein Client-Geheimnis verfügen. Sie können sie von der Adobe Developer Console erwerben.
+* Sie müssen über eine Firefly Services-Lizenz verfügen.
+* Sie müssen über eine Client-ID und ein Client-Geheimnis verfügen. Sie können diese von der Adobe Developer Console beziehen.
 
 ## Adobe Photoshop-API-Informationen
 
