@@ -4,7 +4,7 @@ description: Sie können den Adobe Workfront Fusion Adobe Workfront-Connector ve
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
+source-git-commit: 5ba6e0ba687eb290c7d8882c6a615de8b3692617
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 2%
@@ -940,11 +940,6 @@ Weitere Informationen zur neuen Ereignisabonnementversion finden Sie unter [Erei
 
 +++ **Aktualisieren eines Datensatzes**
 
->[!IMPORTANT]
->
->Dieses Modul wurde durch das Modul Aktualisieren eines Datensatzes ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarien zu verwenden.
->Vorhandene Szenarien, die dieses Modul verwenden, funktionieren weiterhin erwartungsgemäß. Dieses Modul wird im Mai 2025 aus der Modulauswahl entfernt.
-
 
 Dieses Aktionsmodul aktualisiert ein Objekt, z. B. ein Projekt, eine Aufgabe oder ein Problem. Mit dem Modul können Sie auswählen, welche der Objektfelder im Modul verfügbar sind.
 
@@ -993,6 +988,11 @@ Hier finden Sie eine Liste der Workfront-Objekttypen, für die Sie dieses Modul 
 +++
 
 +++ **[!UICONTROL Eintrag aktualisieren (alt)]**
+
+>[!IMPORTANT]
+>
+>Dieses Modul wurde durch das Modul Aktualisieren eines Datensatzes ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarien zu verwenden.
+>Vorhandene Szenarien, die dieses Modul verwenden, funktionieren weiterhin erwartungsgemäß. Dieses Modul wird im Mai 2025 aus der Modulauswahl entfernt.
 
 Dieses Aktionsmodul aktualisiert ein Objekt, z. B. ein Projekt, eine Aufgabe oder ein Problem. Mit dem Modul können Sie auswählen, welche der Objektfelder im Modul verfügbar sind.
 
