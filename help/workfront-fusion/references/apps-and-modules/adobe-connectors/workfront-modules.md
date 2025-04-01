@@ -4,9 +4,9 @@ description: Sie können den Adobe Workfront Fusion Adobe Workfront-Connector ve
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
+source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
 workflow-type: tm+mt
-source-wordcount: '7075'
+source-wordcount: '7796'
 ht-degree: 2%
 
 ---
@@ -375,7 +375,7 @@ Dieses Aktionsmodul führt eine der folgenden Konvertierungen durch:
 
 +++
 
-+++ **[!UICONTROL Erstellen eines Datensatzes (Anhängen benutzerdefinierter Formulare)]**
++++ **[!UICONTROL Datensatz erstellen]**
 
 Dieses Aktionsmodul erstellt ein Objekt, z. B. ein Projekt, eine Aufgabe oder ein Problem in Workfront und ermöglicht das Hinzufügen eines benutzerdefinierten Formulars zum neuen Objekt. Mit dem Modul können Sie auswählen, welche der Objektfelder im Modul verfügbar sind.
 
@@ -422,7 +422,12 @@ Hier finden Sie eine Liste der Workfront-Objekttypen, für die Sie dieses Modul 
 
 +++
 
-+++ **[!UICONTROL Datensatz erstellen]**
++++ **[!UICONTROL Datensatz erstellen (veraltet)]**
+
+>[!IMPORTANT]
+>
+>Dieses Modul wurde durch das Modul Datensatz erstellen ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarien zu verwenden.
+>Vorhandene Szenarien, die dieses Modul verwenden, funktionieren weiterhin erwartungsgemäß. Dieses Modul wird im Mai 2025 aus der Modulauswahl entfernt.
 
 Dieses Aktionsmodul erstellt ein Objekt, z. B. ein Projekt, eine Aufgabe oder ein Problem in Workfront. Mit dem Modul können Sie auswählen, welche der Objektfelder im Modul verfügbar sind.
 
@@ -820,8 +825,65 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <tbody> 
   <tr> 
     <td>[!UICONTROL-Verbindung]</td>
+    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Datensatztyp]</td>
 
-<td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+<td>Wählen Sie den Workfront-Objekttyp aus, den das Modul lesen soll.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Ausgaben]</td>
+
+<td> <p>Wählen Sie die Informationen aus, die im Ausgabepaket für dieses Modul enthalten sein sollen.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Ausgabe Benutzerdefiniertes Formular]</td>
+     <td> <p>Wählen Sie die benutzerdefinierten Formulare aus, die Sie in das Ausgabepaket für dieses Modul aufnehmen möchten, und wählen Sie dann die spezifischen Felder aus den benutzerdefinierten Formularen aus, die Sie in die Ausgabe aufnehmen möchten.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL-Verweise]</td>
+   <td>Wählen Sie alle Referenzfelder aus, die Sie in die Ausgabe aufnehmen möchten.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL-Sammlungen]</td>
+   <td>Wählen Sie alle Referenzfelder aus, die Sie in die Ausgabe aufnehmen möchten.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL ID]</td>
+   <td> <p>Geben Sie die eindeutige Workfront-ID des Datensatzes ein, den das Modul lesen soll.</p> <p>Um die ID abzurufen, öffnen Sie das Workfront-Objekt in Ihrem Browser und kopieren Sie den Text am Ende der URL nach „ID=". Beispiel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Hier finden Sie eine Liste der Workfront-Objekttypen, für die Sie dieses Modul in [Workfront-Objekttypen verwenden können, die für jedes Workfront-Modul verfügbar sind](#workfront-object-types-available-for-each-workfront-module).
+
++++
+
++++ **[!UICONTROL Datensatz lesen (veraltet)]**
+
+>[!IMPORTANT]
+>
+>Dieses Modul wurde durch das Modul Datensatz lesen ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarien zu verwenden.
+>Vorhandene Szenarien, die dieses Modul verwenden, funktionieren weiterhin erwartungsgemäß. Dieses Modul wird im Mai 2025 aus der Modulauswahl entfernt.
+
+Dieses Aktionsmodul ruft Daten aus einem einzelnen Datensatz ab.
+
+Sie geben die ID des Datensatzes an. Sie können auch angeben, welche verwandten Datensätze das Modul lesen soll.
+
+Wenn es sich bei dem Datensatz, den das Modul liest, beispielsweise um ein Projekt handelt, können Sie angeben, dass die Aufgaben des Projekts gelesen werden sollen.
+
+Das -Modul gibt ein Array von Daten aus den von Ihnen angegebenen Ausgabefeldern zurück.
+
+Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td>[!UICONTROL-Verbindung]</td>
+    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Datensatztyp]</td>
@@ -876,7 +938,12 @@ Weitere Informationen zur neuen Ereignisabonnementversion finden Sie unter [Erei
 
 +++
 
-+++ **Aktualisieren eines Datensatzes (mit Anhängen benutzerdefinierter Formulare)**
++++ **Aktualisieren eines Datensatzes**
+
+>[!IMPORTANT]
+>
+>Dieses Modul wurde durch das Modul Aktualisieren eines Datensatzes ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarien zu verwenden.
+>Vorhandene Szenarien, die dieses Modul verwenden, funktionieren weiterhin erwartungsgemäß. Dieses Modul wird im Mai 2025 aus der Modulauswahl entfernt.
 
 
 Dieses Aktionsmodul aktualisiert ein Objekt, z. B. ein Projekt, eine Aufgabe oder ein Problem. Mit dem Modul können Sie auswählen, welche der Objektfelder im Modul verfügbar sind.
@@ -925,7 +992,7 @@ Hier finden Sie eine Liste der Workfront-Objekttypen, für die Sie dieses Modul 
 
 +++
 
-+++ **[!UICONTROL Eintrag aktualisieren]**
++++ **[!UICONTROL Eintrag aktualisieren (alt)]**
 
 Dieses Aktionsmodul aktualisiert ein Objekt, z. B. ein Projekt, eine Aufgabe oder ein Problem. Mit dem Modul können Sie auswählen, welche der Objektfelder im Modul verfügbar sind.
 
@@ -1095,9 +1162,69 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  </tbody> 
 </table>
 
++++ **[!UICONTROL Datensätze suchen]**
+
+Dieses Suchmodul sucht in einem Objekt in Workfront nach Datensätzen, die mit der angegebenen Suchanfrage übereinstimmen.
+
+Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+
+Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Datensatztyp]</td> 
+   <td> <p>Wählen Sie den Typ des Workfront-Datensatzes aus, nach dem das Modul suchen soll.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Benutzerdefinierte Formularliste]</td> 
+   <td> <p>Wählen Sie mindestens ein benutzerdefiniertes Formular aus. Felder aus diesen benutzerdefinierten Formularen stehen für die Suchabfrage zur Verfügung.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Ergebnissatz]</td> 
+   <td>Wählen Sie eine Option aus, um anzugeben, ob das Modul das erste Ergebnis erhalten soll, das Ihren Suchkriterien entspricht, oder alle Ergebnisse, die damit übereinstimmen.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximum]</td> 
+   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Suchkriterienfelder]</td> 
+   <td> <p>Wählen Sie die Felder aus, die Sie für Ihre Suchkriterien verwenden möchten. Diese Felder sind dann im Dropdown-Menü Suchkriterien verfügbar.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Suchkriterien]</td> 
+   <td> <p>Geben Sie das Feld ein, nach dem Sie suchen möchten, den Operator, den Sie in Ihrer Abfrage verwenden möchten, und den Wert, nach dem Sie in dem Feld suchen.</p> <p>Hinweis: Verwenden Sie <code>username </code>in Ihren Suchkriterien nicht. Wenn <code>username </code> in eine API-Abfrage an Workfront aufgenommen wird, wird der Benutzer bei Workfront protokolliert und die Suche ist nicht erfolgreich.</p> <p>Hinweis: <code>In</code> und <code>NotIn</code>Arbeiten mit Arrays. Die Eingaben sollten im Array-Format vorliegen.</p></td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Ausgaben]</td> 
+   <td> <p>Wählen Sie die Felder aus, die in die Ausgabe für dieses Modul aufgenommen werden sollen.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL-Verweise]</td> 
+   <td>Wählen Sie alle Referenzfelder aus, die Sie in die Suche einbeziehen möchten.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL-Sammlungen]</td> 
+   <td>Wählen Sie alle Sammlungen aus, die Sie der Suche hinzufügen möchten.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 +++
 
-+++ **[!UICONTROL Suche]**
++++ **[!UICONTROL Suche (veraltet)]**
+
+>[!IMPORTANT]
+>
+>Dieses Modul wurde durch das Modul Datensätze suchen ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarien zu verwenden.
+>Vorhandene Szenarien, die dieses Modul verwenden, funktionieren weiterhin erwartungsgemäß. Dieses Modul wird im Mai 2025 aus der Modulauswahl entfernt.
 
 Dieses Suchmodul sucht in einem Objekt in Workfront nach Datensätzen, die mit der angegebenen Suchanfrage übereinstimmen.
 
