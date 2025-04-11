@@ -5,9 +5,9 @@ description: In diesem Artikel wird erläutert, wie ein Szenario ausgeführt wir
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 # Ausführungsfluss des Szenarios
 
 In diesem Artikel wird erläutert, wie ein Szenario ausgeführt wird, wie Daten durch es fließen und wie die von den einzelnen Modulen verarbeiteten Daten angezeigt werden.
+
+Informationen zum Datenfluss durch ein aktives Szenario finden Sie unter [Datenfluss in einem laufenden Szenario anzeigen](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
 ## Ausführungsfluss des Szenarios
 
@@ -26,7 +28,7 @@ Wenn das Modulmodul Datenpakete zurückgibt, werden diese Trigger an das nächst
 
 Wenn die Bundles ordnungsgemäß durch alle Module verarbeitet werden, wird das Szenario auf der Seite mit den Szenario-Details als erfolgreich markiert.
 
-### Beispiel: [!UICONTROL [!DNL Workfront Fusion] for Work Automation]
+### Beispiel: [!UICONTROL [!DNL Workfront Fusion] für die Arbeitsautomatisierung]
 
 >[!BEGINSHADEBOX]
 
@@ -40,7 +42,7 @@ Wenn das erste Modul ein Bundle zurückgibt, durchläuft das Bundle den Rest des
 
 >[!ENDSHADEBOX]
 
-### Beispiel: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]
+### Beispiel: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration]
 
 >[!BEGINSHADEBOX]
 
