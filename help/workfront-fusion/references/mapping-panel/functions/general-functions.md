@@ -1,21 +1,28 @@
 ---
 title: Allgemeine Funktionen
-description: Die folgenden allgemeinen Funktionen sind im Bedienfeld "Adobe Workfront Fusion-Zuordnung“ verfügbar.
+description: The following general functions are available in the Adobe Workfront Fusion mapping panel.
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
 # Allgemeine Funktionen
 
+## Variablen
+
+There are two general variables that you can use to identify details about an execution:
+
+* `executionID`: the ID of this scenario execution
+* `triggerTimestamp`: The time at which this execution was triggered
+
 ## [!UICONTROL get (object or array; path)]
 
-Gibt den Wertpfad eines Objekts oder Arrays zurück. Verwenden Sie Punktnotation, um auf verschachtelte Objekte zuzugreifen. Das erste Element in einem Array ist Index 1.
+Returns the value path of an object or array. To access nested objects, use dot notation. The first item in an array is index 1.
 
 >[!BEGINSHADEBOX]
 
@@ -28,7 +35,7 @@ Gibt den Wertpfad eines Objekts oder Arrays zurück. Verwenden Sie Punktnotation
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL if (expression; value1; value2)]
+## [!UICONTROL if (Ausdruck; Wert1; Wert2)]
 
 Gibt die `value1` zurück, wenn der Ausdruck als „true“ ausgewertet wird. Andernfalls wird die `value2` zurückgegeben.
 
@@ -56,17 +63,17 @@ Um `if` Anweisungen zu kombinieren, verwenden Sie die Operatoren `and` und `or` 
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL ifempty (value1; value2)]
+## [!UICONTROL IfEmpty (value1; value2)]
 
-Gibt den `value1` zurück, wenn dieser Wert nicht leer ist. Andernfalls wird der `value2` zurückgegeben.
+Returns the `value1` if this value is not empty; otherwise it returns the `value2`.
 
 >[!BEGINSHADEBOX]
 
-**Beispiele:**
+**Examples:**
 
 * `ifempty(` `A` `;` `B` )
 
-  Gibt einen
+  Returns A
 
 * `ifempty(` `unknown` `;` `B` )
 
@@ -74,17 +81,17 @@ Gibt den `value1` zurück, wenn dieser Wert nicht leer ist. Andernfalls wird der
 
 * `ifempty(` `""` `;` `B` )
 
-  Gibt B zurück
+  Returns B
 
 >[!ENDSHADEBOX]
 
 ## [!UICONTROL switch (expression; value1; result1; [value2; result2; ...]; [else])]
 
-Wertet einen Wert (den Ausdruck) anhand einer Werteliste aus und gibt das Ergebnis zurück, das dem ersten übereinstimmenden Wert entspricht. Um einen `else` Wert einzuschließen, fügen Sie ihn nach dem endgültigen Ausdruck oder Wert hinzu.
+Evaluates one value (called the expression) against a list of values; returns the result corresponding to the first matching value. To include an  `else` value, add it after the final expression or value.
 
 >[!BEGINSHADEBOX]
 
-**Beispiele:**
+**Examples:**
 
 * `switch( B ; A ; 1 ; B ; 2 ; C ; 3 )`
 
@@ -102,7 +109,7 @@ Wertet einen Wert (den Ausdruck) anhand einer Werteliste aus und gibt das Ergebn
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL omit(object; key1; [key2; ...])]
+## [!UICONTROL OMIT(Objekt; Schlüssel1; [Schlüssel2; …])]
 
 Lässt die angegebenen Schlüssel des -Objekts aus und gibt den Rest zurück.
 
@@ -116,7 +123,7 @@ Gibt eine Sammlung der Benutzerinformationen zurück, mit Ausnahme des Kennworts
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL pick(object; key1; [key2; ...])]
+## [!UICONTROL PICK(Objekt; Schlüssel1; [Schlüssel2; …])]
 
 Wählt nur die angegebenen Schlüssel aus dem Objekt aus.
 
@@ -124,12 +131,12 @@ Wählt nur die angegebenen Schlüssel aus dem Objekt aus.
 
 **Beispiel:**
 
-`pick(` Benutzer `;` Passwort `;` E-Mail-`)`
+`pick(` User `;` password `;` email `)`
 
-Gibt nur eine Sammlung von Passwort und E-Mail-Adresse der Benutzenden zurück.
+Returns a collection of only the user&#39;s password and email address.
 
 >[!ENDSHADEBOX]
 
-## mergeCollections(collection1;collection2)
+## mergeCollections(collection1; collection2)
 
 Führt zwei Sammlungen durch Kombinieren ihrer Schlüssel-Wert-Paare zusammen. Wenn beide Sammlungen denselben Schlüssel enthalten, überschreibt der Wert aus der zweiten Sammlung diesen Wert aus der ersten Sammlung.
