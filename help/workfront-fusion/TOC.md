@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: a23517da30b4e51ef55bcc13241a03cd1d6153a0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1737'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 0%
 * {#fusion-release-activity} der Fusionsfreigabeaktivität
    * [Adobe Workfront Fusion-Versionsaktivität](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion-Versionen - {#fusion-releases-2025} 2025
+      * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 14. April 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 31. März 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 10. März 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 3. März 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-3.md)
@@ -304,7 +305,8 @@ ht-degree: 0%
          * [Adobe Experience Manager Assets-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
          * [Adobe Experience Manager Forms-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
          * [Adobe Firefly-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
-         * [Adobe Frame.io-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+         * [Adobe Frame.io Beta (V4)-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
+         * [Adobe Frame.io Legacy (v3)-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
          * [Adobe I/O Events-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
          * [Adobe Journey Optimizer-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
          * [Adobe Lightroom-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)

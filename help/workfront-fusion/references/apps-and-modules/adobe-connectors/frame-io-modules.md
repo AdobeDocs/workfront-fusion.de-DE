@@ -4,16 +4,31 @@ description: Das [!DNL Adobe Workfront Fusion Frame].io modules enable you to mo
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 31487c8b5b6efad1e6d7817dfe7dda67eea88e43
 workflow-type: tm+mt
-source-wordcount: '2510'
+source-wordcount: '2586'
 ht-degree: 0%
 
 ---
 
-# [!DNL Frame.io]
+# [!DNL Frame.io] Legacy-Module
+
+>[!IMPORTANT]
+>
+>In diesem Artikel wird die veraltete Version des Frame.io-Connectors beschrieben. Dieser Connector wird verwendet, um eine Verbindung mit Frame.io Version 3 herzustellen.
+>
+>Anweisungen zur neuen (Beta) Version des Frame.io-Connectors finden Sie unter [Frame.io Beta-Connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 Mit den [!DNL Adobe Workfront Fusion] [!DNL Frame.io] können Sie Assets und Kommentare in Ihrem [!DNL Frame.io]-Konto überwachen, erstellen, aktualisieren, abrufen oder löschen.
+
+Workfront bietet zwei Frame.io-Connectoren, die auf der Version von Frame.io basieren, mit der Sie eine Verbindung herstellen.
+
+| Connector | Frame.io-Version |
+|---|---|
+| Frame.io (Beta) | v4 |
+| Frame.io (veraltet) | v3 |
+
+Anweisungen zur neuen (Beta) Version des Frame.io-Connectors finden Sie unter [Frame.io Beta-Connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 Eine Videoeinführung zum Frame.io-Connector finden Sie unter:
 
@@ -626,7 +641,7 @@ Dieses Aktionsmodul bearbeitet einen vorhandenen Kommentar.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Projekt-ID] </td> 
-   <td> <p>Wählen Sie das Projekt \ aus, das das Asset enthält, zu dem Sie einen Kommentar aktualisieren möchten.</p> </td> 
+   <td> <p>Wählen Sie das Projekt aus, das das Asset enthält, für das Sie einen Kommentar aktualisieren möchten.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Ordner-ID] </td> 

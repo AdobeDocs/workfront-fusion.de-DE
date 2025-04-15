@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
+source-git-commit: 830ac0085c1dce174b9ad167de7305d43143ed44
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 Mit diesen Connectoren können Sie eine Verbindung zu jeder App oder jedem Webservice herstellen, die bzw. der über eine öffentliche API verfügt.
 
-* [HTTP > [!UICONTROL Make a request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [http > [!UICONTROL Anfrage stellen]-Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Erstellen einer einfachen Autorisierungsanfrage]-Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0-Anfrage stellen] Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Erstellen einer Client-Zertifikatautorisierungsanfrage] Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Erstellen einer API-Schlüssel-Autorisierungsanfrage]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP] > Andere Module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
 * [SOAP-Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP-Module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
@@ -45,7 +45,8 @@ Fusion bietet Connectoren für viele Produkte und Services von Adobe.
 * [Adobe Experience Manager Assets-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Adobe Experience Manager Forms-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Adobe Firefly-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
-* [Adobe Frame.io-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+* [Adobe Frame.io Beta (V4)-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+* [Adobe Frame.io Legacy (v3)-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe I/O Events-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
 * [Adobe Journey Optimizer-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
 * [Adobe Lightroom-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
