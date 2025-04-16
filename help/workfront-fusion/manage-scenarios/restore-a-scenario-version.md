@@ -4,14 +4,16 @@ description: Sie können eine frühere Version eines Szenarios wiederherstellen.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '287'
+ht-degree: 1%
 
 ---
 
-# Szenario-Version wiederherstellen
+# Szenario-Versionen anzeigen und verwalten
+
+Sie können frühere Versionen eines Szenarios anzeigen, wiederherstellen oder umbenennen.
 
 ## Zugriffsanforderungen
 
@@ -42,7 +44,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] kaufen.</li><li>[!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] ist enthalten.</li></ul>
    <p>Oder</p>
    <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
    </td> 
@@ -65,16 +67,20 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 +++
 
-## Szenario-Version wiederherstellen
+<!--procedure - open, optional add comment, optional restore version-->
 
-1. Öffnen Sie Ihr Szenario.
-1. Klicken Sie auf das [!UICONTROL More] Symbol ![Mehr](assets/more-icon.png) unten auf dem Bildschirm und dann auf **[!UICONTROL Previous Versions]**.
+## Anzeigen und Verwalten des Versionsverlaufs eines Szenarios
 
-1. Klicken Sie auf die **[!UICONTROL Pick the version]** und dann auf die Version, die Sie wiederherstellen möchten.
-1. Klicken Sie auf **[!UICONTROL OK]**.
+1. Klicken Sie **[!UICONTROL linken Bereich auf]** Szenarios![Symbol](assets/scenarios-icon.png) und klicken Sie dann auf das Szenario, um es zu öffnen.
+1. Klicken Sie auf [!UICONTROL Mehr]-Symbol ![Mehr](assets/more-icon.png) unten im Bildschirm und anschließend auf **[!UICONTROL Frühere Versionen]**.
 
-   Die ausgewählte Szenario-Version wird wiederhergestellt.
+   Eine Liste der vorherigen Versionen wird angezeigt.
+1. (Optional) Um die Version umzubenennen, klicken Sie auf das Menü Mehr ![Mehr](assets/more-icon-vertical.png) in der Zeile für diese Version, wählen Sie **Bearbeiten** aus und geben Sie einen Namen in das Feld ein. Klicken Sie **Speichern**, um den neuen Namen zu speichern.
 
->[!NOTE]
->
->Die wiederhergestellte Version des Szenarios wird nicht automatisch gespeichert. Wenn Sie die wiederhergestellte Version des Szenarios speichern möchten, müssen Sie sie manuell speichern.
+   Es wird empfohlen, einen Namen anzugeben, der die für diese Version vorgenommenen Änderungen beschreibt.
+1. (Optional) Um die Version wiederherzustellen, klicken Sie auf Wiederherstellen ![Menü „Mehr](assets/more-icon-vertical.png) in der Zeile für diese Version
+
+
+   >[!NOTE]
+   >
+   >Die wiederhergestellte Version des Szenarios wird nicht automatisch gespeichert. Wenn Sie die wiederhergestellte Version des Szenarios speichern möchten, müssen Sie sie manuell speichern.
