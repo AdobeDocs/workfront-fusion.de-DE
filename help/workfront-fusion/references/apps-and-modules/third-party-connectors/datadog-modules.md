@@ -4,9 +4,9 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
@@ -108,24 +108,28 @@ Sie können eine Verbindung zu Ihrem [!DNL Datadog]-Konto direkt aus einem [!UIC
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Verbindungstyp]</td> 
-      <td> <p> Wählen Sie die Option [!UICONTROL [!DNL Datadog] Application] aus, um vollen Zugriff auf [!DNL Datadog] API zu erhalten.</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">[!UICONTROL Verbindungsname]</td> 
       <td> <p> Geben Sie einen Namen für die Verbindung ein.</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[!UICONTROL Umgebung]</td>
+        <td>Wählen Sie aus, ob diese Verbindung für eine Produktions- oder Nicht-Produktionsumgebung vorgesehen ist.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Typ]</td>
+        <td>Wählen Sie aus, ob Sie eine Verbindung zu einem Service-Konto oder einem persönlichen Konto herstellen möchten.</td>
+        </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Domain] </td> 
       <td> <p>Wählen Sie die Domain aus, zu der Sie eine Verbindung herstellen möchten (USA oder EU).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API-Schlüssel]</td> 
-      <td> <p> Geben Sie Ihren [!DNL Datadog] API-Schlüssel ein. </p> <p>Anweisungen zum Abrufen des API-Schlüssels finden Sie unter <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Abrufen Ihres API-Schlüssels und </a>) in diesem Artikel.</p> </td> 
+      <td role="rowheader">[!UICONTROL API-Schlüsselspeicherort] </td> 
+      <td> <p>Wählen Sie aus, ob der API-Schlüssel in die Kopfzeile oder in die Abfragezeichenfolge aufgenommen werden soll.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Anwendungsschlüssel]</td> 
-      <td> <p> Geben Sie Ihren [!DNL Datadog] Anwendungsschlüssel ein. </p> <p>Anweisungen zum Abrufen des Anwendungsschlüssels finden Sie unter <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Abrufen Ihres API-Schlüssels und </a>) in diesem Artikel.</p> </td> 
+      <td role="rowheader">[!UICONTROL API-Schlüssel]</td> 
+      <td> <p> Geben Sie Ihren [!DNL Datadog] API-Schlüssel ein. </p> <p>Anweisungen zum Abrufen des API-Schlüssels finden Sie unter <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Abrufen Ihres API-Schlüssels und </a>) in diesem Artikel.</p> </td> 
      </tr> 
     </tbody> 
    </table>
@@ -217,18 +221,28 @@ Der Grenzwert für komprimierte Payloads beträgt 3,2 Megabyte (3200000) und 62 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Typ]</td> 
-   <td> Wählen Sie den Typ der Metrik aus, den Sie verwenden möchten. </td> 
+   <td> Wählen Sie den Typ der Metrik aus, den Sie verwenden möchten. 
+   <ul>
+   <li>Tachometer</li>
+   <li>Rate</li>
+   <li>Count</li>
+   </ul>
+   </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Interval]</td> 
+   <td> Wenn der Typ der Metrik „Rate“ oder „Anzahl“ lautet, definieren Sie das entsprechende Intervall.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Reihe]</td> 
-   <td> <p>Fügen Sie Zeitreihen hinzu, die Sie an [!DNL Datadog] senden möchten.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL-Metrik]</strong> </p> <p>Geben Sie den Namen der Zeitreihe ein.</p> </li> 
-     <li> <p><strong>[!UICONTROL type]</strong> </p> <p>Wählen Sie den Typ der Metrik aus.</p> </li> 
-     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> Wenn der Typ der Metrik „Rate“ oder „Anzahl“ lautet, definieren Sie das entsprechende Intervall.</p> </li> 
-     <li> <p><strong>[!UICONTROL Points]</strong> </p> <p>Fügen Sie Punkte hinzu, die sich auf eine Metrik beziehen.</p> <p>Dies ist ein JSON-Array von Punkten. Jeder Punkt hat das folgende Format: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Hinweis:  <p>Der Zeitstempel muss in Sekunden angegeben werden.</p> <p>Der Zeitstempel muss aktuell sein. Aktuell ist definiert als nicht mehr als 10 Minuten in der Zukunft oder als mehr als 1 Stunde in der Vergangenheit.</p> <p> Das numerische Wertformat sollte ein Fließwert sein.</p> </p> <p>Dieses Feld muss mindestens 1 Element enthalten.</p> </li> 
-     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>Geben Sie den Namen des Hosts ein, der die Metrik erzeugt hat.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Points]</td> 
+   <td><p>Fügen Sie Punkte hinzu, die sich auf eine Metrik beziehen.</p> <p>Dies ist ein JSON-Array von Punkten. Jeder Punkt hat das folgende Format: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Hinweis:  <p>Der Zeitstempel muss in Sekunden angegeben werden.</p> <p>Der Zeitstempel muss aktuell sein. Aktuell ist definiert als nicht mehr als 10 Minuten in der Zukunft oder als mehr als 1 Stunde in der Vergangenheit.</p> <p> Das numerische Wertformat sollte ein Fließwert sein.</p> </p> <p>Dieses Feld muss mindestens 1 Element enthalten.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Host]</td> 
+   <td>Geben Sie den Namen des Hosts ein, der die Metrik erzeugt hat. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tags]</td> 
+   <td> Klicken Sie für jedes Tag, das Sie der Metrik hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie den Wert des Tags ein.</td> 
   </tr> 
  </tbody> 
 </table>
