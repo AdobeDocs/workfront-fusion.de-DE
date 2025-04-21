@@ -5,10 +5,10 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 11376e58-a44b-4766-85dc-e2421b0112de
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: b5387e4ba84d67d6ea2472282c212e396ba93d4f
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 1%
+source-wordcount: '1601'
+ht-degree: 0%
 
 ---
 
@@ -22,42 +22,46 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration] </p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Adobe Workfront] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] kaufen und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden. [!DNL Workfront Fusion] ist im [!UICONTROL Ultimate] [!DNL Workfront] enthalten.</p>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Voraussetzungen
 
@@ -82,14 +86,15 @@ Der Widen-Connector verwendet Folgendes:
  </tbody> 
  </table>
 
-## [!DNL Widen] mit [!DNL Workfront Fusion] verbinden {#connect-widen-to-workfront-fusion}
+## [!DNL Widen] mit [!DNL Workfront Fusion] verbinden  {#connect-widen-to-workfront-fusion}
 
 Sie können direkt aus einem [!DNL Widen]-Modul heraus eine Verbindung zu Ihrem [!DNL Widen]-Konto herstellen.
 
-1. Klicken Sie in einem beliebigen [!DNL Widen] auf **[!UICONTROL Add]** neben dem Feld [!UICONTROL Connection] .
+1. Klicken Sie in einem [!DNL Widen] Modul **[!UICONTROL Hinzufügen]** neben dem Feld [!UICONTROL Verbindung].
+1. Wählen Sie die Umgebung und den Kontotyp aus, mit denen Sie eine Verbindung herstellen möchten. Dies dient nur zu Informationszwecken und wird im Bereich Verbindungen von Fusion angezeigt.
 1. Wählen Sie die [!DNL Widen] Domain aus, mit der Sie eine Verbindung herstellen möchten.
 1. Geben Sie das Token für Ihr [!DNL Widen] ein. Anweisungen zum Auffinden dieses Tokens finden Sie unter [[!DNL Widen] API-FAQs](https://community.widen.com/collective/s/article/API-FAQs).
-1. Klicken Sie auf **[!UICONTROL Continue]** , um die Verbindung zu erstellen, und kehren Sie zum Modul zurück.
+1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu erstellen, und kehren Sie zum Modul zurück.
 
 ## [!DNL Widen] Module und ihre Felder
 
@@ -105,7 +110,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Trigger-Module
 
-#### [!UICONTROL Watch assets]
+#### [!UICONTROL Überwachen von Assets]
 
 Dieses Trigger-Modul startet ein Szenario, wenn ein Asset erstellt oder aktualisiert wird.
 
@@ -114,11 +119,11 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Asset erstellt oder aktualis
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Event type]</td> 
+   <td role="rowheader">[!UICONTROL Ereignistyp]</td> 
    <td> <p>Wählen Sie aus, ob Sie neue oder aktualisierte Assets ansehen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -126,7 +131,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Asset erstellt oder aktualis
    <td> <p>Wählen Sie die Eigenschaften aus, die Sie zusätzlich zu den Asset-Feldern in die Modulausgabe aufnehmen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Ausgaben]</td> 
    <td>Wählen Sie die Felder aus, die Sie in die Modulausgabe aufnehmen möchten.</td> 
   </tr> 
   <tr> 
@@ -138,15 +143,44 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Asset erstellt oder aktualis
 
 ### Aktionsmodule
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset info]](#read-asset-info)
-* [[!UICONTROL Add assets to collections]](#add-assets-to-collections)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Download File]](#download-file)
-* [Datei [!UICONTROL Upload]](#upload-a-file)
+* [[!UICONTROL Hinzufügen von Assets zu Sammlungen]](#add-assets-to-collections)
+* [[!UICONTROL Benutzerdefinierter API-Aufruf]](#custom-api-call)
+* [[!UICONTROL Datei herunterladen]](#download-file)
+* [[!UICONTROL Asset-Informationen lesen]](#read-asset-info)
+* [[!UICONTROL Entfernen von Assets aus der Sammlung]](#remove-assets-from-collection)
+* [[!UICONTROL Aktualisieren von Asset-Metadaten]](#update-asset-metadata)
+* [[!UICONTROL Datei hochladen]](#upload-a-file)
 
-#### [!UICONTROL Custom API Call]
+#### [!UICONTROL Hinzufügen von Assets zu Sammlungen]
+
+Dieses Aktionsmodul fügt ein oder mehrere Assets zu Sammlungen hinzu.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+  <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sammlungs-ID]</td> 
+   <td>Klicken Sie für jede Sammlung, der Sie die Assets hinzufügen möchten, auf <strong>[Sammlungs-ID]</strong> und geben Sie die [!UICONTROL-Sammlungs-ID] ein oder mappen Sie sie.</li> 
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> Klicken Sie für jedes Asset, das Sie zu einer Sammlung hinzufügen möchten, auf <strong>[!UICONTROL Assets ID]</strong> und geben Sie die Asset-ID ein oder ordnen Sie sie zu.</p> </li> 
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Geben Sie die maximale Anzahl von Assets ein, mit denen das Modul während jedes Szenario-Ausführungszyklus arbeiten soll, oder mappen Sie sie.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Benutzerdefinierter API-Aufruf]
 
 Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Widen]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, die von den anderen [!DNL Widen] nicht durchgeführt werden kann.
 
@@ -157,11 +191,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL API Version]</td> 
+   <td role="rowheader">[!UICONTROL API-Version]</td> 
    <td>Wählen Sie aus, ob Sie die neueste Version der [!DNL Widen]-API oder Version 1.0 verwenden möchten</td> 
   </tr> 
   <tr> 
@@ -169,19 +203,19 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Geben Sie die URL für Ihren API-Aufruf ein oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] Fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL body]</td> 
    <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -190,7 +224,26 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  </tbody> 
 </table>
 
-#### [!UICONTROL Read asset info]
+#### [!UICONTROL Datei herunterladen]
+
+Dieses Aktionsmodul lädt ein Asset von Ihrem [!DNL Widen]-Konto herunter.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+  <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset-ID]</td> 
+   <td> <p>Geben Sie die ID des Assets ein, das Sie herunterladen möchten, oder mappen Sie sie.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Asset-Informationen lesen]
 
 Dieses Aktionsmodul ruft ein einzelnes Asset anhand seiner eindeutigen ID ab.
 
@@ -199,11 +252,11 @@ Dieses Aktionsmodul ruft ein einzelnes Asset anhand seiner eindeutigen ID ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td role="rowheader">[!UICONTROL Asset-ID]</td> 
    <td> <p>Geben Sie die ID des Assets ein, für das Sie Informationen lesen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
@@ -211,50 +264,13 @@ Dieses Aktionsmodul ruft ein einzelnes Asset anhand seiner eindeutigen ID ab.
    <td> <p>Wählen Sie die Eigenschaften aus, die Sie zusätzlich zu den Asset-Feldern in die Modulausgabe aufnehmen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Ausgaben]</td> 
    <td>Wählen Sie die Felder aus, die Sie in die Modulausgabe aufnehmen möchten.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Add assets to collections]
-
-Dieses Aktionsmodul fügt ein oder mehrere Assets zu Sammlungen hinzu.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collections ID]</td> 
-   <td> <p>Für jede Sammlung, der Sie die Assets hinzufügen möchten:</p> 
-    <ol> 
-     <li value="1"> <p> Klicken Sie auf <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Geben Sie die [!UICONTROL Collection ID] ein oder ordnen Sie sie zu.</p> </li> 
-     <li value="3"> <p>Klicken Sie auf <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Assets ID]</td> 
-   <td> <p>Für jedes Asset, das Sie einer Sammlung hinzufügen möchten:</p> 
-    <ol> 
-     <li value="1"> <p> Klicken Sie auf <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Geben Sie die Asset-ID ein oder ordnen Sie sie zu.</p> </li> 
-     <li value="3"> <p>Klicken Sie auf <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Assets ein, mit denen das Modul während jedes Szenario-Ausführungszyklus arbeiten soll, oder mappen Sie sie.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove assets from collection]
+#### [!UICONTROL Entfernen von Assets aus der Sammlung]
 
 Dieses Aktionsmodul entfernt ein oder mehrere Assets aus Sammlungen.
 
@@ -263,26 +279,19 @@ Dieses Aktionsmodul entfernt ein oder mehrere Assets aus Sammlungen.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Collections ID]</td> 
-   <td> <p>Für jede Sammlung, aus der Sie die Assets entfernen möchten:</p> 
-    <ol> 
-     <li value="1"> <p> Klicken Sie auf <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Sammlungs-ID eingeben oder zuordnen.</p> </li> 
-     <li value="3"> <p>Klicken Sie auf <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sammlungs-ID]</td> 
+   <td>Klicken Sie für jede Sammlung, aus der Sie Assets entfernen möchten, auf <strong>[Sammlungs-ID]</strong> und geben Sie die [!UICONTROL-Sammlungs-ID] ein oder mappen Sie sie.</li> 
+   </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">ASSETS ID</td> 
-   <td> <p>Für jedes Asset, das Sie aus einer Sammlung entfernen möchten:</p> 
-    <ol> 
-     <li value="1"> <p> Klicken Sie auf <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Geben Sie die Asset-ID ein oder ordnen Sie sie zu.</p> </li> 
-     <li value="3"> <p>Klicken Sie auf <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> Klicken Sie für jedes Asset, das Sie aus einer Sammlung entfernen möchten, auf <strong>[!UICONTROL Assets ID]</strong> und geben Sie die Asset-ID ein oder ordnen Sie sie zu.</p> </li> 
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -291,7 +300,7 @@ Dieses Aktionsmodul entfernt ein oder mehrere Assets aus Sammlungen.
  </tbody> 
 </table>
 
-#### [!UICONTROL Update asset metadata]
+#### [!UICONTROL Aktualisieren von Asset-Metadaten]
 
 Dieses Aktionsmodul aktualisiert die Metadatenfelder eines Assets.
 
@@ -300,19 +309,19 @@ Dieses Aktionsmodul aktualisiert die Metadatenfelder eines Assets.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td role="rowheader">[!UICONTROL Asset-ID]</td> 
    <td> <p>Geben Sie die ID des Assets ein, bei dem Sie die Metadaten aktualisieren möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Metadata type]</td> 
+   <td role="rowheader">[!UICONTROL Metadatentyp]</td> 
    <td> <p>Wählen Sie den Metadatentyp für die Metadaten aus, die Sie aktualisieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Metadata]</td> 
+   <td role="rowheader">[!UICONTROL Metadaten]</td> 
    <td>Wählen Sie die Metadatenfelder aus, die Sie aktualisieren möchten. Geben Sie für jedes Feld den neuen Wert für das Feld ein.</td> 
   </tr> 
   <tr> 
@@ -322,26 +331,7 @@ Dieses Aktionsmodul aktualisiert die Metadatenfelder eines Assets.
  </tbody> 
 </table>
 
-#### [!UICONTROL Download File]
-
-Dieses Aktionsmodul lädt ein Asset von Ihrem [!DNL Widen]-Konto herunter.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td> <p>Geben Sie die ID des Assets ein, das Sie herunterladen möchten, oder mappen Sie sie.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Datei hochladen]
 
 Dieses Aktionsmodul lädt eine Datei in Ihr [!DNL Widen]-Konto hoch.
 
@@ -350,42 +340,42 @@ Dieses Aktionsmodul lädt eine Datei in Ihr [!DNL Widen]-Konto hoch.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Upload Profile]</td> 
+   <td role="rowheader">[!UICONTROL Profil hochladen]</td> 
    <td> <p>Wählen Sie das Upload-Profil aus, das das Modul verwenden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Upload Method]</td> 
+   <td role="rowheader">[!UICONTROL Upload-Methode]</td> 
    <td> <p>Wählen Sie aus, wie Sie die Datei hochladen möchten.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL From File]</strong> </p> <p>Wählen Sie die Quelldatei aus einem vorherigen Modul aus oder ordnen Sie sie zu.</p> </li> 
-     <li> <p><strong>[!UICONTROL By URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie hochladen möchten, oder mappen Sie sie.</p> </li> 
+     <li> <p><strong>[!UICONTROL aus Datei]</strong> </p> <p>Wählen Sie die Quelldatei aus einem vorherigen Modul aus oder ordnen Sie sie zu.</p> </li> 
+     <li> <p><strong>[!UICONTROL nach URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie hochladen möchten, oder mappen Sie sie.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
+   <td role="rowheader">[!UICONTROL Dateiname]</td> 
    <td>Geben Sie einen Namen für die hochgeladene Datei ein oder mappen Sie ihn.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Metadata Type]</td> 
+   <td role="rowheader">[!UICONTROL Metadatentyp]</td> 
    <td>Wählen Sie den Metadatentyp für die Datei aus, die Sie hochladen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Metadata]</td> 
-   <td>Wählen Sie die Metadatenfelder aus, die Sie in den Datei-Upload einbeziehen möchten. Geben Sie für jedes Feld den [!UICONTROL value] für das Feld ein.</td> 
+   <td role="rowheader">[!UICONTROL Metadaten]</td> 
+   <td>Wählen Sie die Metadatenfelder aus, die Sie in den Datei-Upload einbeziehen möchten. Geben Sie für jedes Feld den [!UICONTROL-Wert] für das Feld ein.</td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Suchmodule
 
-* [[!UICONTROL Read collection assets]](#read-collection-assets)
-* [[!UICONTROL Search assets]](#search-assets)
+* [[!UICONTROL Lesen von Sammlungs-Assets]](#read-collection-assets)
+* [[!UICONTROL Suche nach Assets]](#search-assets)
 
-#### [!UICONTROL Read collection assets]
+#### [!UICONTROL Lesen von Sammlungs-Assets]
 
 Dieses Aktionsmodul ruft eine Liste von Assets in einer Sammlung ab.
 
@@ -394,11 +384,11 @@ Dieses Aktionsmodul ruft eine Liste von Assets in einer Sammlung ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td role="rowheader">[!UICONTROL-Sammlungs-ID]</td> 
    <td> <p>Geben Sie die ID der Sammlung ein, die die Assets enthält, die Sie lesen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
@@ -406,25 +396,25 @@ Dieses Aktionsmodul ruft eine Liste von Assets in einer Sammlung ab.
    <td>Geben Sie die Nummer des ersten Elements ein, das Sie auflisten möchten, oder ordnen Sie sie zu. Dies ist eine Möglichkeit, die Datensätze zu paginieren.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Max]</td> 
+   <td role="rowheader">[!UICONTROL max]</td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort By]</td> 
+   <td role="rowheader">[!UICONTROL sortieren nach]</td> 
    <td> <p>Wählen Sie die Eigenschaft aus, nach der Sie die Assets sortieren möchten. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Order]</td> 
+   <td role="rowheader">[!UICONTROL-Reihenfolge]</td> 
    <td>Wählen Sie aus, ob Assets in auf- oder absteigender Reihenfolge sortiert werden sollen.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Ausgaben]</td> 
    <td>Wählen Sie die Felder aus, die Sie in die Modulausgabe aufnehmen möchten.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Search assets]
+#### [!UICONTROL Suche nach Assets]
 
 Dieses Suchmodul ruft eine Liste von Assets ab, die den spezifischen Suchkriterien entsprechen.
 
@@ -433,19 +423,19 @@ Dieses Suchmodul ruft eine Liste von Assets ab, die den spezifischen Suchkriteri
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search query]</td> 
+   <td role="rowheader">[!UICONTROL Suchabfrage]</td> 
    <td> <p>Geben Sie die Kriterien ein, nach denen Sie Assets suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort By]</td> 
+   <td role="rowheader">[!UICONTROL sortieren nach]</td> 
    <td> <p>Wählen Sie aus, wie die Assets sortiert werden sollen. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Order]</td> 
+   <td role="rowheader">[!UICONTROL-Reihenfolge]</td> 
    <td>Wählen Sie aus, ob Assets in auf- oder absteigender Reihenfolge sortiert werden sollen.</td> 
   </tr> 
   <tr> 
@@ -457,15 +447,15 @@ Dieses Suchmodul ruft eine Liste von Assets ab, die den spezifischen Suchkriteri
    <td> <p>Aktivieren Sie diese Option, um archivierte Assets in die Suche einzuschließen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search document text]</td> 
-   <td>Aktivieren Sie diese Option, um Dokumenttext in Ihre Suche aufzunehmen, oder wählen Sie „false“ aus, um nur Assets einzuschließen, deren Titel den Suchkriterien entspricht.</td> 
+   <td role="rowheader">[!UICONTROL Dokumenttext suchen]</td> 
+   <td>Aktivieren Sie diese Option, um Dokumenttext in Ihre Suche aufzunehmen, oder legen Sie sie auf „false“ fest, um nur Assets einzuschließen, deren Titel mit den Suchkriterien übereinstimmt.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Offset]</td> 
+   <td role="rowheader">[!UICONTROL Versatz]</td> 
    <td>Geben Sie die Nummer des ersten Elements ein, für das Sie Details abrufen möchten, oder ordnen Sie sie zu. Dies ist eine Möglichkeit, die Datensätze zu paginieren.</td> 
   </tr> 
   <tr> 
@@ -477,7 +467,7 @@ Dieses Suchmodul ruft eine Liste von Assets ab, die den spezifischen Suchkriteri
    <td> <p>Wählen Sie die Eigenschaften aus, die Sie zusätzlich zu den Asset-Feldern in die Modulausgabe aufnehmen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[!UICONTROL Ausgaben]</td> 
    <td>Wählen Sie die Felder aus, die Sie in die Modulausgabe aufnehmen möchten.</td> 
   </tr> 
  </tbody> 
