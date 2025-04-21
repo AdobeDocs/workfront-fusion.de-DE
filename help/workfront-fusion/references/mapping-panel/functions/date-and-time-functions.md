@@ -4,9 +4,9 @@ description: Die folgenden Datums- und Uhrzeitfunktionen sind im Zuordnungsberei
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1876'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Ruft die aktuelle Zeit als Unix-Zeitstempel ab.
 
 ## Funktionen
 
-### [!UICONTROL addSeconds (date; number)]
+### [!UICONTROL addSeconds (Datum; Zahl)]
 
 Gibt ein neues Datum zurück, nachdem einem Datum eine bestimmte Anzahl von Sekunden hinzugefügt wurde. Um Sekunden abzuziehen, geben Sie eine negative Zahl ein.
 
@@ -43,7 +43,7 @@ Gibt ein neues Datum zurück, nachdem einem Datum eine bestimmte Anzahl von Seku
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMinutes (date; number)] {#addminutes-date-number}
+### [!UICONTROL addMinutes (Datum; Zahl)] {#addminutes-date-number}
 
 Gibt ein neues Datum zurück, wenn einem Datum eine bestimmte Anzahl von Minuten hinzugefügt wird. Um Minuten abzuziehen, geben Sie eine negative Zahl ein.
 
@@ -61,7 +61,7 @@ Gibt ein neues Datum zurück, wenn einem Datum eine bestimmte Anzahl von Minuten
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addHours (date; number)] {#addhours-date-number}
+### [!UICONTROL addHours (Datum; Zahl)] {#addhours-date-number}
 
 Gibt ein neues Datum zurück, wenn einem Datum eine bestimmte Anzahl von Stunden hinzugefügt wird. Um Stunden abzuziehen, geben Sie eine negative Zahl ein.
 
@@ -79,7 +79,7 @@ Gibt ein neues Datum zurück, wenn einem Datum eine bestimmte Anzahl von Stunden
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addDays (date; number)] {#adddays-date-number}
+### [!UICONTROL addDays (Datum; Zahl)] {#adddays-date-number}
 
 Gibt ein neues Datum zurück, wenn einem Datum eine bestimmte Anzahl von Tagen hinzugefügt wird. Um Tage abzuziehen, geben Sie eine negative Zahl ein.
 
@@ -97,7 +97,7 @@ Gibt ein neues Datum zurück, wenn einem Datum eine bestimmte Anzahl von Tagen h
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMonths (date; number)]
+### [!UICONTROL addMonths (Datum; Zahl)]
 
 Gibt ein neues Datum zurück, wenn einem Datum eine bestimmte Anzahl von Monaten hinzugefügt wird. Um Monate abzuziehen, geben Sie eine negative Zahl ein.
 
@@ -115,7 +115,7 @@ Gibt ein neues Datum zurück, wenn einem Datum eine bestimmte Anzahl von Monaten
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addYears (date; number)]
+### [!UICONTROL addYears (Datum; Zahl)]
 
 Gibt ein neues Datum zurück, wenn einem Datum eine bestimmte Anzahl von Jahren hinzugefügt wird. Um Jahre abzuziehen, geben Sie eine negative Zahl ein.
 
@@ -133,13 +133,13 @@ Gibt ein neues Datum zurück, wenn einem Datum eine bestimmte Anzahl von Jahren 
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setSecond (date; number)]
+### [!UICONTROL setSecond (Datum; Zahl)]
 
 Diese Funktion gibt ein neues Datum mit den in den Parametern angegebenen Sekunden zurück.
 
 Geben Sie eine Zahl zwischen 0 und 59 an. Wenn die Zahl außerhalb dieses Bereichs liegt, gibt die Funktion eine Sekunde aus der vorherigen Minute (für eine negative Zahl) oder der nachfolgenden Minute (für eine positive Zahl) zurück.
 
-Wenn Sie eine Zahl außerhalb des Bereichs angeben müssen, empfehlen wir die Verwendung von [!UICONTROL  addSeconds], wie oben im Abschnitt [addSeconds (date; number)](#addseconds-date-number).
+Wenn Sie eine Zahl außerhalb des Bereichs angeben müssen, empfehlen wir die Verwendung von [!UICONTROL addSeconds], wie oben im Abschnitt [addSeconds (date; number)](#addseconds-date-number).
 
 >[!BEGINSHADEBOX]
 
@@ -149,13 +149,13 @@ Wenn Sie eine Zahl außerhalb des Bereichs angeben müssen, empfehlen wir die Ve
 
   Gibt 2015-10-07T11:36:10.138Z zurück
 
-* `setSecond(2015-10-07T11:36:39.138Z; 6)`
+* `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
   Gibt 2015-10-07T11-:37:.138Z zurück
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMinute (date; number)]
+### [!UICONTROL setMinute (Datum; Zahl)]
 
 Diese Funktion gibt ein neues Datum mit den in den Parametern angegebenen Minuten zurück.
 
@@ -177,7 +177,7 @@ Wenn Sie eine Zahl außerhalb des Bereichs angeben müssen, empfehlen wir, addMi
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setHour (date; number)]
+### [!UICONTROL setHour (Datum; Zahl)]
 
 Diese Funktion gibt ein neues Datum mit der in den Parametern angegebenen Stunde zurück.
 
@@ -245,7 +245,7 @@ Geben Sie eine Zahl zwischen 1 und 31 an. Wenn die Zahl außerhalb dieses Bereic
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMonth (date; number/name of the month in English)]
+### [!UICONTROL setMonth (date; number/name of the month in englischer Sprache)]
 
 Diese Funktion gibt ein neues Datum mit dem in den Parametern angegebenen Monat zurück.
 
@@ -269,7 +269,7 @@ Geben Sie eine Zahl zwischen 1 und 12 an. Wenn die Zahl außerhalb dieses Bereic
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setYear (date; number)]
+### [!UICONTROL setYear (date;number)]
 
 Gibt ein neues Datum mit dem in den Parametern angegebenen Jahr zurück.
 
@@ -283,7 +283,7 @@ Gibt ein neues Datum mit dem in den Parametern angegebenen Jahr zurück.
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL formatDate (date; format; [timezone])]
+### [!UICONTROL formatDate (Datum; Format; [Zeitzone])]
 
 Verwenden Sie diese Funktion, wenn Sie einen Datumswert haben, z. B. `12-10-2021 20:30`, den Sie als Textwert formatieren möchten, z. B. `Dec 10, 2021 8:30 PM`.
 
@@ -311,7 +311,7 @@ Weitere Informationen finden Sie unter Datum und Text im Artikel [Elementdatenty
    <td> <p>Konvertiert einen Datumswert in einen Textwert. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL format] </td> 
+   <td>[!UICONTROL-Format] </td> 
    <td>Text </td> 
    <td> <p>Ermöglicht die Angabe eines Formats mithilfe von Datums-/Uhrzeitformatierungs-Token. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token zur Datums- und Zeitformatierung</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
@@ -353,7 +353,7 @@ Die Funktion `formatDate` gibt eine Textdarstellung des angegebenen Datumswerts 
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL parseDate (text; format; [timezone])]
+### [!UICONTROL parseDate (text;format; [timezone])]
 
 Verwenden Sie diese Funktion, wenn Sie einen Textwert haben, der ein Datum darstellt (z. B. `12-10-2019 20:30` oder `Aug 18, 2019 10:00 AM`) und Sie ihn in einen Datumswert konvertieren (parsen) möchten (eine binäre maschinenlesbare Darstellung). Weitere Informationen finden Sie unter Datum und Text im Artikel [Elementdatentypen](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -374,12 +374,12 @@ Die zweite Spalte zeigt den erwarteten Typ an. Wenn ein anderer Typ angegeben wi
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL text] </td> 
+   <td>[!UICONTROL-Text] </td> 
    <td>Text </td> 
    <td> <p>Konvertiert einen Datumswert in einen Textwert. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL format] </td> 
+   <td>[!UICONTROL-Format] </td> 
    <td>Text </td> 
    <td> <p>Ermöglicht die Angabe eines Formats mithilfe von Datums-/Uhrzeitformatierungs-Token. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token zur Datums- und Zeitformatierung</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
