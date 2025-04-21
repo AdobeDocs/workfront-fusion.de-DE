@@ -4,48 +4,48 @@ description: Die folgenden Array-Funktionen sind im Bedienfeld "Adobe Workfront 
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
 # Array-Funktionen
 
-## [!UICONTROL join (array; separator)]
+## [!UICONTROL Join (Array;Trennzeichen)]
 
 Verkettet alle Elemente eines Arrays in einer Zeichenfolge, wobei zwischen den einzelnen Elementen das angegebene Trennzeichen verwendet wird.
 
-## [!UICONTROL length (array)]
+## [!UICONTROL length (Array)]
 
 Gibt die Anzahl der Elemente in einem Array zurück.
 
-## [!UICONTROL keys (object)]
+## [!UICONTROL keys (Objekt)]
 
 Gibt ein Array der Eigenschaften eines bestimmten Objekts oder Arrays zurück.
 
-## [!UICONTROL slice (array; start; [end])]
+## [!UICONTROL slice (Array; Start; [end])]
 
 Gibt ein neues Array zurück, das nur ausgewählte Elemente enthält.
 
-## [!UICONTROL merge (array1; array2; ...)]
+## [!UICONTROL Zusammenführen (Array1; Array2; …)]
 
 Führt ein oder mehrere Arrays in einem Array zusammen.
 
-## [!UICONTROL contains (array; value)]
+## [!UICONTROL Enthält (Array; Wert)]
 
 Prüft, ob ein Array den Wert enthält.
 
-## [!UICONTROL remove (array; value1; value2; ...)]
+## [!UICONTROL Entfernen (Array; Wert1; Wert2; …)]
 
 Entfernt die in den Parametern eines Arrays angegebenen Werte. Diese Funktion ist nur bei primitiven Text- oder Zahlenfeldern wirksam.
 
-## [!UICONTROL add (array; value1; value2; ...)]
+## [!UICONTROL add (Array; Wert1; Wert2; …)]
 
 Fügt die in den Parametern angegebenen Werte zu einem Array hinzu und gibt dieses Array zurück.
 
-## [!UICONTROL map (complex array; key;[key for filtering];[possible values for filtering])]
+## [!UICONTROL Map (komplexes Array; Schlüssel; [Schlüssel zum Filtern]; [mögliche Werte zum Filtern])]
 
 Gibt ein primitives Array mit Werten eines komplexen Arrays zurück. Diese Funktion ermöglicht das Filtern von Werten. Verwenden Sie unformatierte Variablennamen für Schlüssel.
 
@@ -67,7 +67,7 @@ Weitere Informationen finden Sie unter [Zuordnen eines Arrays oder Array-Element
 
 ## schlurfen
 
-## [!UICONTROL sort (array; [order]; [key])]
+## [!UICONTROL sort (Array; [order]; [key])]
 
 Sortiert die Werte eines Arrays. Die gültigen Werte des `order` sind:
 
@@ -117,17 +117,17 @@ Das erste Element in einem Array ist Index 1.
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL reverse (array)]
+## [!UICONTROL reverse (Array)]
 
 Das erste Element des Arrays wird zum letzten Element, das zweite zum vorletzten Element usw.
 
-## [!UICONTROL flatten (array)]
+## [!UICONTROL reduzieren (Array)]
 
 Erstellt ein neues Array, in dem alle Unterarray-Elemente rekursiv bis zur angegebenen Tiefe verkettet sind.
 
-## [!UICONTROL distinct (array; [key])]
+## [!UICONTROL distinct (Array; [key])]
 
-Entfernt Duplikate innerhalb eines Arrays. Verwenden Sie das Argument &quot;[!UICONTROL key]&quot;, um auf Eigenschaften in komplexen Objekten zuzugreifen. Verwenden Sie Punktnotation, um auf verschachtelte Eigenschaften zuzugreifen. Das erste Element in einem Array ist Index 1.
+Entfernt Duplikate innerhalb eines Arrays. Verwenden Sie das [!UICONTROL key]-Argument, um auf Eigenschaften in komplexen Objekten zuzugreifen. Verwenden Sie Punktnotation, um auf verschachtelte Eigenschaften zuzugreifen. Das erste Element in einem Array ist Index 1.
 
 >[!BEGINSHADEBOX]
 
@@ -138,6 +138,39 @@ Entfernt Duplikate innerhalb eines Arrays von Kontakten, indem die Eigenschaft �
 >[!ENDSHADEBOX]
 
 ## toCollection
+
+* Diese Funktion wandelt ein Array, das Schlüssel-Wert-Paare enthält, in eine Sammlung um. Die Funktion umfasst drei Argumente:
+
+* (Array) enthält Schlüssel-Wert-Paare
+* (String) Der Name des als Schlüssel zu verwendenden Felds
+* (Zeichenfolge) Der Name des als Wert zu verwendenden Felds
+
+>[!BEGINSHADEBOX]
+
+Beispiel:
+
+Ein Array erhalten:
+
+```
+[{"name":"Bob", "age":22}, {"name":"Tim", "age":23}]
+```
+
+und Argumente
+
+```
+{{toCollection(6.array; "name"; "age")}}
+```
+
+Die Funktion gibt zurück
+
+```
+{
+    "Bob": 22,
+    "Tim": 23
+}
+```
+
+>[!ENDSHADEBOX]
 
 ## toArray
 

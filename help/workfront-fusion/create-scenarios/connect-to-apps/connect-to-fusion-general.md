@@ -4,9 +4,9 @@ description: Viele  [!DNL Adobe Workfront Fusion]  erfordern beim Erstellen eine
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -68,12 +68,14 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 ## Erstellen einer Verbindung
 
+Um eine Verbindung zu einer bestimmten Anwendung zu erstellen, müssen Sie sich in einem Modul für diese Anwendung befinden. Um beispielsweise eine Verbindung mit Workfront herzustellen, müssen Sie sich in einem Workfront-Modul befinden.
+
 So erstellen Sie eine Verbindung innerhalb eines [!DNL Workfront Fusion]:
 
-1. Klicken Sie **[!UICONTROL Hinzufügen]** neben dem Feld [!UICONTROL Verbindung], um das Bedienfeld **[!UICONTROL Verbindung erstellen]** zu öffnen.
+1. Klicken Sie in einem beliebigen Modul für die jeweilige Anwendung auf **[!UICONTROL Hinzufügen]** neben dem Feld [!UICONTROL Verbindung], um das Bedienfeld **[!UICONTROL Verbindung erstellen]** zu öffnen.
 1. (Optional) Ändern Sie den Standard **[!UICONTROL Verbindungsnamen]**.
-1. Wählen Sie im Feld Umgebung aus, ob es sich um eine Produktions- oder Nicht-Produktionsumgebung handelt. Diese Information wird im Bereich Verbindungen von Fusion angezeigt.
-1. Wählen Sie im Feld Typ aus, ob es sich um einen Dienst oder ein persönliches Konto handelt. Diese Information wird im Bereich Verbindungen von Fusion angezeigt.
+1. Wählen Sie im Feld Umgebung aus, ob es sich um eine Produktions- oder Nicht-Produktionsumgebung handelt.
+1. Wählen Sie im Feld Typ aus, ob es sich um einen Dienst oder ein persönliches Konto handelt.
 1. (Bedingt) Wenn für die App erweiterte Verbindungseinstellungen wie eine ID, ein Schlüssel oder ein [!UICONTROL Geheimnis] erforderlich sind, geben Sie diese Informationen ein.
 
    Möglicherweise müssen Sie auf **[!UICONTROL Erweiterte Einstellungen anzeigen]** klicken, um die Felder anzuzeigen, in die Sie diese Art von Informationen eingeben können.
@@ -84,6 +86,7 @@ So erstellen Sie eine Verbindung innerhalb eines [!DNL Workfront Fusion]:
 
    >[!NOTE]
    >
-   >Einige Microsoft-Apps verwenden dieselbe Verbindung, die an individuelle Benutzerberechtigungen gebunden ist. Daher werden beim Erstellen einer Verbindung im Einverständnisbildschirm für Berechtigungen alle Berechtigungen angezeigt, die zuvor der Verbindung dieses Benutzers gewährt wurden, zusätzlich zu den neuen Berechtigungen, die für die aktuelle Anwendung erforderlich sind.
+   >* Die Felder Umgebung und Typ dienen nur zu Informationszwecken und ändern nichts an der Funktionalität der Verbindung. Diese Informationen werden im Bereich Verbindungen von Fusion angezeigt, sodass Sie bestimmen können, welche Verbindung für einen bestimmten Anwendungsfall in Ihrer Organisation verwendet werden soll.
+   >* Einige Microsoft-Apps verwenden dieselbe Verbindung, die an individuelle Benutzerberechtigungen gebunden ist. Daher werden beim Erstellen einer Verbindung im Einverständnisbildschirm für Berechtigungen alle Berechtigungen angezeigt, die zuvor der Verbindung dieses Benutzers gewährt wurden, zusätzlich zu den neuen Berechtigungen, die für die aktuelle Anwendung erforderlich sind.
    >
-   >Wenn ein Benutzer beispielsweise über die über den Excel-Connector gewährten Berechtigungen zum Lesen von Tabellen verfügt und dann im Outlook-Connector eine Verbindung zum Lesen von E-Mails erstellt, zeigt der Einverständnisbildschirm für Berechtigungen sowohl die bereits erteilte Berechtigung zum Lesen von Tabellen als auch die neu erforderliche Berechtigung zum Schreiben von E-Mails an.
+   >   Wenn ein Benutzer beispielsweise über die über den Excel-Connector gewährten Berechtigungen zum Lesen von Tabellen verfügt und dann im Outlook-Connector eine Verbindung zum Lesen von E-Mails erstellt, zeigt der Einverständnisbildschirm für Berechtigungen sowohl die bereits erteilte Berechtigung zum Lesen von Tabellen als auch die neu erforderliche Berechtigung zum Schreiben von E-Mails an.
