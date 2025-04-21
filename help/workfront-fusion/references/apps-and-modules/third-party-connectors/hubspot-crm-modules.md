@@ -4,9 +4,9 @@ description: Die  [!DNL Adobe Workfront Fusion] HubSpot CRM-Module ermöglichen 
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
 workflow-type: tm+mt
-source-wordcount: '6203'
+source-wordcount: '7003'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,6 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### CRM-Objekte
 
-<!--* [Search for CRM objects](#search-for-crm-objects)
-* [Watch CRM objects](#watch-crm-objects)-->
-
 +++ **[!UICONTROL Nach CRM-Objekten suchen]**
 
 Dieses Suchmodul sucht nach CRM-Objekten anhand benutzerdefinierter Eigenschaften oder anhand einer Abfrage. Um nach Produkten oder Zeileneinträgen zu suchen, verwenden Sie eine spezielle Verbindung mit einem erforderlichen benutzerdefinierten Bereich.
@@ -208,15 +205,6 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein CRM-Objekt erstellt oder akt
 +++
 
 ### Datensätze (Abschlüsse, Kontakte und Unternehmen)
-
-<!--* [Create a Record](#create-a-record)
-* [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Get a Record]](#get-a-record)
-* [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [List Records](#list-records)
-* [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)-->
 
 +++ **Datensatz erstellen**
 
@@ -464,17 +452,6 @@ Dieses Kontaktmodul startet ein Trigger, wenn ein Kontakt, ein Unternehmen oder 
 +++
 
 ### Kontakte
-
-<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [Create/Update a contact](#createupdate-a-contact)
-* [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
-* [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
-* [[!UICONTROL List Contacts]](#list-contacts)
-* [[!UICONTROL List Contacts of a Company]](#list-contacts-of-a-company)
-* [[!UICONTROL Merge contacts]](#merge-contacts)
-* [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
-* [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
 +++ **[!UICONTROL Kontakte zu einer Liste hinzufügen]**
 
@@ -744,9 +721,6 @@ Dieses Kontaktmodul startet ein Trigger, wenn ein neuer Kontakt zu einer Liste h
 
 ### Angebote
 
-<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
-
 +++ **[!UICONTROL CRM-Pipeline eines Angebots abrufen]**
 
 Gibt eine bestimmte Abschluss-Pipeline zurück.
@@ -825,11 +799,6 @@ Ruft eine Liste von Unternehmen ab, die auf einer exakten Übereinstimmung mit d
 +++
 
 ### Interaktionen
-
-<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
-* [Create an Engagement](#create-an-engagement)
-* [Delete an Engagement](#delete-an-engagement)
-* [Watch Engagements](#watch-engagements)-->
 
 +++ **Interaktion mit einem CRM-Objekt verknüpfen**
 
@@ -1117,11 +1086,6 @@ Dieses Portmodul startet ein Trigger, wenn in einem Portal ein neues Projekt ers
 
 ### Ereignisse und Benachrichtigungen
 
-<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
-* [List Timeline Event Types](#list-timeline-event-types)
-* [Watch Calendar Events](#watch-calendar-events)
-* [Watch Notifications](#watch-notifications)-->
-
 +++ **Erstellen/Aktualisieren eines Zeitleistenereignisses**
 
 Dieses Aktionsmodul erstellt oder aktualisiert ein Zeitleistenereignis. Dieses Modul kann nur mit einer Entwicklerverbindung verwendet werden, die Ihre Benutzerkennung, Ihren HubSpot-API-Schlüssel, Ihre Client-ID und Ihr Client-Geheimnis enthält.
@@ -1253,14 +1217,6 @@ Um einen Webhook für dieses Modul zu erstellen, klicken Sie **Hinzufügen** neb
 +++
 
 ### Dateien
-
-<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [Delete a File](#delete-a-file)
-* [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [List Files](#list-files)
-* [[!UICONTROL Move a File]](#move-a-file)
-* [Upload a file](#upload-a-file)
-* [Watch files](#watch-files)-->
 
 +++ **[!UICONTROL Ordner erstellen]**
 
@@ -1451,10 +1407,6 @@ Dieses Dateimodul startet ein Trigger, wenn eine neue Datei im Dateimanager gesp
 
 ### Aufgaben
 
-<!--* [Create a Calendar Task](#create-a-calendar-task)
-* [Delete a Calendar Task](#create-a-calendar-task)
-* [Watch Task Events](#watch-task-events)-->
-
 +++ **Kalenderaufgabe erstellen**
 
 Dieses Aktionsmodul erstellt eine neue Aufgabe für einen Kalender. Die in diesem Modul verwendete Verbindung muss die Anmeldeinformationen eines Benutzers mit einem Paid-Marketing-Konto verwenden.
@@ -1552,9 +1504,6 @@ Dieses Kalendermodul startet ein Trigger, wenn ein neues Aufgabenereignis in ein
 
 ### Benutzende
 
-<!--* [Get an Owner](#get-an-owner)
-* [List Owners](#list-owners)-->
-
 +++ **Erhalten Sie einen Besitzer**
 
 Dieses Aktionsmodul gibt Details zu einem Eigentümer zurück.
@@ -1595,13 +1544,6 @@ Dieses Suchmodul gibt eine Liste aller Eigentümer in einem HubSpot-Konto zurüc
 
 ### Tickets
 
-<!--* [Create a Ticket]-->
-<!--* [Delete a Ticket](#delete-a-ticket)-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-
 <!-- Create a Ticket Need to find a working connection-->
 
 +++ **[!UICONTROL Löschen eines Tickets]**
@@ -1634,11 +1576,6 @@ Löscht ein vorhandenes Ticket anhand seiner ID.
 <!-- Watch Tickets Need to find a working connection-->
 
 ### Formulare
-
-<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
-* [List Forms](#list-forms)-->
-<!--* [Submit Data to a Form]-->
-<!--* [Watch Submissions for a Form]-->
 
 +++ **Datei per Formular hochladen**
 
@@ -1689,10 +1626,6 @@ Dieses Aktionsmodul gibt alle Formulare zurück, die in dem Konto erstellt wurde
 &lt;!—#### Übermittlungen für ein Formular beobachten - Es muss eine funktionierende Verbindung gefunden werden>—>
 
 ### Social Media (Broadcast)
-
-<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
-* [Create a Broadcast Message](#create-a-broadcast-message)
-* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
 +++ **Abbrechen einer Broadcast-Nachricht**
 
@@ -1791,16 +1724,90 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine Nachricht von HubSpot an de
 
 ### Blog-Beiträge
 
-<!--* [Create a Blog Post]-->
-<!--* [Delete a Blog Post](#delete-a-blog-post)-->
-<!--* [List Blog Posts]-->
-&lt;!—* [Blogpost veröffentlichen/Veröffentlichung aufheben](#publish--unpublish-a-blog-post)—>
-<!--* [Watch Blog Posts]-->
++++ **Erstellen eines Blogposts**
 
-<!--
-#### Create a Blog Post May need connection
--->
+Dieses Aktionsmodul erstellt einen neuen Blogpost.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL HubSpot CRM]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Geben Sie den Post-Titel (den internen Namen des Posts) ein oder mappen Sie ihn.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Postkörper</td> 
+   <td>Geben Sie den Haupttext des Beitrags im HTML-Format ein oder mappen Sie ihn.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Beitragszusammenfassung</td> 
+   <td>Geben Sie eine Zusammenfassung des Beitrags ein oder mappen Sie sie. Diese Zusammenfassung wird auf der Hauptseite der Auflistung angezeigt.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Blog-Autoren-ID</td> 
+   <td>Geben Sie die ID des Autors ein, der mit dem Beitrag verknüpft ist, oder mappen Sie sie.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Inhaltsgruppen-ID</td> 
+   <td>Geben Sie die ID des Blogs ein, zu dem dieser Beitrag gehört, oder mappen Sie sie.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Fußzeile HTML</td> 
+   <td>Geben Sie die HTML für Einbettungs-Codes oder JavaScript-Code, der vor dem -Tag der Seite platziert werden soll, ein oder ordnen Sie sie zu.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Head HTML</td> 
+   <td>Geben Sie die HTML für Einbettungs-Codes oder JavaScript-Code, der oben platziert werden soll, ein oder ordnen Sie sie zu.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Kampagnen-ID</td> 
+   <td>Geben Sie die ID der Kampagne ein, mit der dieser Beitrag verknüpft ist, oder mappen Sie sie.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Vorgestelltes Bild</td> 
+   <td>Geben Sie die URL des Bildes ein, das in diesem Beitrag als vorgestelltes Bild verwendet werden soll, oder mappen Sie sie.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Schlüsselwort</td> 
+   <td>Klicken Sie für jedes Keyword, das Sie diesem Beitrag hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie das Keyword und die Keyword-GUID ein.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Meta-Beschreibung</td> 
+   <td>Geben Sie den Text für das <code>meta</code>-Tag auf der Seite ein oder ordnen Sie ihn zu.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Veröffentlichungsdatum</td> 
+   <td>Geben Sie das Datum ein, an dem der Blogpost veröffentlicht werden soll, oder mappen Sie es. <p>Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Aktivieren Sie diese Option, um den Blogpost sofort nach seiner Erstellung zu veröffentlichen. Wenn diese Option auf Ja festgelegt ist, wird das Feld Veröffentlichungsdatum ignoriert.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Slug</td> 
+   <td>Geben Sie den Slug für den Beitrag ein oder mappen Sie ihn. Der Slug wird an das Ende der Domain angehängt, um die URL für den Blogpost zu bilden.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Themen-IDs</td> 
+   <td>Klicken Sie für jedes Thema, das Sie dem Beitrag hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die Themen-ID ein.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Vorgestelltes Bild verwenden</td> 
+   <td>Aktivieren Sie diese Option, um das angezeigte Bild für den Blogpost zu verwenden.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Widgets</td> 
+   <td>Geben Sie eine Datenstruktur mit dem Datum für alle Module für diesen Blogpost ein oder mappen Sie sie. Dies bezieht sich auf die Module des Blogposts, nicht auf Fusion-Module.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Blogpost löschen**
 
@@ -1823,9 +1830,70 @@ Dieses Aktionsmodul löscht einen einzelnen Blogpost.
 
 +++
 
-<!--#### List Blog Posts May need connection
++++ **Blog-Beiträge auflisten**
 
-This search module retrieves posts from a HubSpot blog.-->
+Dieses Suchmodul ruft Beiträge von einem HubSpot-Blog ab.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL HubSpot CRM]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Grenze</td> 
+   <td>Geben Sie die maximale Anzahl an Blogposts ein, die in einem Ausführungszyklus zurückgegeben werden soll, oder mappen Sie sie.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archiviert</td> 
+   <td>Aktivieren Sie diese Option, um archivierte Beiträge in Ihre Ergebnisse aufzunehmen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Blog-Autoren-ID</td> 
+   <td>Geben Sie die ID eines Autors ein oder mappen Sie sie, um die mit diesem Autor verknüpften Beiträge zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Kampagnen-ID</td> 
+   <td>Geben Sie die ID einer Kampagne ein oder mappen Sie sie, um die mit dieser Kampagne verknüpften Beiträge zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Inhaltsgruppen-ID</td> 
+   <td>Geben Sie die ID eines Blogs ein oder mappen Sie sie, um die mit diesem Blog verknüpften Beiträge zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Geben Sie einen Beitragsnamen ein, um nur Beiträge mit diesem Namen zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtern nach Erstellt</td> 
+   <td>Wählen Sie Filter aus, um Beiträge anhand des erstellten Zeitwerts zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nach Aktualisierung filtern</td> 
+   <td>Wählen Sie Filtern aus, um Beiträge anhand des aktualisierten Zeitwerts zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtern nach Gelöscht</td> 
+   <td>Wählen Sie Filter aus, um Beiträge anhand des gelöschten Zeitwerts zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Slug</td> 
+   <td>Geben Sie einen Slug ein oder ordnen Sie ihn zu, um Beiträge zurückzugeben, die mit dem Slug übereinstimmen. Der Slug wird an das Ende der Domain angehängt, um die URL für den Blogpost zu bilden.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Status</td> 
+   <td>Wählen Sie einen Status (Entwurf, Veröffentlicht oder Geplant) aus, um nur Ergebnisse in diesem Status einzuschließen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Sortieren nach Veröffentlichungsdatum</td> 
+   <td>Wählen Sie aus, ob die Ergebnisse aufsteigend oder absteigend nach Veröffentlichungsdatum sortiert werden sollen.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Veröffentlichen/Rückgängigmachen der Veröffentlichung eines Blogposts**
 
@@ -1852,7 +1920,70 @@ Dieses Aktionsmodul plant oder bricht die Veröffentlichung eines Blogposts ab.
 
 +++
 
-<!--#### Watch Blog PostsMay need connection-->
++++ **Blog-Beiträge ansehen**
+
+Dieses Trigger-Modul startet ein Szenario, wenn ein Blogpost, der den von Ihnen festgelegten Kriterien entspricht, erstellt, aktualisiert oder gelöscht wird.
+
+
+
+Dieses Suchmodul ruft Beiträge von einem HubSpot-Blog ab.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL HubSpot CRM]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Grenze</td> 
+   <td>Geben Sie die maximale Anzahl an Blogposts ein, die in einem Ausführungszyklus zurückgegeben werden soll, oder mappen Sie sie.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archiviert</td> 
+   <td>Aktivieren Sie diese Option, um archivierte Beiträge in Ihre Ergebnisse aufzunehmen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Blog-Autoren-ID</td> 
+   <td>Geben Sie die ID eines Autors ein oder mappen Sie sie, um die mit diesem Autor verknüpften Beiträge zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Kampagnen-ID</td> 
+   <td>Geben Sie die ID einer Kampagne ein oder mappen Sie sie, um die mit dieser Kampagne verknüpften Beiträge zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Inhaltsgruppen-ID</td> 
+   <td>Geben Sie die ID eines Blogs ein oder mappen Sie sie, um die mit diesem Blog verknüpften Beiträge zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Geben Sie einen Beitragsnamen ein, um nur Beiträge mit diesem Namen zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtern nach Erstellt</td> 
+   <td>Wählen Sie Filter aus, um Beiträge anhand des erstellten Zeitwerts zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Nach Aktualisierung filtern</td> 
+   <td>Wählen Sie Filtern aus, um Beiträge anhand des aktualisierten Zeitwerts zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtern nach Gelöscht</td> 
+   <td>Wählen Sie Filter aus, um Beiträge anhand des gelöschten Zeitwerts zurückzugeben.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Slug</td> 
+   <td>Geben Sie einen Slug ein oder ordnen Sie ihn zu, um Beiträge zurückzugeben, die mit dem Slug übereinstimmen. Der Slug wird an das Ende der Domain angehängt, um die URL für den Blogpost zu bilden.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Status</td> 
+   <td>Wählen Sie einen Status (Entwurf, Veröffentlicht oder Geplant) aus, um nur Ergebnisse in diesem Status einzuschließen.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 <!--+++**Workflows**>
 
@@ -1868,9 +1999,6 @@ Dieses Aktionsmodul plant oder bricht die Veröffentlichung eines Blogposts ab.
 <!--+++-->
 
 ### Abonnements
-
-<!--* [Update Email Subscription](#update-email-subscription)
-* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
 +++ **E-Mail-Abonnement aktualisieren**
 
