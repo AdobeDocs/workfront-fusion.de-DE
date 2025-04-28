@@ -1,19 +1,19 @@
 ---
-title: Szenario-Version wiederherstellen
-description: Sie können eine frühere Version eines Szenarios wiederherstellen. Auf diese Weise können Sie Änderungen an einem Szenario vornehmen und diese Änderungen dann einfach rückgängig machen, wenn Sie die vorherige Funktion bevorzugen.
+title: Szenario-Versionen anzeigen und verwalten
+description: Sie können Blueprints für frühere Versionen eines Szenarios anzeigen, wiederherstellen, umbenennen oder herunterladen.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 2270b386bbf62cfc3b82bd4f9c293b36d3b7a35a
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '298'
 ht-degree: 1%
 
 ---
 
 # Szenario-Versionen anzeigen und verwalten
 
-Sie können frühere Versionen eines Szenarios anzeigen, wiederherstellen oder umbenennen.
+Sie können Blueprints für frühere Versionen eines Szenarios anzeigen, wiederherstellen, umbenennen oder herunterladen.
 
 ## Zugriffsanforderungen
 
