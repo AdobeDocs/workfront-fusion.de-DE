@@ -4,9 +4,9 @@ description: Sie können eine frühere Version eines Szenarios wiederherstellen.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '309'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,8 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 1. (Optional) Um die Version umzubenennen, klicken Sie auf das Menü Mehr ![Mehr](assets/more-icon-vertical.png) in der Zeile für diese Version, wählen Sie **Bearbeiten** aus und geben Sie einen Namen in das Feld ein. Klicken Sie **Speichern**, um den neuen Namen zu speichern.
 
    Es wird empfohlen, einen Namen anzugeben, der die für diese Version vorgenommenen Änderungen beschreibt.
-1. (Optional) Um die Version wiederherzustellen, klicken Sie auf Wiederherstellen ![Menü „Mehr](assets/more-icon-vertical.png) in der Zeile für diese Version
+1. (Optional) Um den Blueprint für eine frühere Version herunterzuladen, klicken Sie auf das Menü Mehr ![Mehr](assets/more-icon-vertical.png) in der Zeile für diese Version und wählen Sie dann **Herunterladen**.
+1. (Optional) Um die Version wiederherzustellen, klicken Sie in **Zeile für** Version auf „Wiederherstellen“
 
 
    >[!NOTE]

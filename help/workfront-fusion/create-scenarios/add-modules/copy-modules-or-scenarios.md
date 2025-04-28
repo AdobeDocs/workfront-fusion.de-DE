@@ -4,9 +4,9 @@ description: Sie können Module, Modulgruppen oder ganze Szenarien in Adobe Work
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] kaufen.</li><li>[!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] ist enthalten.</li></ul>
    <p>Oder</p>
    <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
    </td> 
@@ -77,18 +77,18 @@ Beachten Sie beim Einfügen von Modulen in ein anderes Szenario Folgendes:
 
 Das Kopieren einer Gruppe von Modulen ähnelt dem Kopieren eines einzelnen Moduls.
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in das Sie ein Modul kopieren möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Klicken Sie mit der rechten Maustaste auf das Modul, das Sie kopieren möchten.
 
    >[!NOTE]
    >
-   >Sie können mehrere Module auswählen, indem Sie die [!UICONTROL shift] gedrückt halten und auf die Module klicken, die Sie kopieren möchten. Beim Kopieren einer Gruppe von Modulen werden auch alle Verbindungsleitungen, Filter oder Routing-Logiken zwischen ihnen kopiert.
+   >Sie können mehrere Module auswählen, indem Sie die [!UICONTROL Umschalt]-Taste gedrückt halten und auf die Module klicken, die Sie kopieren möchten. Beim Kopieren einer Gruppe von Modulen werden auch alle Verbindungsleitungen, Filter oder Routing-Logiken zwischen ihnen kopiert.
 
-1. Wählen Sie **[!UICONTROL Copy module]** aus.
+1. Wählen Sie **[!UICONTROL Modul kopieren]** aus.
 1. Bewegen Sie den Cursor in den Bereich des Szenarios, in dem die Kopie des Szenarios erstellt werden soll.
-1. Klicken Sie mit der rechten Maustaste, und wählen Sie **[!UICONTROL Paste]**.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Einfügen]**.
 1. Verbinden Sie die eingefügten Module mit dem Szenario, indem Sie sie an die entsprechende Position im Szenario ziehen.
 
    Sie können auch Tastaturbefehle zum Kopieren und Einfügen verwenden.
@@ -99,17 +99,17 @@ Beim Klonen eines Szenarios wird eine Kopie des Szenarios erstellt, die Sie dann
 
 1. Öffnen Sie die Seite mit den Szenario-Details:
 
-   1. Klicken Sie im linken Bereich auf die Registerkarte **[!UICONTROL Scenario]** und dann auf ein Szenario, zu dem Sie Details anzeigen möchten.
+   1. Klicken Sie **[!UICONTROL linken Panel auf]** Registerkarte „Szenario“ und dann auf ein Szenario, zu dem Sie Details anzeigen möchten.
 
       Oder
 
       Wenn Sie an dem Szenario im Szenario-Editor arbeiten, klicken Sie auf den Pfeil nach links ![Beenden der Bearbeitung](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
-1. Klicken Sie mit der rechten Maustaste oben rechts auf der Seite auf **[!UICONTROL Options]**.
-1. Wählen Sie **[!UICONTROL Clone]** aus.
+1. Klicken Sie **[!UICONTROL rechts oben]** der Seite mit der rechten Maustaste auf „Optionen“.
+1. Wählen Sie **[!UICONTROL Klonen]** aus.
 1. (Optional) Geben Sie einen Namen für das neue Szenario ein.
-1. (Optional) Aktivieren Sie **[!UICONTROL Keep the states of any new modules the same as those being duplicated]**, um sicherzustellen, dass das kopierte Szenario auch Informationen zu den letzten Datensätzen enthält, die vom ursprünglichen Szenario verarbeitet wurden.
-1. Klicken Sie auf **[!UICONTROL Save]** , um das Szenario zu erstellen.
+1. (Optional) Aktivieren Sie **[!UICONTROL Halten Sie die Status aller neuen Module dieselben wie die duplizierten]**, um sicherzustellen, dass das kopierte Szenario auch Informationen zu den neuesten Datensätzen enthält, die vom ursprünglichen Szenario verarbeitet wurden.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um das Szenario zu erstellen.
 
 ## Kopieren eines Szenarios mithilfe von Blueprints
 
@@ -119,13 +119,17 @@ Ein Szenario-Blueprint stellt das gesamte Szenario dar. Wenn Sie nur bestimmte M
 
 ### Szenario-Blueprint exportieren
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in das Sie eine Blueprint exportieren möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
-1. Klicken Sie im Szenario auf das Menü **[!UICONTROL More]** im Bereich Szenario-Einstellungen .
-1. Klicken Sie auf **[!UICONTROL Export Blueprint]**.
+1. Klicken Sie im Szenario auf das Menü **[!UICONTROL Mehr]** im Bereich Szenario-Einstellungen.
+1. Klicken Sie **[!UICONTROL Blueprint exportieren]**.
 
    Eine JSON-Datei wird erstellt und auf Ihren Computer heruntergeladen. Sie können diese Datei in Ihrem [!DNL Downloads] Ordner finden.
+
+>[!NOTE]
+>
+>Informationen zum Exportieren der Blueprint für eine frühere Version eines Szenarios finden Sie unter [Szenario-Versionen anzeigen und verwalten](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 
 ### Blueprint importieren
 
@@ -134,13 +138,13 @@ Ein Szenario-Blueprint stellt das gesamte Szenario dar. Wenn Sie nur bestimmte M
 >Wenn Sie eine Blueprint in ein vorhandenes Szenario importieren, ersetzt die Szenario-Blueprint das vorhandene Szenario. Sie können keine Blueprint an ein vorhandenes Szenario anhängen.
 
 1. Beginnen Sie mit der Erstellung eines neuen Szenarios.
-1. Klicken Sie im Szenario auf das Menü **[!UICONTROL More]** im Bereich Szenario-Einstellungen .
-1. Klicken Sie auf **[!UICONTROL Import Blueprint]**.
-1. Klicken Sie im angezeigten Dialogfeld auf **[!UICONTROL Browse]**
-1. Navigieren Sie zu der Blueprint, die Sie importieren möchten, und klicken Sie auf **[!UICONTROL Open]**.
-1. Klicken Sie auf **[!UICONTROL Save]**.
+1. Klicken Sie im Szenario auf das Menü **[!UICONTROL Mehr]** im Bereich Szenario-Einstellungen.
+1. Klicken Sie **[!UICONTROL Blueprint importieren]**.
+1. Klicken Sie im angezeigten Dialogfeld auf **[!UICONTROL Durchsuchen]**
+1. Navigieren Sie zu der Blueprint, die Sie importieren möchten, und klicken Sie auf **[!UICONTROL Öffnen]**.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-   Eine JSON-Datei wird erstellt und auf Ihren Computer heruntergeladen. Sie können diese Datei in Ihrem [!UICONTROL Downloads] Ordner finden.
+   Eine JSON-Datei wird erstellt und auf Ihren Computer heruntergeladen. Sie können diese Datei in Ihrem Ordner [!UICONTROL Downloads] finden.
 
 ## Kopieren und Wiederverwenden von Szenarien mithilfe von Vorlagen
 
