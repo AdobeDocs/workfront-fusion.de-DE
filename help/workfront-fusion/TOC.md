@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: a23517da30b4e51ef55bcc13241a03cd1d6153a0
+source-git-commit: 6ebfd07e24f77bd8c162d53554ddf1fcaefafeb8
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 2%
+source-wordcount: '1744'
+ht-degree: 3%
 
 ---
 
@@ -13,9 +13,10 @@ ht-degree: 2%
 # Adobe Workfront Fusion-Dokumentation {#using}
 
 * [Dokumentation zu Adobe Workfront Fusion](home.md)
-* {#fusion-release-activity} der Fusionsfreigabeaktivität
+* Fusionsfreigabeaktivität {#fusion-release-activity}
    * [Adobe Workfront Fusion-Versionsaktivität](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-   * Fusion-Versionen - {#fusion-releases-2025} 2025
+   * Fusion-Versionen - 2025 {#fusion-releases-2025}
+      * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 21. April 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 14. April 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 31. März 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 10. März 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
@@ -26,7 +27,7 @@ ht-degree: 2%
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 20. Januar 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 13. Januar 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 6. Januar 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
-   * Fusion-Versionen - {#fusion-releases-2024} 2024
+   * Fusion-Versionen - 2024 {#fusion-releases-2024}
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 16. Dezember 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-16.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 2. Dezember 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-2.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 25. November 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-25.md)
@@ -51,7 +52,7 @@ ht-degree: 2%
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 26. Februar 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-2-26.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 5. Februar 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-2-5.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 1. Januar 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-1-4.md)
-   * Fusion-Versionen - {#fusion-releases-2023} 2023
+   * Fusion-Versionen - 2023 {#fusion-releases-2023}
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 27. November 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-11-30.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 13. November 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-11-14.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 30. Oktober 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-10-26.md)
@@ -66,7 +67,7 @@ ht-degree: 2%
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 17. April 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-4-20.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 20. März 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-3-21.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 6. März 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-3-6.md)
-   * Fusion-Versionen - {#fusion-releases-2022} 2022
+   * Fusion-Versionen - 2022 {#fusion-releases-2022}
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 12. Dezember 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-dec-12-22.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 14. November 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-nov-14-22.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 7. November 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-nov-9-22.md)
@@ -86,7 +87,7 @@ ht-degree: 2%
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 21. Februar 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-21-22.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 14. Februar 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-14-22.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 3. Januar 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jan-3-22.md)
-   * Fusion-Versionen - {#fusion-releases-2021} 2021
+   * Fusion-Versionen - 2021 {#fusion-releases-2021}
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 29. November 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-29-21.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 15. November 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-15-21.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 8. November 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-8-21.md)
@@ -111,7 +112,7 @@ ht-degree: 2%
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 18. Januar 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-18.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 11. Januar 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-11.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 4. Januar 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-4.md)
-   * Fusion-Versionen - {#fusion-releases-2020} 2020
+   * Fusion-Versionen - 2020 {#fusion-releases-2020}
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 7. Dezember 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-dec-7.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 30. November 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-30.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 16. November 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-nov-16.md)
@@ -121,7 +122,7 @@ ht-degree: 2%
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 17. August 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-aug-17.md)
 * Erste Schritte mit Workfront Fusion {#get-started-with-fusion}
    * [Erste Schritte mit Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
-   * Workfront Fusion-{#understand-workfront-fusion}
+   * Workfront Fusion verstehen {#understand-workfront-fusion}
       * [Workfront Fusion verstehen](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Übersicht über Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
       * [Adobe Workfront Fusion-Glossar](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
@@ -139,13 +140,13 @@ ht-degree: 2%
       * [Profileinstellungen ändern](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
 * Einrichten und Verwalten von Workfront Fusion {#set-up-and-manage-fusion}
    * [Einrichten und Verwalten von Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
-   * Lizenzierungs- und Betriebsübersichten {#licensing-and-operations-overviews}
+   * Überblick über Lizenzierung und Vorgänge {#licensing-and-operations-overviews}
       * [Überblick über Lizenzierung und Vorgänge](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [Vorgänge](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
    * Einrichten und Verwalten von Organisationen und Teams {#set-up-and-manage-orgs-and-teams}
       * [Einrichten und Verwalten von Organisationen und Teams: Artikelindex](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
-      * Organisationen und Teams {#set-up-orgs-teams-and-users}
+      * Einrichten von Organisationen und Teams {#set-up-orgs-teams-and-users}
          * [Einrichten von Organisationen, Teams und Benutzern: Artikelindex](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-orgs-and-teams.md)
          * [Organisations- und Team-Übersicht](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md)
          * [Konfigurieren von IP-Adressen für Fusion in der Zulassungsliste Ihres Unternehmens](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
@@ -165,7 +166,7 @@ ht-degree: 2%
       * [Vorlagen bearbeiten](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
 * Erstellen von Szenarien {#create-scenarios}
    * [Erstellen von Szenarien](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * Szenario-{#plan-a-scenario} planen
+   * Szenario planen {#plan-a-scenario}
       * [Szenario planen: Artikelindex](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
       * [Häufig gestellte Fragen zur Szenarienplanung](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [Videoübersichten](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
@@ -182,7 +183,7 @@ ht-degree: 2%
       * [Router-Modul hinzufügen und Routen konfigurieren](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
       * [Hinzufügen eines Filters zu einem Szenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)
       * [Startseite eines Trigger-Moduls auswählen](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md)
-   * {#map-data} zuordnen
+   * Zuordnen von Daten {#map-data}
       * [Zuordnen von Daten](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
       * [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
       * [Zuordnen von Elementen mithilfe von Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
@@ -198,14 +199,14 @@ ht-degree: 2%
       * [Verbinden von Adobe Workfront Fusion mit Google Services mithilfe eines benutzerdefinierten OAuth-Clients](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
       * [Aufrufen der MS Graph REST-API](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md)
       * [Verbindungen verwalten](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
-   * Konfigurieren der {#configure-error-handling} für die Fehlerbehandlung
+   * Konfigurieren der Fehlerbehandlung {#configure-error-handling}
       * [Konfigurieren der Fehlerbehandlung](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
       * [Hinzufügen der Fehlerbehandlung](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
       * [Hinzufügen von Filterung und Verschachtelung zu Fehlerbehandlungsrouten](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)
       * [Problemumgehung für Wurffehler konfigurieren](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
       * [Konfigurieren einer Problemumgehung für die Verarbeitung von Wiederholungsfehlern](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
       * [Beheben von Fehlern, die von der Break-Direktive behandelt werden](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
-   * Konfigurieren von Szenarioeinstellungen {#configure-scenario-settings}
+   * Szenarioeinstellungen konfigurieren {#configure-scenario-settings}
       * [Szenarioeinstellungen konfigurieren](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
       * [Szenario planen](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
       * [Szenarioeinstellungen konfigurieren](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
@@ -225,7 +226,7 @@ ht-degree: 2%
    * [KI-Assistent in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [Ausführen des Szenario-Scoring-Experten](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [Löschen von Szenarioelementen](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
-* Erstellen von Praxisszenarien {#build-practice-scenarios}
+* Erstellen von Übungsszenarien {#build-practice-scenarios}
    * [Erstellen von Übungsszenarien](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [Erstellen eines Basisszenarios](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
    * [Hinzufügen eines Trigger-Moduls zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-trigger-to-basic-scenario.md)
@@ -259,7 +260,7 @@ ht-degree: 2%
       * [Iterator-Module](/help/workfront-fusion/references/modules/iterator-module.md)
       * [HTTP-Anfragemethoden](/help/workfront-fusion/references/modules/http-request-methods.md)
       * [Schlüssel](/help/workfront-fusion/references/modules/keys.md)
-   * {#mapping-panel} des Zuordnungsbereichs
+   * Bedienfeld „Zuordnung“ {#mapping-panel}
       * [Bedienfeld „Zuordnung“](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
       * Datentypen {#data-types}
          * [Datentypen](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
@@ -280,12 +281,12 @@ ht-degree: 2%
       * [Fehler](/help/workfront-fusion/references/errors/errors-toc.md)
       * [Anweisungen für die Fehlerbehandlung](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
       * [Fehlertypen](/help/workfront-fusion/references/errors/error-processing.md)
-   * {#connections}
+   * Verbindungen {#connections}
       * [Verbindungsreferenz: Artikelindex](/help/workfront-fusion/references/connections/connection-reference-toc.md)
       * [Verbindungsmetadaten](/help/workfront-fusion/references/connections/connection-metadata.md)
    * Apps und ihre Module {#apps-and-their-modules}
       * [Apps und ihre Module](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
-      * Universelle Connectoren - {#universal-connectors}
+      * Universelle Connectoren {#universal-connectors}
          * [HTTP > [!UICONTROL Anfrage stellen]-Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
          * [[!UICONTROL HTTP] > [!UICONTROL Erstellen einer einfachen Autorisierungsanfrage]-Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
          * [[!UICONTROL HTTP] > [!UICONTROL OAuth 2.0-Anfrage stellen] Modul](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
@@ -297,7 +298,7 @@ ht-degree: 2%
          * [SFTP-Module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
          * [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
          * [Verwenden von gegenseitigem TLS in HTTP-Modulen in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
-      * Adobe Connectors-{#adobe-connectors}
+      * Adobe-Connectoren {#adobe-connectors}
          * [Adobe Acrobat Sign-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Adobe Authenticator-Modul](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
          * [Adobe Campaign-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
