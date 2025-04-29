@@ -4,9 +4,9 @@ description: Sie können den Adobe Workfront Fusion Adobe Workfront-Connector ve
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
+source-git-commit: 6fa7ab493112351d9480b21b23b3b6b7b14f2230
 workflow-type: tm+mt
-source-wordcount: '7795'
+source-wordcount: '7823'
 ht-degree: 2%
 
 ---
@@ -973,7 +973,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Attach Custom Form]</td> 
-   <td>Wählen Sie die benutzerdefinierten Formulare aus, die Sie an den neuen Datensatz anhängen möchten. Nachdem Sie das Formular ausgewählt haben, geben Sie die Daten für die Felder in diesem Formular ein.</td> 
+   <td>Wählen Sie die benutzerdefinierten Formulare aus, für die Sie Feldwerte für den neuen Datensatz angeben möchten. Nachdem Sie das Formular ausgewählt haben, geben Sie die Daten für die Felder in diesem Formular ein.<p> Um Feldwerte für ein Formular anzugeben, das Sie in diesem Modul anhängen, fügen Sie die benutzerdefinierte Formular-ID in den Abschnitt Zuzuordnende Felder ein.</td> 
   </tr> 
  </tbody> 
 </table>
