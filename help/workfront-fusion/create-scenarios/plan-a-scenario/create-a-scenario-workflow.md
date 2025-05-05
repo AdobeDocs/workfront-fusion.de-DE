@@ -35,7 +35,7 @@ Tastaturbefehle
 ## Szenario erstellen und benennen
 
 1. Melden Sie sich bei Ihrem [!DNL Workfront Fusion] Konto an.
-1. Klicken Sie **[!UICONTROL Scenarios]** linken ](assets/scenarios-icon.png) auf ![Szenario-Symbol).
+1. Klicken Sie **[!UICONTROL Scenarios]** linken ![&#128279;](assets/scenarios-icon.png) auf Szenario-Symbol).
 
    >[!NOTE]
    >

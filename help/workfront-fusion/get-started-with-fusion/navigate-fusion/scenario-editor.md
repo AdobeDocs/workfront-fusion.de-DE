@@ -71,7 +71,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 ## Öffnen Sie den Szenario-Editor und fügen Sie ein Modul hinzu:
 
-1. Klicken Sie **[!UICONTROL Scenarios]** linken ](assets/scenarios-icon.png) auf ![Szenario-Symbol).
+1. Klicken Sie **[!UICONTROL Scenarios]** linken ![&#128279;](assets/scenarios-icon.png) auf Szenario-Symbol).
 1. Klicken Sie auf das Fragezeichensymbol ![Fragesymbol](assets/question-mark-full-size.png), suchen Sie nach der App oder dem Service, mit der bzw. dem Sie beginnen möchten, und klicken Sie darauf. Detaillierte Informationen zum Konfigurieren eines Moduls finden Sie unter [Modul konfigurieren](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ## Verfügbare Szenario-Editor-Aktionen

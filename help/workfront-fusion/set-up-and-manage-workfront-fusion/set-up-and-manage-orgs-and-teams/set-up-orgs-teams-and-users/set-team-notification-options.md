@@ -84,11 +84,11 @@ Die Optionen für E-Mail-Benachrichtigungen werden auf Team-Ebene festgelegt.
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">'[!UICONTROL-Warnung in Szenarioausführung]'</td> 
+      <td role="rowheader">'[!UICONTROL -Warnung in Szenarioausführung]'</td> 
       <td> <p>Erhalten einer E-Mail bei einer Warnung in einem ausgeführten Szenario</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Fehler bei Szenarioausführung]</td> 
+      <td role="rowheader">[!UICONTROL -Fehler bei Szenarioausführung]</td> 
       <td>Erhalten Sie eine E-Mail, wenn bei der Ausführung eines Szenarios ein Fehler auftritt.</td> 
      </tr> 
      <tr> 

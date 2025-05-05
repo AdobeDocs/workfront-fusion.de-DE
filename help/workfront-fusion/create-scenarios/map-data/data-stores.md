@@ -197,7 +197,7 @@ Sie können die Eigenschaften und Inhalte eines vorhandenen Datenspeichers im [!
 
 Zu den Eigenschaften eines Datenspeichers gehören die Datenstruktur, die der Datenspeicher verwendet, sowie die Größe des Datenspeichers.
 
-1. Klicken Sie **[!UICONTROL Data stores]** linken ](assets/data-store-icon.png) auf ![Datenspeichersymbol), um den [!UICONTROL Data stores] zu öffnen.
+1. Klicken Sie **[!UICONTROL Data stores]** linken ![&#128279;](assets/data-store-icon.png) auf Datenspeichersymbol), um den [!UICONTROL Data stores] zu öffnen.
 1. Klicken Sie **[!UICONTROL Edit]** ![Datenspeicher bearbeiten](assets/data-store-edit.png) neben dem Datenspeicher, den Sie bearbeiten möchten.
 1. (Optional) Wenn Sie die von diesem Datenspeicher verwendete Datenstruktur in eine andere vorhandene Datenstruktur ändern möchten, wählen Sie sie aus der Dropdown-Liste **[!UICONTROL Data structure]** aus.
 

@@ -189,11 +189,11 @@ Mit diesem Transformatormodul können Sie ein Dokument mit von Ihnen angegebenen
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Datenquelle]</td> 
+   <td role="rowheader">[!UICONTROL -Datenquelle]</td> 
    <td> <p>Wählen Sie eine Option aus, um anzugeben, ob die von Ihnen verwendeten Daten aus einem Formular oder aus einer Rohdatenerfassung (nicht verarbeitete Computerdaten) stammen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Werte]</td> 
+   <td role="rowheader">[!UICONTROL -Werte]</td> 
    <td> <p>Dies muss ein Array von Sammlungen sein, wobei:</p> 
     <ul> 
      <li>Jede Sammlung entspricht einem Dateneintrag und enthält ein Element <code>entry</code></li> 
@@ -259,7 +259,7 @@ Dieses Aggregator-Modul ist besonders nützlich für die Erstellung von Listen o
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Werte]</td> 
+   <td role="rowheader">[!UICONTROL -Werte]</td> 
    <td> <p>Dies muss ein Array von Sammlungen sein, wobei:</p> 
     <ul> 
      <li>Jede Sammlung entspricht einem Dateneintrag und enthält ein Element <code>entry</code></li> 

@@ -87,7 +87,7 @@ Anweisungen zum Erstellen eines Szenarios finden Sie unter [Workflow zum Erstell
 
 ## Aktivieren oder Deaktivieren eines Szenarios:
 
-1. Klicken Sie **[!UICONTROL Scenarios]** linken ](assets/scenarios-icon.png) auf ![Szenario-Symbol) und klicken Sie dann auf das Szenario, um es zu öffnen.
+1. Klicken Sie **[!UICONTROL Scenarios]** linken ![&#128279;](assets/scenarios-icon.png) auf Szenario-Symbol) und klicken Sie dann auf das Szenario, um es zu öffnen.
 1. Klicken Sie auf die Ein-/Aus-Schaltfläche in der oberen rechten Ecke der Seite mit den Szenario-Details.
 
    ![Umschalter zur Aktivierung von Details](assets/active-toggle-details-page.png)

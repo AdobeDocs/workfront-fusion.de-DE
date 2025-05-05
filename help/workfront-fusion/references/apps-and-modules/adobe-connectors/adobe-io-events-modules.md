@@ -179,7 +179,7 @@ So erstellen Sie einen Webhook:
         <td>Einen Namen für diesen Webhook eingeben.</td>
        </tr>
        <tr>
-         <td role="rowheader">[!UICONTROL-Verbindung]</td>
+         <td role="rowheader">[!UICONTROL -Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>
@@ -222,7 +222,7 @@ Dieses Suchmodul ruft alle Ereignisse für eine Registrierung aus einem Journal 
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL-Verbindung]</td>
+         <td role="rowheader">[!UICONTROL -Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>
@@ -275,7 +275,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL-Verbindung]</td>
+     <td role="rowheader">[!UICONTROL -Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -288,14 +288,14 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-Methode]</p>
+        <p>[!UICONTROL -Methode]</p>
       </td>
       <td>
   <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p>  
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -328,7 +328,7 @@ Dieses Suchmodul ruft die Adobe I/O Events-IDs für den angegebenen Anbieter und
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL-Verbindung]</td>
+         <td role="rowheader">[!UICONTROL -Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>

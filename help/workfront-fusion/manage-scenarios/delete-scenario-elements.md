@@ -82,7 +82,7 @@ So löschen Sie Szenarioelemente:
 
 1. Klicken Sie auf den Bereich im linken Bedienfeld .
 
-   Wenn Sie beispielsweise ein Szenario löschen möchten, klicken Sie im linken ]**auf**[!UICONTROL  Szenario“.
+   Wenn Sie beispielsweise ein Szenario löschen möchten, klicken Sie im linken **auf** Szenario“.
 
 1. Klicken Sie auf den Abwärtspfeil rechts neben dem Element, das Sie löschen möchten, und klicken Sie dann auf **[!UICONTROL Löschen]**.
 1. Klicken Sie **[!UICONTROL &quot;]**&quot; zur Bestätigung.

@@ -71,7 +71,7 @@ Sie können eine Vorlage in einem Prozess erstellen, der dem Erstellen eines Sze
 
 ### Erstellen einer Vorlage
 
-1. Klicken Sie **[!UICONTROL Templates]** linken ](assets/templates-icon.png) auf ![Vorlagensymbol).
+1. Klicken Sie **[!UICONTROL Templates]** linken ![&#128279;](assets/templates-icon.png) auf Vorlagensymbol).
 1. Klicken Sie oben rechts auf **[!UICONTROL Create a new template]** .
 1. (Optional) Benennen Sie die Vorlage um, indem Sie die **[!UICONTROL New template name]** in der oberen linken Ecke ersetzen.
 1. (Optional) Um die Sprache Ihrer Vorlage zu ändern, klicken Sie auf **[!UICONTROL Set up a template]** ![Symbol Szenarioeinstellungen](assets/scenario-settings-icon.png) und wählen Sie die Sprache aus der Dropdown-Liste Sprache aus.
