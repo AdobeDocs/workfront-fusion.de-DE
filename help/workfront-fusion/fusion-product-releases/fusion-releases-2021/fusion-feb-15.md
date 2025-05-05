@@ -20,9 +20,9 @@ Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront 
 
 Eine Liste aller aktuellen Änderungen finden Sie unter [Adobe Workfront Fusion-Versionsaktivität](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Eine Liste der letzten Fehlerbehebungen in Workfront Fusion finden Sie auf der Seite [Workfront-Wartungs-Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) und suchen Sie nach Updates mit der Bezeichnung Workfront Fusion-Wartungs-Update.
+Eine Liste der letzten Fehlerbehebungen in Workfront Fusion finden Sie auf der Seite [Workfront-Wartungs-Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=de) und suchen Sie nach Updates mit der Bezeichnung Workfront Fusion-Wartungs-Update.
 
-Diese Version enthielt auch ein oder mehrere Wartungs-Updates. Informationen zu Wartungsupdates für Workfront Fusion 2.0 finden Sie unter [Workfront-Wartungsupdates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html).
+Diese Version enthielt auch ein oder mehrere Wartungs-Updates. Informationen zu Wartungsupdates für Workfront Fusion 2.0 finden Sie unter [Workfront-Wartungsupdates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=de).
 
 ## Teams teilen jetzt E-Mail-Benachrichtigungseinstellungen
 

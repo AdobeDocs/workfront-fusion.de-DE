@@ -67,10 +67,10 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 * Sie müssen über ein [!DNL Adobe Experience Manager Assets]-Konto verfügen, um diese Module verwenden zu können.
 * Sie müssen [!UICONTROL Server-zu-Server]-Fluss im [!DNL Adobe Developer console] einrichten.
 
-  Anweisungen zum Einrichten des [!UICONTROL Server-zu-Server]-Flusses im [!DNL Adobe Developer console] finden Sie unter [Generieren von Zugriffstoken für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+  Anweisungen zum Einrichten des [!UICONTROL Server-zu-Server]-Flusses im [!DNL Adobe Developer console] finden Sie unter [Generieren von Zugriffstoken für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=de#the-server-to-server-flow).
 * Ihr technisches Adobe Experience Manager-Konto muss über Schreibberechtigungen verfügen.
 
-  Anweisungen zum Hinzufügen von Schreibberechtigungen für Ihr technisches Adobe Experience Manager-Konto finden Sie unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in der Dokumentation zu Adobe Experience Manager.
+  Anweisungen zum Hinzufügen von Schreibberechtigungen für Ihr technisches Adobe Experience Manager-Konto finden Sie unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in der Dokumentation zu Adobe Experience Manager.
 
 ## Adobe Experience Manager Assets-API-Informationen
 
@@ -118,11 +118,11 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Experience Manager Assets
 >
 >* Die Informationen für diese Felder werden im Rahmen der Einrichtung eines [!UICONTROL Server-zu-Server]-Flusses auf dem [!DNL Adobe Developer Console] generiert. Diese Werte finden Sie in der JSON-Datei mit den Service-Anmeldeinformationen, die im Rahmen dieses Setups generiert wurde.
 >
->   Anweisungen zum Einrichten des [!UICONTROL Server-zu-Server]-Flusses auf der [!UICONTROL Adobe Developer Console] finden Sie unter [Generieren von Zugriffstoken für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+>   Anweisungen zum Einrichten des [!UICONTROL Server-zu-Server]-Flusses auf der [!UICONTROL Adobe Developer Console] finden Sie unter [Generieren von Zugriffstoken für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=de#the-server-to-server-flow).
 >
 >* Ihr technisches Adobe Experience Manager-Konto muss über Schreibberechtigungen verfügen.
 >
->   Anweisungen zum Hinzufügen von Schreibberechtigungen für Ihr technisches Adobe Experience Manager-Konto finden Sie unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in der Dokumentation zu Adobe Experience Manager.
+>   Anweisungen zum Hinzufügen von Schreibberechtigungen für Ihr technisches Adobe Experience Manager-Konto finden Sie unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in der Dokumentation zu Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 

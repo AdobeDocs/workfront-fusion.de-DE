@@ -31,7 +31,7 @@ Workfront Fusion bietet auch Funktionen, die Szenarien unterstützen, z. B. Szen
 
 Wenn Sie mit der Arbeit mit Workfront Fusion beginnen, sind möglicherweise die folgenden Ressourcen hilfreich:
 
-* Ressourcen zum Workfront Fusion-Training finden Sie unter [Workfront Fusion-Schulung - Übersicht](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
+* Ressourcen zum Workfront Fusion-Training finden Sie unter [Workfront Fusion-Schulung - Übersicht](https://experienceleague.adobe.com/de/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
 
 
 * Weitere Informationen zu Szenarien finden Sie unter [Szenario - Übersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
