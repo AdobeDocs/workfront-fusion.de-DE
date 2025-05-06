@@ -103,7 +103,7 @@ Um Ihr SFTP-Konto mit [!DNL Workfront Fusion] zu verbinden, müssen Sie eine Ver
    <td> <p>Sie können eine Reihe von Algorithmen für den Schlüsselaustausch eingeben. Das Modul priorisiert Algorithmen basierend auf der Reihenfolge, in der sie hinzugefügt wurden. Klicken Sie für jeden Algorithmus, den Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie den Algorithmus aus.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Chiffren] </td> 
+   <td role="rowheader">[!UICONTROL -Chiffren] </td> 
    <td> <p>Sie können einen Satz von Chiffren für den Schlüsselaustausch eingeben. Das Modul priorisiert Chiffren basierend auf der Reihenfolge, in der sie hinzugefügt wurden. Klicken Sie für jede Chiffre, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie die Chiffre aus.</p> </td> 
   </tr> 
  </tbody> 
@@ -133,11 +133,11 @@ Gibt Dateien mit Details zurück, wenn eine Datei in einem angegebenen Ordner er
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, den Sie beobachten möchten. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben oder einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -160,11 +160,11 @@ Gibt Ordner mit Details zurück, wenn ein Ordner in einem angegebenen Ordner ers
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, den Sie beobachten möchten, oder ordnen Sie ihn zu. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -200,11 +200,11 @@ Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Geben Sie einen vorhandenen Ordner als Speicherort für den neuen Ordner an. Sie können einen absoluten Pfad wie <code>/home/user/file.txt</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./</code>.</p> </td> 
   </tr> 
   <tr> 
@@ -212,7 +212,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
    <td> <p> Geben Sie den Ordnernamen ein.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL-Berechtigungen]</p> </td> 
+   <td> <p>[!UICONTROL -Berechtigungen]</p> </td> 
    <td> <p>Festlegen der gewünschten Ordnerberechtigungen. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
@@ -225,7 +225,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -242,7 +242,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -261,7 +261,7 @@ Dieses Modul ruft Dateidetails ab, einschließlich der Daten einer Datei.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -284,7 +284,7 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -292,7 +292,7 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
    <td> <p> Geben Sie die Puffergröße in Byte ein. Der Wert definiert die Größe der vom Server übertragenen Blöcke. Einige Server können Probleme verursachen oder Dateien beschädigen, wenn der Wert zu hoch ist.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, der die Dateien oder Ordner enthält, die Sie auflisten möchten, oder ordnen Sie ihn zu. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -325,7 +325,7 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -333,7 +333,7 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
    <td> <p>Wählen Sie aus, ob Sie Dateien, Ordner oder beides abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, der die Dateien oder Ordner enthält, die Sie auflisten möchten, oder ordnen Sie ihn zu. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -366,7 +366,7 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -389,7 +389,7 @@ Benennt eine Datei um.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -412,7 +412,7 @@ Ermöglicht das Ändern der Dateiberechtigungen.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -420,7 +420,7 @@ Ermöglicht das Ändern der Dateiberechtigungen.
    <td> <p> Geben Sie den Pfad zur zu verschiebenden Datei ein. Sie können einen absoluten Pfad wie <code>/home/user/file.txt</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./file.txt</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL-Berechtigungen]</p> </td> 
+   <td> <p>[!UICONTROL -Berechtigungen]</p> </td> 
    <td> <p>Legen Sie die gewünschten Dateiberechtigungen fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
@@ -435,11 +435,11 @@ Mit diesem Modul können Sie eine Datei auf den SFTP-Server hochladen.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td>
+   <td>[!UICONTROL -Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Geben Sie einen vorhandenen Ordner als Speicherort für die Datei an. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -447,7 +447,7 @@ Mit diesem Modul können Sie eine Datei auf den SFTP-Server hochladen.
    <td> <p> Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL-Berechtigungen]</p> </td> 
+   <td> <p>[!UICONTROL -Berechtigungen]</p> </td> 
    <td> <p>Legen Sie die gewünschten Berechtigungen für die Datei oder den Ordner fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
   <tr> 
