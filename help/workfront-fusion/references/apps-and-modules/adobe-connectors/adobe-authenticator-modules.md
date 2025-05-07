@@ -134,7 +134,7 @@ So erstellen Sie eine Verbindung:
         <td>Geben Sie Ihr [!DNL Adobe]-Client-Geheimnis ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-Bereiche]</td>
+        <td role="rowheader">[!UICONTROL -Bereiche]</td>
         <td>Wenn Sie eine OAuth-Verbindung ausgewählt haben, geben Sie die für diese Verbindung erforderlichen Bereiche ein.</td>
       </tr>
       <tr>
@@ -178,7 +178,7 @@ So erstellen Sie eine Verbindung:
         <td>Sie müssen die Basis-URLs hinzufügen, die dieser Authentifizierer zulassen soll. Wenn Sie das Modul Benutzerdefinierten API-Aufruf erstellen später im Szenario verwenden, fügen Sie der ausgewählten URL einen relativen Pfad hinzu. Durch die Eingabe von URLs hier können Sie steuern, mit was sich das Modul Benutzerdefinierte API-Aufrufe erstellen verbinden kann, was die Sicherheit erhöht.<p>Klicken Sie für jede Basis-URL, die Sie der Authentifizierung hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die Basis-URL ein.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-Authentifizierungs-URL]</td>
+        <td role="rowheader">[!UICONTROL -Authentifizierungs-URL]</td>
         <td>Lassen Sie dieses Feld leer, um die standardmäßige Adobe IMS-Authentifizierungs-URL von <code>https://ims-na1.adobelogin.com</code> zu verwenden. Wenn Sie Adobe IMS nicht für die Authentifizierung verwenden, geben Sie die URL ein, die für die Authentifizierung verwendet werden soll.</td>
       </tr>
     </tbody>
@@ -202,7 +202,7 @@ Dieses Modul wurde am 14. November 2024 zur Verfügung gestellt. Jedes Adobe Aut
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL-Verbindung]</td>
+     <td role="rowheader">[!UICONTROL -Verbindung]</td>
      <td>Anweisungen zum Erstellen einer Verbindung zum Adobe Authenticator-Modul finden Sie unter <a href="#create-a-connection" class="MCXref xref" >Erstellen einer Verbindung</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -222,12 +222,12 @@ Dieses Modul wurde am 14. November 2024 zur Verfügung gestellt. Jedes Adobe Aut
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-Methode]</p>
+        <p>[!UICONTROL -Methode]</p>
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -268,7 +268,7 @@ Mit diesem Aktionsmodul können Sie eine beliebige Adobe-API aufrufen.
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL-Verbindung]</td>
+     <td role="rowheader">[!UICONTROL -Verbindung]</td>
      <td>Anweisungen zum Erstellen einer Verbindung zum Adobe Authenticator-Modul finden Sie unter <a href="#create-a-connection" class="MCXref xref" >Erstellen einer Verbindung</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -288,12 +288,12 @@ Mit diesem Aktionsmodul können Sie eine beliebige Adobe-API aufrufen.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-Methode]</p>
+        <p>[!UICONTROL -Methode]</p>
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
