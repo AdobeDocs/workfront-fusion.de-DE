@@ -4,9 +4,9 @@ description: Sie können Mutual TLS in Ihren Adobe Workfront Fusion-HTTP-Modulen
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 89017451c8e0b821616adda861222127e100a08d
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -101,23 +101,26 @@ Sie können die folgenden Links verwenden, um die öffentlichen Workfront Fusion
 | EU-Rechenzentrum | [Download [!DNL Workfront Fusion] EU-Zertifikat 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 3. März 2025 bis 4. April 2026 |
 | Azure-Cluster | [Download [!DNL Workfront Fusion] Azure-Zertifikat 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 24. Oktober 2024 bis 25. November 2025 |
 
+<!--
 
-### Zertifikate für 2024
+### Certificates for 2024
 
 >[!IMPORTANT]
 >
->* Es wird empfohlen, die oben verfügbaren Zertifikate für 2025 zu installieren.
->* Diese [!DNL Workfront Fusion] öffentlichen Zertifikate laufen am **. Mai 2025**. Nach Ablauf Ihres müssen Sie ein neues Zertifikat in den Webservice hochladen. Wir empfehlen Ihnen Folgendes:
+>* We recommend installing the certificates for 2025, available above.
+>* These [!DNL Workfront Fusion] public certificates expire on **May 7, 2025**. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
 >
->   * Notieren Sie sich das Ablaufdatum und legen Sie eine Erinnerung fest, damit Sie das Zertifikat in Ihren Webservice hochladen können.
->   * Setzen Sie ein Lesezeichen für diese Seite, um die neuen Zertifikate leicht zu finden.
+>   * Make note of the expiration date and set a reminder for yourself to upload the certificate to your web service.
+>   * Bookmark this page to easily find the new certificates.
 >
->* Hierbei handelt es sich um Nicht-Platzhalter-TLS-Zertifikate.
+>* These are non-wildcard mTLS certificates.
 
-| Rechenzentrum | Downloadlink | Gültige Daten |
+| Datacenter | Download link | Dates valid |
 |---|---|---|
-| US-Rechenzentrum | [Download [!DNL Workfront Fusion] Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | 5. April 2024 bis 7. Mai 2025 |
-| EU-Rechenzentrum | [Download [!DNL Workfront Fusion] EU-Zertifikat 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | 5. April 2024 bis 7. Mai 2025 |
+| US Datacenter | [Download [!DNL Workfront Fusion] Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+| EU Datacenter | [Download [!DNL Workfront Fusion] EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+
+-->
 
 ## Aktivieren von gegenseitigem TLS in [!DNL Workfront Fusion] HTTP-Modulen
 
@@ -125,7 +128,7 @@ Alle [!DNL Workfront Fusion] [!UICONTROL HTTP]-Anfragemodule haben die Möglichk
 
 So aktivieren Sie gegenseitiges TLS in einem [!UICONTROL HTTP]-Anfragemodul:
 
-1. Fügen Sie Ihrem [!UICONTROL &#x200B; ein &#x200B;]HTTP“-Anfragemodul hinzu.
+1. Fügen Sie Ihrem [!UICONTROL  ein ]HTTP“-Anfragemodul hinzu.
 1. Starten Sie die Konfiguration des Moduls.
 
    Anweisungen zum Konfigurieren eines [!UICONTROL HTTP]-Anfragemoduls finden Sie im entsprechenden Artikel unter [Universelle Connectoren](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
