@@ -4,9 +4,9 @@ description: Mit den Adobe I/O Events-Modulen können Sie ein Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '969'
 ht-degree: 1%
 
 ---
@@ -104,6 +104,12 @@ So erstellen Sie eine Verbindung für Ihre Adobe I/O Events-Module:
         </td>
       </tr>
       <tr>
+        <td role="rowheader">Umgebung</td>
+        <td>
+          <p>Wählen Sie aus, ob Sie eine Verbindung zur Produktions- oder Nicht-Produktionsumgebung herstellen möchten.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">Typ</td>
         <td>
           <p>Wählen Sie aus, ob Sie eine Verbindung zu einem Service-Konto oder einem persönlichen Konto herstellen möchten.</p>
@@ -161,6 +167,8 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Auslöser
 
+<!--Becky start here-->
+
 #### Erstellen einer Ereignisregistrierung
 
 Dieses Aktionsmodul verwendet einen Webhook, um eine Ereignisbeschreibung zu erstellen. Hier können Sie einen Webhook konfigurieren. Wenn Sie einen vorhandenen Webhook verwenden, sind die Felder in diesem Modul schreibgeschützt.
@@ -179,7 +187,7 @@ So erstellen Sie einen Webhook:
         <td>Einen Namen für diesen Webhook eingeben.</td>
        </tr>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
+         <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>
@@ -222,7 +230,7 @@ Dieses Suchmodul ruft alle Ereignisse für eine Registrierung aus einem Journal 
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
+         <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>
@@ -275,7 +283,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL -Verbindung]</td>
+     <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -288,14 +296,14 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Methode]</p>
+        <p>[!UICONTROL-Methode]</p>
       </td>
       <td>
   <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p>  
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -328,7 +336,7 @@ Dieses Suchmodul ruft die Adobe I/O Events-IDs für den angegebenen Anbieter und
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
+         <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>
