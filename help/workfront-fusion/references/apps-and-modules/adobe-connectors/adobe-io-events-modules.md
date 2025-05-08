@@ -4,9 +4,9 @@ description: Mit den Adobe I/O Events-Modulen können Sie ein Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 983ce043afbcc44ee8af2dfcd46738f170a2b257
+source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1077'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,7 @@ So erstellen Sie einen Webhook:
         <td>Einen Namen für diesen Webhook eingeben.</td>
        </tr>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
+         <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>
@@ -221,58 +221,40 @@ So erstellen Sie einen Webhook:
 
 ### Aktionen
 
-#### Alle Ereignisse aus einem Protokoll abrufen
+* [Provider- und Ereignis-IDs abrufen](#get-provider-and-event-ids)
+* [Erstellen eines benutzerdefinierten API-Aufrufs](#make-a-custom-api-call)
 
-Dieses Suchmodul ruft alle Ereignisse für eine Registrierung aus einem Journal ab.
+#### Provider- und Ereignis-IDs abrufen
+
+Dieses Suchmodul ruft die Adobe I/O Events-IDs für den angegebenen Anbieter und die angegebenen Ereignisse ab.
 
 <table>
      <col/>
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
+         <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Registrierungs-ID]
+           [!UICONTROL Ereignisanbieter]
          </td>
          <td>
-           Wählen Sie die Registrierung aus, für die Sie Ereignisse abrufen möchten.
+           Wählen Sie den Provider aus, für den Sie die ID abrufen möchten.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Maximale Anzahl der zurückgegebenen Datensätze]
+           [!UICONTROL Ereignistyp]
          </td>
          <td>
-              Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie. 
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Gibt Ereignisse zurück, die nach]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Suche]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Neueste]
-         </td>
-         <td>
-         Aktivieren Sie diese Option, um das neueste Ereignis zurückzugeben.
+              Wählen Sie die Ereignisse aus, für die Sie IDs angeben möchten. Ereignisse sind je nach Ereignisanbieter verfügbar. 
          </td>
        </tr>
      </tbody>
    </table>
+
 
 #### Erstellen eines benutzerdefinierten API-Aufrufs
 
@@ -283,7 +265,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL -Verbindung]</td>
+     <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -296,14 +278,14 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Methode]</p>
+        <p>[!UICONTROL-Methode]</p>
       </td>
       <td>
   <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p>  
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -327,42 +309,63 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
 
 ### Suchvorgänge
 
-#### Provider- und Ereignis-IDs abrufen
+#### Alle Ereignisse aus einem Protokoll abrufen
 
-Dieses Suchmodul ruft die Adobe I/O Events-IDs für den angegebenen Anbieter und die angegebenen Ereignisse ab.
+Dieses Suchmodul ruft alle Ereignisse für eine Registrierung aus einem Journal ab.
 
 <table>
      <col/>
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
+         <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Ereignisanbieter]
+           [!UICONTROL Registrierungs-ID]
          </td>
          <td>
-           Wählen Sie den Provider aus, für den Sie die ID abrufen möchten.
+           Wählen Sie die Registrierung aus, für die Sie Ereignisse abrufen möchten.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Ereignistyp]
+           [!UICONTROL Maximale Anzahl der zurückgegebenen Ereignisse]
          </td>
          <td>
-              Wählen Sie die Ereignisse aus, für die Sie IDs angeben möchten. Ereignisse sind je nach Ereignisanbieter verfügbar. 
+              Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie. 
+         </td>
+       </tr>
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Gibt Ereignisse zurück, die nach]
+         </td>
+         <td>Datum eingeben oder zuordnen. Das Modul gibt Ereignisse zurück, die nach diesem Datum aufgetreten sind.
+         </td>
+       </tr>
+<!--       <tr>
+         <td role="rowheader">
+           [!UICONTROL Seek]
+         </td>
+         <td>
+         </td>
+       </tr>-->
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Neueste]
+         </td>
+         <td>
+         Aktivieren Sie diese Option, um das neueste Ereignis zurückzugeben.
          </td>
        </tr>
      </tbody>
    </table>
+&lt;!—
 
-<!--
+Ereignisse ansehen
 
-Watch Events
-
-This trigger module starts a scenario when an event occurs in the chosen Adobe product or service.
+Dieses Ereignismodul startet ein Trigger, wenn ein Ereignis im ausgewählten Adobe-Produkt oder -Service auftritt.
 
 <table style="table-layout:auto"> 
    <col> 
@@ -370,7 +373,7 @@ This trigger module starts a scenario when an event occurs in the chosen Adobe p
    <tbody> 
    <tr> 
    <td role="rowheader">Webhook</td> 
-   <td><p>Select the webhook that you want to use for this trigger, or add a new webhook. </p><p>To add a new webhook, <ol><li>Click <b>Add</b> next to the webhook field.</li><li>Enter the following: <ul><li>A name for the webhook</li><li>The connection that you want to use for this webhook</li><li>The source of the events you want to watch</li></ul></li><li>Click <b>Save</b> to save the webhook and return to the module. </td> 
+   <td><p>Wählen Sie den Webhook aus, den Sie für diesen Trigger verwenden möchten, oder fügen Sie einen neuen Webhook hinzu. </p><p>Um einen neuen Webhook hinzuzufügen, <ol><li>Klicken Sie <b>Hinzufügen</b> neben dem Webhook-Feld.</li><li>Geben Sie Folgendes ein: <ul><li>Ein Name für den Webhook</li><li>Die Verbindung, die Sie für diesen Webhook verwenden möchten</li><li>Die Quelle der Ereignisse, die Sie beobachten möchten</li></ul></li><li>Klicken Sie <b>Speichern</b>, um den Webhook zu speichern und zum Modul zurückzukehren. </td> 
    </tr> 
    </tbody> 
 </table>
