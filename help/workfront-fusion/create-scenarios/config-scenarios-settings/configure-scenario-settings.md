@@ -5,9 +5,9 @@ description: Sie können bestimmte Einstellungen für Szenarien im Bedienfeld Sz
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7411649c0d65956552f40a7710315536755dc65
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] kaufen.</li><li>[!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] ist enthalten.</li></ul>
    <p>Oder</p>
    <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
    </td> 
@@ -77,12 +77,12 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
    ![Szenario-Einstellungen](assets/scenario-settings-350x221.png)
 
-   Im angezeigten [!UICONTROL Scenario settings] können Sie verschiedene erweiterte Einstellungen für das Szenario konfigurieren.
+   Im angezeigten Bedienfeld [!UICONTROL Szenarioeinstellungen] können Sie verschiedene erweiterte Einstellungen für das Szenario konfigurieren.
 1. Aktivieren oder deaktivieren Sie die Szenario-Einstellungen nach Bedarf. Siehe [Optionen für Szenarioeinstellungen](#scenario-settings-options) unten.
 
 ## Optionen für Szenarioeinstellungen
 
-### [!UICONTROL Sequential processing]
+### [!UICONTROL Sequenzielle Verarbeitung]
 
 Diese Option erzwingt, dass alle Ausführungen in der richtigen Reihenfolge erfolgen, und ist in erster Linie für Webhooks und für unvollständige Ausführungen relevant.
 
@@ -111,13 +111,13 @@ Wenn die sequenzielle Verarbeitung aktiviert ist, werden parallele Ausführungen
 
 ### Daten sind vertraulich
 
-Nachdem ein Szenario ausgeführt wurde, können Sie standardmäßig Informationen darüber anzeigen, welche Daten von Modulen im Szenario verarbeitet wurden. Wenn diese Informationen nicht gespeichert werden sollen, aktivieren Sie die Option [!UICONTROL Data is confidential] .
+Nachdem ein Szenario ausgeführt wurde, können Sie standardmäßig Informationen darüber anzeigen, welche Daten von Modulen im Szenario verarbeitet wurden. Wenn diese Informationen nicht gespeichert werden sollen, aktivieren Sie die Option [!UICONTROL Daten sind vertraulich].
 
 >[!IMPORTANT]
 >
 >Wenn Sie diese Option aktivieren, kann es schwierig sein, Fehler zu beheben, die während der Ausführung eines Szenarios auftreten können.
 
-### [!UICONTROL Allow storing incomplete executions]
+### [!UICONTROL Speichern unvollständiger Ausführungen zulassen]
 
 Diese Option bestimmt, wie [!DNL Adobe Workfront Fusion] bei einem Fehler während der Ausführung eines Szenarios verfahren wird. Wenn diese Option aktiviert ist, wird das Szenario angehalten und in den Ordner „Unvollständige Ausführung“ verschoben. Dadurch haben Sie die Möglichkeit, das Problem zu beheben und die Ausführung von dort fortzusetzen, wo das Szenario gestoppt wurde. Wenn diese Option deaktiviert ist, wird die Ausführung des Szenarios gestoppt und eine Rollback-Phase gestartet.
 
@@ -127,7 +127,7 @@ Weitere Informationen zu unvollständigen Ausführungen finden Sie unter [Anzeig
 
 Diese Option hat mit der Aktivierung von Datenverlust zu tun, wenn [!DNL Workfront Fusion] ein Bundle nicht in der Warteschlange der unvollständigen Ausführungen speichern kann (z. B. aufgrund von fehlendem Speicherplatz). Wenn diese Option aktiviert ist, gehen die Daten verloren, um Unterbrechungen bei der Ausführung des Gesamtszenarios zu verhindern. Dies ist nützlich für Szenarien, in denen die höchste Priorität die kontinuierliche Ausführung ist und die eingehenden fehlerhaften Daten nicht so wichtig sind.
 
-Darüber hinaus kann es beim Ausführen eines Szenarios vorkommen, dass ein Modul auf eine Datei trifft, die größer ist als die maximal zulässige Größe. In diesem Fall wird der [!DNL Workfront Fusion] entsprechend der Einstellung der Option [!UICONTROL Enable data loss] durchgeführt und eine Warnmeldung wird angezeigt.
+Darüber hinaus kann es beim Ausführen eines Szenarios vorkommen, dass ein Modul auf eine Datei trifft, die größer ist als die maximal zulässige Größe. In diesem Fall wird [!DNL Workfront Fusion] gemäß der Einstellung der Option [!UICONTROL Datenverlust aktivieren] fortgesetzt und eine Warnmeldung wird angezeigt.
 
 Weitere Informationen zu unvollständigen Ausführungen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -135,9 +135,9 @@ Weitere Informationen zur maximalen Dateigröße finden Sie unter [Leitplanken f
 
 Weitere Informationen zu Warnungen finden Sie unter [Fehlertypen](/help/workfront-fusion/references/errors/error-processing.md).
 
-### [!UICONTROL Auto commit]
+### [!UICONTROL Automatische Bestätigung]
 
-Die [!UICONTROL Auto commit] Einstellungen gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
+Die Einstellungen [!UICONTROL Automatische ]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
 
 ### Maximale Zyklenanzahl
 
@@ -160,11 +160,11 @@ Das Festlegen weiterer Zyklen kann nützlich sein, wenn Sie eine Verbindungsunte
 
 >[!BEGINSHADEBOX]
 
-**Beispiele:** [!DNL Workfront] > [!UICONTROL Watch record] sucht nach neuen Problemen, die auftreten, und [!DNL Workfront] >[!UICONTROL Convert object] konvertiert die neue Anfrage in ein Projekt und weist ihr die entsprechende Vorlage zu.
+**Beispiele:** [!DNL Workfront] > [!UICONTROL Datensatz beobachten] überwacht neue Probleme, die auftreten, und [!DNL Workfront] >[!UICONTROL Objekt konvertieren] konvertiert die neue Anfrage in ein Projekt und weist ihr die entsprechende Vorlage zu.
 
 ![Szenario-Einstellungen](assets/scenario-settings-ex-1-350x157.png)
 
-Eine [!UICONTROL more cycles] wird nur angewendet, wenn Sie die Ausführung des Szenarios planen. Wenn Sie die Schaltfläche [!UICONTROL Run once] verwenden, werden die Zykluseinstellungen berücksichtigt.
+Eine Einstellung [!UICONTROL Weitere Zyklen] wird nur angewendet, wenn Sie die Ausführung des Szenarios planen. Wenn Sie die Schaltfläche [!UICONTROL Einmal ausführen] verwenden, werden die Zykluseinstellungen berücksichtigt.
 
 #### Die maximale Anzahl von Zyklen ist auf 1 festgelegt (Standard)
 
@@ -177,7 +177,7 @@ Wenn 100 Anfragen an [!DNL Workfront] gesendet werden und das Feld Maximale Anza
 
 Die maximale Anzahl von Zyklen im Modul Workfront > Datensätze überwachen ist auf `10` festgelegt.
 
-Wenn dem Ordner &quot;Dropbox&quot; 100 Dateien hinzugefügt werden und die Option Maximale Anzahl an Zyklen auf 10 festgelegt ist, werden 10 Dateien während des ersten Zyklus verarbeitet, die nächsten 10 Dateien im zweiten Zyklus, die nächsten 10 Dateien im dritten Zyklus usw., bis alle Dateien verarbeitet sind.
+Wenn dem Dropbox-Ordner 100 Dateien hinzugefügt werden und die Option Maximale Anzahl an Zyklen auf 10 festgelegt ist, werden 10 Dateien während des ersten Zyklus verarbeitet, die nächsten 10 Dateien im zweiten Zyklus, die nächsten 10 Dateien im dritten Zyklus usw., bis alle Dateien verarbeitet sind.
 
 Alle Dateien werden innerhalb eines Szenario-Durchgangs verarbeitet.
 
@@ -198,3 +198,14 @@ Weitere Informationen zu Fehlern finden Sie unter [Fehlertypen](/help/workfront-
 >[!NOTE]
 >
 >Wenn ein Szenario mit einem sofortigen Trigger beginnt, wird die Einstellung ignoriert und das Szenario wird sofort deaktiviert, wenn der erste Fehler aufgetreten ist.
+
+### Arbeitspool
+
+>[!NOTE]
+>
+>Diese Einstellung ist nur sichtbar, wenn die beiden folgenden Bedingungen erfüllt sind:
+>
+>* Sie sind ein Organisationsadministrator oder -besitzer
+>* Mit Ihrer Organisation ist mehr als ein Worker-Pool verknüpft.
+
+Mit dieser Einstellung wird das Szenario einem bestimmten mit Ihrer Organisation verknüpften Worker-Pool zugewiesen, sodass Sie Ressourcen für Szenarien mit hoher Priorität reservieren können.
