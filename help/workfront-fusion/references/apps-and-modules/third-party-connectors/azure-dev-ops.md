@@ -89,7 +89,7 @@ Der Azure DevOps-Connector verwendet Folgendes:
 
 1. Fügen Sie Ihrem Szenario ein [!DNL Azure DevOps] hinzu.
 1. Klicken Sie **[!UICONTROL Hinzufügen]** neben dem Feld [!UICONTROL Verbindung].
-1. Wählen Sie [!UICONTROL  Feld ]Verbindungstyp“ **[!DNL Azure DevOps]** aus.
+1. Wählen Sie [!UICONTROL &#x200B; Feld &#x200B;]Verbindungstyp“ **[!DNL Azure DevOps]** aus.
 
    >[!IMPORTANT]
    >
@@ -163,9 +163,9 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Auslöser
 
-#### [!UICONTROL Auf Arbeitselemente ]
+#### [!UICONTROL Auf Arbeitselemente &#x200B;]
 
-Dieses Instant-Trigger-Modul führt ein Szenario aus, wenn ein Datensatz in (Azure DevOps[!UICONTROL  hinzugefügt, aktualisiert oder gelöscht ].
+Dieses Instant-Trigger-Modul führt ein Szenario aus, wenn ein Datensatz in (Azure DevOps[!UICONTROL &#x200B; hinzugefügt, aktualisiert oder gelöscht &#x200B;].
 
 Das Modul gibt alle Standardfelder zurück, die mit dem Datensatz verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
@@ -203,14 +203,14 @@ Das Modul gibt die Objekt-ID für das neu erstellte Arbeitselement oder die URL 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Azure DevOps]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Azure DevOps] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
    <td> <p>Wählen Sie aus, ob Sie ein Arbeitselement oder ein Projekt erstellen möchten.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL-Projekt]</strong> </p> <p>Füllen Sie die folgenden Felder aus:</p> 
+     <li> <p><strong>[!UICONTROL -Projekt]</strong> </p> <p>Füllen Sie die folgenden Felder aus:</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Name]</strong>: Geben Sie einen Namen für das neue Projekt ein oder ordnen Sie ihn ihm zu.</p> </li> 
        <li> <p><strong>[!UICONTROL Description]</strong>: Geben Sie eine Beschreibung für das neue Projekt ein oder ordnen Sie sie zu. </p> </li> 
@@ -240,7 +240,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Azure DevOps]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Azure DevOps] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -256,11 +256,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Wählen Sie die Version der [!DNL Azure DevOps]-API aus, mit der Sie sich für diesen API-Aufruf verbinden möchten, oder ordnen Sie sie zu. Wenn keine Version ausgewählt ist, stellt [!DNL Workfront Fusion] eine Verbindung zu [!DNL Azure DevOps] API-Version 5.1 her.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methode]</td> 
+   <td role="rowheader">[!UICONTROL -Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -288,7 +288,7 @@ Das -Modul gibt den Dateiinhalt des Anhangs zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Azure DevOps]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Azure DevOps] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -307,7 +307,7 @@ Dieses Aktionsmodul verknüpft zwei Arbeitselemente und definiert die Beziehung 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Azure DevOps]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Azure DevOps] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -323,7 +323,7 @@ Dieses Aktionsmodul verknüpft zwei Arbeitselemente und definiert die Beziehung 
    <td> <p>Definieren Sie die Beziehung zwischen den Arbeitselementen, die Sie verknüpfen möchten.</p> <p>Weitere Informationen finden Sie <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops">Referenzhandbuch für Link-Typen</a> in der [!UICONTROL Azure DevOps]-Dokumentation.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kommentar]</td> 
+   <td role="rowheader">[!UICONTROL -Kommentar]</td> 
    <td>Geben Sie den Text eines Kommentars ein oder mappen Sie ihn. Dies ist nützlich, um die Begründung oder Absicht des Links zu erklären.</td> 
   </tr> 
  </tbody> 
@@ -344,7 +344,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Azure DevOps]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Azure DevOps] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -377,11 +377,11 @@ Das Modul gibt die ID des aktualisierten Arbeitselements zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Azure DevOps]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Azure DevOps] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Projekt]</td> 
+   <td role="rowheader">[!UICONTROL -Projekt]</td> 
    <td>Wählen Sie das Projekt aus, das das Arbeitselement enthält, das Sie aktualisieren möchten.</td> 
   </tr> 
   <tr> 
@@ -410,11 +410,11 @@ Das Modul gibt die Anlagen-ID und eine Download-URL für den Anhang zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Azure DevOps]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Azure DevOps] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Projekt] </td> 
+   <td role="rowheader">[!UICONTROL -Projekt] </td> 
    <td> <p>Wählen Sie das Projekt aus, in das Sie eine Anlage hochladen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -422,7 +422,7 @@ Das Modul gibt die Anlagen-ID und eine Download-URL für den Anhang zurück.
    <td> <p>Geben Sie die ID des Arbeitselements ein, in das Sie eine Anlage hochladen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kommentar]</td> 
+   <td role="rowheader">[!UICONTROL -Kommentar]</td> 
    <td>Geben Sie den Text eines Kommentars ein, den Sie zum hochgeladenen Anhang hinzufügen möchten.</td> 
   </tr> 
   <tr> 
@@ -447,11 +447,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Azure DevOps]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Azure DevOps] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Projekt]</td> 
+   <td role="rowheader">[!UICONTROL -Projekt]</td> 
    <td>Wählen Sie das Projekt aus, aus dem Sie Arbeitselemente abrufen möchten.</td> 
   </tr> 
   <tr> 
