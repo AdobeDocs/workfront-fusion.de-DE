@@ -4,9 +4,9 @@ description: Mit den Adobe Photoshop-Modulen können Sie ein Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: a9e7053c443c9603ab3dc84c094196b7506cc7d0
+source-git-commit: 7f167af0ba1becb603dd8d9f3767101e157a7bdf
 workflow-type: tm+mt
-source-wordcount: '4976'
+source-wordcount: '5379'
 ht-degree: 0%
 
 ---
@@ -22,44 +22,44 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
-+++**Erweitern Sie , um die Zugriffsanforderungen für die Funktion in diesem Artikel anzuzeigen.**
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
-      <td>
-        <p>[!UICONTROL Pro] oder höher</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-      <td>
-        <p>[!UICONTROL -Plan], [!UICONTROL -Arbeit]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td>
-      <td >
-        <p>[!UICONTROL Workfront Fusion for Work Automation and Integration]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Produkt</td>
-      <td>Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu nutzen.</td>
-    </tr>
-    </tr>
-  </tbody>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Beliebig</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
+   <td>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Oder</p>
+   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
+   <p>Oder</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-&#42;Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
-
-&#42;&#42;Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL [Adobe Workfront Fusion] licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -105,6 +105,12 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Photoshop]:
       </col>
       <tbody>
         <tr>
+        <td role="rowheader">[!UICONTROL Verbindungstyp]</td>
+        <td>
+          <p>Wählen Sie aus, ob Sie eine JWT- oder eine Server-zu-Server-Verbindung verwenden möchten.</p>
+        </td>
+        </tr>
+        <tr>
         <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
           <p>Geben Sie einen Namen für diese Verbindung ein.</p>
@@ -120,16 +126,16 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Photoshop]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL ID des technischen Kontos]</td>
-        <td>Geben Sie Ihre [!DNL Adobe] [!UICONTROL ID des technischen Kontos] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console]</td>
+        <td>Wenn Sie eine JWT-Verbindung verwenden, geben Sie Ihre [!DNL Adobe] [!UICONTROL Technical Account ID] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Organisations-ID]</td>
-        <td>Geben Sie Ihre [!DNL Adobe] [!UICONTROL Organisations-ID] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console]</td>
+        <td>Wenn Sie eine JWT-Verbindung verwenden, geben Sie Ihre [!DNL Adobe] [!UICONTROL Organisations-ID] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Privater Schlüssel]</td>
         <td>
-          <p>Geben Sie den privaten Schlüssel ein, der bei der Erstellung Ihrer Anmeldeinformationen im [!DNL Adobe Developer Console] generiert wurde. </p>
+          <p>Wenn Sie eine JWT-Verbindung verwenden, geben Sie den privaten Schlüssel ein, der beim Erstellen Ihrer Anmeldeinformationen im [!DNL Adobe Developer Console] generiert wurde. </p>
           <p>So extrahieren Sie Ihren privaten Schlüssel oder Ihr Zertifikat:</p>
           <ol>
             <li value="1">
@@ -170,9 +176,9 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 * [Erstellen einer neuen PSD](#create-a-new-psd)
 * [Bearbeiten von Textebenen](#edit-text-layers)
 * [Bearbeiten von Textebenen (alt)](#edit-text-layers-legacy)
+* [Ausführen einer JSON-Aktion](#execute-an-action-json)
 * [Tiefenunschärfe ausführen](#execute-depth-blur)
 * [Ausführen von Photoshop-Aktionen](#execute-photoshop-actions)
-* [Ausführen von Photoshop-Aktionen (JSON)](#execute-photoshop-actions-json)
 * [Ausführen eines Produktzuschnitts](#execute-product-crop)
 * [Abrufen von Ebeneninformationen](#get-layer-info)
 * [Erstellen eines benutzerdefinierten API-Aufrufs](#make-a-custom-api-call)
@@ -191,7 +197,7 @@ Dieses Aktionsmodul wendet eine Vielzahl von Bearbeitungen auf Dokument- und Ebe
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -264,7 +270,7 @@ Dieses Aktionsmodul wendet eine Vielzahl von Bearbeitungen auf Dokument- und Ebe
       <td role="rowheader">
         <p>[!UICONTROL (Optionen): fehlende Schriftarten verwalten]</p>
       </td>
-   <td> Auswahl der Aktion, die ausgeführt werden soll, wenn im Dokument eine oder mehrere Schriftarten fehlen. <ul><li><code>fail</code>: Der Vorgang ist nicht erfolgreich und der Status wird auf „Fehlgeschlagen“ gesetzt, wobei die Details zum Fehler im Detailabschnitt des Status angegeben werden.</li><li><code>useDefault</code>: Der Vorgang ist erfolgreich, aber standardmäßig werden alle fehlenden Schriftarten durch ArialMT ersetzt.</li></ul></td> 
+   <td> Auswahl der Aktion, die ausgeführt werden soll, wenn im Dokument eine oder mehrere Schriftarten fehlen. <ul><li><code>fail</code>: Der Vorgang ist nicht erfolgreich und der Status wird auf „Fehlgeschlagen“ gesetzt, wobei die Details zum Fehler im Detailabschnitt des Status angegeben werden.</li><li><code>useDefault</code>: Der Vorgang wird erfolgreich sein und alle fehlenden Schriftarten werden durch ArialMT ersetzt.</li></ul></td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -275,7 +281,7 @@ Dieses Aktionsmodul wendet eine Vielzahl von Bearbeitungen auf Dokument- und Ebe
     <tr>
       <td role="rowheader">[!UICONTROL Ausgaben]</td>
       <td>
-        <p>Klicken Sie für jede konvertierte Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie den Speicherort, den Speicherort und den Typ wie in dieser Tabelle aufgeführt ein.</p>
+        <p>Klicken Sie für jede bearbeitete Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie den Speicherort, den Speicherort und den Typ wie in dieser Tabelle aufgeführt ein.</p>
       </td>
     </tr>
     <tr>
@@ -304,14 +310,12 @@ Dieses Aktionsmodul wendet eine Vielzahl von Bearbeitungen auf Dokument- und Ebe
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</p>
+        <p>[!UICONTROL (Ausgabe) Auf Arbeitsfläche zuschneiden]</p>
       </td>
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+   <td>Wählen Sie aus, ob die Ausgabedarstellungen die Größe der Arbeitsfläche aufweisen sollen. Mit True werden die Ausgabedarstellungen auf die Arbeitsfläche gekürzt, während mit False die Größe der Ausgabedarstellungsebene festgelegt wird</td> 
     </tr>
     </tbody>
 </table>
-
-
 
 ### Automatische Farbkorrektur eines Bildes
 
@@ -322,7 +326,7 @@ Dieses Aktionsmodul korrigiert automatisch das angegebene Bild.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -361,15 +365,8 @@ Dieses Aktionsmodul korrigiert automatisch das angegebene Bild.
         <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll. Dies gilt nur für Dateien im Adobe-Speicher.</p>
       </td>
     </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</p>
-      </td>
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
-    </tr>
     </tbody>
 </table>
-
 
 ### Bildformat konvertieren
 
@@ -380,7 +377,7 @@ Dieses Aktionsmodul konvertiert eine Datei in JPEG, PNG, PSD oder TIFF.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -425,27 +422,19 @@ Dieses Aktionsmodul konvertiert eine Datei in JPEG, PNG, PSD oder TIFF.
         <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll. Dies gilt nur für Dateien im Adobe-Speicher.</p>
       </td>
     </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</p>
-      </td>
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
-    </tr>
     </tbody>
 </table>
 
-
-
 ### Erstellen einer Maske
 
-Dieses Aktionsmodul gibt eine PNG-Datei mit einem Mast um das Subjekt herum zurück.
+Dieses Aktionsmodul gibt eine PNG-Datei mit einer Maske zurück, die um das Subjekt herum angewendet wird.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -500,7 +489,7 @@ Dieses Aktionsmodul gibt eine PNG-Datei mit einem Mast um das Subjekt herum zur�
       <td role="rowheader">
         <p>[!UICONTROL Nachbearbeitungsprozess]</p>
       </td>
-   <td></td> 
+   <td>Wählen Sie aus, ob die Nachbearbeitung aktiviert werden soll.</td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -508,12 +497,6 @@ Dieses Aktionsmodul gibt eine PNG-Datei mit einem Mast um das Subjekt herum zur�
       </td>
    <td>Der Standardwert ist 4.0</td> 
     </tr> 
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</p>
-      </td>
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
-    </tr>
     </tbody>
 </table>
 
@@ -521,7 +504,106 @@ Dieses Aktionsmodul gibt eine PNG-Datei mit einem Mast um das Subjekt herum zur�
 
 Dieses Aktionsmodul erstellt eine neue PSD mit optionalen Ebenen und generiert Ausgabedarstellungen oder speichert sie als PSD.
 
-Felder, die sich auf dieses Modul beziehen, finden Sie [Erstellen einer neuen PSD](https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/documentCreate) in der Dokumentation zu Adobe Photoshop.
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen &gt; Dokument &gt; Bildgröße) Höhe]</p>
+      </td>
+      <td> Geben Sie die Höhe des Bildes in Pixel ein oder mappen Sie sie. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen &gt; Dokument &gt; Bildgröße) Breite]</p>
+      </td>
+      <td> Geben Sie die Breite des Bildes in Pixel ein oder mappen Sie sie. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen &gt; Dokument)-Auflösung]</p>
+      </td>
+   <td> Geben Sie die Auflösung für das Bild in Pixeln pro Zoll ein oder mappen Sie sie. Dieser muss zwischen 72 und 300 liegen. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen &gt; Dokumentmodus)]</p>
+      </td>
+   <td> Wählen Sie den Modus für das Bild aus. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen &gt; Dokument) ausfüllen]</p>
+      </td>
+   <td> Wählen Sie aus, ob die Füllung für die Hintergrundebene transparent, weiß oder die Hintergrundfarbe des Bildes sein soll. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen &gt; Dokumenttiefe)]</p>
+      </td>
+   <td> Wählen Sie die Bittiefe des Bildes aus. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen)-Ebenen]</p>
+      </td>
+   <td> Klicken Sie für jede Ebene, die Sie hinzufügen möchten, auf Element hinzufügen und füllen Sie die Ebenendetails aus. <p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">PSD erstellen</a> in der Adobe Photoshop-Dokumentation.  </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen), globale Schriftart]</p>
+      </td>
+   <td> Geben Sie den vollständigen PostScript-Namen der Schriftart ein, die als globaler Standard für das Dokument verwendet werden soll. Diese Schriftart wird für alle Textebenen verwendet, in denen die Schriftart fehlt, und es wurde keine andere Schriftart speziell für diese Ebene angegeben. Wenn diese Schriftart fehlt, wird die unter Fehlende Schriftarten verwalten angegebene Option wirksam. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen) Schriftarten]</p>
+      </td>
+   <td> Klicken Sie für jede Schriftart, die das Dokument benötigt, auf Element hinzufügen und geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen): fehlende Schriftarten verwalten]</p>
+      </td>
+   <td> Auswahl der Aktion, die ausgeführt werden soll, wenn im Dokument eine oder mehrere Schriftarten fehlen. <ul><li><code>fail</code>: Der Vorgang ist nicht erfolgreich und der Status wird auf „Fehlgeschlagen“ gesetzt, wobei die Details zum Fehler im Detailabschnitt des Status angegeben werden.</li><li><code>useDefault</code>: Der Vorgang wird erfolgreich sein und alle fehlenden Schriftarten werden durch ArialMT ersetzt.</li></ul></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ausgaben]</td>
+      <td>
+        <p>Klicken Sie für jede Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie den Speicherort, den Speicherort und den Typ wie in dieser Tabelle aufgeführt ein.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Ausgabe)-Speicher]</td>
+      <td>
+        <p>Wählen Sie den Datei-Service aus, in dem die neue Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Ausgabe)-Dateispeicherort]</p>
+      </td>
+   <td> Geben Sie die URL oder den Pfad ein, unter dem die neue Datei gespeichert werden soll, oder mappen Sie sie. Dies ist nur erforderlich, wenn Sie für den Ausgabespeicher keinen internen Fusion-Speicher ausgewählt haben.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Ausgabe)-Typ]</p>
+      </td>
+   <td>Wählen Sie den Dateityp aus, in den Sie die Datei konvertieren möchten. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Ausgabe) Andere Felder]</td>
+      <td>
+        <p><p>Weitere Informationen zu Ausgabeoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">PSD erstellen</a> in der Dokumentation zu Adobe Photoshop.  </p>
+      </td>
+    </tr>
+    </tbody>
+</table>
 
 ### Bearbeiten von Textebenen
 
@@ -532,7 +614,7 @@ Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -560,42 +642,40 @@ Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Ebenen]</td>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen) Schriftarten]</p>
+      </td>
+   <td> Geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL-Ebenen]</td>
    <td> <p>Klicken Sie für jede Textebene, die Sie bearbeiten möchten, auf <b>Element hinzufügen</b> und geben Sie die Ebenenoptionen ein.<p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Text bearbeiten</a> in der Adobe Photoshop-Dokumentation.</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Ausgabedateispeicher]</td>
+      <td role="rowheader">[!UICONTROL (Ausgabe)-Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die bearbeitete Datei gespeichert werden soll.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL URL der Ausgabedatei]</p>
+        <p>[!UICONTROL (Ausgabe)-Dateispeicherort]</p>
       </td>
    <td> Geben Sie die URL oder den Pfad ein, unter dem die bearbeitete Datei gespeichert wird, oder mappen Sie sie. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Ausgabedateityp]</p>
+        <p>[!UICONTROL (Ausgabe)-Typ]</p>
       </td>
    <td> Dateityp für die bearbeitete Datei auswählen. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL überschreiben]</td>
+      <td role="rowheader">[!UICONTROL (Ausgabe) überschreiben]</td>
       <td>
         <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Komprimierung]</p>
-      </td>
-   <td> Wählen Sie den Komprimierungsgrad für die Ausgabedatei. </td> 
-    </tr>
   </tbody>
 </table>
-
-
 
 ### Bearbeiten von Textebenen (alt)
 
@@ -608,7 +688,7 @@ Um mehrere Ebenen zu bearbeiten, verwenden Sie das Modul [Textebenen bearbeiten]
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -636,7 +716,13 @@ Um mehrere Ebenen zu bearbeiten, verwenden Sie das Modul [Textebenen bearbeiten]
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Ebenen]</td>
+      <td role="rowheader">
+        <p>[!UICONTROL (Optionen) Schriftarten]</p>
+      </td>
+   <td> Geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL-Ebenen]</td>
    <td> <p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Textebene bearbeiten</a> in der Adobe Photoshop-Dokumentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ausgabedateispeicher]</td>
@@ -645,34 +731,34 @@ Um mehrere Ebenen zu bearbeiten, verwenden Sie das Modul [Textebenen bearbeiten]
       </td>
     </tr>
     <tr>
+      <td role="rowheader">[!UICONTROL (Ausgabe)-Speicher]</td>
+      <td>
+        <p>Wählen Sie den Datei-Service aus, in dem die bearbeitete Datei gespeichert werden soll.</p>
+      </td>
+    </tr>
+    <tr>
       <td role="rowheader">
-        <p>[!UICONTROL URL der Ausgabedatei]</p>
+        <p>[!UICONTROL (Ausgabe)-Dateispeicherort]</p>
       </td>
    <td> Geben Sie die URL oder den Pfad ein, unter dem die bearbeitete Datei gespeichert wird, oder mappen Sie sie. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Ausgabedateityp]</p>
+        <p>[!UICONTROL (Ausgabe)-Typ]</p>
       </td>
    <td> Dateityp für die bearbeitete Datei auswählen. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL überschreiben]</td>
+      <td role="rowheader">[!UICONTROL (Ausgabe) überschreiben]</td>
       <td>
         <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll.</p>
       </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Komprimierung]</p>
-      </td>
-   <td> Wählen Sie den Komprimierungsgrad für die Ausgabedatei. </td> 
     </tr>
   </tbody>
 </table>
 
 
-### Ausführen von Photoshop-Aktionen (JSON)
+### Ausführen einer JSON-Aktion
 
 Dieses Aktionsmodul führt Photoshop-Aktionen mithilfe von JSON-Befehlen aus.
 
@@ -681,7 +767,7 @@ Dieses Aktionsmodul führt Photoshop-Aktionen mithilfe von JSON-Befehlen aus.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -715,70 +801,35 @@ Dieses Aktionsmodul führt Photoshop-Aktionen mithilfe von JSON-Befehlen aus.
    <td> Geben Sie die URL oder den Pfad der Datei ein, die Sie verwenden möchten, oder ordnen Sie sie zu. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Ausgabe Dateispeicherung]</td>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ausgaben]</td>
+      <td>
+        <p>Klicken Sie für jede Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie die in dieser Tabelle aufgeführten Optionen für Speicherung, Speicherort, Typ und Überschreiben ein.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Ausgänge)-Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die bearbeitete Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL URL der Ausgabedatei]</p>
+        <p>[!UICONTROL (Ausgabe) Datei-URL]</p>
       </td>
    <td> Geben Sie die URL oder den Pfad ein, unter dem die bearbeitete Datei gespeichert wird, oder mappen Sie sie.  Dies ist nur erforderlich, wenn Sie für den Ausgabespeicher keinen internen Fusion-Speicher ausgewählt haben.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Ausgabedateityp]</p>
+        <p>[!UICONTROL (Output)-Typ]</p>
       </td>
    <td> Dateityp für die bearbeitete Datei auswählen. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL überschreiben]</td>
+      <td role="rowheader">[!UICONTROL (Ausgänge) überschreiben]</td>
       <td>
         <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll.</p>
       </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Komprimierung]</p>
-      </td>
-   <td> Wählen Sie den Komprimierungsgrad für die Ausgabedatei. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Ausgaben]</td>
-      <td>
-        <p>Klicken Sie für jede konvertierte Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie den Speicherort, den Speicherort und den Typ wie in dieser Tabelle aufgeführt ein.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Ausgabe)-Speicher]</td>
-      <td>
-        <p>Wählen Sie den Datei-Service aus, in dem die neue Datei gespeichert werden soll.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Ausgabe)-Dateispeicherort]</p>
-      </td>
-   <td> Geben Sie die URL oder den Pfad ein, unter dem die neue Datei gespeichert werden soll, oder mappen Sie sie. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Ausgabe)-Typ]</p>
-      </td>
-   <td>Wählen Sie den Dateityp aus, in den Sie die Datei konvertieren möchten. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Ausgabe) überschreiben]</td>
-      <td>
-        <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll. Dies gilt nur für Dateien im Adobe-Speicher.</p>
-      </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</p>
-      </td>
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
     </tr>
       </tbody>
 </table>
@@ -792,7 +843,7 @@ Dieses Aktionsmodul führt „Tiefenunschärfe“ für die ausgewählte Datei au
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -808,40 +859,34 @@ Dieses Aktionsmodul führt „Tiefenunschärfe“ für die ausgewählte Datei au
    <td> Geben Sie die URL oder den Pfad der Datei ein, die Sie bearbeiten möchten, oder ordnen Sie sie zu. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Ausgabedateispeicher]</td>
+      <td role="rowheader">[!UICONTROL (Ausgänge)-Speicher]</td>
       <td>
-        <p>Wählen Sie den Datei-Service aus, in dem die bearbeitete Datei gespeichert werden soll.</p>
+        <p>Wählen Sie den Datei-Service aus, in dem die bearbeitete Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL URL der Ausgabedatei]</p>
+        <p>[!UICONTROL (Ausgabe) Datei-URL]</p>
       </td>
-   <td> Geben Sie die URL oder den Pfad ein, unter dem die bearbeitete Datei gespeichert wird, oder mappen Sie sie. </td> 
+   <td> Geben Sie die URL oder den Pfad ein, unter dem die bearbeitete Datei gespeichert wird, oder mappen Sie sie.  Dies ist nur erforderlich, wenn Sie für den Ausgabespeicher keinen internen Fusion-Speicher ausgewählt haben.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Ausgabedateityp]</p>
+        <p>[!UICONTROL (Output)-Typ]</p>
       </td>
    <td> Dateityp für die bearbeitete Datei auswählen. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Andere Felder]</td>
-      <td>
-        <p>Weitere Informationen zu anderen Optionen für Tiefenunschärfe finden Sie unter <a href="https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/depthBlur">Tiefenunschärfe ausführen</a> in der Adobe Photoshop-API-Dokumentation.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL überschreiben]</td>
+      <td role="rowheader">[!UICONTROL (Ausgänge) überschreiben]</td>
       <td>
         <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Komprimierung]</p>
+   <tr>
+      <td role="rowheader">[!UICONTROL Andere Felder]</td>
+      <td>
+        <p>Weitere Informationen zu anderen Optionen für Tiefenunschärfe finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Tiefenunschärfe ausführen</a> in der Adobe Photoshop-API-Dokumentation.</p>
       </td>
-   <td> Wählen Sie den Komprimierungsgrad für die Ausgabedatei. </td> 
     </tr>
   </tbody>
 </table>
@@ -855,7 +900,7 @@ Dieses Aktionsmodul führt eine Photoshop-Aktion für das ausgewählte Bild aus.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -901,34 +946,34 @@ Dieses Aktionsmodul führt eine Photoshop-Aktion für das ausgewählte Bild aus.
    <td> Geben Sie die URL oder den Pfad der Datei ein, die Sie verwenden möchten, oder ordnen Sie sie zu. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Ausgabedateispeicher]</td>
+      <td role="rowheader">[!UICONTROL (Ausgänge)-Speicher]</td>
       <td>
-        <p>Wählen Sie den Datei-Service aus, in dem die bearbeitete Datei gespeichert werden soll.</p>
+        <p>Wählen Sie den Datei-Service aus, in dem die bearbeitete Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL URL der Ausgabedatei]</p>
+        <p>[!UICONTROL (Ausgabe) Datei-URL]</p>
       </td>
-   <td> Geben Sie die URL oder den Pfad ein, unter dem die bearbeitete Datei gespeichert wird, oder mappen Sie sie. </td> 
+   <td> Geben Sie die URL oder den Pfad ein, unter dem die bearbeitete Datei gespeichert wird, oder mappen Sie sie.  Dies ist nur erforderlich, wenn Sie für den Ausgabespeicher keinen internen Fusion-Speicher ausgewählt haben.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Ausgabedateityp]</p>
+        <p>[!UICONTROL (Output)-Typ]</p>
       </td>
    <td> Dateityp für die bearbeitete Datei auswählen. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL überschreiben]</td>
+      <td role="rowheader">[!UICONTROL (Ausgänge) überschreiben]</td>
       <td>
         <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Komprimierung]</p>
+   <tr>
+      <td role="rowheader">[!UICONTROL Andere Felder]</td>
+      <td>
+        <p>Weitere Informationen zu anderen Optionen für Tiefenunschärfe finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Tiefenunschärfe ausführen</a> in der Adobe Photoshop-API-Dokumentation.</p>
       </td>
-   <td> Wählen Sie den Komprimierungsgrad für die Ausgabedatei. </td> 
     </tr>
   </tbody>
 </table>
@@ -942,7 +987,7 @@ Dieses Aktionsmodul führt das Produktzuschneiden für das ausgewählte Bild aus
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -976,34 +1021,34 @@ Dieses Aktionsmodul führt das Produktzuschneiden für das ausgewählte Bild aus
    <td> Geben Sie den Betrag des Höhenabstands ein, den Sie hinzufügen möchten, oder ordnen Sie ihn zu. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Ausgabedateispeicher]</td>
+      <td role="rowheader">[!UICONTROL (Ausgänge)-Speicher]</td>
       <td>
-        <p>Wählen Sie den Datei-Service aus, in dem die bearbeitete Datei gespeichert werden soll.</p>
+        <p>Wählen Sie den Datei-Service aus, in dem die bearbeitete Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL URL der Ausgabedatei]</p>
+        <p>[!UICONTROL (Ausgabe) Datei-URL]</p>
       </td>
-   <td> Geben Sie die URL oder den Pfad ein, unter dem die bearbeitete Datei gespeichert wird, oder mappen Sie sie. </td> 
+   <td> Geben Sie die URL oder den Pfad ein, unter dem die bearbeitete Datei gespeichert wird, oder mappen Sie sie.  Dies ist nur erforderlich, wenn Sie für den Ausgabespeicher keinen internen Fusion-Speicher ausgewählt haben.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Ausgabedateityp]</p>
+        <p>[!UICONTROL (Output)-Typ]</p>
       </td>
    <td> Dateityp für die bearbeitete Datei auswählen. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL überschreiben]</td>
+      <td role="rowheader">[!UICONTROL (Ausgänge) überschreiben]</td>
       <td>
         <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Komprimierung]</p>
+   <tr>
+      <td role="rowheader">[!UICONTROL Andere Felder]</td>
+      <td>
+        <p>Weitere Informationen zu anderen Optionen für Tiefenunschärfe finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Tiefenunschärfe ausführen</a> in der Adobe Photoshop-API-Dokumentation.</p>
       </td>
-   <td> Wählen Sie den Komprimierungsgrad für die Ausgabedatei. </td> 
     </tr>
   </tbody>
 </table>
@@ -1017,7 +1062,7 @@ Dieses Aktionsmodul ruft Ebeneninformationen aus der angegebenen PSD-Datei ab.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1036,7 +1081,7 @@ Dieses Aktionsmodul ruft Ebeneninformationen aus der angegebenen PSD-Datei ab.
       <td role="rowheader">
         <p>[!UICONTROL Miniaturansichten]</p>
       </td>
-   <td> </td> 
+   <td> Wählen Sie den Dateityp aus, in dem die Miniaturen gespeichert werden sollen. Miniaturansichten sind kleine Vorschauen für jede renderbare Ebene.</td> 
     </tr>
   </tbody>
 </table>
@@ -1050,7 +1095,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Photoshop-API
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1061,12 +1106,12 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Photoshop-API
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Methode]</p>
+        <p>[!UICONTROL-Methode]</p>
       </td>
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -1097,7 +1142,7 @@ Dieses Aktionsmodul identifiziert das Hauptsubjekt Ihres Bildes und entfernt den
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1152,7 +1197,7 @@ Dieses Aktionsmodul identifiziert das Hauptsubjekt Ihres Bildes und entfernt den
       <td role="rowheader">
         <p>[!UICONTROL Nachbearbeitungsprozess]</p>
       </td>
-   <td></td> 
+   <td>Wählen Sie aus, ob die Nachbearbeitung aktiviert werden soll.</td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1160,16 +1205,8 @@ Dieses Aktionsmodul identifiziert das Hauptsubjekt Ihres Bildes und entfernt den
       </td>
    <td>Der Standardwert ist 4.0</td> 
     </tr> 
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</p>
-      </td>
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
-    </tr>
     </tbody>
 </table>
-
-
 
 ### Ersetzen eines Smart-Objekts
 
@@ -1182,7 +1219,7 @@ Dieses Modul verwendet die Smart Object API Version 2.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1199,9 +1236,15 @@ Dieses Modul verwendet die Smart Object API Version 2.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Ebenen]</p>
+        <p>[!UICONTROL-Ebenen]</p>
       </td>
    <td>Klicken Sie für jede Ebene, die Sie dem Smart-Objekt hinzufügen möchten, auf Element hinzufügen und geben Sie den Namen oder die ID des Objekts, den Datei-Service, in dem das Smart-Objekt gespeichert ist, und die URL oder den Pfad der Ebene ein.<p>Beschreibungen der erweiterten Einstellungen in diesem Bereich finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Ersetzen eines Smart-Objekts</a> in der Dokumentation zur Photoshop-API </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Größe des Bildes während der Platzierung ändern]</p>
+      </td>
+   <td> Wählen Sie aus, ob die Bildgröße geändert werden soll.</td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ausgaben]</td>
@@ -1223,26 +1266,12 @@ Dieses Modul verwendet die Smart Object API Version 2.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Ausgabe) Breite]</p>
+        <p>[!UICONTROL (Output)-Typ]</p>
       </td>
-   <td> Die Breite der Ausgabedatei in Pixel. Das Modul behält das ursprüngliche Seitenverhältnis bei. </td> 
+   <td> Dateityp für die bearbeitete Datei auswählen. </td> 
     </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Ausgabe) überschreiben]</td>
-      <td>
-        <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll. Dies gilt nur für Dateien im Adobe-Speicher.</p>
-      </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</p>
-      </td>
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
-    </tr>
-    </tbody>
+     </tbody>
 </table>
-
-
 
 ### Ersetzen eines Smart-Objekts (alt)
 
@@ -1255,7 +1284,7 @@ Dieses Modul verwendet die Legacy-Version von Smart-Objekten.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1272,7 +1301,7 @@ Dieses Modul verwendet die Legacy-Version von Smart-Objekten.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Ebenen]</p>
+        <p>[!UICONTROL-Ebenen]</p>
       </td>
    <td>Klicken Sie für jede Ebene, die Sie dem Smart-Objekt hinzufügen möchten, auf Element hinzufügen und geben Sie den Namen oder die ID des Objekts, den Datei-Service, in dem das Smart-Objekt gespeichert ist, und die URL oder den Pfad der Ebene ein.<p>Beschreibungen der erweiterten Einstellungen in diesem Bereich finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Ersetzen eines Smart-Objekts</a> in der Dokumentation zur Photoshop-API </td> 
     </tr>
@@ -1305,17 +1334,8 @@ Dieses Modul verwendet die Legacy-Version von Smart-Objekten.
       <td>
         <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll. Dies gilt nur für Dateien im Adobe-Speicher.</p>
       </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</p>
-      </td>
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
-    </tr>
     </tbody>
 </table>
-
-
 
 ### Ändern der Bildgröße
 
@@ -1326,11 +1346,11 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Speicher]</td>
+      <td role="rowheader">[!UICONTROL-Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die Datei gespeichert wird, deren Größe geändert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
@@ -1348,16 +1368,23 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
       </td>
     </tr>
     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Typ]</p>
+    <tr>
+      <td role="rowheader">[!UICONTROL-Speicher]</td>
+      <td>
+        <p>Wählen Sie den Datei-Service aus, in dem die neue Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
-   <td>Wählen Sie den Dateityp aus, in den Sie die Datei konvertieren möchten. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Dateispeicherort]</p>
+      </td>
+   <td> Geben Sie die URL oder den Pfad ein, unter dem die neue Datei gespeichert werden soll, oder mappen Sie sie.  Dies ist nur erforderlich, wenn Sie für den Ausgabespeicher keinen internen Fusion-Speicher ausgewählt haben.</td> 
     </tr>
     <tr>
       <td role="rowheader">
         <p>[!UICONTROL Breite]</p>
       </td>
-   <td>Geben Sie eine Zahl ein, die die Breite des skalierten Bildes in Pixel darstellt. Das Seitenverhältnis wird beibehalten.</td> 
+   <td> Die Breite der Ausgabedatei in Pixel. Das Modul behält das ursprüngliche Seitenverhältnis bei. </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1389,53 +1416,53 @@ Dieses Aktionsmodul fügt dem ausgewählten Bild ein Wasserzeichen hinzu.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (Basis-/Eingabe)-Speicher]</td>
+      <td role="rowheader">[!UICONTROL (Basis &gt; Eingabe)-Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die Datei gespeichert wird, der Sie ein Wasserzeichen hinzufügen möchten.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Basis/Eingabe)-Dateispeicherort]</p>
+        <p>[!UICONTROL (Basis &gt; Eingabe) Dateispeicherort]</p>
       </td>
    <td> Geben Sie die URL oder den Pfad der Datei ein, der Sie ein Wasserzeichen hinzufügen möchten, oder ordnen Sie sie zu. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (Wasserzeichen/Eingabe)-Speicher]</td>
+      <td role="rowheader">[!UICONTROL (Wasserzeichen &gt; Eingabe)-Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem das hinzuzufügende Wasserzeichen gespeichert wird.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (Wasserzeichen/Eingabe)-Speicher]</td>
+      <td role="rowheader">[!UICONTROL (Wasserzeichen &gt; Eingabe)-Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem das hinzuzufügende Wasserzeichen gespeichert wird.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Wasserzeichen/Grenzen) Höhe]</p>
+        <p>[!UICONTROL (Wasserzeichen &gt; Grenzen) Höhe]</p>
       </td>
    <td>Geben Sie die gewünschte Höhe des Wasserzeichens in Pixel ein oder mappen Sie sie.</td> 
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Wasserzeichen/Grenzen) Breite]</p>
+        <p>[!UICONTROL (Wasserzeichen &gt; Grenzen) Breite]</p>
       </td>
    <td> Geben Sie die gewünschte Breite des Wasserzeichens in Pixel ein oder mappen Sie sie. </td> 
     </tr>  
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Wasserzeichen/Grenzen) links]</p>
+        <p>[!UICONTROL (Wasserzeichen &gt; Grenzen) links]</p>
       </td>
    <td> Geben Sie den Abstand in Pixeln von der linken Seite des Bildes ein, in dem das Wasserzeichen sein soll, oder mappen Sie ihn.</td> 
     </tr>  
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Wasserzeichen/Grenzen) oben]</p>
+        <p>[!UICONTROL (Wasserzeichen &gt; Grenzen) oben]</p>
       </td>
    <td> Geben Sie den Abstand in Pixeln vom oberen Rand des Bildes ein, in dem das Wasserzeichen sein soll, oder mappen Sie ihn.</td> 
     </tr>  
@@ -1468,12 +1495,5 @@ Dieses Aktionsmodul fügt dem ausgewählten Bild ein Wasserzeichen hinzu.
       <td>
         <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll. Dies gilt nur für Dateien im Adobe-Speicher.</p>
       </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</p>
-      </td>
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
-    </tr>
     </tbody>
 </table>
