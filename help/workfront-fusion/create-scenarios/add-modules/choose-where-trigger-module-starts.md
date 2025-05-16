@@ -4,9 +4,9 @@ description: Bei einigen Trigger-Modulen können Sie das erste Bundle auswählen
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] kaufen.</li><li>[!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] ist enthalten.</li></ul>
    <p>Oder</p>
    <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
    </td> 
@@ -64,7 +64,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 ## Startseite eines Trigger-Moduls auswählen
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie den Startpunkt des Triggers auswählen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Konfigurieren und speichern Sie ein Trigger-Modul.
@@ -75,7 +75,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
    ![Wählen Sie, wo Sie beginnen möchten](assets/choose-where-to-start.png)
 
-1. Wählen Sie im angezeigten **[!UICONTROL Choose where to start]** eine Option aus.
+1. Wählen Sie eine Option im **[!UICONTROL Startpunkt auswählen]** aus.
 
    Die angezeigten Optionen hängen von den Möglichkeiten eines bestimmten Service ab. Sie können Folgendes umfassen:
 
@@ -84,39 +84,20 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
     <col> 
     <tbody>
     <tr>
-    <td>[!UICONTROL From now on] (Standard)</td>
+    <td>[!UICONTROL Von jetzt an] (Standard)</td>
     <td>Ruft alle hinzugefügten oder aktualisierten Bundles (abhängig von Einstellungen) ab, nachdem diese Option ausgewählt wurde</td>
     </tr>
      <tr>
-    <td>[!UICONTROL Since specific date]</td>
+    <td>[!UICONTROL seit bestimmtem Datum]</td>
     <td>Ruft alle hinzugefügten oder aktualisierten Bundles (je nach Einstellungen) nach einem bestimmten Datum und zu einer bestimmten Uhrzeit ab</td>
       </tr>
       <tr>
-    <td>[!UICONTROL All]</td>
+    <td>[!UICONTROL ALL]</td>
     <td>Ruft alle verfügbaren Bundles ab</td>
      </tr>
       <tr>
-    <td>[!UICONTROL Choose manually]</td>
+    <td>[!UICONTROL Manuell auswählen]</td>
     <td>Ermöglicht die Auswahl des ersten Bundles, von dem aus der Abruf der Bundles beginnen soll</td>
      </tr>
      </tbody>
    </table>
-
-
-
-   <table style="table-layout:auto">
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Einen Namen für die neue [!DNL DocuSign] eingeben</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Account type]</td> 
-      <td>Wählen Sie aus, ob das Konto, mit dem Sie eine Verbindung herstellen möchten, ein Produktionskonto oder ein Demokonto ist.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-
