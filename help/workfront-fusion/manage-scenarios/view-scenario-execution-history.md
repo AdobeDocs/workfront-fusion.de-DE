@@ -4,10 +4,10 @@ description: Sie können Informationen zu den Ereignissen oder Ausführungen ein
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '894'
+ht-degree: 1%
 
 ---
 
@@ -105,6 +105,8 @@ Die Registerkarte [!UICONTROL Verlauf] zeigt mehr Details an, als auf der Seite 
    >Der Szenarioverlauf zeigt neben **kürzlich ausgeführten Szenarien** Badge Verarbeitung an, während die Ausführungsdetails in den Speicher geschrieben werden. Die Verarbeitung erfolgt unmittelbar nach der Ausführung des Szenarios. und sollte nicht länger als ein paar Minuten dauern. Details zur Szenario-Ausführung sind während der Ausführung möglicherweise nicht sichtbar.
 
 1. Um Details für eine bestimmte Szenario-Ausführung anzuzeigen, klicken Sie **ganz** auf „Details“. Der [!UICONTROL details]-Link ist nur sichtbar, wenn für die Ausführung Details verfügbar sind.
+
+   Weitere Informationen zum Anzeigen der Ausführungsdetails eines Szenarios finden Sie unter [Anzeigen einer bestimmten Szenarios](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md).
 1. Um Ereignisse anzuzeigen, schalten Sie **Ereignisse anzeigen** ein.
 
 
@@ -134,7 +136,7 @@ Sie können den Ausführungsverlauf filtern, um nur Ausführungen mit den angege
 
 1. Öffnen Sie den vollständigen Seitenverlauf für ein Szenario, wie in [Ausführungsverlauf des Szenarios anzeigen auf der Registerkarte [!UICONTROL Verlauf] in ](#view-scenario-history-on-the-history-tab) Artikel beschrieben.
 1. Klicken Sie auf [!UICONTROL filter]-Symbol ![Szenariofiltersymbol](assets/fusion-scenario-filter-icon.png) in der Kopfzeile der Spalte, nach der Sie filtern möchten.
-1. Geben [!UICONTROL &#x200B; im &#x200B;] „Filter“ die Werte ein, nach denen gefiltert werden soll.
+1. Geben [!UICONTROL  im ] „Filter“ die Werte ein, nach denen gefiltert werden soll.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Das Filtersymbol ist in Spalten mit einem aktiven Filter orange.
@@ -165,17 +167,17 @@ Das Fenster [!UICONTROL Suche im Verlauf] wird geöffnet.
 
    >[!INFO]
    >
-   >**Beispiel:** Wenn Sie die Ausführung finden möchten, mit der ein bestimmtes Projekt erstellt wurde, geben Sie die Projekt-ID in die  &quot;&quot; ein.
+   >**Beispiel:** Wenn Sie die Ausführung finden möchten, mit der ein bestimmtes Projekt erstellt wurde, geben Sie die Projekt-ID in die ] &quot;[!UICONTROL &quot; ein.
    >
    >„625ef2ef0006036bd1794b6e52d737c5“
 
-1. (Optional) Um die Suche nach Datumsbereich zu beschränken, wählen Sie das Anfangs- und Enddatum der gewünschten Suche im Bereich [!UICONTROL Nach &#x200B;]) aus.
+1. (Optional) Um die Suche nach Datumsbereich zu beschränken, wählen Sie das Anfangs- und Enddatum der gewünschten Suche im Bereich [!UICONTROL Nach ]) aus.
 
    >[!NOTE]
    >
    >* Ausführungen sind nur für die letzten 30 Tage verfügbar.
    >
-   >* [!DNL Workfront Fusion] speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 Tage nach der Erstellung auf eine Webhook-Payload zugreifen, wird der Fehler &quot;[!UICONTROL Datei konnte nicht aus dem Speicher gelesen werden“ &#x200B;].
+   >* [!DNL Workfront Fusion] speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 Tage nach der Erstellung auf eine Webhook-Payload zugreifen, wird der Fehler &quot;[!UICONTROL Datei konnte nicht aus dem Speicher gelesen werden“ ].
 
 
 1. (Optional) Um die Suche nach Status zu begrenzen, wählen Sie den gewünschten Status in der Dropdown-Liste **[!UICONTROL Nach Status]** aus.
