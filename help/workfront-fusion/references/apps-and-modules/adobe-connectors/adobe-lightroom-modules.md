@@ -108,7 +108,7 @@ Um eine Verbindung zu Adobe Lightroom herzustellen, müssen Sie zunächst eine O
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL-Bereiche]</td>
+        <td role="rowheader">[!UICONTROL -Bereiche]</td>
         <td>
           <ul>
             <li>Adobe ID</li>
@@ -198,11 +198,11 @@ Dieses Aktionsmodul ruft eine Lightroom-Server-Versions-ID ab und zeigt an, ob d
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL]</td>
+      <td role="rowheader"></td>
       <td>
         <p>Wenn Sie bestimmte Anmeldeinformationen angeben möchten, um sicherzustellen, dass ein bestimmter Server ausgeführt wird, klicken Sie auf <b>Element hinzufügen</b> und geben Sie die Anmeldeinformationen ein.</p><p>Autorisierungskopfzeilen werden automatisch hinzugefügt.</p>
       </td>
@@ -219,11 +219,11 @@ Dieses Aktionsmodul ruft Metadaten aus einem Katalog in Adobe Lightroom ab. Ein 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL]</td>
+      <td role="rowheader"></td>
       <td>
         <p>Wenn Sie bestimmte Anmeldeinformationen angeben möchten, um sicherzustellen, dass Sie auf das richtige Benutzerkonto zugreifen können, klicken Sie auf Element hinzufügen und geben Sie die Anmeldeinformationen ein.</p><p>Autorisierungskopfzeilen werden automatisch hinzugefügt.</p>
       </td>
@@ -251,7 +251,7 @@ Dieses Aktionsmodul erstellt eine Originaldatei für ein Asset und lädt sie hoc
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -296,7 +296,7 @@ Dieses Aktionsmodul erstellt ein neues Asset mit anfänglichen Metadaten und Imp
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -371,7 +371,7 @@ Dieses Aktionsmodul unterstützt zwei Workflows: Hochladen der externen XMP-Entw
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -416,7 +416,7 @@ Dieses Aktionsmodul generiert asynchron Ausgabedarstellungen für eine Originald
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -455,7 +455,7 @@ Dieses Aktionsmodul ruft Informationen zu einem einzelnen Asset in einem Katalog
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -483,7 +483,7 @@ Dieses Aktionsmodul ruft die neueste externe XMP-Asset-Einstellungsdatei ab.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -510,7 +510,7 @@ Dieses Aktionsmodul ruft die neueste Asset-Ausgabedarstellung des angegebenen Ty
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -543,7 +543,7 @@ Dieses Aktionsmodul ruft Assets ab, die dem Benutzer gehören, dessen Anmeldeinf
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -648,7 +648,7 @@ Dieses Aktionsmodul fügt dem angegebenen Album mindestens ein Asset hinzu. Sie 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -679,7 +679,7 @@ Dieses Aktionsmodul fügt dem angegebenen Album mindestens ein Asset hinzu. Sie 
         <p>Wählen Sie aus, ob dieses Asset als Bild für das Album angezeigt werden soll.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL-Reihenfolge]</td>
+      <td role="rowheader">[!UICONTROL -Reihenfolge]</td>
       <td>
         <p></p>
       </td>
@@ -706,7 +706,7 @@ Dieses Aktionsmodul erstellt ein neues Album in Lightroom.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -802,7 +802,7 @@ Das gelöschte Album muss von derselben Client-App erstellt worden sein, die es 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -835,7 +835,7 @@ Dieses Aktionsmodul ruft das angegebene Album ab
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -868,7 +868,7 @@ Dieses Aktionsmodul ruft eine Liste der Alben im angegebenen Katalog ab.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -909,7 +909,7 @@ Das aktualisierte Album muss von derselben Client-Anwendung erstellt worden sein
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
