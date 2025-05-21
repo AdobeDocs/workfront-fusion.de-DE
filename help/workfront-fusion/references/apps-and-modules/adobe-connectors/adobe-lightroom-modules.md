@@ -4,9 +4,9 @@ description: Mit den Adobe Lightroom-Modulen können Sie ein Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 5d1424fe88efb56e565077bf36211795c9bc96ed
+source-git-commit: 4d31a447d0d8d91ef4f86d8fd0bc63663b0f5ad0
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Um eine Verbindung zu Adobe Lightroom herzustellen, müssen Sie zunächst eine O
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL -Bereiche]</td>
+        <td role="rowheader">[!UICONTROL-Bereiche]</td>
         <td>
           <ul>
             <li>Adobe ID</li>
@@ -198,11 +198,11 @@ Dieses Aktionsmodul ruft eine Lightroom-Server-Versions-ID ab und zeigt an, ob d
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
-      <td role="rowheader"></td>
+      <td role="rowheader">[!UICONTROL]</td>
       <td>
         <p>Wenn Sie bestimmte Anmeldeinformationen angeben möchten, um sicherzustellen, dass ein bestimmter Server ausgeführt wird, klicken Sie auf <b>Element hinzufügen</b> und geben Sie die Anmeldeinformationen ein.</p><p>Autorisierungskopfzeilen werden automatisch hinzugefügt.</p>
       </td>
@@ -219,11 +219,11 @@ Dieses Aktionsmodul ruft Metadaten aus einem Katalog in Adobe Lightroom ab. Ein 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
-      <td role="rowheader"></td>
+      <td role="rowheader">[!UICONTROL]</td>
       <td>
         <p>Wenn Sie bestimmte Anmeldeinformationen angeben möchten, um sicherzustellen, dass Sie auf das richtige Benutzerkonto zugreifen können, klicken Sie auf Element hinzufügen und geben Sie die Anmeldeinformationen ein.</p><p>Autorisierungskopfzeilen werden automatisch hinzugefügt.</p>
       </td>
@@ -246,14 +246,12 @@ Dieses Aktionsmodul ruft Metadaten aus einem Katalog in Adobe Lightroom ab. Ein 
 
 Dieses Aktionsmodul erstellt eine Originaldatei für ein Asset und lädt sie hoch.
 
-<!--BECKY START HERE-->
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -293,13 +291,12 @@ Dieses Aktionsmodul erstellt eine Originaldatei für ein Asset und lädt sie hoc
 
 Dieses Aktionsmodul erstellt ein neues Asset mit anfänglichen Metadaten und Importinformationen.
 
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -335,6 +332,30 @@ Dieses Aktionsmodul erstellt ein neues Asset mit anfänglichen Metadaten und Imp
     <tr>
       <td role="rowheader">[!UICONTROL Datum erfasst]</td>
       <td>
+        <p>Geben Sie das Erfassungsdatum des Assets in das <code>YYYY-MM-DDT00:00:00-00:00</code> Format ein oder ordnen Sie es zu. Dieser Wert wird vom Server festgelegt, wenn das Erfassungsdatum auf <code>0000-00-00T00:00:00</code> gesetzt ist. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Dateiname]</td>
+      <td>
+        <p>Geben Sie den Dateinamen des Assets ein, das Sie in Lightroom importieren, oder ordnen Sie ihn zu.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name des importierten Geräts]</td>
+      <td>
+        <p>Geben Sie den Namen des Geräts ein, das das Asset importiert, oder mappen Sie ihn.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Konto-ID des importierten Benutzers]</td>
+      <td>
+        <p>Geben Sie die ID des Benutzers ein, der das Asset importiert, oder mappen Sie sie.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Importzeitstempel]</td>
+      <td>
         <p>Geben Sie ein Datum im Format <code>YYYY-MM-DDT00:00:00-00:00</code> ein oder mappen Sie es.</p>
       </td>
     </tr>
@@ -343,18 +364,18 @@ Dieses Aktionsmodul erstellt ein neues Asset mit anfänglichen Metadaten und Imp
 
 #### Erstellen einer Asset-Einstellungsdatei für die externe XMP-Entwicklung
 
-Dieses Aktionsmodul unterstützt zwei Workflows. Der erste Workflow besteht darin, die externe XMP-Entwicklungseinstellungsdatei für das Asset hochzuladen. Der zweite Workflow besteht darin, eine externe XMP-Entwicklungseinstellungsdatei zu erstellen, indem Sie sie aus der externen XMP-Entwicklungseinstellungsdatei eines anderen Assets kopieren.
+Dieses Aktionsmodul unterstützt zwei Workflows: Hochladen der externen XMP-Entwicklungseinstellungsdatei für das Asset oder Erstellen einer externen XMP-Entwicklungseinstellungsdatei durch Kopieren aus der externen XMP-Entwicklungseinstellungsdatei eines anderen Assets.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Länge des Inhalts in Byte]</td>
+      <td role="rowheader">[!UICONTROL Inhaltslänge in Byte]</td>
       <td>
         <p>Geben Sie die Länge des Inhalts in Byte ein oder mappen Sie sie.</p>
       </td>
@@ -368,7 +389,7 @@ Dieses Aktionsmodul unterstützt zwei Workflows. Der erste Workflow besteht dari
     <tr>
       <td role="rowheader">[!UICONTROL Katalog-ID]</td>
       <td>
-        <p>Geben Sie die ID des Katalogs ein, der das Asset enthält, oder ordnen Sie sie zu.</p>
+        <p>Geben Sie die ID des Katalogs ein, in dem Sie das Asset erstellen möchten, oder ordnen Sie sie zu.</p>
       </td>
     </tr>
     <tr>
@@ -395,7 +416,7 @@ Dieses Aktionsmodul generiert asynchron Ausgabedarstellungen für eine Originald
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -413,7 +434,7 @@ Dieses Aktionsmodul generiert asynchron Ausgabedarstellungen für eine Originald
     <tr>
       <td role="rowheader">[!UICONTROL Katalog-ID]</td>
       <td>
-        <p>Geben Sie die ID des Katalogs ein, der das Asset enthält, oder ordnen Sie sie zu.</p>
+        <p>Geben Sie die ID des Katalogs ein, in dem Sie die Ausgabedarstellungen generieren möchten, oder ordnen Sie sie zu.</p>
       </td>
     </tr>
     <tr>
@@ -434,7 +455,7 @@ Dieses Aktionsmodul ruft Informationen zu einem einzelnen Asset in einem Katalog
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -462,13 +483,13 @@ Dieses Aktionsmodul ruft die neueste externe XMP-Asset-Einstellungsdatei ab.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Katalog-ID]</td>
       <td>
-        <p>Geben Sie die ID des Katalogs ein, der das Asset enthält, oder ordnen Sie sie zu.</p>
+        <p>Geben Sie die ID des Katalogs ein, der das mit der XMP-Einstellungsdatei für Entwicklungseinstellungen verknüpfte Asset enthält, oder ordnen Sie sie zu.</p>
       </td>
     </tr>
     <tr>
@@ -489,19 +510,19 @@ Dieses Aktionsmodul ruft die neueste Asset-Ausgabedarstellung des angegebenen Ty
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Katalog-ID]</td>
       <td>
-        <p>Geben Sie die ID des Katalogs ein, der das Asset enthält, oder ordnen Sie sie zu.</p>
+        <p>Geben Sie die ID des Katalogs ein, der das Asset enthält, für das Sie eine Ausgabedarstellung abrufen möchten, oder ordnen Sie sie zu.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Asset-ID]</td>
       <td>
-        <p>Geben Sie die ID des Assets ein, das mit der XMP-Einstellungsdatei für Entwicklungseinstellungen verknüpft ist, oder ordnen Sie sie zu.</p>
+        <p>Geben Sie die ID des Assets ein, für das Sie eine Ausgabedarstellung abrufen möchten, oder ordnen Sie sie zu.</p>
       </td>
     </tr>
     <tr>
@@ -522,7 +543,7 @@ Dieses Aktionsmodul ruft Assets ab, die dem Benutzer gehören, dessen Anmeldeinf
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -538,9 +559,15 @@ Dieses Aktionsmodul ruft Assets ab, die dem Benutzer gehören, dessen Anmeldeinf
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Gibt zuvor erfasste Assets zurück]</td>
+      <td role="rowheader">[!UICONTROL Gibt Assets zurück, die vor einer bestimmten Zeit erfasst wurden]</td>
       <td>
-        <p>Geben Sie ein Datum im Format <code>YYYY-MM-DDT00:00:00</code> ein. Das Modul gibt Ergebnisse zurück, die vor diesem Datum erfasst wurden.</p><p> Dieses Feld kann nicht mit dem <code>Return assets captured after</code> verwendet werden.</p>
+        <p>Geben Sie ein Datum im Format <code>YYYY-MM-DDT00:00:00</code> ein. Das Modul gibt Ergebnisse zurück, die vor diesem Datum erfasst wurden.</p><p> Dieses Feld kann nicht mit dem <code>Return assets captured after given time</code> verwendet werden.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Gibt nach einer bestimmten Zeit erfasste Assets zurück]</td>
+      <td>
+        <p>Geben Sie ein Datum im Format <code>YYYY-MM-DDT00:00:00</code> ein. Das Modul gibt Ergebnisse zurück, die vor diesem Datum erfasst wurden.</p><p> Dieses Feld kann nicht mit dem <code>Return assets captured before given time</code> verwendet werden.</p>
       </td>
     </tr>
     <tr>
@@ -552,19 +579,19 @@ Dieses Aktionsmodul ruft Assets ab, die dem Benutzer gehören, dessen Anmeldeinf
     <tr>
       <td role="rowheader">[!UICONTROL SHA256 Hash-Wert der Originaldatei]</td>
       <td>
-        <p></p>
+        <p>Geben Sie den Hash-Wert der Originaldatei ein oder mappen Sie ihn. Assets mit einem entsprechenden Hash werden zurückgegeben.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Assets ausblenden, die sich innerhalb von Stacks befinden?“]</td>
       <td>
-        <p></p>
+        <p>Wählen Sie Ja , um Assets innerhalb von Stapeln auszublenden (Assets innerhalb von Stapeln werden nicht zurückgegeben). Wählen Sie Nein , um Assets innerhalb von Stapeln in die Ergebnisse aufzunehmen.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Asset-Untertypwerte]</td>
       <td>
-        <p></p>
+        <p>Geben Sie eine durch Semikolon getrennte Liste von Untertypwerten ein, die zurückgegeben werden sollen, oder ordnen Sie sie zu.</p>
       </td>
     </tr>
     <tr>
@@ -581,24 +608,26 @@ Dieses Aktionsmodul ruft Assets ab, die dem Benutzer gehören, dessen Anmeldeinf
     <tr>
       <td role="rowheader">[!UICONTROL Gruppenwerte]</td>
       <td>
-        <p></p>
+        <p>Geben Sie eine durch Semikolon getrennte Liste von Gruppenwerten ein oder ordnen Sie sie zu.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Namenswerte]</td>
       <td>
-        <p></p>
+        <p>Geben Sie eine durch Semikolon getrennte Liste von Namenswerten ein oder ordnen Sie sie zu.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Favoritenstatus]</td>
       <td>
-        <p></p>
+        <p>Geben Sie den Favoritenstatus ein, für den Sie Ergebnisse zurückgeben möchten, oder ordnen Sie ihn zu.</p>
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
+
+<!--BECKY START HERE-->
 
 ### Alben
 
@@ -619,7 +648,7 @@ Dieses Aktionsmodul fügt dem angegebenen Album mindestens ein Asset hinzu. Sie 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -650,7 +679,7 @@ Dieses Aktionsmodul fügt dem angegebenen Album mindestens ein Asset hinzu. Sie 
         <p>Wählen Sie aus, ob dieses Asset als Bild für das Album angezeigt werden soll.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL -Reihenfolge]</td>
+      <td role="rowheader">[!UICONTROL-Reihenfolge]</td>
       <td>
         <p></p>
       </td>
@@ -677,7 +706,7 @@ Dieses Aktionsmodul erstellt ein neues Album in Lightroom.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -773,7 +802,7 @@ Das gelöschte Album muss von derselben Client-App erstellt worden sein, die es 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -806,7 +835,7 @@ Dieses Aktionsmodul ruft das angegebene Album ab
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -839,7 +868,7 @@ Dieses Aktionsmodul ruft eine Liste der Alben im angegebenen Katalog ab.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -880,7 +909,7 @@ Das aktualisierte Album muss von derselben Client-Anwendung erstellt worden sein
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Lightroom] finden Sie unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Lightroom]</a> in diesem Artikel.</td>
     </tr>
     <tr>
