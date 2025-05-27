@@ -4,9 +4,9 @@ description: Mit dem Router-Modul können Sie Ihren Fluss in mehrere Routen verz
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] kaufen.</li><li>[!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] ist enthalten.</li></ul>
    <p>Oder</p>
    <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
    </td> 
@@ -65,17 +65,17 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Router hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Klicken Sie im Szenario-Editor auf den rechten Griff des Moduls, nach dem Sie den Router hinzufügen möchten.
-1. Wählen Sie **[!UICONTROL Flow Control]** > **Router** in der angezeigten Modulliste aus.
+1. Wählen Sie **[!UICONTROL Flusssteuerung]** > **Router** in der angezeigten Modulliste aus.
 
    ![Route verbinden](assets/connect-the-router-350x108.png)
 
    Oder
 
-   Um das Router-Modul zwischen zwei Modulen einzufügen, klicken Sie auf das Schraubenschlüssel-Symbol unter der Route, die die beiden Module verbindet, und wählen Sie **[!UICONTROL Add a router]** aus dem Menü.
+   Um das Router-Modul zwischen zwei Modulen einzufügen, klicken Sie auf das Schraubenschlüssel-Symbol unter der Route, die die beiden Module verbindet, und wählen Sie **[!UICONTROL Router hinzufügen]** aus dem Menü.
 
    ![Router einfügen](assets/insert-router-350x191.png)
 1. Fügen Sie dem Router die erste Route hinzu, indem Sie auf den rechten Griff des Routers klicken und ein Modul hinzufügen, ähnlich wie beim Hinzufügen eines beliebigen Moduls.
@@ -87,7 +87,7 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 
    Die Routen sind in der Reihenfolge ihrer Ausführung angeordnet. Die Top-Route wird zuerst ausgeführt.
 
-1. (Optional) Um die Routenreihenfolge zu ändern, heben Sie die Verknüpfung der Routen auf, indem Sie mit der rechten Maustaste auf den Pfad des Routers klicken, die Option Verknüpfung aufheben auswählen und sie dann in der gewünschten Reihenfolge zum Routermodul ziehen. Die erste beigefügte Route ist die erste auszuführende Route (die Top-Route).
+1. (Optional) Um die Routenreihenfolge zu ändern, klicken Sie mit der rechten Maustaste auf das Router-Modul und wählen **Routen** bestellen“. Ziehen Sie die Routen per Drag-and-Drop in die gewünschte Reihenfolge. Routen werden durch das erste Modul markiert, das dem Router folgt (das erste Modul der Route).
 
 1. Fahren Sie fort [Filter zu einer Route hinzufügen](#add-a-filter-to-a-route).
 
@@ -97,7 +97,7 @@ Sie können nach dem Router-Modul einen Filter für eine Route einfügen, um Pak
 
 Wenn Daten den Filter mehrerer Routen übergeben, werden die Daten von beiden Routen verarbeitet. Die Top-Route verarbeitet die Daten zuerst.
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Klicken Sie auf das Schraubenschlüsselsymbol ![Schraubenschlüssel](assets/wrench-icon.png) in dem Pfad, in dem Sie einen Filter festlegen möchten. Dies ist der Pfad zwischen dem Router-Modul und dem ersten Modul der Route.
@@ -107,7 +107,7 @@ Wenn Daten den Filter mehrerer Routen übergeben, werden die Daten von beiden Ro
 
    Weitere Informationen finden Sie unter [Hinzufügen eines Filters zu einem Szenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
-1. Klicken Sie auf **[!UICONTROL OK]** , um die Filtereinrichtung zu speichern.
+1. Klicken Sie **[!UICONTROL OK]**, um die Filtereinstellungen zu speichern.
 
 1. Fahren Sie mit [Konfigurieren einer Ausweichroute](#configure-a-fallback-route) fort.
 
@@ -117,7 +117,7 @@ Die Fallback-Route ist die Route, die für alle Bundles ausgeführt wird, die ke
 
 Sie können im Filterbedienfeld eine Ausweichroute aktivieren.
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie eine Ausweichroute hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Klicken Sie auf das Schraubenschlüsselsymbol ![Schraubenschlüssel](assets/wrench-icon.png) in dem Pfad, in dem Sie einen Filter festlegen möchten. Dies ist der Pfad zwischen dem Router-Modul und dem ersten Modul der Route.
@@ -127,7 +127,7 @@ Sie können im Filterbedienfeld eine Ausweichroute aktivieren.
 
    ![Fallback-Route](assets/fallback-route-350x260.png)
 
-1. Klicken Sie auf **[!UICONTROL OK]** , um die Filtereinrichtung zu speichern.
+1. Klicken Sie **[!UICONTROL OK]**, um die Filtereinstellungen zu speichern.
 
 Die Ausweichroute wird im Router-Modul mit einem anderen Pfeil gekennzeichnet:
 
