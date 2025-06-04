@@ -4,9 +4,9 @@ description: Das [!DNL Adobe Workfront Fusion Frame].io modules enable you to mo
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: bf3e35a287c3beb2310a7b8d2c21c65aebfb9076
+source-git-commit: cc1ce10fccf159a0c17a3bba978d88c0d1013cbf
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2936'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,155 @@ Der Frame.io-Connector verwendet Folgendes:
 
 ## Verbinden von [!DNL Frame.io] mit [!UICONTROL Adobe Workfront Fusion]
 
-Der Verbindungsprozess unterscheidet sich je nachdem, ob Sie den alten Frame.io-Connector oder den Beta Frame.io-Connector verwenden.
+Sie können automatisch eine Verbindung mit Benutzeranmeldeinformationen herstellen, manuell eine Verbindung mit Benutzeranmeldeinformationen erstellen oder eine Server-zu-Server-Verbindung erstellen.
+
+* [Automatisch mit Benutzeranmeldeinformationen verbinden](#connect-automatically-with-user-credentials#)
+* [Manuelles Erstellen einer Verbindung mit Benutzeranmeldeinformationen](#create-a-user-credentials-connection-manually)
+* [Erstellen einer Server-zu-Server-Verbindung](#create-a-server-to-server-connection)
+
+### Automatisch mit Benutzeranmeldeinformationen verbinden
+
+Diese Methode erstellt automatisch eine Verbindung, wenn Sie bei Frame.io angemeldet sind, oder verbindet Sie mit der Anmeldeseite von Frame.io, damit Sie sich anmelden können.
+
+1. Klicken Sie in einem beliebigen Frame.io-Beta **[!UICONTROL Modul]** Hinzufügen“ neben dem Feld Verbindung .
+1. Geben Sie einen Namen für die Verbindung ein.
+1. Klicken Sie **Weiter**.
+1. Wenn Sie aufgefordert werden, sich bei Ihrem Frame.io-Konto anzumelden, führen Sie diesen Schritt aus.
+1. Wenn Sie Mitglied mehrerer Frame.io-Organisationen sind, wählen Sie die Organisation aus, die Sie für diese Verbindung verwenden möchten.
+
+Die Verbindung wird erstellt.
+
+### Manuelles Erstellen einer Verbindung mit Benutzeranmeldeinformationen
+
+Sie können eine Verbindung mit Benutzeranmeldeinformationen erstellen, indem Sie sich bei Frame.io anmelden oder eine Client-ID oder ein Client-Geheimnis angeben.
+
+Um eine Server-zu-Server-Verbindung zu erstellen, müssen Sie zunächst eine Anwendung in der Adobe Developer Console konfigurieren.
+
+* [Erstellen von Benutzeranmeldeinformationen in der Adobe Developer Console](#create-user-credentials-in-the-adobe-developer-console)
+* [Konfigurieren einer Benutzerauthentifizierungsverbindung](#configure-a-user-authentication-connection)
+
+#### Erstellen von Benutzeranmeldeinformationen in der Adobe Developer Console
+
+Wenn Sie noch keine Server-zu-Server-Anmeldeinformationen für ein Adobe Developer Console-Projekt haben, können Sie sie erstellen.
+
+1. Öffnen Sie die [Adobe Developer Console](https://developer.adobe.com/).
+1. Vorhandenes Projekt in der Adobe Developer Console auswählen, das für diese Verbindung verwendet werden soll
+
+   Oder
+
+   Erstellen Sie ein neues Projekt in der Adobe Developer Console. Anweisungen finden Sie unter [Leeres Projekt erstellen](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty).
+
+1. Klicken Sie auf der Seite „Projektübersicht“ oder auf der Seite Erste Schritte mit Ihrem neuen Projekt auf **API hinzufügen**.
+1. Suchen Sie auf der sich öffnenden Seite nach „Frame.io **&quot; und klicken Sie darauf**.
+1. Wählen Sie auf der Seite Authentifizierungstyp auswählen die Option **Benutzerauthentifizierung** und klicken Sie auf **Weiter**.
+1. Wählen Sie auf der Seite Anmeldedaten für Benutzerauthentifizierung hinzufügen die Option **OAuth Web App** aus und klicken Sie auf **Weiter**.
+1. Geben Sie auf der Seite Anmeldedaten für OAuth-Web-App konfigurieren Folgendes ein:   <table style="table-layout:auto">
+   <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Standard-Umleitungs-URI]</td>
+          <td>
+            <p><code>https://oauth.app.workfrontfusion.com/oauth/cb/frame-io2</code></p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Umleitungs-URI-Muster]</td>
+          <td>
+            <p><code>https://oauth\.app\.workfrontfusion\.com/oauth/cb/frame-io2</code></p>
+          </td>
+        </tr>
+       </tbody>
+    </table>
+1. Klicken Sie **Weiter**.
+1. Klicken Sie **Konfigurierte API speichern**.
+1. Klicken Sie auf der Produktseite auf die Karte für die soeben erstellten Anmeldeinformationen.
+
+   Hier finden Sie Ihre Client-ID und Ihr Client-Geheimnis.
+
+>[!NOTE]
+>
+> Es wird empfohlen, dieses Fenster offen zu lassen, wenn Sie mit der Konfiguration Ihrer Verbindung in Adobe Workfront Fusion beginnen. Sie können die Client-ID kopieren und Client-Geheimnis von dieser Seite abrufen und kopieren, um es in die Verbindungsfelder einzufügen.
+
+
+#### Konfigurieren einer Benutzerauthentifizierungsverbindung
+
+1. Klicken Sie in einem beliebigen Frame.io-Beta **[!UICONTROL Modul]** Hinzufügen“ neben dem Feld Verbindung .
+1. Klicken Sie im Feld Verbindung erstellen auf **Erweiterte Einstellungen anzeigen**.
+
+1. Füllen Sie die folgenden Felder aus:
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Verbindungstyp]</td>
+          <td>
+            <p>Wählen Sie <b>IMS-Benutzerauthentifizierung</b> aus.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Verbindungsname]</td>
+          <td>
+            <p>Geben Sie einen Namen für diese Verbindung ein.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client-ID]</td>
+          <td>Geben Sie Ihre [!DNL Adobe] [!UICONTROL Client ID] ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].<p>Anweisungen zum Erstellen von Anmeldeinformationen finden Sie unter <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Erstellen von Benutzeranmeldeinformationen in der Adobe Developer Console</a> in diesem Artikel.</p></td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
+          <td>Geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].<p>Anweisungen zum Erstellen von Anmeldeinformationen finden Sie unter <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Erstellen von Benutzeranmeldeinformationen in der Adobe Developer Console</a> in diesem Artikel.</p>
+        </tr>
+       </tbody>
+    </table>
+1. Wenn Sie aufgefordert werden, sich bei Ihrem Frame.io-Konto anzumelden, führen Sie diesen Schritt aus.
+1. Wenn Sie Mitglied mehrerer Frame.io-Organisationen sind, wählen Sie die Organisation aus, die Sie für diese Verbindung verwenden möchten.
+
+Die Verbindung wird erstellt.
+
+
+### Erstellen einer Server-zu-Server-Verbindung
+
+Um eine Server-zu-Server-Verbindung zu erstellen, müssen Sie zunächst eine Anwendung in der Adobe Developer Console konfigurieren.
+
+* [Erstellen von Server-zu-Server-Anmeldeinformationen in der Adobe Developer Console](#create-server-to-server-credentials-in-the-adobe-developer-console)
+* [Konfigurieren einer Server-zu-Server-Verbindung](#configure-a-server-to-server-connection)
+
+#### Erstellen von Server-zu-Server-Anmeldeinformationen in der Adobe Developer Console
+
+Wenn Sie noch keine Server-zu-Server-Anmeldeinformationen für ein Adobe Developer Console-Projekt haben, können Sie sie erstellen.
+
+1. Öffnen Sie die [Adobe Developer Console](https://developer.adobe.com/).
+1. Vorhandenes Projekt in der Adobe Developer Console auswählen, das für diese Verbindung verwendet werden soll
+
+   Oder
+
+   Erstellen Sie ein neues Projekt in der Adobe Developer Console. Anweisungen finden Sie unter [Leeres Projekt erstellen](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty).
+
+1. Klicken Sie auf der Seite „Projektübersicht“ oder auf der Seite Erste Schritte mit Ihrem neuen Projekt auf **API hinzufügen**.
+1. Suchen Sie auf der sich öffnenden Seite nach „Frame.io **&quot; und klicken Sie darauf**.
+1. Wählen Sie auf der Seite Authentifizierungstyp auswählen die Option **Server-zu-Server** und klicken Sie auf **Weiter**.
+1. Geben Sie einen Namen für die Anmeldeinformationen ein. Auf diese Weise können Sie die Anmeldeinformationen später im Bereich API-Anmeldeinformationen der Adobe Admin Console identifizieren.
+1. Klicken Sie **Weiter**.
+1. Wählen Sie auf der Seite Produktprofile auswählen das Produktprofil aus, das das Frame.io-Konto enthält, mit dem Sie eine Verbindung herstellen möchten.
+1. Klicken Sie **Konfigurierte API speichern**.
+1. Klicken Sie auf der Produktseite auf die Karte für die soeben erstellten Anmeldeinformationen.
+
+   Hier finden Sie Ihre Client-ID und Ihr Client-Geheimnis.
+
+>[!NOTE]
+>
+> Es wird empfohlen, dieses Fenster offen zu lassen, wenn Sie mit der Konfiguration Ihrer Verbindung in Adobe Workfront Fusion beginnen. Sie können die Client-ID kopieren und Client-Geheimnis von dieser Seite abrufen und kopieren, um es in die Verbindungsfelder einzufügen.
+
+
+#### Konfigurieren einer Server-zu-Server-Verbindung
 
 1. Klicken Sie in einem beliebigen Frame.io-Beta **[!UICONTROL Modul]** Hinzufügen“ neben dem Feld Verbindung .
 
@@ -122,7 +270,7 @@ Der Verbindungsprozess unterscheidet sich je nachdem, ob Sie den alten Frame.io-
         <tr>
           <td role="rowheader">[!UICONTROL Verbindungstyp]</td>
           <td>
-            <p>Wählen Sie aus, ob Sie eine IMS-Benutzerauthentifizierungsverbindung oder eine IMS-Server-zu-Server-Verbindung erstellen möchten.</p>
+            <p>Wählen Sie <b>IMS-Server zu Server</b> aus.</p>
           </td>
         </tr>
         <tr>
@@ -133,15 +281,18 @@ Der Verbindungsprozess unterscheidet sich je nachdem, ob Sie den alten Frame.io-
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client-ID]</td>
-          <td>Geben Sie Ihre [!DNL Adobe] [!UICONTROL Client ID] ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].<p>Anweisungen zum Suchen von Anmeldeinformationen finden Sie unter <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Anmeldeinformationen</a> in der Adobe-Entwicklerdokumentation.</p></td>
+          <td>Geben Sie Ihre [!DNL Adobe] [!UICONTROL Client ID] ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].<p>Anweisungen zum Erstellen von Anmeldeinformationen finden Sie unter <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Erstellen von Server-zu-Server-Anmeldeinformationen in der Adobe Developer Console</a> in diesem Artikel.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-          <td>Geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].<p>Anweisungen zum Suchen von Anmeldeinformationen finden Sie unter <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Anmeldeinformationen</a> in der Adobe-Entwicklerdokumentation.</p>
+          <td>Geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].<p>Anweisungen zum Erstellen von Anmeldeinformationen finden Sie unter <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Erstellen von Server-zu-Server-Anmeldeinformationen in der Adobe Developer Console</a> in diesem Artikel.</p>
         </tr>
        </tbody>
     </table>
 1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+
+
+
 
 ## [!DNL Frame.io] Module und ihre Felder
 
@@ -176,7 +327,7 @@ Dieses Aktionsmodul erstellt ein neues Asset.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -223,7 +374,7 @@ Dieses Aktionsmodul löscht ein angegebenes Asset.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -246,7 +397,7 @@ Dieses Aktionsmodul ruft Asset-Details ab.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -271,7 +422,7 @@ Dieses Suchmodul ruft alle Assets im Ordner des angegebenen Projekts ab.
  </col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -302,7 +453,7 @@ Dieses Aktionsmodul fügt dem Asset einen neuen Kommentar oder eine neue Antwort
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -322,7 +473,7 @@ Dieses Aktionsmodul fügt dem Asset einen neuen Kommentar oder eine neue Antwort
    <td> <p>Wählen Sie den Pfad zum Asset aus, dem Sie einen Kommentar hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Text]</td> 
+   <td role="rowheader">[!UICONTROL-Text]</td> 
    <td> <p> Geben Sie den Textinhalt des Kommentars oder der Antwort ein.</p> </td> 
   </tr> 
   <tr> 
@@ -330,7 +481,7 @@ Dieses Aktionsmodul fügt dem Asset einen neuen Kommentar oder eine neue Antwort
    <td> <p>Geben Sie die Bildnummer im Video ein, mit der der Kommentar verknüpft werden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Seite] </td> 
+   <td role="rowheader">[!UICONTROL-Seite] </td> 
    <td> <p>Wenn es sich bei dem Asset um ein PDF handelt, geben Sie die Seite ein, an die der Kommentar angehängt werden soll, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -345,7 +496,7 @@ Dieses Aktionsmodul löscht einen vorhandenen Kommentar.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -368,7 +519,7 @@ Dieses Aktionsmodul ruft Details des angegebenen Kommentars ab.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -391,7 +542,7 @@ Dieses Suchmodul ruft alle Kommentare des angegebenen Assets ab.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -426,7 +577,7 @@ Dieses Aktionsmodul bearbeitet einen vorhandenen Kommentar.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -438,7 +589,7 @@ Dieses Aktionsmodul bearbeitet einen vorhandenen Kommentar.
    <td> <p>Wählen Sie den Kommentar aus, den Sie aktualisieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Text]</td> 
+   <td role="rowheader">[!UICONTROL-Text]</td> 
    <td> <p> Geben Sie den Textinhalt des Kommentars ein.</p> </td> 
   </tr> 
   <tr> 
@@ -446,7 +597,7 @@ Dieses Aktionsmodul bearbeitet einen vorhandenen Kommentar.
    <td> <p>Geben Sie die Bildnummer im Video ein, mit dem der Kommentar verknüpft ist.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Seite] </td> 
+   <td role="rowheader">[!UICONTROL-Seite] </td> 
    <td> <p>Wenn es sich bei dem Asset um ein PDF handelt, geben Sie die Seite ein, an die der Kommentar angehängt ist, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -463,7 +614,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner in Frame.io.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -503,7 +654,7 @@ Dieses Aktionsmodul erstellt ein neues Projekt in Frame.io.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -530,7 +681,7 @@ Dieses Suchmodul ruft alle Projekte für das angegebene Team ab.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -563,7 +714,7 @@ Dieses Aktionsmodul fügt ein Asset zu einem Freigabe-Link in Frame.io hinzu.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -590,7 +741,7 @@ Dieses Aktionsmodul erstellt einen neuen Freigabe-Link in Frame.io.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -643,7 +794,7 @@ Dieses Aktionsmodul erstellt einen neuen Arbeitsbereich in Frame.io
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -666,7 +817,7 @@ Dieses Modul listet alle Arbeitsbereiche in einem Konto auf.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -692,7 +843,7 @@ Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+    <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Frame.io] finden Sie unter <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Frame.io] mit [!DNL Adobe Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -700,11 +851,11 @@ Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
    <td> <p>Geben Sie einen Pfad relativ zu <code>https://api.frame.io</code> ein. Beispiel: <code> /v4/me</code></p> <p>Hinweis: Eine Liste der verfügbaren Endpunkte finden Sie in der [!DNL Frame.io] API-Referenz.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Methode]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Methode]</p> </td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] Fügt automatisch Autorisierungskopfzeilen hinzu.</p> </td> 
   </tr> 
   <tr> 
