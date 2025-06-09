@@ -4,14 +4,14 @@ description: Der Adobe Workfront Fusion JSONata-Connector bietet ein Modul zur V
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-source-git-commit: 2ba6ca5f5a82aea4979ff8f273bdeef1a8d22a06
+source-git-commit: da3bf98f8254228598372fed8c06d6318718721f
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
 
-# [!UICONTROL JSONata]
+# [!UICONTROL JSONata]-Module
 
 Mit dem [!DNL Adobe Workfront Fusion] [!UICONTROL JSONata]-Connector können Sie JSON-Objekte abfragen. Dieses Modul erfordert keine Verbindung.
 
@@ -44,7 +44,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] kaufen.</li><li>[!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] ist enthalten.</li></ul>
    <p>Oder</p>
    <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
    </td> 
@@ -58,7 +58,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 +++
 
-## JSONata-Modul und seine Felder
+## JSONata-Module und ihre Felder
 
 ### Evaluate
 
@@ -69,15 +69,15 @@ Dieses Aktionsmodul fragt ein JSON-Objekt ab und gibt ein Array zurück.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Expression]</td> 
+   <td role="rowheader">[!UICONTROL-Ausdruck]</td> 
    <td>Geben Sie den Ausdruck ein, den Sie zum Auswerten des JSON-Objekts verwenden möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data] </td> 
+   <td role="rowheader">[!UICONTROL-Daten] </td> 
    <td> Geben Sie das zu überprüfende JSON-Objekt ein.  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringify output] </td> 
+   <td role="rowheader">[!UICONTROL Stringify-Ausgabe] </td> 
    <td> Aktivieren Sie diese Option, um die Ausgabe in eine Zeichenfolge zu konvertieren.  </td> 
   </tr> 
   </tbody>
@@ -105,3 +105,31 @@ Das Ziel besteht darin, ein Array von Namen aus dem folgenden JSON-Objekt zurüc
 Das -Modul gibt ein Array von Namen zurück, die aus dem JSON-Objekt abgerufen wurden.
 
 >[!ENDSHADEBOX]
+
+
+
+### JSONata MCP
+
+Dieses Aktionsmodul generiert JSONata-Ausdrücke durch Analyse der angegebenen Eingabe- und Ausgabeschemata. Sie stellen die Schemata bereit, die das Model Context Protocol (MCP) verwendet, um den Ausdruck zu generieren, der die Eingabe in die Ausgabe umwandelt.
+
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Wählen Sie die Verbindung aus, die Sie für die Verbindung mit dem Large Language Model (LLM) verwenden möchten, das Sie für dieses Modul verwenden möchten.</p> <p>Derzeit wird nur der anthropische API-Schlüssel unterstützt.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Eingabeschema]</td> 
+   <td> <p>Eingabeschema eingeben oder zuordnen, das für diesen Ausdruck verwendet werden soll.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Ausgabeschema]</td> 
+   <td> <p>Geben Sie das Ausgabeschema ein, das für diesen Ausdruck verwendet werden soll, oder ordnen Sie es zu.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
