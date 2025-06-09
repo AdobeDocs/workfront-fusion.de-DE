@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: ad00d7c404701ad526befae9b61c3480f4fb82b6
+source-git-commit: d03c4a68a69ea5302f6898418c3da9edaa404bad
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1791'
 ht-degree: 3%
 
 ---
@@ -203,7 +203,7 @@ ht-degree: 3%
       * [Verbinden von Adobe Workfront Fusion mit Google Services mit aktualisierten Sicherheitsmaßnahmen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-google-with-new-security-measures.md)
       * [Verbinden von Adobe Workfront Fusion mit Google Services mithilfe eines benutzerdefinierten OAuth-Clients](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
       * [Aufrufen der MS Graph REST-API](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md)
-      * [Verbindungen verwalten](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
+      * [Verwalten von Verbindungen](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
    * Konfigurieren der Fehlerbehandlung {#configure-error-handling}
       * [Konfigurieren der Fehlerbehandlung](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
       * [Hinzufügen der Fehlerbehandlung](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
@@ -218,7 +218,7 @@ ht-degree: 3%
       * [Hinzufügen von Anmerkungen zu einem Szenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)
 * Szenarien verwalten {#manage-scenarios}
    * [Szenarien verwalten](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
-   * [Verbindungen verwalten](/help/workfront-fusion/manage-scenarios/manage-connections.md)
+   * [Verwalten von Verbindungen](/help/workfront-fusion/manage-scenarios/manage-connections.md)
    * [Aktivieren oder Deaktivieren eines Szenarios](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
    * [Debuggen eines Szenarios](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
    * [Szenario-Version wiederherstellen](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
@@ -393,6 +393,7 @@ ht-degree: 3%
          * [Markdown-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
          * [Mathematisches Modul](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
          * [MIME-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
+         * [MCP-Modul (Model Context Protocol)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
          * [Text-Parser-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
          * [Tools-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
          * [XML-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
