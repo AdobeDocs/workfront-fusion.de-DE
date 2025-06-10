@@ -4,9 +4,9 @@ description: Mit dem Router-Modul können Sie Ihren Fluss in mehrere Routen verz
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,8 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
    Die Routen sind in der Reihenfolge ihrer Ausführung angeordnet. Die Top-Route wird zuerst ausgeführt.
 
 1. (Optional) Um die Routenreihenfolge zu ändern, klicken Sie mit der rechten Maustaste auf das Router-Modul und wählen **Routen** bestellen“. Ziehen Sie die Routen per Drag-and-Drop in die gewünschte Reihenfolge. Routen werden durch das erste Modul markiert, das dem Router folgt (das erste Modul der Route).
+
+   ![Bestellroute](assets/order-routes.png)
 
 1. Fahren Sie fort [Filter zu einer Route hinzufügen](#add-a-filter-to-a-route).
 

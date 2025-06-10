@@ -4,9 +4,9 @@ description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung und
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
+source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, sodass [!DNL Ad
 ## Szenarios
 
 * Das standardmäßige Ausführungstimeout für das Szenario beträgt **40 Minuten**. Wenn die Ausführung diese Zeitüberschreitung erreicht, unterbricht [!DNL Workfront Fusion] je nach Szenario die Ausführung des Szenarios nach dem nächsten Zyklus oder Vorgang. Dadurch wird das Szenario kurz nach Erreichen der 40-Minuten-Grenze beendet
+
+  Verkettungsszenarien zählen nicht für die Zeitüberschreitung der Szenarioausführung. Ein übergeordnetes Szenario fällt keine Zeit an, während auf die Ausführung eines untergeordneten Szenarios gewartet wird.
 * Die maximale Größe einer Szenario-Blueprint beträgt **5 MB**, wir empfehlen jedoch, die Szenario-Größe unter **3 MB** zu belassen.
 
   Mobile-App-Module, die Daten mit einer großen Anzahl von Feldern erstellen oder aktualisieren, können zu sehr großen Blueprints führen.
