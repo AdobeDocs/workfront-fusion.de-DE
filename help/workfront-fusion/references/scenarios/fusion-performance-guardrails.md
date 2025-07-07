@@ -4,9 +4,9 @@ description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung und
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
+source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,7 @@ Beachten Sie Folgendes bezüglich der Rekursion:
 * **Wenn ein Szenario eine Rekursion verursacht, wird es vom Fusion Engineering-Team deaktiviert, um weitere Leistungsprobleme zu vermeiden.**
 * Da die Rekursion ein Ergebnis des Szenario-Designs ist, müssen Sie Ihre Szenarien so entwerfen, dass das Szenario keine das Szenario Trigger Aktionen enthält.
 
+## TLS
+
+* Fusion unterstützt derzeit standardmäßig TLS Version 1.2.
+* Unternehmen können anfordern, dass TLS Version 1.3 für ihre Fusion-Instanz aktiviert wird.
