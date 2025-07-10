@@ -4,9 +4,9 @@ description: Der Ordner [!UICONTROL Unvollständige Ausführungen] speichert Sze
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
+source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '662'
 ht-degree: 5%
 
 ---
@@ -87,9 +87,11 @@ Weitere Informationen finden Sie unter [Fehler, die zu unvollständigen Ausführ
 
 >[!NOTE]
 >
->Die aktuelle Größenbeschränkung des nicht aufgelösten Ordners „Unvollständige Ausführungen“ pro Organisation beträgt 500 MB. Wenn Ihre Organisation dieses Limit überschreitet, wird möglicherweise der folgende Fehler angezeigt:
+>Die aktuelle Größenbeschränkung des nicht aufgelösten Ordners „Unvollständige Ausführungen“ pro Szenario beträgt 10 MB. Wenn Ihr Szenario diesen Grenzwert überschreitet, wird möglicherweise der folgende Fehler angezeigt:
 >
->`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
+>`DLQ limit per scenario has been exceeded`
+>
+>Teams sind auf insgesamt 500 MB für alle nicht aufgelösten unvollständigen Ausführungen beschränkt.
 >
 >Weitere Informationen finden Sie unter [Datenverlust aktivieren](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) im Artikel Konfigurieren von Szenario-Einstellungen.
 

@@ -4,9 +4,9 @@ description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung und
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 74324fd5f2f68dfbbd0dfe1286c202c246f29d43
+source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 
 ## Unvollständige Ausführungen
 
-* Unvollständige Ausführungen sind auf eine Gesamtgröße von **500 MB** beschränkt. Wenn das Limit von 500 MB erreicht wird, werden keine unvollständigen Ausführungen mehr gespeichert.
+* Unvollständige Ausführungen sind auf eine Gesamtgröße von *10 MB** Szenario beschränkt. Wenn das Limit von 10 MB erreicht wird, werden für dieses Szenario keine weiteren unvollständigen Ausführungen gespeichert.
+* Unvollständige Ausführungen sind auf eine Gesamtgröße von **500 MB** pro Team beschränkt. Wenn das Limit von 500 MB erreicht wird, werden für dieses Team keine unvollständigen Ausführungen mehr gespeichert.
 
 ## Weitere Zustellversuche
 
