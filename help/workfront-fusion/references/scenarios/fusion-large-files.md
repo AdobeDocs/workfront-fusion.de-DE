@@ -4,9 +4,9 @@ description: Unterstützung für große Dateien ist derzeit für die Workfront- 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,11 @@ Um größere Dateien zu verarbeiten, müssen Ihre Szenarien aktualisiert werden.
 ## Connectoren, die große Dateien unterstützen
 
 Derzeit unterstützen die folgenden Connectoren große Dateien.
+
+>[!NOTE]
+>
+>* Wenn eine Datei mit einem Modul heruntergeladen wird, das große Dateien unterstützt, und dann an ein Modul übergeben wird, das große Dateien nicht unterstützt, kann dieses Modul die Datei nicht erfolgreich verarbeiten. Große Dateien müssen während des gesamten Workflows ausschließlich mit unterstützten Modulen verarbeitet werden.
+>* Module, die keine großen Dateien unterstützen, können Dateien mit einer Größe von bis zu 200 MB verarbeiten.
 
 * Workfront
    * Dokument hochladen
