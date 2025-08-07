@@ -5,9 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 454e06527fe1a624f36be3b7f3682ff49a61d42d
+exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
+source-git-commit: efab436edce8a5253b147c77b87a005f6efc63d0
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -105,6 +106,7 @@ So konfigurieren Sie das Modul „Untergeordnetes Szenario aufrufen“
    Die im Trigger -Modul des untergeordneten Szenarios konfigurierten Felder werden im Modul „Untergeordnetes Szenario aufrufen“ angezeigt.
 
 1. Geben Sie die Informationen, die an das untergeordnete Szenario übergeben werden sollen, in das Modul „Untergeordnetes Szenario aufrufen“ ein oder mappen Sie es.
+1. (Bedingt) Wenn Sie möchten, dass das übergeordnete Szenario seine Ausführung fortsetzt, ohne auf eine Antwort des untergeordneten Szenarios zu warten, aktivieren Sie die Option **Auslösen und vergessen** .
 1. Klicken Sie **OK**, um das Modul zu speichern.
 
 >[!NOTE]
@@ -128,4 +130,3 @@ So konfigurieren Sie das Modul Responder hinzufügen:
    Anweisungen zum Erstellen einer Datenstruktur finden Sie unter [Datenstrukturen](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
 1. Klicken Sie **OK**, um das Modul zu speichern.
-
