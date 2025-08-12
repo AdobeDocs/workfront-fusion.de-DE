@@ -5,7 +5,7 @@ description: Sie können bestimmte Einstellungen für Szenarien im Bedienfeld Sz
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: a7411649c0d65956552f40a7710315536755dc65
+source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -137,7 +137,7 @@ Weitere Informationen zu Warnungen finden Sie unter [Fehlertypen](/help/workfron
 
 ### [!UICONTROL Automatische Bestätigung]
 
-Die Einstellungen [!UICONTROL Automatische &#x200B;]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
+Die Einstellungen [!UICONTROL Automatische ]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
 
 ### Maximale Zyklenanzahl
 
@@ -191,7 +191,7 @@ Weitere Informationen zu dieser Seite finden Sie unter [Szenariodetails](/help/w
 
 ### Anzahl aufeinander folgender Fehler
 
-Definiert die maximale Anzahl aufeinander folgender Ausführungsversuche, bevor die Ausführung eines Szenarios deaktiviert wird (ohne `DataError`, `DuplicateDataError` und `ConnectionError`).
+Definiert die maximale Anzahl aufeinander folgender Ausführungsversuche, bevor die Ausführung eines Szenarios deaktiviert wird (ohne `DataError`, `DuplicateDataError`, `ModuleTimeoutError` und `ConnectionError`).
 
 Weitere Informationen zu Fehlern finden Sie unter [Fehlertypen](/help/workfront-fusion/references/errors/error-processing.md).
 
