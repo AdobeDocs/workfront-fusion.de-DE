@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: 14960edd32497a06620a9a039632a58ebd246c2b
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1823'
-ht-degree: 3%
+source-wordcount: '1837'
+ht-degree: 4%
 
 ---
 
@@ -16,6 +16,8 @@ ht-degree: 3%
 * Fusionsfreigabeaktivität {#fusion-release-activity}
    * [Adobe Workfront Fusion-Versionsaktivität](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion-Versionen - 2025 {#fusion-releases-2025}
+      * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 18. August 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
+      * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 31. Juli 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 7. Juli 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-7.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 6. Juni 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-9.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 23. Juni 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-23.md)
@@ -169,7 +171,7 @@ ht-degree: 3%
          * [Anzeigen oder Bearbeiten von Benutzerrollen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
          * [Löschen von Benutzern in der Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
    * Vorlagen verwalten {#manage-templates-admin}
-      * [Vorlagen verwalten](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
+      * [Verwalten von Vorlagen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
       * [Vorlagen genehmigen oder ablehnen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
       * [Vorlagen bearbeiten](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
 * Erstellen von Szenarien {#create-scenarios}

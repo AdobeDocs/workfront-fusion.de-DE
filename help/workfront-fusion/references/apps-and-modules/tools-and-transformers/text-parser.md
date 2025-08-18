@@ -4,9 +4,9 @@ description: Sie können das Text-Parser-Tool verwenden, um Text zur Verwendung 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ Analysiert Elemente aus Text anhand des angegebenen Musters.
   </tr> 
   <tr> 
    <td>[!UICONTROL Muster]</td> 
-   <td> <p>Wählen Sie aus dem Text das Muster aus, das die zu analysierenden Elemente enthält.</p> </td> 
+   <td> <p>Wählen Sie aus dem Text das Muster aus, das die zu analysierenden Elemente enthält.</p> <p>Um einen benutzerdefinierten regulären Ausdruck einzugeben, wählen Sie Benutzerdefiniert aus der Liste und geben Sie dann den benutzerdefinierten Ausdruck im benutzerdefinierten Regex-Feld ein.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Doppelte Vorkommen ignorieren]</td> 
@@ -200,7 +200,7 @@ Eine Diskussion über reguläre Ausdrücke würde den Rahmen dieses Artikels spr
    <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass das Modul das Szenario nicht stoppt, wenn es keine Ergebnisse zurückgibt.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Text] </td> 
+   <td>[!UICONTROL-Text] </td> 
    <td> <p>Geben Sie den Text ein, der dem Muster entsprechen soll, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -239,7 +239,7 @@ Durchsucht den eingegebenen Text nach einem angegebenen Wert oder regulären Aus
    <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Punkt (.) mit Zeilenumbruchzeichen (<code>\n</code>) übereinstimmt.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Text] </td> 
+   <td>[!UICONTROL-Text] </td> 
    <td> <p>Geben Sie den zu suchenden Text ein.</p> </td> 
   </tr> 
  </tbody> 
