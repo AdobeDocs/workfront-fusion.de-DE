@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
+source-git-commit: f28dd04df0a527a35a9ef82fa92fc07a363a7144
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1840'
 ht-degree: 4%
 
 ---
@@ -285,7 +285,7 @@ ht-degree: 4%
          * [Datums- und Uhrzeitfunktionen](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
          * [Token zur Formatierung von Datum und Uhrzeit](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
          * [Token zum Parsen von Datum und Uhrzeit](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
-         * [Zeichenfolgen-Funktionen](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)
+         * [Zeichenfolgenfunktionen](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)
          * [Mathematische Funktionen](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)
          * [Mathematische Variablen](/help/workfront-fusion/references/mapping-panel/functions/math-variables.md)
          * [Array-Funktionen](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md)
@@ -360,7 +360,8 @@ ht-degree: 4%
          * [Google Slides-Module](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
          * [Google Team Drive-Module](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
          * [HubSpot CRM-Module](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
-         * [Jira Software-Module](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
+         * [Jira-Module](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)
+         * [Jira Software-Module (veraltet)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
          * [MariaDB-Module](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/mariadb-modules.md)
          * [Microsoft 365-Kalendermodule](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-calendar-modules.md)
          * [Microsoft 356 E-Mail-Module](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
