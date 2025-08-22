@@ -23,7 +23,7 @@ Um verfügbare Vorlagen anzuzeigen, klicken Sie auf das Symbol **Vorlagen** ![Vo
 
 Diese Vorlagen automatisieren Workfront-Prozesse und -Workflows.
 
-### [!BADGE Neu! ]{type=Informative} Workfront: Automatische Anpassung der Zeitleiste eines Projekts, wenn Aufgaben vorzeitig abgeschlossen werden
+### [!BADGE Neu! &#x200B;]{type=Informative} Workfront: Automatische Anpassung der Zeitleiste eines Projekts, wenn Aufgaben vorzeitig abgeschlossen werden
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Wenn Ihr Team Schwierigkeiten hat, die Dynamik aufrechtzuerhalten, weil Projektz
 
 Diese Fusion-Vorlage automatisiert diesen Prozess. Wenn eine Aufgabe frühzeitig abgeschlossen wird, werden alle abhängigen (Nachfolger-)Aufgaben automatisch so geplant, dass sie früher beginnen, was Ihrem Team hilft, schneller zu arbeiten und agil zu bleiben.
 
-### [!BADGE Neu! ]{type=Informative} HTTP>CSV>WF - Erstellen einer Liste von Ereignisuntergruppen nach Domain und Ebene und Exportieren in CSV
+### [!BADGE Neu! &#x200B;]{type=Informative} HTTP>CSV>WF - Erstellen einer Liste von Ereignisuntergruppen nach Domain und Ebene und Exportieren in CSV
 
 Laden Sie Informationen zum Ereignisabonnement herunter, erstellen Sie eine CSV-Datei und laden Sie die Datei in Workfront hoch.
 
 <!--New August 8, 2025-->
 
-### [!BADGE Neu! ]{type=Informative} Workfront-Pinnwände - Löschen archivierter Karten aus der angegebenen Spalte (On-Demand)
+### [!BADGE Neu! &#x200B;]{type=Informative} Workfront-Pinnwände - Löschen archivierter Karten aus der angegebenen Spalte (On-Demand)
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Diese Vorlage erfasst wöchentlich montags um 6 Uhr ET eine Projekt-Grundlinie f
 
 Diese Vorlagen automatisieren Workflows, die Workfront mit Workfront Proof kombinieren.
 
-### [!BADGE Neu! ]{type=Informative} Workfront > Workfront Proof - Korrekturabzug-Benutzerrolle in „Schreibgeschützt“ ändern und Korrekturabzug nach Projektabschluss sperren
+### [!BADGE Neu! &#x200B;]{type=Informative} Workfront > Workfront Proof - Korrekturabzug-Benutzerrolle in „Schreibgeschützt“ ändern und Korrekturabzug nach Projektabschluss sperren
 
 <!--New March 12, 2025-->
 

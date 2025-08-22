@@ -137,7 +137,7 @@ Weitere Informationen zu Warnungen finden Sie unter [Fehlertypen](/help/workfron
 
 ### [!UICONTROL Automatische Bestätigung]
 
-Die Einstellungen [!UICONTROL Automatische ]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
+Die Einstellungen [!UICONTROL Automatische &#x200B;]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
 
 ### Maximale Zyklenanzahl
 

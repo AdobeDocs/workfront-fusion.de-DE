@@ -71,7 +71,7 @@ Verbindungsfehler sind einer der häufigsten Fehler. Sie werden in der Regel dur
 * Tritt der Fehler im ersten Modul auf, wird die Ausführung des Szenarios mit einer Warnmeldung beendet. Workfront Fusion versucht dann wiederholt, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, deaktiviert Workfront Fusion das Szenario.
 * Wenn der Verbindungsfehler auf einem anderen Modul als dem ersten auftritt, hängen die nachfolgenden Schritte von der Option Speichern unvollständiger Ausführungen zulassen in den erweiterten Einstellungen des Szenarios ab:
 
-   * Wenn diese Option aktiviert ist, wird die Ausführung des Szenarios in den Ordner &quot;[!UICONTROL  Ausführungen“ verschoben] in dem Workfront Fusion wiederholt versucht, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, verbleibt die Ausführung im Ordner Unvollständige Ausführungen, bis sie vom Benutzer manuell behoben wird.
+   * Wenn diese Option aktiviert ist, wird die Ausführung des Szenarios in den Ordner &quot;[!UICONTROL &#x200B; Ausführungen“ verschoben] in dem Workfront Fusion wiederholt versucht, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, verbleibt die Ausführung im Ordner Unvollständige Ausführungen, bis sie vom Benutzer manuell behoben wird.
 
      Weitere Informationen zu unvollständigen Ausführungen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
    * Wenn diese Option deaktiviert ist, endet die Ausführung des Szenarios mit einem Fehler und einer darauf folgenden Rollback-Phase. Workfront Fusion versucht dann wiederholt, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, deaktiviert Workfront Fusion das Szenario.
@@ -94,7 +94,7 @@ Die zunehmenden Zeitintervalle verhindern, dass häufig ausgeführte Szenarien V
 
 **Beispiel:**
 
-Ein Szenario enthält den [!DNL Google Sheets] Trigger [!UICONTROL Zeilen ]. [!DNL Google Sheets] ist aufgrund von Wartungsarbeiten beim Starten von Workfront Fusion für 30 Minuten nicht verfügbar und kann daher keine neuen Zeilen abrufen. Das Szenario stoppt und versucht es in 10 Minuten erneut. Da [!DNL Google Sheets] immer noch nicht verfügbar ist, kann Workfront Fusion weiterhin keine Informationen zu neuen Zeilen abrufen. Die nächste Ausführung des Szenarios ist in 1 Stunde geplant. [!DNL Google Sheets] ist derzeit wieder verfügbar und das Szenario wird erfolgreich ausgeführt.
+Ein Szenario enthält den [!DNL Google Sheets] Trigger [!UICONTROL Zeilen &#x200B;]. [!DNL Google Sheets] ist aufgrund von Wartungsarbeiten beim Starten von Workfront Fusion für 30 Minuten nicht verfügbar und kann daher keine neuen Zeilen abrufen. Das Szenario stoppt und versucht es in 10 Minuten erneut. Da [!DNL Google Sheets] immer noch nicht verfügbar ist, kann Workfront Fusion weiterhin keine Informationen zu neuen Zeilen abrufen. Die nächste Ausführung des Szenarios ist in 1 Stunde geplant. [!DNL Google Sheets] ist derzeit wieder verfügbar und das Szenario wird erfolgreich ausgeführt.
 
 >[!ENDSHADEBOX]
 
@@ -147,7 +147,7 @@ Weitere Informationen finden Sie unter [Anzahl aufeinander folgender Fehler](/he
 
 **Beispiel:**
 
-In einem Szenario ist der Workfront-Trigger [!UICONTROL Datensatz ]) so eingestellt, dass auf Dokumente geachtet wird. Das Szenario wird ausgeführt, während Sie ein großes Dokument hochladen, z. B. ein langes Video. Da [!UICONTROL Workfront Fusion] versucht, das Video herunterzuladen, während es noch auf Workfront hochgeladen wird, endet das Szenario mit der `IncompleteDataError`.
+In einem Szenario ist der Workfront-Trigger [!UICONTROL Datensatz &#x200B;]) so eingestellt, dass auf Dokumente geachtet wird. Das Szenario wird ausgeführt, während Sie ein großes Dokument hochladen, z. B. ein langes Video. Da [!UICONTROL Workfront Fusion] versucht, das Video herunterzuladen, während es noch auf Workfront hochgeladen wird, endet das Szenario mit der `IncompleteDataError`.
 
 >[!ENDSHADEBOX]
 
@@ -165,7 +165,7 @@ Weitere Informationen finden Sie unter [Anzahl aufeinander folgender Fehler](/he
 >[!NOTE]
 >
 >Wenn ein Szenario mit einem sofortigen Trigger beginnt und auf diesen Fehler stößt, wird die Einstellung [!UICONTROL Maximale Anzahl aufeinander folgender Fehler] ignoriert und das Szenario wird sofort deaktiviert.
->>Weitere Informationen finden Sie unter [Instant Trigger](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) im Artikel Module - Übersicht.
+>&#x200B;>Weitere Informationen finden Sie unter [Instant Trigger](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) im Artikel Module - Übersicht.
 
 ## Inkonsistenzfehler
 

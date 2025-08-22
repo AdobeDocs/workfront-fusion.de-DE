@@ -113,7 +113,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p> Wählen Sie den Datenspeicher aus, in dem Sie einen Datensatz erstellen möchten, oder fügen Sie ihn hinzu. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Schlüssel] </td> 
+   <td>[!UICONTROL -Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul hinzufügen oder ersetzen soll. Der Schlüssel kann später zum Abrufen des Datensatzes verwendet werden. Wenn Sie dieses Feld leer lassen, wird automatisch ein Schlüssel generiert.</p> </td> 
   </tr> 
   <tr> 
@@ -121,7 +121,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Aktivieren Sie diese Option, um den Datensatz zu überschreiben. Der Datensatz, den Sie überschreiben möchten, muss im obigen Feld Schlüssel angegeben werden.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Eintrag] </td> 
+   <td>[!UICONTROL -Eintrag] </td> 
    <td> <p>Geben Sie die gewünschten Werte in die Felder des Datensatzes ein.</p> </td> 
   </tr> 
  </tbody> 
@@ -142,7 +142,7 @@ Sie geben den Datenspeicher und den Schlüssel des Datensatzes an.
    <td> <p>Wählen Sie den Datenspeicher aus, den Sie auf das Vorhandensein des Datensatzes überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Schlüssel] </td> 
+   <td>[!UICONTROL -Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, auf dessen Existenz das Modul prüfen soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -184,7 +184,7 @@ Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle be
    <td> <p>Wählen Sie den Datenspeicher aus, den Sie auf das Vorhandensein des Datensatzes überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Schlüssel] </td> 
+   <td>[!UICONTROL -Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul löschen soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -224,7 +224,7 @@ Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle be
    <td> <p> Wählen Sie den Datenspeicher aus, aus dem Sie einen Datensatz abrufen möchten</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Schlüssel] </td> 
+   <td>[!UICONTROL -Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul abrufen soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -252,7 +252,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL sort]</p> </td> 
-   <td> <p style="font-weight: normal;">Füllen Sie für jedes Feld, nach dem Sie sortieren möchten, die folgenden Felder aus:</p> <p style="font-weight: bold;">[!UICONTROL-Schlüssel]</p> <p>Wählen Sie den Spaltennamen aus, nach dem die Ergebnisse sortiert werden sollen.</p> <p style="font-weight: bold;">[!UICONTROL-Reihenfolge]</p> <p>Wählen Sie aus, ob die Ergebnisse in auf- oder absteigender Reihenfolge sortiert werden sollen.</p> </td> 
+   <td> <p style="font-weight: normal;">Füllen Sie für jedes Feld, nach dem Sie sortieren möchten, die folgenden Felder aus:</p> <p style="font-weight: bold;">[!UICONTROL -Schlüssel]</p> <p>Wählen Sie den Spaltennamen aus, nach dem die Ergebnisse sortiert werden sollen.</p> <p style="font-weight: bold;">[!UICONTROL -Reihenfolge]</p> <p>Wählen Sie aus, ob die Ergebnisse in auf- oder absteigender Reihenfolge sortiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
@@ -284,7 +284,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p> Wählen Sie den Datenspeicher aus, in dem Sie einen Datensatz erstellen möchten, oder fügen Sie ihn hinzu. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Schlüssel] </td> 
+   <td>[!UICONTROL -Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul aktualisieren soll.</p> </td> 
   </tr> 
   <tr> 
@@ -292,7 +292,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Aktivieren Sie diese Option, um einen neuen Datensatz zu erstellen, wenn der Datensatz mit dem angegebenen Schlüssel noch nicht vorhanden ist.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Eintrag]</td> 
+   <td>[!UICONTROL -Eintrag]</td> 
    <td> <p> Geben Sie die gewünschten Werte in die Felder des Datensatzes ein, die Sie aktualisieren möchten.</p> </td> 
   </tr> 
  </tbody> 

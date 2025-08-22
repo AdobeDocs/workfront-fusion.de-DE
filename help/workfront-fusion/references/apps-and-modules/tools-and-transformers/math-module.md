@@ -65,7 +65,7 @@ Sie können dieses Modul verwenden, um mathematische Ausdrücke einfach zu berec
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ausdruck]</td> 
+   <td role="rowheader">[!UICONTROL -Ausdruck]</td> 
    <td> <p>Geben Sie den Ausdruck ein, den das Modul auswerten soll. </p> <p> </p> <p>Informationen zum Schreiben eines mathematischen Ausdrucks finden Sie unter <a href="https://mathjs.org/docs/expressions/syntax.html">Ausdruckssyntax</a> unter mathjs.org.</p> </td> 
   </tr> 
  </tbody> 

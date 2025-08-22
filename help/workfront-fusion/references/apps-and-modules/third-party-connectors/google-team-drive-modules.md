@@ -37,7 +37,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenz*</td>
-   <td> <p>[!UICONTROL-Plan], [!UICONTROL-Arbeit]</p> </td> 
+   <td> <p>[!UICONTROL -Plan], [!UICONTROL -Arbeit]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
@@ -87,7 +87,7 @@ Gibt Dateidetails zurück, wenn eine neue Datei im angegebenen Ordner hinzugefü
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Team Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -95,7 +95,7 @@ Gibt Dateidetails zurück, wenn eine neue Datei im angegebenen Ordner hinzugefü
    <td> <p> Wählen Sie das freigegebene Laufwerk aus, das Sie überwachen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Wählen Sie den Ordner im freigegebenen Laufwerk aus.</p> </td> 
   </tr> 
   <tr> 
@@ -149,7 +149,7 @@ Lädt eine Datei auf das angegebene freigegebene Laufwerk hoch.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Team Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -157,7 +157,7 @@ Lädt eine Datei auf das angegebene freigegebene Laufwerk hoch.
    <td> <p>Wählen Sie das freigegebene Laufwerk aus, auf das Sie eine Datei hochladen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Wählen Sie den Ordner im freigegebenen Laufwerk aus.</p> </td> 
   </tr> 
   <tr> 
@@ -184,7 +184,7 @@ Ermöglicht das Ändern des Dateinamens und/oder des Dateiinhalts.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Team Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -192,7 +192,7 @@ Ermöglicht das Ändern des Dateinamens und/oder des Dateiinhalts.
    <td> <p> Wählen Sie das freigegebene Laufwerk aus, das die zu aktualisierende Datei enthält.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Wählen Sie den Ordner im freigegebenen Laufwerk aus.</p> </td> 
   </tr> 
   <tr> 
@@ -223,7 +223,7 @@ Kopiert eine angegebene Datei in den ausgewählten Ordner.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Team Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -231,7 +231,7 @@ Kopiert eine angegebene Datei in den ausgewählten Ordner.
    <td> <p> Wählen Sie das freigegebene Laufwerk aus, das die zu kopierende Datei enthält.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Wählen Sie den Zielordner aus, in den Sie die Datei kopieren möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -254,7 +254,7 @@ Löscht eine angegebene Datei.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Team Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -273,7 +273,7 @@ Verschiebt eine angegebene Datei in den Papierkorb.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Team Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -292,7 +292,7 @@ Ruft Details zur angegebenen Datei ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Team Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -327,7 +327,7 @@ Ruft Dateien- und/oder Ordnerdetails basierend auf dem Suchbegriff ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Team Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -335,7 +335,7 @@ Ruft Dateien- und/oder Ordnerdetails basierend auf dem Suchbegriff ab.
    <td> <p> Wählen Sie das freigegebene Laufwerk aus, dessen Dateien aufgelistet werden sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Wählen Sie den Ordner aus, aus dem Sie Dateien auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -343,7 +343,7 @@ Ruft Dateien- und/oder Ordnerdetails basierend auf dem Suchbegriff ab.
    <td> <p>Wählen Sie die Art der Suche aus, die Sie durchführen möchten - siehe unten.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL-Abfrage]</p> </td> 
+   <td> <p>[!UICONTROL -Abfrage]</p> </td> 
    <td> 
     <ul> 
      <li style="font-weight: bold;"> <p>[!UICONTROL Innerhalb von Dateinamen suchen]</p> <p style="font-weight: normal;">Geben Sie den Dateinamen (einschließlich der Dateierweiterung) ein, wenn die Option [!UICONTROL Suche nach exaktem Begriff] ausgewählt ist, oder geben Sie den Teil des Namens ein, wenn die Option [!UICONTROL Suche nach Namen, die den gesuchten Begriff enthalten] ausgewählt ist.</p> </li> 
@@ -371,7 +371,7 @@ Erstellt einen neuen Ordner.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Team Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -379,7 +379,7 @@ Erstellt einen neuen Ordner.
    <td> <p> Wählen Sie das freigegebene Laufwerk aus, auf dem Sie einen Ordner erstellen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Wählen Sie den Ordner aus, in dem Sie einen Ordner erstellen möchten.</p> </td> 
   </tr> 
   <tr> 

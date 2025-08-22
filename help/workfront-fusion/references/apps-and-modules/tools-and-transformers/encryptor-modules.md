@@ -74,7 +74,7 @@ Beim Konfigurieren von [!UICONTROL Encryptor]-Modulen werden die folgenden Felde
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL-Schlüssel]</td>
+        <td>[!UICONTROL -Schlüssel]</td>
         <td>Wählen Sie den Schlüssel aus, den das Modul verwenden soll. Um einen Schlüssel zu erstellen, klicken Sie <b>Hinzufügen</b> und geben Sie den Namen, den Schlüssel und den Kodierungstyp des Schlüssels ein.</td>
     </tr>
     <tr>
@@ -142,7 +142,7 @@ Beim Konfigurieren von [!UICONTROL Encryptor]-Modulen werden die folgenden Felde
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL-Schlüssel]</td>
+        <td>[!UICONTROL -Schlüssel]</td>
         <td>Wählen Sie den Schlüssel aus, den das Modul verwenden soll. Um einen Schlüssel zu erstellen, klicken Sie <b>Hinzufügen</b> und geben Sie den Namen, den Schlüssel und den Kodierungstyp des Schlüssels ein.</td>
     </tr>
    <tr>
@@ -179,7 +179,7 @@ Beim Konfigurieren von [!UICONTROL Encryptor]-Modulen werden die folgenden Felde
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL-Schlüssel]</td>
+        <td>[!UICONTROL -Schlüssel]</td>
         <td>Wählen Sie den Schlüssel aus, den das Modul verwenden soll. Um einen Schlüssel zu erstellen, klicken Sie <b>Hinzufügen</b> und geben Sie den Namen, den Schlüssel und den Kodierungstyp des Schlüssels ein.</td>
     </tr>
     <tr>
@@ -236,7 +236,7 @@ Beim Konfigurieren von [!UICONTROL Encryptor]-Modulen werden die folgenden Felde
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL-Schlüssel]</td>
+        <td>[!UICONTROL -Schlüssel]</td>
         <td>Wählen Sie den Schlüssel aus, den das Modul verwenden soll. Um einen Schlüssel zu erstellen, klicken Sie <b>Hinzufügen</b> und geben Sie den Namen, den Schlüssel und den Kodierungstyp des Schlüssels ein.</td>
     </tr>
    <tr>

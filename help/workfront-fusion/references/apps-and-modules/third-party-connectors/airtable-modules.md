@@ -30,7 +30,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenz*</td>
-   <td> <p>[!UICONTROL-Plan], [!UICONTROL-Arbeit]</p> </td> 
+   <td> <p>[!UICONTROL -Plan], [!UICONTROL -Arbeit]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 

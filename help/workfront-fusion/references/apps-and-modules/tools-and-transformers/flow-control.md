@@ -71,7 +71,7 @@ Sie können ein [!UICONTROL Repeater]-Modul verwenden, um eine Aufgabe eine best
         <td>Geben Sie die Anzahl der Wiederholungen des Moduls ein oder mappen Sie sie. Diese Zahl muss größer oder gleich 0 und kleiner oder gleich 10.000 sein.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL-Schritt]</td>
+        <td>[!UICONTROL -Schritt]</td>
         <td>Dies ist die Zahl, um die das Modul den Wert erhöht. Der Standardwert lautet 1.</td>
     </tr>
 </table>
@@ -106,7 +106,7 @@ Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E
 
 >[!NOTE]
 >
->Die Anzahl der Wiederholungen wird nicht durch den Wert von `i` bestimmt, wie dies bei der Programmierung in einer Schleife der Fall wäre. Das Modul wiederholt die im Feld „Wiederholungen[!UICONTROL  angegebenen ]. Der Wert `i` ändert sich mit jeder Iteration des [!DNL repeater] Moduls und kann späteren Modulen zugeordnet werden. Im obigen Beispiel wird der Wert von `i` der „Hello“-Nachricht zugeordnet, was zu Meldungen mit dem Wert „Hello 1“, „Hello 2“ usw. führt.
+>Die Anzahl der Wiederholungen wird nicht durch den Wert von `i` bestimmt, wie dies bei der Programmierung in einer Schleife der Fall wäre. Das Modul wiederholt die im Feld „Wiederholungen[!UICONTROL &#x200B; angegebenen &#x200B;]. Der Wert `i` ändert sich mit jeder Iteration des [!DNL repeater] Moduls und kann späteren Modulen zugeordnet werden. Im obigen Beispiel wird der Wert von `i` der „Hello“-Nachricht zugeordnet, was zu Meldungen mit dem Wert „Hello 1“, „Hello 2“ usw. führt.
 
 >[!ENDSHADEBOX]
 

@@ -99,11 +99,11 @@ Sie können direkt aus einem [!DNL MariaDB]-Modul heraus eine Verbindung zu Ihre
       <td>Der Standard-Port ist 3306. Wenn Sie einen nicht standardmäßigen Port verwenden, setzen Sie diese Nummer auf Ihren Port. </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Datenbank ]</td> 
+      <td role="rowheader">[!UICONTROL -Datenbank &#x200B;]</td> 
       <td>Geben Sie den Namen der Datenbank ein, mit der Sie interagieren möchten.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Benutzer]</td> 
+      <td role="rowheader">[!UICONTROL -Benutzer]</td> 
       <td>Geben Sie Ihren Benutzernamen ein.</td> 
      </tr> 
      <tr> 
@@ -132,11 +132,11 @@ Dieses Aktionsmodul ruft basierend auf einer von Ihnen angegebenen Abfrage Infor
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td>Anweisungen zum Verbinden Ihres [!DNL MariaDB]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL MariaDB] mit Workfront Fusion</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
    <td> <p>Geben Sie die SQL-Abfrage ein, mit der das Modul Daten abrufen soll.</p> <p>Wichtig: In der Abfrage verwendete Variablen werden nicht bereinigt. Stellen Sie sicher, dass Sie Variablen ordnungsgemäß bereinigen, um SQL-Injections zu verhindern.</p> </td> 
   </tr> 
  </tbody> 
@@ -151,11 +151,11 @@ Dieses Modul liest Einträge aus Ihrer Datenbank.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td>Anweisungen zum Verbinden Ihres [!DNL MariaDB]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL MariaDB] mit Workfront Fusion</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Tabelle]</td> 
+   <td role="rowheader">[!UICONTROL -Tabelle]</td> 
    <td> <p>Wählen Sie die Tabelle aus, die die Datensätze enthält, die Sie lesen möchten.</p> </td> 
   </tr> 
   <tr> 

@@ -79,10 +79,10 @@ Weitere Informationen finden Sie unter [Verbindung - Übersicht](/help/workfront
 
 Ein [!UICONTROL Aggregator] führt Daten in einer Sammlung zusammen. Ein Beispiel dafür sind Dateien, die in ein ZIP-Archiv komprimiert und als E-Mail-Anhang gesendet werden.
 
-Weitere Informationen finden Sie [[!UICONTROL  Modul ]Aggregator](/help/workfront-fusion/references/modules/aggregator-module.md).
+Weitere Informationen finden Sie [[!UICONTROL &#x200B; Modul &#x200B;]Aggregator](/help/workfront-fusion/references/modules/aggregator-module.md).
 
 ## Was passiert, wenn ich Workfront Fusion eine E-Mail verarbeiten lasse, die mehr als einen Anhang enthält?
 
 ### Antwort
 
-Wenn Sie das Modul [!UICONTROL E]Mail[!UICONTROL  zum Abrufen von ] verwenden, wird jeder Anhang einzeln über die übrigen Module im Szenario gesendet. Ähnliche Module sind auch in anderen Apps verfügbar, die mehrere Dateien gleichzeitig erhalten.
+Wenn Sie das Modul [!UICONTROL E]Mail[!UICONTROL &#x200B; zum Abrufen von &#x200B;] verwenden, wird jeder Anhang einzeln über die übrigen Module im Szenario gesendet. Ähnliche Module sind auch in anderen Apps verfügbar, die mehrere Dateien gleichzeitig erhalten.

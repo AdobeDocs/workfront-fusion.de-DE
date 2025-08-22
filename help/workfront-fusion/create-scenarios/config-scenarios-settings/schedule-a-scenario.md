@@ -86,7 +86,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Ausführungsszenario]</td> 
+      <td role="rowheader">[!UICONTROL -Ausführungsszenario]</td> 
       <td> <p>Wählen Sie die Häufigkeit aus, mit der Sie das Szenario ausführen möchten, und wählen Sie dann das Intervall aus.</p> 
        <ul> 
         <li> <p><strong>[!UICONTROL in regelmäßigen Abständen]</strong> </p> <p>Geben Sie die Anzahl der Minuten zwischen den Ausführungen ein. Der Standardwert ist 15 Minuten.</p> </li> 
@@ -99,14 +99,14 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Erweiterte Planung]</td> 
-      <td>Sie können bestimmte Zeitintervalle definieren, in denen Ihr Szenario ausgeführt werden soll. Sie können Tageszeitintervalle, Wochentage oder Monate angeben. Klicken Sie für jedes Intervall auf <strong>[!UICONTROL Hinzufügen]</strong> und füllen Sie die Felder wie im Feld [!UICONTROL-Ausführungsszenario] beschrieben aus.</td> 
+      <td>Sie können bestimmte Zeitintervalle definieren, in denen Ihr Szenario ausgeführt werden soll. Sie können Tageszeitintervalle, Wochentage oder Monate angeben. Klicken Sie für jedes Intervall auf <strong>[!UICONTROL Hinzufügen]</strong> und füllen Sie die Felder wie im Feld [!UICONTROL -Ausführungsszenario] beschrieben aus.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Start]</td> 
       <td>Geben Sie Datum und Uhrzeit ein, nach denen das Szenario ausgeführt werden soll. Verwenden Sie den <code>MM/DD/YYYY h:mm A</code>. Beispiel: <code>06/25/2019 11:00 PM</code>.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Ende]</td> 
+      <td role="rowheader">[!UICONTROL -Ende]</td> 
       <td>Geben Sie Datum und Uhrzeit ein, vor der das Szenario ausgeführt werden soll. Verwenden Sie den <code>MM/DD/YYYY h:mm A</code>. Beispiel: <code>06/25/2019 11:00 PM</code>.</td> 
      </tr> 
     </tbody> 

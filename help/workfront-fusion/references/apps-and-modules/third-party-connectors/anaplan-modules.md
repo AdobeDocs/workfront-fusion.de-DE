@@ -184,7 +184,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz des ausgewählten 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit Workfront </a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -220,7 +220,7 @@ Dieses Aktionsmodul fügt ein neues Element zu einer Liste in Anaplan hinzu.
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL-Verbindung]</td>
+        <td>[!UICONTROL -Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit Workfront </a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -240,7 +240,7 @@ Dieses Aktionsmodul fügt ein neues Element zu einer Liste in Anaplan hinzu.
         <td>Geben Sie einen Namen für das neue Element ein.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL-Code]</td>
+        <td>[!UICONTROL -Code]</td>
         <td>Geben Sie den Code für den neuen Artikel ein. Codes sind benutzergenerierte Codes, mit denen Sie zwischen Zeileneinträgen mit demselben Namen unterscheiden können.</td>
     </tr>
     <tr>
@@ -266,7 +266,7 @@ Dieses Aktionsmodul löscht einen vorhandenen Datensatz.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit Workfront </a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ Dieses Aktionsmodul löscht einen vorhandenen Datensatz.
     <ul> 
      <li> <p><b>Aktion</b> </p> <p>Wählen Sie die zu löschende Aktion aus oder ordnen Sie sie zu.</p> </li> 
      <li> <p><b>Listenelement</b> </p> <p>Wählen Sie die Liste aus, aus der Sie ein Element löschen möchten, und geben Sie dann die ID oder den Code des Elements ein, das Sie löschen möchten, oder ordnen Sie sie zu</p>  </li> 
-     <li> <p><b>[!UICONTROL-Datei]</b> </p> <p>Wählen Sie die zu löschende Datei aus oder ordnen Sie sie zu.</p> </li> 
+     <li> <p><b>[!UICONTROL -Datei]</b> </p> <p>Wählen Sie die zu löschende Datei aus oder ordnen Sie sie zu.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -300,7 +300,7 @@ Dieses Aktionsmodul ruft Daten aus Anaplan mithilfe von Exportdefinitionen ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit Workfront </a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -328,7 +328,7 @@ Dieses Aktionsmodul importiert Daten in Anaplan.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit Workfront </a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -356,7 +356,7 @@ In diesem Modul können Sie einen benutzerdefinierten API-Aufruf an die [!DNL An
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit Workfront </a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -364,11 +364,11 @@ In diesem Modul können Sie einen benutzerdefinierten API-Aufruf an die [!DNL An
    <td> <p>Pfad eingeben für <code>https://api.anaplan.com/2/0/</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Methode]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Methode]</p> </td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -394,7 +394,7 @@ Dieses Aktionsmodul liest einen einzelnen Datensatz.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit Workfront </a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -421,7 +421,7 @@ Dieses Aktionsmodul importiert, exportiert, löscht oder verarbeitet eine Aktion
      <col/>
      <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL-Verbindung]</td>
+        <td role="rowheader">[!UICONTROL -Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect Anaplan to Workfront Fusion]</a> in diesem Artikel.</td>
       </tr>
       <tr>
@@ -464,7 +464,7 @@ Dieses Aktionsmodul importiert, exportiert, löscht oder verarbeitet eine Aktion
                   <p style="font-weight: normal;">Geben Sie die ID der Importdefinition ein, die Sie verwenden möchten, oder mappen Sie sie zu.</p>
                 </li>
                 <li>
-                 <p><b>[!UICONTROL-Prozess]</b>
+                 <p><b>[!UICONTROL -Prozess]</b>
                  </p>
                   <p>Geben Sie die ID des Prozesses ein, den Sie verwenden möchten, oder ordnen Sie sie zu. </p>
                 </li>
@@ -484,7 +484,7 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!UICONTROL Anapla
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit Workfront </a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -522,7 +522,7 @@ Dieses Aktionsmodul lädt eine vorhandene Datei in Anaplan an zusätzliche Stell
 <col>
 <tbody>
 <tr>
-<td role="rowheader">[!UICONTROL-Verbindung]</td>
+<td role="rowheader">[!UICONTROL -Verbindung]</td>
 <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit Workfront </a> in diesem Artikel.</td>
 </tr>
 <tr>
@@ -552,7 +552,7 @@ Dieses Suchmodul gibt alle Datensätze des ausgewählten Typs zurück, auf die z
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Anaplan] finden Sie unter <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Anaplan] mit Workfront </a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -560,7 +560,7 @@ Dieses Suchmodul gibt alle Datensätze des ausgewählten Typs zurück, auf die z
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den Sie abrufen möchten.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Workspace]</b> </p> </li> 
-       <li> <p><b>[!UICONTROL-Modelle]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL -Modelle]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Zeileneinträge]</b> </p> <p>Wählen Sie die ID des Modells aus, das die [!DNL line] Elemente enthält, die Sie abrufen möchten, oder ordnen Sie sie zu.</p> </li> 
        <li> <p><b>[!UICONTROL Modelllisten]</b> </p> <p>Wählen Sie die ID der Workspace und die Modell-ID aus bzw. ordnen Sie sie zu, die die Modelllisten enthalten, die Sie abrufen möchten.</p> </li> 
        <li> <p><b>[!UICONTROL Modellkalender]</b> </p> <p>Wählen Sie die ID der Workspace aus, die den abzurufenden Modellkalender enthält, oder ordnen Sie sie zu.</p> </li> 

@@ -87,7 +87,7 @@ Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 T
 
 Wenn in Ihrem Szenario ein Fehler mit einem sofortigen Trigger auftritt, wird das Szenario:
 
-* Beendet sofort, wenn das Szenario auf „Sofort[!UICONTROL  eingestellt ].
+* Beendet sofort, wenn das Szenario auf „Sofort[!UICONTROL &#x200B; eingestellt &#x200B;].
 * Beendet nach drei erfolglosen Versuchen (drei Fehlern), wenn das Szenario wie geplant ausgeführt wird.
 
 Wenn während der Ausführung des Szenarios ein Fehler auftritt, wird das Ereignis während der Rollback-Phase des sofortigen Triggers wieder in die Warteschlange gestellt. In einem solchen Fall können Sie das Szenario korrigieren und erneut ausführen.
