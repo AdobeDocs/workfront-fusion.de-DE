@@ -1,14 +1,14 @@
 ---
 content-type: reference
 title: Anweisungen für die Fehlerbehandlung
-description: In diesem Artikel werden Anweisungen beschrieben, die Sie für die Fehlerbehandlung in Ihren - [!DNL Adobe Workfront Fusion]  verwenden können.
+description: In diesem Artikel werden Anweisungen beschrieben, die Sie für die Fehlerbehandlung in Ihren Adobe Workfront Fusion-Szenarien verwenden können.
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 16%
+source-wordcount: '589'
+ht-degree: 15%
 
 ---
 
@@ -27,17 +27,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] Packstück</td> 
+    <td role="rowheader">Adobe Workfront-Paket</td> 
    <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
    <td> Neu: Standard<p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] Lizenz</td> 
+   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion]-Lizenz</td> 
    <td>
-   <p>Aktuell: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -45,18 +45,18 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Wenden Sie sich an Ihren Workfront-Administrator, um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
 
-Weitere [!DNL Adobe Workfront Fusion] zu Adobe Workfront Fusion-Lizenzen finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Adobe Workfront Fusion finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -70,7 +70,7 @@ Die folgenden Anweisungen zur Fehlerbehandlung sind in Workfront Fusion verfügb
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Rollback</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>Die Ausführung des Szenarios wird sofort angehalten.</li><li>Eine Rollback-Phase wird für alle Module gestartet, um sie alle in den Ausgangszustand zurückzuversetzen. </li><li>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>In den meisten Fällen wird das Szenario nach der Anzahl aufeinander folgender Fehler, die in den Szenario-Einstellungen angegeben sind, deaktiviert. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Anzahl aufeinander folgender Fehler</a>.</p> </li><li><p>Der Ausführungsstatus des Szenarios wird als „Fehler“ markiert.</p></li></ul> <p><b>Hinweis</b>: Dies ist das Standardverhalten, wenn dem Modul keine Fehler-Handler-Route angehängt ist und die Einstellung <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Speichern unvollständiger Ausführungen zulassen</a>Speichern unvollständiger Ausführungen zulassen unter [!UICONTROL Scenario settings] nicht aktiviert ist.</p> </td> 
+   <td> <ul><li><p>Die Ausführung des Szenarios wird sofort angehalten.</li><li>Eine Rollback-Phase wird für alle Module gestartet, um sie alle in den Ausgangszustand zurückzuversetzen. </li><li>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>In den meisten Fällen wird das Szenario nach der Anzahl aufeinander folgender Fehler, die in den Szenario-Einstellungen angegeben sind, deaktiviert. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Anzahl aufeinander folgender Fehler</a>.</p> </li><li><p>Der Ausführungsstatus des Szenarios wird als „Fehler“ markiert.</p></li></ul> <p><b>Hinweis</b>: Dies ist das Standardverhalten, wenn dem Modul keine Fehler-Handler-Route angehängt ist und die Einstellung <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Speichern unvollständiger Ausführungen zulassen</a>Speichern unvollständiger Ausführungen zulassen unter [!UICONTROL Szenario-Einstellungen] nicht aktiviert ist.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Zusichern</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -86,7 +86,7 @@ Die folgenden Anweisungen zur Fehlerbehandlung sind in Workfront Fusion verfügb
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Unterbrechen</p> <p> <img src="assets/break.png"> </p> </td> 
-   <td><ul><li> <p>Der Zustand der Szenarioausführung wird in der Warteschlange für unvollständige Ausführungen gespeichert, wo der Fehler manuell behoben werden kann. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">Anzeigen und Auflösen unvollständiger Ausführungen</a>.</p> <p>Es gibt jedoch einige Ausnahmen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">Speichern unvollständiger Ausführungen zulassen</a> im Artikel Konfigurieren von Szenario-Einstellungen</a>.</p></li><li> <p>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>Wenn unbearbeitete Bündel vorhanden sind, wird die Ausführung des Szenarios normal fortgesetzt.</p> </li><li><p>Der Ausführungsstatus des Szenarios wird als „Warnung“ gekennzeichnet, wenn die Option [!UICONTROL Automatically complete execution] deaktiviert ist.</p></li></ul> <p>Weitere Informationen finden Sie im Abschnitt <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> in diesem Artikel</p> </td> 
+   <td><ul><li> <p>Der Zustand der Szenarioausführung wird in der Warteschlange für unvollständige Ausführungen gespeichert, wo der Fehler manuell behoben werden kann. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">Anzeigen und Auflösen unvollständiger Ausführungen</a>.</p> <p>Es gibt jedoch einige Ausnahmen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">Speichern unvollständiger Ausführungen zulassen</a> im Artikel Konfigurieren von Szenario-Einstellungen</a>.</p></li><li> <p>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>Wenn unbearbeitete Bündel vorhanden sind, wird die Ausführung des Szenarios normal fortgesetzt.</p> </li><li><p>Der Ausführungsstatus des Szenarios wird als „Warnung“ markiert, wenn die Option [!UICONTROL Ausführung automatisch abschließen] deaktiviert ist.</p></li></ul> <p>Weitere Informationen finden Sie im Abschnitt <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> in diesem Artikel</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Erneut versuchen</p> <p> <img src="assets/retry.png"> </p> </td> 
@@ -98,7 +98,7 @@ Die folgenden Anweisungen zur Fehlerbehandlung sind in Workfront Fusion verfügb
 >[!NOTE]
 >
 >* Anweisungen zum Umgang mit Fehlern können nicht außerhalb einer Route zum Umgang mit Fehlern verwendet werden.
->* [!DNL Workfront Fusion] bietet derzeit kein Throw-Modul, mit dem Sie einfach bedingt Fehler (Throw-Fehler) erzeugen können, obwohl eine Problemumgehung eingesetzt werden kann, um seine Funktionalität nachzuahmen.
+>* Workfront Fusion bietet derzeit kein Throw-Modul, mit dem Sie einfach bedingte Fehler (Throw-Fehler) erzeugen können, obwohl eine Problemumgehung eingesetzt werden kann, um seine Funktionalität nachzuahmen.
 >
 >  Weitere Informationen finden Sie unter [Konfigurieren `throw` Fehlerumgehung](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md).
 

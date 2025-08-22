@@ -1,19 +1,19 @@
 ---
 title: Microsoft SQL Server-Module
-description: Sie können verwenden [!DNL Adobe Workfront Fusion]  um eine Verbindung zu Microsoft SQL Server herzustellen.
+description: Sie können Adobe Workfront Fusion verwenden, um eine Verbindung zu Microsoft SQL Server herzustellen.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 0%
+source-wordcount: '522'
+ht-degree: 1%
 
 ---
 
 # [!DNL Microsoft SQL Server]
 
-Sie können [!DNL Adobe Workfront Fusion] verwenden, um eine Verbindung zu [!UICONTROL Microsoft SQL Server] herzustellen.
+Sie können Adobe Workfront Fusion verwenden, um eine Verbindung zu [!UICONTROL Microsoft SQL Server] herzustellen.
 
 ## Zugriffsanforderungen
 
@@ -54,11 +54,11 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Verbinden des [!DNL Microsoft SQL Server]-Services mit [!DNL Workfront Fusion]
+## Verbinden des [!DNL Microsoft SQL Server]-Service mit Workfront Fusion
 
 Anweisungen zum Verbinden Ihres [!DNL Microsoft SQL Server]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung mit [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
@@ -70,17 +70,17 @@ Anweisungen zum Verbinden Ihres [!DNL Microsoft SQL Server]-Kontos mit [!UICONTR
 
 ## Verwenden von [!DNL Microsoft SQL Server]
 
-Sie können Ihre benutzerdefinierte Logik über gespeicherte Prozeduren direkt auf Ihrem Datenbank-Server ausführen. [!DNL Adobe Workfront Fusion] lädt dynamisch die Schnittstelle von Eingabe/Ausgabe-Parametern und Recordset , sodass jeder Parameter oder Wert einzeln zugeordnet werden kann. Bevor Sie mit der Konfiguration Ihres Szenarios beginnen, stellen Sie sicher, dass das Konto, das Sie für die Verbindung mit Ihrer Datenbank verwenden, Lesezugriff auf `INFORMATION_SCHEMA.ROUTINES`- und `INFORMATION_SCHEMA.PARAMETERS` hat.
+Sie können Ihre benutzerdefinierte Logik über gespeicherte Prozeduren direkt auf Ihrem Datenbank-Server ausführen. Adobe Workfront Fusion lädt die Schnittstelle von Eingabe-/Ausgabeparametern und Recordset dynamisch, sodass jeder Parameter oder Wert einzeln zugeordnet werden kann. Bevor Sie mit der Konfiguration Ihres Szenarios beginnen, stellen Sie sicher, dass das Konto, das Sie für die Verbindung mit Ihrer Datenbank verwenden, Lesezugriff auf `INFORMATION_SCHEMA.ROUTINES`- und `INFORMATION_SCHEMA.PARAMETERS` hat.
 
 Wenn [!DNL Fusion] die Verbindung zum [!DNL SQL server]-Ziel herstellt, identifiziert der [!DNL Fusion] den Host (den Domain-Namen oder die IP-Adresse, unter der der Server gehostet wird) und den Port. [!DNL Fusion] können eine Verbindung zu jedem verfügbaren Host und Port herstellen.
 
-Informationen zu den von [!DNL Workfront Fusion] verwendeten IP-Adressen finden Sie unter [IP-Adressen für den Zugriff [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
+Informationen zu den von Workfront Fusion verwendeten IP-Adressen finden Sie unter [IP-Adressen für den Zugriff auf Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
 
 Weitere Informationen zum Erstellen einer gespeicherten Prozedur finden Sie in der [!DNL Microsoft SQL Server].
 
 >[!NOTE]
 >
->[!DNL Workfront Fusion] unterstützt nicht mehrere Recordsets. Nur der erste wird verarbeitet.
+>Workfront Fusion unterstützt nicht mehrere Recordsets. Nur der erste wird verarbeitet.
 
 ## Fehlerbehebung für Fehler [!UICONTROL ER_LOCK_WAIT_TIMEOUT: Sperrwartezeitlimit überschritten; versuchen Sie, die Transaktion neu zu starten]
 

@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe-Speichermodule
-description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Projekte in der Adobe Admin Console erstellen und verwalten.
+description: In einem Adobe Workfront Fusion-Szenario müssen Sie Projekte in der Adobe Admin Console erstellen und verwalten.
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 2%
+source-wordcount: '1400'
+ht-degree: 3%
 
 ---
 
 # Adobe-Speichermodule
 
-In einem [!DNL Adobe Workfront Fusion] können Sie Projekte in der Adobe Admin Console erstellen und verwalten.
+In einem Adobe Workfront Fusion-Szenario können Sie Projekte in der Adobe Admin Console erstellen und verwalten.
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenario erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -62,7 +62,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -152,7 +152,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 * [ESM-Speicher](#esm-stores)
 * [Einladungen](#invitations)
-* [Sonstige](#other)
+* [Sonstiges](#other)
 
 ### ESM-Speicher
 
@@ -182,7 +182,7 @@ Dieses Aktionsmodul richtet einen neuen ESM-Speicher (Enterprise Storage Managem
 
 #### Löschen eines ESM-Stores
 
-Dieses Aktionsmodul entfernt dauerhaft einen vorhandenen ESM-Speicher und alle zugehörigen Daten. Dieser Vorgang kann nicht rückgängig gemacht werden.
+Dieses Aktionsmodul entfernt dauerhaft einen vorhandenen ESM-Speicher und alle zugehörigen Daten. Diese Aktion kann nicht rückgängig gemacht werden.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -256,7 +256,7 @@ Dieses Aktionsmodul sendet eine Einladung, um einem neuen Benutzer Zugriff auf e
    <td>Geben Sie die E-Mail-Adresse des Benutzers ein, den Sie in den Store einladen möchten, oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Asset-ID</td> 
+   <td role="rowheader">Kreativelement-ID</td> 
    <td>Geben Sie die ID des Assets ein, zu dem Sie den Benutzer einladen möchten, oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
@@ -310,7 +310,7 @@ Dieses Aktionsmodul sendet eine Einladung, um einem neuen Benutzer Zugriff auf e
  </tbody> 
 </table>
 
-### Sonstige
+### Sonstiges
 
 #### Erstellen eines benutzerdefinierten API-Aufrufs
 
@@ -343,7 +343,7 @@ Dieses Aktionsmodul führt eine benutzerdefinierte HTTP-Anfrage an die Adobe-Spe
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] Fügt automatisch Autorisierungs- und X-API-Schlüssel-Header hinzu.</p>
+        <p>Workfront Fusion fügt automatisch Autorisierungs- und X-API-Schlüssel-Header hinzu.</p>
       </td>
     </tr>
     <tr>
@@ -353,7 +353,7 @@ Dieses Aktionsmodul führt eine benutzerdefinierte HTTP-Anfrage an die Adobe-Spe
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Text</td>
+      <td role="rowheader">Textkörper</td>
    <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 

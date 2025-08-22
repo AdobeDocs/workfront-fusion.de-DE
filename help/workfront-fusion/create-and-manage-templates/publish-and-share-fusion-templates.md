@@ -1,17 +1,17 @@
 ---
-title: Publish- und Freigabevorlagen
+title: Veröffentlichen und Freigeben von Vorlagen
 description: Wenn Sie eine Vorlage erstellen, wird die Vorlage für alle Ihre Team-Mitglieder verfügbar. Wenn Sie die Vorlage für eine Person außerhalb Ihres Teams freigeben möchten, müssen Sie sie zuerst veröffentlichen.
 author: Becky
 feature: Workfront Fusion
 exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '506'
 ht-degree: 1%
 
 ---
 
-# Publish- und Freigabevorlagen
+# Veröffentlichen und Freigeben von Vorlagen
 
 Wenn Sie eine Vorlage erstellen, wird die Vorlage für alle Ihre Team-Mitglieder verfügbar. Wenn Sie die Vorlage für eine Person außerhalb Ihres Teams freigeben möchten, müssen Sie sie zuerst veröffentlichen.
 
@@ -28,17 +28,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Packstück</td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
    <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td> 
-   <td> <p>Neu: [!UICONTROL Standard]</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -46,9 +46,9 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
   </tr>
  </tbody> 
@@ -56,7 +56,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -64,36 +64,36 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 Eine Vorlage muss erstellt werden, bevor sie veröffentlicht oder freigegeben werden kann.
 
-## Publish und Vorlage
+## Veröffentlichen einer Vorlage
 
-1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Templates]**.
-1. Klicken Sie auf die Registerkarte **[!UICONTROL Team templates]** .
-1. Klicken Sie in der **der Vorlage, die Sie veröffentlichen möchten, auf** Publish.
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Vorlagen]**.
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Teamvorlagen“.
+1. Klicken Sie **Veröffentlichen** in der Zeile der Vorlage, die Sie veröffentlichen möchten.
 
    Oder
 
 
-   Klicken Sie auf den Namen der Vorlage, die Sie veröffentlichen möchten, und klicken Sie dann oben rechts im Bildschirm auf die Schaltfläche **[!UICONTROL Publish]** .
+   Klicken Sie auf den Namen der Vorlage, die Sie veröffentlichen möchten, und klicken Sie dann auf **[!UICONTROL Veröffentlichen]** in der rechten oberen Ecke des Bildschirms.
 
-## Freigeben einer [!DNL Workfront Fusion]
+## Freigeben einer Workfront Fusion-Vorlage
 
 Nachdem Sie eine Vorlage veröffentlicht haben, können Sie sie freigeben.
 
-1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Templates]**.
-1. Klicken Sie auf die Registerkarte **[!UICONTROL Team templates]** .
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Vorlagen]**.
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Teamvorlagen“.
 1. Klicken Sie auf den Namen der Vorlage, die Sie freigeben möchten, um die Vorlage zu öffnen.
 1. Klicken Sie auf die **Veröffentlicht**, um diese Version der Vorlage zu öffnen.
-1. (Bedingt) Wenn Sie einen freigabefähigen Link benötigen, klicken Sie auf **[!UICONTROL Share public link]**.
+1. (Bedingt) Wenn Sie einen freigabefähigen Link benötigen, klicken Sie auf **[!UICONTROL Öffentlichen Link freigeben]**.
 
    >[!NOTE]
    >
-   >Obwohl Sie diesen Link freigeben können, bleibt die Vorlage selbst auf der Registerkarte &quot;[!UICONTROL Team templates]&quot; und ist nicht öffentlich.
+   >Obwohl Sie diesen Link freigeben können, bleibt die Vorlage selbst auf der Registerkarte [!UICONTROL Team-Vorlagen] und ist nicht öffentlich.
 
-1. (Bedingt) Wenn die Vorlage öffentlich werden soll, senden Sie sie an Ihren Administrator zur Genehmigung, indem Sie auf **[!UICONTROL Request Approval]** klicken.
+1. (Bedingt) Wenn die Vorlage öffentlich werden soll, senden Sie sie an Ihren Administrator zur Genehmigung, indem Sie auf „Genehmigung **[!UICONTROL &quot;]**.
 
    >[!NOTE]
    >
-   >* Nachdem die Vorlage genehmigt wurde, wird sie öffentlich. [!UICONTROL Public templates] werden auf der Registerkarte [!UICONTROL Public templates] für alle [!DNL Workfront Fusion] Benutzer angezeigt, unabhängig von der Organisation oder dem Team.
+   >* Nachdem die Vorlage genehmigt wurde, wird sie öffentlich. [!UICONTROL Öffentliche Vorlagen] werden auf der Registerkarte [!UICONTROL Öffentliche Vorlagen] für alle Workfront Fusion-Benutzenden angezeigt, unabhängig von der Organisation oder dem Team.
    >* Ihr Administrator wird nicht per E-Mail über den Erhalt der zu überprüfenden Vorlage benachrichtigt. Wenn die Genehmigung dringend erforderlich ist, wenden Sie sich direkt an den Administrator.
 
 
@@ -103,9 +103,9 @@ Fusion speichert die verschiedenen Versionen (privat, veröffentlicht und genehm
 
 Die folgenden Status sind verfügbar:
 
-* **[!UICONTROL Private]**: Diese Vorlage ist nur für den Vorlagenautor und sein Team sichtbar.
-* **[!UICONTROL Published]**: Diese Vorlage ist nur für den Vorlagenautor und sein Team sichtbar. Sie können veröffentlichte Vorlagen zur Genehmigung senden und einen freigabefähigen Link kopieren.
-* **[!UICONTROL Approved]**: Diese Vorlage ist für alle Workfront Fusion-Benutzenden auf der Registerkarte [!UICONTROL Public templates] sichtbar. Sie können einen freigabefähigen Link kopieren, indem Sie in der oberen rechten Ecke des Bildschirms auf [!UICONTROL Options] klicken.
+* **[!UICONTROL Privat]**: Diese Vorlage ist nur für den Vorlagenautor und dessen Team sichtbar.
+* **[!UICONTROL Veröffentlicht]**: Diese Vorlage ist nur für den Vorlagenautor und dessen Team sichtbar. Sie können veröffentlichte Vorlagen zur Genehmigung senden und einen freigabefähigen Link kopieren.
+* **[!UICONTROL Genehmigt]**: Diese Vorlage ist für alle Workfront Fusion-Benutzenden auf der Registerkarte [!UICONTROL Öffentliche Vorlagen] sichtbar. Sie können einen freigabefähigen Link kopieren, indem [!UICONTROL Optionen] in der oberen rechten Ecke des Bildschirms klicken.
 
 <!--You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
 

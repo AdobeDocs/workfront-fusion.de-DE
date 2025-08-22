@@ -4,16 +4,16 @@ description: Mit Adobe Workfront Fusion-Bildmodulen können Sie Informationen zu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 0%
+source-wordcount: '752'
+ht-degree: 1%
 
 ---
 
 # Bildmodule
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL Image]-Module können Sie Informationen zu einem bestimmten Bild abrufen (Abmessungen, Typ usw.), ein Bild in ein anderes Dateiformat konvertieren und die Größe des Bildes direkt ändern.
+Mit [!UICONTROL  (Image]-Modulen von Adobe Workfront Fusion können Sie Informationen zu einem bestimmten Bild abrufen (Abmessungen, Typ usw.), ein Bild in ein anderes Dateiformat konvertieren und die Bildgröße direkt ändern.
 
 ## Zugriffsanforderungen
 
@@ -52,7 +52,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

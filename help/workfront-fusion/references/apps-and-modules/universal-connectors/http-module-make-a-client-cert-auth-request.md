@@ -1,12 +1,12 @@
 ---
 title: HTTP > Modul für Client-Zertifikatautorisierungsanfragen erstellen
-description: Mit  [!DNL Adobe Workfront Fusion]  Modul können Sie eine HTTP-Anfrage mit HTTP-Client-Zertifikatautorisierung konfigurieren und an einen Server senden. Die empfangene HTTP-Antwort ist dann im Ausgabepaket enthalten.
+description: Mit diesem Adobe Workfront Fusion-Modul können Sie eine HTTP-Anfrage mit HTTP-Client-Zertifikatautorisierung konfigurieren und an einen Server senden. Die empfangene HTTP-Antwort ist dann im Ausgabepaket enthalten.
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfront-Lizenz eine [!DNL Adobe Workfront Fusion].
+>Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfront-Lizenz eine Adobe Workfront Fusion-Lizenz.
 
-Mit diesem [!DNL Adobe Workfront Fusion] können Sie eine HTTP-Anfrage mit HTTP-Client-Zertifikatautorisierung konfigurieren und an einen Server senden. Die empfangene HTTP-Antwort ist dann im Ausgabepaket enthalten.
+Mit diesem Adobe Workfront Fusion-Modul können Sie eine HTTP-Anfrage mit HTTP-Client-Zertifikatautorisierung konfigurieren und an einen Server senden. Die empfangene HTTP-Antwort ist dann im Ausgabepaket enthalten.
 
 >[!NOTE]
 >
@@ -64,15 +64,15 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## [!UICONTROL HTTP] > [!UICONTROL Erstellen einer Client-Zertifikatautorisierungsanfrage] Modulkonfiguration
 
-Wenn Sie das Modul [!UICONTROL HTTP] > [!UICONTROL Anforderung zur Clientzertifikatautorisierung durchführen] konfigurieren, zeigt [!DNL Adobe Workfront Fusion] die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren des Moduls [!UICONTROL HTTP] > [!UICONTROL Erstellen einer Client-Zertifikatautorisierungsanfrage] zeigt Adobe Workfront Fusion die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zu einem anderen Modul in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -81,7 +81,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"></td> 
+   <td role="rowheader">[!UICONTROL]</td> 
    <td> <p>Wählen Sie den Schlüssel aus, der Ihre Anmeldeinformationen für die Clientzertifikatauthentifizierung enthält, oder klicken Sie auf <strong>[!UICONTROL Hinzufügen]</strong>, um Ihre Anmeldeinformationen einem neuen Schlüssel hinzuzufügen. </p> <p>Hinweis: Sie können weitere Anmeldeinformationen hinzufügen, um einfach zwischen den einzelnen Verbindungen zu wechseln.</p>           <p>So extrahieren Sie Ihren privaten Schlüssel oder Ihr Zertifikat:</p>
           <ol>
             <li value="1">
@@ -103,18 +103,18 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Alle Status als Fehler auswerten (außer 2xx und 3xx )] </td> 
-   <td> <p>Mit dieser Option können Sie die Fehlerbehandlung einrichten.</p> <p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Fehlerbehandlung in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Mit dieser Option können Sie die Fehlerbehandlung einrichten.</p> <p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Fehlerbehandlung in Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
    <td> <p>Geben Sie die URL ein, an die Sie eine Anfrage senden möchten, z. B. einen API-Endpunkt, eine Website usw.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Methode]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Methode]</p> </td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen] </td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen] </td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -135,7 +135,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] ist eine mehrteilige HTTP-Anfrage zum Senden von Dateien und Daten. Es wird häufig verwendet, um Dateien auf den Server hochzuladen.</p> <p>Fügen Sie Felder hinzu, die in der Anfrage gesendet werden sollen. Jedes Feld muss ein Schlüssel-Wert-Paar enthalten.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL text]</strong> </p> <p>Geben Sie den Schlüssel und den Wert ein, die innerhalb des Anfragetexts gesendet werden sollen.</p> </li> 
-       <li> <p><strong>[!UICONTROL -Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten. Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Datei zu.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten. Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Datei zu.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -187,7 +187,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Serialisierung mehrerer derselben Abfragezeichenfolgen-Schlüssel als Arrays deaktivieren]</p> </td> 
-   <td> <p>Standardmäßig verarbeitet [!DNL Workfront Fusion] mehrere Werte für denselben URL-Abfragezeichenfolgen-Parameterschlüssel wie Arrays. Beispielsweise wird <code>www.test.com?foo=bar&amp;foo=baz</code> in <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code> konvertiert. Aktivieren Sie diese Option, um diese Funktion zu deaktivieren. </p> </td> 
+   <td> <p>Standardmäßig verarbeitet Workfront Fusion mehrere Werte für denselben URL-Abfragezeichenfolgen-Parameterschlüssel wie Arrays. Beispielsweise wird <code>www.test.com?foo=bar&amp;foo=baz</code> in <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code> konvertiert. Aktivieren Sie diese Option, um diese Funktion zu deaktivieren. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Komprimierten Inhalt anfordern]</td> 

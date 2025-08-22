@@ -4,10 +4,10 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie das Mathematik
 author: Becky
 feature: Workfront Fusion
 exl-id: ebbe74ea-d274-481d-8584-a71ddb1d959b
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 2%
+source-wordcount: '176'
+ht-degree: 3%
 
 ---
 
@@ -52,7 +52,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -65,7 +65,7 @@ Sie können dieses Modul verwenden, um mathematische Ausdrücke einfach zu berec
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ausdruck]</td> 
+   <td role="rowheader">[!UICONTROL-Ausdruck]</td> 
    <td> <p>Geben Sie den Ausdruck ein, den das Modul auswerten soll. </p> <p> </p> <p>Informationen zum Schreiben eines mathematischen Ausdrucks finden Sie unter <a href="https://mathjs.org/docs/expressions/syntax.html">Ausdruckssyntax</a> unter mathjs.org.</p> </td> 
   </tr> 
  </tbody> 

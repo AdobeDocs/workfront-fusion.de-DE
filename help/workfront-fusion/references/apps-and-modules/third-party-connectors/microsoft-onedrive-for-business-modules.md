@@ -1,19 +1,19 @@
 ---
 title: Microsoft OneDrive für Geschäftsmodule
-description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows automatisieren, die  [!DNL Microsoft OneDrive for Business] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die verwenden [!DNL Microsoft OneDrive for Business] und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
 exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
 
 # [!DNL Microsoft OneDrive for Business]
 
-In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Workflows automatisieren, die [!DNL Microsoft OneDrive for Business] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Microsoft OneDrive for Business] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,15 +58,15 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Voraussetzungen
 
-Um [!DNL Microsoft OneDrive for Business] mit [!DNL Adobe Workfront Fusion] verwenden zu können, benötigen Sie ein [!DNL Microsoft].
+Um [!DNL Microsoft OneDrive for Business] mit Adobe Workfront Fusion verwenden zu können, benötigen Sie ein [!DNL Microsoft].
 
-## Verbinden des [!DNL Microsoft OneDrive for Business]-Services mit [!DNL Workfront Fusion]
+## Verbinden des [!DNL Microsoft OneDrive for Business]-Service mit Workfront Fusion
 
 Anweisungen zum Verbinden Ihres [!DNL Microsoft OneDrive for Business]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung mit [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
@@ -78,16 +78,16 @@ Anweisungen zum Verbinden Ihres [!DNL Microsoft OneDrive for Business]-Kontos mi
 
 ## [!DNL Microsoft OneDrive for Business] Module und ihre Felder
 
-Beim Konfigurieren [!DNL Microsoft OneDrive for Business] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Microsoft OneDrive for Business] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Microsoft OneDrive for Business] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Microsoft OneDrive for Business] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Auslöser](#triggers)
+* [Trigger](#triggers)
 * [Aktionen](#actions)
 
-### Auslöser
+### Trigger
 
 * [[!UICONTROL Dateien ansehen]](#watch-files)
 * [[!UICONTROL Ordner ansehen]](#watch-folders)
@@ -101,19 +101,19 @@ Dieses Dateimodul wird aktiviert, wenn eine neue Trigger-Datei in einem überwac
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Laufwerk-ID]</p> </td> 
    <td> <p>Wählen Sie das Laufwerk aus, das Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td> <p> Wählen Sie den Ordner aus, den Sie beobachten möchten. In einem Szenario können Sie nur einen Ordner überwachen.</p> <p>Tipp: Um mehrere Ordner anzusehen, erstellen Sie für jeden Ordner ein unabhängiges Szenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL , die ich beobachten möchte]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL, die ich beobachten möchte]</p> </td> 
    <td> <p>Wählen Sie aus, ob nur neue Dateien und alle Änderungen oder nur neue Dateien angezeigt werden sollen.</p> </td> 
   </tr> 
   <tr> 
@@ -132,19 +132,19 @@ Dieses Ordnermodul wird aktiviert, wenn dem überwachten Trigger ein neuer Ordne
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Laufwerk-ID]</p> </td> 
    <td> <p>Wählen Sie das Laufwerk aus, das Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td> <p> Wählen Sie den Ordner aus, den Sie beobachten möchten. In einem Szenario können Sie nur einen Ordner überwachen.</p> <p>Tipp: Um mehrere Ordner zu verfolgen, erstellen Sie für jeden Ordner ein unabhängiges Szenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL , die ich beobachten möchte]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL, die ich beobachten möchte]</p> </td> 
    <td> <p>Wählen Sie aus, ob nur neue Ordner und alle Änderungen oder nur neue Ordner angezeigt werden sollen.</p> </td> 
   </tr> 
   <tr> 
@@ -173,15 +173,15 @@ Erstellt einen Ordner im angegebenen übergeordneten Ordner.
  <col> 
  <tbody> 
   <tr> 
-   <td><strong>[!UICONTROL -Verbindung]</strong> </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td><strong>[!UICONTROL-Verbindung]</strong> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>[!UICONTROL Laufwerk-ID]</strong> </td> 
    <td> <p>Wählen Sie das Laufwerk aus, auf dem Sie einen neuen Ordner erstellen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL -Ordner]</strong> </td> 
+   <td><strong>[!UICONTROL-Ordner]</strong> </td> 
    <td> <p>Wählen Sie den Ordner aus, in dem Sie einen neuen Ordner erstellen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -201,8 +201,8 @@ Dieses Aktionsmodul verschiebt die angegebene Datei in den Papierkorb.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Laufwerk-ID]</td> 
@@ -223,8 +223,8 @@ Dieses Aktionsmodul verschiebt die angegebene Datei in den Papierkorb.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Laufwerk-ID]</td> 
@@ -247,8 +247,8 @@ Dieses Aktionsmodul ruft die Datei mit der angegebenen ID ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Laufwerk-ID]</td> 
@@ -271,8 +271,8 @@ Dieses Modul ruft einen Link ab, den Sie freigeben können, um Zugriff auf die a
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Laufwerk-ID]</td> 
@@ -287,7 +287,7 @@ Dieses Modul ruft einen Link ab, den Sie freigeben können, um Zugriff auf die a
    <td> <p>Wählen Sie aus, ob Personen, die den Link erhalten, Lese-/Schreibberechtigungen oder Leseberechtigungen erhalten sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Umfang]</td> 
+   <td>[!UICONTROL-Umfang]</td> 
    <td> <p> Wählen Sie aus, ob die Datei für alle Personen zugänglich sein soll, die über den Link verfügen, oder nur für Mitglieder Ihres Unternehmens.</p> </td> 
   </tr> 
  </tbody> 
@@ -303,15 +303,15 @@ Dieses Aktionsmodul lädt eine Binär- oder Textdatei in einen angegebenen Ordne
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Laufwerk-ID]</td> 
    <td> <p>Wählen Sie das Laufwerk aus, auf das Sie eine Datei hochladen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den Ordner im Laufwerk aus.</p> </td> 
   </tr> 
   <tr> 

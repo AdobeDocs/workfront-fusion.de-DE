@@ -4,9 +4,9 @@ description: Sie können Informationen zu den Ereignissen oder Ausführungen ein
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -34,17 +34,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Packstück</td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
    <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td> 
-   <td> <p>Neu: [!UICONTROL Standard]</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -52,16 +52,16 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] kaufen.</li><li>[!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Konfigurationen der Zugriffsebene*</td> 
    <td> 
-     <p>Sie müssen ein [!DNL Workfront Fusion]-Administrator für Ihre Organisation sein.</p>
-     <p>Sie müssen [!DNL Workfront Fusion] für Ihr Team sein.</p>
+     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Unternehmen sein.</p>
+     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Team sein.</p>
    </td> 
   </tr> 
    </td> 
@@ -71,7 +71,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -136,7 +136,7 @@ Sie können den Ausführungsverlauf filtern, um nur Ausführungen mit den angege
 
 1. Öffnen Sie den vollständigen Seitenverlauf für ein Szenario, wie in [Ausführungsverlauf des Szenarios anzeigen auf der Registerkarte [!UICONTROL Verlauf] in ](#view-scenario-history-on-the-history-tab) Artikel beschrieben.
 1. Klicken Sie auf [!UICONTROL filter]-Symbol ![Szenariofiltersymbol](assets/fusion-scenario-filter-icon.png) in der Kopfzeile der Spalte, nach der Sie filtern möchten.
-1. Geben [!UICONTROL &#x200B; im &#x200B;] „Filter“ die Werte ein, nach denen gefiltert werden soll.
+1. Geben [!UICONTROL  im ] „Filter“ die Werte ein, nach denen gefiltert werden soll.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Das Filtersymbol ist in Spalten mit einem aktiven Filter orange.
@@ -167,17 +167,17 @@ Das Fenster [!UICONTROL Suche im Verlauf] wird geöffnet.
 
    >[!INFO]
    >
-   >**Beispiel:** Wenn Sie die Ausführung finden möchten, mit der ein bestimmtes Projekt erstellt wurde, geben Sie die Projekt-ID in die  &quot;&quot; ein.
+   >**Beispiel:** Wenn Sie die Ausführung finden möchten, mit der ein bestimmtes Projekt erstellt wurde, geben Sie die Projekt-ID in die [!UICONTROL  &quot;]&quot; ein.
    >
    >„625ef2ef0006036bd1794b6e52d737c5“
 
-1. (Optional) Um die Suche nach Datumsbereich zu beschränken, wählen Sie das Anfangs- und Enddatum der gewünschten Suche im Bereich [!UICONTROL Nach &#x200B;]) aus.
+1. (Optional) Um die Suche nach Datumsbereich zu beschränken, wählen Sie das Anfangs- und Enddatum der gewünschten Suche im Bereich [!UICONTROL Nach ]) aus.
 
    >[!NOTE]
    >
    >* Ausführungen sind nur für die letzten 30 Tage verfügbar.
    >
-   >* [!DNL Workfront Fusion] speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 Tage nach der Erstellung auf eine Webhook-Payload zugreifen, wird der Fehler &quot;[!UICONTROL Datei konnte nicht aus dem Speicher gelesen werden“ &#x200B;].
+   >* Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 Tage nach der Erstellung auf eine Webhook-Payload zugreifen, wird der Fehler &quot;[!UICONTROL Datei konnte nicht aus dem Speicher gelesen werden“ ].
 
 
 1. (Optional) Um die Suche nach Status zu begrenzen, wählen Sie den gewünschten Status in der Dropdown-Liste **[!UICONTROL Nach Status]** aus.

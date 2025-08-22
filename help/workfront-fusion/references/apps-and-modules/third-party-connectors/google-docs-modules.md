@@ -4,18 +4,18 @@ description: Mit den Adobe Workfront Fusion [!DNL Google Docs] Modulen können S
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '4045'
+source-wordcount: '4087'
 ht-degree: 0%
 
 ---
 
 # [!DNL Google Docs]
 
-Mit den [!DNL Adobe Workfront Fusion] [!DNL Google Docs] können Sie Dokumente in Ihren [!DNL Google Docs] und [!DNL Google Docs] (für [!DNL Google Workspace] Benutzer) überwachen, erstellen, bearbeiten und abrufen.
+Mit den Adobe Workfront Fusion [!DNL Google Docs]-Modulen können Sie Dokumente in Ihren [!DNL Google Docs] und [!DNL Google Docs] (für [!DNL Google Workspace]) überwachen, erstellen, bearbeiten und abrufen.
 
-Um [!DNL Google Docs] mit [!DNL Adobe Workfront Fusion] verwenden zu können, muss ein [!DNL Google] Konto vorhanden sein. Wenn Sie noch kein [!DNL Google] Konto haben, können Sie eines auf der Hilfeseite zum [!DNL Google] Konto erstellen.
+Um [!DNL Google Docs] mit Adobe Workfront Fusion verwenden zu können, benötigen Sie ein [!DNL Google]. Wenn Sie noch kein [!DNL Google] Konto haben, können Sie eines auf der Hilfeseite zum [!DNL Google] Konto erstellen.
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -60,7 +60,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -122,15 +122,15 @@ Mit diesem Aktionsmodul können Sie ein neues Dokument im ausgewählten Ordner e
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
    <td> <p>Geben Sie einen Namen für das Dokument ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Inhalt]</td> 
+   <td role="rowheader">[!UICONTROL-Inhalt]</td> 
    <td> <p>Geben Sie den Inhalt des Dokuments ein. Sie können HTML zum Formatieren des Dokuments einbeziehen.</p> </td> 
   </tr> 
   <tr> 
@@ -162,8 +162,8 @@ Dieses Aktionsmodul erstellt eine Kopie eines vorhandenen Vorlagendokuments und 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Dokument aus Vorlage erstellen]</p> </td> 
@@ -187,7 +187,7 @@ Dieses Aktionsmodul erstellt eine Kopie eines vorhandenen Vorlagendokuments und 
    <td> <p>Ordnen Sie die ID der Vorlage zu, wenn Sie Durch Zuordnung ausgewählt haben, oder wählen Sie den Pfad zur Vorlage und zur Vorlage aus.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Werte]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Werte]</p> </td> 
    <td> <p>Klicken Sie für jedes Tag, für das Sie einen Wert eingeben möchten, auf <b>Element hinzufügen</b>, geben Sie das Tag ein und geben Sie den Wert ein, der anstelle des Tags in das neue Dokument eingegeben werden soll.</p> 
     <ul> 
      <li><strong>[!UICONTROL Tags]</strong><br>Geben Sie die Tags ein, die in der Dokumentvorlage enthalten sind. Verwenden Sie <code>&#123;&#123;&#125;&#125;</code> nicht. Beispiel: Verwenden Sie <code>name</code> anstelle von <code>&#123;&#123;name&#125;&#125;</code>.</li> 
@@ -228,8 +228,8 @@ Dieses Aktionsmodul löscht ein Dokument.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Laufwerk auswählen]</td> 
@@ -260,8 +260,8 @@ Dieses Aktionsmodul konvertiert das ausgewählte Dokument und lädt es herunter.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Laufwerk auswählen]</td> 
@@ -290,8 +290,8 @@ Möglicherweise müssen Sie Ihre Berechtigungen erweitern.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Inhalt eines Dokuments abrufen]</td> 
@@ -316,7 +316,7 @@ Möglicherweise müssen Sie Ihre Berechtigungen erweitern.
     <ul> 
      <li>[!UICONTROL Image] (Standard)</li> 
      <li>[!UICONTROL Zeichnung]</li> 
-     <li>[!UICONTROL -Diagramm]</li> 
+     <li>[!UICONTROL-Diagramm]</li> 
     </ul> <p>Hinweis:  <p>Für weitere Zuordnungen dieser Objekte verwenden Sie bitte den Wert [!UICONTROL Inline Objects Array] in der Ausgabe dieses Moduls (anstelle von [!UICONTROL inlineObjects]).</p> <p>Die [!UICONTROL Inline Objects Array]-Objekte werden in der gleichen Reihenfolge sortiert, in der sie im Dokument erscheinen. Dies erleichtert die weitere Verarbeitung.</p> </p> </td> 
   </tr> 
  </tbody> 
@@ -331,8 +331,8 @@ Dieses Aktionsmodul fügt einen neuen Absatz an ein vorhandenes Dokument an oder
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Dokument auswählen]</p> </td> 
@@ -390,8 +390,8 @@ Dieses Aktionsmodul fügt ein Bild aus der URL in das Dokument ein.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Dokument auswählen]</p> </td> 
@@ -449,8 +449,8 @@ Dieses Aktionsmodul ruft eine Liste der Dokumente aus dem ausgewählten Ordner a
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Laufwerk auswählen]</td> 
@@ -463,7 +463,7 @@ Dieses Aktionsmodul ruft eine Liste der Dokumente aus dem ausgewählten Ordner a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Legen Sie die maximale Anzahl von Dokumenten fest, [!DNL Workfront Fusion] in einem Ausführungszyklus zurückgegeben werden.</p> </td> 
+   <td> <p>Legen Sie die maximale Anzahl von Dokumenten fest, die Workfront Fusion in einem Ausführungszyklus zurückgibt.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -477,8 +477,8 @@ Dieses Aktionsmodul ersetzt Text in einem Dokument.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Dokument auswählen]</p> </td> 
@@ -521,8 +521,8 @@ Dieses Aktionsmodul ersetzt ein vorhandenes Bild. Das Seitenverhältnis des Orig
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Dokument auswählen]</p> </td> 
@@ -562,8 +562,8 @@ Dieses Ordnermodul gibt Dokumentdetails zurück, wenn ein neues Trigger erstellt
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Dokumente ansehen]</td> 
@@ -585,7 +585,7 @@ Dieses Ordnermodul gibt Dokumentdetails zurück, wenn ein neues Trigger erstellt
  </tbody> 
 </table>
 
-### Sonstige
+### Sonstiges
 
 * [[!UICONTROL Alle Links in einem Dokument können angeklickt werden]](#make-all-links-in-a-document-clickable)
 * [[!UICONTROL Erstellen eines API-Aufrufs]](#make-an-api-call)
@@ -599,8 +599,8 @@ Dieses Aktionsmodul findet alle Links im Dokument und macht sie anklickbar.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Alle Links in einem Dokument erstellen]</p> </td> 
@@ -639,20 +639,20 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
    <td> <p>Geben Sie einen Pfad relativ zu <code>https://docs.googleapis.com/</code> ein. Beispiel: <code>/v1/documents/{presentationID}</code>. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code>. [!DNL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code>. Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 

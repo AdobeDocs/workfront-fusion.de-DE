@@ -4,16 +4,16 @@ description: Die Adobe Workfront Fusion-JSON-App bietet Module zur Verarbeitung 
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1236'
-ht-degree: 0%
+source-wordcount: '1254'
+ht-degree: 1%
 
 ---
 
 # [!UICONTROL JSON]-Module
 
-Die [!DNL Adobe Workfront Fusion] [!UICONTROL JSON]-App bietet Module zur Verarbeitung von Daten im JSON-Format, damit [!DNL Adobe Workfront Fusion] weiter mit den Dateninhalten arbeiten oder neue JSON-Inhalte erstellen können.
+Die Adobe Workfront Fusion [!UICONTROL JSON]-App bietet Module zur Verarbeitung von Daten im JSON-Format, damit Adobe Workfront Fusion weiter mit den Dateninhalten arbeiten oder neue JSON-Inhalte erstellen kann.
 
 ## Zugriffsanforderungen
 
@@ -54,7 +54,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -65,11 +65,11 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 ### Datenstruktur
 
-Die Datenstruktur beschreibt, wie die JSON-Daten organisiert sind, und ermöglicht die Zuordnung einzelner JSON-Elemente zu anderen Modulen in Ihrem Szenario. Wenn Sie die Datenstruktur nicht bereitstellen, können Sie das Modul manuell ausführen und [!DNL Workfront Fusion] die Struktur aus der bereitgestellten JSON-Datei erstellen:
+Die Datenstruktur beschreibt, wie die JSON-Daten organisiert sind, und ermöglicht die Zuordnung einzelner JSON-Elemente zu anderen Modulen in Ihrem Szenario. Wenn Sie die Datenstruktur nicht angeben, können Sie das Modul manuell ausführen. Workfront Fusion erstellt dann die Struktur aus der bereitgestellten JSON-Datei:
 
 1. Fügen Sie das [!UICONTROL Parse JSON]-Modul zu einem Szenario hinzu.
 1. Geben Sie im Feld **[!UICONTROL JSON]** Zeichenfolge“ die JSON-Datei ein, aus der Sie eine Datenstruktur erstellen möchten.
-1. Verbinden Sie noch keine anderen Module mit dem [!UICONTROL Parse JSON]-Modul. Da [!DNL Workfront Fusion] die Struktur der JSON-Daten noch nicht kennt, ist es noch nicht möglich, Daten aus dem Modul [!UICONTROL JSON analysieren] anderen Modulen in Ihrem Szenario zuzuordnen.
+1. Verbinden Sie noch keine anderen Module mit dem [!UICONTROL Parse JSON]-Modul. Da Workfront Fusion die Struktur der JSON-Daten noch nicht kennt, ist es noch nicht möglich, Daten aus dem [!UICONTROL Parse JSON]-Modul anderen Modulen in Ihrem Szenario zuzuordnen.
 1. Führen Sie das Szenario manuell aus. Dadurch kann das [!UICONTROL Parse JSON]-Modul die JSON-Struktur aus der von Ihnen bereitgestellten JSON identifizieren.
 1. Sie können jetzt folgende Module verbinden. Die Elemente aus dem Parse-JSON-Modul sind jetzt für die Zuordnung verfügbar.
 
@@ -121,7 +121,7 @@ Wenn das JSON-Zeichenfolgenfeld ein Array-`[ ... ]` enthält, ist die Ausgabe ei
 
 ## [!UICONTROL JSON]-Module und ihre Felder
 
-Beim Konfigurieren [!DNL JSON] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können je nach Faktoren wie Ihrer Zugriffsebene in der App oder im Service weitere JSON-Felder angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL JSON] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können je nach Faktoren wie Ihrer Zugriffsebene in der App oder im Service weitere JSON-Felder angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -147,7 +147,7 @@ Dieses Aggregator-Modul aggregiert die Ausgabe eines vorherigen Moduls in JSON.
    <td> <p>Wählen Sie das Modul aus, das die Daten ausgibt, die Sie in JSON aggregieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Datenstruktur]</td> 
+   <td role="rowheader">[!UICONTROL-Datenstruktur]</td> 
    <td> <p>Wählen Sie die Datenstruktur aus, die Sie zum Erstellen von JSON verwenden möchten. Die Datenstruktur bestimmt, welche anderen Felder in diesem Modul verfügbar sind. Weitere Informationen finden Sie unter <a href="#data-structure" class="MCXref xref">Datenstruktur</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -215,7 +215,7 @@ Dieses Aktionsmodul analysiert eine JSON-Zeichenfolge in eine Datenstruktur, mit
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Datenstruktur]</td> 
+   <td role="rowheader">[!UICONTROL-Datenstruktur]</td> 
    <td> <p>Wählen Sie die Datenstruktur aus, die Sie zum Erstellen von JSON verwenden möchten. Weitere Informationen finden Sie unter <a href="#data-structure" class="MCXref xref">Datenstruktur</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -238,7 +238,7 @@ Dieses Aktionsmodul wandelt ein -Objekt in eine JSON-Zeichenfolge um.
    <td> <p>Wählen Sie die Einrückung aus, die Sie für diese JSON-Datei verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Objekt]</td> 
+   <td role="rowheader">[!UICONTROL-Objekt]</td> 
    <td> <p>Geben Sie das Objekt ein, das Sie in JSON umwandeln möchten, oder ordnen Sie es zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -291,7 +291,7 @@ Dieses Aktionsmodul wandelt ein -Objekt in eine JSON-Zeichenfolge um.
 
 ## Fehlerbehebung
 
-### Daten aus dem Modul [!UICONTROL JSON analysieren“ können nicht &#x200B;] werden
+### Daten aus dem Modul [!UICONTROL JSON analysieren“ können nicht ] werden
 
 Stellen Sie sicher, dass der JSON-Inhalt ordnungsgemäß dem [!UICONTROL Parse JSON]-Modul zugeordnet ist und dass die Datenstruktur korrekt definiert ist. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen in JSON](#transforming-data-records-to-json) in diesem Artikel.
 

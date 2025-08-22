@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion bietet zwei verschiedene Lizenzen, die besti
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -40,9 +40,9 @@ Wenden Sie sich an Ihren Workfront Fusion-Administrator, um zu erfahren, welche 
 
 #### Vorteile von Workfront Fusion for Work Automation
 
-Mit der Lizenz für Workfront Fusion for Work Automation können Sie Ihre [!DNL Workfront]-Workflows automatisieren. Durch die Verwendung von Workfront Fusion für die Arbeitsautomatisierung können Sie Szenarien erstellen, um die einzigartigen Arbeitsprozesse Ihres Unternehmens zu automatisieren.
+Mit der Lizenz für Workfront Fusion for Work Automation können Sie Ihre Workfront-Workflows automatisieren. Durch die Verwendung von Workfront Fusion für die Arbeitsautomatisierung können Sie Szenarien erstellen, um die einzigartigen Arbeitsprozesse Ihres Unternehmens zu automatisieren.
 
-Zu den Vorteilen der Automatisierung Ihrer [!DNL Workfront] gehören:
+Zu den Vorteilen der Automatisierung Ihrer Workfront-Prozesse gehören die folgenden:
 
 * Die Automatisierung ist schneller und weniger fehleranfällig.
 * Workflows, für die keine Entscheidungen erforderlich sind oder die Entscheidungen auf einer einfachen Logik basieren, z. B. „If/Then“, eignen sich gut für die Automatisierung.
@@ -105,8 +105,8 @@ Eine Liste der verfügbaren dedizierten Connectoren finden Sie unter [Fusion-Anw
 Das folgende Beispiel zeigt einen Workflow, der:
 
 1. Überwacht eine Tabelle für neue Benutzer
-1. Prüft, ob der Benutzer in [!DNL Workfront] existiert
-1. Erstellt den Benutzer in [!DNL Workfront], wenn der Benutzer noch nicht vorhanden ist
-1. Lädt die [!DNL Workfront] Benutzer-ID zurück in die Tabelle.
+1. Prüft, ob der Benutzer in Workfront existiert
+1. Erstellt den Benutzer in Workfront, wenn der Benutzer noch nicht vorhanden ist
+1. Lädt die Workfront-Benutzer-ID zurück in die Tabelle.
 
 ![Beispiel für ein Automatisierungsszenario](assets/fusion-integration-example.png)

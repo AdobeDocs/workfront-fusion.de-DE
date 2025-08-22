@@ -4,16 +4,16 @@ description: Sie können Ihre Team-Verbindungen im Bereich Verbindungen anzeigen
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 1%
+source-wordcount: '227'
+ht-degree: 3%
 
 ---
 
 # Löschen von Szenarioelementen
 
-Sie können Szenarioelemente in den folgenden Bereichen in Ihrem [!DNL Adobe Workfront Fusion]-Konto speichern und löschen:
+Sie können Szenarioelemente in den folgenden Bereichen in Ihrem Adobe Workfront Fusion-Konto speichern und löschen:
 
 * [!UICONTROL Szenario]
 * [!UICONTROL Verbindungen]
@@ -82,7 +82,7 @@ So löschen Sie Szenarioelemente:
 
 1. Klicken Sie auf den Bereich im linken Bedienfeld .
 
-   Wenn Sie beispielsweise ein Szenario löschen möchten, klicken Sie im linken **auf** Szenario“.
+   Wenn Sie beispielsweise ein Szenario löschen möchten, klicken Sie im linken **[!UICONTROL auf]** Szenario“.
 
 1. Klicken Sie auf den Abwärtspfeil rechts neben dem Element, das Sie löschen möchten, und klicken Sie dann auf **[!UICONTROL Löschen]**.
 1. Klicken Sie **[!UICONTROL &quot;]**&quot; zur Bestätigung.

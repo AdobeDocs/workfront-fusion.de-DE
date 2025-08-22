@@ -1,19 +1,19 @@
 ---
 title: Markdown-Module
-description: In einem  [!DNL Adobe Workfront Fusion]  können Sie die Markdown-Module verwenden, um Markdown in HTML und HTML in Markdown zu konvertieren.
+description: In einem Adobe Workfront Fusion-Szenario können Sie die Markdown-Module verwenden, um Markdown in HTML und HTML in Markdown zu konvertieren.
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '285'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL Markdown]-Module
 
-In einem [!DNL Adobe Workfront Fusion] Szenario können Sie die [!UICONTROL Markdown]-Module verwenden, um Markdown in HTML und HTML in Markdown zu konvertieren.
+In einem Adobe Workfront Fusion-Szenario können Sie die [!UICONTROL Markdown]-Module verwenden, um Markdown in HTML und HTML in Markdown zu konvertieren.
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -56,7 +56,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

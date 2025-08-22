@@ -3,20 +3,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
 title: Erstellen eines Basisszenarios
-description: Erfahren Sie, wie Sie mit Adobe Workfront Fusion ein einfaches Automatisierungsszenario erstellen. Automatisierungsszenarien automatisieren Workfront-Prozesse, einschließlich Datenmanipulationen und -umwandlungen. Dieses Beispiel führt Sie durch den Prozess der Erstellung eines Szenarios, das in Workfront nach einer  [!DNL Workfront]  sucht und sie dann in ein Projekt konvertiert.
+description: Erfahren Sie, wie Sie mit Adobe Workfront Fusion ein einfaches Automatisierungsszenario erstellen. Automatisierungsszenarien automatisieren Workfront-Prozesse, einschließlich Datenmanipulationen und -umwandlungen. Dieses Beispiel führt Sie durch den Prozess der Erstellung eines Szenarios, das in Workfront nach einer Workfront-Aufgabe sucht und sie dann in ein Projekt konvertiert.
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1416'
 ht-degree: 1%
 
 ---
 
 # Erstellen eines Basisszenarios
 
-Die Rolle von [!DNL Adobe Workfront Fusion] besteht darin, Ihre Prozesse zu automatisieren, damit Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen. Es funktioniert durch die Verknüpfung von Aktionen innerhalb und zwischen Apps und Services, um ein Szenario zu erstellen, das Ihre Daten automatisch überträgt und transformiert. Das Szenario, in dem Sie Daten in einer App oder einem Service erstellen, überwacht und verarbeitet diese Daten, um das gewünschte Ergebnis zu liefern.
+Die Rolle von Adobe Workfront Fusion besteht darin, Ihre Prozesse zu automatisieren, damit Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen. Es funktioniert durch die Verknüpfung von Aktionen innerhalb und zwischen Apps und Services, um ein Szenario zu erstellen, das Ihre Daten automatisch überträgt und transformiert. Das Szenario, in dem Sie Daten in einer App oder einem Service erstellen, überwacht und verarbeitet diese Daten, um das gewünschte Ergebnis zu liefern.
 
 In diesem Beispiel wird erläutert, wie Sie ein Szenario erstellen, in dem in Workfront nach einer Anfrage gesucht und diese in ein Projekt konvertiert wird.
 
@@ -31,17 +31,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Packstück</td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
    <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td> 
-   <td> <p>Neu: [!UICONTROL Standard]</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -49,9 +49,9 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
   </tr>
  </tbody> 
@@ -59,7 +59,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -75,7 +75,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
    Der Szenario-Editor wird angezeigt, wobei in der Mitte ein leeres Modul enthalten ist.
 
-1. Wählen Sie oben links den **[!UICONTROL New scenario]** Platzhalternamen aus und geben Sie dann einen Namen ein.
+1. Wählen Sie **[!UICONTROL Platzhalternamen]** Neues Szenario“ in der linken oberen Ecke aus und geben Sie dann einen Namen ein.
 1. Fahren Sie mit [Hinzufügen und konfigurieren Sie das erste Modul](#add-and-configure-the-first-module) fort.
 
 ### Hinzufügen und Konfigurieren des ersten Moduls
@@ -84,45 +84,45 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
    Rechts neben dem Modul wird eine Liste mit Apps angezeigt.
 
-1. Wählen Sie **[!DNL Adobe Workfront]** aus. Wenn es nicht sichtbar ist, klicken Sie unten in der Liste auf die Suchleiste, geben Sie &quot;Workfront&quot; ein und wählen Sie es aus, wenn es in der Liste angezeigt wird.
+1. **Adobe Workfront**. Wenn es nicht sichtbar ist, klicken Sie unten in der Liste auf die Suchleiste, geben Sie &quot;Workfront&quot; ein und wählen Sie es aus, wenn es in der Liste angezeigt wird.
 
-   Die Liste ändert sich und zeigt alle [!DNL Workfront] Module an, die Sie verwenden können.
+   Die Liste ändert sich und zeigt alle Workfront-Module an, die Sie verwenden können.
 
-1. Klicken Sie auf das **[!UICONTROL Search]**.
+1. Klicken Sie auf das **[!UICONTROL Suche]**-Modul.
 
    Das Fenster für die Modulkonfiguration wird geöffnet.
 
-1. Wählen Sie im [!UICONTROL Connection] Ihre Workfront-Verbindung aus.
+1. Wählen [!UICONTROL  im Feld ] Ihre Workfront-Verbindung aus.
 
    Wenn Sie keine Workfront-Verbindung haben, lesen Sie [Verbindung erstellen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
-1. Wählen Sie im [!UICONTROL Record Type] die Option **[!UICONTROL Issue]** aus. Dadurch wird das Modul so eingerichtet, dass nur Probleme gesucht werden, darunter auch Anfragen.
+1. Wählen Sie im Feld [!UICONTROL Datensatztyp] die Option **[!UICONTROL Problem]** aus. Dadurch wird das Modul so eingerichtet, dass nur Probleme gesucht werden, darunter auch Anfragen.
 
-   Sie finden **[!UICONTROL Issue]** in der Liste, wenn Sie mit der Eingabe des Wortes &quot;[!UICONTROL Issue]&quot; beginnen.
+   Sie finden **[!UICONTROL Problem]** in der Liste, wenn Sie mit der Eingabe des Worts &quot;[!UICONTROL Problem] beginnen.
 
-1. Wählen Sie im **[!UICONTROL Result Set]** die Option **[!UICONTROL First Matching Record]** aus.
+1. Wählen Sie im **[!UICONTROL Ergebnissatz]** die Option **[!UICONTROL Erster übereinstimmender Datensatz]**.
 
    Dadurch wird das Modul so eingestellt, dass nur der erste gefundene Datensatz zurückgegeben wird, der die Kriterien erfüllt.
-1. Konfigurieren Sie im Bereich **[!UICONTROL Search criteria]** die Kriterien, um die spezifische Aufgabe zurückzugeben.
+1. Konfigurieren **[!UICONTROL im Bereich &quot;]**&quot; die Kriterien, um die spezifische Aufgabe zurückzugeben.
 
-   1. Wählen Sie im ersten Feld unter [!UICONTROL Search Criteria] das Feld aus, das Sie in Ihre Suche einbeziehen möchten. Wählen Sie für dieses Beispiel **[!UICONTROL Name]** aus.
+   1. Wählen Sie im ersten Feld unter [!UICONTROL Suchkriterien] das Feld aus, das Sie in Ihre Suche einbeziehen möchten. Wählen Sie für dieses Beispiel **[!UICONTROL Name]** aus.
 
-      Sie finden **[!UICONTROL Name]** in der Liste, wenn Sie mit der Eingabe des Wortes &quot;[!UICONTROL name]&quot; beginnen.
+      Sie finden **[!UICONTROL Name]** in der Liste, wenn Sie mit der Eingabe des Wortes &quot;[!UICONTROL name] beginnen.
    1. Klicken Sie für den -Operator auf den Dropdown-Pfeil neben **Vorhanden** und ändern Sie ihn in [!UICONTROL **Enthält (ignoriert Groß-/Kleinschreibung)**].
 
       Auf diese Weise kann das Modul Projekte mit den ausgewählten Wörtern im Namen finden, auch wenn Sie nicht den gesamten Namen oder nur die falsche Groß-/Kleinschreibung (z. B. alle Großbuchstaben) eingeben.
-   1. Geben Sie im letzten Feld unter [!UICONTROL Search Criteria] ein Wort oder eine Phrase ein, von dem bzw. der Sie wissen, dass es/sie im Namen der Aufgabe ist, nach der Sie suchen.
+   1. Geben Sie im letzten Feld unter [!UICONTROL Suchkriterien] ein Wort oder eine Phrase ein, von dem Sie wissen, dass es/sie im Namen der Aufgabe ist, nach der Sie suchen.
 
-1. Wählen Sie in der Liste **[!UICONTROL Outputs]** die Felder aus, die vom Modul ausgegeben werden sollen. Wählen Sie für dieses Beispiel die Felder **[!UICONTROL ID]** und **[!UICONTROL Name]** aus.
+1. Wählen Sie in **[!UICONTROL Liste]** Ausgaben“ die Felder aus, die vom Modul ausgegeben werden sollen. Wählen Sie für dieses Beispiel die Felder **[!UICONTROL ID]** und **[!UICONTROL Name]** aus.
 
    >[!TIP]
    >
    >Sie können **Befehlstaste+F** ([!DNL Mac] OS) oder **Strg+F** ([!DNL Windows] OS) verwenden, um ein Feld schnell zu finden.
 
-1. Klicken Sie auf **[!UICONTROL OK]** , um die Modulkonfiguration zu speichern.
+1. Klicken Sie **[!UICONTROL OK]**, um die Modulkonfiguration zu speichern.
 
-1. Klicken Sie mit der rechten Maustaste auf das Modul, klicken Sie auf **[!UICONTROL Rename]**, geben Sie dann einen Namen ein, der beschreibt, was das Modul tun soll (z. B. „Nach Anfragen suchen„), und klicken Sie dann auf **[!UICONTROL OK]**.
+1. Klicken Sie mit der rechten Maustaste auf das Modul **[!UICONTROL Umbenennen]**, geben Sie dann einen Namen ein, der beschreibt, was das Modul tun soll (z. B. nach Anfragen suchen), und klicken Sie dann auf **[!UICONTROL OK]**.
 
-   Der Name wird direkt unter dem Modul angezeigt. Darunter finden Sie [!DNL Workfront Fusion] kurze Beschreibung der Art der Aktion, die vom Modul ausgeführt wird.
+   Der Name wird direkt unter dem Modul angezeigt. Darunter finden Sie in Workfront Fusion eine kurze Beschreibung des Aktionstyps, der vom Modul ausgeführt wird.
 
    ![Modul umbenannt](assets/module-renamed-wf.png)
 
@@ -130,17 +130,17 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 ## Hinzufügen und Konfigurieren des zweiten Moduls
 
-1. Bewegen Sie den Mauszeiger über den Teilkreis rechts neben dem Modul und klicken Sie dann auf **[!UICONTROL Add another module]**.
-1. Wählen Sie [!DNL Adobe Workfront] aus der Liste der Programme und dann die **[!UICONTROL Convert object]** aus.
-1. Wählen Sie im Feld [!UICONTROL Connection] dieselbe Workfront-Verbindung aus, die Sie im vorherigen Modul verwendet haben.
-1. Wählen Sie im Feld **[!UICONTROL Record type]** die Option **[!UICONTROL issue]** aus, da das Modul ein Problem konvertieren wird.
-1. Wählen Sie im Feld **[!UICONTROL Convert to]** die Option **Projekt** aus.
+1. Bewegen Sie den Mauszeiger über den Teilkreis rechts neben dem Modul und klicken Sie dann auf **[!UICONTROL Weitere Module hinzufügen]**.
+1. Wählen Sie Adobe Workfront aus der Liste der Programme und dann das Modul **[!UICONTROL Objekt konvertieren]** aus.
+1. Wählen [!UICONTROL  im Feld ] die gleiche Workfront-Verbindung aus, die Sie im vorherigen Modul verwendet haben.
+1. Wählen Sie im Feld **[!UICONTROL Datensatztyp]** die Option **[!UICONTROL Problem]** aus, da das Modul ein Problem konvertiert.
+1. Wählen Sie im **[!UICONTROL Konvertieren in]** die Option **Projekt** aus.
 1. Klicken Sie neben dem Feld Aufgaben-ID auf den Umschalter Zuordnung , um es zu aktivieren.
 
    Der Umschalter wird blau, wenn er aktiviert ist. Auf diese Weise können Sie die Aufgaben-ID aus dem vorherigen Modul zuordnen.
 
    ![Umschalter für Zuordnung](assets/map-toggle.png)
-1. Klicken Sie auf das Feld **[!UICONTROL Task ID]** .
+1. Klicken Sie auf **[!UICONTROL Feld]** Aufgaben-ID“.
 
    Es öffnet sich ein Bedienfeld, in dem Sie auswählen können, was als ID der Aufgabe verwendet werden soll, die Sie in ein Projekt konvertieren möchten. Da Sie die Zuordnung aktiviert haben, enthält das Bedienfeld Ausgaben aus allen vorherigen Modulen. Sie haben ID als Ausgabe des vorherigen Moduls ausgewählt, sodass es jetzt im Bedienfeld verfügbar ist.
 
@@ -152,9 +152,9 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
    ![Map ID](assets/map-id.png)
 
 1. Klicken Sie auf das **Vorlagen** ID), geben Sie den Namen der Workfront-Vorlage ein, die Sie für dieses Projekt verwenden möchten, und wählen Sie sie aus, wenn sie in der Liste angezeigt wird.
-1. Klicken Sie auf **[!UICONTROL OK]** , um die Modulkonfiguration zu speichern.
+1. Klicken Sie **[!UICONTROL OK]**, um die Modulkonfiguration zu speichern.
 
-1. Klicken Sie mit der rechten Maustaste auf das Modul, klicken Sie auf **[!UICONTROL Rename]**, geben Sie dann einen Namen ein, der beschreibt, was das Modul tun soll (z. B. „In Projekt konvertieren„), und klicken Sie dann auf **[!UICONTROL OK]**.
+1. Klicken Sie mit der rechten Maustaste auf das Modul **[!UICONTROL Umbenennen]**, geben Sie dann einen Namen ein, der beschreibt, was das Modul tun soll (z. B. „In Projekt konvertieren„), und klicken Sie dann auf **[!UICONTROL OK]**.
 
 1. Fahren Sie mit [Testen des Szenarios](#test-the-scenario) fort.
 
@@ -164,7 +164,7 @@ Bevor Sie Ihr Szenario aktivieren, müssen Sie es testen, indem Sie es mindesten
 
 Bei diesem Szenario würde ein erfolgreicher Test dazu führen, dass die Anfrage gefunden und in ein Projekt konvertiert wird.
 
-1. Klicken Sie in der linken unteren Ecke des Szenario-Editors auf **[!UICONTROL Run once]** .
+1. Klicken Sie **[!UICONTROL Einmal ausführen]** in der linken unteren Ecke des Szenario-Editors.
 1. Klicken Sie nach der Ausführung des Szenarios auf die Blase über dem ersten Modul, um Informationen über das vom Modul verarbeitete Datenpaket anzuzeigen, einschließlich der Daten, die aus der vom Modul zurückgegebenen Anfrage abgerufen wurden.
 
 1. Klicken Sie auf die Blase „Ausführungs-Inspektor“ über dem zweiten Modul, um die Eingabe (die Anfrage) und die Ausgabe (das konvertierte Projekt) anzuzeigen.
@@ -174,7 +174,7 @@ Bei diesem Szenario würde ein erfolgreicher Test dazu führen, dass die Anfrage
    * Allgemeine Informationen finden Sie unter [Ausführungsfluss von Szenarien](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
    * Informationen zu verarbeiteten Bundles finden Sie unter [Szenarioausführung, Zyklen und Phasen](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. Klicken Sie [!DNL Workfront Fusion] unten links auf **[!UICONTROL Save]** , um den Fortschritt des Szenarios zu speichern.
+1. Klicken Sie in Workfront Fusion auf **[!UICONTROL Speichern]** unten links, um Ihren Fortschritt im Szenario zu speichern.
 
    >[!IMPORTANT]
    >
@@ -184,16 +184,16 @@ Bei diesem Szenario würde ein erfolgreicher Test dazu führen, dass die Anfrage
 >
 >Wir empfehlen die optionale, aber nützliche Vorgehensweise, Hinweise zu jedem Modul hinzuzufügen.
 >
->1. Klicken Sie mit der rechten Maustaste auf ein Modul und wählen Sie **[!UICONTROL Add a note]**.
+>1. Klicken Sie mit der rechten Maustaste auf ein Modul und wählen Sie **[!UICONTROL Anmerkung hinzufügen]**.
 >1. Geben Sie in der angezeigten Anmerkung eine Übersicht für das Modul ein.
 >
 >    Sie können mehrere Notizen für ein Modul hinzufügen.
 >
->1. Schließen Sie den **[!UICONTROL Notes]**.
+>1. Schließen Sie den **[!UICONTROL Anmerkungen]**.
 >
->     Nachdem Sie einem Szenario eine Anmerkung hinzugefügt haben, wird ein orangefarbener Punkt auf dem **[!UICONTROL Notes]** (![ mit Punkt) ](assets/notes-icon-w-dot.png) unteren Rand des Szenario-Editors angezeigt.
+>     Nachdem Sie einem Szenario eine Anmerkung hinzugefügt haben, wird ein orangefarbener Punkt auf dem **[!UICONTROL Anmerkungen]**-Symbol ![Anmerkungen-Symbol mit ](assets/notes-icon-w-dot.png) Punkt) unten im Szenario-Editor angezeigt.
 >
->1. Klicken Sie auf das **[!UICONTROL Notes]**-Symbol ![Notes-Symbol mit Punkt](assets/notes-icon-w-dot.png), um Ihre Notizen anzuzeigen.
+>1. Klicken Sie auf **[!UICONTROL Notizen]**-Symbol ![Notizen-Symbol mit Punkt](assets/notes-icon-w-dot.png), um Ihre Notizen anzuzeigen.
 >
 
 ## Aktivieren des Szenarios

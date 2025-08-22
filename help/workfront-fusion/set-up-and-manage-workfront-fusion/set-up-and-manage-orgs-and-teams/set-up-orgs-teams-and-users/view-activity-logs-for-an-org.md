@@ -4,10 +4,10 @@ description: Sie können ein Aktivitätsprotokoll für Ihr Unternehmen anzeigen,
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: edeed099b26dae635889fd35de61d66a1ea1ffc1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 0%
+source-wordcount: '536'
+ht-degree: 1%
 
 ---
 
@@ -26,17 +26,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan</td>
+   <td role="rowheader">Adobe Workfront-Plan</td>
    <td> <p>Neu: Ultimate</p> <p>Oder</p> <p>Aktuell: Nicht verfügbar</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td> 
-   <td> <p>Neu: [!UICONTROL Standard]</p><p>Oder</p><p>Aktuell: Nicht verfügbar</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Nicht verfügbar</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -48,7 +48,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Diese Funktion steht nur Organisationen mit dem Ultimate Workfront-Plan zur Verfügung, der [!DNL Workfront Fusion] umfasst. Es ist kein zusätzlicher Produktkauf erforderlich.</p>
+   <p>Diese Funktion steht nur Organisationen mit dem Ultimate Workfront-Plan zur Verfügung, der auch Workfront Fusion umfasst. Es ist kein zusätzlicher Produktkauf erforderlich.</p>
    </td> 
   </tr>
  </tbody> 
@@ -56,7 +56,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation zu Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -66,7 +66,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 1. Klicken Sie im linken Navigationsbereich auf **Organisationsübersicht** ![Organisationsübersichtssymbol](assets/org-overview-icon.png).
 1. Wenn Sie sich derzeit nicht in der Organisation befinden, für die Sie das Aktivitätsprotokoll anzeigen möchten, klicken Sie auf den Organisationsnamen in der oberen rechten Ecke des Bildschirms und wählen Sie die Organisation aus dem Dropdown-Menü aus.
-1. Klicken Sie oben im Bildschirm auf die Registerkarte **[!UICONTROL Activity Logs]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Aktivitätsprotokolle“ am oberen Bildschirmrand.
 
    Die Seite „Aktivitätsprotokoll“ wird geöffnet.
 1. (Optional) Filtern Sie das Aktivitätsprotokoll, um die Ergebnisse nach den von Ihnen angegebenen Kriterien zu begrenzen.
@@ -82,7 +82,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 1. Klicken Sie im linken Navigationsbereich auf **Organisationsübersicht** ![Organisationsübersichtssymbol](assets/org-overview-icon.png).
 1. Wenn Sie sich derzeit nicht in der Organisation befinden, für die Sie das Aktivitätsprotokoll anzeigen möchten, klicken Sie auf den Organisationsnamen in der oberen rechten Ecke des Bildschirms und wählen Sie die Organisation aus dem Dropdown-Menü aus.
-1. Klicken Sie oben im Bildschirm auf die Registerkarte **[!UICONTROL Activity Logs]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Aktivitätsprotokolle“ am oberen Bildschirmrand.
 
    Die Seite „Aktivitätsprotokoll“ wird geöffnet.
 1. Klicken Sie **Filter** ![Filtersymbol](assets/filter-activity-log.png).
@@ -100,9 +100,9 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 1. Klicken Sie im linken Navigationsbereich auf **Organisationsübersicht** ![Organisationsübersichtssymbol](assets/org-overview-icon.png).
 1. Wenn Sie sich derzeit nicht in der Organisation befinden, für die Sie das Aktivitätsprotokoll anzeigen möchten, klicken Sie auf den Organisationsnamen in der oberen rechten Ecke des Bildschirms und wählen Sie die Organisation aus dem Dropdown-Menü aus.
-1. Klicken Sie oben im Bildschirm auf die Registerkarte **[!UICONTROL Activity Logs]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Aktivitätsprotokolle“ am oberen Bildschirmrand.
 
    Die Seite „Aktivitätsprotokoll“ wird geöffnet.
 1. Wählen Sie den Datumsbereich aus dem Kalender aus und geben Sie (optional) die Zeiten ein.
 1. Wählen Sie aus, ob eine Excel- oder eine CSV-Datei exportiert werden soll.
-1. Klicken Sie **Apply**.
+1. Klicken Sie auf **Übernehmen**.

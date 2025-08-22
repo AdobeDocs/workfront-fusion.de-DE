@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 0%
+source-wordcount: '703'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ Ein Szenario besteht aus einer Reihe von Modulen, die angeben, wie Daten innerha
 Ein Szenario besteht aus verschiedenen Elementen. Die Verwendung der Dokumentation wird durch das Verständnis der Terminologie dieser Elemente erleichtert.
 
 * [Szenario](#scenario)
-* [Trigger](#trigger)
+* [Auslöser](#trigger)
 * [Modul](#module)
 * [Route](#route)
 * [Szenario-Segment](#scenario-segment)
@@ -34,11 +34,11 @@ Ein **Szenario** ist eine vom Benutzer erstellte Reihe automatisierter Schritte,
 
 ![Szenario](assets/entire-scenario-scenario.png)
 
-### Trigger
+### Auslöser
 
 Ein Szenario beginnt mit einem **Trigger**. Der Trigger sucht nach neuen und aktualisierten Daten und startet das Szenario, wenn bestimmte im Modul konfigurierte Bedingungen zutreffen. Trigger können so konfiguriert werden, dass ein Szenario nach einem Zeitplan (Abrufen) oder bei jeder Datenänderung (sofortig) gestartet wird.
 
-![Trigger ](assets/scenario-trigger.png)
+![Auslöser](assets/scenario-trigger.png)
 
 ### Modul
 
@@ -72,7 +72,7 @@ Erweitern Sie die folgenden Abschnitte, um Beispielszenarien und deren Erläuter
 
 Workfront Fusion ermöglicht die Automatisierung einfacher oder komplexer Workflows innerhalb von Workfront, wodurch Zeit gespart und die konsistente Ausführung des Prozesses sichergestellt wird.
 
-In diesem Beispiel tritt ein Trigger auf, wenn sich ein angegebenes Feld in einer Aufgabe oder einem Problem in [!DNL Workfront] ändert. Nach der Auslösung ruft das Szenario Informationen im zugehörigen Projekt ab und erstellt eine maßgeschneiderte Aktualisierung für eine Person, die einer bestimmten Rolle im Projekt zugewiesen wurde.
+In diesem Beispiel tritt ein Trigger auf, wenn sich ein angegebenes Feld in einer Aufgabe oder einem Problem in Workfront ändert. Nach der Auslösung ruft das Szenario Informationen im zugehörigen Projekt ab und erstellt eine maßgeschneiderte Aktualisierung für eine Person, die einer bestimmten Rolle im Projekt zugewiesen wurde.
 
 ![Beispiel für eine Vorlage](assets/fusion-template-example.png)
 
@@ -86,9 +86,9 @@ In diesem Beispiel tritt ein Trigger auf, wenn sich ein angegebenes Feld in eine
 
 Workfront Fusion kann eine Verbindung zu anderen Anwendungen und Web-Services herstellen. Sie können auf Daten aus anderen Programmen zugreifen, diese importieren, bearbeiten oder exportieren und dabei in Workfront oder miteinander integrieren.
 
-Viele Anwendungen verfügen über dedizierte [!DNL Workfront Fusion]. Wenn für die Anwendung, auf die Sie zugreifen möchten, kein dedizierter Connector vorhanden ist, können Sie die HTTP- oder SOAP-Module von Workfront Fusion verwenden, um über die API eine Verbindung zur Anwendung herzustellen.
+Viele Anwendungen verfügen über dedizierte Workfront Fusion-Connectoren. Wenn für die Anwendung, auf die Sie zugreifen möchten, kein dedizierter Connector vorhanden ist, können Sie die HTTP- oder SOAP-Module von Workfront Fusion verwenden, um über die API eine Verbindung zur Anwendung herzustellen.
 
-In diesem Beispiel tritt beim Szenario ein Trigger auf, wenn ein(e) Benutzende(r) zu einer [!DNL Excel] Tabelle hinzugefügt wird. Das Szenario prüft, ob sich der Benutzer in [!DNL Workfront] befindet. Andernfalls wird der Benutzer in [!DNL Workfront] erstellt und seine Workfront-Benutzer-ID wird wieder in die Tabelle eingefügt.
+In diesem Beispiel tritt beim Szenario ein Trigger auf, wenn ein(e) Benutzende(r) zu einer [!DNL Excel] Tabelle hinzugefügt wird. Das Szenario prüft, ob sich die Benutzerin bzw. der Benutzer in Workfront befindet. Andernfalls wird der Benutzer in Workfront erstellt und seine Workfront-Benutzer-ID wird wieder in die Tabelle eingefügt.
 
 ![Integrationsbeispiel](assets/fusion-integration-example.png)
 
@@ -97,7 +97,7 @@ Eine Liste der dedizierten Connectoren finden Sie unter [Fusion-Programme und ih
 
 >[!IMPORTANT]
 >
->[!DNL Adobe Workfront Fusion] kann eine Verbindung zu fast jedem Webdienst herstellen. Wenn die App, mit der Sie arbeiten möchten, keinen dedizierten [!DNL Workfront Fusion]-Connector hat, verwenden Sie universelle Connectoren, um eine Verbindung zur App oder zum Service herzustellen.
+>Adobe Workfront Fusion kann eine Verbindung zu fast jedem Webservice herstellen. Wenn die App, mit der Sie arbeiten möchten, keinen dedizierten Workfront Fusion-Connector hat, verwenden Sie universelle Connectoren, um eine Verbindung zur App oder zum Service herzustellen.
 >
 >Eine Liste der universellen Connectoren finden Sie unter [Universelle Connectoren](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 

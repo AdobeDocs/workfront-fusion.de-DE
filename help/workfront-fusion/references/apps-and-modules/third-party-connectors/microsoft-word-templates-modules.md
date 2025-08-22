@@ -4,16 +4,16 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
 
 # [!DNL Microsoft Word Template]
 
-In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Workflows automatisieren, die [!DNL Microsoft Word Templates] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Microsoft Word Templates] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,17 +58,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Voraussetzungen
 
-Um [!DNL Miscrosoft Word Templates] mit [!DNL Adobe Workfront Fusion] verwenden zu können, muss ein [!DNL Office 365] Konto vorhanden sein. Sie können `www.office.com` eine erstellen.
+Um [!DNL Miscrosoft Word Templates] mit Adobe Workfront Fusion verwenden zu können, benötigen Sie ein [!DNL Office 365]. Sie können `www.office.com` eine erstellen.
 
 
 
-## Verbinden des [!DNL Office]-Services mit [!DNL Workfront Fusion]
+## Verbinden des [!DNL Office]-Service mit Workfront Fusion
 
 Anweisungen zum Verbinden Ihres [!DNL Office]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung mit [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
@@ -189,11 +189,11 @@ Mit diesem Transformatormodul können Sie ein Dokument mit von Ihnen angegebenen
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Datenquelle]</td> 
+   <td role="rowheader">[!UICONTROL-Datenquelle]</td> 
    <td> <p>Wählen Sie eine Option aus, um anzugeben, ob die von Ihnen verwendeten Daten aus einem Formular oder aus einer Rohdatenerfassung (nicht verarbeitete Computerdaten) stammen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Werte]</td> 
+   <td role="rowheader">[!UICONTROL-Werte]</td> 
    <td> <p>Dies muss ein Array von Sammlungen sein, wobei:</p> 
     <ul> 
      <li>Jede Sammlung entspricht einem Dateneintrag und enthält ein Element <code>entry</code></li> 
@@ -259,7 +259,7 @@ Dieses Aggregator-Modul ist besonders nützlich für die Erstellung von Listen o
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Werte]</td> 
+   <td role="rowheader">[!UICONTROL-Werte]</td> 
    <td> <p>Dies muss ein Array von Sammlungen sein, wobei:</p> 
     <ul> 
      <li>Jede Sammlung entspricht einem Dateneintrag und enthält ein Element <code>entry</code></li> 

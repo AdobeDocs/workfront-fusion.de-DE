@@ -4,10 +4,10 @@ description: Ein Vorgang in Adobe Workfront Fusion ist eine Aufgabe, die von ein
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
+source-wordcount: '355'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +29,9 @@ Ein Vorgang in Adobe Workfront Fusion ist eine Aufgabe, die von einem Modul ausg
 
 ## Limits für Operationen
 
-In Ihrem Unternehmen gibt es möglicherweise ein monatliches Betriebslimit. Dies basiert auf dem [!DNL Workfront], den Ihr Unternehmen erworben hat. Der [!UICONTROL Ultimate]-[!DNL Workfront] bietet unbegrenzte Operationen.
+In Ihrem Unternehmen gibt es möglicherweise ein monatliches Betriebslimit. Dies basiert auf dem von Ihrem Unternehmen erworbenen Workfront-Plan. Der Plan [!UICONTROL Ultimate] Workfront bietet unbegrenzte Operationen.
 
-Wenn für Ihr Unternehmen ein monatliches Limit gilt, werden Sie benachrichtigt, wenn Ihr Unternehmen das Limit fast erreicht hat. Wenn Ihre Organisation das Limit überschreitet, kontaktieren [!DNL Workfront] Ihre Organisation, um sicherzustellen, dass Ihr Plan Ihren Anforderungen entspricht.
+Wenn für Ihr Unternehmen ein monatliches Limit gilt, werden Sie benachrichtigt, wenn Ihr Unternehmen das Limit fast erreicht hat. Wenn Ihr Unternehmen das Limit überschreitet, setzt sich Workfront mit Ihrem Unternehmen in Verbindung, um sicherzustellen, dass Ihr Plan Ihren Anforderungen entspricht.
 
 Workfront Fusion sendet eine Benachrichtigung, wenn Ihr Unternehmen die folgenden Prozentsätze des monatlichen Limits für das Unternehmen erreicht:
 

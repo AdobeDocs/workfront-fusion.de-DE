@@ -5,9 +5,9 @@ description: Sie können bestimmte Einstellungen für Szenarien im Bedienfeld Sz
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan</td> 
+   <td role="rowheader">Adobe Workfront-Plan</td> 
    <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td> 
-   <td> <p>Neu: [!UICONTROL Standard]</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -45,16 +45,16 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] kaufen.</li><li>[!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] Workfront-Plan: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Konfigurationen der Zugriffsebene*</td> 
    <td> 
-     <p>Sie müssen ein [!DNL Workfront Fusion]-Administrator für Ihre Organisation sein.</p>
-     <p>Sie müssen [!DNL Workfront Fusion] für Ihr Team sein.</p>
+     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Unternehmen sein.</p>
+     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Team sein.</p>
    </td> 
   </tr> 
    </td> 
@@ -64,7 +64,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation zu Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -119,15 +119,15 @@ Nachdem ein Szenario ausgeführt wurde, können Sie standardmäßig Informatione
 
 ### [!UICONTROL Speichern unvollständiger Ausführungen zulassen]
 
-Diese Option bestimmt, wie [!DNL Adobe Workfront Fusion] bei einem Fehler während der Ausführung eines Szenarios verfahren wird. Wenn diese Option aktiviert ist, wird das Szenario angehalten und in den Ordner „Unvollständige Ausführung“ verschoben. Dadurch haben Sie die Möglichkeit, das Problem zu beheben und die Ausführung von dort fortzusetzen, wo das Szenario gestoppt wurde. Wenn diese Option deaktiviert ist, wird die Ausführung des Szenarios gestoppt und eine Rollback-Phase gestartet.
+Diese Option bestimmt, wie Adobe Workfront Fusion bei einem Fehler während der Ausführung eines Szenarios weitergeht. Wenn diese Option aktiviert ist, wird das Szenario angehalten und in den Ordner „Unvollständige Ausführung“ verschoben. Dadurch haben Sie die Möglichkeit, das Problem zu beheben und die Ausführung von dort fortzusetzen, wo das Szenario gestoppt wurde. Wenn diese Option deaktiviert ist, wird die Ausführung des Szenarios gestoppt und eine Rollback-Phase gestartet.
 
 Weitere Informationen zu unvollständigen Ausführungen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 ### Datenverlust aktivieren
 
-Diese Option hat mit der Aktivierung von Datenverlust zu tun, wenn [!DNL Workfront Fusion] ein Bundle nicht in der Warteschlange der unvollständigen Ausführungen speichern kann (z. B. aufgrund von fehlendem Speicherplatz). Wenn diese Option aktiviert ist, gehen die Daten verloren, um Unterbrechungen bei der Ausführung des Gesamtszenarios zu verhindern. Dies ist nützlich für Szenarien, in denen die höchste Priorität die kontinuierliche Ausführung ist und die eingehenden fehlerhaften Daten nicht so wichtig sind.
+Diese Option hat mit der Aktivierung von Datenverlust zu tun, wenn Workfront Fusion ein Bundle nicht in der Warteschlange der unvollständigen Ausführungen speichern kann (z. B. aufgrund von fehlendem Speicherplatz). Wenn diese Option aktiviert ist, gehen die Daten verloren, um Unterbrechungen bei der Ausführung des Gesamtszenarios zu verhindern. Dies ist nützlich für Szenarien, in denen die höchste Priorität die kontinuierliche Ausführung ist und die eingehenden fehlerhaften Daten nicht so wichtig sind.
 
-Darüber hinaus kann es beim Ausführen eines Szenarios vorkommen, dass ein Modul auf eine Datei trifft, die größer ist als die maximal zulässige Größe. In diesem Fall wird [!DNL Workfront Fusion] gemäß der Einstellung der Option [!UICONTROL Datenverlust aktivieren] fortgesetzt und eine Warnmeldung wird angezeigt.
+Darüber hinaus kann es beim Ausführen eines Szenarios vorkommen, dass ein Modul auf eine Datei trifft, die größer ist als die maximal zulässige Größe. In diesem Fall wird Workfront Fusion gemäß der Einstellung der Option [!UICONTROL Datenverlust aktivieren] ausgeführt und eine Warnmeldung wird angezeigt.
 
 Weitere Informationen zu unvollständigen Ausführungen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -137,7 +137,7 @@ Weitere Informationen zu Warnungen finden Sie unter [Fehlertypen](/help/workfron
 
 ### [!UICONTROL Automatische Bestätigung]
 
-Die Einstellungen [!UICONTROL Automatische &#x200B;]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
+Die Einstellungen [!UICONTROL Automatische ]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
 
 ### Maximale Zyklenanzahl
 
@@ -160,7 +160,7 @@ Das Festlegen weiterer Zyklen kann nützlich sein, wenn Sie eine Verbindungsunte
 
 >[!BEGINSHADEBOX]
 
-**Beispiele:** [!DNL Workfront] > [!UICONTROL Datensatz beobachten] überwacht neue Probleme, die auftreten, und [!DNL Workfront] >[!UICONTROL Objekt konvertieren] konvertiert die neue Anfrage in ein Projekt und weist ihr die entsprechende Vorlage zu.
+**Beispiele:** Workfront > [!UICONTROL Eintrag beobachten] überwacht neue Probleme, die auftreten, und Workfront > [!UICONTROL Objekt konvertieren] konvertiert die neue Anfrage in ein Projekt und weist ihr die entsprechende Vorlage zu.
 
 ![Szenario-Einstellungen](assets/scenario-settings-ex-1-350x157.png)
 
@@ -171,7 +171,7 @@ Eine Einstellung [!UICONTROL Weitere Zyklen] wird nur angewendet, wenn Sie die A
 ![Maximale Zyklenanzahl](assets/max-number-cycles-1-350x201.png)
 
 Die maximale Anzahl von Zyklen im Modul Workfront > Datensätze überwachen ist auf `10` festgelegt.
-Wenn 100 Anfragen an [!DNL Workfront] gesendet werden und das Feld Maximale Anzahl von Zyklen auf 10 festgelegt ist, werden 90 Dateien nach einer Szenario-Ausführung nicht verarbeitet. Die nächsten 10 Dateien werden im nächsten geplanten Szenario verarbeitet.
+Wenn 100 Anfragen an Workfront gesendet werden und das Feld Maximale Anzahl von Zyklen auf 10 festgelegt ist, werden 90 Dateien nach einer Szenario-Ausführung nicht verarbeitet. Die nächsten 10 Dateien werden im nächsten geplanten Szenario verarbeitet.
 
 #### Die maximale Anzahl von Zyklen ist auf 10 festgelegt.
 

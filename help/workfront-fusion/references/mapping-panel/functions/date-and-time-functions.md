@@ -4,10 +4,10 @@ description: Die folgenden Datums- und Uhrzeitfunktionen sind im Zuordnungsberei
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 1%
+source-wordcount: '1879'
+ht-degree: 2%
 
 ---
 
@@ -311,7 +311,7 @@ Weitere Informationen finden Sie unter Datum und Text im Artikel [Elementdatenty
    <td> <p>Konvertiert einen Datumswert in einen Textwert. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Format] </td> 
+   <td>[!UICONTROL-Format] </td> 
    <td>Text </td> 
    <td> <p>Ermöglicht die Angabe eines Formats mithilfe von Datums-/Uhrzeitformatierungs-Token. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token zur Datums- und Zeitformatierung</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
@@ -345,11 +345,11 @@ Die Funktion `formatDate` gibt eine Textdarstellung des angegebenen Datumswerts 
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
-  Gibt 01.10.2018 07:32 zurück
+  Gibt 01.10.2018 07 :32
 
 * `formatDate(now;DD.MM.YYYY HH:mm)`
 
-  Gibt 19.03.2019 15:30 zurück
+  Gibt 19.03.2019 15 zurück:30
 
 >[!ENDSHADEBOX]
 
@@ -374,12 +374,12 @@ Die zweite Spalte zeigt den erwarteten Typ an. Wenn ein anderer Typ angegeben wi
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Text] </td> 
+   <td>[!UICONTROL-Text] </td> 
    <td>Text </td> 
    <td> <p>Konvertiert einen Datumswert in einen Textwert. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Format] </td> 
+   <td>[!UICONTROL-Format] </td> 
    <td>Text </td> 
    <td> <p>Ermöglicht die Angabe eines Formats mithilfe von Datums-/Uhrzeitformatierungs-Token. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token zur Datums- und Zeitformatierung</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
@@ -431,7 +431,7 @@ Verwenden Sie einen der folgenden Zeitwerte für den `unit`:
 * Sekunden
 * Minuten
 * Stunden
-* Tagen
+* Tage
 * Wochen
 * Monate
 
@@ -443,15 +443,15 @@ Wenn keine Einheit angegeben ist, gibt die Funktion die Differenz in Millisekund
 
 * `dateDifference(2021-05-11T18:10:00.000Z;2021-05-11T18:00:00.000Z)`
 
-  Gibt `600,000`
+  Gibt `600,000` zurück
 
 * `dateDifference(2021-05-11T18:10:00.000Z;2021-05-11T18:00:00.000Z;hours)`
 
-  Gibt `4`
+  Gibt `4` zurück
 
 * `dateDifference2021-06-11T18:10:00.000Z;2021-05-11T18:00:00.000Z;months)`
 
-  Gibt `1`
+  Gibt `1` zurück
 
 >[!ENDSHADEBOX]
 
@@ -459,7 +459,7 @@ Wenn keine Einheit angegeben ist, gibt die Funktion die Differenz in Millisekund
 
 #### Berechnung des n-ten Wochentags im Monat
 
-Dieser Abschnitt ist für [!DNL Workfront Fusion] von der [!DNL Exceljet]-Webseite angepasst, in der erläutert wird, wie Sie den n-ten Wochentag in einem Monat erhalten.
+Dieser Abschnitt ist für Workfront Fusion von der [!DNL Exceljet]-Webseite angepasst, auf der erläutert wird, wie Sie den n-ten Wochentag in einem Monat erhalten.
 
 Wenn Sie ein Datum berechnen müssen, das dem n-ten Wochentag im Monat entspricht (z. B. erster Dienstag, dritter Freitag usw.), können Sie die folgende Formel verwenden:
 

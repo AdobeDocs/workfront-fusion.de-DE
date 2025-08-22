@@ -8,9 +8,9 @@ description: In einigen Fällen empfiehlt es sich, die Ausführung des Szenarios
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Sie können die folgende Problemumgehung verwenden, um `throw` Fehlerfunktionali
 
 Informationen zu unvollständigen Ausführungen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen in Adobe Workfront Fusion](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
-Informationen zu Anweisungen zur Fehlerbehandlung finden Sie unter [Anweisungen zur Fehlerbehandlung in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+Informationen zu Anweisungen zur Fehlerbehandlung finden Sie unter [Anweisungen zur Fehlerbehandlung in Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 ## Zugriffsanforderungen
 

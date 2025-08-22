@@ -4,10 +4,10 @@ description: Mit FTP-Modulen können Sie Dateiänderungen in einem ausgewählten
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 0%
+source-wordcount: '1391'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -115,7 +115,7 @@ Um FTP-Module verwenden zu können, müssen Sie über ein Konto mit einem FTP-Di
     </tr> 
     <tr> 
      <td> <p>[!UICONTROL Selbstsigniertes Zertifikat]</p> </td> 
-     <td> <p>Klicken Sie auf die Schaltfläche <b>[!UICONTROL Extract]</b>, um das Upload-Dialogfeld zu öffnen.</p> <p>Laden Sie das Zertifikat hoch, um das TLS mit Ihrem selbstsignierten Zertifikat zu verwenden. [!DNL Workfront Fusion] speichert und speichert keine von Ihnen bereitgestellten Daten, z. B. Dateien und Kennwörter. Datei und Kennwort werden nur zum Extrahieren des Zertifikats verwendet.</p> </td> 
+     <td> <p>Klicken Sie auf die Schaltfläche <b>[!UICONTROL Extract]</b>, um das Upload-Dialogfeld zu öffnen.</p> <p>Laden Sie das Zertifikat hoch, um das TLS mit Ihrem selbstsignierten Zertifikat zu verwenden. Workfront Fusion speichert und speichert keine von Ihnen bereitgestellten Daten wie Dateien und Kennwörter. Datei und Kennwort werden nur zum Extrahieren des Zertifikats verwendet.</p> </td> 
     </tr> 
    </tbody> 
    </table>
@@ -124,10 +124,10 @@ Um FTP-Module verwenden zu können, müssen Sie über ein Konto mit einem FTP-Di
 
 ## FTP-Module und ihre Felder
 
-* [Auslöser](#triggers)
+* [Trigger](#triggers)
 * [Aktionen](#actions)
 
-### Auslöser
+### Trigger
 
 #### [!UICONTROL Dateien ansehen]
 
@@ -138,16 +138,16 @@ Um FTP-Module verwenden zu können, müssen Sie über ein Konto mit einem FTP-Di
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Herstellen einer Verbindung mit dem FTP-Konto finden Sie unter <a href="#create-a-connection" class="MCXref xref">[!UICONTROL Verbindung erstellen] in einem FTP-Modul</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL -Ordner]</p> </td> 
+   <td> <p>[!UICONTROL-Ordner]</p> </td> 
    <td> <p>Wählen Sie den Ordner aus, den Sie beobachten möchten.</p> <p><b>Hinweis</b> Pro Szenario ist nur ein Ordner zulässig. Unterordner werden ignoriert.</p> <p><b>Tipp</b> Um mehrere Ordner anzusehen, erstellen Sie für jeden Ordner ein eigenes Szenario.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Dateien] </td> 
-   <td> <p>Legen Sie die maximale Anzahl von Ergebnissen fest, mit denen das Modul während eines Zyklus arbeiten soll. Wenn der Wert zu hoch eingestellt ist, kann die Verbindung auf der Seite des FTP-Servers unterbrochen werden. [!DNL Workfront Fusion] hat darauf keinen Einfluss. Es wird empfohlen, einen niedrigeren Wert festzulegen und entweder einen höheren Wert für die maximale Anzahl an Zyklen zu definieren oder das Szenario häufiger auszuführen.</p> </td> 
+   <td> <p>Legen Sie die maximale Anzahl von Ergebnissen fest, mit denen das Modul während eines Zyklus arbeiten soll. Wenn der Wert zu hoch eingestellt ist, kann die Verbindung auf der Seite des FTP-Servers unterbrochen werden. Workfront Fusion hat darauf keinen Einfluss. Es wird empfohlen, einen niedrigeren Wert festzulegen und entweder einen höheren Wert für die maximale Anzahl an Zyklen zu definieren oder das Szenario häufiger auszuführen.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -172,7 +172,7 @@ Dieses Aktionsmodul ändert die Berechtigungseinstellungen einer Datei oder eine
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL -Verbindung]</td>
+            <td>[!UICONTROL-Verbindung]</td>
             <td>Anweisungen zum Herstellen einer Verbindung mit dem FTP-Konto finden Sie unter <a href="#Create" class="MCXref xref" >[!UICONTROL Verbindung erstellen] in einem FTP-Modul</a> in diesem Artikel.</td>
          </tr>
          <tr>
@@ -186,7 +186,7 @@ Dieses Aktionsmodul ändert die Berechtigungseinstellungen einer Datei oder eine
             <td>Geben Sie den Dateipfad zum Ordner oder zur Datei ein oder ordnen Sie ihn zu.</td>
          </tr>
          <tr>
-            <td>[!UICONTROL -Berechtigungen]</td>
+            <td>[!UICONTROL-Berechtigungen]</td>
             <td>
                <p>Legen Sie die gewünschten Datei- oder Ordnerberechtigungen fest. Verwenden Sie die chmod-Parameter. Beispiel: <code>777 </code>oder <code>-rwxrwxrwx</code>.</p>
                <p>Berechtigungen müssen mit dem <code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code> übereinstimmen.</p>
@@ -204,7 +204,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner.
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL -Verbindung]</td>
+            <td>[!UICONTROL-Verbindung]</td>
             <td>Anweisungen zum Herstellen einer Verbindung mit dem FTP-Konto finden Sie unter <a href="#Create" class="MCXref xref" >[!UICONTROL Verbindung erstellen] in einem FTP-Modul</a> in diesem Artikel.</td>
          </tr>
          <tr>
@@ -229,11 +229,11 @@ Dieses Aktionsmodul löscht eine Datei aus dem angegebenen Ordner.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
             <td>Anweisungen zum Herstellen einer Verbindung mit dem FTP-Konto finden Sie unter <a href="#Create" class="MCXref xref" >[!UICONTROL Verbindung erstellen] in einem FTP-Modul</a> in diesem Artikel.</td>
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den FTP-Ordner aus, aus dem Sie eine Datei löschen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -252,11 +252,11 @@ Dieses Aktionsmodul löscht den angegebenen Ordner dauerhaft.
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL -Verbindung]</td>
+            <td>[!UICONTROL-Verbindung]</td>
             <td>Anweisungen zum Herstellen einer Verbindung mit dem FTP-Konto finden Sie unter <a href="#Create" class="MCXref xref" >[!UICONTROL Verbindung erstellen] in einem FTP-Modul</a> in diesem Artikel.</td>
          </tr>
          <tr>
-            <td>[!UICONTROL -Ordner]</td>
+            <td>[!UICONTROL-Ordner]</td>
             <td>
                <p>Wählen Sie den FTP-Ordner aus, aus dem Sie eine Datei löschen möchten.</p>
             </td>
@@ -273,7 +273,7 @@ Dieses Aktionsmodul ruft eine Datei vom FTP-Server ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Herstellen einer Verbindung mit dem FTP-Konto finden Sie unter <a href="#creating-the-ftp-connection" class="MCXref xref">Erstellen der FTP</a>Verbindung in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -292,11 +292,11 @@ Dieses Aktionsmodul ruft Datei- und/oder Ordnerinformationen ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Herstellen einer Verbindung mit dem FTP-Konto finden Sie unter <a href="#creating-the-ftp-connection" class="MCXref xref">Erstellen der FTP</a>Verbindung in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den FTP-Ordner aus, in dem Sie suchen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -323,7 +323,7 @@ Dieses Aktionsmodul verschiebt eine Datei oder einen Ordner an einen anderen Spe
    <col>
    <tbody>
          <tr>
-            <td>[!UICONTROL -Verbindung]</td>
+            <td>[!UICONTROL-Verbindung]</td>
             <td>Anweisungen zum Herstellen einer Verbindung mit dem FTP-Konto finden Sie unter <a href="#Create" class="MCXref xref" >[!UICONTROL Verbindung erstellen] in einem FTP-Modul</a> in diesem Artikel.</td>
          </tr>
          <tr>
@@ -351,11 +351,11 @@ Lädt eine Datei auf den FTP-Server.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
    <td>Anweisungen zum Herstellen einer Verbindung mit dem FTP-Konto finden Sie unter <a href="#creating-the-ftp-connection" class="MCXref xref">Erstellen der FTP</a>Verbindung in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den FTP-Ordner aus, in den Sie die Datei hochladen möchten.</p> </td> 
   </tr> 
   <tr> 

@@ -1,19 +1,19 @@
 ---
 title: Datadog-Module
-description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows automatisieren, die Datadog verwenden, und es mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Datadog verwenden, und es mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
 
 # [!DNL Datadog]
 
-In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Workflows automatisieren, die [!DNL Datadog] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Datadog] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,7 +58,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -81,11 +81,11 @@ Der Datadog-Connector verwendet Folgendes:
  </tbody> 
  </table>
 
-## [!DNL Datadog] mit [!DNL Workfront Fusion] verbinden {#connect-datadog-to-workfront-fusion}
+## Verbinden von [!DNL Datadog] mit Workfront Fusion {#connect-datadog-to-workfront-fusion}
 
 ### Abrufen Ihres API-Schlüssels und Anwendungsschlüssels {#retrieve-your-api-key-and-application-key}
 
-Um Ihr [!DNL Datadog]-Konto mit [!DNL Workfront Fusion] zu verbinden, müssen Sie einen API-Schlüssel und einen Anwendungsschlüssel aus Ihrem [!DNL Datadog]-Konto abrufen.
+Um Ihr [!DNL Datadog]-Konto mit Workfront Fusion zu verbinden, müssen Sie einen API-Schlüssel und einen Anwendungsschlüssel aus Ihrem [!DNL Datadog]-Konto abrufen.
 
 1. Melden Sie sich bei Ihrem [!DNL Datadog] an.
 1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Integrationen]** und dann auf **[!UICONTROL APIs]**.
@@ -96,7 +96,7 @@ Um Ihr [!DNL Datadog]-Konto mit [!DNL Workfront Fusion] zu verbinden, müssen Si
 1. Bewegen Sie den Mauszeiger über die violette Leiste, um den Anwendungsschlüssel anzuzeigen.
 1. Kopieren Sie den Anwendungsschlüssel an einen sicheren Speicherort.
 
-### Erstellen einer Verbindung zu [!DNL Datadog] in [!DNL Workfront Fusion]
+### Erstellen einer Verbindung zu [!DNL Datadog] in Workfront Fusion
 
 Sie können eine Verbindung zu Ihrem [!DNL Datadog]-Konto direkt aus einem [!UICONTROL Datadog]-Modul erstellen.
 
@@ -138,7 +138,7 @@ Sie können eine Verbindung zu Ihrem [!DNL Datadog]-Konto direkt aus einem [!UIC
 
 ## [!DNL Datadog] Module und ihre Felder
 
-Beim Konfigurieren [!DNL Datadog] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Datadog] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Datadog] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Datadog] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -158,8 +158,8 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Datadog]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Datadog] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Datadog]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Datadog] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Dedizierte Domain verwenden]</td> 
@@ -167,14 +167,14 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Geben Sie einen Pfad relativ zu <code>https://api.datadoghq.com/api/</code> ein. Beispiel: <code> /v1/org</code>.</td> 
+   <td>Geben Sie einen Pfad relativ zu <code>https://api.datadoghq.com/api/</code> ein. Beispiel:<code> /v1/org</code>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -216,8 +216,8 @@ Der Grenzwert für komprimierte Payloads beträgt 3,2 Megabyte (3200000) und 62 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Datadog]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Datadog] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Datadog]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Datadog] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Typ]</td> 

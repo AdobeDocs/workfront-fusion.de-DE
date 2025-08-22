@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe User Management-Module
-description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows automatisieren, mit denen Benutzende in Ihrem Adobe-Konto verwaltet werden.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, mit denen Benutzende in Ihrem Adobe-Konto verwaltet werden.
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 2%
+source-wordcount: '2417'
+ht-degree: 3%
 
 ---
 
 # Adobe User Management-Module
 
-In einem [!DNL Adobe Workfront Fusion] können Sie Workflows automatisieren, mit denen Benutzende in Ihrem Adobe-Konto verwaltet werden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, mit denen Benutzende in Ihrem Adobe-Konto verwaltet werden.
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenario erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -34,35 +34,35 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
+   <td role="rowheader">Adobe Workfront-Plan*</td>
   <td> <p>[!UICONTROL Pro] oder höher</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL -Plan], [!UICONTROL -Arbeit]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz*</td>
+   <td> <p>[!UICONTROL-Plan], [!UICONTROL-Arbeit]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuelle Lizenzanforderung: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration], [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>Legacy-Lizenzanforderung: [!UICONTROL Workfront Fusion for Work Automation and Integration], [!UICONTROL Workfront Fusion for Work Automation]</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den [!DNL Adobe Workfront] [!UICONTROL Select] oder [!UICONTROL Prime] verfügen, muss Ihr Unternehmen [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu nutzen. [!DNL Workfront Fusion] ist im [!DNL Workfront] [!UICONTROL Ultimate] enthalten.</p>
+   <p>Aktuelle Produktanforderung: Wenn Sie über den Plan [!UICONTROL Select] oder [!UICONTROL Prime] Adobe Workfront verfügen, muss Ihr Unternehmen Adobe Workfront Fusion sowie Adobe Workfront erwerben, um die in diesem Artikel beschriebenen Funktionen nutzen zu können. Workfront Fusion ist im Workfront-Plan [!UICONTROL Ultimate] enthalten.</p>
    <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu verwenden.</p>
+   <p>Legacy-Produktanforderung: Ihr Unternehmen muss Adobe Workfront Fusion sowie Adobe Workfront erwerben, um die in diesem Artikel beschriebenen Funktionen nutzen zu können.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Wenden Sie sich an Ihren Workfront-Administrator, um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -129,7 +129,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 * [Suchvorgänge](#searches)
 * [Benutzeraktionen](#user-actions)
 * [Benutzergruppenaktionen](#user-group-actions)
-* [Sonstige](#other)
+* [Sonstiges](#other)
 
 ### Suchvorgänge
 
@@ -251,11 +251,11 @@ Dieses Aktionsmodul fügt einen Benutzer als Mitglied der angegebenen Gruppe(n) 
    <td>Anweisungen zum Erstellen einer Verbindung mit Adobe User Management finden Sie unter <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Erstellen einer Verbindung mit Adobe User Management</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Benutzerin oder Benutzer</td> 
+   <td role="rowheader">Benutzerin bzw. Benutzer</td> 
    <td>Geben Sie den Benutzer ein, den Sie den Gruppen hinzufügen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Domäne</td> 
+   <td role="rowheader">Domain</td> 
    <td>Geben Sie für Federated IDs, bei denen es sich nicht um E-Mail-Adressen handelt, die Domain ein, zu der der Benutzer gehört.</td> 
   </tr> 
   <tr> 
@@ -294,11 +294,11 @@ Dieses Aktionsmodul erstellt einen neuen Benutzer in der Organisation.
    <td>Geben Sie die E-Mail-Adresse des neuen Benutzers ein oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Domäne</td> 
+   <td role="rowheader">Domain</td> 
    <td>Wenn Sie einen Benutzer mit einer Federated ID mit einer Domain-basierten Anmeldung erstellen, geben Sie die Domain ein oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Benutzerin oder Benutzer</td> 
+   <td role="rowheader">Benutzerin bzw. Benutzer</td> 
    <td>Wenn Sie einen Benutzer mit einer Federated ID mit einer Domain-basierten Anmeldung erstellen, geben Sie den Benutzer ein, den dieser neue Benutzer repräsentieren soll, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -306,7 +306,7 @@ Dieses Aktionsmodul erstellt einen neuen Benutzer in der Organisation.
    <td>Geben Sie den Vornamen des Benutzers ein oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Nachname</td> 
+   <td role="rowheader">Last name</td> 
    <td>Geben Sie den Nachnamen des Benutzers ein oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -337,11 +337,11 @@ Dieses Aktionsmodul entfernt die Mitgliedschaft eines Benutzers aus den angegebe
    <td>Anweisungen zum Erstellen einer Verbindung mit Adobe User Management finden Sie unter <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Erstellen einer Verbindung mit Adobe User Management</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Benutzerin oder Benutzer</td> 
+   <td role="rowheader">Benutzerin bzw. Benutzer</td> 
    <td>Geben Sie den Benutzer ein, den Sie aus den Gruppen entfernen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Domäne</td> 
+   <td role="rowheader">Domain</td> 
    <td>Geben Sie für Federated IDs, bei denen es sich nicht um E-Mail-Adressen handelt, die Domain ein, zu der der Benutzer gehört.</td> 
   </tr> 
   <tr> 
@@ -370,11 +370,11 @@ Dieses Aktionsmodul aktualisiert einen vorhandenen Benutzer.
    <td>Anweisungen zum Erstellen einer Verbindung mit Adobe User Management finden Sie unter <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Erstellen einer Verbindung mit Adobe User Management</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Benutzerin oder Benutzer</td> 
+   <td role="rowheader">Benutzerin bzw. Benutzer</td> 
    <td>Geben Sie die ID des Benutzers ein, den Sie aktualisieren möchten, oder ordnen Sie sie zu. Dies ist die E-Mail-Adresse des Benutzers, z. B. <code>user@example.com</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Domäne</td> 
+   <td role="rowheader">Domain</td> 
    <td>Wenn Sie Benutzende mit einer Federated ID aktualisieren, bei der es sich nicht um eine E-Mail-Adresse handelt, geben Sie die Domain, zu der die Benutzenden gehören, ein oder ordnen Sie sie zu, um die Benutzenden zu identifizieren.</td> 
   </tr> 
   <tr> 
@@ -386,7 +386,7 @@ Dieses Aktionsmodul aktualisiert einen vorhandenen Benutzer.
    <td>Geben Sie den Vornamen des Benutzers ein oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Nachname</td> 
+   <td role="rowheader">Last name</td> 
    <td>Geben Sie den Nachnamen des Benutzers ein oder ordnen Sie ihn zu.</td> 
   </tr> 
  </tbody> 
@@ -531,7 +531,7 @@ Dieses Aktionsmodul aktualisiert eine vorhandene Benutzergruppe.
  </tbody> 
  </table>
 
-### Sonstige
+### Sonstiges
 
 
 #### Erstellen eines benutzerdefinierten API-Aufrufs
@@ -565,7 +565,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Adobe User Ma
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] Fügt automatisch Autorisierungs- und X-API-Schlüssel-Header hinzu.</p>
+        <p>Workfront Fusion fügt automatisch Autorisierungs- und X-API-Schlüssel-Header hinzu.</p>
       </td>
     </tr>
     <tr>
@@ -575,7 +575,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Adobe User Ma
       </td>
     </tr>
     <tr>
-      <td role="rowheader">Text</td>
+      <td role="rowheader">Textkörper</td>
    <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 

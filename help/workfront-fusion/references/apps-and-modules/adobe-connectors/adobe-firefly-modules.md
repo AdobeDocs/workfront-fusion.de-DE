@@ -1,19 +1,19 @@
 ---
 title: Adobe Firefly-Module
-description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows automatisieren, die  [!DNL Adobe Firefly] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die verwenden [!DNL Adobe Firefly] und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 6219cd4406c2ccf22b1e94e5d264722e640fe3e4
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2466'
-ht-degree: 0%
+source-wordcount: '2482'
+ht-degree: 1%
 
 ---
 
 # [!DNL Adobe Firefly]
 
-In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Workflows automatisieren, die [!DNL Adobe Firefly] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Adobe Firefly] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenario erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -58,7 +58,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -113,11 +113,11 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Firefly]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-ID]</td>
-        <td>Geben Sie Ihre [!UICONTROL Adobe] [!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
+        <td>Geben Sie Ihre [!UICONTROL Adobe] [!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-        <td>Geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
+        <td>Geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
         </tr>
       </tbody>
     </table>
@@ -126,7 +126,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Firefly]:
 
 ## [!DNL Adobe Firefly] Module und ihre Felder
 
-Beim Konfigurieren [!DNL Adobe Firefly] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Adobe Firefly] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Adobe Firefly] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Adobe Firefly] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -143,7 +143,7 @@ Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version di
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Firefly]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -167,7 +167,7 @@ Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version di
    <td>  <p>Wählen Sie aus, ob Sie das Bild mithilfe der Bildplatzierung oder einer Maske erweitern möchten.</p> 
    <ul>
    <li><b>Platzierung</b><p>Geben Sie die horizontale und vertikale Ausrichtung sowie den Einzug des platzierten Bildes von den Kanten ein.</p></li>
-   <li><b>Maske</b><p>Wählen Sie die Quelldatei für die Maske und ob die Maske invertiert werden soll.</p></li>
+   <li><b>Maskieren</b><p>Wählen Sie die Quelldatei für die Maske und ob die Maske invertiert werden soll.</p></li>
    </ul>
 </td> 
 </td> 
@@ -198,7 +198,7 @@ Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version di
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Firefly]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -252,7 +252,7 @@ Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version di
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Firefly]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -288,7 +288,7 @@ Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version di
     <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly dem Stil des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Stil &gt; Vorgaben]</td> 
+   <td role="rowheader">[!UICONTROL-Stil &gt; Vorgaben]</td> 
    <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabenstile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Entwicklerdokumentation für Adobe.</td> 
   </tr> 
   <tr> 
@@ -335,7 +335,7 @@ Dieses Aktionsmodul kombiniert von Firefly generierte Bilder, um eine Bildkompos
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Firefly]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -367,7 +367,7 @@ Dieses Aktionsmodul kombiniert von Firefly generierte Bilder, um eine Bildkompos
     <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly dem Stil des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Stil &gt; Vorgaben]</td> 
+   <td role="rowheader">[!UICONTROL-Stil &gt; Vorgaben]</td> 
    <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabenstile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Entwicklerdokumentation für Adobe.</td> 
   </tr> 
   <tr> 
@@ -386,7 +386,7 @@ Dieses Aktionsmodul generiert Bilder, die dem von Ihnen angegebenen Quellbild ä
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Campaign] finden Sie unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Firefly]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -436,7 +436,7 @@ Spezifische verfügbare APIs finden Sie unter [Adobe Firefly-API](https://develo
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Firefly] finden Sie unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Firefly]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -447,16 +447,16 @@ Spezifische verfügbare APIs finden Sie unter [Adobe Firefly-API](https://develo
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Methode]</p>
+        <p>[!UICONTROL-Methode]</p>
       </td>
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] Fügt automatisch Autorisierungskopfzeilen hinzu.</p>
+        <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p>
       </td>
     </tr>
     <tr>

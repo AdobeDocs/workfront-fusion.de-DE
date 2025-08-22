@@ -4,9 +4,9 @@ description: Sie können ein Array oder einzelne Array-Elemente einem Modulfeld 
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Ein Array ist ein Bundle-Element, das Folgendes enthalten kann:
 
 **Beispiel:**
 
-* **Komplexes Array**: Das [!UICONTROL Watch emails] Modul gibt für jede E-Mail ein Array von Anhängen zurück. Jeder Anhang stellt eine Sammlung dar, die einen Namen, Inhalt, eine Größe usw. enthalten kann.
+* **Komplexes Array**: Das Modul [!UICONTROL E-Mails ansehen] gibt für jede E-Mail ein Array von Anhängen zurück. Jeder Anhang stellt eine Sammlung dar, die einen Namen, Inhalt, eine Größe usw. enthalten kann.
 
 >[!ENDSHADEBOX]
 
@@ -37,17 +37,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Packstück</td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
    <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td> 
-   <td> <p>Neu: [!UICONTROL Standard]</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -55,9 +55,9 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
   </tr>
  </tbody> 
@@ -65,24 +65,24 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Ein ganzes Array zuordnen
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie ein Array zuordnen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Klicken Sie im Modul, dem Sie das Array zuordnen möchten, auf das Feld, dem Sie das Array zuordnen möchten. Dies ist das Feld, dem das Array zugeordnet ist.
 
 1. Ordnen Sie im angezeigten Feld das Element zu.
 
-   Mit dem Bedienfeld können Sie Felder auf die gleiche Weise zuordnen wie mit jedem anderen Elementtyp. Wenn Sie nicht jedes Element einzeln ausfüllen, sondern ein anderes Array dem Zielfeld zuordnen möchten, verwenden Sie die Schaltfläche [!UICONTROL Map] . Stellen Sie in diesem Fall sicher, dass beide Arrays (das Quell-Array und das Ziel-Array) dieselbe Struktur haben.
+   Mit dem Bedienfeld können Sie Felder auf die gleiche Weise zuordnen wie mit jedem anderen Elementtyp. Wenn Sie nicht jedes Element einzeln ausfüllen, sondern ein anderes Array dem Zielfeld zuordnen möchten, verwenden Sie die Schaltfläche [!UICONTROL Zuweisen]. Stellen Sie in diesem Fall sicher, dass beide Arrays (das Quell-Array und das Ziel-Array) dieselbe Struktur haben.
 
    Sie können einem Array eine beliebige Anzahl von Elementen hinzufügen.
 
-Sie können ein Array mithilfe eines Iterators in einzelne Bundles unterteilen. Weitere Informationen finden Sie [[!UICONTROL Iterator] Modul in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/iterator-module.md).
+Sie können ein Array mithilfe eines Iterators in einzelne Bundles unterteilen. Weitere Informationen finden Sie unter [[!UICONTROL Iterator]-Modul in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Zuordnen von Elementen zu einem neuen Array
 
@@ -96,7 +96,7 @@ So fügen Sie Elemente zum Array hinzu:
 
 1. Klicken Sie auf **Element hinzufügen**
 1. Geben Sie im sich öffnenden Bedienfeld Details zum Element ein.
-1. Klicken Sie **Hinzufügen**.
+1. Klicken Sie auf **Hinzufügen**.
 1. (Optional) Wiederholen Sie die Schritte 1 bis 3 für jedes Element, das Sie zum Array  hinzufügen möchten.
 
 ## Array-Elemente zuordnen
@@ -151,7 +151,7 @@ Die Formel lässt sich wie folgt erklären:
 * `map`
 
    1. Der erste Parameter der `map()` ist das gesamte Array-Element.
-   1. Der zweite Parameter ist der Rohname des Wertelements. Um den Rohnamen zu erhalten, bewegen Sie den Mauszeiger über das Element im [!UICONTROL mapping] Bedienfeld:
+   1. Der zweite Parameter ist der Rohname des Wertelements. Um den Rohnamen zu erhalten, bewegen Sie den Mauszeiger über das Element im Bedienfeld [!UICONTROL Zuordnung]:
 
       ![Rohname abrufen](assets/obtain-raw-name-350x124.png)
 
@@ -185,6 +185,6 @@ Weitere Informationen zur `get()` finden Sie unter [Allgemeine Funktionen](/help
 
 ## Konvertieren von Array-Elementen in eine Reihe von Bundles
 
-Arrays können mithilfe des [!UICONTROL Iterator]-Moduls in eine Reihe von Bundles konvertiert werden. Weitere Informationen finden Sie unter [[!UICONTROL Iterator] Modul](/help/workfront-fusion/references/modules/iterator-module.md).
+Arrays können mithilfe des Moduls [!UICONTROL Iterator“ in eine Reihe von Bundles ] werden. Weitere Informationen finden Sie [[!UICONTROL  Modul ]Iterator](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ![Serie von Bundles](assets/series-of-bundles.png)

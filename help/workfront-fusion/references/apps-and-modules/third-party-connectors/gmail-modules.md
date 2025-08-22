@@ -1,19 +1,19 @@
 ---
 title: Gmail-Module
-description: In  [!DNL Adobe Workfront Fusion]  Szenario können Sie Workflows automatisieren, die Gmail verwenden, und es mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Gmail verwenden, und es mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: e14f49dbb7b57a7247a62a27205df1b6da11a259
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1852'
 ht-degree: 0%
 
 ---
 
 # [!DNL Gmail]
 
-In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Workflows automatisieren, die [!DNL Gmail] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Gmail] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -56,7 +56,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -64,16 +64,16 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 Um [!DNL Gmail]-Module verwenden zu können, müssen Sie über ein [!DNL Gmail]-Konto verfügen.
 
-## [!DNL Gmail] mit [!DNL Workfront Fusion] verbinden {#connect-gmail-to-workfront-fusion}
+## Verbinden von [!DNL Gmail] mit Workfront Fusion {#connect-gmail-to-workfront-fusion}
 
-* [Verbinden [!DNL Gmail] mit [!DNL Workfront Fusion] verwenden [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
-* [Connect [!DNL Gmail] to [!DNL Workfront Fusion] using [!DNL gmail.com] or [!DNL googlemail].com](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
+* [Verbinden  [!DNL Gmail]  Workfront Fusion mit [!DNL Google Workspace]](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
+* [Verbinden  [!DNL Gmail]  Workfront Fusion mit  [!DNL gmail.com] .oder [!DNL googlemail].com](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### Verbinden von [!DNL Gmail] mit [!DNL Workfront Fusion] mithilfe von[!DNL &#x200B; Google Workspace]
+### Verbinden von [!DNL Gmail] mit Workfront Fusion mithilfe von[!DNL  Google Workspace]
 
 Anweisungen zum Verbinden Ihres [!DNL Google Workspace]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Verbindung erstellen - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
-### Verbinden von [!DNL Gmail] mit [!DNL Workfront Fusion] über [!DNL gmail.com] oder [!DNL googlemail].com
+### Verbinden von [!DNL Gmail] mit Workfront Fusion mithilfe von [!DNL gmail.com] oder [!DNL googlemail].com
 
 Wenn Sie [!DNL @gmail.com] oder [!DNL @googlemail.com] Benutzer sind, müssen Sie einen OAuth-Client auf [ erstellen [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) um eine [!UICONTROL Client-ID] und [!UICONTROL Client-Geheimnis] zu erhalten.
 
@@ -81,17 +81,17 @@ Eine schrittweise Anleitung zum Erstellen des OAuth-Clients und zum Abrufen eine
 
 ## [!DNL Gmail] Module und ihre Felder
 
-Beim Konfigurieren [!DNL Gmail] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Gmail] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Gmail] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Gmail] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Auslöser](#triggers)
+* [Trigger](#triggers)
 * [Aktionen](#actions)
 * [Iteratoren](#iterators)
 
-### Auslöser
+### Trigger
 
 #### [!UICONTROL E-Mails ansehen]
 
@@ -106,11 +106,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den E-Mail-Ordner aus, den Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -118,11 +118,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Filtertyp auswählen, der zum Ansehen von E-Mails verwendet werden soll</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Einfacher Filter]</strong> </p> <p>Füllen Sie die Felder [!UICONTROL Criteria], [!UICONTROL Absender Email Address], [!UICONTROL Subject] und [!UICONTROL Search Phrase] aus</p> </li> 
-     <li> <p> <strong>[!UICONTROL Gmail-Filter]</strong> </p> <p>Geben Sie im Feld [!UICONTROL -Abfrage] die Abfrage ein, die Sie zum Filtern von E-Mails verwenden möchten.</p> <p>Weitere Informationen zu [!DNL Gmail] finden Sie unter <a href="https://support.google.com/mail/answer/7190">Suchvorgänge verfeinern</a> in der [!DNL Gmail].</p> </li> 
+     <li> <p> <strong>[!UICONTROL Gmail-Filter]</strong> </p> <p>Geben Sie im Feld [!UICONTROL-Abfrage] die Abfrage ein, die Sie zum Filtern von E-Mails verwenden möchten.</p> <p>Weitere Informationen zu [!DNL Gmail] finden Sie unter <a href="https://support.google.com/mail/answer/7190">Suchvorgänge verfeinern</a> in der [!DNL Gmail].</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Kriterien]</td> 
+   <td>[!UICONTROL-Kriterien]</td> 
    <td>Wählen Sie aus, ob Sie [!UICONTROL Alle E-Mails], [!UICONTROL Nur E-Mails lesen] oder [!UICONTROL Nur ungelesene E-Mails lesen] möchten.</td> 
   </tr> 
   <tr> 
@@ -143,7 +143,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximale Anzahl an Ergebnissen]</td> 
-   <td> <p> Legen Sie die maximale Anzahl von Ergebnissen fest, mit denen [!DNL Workfront Fusion] während eines Zyklus arbeiten soll.</p> </td> 
+   <td> <p> Legen Sie die maximale Anzahl von Ergebnissen fest, mit denen Workfront Fusion während eines Zyklus arbeiten soll.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,11 +177,11 @@ Das Modul gibt die ID der E-Mail und alle zugehörigen Felder sowie alle benutze
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den [!DNL Gmail] Quellordner aus, der die E-Mail enthält, die Sie kopieren möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -210,11 +210,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den [!DNL Gmail] Ordner aus, in dem Sie einen Entwurf erstellen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -226,7 +226,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Geben Sie den E-Mail-Betreff ein oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Inhalt] </td> 
+   <td>[!UICONTROL-Inhalt] </td> 
    <td> <p>Geben Sie den E-Mail-Inhalt (Nachrichtentext) ein oder ordnen Sie ihn zu. HTML-Tags sind zulässig.</p> </td> 
   </tr> 
   <tr> 
@@ -257,8 +257,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL [!DNL Gmail] Nachrichten-ID]</p> </td> 
@@ -288,11 +288,11 @@ Das Modul gibt die ID der E-Mail und alle zugehörigen Felder sowie alle benutze
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den [!DNL Gmail] Ordner aus, der die E-Mail enthält.</p> </td> 
   </tr> 
   <tr> 
@@ -315,11 +315,11 @@ Das Modul gibt die ID der E-Mail und alle zugehörigen Felder sowie alle benutze
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den [!DNL Gmail] Ordner aus, der die E-Mail enthält.</p> </td> 
   </tr> 
   <tr> 
@@ -342,8 +342,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL [!DNL Gmail] Nachrichten-ID]</td> 
@@ -362,7 +362,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 >[!NOTE]
 >
->[!UICONTROL &#x200B; Felder &#x200B;]Beschriftung hinzufügen“ und [!UICONTROL Beschriftung entfernen] werden nur von Benutzenden erstellte Beschriftungen geladen.
+>[!UICONTROL  Felder ]Beschriftung hinzufügen“ und [!UICONTROL Beschriftung entfernen] werden nur von Benutzenden erstellte Beschriftungen geladen.
 
 #### [!UICONTROL Verschieben einer E-Mail]
 
@@ -377,11 +377,11 @@ Das Modul gibt die ID der E-Mail und alle zugehörigen Felder sowie alle benutze
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den [!DNL Gmail] Quellordner aus, der die zu verschiebende E-Mail enthält.</p> </td> 
   </tr> 
   <tr> 
@@ -410,8 +410,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit [!DNL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td>[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Gmail]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Gmail] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL from]</td> 
@@ -426,7 +426,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Geben Sie den E-Mail-Betreff ein oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Inhalt] </td> 
+   <td>[!UICONTROL-Inhalt] </td> 
    <td> <p>Geben Sie den E-Mail-Inhalt (Nachrichtentext) ein oder ordnen Sie ihn zu. HTML-Tags sind zulässig.</p> </td> 
   </tr> 
   <tr> 

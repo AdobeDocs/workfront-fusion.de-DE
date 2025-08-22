@@ -1,34 +1,34 @@
 ---
 title: Box-Module
-description: In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Workflows, die Box verwenden, automatisieren und sie mit mehreren Anwendungen und Diensten von Drittanbietern verbinden. Überwacht einen angegebenen Ordner, um nach Dateiänderungen zu suchen, vorhandene Dateien zu ändern und zu löschen oder neue Dateien in einen Ordner zu Upload.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Box verwenden, und es mit mehreren Anwendungen und Services von Drittanbietern verbinden. Überwacht einen angegebenen Ordner, um auf Dateiänderungen zu prüfen, vorhandene Dateien zu ändern und zu löschen oder neue Dateien in einen Ordner hochzuladen.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-source-git-commit: 0ed33cbed2b8ed4ab2c89c86b7e8f37b2683ec75
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1542'
 ht-degree: 1%
 
 ---
 
 # Box-Module
 
-In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Workflows, die [!DNL Box]verwenden, automatisieren und mit mehreren Anwendungen und Diensten von Drittanbietern verbinden. Überwacht einen angegebenen Ordner, um auf Dateiänderungen zu prüfen, vorhandene Dateien zu ändern und zu löschen oder neue Dateien in einen Ordner hochzuladen.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Box] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden. Überwacht einen angegebenen Ordner, um auf Dateiänderungen zu prüfen, vorhandene Dateien zu ändern und zu löschen oder neue Dateien in einen Ordner hochzuladen.
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Weitere Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
-## Voraussetzungen für den Zugriff
+## Zugriffsanforderungen
 
-+++ Erweitern Ansicht Zugriffsanforderungen für die Funktionen in diesem Artikel.
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie benötigen die folgenden Zugriffsrechte, um die Funktionen in diesem Artikel verwenden zu können:
+Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Systems Workfront-Paket</td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
    <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -56,7 +56,7 @@ Sie benötigen die folgenden Zugriffsrechte, um die Funktionen in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -90,17 +90,17 @@ Der Box-Connector verwendet Folgendes:
 
 ## [!DNL Box] Module und ihre Felder
 
-Beim Konfigurieren [!DNL Box] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Box] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Box] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Box] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Auslöser](#triggers)
+* [Trigger](#triggers)
 * [Aktionen](#actions)
 * [Suchvorgänge](#searches)
 
-### Auslöser
+### Trigger
 
 * [[!UICONTROL Neues Dateiereignis]](#new-file-event)
 * [Neues Ordnerereignis](#new-folder-event)
@@ -131,14 +131,14 @@ Dieses Instant Trigger-Modul startet ein Szenario, wenn die Auswahlaktion im Ord
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Wählen Sie den Webhook aus, den Sie zum Überwachen ausgehender Nachrichten verwenden möchten, oder fügen Sie einen Webhook hinzu. </p><p>Um einen Webhook hinzuzufügen, klicken Sie auf <strong>[!UICONTROL hinzufügen]</strong> und geben Sie den Namen und die Verbindung des Webhooks, den Ordner, den Sie überwachen möchten, und die Auslöser, auf die Sie achten möchten, ein.</p> <p> Anweisungen zum Anschließen Ihres [!UICONTROL Box] Konto auf [!UICONTROL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Herstellen einer Verbindung mit einem Dienst – Standard Anweisungen</a>.</p> </td> 
+   <td> <p>Wählen Sie den Webhook aus, den Sie zum Überwachen ausgehender Nachrichten verwenden möchten, oder fügen Sie einen Webhook hinzu. </p><p>Um einen Webhook hinzuzufügen, klicken Sie auf <strong>[!UICONTROL Hinzufügen]</strong> und geben Sie den Namen und die Verbindung des Webhooks, den Ordner, den Sie überwachen möchten, und die Trigger ein, auf die Sie achten möchten.</p> <p> Anweisungen zum Verbinden Ihres [!UICONTROL Box]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung mit einem Dienst herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Ansehen Dateien]
+#### [!UICONTROL Dateien ansehen]
 
-Dieser Auslöser startet Modul ein Szenario, wenn eine neue Datei hinzugefügt oder eine vorhandene Datei in einem überwachten Ordner aktualisiert wird.
+Dieses Dateimodul startet ein Szenario, wenn eine neue Trigger hinzugefügt oder eine vorhandene Datei in einem überwachten Ordner aktualisiert wird.
 
 <table style="table-layout:auto">
  <col> 
@@ -146,15 +146,15 @@ Dieser Auslöser startet Modul ein Szenario, wenn eine neue Datei hinzugefügt o
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   <tr> 
-   <td role="rowheader">Ansehen im Ordner</td> 
-   <td> <p>Wählen Sie den Ordner aus, den Sie überwachen möchten. Ein Szenario kann einen einzelnen Ordner überwachen.</p> 
+   <td role="rowheader">Im Ordner ansehen</td> 
+   <td> <p>Wählen Sie den Ordner aus, den Sie beobachten möchten. Ein Szenario kann einen einzelnen Ordner überwachen.</p> 
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Uhr</td> 
-   <td> <p>Wählen Sie den Dateityp aus, den Sie ansehen möchten.</p> 
+   <td role="rowheader">Beobachten</td> 
+   <td> <p>Wählen Sie den Typ der Dateien aus, die Sie beobachten möchten.</p> 
     <ul> 
      <li> <p><strong>Nur neue Dateien</strong> </p> <p>Das Szenario beginnt, wenn eine neue Datei hinzugefügt wird.</p> </li> 
      <li> <p><strong>Neue Dateien und alle Änderungen</strong> </p> <p>Das Szenario beginnt, wenn eine Datei hinzugefügt wird oder wenn der Dateiinhalt oder ein Dateiattribut (z. B. der Name) geändert wird.</p> </li> 
@@ -189,7 +189,7 @@ This action module deletes a file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>Enter or map the unique ID of the file that you want the module to delete.</td> 
@@ -213,7 +213,7 @@ You specify the ID of the file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>Enter or map the unique ID of the file that you want the module to retrieve.</td> 
@@ -233,7 +233,7 @@ You specify the ID of the file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>Enter or map the unique ID of the file that you want the module to update.</td> 
@@ -257,7 +257,7 @@ You specify the file. You can also provide a new filename for the file.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -286,8 +286,8 @@ Dieses Aktionsmodul erstellt einen neuen leeren Ordner im angegebenen übergeord
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name]</td> 
@@ -317,11 +317,11 @@ Dieses Aktionsmodul ruft Details für einen Ordner ab, einschließlich der erste
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td> <p>Wählen Sie den Ordner aus, für den Sie Details abrufen möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -336,15 +336,15 @@ Dieses Aktionsmodul ruft Ordnermetadaten nach Ordner-ID ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Umfang]</td> 
+   <td role="rowheader">[!UICONTROL-Umfang]</td> 
    <td> <p>Wählen Sie den Umfang aus, den Sie für diesen Metadatenabruf verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td> <p>Wählen Sie den Ordner aus, für den Sie Metadaten abrufen möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -361,28 +361,28 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Box-API durch
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit [!DNL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
    <td>Geben Sie einen Pfad relativ zu <code>https://api.box.com</code> ein. <p>Beispiel: <code>/2.0/users/me</code></p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>hinzufügen die Kopfzeilen der Anfrage in Form eines standardmäßigen JSON-Objekts.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierung Header für Sie hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Abfrage Zeichenfolge]</td> 
+   <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL body]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Anmerkung:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> JSON verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -390,7 +390,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Box-API durch
  </tbody> 
 </table>
 
-#### Aktualisieren Ordner Metadaten
+#### Aktualisieren von Ordnermetadaten
 
 Dieses Aktionsmodul erstellt oder aktualisiert die Metadaten eines Ordners.
 
@@ -399,15 +399,15 @@ Dieses Aktionsmodul erstellt oder aktualisiert die Metadaten eines Ordners.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Umfang]</td> 
+   <td role="rowheader">[!UICONTROL-Umfang]</td> 
    <td> <p>Wählen Sie den Bereich aus, den Sie für diese Metadatenaktualisierung verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td> <p>Wählen Sie den Ordner aus, für den Sie Metadaten aktualisieren möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -425,15 +425,15 @@ Dieses Suchmodul sucht nach Elementen, die dem Benutzer oder dem gesamten Untern
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
    <td> <p>Geben Sie die Zeichenfolge ein, nach der gesucht werden soll, oder ordnen Sie sie zu. Diese Abfrage wird mit Elementnamen, Beschreibungen, Textinhalten von Dateien und verschiedenen anderen Feldern der verschiedenen Elementtypen abgeglichen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Umfang]</td> 
+   <td role="rowheader">[!UICONTROL-Umfang]</td> 
    <td> <p>Wählen Sie aus, ob Sie nach Inhalten suchen, die mit dem Benutzer verknüpft sind, dessen Anmeldeinformationen für die in diesem Modul verwendete Verbindung verwendet werden, oder nach Inhalten suchen, die mit dem gesamten Unternehmen verknüpft sind.</p> </td> 
   </tr> 
   <tr> 
@@ -469,7 +469,7 @@ Dieses Suchmodul sucht nach Elementen, die dem Benutzer oder dem gesamten Untern
    <td> <p>Um nach Assets zu suchen, die in einem bestimmten Datumsbereich aktualisiert wurden, geben Sie das neueste Datum im Bereich ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Felder]</td> 
+   <td role="rowheader">[!UICONTROL-Felder]</td> 
    <td> <p>Klicken Sie für jedes Attribut, das Sie in der Modulantwort zurückgeben möchten, auf <b>Element hinzufügen</b> und geben Sie das Feld ein.</p><p>Dies kann verwendet werden, um Felder anzufordern, die normalerweise nicht in einer Standardantwort zurückgegeben werden. Beachten Sie, dass die Angabe dieses Parameters dazu führt, dass keines der Standardfelder in der Antwort zurückgegeben wird, es sei denn, dies wird explizit angegeben. </p></td> 
   </tr> 
   <tr> 

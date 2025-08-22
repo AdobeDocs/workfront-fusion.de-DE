@@ -5,9 +5,9 @@ description: In diesem Artikel wird erläutert, wie ein Szenario ausgeführt wir
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Wenn das Modulmodul Datenpakete zurückgibt, werden diese Trigger an das nächst
 
 Wenn die Bundles ordnungsgemäß durch alle Module verarbeitet werden, wird das Szenario auf der Seite mit den Szenario-Details als erfolgreich markiert.
 
-### Beispiel: [!UICONTROL [!DNL Workfront Fusion] für die Arbeitsautomatisierung]
+### Beispiel: [!UICONTROL Workfront Fusion for Work Automation]
 
 >[!BEGINSHADEBOX]
 
-**Beispiel** In diesem Szenario, das eingehende Anfragen in [!DNL Workfront] überwacht und sie dann in [!DNL Workfront] Projekte konvertiert, würden die Daten wie folgt fließen:
+**Beispiel** In diesem Szenario, das eingehende Anfragen in Workfront überwacht und sie dann in Workfront-Projekte konvertiert, würden die Daten wie folgt fließen:
 
 Der erste Schritt des Szenarios, der vom ersten Modul ausgeführt wird, besteht darin, nach -Anfragen zu suchen. Jede gefundene Anfrage wird als ein Bundle betrachtet. Wenn das Modul ausgeführt wird, ohne dass Pakete gefunden werden, endet das Szenario nach dem ersten Modul.
 
@@ -42,11 +42,11 @@ Wenn das erste Modul ein Bundle zurückgibt, durchläuft das Bundle den Rest des
 
 >[!ENDSHADEBOX]
 
-### Beispiel: [!UICONTROL [!DNL Workfront Fusion] für Arbeitsautomatisierung und -integration]
+### Beispiel: [!UICONTROL Workfront Fusion for Work Automation and Integration]
 
 >[!BEGINSHADEBOX]
 
-**Beispiel:** In diesem Szenario, in dem Dokumente aus [!DNL Adobe Workfront] heruntergeladen und an einen Ordner in [!DNL Dropbox] gesendet werden, würden die Daten wie folgt fließen:
+**Beispiel:** In diesem Szenario, in dem Dokumente aus Adobe Workfront heruntergeladen und an einen Ordner in [!DNL Dropbox] gesendet werden, fließen die Daten wie folgt:
 
 Der erste Schritt des Szenarios, der vom ersten Modul ausgeführt wird, besteht darin, nach Dokumenten in Workfront zu suchen. Jedes gefundene Dokument wird als ein Bundle betrachtet. Wenn das Modul ausgeführt wird, ohne dass Pakete gefunden werden, endet das Szenario nach dem ersten Modul.
 

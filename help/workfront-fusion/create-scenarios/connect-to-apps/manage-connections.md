@@ -2,19 +2,19 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: connections-annd-webhooks
-title: Verbindungen verwalten
-description: Für die meisten Apps ist es erforderlich, eine Verbindung zu erstellen, über  [!DNL Adobe Workfront Fusion]  mit dem angegebenen Drittanbieterdienst entsprechend den Einstellungen des spezifischen Szenarios kommunizieren kann.
+title: Verwalten von Verbindungen
+description: Für die meisten Apps ist es erforderlich, eine Verbindung zu erstellen, über die Adobe Workfront Fusion mit dem angegebenen Drittanbieterdienst entsprechend den Einstellungen des jeweiligen Szenarios kommunizieren kann.
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 1%
+source-wordcount: '476'
+ht-degree: 2%
 
 ---
 
-# Verbindungen verwalten
+# Verwalten von Verbindungen
 
 Eine Verbindung stellt die Autorisierung und Berechtigungen dar, die Fusion für den Zugriff auf das Programm verwendet. Sie können für jede Anwendung eine oder mehrere Verbindungen erstellen und dieselbe Verbindung in mehreren Modulen oder Szenarien verwenden.
 
@@ -33,17 +33,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Packstück</td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
    <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td> 
-   <td> <p>Neu: [!UICONTROL Standard]</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -51,9 +51,9 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
   </tr>
  </tbody> 
@@ -61,7 +61,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -86,13 +86,13 @@ Sie können alle Verbindungen über den Bereich Verbindungen verwalten.
 
 ## Erneuern einer Verbindung
 
-[!DNL Workfront Fusion] erhält in der Regel für unbegrenzte Zeit Zugriffsrechte für einen bestimmten Dienst. Bei einigen Anwendungen muss die Zugriffsberechtigung nach einer bestimmten Zeit erneuert werden. In diesen Fällen benachrichtigt [!DNL Workfront Fusion] Sie per E-Mail, kurz bevor die Zugriffsrechte ablaufen.
+Workfront Fusion erhält in der Regel für unbegrenzte Zeit Zugriffsrechte für einen bestimmten Dienst. Bei einigen Anwendungen muss die Zugriffsberechtigung nach einer bestimmten Zeit erneuert werden. In diesen Fällen werden Sie von Workfront Fusion kurz vor Ablauf der Zugriffsrechte per E-Mail benachrichtigt.
 
 So erneuern Sie eine Verbindung:
 
 1. Um den Bereich Verbindungen zu öffnen, klicken Sie **Verbindungen** ![Verbindungssymbol](assets/connections-icon.png) in der linken Navigationsleiste.
 1. Suchen Sie die Verbindung, die Sie erneuern möchten.
-1. Klicken Sie in der Zeile für diese Verbindung im **[!UICONTROL Connections]** auf die Schaltfläche **[!UICONTROL Reauthorize]** .
+1. Klicken Sie in der Zeile für diese Verbindung auf die Schaltfläche **[!UICONTROL Erneut genehmigen]** im Bereich **[!UICONTROL Verbindungen]**.
 
 ## Ressourcen
 

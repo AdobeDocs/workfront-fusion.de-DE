@@ -1,12 +1,12 @@
 ---
 title: Szenario-Ausführung, Zyklen und Phasen
-description: In diesem Artikel werden Ereignisse beschrieben, die während  [!DNL Adobe Workfront Fusion]  Ausführung eines Szenarios auftreten, z. B. Initialisierung, Vorgänge, Commits und Rollbacks.
+description: In diesem Artikel werden Ereignisse beschrieben, die während der Ausführung eines Adobe Workfront Fusion-Szenarios auftreten, z. B. Initialisierung, Vorgänge, Commits und Rollbacks.
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Während der Initialisierungsphase werden alle erforderlichen Verbindungen (Verb
 
 Jeder Zyklus stellt eine unteilbare Arbeitseinheit dar, die aus einer Reihe von Vorgängen besteht, von denen jeder einen Commit oder ein Rollback aufweist.
 
-Sie können die maximale Anzahl von Zyklen im [!UICONTROL scenario settings] festlegen. Die Standardzahl ist 1.
+Sie können die maximale Anzahl von Zyklen im Bedienfeld [!UICONTROL Szenario-Einstellungen] festlegen. Die Standardzahl ist 1.
 
 * [Vorgang](#operation)
 * [Zusichern](#commit)
@@ -52,12 +52,12 @@ Sie können die maximale Anzahl von Zyklen im [!UICONTROL scenario settings] fes
 
 Während der Betriebsphase wird ein Lese- oder Schreibvorgang ausgeführt:
 
-* Ein Lesevorgang besteht darin, Daten von einem Service abzurufen, die dann von anderen Modulen gemäß einem vordefinierten Szenario verarbeitet werden. Beispielsweise gibt das Modul [!UICONTROL Workfront] > [!UICONTROL Watch records] neue Bundles (Datensätze) zurück, die seit der letzten Ausführung des Szenarios erstellt wurden.
-* Ein Schreibvorgang besteht darin, Daten zur weiteren Verarbeitung an einen bestimmten Dienst zu senden. Beispielsweise lädt das Modul [!DNL Workfront] > [!UICONTROL Upload Document] eine Datei in Workfront hoch.
+* Ein Lesevorgang besteht darin, Daten von einem Service abzurufen, die dann von anderen Modulen gemäß einem vordefinierten Szenario verarbeitet werden. Beispielsweise gibt das Modul [!UICONTROL Workfront] >[!UICONTROL Datensätze beobachten] neue Bundles (Datensätze) zurück, die seit der letzten Szenarioausführung erstellt wurden.
+* Ein Schreibvorgang besteht darin, Daten zur weiteren Verarbeitung an einen bestimmten Dienst zu senden. Beispielsweise lädt das Modul Workfront > [!UICONTROL Dokument hochladen] eine Datei in Workfront hoch.
 
 #### Zusichern
 
-Wenn die Vorgangsphase erfolgreich ist, beginnt die Commit-Phase, während der alle von den Modulen ausgeführten Vorgänge übergeben werden. Das bedeutet, dass [!DNL Workfront Fusion] Informationen über den Erfolg an alle an der Betriebsphase beteiligten Dienste sendet.
+Wenn die Vorgangsphase erfolgreich ist, beginnt die Commit-Phase, während der alle von den Modulen ausgeführten Vorgänge übergeben werden. Das bedeutet, dass Workfront Fusion Informationen über den Erfolg an alle an der Betriebsphase beteiligten Services sendet.
 
 ### Rollback
 
@@ -65,11 +65,11 @@ Wenn während der Vorgangs- oder Commit-Phase auf einem Modul ein Fehler auftrit
 
 >[!IMPORTANT]
 >
->Alle [!DNL Workfront Fusion], die Rollback unterstützen (auch als Transaktion bezeichnet), sind mit dem ACID-Tag gekennzeichnet.
+>Alle Workfront Fusion-Module, die Rollback unterstützen (auch als Transaktion bezeichnet), sind mit dem ACID-Tag gekennzeichnet.
 >
 >![Säuremodule](assets/acid-modules.png)
 >
->Module, die nicht mit diesem Tag markiert sind, können nicht in ihren Ausgangszustand zurückgesetzt werden, wenn in anderen Modulen Fehler auftreten. Ein typisches Beispiel für ein Nicht-ACID-Modul ist die [!UICONTROL Email] >[!UICONTROL Send an Email]. Nach dem Versand der E-Mail kann der Versand nicht mehr rückgängig gemacht werden.
+>Module, die nicht mit diesem Tag markiert sind, können nicht in ihren Ausgangszustand zurückgesetzt werden, wenn in anderen Modulen Fehler auftreten. Ein typisches Beispiel für ein Nicht-ACID-Modul ist die Aktion [!UICONTROL E] > [!UICONTROL E-Mail senden]. Nach dem Versand der E-Mail kann der Versand nicht mehr rückgängig gemacht werden.
 
 ### Fertigstellung
 

@@ -4,10 +4,10 @@ description: 'Adobe Workfront Fusion unterscheidet fünf Modultypen: Aktionsmodu
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 0%
+source-wordcount: '917'
+ht-degree: 1%
 
 ---
 
@@ -35,8 +35,8 @@ Szenarien können eine unbegrenzte Anzahl von Aktionsmodulen enthalten, obwohl e
 
 **Beispiele:**
 
-* **[!DNL Workfront]>[!UICONTROL Upload a file]** sendet eine Datei an [!DNL Workfront] und gibt deren Kennung zurück.
-* **[!UICONTROL Image]>[!UICONTROL Resize]** empfängt ein Bild, ändert die Größe auf die angegebenen Abmessungen und übergibt das skalierte Bild an die nächste Aktion.
+* **Workfront > [!UICONTROL Datei hochladen]** sendet eine Datei an Workfront und gibt deren Kennung zurück.
+* **[!UICONTROL Bild] > [!UICONTROL Größe ändern]** empfängt ein Bild, ändert es in die angegebenen Abmessungen und übergibt das skalierte Bild an die nächste Aktion.
 
 >[!ENDSHADEBOX]
 
@@ -44,7 +44,7 @@ Der Aktionstyp weist vier Untertypen auf:
 
 * Erstellen
 * Lesen
-* Aktualisieren
+* Update
 * Löschen
 
 Der Untertyp Aktualisieren umfasst die folgenden drei Vorgänge:
@@ -80,7 +80,7 @@ Szenarien können eine unbegrenzte Anzahl von Suchmodulen enthalten, obwohl eine
 
 **Beispiel:**
 
-**[!DNL Workfront]>[!UICONTROL Read Related Records]** liest Datensätze, die mit der von Ihnen angegebenen Suchabfrage in einem bestimmten übergeordneten Objekt übereinstimmen.
+**Workfront > [!UICONTROL Verwandte Datensätze lesen]** liest Datensätze, die mit der von Ihnen angegebenen Suchabfrage in einem bestimmten übergeordneten Objekt übereinstimmen.
 
 >[!ENDSHADEBOX]
 
@@ -94,7 +94,7 @@ Da Trigger dazu führen, dass Szenarien ausgeführt werden, können sie nur am A
 
 Jedes Szenario kann nur einen Trigger enthalten.
 
-[!DNL Workfront Fusion] werden zwei Typen von Triggern verwendet: Abfrage von Triggern und sofortige Trigger.
+Workfront Fusion verwendet zwei Typen von Triggern: Trigger abfragen und Instant Trigger.
 
 ### Trigger werden abgerufen
 
@@ -110,15 +110,15 @@ Weitere Informationen finden Sie unter [Wählen, wo ein Trigger-Modul beginnt](/
 
 **Beispiele:**
 
-* **[!DNL Workfront]>[!UICONTROL Watch records]** gibt Datensätze zurück, die nach der letzten Ausführung des Szenarios neu hinzugefügt wurden.
+* **Workfront > [!UICONTROL Datensätze beobachten]** gibt Datensätze zurück, die nach der letzten Ausführung des Szenarios neu hinzugefügt wurden.
 
-* **[!DNL Google Sheets]>[!UICONTROL Watch Rows]** gibt neue Zeilen zurück, die nach der letzten Ausführung des Szenarios hinzugefügt wurden.
+* **[!DNL Google Sheets]> [!UICONTROL Zeilen beobachten]** gibt neue Zeilen zurück, die nach der letzten Ausführung des Szenarios hinzugefügt wurden.
 
 >[!ENDSHADEBOX]
 
 ### Sofortige Trigger
 
-Sofortige Trigger ermöglichen es einem Service, [!DNL Workfront Fusion] sofort nach einer Änderung über eine Änderung zu informieren. Es wird empfohlen, ein Szenario mit einem sofortigen Trigger zu planen, der sofort ausgeführt werden soll.
+Sofortige Trigger ermöglichen es einem Service, Workfront Fusion über eine Änderung sofort nach ihrem Auftreten zu informieren. Es wird empfohlen, ein Szenario mit einem sofortigen Trigger zu planen, der sofort ausgeführt werden soll.
 
 Anweisungen finden Sie unter [Planen eines Szenarios](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -128,8 +128,8 @@ Weitere Informationen zum Umgang mit eingehenden Daten durch einen Instant Trigg
 
 **Beispiele:**
 
-* **[!DNL Workfront]>[!UICONTROL Watch Events]** gibt Informationen zurück, wenn ein bestimmter Ereignistyp in Workfront auftritt, z. B. bei der Erstellung einer Aufgabe.
-* **[!DNL Google Sheets]>[!UICONTROL Watch Changes]** gibt Informationen zurück, wenn eine Zelle aktualisiert wird.
+* **Workfront > [!UICONTROL Ereignisse beobachten]** gibt Informationen zurück, wenn ein bestimmter Ereignistyp in Workfront auftritt, z. B. bei der Erstellung einer Aufgabe.
+* **[!DNL Google Sheets]> [!UICONTROL Änderungen beobachten]** gibt Informationen zurück, sobald eine Zelle aktualisiert wird.
 
 >[!ENDSHADEBOX]
 
@@ -147,9 +147,9 @@ Szenarien können eine unbegrenzte Anzahl von Aggregatoren enthalten, obwohl sic
 
 **Beispiele:**
 
-* **[!UICONTROL Archive]>[!UICONTROL Create an archive]** komprimiert mehrere Dateien in ein ZIP-Archiv.
-* **[!UICONTROL CSV]>[!UICONTROL Aggregate to CSV]** führt mehrere Zeichenfolgen aus einer CSV-Datei in einer Zeile zusammen.
-* **[!UICONTROL Tools]>[!UICONTROL Text aggregator]** kombiniert mehrere Zeichenfolgen zu einer einzigen Zeichenfolge.
+* **[!UICONTROL Archivieren] > [!UICONTROL Archiv erstellen]** komprimiert mehrere Dateien in ein ZIP-Archiv.
+* **[!UICONTROL CSV] > [!UICONTROL Aggregieren in CSV]** führt mehrere Zeichenfolgen aus einer CSV-Datei in einer Zeile zusammen.
+* **[!UICONTROL Tools] > [!UICONTROL Text-Aggregator]** kombiniert mehrere Zeichenfolgen zu einer einzigen Zeichenfolge.
 
 >[!ENDSHADEBOX]
 
@@ -169,7 +169,7 @@ Szenarien können eine unbegrenzte Anzahl von Iteratoren enthalten, obwohl eine 
 
 **Beispiel:**
 
-**[!UICONTROL Email]>[!UICONTROL Retrieve attachments]** unterteilt ein Array von Anlagen in separate Bundles.
+**[!UICONTROL E] > [!UICONTROL Anhänge abrufen]** teilt ein Array von Anhängen in separate Bundles auf.
 
 >[!ENDSHADEBOX]
 

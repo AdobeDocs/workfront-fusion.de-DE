@@ -4,9 +4,9 @@ description: Viele Services stellen Webhooks bereit, mit denen sofortige Benachr
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Wenn Sie einen Instant Trigger konfigurieren, werden Sie aufgefordert, bei desse
 
 ![Zeitplaneinstellung](assets/schedule-setting.png)
 
-Wählen Sie `Immediately` aus, um das Szenario sofort auszuführen, wenn [!DNL Workfront Fusion] neue Ereignisse vom Service erhält. Diese Ereignisse werden sofort an eine Warteschlange gesendet und dann im Szenario einzeln in der gleichen Reihenfolge verarbeitet, in der die Daten empfangen werden.
+Wählen Sie `Immediately` aus, um das Szenario sofort auszuführen, wenn Workfront Fusion neue Ereignisse vom Service erhält. Diese Ereignisse werden sofort an eine Warteschlange gesendet und dann im Szenario einzeln in der gleichen Reihenfolge verarbeitet, in der die Daten empfangen werden.
 
 Wenn das Szenario ausgeführt wird, wird die Gesamtzahl der ausstehenden Ereignisse in der Warteschlange gezählt, und das Szenario führt so viele Zyklen aus wie ausstehende Ereignisse, wobei ein Ereignis pro Zyklus verarbeitet wird.
 
@@ -60,10 +60,10 @@ Weitere Informationen zu Zyklen finden Sie unter [Szenarioausführung, Zyklen un
 >
 
 
-Wenn Sie eine andere Zeitplaneinstellung als [!UICONTROL Immediately] verwenden, wird das Szenario in den von Ihnen angegebenen Intervallen ausgeführt. Da während des Intervalls mehrere Webhooks in der Warteschlange gesammelt werden können, empfehlen wir, die [!UICONTROL Maximum number of cycles]-Option auf einen höheren Wert als den Standardwert 1 festzulegen, um mehr Webhooks in einer Szenario-Ausführung zu verarbeiten:
+Wenn Sie eine andere Zeitplaneinstellung als &quot;[!UICONTROL &quot; verwenden] wird das Szenario in den von Ihnen angegebenen Intervallen ausgeführt. Da während des Intervalls mehrere Webhooks in der Warteschlange gesammelt werden können, empfehlen wir, die Option [!UICONTROL Maximale Anzahl von Zyklen] auf einen höheren Wert als den Standardwert 1 festzulegen, um in einem Szenario mehr Webhooks zu verarbeiten:
 
-1. Klicken Sie auf das Symbol [!UICONTROL Scenario settings] ![Szenario-Einstellungen](assets/scenario-settings-icon.png) am unteren Rand Ihres Szenarios.
-1. Geben Sie im sich öffnenden Bedienfeld **[!UICONTROL Scenario settings]** eine Zahl in das Feld **[!UICONTROL Max number of cycles]** ein, um die Anzahl der Ereignisse aus der Warteschlange anzugeben, die bei jeder Ausführung des Szenarios ausgeführt werden sollen.
+1. Klicken Sie auf [!UICONTROL Szenario]-Symbol ![Szenario-Einstellungen](assets/scenario-settings-icon.png) am unteren Rand Ihres Szenarios.
+1. Geben Sie im **[!UICONTROL Szenario]** Einstellungen) eine Zahl in das Feld **[!UICONTROL Maximale Anzahl von Zyklen]** ein, um die Anzahl der Ereignisse aus der Warteschlange anzugeben, die bei jeder Ausführung des Szenarios ausgeführt werden sollen.
 
 Die in der Warteschlange verbleibenden Ereignisse werden bei der nächsten Ausführung des Szenarios bis zu der im Feld Maximale Anzahl von Zyklen festgelegten Anzahl verarbeitet.
 
@@ -81,20 +81,20 @@ Ein Webhook, der seit mehr als 120 Stunden keinem Szenario zugewiesen wurde, wir
 
 ### Webhook-Payloads
 
-[!DNL Workfront Fusion] speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 Tage nach der Erstellung auf eine Webhook-Payload zugreifen, wird der Fehler [!UICONTROL `Failed to read file from storage.`]
+Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 Tage nach der Erstellung auf eine Webhook-Payload zugreifen, wird der Fehler [!UICONTROL `Failed to read file from storage.`]
 
-### Fehlerbehandlung
+### Umgang mit Fehlern
 
 Wenn in Ihrem Szenario ein Fehler mit einem sofortigen Trigger auftritt, wird das Szenario:
 
-* Beendet sofort, wenn das Szenario [!UICONTROL Immediately] ausgeführt wird.
+* Beendet sofort, wenn das Szenario auf „Sofort[!UICONTROL  eingestellt ].
 * Beendet nach drei erfolglosen Versuchen (drei Fehlern), wenn das Szenario wie geplant ausgeführt wird.
 
 Wenn während der Ausführung des Szenarios ein Fehler auftritt, wird das Ereignis während der Rollback-Phase des sofortigen Triggers wieder in die Warteschlange gestellt. In einem solchen Fall können Sie das Szenario korrigieren und erneut ausführen.
 
 Weitere Informationen finden Sie unter [Rollback](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) im Artikel Ausführung, Zyklen und Phasen von Szenarien.
 
-Wenn in Ihrem Szenario ein Webhook-Antwortmodul vorhanden ist, wird der Fehler an die Webhook-Antwort gesendet. Das Webhook-Antwortmodul wird immer zuletzt ausgeführt (wenn die Option [!UICONTROL Auto commit] in den Szenario-Einstellungen nicht aktiviert ist).
+Wenn in Ihrem Szenario ein Webhook-Antwortmodul vorhanden ist, wird der Fehler an die Webhook-Antwort gesendet. Das Webhook-Antwortmodul wird immer zuletzt ausgeführt (wenn die Option [!UICONTROL Automatisches Commit] in den Szenario-Einstellungen nicht aktiviert ist).
 
 Weitere Informationen finden Sie unter [Reagieren auf Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks) im Artikel Webhooks.
 

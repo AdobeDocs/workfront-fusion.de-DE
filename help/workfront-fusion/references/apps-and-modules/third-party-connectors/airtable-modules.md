@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1890'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 # Airtable-Module
 
 
-Mit dem [!DNL Airtable]-Connector für [!DNL Adobe Workfront Fusion] können Sie ein Szenario auf der Grundlage von Ereignissen in Ihrem [!DNL Airtable]-Konto starten, Datensätze erstellen, hochladen und aktualisieren, Datensätze suchen und benutzerdefinierte API-Aufrufe an die Airtable-API durchführen.
+Mit dem [!DNL Airtable]-Connector für Adobe Workfront Fusion können Sie ein Szenario starten, das auf Ereignissen in Ihrem [!DNL Airtable] basiert, Datensätze erstellen, hochladen und aktualisieren, Datensätze suchen und benutzerdefinierte API-Aufrufe an die Airtable-API durchführen.
 
 ## Zugriffsanforderungen
 
@@ -25,27 +25,27 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Plan*</td>
+   <td role="rowheader">Adobe Workfront-Plan*</td>
   <td> <p>[!UICONTROL Pro] oder höher</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz*</td>
+   <td> <p>[!UICONTROL-Plan], [!UICONTROL-Arbeit]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
-   <td> <p>[!UICONTROL [!DNL Workfront Fusion] Arbeit für Automatisierung und Integration] </p> </td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
+   <td> <p>[!UICONTROL Workfront Fusion for Work Automation and Integration] </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
-   <td>Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben und [!DNL Adobe Workfront], die in diesem Artikel beschriebenen Funktionen zu nutzen.</td> 
+   <td>Ihr Unternehmen muss Adobe Workfront Fusion sowie Adobe Workfront erwerben, um die in diesem Artikel beschriebenen Funktionen nutzen zu können.</td> 
   </tr> 
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren [!DNL Workfront], um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Wenden Sie sich an Ihren Workfront-Administrator, um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Voraussetzungen
 
@@ -253,11 +253,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie die Sortierrichtung und das Feld aus, nach dem Sie die Ergebnisse sortieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>Anzeigen </td> 
+   <td>Ansicht </td> 
    <td> <p>Wählen Sie die Ansicht aus, nach der Sie nach Datensätzen suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>Grenze</td> 
+   <td>Limit</td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -420,11 +420,11 @@ Dieses Tabellenmodul startet ein Trigger, wenn ein Datensatz in der angegebenen 
    <td> <p>Feld "Trigger"</p> <p>Ein <code>Created Time</code> oder <code>Last Modified Time</code> Feld, das zum Sortieren von Datensätzen verwendet wird. Wenn Sie in Ihrem Schema kein <code>Created Time</code>- oder <code>Last Modified Time</code> haben, müssen Sie eines erstellen. </p> <p>Titelfeld</p> <p>Ein Feld, das als Bezeichnung für einen Datensatz verwendet wird, z. B. im Dialogfeld „Startpunkt auswählen“.</p> </td> 
   </tr> 
   <tr> 
-   <td>Grenze</td> 
+   <td>Limit</td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus überwachen soll, oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td>Anzeigen</td> 
+   <td>Ansicht</td> 
    <td> <p>Wählen Sie die Ansicht aus, die Sie verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -490,14 +490,14 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td role="rowheader">Kopfzeilen</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] Fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Abfragezeichenfolge</td> 
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form von Schlüssel und Wert hinzu</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Text</td> 
+   <td role="rowheader">Textkörper</td> 
    <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 

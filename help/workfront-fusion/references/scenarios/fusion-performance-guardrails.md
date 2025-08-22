@@ -1,19 +1,19 @@
 ---
 title: Leitplanken für die Fusionsleistung
-description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung und  [!DNL Adobe Workfront Fusion]  daher für hohe Leistung. Da langwierige Szenarien die Geschwindigkeit Ihrer Arbeit verlangsamen können, haben wir  [!DNL Workfront Fusion]  leistungserhaltende Leitplanken entwickelt, die die Ausführungszeit, die Datengröße und andere Szenario-Parameter begrenzen. [!DNL Workfront Fusion] Designer sollten sich dieser Leitplanken bewusst sein und sie in ihre Designpraktiken integrieren.
+description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, sodass Adobe Workfront Fusion für hohe Leistung entwickelt wurde. Da langwierige Szenarien die Geschwindigkeit Ihrer Arbeit verlangsamen können, haben wir Workfront Fusion mit leistungserhaltenden Leitplanken entwickelt, die die Ausführungszeit, die Datengröße und andere Szenario-Parameter beschränken. Entwickler von Workfront Fusion sollten sich dieser Leitplanken bewusst sein und sie in ihre Designpraktiken integrieren.
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e036784fbf241c6d528f2020b7c368249e4f2133
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
 
 # Leitplanken für die Fusionsleistung
 
-Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, sodass [!DNL Adobe Workfront Fusion] für hohe Leistung entwickelt wurde. Da langwierige Szenarien die Geschwindigkeit Ihrer Arbeit verlangsamen können, haben wir [!DNL Workfront Fusion] mit leistungserhaltenden Leitplanken entwickelt, die die Ausführungszeit, die Datengröße und andere Szenario-Parameter beschränken. [!DNL Workfront Fusion] Designer sollten sich dieser Leitplanken bewusst sein und sie in ihre Entwurfsverfahren integrieren.
+Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, sodass Adobe Workfront Fusion für hohe Leistung entwickelt wurde. Da langwierige Szenarien die Geschwindigkeit Ihrer Arbeit verlangsamen können, haben wir Workfront Fusion mit leistungserhaltenden Leitplanken entwickelt, die die Ausführungszeit, die Datengröße und andere Szenario-Parameter beschränken. Entwickler von Workfront Fusion sollten sich dieser Leitplanken bewusst sein und sie in ihre Designpraktiken integrieren.
 
 ## Browser
 
@@ -21,17 +21,17 @@ Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, sodass [!DNL Ad
 
 ## Szenarios
 
-* Das standardmäßige Ausführungstimeout für das Szenario beträgt **40 Minuten**. Wenn die Ausführung diese Zeitüberschreitung erreicht, unterbricht [!DNL Workfront Fusion] je nach Szenario die Ausführung des Szenarios nach dem nächsten Zyklus oder Vorgang. Dadurch wird das Szenario kurz nach Erreichen der 40-Minuten-Grenze beendet
+* Das standardmäßige Ausführungstimeout für das Szenario beträgt **40 Minuten**. Wenn die Ausführung diese Zeitüberschreitung erreicht, unterbricht Workfront Fusion je nach Szenario die Ausführung des Szenarios nach dem nächsten Zyklus oder Vorgang. Dadurch wird das Szenario kurz nach Erreichen der 40-Minuten-Grenze beendet
 
   Verkettungsszenarien zählen nicht für die Zeitüberschreitung der Szenarioausführung. Ein übergeordnetes Szenario fällt keine Zeit an, während auf die Ausführung eines untergeordneten Szenarios gewartet wird.
 * Die maximale Größe einer Szenario-Blueprint beträgt **5 MB**, wir empfehlen jedoch, die Szenario-Größe unter **3 MB** zu belassen.
 
   Mobile-App-Module, die Daten mit einer großen Anzahl von Feldern erstellen oder aktualisieren, können zu sehr großen Blueprints führen.
 
-   * Achten Sie bei Verwendung der [!DNL Workfront]-App darauf, nur die Felder auszuwählen, die für Ihre Anwendungsfälle zum Erstellen oder Aktualisieren erforderlich sind.
+   * Achten Sie bei Verwendung der Workfront-App darauf, nur die Felder auszuwählen, die für Ihre Anwendungsfälle zum Erstellen oder Aktualisieren erforderlich sind.
    * Verwenden Sie bei der Verwendung anderer Programme benutzerdefinierte API-Module, um mit jedem Datensatztyp zu interagieren, der über eine große Anzahl von Feldern verfügt.
 
-* Es gibt zwar keine Begrenzung für die Anzahl der Module in einem Szenario, aber Szenarien mit mehr als 150 Modulen beeinträchtigen die Leistung Ihres [!DNL Workfront Fusion]. Aus diesem Grund empfehlen wir nicht, Szenarien mit mehr als 150 Modulen zu erstellen.
+* Es gibt zwar keine Obergrenze für die Anzahl der Module in einem Szenario, aber Szenarien mit mehr als 150 Modulen beeinträchtigen die Leistung Ihres Workfront Fusion-Systems. Aus diesem Grund empfehlen wir nicht, Szenarien mit mehr als 150 Modulen zu erstellen.
 
 ## Vorgänge
 
@@ -60,7 +60,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 
 * Die standardmäßige Maximalgröße einer Payload beträgt **5 MB**.
 * Webhooks sind auf **100 Anfragen pro Sekunde beschränkt**. Wenn dieses Limit erreicht ist, sendet Workfront Fusion den Status 429 ([!UICONTROL Zu viele Anfragen]).
-* [!DNL Workfront Fusion] speichert Webhook-Payloads 30 Tage lang. Der Zugriff auf eine Webhook-Payload mehr als 30 Tage nach dem Empfang führt zu dem Fehler &quot;[!UICONTROL Fehler beim Lesen der Datei aus dem Speicher.]&quot;
+* Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Der Zugriff auf eine Webhook-Payload mehr als 30 Tage nach dem Empfang führt zu dem Fehler &quot;[!UICONTROL Fehler beim Lesen der Datei aus dem Speicher.]&quot;
 * Webhooks werden automatisch deaktiviert, wenn einer der folgenden Punkte zutrifft:
 
    * Der Webhook wurde seit mehr als 5 Tagen mit keinem Szenario verbunden

@@ -1,23 +1,23 @@
 ---
 title: Datenspeichermodule
-description: Ein  [!DNL Adobe Workfront Fusion] -Datenspeicher, ähnlich einer Datenbank oder einer einfachen Tabelle, kann Daten aus Szenarien speichern und ermöglicht so die Übertragung von Daten zwischen einzelnen Szenarien oder Szenarioausführungen. Sie können einen Datenspeicher verwenden, um während der Synchronisierung neue Daten aus verschiedenen Systemen zu speichern.
+description: Ein Adobe Workfront Fusion-Datenspeicher kann ähnlich wie eine Datenbank oder eine einfache Tabelle Daten aus Szenarien speichern und ermöglicht so die Übertragung von Daten zwischen einzelnen Szenarien oder Szenarioausführungen. Sie können einen Datenspeicher verwenden, um während der Synchronisierung neue Daten aus verschiedenen Systemen zu speichern.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Datenspeicher] Module
 
-Ein [!DNL Adobe Workfront Fusion] Datenspeicher, ähnlich einer Datenbank oder einer einfachen Tabelle, kann Daten aus Szenarien speichern und ermöglicht so die Übertragung von Daten zwischen einzelnen Szenarien oder Szenarioausführungen. Sie können einen Datenspeicher verwenden, um während der Synchronisierung neue Daten aus verschiedenen Systemen zu speichern.
+Ein Adobe Workfront Fusion-Datenspeicher kann ähnlich wie eine Datenbank oder eine einfache Tabelle Daten aus Szenarien speichern und ermöglicht so die Übertragung von Daten zwischen einzelnen Szenarien oder Szenarioausführungen. Sie können einen Datenspeicher verwenden, um während der Synchronisierung neue Daten aus verschiedenen Systemen zu speichern.
 
-Mit den Datenspeichermodulen können Sie Datensätze in Ihrem [!DNL Adobe Workfront Fusion] Datenspeicher hinzufügen, ersetzen, aktualisieren, abrufen, löschen, suchen oder zählen.
+Mit den Datenspeichermodulen können Sie Datensätze in Ihrem Adobe Workfront Fusion-Datenspeicher hinzufügen, ersetzen, aktualisieren, abrufen, löschen, suchen oder zählen.
 
-<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/)-->
+<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in Adobe Workfront Fusion](/help/workfront-fusion/references/mapping-panel/data-types/)-->
 
 Eine Videoeinführung zu Datenspeichern in Workfront Fusion finden Sie unter:
 
@@ -60,7 +60,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -72,7 +72,7 @@ Informationen zum Erstellen von Datenspeichern finden Sie unter [Erstellen und V
 
 ## [!UICONTROL Datenspeicher]-Module und ihre Felder
 
-Beim Konfigurieren von Datenspeichermodulen zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere Datenspeicherfelder angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von Datenspeichermodulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere Datenspeicherfelder angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Sie müssen keine Verbindung erstellen, um Datenspeicher zu verwenden.
 
@@ -113,7 +113,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p> Wählen Sie den Datenspeicher aus, in dem Sie einen Datensatz erstellen möchten, oder fügen Sie ihn hinzu. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Schlüssel] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul hinzufügen oder ersetzen soll. Der Schlüssel kann später zum Abrufen des Datensatzes verwendet werden. Wenn Sie dieses Feld leer lassen, wird automatisch ein Schlüssel generiert.</p> </td> 
   </tr> 
   <tr> 
@@ -121,7 +121,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Aktivieren Sie diese Option, um den Datensatz zu überschreiben. Der Datensatz, den Sie überschreiben möchten, muss im obigen Feld Schlüssel angegeben werden.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Eintrag] </td> 
+   <td>[!UICONTROL-Eintrag] </td> 
    <td> <p>Geben Sie die gewünschten Werte in die Felder des Datensatzes ein.</p> </td> 
   </tr> 
  </tbody> 
@@ -142,7 +142,7 @@ Sie geben den Datenspeicher und den Schlüssel des Datensatzes an.
    <td> <p>Wählen Sie den Datenspeicher aus, den Sie auf das Vorhandensein des Datensatzes überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Schlüssel] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, auf dessen Existenz das Modul prüfen soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -184,7 +184,7 @@ Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle be
    <td> <p>Wählen Sie den Datenspeicher aus, den Sie auf das Vorhandensein des Datensatzes überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Schlüssel] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul löschen soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -224,7 +224,7 @@ Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle be
    <td> <p> Wählen Sie den Datenspeicher aus, aus dem Sie einen Datensatz abrufen möchten</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Schlüssel] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul abrufen soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -252,11 +252,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL sort]</p> </td> 
-   <td> <p style="font-weight: normal;">Füllen Sie für jedes Feld, nach dem Sie sortieren möchten, die folgenden Felder aus:</p> <p style="font-weight: bold;">[!UICONTROL -Schlüssel]</p> <p>Wählen Sie den Spaltennamen aus, nach dem die Ergebnisse sortiert werden sollen.</p> <p style="font-weight: bold;">[!UICONTROL -Reihenfolge]</p> <p>Wählen Sie aus, ob die Ergebnisse in auf- oder absteigender Reihenfolge sortiert werden sollen.</p> </td> 
+   <td> <p style="font-weight: normal;">Füllen Sie für jedes Feld, nach dem Sie sortieren möchten, die folgenden Felder aus:</p> <p style="font-weight: bold;">[!UICONTROL-Schlüssel]</p> <p>Wählen Sie den Spaltennamen aus, nach dem die Ergebnisse sortiert werden sollen.</p> <p style="font-weight: bold;">[!UICONTROL-Reihenfolge]</p> <p>Wählen Sie aus, ob die Ergebnisse in auf- oder absteigender Reihenfolge sortiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
-   <td> <p> Legen Sie die maximale Anzahl von Suchergebnissen fest, [!DNL Workfront Fusion] während eines Ausführungszyklus zurückgegeben werden.</p> </td> 
+   <td> <p> Legen Sie die maximale Anzahl von Suchergebnissen fest, die Workfront Fusion während eines Ausführungszyklus zurückgibt.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Die Routenausführung auch dann fortsetzen, wenn das Modul keine Ergebnisse zurückgibt]</td> 
@@ -284,7 +284,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p> Wählen Sie den Datenspeicher aus, in dem Sie einen Datensatz erstellen möchten, oder fügen Sie ihn hinzu. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Schlüssel] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul aktualisieren soll.</p> </td> 
   </tr> 
   <tr> 
@@ -292,7 +292,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Aktivieren Sie diese Option, um einen neuen Datensatz zu erstellen, wenn der Datensatz mit dem angegebenen Schlüssel noch nicht vorhanden ist.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Eintrag]</td> 
+   <td>[!UICONTROL-Eintrag]</td> 
    <td> <p> Geben Sie die gewünschten Werte in die Felder des Datensatzes ein, die Sie aktualisieren möchten.</p> </td> 
   </tr> 
  </tbody> 

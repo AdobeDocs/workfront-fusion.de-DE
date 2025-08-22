@@ -4,9 +4,9 @@ description: Die Informationen in diesem Artikel können bei der Erstellung von 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '552'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Obwohl es keine Begrenzung für die Anzahl der Module in einem Szenario gibt, k�
 
 Weitere Informationen zu Modulen finden Sie unter [Modulübersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).
 
-## Kann [!DNL Workfront Fusion] mit Dateien arbeiten?
+## Kann Workfront Fusion mit Dateien arbeiten?
 
 ### Antwort
 
@@ -69,7 +69,7 @@ Die Datenübertragung bezieht sich auf die Datenmenge, die über Ihr Szenario ü
 
 ### Antwort
 
-Eine Verbindung ist die Verknüpfung zwischen Ihrem [!DNL Workfront Fusion]-Konto und dem Drittanbieterdienst, den Sie verwenden möchten. Die Verbindung kann beim Bearbeiten eines Szenarios erstellt werden.
+Eine Verbindung ist die Verknüpfung zwischen Ihrem Workfront Fusion-Konto und dem Drittanbieterdienst, den Sie verwenden möchten. Die Verbindung kann beim Bearbeiten eines Szenarios erstellt werden.
 
 Weitere Informationen finden Sie unter [Verbindung - Übersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
 
@@ -77,12 +77,12 @@ Weitere Informationen finden Sie unter [Verbindung - Übersicht](/help/workfront
 
 ### Antwort
 
-Ein [!UICONTROL Aggregator] führt Daten zu einer einzigen Sammlung zusammen. Ein Beispiel dafür sind Dateien, die in ein ZIP-Archiv komprimiert und als E-Mail-Anhang gesendet werden.
+Ein [!UICONTROL Aggregator] führt Daten in einer Sammlung zusammen. Ein Beispiel dafür sind Dateien, die in ein ZIP-Archiv komprimiert und als E-Mail-Anhang gesendet werden.
 
-Weitere Informationen finden Sie unter [[!UICONTROL Aggregator] Modul](/help/workfront-fusion/references/modules/aggregator-module.md).
+Weitere Informationen finden Sie [[!UICONTROL  Modul ]Aggregator](/help/workfront-fusion/references/modules/aggregator-module.md).
 
-## Was passiert, wenn ich eine E-Mail mit mehr als einem Anhang verarbeiten [!DNL Workfront Fusion]?
+## Was passiert, wenn ich Workfront Fusion eine E-Mail verarbeiten lasse, die mehr als einen Anhang enthält?
 
 ### Antwort
 
-Wenn Sie die [!UICONTROL Retrieve attachments] des [!UICONTROL Email] verwenden, wird jede Anlage einzeln über die übrigen Module im Szenario gesendet. Ähnliche Module sind auch in anderen Apps verfügbar, die mehrere Dateien gleichzeitig erhalten.
+Wenn Sie das Modul [!UICONTROL E]Mail[!UICONTROL  zum Abrufen von ] verwenden, wird jeder Anhang einzeln über die übrigen Module im Szenario gesendet. Ähnliche Module sind auch in anderen Apps verfügbar, die mehrere Dateien gleichzeitig erhalten.

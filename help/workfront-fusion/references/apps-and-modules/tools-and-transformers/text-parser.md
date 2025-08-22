@@ -1,19 +1,19 @@
 ---
 title: Text-Parser
-description: Sie können das Text-Parser-Tool verwenden, um Text zur Verwendung in anderen  [!DNL Adobe Workfront Fusion] -Modulen zu analysieren. Der Text-Parser benötigt keine Verbindung.
+description: Sie können das Text-Parser-Tool verwenden, um Text zu analysieren, der in anderen Adobe Workfront Fusion-Szenario-Modulen verwendet werden soll. Der Text-Parser benötigt keine Verbindung.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Text-Parser]
 
-Sie können das [!UICONTROL Text-Parser-Tool] verwenden, um Text zur Verwendung in anderen [!DNL Adobe Workfront Fusion]-Szenario-Modulen zu analysieren. Der [!UICONTROL Text-Parser] erfordert keine Verbindung.
+Sie können das [!UICONTROL Text-Parser-Tool] verwenden, um Text zur Verwendung in anderen Adobe Workfront Fusion-Szenario-Modulen zu analysieren. Der [!UICONTROL Text-Parser] erfordert keine Verbindung.
 
 ## Zugriffsanforderungen
 
@@ -52,7 +52,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -73,7 +73,7 @@ Der Text-Parser-Connector verwendet Folgendes:
 
 ## [!UICONTROL Text-Parser] Module und ihre Felder
 
-Beim Konfigurieren von [!UICONTROL Text-Parser]-Modulen zeigt [!DNL Adobe Workfront Fusion] die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!UICONTROL Text-Parser]-Modulen zeigt Adobe Workfront Fusion die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -200,7 +200,7 @@ Eine Diskussion über reguläre Ausdrücke würde den Rahmen dieses Artikels spr
    <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass das Modul das Szenario nicht stoppt, wenn es keine Ergebnisse zurückgibt.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Text] </td> 
+   <td>[!UICONTROL-Text] </td> 
    <td> <p>Geben Sie den Text ein, der dem Muster entsprechen soll, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -239,7 +239,7 @@ Durchsucht den eingegebenen Text nach einem angegebenen Wert oder regulären Aus
    <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Punkt (.) mit Zeilenumbruchzeichen (<code>\n</code>) übereinstimmt.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Text] </td> 
+   <td>[!UICONTROL-Text] </td> 
    <td> <p>Geben Sie den zu suchenden Text ein.</p> </td> 
   </tr> 
  </tbody> 

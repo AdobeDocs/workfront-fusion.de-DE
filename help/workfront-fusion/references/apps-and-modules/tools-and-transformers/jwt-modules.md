@@ -1,19 +1,19 @@
 ---
 title: JWT-Module
-description: Die  [!DNL Adobe Workfront Fusion] [!UICONTROL JWT]-App bietet ein Modul, das JWT-Token basierend auf dem bereitgestellten Algorithmus erstellt.
+description: Die Adobe Workfront Fusion [!UICONTROL JWT]-App bietet ein Modul, das JWT-Token basierend auf dem bereitgestellten Algorithmus erstellt.
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL JWT]-Modul
 
-Die [!DNL Adobe Workfront Fusion] [!UICONTROL JWT]-App bietet ein Modul, das JWT-Token basierend auf dem bereitgestellten Algorithmus erstellt.
+Die Adobe Workfront Fusion [!UICONTROL JWT]-App bietet ein Modul, das JWT-Token basierend auf dem bereitgestellten Algorithmus erstellt.
 
 ## Zugriffsanforderungen
 
@@ -52,7 +52,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -82,7 +82,7 @@ Dieses Modul generiert ein JWT basierend auf dem ausgewählten Algorithmus.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Algorithmus]</td> 
+   <td role="rowheader">[!UICONTROL-Algorithmus]</td> 
    <td> <p>Wählen Sie den Algorithmus aus, mit dem Sie den JWT generieren möchten.</p> <ul>
    <li><b>HS256</b>: HMAC mit SHA-256-Hash-Algorithmus</li>
    <li><b>HS384</b>: HMAC mit SHA-384-Hash-Algorithmus</li>
@@ -103,7 +103,7 @@ Dieses Modul generiert ein JWT basierend auf dem ausgewählten Algorithmus.
    <td> <p>Klicken Sie für jedes Payload-Element, das Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie den Schlüssel und den Wert des Elements ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Optionen] </td> 
+   <td role="rowheader">[!UICONTROL-Optionen] </td> 
    <td> <p>Klicken Sie für jedes Optionselement, das Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie den Schlüssel und den Wert des Elements ein.</p> <p>Die folgenden Schlüssel sind verfügbar:
    <ul>
    <li><b>Algorithmus</b>: (Standard: RS256)</li>

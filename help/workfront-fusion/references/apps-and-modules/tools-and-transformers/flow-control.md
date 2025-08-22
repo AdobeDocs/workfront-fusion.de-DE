@@ -1,17 +1,17 @@
 ---
-title: Flusskontrolle
+title: Flusssteuerung
 description: Beim Erstellen oder Bearbeiten eines Szenarios können Sie Einstellungen konfigurieren, um den Datenfluss zu steuern.
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 0%
+source-wordcount: '649'
+ht-degree: 2%
 
 ---
 
-# Flusskontrolle
+# Flusssteuerung
 
 Beim Erstellen oder Bearbeiten eines Szenarios können Sie Einstellungen konfigurieren, um den Datenfluss zu steuern.
 
@@ -52,7 +52,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -64,15 +64,15 @@ Sie können ein [!UICONTROL Repeater]-Modul verwenden, um eine Aufgabe eine best
 <table>
     <tr>
         <td>[!UICONTROL Anfangswert]</td>
-        <td>Geben Sie den Wert ein, den das Modul in der ersten Iteration haben soll, oder ordnen Sie ihn zu. Der Standardwert ist 1.</td>
+        <td>Geben Sie den Wert ein, den das Modul in der ersten Iteration haben soll, oder ordnen Sie ihn zu. Der Standardwert lautet 1.</td>
     </tr>
     <tr>
         <td>[!UICONTROL wiederholt]</td>
         <td>Geben Sie die Anzahl der Wiederholungen des Moduls ein oder mappen Sie sie. Diese Zahl muss größer oder gleich 0 und kleiner oder gleich 10.000 sein.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL -Schritt]</td>
-        <td>Dies ist die Zahl, um die das Modul den Wert erhöht. Der Standardwert ist 1.</td>
+        <td>[!UICONTROL-Schritt]</td>
+        <td>Dies ist die Zahl, um die das Modul den Wert erhöht. Der Standardwert lautet 1.</td>
     </tr>
 </table>
 
@@ -81,7 +81,7 @@ Sie können ein [!UICONTROL Repeater]-Modul verwenden, um eine Aufgabe eine best
 Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E-Mails mit den Betreffen „Hello 1“, „Hello 2“ usw. zu senden, indem Sie das Modul **[!UICONTROL E-Mail] > [!UICONTROL E-Mail senden]** mit dem Modul [!UICONTROL Repeater] verbinden.
 
 1. Klicken Sie auf [!UICONTROL Fluss]-Symbol ![Flusssteuerungs-Symbol](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) unten im Bildschirm und klicken Sie dann im angezeigten Menü auf **[!UICONTROL Repeater]**.
-1. Klicken Sie auf das [!UICONTROL Repeater]-Modul und dann in **angezeigten Feld auf** Automatisch verbinden.
+1. Klicken Sie auf das [!UICONTROL Repeater]-Modul und dann in **[!UICONTROL angezeigten Feld auf]** Automatisch verbinden.
 
    Das Repeater-Modul wird geöffnet.
 
@@ -93,7 +93,7 @@ Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E
 
    Der Wert des Elements erhöht sich bei jeder Wiederholung um diesen Wert, der im Feld **[!UICONTROL Schritt]** angegeben ist, das Sie durch Auswahl von **[!UICONTROL Erweiterte Einstellungen anzeigen]** anzeigen können. Diese Zahl ist standardmäßig 1.
 
-1. Klicken Sie **[!UICONTROL OK]**, um das **&quot;**&quot; zu schließen.
+1. Klicken Sie **[!UICONTROL OK]**, um das **[!UICONTROL &quot;]**&quot; zu schließen.
 
 1. Klicken Sie auf die App oder das Service-Modul, das mit dem [!UICONTROL Repeater]-Modul verbunden ist.
 1. Geben Sie in das sich öffnende Feld die Informationen ein, die Sie wiederholen möchten.
@@ -106,7 +106,7 @@ Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E
 
 >[!NOTE]
 >
->Die Anzahl der Wiederholungen wird nicht durch den Wert von `i` bestimmt, wie dies bei der Programmierung in einer Schleife der Fall wäre. Das Modul wiederholt die im Feld „Wiederholungen[!UICONTROL &#x200B; angegebenen &#x200B;]. Der Wert `i` ändert sich mit jeder Iteration des [!DNL repeater] Moduls und kann späteren Modulen zugeordnet werden. Im obigen Beispiel wird der Wert von `i` der „Hello“-Nachricht zugeordnet, was zu Meldungen mit dem Wert „Hello 1“, „Hello 2“ usw. führt.
+>Die Anzahl der Wiederholungen wird nicht durch den Wert von `i` bestimmt, wie dies bei der Programmierung in einer Schleife der Fall wäre. Das Modul wiederholt die im Feld „Wiederholungen[!UICONTROL  angegebenen ]. Der Wert `i` ändert sich mit jeder Iteration des [!DNL repeater] Moduls und kann späteren Modulen zugeordnet werden. Im obigen Beispiel wird der Wert von `i` der „Hello“-Nachricht zugeordnet, was zu Meldungen mit dem Wert „Hello 1“, „Hello 2“ usw. führt.
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Ein Array-Aggregator ist ein spezieller Modultyp, mit dem mehrere Bundles zu ein
 
 ## [!UICONTROL Router]
 
-Das [!UICONTROL Router]-Modul ermöglicht es Ihnen, Ihren Fluss in mehrere Routen zu verzweigen und die Daten innerhalb jeder Route unterschiedlich zu verarbeiten. Sobald ein [!UICONTROL Router]-Modul ein Bundle erhält, leitet es es es an jede angeschlossene Route in der Reihenfolge weiter, in der die Routen an das [!UICONTROL Router]-Modul angehängt wurden. Weitere Informationen finden Sie unter [Router-Modul in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+Das [!UICONTROL Router]-Modul ermöglicht es Ihnen, Ihren Fluss in mehrere Routen zu verzweigen und die Daten innerhalb jeder Route unterschiedlich zu verarbeiten. Sobald ein [!UICONTROL Router]-Modul ein Bundle erhält, leitet es es es an jede angeschlossene Route in der Reihenfolge weiter, in der die Routen an das [!UICONTROL Router]-Modul angehängt wurden. Weitere Informationen finden Sie unter [Router-Modul in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 ## Anweisungen
 

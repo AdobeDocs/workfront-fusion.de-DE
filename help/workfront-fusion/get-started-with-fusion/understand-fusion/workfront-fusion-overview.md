@@ -1,17 +1,17 @@
 ---
 title: Übersicht über Adobe Workfront Fusion
-description: Die Rolle von  [!DNL Adobe Workfront Fusion]  besteht darin, Ihre Prozesse zu automatisieren, damit Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer und immer wieder zu wiederholen. Es funktioniert durch die Verknüpfung von Aktionen innerhalb und zwischen Apps und Services, um ein Szenario zu erstellen, das Ihre Daten automatisch überträgt und transformiert. Das Szenario, in dem Sie Daten in einer App oder einem Service erstellen, überwacht und verarbeitet diese Daten, um das gewünschte Ergebnis zu liefern.
+description: Die Rolle von Adobe Workfront Fusion besteht darin, Ihre Prozesse zu automatisieren, damit Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen. Es funktioniert durch die Verknüpfung von Aktionen innerhalb und zwischen Apps und Services, um ein Szenario zu erstellen, das Ihre Daten automatisch überträgt und transformiert. Das Szenario, in dem Sie Daten in einer App oder einem Service erstellen, überwacht und verarbeitet diese Daten, um das gewünschte Ergebnis zu liefern.
 author: Becky
 feature: Workfront Fusion
 exl-id: 49df566f-59e9-469c-9123-27d1e15069e4
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Workfront Fusion]
+# Übersicht über Adobe Workfront Fusion
 
 Die Rolle von Adobe Workfront Fusion besteht darin, Ihre Prozesse zu automatisieren, damit Ihre Benutzerinnen und Benutzer nicht so viel Zeit mit Routineaufgaben verbringen müssen. Es funktioniert durch die Verknüpfung von Aktionen innerhalb und zwischen Apps und Services, um ein Szenario zu erstellen, das Ihre Daten automatisch überträgt und transformiert. Das Szenario, in dem Sie Daten in einer App oder einem Service erstellen, überwacht und verarbeitet diese Daten, um das gewünschte Ergebnis zu liefern.
 
@@ -31,7 +31,7 @@ Workfront Fusion bietet auch Funktionen, die Szenarien unterstützen, z. B. Szen
 
 Wenn Sie mit der Arbeit mit Workfront Fusion beginnen, sind möglicherweise die folgenden Ressourcen hilfreich:
 
-* Ressourcen zum Workfront Fusion-Training finden Sie unter [Workfront Fusion-Schulung - Übersicht](https://experienceleague.adobe.com/de/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
+* Ressourcen zum Workfront Fusion-Training finden Sie unter [Workfront Fusion-Schulung - Übersicht](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy).
 
 
 * Weitere Informationen zu Szenarien finden Sie unter [Szenario - Übersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).

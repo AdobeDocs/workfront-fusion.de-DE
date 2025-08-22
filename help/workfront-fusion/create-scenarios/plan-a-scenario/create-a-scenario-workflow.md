@@ -4,9 +4,9 @@ description: Diesem allgemeinen Workflow folgen, um ein Szenario zu erstellen
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 394f80a2d7c124bbd00e1a5b51ad3dc6e73a996b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -34,18 +34,18 @@ Tastaturbefehle
 
 ## Szenario erstellen und benennen
 
-1. Melden Sie sich bei Ihrem [!DNL Workfront Fusion] Konto an.
-1. Klicken Sie **[!UICONTROL Scenarios]** linken ![&#128279;](assets/scenarios-icon.png) auf Szenario-Symbol).
+1. Melden Sie sich bei Ihrem Workfront Fusion-Konto an.
+1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![ (](assets/scenarios-icon.png)).
 
    >[!NOTE]
    >
    >Wenn der linke Navigationsbereich oder dessen Symbole nicht angezeigt werden, klicken Sie auf das Symbol Menü ![Menü](assets/main-menu-icon-left-nav.png) .
 
-1. (Optional) Klicken Sie im Bedienfeld [!UICONTROL **Ordner**] auf das **[!UICONTROL Add folder]**-Symbol ![Ordnersymbol hinzufügen](assets/add-folder-icon.png) und geben Sie dann einen Namen wie „Übungsszenarien“ für Ihren ersten Ordner ein.
+1. (Optional) Klicken Sie im Bedienfeld [!UICONTROL **Ordner**] auf das Symbol **[!UICONTROL Ordner hinzufügen]** ![Symbol Ordner hinzufügen](assets/add-folder-icon.png) und geben Sie dann einen Namen wie „Übungsszenarien“ für Ihren ersten Ordner ein.
 
-1. (Optional) Öffnen Sie den Ordner und klicken Sie dann oben rechts auf der Seite auf **[!UICONTROL Create a new scenario]** .
+1. (Optional) Öffnen Sie den Ordner und klicken **[!UICONTROL oben rechts auf]** Neues Szenario erstellen“.
 
-1. Wählen Sie oben links den **[!UICONTROL New scenario]** Platzhalternamen aus und geben Sie dann einen Namen wie „Übungsszenario 1“ ein.
+1. Wählen Sie **[!UICONTROL Platzhalternamen]** Neues Szenario“ in der oberen linken Ecke aus und geben Sie dann einen Namen ein, z. B. „Übungsszenario 1“.
 
    ![Benennen Sie das Szenario](assets/name-the-scenario.png)
 
@@ -101,13 +101,13 @@ Anweisungen finden Sie in den Artikeln unter [Szenarioeinstellungen konfiguriere
 
 Durch das Testen Ihres Szenarios können Sie feststellen, ob Ihr Szenario wie beabsichtigt funktioniert. Anschließend können Sie das Szenario auf der Grundlage Ihrer Ergebnisse überarbeiten und dann erneut testen.
 
-1. Klicken Sie in der linken unteren Ecke des Szenario-Editors auf **[!UICONTROL Run once]** .
+1. Klicken Sie **[!UICONTROL Einmal ausführen]** in der linken unteren Ecke des Szenario-Editors.
 1. Klicken Sie nach Abschluss der Ausführung des Szenarios auf die Blase „Execution Inspector“ über jedem Modul, um die Eingabe von Informationen und die Ausgabe dieses Moduls anzuzeigen.
 
    * Allgemeine Informationen zum Lesen von Informationen zur Szenarioausführung finden Sie unter [Szenarioausführungsfluss](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
-   * Informationen zu verarbeiteten Bundles finden Sie unter [Szenarioausführung, Zyklen und Phasen in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+   * Informationen zu verarbeiteten Bundles finden Sie unter [Szenarioausführung, Zyklen und Phasen in Adobe Workfront Fusion](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. Klicken Sie in [!DNL Workfront Fusion] auf **[!UICONTROL Save]** ![Symbol Speichern](assets/save-icon.png) in der linken unteren Ecke, um Ihren Fortschritt im Szenario zu speichern.
+1. Klicken Sie in Workfront Fusion auf **[!UICONTROL Speichern]** ![Symbol „Speichern](assets/save-icon.png) unten links, um Ihren Fortschritt im Szenario zu speichern.
 
    >[!IMPORTANT]
    >
@@ -138,22 +138,22 @@ Beim Erstellen oder Bearbeiten eines Szenarios können die folgenden Tastaturbef
  </thead> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Save] </td> 
+   <td role="rowheader">[!UICONTROL Speichern] </td> 
    <td>Strg+Umschalt+S</td> 
    <td>Befehl+Umschalt+S</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Run Once]</td> 
+   <td role="rowheader">[!UICONTROL Einmal ausführen]</td> 
    <td>Strg+Umschalt+Eingabe</td> 
    <td>Befehlstaste+Umschalt+Eingabe</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td role="rowheader">[!UICONTROL DevTool öffnen]</td> 
    <td>F12</td> 
    <td>Strg+Fn+F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td role="rowheader">[!UICONTROL Mehrere Module auswählen]</td> 
    <td>Umschalt+Ziehen</td> 
    <td>Umschalt+Ziehen</span> </td> 
   </tr> 
@@ -163,7 +163,7 @@ Beim Erstellen oder Bearbeiten eines Szenarios können die folgenden Tastaturbef
    <td>Befehl+C</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td role="rowheader">[!UICONTROL Einfügen]</td> 
    <td>Strg+V</td> 
    <td>Befehl+V</span> </td> 
   </tr> 

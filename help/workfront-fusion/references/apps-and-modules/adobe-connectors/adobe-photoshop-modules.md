@@ -4,16 +4,16 @@ description: Mit den Adobe Photoshop-Modulen können Sie ein Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 7f167af0ba1becb603dd8d9f3767101e157a7bdf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '5379'
+source-wordcount: '5392'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Photoshop]
 
-In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Workflows automatisieren, die [!DNL Adobe Photoshop] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Adobe Photoshop] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenario erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
@@ -59,7 +59,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -163,7 +163,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Photoshop]:
 
 ## [!DNL Adobe Photoshop] Module und ihre Felder
 
-Beim Konfigurieren [!DNL Adobe Photoshop] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Adobe Photoshop] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Adobe Photoshop] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Adobe Photoshop] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -197,7 +197,7 @@ Dieses Aktionsmodul wendet eine Vielzahl von Bearbeitungen auf Dokument- und Ebe
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -326,7 +326,7 @@ Dieses Aktionsmodul korrigiert automatisch das angegebene Bild.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -377,7 +377,7 @@ Dieses Aktionsmodul konvertiert eine Datei in JPEG, PNG, PSD oder TIFF.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -434,7 +434,7 @@ Dieses Aktionsmodul gibt eine PNG-Datei mit einer Maske zurück, die um das Subj
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -509,7 +509,7 @@ Dieses Aktionsmodul erstellt eine neue PSD mit optionalen Ebenen und generiert A
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -614,7 +614,7 @@ Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -648,7 +648,7 @@ Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können 
    <td> Geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Ebenen]</td>
+      <td role="rowheader">[!UICONTROL-Ebenen]</td>
    <td> <p>Klicken Sie für jede Textebene, die Sie bearbeiten möchten, auf <b>Element hinzufügen</b> und geben Sie die Ebenenoptionen ein.<p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Text bearbeiten</a> in der Adobe Photoshop-Dokumentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Ausgabe)-Speicher]</td>
@@ -688,7 +688,7 @@ Um mehrere Ebenen zu bearbeiten, verwenden Sie das Modul [Textebenen bearbeiten]
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -722,7 +722,7 @@ Um mehrere Ebenen zu bearbeiten, verwenden Sie das Modul [Textebenen bearbeiten]
    <td> Geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Ebenen]</td>
+      <td role="rowheader">[!UICONTROL-Ebenen]</td>
    <td> <p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Textebene bearbeiten</a> in der Adobe Photoshop-Dokumentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ausgabedateispeicher]</td>
@@ -767,7 +767,7 @@ Dieses Aktionsmodul führt Photoshop-Aktionen mithilfe von JSON-Befehlen aus.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -843,7 +843,7 @@ Dieses Aktionsmodul führt „Tiefenunschärfe“ für die ausgewählte Datei au
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -900,7 +900,7 @@ Dieses Aktionsmodul führt eine Photoshop-Aktion für das ausgewählte Bild aus.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -987,7 +987,7 @@ Dieses Aktionsmodul führt das Produktzuschneiden für das ausgewählte Bild aus
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1062,7 +1062,7 @@ Dieses Aktionsmodul ruft Ebeneninformationen aus der angegebenen PSD-Datei ab.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1095,7 +1095,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Photoshop-API
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1106,16 +1106,16 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Photoshop-API
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Methode]</p>
+        <p>[!UICONTROL-Methode]</p>
       </td>
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] Fügt automatisch Autorisierungskopfzeilen hinzu.</p>
+        <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p>
       </td>
     </tr>
     <tr>
@@ -1142,7 +1142,7 @@ Dieses Aktionsmodul identifiziert das Hauptsubjekt Ihres Bildes und entfernt den
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1219,7 +1219,7 @@ Dieses Modul verwendet die Smart Object API Version 2.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1236,7 +1236,7 @@ Dieses Modul verwendet die Smart Object API Version 2.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Ebenen]</p>
+        <p>[!UICONTROL-Ebenen]</p>
       </td>
    <td>Klicken Sie für jede Ebene, die Sie dem Smart-Objekt hinzufügen möchten, auf Element hinzufügen und geben Sie den Namen oder die ID des Objekts, den Datei-Service, in dem das Smart-Objekt gespeichert ist, und die URL oder den Pfad der Ebene ein.<p>Beschreibungen der erweiterten Einstellungen in diesem Bereich finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Ersetzen eines Smart-Objekts</a> in der Dokumentation zur Photoshop-API </td> 
     </tr>
@@ -1284,7 +1284,7 @@ Dieses Modul verwendet die Legacy-Version von Smart-Objekten.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -1301,7 +1301,7 @@ Dieses Modul verwendet die Legacy-Version von Smart-Objekten.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Ebenen]</p>
+        <p>[!UICONTROL-Ebenen]</p>
       </td>
    <td>Klicken Sie für jede Ebene, die Sie dem Smart-Objekt hinzufügen möchten, auf Element hinzufügen und geben Sie den Namen oder die ID des Objekts, den Datei-Service, in dem das Smart-Objekt gespeichert ist, und die URL oder den Pfad der Ebene ein.<p>Beschreibungen der erweiterten Einstellungen in diesem Bereich finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Ersetzen eines Smart-Objekts</a> in der Dokumentation zur Photoshop-API </td> 
     </tr>
@@ -1346,11 +1346,11 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Speicher]</td>
+      <td role="rowheader">[!UICONTROL-Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die Datei gespeichert wird, deren Größe geändert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
@@ -1369,7 +1369,7 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
     </tr>
     <tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Speicher]</td>
+      <td role="rowheader">[!UICONTROL-Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die neue Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
@@ -1416,7 +1416,7 @@ Dieses Aktionsmodul fügt dem ausgewählten Bild ein Wasserzeichen hinzu.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>

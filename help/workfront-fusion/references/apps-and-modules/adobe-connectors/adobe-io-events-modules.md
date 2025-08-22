@@ -4,10 +4,10 @@ description: Mit den Adobe I/O Events-Modulen können Sie ein Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 1%
+source-wordcount: '1085'
+ht-degree: 3%
 
 ---
 
@@ -54,7 +54,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -124,7 +124,7 @@ So erstellen Sie eine Verbindung für Ihre Adobe I/O Events-Module:
         <td>Geben Sie Ihre Adobe-Client-ID ein. Diese finden Sie im Abschnitt Anmeldedaten des Adobe Developer Console</td>
       </tr>
       <tr>
-        <td role="rowheader">Geheimer Client-Schlüssel</td>
+        <td role="rowheader">Client-Geheimnis</td>
         <td>Geben Sie Ihr Adobe-Client-Geheimnis ein. Diese finden Sie im Abschnitt Anmeldedaten des Adobe Developer Console</td>
       </tr>
       </tr>
@@ -155,17 +155,17 @@ So erstellen Sie eine Verbindung für Ihre Adobe I/O Events-Module:
 
 ## Adobe I/O Events-Module und ihre Felder
 
-Beim Konfigurieren [!DNL Adobe I/O Events] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Adobe I/O Events] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Adobe I/O Events] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Adobe I/O Events] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Auslöser](#triggers)
+* [Trigger](#triggers)
 * [Aktionen](#actions)
 * [Suchvorgänge](#searches)
 
-### Auslöser
+### Trigger
 
 <!--Becky start here-->
 
@@ -187,7 +187,7 @@ So erstellen Sie einen Webhook:
         <td>Einen Namen für diesen Webhook eingeben.</td>
        </tr>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
+         <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>
@@ -233,7 +233,7 @@ Dieses Suchmodul ruft die Adobe I/O Events-IDs für den angegebenen Anbieter und
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
+         <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>
@@ -265,7 +265,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL -Verbindung]</td>
+     <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -278,14 +278,14 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Methode]</p>
+        <p>[!UICONTROL-Methode]</p>
       </td>
       <td>
   <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p>  
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -318,7 +318,7 @@ Dieses Suchmodul ruft alle Ereignisse für eine Registrierung aus einem Journal 
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
+         <td role="rowheader">[!UICONTROL-Verbindung]</td>
         <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
        </tr>
        <tr>

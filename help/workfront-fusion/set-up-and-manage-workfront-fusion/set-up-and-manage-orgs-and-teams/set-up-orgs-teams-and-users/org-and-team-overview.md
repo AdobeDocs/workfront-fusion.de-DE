@@ -4,16 +4,16 @@ description: Die Organisations- und Team-Funktionen von Adobe Workfront Fusion e
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '529'
 ht-degree: 1%
 
 ---
 
-# Übersicht über [!DNL Adobe Workfront Fusion] und Teams
+# Übersicht über Adobe Workfront Fusion-Organisationen und -Teams
 
-Die Funktionen von [!DNL Adobe Workfront Fusion] für Organisation und Teams ermöglichen es Unternehmen, den Zugriff auf Szenarien und andere Funktionen in Fusion zu steuern.
+Die Organisations- und Team-Funktionen von Adobe Workfront Fusion ermöglichen es Unternehmen, den Zugriff auf Szenarien und andere Funktionen innerhalb von Fusion zu steuern.
 
 Eine Organisation ist die größte Entität in Adobe Workfront Fusion. Beispielsweise kann Ihre Fusion-Organisation das Fusion-Konto für Ihr gesamtes Unternehmen repräsentieren.
 
@@ -23,7 +23,7 @@ Anweisungen zum Erstellen eines Teams finden Sie unter [Erstellen eines Teams](/
 
 ## Organisationen
 
-[!DNL Workfront Fusion] Benutzer gehören einer Organisation an.
+Workfront Fusion-Benutzer gehören einer Organisation an.
 
 Benutzer müssen einer Organisation hinzugefügt werden, bevor sie einem Team hinzugefügt werden.
 
@@ -33,7 +33,7 @@ Ein Benutzer hat in einer Organisation eine der folgenden Rollen:
 
 * **[!UICONTROL Inhaber]**: Der/die Verantwortliche verfügt über alle in der Organisation verfügbaren Berechtigungen.
 * **[!UICONTROL Admin]**: Administratoren können Teams und Benutzer für die Organisation erstellen und verwalten und Vorlagen genehmigen.
-* **[!UICONTROL Mitglied]**: Mitglieder können [!DNL Workfront Fusion] verwenden, aber keine organisatorischen Änderungen vornehmen.
+* **[!UICONTROL Mitglied]**: Mitglieder können Workfront Fusion verwenden, aber keine organisatorischen Änderungen vornehmen.
 * **[!UICONTROL Buchhalter]**: Buchhalter können Lizenzinformationen im Organisations-Dashboard anzeigen, jedoch keine Aktionen ausführen.
 * **[!UICONTROL App-]**: Die Funktionalität für diese Rolle ist derzeit nicht verfügbar und wird in naher Zukunft verfügbar gemacht. Es wird derzeit nicht empfohlen, dieser Rolle Benutzer zuzuweisen.
 
@@ -53,7 +53,7 @@ Teams sind Benutzergruppen, die den Zugriff auf bestimmte Ressourcen gemeinsam n
 
 >[!NOTE]
 >
->Da Teams Ressourcen gemeinsam nutzen, ist es manchmal nützlich, wenn ein Team nur ein Mitglied hat. Beispielsweise können Benutzende in der Schulung Verbindungen zu ihren individuellen [!DNL Workfront]-Konten erstellen. Jedes Teammitglied kann sich auch mit dem [!DNL Workfront] Konto verbinden. In diesem Fall empfehlen wir, dass der Benutzer das einzige Mitglied eines Schulungsteams ist.
+>Da Teams Ressourcen gemeinsam nutzen, ist es manchmal nützlich, wenn ein Team nur ein Mitglied hat. Beispielsweise können Benutzende, die an Schulungen teilnehmen, Verbindungen zu ihren jeweiligen Workfront-Konten erstellen. Alle Teammitglieder können sich auch mit dem jeweiligen Workfront-Konto verbinden. In diesem Fall empfehlen wir, dass der Benutzer das einzige Mitglied eines Schulungsteams ist.
 
 Organisationen können so viele Teams haben, wie sie benötigen, und Benutzer können zu einem oder mehreren Teams gehören.
 

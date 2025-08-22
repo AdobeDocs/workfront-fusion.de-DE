@@ -1,19 +1,19 @@
 ---
 title: HTTP > Erstellen einer API-Schlüssel-Autorisierungsanfrage
-description: Dieses  [!DNL Adobe Workfront Fusion]  sendet eine HTTPS-Anfrage an eine angegebene URL, für die eine Autorisierung des API-Schlüssels erforderlich ist, und verarbeitet die Antwort.
+description: Dieses Adobe Workfront Fusion-Aktionsmodul sendet eine HTTPS-Anfrage an eine angegebene URL, für die eine API-Schlüsselauthentifizierung erforderlich ist, und verarbeitet die Antwort.
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1043'
 ht-degree: 1%
 
 ---
 
 # HTTP > [!UICONTROL Erstellen einer API-Schlüssel-Autorisierungsanfrage]
 
-Dieses [!DNL Adobe Workfront Fusion]-Aktionsmodul sendet eine HTTPS-Anfrage an eine angegebene URL, für die eine Autorisierung des API-Schlüssels erforderlich ist, und verarbeitet die Antwort.
+Dieses Adobe Workfront Fusion-Aktionsmodul sendet eine HTTPS-Anfrage an eine angegebene URL, für die eine API-Schlüsselauthentifizierung erforderlich ist, und verarbeitet die Antwort.
 
 >[!NOTE]
 >
@@ -60,15 +60,15 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## [!UICONTROL HTTP] > [!UICONTROL Erstellen einer API-Schlüssel-Autorisierungsanfrage] Modulkonfiguration
 
-Wenn Sie das Modul [!UICONTROL HTTP] > [!UICONTROL API-Schlüssel-Autorisierungsanfrage erstellen] konfigurieren, zeigt [!DNL Adobe Workfront Fusion] die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren des Moduls [!UICONTROL HTTP] > [!UICONTROL API-Schlüssel-Autorisierungsanfrage ]) zeigt Adobe Workfront Fusion die unten aufgeführten Felder an. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zu einem anderen Modul in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -77,7 +77,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"></td> 
+   <td role="rowheader">[!UICONTROL]</td> 
    <td> <p>Wählen Sie den Schlüssel aus, der Ihre Authentifizierungsdaten für den API-Schlüssel enthält. Um einen neuen Schlüssel hinzuzufügen, klicken Sie auf <strong>[!UICONTROL Hinzufügen]</strong> und konfigurieren Sie die folgenden Informationen:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Schlüsselname]</strong></p> <p>Geben Sie einen Namen für diesen Satz von API-Anmeldeinformationen ein.</p> </li> 
@@ -95,11 +95,11 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
    <td> <p>Geben Sie die URL ein, an die Sie eine Anfrage senden möchten, z. B. einen API-Endpunkt, eine Website usw.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Methode]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Methode]</p> </td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen] </td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen] </td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -120,7 +120,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] ist eine mehrteilige HTTP-Anfrage zum Senden von Dateien und Daten. Es wird häufig verwendet, um Dateien auf den Server hochzuladen.</p> <p>Fügen Sie Felder hinzu, die in der Anfrage gesendet werden sollen. Jedes Feld muss ein Schlüssel-Wert-Paar enthalten.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL text]</strong> </p> <p>Geben Sie den Schlüssel und den Wert ein, die innerhalb des Anfragetexts gesendet werden sollen.</p> </li> 
-       <li> <p><strong>[!UICONTROL -Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt; [!UICONTROL Datei abrufen] oder [!UICONTROL Google-Laufwerk] &gt;[!UICONTROL Datei herunterladen]), oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt; [!UICONTROL Datei abrufen] oder [!UICONTROL Google-Laufwerk] &gt;[!UICONTROL Datei herunterladen]), oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -172,7 +172,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Serialisierung mehrerer derselben Abfragezeichenfolgen-Schlüssel als Arrays deaktivieren]</p> </td> 
-   <td> <p>Standardmäßig verarbeitet [!DNL Workfront Fusion] mehrere Werte für denselben URL-Abfragezeichenfolgen-Parameterschlüssel wie Arrays. Beispielsweise wird <code>www.test.com?foo=bar&amp;foo=baz</code> in <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code> konvertiert. Aktivieren Sie diese Option, um diese Funktion zu deaktivieren. </p> </td> 
+   <td> <p>Standardmäßig verarbeitet Workfront Fusion mehrere Werte für denselben URL-Abfragezeichenfolgen-Parameterschlüssel wie Arrays. Beispielsweise wird <code>www.test.com?foo=bar&amp;foo=baz</code> in <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code> konvertiert. Aktivieren Sie diese Option, um diese Funktion zu deaktivieren. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Komprimierten Inhalt anfordern]</td> 
@@ -180,7 +180,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Gegenseitige TLS verwenden]</td> 
-   <td> <p>Aktivieren Sie diese Option, um gegenseitiges TLS in der HTTP-Anfrage zu verwenden.</p> <p>Weitere Informationen zu gegenseitigem TLS finden Sie unter <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Verwenden von gegenseitigem TLS in HTTP-Modulen in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Aktivieren Sie diese Option, um gegenseitiges TLS in der HTTP-Anfrage zu verwenden.</p> <p>Weitere Informationen zu gegenseitigen TLS finden Sie unter <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Verwenden von gegenseitigen TLS in HTTP-Modulen in Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

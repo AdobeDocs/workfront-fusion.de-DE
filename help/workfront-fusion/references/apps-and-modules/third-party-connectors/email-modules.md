@@ -1,19 +1,19 @@
 ---
 title: E-Mail-Module
-description: In einem  [!DNL Adobe Workfront Fusion] -Szenario können Sie Ihr E-Mail-Konto mit mehreren Anwendungen und Services von Drittanbietern verbinden. Damit können Sie E-Mails über IMAP herunterladen, E-Mails über SMTP senden, neue Entwürfe erstellen, E-Mails von einem Ordner in einen anderen verschieben und kopieren, E-Mails als gelesen oder ungelesen markieren und E-Mails löschen.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Ihr E-Mail-Konto mit mehreren Anwendungen und Services von Drittanbietern verbinden. Damit können Sie E-Mails über IMAP herunterladen, E-Mails über SMTP senden, neue Entwürfe erstellen, E-Mails von einem Ordner in einen anderen verschieben und kopieren, E-Mails als gelesen oder ungelesen markieren und E-Mails löschen.
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2485'
 ht-degree: 0%
 
 ---
 
 # E-Mail-Module
 
-In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Ihr E-Mail-Konto mit mehreren Anwendungen und Services von Drittanbietern verbinden. Damit können Sie E-Mails über IMAP herunterladen, E-Mails über SMTP senden, neue Entwürfe erstellen, E-Mails von einem Ordner in einen anderen verschieben und kopieren, E-Mails als gelesen oder ungelesen markieren und E-Mails löschen.
+In einem Adobe Workfront Fusion-Szenario können Sie Ihr E-Mail-Konto mit mehreren Anwendungen und Services von Drittanbietern verbinden. Damit können Sie E-Mails über IMAP herunterladen, E-Mails über SMTP senden, neue Entwürfe erstellen, E-Mails von einem Ordner in einen anderen verschieben und kopieren, E-Mails als gelesen oder ungelesen markieren und E-Mails löschen.
 
 ## Zugriffsanforderungen
 
@@ -54,7 +54,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -100,7 +100,7 @@ So fügen Sie ein selbstsigniertes Zertifikat hinzu:
 
 ## [!UICONTROL E]Mail-Module und ihre Felder
 
-Beim Konfigurieren von [!UICONTROL E]Mail-Modulen zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können je nach Faktoren wie Ihrer Zugriffsebene in der App oder im Service weitere Felder angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!UICONTROL E-Mail]-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können je nach Faktoren wie Ihrer Zugriffsebene in der App oder im Service weitere Felder angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Einige der E-Mail-Felder enthalten möglicherweise bereits Daten, da Sie diese in einem anderen Modul im Szenario verwendet haben. Weitere Informationen finden Sie in der E-Mail-Hilfe.
 
@@ -112,11 +112,11 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 >
 >Die eindeutige E-Mail-ID [!UICONTROL E-Mail-ID (UID)] ist die Kennung der E-Mail. Die E-Mail-ID ist für jeden Ordner der E-Mail spezifisch.
 
-* [Auslöser](#triggers)
+* [Trigger](#triggers)
 * [Aktionen](#actions)
 * [Iteratoren](#iterators)
 
-### Auslöser
+### Trigger
 
 #### [!UICONTROL E-Mails ansehen]
 
@@ -127,15 +127,15 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue E-Mail zur Verarbeitun
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres E-Mail-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Verbinden Ihrer E-Mail mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner] </td> 
+   <td role="rowheader">[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den Ordner aus, der E-Mails enthält, die Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Kriterien]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Kriterien]</p> </td> 
    <td> <p>Wählen Sie die Kriterien aus, nach denen Sie E-Mails ansehen möchten:</p> 
     <ul> 
      <li>[!UICONTROL Alle E-Mails]</li> 
@@ -161,7 +161,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue E-Mail zur Verarbeitun
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl an Ergebnissen]</td> 
-   <td> <p> Geben Sie die maximale Anzahl von E-Mails ein, die [!DNL Workfront Fusion] während eines Szenario-Ausführungszyklus zurückgeben sollen, oder mappen Sie sie.</p> </td> 
+   <td> <p> Geben Sie die maximale Anzahl von E-Mails ein, die Workfront Fusion während eines Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -186,7 +186,7 @@ Dieses Aktionsmodul kopiert eine E-Mail oder einen Entwurf in einen ausgewählte
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres E-Mail-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Verbinden Ihrer E-Mail mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
@@ -213,11 +213,11 @@ Dieses Aktionsmodul erstellt einen neuen Entwurf und fügt ihn einem ausgewählt
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres E-Mail-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Verbinden Ihrer E-Mail mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td>Wählen Sie den Ordner aus, in dem Sie den E-Mail-Entwurf erstellen möchten.</td> 
   </tr> 
   <tr> 
@@ -229,7 +229,7 @@ Dieses Aktionsmodul erstellt einen neuen Entwurf und fügt ihn einem ausgewählt
    <td> <p>Geben Sie die Betreffzeile der E-Mail ein oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Inhalt] </td> 
+   <td role="rowheader">[!UICONTROL-Inhalt] </td> 
    <td> <p>Geben Sie den E-Mail-Inhalt im HTML-Format mit HTML-Tags oder im Nur-Text-Format ein oder mappen Sie ihn.</p> </td> 
   </tr> 
   <tr> 
@@ -237,7 +237,7 @@ Dieses Aktionsmodul erstellt einen neuen Entwurf und fügt ihn einem ausgewählt
    <td> <p>Klicken Sie für jeden Anhang, den Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Dateiname]</strong> </p> <p>Geben Sie den Dateinamen einschließlich der Erweiterung ein. </p> </li> 
-     <li> <p><strong>[!UICONTROL -Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
+     <li> <p><strong>[!UICONTROL-Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL content-ID]</strong> </p> <p>Geben Sie die Inhalts-ID ein, um den Anhang (Bild) in den Inhalt einzufügen.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -251,7 +251,7 @@ Dieses Aktionsmodul erstellt einen neuen Entwurf und fügt ihn einem ausgewählt
   </tr> 
   <!--<tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, [!DNL Workfront Fusion] uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Enter or map the email address (and name, if needed) that appears in the [!UICONTROL From] field in the email. </p> <p>Important: Use the correct syntax: <code>name@email.com</code> or <code>"Name" name@email.com</code>.</p> <p>Note:  Normally, Workfront Fusion uses the email address that you entered when creating the connection as the sender address. If you enter any other email address, an error may occur when sending a message because your account may not have permission to send emails from a different address than your own. E.g. <code>test@mail.com</code> or "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader"> <p>[!UICONTROL Sender]</p> </td> 
@@ -298,11 +298,11 @@ Dieses Aktionsmodul entfernt eine E-Mail oder einen Entwurf aus dem ausgewählte
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres E-Mail-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Verbinden Ihrer E-Mail mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td>Wählen Sie den Ordner aus, der die zu löschende E-Mail enthält.</td> 
   </tr> 
   <tr> 
@@ -311,7 +311,7 @@ Dieses Aktionsmodul entfernt eine E-Mail oder einen Entwurf aus dem ausgewählte
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL löschen]</td> 
-   <td> <p>Aktivieren Sie diese Option, um alle Nachrichten, die im aktuell geöffneten Postfach als [!UICONTROL Deleted] gekennzeichnet sind, dauerhaft zu entfernen.</p> <p>Hinweis: In [!DNL Gmail] wird dieses Verhalten durch die Einstellung im Abschnitt [!UICONTROL -Einstellungen] &gt;[!UICONTROL Weiterleitung POP/IMAP im IMAP-Zugriff] gesteuert.</p> </td> 
+   <td> <p>Aktivieren Sie diese Option, um alle Nachrichten, die im aktuell geöffneten Postfach als [!UICONTROL Deleted] gekennzeichnet sind, dauerhaft zu entfernen.</p> <p>Hinweis: In [!DNL Gmail] wird dieses Verhalten durch die Einstellung im Abschnitt [!UICONTROL-Einstellungen] &gt;[!UICONTROL Weiterleitung POP/IMAP im IMAP-Zugriff] gesteuert.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -325,11 +325,11 @@ Dieses Modul gibt E-Mails zurück, die den angegebenen Kriterien entsprechen.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres E-Mail-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Verbinden Ihrer E-Mail mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner] </td> 
+   <td role="rowheader">[!UICONTROL-Ordner] </td> 
    <td> <p>Wählen Sie den Ordner aus, der die abzurufenden E-Mails enthält.</p> </td> 
   </tr> 
   <tr> 
@@ -337,7 +337,7 @@ Dieses Modul gibt E-Mails zurück, die den angegebenen Kriterien entsprechen.
    <td> <p>Aktivieren Sie diese Option, wenn Sie die ungelesene E-Mail nach dem Abrufen der Details als gelesen markieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Kriterien]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Kriterien]</p> </td> 
    <td> <p>Wählen Sie die Kriterien der E-Mails aus, die Sie abrufen möchten:</p> 
     <ul> 
      <li>[!UICONTROL Alle E-Mails]</li> 
@@ -371,11 +371,11 @@ Dieses Modul gibt E-Mails zurück, die den angegebenen Kriterien entsprechen.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL E-Mail-ID (UID)]</td> 
-   <td> <p> Geben Sie die E-Mail-ID (UID) der E-Mail ein, deren Details Sie abrufen möchten.</p> <p>Sie können die UID der E-Mail abrufen, indem Sie das Modul [!UICONTROL E-Mail beobachten] oder das Modul [!UICONTROL E-Mail suchen] von [!DNL Workfront Fusion] verwenden.</p> </td> 
+   <td> <p> Geben Sie die E-Mail-ID (UID) der E-Mail ein, deren Details Sie abrufen möchten.</p> <p>Sie können die UID der E-Mail abrufen, indem Sie das Modul [!UICONTROL E-Mail ansehen] oder das Modul [!UICONTROL E-Mail suchen] von Workfront Fusion verwenden.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl an Ergebnissen]</td> 
-   <td> <p> Die maximale Anzahl von E-Mails, die [!DNL Workfront Fusion] während eines Szenario-Ausführungszyklus zurückgeben sollten.</p> </td> 
+   <td> <p> Die maximale Anzahl von E-Mails, die Workfront Fusion während eines Szenario-Ausführungszyklus zurückgeben sollte.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Die Routenausführung auch dann fortsetzen, wenn das Modul keine Ergebnisse zurückgibt]</td> 
@@ -393,11 +393,11 @@ Dieses Aktionsmodul markiert eine E-Mail oder einen Entwurf in einem ausgewählt
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres E-Mail-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Verbinden Ihrer E-Mail mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td>Wählen Sie den Ordner aus, der die E-Mail enthält, die Sie als gelesen markieren möchten.</td> 
   </tr> 
   <tr> 
@@ -416,11 +416,11 @@ Markiert eine E-Mail oder einen Entwurf in einem ausgewählten Ordner als ungele
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres E-Mail-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Verbinden Ihrer E-Mail mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL-Ordner]</td> 
    <td>Wählen Sie den Ordner aus, der die E-Mail enthält, die Sie als ungelesen markieren möchten. Beispiel: Primär.</td> 
   </tr> 
   <tr> 
@@ -439,7 +439,7 @@ Verschiebt eine ausgewählte E-Mail oder einen Entwurf in einen ausgewählten Or
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres E-Mail-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Verbinden Ihrer E-Mail mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
@@ -466,12 +466,12 @@ Sendet eine neue E-Mail.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres E-Mail-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Verbinden Ihrer E-Mail mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres E-Mail-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">Verbinden Ihrer E-Mail mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Nachricht nach dem Senden speichern]</td> 
-   <td>Nachdem die E-Mail gesendet wurde, wird sie in Ihrem Postfach gespeichert. Aktivieren Sie diese Option, wenn Sie die mit [!DNL Workfront Fusion] gesendeten E-Mails im <i>[!UICONTROL Sent Mail]</i>-Ordner oder einem anderen Ordner in Ihrem Postfach speichern möchten. Einige E-Mail-Dienste, z. B. [!DNL Gmail], speichern gesendete Nachrichten automatisch.</td> 
+   <td>Nachdem die E-Mail gesendet wurde, wird sie in Ihrem Postfach gespeichert. Aktivieren Sie diese Option, wenn Sie mit Workfront Fusion gesendete E-Mails im Ordner <i>[!UICONTROL Sent Mail]</i> oder in einem anderen Ordner in Ihrem Postfach speichern möchten. Einige E-Mail-Dienste, z. B. [!DNL Gmail], speichern gesendete Nachrichten automatisch.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL nach] </td> 
@@ -490,7 +490,7 @@ Sendet eine neue E-Mail.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Inhalt] </td> 
+   <td role="rowheader">[!UICONTROL-Inhalt] </td> 
    <td> <p>Geben Sie den E-Mail-Inhalt im HTML-Format mithilfe von HTML-Tags ein oder ordnen Sie ihn zu oder im Klartext, je nachdem, was Sie im Feld [!UICONTROL Content Type] ausgewählt haben.</p> </td> 
   </tr> 
   <tr> 
@@ -498,7 +498,7 @@ Sendet eine neue E-Mail.
    <td> <p>Klicken Sie für jeden Anhang, den Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Dateiname]</strong> </p> <p>Geben Sie den Dateinamen einschließlich der Erweiterung ein. </p> </li> 
-     <li> <p><strong>[!UICONTROL -Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
+     <li> <p><strong>[!UICONTROL-Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL content-ID]</strong> </p> <p>Geben Sie die Inhalts-ID ein, um den Anhang (Bild) in den Inhalt einzufügen.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -523,11 +523,11 @@ Sendet eine neue E-Mail.
    <td> <p> Wenn Sie auf eine bestimmte E-Mail antworten, geben Sie die ID der E-Mail, auf die Sie antworten, ein oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verweise] </td> 
+   <td role="rowheader">[!UICONTROL-Verweise] </td> 
    <td> <p>Geben Sie die Nachrichten-IDs aller Antworten im Thread ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Priorität]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Priorität]</p> </td> 
    <td> <p>Priorität der E-Mail auswählen:</p> 
     <ul> 
      <li>[!UICONTROL Hoch]</li> 
@@ -536,7 +536,7 @@ Sendet eine neue E-Mail.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Kopfzeilen]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Kopfzeilen]</p> </td> 
    <td> <p>Fügen Sie die Kopfzeilen hinzu:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL key]</strong> </p> <p>Fügen Sie den Schlüssel hinzu. Beispielsweise [!UICONTROL Sender], [!UICONTROL Date], [!UICONTROL To] usw.</p> </li> 
@@ -545,7 +545,7 @@ Sendet eine neue E-Mail.
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL from] </td> 
-   <td> <p>Geben Sie die E-Mail-Adresse (und ggf. den Namen) ein, die im Feld [!UICONTROL Von] in der E-Mail angezeigt wird, oder ordnen Sie sie zu. </p> <p>Wichtig: Verwenden Sie die richtige Syntax: <code>name@email.com</code> oder <code>"Name" name@email.com</code>.</p> <p>Hinweis: Normalerweise verwendet [!DNL Workfront Fusion] die E-Mail-Adresse, die Sie beim Erstellen der Verbindung eingegeben haben, als Absenderadresse. Wenn Sie eine andere E-Mail-Adresse eingeben, kann beim Senden einer Nachricht ein Fehler auftreten, da Ihr Konto möglicherweise nicht berechtigt ist, E-Mails von einer anderen Adresse als Ihrer eigenen zu senden. Z. B. <code>test@mail.com</code> oder "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Geben Sie die E-Mail-Adresse (und ggf. den Namen) ein, die im Feld [!UICONTROL Von] in der E-Mail angezeigt wird, oder ordnen Sie sie zu. </p> <p>Wichtig: Verwenden Sie die richtige Syntax: <code>name@email.com</code> oder <code>"Name" name@email.com</code>.</p> <p>Hinweis: Normalerweise verwendet Workfront Fusion die E-Mail-Adresse, die Sie beim Erstellen der Verbindung eingegeben haben, als Absenderadresse. Wenn Sie eine andere E-Mail-Adresse eingeben, kann beim Senden einer Nachricht ein Fehler auftreten, da Ihr Konto möglicherweise nicht berechtigt ist, E-Mails von einer anderen Adresse als Ihrer eigenen zu senden. Z. B. <code>test@mail.com</code> oder "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

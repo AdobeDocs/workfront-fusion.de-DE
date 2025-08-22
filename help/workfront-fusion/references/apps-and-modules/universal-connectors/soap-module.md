@@ -4,10 +4,10 @@ description: Sie können das SOAP-Modul verwenden, um eine Verbindung zu SOAP-AP
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 0%
+source-wordcount: '681'
+ht-degree: 1%
 
 ---
 
@@ -64,13 +64,13 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## SOAP-Modul und seine Felder
 
-Beim Konfigurieren von SOAP-Modulen zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an.  Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von SOAP-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an.  Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
 
 Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -137,7 +137,7 @@ Folgendes würde von [!UICONTROL Workfront Fusion nicht korrekt erkannt]:
 </complexType>
 ```
 
-Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `wsdl:arrayType`, die in [!UICONTROL Workfront Fusion noch nicht unterstützt &#x200B;].
+Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `wsdl:arrayType`, die in [!UICONTROL Workfront Fusion noch nicht unterstützt ].
 
 >[!ENDSHADEBOX]
 
@@ -145,7 +145,7 @@ Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `
 
 Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder verschiedene Fehler in der Modulkonfiguration auslöst, können Sie stattdessen das Modul Universal **[!UICONTROL HTTP] > [!UICONTROL Anfrage]** verwenden:
 
-1. Erstellen Sie [!DNL Workfront Fusion] ein neues Szenario.
+1. Erstellen Sie in Workfront Fusion ein neues Szenario.
 1. Fügen Sie das Modul **[!UICONTROL HTTP] > [!UICONTROL Anfrage stellen]** in das Szenario ein.
 1. Öffnen Sie die Konfiguration des Moduls und füllen Sie die folgenden Felder aus:
 
@@ -154,7 +154,7 @@ Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder ve
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Methode]</td> 
+      <td role="rowheader">[!UICONTROL-Methode]</td> 
       <td> <p>[!UICONTROL POST]</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
@@ -185,7 +185,7 @@ Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder ve
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Kopieren Sie nach dem Auffinden die URL aus dem `location`.
-1. Fügen Sie [!DNL Workfront Fusion] die URL in das URL-Feld des HTTP-Moduls ein.
+1. Fügen Sie in Workfront Fusion die URL in das URL-Feld des HTTP-Moduls ein.
 1. Öffnen Sie [Online [!UICONTROL SOAP] Client](https://wsdlbrowser.com/) in einem neuen Webbrowserfenster/-tab.
 1. Fügen Sie die WSDL-URL in das Feld WSDL-URL ein.
 1. Klicken Sie **[!UICONTROL Durchsuchen]**.

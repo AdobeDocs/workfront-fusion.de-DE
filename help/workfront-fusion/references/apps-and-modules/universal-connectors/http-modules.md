@@ -1,19 +1,19 @@
 ---
 title: HTTP > Andere Module
-description: Die  [!DNL Adobe Workfront Fusion] -HTTP-App bietet verschiedene Module für die Kommunikation auf der Grundlage des Hypertext Transfer Protocol (HTTP). HTTP ist die Grundlage der Datenkommunikation für das World Wide Web. Sie können die Module verwenden, um Web-Seiten und -Dateien herunterzuladen, Webhooks und API-Endpunkte aufzurufen usw.
+description: Die Adobe Workfront Fusion-HTTP-App bietet verschiedene Kommunikationsmodule, die auf dem Hypertext Transfer Protocol (HTTP)-Protokoll basieren. HTTP ist die Grundlage der Datenkommunikation für das World Wide Web. Sie können die Module verwenden, um Web-Seiten und -Dateien herunterzuladen, Webhooks und API-Endpunkte aufzurufen usw.
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 0%
+source-wordcount: '618'
+ht-degree: 1%
 
 ---
 
 # HTTP > Andere Module
 
-Die [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP]-App bietet verschiedene Module für die Kommunikation auf der Grundlage des Hypertext Transfer Protocol (HTTP)-Protokolls. HTTP ist die Grundlage der Datenkommunikation für das World Wide Web. Sie können die Module verwenden, um Web-Seiten und -Dateien herunterzuladen, Webhooks und API-Endpunkte aufzurufen usw.
+Die Adobe Workfront Fusion [!UICONTROL HTTP]-App bietet verschiedene Kommunikationsmodule, die auf dem Hypertext Transfer Protocol (HTTP)-Protokoll basieren. HTTP ist die Grundlage der Datenkommunikation für das World Wide Web. Sie können die Module verwenden, um Web-Seiten und -Dateien herunterzuladen, Webhooks und API-Endpunkte aufzurufen usw.
 
 Die richtige Auswahl des Moduls hängt vom Authentifizierungs-/Autorisierungsmechanismus der Ressource ab, auf die Sie zugreifen möchten. Im Folgenden finden Sie Beispiele für -Module
 
@@ -68,7 +68,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -97,7 +97,7 @@ Dieses Aktionsmodul lädt eine Datei von der angegebenen URL herunter. Nachdem d
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Alle Status als Fehler auswerten (außer 2xx und 3xx )] </td> 
-   <td> <p>Mit dieser Option können Sie die Fehlerbehandlung einrichten.</p> <p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Fehlerbehandlung in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Mit dieser Option können Sie die Fehlerbehandlung einrichten.</p> <p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Fehlerbehandlung in Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -123,7 +123,7 @@ Dieses Aktionsmodul löst eine Kette von HTTP-Umleitungen auf und gibt eine Ziel
    <td> <p>Geben Sie die URL ein, die Sie auflösen möchten, oder ordnen Sie sie zu, z. B. eine [!DNL bit.ly] URL.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode] </td> 
+   <td role="rowheader">[!UICONTROL-Methode] </td> 
    <td> <p>Wählen Sie aus, ob Sie die Methode [!UICONTROL HEAD] oder die Methode [!UICONTROL GET] verwenden möchten.</p> </td> 
   </tr> 
  </tbody> 

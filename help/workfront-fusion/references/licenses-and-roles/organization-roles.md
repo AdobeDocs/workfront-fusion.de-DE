@@ -4,20 +4,20 @@ description: Dieser Artikel enthält Informationen über den Zugriff und die Ber
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 2%
+source-wordcount: '396'
+ht-degree: 35%
 
 ---
 
 # Organisations- und Teamfunktionen
 
-In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den verschiedenen Team- und Organisationsrollen in [!DNL Workfront Fusion] zur Verfügung stehen.
+In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den verschiedenen Team- und Organisationsrollen in Workfront Fusion zur Verfügung stehen.
 
 >[!NOTE]
 >
->Organisationsrollen sind in [!DNL Workfront Fusion] von Teamrollen getrennt. Weitere Informationen zu Organisations- und Teamrollen finden Sie unter [Organisationen und Teams - Übersicht](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
+>Organisationsrollen sind in Workfront Fusion von Teamrollen getrennt. Weitere Informationen zu Organisations- und Teamrollen finden Sie unter [Organisationen und Teams - Übersicht](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Organisationsrollen
 
@@ -30,10 +30,10 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p>[!UICONTROL Owner]</p> </th> 
-   <th> <p>[!UICONTROL Admin]</p> </th> 
-   <th> <p>[!UICONTROL Member]</p> </th> 
-   <th> <p>[!UICONTROL Accountant]</p> </th> 
+   <th> <p>[!UICONTROL Inhaber]</p> </th> 
+   <th> <p>[!UICONTROL admin]</p> </th> 
+   <th> <p>[!UICONTROL-Member]</p> </th> 
+   <th> <p>[!UICONTROL Buchhalter]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -89,10 +89,10 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Monitoring]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -208,10 +208,10 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Monitoring]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -257,10 +257,10 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Monitoring]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -306,10 +306,10 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Monitoring]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -362,10 +362,10 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Monitoring]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -411,10 +411,10 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Monitoring]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -460,10 +460,10 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Monitoring]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -516,10 +516,10 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Monitoring]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 

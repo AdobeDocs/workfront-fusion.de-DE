@@ -4,10 +4,10 @@ description: Beim Zuordnen von Elementen können Sie Funktionen verwenden, um ei
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 1%
 
 ---
 
@@ -29,17 +29,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Packstück</td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
    <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td> 
-   <td> <p>Neu: [!UICONTROL Standard]</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -47,16 +47,16 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Konfigurationen der Zugriffsebene*</td> 
    <td> 
-     <p>Sie müssen ein [!DNL Workfront Fusion]-Administrator für Ihre Organisation sein.</p>
-     <p>Sie müssen [!DNL Workfront Fusion] für Ihr Team sein.</p>
+     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Unternehmen sein.</p>
+     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Team sein.</p>
    </td> 
   </tr> 
    </td> 
@@ -66,7 +66,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -74,7 +74,7 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 So fügen Sie eine Funktion in ein Feld ein:
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie Daten zuordnen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Klicken Sie auf das Feld, in das Sie eine Funktion einfügen möchten.
@@ -137,22 +137,22 @@ So verschachteln Sie eine Funktion:
 
 ## [!DNL Google Sheets] verwenden
 
-Wenn [!DNL Workfront Fusion] keine Funktion enthält, die Sie verwenden möchten, es aber von [!DNL Google Sheets] vorgestellt wird, können Sie sie wie folgt verwenden:
+Wenn Workfront Fusion keine Funktion enthält, die Sie verwenden möchten, es jedoch in [!DNL Google Sheets] vorhanden ist, können Sie sie wie folgt verwenden:
 
 1. Erstellen Sie [!DNL Google Sheets] eine neue leere Tabelle.
-1. Öffnen Sie [!DNL Workfront Fusion] Ihr Szenario.
-1. Fügen Sie das Modul **[!DNL Google Sheets]** > **[!UICONTROL Update a cell]** zum Szenario hinzu.
+1. Öffnen Sie in Workfront Fusion Ihr Szenario.
+1. Fügen Sie das **[!DNL Google Sheets]** Modul **[!UICONTROL Zelle aktualisieren]** zum Szenario hinzu.
 
 1. Konfigurieren Sie das Modul:
 
-   1. Wählen Sie die neu erstellte Tabelle im Feld **[!UICONTROL Spreadsheet]** aus.
-   1. Fügen Sie die Formel, die die [!DNL Google Sheets] enthält, in das Feld **[!UICONTROL Value]** ein.
+   1. Wählen Sie die neu erstellte Tabelle im Feld **[!UICONTROL Tabelle]** aus.
+   1. Fügen Sie die Formel, die die [!DNL Google Sheets] enthält, in das Feld **[!UICONTROL Wert]** ein.
 
       Sie können die Ausgabe vorhergehender Module wie gewohnt verwenden.
 
       ![Verwenden von Google Sheets-Funktionen](assets/exploit-google-sheet-functions-350x218.png)
 
-1. Fügen Sie das Modul **[!UICONTROL Google Sheets]>[!UICONTROL Get a cell]** ein, um das berechnete Ergebnis zu erhalten.
+1. Fügen Sie das Modul **[!UICONTROL Google] >[!UICONTROL Zelle abrufen]** ein, um das berechnete Ergebnis zu erhalten.
 1. Konfigurieren Sie das Modul mit derselben Zellen-ID, die Sie in Schritt 4 verwendet haben.
 
    ![Verwenden von Google Sheets-Funktionen](assets/exploit-google-sheet-functions-2-350x187.png)

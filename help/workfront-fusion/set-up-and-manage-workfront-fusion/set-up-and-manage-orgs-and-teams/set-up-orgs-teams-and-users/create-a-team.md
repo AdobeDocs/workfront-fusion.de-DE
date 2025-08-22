@@ -4,9 +4,9 @@ description: Teams sind kleinere Gruppen innerhalb der Organisation und teilen F
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: ecfba475bdf25cb5d9200246f7d86bfe20700f1c
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '381'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Organisationen können so viele Teams haben, wie sie benötigen, und Benutzer k�
 
 >[!NOTE]
 >
->Da Teams Ressourcen gemeinsam nutzen, ist es manchmal nützlich, wenn ein Team nur ein Mitglied hat. Beispielsweise können Benutzende in der Schulung Verbindungen zu ihren individuellen [!DNL Workfront]-Konten erstellen. Jedes Teammitglied kann sich auch mit dem [!DNL Workfront] Konto verbinden. In diesem Fall empfehlen wir, dass der Benutzer das einzige Mitglied eines Schulungsteams ist.
+>Da Teams Ressourcen gemeinsam nutzen, ist es manchmal nützlich, wenn ein Team nur ein Mitglied hat. Beispielsweise können Benutzende, die an Schulungen teilnehmen, Verbindungen zu ihren jeweiligen Workfront-Konten erstellen. Alle Teammitglieder können sich auch mit dem jeweiligen Workfront-Konto verbinden. In diesem Fall empfehlen wir, dass der Benutzer das einzige Mitglied eines Schulungsteams ist.
 
 ## Zugriffsanforderungen
 
@@ -32,17 +32,17 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] Packstück</td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
    <td> <p>Beliebig</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] Lizenz</td> 
-   <td> <p>Neu: [!UICONTROL Standard]</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenz</td> 
+   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] Lizenz **</td> 
+   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
    <td>
-   <p>Aktuell: Keine [!DNL Workfront Fusion].</p>
+   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
    <p>Oder</p>
    <p>Legacy: Beliebig </p>
    </td> 
@@ -50,16 +50,16 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] kaufen.</li><li>[!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
    <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
+   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Konfigurationen der Zugriffsebene*</td> 
    <td> 
-     <p>Sie müssen ein [!DNL Workfront Fusion]-Administrator für Ihre Organisation sein.</p>
-     <p>Sie müssen [!DNL Workfront Fusion] für Ihr Team sein.</p>
+     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Unternehmen sein.</p>
+     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Team sein.</p>
    </td> 
   </tr> 
    </td> 
@@ -69,7 +69,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Workfront Fusion] Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
