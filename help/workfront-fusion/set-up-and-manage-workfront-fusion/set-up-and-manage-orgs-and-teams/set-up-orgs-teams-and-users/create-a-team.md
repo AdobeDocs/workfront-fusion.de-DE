@@ -4,9 +4,9 @@ description: Teams sind kleinere Gruppen innerhalb der Organisation und teilen F
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ecfba475bdf25cb5d9200246f7d86bfe20700f1c
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront]: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] ist enthalten.</li></ul>
+   <p>Neu:</p> <ul><li>[!UICONTROL Select] oder [!UICONTROL Prime] [!DNL Workfront] Plan: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] kaufen.</li><li>[!UICONTROL Ultimate] [!DNL Workfront]: [!DNL Workfront Fusion] ist enthalten.</li></ul>
    <p>Oder</p>
    <p>Aktuell: Ihr Unternehmen muss [!DNL Adobe Workfront Fusion] erwerben.</p>
    </td> 
@@ -81,8 +81,18 @@ Organisationsverantwortliche und Administratoren können Teams erstellen. Teams 
 
 So erstellen Sie ein Team:
 
-1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Org overview]**
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Organisationsübersicht]**
 1. Wählen Sie die Registerkarte **[!UICONTROL Teams]** aus.
-1. Klicken Sie auf **[!UICONTROL Add a new team]**.
+1. Klicken Sie **[!UICONTROL Neues Team hinzufügen]**.
    ![Team erstellen](assets/create-new-team-button.png)
 1. Geben Sie einen Namen für das neue Team ein und klicken Sie auf **Hinzufügen**.
+
+## Bearbeiten eines Teams
+
+Sie können den Namen eines Teams bearbeiten.
+
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Organisationsübersicht]**
+1. Wählen Sie die Registerkarte **[!UICONTROL Teams]** aus.
+1. Suchen Sie das Team, dessen Namen Sie bearbeiten möchten, und klicken Sie dann in **Zeile** Teams auf „Bearbeiten“.
+1. Geben Sie einen neuen Namen für das Team ein und klicken Sie dann auf **Speichern**.
+

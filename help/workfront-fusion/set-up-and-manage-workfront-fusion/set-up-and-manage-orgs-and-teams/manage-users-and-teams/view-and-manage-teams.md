@@ -1,23 +1,30 @@
 ---
-title: Anzeigen oder Bearbeiten von Benutzerdetails
-description: Verwalten  [!DNL Adobe Workfront Fusion]  Benutzer in Ihrer Organisation
+title: Anzeigen und Verwalten von Teams
+description: Sie können eine Liste der Teams in Ihrer Organisation anzeigen und die Team-Namen bearbeiten.
 author: Becky
 feature: Workfront Fusion
-exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
 source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 2%
+source-wordcount: '301'
+ht-degree: 4%
 
 ---
 
-# Anzeigen oder Bearbeiten von Benutzerdetails
+# Anzeigen und Verwalten von Teams
 
-[!DNL Adobe Workfront Fusion] können Benutzerdetails in [!DNL Workfront Fusion] verwalten.
+Teams sind Benutzergruppen, die den Zugriff auf bestimmte Ressourcen gemeinsam nutzen. Diese Ressourcen können Folgendes umfassen:
 
->[!NOTE]
->
->Wenn Ihr Unternehmen derzeit zur Adobe Admin Console wechselt, können Sie in Workfront keine Benutzenden verwalten (Benutzende hinzufügen oder löschen). Sie können diese Aktionen nach Abschluss der Migration in der Adobe Admin Console ausführen.
+* Szenarios
+* Verbindungen
+* Webhooks
+* Schlüssel
+* Datenspeicher
+* Datenstrukturen
+* E-Mail-Benachrichtigungseinstellungen
+
+Sie können eine Liste der Teams Ihrer Organisation anzeigen und die Namen der Teams bearbeiten.
+
+Informationen zum Hinzufügen von Benutzern zu Teams finden [ unter „Hinzufügen eines Benutzers zu einem Team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Zugriffsanforderungen
 
@@ -71,11 +78,17 @@ Informationen zu [!DNL Adobe Workfront Fusion] finden Sie unter [[!DNL Adobe Wor
 
 +++
 
-## Anzeigen oder Bearbeiten von Benutzerdetails
+## Anzeigen und Verwalten von Teams im Bereich Teams
 
-[!DNL Adobe Workfront Fusion] können Benutzerdetails anzeigen und aktualisieren.
+1. Klicken Sie in der linken Navigation **Organisationsübersicht** in der oberen linken Ecke des Bildschirms.
+1. Wählen Sie die Registerkarte **Teams** aus.
 
-1. Wählen Sie, während Sie als [!DNL Workfront Fusion]-Administrator angemeldet sind **[!UICONTROL im linken Navigationsbereich die Option]** Alle Benutzer“ aus.
-1. Klicken Sie **[!UICONTROL Details]** in der Zeile des Benutzers, den Sie anzeigen möchten.
-1. (Optional) Um die Details des Benutzers zu aktualisieren, klicken Sie **[!UICONTROL Optionen]** in der oberen rechten Ecke des Bildschirms und wählen Sie dann **[!UICONTROL Details ändern]**.
-1. Bearbeiten Sie die Details und klicken Sie dann auf **Speichern**.
+   Die Liste Teams wird geöffnet.
+
+1. (Optional) Um die Team-Liste nach einer beliebigen Spalte zu sortieren, klicken Sie auf das **Sortieren**-Symbol ![Symbol Sortieren](assets/sort-icon.png) für diese Spalte.
+1. (Optional) Um Spalten ein- oder auszublenden, klicken Sie auf das **Spalten**-Symbol ![Spalten-Symbol](assets/columns-icon.png) in der oberen rechten Ecke der Liste und aktivieren oder deaktivieren Sie dann die Spalten.
+1. (Optional) Um die Liste zu filtern, beginnen Sie, etwas in die Suchleiste einzugeben. Die Liste filtert so, dass nur Teams einbezogen werden, die Ihren Suchbegriff enthalten.
+1. (Optional) Um ein Team umzubenennen, klicken Sie in der Zeile für **Team auf** Bearbeiten, geben Sie dann den neuen Team-Namen ein und klicken Sie auf **Speichern**.
+
+
+
