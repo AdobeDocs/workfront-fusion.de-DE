@@ -124,7 +124,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine Vereinbarung erstellt oder 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text suchen]</td> 
-   <td> <p>Geben Sie Begriffe ein, nach denen Sie suchen möchten. Das -Modul gibt Datensätze zurück, die diese Begriffe als Feldwerte enthalten.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-Suche - Funktionsweise</a>.</p> </td> 
+   <td> <p>Geben Sie Begriffe ein, nach denen Sie suchen möchten. Das -Modul gibt Datensätze zurück, die diese Begriffe als Feldwerte enthalten.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/de/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-Suche - Funktionsweise</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Vereinbarungen]</td> 
@@ -973,7 +973,7 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Vereinbar
     <ul> 
      <li> <p><b>[!UICONTROL Text suchen]</b> </p> <p>Geben Sie den Text ein, den Sie in den Vereinbarungsmetadaten finden möchten. Jedes Wort wird als separates Textelement behandelt. </p> </li> 
      <li> <p><b>[!UICONTROL Text suchen in]</b> </p> <p>Wählen Sie die Metadatenfelder aus, in denen Sie Text suchen möchten. Wenn Sie nichts auswählen, durchsuchen die Module alle Metadaten.</p> </li> 
-    </ul> <p>Das Modul gibt alle Vereinbarungen zurück, die einen der eingegebenen Texte in einem der ausgewählten Felder enthalten. Beispiel: Wenn Sie „Frühlingskampagne“ eingeben und die Optionen Titel und Notiz auswählen, werden Vereinbarungen mit den Wörtern „Frühling“ oder „Kampagne“ in Titel oder Notiz zurückgegeben.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Suche - Funktionsweise</a>.</p> </td> 
+    </ul> <p>Das Modul gibt alle Vereinbarungen zurück, die einen der eingegebenen Texte in einem der ausgewählten Felder enthalten. Beispiel: Wenn Sie „Frühlingskampagne“ eingeben und die Optionen Titel und Notiz auswählen, werden Vereinbarungen mit den Wörtern „Frühling“ oder „Kampagne“ in Titel oder Notiz zurückgegeben.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/de/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Suche - Funktionsweise</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Erstellungsdatum]</td> 
