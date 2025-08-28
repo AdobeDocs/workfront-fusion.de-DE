@@ -4,9 +4,9 @@ description: Sie können das SOAP-Modul verwenden, um eine Verbindung zu SOAP-AP
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -137,7 +137,7 @@ Folgendes würde von [!UICONTROL Workfront Fusion nicht korrekt erkannt]:
 </complexType>
 ```
 
-Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `wsdl:arrayType`, die in [!UICONTROL Workfront Fusion noch nicht unterstützt &#x200B;].
+Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `wsdl:arrayType`, die in [!UICONTROL Workfront Fusion noch nicht unterstützt ].
 
 >[!ENDSHADEBOX]
 
@@ -154,7 +154,7 @@ Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder ve
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Methode]</td> 
+      <td role="rowheader">[!UICONTROL-Methode]</td> 
       <td> <p>[!UICONTROL POST]</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
@@ -186,13 +186,11 @@ Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder ve
 
 1. Kopieren Sie nach dem Auffinden die URL aus dem `location`.
 1. Fügen Sie in Workfront Fusion die URL in das URL-Feld des HTTP-Moduls ein.
-1. Öffnen Sie [Online [!UICONTROL SOAP] Client](https://wsdlbrowser.com/) in einem neuen Webbrowserfenster/-tab.
-1. Fügen Sie die WSDL-URL in das Feld WSDL-URL ein.
-1. Klicken Sie **[!UICONTROL Durchsuchen]**.
-1. Wählen Sie aus der Liste der Funktionen links aus, z. B. `getLanguages`.
-1. Kopieren Sie den Inhalt des Textbereichs [!UICONTROL Anfrage]XML).
-1. Fügen Sie in [!UICONTROL Workfront Fusion] den kopierten Inhalt in das URL-Feld des Moduls ein.
-1. Geben Sie Werte für ausgewählte Parameter an, indem Sie die Fragezeichen durch die tatsächlichen Werte ersetzen:
+1. Geben Sie Werte für ausgewählte Parameter an, indem Sie die Fragezeichen durch die tatsächlichen Werte ersetzen.
+
+   >[!NOTE]
+   >
+   > Um bestimmte Werte aus der WSDL-Datei abzurufen, verwenden Sie einen Online-WSDL-Viewer.
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
