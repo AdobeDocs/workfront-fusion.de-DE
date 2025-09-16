@@ -4,9 +4,9 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
 workflow-type: tm+mt
-source-wordcount: '2324'
+source-wordcount: '2460'
 ht-degree: 1%
 
 ---
@@ -247,7 +247,7 @@ Um einen privaten Schlüssel für Ihre [!DNL Workfront Fusion Jira]-Verbindung z
 >Verwenden Sie die [!DNL Jira Server]-App, um eine Verbindung zu [!DNL Jira Server] oder [!DNL Jira Data Center] herzustellen.
 
 1. Klicken Sie in einem beliebigen [!DNL Jira Server] in Workfront Fusion **[!UICONTROL Hinzufügen]** neben dem Feld [!UICONTROL Verbindung].
-1. Füllen [!UICONTROL &#x200B; im Bedienfeld &#x200B;]Verbindung erstellen“ die folgenden Felder aus:
+1. Füllen [!UICONTROL  im Bedienfeld ]Verbindung erstellen“ die folgenden Felder aus:
 
    <table style="table-layout:auto"> 
     <col> 
@@ -313,9 +313,9 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz hinzugefügt, aktu
      <li value="3"> <p>Wählen Sie die Verbindung aus, die Sie für Ihren Webhook verwenden möchten. </p> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a> in diesem Artikel.</p> </li> 
      <li value="4"> <p>Wählen Sie den Datensatztyp aus, auf den die Software achten soll:</p> 
       <ul> 
-       <li>[!UICONTROL -Kommentar] </li> 
+       <li>[!UICONTROL-Kommentar] </li> 
        <li>[!UICONTROL Problem]</li> 
-       <li>[!UICONTROL -Projekt] </li> 
+       <li>[!UICONTROL-Projekt] </li> 
        <li>[!UICONTROL Sprint]</li> 
       </ul> </li> 
     </ol> </td> 
@@ -330,7 +330,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz hinzugefügt, aktu
 * [[!UICONTROL Benutzerdefinierter API-Aufruf]](#custom-api-call)
 * [[!UICONTROL Löschen eines Datensatzes]](#delete-a-record)
 * [[!UICONTROL Anlage herunterladen]](#download-an-attachment)
-* [[!UICONTROL Datensatz lesen]](#read-a-record)
+* [[!UICONTROL Eintrag lesen]](#read-a-record)
 * [[!UICONTROL Aktualisieren eines Datensatzes]](#update-a-record)
 
 #### [!UICONTROL Problem zum Sprint hinzufügen]
@@ -344,7 +344,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -371,17 +371,17 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den das Modul erstellen soll, und füllen Sie dann die anderen Felder aus, die für diesen Datensatztyp spezifisch sind und im Modul angezeigt werden.</p> 
     <ul> 
-     <li>[!UICONTROL -Anhang]</li> 
-     <li>[!UICONTROL -Kommentar]</li> 
+     <li>[!UICONTROL-Anhang]</li> 
+     <li>[!UICONTROL-Kommentar]</li> 
      <li>[!UICONTROL Problem]</li> 
-     <li>[!UICONTROL -Projekt]</li> 
+     <li>[!UICONTROL-Projekt]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Arbeitsprotokoll]</li> 
     </ul> </td> 
@@ -400,7 +400,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -408,11 +408,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Pfad eingeben für<code>&lt;Instance URL>/rest/api/2/ </code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    td&gt; <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -442,17 +442,17 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den das Modul löschen soll. </p> 
     <ul> 
-     <li>[!UICONTROL -Anhang]</li> 
-     <li>[!UICONTROL -Kommentar]</li> 
+     <li>[!UICONTROL-Anhang]</li> 
+     <li>[!UICONTROL-Kommentar]</li> 
      <li>[!UICONTROL Problem]</li> 
-     <li>[!UICONTROL -Projekt]</li> 
+     <li>[!UICONTROL-Projekt]</li> 
      <li>[!UICONTROL Sprint] </li> 
     </ul> </td> 
   </tr> 
@@ -474,7 +474,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -484,7 +484,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  </tbody> 
 </table>
 
-#### [!UICONTROL Datensatz lesen]
+#### [!UICONTROL Eintrag lesen]
 
 Dieses Aktionsmodul liest Daten aus einem einzelnen Datensatz in [!DNL Jira Software].
 
@@ -499,18 +499,18 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
    <td> <p>Wählen Sie den Typ [!DNL Jira] Datensatzes aus, den das Modul lesen soll.</p> 
     <ul> 
-     <li>[!UICONTROL -Anhang]</li> 
+     <li>[!UICONTROL-Anhang]</li> 
      <li>[!UICONTROL Problem]</li> 
-     <li>[!UICONTROL -Projekt]</li> 
+     <li>[!UICONTROL-Projekt]</li> 
      <li>[!UICONTROL Sprint] </li> 
-     <li>[!UICONTROL -Benutzer]</li> 
+     <li>[!UICONTROL-Benutzer]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -539,16 +539,16 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den das Modul aktualisieren soll. Wenn Sie einen Datensatztyp auswählen, werden im Modul andere für diesen Datensatztyp spezifische Felder angezeigt.</p> 
     <ul> 
-     <li>[!UICONTROL -Kommentar]</li> 
+     <li>[!UICONTROL-Kommentar]</li> 
      <li>[!UICONTROL Problem]</li> 
-     <li>[!UICONTROL -Projekt]</li> 
+     <li>[!UICONTROL-Projekt]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Problem beim Übergang]</li> 
     </ul> </td> 
@@ -565,6 +565,24 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 * [[!UICONTROL Einträge auflisten]](#list-records)
 * [[!UICONTROL Suche nach Datensätzen]](#search-for-records)
 
+>[!IMPORTANT]
+>
+>Das vom alten Jira-Connector verwendete Suchmodul kann zu folgendem Fehler führen:
+>
+>`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
+>
+>Dies ist auf eine Einstellung auf der Jira-Seite zurückzuführen.
+>
+>Wenn dieser Fehler auftritt, können Sie das Suchmodul des alten Jira-Connectors durch das Suchmodul des neuen Connectors ersetzen. Beachten Sie, dass Sie mit dem neuen Connector die verwendete API-Version auswählen können. Achten Sie darauf, beim Erstellen der Verbindung V3 auszuwählen.
+>
+> ![API-Versionsoption im neuen Jira-Connector](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+>
+>Beachten Sie Folgendes:
+>
+>* Nur das Suchmodul ist betroffen. Derzeit sind andere vom Fusion-Connector verwendete Jira-API-Endpunkte von dieser Einstellung nicht betroffen.
+>
+>* Der geografische Rollout kann zu Inkonsistenzen führen. Atlassian führt diese Änderung regional ein, was bedeutet, dass einige Jira-Cloud-Instanzen möglicherweise noch vorübergehend ältere Endpunkte unterstützen. Dies kann zu inkonsistentem Verhalten in allen Umgebungen führen.
+
 #### [!UICONTROL Einträge auflisten]
 
 Dieses Suchmodul ruft alle Elemente eines bestimmten Typs ab, die Ihrer Suchanfrage entsprechen
@@ -578,16 +596,16 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
    <td> <p>Wählen Sie den Datensatztyp aus, den das Modul auflisten soll. Wenn Sie einen Datensatztyp auswählen, werden im Modul andere für diesen Datensatztyp spezifische Felder angezeigt.</p> 
     <ul> 
-     <li>[!UICONTROL -Kommentar]</li> 
+     <li>[!UICONTROL-Kommentar]</li> 
      <li>[!UICONTROL Problem]</li> 
-     <li>[!UICONTROL -Projekt]</li> 
+     <li>[!UICONTROL-Projekt]</li> 
      <li>[!UICONTROL Sprint-Problem]</li> 
      <li>[!UICONTROL Arbeitsprotokoll]</li> 
     </ul> </td> 
@@ -617,7 +635,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -626,9 +644,9 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
     <ul> 
      <li>[!UICONTROL Probleme]</li> 
      <li> <p>[!UICONTROL Probleme nach JQL (Jira-Abfragesprache)] </p> <p>Weitere Informationen zu JQL finden Sie unter <a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a> auf der Atlassian-Hilfeseite. </p> </li> 
-     <li>[!UICONTROL -Projekt]</li> 
+     <li>[!UICONTROL-Projekt]</li> 
      <li>[!UICONTROL Projekt nach Problem]</li> 
-     <li>[!UICONTROL -Benutzer]</li> 
+     <li>[!UICONTROL-Benutzer]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 

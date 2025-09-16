@@ -4,10 +4,10 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: 9865101fe57c2668ecb5ad743b3d6963833feb4a
+source-git-commit: 1e2a9fcfdfb15f1b254e7b4b32fc618b49de56e5
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 6%
+source-wordcount: '1744'
+ht-degree: 5%
 
 ---
 
@@ -335,7 +335,7 @@ Dieses Aktionsmodul löscht den angegebenen Datensatz.
    <td> <p>Anweisungen zum Verbinden Ihres Jira-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Jira mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Datensatztyp</td> 
+   <td role="rowheader">Eintragstyp</td> 
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den das Modul löschen soll. </p> 
     <ul> 
      <li>Kommentar</li> 
@@ -450,6 +450,24 @@ Dieses Aktionsmodul aktualisiert einen vorhandenen Datensatz, z. B. ein Problem 
 </table>
 
 ### Suchvorgänge
+
+>[!IMPORTANT]
+>
+>Das vom alten Jira-Connector verwendete Suchmodul kann zu folgendem Fehler führen:
+>
+>`[410] The requested API has been removed. Please migrate to the /rest/api/3/search/jql API. A full migration guideline is available at https://developer.atlassian.com/changelog/#CHANGE-2046`
+>
+>Dies ist auf eine Einstellung auf der Jira-Seite zurückzuführen.
+>
+>Wenn dieser Fehler auftritt, können Sie das Suchmodul des alten Jira-Connectors durch das Suchmodul des neuen Connectors ersetzen. Beachten Sie, dass Sie mit dem neuen Connector die verwendete API-Version auswählen können. Achten Sie darauf, beim Erstellen der Verbindung V3 auszuwählen.
+>
+> ![API-Versionsoption im neuen Jira-Connector](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
+>
+>Beachten Sie Folgendes:
+>
+>* Nur das Suchmodul ist betroffen. Derzeit sind andere vom Fusion-Connector verwendete Jira-API-Endpunkte von dieser Einstellung nicht betroffen.
+>
+>* Der geografische Rollout kann zu Inkonsistenzen führen. Atlassian führt diese Änderung regional ein, was bedeutet, dass einige Jira-Cloud-Instanzen möglicherweise noch vorübergehend ältere Endpunkte unterstützen. Dies kann zu inkonsistentem Verhalten in allen Umgebungen führen.
 
 #### Nach Datensätzen suchen
 
