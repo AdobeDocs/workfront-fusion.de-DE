@@ -4,9 +4,9 @@ description: Mit dem Adobe Workfront Fusion DevTool können Sie Szenarien verste
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 71bd96915f21922d637433010acea9321ed476d5
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Das Adobe Workfront Fusion-DevTool hilft Ihnen, Szenarien zu verstehen und Fehle
 Eine Videoeinführung und exemplarische Anleitung für das Fusion DevTool finden Sie unter
 
 * [Fusion-Entwicklungstool](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Anleitung zu Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=de)
+* [Anleitung zu Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Zugriffsanforderungen
 
@@ -151,6 +151,12 @@ Live Stream zeigt an, was im Hintergrund passiert, wenn Sie in Ihrem Szenario ei
 
 ### Szenario-Debugger
 
+>[!NOTE]
+>
+>Um schnell von einem fehlerhaften Szenario zum Debugger zu wechseln, können Sie auf **Details abrufen** in der Fehlermeldung in der Modulausgabe klicken.
+>
+>![Erhalten Sie Details in der Modulausgabe](assets/go-to-debugger.png)
+
 Der Szenario-Debugger ist für komplexere Szenarien nützlich. Es zeigt den Verlauf der Szenario-Ausführungen an und ermöglicht es Ihnen, Module anhand ihres Namens oder ihrer ID zu durchsuchen.
 
 1. Klicken Sie auf das Symbol **[!UICONTROL Szenario-]**![Debugger-Symbol](assets/scenario-debugger-icon.png), um den Szenario-Debugger zu öffnen.
@@ -200,7 +206,7 @@ Ermöglicht die Suche nach den Modulwerten für einen bestimmten Begriff. Die Au
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Schlüsselwort]</td> 
+   <td role="rowheader">[!UICONTROL-Schlüsselwort]</td> 
    <td> <p> Geben Sie den Begriff ein, nach dem Sie suchen möchten. </p> </td> 
   </tr> 
   <tr> 
@@ -281,7 +287,7 @@ Kopiert den Namen des ausgewählten Moduls in die Zwischenablage.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modul] </td> 
+   <td role="rowheader">[!UICONTROL-Modul] </td> 
    <td> <p>Wählen Sie das Modul aus, dessen Namen Sie kopieren möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -315,7 +321,7 @@ Sucht im Szenario nach angegebenen Variablen und ersetzt sie durch eine neue Var
    <td> <p>Suchen Sie im Variablenmodul in Ihrem Szenario die Variable, mit der Sie die Variable ersetzen möchten, und kopieren Sie sie in dieses Feld ([!UICONTROL Variable zum Suchen]). Im Feld wird sie mit doppelten geschweiften Klammern angezeigt. Beispiel: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Modul]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Modul]</p> </td> 
    <td> <p>Wählen Sie das Variablenmodul aus, in dem Sie die Variable ersetzen möchten. Wenn kein Modul ausgewählt ist, wird die Variable im gesamten Szenario ersetzt.</p> </td> 
   </tr> 
  </tbody> 
@@ -330,12 +336,12 @@ Ermöglicht die Kodierung der eingegebenen Daten in Base64 oder die Dekodierung 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Vorgang] </td> 
+   <td role="rowheader">[!UICONTROL-Vorgang] </td> 
    <td> <p>Wählen Sie aus, ob die Daten aus dem Feld [!UICONTROL Raw Data] in Base64 kodiert oder Base64 in Raw Data dekodiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Rohdaten]</p> </td> 
-   <td> <p> Geben Sie die Daten, die Sie für Base64 codieren möchten, oder Base64 ein, wenn Sie für Rohdaten decodieren möchten, je nach der im Feld [!UICONTROL -Vorgang] oben ausgewählten Option.</p> </td> 
+   <td> <p> Geben Sie die Daten, die Sie für Base64 codieren möchten, oder Base64 ein, wenn Sie für Rohdaten decodieren möchten, je nach der im Feld [!UICONTROL-Vorgang] oben ausgewählten Option.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -359,7 +365,7 @@ Zunächst müssen Sie das Modul, das Sie als Quellmodul verwenden möchten, zur 
    <td> <p>Wählen Sie das Modul aus, das Sie als neue Zuordnungsquelle verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Modul zum Bearbeiten]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Modul zum Bearbeiten]</p> </td> 
    <td> <p>Wählen Sie das Modul aus, für das Sie die Zuordnung ändern möchten, wenn Sie die Zuordnung nicht im gesamten Szenario ändern möchten. </p> </td> 
   </tr> 
  </tbody> 
