@@ -4,10 +4,10 @@ description: Unterstützung für große Dateien ist derzeit für die Workfront- 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 1%
+source-wordcount: '1043'
+ht-degree: 2%
 
 ---
 
@@ -60,13 +60,19 @@ Wenn Sie mit größeren Dateien arbeiten möchten, empfehlen wir, das alte Modul
 
 ![Dokument hochladen](assets/new-upload-document.png)
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Was ist die neue Dateigrößenbeschränkung?
 
-Benutzer können jetzt Dateien verarbeiten, die die vorherige 1 GB-Grenze überschreiten, was die Effizienz und Produktivität verbessert.  Obwohl die Plattform einzelne Dateien mit bis zu 15 GB für eine einzelne Aktion (z. B. das Hochladen einer Datei) unterstützen kann, gibt es andere Faktoren, die die Datenübertragung beeinflussen. Die Dateigrößenbeschränkung einer einzelnen Aktion hängt letztendlich von dem Web-Service ab, mit dem sich Fusion verbindet. Die Datenübertragung ist die Gesamtverarbeitung für eine einzelne Ausführung. Dies bedeutet, dass mehrere Aktionen in einer einzigen Ausführung zur gesamten Datenübertragung beitragen.
+Benutzer können jetzt Dateien verarbeiten, die die vorherige 1 GB-Grenze überschreiten, was die Effizienz und Produktivität verbessert.  Obwohl es für die Workfront Fusion-Plattform keine definierte Dateigrößenbeschränkung gibt, gibt es andere Faktoren, die die Verwendung großer Dateien beeinflussen können:
 
-Fusion verarbeitet Dateien, bis die Ausführungsgrenze von 40 Minuten erreicht ist. Das Hochladen, Herunterladen oder Verarbeiten großer Dateien in Ihrem Fusion-Szenario kann einige Zeit dauern. Die Größe einzelner Dateien ist zwar nicht beschränkt, die Ausführungszeit eines Szenarios ist jedoch auf 40 Minuten begrenzt. Wenn große Dateien dazu führen, dass die Ausführung länger als 40 Minuten dauert, schlägt das Szenario daher fehl. Die Ausführungszeit des Szenarios kann auch von der Größe des Szenarios, der Komplexität der Module und der Netzwerkgeschwindigkeit beeinflusst werden. Daher empfehlen wir, diese Aspekte Ihrer Szenarien bei der Verwendung großer Dateien zu berücksichtigen.
+* **Dateigrößenbeschränkungen des Services, mit dem Fusion eine Verbindung herstellt**: Wenn der Service die Dateigröße begrenzt, wird diese Beschränkung von Workfront Fusion nicht aufgehoben. Die Dateigrößenbeschränkungen hängen letztendlich von dem Web-Service ab, mit dem sich Fusion verbindet.
+
+* **Szenario-Ausführungszeit**: Fusion verarbeitet Dateien beliebiger Größe, bis die Ausführungsgrenze von 40 Minuten erreicht ist. Das Hochladen, Herunterladen oder Verarbeiten großer Dateien in Ihrem Fusion-Szenario kann einige Zeit dauern. Wenn große Dateien dazu führen, dass die Ausführung länger als 40 Minuten dauert, schlägt das Szenario fehl. Die Ausführungszeit des Szenarios kann auch von der Größe des Szenarios, der Komplexität der Module und der Netzwerkgeschwindigkeit beeinflusst werden. Daher empfehlen wir, diese Aspekte Ihrer Szenarien bei der Verwendung großer Dateien zu berücksichtigen.
+
+>[!NOTE]
+>
+>Als Best Practice empfehlen wir, die Dateigröße auf 15 GB zu beschränken.
 
 ### Wie funktioniert die neue Dateiübertragung von Fusion?
 

@@ -4,9 +4,9 @@ description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, so
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, sodass Adobe Wo
 ## Dateien
 
 * Die Gesamtverarbeitungskapazität von Fusion beträgt **1 GB**. Das Limit basiert auf den Gesamtspeicherkosten. Jeder Arbeitsgang trägt zu diesen Kosten bei. Wenn eine einzelne Datei mit 400 MB heruntergeladen und hochgeladen wird, würden die Gesamtkosten für die Dateikapazität 800 MB betragen.
-* Unternehmen, die den Workfront Ultimate-Plan verwenden, haben Zugriff auf eine Dateiverarbeitung, die über 1 GB hinausgeht. Die Fusion-Plattform kann einzelne Dateien mit bis zu 15 GB für eine einzelne Aktion (z. B. das Hochladen einer Datei) unterstützen, es gibt jedoch andere Faktoren, die die Datenübertragung beeinflussen. Die Dateigrößenbeschränkung einer einzelnen Aktion hängt davon ab, mit welchem Web-Service sich Fusion verbindet. Die Datenübertragung ist die Gesamtverarbeitung für eine einzelne Ausführung. Dies bedeutet, dass mehrere Aktionen in einer einzigen Ausführung zur gesamten Datenübertragung beitragen. Fusion verarbeitet Dateien, bis die Ausführungsgrenze von 40 Minuten erreicht ist.
+* Unternehmen, die den Workfront Ultimate-Plan verwenden, haben Zugriff auf eine Dateiverarbeitung, die über 1 GB hinausgeht. Es gibt jedoch noch weitere Faktoren, die sich auf die Datenübertragung auswirken. Der Service, mit dem Fusion eine Verbindung herstellt, kann die Dateigröße begrenzen, was sich auf alle Dateien auswirken würde, die von diesem Service verarbeitet werden. Darüber hinaus können große Dateien die Ausführungszeit des Szenarios beeinträchtigen. Fusion verarbeitet Dateien, bis die Ausführungsgrenze von 40 Minuten erreicht ist, woraufhin die Ausführung fehlschlägt.
 * Wenn eine Datei mit einem Modul heruntergeladen wird, das große Dateien unterstützt, und dann an ein Modul übergeben wird, das große Dateien nicht unterstützt, kann dieses Modul die Datei nicht erfolgreich verarbeiten. Große Dateien müssen während des gesamten Workflows ausschließlich mit unterstützten Modulen verarbeitet werden.
 * Module, die keine großen Dateien unterstützen, können Dateien mit einer Größe von bis zu **200 MB** verarbeiten.
 
@@ -71,7 +71,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 ## Ausführungsverlauf
 
 * Die Ausführungsverlaufsprotokolle sind auf eine Größe von **100 MB)**. Wenn der Ausführungsverlauf diese Größe überschreitet, werden nur die ersten 100 MB angezeigt.
-* Wenn ein Szenario mehrere gleichzeitige Ausführungen hat. Nur 5 Ausführungen werden im Bereich Ausführungen auf der Seite mit den Szenario-Details angezeigt. Dies gilt auch, wenn mehr als 5 Ausführungen laufen.
+* Wenn ein Szenario mehrere gleichzeitige Ausführungen hat, werden auf der Detailseite des Szenarios im Bereich Ausführungen nur 5 Ausführungen angezeigt. Dies gilt auch, wenn mehr als 5 Ausführungen laufen.
 
 ## Unvollständige Ausführungen
 
