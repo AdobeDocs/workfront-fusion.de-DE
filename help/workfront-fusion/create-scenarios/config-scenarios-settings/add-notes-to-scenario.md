@@ -5,9 +5,9 @@ description: Wir empfehlen die optionale, aber nützliche Vorgehensweise, Hinwei
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,7 @@ Wir empfehlen die optionale, aber nützliche Vorgehensweise, Anmerkungen zu Ihre
    Nachdem Sie einem Szenario eine Anmerkung hinzugefügt haben, wird ein blauer Punkt auf dem **[!UICONTROL Anmerkungen]**-Symbol ![Anmerkungen-Symbol mit einem Punkt](assets/notes-icon-w-dot.png) unten im Szenario-Editor angezeigt.
 
 1. Um alle Notizen anzuzeigen oder auszublenden, klicken Sie auf das Symbol **[!UICONTROL Notizen]** (![ mit Punkt](assets/notes-icon-w-dot.png).
+
+   Wenn Notizen geöffnet sind, wird ein Kreis um das Notizen-Symbol angezeigt.
+
+   ![Notizensymbol mit Kreis](assets/notes-icon-with-circle.png)
