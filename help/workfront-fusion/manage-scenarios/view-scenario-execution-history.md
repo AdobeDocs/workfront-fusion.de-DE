@@ -4,9 +4,9 @@ description: Sie können Informationen zu den Ereignissen oder Ausführungen ein
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c0a4e563657871f856b7d449432d563c6caa27a1
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Ein Szenarioereignis ist eine Änderung des Szenarios, z. B. das Bearbeiten, Akt
 
 >[!NOTE]
 >
->Im Verlauf eines Szenarios werden alle Ereignisse und Ausführungen eines Szenarios in den letzten 30 Tagen angezeigt.
+>Im Verlauf eines Szenarios werden alle Ausführungen eines Szenarios in den letzten 30 Tagen angezeigt.
 
 ## Zugriffsanforderungen
 
@@ -136,7 +136,7 @@ Sie können den Ausführungsverlauf filtern, um nur Ausführungen mit den angege
 
 1. Öffnen Sie den vollständigen Seitenverlauf für ein Szenario, wie in [Ausführungsverlauf des Szenarios anzeigen auf der Registerkarte [!UICONTROL Verlauf] in ](#view-scenario-history-on-the-history-tab) Artikel beschrieben.
 1. Klicken Sie auf [!UICONTROL filter]-Symbol ![Szenariofiltersymbol](assets/fusion-scenario-filter-icon.png) in der Kopfzeile der Spalte, nach der Sie filtern möchten.
-1. Geben [!UICONTROL &#x200B; im &#x200B;] „Filter“ die Werte ein, nach denen gefiltert werden soll.
+1. Geben [!UICONTROL  im ] „Filter“ die Werte ein, nach denen gefiltert werden soll.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Das Filtersymbol ist in Spalten mit einem aktiven Filter orange.
@@ -167,17 +167,17 @@ Das Fenster [!UICONTROL Suche im Verlauf] wird geöffnet.
 
    >[!INFO]
    >
-   >**Beispiel:** Wenn Sie die Ausführung finden möchten, mit der ein bestimmtes Projekt erstellt wurde, geben Sie die Projekt-ID in die [!UICONTROL &#x200B; &quot;]&quot; ein.
+   >**Beispiel:** Wenn Sie die Ausführung finden möchten, mit der ein bestimmtes Projekt erstellt wurde, geben Sie die Projekt-ID in die [!UICONTROL  &quot;]&quot; ein.
    >
    >„625ef2ef0006036bd1794b6e52d737c5“
 
-1. (Optional) Um die Suche nach Datumsbereich zu beschränken, wählen Sie das Anfangs- und Enddatum der gewünschten Suche im Bereich [!UICONTROL Nach &#x200B;]) aus.
+1. (Optional) Um die Suche nach Datumsbereich zu beschränken, wählen Sie das Anfangs- und Enddatum der gewünschten Suche im Bereich [!UICONTROL Nach ]) aus.
 
    >[!NOTE]
    >
    >* Ausführungen sind nur für die letzten 30 Tage verfügbar.
    >
-   >* Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 Tage nach der Erstellung auf eine Webhook-Payload zugreifen, wird der Fehler &quot;[!UICONTROL Datei konnte nicht aus dem Speicher gelesen werden“ &#x200B;].
+   >* Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 Tage nach der Erstellung auf eine Webhook-Payload zugreifen, wird der Fehler &quot;[!UICONTROL Datei konnte nicht aus dem Speicher gelesen werden“ ].
 
 
 1. (Optional) Um die Suche nach Status zu begrenzen, wählen Sie den gewünschten Status in der Dropdown-Liste **[!UICONTROL Nach Status]** aus.
