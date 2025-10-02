@@ -4,9 +4,9 @@ description: Fusion verwendet Metadaten, um wichtige Attribute einer Verbindung 
 author: Becky
 feature: Workfront Fusion
 exl-id: b41fbe8c-30fa-49d0-8a24-3535642b97ae
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '282'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,11 @@ Verbindungsmetadaten können beim Erstellen einer neuen Verbindung festgelegt we
 
 ![Verbindungsmetadaten](assets/connection-metadata-setup.png)
 
-Fusion-Benutzer können Verbindungen im Bereich Verbindungen anzeigen und bearbeiten.
+Fusion-Benutzer können Verbindungen im Bereich Verbindungen anzeigen und bearbeiten. Sie können den Bereich Verbindungen erreichen, indem Sie im linken Navigationsbereich auf Verbindungen klicken.
 
-![Verbindungsmetadaten im Bereich „Verbindungen“](assets/connections-area-metadata.png)
+![Bereich „Verbindungen“ in der linken Navigation](assets/connections-in-left-nav.png)
+
+<!--![Connection metadata in Connections area](assets/connections-area-metadata.png)-->
 
 ## Umgebungstyp
 
@@ -35,7 +37,7 @@ Fusion-Verbindungen können sowohl für Service-Konten als auch für persönlich
 
 Der Authentifizierungstyp wird wie andere Verbindungsmetadaten nur zu Informationszwecken verwendet. Benutzer sind dafür verantwortlich, dieses Attribut genau festzulegen und den richtigen Verbindungstyp in einem Szenario zu verwenden.
 
-Weitere Informationen zu Authentifizierungstypen finden Sie unter [Authentifizierung](https://developer.adobe.com/developer-console/docs/guides/authentication/) im Authentifizierungshandbuch der Adobe.
+Weitere Informationen zu Authentifizierungstypen finden Sie unter [Authentifizierung](https://developer.adobe.com/developer-console/docs/guides/authentication/) im Authentifizierungshandbuch von Adobe.
 
 ## Ressourcen
 

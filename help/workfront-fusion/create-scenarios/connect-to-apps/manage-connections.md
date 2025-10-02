@@ -7,10 +7,10 @@ description: Für die meisten Apps ist es erforderlich, eine Verbindung zu erste
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 2%
+source-wordcount: '561'
+ht-degree: 1%
 
 ---
 
@@ -80,9 +80,10 @@ Sie können alle Verbindungen über den Bereich Verbindungen verwalten.
 1. (Optional) Weisen Sie eine Umgebung und einen Verbindungstyp zu, indem Sie auf die **Umgebung** und **Typ** Dropdown-Listen klicken und eine Option auswählen.
 1. (Optional) Um anzuzeigen, welche Berechtigungen Workfront Fusion für die Verbindung erteilt wurden, klicken Sie auf das Symbol Anzeigen ![Verbindungsberechtigungen anzeigen](assets/view-connection-permissions.png) für diese Verbindung.
 1. (Optional) Um eine Verbindung umzubenennen, markieren Sie den Verbindungsnamen und geben Sie den neuen Namen ein.
-1. (Optional) Um eine Verbindung erneut zu autorisieren, klicken Sie auf **Erneut autorisieren**.
-1. (Optional) Um eine Verbindung zu löschen, klicken Sie auf **Löschen** und dann auf **Wirklich?**.
-1. (Optional) Um sicherzustellen, dass die Verbindung zum Service erfolgreich hergestellt wurde, klicken Sie auf **Überprüfen**.
+1. (Optional) Um eine Verbindung erneut zu autorisieren, aktivieren Sie das Kontrollkästchen neben der Verbindung und klicken Sie **unten** Bildschirm auf „Erneut genehmigen“.
+1. (Optional) Um eine Verbindung zu löschen, aktivieren Sie das Kontrollkästchen neben der Verbindung, klicken Sie **Löschen** unten auf dem Bildschirm und dann auf **Wirklich?**.
+1. (Optional) Um sicherzustellen, dass die Verbindung zum Service erfolgreich hergestellt wurde, aktivieren Sie das Kontrollkästchen neben der Verbindung und klicken Sie **unten** Bildschirm auf „Überprüfen“.
+1. Um aktive Szenarien anzuzeigen, die diese Verbindung verwenden, aktivieren Sie das Kontrollkästchen neben der Verbindung und klicken Sie dann auf **Aktive Szenarien abrufen**. Sie können dann in der Liste Aktive Szenarien auf ein Szenario klicken, um zu diesem Szenario zu wechseln.
 
 ## Erneuern einer Verbindung
 
@@ -92,7 +93,7 @@ So erneuern Sie eine Verbindung:
 
 1. Um den Bereich Verbindungen zu öffnen, klicken Sie **Verbindungen** ![Verbindungssymbol](assets/connections-icon.png) in der linken Navigationsleiste.
 1. Suchen Sie die Verbindung, die Sie erneuern möchten.
-1. Klicken Sie in der Zeile für diese Verbindung auf die Schaltfläche **[!UICONTROL Erneut genehmigen]** im Bereich **[!UICONTROL Verbindungen]**.
+1. Aktivieren Sie in der Zeile für diese Verbindung das Kontrollkästchen neben der Verbindung und klicken Sie dann unten **Bildschirm auf** Erneut genehmigen“.
 
 ## Ressourcen
 
