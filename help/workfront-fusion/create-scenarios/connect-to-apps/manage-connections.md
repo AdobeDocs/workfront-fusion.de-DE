@@ -7,9 +7,9 @@ description: Für die meisten Apps ist es erforderlich, eine Verbindung zu erste
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
+source-git-commit: bc1b025af534addf032519142148f6285f481784
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Sie können alle Verbindungen über den Bereich Verbindungen verwalten.
 1. (Optional) Um eine Verbindung erneut zu autorisieren, aktivieren Sie das Kontrollkästchen neben der Verbindung und klicken Sie **unten** Bildschirm auf „Erneut genehmigen“.
 1. (Optional) Um eine Verbindung zu löschen, aktivieren Sie das Kontrollkästchen neben der Verbindung, klicken Sie **Löschen** unten auf dem Bildschirm und dann auf **Wirklich?**.
 1. (Optional) Um sicherzustellen, dass die Verbindung zum Service erfolgreich hergestellt wurde, aktivieren Sie das Kontrollkästchen neben der Verbindung und klicken Sie **unten** Bildschirm auf „Überprüfen“.
-1. Um aktive Szenarien anzuzeigen, die diese Verbindung verwenden, aktivieren Sie das Kontrollkästchen neben der Verbindung und klicken Sie dann auf **Aktive Szenarien abrufen**. Sie können dann in der Liste Aktive Szenarien auf ein Szenario klicken, um zu diesem Szenario zu wechseln.
+1. (Optional) Um aktive Szenarien anzuzeigen, die diese Verbindung verwenden, aktivieren Sie das Kontrollkästchen neben der Verbindung und klicken dann auf **Aktive Szenarien abrufen**. Sie können dann in der Liste Aktive Szenarien auf ein Szenario klicken, um zu diesem Szenario zu wechseln.
 
 ## Erneuern einer Verbindung
 
