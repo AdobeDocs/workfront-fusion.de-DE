@@ -4,9 +4,9 @@ description: Sie können das SOAP-Modul verwenden, um eine Verbindung zu SOAP-AP
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
+source-git-commit: 29f9595d063e89e9cd393fecba07194d2e9008aa
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
@@ -137,7 +137,7 @@ Folgendes würde von [!UICONTROL Workfront Fusion nicht korrekt erkannt]:
 </complexType>
 ```
 
-Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `wsdl:arrayType`, die in [!UICONTROL Workfront Fusion noch nicht unterstützt &#x200B;].
+Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `wsdl:arrayType`, die in [!UICONTROL Workfront Fusion noch nicht unterstützt ].
 
 >[!ENDSHADEBOX]
 
@@ -154,7 +154,7 @@ Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder ve
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Methode]</td> 
+      <td role="rowheader">[!UICONTROL-Methode]</td> 
       <td> <p>[!UICONTROL POST]</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
@@ -185,7 +185,7 @@ Wenn das [!UICONTROL SOAP]-Modul die Verarbeitung der WSDL-Datei ablehnt oder ve
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Kopieren Sie nach dem Auffinden die URL aus dem `location`.
-1. Fügen Sie in Workfront Fusion die URL in das URL-Feld des HTTP-Moduls ein.
+1. Fügen Sie in Workfront Fusion die URL in das Feld (Inhalt anfragen **des HTTP-** ein.
 1. Geben Sie Werte für ausgewählte Parameter an, indem Sie die Fragezeichen durch die tatsächlichen Werte ersetzen.
 
    >[!NOTE]
