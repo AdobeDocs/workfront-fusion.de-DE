@@ -79,7 +79,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
    ![Aktualisierungssymbol](assets/update-indicator-workfront.png)
 1. Wählen Sie eine der folgenden Optionen:
 
-   * Um ein neues Modul auszuwählen, das dieses ersetzen soll (anstatt ein Upgrade des Moduls durchzuführen), klicken Sie auf **Neue auswählen** und fahren Sie dann wie [Aktualisieren eines Nicht-Workfront-Moduls auf eine neue Version) ](#upgrade-a-non-workfront-module-to-a-new-version).
+   * Um ein neues Modul auszuwählen, das dieses ersetzen soll (anstatt ein Upgrade des Moduls durchzuführen), klicken Sie auf **Neue auswählen** und fahren Sie dann wie [Aktualisieren eines Nicht-Workfront-Moduls auf eine neue Version) &#x200B;](#upgrade-a-non-workfront-module-to-a-new-version).
    * Um nur dieses Modul zu aktualisieren und die Modulkonfiguration beizubehalten, klicken Sie auf **Aktualisieren**.
    * Um alle Workfront-Module im Szenario zu aktualisieren, klicken Sie auf **Alle aktualisieren**.
 
