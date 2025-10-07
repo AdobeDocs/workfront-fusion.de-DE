@@ -3,9 +3,9 @@ title: API-Übersicht
 description: Anwendungsprogrammierschnittstellen (APIs) bieten eine Möglichkeit für Anwendungen und Dienste, miteinander zu kommunizieren. Fusion verwendet APIs zur Kommunikation mit dem Programm, mit dem Sie eine Verbindung herstellen. Jedes Programm verfügt über eine separate API.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 1ee32ad1faa8c105142f85e83f1b522548fc7f93
+source-git-commit: f5dcb5207581fb68d0f3048d23214d08a28f2f22
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ Eine häufige Ursache für grundlegende Änderungen ist die Einstellung, wenn ei
 Da Ihre Fusion-Szenarien mit Ihren spezifischen Daten konfiguriert sind, müssen Sie Ihre Szenarien möglicherweise aktualisieren.
 
 * Wenn die Änderungen mit der Authentifizierung oder Autorisierung in Zusammenhang standen, müssen Sie möglicherweise die Verbindungen für diese Anwendung aktualisieren.
-* Wenn sich die Änderungen auf eine bestimmte Aktion (Endpunkt) in der API bezogen, müssen Sie die Module zu dieser Aktion möglicherweise auf eine neue Version des Moduls aktualisieren.
-* Wenn die gesamte von Fusion verwendete API-Version veraltet ist, müssen Sie möglicherweise alle Module dieses Connectors auf eine neue Version eines Connectors aktualisieren.
+* Wenn sich die Änderungen auf eine bestimmte Aktion (Endpunkt) in der API bezogen, müssen Sie möglicherweise jedes Modul, das sich auf diese Aktion bezieht, auf eine neue Version des Moduls aktualisieren.
+* Wenn die gesamte von Fusion verwendete API-Version veraltet ist, müssen Sie möglicherweise alle Module dieses Connectors auf eine neue Version des Connectors aktualisieren.
 
 In vielen Fällen können Sie auf die neue Version eines Moduls aktualisieren, ohne dieses Modul neu konfigurieren zu müssen.
 
