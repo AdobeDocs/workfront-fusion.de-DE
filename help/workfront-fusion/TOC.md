@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: a5dbbec63e0871037e6cc3a88255a84b36be85c7
+source-git-commit: f827b299fa8ffd3b0bf3393d5e22b7eb94be78f2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1891'
 ht-degree: 4%
 
 ---
@@ -145,6 +145,7 @@ ht-degree: 4%
       * [Modulübersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
       * [Übersicht über die Zuordnung](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
       * [Funktionsübersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+      * [Übersicht über APIs in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)
    * Navigieren in Workfront Fusion {#navigate-workfront-fusion}
       * [Navigieren in Workfront Fusion: Artikelindex](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
       * [Navigieren in Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)

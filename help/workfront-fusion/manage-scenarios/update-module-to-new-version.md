@@ -4,10 +4,10 @@ description: Da die Anwendungen, mit denen Workfront Fusion eine Verbindung hers
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d0d9d7cdad993ecceaa0abf0ac69e9a9abd78b69
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 1%
+source-wordcount: '417'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ Da die Anwendungen, mit denen Workfront Fusion eine Verbindung herstellt, mögli
 
 Wenn in einem Szenario ein grünes Upgrade-Modulsymbol auf einem Modul angezeigt wird, hat Workfront Fusion eine neue Version dieses Moduls veröffentlicht.
 
-![Aktualisierungssymbol](assets/update-indicator.png)
+![Aktualisierungssymbol](assets/update-indicator-workfront.png)
 
 Sie können das Modul aktualisieren, ohne ein neues Szenario zu erstellen.
 
@@ -73,12 +73,29 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 +++
 
-## Aktualisieren eines Moduls auf eine neue Version
+## Aktualisieren eines Workfront-Moduls auf eine neue Version
+
+1. Klicken Sie auf das Symbol **Modul aktualisieren** ![Upgrade-Symbol](assets/upgrade-icon.png) auf dem Modul, das Sie auf eine neue Version aktualisieren möchten.
+   ![Aktualisierungssymbol](assets/update-indicator-workfront.png)
+1. Wählen Sie eine der folgenden Optionen:
+
+   * Um ein neues Modul auszuwählen, das dieses ersetzen soll (anstatt ein Upgrade des Moduls durchzuführen), klicken Sie auf **Neue auswählen** und fahren Sie dann wie [Aktualisieren eines Nicht-Workfront-Moduls auf eine neue Version) ](#upgrade-a-non-workfront-module-to-a-new-version).
+   * Um nur dieses Modul zu aktualisieren und die Modulkonfiguration beizubehalten, klicken Sie auf **Aktualisieren**.
+   * Um alle Workfront-Module im Szenario zu aktualisieren, klicken Sie auf **Alle aktualisieren**.
+
+1. Speichern Sie das Szenario.
+
+>[!NOTE]
+>
+>Wenn Sie Workfront-Module aktualisiert haben, empfehlen wir, diese zu öffnen und die Modulkonfiguration zu überprüfen.
+
+## Aktualisieren eines Nicht-Workfront-Moduls auf eine neue Version
 
 1. Klicken Sie auf das Symbol **Modul aktualisieren** ![Upgrade-Symbol](assets/upgrade-icon.png) auf dem Modul, das Sie auf eine neue Version aktualisieren möchten.
    ![Aktualisierungssymbol](assets/update-indicator.png)
-1. Klicken Sie **Neue Module anzeigen**.
-1. Wählen Sie das neue Modul aus, das dem vorhandenen Modul entspricht.
+1. Klicken Sie **Neu wählen**.
+1. Wählen Sie das Modul aus, das Sie das vorherige Modul ersetzen möchten.
 1. Konfigurieren Sie das Modul mit denselben Einstellungen wie das vorhandene Modul.
 1. Verbinden Sie das neue Modul mit dem Szenario an derselben Stelle wie das vorhandene Modul.
 1. Löschen Sie das alte Modul.
+1. Speichern Sie das Szenario.

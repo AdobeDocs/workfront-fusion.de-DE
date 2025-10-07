@@ -1,21 +1,17 @@
 ---
 title: HTTP-Module
-description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfront-Lizenz eine Adobe Workfront Fusion-Lizenz.
+description: Der HTTP-Connector stellt verschiedene Module für die Kommunikation auf der Grundlage des Hypertext Transfer Protocol (HTTP) bereit. HTTP ist die Grundlage der Datenkommunikation für das World Wide Web. Sie können die Module verwenden, um Web-Seiten und -Dateien herunterzuladen, Webhooks und API-Endpunkte aufzurufen usw.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 34dad92019ca855f40698d3f3795788698c1cece
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 2%
+source-wordcount: '201'
+ht-degree: 1%
 
 ---
 
 # HTTP-Module
-
->[!NOTE]
->
->Adobe Workfront Fusion erfordert zusätzlich zu einer [!DNL Adobe Workfront license] eine Adobe Workfront Fusion-Lizenz.
 
 Die HTTP-App bietet verschiedene Module für die Kommunikation auf der Grundlage des Hypertext Transfer Protocol (HTTP). HTTP ist die Grundlage der Datenkommunikation für das World Wide Web. Sie können die Module verwenden, um Web-Seiten und -Dateien herunterzuladen, Webhooks und API-Endpunkte aufzurufen usw.
 

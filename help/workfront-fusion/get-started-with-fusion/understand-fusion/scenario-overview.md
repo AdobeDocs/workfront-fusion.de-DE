@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 34dad92019ca855f40698d3f3795788698c1cece
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ Eine Liste der dedizierten Connectoren finden Sie unter [Fusion-Programme und ih
 
 >[!IMPORTANT]
 >
->Adobe Workfront Fusion kann eine Verbindung zu fast jedem Webservice herstellen. Wenn die App, mit der Sie arbeiten möchten, keinen dedizierten Workfront Fusion-Connector hat, verwenden Sie universelle Connectoren, um eine Verbindung zur App oder zum Service herzustellen.
+>Adobe Workfront Fusion kann eine Verbindung zu fast jedem Webservice herstellen. Wenn die App, mit der Sie arbeiten möchten, keinen dedizierten Workfront Fusion-Connector hat, können Sie universelle Connectoren verwenden, um eine Verbindung zur App oder zum Service herzustellen.
 >
 >Eine Liste der universellen Connectoren finden Sie unter [Universelle Connectoren](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 
