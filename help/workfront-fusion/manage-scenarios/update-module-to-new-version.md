@@ -4,7 +4,7 @@ description: Da die Anwendungen, mit denen Workfront Fusion eine Verbindung hers
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-source-git-commit: d0d9d7cdad993ecceaa0abf0ac69e9a9abd78b69
+source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Aktualisieren eines Moduls auf eine neue Version
 
-Da die Anwendungen, mit denen Workfront Fusion eine Verbindung herstellt, möglicherweise aktualisiert oder neue Versionen veröffentlicht werden, ist es gelegentlich erforderlich, dass Fusion aktualisierte Module für diese Anwendungen veröffentlicht.
+Da die Anwendungen, mit denen Workfront Fusion eine Verbindung herstellt, möglicherweise neue Versionen aktualisieren oder veröffentlichen, ist es gelegentlich erforderlich, dass Fusion aktualisierte Module für diese Anwendungen veröffentlicht.
 
 Wenn in einem Szenario ein grünes Upgrade-Modulsymbol auf einem Modul angezeigt wird, hat Workfront Fusion eine neue Version dieses Moduls veröffentlicht.
 
@@ -79,7 +79,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
    ![Aktualisierungssymbol](assets/update-indicator-workfront.png)
 1. Wählen Sie eine der folgenden Optionen:
 
-   * Um ein neues Modul auszuwählen, das dieses ersetzen soll (anstatt ein Upgrade des Moduls durchzuführen), klicken Sie auf **Neue auswählen** und fahren Sie dann wie [Aktualisieren eines Nicht-Workfront-Moduls auf eine neue Version) &#x200B;](#upgrade-a-non-workfront-module-to-a-new-version).
+   * Um ein neues Modul auszuwählen, das dieses ersetzen soll (anstatt ein Upgrade des Moduls durchzuführen), klicken Sie auf **Neue auswählen** und fahren Sie dann wie [Aktualisieren eines Nicht-Workfront-Moduls auf eine neue Version) ](#upgrade-a-non-workfront-module-to-a-new-version).
    * Um nur dieses Modul zu aktualisieren und die Modulkonfiguration beizubehalten, klicken Sie auf **Aktualisieren**.
    * Um alle Workfront-Module im Szenario zu aktualisieren, klicken Sie auf **Alle aktualisieren**.
 
