@@ -71,7 +71,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 ## Öffnen Sie den Szenario-Editor und fügen Sie ein Modul hinzu:
 
-1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![ (](assets/scenarios-icon.png)).
+1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![&#x200B; (](assets/scenarios-icon.png)).
 1. Klicken Sie auf das Fragezeichensymbol ![Fragesymbol](assets/question-mark-full-size.png), suchen Sie nach der App oder dem Service, mit der bzw. dem Sie beginnen möchten, und klicken Sie darauf. Detaillierte Informationen zum Konfigurieren eines Moduls finden Sie unter [Modul konfigurieren](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ## Verfügbare Szenario-Editor-Aktionen
