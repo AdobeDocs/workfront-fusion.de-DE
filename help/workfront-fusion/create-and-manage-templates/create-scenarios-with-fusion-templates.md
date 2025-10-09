@@ -4,7 +4,7 @@ description: Mit der Funktion "Adobe Workfront FusionTemplates“ können Sie be
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Sie müssen eine Vorlage erstellen, bevor Sie sie verwenden können.
 1. Klicken Sie auf die Registerkarte, die die Vorlage enthält, die Sie verwenden möchten (öffentliche Vorlagen oder Teamvorlagen).
 1. Klicken Sie auf die Vorlage, die Sie verwenden möchten, um mit der Erstellung eines Szenarios zu beginnen. Sie können das Suchfeld in der oberen rechten Ecke verwenden, um die Vorlage anhand ihres Namens oder des Namens der darin enthaltenen App zu finden.
 1. (Bedingt) Wenn Sie Mitglied mehrerer Organisationen oder Teams sind, wählen Sie die Organisation oder das Team aus, für die Sie Ihr Szenario erstellen möchten, und klicken Sie auf **[!UICONTROL Weiter]**.
-1. (Bedingt) Wenn die Vorlage mit „Assistent[!UICONTROL &#x200B; konfiguriert wurde] befolgen Sie die Anweisungen zum Konfigurieren des Szenarios. Klicken **[!UICONTROL bei]** Eingabeaufforderung auf „Weiter“, um sie zu bestätigen.
+1. (Bedingt) Wenn die Vorlage mit „Assistent[!UICONTROL  konfiguriert wurde] befolgen Sie die Anweisungen zum Konfigurieren des Szenarios. Klicken **[!UICONTROL bei]** Eingabeaufforderung auf „Weiter“, um sie zu bestätigen.
 
    >[!NOTE]
    >
