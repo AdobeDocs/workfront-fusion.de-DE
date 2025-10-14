@@ -464,7 +464,7 @@ Informationen zu Feldern finden Sie unter [Erstellen einer Aufgabe](https://docs
 
 Dieses Aktionsmodul erstellt eine Aufgabe für den aktuellen Benutzer in der ausgewählten Zusammenführungsanfrage. Der aktuelle Benutzer ist der Benutzer, der durch die Anmeldeinformationen für die für dieses Modul verwendete Verbindung identifiziert wird.
 
-Informationen zu Feldern finden [ unter „Erstellen einer ](https://docs.gitlab.com/ee/api/merge_requests.html#create-a-todo)&quot; in der [!DNL GitLab].
+Informationen zu Feldern finden [&#x200B; unter „Erstellen einer &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#create-a-todo)&quot; in der [!DNL GitLab].
 
 +++
 
@@ -865,7 +865,7 @@ Informationen zu Feldern finden Sie unter [Projektproblemnotizen auflisten](http
 
 Dieses Suchmodul gibt alle Probleme in einem angegebenen Projekt zurück.
 
-Informationen zu Feldern finden Sie unter [Auflisten von ](https://docs.gitlab.com/ee/api/issues.html#list-project-issues) in der [!DNL GitLab].
+Informationen zu Feldern finden Sie unter [Auflisten von &#x200B;](https://docs.gitlab.com/ee/api/issues.html#list-project-issues) in der [!DNL GitLab].
 
 +++
 

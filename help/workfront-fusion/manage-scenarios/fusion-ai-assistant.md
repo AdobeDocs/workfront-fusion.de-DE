@@ -76,7 +76,7 @@ Weitere Informationen zum Unterzeichnen des Vertrags finden Sie unter [Unterschr
 
 So rufen Sie Informationen oder Anweisungen aus der Workfront Fusion-Dokumentation mithilfe des KI-Assistenten ab:
 
-1. Klicken Sie auf **KI** Assistent![ Symbol KI-Assistent](assets/ai-assistant-icon.png) in der oberen rechten Ecke des Bildschirms.
+1. Klicken Sie auf **KI** Assistent![&#x200B; Symbol KI-Assistent](assets/ai-assistant-icon.png) in der oberen rechten Ecke des Bildschirms.
 1. Geben Sie im Bedienfeld KI-Assistent Ihre Eingabeaufforderung in den Textbereich unten im Bedienfeld ein.
 
    Je nachdem, wie groß oder komplex die Eingabeaufforderung ist, kann es einige Minuten dauern, bis der KI-Assistent die Informationen findet. Wir empfehlen einfache Eingabeaufforderungen.

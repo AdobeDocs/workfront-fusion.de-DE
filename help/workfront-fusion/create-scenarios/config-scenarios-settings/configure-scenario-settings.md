@@ -150,7 +150,7 @@ Das Festlegen weiterer Zyklen kann nützlich sein, wenn Sie eine Verbindungsunte
 
 * Wenn das Szenario mit einem Abrufintervall beginnt, definiert die Einstellung die maximale Anzahl von Triggern, die während der Ausführung des Szenarios zulässig ist.
 
-  Weitere Informationen zum Abrufen von Triggern finden Sie [Abrufen von Triggern ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers) im Artikel Modulübersicht .
+  Weitere Informationen zum Abrufen von Triggern finden Sie [Abrufen von Triggern &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers) im Artikel Modulübersicht .
 
 * Wenn das Szenario mit einem sofortigen Trigger beginnt, wird die Einstellung ignoriert und alle ausstehenden Ereignisse werden während einer einzigen Szenario-Ausführung verarbeitet, ein Ereignis pro Zyklus.
 

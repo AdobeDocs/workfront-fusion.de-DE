@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Mit den Adobe Workfront Fusion [!DNL Google Team Drive]-Modulen können Sie Dateien überwachen, hochladen, aktualisieren, kopieren, löschen oder abrufen und Ordner in Ihrem [!DNL Google Shared Drive] erstellen.
 
-Um [!DNL Google Team Drive] mit Adobe Workfront Fusion verwenden zu können, benötigen Sie ein [!DNL Google Workspace]. Wenn Sie noch kein solches Konto haben, können Sie ein [!DNL Google Workspace] Konto bei der [[!DNL Google Workspace] Anmeldeseite“ ](https://workspace.google.com/business/signup/welcome).
+Um [!DNL Google Team Drive] mit Adobe Workfront Fusion verwenden zu können, benötigen Sie ein [!DNL Google Workspace]. Wenn Sie noch kein solches Konto haben, können Sie ein [!DNL Google Workspace] Konto bei der [[!DNL Google Workspace] Anmeldeseite“ &#x200B;](https://workspace.google.com/business/signup/welcome).
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Google Team Drive] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 

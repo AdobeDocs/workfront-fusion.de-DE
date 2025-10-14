@@ -191,7 +191,7 @@ Bei diesem Szenario würde ein erfolgreicher Test dazu führen, dass die Anfrage
 >
 >1. Schließen Sie den **[!UICONTROL Anmerkungen]**.
 >
->     Nachdem Sie eine Anmerkung zu einem Szenario hinzugefügt haben, wird ein Punkt auf dem **[!UICONTROL Anmerkungen]**-Symbol ![Anmerkungen-Symbol mit ](assets/notes-icon-w-dot.png) Punkt) unten im Szenario-Editor angezeigt.
+>     Nachdem Sie eine Anmerkung zu einem Szenario hinzugefügt haben, wird ein Punkt auf dem **[!UICONTROL Anmerkungen]**-Symbol ![Anmerkungen-Symbol mit &#x200B;](assets/notes-icon-w-dot.png) Punkt) unten im Szenario-Editor angezeigt.
 >
 >1. Klicken Sie auf **[!UICONTROL Notizen]**-Symbol ![Notizen-Symbol mit Punkt](assets/notes-icon-w-dot.png), um Ihre Notizen anzuzeigen. Wenn Notizen geöffnet sind, wird ein Kreis um das Notizen-Symbol angezeigt.
 >

@@ -19,7 +19,7 @@ Wenn Sie beispielsweise ein Szenario erstellen möchten, das Informationen aus W
 
 Eine Verbindung stellt die Autorisierung und Berechtigungen dar, die Fusion für den Zugriff auf das Programm verwendet. Sie können für jede in Ihren Szenarien verwendete Anwendung eine oder mehrere Verbindungen erstellen und dieselbe Verbindung in mehreren Modulen oder Szenarien verwenden.
 
-Die meisten Verbindungen werden nur für eine einzige Anwendung verwendet. Beispielsweise kann eine Workfront-Verbindung nicht in einem [!UICONTROL Salesforce]-Modul verwendet werden. Einige [!DNL Adobe] Anwendungen können Verbindungen gemeinsam nutzen. Weitere Informationen finden Sie in den Artikeln zu diesen Anwendungen, die unter [Fusion-Anwendungen und ihre Modulverweise: Artikelindex“ aufgeführt ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+Die meisten Verbindungen werden nur für eine einzige Anwendung verwendet. Beispielsweise kann eine Workfront-Verbindung nicht in einem [!UICONTROL Salesforce]-Modul verwendet werden. Einige [!DNL Adobe] Anwendungen können Verbindungen gemeinsam nutzen. Weitere Informationen finden Sie in den Artikeln zu diesen Anwendungen, die unter [Fusion-Anwendungen und ihre Modulverweise: Artikelindex“ aufgeführt &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
 Verbindungen gehören Teams. Alle Mitglieder eines Teams haben Zugriff auf die Verbindungen des Teams, und Benutzer außerhalb eines Teams haben keinen Zugriff auf die Verbindungen des Teams.
 

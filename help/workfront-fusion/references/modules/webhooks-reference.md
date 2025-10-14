@@ -19,9 +19,9 @@ Viele Services stellen Webhooks bereit, mit denen sofortige Benachrichtigungen b
 
 >[!TIP]
 >
->Sie können die Modulliste in einem Connector überprüfen, um festzustellen, ob er über einen sofortigen Trigger verfügt, oder Sie können die Dokumentation des Connectors unter „Fusion[Anwendungen und deren Modulverweise“ ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+>Sie können die Modulliste in einem Connector überprüfen, um festzustellen, ob er über einen sofortigen Trigger verfügt, oder Sie können die Dokumentation des Connectors unter „Fusion[Anwendungen und deren Modulverweise“ &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 >
->Die Dokumentation zu Adobe Workfront Instant Trigger finden Sie unter [Trigger ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers) im Artikel Workfront-Module.
+>Die Dokumentation zu Adobe Workfront Instant Trigger finden Sie unter [Trigger &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers) im Artikel Workfront-Module.
 
 Wenn ein Connector keinen Webhook enthält, können Sie einen der folgenden Schritte ausführen:
 

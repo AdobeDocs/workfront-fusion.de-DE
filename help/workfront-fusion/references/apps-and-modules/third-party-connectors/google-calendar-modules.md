@@ -494,7 +494,7 @@ Trigger Sie können ein Szenario zu einer bestimmten Zeit vor einem Ereignis mit
 
 1. Verwenden Sie das Modul [!UICONTROL Google] >[!UICONTROL Ereignis aktualisieren], um eine E-Mail-Erinnerung zu Ihrem Ereignis hinzuzufügen:
 
-   ![Ereignisszenario vor Trigger ](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
+   ![Ereignisszenario vor Trigger &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. Erstellen Sie ein neues Szenario, das mit dem Modul [!UICONTROL Webhooks] > [!UICONTROL Benutzerdefinierter Mailhook] beginnt.
 

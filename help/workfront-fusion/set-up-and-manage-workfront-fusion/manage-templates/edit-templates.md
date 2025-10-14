@@ -105,7 +105,7 @@ Mit [!DNL Workfront Fusion template] [!UICONTROL Assistent] können Sie zukünft
 1. Wiederholen Sie die Schritte 2-4 für jedes Feld, für das Sie Informationen bereitstellen möchten.
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern und das Modul zu schließen.
 
-Der Veröffentlichungsprozess ist derselbe wie bei einem Standardbenutzer. Weitere Informationen finden Sie [ Abschnitt ](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)Veröffentlichen und Freigeben von Vorlagen“.
+Der Veröffentlichungsprozess ist derselbe wie bei einem Standardbenutzer. Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)Veröffentlichen und Freigeben von Vorlagen“.
 
 ## Vorlagenstatus
 
