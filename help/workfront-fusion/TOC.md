@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: f827b299fa8ffd3b0bf3393d5e22b7eb94be78f2
+source-git-commit: 64968094229b71b8dd3f159deac5989c056c1bc5
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1898'
 ht-degree: 4%
 
 ---
@@ -16,9 +16,10 @@ ht-degree: 4%
 * Fusionsfreigabeaktivität {#fusion-release-activity}
    * [Adobe Workfront Fusion-Versionsaktivität](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion-Versionen - 2025 {#fusion-releases-2025}
-      * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 22. September 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-29.md)
+      * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 13. Oktober 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-13.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 6. Oktober 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-6.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 29. September 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-22.md)
+      * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 22. September 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-29.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 15. September 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-15.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 18. August 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 31. Juli 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
