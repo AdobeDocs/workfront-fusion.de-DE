@@ -114,7 +114,7 @@ Sie können eine Verbindung zu [!DNL Frame.io] über ein API-Token oder mithilfe
 
 ### Verbindung zu [!DNL Frame.io] über ein API-Token herstellen
 
-Um Ihr [!DNL Frame.io]-Konto mithilfe eines API-Tokens mit Workfront Fusion zu verbinden, müssen Sie das API-Token in Ihrem [!DNL Frame.io]-Konto erstellen und in das Dialogfeld [!DNL Frame.io][!UICONTROL &#x200B; Verbindung erstellen] von Workfront Fusion einfügen.
+Um Ihr [!DNL Frame.io]-Konto mithilfe eines API-Tokens mit Workfront Fusion zu verbinden, müssen Sie das API-Token in Ihrem [!DNL Frame.io]-Konto erstellen und in das Dialogfeld [!DNL Frame.io]&#x200B;[!UICONTROL &#x200B; Verbindung erstellen] von Workfront Fusion einfügen.
 
 1. Melden Sie sich bei Ihrem [!DNL Frame.io] an.
 1. Navigieren Sie zur Seite **[!UICONTROL Token]** im [!DNL Frame.io] Developer.
