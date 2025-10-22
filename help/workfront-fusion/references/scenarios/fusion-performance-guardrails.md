@@ -4,9 +4,9 @@ description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, so
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
+source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
    * Der Webhook wird nur in inaktiven Szenarien verwendet, die seit mehr als 30 Tagen inaktiv sind.
 
 * Deaktivierte Webhooks werden automatisch gelöscht und von der Registrierung entfernt, wenn sie mit keinem Szenario verbunden sind und sich seit mehr als 30 Tagen im Status Deaktiviert befinden.
+* Die maximale Wartezeit für eine Webhook-Antwort beträgt 5 Minuten.
 
 ## Ausführungsverlauf
 
