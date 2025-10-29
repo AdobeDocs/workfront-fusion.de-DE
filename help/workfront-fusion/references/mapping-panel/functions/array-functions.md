@@ -4,10 +4,10 @@ description: Die folgenden Array-Funktionen sind im Bedienfeld "Adobe Workfront 
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
+source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 0%
+source-wordcount: '606'
+ht-degree: 1%
 
 ---
 
@@ -57,15 +57,15 @@ Gibt ein primitives Array mit Werten eines komplexen Arrays zurück. Diese Funkt
 
   Gibt ein primitives Array mit E-Mails zurück.
 
-* `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work)`
 
-  Gibt ein primitives Array mit E-Mails mit einer Kennzeichnung wie Arbeit oder Startseite zurück.
+  Gibt ein primitives Array mit E-Mails mit dem Titel „Arbeit“ zurück
 
 >[!ENDSHADEBOX]
 
 Weitere Informationen finden Sie unter [Zuordnen eines Arrays oder Array-Elements](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).
 
-## schlurfen
+## shuffle
 
 ## [!UICONTROL sort (Array; [order]; [key])]
 
@@ -222,20 +222,20 @@ yourArray = [3,4,5,6,7]
 
 * `arrayDifference [myArray, yourArray, classic]`
 
-  Gibt `[1,2]`
+  Gibt `[1,2]` zurück
 
 * `arrayDifference [yourArray, myArray, classic]`
 
-  Gibt `[6,7]`
+  Gibt `[6,7]` zurück
 
 * `arrayDifference [myArray, yourArray, symmetric]`
 
-  Gibt `[1,2,6,7]`
+  Gibt `[1,2,6,7]` zurück
 
 >[!ENDSHADEBOX]
 
 ## deduplizieren
 
-## Schlüsselwörter
+## Suchbegriffe
 
 ## emptyarray
