@@ -25,7 +25,7 @@ Teams sind Benutzergruppen, die den Zugriff auf bestimmte Ressourcen gemeinsam n
 
 Sie können eine Liste der Teams Ihrer Organisation anzeigen und die Namen der Teams bearbeiten.
 
-Informationen zum Hinzufügen von Benutzern zu Teams finden [ unter „Hinzufügen eines Benutzers zu einem Team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
+Informationen zum Hinzufügen von Benutzern zu Teams finden [&#x200B; unter „Hinzufügen eines Benutzers zu einem Team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Zugriffsanforderungen
 

@@ -52,7 +52,7 @@ Sie müssen eine Teamvorlage erstellen, bevor Sie sie verwenden können.
 
 ## Erstellen eines Szenarios aus einer Vorlage
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Klicken Sie auf die Registerkarte, die die gewünschte Vorlage enthält (**Öffentliche Vorlagen** oder **Teamvorlagen**).
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach einer bestimmten Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf die Vorlage, die Sie zum Erstellen eines Szenarios verwenden möchten.

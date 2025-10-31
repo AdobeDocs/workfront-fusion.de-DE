@@ -171,6 +171,6 @@ Weitere Informationen zur `get()` finden Sie unter [Allgemeine Funktionen](/help
 
 ## Konvertieren von Array-Elementen in eine Reihe von Bundles
 
-Arrays können mithilfe des Moduls [!UICONTROL Iterator“ in eine Reihe von Bundles ] werden. Weitere Informationen finden Sie [[!UICONTROL  Modul ]Iterator](/help/workfront-fusion/references/modules/iterator-module.md).
+Arrays können mithilfe des Moduls [!UICONTROL Iterator“ in eine Reihe von Bundles &#x200B;] werden. Weitere Informationen finden Sie [[!UICONTROL &#x200B; Modul &#x200B;]Iterator](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ![Serie von Bundles](assets/series-of-bundles.png)

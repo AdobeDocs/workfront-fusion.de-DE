@@ -103,7 +103,7 @@ Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Z
       <td>Klicken Sie auf das Szenario-Diagramm, um den Szenario-Editor zu öffnen und Änderungen an Ihrem Szenario vorzunehmen.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Optionen]</td> 
+      <td role="rowheader">[!UICONTROL -Optionen]</td> 
       <td> <p>Dieses Menü bietet zusätzliche Optionen, ohne den Szenario-Editor öffnen zu müssen. Dazu gehören:</p> 
        <ul> 
         <li>[!UICONTROL Planung]</li> 

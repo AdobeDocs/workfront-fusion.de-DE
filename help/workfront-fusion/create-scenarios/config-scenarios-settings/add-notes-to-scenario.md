@@ -48,14 +48,14 @@ Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Z
 ## Hinzufügen von Hinweisen
 
 1. Klicken Sie mit der rechten Maustaste auf ein Workfront-Modul und dann auf **[!UICONTROL Notiz hinzufügen]**.
-1. Klicken Sie in der angezeigten Notiz auf das Symbol „Bearbeiten![ (Bearbeiten](assets/edit-note.png).
+1. Klicken Sie in der angezeigten Notiz auf das Symbol „Bearbeiten![&#x200B; (Bearbeiten](assets/edit-note.png).
 1. Geben Sie den Text Ihrer Notiz ein.
 1. Klicken Sie **Fertig**, um die Notiz zu speichern.
 1. Ziehen Sie die Anmerkung an die gewünschte Position im Szenario-Editor.
 
    Nachdem Sie einem Szenario eine Anmerkung hinzugefügt haben, wird ein blauer Punkt auf dem **[!UICONTROL Anmerkungen]**-Symbol ![Anmerkungen-Symbol mit einem Punkt](assets/notes-icon-w-dot.png) unten im Szenario-Editor angezeigt.
 
-1. Um alle Notizen anzuzeigen oder auszublenden, klicken Sie auf das Symbol **[!UICONTROL Notizen]** (![ mit Punkt](assets/notes-icon-w-dot.png).
+1. Um alle Notizen anzuzeigen oder auszublenden, klicken Sie auf das Symbol **[!UICONTROL Notizen]** (![&#x200B; mit Punkt](assets/notes-icon-w-dot.png).
 
    Wenn Notizen geöffnet sind, wird ein Kreis um das Notizen-Symbol angezeigt.
 

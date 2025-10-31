@@ -103,7 +103,7 @@ Anweisungen zum Erstellen eines Szenarios aus einer Vorlage finden Sie unter [Er
 
 Sie können alle Vorlagen bearbeiten, die auf der Registerkarte [!UICONTROL Teamvorlagen] verfügbar sind.
 
-1. Klicken Sie auf **[!UICONTROL Symbol]** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im Seitennavigationsmenü.
+1. Klicken Sie auf **[!UICONTROL Symbol]** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im Seitennavigationsmenü.
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Teamvorlagen“.
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Privat“.
 1. Klicken Sie auf die Vorlage, die Sie bearbeiten möchten.
@@ -126,7 +126,7 @@ Sie können nur Vorlagen löschen, die noch nicht genehmigt sind. Wenn Sie eine 
 
 Beachten Sie, dass eine Vorlage nach dem Löschen nicht wiederhergestellt werden kann. Teamvorlagen sind für alle Mitglieder Ihres Teams verfügbar. Bevor Sie also eine Vorlage löschen, sollten Sie sich an Ihre Teams wenden, um sicherzustellen, dass die Vorlage nicht benötigt wird.
 
-1. Klicken Sie auf **[!UICONTROL Symbol]** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im Seitennavigationsmenü.
+1. Klicken Sie auf **[!UICONTROL Symbol]** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im Seitennavigationsmenü.
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Teamvorlagen“.
 1. Klicken **[!UICONTROL neben]** Vorlagennamen auf „Löschen“
 
