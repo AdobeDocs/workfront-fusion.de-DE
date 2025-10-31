@@ -4,9 +4,9 @@ description: In diesem Artikel wird der grundlegende Prozess zum Hinzufügen ein
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -21,34 +21,22 @@ In diesem Artikel wird der grundlegende Prozess zum Hinzufügen eines Moduls zu 
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
-   <p>Oder</p>
-   <p>Legacy: Beliebig </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -56,11 +44,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Hinzufügen des ersten Moduls zu einem Szenario
++++## Das erste Modul zu einem Szenario hinzufügen
 
 Das erste Modul eines Szenarios ist normalerweise ein Trigger-Modul.
 

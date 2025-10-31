@@ -1,17 +1,17 @@
 ---
-title: Verbindungen verwalten
+title: Verwalten von Verbindungen
 description: Sie können Ihre Team-Verbindungen im Bereich Verbindungen anzeigen und verwalten.
 author: Becky
 feature: Workfront Fusion
 exl-id: b7e4d3ac-ccbe-4ee2-ba73-b37032980696
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 0%
+source-wordcount: '402'
+ht-degree: 1%
 
 ---
 
-# Verbindungen verwalten
+# Verwalten von Verbindungen
 
 Sie können Ihre Team-Verbindungen im Bereich Verbindungen anzeigen und verwalten.
 
@@ -19,55 +19,32 @@ Sie können Ihre Team-Verbindungen im Bereich Verbindungen anzeigen und verwalte
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront-Paket 
-   <td> <p>Beliebig</p> </td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
-   <p>Oder</p>
-   <p>Legacy: Beliebig </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Prime oder Workfront-Plan auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront Plan: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Konfigurationen der Zugriffsebene*</td> 
-   <td> 
-     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Unternehmen sein.</p>
-     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Team sein.</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation zu Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## Verbindungen verwalten
+## Verwalten von Verbindungen
 
 Sie können alle Verbindungen über den Bereich Verbindungen verwalten.
 
@@ -77,7 +54,7 @@ Sie können alle Verbindungen über den Bereich Verbindungen verwalten.
 >
 >Um ein neues Team auszuwählen, klicken Sie auf den Dropdown-Pfeil neben dem Team-Namen oben auf der Seite. Wählen Sie ein neues Team aus der Liste aus.
 
-1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![&#x200B; der linken Navigationsleiste auf Verbindungen &#x200B;](assets/connections-icon.png)Verbindungssymbol).
+1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![ der linken Navigationsleiste auf Verbindungen ](assets/connections-icon.png)Verbindungssymbol).
 1. (Optional) Um die Umgebung oder den Typ anzugeben, klicken Sie auf die Dropdown-Listen Umgebungstyp und Typ und wählen Sie eine Option aus.
 
    >[!NOTE]
@@ -96,5 +73,5 @@ Workfront Fusion erhält in der Regel für unbegrenzte Zeit Zugriffsrechte für 
 
 So erneuern Sie eine Verbindung:
 
-1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![&#x200B; der linken Navigationsleiste auf Verbindungen &#x200B;](assets/connections-icon.png)Verbindungssymbol).
+1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![ der linken Navigationsleiste auf Verbindungen ](assets/connections-icon.png)Verbindungssymbol).
 1. (Optional) Um eine Verbindung erneut zu autorisieren, klicken **in** Zeile für diese Verbindung auf „Erneut autorisieren“.

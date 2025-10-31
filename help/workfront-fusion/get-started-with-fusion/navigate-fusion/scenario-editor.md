@@ -4,10 +4,10 @@ description: Mit dem Szenario-Editor können Sie Szenarien in einer visuellen Be
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
+source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 4%
+source-wordcount: '543'
+ht-degree: 3%
 
 ---
 
@@ -21,57 +21,34 @@ Mit dem Szenario-Editor können Sie Szenarien in einer visuellen Benutzeroberfl�
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
-   <p>Oder</p>
-   <p>Legacy: Beliebig </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Konfigurationen der Zugriffsebene*</td> 
-   <td> 
-     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Unternehmen sein.</p>
-     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Team sein.</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
  </tbody> 
 </table>
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
 
 ## Öffnen Sie den Szenario-Editor und fügen Sie ein Modul hinzu:
 
-1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![&#x200B; (](assets/scenarios-icon.png)).
+1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![ (](assets/scenarios-icon.png)).
 1. Klicken Sie auf das Fragezeichensymbol ![Fragesymbol](assets/question-mark-full-size.png), suchen Sie nach der App oder dem Service, mit der bzw. dem Sie beginnen möchten, und klicken Sie darauf. Detaillierte Informationen zum Konfigurieren eines Moduls finden Sie unter [Modul konfigurieren](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ## Verfügbare Szenario-Editor-Aktionen

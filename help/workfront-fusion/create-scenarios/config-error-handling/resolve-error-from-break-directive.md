@@ -4,9 +4,9 @@ description: Manchmal ist es nützlich, ein fehlerhaftes Modul erneut auszuführ
 author: Becky
 feature: Workfront Fusion
 exl-id: d568942c-2cd5-430c-bdbf-e1496da25b50
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,42 @@ Wenn ein Fehler von der Break-Direktive verarbeitet wird, wird im Ordner Unvolls
 
 Weitere Informationen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
+## Zugriffsanforderungen
+
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
 ## Beheben von Fehlern, die sich aus der Break-Direktive ergeben
 
 Sie können den Fehler manuell beheben, indem Sie das Szenario (falls erforderlich) aktualisieren und es einmal ausführen.
 
 Sie können das Szenario auch so konfigurieren, dass eine unvollständige Ausführung automatisch verarbeitet wird, indem Sie das Szenario erneut ausführen. So konfigurieren Sie das Modul für die Verarbeitung unvollständiger Ausführungen:
 
-1. Klicken Sie im linken Bedienfeld auf die Registerkarte **[!UICONTROL Scenarios]** .
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie die Problemumgehung hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Klicken Sie auf das **Fluss**-Symbol ![Fluss](assets/flow-control-icon.png) und wählen Sie **Break** aus.
@@ -33,7 +62,7 @@ Sie können das Szenario auch so konfigurieren, dass eine unvollständige Ausfü
    Diese Zahl muss zwischen 1 und 100 liegen.
 1. Geben **im Feld „Intervall zwischen**&quot; die Anzahl der Minuten zwischen den einzelnen Wiederholungsversuchen ein oder mappen Sie sie.
 
-Wenn diese Option aktiviert ist, wird bei einem Fehler die unvollständige Ausführung abgerufen (nach der im Feld [!UICONTROL Interval between attempts] angegebenen Zeit) und mit den ursprünglichen Eingabedaten ausgeführt. Dies wird wiederholt, bis die Ausführung des Moduls fehlerfrei abgeschlossen wird oder die angegebene Anzahl von Versuchen erreicht ist.
+Wenn diese Option aktiviert ist, wird bei einem Fehler die unvollständige Ausführung abgerufen (nach der im Feld [!UICONTROL Intervall zwischen Versuchen] angegebenen Zeit) und mit den ursprünglichen Eingabedaten ausgeführt. Dies wird wiederholt, bis die Ausführung des Moduls fehlerfrei abgeschlossen wird oder die angegebene Anzahl von Versuchen erreicht ist.
 
 >[!NOTE]
 >

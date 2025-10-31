@@ -4,10 +4,10 @@ description: Mit der Funktion "Adobe Workfront FusionTemplates“ können Sie be
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: ce2a41a9708bb0e611ab4056aac733d58d27d7a9
+source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 1%
+source-wordcount: '363'
+ht-degree: 0%
 
 ---
 
@@ -19,42 +19,28 @@ Sie können Adobe Workfront Fusion-Vorlagen als Ausgangspunkt für Ihre Workfron
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
-   <p>Oder</p>
-   <p>Legacy: Beliebig </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -64,11 +50,11 @@ Sie müssen eine Vorlage erstellen, bevor Sie sie verwenden können.
 
 ## Erstellen eines Szenarios aus einer Vorlage
 
-1. Klicken Sie auf **[!UICONTROL Symbol]** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **[!UICONTROL Symbol]** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Klicken Sie auf die Registerkarte, die die Vorlage enthält, die Sie verwenden möchten (öffentliche Vorlagen oder Teamvorlagen).
 1. Klicken Sie auf die Vorlage, die Sie verwenden möchten, um mit der Erstellung eines Szenarios zu beginnen. Sie können das Suchfeld in der oberen rechten Ecke verwenden, um die Vorlage anhand ihres Namens oder des Namens der darin enthaltenen App zu finden.
 1. (Bedingt) Wenn Sie Mitglied mehrerer Organisationen oder Teams sind, wählen Sie die Organisation oder das Team aus, für die Sie Ihr Szenario erstellen möchten, und klicken Sie auf **[!UICONTROL Weiter]**.
-1. (Bedingt) Wenn die Vorlage mit „Assistent[!UICONTROL &#x200B; konfiguriert wurde] befolgen Sie die Anweisungen zum Konfigurieren des Szenarios. Klicken **[!UICONTROL bei]** Eingabeaufforderung auf „Weiter“, um sie zu bestätigen.
+1. (Bedingt) Wenn die Vorlage mit „Assistent[!UICONTROL  konfiguriert wurde] befolgen Sie die Anweisungen zum Konfigurieren des Szenarios. Klicken **[!UICONTROL bei]** Eingabeaufforderung auf „Weiter“, um sie zu bestätigen.
 
    >[!NOTE]
    >

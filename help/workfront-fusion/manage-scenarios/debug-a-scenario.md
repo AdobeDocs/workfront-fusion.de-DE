@@ -4,9 +4,9 @@ description: Mit dem Adobe Workfront Fusion DevTool können Sie Szenarien verste
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 71bd96915f21922d637433010acea9321ed476d5
+source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1468'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,11 @@ Das Adobe Workfront Fusion-DevTool hilft Ihnen, Szenarien zu verstehen und Fehle
 Eine Videoeinführung und exemplarische Anleitung für das Fusion DevTool finden Sie unter
 
 * [Fusion-Entwicklungstool](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Anleitung zu Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=de)
+* [Anleitung zu Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Zugriffsanforderungen
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
-
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
 <table style="table-layout:auto">
  <col> 
@@ -36,43 +34,22 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
-   <p>Oder</p>
-   <p>Legacy: Beliebig </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Konfigurationen der Zugriffsebene*</td> 
-   <td> 
-     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Unternehmen sein.</p>
-     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Team sein.</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
  </tbody> 
 </table>
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -206,7 +183,7 @@ Ermöglicht die Suche nach den Modulwerten für einen bestimmten Begriff. Die Au
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Schlüsselwort]</td> 
+   <td role="rowheader">[!UICONTROL-Schlüsselwort]</td> 
    <td> <p> Geben Sie den Begriff ein, nach dem Sie suchen möchten. </p> </td> 
   </tr> 
   <tr> 
@@ -287,7 +264,7 @@ Kopiert den Namen des ausgewählten Moduls in die Zwischenablage.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modul] </td> 
+   <td role="rowheader">[!UICONTROL-Modul] </td> 
    <td> <p>Wählen Sie das Modul aus, dessen Namen Sie kopieren möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -321,7 +298,7 @@ Sucht im Szenario nach angegebenen Variablen und ersetzt sie durch eine neue Var
    <td> <p>Suchen Sie im Variablenmodul in Ihrem Szenario die Variable, mit der Sie die Variable ersetzen möchten, und kopieren Sie sie in dieses Feld ([!UICONTROL Variable zum Suchen]). Im Feld wird sie mit doppelten geschweiften Klammern angezeigt. Beispiel: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Modul]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Modul]</p> </td> 
    <td> <p>Wählen Sie das Variablenmodul aus, in dem Sie die Variable ersetzen möchten. Wenn kein Modul ausgewählt ist, wird die Variable im gesamten Szenario ersetzt.</p> </td> 
   </tr> 
  </tbody> 
@@ -336,12 +313,12 @@ Ermöglicht die Kodierung der eingegebenen Daten in Base64 oder die Dekodierung 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Vorgang] </td> 
+   <td role="rowheader">[!UICONTROL-Vorgang] </td> 
    <td> <p>Wählen Sie aus, ob die Daten aus dem Feld [!UICONTROL Raw Data] in Base64 kodiert oder Base64 in Raw Data dekodiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Rohdaten]</p> </td> 
-   <td> <p> Geben Sie die Daten, die Sie für Base64 codieren möchten, oder Base64 ein, wenn Sie für Rohdaten decodieren möchten, je nach der im Feld [!UICONTROL -Vorgang] oben ausgewählten Option.</p> </td> 
+   <td> <p> Geben Sie die Daten, die Sie für Base64 codieren möchten, oder Base64 ein, wenn Sie für Rohdaten decodieren möchten, je nach der im Feld [!UICONTROL-Vorgang] oben ausgewählten Option.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -365,7 +342,7 @@ Zunächst müssen Sie das Modul, das Sie als Quellmodul verwenden möchten, zur 
    <td> <p>Wählen Sie das Modul aus, das Sie als neue Zuordnungsquelle verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Modul zum Bearbeiten]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Modul zum Bearbeiten]</p> </td> 
    <td> <p>Wählen Sie das Modul aus, für das Sie die Zuordnung ändern möchten, wenn Sie die Zuordnung nicht im gesamten Szenario ändern möchten. </p> </td> 
   </tr> 
  </tbody> 

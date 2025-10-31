@@ -4,9 +4,9 @@ description: Google hat Einschränkungen für die Verwendung seiner API eingefü
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,29 @@ Google hat Einschränkungen für die Verwendung seiner API eingeführt. In diese
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront-Paket 
-   <td> <p>Beliebig</p> </td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
-   <p>Oder</p>
-   <p>Legacy: Beliebig </p>
+   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Prime oder Workfront-Plan auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront Plan: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -88,7 +83,7 @@ Google Workspace-Benutzende, die lieber ihren eigenen OAuth-Client statt des Wor
 
 Benutzende, die über @gmail.com oder @googlemail.com auf Google-Services zugreifen, können über den Ansatz der persönlichen Nutzung eine Verbindung zu Google-Services herstellen. Diese Option ist für fortgeschrittene Benutzer gedacht. Anweisungen finden Sie unter [Verbinden von Adobe Workfront Fusion mit Google Services mithilfe eines benutzerdefinierten OAuth-Clients](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
-## FAQs
+## Häufig gestellte Fragen
 
 * [Welche Apps in Adobe Workfront Fusion sind betroffen?](#what-apps-in-adobe-workfront-fusion-are-affected)
 * [Habe ich ein Google Workspace-Konto?](#do-i-have-a-g-suite-account)

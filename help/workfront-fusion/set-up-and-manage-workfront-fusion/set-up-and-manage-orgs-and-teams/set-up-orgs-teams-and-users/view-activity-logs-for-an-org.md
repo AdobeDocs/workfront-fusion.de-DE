@@ -4,10 +4,10 @@ description: Sie können ein Aktivitätsprotokoll für Ihr Unternehmen anzeigen,
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 1%
+source-wordcount: '485'
+ht-degree: 0%
 
 ---
 
@@ -19,48 +19,31 @@ Sie können ein Aktivitätsprotokoll für Ihr Unternehmen anzeigen, z. B. ein Sz
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront-Plan</td>
-   <td> <p>Neu: Ultimate</p> <p>Oder</p> <p>Aktuell: Nicht verfügbar</p></td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Adobe Workfront Workflow Ultimate und Adobe Workfront Automatisierung und Integration Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Nicht verfügbar</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p></td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
-   <p>Oder</p>
-   <p>Legacy: Beliebig </p>
-   </td> 
-  </tr> 
-   <tr> 
+  <tr data-mc-conditions=""> 
    <td role="rowheader">Konfigurationen der Zugriffsebene</td> 
-   <td> <p>Um das Aktivitätsprotokoll verwenden zu können, müssen Sie Fusion-Administrator sein.</p></td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Produkt</td> 
-   <td>
-   <p>Diese Funktion steht nur Organisationen mit dem Ultimate Workfront-Plan zur Verfügung, der auch Workfront Fusion umfasst. Es ist kein zusätzlicher Produktkauf erforderlich.</p>
+   <td> 
+     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Unternehmen sein.</p>
+     <p>Sie müssen ein Workfront Fusion-Administrator für Ihr Team sein.</p>
    </td> 
-  </tr>
+  </tr> 
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation zu Workfront](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
-
-
 
 ## Anzeigen der Aktivitätsprotokolle
 

@@ -7,9 +7,9 @@ description: Webhooks, auch als Instant Trigger bezeichnet, sind eine spezielle 
 author: Becky
 feature: Workfront Fusion
 exl-id: 28ecca1f-a9c3-4b3d-95f5-73cb9a5dc4b9
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -32,18 +32,16 @@ Dieses Beispiel ändert das in erstellte Szenario [Erstellen eines einfachen Sze
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Paket, das Workfront-Automatisierung und -Integration enthält</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
-   <td>
-   <p>Keine Workfront Fusion-Lizenzanforderung.</p>
-   </td> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Sie müssen über ein Konto für jede Anwendung oder jeden Service verfügen, mit der bzw. dem Sie eine Verbindung mit Workfront Fusion herstellen.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -51,13 +49,11 @@ Dieses Beispiel ändert das in erstellte Szenario [Erstellen eines einfachen Sze
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
 
 ## Voraussetzungen
 
-Sie müssen das unter &quot;[&#x200B; eines einfachen Szenarios“ beschriebene Szenario erstellen](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) bevor Sie dieses Verfahren ausführen.
+Sie müssen das unter &quot;[ eines einfachen Szenarios“ beschriebene Szenario erstellen](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) bevor Sie dieses Verfahren ausführen.
 
 ## Webhook hinzufügen und konfigurieren
 
