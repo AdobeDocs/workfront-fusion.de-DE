@@ -153,7 +153,7 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Datadog]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Datadog] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -165,11 +165,11 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
    <td>Geben Sie einen Pfad relativ zu <code>https://api.datadoghq.com/api/</code> ein. Beispiel:<code> /v1/org</code>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methode]</td> 
+   <td role="rowheader">[!UICONTROL -Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -211,7 +211,7 @@ Der Grenzwert für komprimierte Payloads beträgt 3,2 Megabyte (3200000) und 62 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Datadog]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Datadog] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 

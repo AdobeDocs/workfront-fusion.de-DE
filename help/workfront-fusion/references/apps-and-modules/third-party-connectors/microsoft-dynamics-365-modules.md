@@ -111,11 +111,11 @@ Sie können direkt aus einem [!DNL Microsoft Dynamics 365]-Modul heraus eine Ver
           <td>Geben Sie Ihren [!DNL Microsoft Dynamics] [!UICONTROL Client Secret] ein.
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL-Authentifizierungs-URL]</td>
+          <td role="rowheader">[!UICONTROL -Authentifizierungs-URL]</td>
           <td>Geben Sie die URL ein, die Ihre Workfront-Instanz zur Authentifizierung dieser Verbindung verwenden soll. <p>Der Standardwert lautet <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL-Ressource]</td>
+          <td role="rowheader">[!UICONTROL -Ressource]</td>
           <td>Geben Sie die Adresse Ihres [!DNL Dynamics 365] Kontos ohne <code>>https://</code> ein.</p>
         </tr>
       </tbody>
@@ -184,7 +184,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> "
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Microsoft Dynamics 365]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Microsoft Dynamics 365] mit Workfront Fusion</a> in diesem Artikel. </p> </td> 
   </tr> 
   <tr> 
@@ -230,7 +230,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Microsoft Dynamics 365]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Microsoft Dynamics 365] mit Workfront Fusion</a> in diesem Artikel. </p> </td> 
   </tr> 
   <tr> 
@@ -242,7 +242,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Wählen Sie die Felder aus, für die Sie bei der Erstellung des Datensatzes Werte einbeziehen möchten. Die verfügbaren Felder hängen vom Entitätstyp ab.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL-Eigenschaftsfelder]</td> 
+   <td role="rowheader">[!UICONTROL -Eigenschaftsfelder]</td> 
    <td> Dies sind die von Ihnen ausgewählten Felder. Geben Sie den Wert ein, den der Datensatz für eine bestimmte Eigenschaft haben soll. </td> 
   </tr> 
  </tbody> 
@@ -263,7 +263,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Microsoft Dynamics 365]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Microsoft Dynamics 365] mit Workfront Fusion</a> in diesem Artikel. </p> </td> 
   </tr> 
   <tr> 
@@ -292,7 +292,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Microsoft Dynamics 365]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Microsoft Dynamics 365] mit Workfront Fusion</a> in diesem Artikel. </p> </td> 
   </tr> 
   <tr> 
@@ -300,11 +300,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Geben Sie einen Pfad relativ zu <code>&lt;Instance URL>/api/data/v9.1/</code> ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methode]</td> 
+   <td role="rowheader">[!UICONTROL -Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> <p>Für weitere Informationen in</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -336,7 +336,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Microsoft Dynamics 365]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Microsoft Dynamics 365] mit Workfront Fusion</a> in diesem Artikel. </p> </td> 
   </tr> 
   <tr> 
@@ -369,7 +369,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Microsoft Dynamics 365]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Microsoft Dynamics 365] mit Workfront Fusion</a> in diesem Artikel. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -381,7 +381,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Wählen Sie die Felder aus, für die Sie bei der Erstellung des Datensatzes Werte einbeziehen möchten. Die verfügbaren Felder hängen vom Entitätstyp ab.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL-Eigenschaftsfelder]</td> 
+   <td role="rowheader">[!UICONTROL -Eigenschaftsfelder]</td> 
    <td>Dies sind die von Ihnen ausgewählten Felder. Geben Sie den Wert ein, den der Datensatz für eine bestimmte Eigenschaft haben soll.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -404,7 +404,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Microsoft Dynamics 365]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Microsoft Dynamics 365] mit Workfront Fusion</a> in diesem Artikel. </p> </td> 
   </tr> 
   <tr> 
@@ -423,7 +423,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td role="rowheader">[!UICONTROL sort]</td> 
    <td> <p>Geben Sie die Reihenfolge an, in der Elemente zurückgegeben werden. Sie können mehrere Sortierungen hinzufügen.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL-Feld]</strong> </p> <p>Geben Sie das Feld an, nach dem Sie die Ergebnisse sortieren möchten.</p> </li> 
+     <li> <p><strong>[!UICONTROL -Feld]</strong> </p> <p>Geben Sie das Feld an, nach dem Sie die Ergebnisse sortieren möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL Direction]</strong> </p> <p>Geben Sie die Sortierrichtung an (aufsteigend oder absteigend).</p> </li> 
     </ul> </td> 
   </tr> 

@@ -138,7 +138,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Target]:
         <td>Geben Sie Ihre [!DNL Adobe] Organisations-ID ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-Mandant]</td>
+        <td role="rowheader">[!UICONTROL -Mandant]</td>
         <td>
           <p> Um Ihren Mandanten zu finden, melden Sie sich bei der [!DNL Adobe Experience Cloud] an, öffnen Sie [!DNL Target] und klicken Sie auf die [!DNL Target]. Verwenden Sie den Mandanten-ID-Wert, wie in der URL-Subdomain angegeben.</p>
           <p>Wenn beispielsweise Ihre URL bei der Anmeldung bei [!DNL Adobe Target] <code>&lt;https://mycompany.experiencecloud.adobe.com/...></code> ist, lautet Ihre Mandanten-ID „mycompany“.</p>
@@ -212,7 +212,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
 <col/>
 <tbody>
   <tr>
-    <td role="rowheader">[!UICONTROL-Verbindung]</td>
+    <td role="rowheader">[!UICONTROL -Verbindung]</td>
     <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Target] finden Sie unter <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Target]</a> in diesem Artikel.</td>
   </tr>
   <tr>
@@ -477,7 +477,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
       <td>Geben Sie einen Namen für diese Aktivität ein oder mappen Sie ihn. Der Name darf nicht länger 250 Zeichen sein.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Optionen]</td>
+      <td role="rowheader">[!UICONTROL -Optionen]</td>
       <td>
         <p>Klicken Sie für jede Option, die Sie der Aktivität hinzufügen möchten, auf <b>[!UICONTROL Element hinzufügen]</b> und füllen Sie die folgenden Felder aus:</p>
         <ul>
@@ -557,7 +557,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Metriken]</td>
+      <td role="rowheader">[!UICONTROL -Metriken]</td>
       <td> </td>
     </tr>
     <tr>
@@ -573,7 +573,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
       <td>Geben Sie das Datum und die Uhrzeit für das Ende der Aktivität im Format <code>YYYY-MM-DD hh:mm:ss.z</code> ein oder mappen Sie sie.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Status]</td>
+      <td role="rowheader">[!UICONTROL -Status]</td>
       <td>
         <p>Geben Sie den Status der Aktivität ein oder mappen Sie ihn.</p>
         <ul>
@@ -596,7 +596,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Priorität]</td>
+      <td role="rowheader">[!UICONTROL -Priorität]</td>
       <td>Geben Sie eine Zahl ein, die die Priorität der Aktivität definiert. Höhere Zahlen haben eine höhere Priorität. Dieser Wert muss zwischen 0 und 999 liegen. Der Standardwert lautet 5.</td>
     </tr>
     <tr>
@@ -651,7 +651,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
       <td>Geben Sie einen Namen für diese Aktivität ein oder mappen Sie ihn. Der Name darf nicht länger 250 Zeichen sein.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Inhalt]</td>
+      <td role="rowheader">[!UICONTROL -Inhalt]</td>
       <td>
         <p>Geben Sie den Inhalt des Angebots ein, das dem Benutzer angezeigt werden soll, oder ordnen Sie ihn zu.</p>
       </td>
@@ -752,7 +752,7 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Targ
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Target] finden Sie unter <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Target]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -769,12 +769,12 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Targ
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-Methode]</p>
+        <p>[!UICONTROL -Methode]</p>
       </td>
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -805,7 +805,7 @@ Dieses Aktionsmodul löscht eine einzelne AB-Aktivität, XT-Aktivität, ein einz
 <col/>
 <tbody>
   <tr>
-    <td role="rowheader">[!UICONTROL-Verbindung]</td>
+    <td role="rowheader">[!UICONTROL -Verbindung]</td>
     <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Target] finden Sie unter <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Target]</a> in diesem Artikel.</td>
   </tr>
   <tr>
@@ -828,7 +828,7 @@ Dieses Aktionsmodul ruft Daten für eine einzelne Aktivität, ein einzelnes Ange
 <col/>
 <tbody>
   <tr>
-    <td role="rowheader">[!UICONTROL-Verbindung]</td>
+    <td role="rowheader">[!UICONTROL -Verbindung]</td>
     <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Target] finden Sie unter <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Target]</a> in diesem Artikel.</td>
   </tr>
   <tr>
@@ -851,7 +851,7 @@ Dieses Aktionsmodul aktualisiert einen Datensatz in Target.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Target] finden Sie unter <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Target]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -885,7 +885,7 @@ Dieses Suchmodul ruft eine Liste von Datensätzen des ausgewählten Typs ab.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Verbindung]</td>
+      <td role="rowheader">[!UICONTROL -Verbindung]</td>
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Target] finden Sie unter <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Target]</a> in diesem Artikel.</td>
     </tr>
     <tr>
@@ -922,7 +922,7 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Aktivitä
 <col/>
 <tbody>
   <tr>
-    <td role="rowheader">[!UICONTROL-Verbindung]</td>
+    <td role="rowheader">[!UICONTROL -Verbindung]</td>
     <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Target] finden Sie unter <a href="#create-a-connection-to-adobe-target" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Target]</a> in diesem Artikel.</td>
   </tr>
   <tr>

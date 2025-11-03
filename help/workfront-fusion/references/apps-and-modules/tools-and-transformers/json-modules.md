@@ -135,7 +135,7 @@ Dieses Aggregator-Modul aggregiert die Ausgabe eines vorherigen Moduls in JSON.
    <td> <p>Wählen Sie das Modul aus, das die Daten ausgibt, die Sie in JSON aggregieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Datenstruktur]</td> 
+   <td role="rowheader">[!UICONTROL -Datenstruktur]</td> 
    <td> <p>Wählen Sie die Datenstruktur aus, die Sie zum Erstellen von JSON verwenden möchten. Die Datenstruktur bestimmt, welche anderen Felder in diesem Modul verfügbar sind. Weitere Informationen finden Sie unter <a href="#data-structure" class="MCXref xref">Datenstruktur</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -203,7 +203,7 @@ Dieses Aktionsmodul analysiert eine JSON-Zeichenfolge in eine Datenstruktur, mit
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Datenstruktur]</td> 
+   <td role="rowheader">[!UICONTROL -Datenstruktur]</td> 
    <td> <p>Wählen Sie die Datenstruktur aus, die Sie zum Erstellen von JSON verwenden möchten. Weitere Informationen finden Sie unter <a href="#data-structure" class="MCXref xref">Datenstruktur</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -226,7 +226,7 @@ Dieses Aktionsmodul wandelt ein -Objekt in eine JSON-Zeichenfolge um.
    <td> <p>Wählen Sie die Einrückung aus, die Sie für diese JSON-Datei verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Objekt]</td> 
+   <td role="rowheader">[!UICONTROL -Objekt]</td> 
    <td> <p>Geben Sie das Objekt ein, das Sie in JSON umwandeln möchten, oder ordnen Sie es zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -279,7 +279,7 @@ Dieses Aktionsmodul wandelt ein -Objekt in eine JSON-Zeichenfolge um.
 
 ## Fehlerbehebung
 
-### Daten aus dem Modul [!UICONTROL JSON analysieren“ können nicht ] werden
+### Daten aus dem Modul [!UICONTROL JSON analysieren“ können nicht &#x200B;] werden
 
 Stellen Sie sicher, dass der JSON-Inhalt ordnungsgemäß dem [!UICONTROL Parse JSON]-Modul zugeordnet ist und dass die Datenstruktur korrekt definiert ist. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen in JSON](#transforming-data-records-to-json) in diesem Artikel.
 

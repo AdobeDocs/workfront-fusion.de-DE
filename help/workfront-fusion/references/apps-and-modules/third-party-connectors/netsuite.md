@@ -142,7 +142,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL NetSuite]-Kontos mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-netsuite" class="MCXref xref">Erstellen einer Verbindung zu [!DNL NetSuite]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -150,11 +150,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Verwenden Sie das folgende URL-Format:</p> <p><code>https://{accountID}.suitetalk.api.netsuite.com/services/rest/record/{version}/{resource}?{query-parameters}</code> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methode]</td> 
+   <td role="rowheader">[!UICONTROL -Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 

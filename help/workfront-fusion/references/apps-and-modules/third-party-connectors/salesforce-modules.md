@@ -179,15 +179,15 @@ Dieses Feldmodul startet ein Trigger, wenn ein Feld in [!DNL Salesforce] aktuali
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung]</td> 
+   <td>[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-salesforce">Erstellen einer Verbindung zu Salesforce</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Datensatztyp] </td> 
-   <td> <p>Wählen Sie den Typ des Datensatzes aus, der das Feld enthält, das vom Modul überwacht werden soll. Sie müssen einen Datensatztyp auswählen, für den [!UICONTROL Field History] in [!DNL Salesforce] Setup aktiviert ist. Weitere Informationen finden Sie unter <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">Feldverlaufsverfolgung</a> in der [!DNL Salesforce]. </p> </td> 
+   <td> <p>Wählen Sie den Typ des Datensatzes aus, der das Feld enthält, das vom Modul überwacht werden soll. Sie müssen einen Datensatztyp auswählen, für den [!UICONTROL Field History] in [!DNL Salesforce] Setup aktiviert ist. Weitere Informationen finden Sie unter <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Feldverlaufsverfolgung</a> in der [!DNL Salesforce]. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Feld]</td> 
+   <td>[!UICONTROL -Feld]</td> 
    <td> <p>Wählen Sie die Felder aus, die das Modul auf Änderungen überwachen soll. Die verfügbaren Felder hängen vom ausgewählten Datensatztyp ab.</p> </td> 
   </tr> 
   <tr> 
@@ -208,7 +208,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung]</td> 
+   <td>[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-salesforce">Erstellen einer Verbindung zu Salesforce</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -280,7 +280,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie den Typ [!DNL Salesforce] Datensatzes aus, den das Modul auf ausgehende Nachrichten überwachen soll.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Felder]</td> 
+   <td>[!UICONTROL -Felder]</td> 
    <td> <p>Wählen Sie die Felder aus, die das Modul auf ausgehende Nachrichten überwachen soll. Die verfügbaren Felder hängen vom Typ des Datensatzes ab.</p> </td> 
   </tr> 
  </tbody> 
@@ -311,7 +311,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung]</td> 
+   <td>[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-salesforce">Erstellen einer Verbindung zu Salesforce</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -345,7 +345,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-salesforce">Erstellen einer Verbindung zu Salesforce</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -353,11 +353,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Geben Sie einen Pfad relativ zu ein<code> &lt;Instance URL&gt;/services/data/v62.0/</code>.</p> <p>Eine Liste der verfügbaren Endpunkte finden Sie im <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API-Entwicklerhandbuch</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Methode]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Methode]</p> </td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code>. Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -411,7 +411,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung]</td> 
+   <td>[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-salesforce">Erstellen einer Verbindung zu Salesforce</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -440,15 +440,15 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr>
-    <td>[!UICONTROL-Verbindung]</td>
+    <td>[!UICONTROL -Verbindung]</td>
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-salesforce">Erstellen einer Verbindung zu Salesforce</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Downloadtyp]</td>
     <td> <p>Geben Sie den Dateityp an, den Sie von Salesforce herunterladen möchten.</p> 
      <ul> 
-      <li>[!UICONTROL-Anhang]</li> 
-      <li>[!UICONTROL-Dokument]</li> 
+      <li>[!UICONTROL -Anhang]</li> 
+      <li>[!UICONTROL -Dokument]</li> 
       <li>[!UICONTROL ContentDocument] (Dies ist ein Dokument, das in [!DNL Saleforce CRM Content] oder [!DNL Salesforce Files] in eine Bibliothek hochgeladen wurde.)</li> 
      </ul> </td>
   </tr> 
@@ -474,7 +474,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr>
-    <td>[!UICONTROL-Verbindung]</td>
+    <td>[!UICONTROL -Verbindung]</td>
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-salesforce">Erstellen einer Verbindung zu Salesforce</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr>
@@ -508,7 +508,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung]</td> 
+   <td>[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-salesforce">Erstellen einer Verbindung zu Salesforce</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -540,11 +540,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung]</td> 
+   <td>[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-salesforce">Erstellen einer Verbindung zu Salesforce</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Typ des Uploads]</td> 
+   <td>[!UICONTROL -Typ des Uploads]</td> 
    <td>Wählen Sie aus, ob das Modul eine Anlage oder ein Dokument hochladen soll.</td> 
   </tr> 
   <tr> 
@@ -552,7 +552,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Geben Sie die ID des Objekts ein, zu dem Sie eine Anlage hochladen möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner]</td> 
+   <td>[!UICONTROL -Ordner]</td> 
    <td>Wählen Sie den Ordner aus, in den Sie ein Dokument hochladen möchten. </td> 
   </tr> 
   <tr> 
@@ -571,8 +571,8 @@ Dieses Aktionsmodul lädt eine einzelne Datei in Salesforce hoch.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
-   <td>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu[!DNL  Adobe Workfront Fusion] - Grundlegende Anweisungen</a></td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu[!DNL &#x200B; Adobe Workfront Fusion] - Grundlegende Anweisungen</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source-Datei]</td> 
@@ -611,8 +611,8 @@ Dieses Aktionsmodul ruft alle Datensätze ab, die ein bestimmtes Kriterium erfü
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
-   <td>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu[!DNL  Adobe Workfront Fusion] - Grundlegende Anweisungen</a></td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu[!DNL &#x200B; Adobe Workfront Fusion] - Grundlegende Anweisungen</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Typ]</td> 
@@ -648,7 +648,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung]</td> 
+   <td>[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Salesforce]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-salesforce">Erstellen einer Verbindung zu Salesforce</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -665,7 +665,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wenn Sie den Typ Einfache Suche ausgewählt haben, wählen Sie den Typ [!DNL Salesforce] Datensatzes aus, nach dem das Modul suchen soll.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Abfrage] / [!UICONTROL SOL-Abfrage] / [!UICONTROL SOQL-Abfrage]</td> 
+   <td>[!UICONTROL -Abfrage] / [!UICONTROL SOL-Abfrage] / [!UICONTROL SOQL-Abfrage]</td> 
    <td> <p>Geben Sie die Abfrage ein, nach der Sie suchen möchten.</p> <p>Weitere Informationen zu SOSL finden Sie unter <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> in der [!DNL Salesforce].</p> <p>Weitere Informationen zu SOQL finden Sie unter <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> in der [!DNL Salesforce].</p> <p>Hinweis: Beachten Sie, dass der Wert des Parameters <code>RETURNING </code>die Ausgabe des Moduls beeinflusst. Wenn Sie <code>LIMIT</code> verwenden, ignorieren [!DNL Fusion] die Einstellungen im Feld [!UICONTROL Maximale Anzahl von Datensätzen]. Wenn Sie kein Limit festlegen, fügt Fusion den Wert [!UICONTROL LIMIT = Maximale Anzahl von Datensätzen] ein.</p> </td> 
   </tr> 
   <tr> 

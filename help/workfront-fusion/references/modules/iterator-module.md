@@ -98,7 +98,7 @@ Starten Sie das Szenario manuell im Szenario-Editor.
 >Um zu verhindern, dass das gesamte Szenario ausgeführt wird, haben Sie folgende Möglichkeiten:
 >
 >* Heben Sie die Verknüpfung der Module nach dem [!UICONTROL JSON] > [!UICONTROL Parsen von JSON]-Modul auf, um zu verhindern, dass der Fluss weiter fortfährt.
->  >   Oder
+>  &#x200B;>   Oder
 >* Klicken Sie mit der rechten Maustaste auf das Modul [!UICONTROL JSON] > [!UICONTROL JSON parsen] und wählen Sie **[!UICONTROL Nur dieses Modul ausführen]** aus dem Kontextmenü, um nur das Modul [!UICONTROL JSON] > [!UICONTROL JSON parsen] auszuführen.
 
 Nachdem [!UICONTROL JSON] > [!UICONTROL Parse JSON] ausgeführt wurde, kann es dann Informationen über seine Ausgaben an alle nachfolgenden Module weitergeben, einschließlich des Iterator-Moduls. Das Zuordnungsbedienfeld bei der Einrichtung des Iterators zeigt dann die folgenden Elemente an:

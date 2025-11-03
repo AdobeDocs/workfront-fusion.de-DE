@@ -112,11 +112,11 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Tabelle]</td> 
+   <td role="rowheader">[!UICONTROL -Tabelle]</td> 
    <td> <p>Wählen Sie die Tabelle aus, die die Antworten aus dem Formular enthält, auf das Sie auf neue Antworten achten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -133,7 +133,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
     <ul> 
      <li> <p><strong>[!UICONTROL formatierter Wert]</strong> </p> <p>Die Werte werden in der Antwort entsprechend der Zellenformatierung berechnet und formatiert. Die Formatierung basiert auf dem Gebietsschema der Tabelle, nicht auf dem Gebietsschema des anfragenden Benutzers. Wenn <code>A1</code> beispielsweise <code>1. 23</code> und <code>A2 </code>als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>$1. 23</code> zurück.</p> </li> 
      <li> <p><strong>[!UICONTROL Unformatted value]</strong> </p> <p>Die Werte werden berechnet, aber in der Antwort nicht formatiert. Wenn <code>A1</code> beispielsweise <code>1. 23</code> und <code>A2 </code>als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> die Zahl <code>1. 23</code> zurück.</p> </li> 
-     <li> <p><strong>[!UICONTROL-Formel]</strong> </p> <p>Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1. 23</code> und <code>A2 </code>als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>=A1</code> zurück.</p> </li> 
+     <li> <p><strong>[!UICONTROL -Formel]</strong> </p> <p>Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1. 23</code> und <code>A2 </code>als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>=A1</code> zurück.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -164,11 +164,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Tabelle]</td> 
+   <td role="rowheader">[!UICONTROL -Tabelle]</td> 
    <td> <p>Wählen Sie das Arbeitsblatt aus, das das Arbeitsblatt enthält, dem Sie eine Antwort hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -176,11 +176,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p> Wählen Sie das Blatt aus, das die Formularantworten enthält.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader"> <p>[!UICONTROL-Werte]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Werte]</p> </td> 
    <td> <p>Geben Sie die gewünschten Werte in die Tabellenspalten ein. Die Spalten sind je nach Blatt verfügbar.</p> <p>Verwenden Sie für die Spalte [!UICONTROL Timestamp] den folgenden Wert:</p><pre>formatDate(now;TT/MM/JJJJ hh:mm;UTC)</pre> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL-Werteingabeoption]</td> 
+   <td role="rowheader">[!UICONTROL -Werteingabeoption]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL RAW]</strong> </p> <p> Die vom Benutzer eingegebenen Werte werden nicht geparst und unverändert gespeichert. </p> </li> 
@@ -207,11 +207,11 @@ Dieses Modul löscht eine ausgewählte Antwort.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Tabelle]</td> 
+   <td role="rowheader">[!UICONTROL -Tabelle]</td> 
    <td> <p>Wählen Sie das Arbeitsblatt aus, das das Arbeitsblatt enthält, in dem Sie eine Antwort löschen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -236,11 +236,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Tabelle]</td> 
+   <td role="rowheader">[!UICONTROL -Tabelle]</td> 
    <td> <p>Wählen Sie die Tabelle aus, die das Blatt enthält, in dem Sie eine Antwort aktualisieren möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -252,11 +252,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Geben Sie die Nummer der Zeile ein, die Sie aktualisieren möchten, oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Werte]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Werte]</p> </td> 
    <td> <p>Geben Sie die neuen Werte für die gewünschten Spalten ein. Die Spalten sind je nach Blatt verfügbar.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL-Werteingabeoption]</td> 
+   <td role="rowheader">[!UICONTROL -Werteingabeoption]</td> 
    <td> 
     <ul> 
      <li> <p><strong>[!UICONTROL RAW]</strong> </p> <p> Die vom Benutzer eingegebenen Werte werden nicht geparst und unverändert gespeichert. </p> </li> 
@@ -283,7 +283,7 @@ Dieses Modul gibt Antworten zurück, die den angegebenen Kriterien entsprechen.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-    <td>[!UICONTROL-Tabelle]</td>
+    <td>[!UICONTROL -Tabelle]</td>
    <td> <p>Wählen Sie das Formular aus, in dem Sie suchen möchten.</p> </td> 
   </tr> 
   <tr data-mc-conditions="">
@@ -312,7 +312,7 @@ Dieses Modul gibt Antworten zurück, die den angegebenen Kriterien entsprechen.
     <ul> 
      <li> <p><strong>[!UICONTROL formatierter Wert]</strong></p> <p>Die Werte werden in der Antwort entsprechend der Zellenformatierung berechnet und formatiert. Die Formatierung basiert auf dem Gebietsschema der Tabelle, nicht auf dem Gebietsschema des anfragenden Benutzers. Wenn <code>A1</code> beispielsweise <code>1. 23</code> und <code>A2 </code>als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>$1. 23</code> zurück.</p> </li> 
      <li> <p><strong>[!UICONTROL Unformatted value]</strong> </p> <p>Die Werte werden berechnet, aber in der Antwort nicht formatiert. Wenn <code>A1</code> beispielsweise <code>1. 23</code> und <code>A2 </code>als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> die Zahl <code>1. 23</code> zurück.</p> </li> 
-     <li> <p><strong>[!UICONTROL-Formel]</strong> </p> <p>Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1. 23</code> und <code>A2 </code>als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>=A1</code> zurück.</p> </li> 
+     <li> <p><strong>[!UICONTROL -Formel]</strong> </p> <p>Werte werden nicht berechnet. Die Antwort enthält die Formeln. Wenn <code>A1</code> beispielsweise <code>1. 23</code> und <code>A2 </code>als Währung <code>=A1</code> und formatiert ist, gibt <code>A2</code> <code>=A1</code> zurück.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr data-mc-conditions="">
@@ -335,11 +335,11 @@ Dieses Modul führt eine Suche mit dem [[!DNL Google Charts Query Language]](htt
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL-Verbindung]</td>
+    <td>[!UICONTROL -Verbindung]</td>
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr>
-    <td>[!UICONTROL-Tabelle]</td>
+    <td>[!UICONTROL -Tabelle]</td>
    <td> <p>Wählen Sie das Arbeitsblatt aus, das das zu durchsuchende Arbeitsblatt enthält.</p> </td> 
   </tr> 
   <tr>
@@ -347,7 +347,7 @@ Dieses Modul führt eine Suche mit dem [[!DNL Google Charts Query Language]](htt
    <td> <p> Wählen Sie das Blatt aus, das die Formularantworten enthält.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
    <td> <p>Definieren Sie die Suchabfrage mithilfe der <a href="https://developers.google.com/chart/interactive/docs/querylanguage">[!DNL Google Charts Query Language]</a>.</p> <p>Beispiel: <code>select * where C = "John"</code> ruft alle Werte für die Zeile ab, in der die Spalte C „John“ lautet.</p> </td> 
   </tr> 
   <tr>

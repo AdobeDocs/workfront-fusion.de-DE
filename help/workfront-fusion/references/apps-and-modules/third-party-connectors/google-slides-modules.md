@@ -115,7 +115,7 @@ Dieses Aktionsmodul erstellt eine Folie oder löscht eine vorhandene Folie in de
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -146,7 +146,7 @@ Dieses Aktionsmodul erstellt eine Folie oder löscht eine vorhandene Folie in de
      <li>[!UICONTROL Layout mit nur einem Titel]</li> 
      <li>[!UICONTROL Layout mit Abschnittstitel]</li> 
      <li>[!UICONTROL Layout mit Titel und Untertitel auf der einen Seite und Beschreibung auf der anderen Seite]</li> 
-     <li>[!UICONTROL-Layout mit einem Titel und einem Hauptteil, in einer einzigen Spalte angeordnet]</li> 
+     <li>[!UICONTROL -Layout mit einem Titel und einem Hauptteil, in einer einzigen Spalte angeordnet]</li> 
      <li>[!UICONTROL Layout mit einem Hauptpunkt]</li> 
      <li>[!DNL Layout with a big number heading]</li> 
     </ul> <p>Dieses Feld ist verfügbar, wenn Sie eine Folie hinzufügen ausgewählt haben.</p> </td> 
@@ -167,7 +167,7 @@ Dieses Aktionsmodul erstellt eine neue Präsentation, indem es eine Präsentatio
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -200,7 +200,7 @@ Dieses Aktionsmodul erstellt eine neue Präsentation, indem es eine Präsentatio
    <td> <p> Wählen Sie die Präsentation aus oder geben Sie die Präsentations-ID der Präsentation ein, die Sie als Vorlage verwenden möchten, oder mappen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Werte] </td> 
+   <td role="rowheader">[!UICONTROL -Werte] </td> 
    <td> <p>Fügen Sie die Werte hinzu:</p> 
     <ul> 
      <li><strong>[!UICONTROL Tag]</strong>: Geben Sie den Tag ein, den Sie in der Präsentation ersetzen möchten. Beispiel: <code>&#123;&#123;Name&#125;&#125;</code></li> 
@@ -240,7 +240,7 @@ Dieses Aktionsmodul ruft die neueste Version der angegebenen Seite oder der Mini
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -271,7 +271,7 @@ Dieses Aktionsmodul ruft die neueste Version einer angegebenen Präsentation ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -299,7 +299,7 @@ Dieses Modul ruft eine Liste aller Präsentationen am angegebenen Ort ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -331,7 +331,7 @@ Dieses Aktionsmodul aktualisiert die Diagrammdaten, die in einer durch die ID an
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -367,7 +367,7 @@ Lädt ein Bild mit den bereitgestellten Daten hoch.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -412,7 +412,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue Präsentation erstellt
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -444,7 +444,7 @@ Dieses Modul macht alle Links in einer Präsentation klickbar oder fügt einen L
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -488,7 +488,7 @@ Führt einen beliebigen autorisierten API-Aufruf aus.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Slides]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -496,11 +496,11 @@ Führt einen beliebigen autorisierten API-Aufruf aus.
    <td> <p>Geben Sie einen Pfad relativ zu <code>https://developers.google.com/slides/</code> ein. z. B. Präsentation.</p> <p>Eine Liste der verfügbaren Endpunkte finden Sie in der <a href="https://developers.google.com/slides/reference/rest">[!DNL Google Slides] API-Dokumentation</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methode]</td> 
+   <td role="rowheader">[!UICONTROL -Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Geben Sie die gewünschten Anfrage-Header ein. Sie müssen keine Autorisierungskopfzeilen hinzufügen.</p> </td> 
   </tr> 
   <tr> 

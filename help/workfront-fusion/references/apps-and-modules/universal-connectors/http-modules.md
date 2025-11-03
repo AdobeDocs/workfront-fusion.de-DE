@@ -118,7 +118,7 @@ Dieses Aktionsmodul löst eine Kette von HTTP-Umleitungen auf und gibt eine Ziel
    <td> <p>Geben Sie die URL ein, die Sie auflösen möchten, oder ordnen Sie sie zu, z. B. eine [!DNL bit.ly] URL.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methode] </td> 
+   <td role="rowheader">[!UICONTROL -Methode] </td> 
    <td> <p>Wählen Sie aus, ob Sie die Methode [!UICONTROL HEAD] oder die Methode [!UICONTROL GET] verwenden möchten.</p> </td> 
   </tr> 
  </tbody> 

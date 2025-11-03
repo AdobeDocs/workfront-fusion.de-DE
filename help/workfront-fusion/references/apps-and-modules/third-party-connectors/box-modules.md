@@ -281,7 +281,7 @@ Dieses Aktionsmodul erstellt einen neuen leeren Ordner im angegebenen übergeord
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -312,11 +312,11 @@ Dieses Aktionsmodul ruft Details für einen Ordner ab, einschließlich der erste
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ordner]</td> 
+   <td role="rowheader">[!UICONTROL -Ordner]</td> 
    <td> <p>Wählen Sie den Ordner aus, für den Sie Details abrufen möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -331,15 +331,15 @@ Dieses Aktionsmodul ruft Ordnermetadaten nach Ordner-ID ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Umfang]</td> 
+   <td role="rowheader">[!UICONTROL -Umfang]</td> 
    <td> <p>Wählen Sie den Umfang aus, den Sie für diesen Metadatenabruf verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ordner]</td> 
+   <td role="rowheader">[!UICONTROL -Ordner]</td> 
    <td> <p>Wählen Sie den Ordner aus, für den Sie Metadaten abrufen möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -356,7 +356,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Box-API durch
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -364,11 +364,11 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Box-API durch
    <td>Geben Sie einen Pfad relativ zu <code>https://api.box.com</code> ein. <p>Beispiel: <code>/2.0/users/me</code></p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methode]</td> 
+   <td role="rowheader">[!UICONTROL -Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -394,15 +394,15 @@ Dieses Aktionsmodul erstellt oder aktualisiert die Metadaten eines Ordners.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Umfang]</td> 
+   <td role="rowheader">[!UICONTROL -Umfang]</td> 
    <td> <p>Wählen Sie den Bereich aus, den Sie für diese Metadatenaktualisierung verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ordner]</td> 
+   <td role="rowheader">[!UICONTROL -Ordner]</td> 
    <td> <p>Wählen Sie den Ordner aus, für den Sie Metadaten aktualisieren möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -420,15 +420,15 @@ Dieses Suchmodul sucht nach Elementen, die dem Benutzer oder dem gesamten Untern
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
    <td> <p>Geben Sie die Zeichenfolge ein, nach der gesucht werden soll, oder ordnen Sie sie zu. Diese Abfrage wird mit Elementnamen, Beschreibungen, Textinhalten von Dateien und verschiedenen anderen Feldern der verschiedenen Elementtypen abgeglichen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Umfang]</td> 
+   <td role="rowheader">[!UICONTROL -Umfang]</td> 
    <td> <p>Wählen Sie aus, ob Sie nach Inhalten suchen, die mit dem Benutzer verknüpft sind, dessen Anmeldeinformationen für die in diesem Modul verwendete Verbindung verwendet werden, oder nach Inhalten suchen, die mit dem gesamten Unternehmen verknüpft sind.</p> </td> 
   </tr> 
   <tr> 
@@ -464,7 +464,7 @@ Dieses Suchmodul sucht nach Elementen, die dem Benutzer oder dem gesamten Untern
    <td> <p>Um nach Assets zu suchen, die in einem bestimmten Datumsbereich aktualisiert wurden, geben Sie das neueste Datum im Bereich ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Felder]</td> 
+   <td role="rowheader">[!UICONTROL -Felder]</td> 
    <td> <p>Klicken Sie für jedes Attribut, das Sie in der Modulantwort zurückgeben möchten, auf <b>Element hinzufügen</b> und geben Sie das Feld ein.</p><p>Dies kann verwendet werden, um Felder anzufordern, die normalerweise nicht in einer Standardantwort zurückgegeben werden. Beachten Sie, dass die Angabe dieses Parameters dazu führt, dass keines der Standardfelder in der Antwort zurückgegeben wird, es sei denn, dies wird explizit angegeben. </p></td> 
   </tr> 
   <tr> 

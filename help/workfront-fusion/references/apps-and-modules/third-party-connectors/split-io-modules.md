@@ -152,7 +152,7 @@ Dieses Aktionsmodul fügt dem angegebenen Objekt Tags hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -187,7 +187,7 @@ Dieses Aktionsmodul erstellt bei einem Traffic-Typ eine neue Aufspaltung in Ihre
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -218,7 +218,7 @@ Dieses Aktionsmodul konfiguriert eine Aufspaltungsdefinition für eine bestimmte
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -238,7 +238,7 @@ Dieses Aktionsmodul konfiguriert eine Aufspaltungsdefinition für eine bestimmte
    <td>Geben Sie alle Kommentare ein, die Sie der Aufspaltungsdefinition hinzufügen möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Regeln]</td> 
+   <td role="rowheader">[!UICONTROL -Regeln]</td> 
    <td> <p>Klicken Sie für jede Targeting-Regel, die Sie der Definition hinzufügen möchten, auf <b>[!UICONTROL Element hinzufügen]</b> und geben Sie dann die Regel ein oder ordnen Sie sie zu. </td> 
   </tr> 
   <tr> 
@@ -265,7 +265,7 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -273,11 +273,11 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten 
    <td>Geben Sie einen Pfad relativ zu <code>https://api.split.io/internal/api/v2/</code> ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methode]</td> 
+   <td role="rowheader">[!UICONTROL -Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -307,7 +307,7 @@ Dieses Aktionsmodul löscht eine Aufspaltung aus Ihrer Organisation. Dadurch wir
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -330,7 +330,7 @@ Dieses Aktionsmodul ruft die Aufspaltung ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -353,7 +353,7 @@ Dieses Aktionsmodul ruft eine bestimmte Aufspaltungsdefinition aus der angegeben
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -380,7 +380,7 @@ Dieses Aktionsmodul aktualisiert eine Aufspaltungsdefinition für eine bestimmte
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -415,7 +415,7 @@ Mit diesem Aktionsmodul wird die Konfiguration einer Aufspaltungsdefinition für
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -446,7 +446,7 @@ Dieses Aktionsmodul fügt dem angegebenen Objekt Tags hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -485,7 +485,7 @@ Dieses Suchmodul ruft eine Liste von Umgebungen ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -504,7 +504,7 @@ Dieses Suchmodul ruft eine Liste von Traffic-Typen ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -523,7 +523,7 @@ Dieses Suchmodul ruft die Arbeitsbereiche für eine Organisation ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -542,7 +542,7 @@ Dieses Suchmodul ruft eine Liste von Aufspaltungsdefinitionen in einer bestimmte
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -569,7 +569,7 @@ Dieses Suchmodul ruft eine Liste von Teilungen ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Split.io]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-split-io-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Split.io] mit [!UICONTROL Workfront Fusion] </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 

@@ -86,7 +86,7 @@ Der SharePoint-Connector verwendet Folgendes:
 
 ## Verbinden von Microsoft SharePoint Online mit Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines - [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines - [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe der erweiterten Einstellungen](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe der Zertifikatautorisierung](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
@@ -229,7 +229,7 @@ Dieses Modul gibt Änderungen zurück, die in SharePoint vorgenommen wurden.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -255,7 +255,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner in SharePoint.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -282,7 +282,7 @@ Dieses Aktionsmodul ruft die angegebene SharePoint-Datei ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -305,7 +305,7 @@ Dieses Modul hat Details zum angegebenen Ordner abgerufen
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -328,7 +328,7 @@ Dieses Aktionsmodul aktualisiert die Metadaten eines Ordners oder einer Datei
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -340,7 +340,7 @@ Dieses Aktionsmodul aktualisiert die Metadaten eines Ordners oder einer Datei
     </ul> </td> 
   </tr> 
   </tr> 
-   <td role="rowheader">[!UICONTROL-Felder]</td> 
+   <td role="rowheader">[!UICONTROL -Felder]</td> 
    <td>Klicken Sie für jedes Metadatenfeld, das Sie aktualisieren möchten, auf <b>Element hinzufügen</b> und geben Sie den Pfad und den Wert des Felds ein.</td> 
   <tr>
 </tbody> 
@@ -355,7 +355,7 @@ Dieses Ordnermodul startet ein Trigger, wenn ein Element in einem ausgewählten 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -395,7 +395,7 @@ Dieses Aktionsmodul kopiert ein vorhandenes Element in eine SharePoint-Liste.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -426,7 +426,7 @@ Dieses Aktionsmodul erstellt ein neues Element in einer SharePoint-Liste.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -438,7 +438,7 @@ Dieses Aktionsmodul erstellt ein neues Element in einer SharePoint-Liste.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Felder]</td> 
+   <td role="rowheader">[!UICONTROL -Felder]</td> 
    <td>Klicken Sie für jedes Feld, das Sie für das neue Element festlegen möchten, auf <b>Element hinzufügen</b> und geben Sie den Schlüssel des Felds (der das Feld identifiziert) und den Wert ein, den das neue Element für dieses Feld haben soll.</td> 
   </tr> 
  </tbody> 
@@ -453,7 +453,7 @@ Dieses Aktionsmodul löscht ein vorhandenes Element in einer SharePoint-Liste.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -476,7 +476,7 @@ Dieses Aktionsmodul gibt die Daten eines angegebenen Elements zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -499,7 +499,7 @@ Dieses Modul ruft Elementdetails von der angegebenen URL ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -518,7 +518,7 @@ Dieses Aktionsmodul ruft eine Liste aller Elemente in einer angegebenen Liste ab
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -545,7 +545,7 @@ Dieses Aktionsmodul kopiert ein vorhandenes Element in eine SharePoint-Liste.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -576,7 +576,7 @@ Dieses Aktionsmodul aktualisiert ein vorhandenes Element in einer SharePoint-Lis
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -588,7 +588,7 @@ Dieses Aktionsmodul aktualisiert ein vorhandenes Element in einer SharePoint-Lis
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Felder]</td> 
+   <td role="rowheader">[!UICONTROL -Felder]</td> 
    <td>Klicken Sie für jedes Feld, das Sie für das neue Element aktualisieren möchten, auf <b>Element hinzufügen</b> und geben Sie den Schlüssel des Felds (der das Feld identifiziert) und den neuen Wert ein, den das Element für dieses Feld haben soll.</td> 
   </tr> 
  </tbody> 
@@ -603,7 +603,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Element erstellt oder geänd
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -641,7 +641,7 @@ Dieses Aktionsmodul erstellt eine neue Liste in SharePoint.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -676,7 +676,7 @@ Dieses Aktionsmodul gibt die Daten einer angegebenen Liste zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -699,11 +699,11 @@ Dieses Aktionsmodul ruft eine Liste aller Elemente in einer angegebenen Site ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Listen]</td> 
+   <td role="rowheader">[!UICONTROL -Listen]</td> 
    <td> <p>Wählen Sie aus, wie Sie die Website identifizieren möchten, von der Sie Listen abrufen möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Manuell eingeben]</strong> </p> <p>Geben Sie die <strong>[!UICONTROL Site ID]</strong> ein, die die Listen enthält, die Sie zurückgeben möchten, oder ordnen Sie sie zu.</p> </li> 
@@ -726,7 +726,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine Liste erstellt oder geände
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -768,11 +768,11 @@ Dieses Aktionsmodul gibt die Daten einer angegebenen Seite zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, Seite abrufen]</td> 
+   <td role="rowheader">[!UICONTROL , Seite abrufen]</td> 
    <td> <p>Wählen Sie aus, wie Sie die abzurufende Seite identifizieren möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Manuell eingeben]</strong> </p> <p>Geben Sie die <strong>[!UICONTROL Site ID]und </strong>[!UICONTROL Page ID]<strong> ein oder ordnen Sie sie </strong>.</p> </li> 
@@ -791,7 +791,7 @@ Dieses Modul ruft eine Liste aller Seiten ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -818,11 +818,11 @@ Dieses Aktionsmodul veröffentlicht die neueste Version der ausgewählten Seite.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, Seite veröffentlichen]</td> 
+   <td role="rowheader">[!UICONTROL , Seite veröffentlichen]</td> 
    <td> <p>Wählen Sie aus, wie Sie die Seite identifizieren möchten, die Sie veröffentlichen möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Manuell eingeben]</strong> </p> <p>Geben Sie die <strong>[!UICONTROL Site ID]und </strong>[!UICONTROL Page ID]<strong> ein oder ordnen Sie sie </strong>.</p> </li> 
@@ -841,7 +841,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine Seite auf der angegebenen S
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -873,7 +873,7 @@ Dieses Aktionsmodul gibt die Daten einer angegebenen Site zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -896,7 +896,7 @@ Dieses Aktionsmodul sucht nach Sites anhand eines von Ihnen angegebenen Paramete
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -925,7 +925,7 @@ Dieses Modul ruft Ergänzungen, Aktualisierungen und Löschungen ab, die im Shar
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -952,7 +952,7 @@ Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -960,11 +960,11 @@ Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
    <td> <p>Geben Sie einen Pfad relativ zu <code>https://graph.microsoft.com</code> ein. Beispiel:<code> /beta/sites</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Methode]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Methode]</p> </td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code>. Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 

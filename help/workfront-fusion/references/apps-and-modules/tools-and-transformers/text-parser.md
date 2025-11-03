@@ -190,7 +190,7 @@ Eine Diskussion über reguläre Ausdrücke würde den Rahmen dieses Artikels spr
    <td> <p>Aktivieren Sie diese Option, um sicherzustellen, dass das Modul das Szenario nicht stoppt, wenn es keine Ergebnisse zurückgibt.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Text] </td> 
+   <td>[!UICONTROL -Text] </td> 
    <td> <p>Geben Sie den Text ein, der dem Muster entsprechen soll, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -229,7 +229,7 @@ Durchsucht den eingegebenen Text nach einem angegebenen Wert oder regulären Aus
    <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Punkt (.) mit Zeilenumbruchzeichen (<code>\n</code>) übereinstimmt.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Text] </td> 
+   <td>[!UICONTROL -Text] </td> 
    <td> <p>Geben Sie den zu suchenden Text ein.</p> </td> 
   </tr> 
  </tbody> 

@@ -115,7 +115,7 @@ Dieses Aktionsmodul schließt (archiviert) oder öffnet eine angegebene Pinnwand
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -140,7 +140,7 @@ Dieses Aktionsmodul weist einem Board, das Sie angeben, ein Mitglied zu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -178,7 +178,7 @@ Dieses Aktionsmodul erstellt eine neue Pinnwand mit den ausgewählten Einstellun
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -238,7 +238,7 @@ Dieses Aktionsmodul erstellt eine neue Pinnwand mit den ausgewählten Einstellun
    <td> <p>Wählen Sie <strong>[!UICONTROL Yes]</strong> aus, wenn Sie Kartenabdeckungen für die Pinnwand aktivieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Hintergrund]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Hintergrund]</p> </td> 
    <td> <p>Wählen Sie die Hintergrundfarbe oder den benutzerdefinierten Hintergrund aus.</p> <p>Hinweis: Benutzerdefinierte Hintergründe stehen nur [!UICONTROL Trello Gold and Business Class]-Abonnenten zur Verfügung.</p> </td> 
   </tr> 
   <tr> 
@@ -250,7 +250,7 @@ Dieses Aktionsmodul erstellt eine neue Pinnwand mit den ausgewählten Einstellun
    <td> <p>Wählen Sie zwischen zwei Modi für die Kartenalterung. </p> 
     <ul> 
      <li><strong>[!UICONTROL Pirate mode]</strong>: Die Karten werden reißen, gelb werden und brechen wie eine alte Piratenkarte, wenn sie altern.</li> 
-     <li><strong>[!UICONTROL Regulärer Modus ]</strong>: Karten werden mit zunehmendem Alter immer transparenter. </li> 
+     <li><strong>[!UICONTROL Regulärer Modus &#x200B;]</strong>: Karten werden mit zunehmendem Alter immer transparenter. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -265,95 +265,95 @@ Dieses Aktionsmodul bearbeitet die Einstellungen einer vorhandenen Pinnwand.
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-<col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
-   <td> <p>Geben Sie die eindeutige [!UICONTROL Trello]-ID der Pinnwand ein, die das Modul erstellen soll, oder ordnen Sie sie zu. Sie können die Board-ID mit einem anderen Modul abrufen, z. B. dem Modul Pinnwände beobachten .</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Neuer Name]</td> 
-   <td> <p> Geben Sie einen neuen Namen für die Pinnwand ein oder ordnen Sie ihn zu.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Neue Beschreibung]</td> 
-   <td> <p> Eine neue Pinnwand-Beschreibung eingeben oder zuordnen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Organisations-ID]</p> </td> 
-   <td> <p>Geben Sie die eindeutige [!UICONTROL Trello]-ID der Pinnwand ein, die das Modul bearbeiten soll, oder ordnen Sie sie zu.  </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL abonnieren] </td> 
-   <td> <p>Wählen Sie eine Option, um anzugeben, ob der Benutzer, dem die von diesem Modul verwendete Verbindung gehört, die Pinnwand abonniert hat.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Berechtigungsstufe]</p> </td> 
-   <td> <p>Die Boards haben für jede Berechtigungsstufe unterschiedliche Abstimmungs- und Kommentierungsregeln. Beispiel: Wenn Ihr Board [!UICONTROL Private] ist und Sie die Abstimmungs- und Kommentar-Regeln auf [!UICONTROL All] setzen, erhalten Sie einen Fehler. </p> <p>Abstimmungen und Kommentare sind für jede Berechtigungsstufe auf die folgenden Gruppen beschränkt:</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Privat]</strong>: 
-      Mitglieder, Mitglieder und Beobachter</li> 
-     <li><strong>[!UICONTROL für Organisation]</strong>: 
-      Mitglieder, Mitglieder und Beobachter, Mitglieder der Organisation</li> 
-     <li><strong>[!UICONTROL public]</strong>: 
-      Mitglieder, Mitglieder und Beobachter, Organisationsmitglieder, Alle</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Abstimmung]</p> </td> 
-   <td> <p>Wählen Sie eine Option aus, um festzulegen, wer auf diesem Board stimmen darf. Siehe das Feld [!UICONTROL Berechtigungsstufe] für Abstimmungseinschränkungen bei Berechtigungsebenen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Kommentare]</p> </td> 
-   <td> <p>Wählen Sie eine Option aus, um anzugeben, wer Karten für diese Pinnwand kommentieren darf. Siehe das Feld [!UICONTROL Berechtigungsstufe] für Kommentare zu Einschränkungen bei Berechtigungsebenen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Einladungen] </td> 
-   <td> <p>Wählen Sie aus, wer Personen zu diesem Board einladen kann.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Self-Join]</td> 
-   <td> <p> Wählen Sie aus, ob die Team-Mitglieder dem Board selbst beitreten können oder eingeladen werden müssen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Kartenabdeckungen]</td> 
-   <td> <p> Wählen Sie aus, ob Kartenabdeckungen auf dieser Pinnwand angezeigt werden sollen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL-Hintergrund] </td> 
-   <td> <p>Wählen Sie die Hintergrundfarbe oder den benutzerdefinierten Hintergrund aus.</p> <p>Hinweis: Benutzerdefinierte Hintergründe stehen nur [!UICONTROL Trello Gold and Business Class]-Abonnenten zur Verfügung.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Hintergrundkennung]</td> 
-   <td> <p> Wenn Sie die Verwendung eines benutzerdefinierten Hintergrunds im Feld [!UICONTROL Background] ausgewählt haben, geben Sie die ID des Hintergrunds ein, den Sie verwenden möchten, oder ordnen Sie sie zu.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Karte wird gealtert]</p> </td> 
-   <td> <p>Wählen Sie zwischen zwei Modi für die Kartenalterung. </p> 
-    <ul> 
-     <li><strong>[!UICONTROL Pirate mode]</strong>: Die Karten werden reißen, gelb werden und brechen wie eine alte Piratenkarte, wenn sie altern.</li> 
-     <li><strong>[!UICONTROL Regulärer Modus]</strong>: Karten werden mit zunehmendem Alter immer transparenter. </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Kalenderfeed aktiviert]</td> 
-   <td> <p> Wählen Sie aus, ob der Kalenderfeed aktiviert ist oder nicht.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL &lt;color&gt; Titelname]</td> 
-   <td> <p> Weisen Sie dem gewünschten Farblabel einen Namen zu.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL-Archiv] </td> 
-   <td> <p>Wählen Sie eine Option aus, um anzugeben, ob Sie die Pinnwand archivieren (schließen) möchten. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+><col> 
+> <col> 
+> <tbody> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+>   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
+>   <td> <p>Geben Sie die eindeutige [!UICONTROL Trello]-ID der Pinnwand ein, die das Modul erstellen soll, oder ordnen Sie sie zu. Sie können die Board-ID mit einem anderen Modul abrufen, z. B. dem Modul Pinnwände beobachten .</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Neuer Name]</td> 
+>   <td> <p> Geben Sie einen neuen Namen für die Pinnwand ein oder ordnen Sie ihn zu.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Neue Beschreibung]</td> 
+>   <td> <p> Eine neue Pinnwand-Beschreibung eingeben oder zuordnen.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Organisations-ID]</p> </td> 
+>   <td> <p>Geben Sie die eindeutige [!UICONTROL Trello]-ID der Pinnwand ein, die das Modul bearbeiten soll, oder ordnen Sie sie zu.  </p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL abonnieren] </td> 
+>   <td> <p>Wählen Sie eine Option, um anzugeben, ob der Benutzer, dem die von diesem Modul verwendete Verbindung gehört, die Pinnwand abonniert hat.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Berechtigungsstufe]</p> </td> 
+>   <td> <p>Die Boards haben für jede Berechtigungsstufe unterschiedliche Abstimmungs- und Kommentierungsregeln. Beispiel: Wenn Ihr Board [!UICONTROL Private] ist und Sie die Abstimmungs- und Kommentar-Regeln auf [!UICONTROL All] setzen, erhalten Sie einen Fehler. </p> <p>Abstimmungen und Kommentare sind für jede Berechtigungsstufe auf die folgenden Gruppen beschränkt:</p> 
+>    <ul> 
+>     <li><strong>[!UICONTROL Privat]</strong>: 
+>      Mitglieder, Mitglieder und Beobachter</li> 
+>     <li><strong>[!UICONTROL für Organisation]</strong>: 
+>      Mitglieder, Mitglieder und Beobachter, Mitglieder der Organisation</li> 
+>     <li><strong>[!UICONTROL public]</strong>: 
+>      Mitglieder, Mitglieder und Beobachter, Organisationsmitglieder, Alle</li> 
+>    </ul> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Abstimmung]</p> </td> 
+>   <td> <p>Wählen Sie eine Option aus, um festzulegen, wer auf diesem Board stimmen darf. Siehe das Feld [!UICONTROL Berechtigungsstufe] für Abstimmungseinschränkungen bei Berechtigungsebenen.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Kommentare]</p> </td> 
+>   <td> <p>Wählen Sie eine Option aus, um anzugeben, wer Karten für diese Pinnwand kommentieren darf. Siehe das Feld [!UICONTROL Berechtigungsstufe] für Kommentare zu Einschränkungen bei Berechtigungsebenen.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Einladungen] </td> 
+>   <td> <p>Wählen Sie aus, wer Personen zu diesem Board einladen kann.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Self-Join]</td> 
+>   <td> <p> Wählen Sie aus, ob die Team-Mitglieder dem Board selbst beitreten können oder eingeladen werden müssen.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Kartenabdeckungen]</td> 
+>   <td> <p> Wählen Sie aus, ob Kartenabdeckungen auf dieser Pinnwand angezeigt werden sollen.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL -Hintergrund] </td> 
+>   <td> <p>Wählen Sie die Hintergrundfarbe oder den benutzerdefinierten Hintergrund aus.</p> <p>Hinweis: Benutzerdefinierte Hintergründe stehen nur [!UICONTROL Trello Gold and Business Class]-Abonnenten zur Verfügung.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Hintergrundkennung]</td> 
+>   <td> <p> Wenn Sie die Verwendung eines benutzerdefinierten Hintergrunds im Feld [!UICONTROL Background] ausgewählt haben, geben Sie die ID des Hintergrunds ein, den Sie verwenden möchten, oder ordnen Sie sie zu.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Karte wird gealtert]</p> </td> 
+>   <td> <p>Wählen Sie zwischen zwei Modi für die Kartenalterung. </p> 
+>    <ul> 
+>     <li><strong>[!UICONTROL Pirate mode]</strong>: Die Karten werden reißen, gelb werden und brechen wie eine alte Piratenkarte, wenn sie altern.</li> 
+>     <li><strong>[!UICONTROL Regulärer Modus]</strong>: Karten werden mit zunehmendem Alter immer transparenter. </li> 
+>    </ul> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Kalenderfeed aktiviert]</td> 
+>   <td> <p> Wählen Sie aus, ob der Kalenderfeed aktiviert ist oder nicht.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL &lt;color&gt; Titelname]</td> 
+>   <td> <p> Weisen Sie dem gewünschten Farblabel einen Namen zu.</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL -Archiv] </td> 
+>   <td> <p>Wählen Sie eine Option aus, um anzugeben, ob Sie die Pinnwand archivieren (schließen) möchten. </p> </td> 
+>  </tr> 
+> </tbody> 
+></table>
 
 
 +++
@@ -367,7 +367,7 @@ Dieses Aktionsmodul ruft die Details einer Pinnwand ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -388,11 +388,11 @@ Dieses Suchmodul ruft Informationen zu einer Pinnwand ab, die Sie angeben.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Abfrage] </td> 
+   <td role="rowheader">[!UICONTROL -Abfrage] </td> 
    <td> <p>Geben Sie den Namen (oder einen Teil des Namens) der Pinnwand ein, zu der Sie Informationen erhalten möchten, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
   <tr> 
@@ -421,7 +421,7 @@ Dieses Aktionsmodul entfernt ein Mitglied aus einer Pinnwand.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -429,7 +429,7 @@ Dieses Aktionsmodul entfernt ein Mitglied aus einer Pinnwand.
    <td> <p> Geben Sie die ID der Pinnwand ein (zuordnen oder auswählen), aus der Sie den Benutzer entfernen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Member] </td> 
+   <td role="rowheader">[!UICONTROL -Member] </td> 
    <td> <p>Wählen Sie das Mitglied aus, das Sie aus der Pinnwand entfernen möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -446,7 +446,7 @@ Dieses Trigger-Modul beginnt ein Szenario, wenn eine neue Pinnwand hinzugefügt 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -469,7 +469,7 @@ Dieses Aktionsmodul erstellt eine Liste auf einer Pinnwand, für die Sie angeben
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -481,7 +481,7 @@ Dieses Aktionsmodul erstellt eine Liste auf einer Pinnwand, für die Sie angeben
    <td> <p>Geben Sie einen Namen für die neue Liste ein oder mappen Sie ihn.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Position] </td> 
+   <td role="rowheader">[!UICONTROL -Position] </td> 
    <td> <p>Wählen Sie aus, ob Sie die Liste oben hinzufügen oder unten auf der Karte anhängen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -506,7 +506,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Liste.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -522,7 +522,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Liste.
    <td> <p> Ordnen Sie die Pinnwand zu, auf die Sie die Liste verschieben möchten, oder wählen Sie sie aus.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Position] </td> 
+   <td role="rowheader">[!UICONTROL -Position] </td> 
    <td> <p>Wählen Sie aus, ob Sie die Liste oben hinzufügen oder unten auf der Karte anhängen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -543,7 +543,7 @@ Dieses Aktionsmodul ruft Details zu einer bestimmten Liste ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -564,15 +564,15 @@ Dieses Kartenmodul wird aktiviert, wenn eine Trigger in eine bestimmte Liste ver
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Pinnwand]</td> 
+   <td role="rowheader">[!UICONTROL -Pinnwand]</td> 
    <td>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie auf Karten überprüfen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Liste]</td> 
+   <td role="rowheader">[!UICONTROL -Liste]</td> 
    <td>Wählen Sie die Liste aus, die Sie auf Karten überwachen möchten.</td> 
   </tr> 
   <tr> 
@@ -595,7 +595,7 @@ Dieses Aktionsmodul fügt der ausgewählten Karte einen Anhang hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -610,7 +610,7 @@ Dieses Aktionsmodul fügt der ausgewählten Karte einen Anhang hinzu.
    <td role="rowheader"> <p>[!UICONTROL Anlagentyp]</p> </td> 
    <td> <p>Wählen Sie aus, ob Sie die Datei direkt hochladen oder eine URL zur Datei angeben möchten.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL-Datei]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
+     <li> <p><strong>[!UICONTROL -Datei]</strong> </p> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
      <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL zur Datei und einen Namen für den Anhang an.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -628,7 +628,7 @@ Dieses Aktionsmodul archiviert oder sendet eine Karte zurück an die Pinnwand.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -653,7 +653,7 @@ Dieses Aktionsmodul erstellt eine Karte in einer ausgewählten Liste.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -665,11 +665,11 @@ Dieses Aktionsmodul erstellt eine Karte in einer ausgewählten Liste.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kennzeichnungen] </td> 
+   <td role="rowheader">[!UICONTROL -Kennzeichnungen] </td> 
    <td> <p>Klicken Sie für jede Beschriftung, die Sie der Karte hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die ID der Beschriftung ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Member]</td> 
+   <td role="rowheader">[!UICONTROL -Member]</td> 
    <td>Klicken Sie für jedes Mitglied, das Sie der Karte hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die ID des Mitglieds ein. </td> 
   </tr> 
   <tr> 
@@ -681,7 +681,7 @@ Dieses Aktionsmodul erstellt eine Karte in einer ausgewählten Liste.
    <td> <p>Geben Sie eine Beschreibung für die Karte ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Position] </td> 
+   <td role="rowheader">[!UICONTROL -Position] </td> 
    <td> <p>Wählen Sie aus, ob Sie die Karte oben hinzufügen möchten oder ob Sie die Karte am Ende der Liste anhängen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -725,7 +725,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Karte.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -749,11 +749,11 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Karte.
    <td> <p>Wählen Sie die Pinnwand oder die Pinnwand aus und geben Sie an, wohin die Karte verschoben werden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kennzeichnungen] </td> 
+   <td role="rowheader">[!UICONTROL -Kennzeichnungen] </td> 
    <td> <p>Klicken Sie für jede Beschriftung, die Sie der Karte hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die ID der Beschriftung ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Position] </td> 
+   <td role="rowheader">[!UICONTROL -Position] </td> 
    <td> <p>Wählen Sie aus, ob Sie die Karte oben hinzufügen möchten oder [!UICONTROL hängen] Sie die Karte am Ende der Liste an.</p> </td> 
   </tr> 
   <tr> 
@@ -765,7 +765,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Karte.
    <td> <p> Aktivieren Sie diese Option, um die Karte am Fälligkeitsdatum als abgeschlossen zu markieren.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Member] </td> 
+   <td role="rowheader">[!UICONTROL -Member] </td> 
    <td> <p>Klicken Sie für jedes Mitglied, das Sie der Karte hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die ID des Mitglieds ein oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
@@ -777,7 +777,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Karte.
    <td> <p>Wählen Sie aus, ob das Mitglied die Karte abonnieren soll.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Archiv] </td> 
+   <td role="rowheader">[!UICONTROL -Archiv] </td> 
    <td> <p>Wählen Sie eine Option aus, um anzugeben, ob Sie die Karte archivieren (schließen) möchten. </p> </td> 
   </tr> 
  </tbody> 
@@ -794,7 +794,7 @@ Dieses Aktionsmodul ruft die Details einer ausgewählten Karte ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -823,15 +823,15 @@ Dieses Aktionsmodul gibt Karten zurück, die mit der Suchanfrage übereinstimmen
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Pinnwand] </td> 
+   <td role="rowheader">[!UICONTROL -Pinnwand] </td> 
    <td> <p>Wählen Sie die Pinnwände aus, die Sie durchsuchen möchten. Wenn keine Pinnwand ausgewählt ist, werden alle Pinnwände durchsucht.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Abfrage]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Abfrage]</p> </td> 
    <td> <p>Geben Sie die Suchanfrage ein. Sie können Ihre Suche mithilfe der folgenden Suchoperatoren verfeinern:</p> 
     <ul> 
      <li><code><strong>-operator</strong></code> <p>Sie können "-" zu jedem Operator hinzufügen, um eine negative Suche durchzuführen, z. B. <code>[!UICONTROL -has:members]</code> nach Karten zu suchen, ohne dass ein Mitglied zugewiesen ist.</p> </li> 
@@ -857,7 +857,7 @@ Dieses Aktionsmodul gibt Karten zurück, die mit der Suchanfrage übereinstimmen
    <td> <p>Standardmäßig durchsucht dieses Modul den Mitgliederinhalt nach exakten Übereinstimmungen der einzelnen Wörter in Ihrer Abfrage. Wenn [!UICONTROL Partial] aktiviert ist, sucht das Modul nach Inhalten, die mit einem beliebigen Wort in der Abfrage beginnen.</p> <p> Wenn Sie beispielsweise das Wort „Entwicklung“ verwenden, um nach einer Pinnwand mit dem Titel „Mein Entwicklungsstatusbericht“ zu suchen, müssen Sie standardmäßig nach dem gesamten Wort suchen. Wenn Sie [!UICONTROL Partial] aktiviert haben, können Sie nach „dev“, aber nicht nach „development“ suchen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Karten] </td> 
+   <td role="rowheader">[!UICONTROL -Karten] </td> 
    <td> <p>Um nach bestimmten Karten zu suchen<b> klicken Sie auf </b>Element hinzufügen“ und fügen Sie die ID der Karte hinzu.</p> </td> 
   </tr> 
  </tbody> 
@@ -874,7 +874,7 @@ Dieses Kartenmodul startet ein Trigger, wenn eine neue Karte hinzugefügt wird.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -906,7 +906,7 @@ Dieses Aktionsmodul fügt das angegebene Mitglied zur angegebenen Karte hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -924,7 +924,7 @@ Dieses Aktionsmodul fügt das angegebene Mitglied zur angegebenen Karte hinzu.
 
 +++ **[!UICONTROL Mitglied einem Board zuweisen]**
 
-Siehe [!UICONTROL Zuweisen eines Mitglieds zu einem ]&quot; unter [Pinnwände](#boards).
+Siehe [!UICONTROL Zuweisen eines Mitglieds zu einem &#x200B;]&quot; unter [Pinnwände](#boards).
 
 +++
 
@@ -937,11 +937,11 @@ Dieses Aktionsmodul ruft Informationen über [!UICONTROL Trello]-Mitglieder ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Abfrage] </td> 
+   <td role="rowheader">[!UICONTROL -Abfrage] </td> 
    <td> <p>Geben Sie den Namen oder Benutzernamen des Benutzers ein, den Sie suchen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -974,7 +974,7 @@ Dieses Aktionsmodul erstellt eine Checkliste für die ausgewählte Karte.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -990,7 +990,7 @@ Dieses Aktionsmodul erstellt eine Checkliste für die ausgewählte Karte.
    <td> <p>Geben Sie einen Namen für die Checkliste ein oder mappen Sie ihn.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Position] </td> 
+   <td role="rowheader">[!UICONTROL -Position] </td> 
    <td> <p>Wählen Sie aus, ob Sie die Checkliste oben hinzufügen möchten oder ob Sie die Checkliste am unteren Rand der Karte anhängen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -1011,7 +1011,7 @@ Dieses Aktionsmodul fügt ein Element zu einer bestimmten Checkliste hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1027,7 +1027,7 @@ Dieses Aktionsmodul fügt ein Element zu einer bestimmten Checkliste hinzu.
    <td> <p>Geben Sie einen Namen für das neue Element ein oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Position]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Position]</p> </td> 
    <td> <p>Wählen Sie aus, ob Sie das Element oben oder [!UICONTROL append] unten in der Checkliste hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -1048,7 +1048,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Checkliste.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1068,11 +1068,11 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Checkliste.
    <td> <p>Geben Sie einen Namen für das neue Element ein oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Position]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Position]</p> </td> 
    <td> <p>Wählen Sie aus, ob Sie das Element oben hinzufügen oder am Ende der Checkliste anhängen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Status]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Status]</p> </td> 
    <td> <p>Auswählen, ob das Checklisten-Element vollständig oder unvollständig ist.</p> </td> 
   </tr> 
  </tbody> 
@@ -1091,7 +1091,7 @@ Dieses Aktionsmodul fügt einer ausgewählten Karte einen Titel hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1118,7 +1118,7 @@ Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1130,7 +1130,7 @@ Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kommentar] </td> 
+   <td role="rowheader">[!UICONTROL -Kommentar] </td> 
    <td> <p>Geben Sie den Kommentar ein, den Sie der ausgewählten Karte hinzufügen möchten, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -1145,7 +1145,7 @@ Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1182,7 +1182,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Kommentar hinzugefügt wird.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1191,8 +1191,8 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Kommentar hinzugefügt wird.
     <ul> 
      <li><strong>[!UICONTROL Alle Karten] überall</strong> </li> 
      <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>Pinnwand auswählen, auf der Kommentare angezeigt werden sollen</p> </li> 
-     <li> <p><strong>[!UICONTROL-Liste]</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie auf Kommentare überwachen möchten, und wählen Sie dann die Liste aus.</p> </li> 
-     <li><strong>[!UICONTROL-Karte]</strong> </li> 
+     <li> <p><strong>[!UICONTROL -Liste]</strong> </p> <p>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie auf Kommentare überwachen möchten, und wählen Sie dann die Liste aus.</p> </li> 
+     <li><strong>[!UICONTROL -Karte]</strong> </li> 
      <li>Wählen Sie die Pinnwand aus, die die Karte enthält, die Sie auf Kommentare überwachen möchten, wählen Sie dann die Liste aus, die die Karte enthält, und wählen Sie dann die Karte aus.</li> 
     </ul> </td> 
   </tr> 

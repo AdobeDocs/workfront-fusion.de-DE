@@ -57,11 +57,11 @@ Dieses Aktionsmodul fragt ein JSON-Objekt ab und gibt ein Array zurück.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ausdruck]</td> 
+   <td role="rowheader">[!UICONTROL -Ausdruck]</td> 
    <td>Geben Sie den Ausdruck ein, den Sie zum Auswerten des JSON-Objekts verwenden möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Daten] </td> 
+   <td role="rowheader">[!UICONTROL -Daten] </td> 
    <td> Geben Sie das zu überprüfende JSON-Objekt ein.  </td> 
   </tr> 
   <tr> 
@@ -108,7 +108,7 @@ Dieses Aktionsmodul generiert JSONata-Ausdrücke durch Analyse der angegebenen E
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Wählen Sie die Verbindung aus, die Sie für die Verbindung mit dem Large Language Model (LLM) verwenden möchten, das Sie für dieses Modul verwenden möchten.</p> <p>Derzeit wird nur der anthropische API-Schlüssel unterstützt.</p></td> 
   </tr> 
   <tr> 

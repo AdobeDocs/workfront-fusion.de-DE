@@ -164,7 +164,7 @@ Dieses Aktionsmodul erstellt einen einzelnen Datensatz in [!DNL Workday].
     <col/>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL-Verbindung]</td>
+            <td role="rowheader">[!UICONTROL -Verbindung]</td>
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit Workfront Fusion</a>.</td>
         </tr>
         <tr>
@@ -193,7 +193,7 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatz in [!DNL Workday].
     </col>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL-Verbindung]</td>
+            <td role="rowheader">[!UICONTROL -Verbindung]</td>
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit Workfront Fusion</a>.</td>
         </tr>
         <tr>
@@ -237,11 +237,11 @@ Das Modul gibt den Status-Code zusammen mit den Kopfzeilen und dem Hauptteil des
    <td>Geben Sie einen Pfad relativ zu <code style="color: #ff1493;">https://&lt;tenantHostname>/api/&lt;serviceName>/&lt;version>/&lt;tenant></code> ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methode]</td> 
+   <td role="rowheader">[!UICONTROL -Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -267,7 +267,7 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Workday].
     <col/>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL-Verbindung]</td>
+            <td role="rowheader">[!UICONTROL -Verbindung]</td>
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
@@ -303,7 +303,7 @@ Dieses Aktionsmodul liest einen einzelnen Datensatz.
     </col>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL-Verbindung]</td>
+            <td role="rowheader">[!UICONTROL -Verbindung]</td>
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
@@ -330,7 +330,7 @@ Dieses Suchmodul ruft eine Liste von Datensätzen des angegebenen Typs ab.
       <col/>
       <tbody>
           <tr>
-              <td role="rowheader">[!UICONTROL-Verbindung]</td>
+              <td role="rowheader">[!UICONTROL -Verbindung]</td>
               <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit Workfront Fusion</a></td>
           </tr>
           <tr>

@@ -89,7 +89,7 @@ Dieses Kommentarmodul startet ein Trigger, wenn ein neuer Kommentar hinzugefügt
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -120,7 +120,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue Verzweigung erstellt w
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -143,11 +143,11 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein neues Problem hinzugefügt o
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, die ich beobachten möchte]</td> 
+   <td role="rowheader">[!UICONTROL , die ich beobachten möchte]</td> 
    <td>Wählen Sie aus, ob alle Repositorys, die mit diesem Konto verknüpft sind, oder nur ein Repository überwacht werden sollen.</td> 
   </tr> 
   <tr> 
@@ -168,17 +168,17 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein neues Problem hinzugefügt o
     <ul> 
      <li>[!UICONTROL Alle Probleme]</li> 
      <li>[!UICONTROL Nur mir zugewiesene Anfragen]</li> 
-     <li>[!Nur von mir erstellte UICONTROL-Anfragen]</li> 
+     <li>[!UICONTROL Nur von mir erstellte-Anfragen]</li> 
      <li>[!UICONTROL nur Probleme, die mich erwähnen]</li> 
      <li>[!UICONTROL Nur Probleme, für die ich Aktualisierungen abonniert habe]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Status]</td> 
+   <td role="rowheader">[!UICONTROL -Status]</td> 
    <td>Wählen Sie aus, ob nur offene oder nur geschlossene Anfragen angezeigt werden sollen. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kennzeichnungen]</td> 
+   <td role="rowheader">[!UICONTROL -Kennzeichnungen]</td> 
    <td>Klicken Sie für jedes Tag, das Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie das Tag ein. Das Modul überwacht Probleme mit diesen Tags.</td> 
   </tr> 
  </tbody> 
@@ -193,7 +193,7 @@ Dieses Modul wird Trigger, wenn eine neue Pull-Anforderung hinzugefügt oder ein
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -205,7 +205,7 @@ Dieses Modul wird Trigger, wenn eine neue Pull-Anforderung hinzugefügt oder ein
    <td> <p> Legen Sie die maximale Anzahl von Pull-Anforderungen fest, die Workfront Fusion während eines Zyklus zurückgibt.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Status]</td> 
+   <td role="rowheader">[!UICONTROL -Status]</td> 
    <td>Wählen Sie aus, ob Sie [!UICONTROL only open pull]-Anfragen, [!UICONTROL only closed ones] oder alle Pull-Anfragen beobachten möchten. </td> 
   </tr> 
   <tr> 
@@ -224,7 +224,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Repository erstellt oder ge�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -260,7 +260,7 @@ Dieses Modul fügt dem angegebenen Problem Verantwortliche hinzu
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -272,7 +272,7 @@ Dieses Modul fügt dem angegebenen Problem Verantwortliche hinzu
    <td>Wählen Sie die Personen aus, die Sie dem Problem zuweisen möchten. Zu den verfügbaren Bevollmächtigten gehören alle mit Schreibberechtigungen für das Repository sowie Organisationsmitglieder mit Leseberechtigungen für das Repository. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Nummer]</td> 
+   <td role="rowheader">[!UICONTROL -Nummer]</td> 
    <td>Geben Sie die Problemnummer des Problems ein, dem Sie Bevollmächtigte hinzufügen möchten, oder ordnen Sie sie zu. </td> 
   </tr> 
  </tbody> 
@@ -287,7 +287,7 @@ Dieses Modul fügt einem Problem Kennzeichnungen hinzu. Kennzeichnungen werden a
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -295,11 +295,11 @@ Dieses Modul fügt einem Problem Kennzeichnungen hinzu. Kennzeichnungen werden a
    <td>Wählen Sie das Repository aus, das das Problem enthält, dem Sie Kennzeichnungen hinzufügen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kennzeichnungen]</td> 
+   <td role="rowheader">[!UICONTROL -Kennzeichnungen]</td> 
    <td>Wählen Sie die Kennzeichnungen aus, die Sie dem Problem hinzufügen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Nummer]</td> 
+   <td role="rowheader">[!UICONTROL -Nummer]</td> 
    <td>Geben Sie die Problemnummer des Problems ein, dem Sie Kennzeichnungen hinzufügen möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
  </tbody> 
@@ -314,7 +314,7 @@ Dieses Modul erstellt einen Kommentar zum angegebenen Problem.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -322,7 +322,7 @@ Dieses Modul erstellt einen Kommentar zum angegebenen Problem.
    <td>Wählen Sie das Repository aus, das das Problem enthält, zu dem Sie einen Kommentar erstellen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Nummer]</td> 
+   <td role="rowheader">[!UICONTROL -Nummer]</td> 
    <td>Geben Sie die Problemnummer des Problems ein, zu dem Sie einen Kommentar erstellen möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
@@ -341,7 +341,7 @@ Dieses Modul erstellt ein neues Problem im ausgewählten Repository.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -357,7 +357,7 @@ Dieses Modul erstellt ein neues Problem im ausgewählten Repository.
    <td>Wählen Sie den Meilenstein aus, den Sie mit dem neuen Problem verknüpfen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kennzeichnungen]</td> 
+   <td role="rowheader">[!UICONTROL -Kennzeichnungen]</td> 
    <td>Wählen Sie alle Kennzeichnungen aus, die Sie auf das neue Problem anwenden möchten. </td> 
   </tr> 
   <tr> 
@@ -380,7 +380,7 @@ Dieses Modul ruft Details zum angegebenen Problem ab
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -388,7 +388,7 @@ Dieses Modul ruft Details zum angegebenen Problem ab
    <td>Wählen Sie das Repository aus, das das Problem enthält, zu dem Sie Details abrufen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Nummer]</td> 
+   <td role="rowheader">[!UICONTROL -Nummer]</td> 
    <td>Geben Sie die Anfragenummer des Problems ein, zu dem Sie Details abrufen möchten, oder ordnen Sie sie zu. </td> 
   </tr> 
  </tbody> 
@@ -403,7 +403,7 @@ Dieses Modul listet alle Kommentare zum angegebenen Problem auf.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -411,7 +411,7 @@ Dieses Modul listet alle Kommentare zum angegebenen Problem auf.
    <td>Wählen Sie das Repository aus, das das Problem enthält, aus dem Sie Kommentare auflisten möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Nummer]</td> 
+   <td role="rowheader">[!UICONTROL -Nummer]</td> 
    <td>Geben Sie die Problemnummer des Problems ein, zu dem Sie Kommentare auflisten möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
@@ -434,7 +434,7 @@ Dieses Modul entfernt eine einzelne Kennzeichnung aus einem Problem.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -442,11 +442,11 @@ Dieses Modul entfernt eine einzelne Kennzeichnung aus einem Problem.
    <td>Wählen Sie das Repository aus, das das Problem enthält, aus dem Sie eine Kennzeichnung entfernen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kennzeichnungen]</td> 
+   <td role="rowheader">[!UICONTROL -Kennzeichnungen]</td> 
    <td>Wählen Sie die Bezeichnung aus, die Sie aus dem Problem entfernen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Nummer]</td> 
+   <td role="rowheader">[!UICONTROL -Nummer]</td> 
    <td>Geben Sie die Problemnummer des Problems ein, von dem Sie einen Titel entfernen möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
  </tbody> 
@@ -461,7 +461,7 @@ Dieses Modul entfernt Verantwortliche aus dem angegebenen Problem.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -473,7 +473,7 @@ Dieses Modul entfernt Verantwortliche aus dem angegebenen Problem.
    <td>Wählen Sie die Personen aus, die Sie aus dem Problem entfernen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Nummer]</td> 
+   <td role="rowheader">[!UICONTROL -Nummer]</td> 
    <td>Geben Sie die Problemnummer des Problems ein, aus dem Sie Zugewiesene entfernen möchten, oder ordnen Sie sie zu. </td> 
   </tr> 
  </tbody> 
@@ -488,7 +488,7 @@ Dieses Modul sucht nach Problemen, die Ihren Suchkriterien entsprechen.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -510,7 +510,7 @@ Dieses Modul sucht nach Problemen, die Ihren Suchkriterien entsprechen.
    <td> <p>Aufsteigend oder absteigend auswählen. </p> <p>Bei Datumsangaben wird bei Auswahl von <strong>[!UICONTROL absteigend]</strong> zuerst das neueste Datum zurückgegeben. </p> <p>Wenn Sie für [!UICONTROL Anzahl der Kommentare] <strong>[!UICONTROL absteigend]</strong> auswählen, wird das Problem mit der höchsten Anzahl von Kommentaren zuerst zurückgegeben.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
    <td>Geben Sie Ihre Suchanfrage ein oder ordnen Sie sie zu. Eine ausführliche Beschreibung der Suchoptionen finden Sie unter <a href="https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests">Suchen von Problemen und Pull-</a> auf der [!DNL GitHub]-Hilfeseite.</td> 
   </tr> 
  </tbody> 
@@ -525,7 +525,7 @@ Dieses Modul aktualisiert ein vorhandenes [!DNL GitHub].
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL GitHub]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -541,15 +541,15 @@ Dieses Modul aktualisiert ein vorhandenes [!DNL GitHub].
    <td>Wählen Sie den Meilenstein aus, den Sie mit dem Problem verknüpfen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kennzeichnungen]</td> 
+   <td role="rowheader">[!UICONTROL -Kennzeichnungen]</td> 
    <td>Wählen Sie alle Kennzeichnungen aus, die Sie auf das Problem anwenden möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Nummer]</td> 
+   <td role="rowheader">[!UICONTROL -Nummer]</td> 
    <td>Geben Sie die Anfragenummer des Problems ein, das Sie aktualisieren möchten, oder mappen Sie sie. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Status]</td> 
+   <td role="rowheader">[!UICONTROL -Status]</td> 
    <td>Wählen Sie den Status aus, auf den Sie das Problem aktualisieren möchten.</td> 
   </tr> 
   <tr> 

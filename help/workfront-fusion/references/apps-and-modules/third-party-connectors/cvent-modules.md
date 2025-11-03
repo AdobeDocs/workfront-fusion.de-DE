@@ -118,7 +118,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 * [[!UICONTROL Benutzerdefinierter API-Aufruf]](#create-meeting-request)
 * [[!UICONTROL Eintrag lesen]](#read-a-record)
-* [[!UICONTROL Registrieren des ]](#register-invitee)
+* [[!UICONTROL Registrieren des &#x200B;]](#register-invitee)
 * [[!UICONTROL Einladende hinzufügen]](#add-invitee)
 * [[!UICONTROL Kontakt löschen]](#delete-contact)
 * [[!UICONTROL Kontakt aktualisieren]](#update-contact)
@@ -137,7 +137,7 @@ Das Modul gibt den Status-Code zusammen mit den Kopfzeilen und dem Hauptteil des
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Cvent]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Cvent] mit Adobe Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -160,7 +160,7 @@ Dieses Aktionsmodul liest Informationen zu einem bestimmten Datensatz.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Cvent]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Cvent] mit Adobe Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -178,7 +178,7 @@ Dieses Aktionsmodul liest Informationen zu einem bestimmten Datensatz.
  </tbody> 
 </table>
 
-#### [!UICONTROL Registrieren des ]
+#### [!UICONTROL Registrieren des &#x200B;]
 
 Dieses Aktionsmodul registriert eine Einladung für ein Ereignis.
 
@@ -187,7 +187,7 @@ Dieses Aktionsmodul registriert eine Einladung für ein Ereignis.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Cvent]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Cvent] mit Adobe Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -210,7 +210,7 @@ Dieses Aktionsmodul lädt einen Kontakt zu einem Ereignis ein.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Cvent]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Cvent] mit Adobe Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -233,7 +233,7 @@ Dieses Aktionsmodul löscht einen einzelnen Kontakt in Cvent.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Cvent]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Cvent] mit Adobe Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -252,7 +252,7 @@ Dieses Aktionsmodul aktualisiert einen vorhandenen Kontakt mithilfe seiner ID.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Cvent]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Cvent] mit Adobe Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -260,7 +260,7 @@ Dieses Aktionsmodul aktualisiert einen vorhandenen Kontakt mithilfe seiner ID.
    <td> <p>Geben Sie die ID des Kontakts ein, den Sie aktualisieren möchten, oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Felder]</td> 
+   <td role="rowheader">[!UICONTROL -Felder]</td> 
    <td> <p>Wählen Sie die Felder aus, für die Sie Informationen eingeben möchten, und geben Sie dann die gewünschten Werte für diese Felder ein.</p> </td> 
   </tr> 
   <tr> 
@@ -279,7 +279,7 @@ Dieses Aktionsmodul fügt Ihrem Konto eine Besprechungsanfrage hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Cvent]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Cvent] mit Adobe Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -312,7 +312,7 @@ Dieses Suchmodul ruft Informationen zu allen Datensätzen eines bestimmten Typs 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Cvent]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Cvent] mit Adobe Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 

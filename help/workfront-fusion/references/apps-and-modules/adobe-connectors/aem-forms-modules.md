@@ -107,7 +107,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Experience Manager Forms]
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-Instanz-URL ohne Schrägstrich]</td>
+        <td role="rowheader">[!UICONTROL -Instanz-URL ohne Schrägstrich]</td>
         <td>
           <p>Geben Sie die URL ein, über die Sie auf das Konto zugreifen möchten, ohne den abschließenden Schrägstrich.</p>
         </td>
@@ -190,7 +190,7 @@ Mit diesem Trigger (Webhook) können Sie ein Szenario starten, wenn eine Übermi
    <td> <p>Einen Namen für den Webhook eingeben</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Experience Manager]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md#create-a-connection-to-adobe-experience-manager-forms" class="MCXref xref">Erstellen einer Verbindung zu [!DNL Adobe Experience Manager Forms]</a></p> </td> 
   </tr>
 

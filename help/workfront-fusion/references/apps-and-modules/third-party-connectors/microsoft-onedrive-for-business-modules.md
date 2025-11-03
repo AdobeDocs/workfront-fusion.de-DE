@@ -96,7 +96,7 @@ Dieses Dateimodul wird aktiviert, wenn eine neue Trigger-Datei in einem überwac
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -104,11 +104,11 @@ Dieses Dateimodul wird aktiviert, wenn eine neue Trigger-Datei in einem überwac
    <td> <p>Wählen Sie das Laufwerk aus, das Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ordner]</td> 
+   <td role="rowheader">[!UICONTROL -Ordner]</td> 
    <td> <p> Wählen Sie den Ordner aus, den Sie beobachten möchten. In einem Szenario können Sie nur einen Ordner überwachen.</p> <p>Tipp: Um mehrere Ordner anzusehen, erstellen Sie für jeden Ordner ein unabhängiges Szenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL, die ich beobachten möchte]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL , die ich beobachten möchte]</p> </td> 
    <td> <p>Wählen Sie aus, ob nur neue Dateien und alle Änderungen oder nur neue Dateien angezeigt werden sollen.</p> </td> 
   </tr> 
   <tr> 
@@ -127,7 +127,7 @@ Dieses Ordnermodul wird aktiviert, wenn dem überwachten Trigger ein neuer Ordne
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -135,11 +135,11 @@ Dieses Ordnermodul wird aktiviert, wenn dem überwachten Trigger ein neuer Ordne
    <td> <p>Wählen Sie das Laufwerk aus, das Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ordner]</td> 
+   <td role="rowheader">[!UICONTROL -Ordner]</td> 
    <td> <p> Wählen Sie den Ordner aus, den Sie beobachten möchten. In einem Szenario können Sie nur einen Ordner überwachen.</p> <p>Tipp: Um mehrere Ordner zu verfolgen, erstellen Sie für jeden Ordner ein unabhängiges Szenario.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL, die ich beobachten möchte]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL , die ich beobachten möchte]</p> </td> 
    <td> <p>Wählen Sie aus, ob nur neue Ordner und alle Änderungen oder nur neue Ordner angezeigt werden sollen.</p> </td> 
   </tr> 
   <tr> 
@@ -168,7 +168,7 @@ Erstellt einen Ordner im angegebenen übergeordneten Ordner.
  <col> 
  <tbody> 
   <tr> 
-   <td><strong>[!UICONTROL-Verbindung]</strong> </td> 
+   <td><strong>[!UICONTROL -Verbindung]</strong> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -176,7 +176,7 @@ Erstellt einen Ordner im angegebenen übergeordneten Ordner.
    <td> <p>Wählen Sie das Laufwerk aus, auf dem Sie einen neuen Ordner erstellen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[!UICONTROL-Ordner]</strong> </td> 
+   <td><strong>[!UICONTROL -Ordner]</strong> </td> 
    <td> <p>Wählen Sie den Ordner aus, in dem Sie einen neuen Ordner erstellen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -196,7 +196,7 @@ Dieses Aktionsmodul verschiebt die angegebene Datei in den Papierkorb.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -218,7 +218,7 @@ Dieses Aktionsmodul verschiebt die angegebene Datei in den Papierkorb.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -242,7 +242,7 @@ Dieses Aktionsmodul ruft die Datei mit der angegebenen ID ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -266,7 +266,7 @@ Dieses Modul ruft einen Link ab, den Sie freigeben können, um Zugriff auf die a
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -282,7 +282,7 @@ Dieses Modul ruft einen Link ab, den Sie freigeben können, um Zugriff auf die a
    <td> <p>Wählen Sie aus, ob Personen, die den Link erhalten, Lese-/Schreibberechtigungen oder Leseberechtigungen erhalten sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Umfang]</td> 
+   <td>[!UICONTROL -Umfang]</td> 
    <td> <p> Wählen Sie aus, ob die Datei für alle Personen zugänglich sein soll, die über den Link verfügen, oder nur für Mitglieder Ihres Unternehmens.</p> </td> 
   </tr> 
  </tbody> 
@@ -298,7 +298,7 @@ Dieses Aktionsmodul lädt eine Binär- oder Textdatei in einen angegebenen Ordne
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Verbindung] </td> 
+   <td>[!UICONTROL -Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -306,7 +306,7 @@ Dieses Aktionsmodul lädt eine Binär- oder Textdatei in einen angegebenen Ordne
    <td> <p>Wählen Sie das Laufwerk aus, auf das Sie eine Datei hochladen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Ordner] </td> 
+   <td>[!UICONTROL -Ordner] </td> 
    <td> <p>Wählen Sie den Ordner im Laufwerk aus.</p> </td> 
   </tr> 
   <tr> 

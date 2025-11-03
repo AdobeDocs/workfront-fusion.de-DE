@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bildmodule
 
-Mit [!UICONTROL  (Image]-Modulen von Adobe Workfront Fusion können Sie Informationen zu einem bestimmten Bild abrufen (Abmessungen, Typ usw.), ein Bild in ein anderes Dateiformat konvertieren und die Bildgröße direkt ändern.
+Mit [!UICONTROL &#x200B; (Image]-Modulen von Adobe Workfront Fusion können Sie Informationen zu einem bestimmten Bild abrufen (Abmessungen, Typ usw.), ein Bild in ein anderes Dateiformat konvertieren und die Bildgröße direkt ändern.
 
 ## Zugriffsanforderungen
 
