@@ -62,10 +62,10 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 * Sie benötigen ein Adobe Experience Manager Assets-Konto, um diese Module verwenden zu können.
 * Sie müssen den Server-zu-Server-Fluss in der Adobe Developer-Konsole einrichten.
 
-  Anweisungen zum Einrichten des Server-zu-Server-Flusses in der Adobe Developer-Konsole finden Sie unter [Generieren von Zugriffstoken für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+  Anweisungen zum Einrichten des Server-zu-Server-Flusses in der Adobe Developer-Konsole finden Sie unter [Generieren von Zugriffstoken für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=de#the-server-to-server-flow).
 * Ihr technisches Adobe Experience Manager-Konto muss über Schreibberechtigungen verfügen.
 
-  Anweisungen zum Hinzufügen von Schreibberechtigungen für Ihr technisches Adobe Experience Manager-Konto finden Sie unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in der Dokumentation zu Adobe Experience Manager.
+  Anweisungen zum Hinzufügen von Schreibberechtigungen für Ihr technisches Adobe Experience Manager-Konto finden Sie unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in der Dokumentation zu Adobe Experience Manager.
 
 ## Adobe Experience Manager Assets-API-Informationen
 
@@ -113,11 +113,11 @@ So erstellen Sie eine Verbindung für Ihre Adobe Experience Manager Assets-Modul
 >
 >* Die Informationen für diese Felder werden beim Einrichten des Server-zu-Server-Flusses auf der Adobe Developer Console generiert. Diese Werte finden Sie in der JSON-Datei mit den Service-Anmeldeinformationen, die im Rahmen dieses Setups generiert wurde.
 >
->   Anweisungen zum Einrichten eines Server-zu-Server-Flusses auf der Adobe Developer Console finden Sie unter [Generieren von Zugriffstoken für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+>   Anweisungen zum Einrichten eines Server-zu-Server-Flusses auf der Adobe Developer Console finden Sie unter [Generieren von Zugriffstoken für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=de#the-server-to-server-flow).
 >
 >* Ihr technisches Adobe Experience Manager-Konto muss über Schreibberechtigungen verfügen.
 >
->   Anweisungen zum Hinzufügen von Schreibberechtigungen für Ihr technisches Adobe Experience Manager-Konto finden Sie unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in der Dokumentation zu Adobe Experience Manager.
+>   Anweisungen zum Hinzufügen von Schreibberechtigungen für Ihr technisches Adobe Experience Manager-Konto finden Sie unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in der Dokumentation zu Adobe Experience Manager.
 
 
 <table style="table-layout:auto"> 
