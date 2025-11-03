@@ -5,9 +5,9 @@ description: Manchmal kann während der Ausführung eines Szenarios ein Fehler a
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1211'
 ht-degree: 1%
 
 ---
@@ -22,47 +22,30 @@ Adobe Workfront Fusion unterscheidet zwischen mehreren grundlegenden Fehlertypen
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> Neu: Standard<p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion]-Lizenz</td> 
-   <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
-   <p>Oder</p>
-   <p>Legacy: Beliebig </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Plan für [!UICONTROL Select] oder [!UICONTROL Prime] Workfront: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Wenden Sie sich an Ihren Workfront-Administrator, um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
-
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Verbindungsfehler
++++## Verbindungsfehler 
 
 `ConnectionError`
 
@@ -71,7 +54,7 @@ Verbindungsfehler sind einer der häufigsten Fehler. Sie werden in der Regel dur
 * Tritt der Fehler im ersten Modul auf, wird die Ausführung des Szenarios mit einer Warnmeldung beendet. Workfront Fusion versucht dann wiederholt, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, deaktiviert Workfront Fusion das Szenario.
 * Wenn der Verbindungsfehler auf einem anderen Modul als dem ersten auftritt, hängen die nachfolgenden Schritte von der Option Speichern unvollständiger Ausführungen zulassen in den erweiterten Einstellungen des Szenarios ab:
 
-   * Wenn diese Option aktiviert ist, wird die Ausführung des Szenarios in den Ordner &quot;[!UICONTROL &#x200B; Ausführungen“ verschoben] in dem Workfront Fusion wiederholt versucht, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, verbleibt die Ausführung im Ordner Unvollständige Ausführungen, bis sie vom Benutzer manuell behoben wird.
+   * Wenn diese Option aktiviert ist, wird die Ausführung des Szenarios in den Ordner &quot;[!UICONTROL  Ausführungen“ verschoben] in dem Workfront Fusion wiederholt versucht, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, verbleibt die Ausführung im Ordner Unvollständige Ausführungen, bis sie vom Benutzer manuell behoben wird.
 
      Weitere Informationen zu unvollständigen Ausführungen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
    * Wenn diese Option deaktiviert ist, endet die Ausführung des Szenarios mit einem Fehler und einer darauf folgenden Rollback-Phase. Workfront Fusion versucht dann wiederholt, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, deaktiviert Workfront Fusion das Szenario.
@@ -94,7 +77,7 @@ Die zunehmenden Zeitintervalle verhindern, dass häufig ausgeführte Szenarien V
 
 **Beispiel:**
 
-Ein Szenario enthält den [!DNL Google Sheets] Trigger [!UICONTROL Zeilen &#x200B;]. [!DNL Google Sheets] ist aufgrund von Wartungsarbeiten beim Starten von Workfront Fusion für 30 Minuten nicht verfügbar und kann daher keine neuen Zeilen abrufen. Das Szenario stoppt und versucht es in 10 Minuten erneut. Da [!DNL Google Sheets] immer noch nicht verfügbar ist, kann Workfront Fusion weiterhin keine Informationen zu neuen Zeilen abrufen. Die nächste Ausführung des Szenarios ist in 1 Stunde geplant. [!DNL Google Sheets] ist derzeit wieder verfügbar und das Szenario wird erfolgreich ausgeführt.
+Ein Szenario enthält den [!DNL Google Sheets] Trigger [!UICONTROL Zeilen ]. [!DNL Google Sheets] ist aufgrund von Wartungsarbeiten beim Starten von Workfront Fusion für 30 Minuten nicht verfügbar und kann daher keine neuen Zeilen abrufen. Das Szenario stoppt und versucht es in 10 Minuten erneut. Da [!DNL Google Sheets] immer noch nicht verfügbar ist, kann Workfront Fusion weiterhin keine Informationen zu neuen Zeilen abrufen. Die nächste Ausführung des Szenarios ist in 1 Stunde geplant. [!DNL Google Sheets] ist derzeit wieder verfügbar und das Szenario wird erfolgreich ausgeführt.
 
 >[!ENDSHADEBOX]
 
@@ -147,7 +130,7 @@ Weitere Informationen finden Sie unter [Anzahl aufeinander folgender Fehler](/he
 
 **Beispiel:**
 
-In einem Szenario ist der Workfront-Trigger [!UICONTROL Datensatz &#x200B;]) so eingestellt, dass auf Dokumente geachtet wird. Das Szenario wird ausgeführt, während Sie ein großes Dokument hochladen, z. B. ein langes Video. Da [!UICONTROL Workfront Fusion] versucht, das Video herunterzuladen, während es noch auf Workfront hochgeladen wird, endet das Szenario mit der `IncompleteDataError`.
+In einem Szenario ist der Workfront-Trigger [!UICONTROL Datensatz ]) so eingestellt, dass auf Dokumente geachtet wird. Das Szenario wird ausgeführt, während Sie ein großes Dokument hochladen, z. B. ein langes Video. Da [!UICONTROL Workfront Fusion] versucht, das Video herunterzuladen, während es noch auf Workfront hochgeladen wird, endet das Szenario mit der `IncompleteDataError`.
 
 >[!ENDSHADEBOX]
 
@@ -165,7 +148,7 @@ Weitere Informationen finden Sie unter [Anzahl aufeinander folgender Fehler](/he
 >[!NOTE]
 >
 >Wenn ein Szenario mit einem sofortigen Trigger beginnt und auf diesen Fehler stößt, wird die Einstellung [!UICONTROL Maximale Anzahl aufeinander folgender Fehler] ignoriert und das Szenario wird sofort deaktiviert.
->&#x200B;>Weitere Informationen finden Sie unter [Instant Trigger](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) im Artikel Module - Übersicht.
+>>Weitere Informationen finden Sie unter [Instant Trigger](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) im Artikel Module - Übersicht.
 
 ## Inkonsistenzfehler
 

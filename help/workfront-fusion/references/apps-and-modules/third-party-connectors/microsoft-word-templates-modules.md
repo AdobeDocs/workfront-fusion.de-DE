@@ -4,9 +4,9 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -23,34 +23,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
-   <p>Oder</p>
-   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
+   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -189,11 +184,11 @@ Mit diesem Transformatormodul können Sie ein Dokument mit von Ihnen angegebenen
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Datenquelle]</td> 
+   <td role="rowheader">[!UICONTROL-Datenquelle]</td> 
    <td> <p>Wählen Sie eine Option aus, um anzugeben, ob die von Ihnen verwendeten Daten aus einem Formular oder aus einer Rohdatenerfassung (nicht verarbeitete Computerdaten) stammen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Werte]</td> 
+   <td role="rowheader">[!UICONTROL-Werte]</td> 
    <td> <p>Dies muss ein Array von Sammlungen sein, wobei:</p> 
     <ul> 
      <li>Jede Sammlung entspricht einem Dateneintrag und enthält ein Element <code>entry</code></li> 
@@ -259,7 +254,7 @@ Dieses Aggregator-Modul ist besonders nützlich für die Erstellung von Listen o
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Werte]</td> 
+   <td role="rowheader">[!UICONTROL-Werte]</td> 
    <td> <p>Dies muss ein Array von Sammlungen sein, wobei:</p> 
     <ul> 
      <li>Jede Sammlung entspricht einem Dateneintrag und enthält ein Element <code>entry</code></li> 

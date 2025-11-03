@@ -4,9 +4,9 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: c8138d82-fa5a-4e69-b3cb-aa232099cb33
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
@@ -21,34 +21,41 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront-Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz*</td>
-   <td> <p>[!UICONTROL -Plan], [!UICONTROL -Arbeit]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
-   <td> <p>[!UICONTROL Workfront Fusion for Work Automation and Integration] </p> </td> 
+   <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
+   <td>
+   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
-   <td>Ihr Unternehmen muss Adobe Workfront Fusion sowie Adobe Workfront erwerben, um die in diesem Artikel beschriebenen Funktionen nutzen zu können.</td> 
-  </tr> 
+   <td>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   </td> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren Workfront-Administrator, um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Voraussetzungen
 
@@ -154,7 +161,7 @@ Dieses Aktionsmodul ermittelt, ob Text gegen die Inhaltsrichtlinie von OpenAI ve
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -162,7 +169,7 @@ Dieses Aktionsmodul ermittelt, ob Text gegen die Inhaltsrichtlinie von OpenAI ve
    <td> Klicken Sie für jedes Textbeispiel, das Sie einbeziehen möchten, auf <b>Element hinzufügen</b> und geben Sie den Text ein oder ordnen Sie ihn zu. Einschließen des gesamten Textbeispiels.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modell]</td> 
+   <td role="rowheader">[!UICONTROL-Modell]</td> 
    <td> Geben Sie die ID des zu verwendenden Modells ein oder mappen Sie sie. Mit dem Modul Modelle abrufen können Sie alle verfügbaren Modelle anzeigen. </td> 
   </tr> 
  </tbody> 
@@ -177,11 +184,11 @@ Dieses Aktionsmodul gibt eine bearbeitete Version einer von Ihnen bereitgestellt
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modell]</td> 
+   <td role="rowheader">[!UICONTROL-Modell]</td> 
    <td> Geben Sie die ID des zu verwendenden Modells ein oder mappen Sie sie. Mit dem Modul Modelle abrufen können Sie alle verfügbaren Modelle anzeigen. </td> 
   </tr> 
   <tr> 
@@ -189,7 +196,7 @@ Dieses Aktionsmodul gibt eine bearbeitete Version einer von Ihnen bereitgestellt
    <td> Geben Sie den Text ein, den Sie bearbeiten möchten, oder ordnen Sie ihn zu. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Anweisung]</td> 
+   <td role="rowheader">[!UICONTROL-Anweisung]</td> 
    <td> Geben Sie die Anweisungen für die Bearbeitung ein oder ordnen Sie sie zu. Beispiel: „Korrigieren Sie die Rechtschreibfehler.“ </td> 
   </tr> 
   <tr> 
@@ -208,11 +215,11 @@ Dieses Aktionsmodul erstellt einen Einbettungsvektor, der den Eingabetext darste
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modell]</td> 
+   <td role="rowheader">[!UICONTROL-Modell]</td> 
    <td> Geben Sie die ID des zu verwendenden Modells ein oder mappen Sie sie. Mit dem Modul Modelle abrufen können Sie alle verfügbaren Modelle anzeigen. </td> 
   </tr> 
   <tr> 
@@ -239,15 +246,15 @@ Dieses Aktionsmodul gibt bei einer Liste von Nachrichten, die eine Konversation 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modell]</td> 
+   <td role="rowheader">[!UICONTROL-Modell]</td> 
    <td> Geben Sie die ID des zu verwendenden Modells ein oder mappen Sie sie. Mit dem Modul Modelle abrufen können Sie alle verfügbaren Modelle anzeigen. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Nachrichten]</td> 
+   <td role="rowheader">[!UICONTROL-Nachrichten]</td> 
    <td>Nachrichten beschreiben das bisherige Gespräch. Klicken Sie für jede Nachricht, die Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und füllen Sie Folgendes aus:
    <ul>
    <li> <b>Rolle</b>: Wählen Sie die Rolle des Autors dieser Nachricht aus.</li>
@@ -309,7 +316,7 @@ Dieses Aktionsmodul generiert oder bearbeitet Bilder mit Dall-E-Modellen.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -333,11 +340,11 @@ In diesem Modul werden die verschiedenen in der OpenAI-API verfügbaren Modelle 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Aktion]</td> 
+   <td role="rowheader">[!UICONTROL-Aktion]</td> 
    <td> Wählen Sie aus, ob Sie eine Liste aller Modelle erhalten oder ein bestimmtes Modell abrufen möchten.
     <ul>
     <li><p><b>Auflisten von Modellen </b></p><p>Diese Aktion listet die derzeit verfügbaren Modelle auf und stellt grundlegende Informationen zu jedem Modell bereit, z. B. den Eigentümer und die Verfügbarkeit.</p></li>
@@ -357,7 +364,7 @@ Dieses Aktionsmodul führt eine benutzerdefinierte HTTP-Anfrage an die OpenAI-AP
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -365,11 +372,11 @@ Dieses Aktionsmodul führt eine benutzerdefinierte HTTP-Anfrage an die OpenAI-AP
    <td> <p>Pfad relativ zu <code>https://api.openai.com/v1/</code> eingeben </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen automatisch hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -431,11 +438,11 @@ Dieses Aktionsmodul listet, löscht oder ruft Dateien oder Dateiinhalte ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Aktion]</td> 
+   <td role="rowheader">[!UICONTROL-Aktion]</td> 
    <td> Wählen Sie die Aktion aus, die Sie durchführen möchten. 
   </tr> 
    <tr> 
@@ -454,7 +461,7 @@ Verwalten Sie Optimierungsaufträge, um ein Modell an Ihre spezifischen Schulung
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 

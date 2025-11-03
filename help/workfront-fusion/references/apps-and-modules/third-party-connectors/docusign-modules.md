@@ -5,10 +5,10 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '2244'
-ht-degree: 1%
+source-wordcount: '2250'
+ht-degree: 0%
 
 ---
 
@@ -24,34 +24,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
-   <p>Oder</p>
-   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
+   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -136,11 +131,11 @@ Dieses Trigger-Modul startet ein Szenario, in dem ein Umschlag gesendet, zugeste
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL-Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL DocuSign]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Verbinden von DocuSign mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Konto] </td> 
+   <td role="rowheader">[!UICONTROL-Konto] </td> 
    <td> <p>Wählen Sie das Konto aus, das die Datensätze enthält, die Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -186,11 +181,11 @@ Dieses Aktionsmodul fügt dem Dokument ein benutzerdefiniertes Feld hinzu
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL DocuSign]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL DocuSign] mit Workfront Fusion</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Konto] </td> 
+   <td role="rowheader">[!UICONTROL-Konto] </td> 
    <td> <p>Wählen Sie das Konto aus, das das Dokument enthält, dem Sie ein benutzerdefiniertes Feld hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -210,7 +205,7 @@ Dieses Aktionsmodul fügt dem Dokument ein benutzerdefiniertes Feld hinzu
    <td>Aktivieren Sie diese Option, wenn das Feld sichtbar sein soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Wert]</td> 
+   <td role="rowheader">[!UICONTROL-Wert]</td> 
    <td>Geben Sie den Wert (Inhalt) des hinzugefügten Felds ein oder ordnen Sie ihn zu. </td> 
   </tr> 
  </tbody> 
@@ -225,11 +220,11 @@ Dieses Aktionsmodul fügt einen oder mehrere Empfänger zu einem vorhandenen Ums
  <col data-mc-conditions=""> 
  <tbody> 
   <tr data-mc-conditions=""> 
-    <td>[!UICONTROL -Verbindung] </td>
+    <td>[!UICONTROL-Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres DocuSign-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions="">
-    <td>[!UICONTROL -Konto] </td>
+    <td>[!UICONTROL-Konto] </td>
    <td> <p>Wählen Sie das Konto aus, das den Umschlag enthält, dem Sie Empfänger hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -245,7 +240,7 @@ Dieses Aktionsmodul fügt einen oder mehrere Empfänger zu einem vorhandenen Ums
      <li> <p>[!UICONTROL Zertifizierter Versand]</p> </li> 
      <li> <p>[!UICONTROL in-person-signer]</p> </li> 
      <li> <p>[!UICONTROL Intermediär]</p> </li> 
-     <li> <p>[!UICONTROL -Signierer]</p> </li> 
+     <li> <p>[!UICONTROL-Signierer]</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -272,11 +267,11 @@ Dieses Aktionsmodul fügt einen oder mehrere Empfänger zu einem vorhandenen Ums
    <td> Wenn Sie eine private Nachricht an den Empfänger senden möchten, geben Sie den Text der Nachricht ein oder ordnen Sie ihn zu. <p>Nur der ausgewählte Empfänger sieht die private Nachricht sowie die allgemeine Nachricht. Die private Nachricht ist auf 1.000 Zeichen begrenzt.</p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Authentifizierung]</td> 
+   <td role="rowheader">[!UICONTROL-Authentifizierung]</td> 
    <td> <p>Wählen Sie die Authentifizierungsmethode aus, mit der Sie die Identität des Empfängers bestätigen möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL None]</strong> </p> </li> 
-     <li> <p><strong>[!UICONTROL -Zugriffscode]</strong> </p> <p>Geben Sie den Zugriffscode ein oder ordnen Sie ihn zu.</p> </li> 
+     <li> <p><strong>[!UICONTROL-Zugriffscode]</strong> </p> <p>Geben Sie den Zugriffscode ein oder ordnen Sie ihn zu.</p> </li> 
      <li> <p><strong>[!UICONTROL Phone]</strong> </p> <p>Geben Sie die Telefonnummer ein oder mappen Sie sie.</p> </li> 
      <li> <p><strong>[!UICONTROL SMS]</strong> </p> <p>Geben Sie die Telefonnummer ein oder mappen Sie sie.</p> </li> 
     </ul> </td> 
@@ -293,17 +288,17 @@ Dieses Aktionsmodul erstellt aus einer Vorlage einen neuen Umschlag. Gibt die ID
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Verbindung] </td>
+    <td role="rowheader">[!UICONTROL-Verbindung] </td>
 
 <td> <p>Anweisungen zum Verbinden Ihres DocuSign-Kontos mit Workfront Fusion finden Sie in den Artikeln unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader">[!UICONTROL -Konto] </td>
+    <td role="rowheader">[!UICONTROL-Konto] </td>
    <td> <p>Wählen Sie das Konto aus, das den Umschlag enthält, in den Sie eine Datei hochladen möchten.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL -Vorlage]</td>
-   <td> <p> Wählen Sie die Vorlage aus, aus der Sie den neuen Umschlag erstellen möchten. Vorlagen sind basierend auf dem ausgewählten [!UICONTROL -Konto] verfügbar.</p> </td> 
+    <td role="rowheader" >[!UICONTROL-Vorlage]</td>
+   <td> <p> Wählen Sie die Vorlage aus, aus der Sie den neuen Umschlag erstellen möchten. Vorlagen sind basierend auf dem ausgewählten [!UICONTROL-Konto] verfügbar.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
@@ -395,11 +390,11 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL DocuSign]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL DocuSign] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Konto]</td> 
+   <td>[!UICONTROL-Konto]</td> 
    <td>Geben Sie das Konto ein, das Sie für den Zugriff auf die [!DNL DocuSign]-API verwenden möchten, oder ordnen Sie es zu.</td> 
   </tr> 
   <tr> 
@@ -407,11 +402,11 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
    <td> <p>Pfad relativ zu eingeben oder zuordnen <code>https://&lt;BASE_URI>/v2/accounts/&lt;ACCOUNT_ID>.</code></p>  </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Methode]</td> 
+   <td>[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Kopfzeilen]</td> 
+   <td>[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Dadurch wird der Inhaltstyp der Anfrage bestimmt.</p> <p>Beispiel:<code> {"Content-type":"application/json"}</code></p> <p>Hinweis: Wenn Fehler auftreten und es schwierig ist, deren Ursprung zu ermitteln, sollten Sie die Kopfzeilen basierend auf der Workfront-Dokumentation ändern. Wenn Ihr benutzerdefinierter API-Aufruf einen 422-HTTP-Anfragefehler zurückgibt, versuchen Sie es mit einer „Content-Type“:„text/plain“-Kopfzeile.</p> </td> 
   </tr> 
   <tr> 
@@ -469,11 +464,11 @@ Dieses Aktionsmodul lädt ein einzelnes Dokument herunter.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL DocuSign]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL DocuSign] mit Workfront Fusion</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Konto] </td> 
+   <td role="rowheader">[!UICONTROL-Konto] </td> 
    <td> <p>Wählen Sie das Konto aus, das das Dokument enthält, das Sie herunterladen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -485,7 +480,7 @@ Dieses Aktionsmodul lädt ein einzelnes Dokument herunter.
    <td> <p>Geben Sie die ID des Dokuments ein, das Sie herunterladen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Zertifikat]</td> 
+   <td role="rowheader">[!UICONTROL-Zertifikat]</td> 
    <td>Aktivieren Sie diese Option, um das Envelope-Signaturzertifikat in den Download einzuschließen.</td> 
   </tr> 
   <tr> 
@@ -520,11 +515,11 @@ Dieses Aktionsmodul ändert ein benutzerdefiniertes Feld mithilfe des Feldnamens
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL DocuSign]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL DocuSign] mit Workfront Fusion</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Konto] </td> 
+   <td role="rowheader">[!UICONTROL-Konto] </td> 
    <td> <p>Wählen Sie das Konto aus, das das Dokument enthält, in dem Sie ein benutzerdefiniertes Feld ändern möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -548,7 +543,7 @@ Dieses Aktionsmodul ändert ein benutzerdefiniertes Feld mithilfe des Feldnamens
    <td>Aktivieren Sie diese Option, wenn das Feld sichtbar sein soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Wert]</td> 
+   <td role="rowheader">[!UICONTROL-Wert]</td> 
    <td>Geben Sie den Wert (Inhalt) des geänderten Felds ein oder ordnen Sie ihn zu. </td> 
   </tr> 
  </tbody> 
@@ -563,11 +558,11 @@ Dieses Aktionsmodul liest Informationen über einen Envelope in [!DNL DocuSign] 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL DocuSign]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL DocuSign] mit Workfront Fusion</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Konto] </td> 
+   <td role="rowheader">[!UICONTROL-Konto] </td> 
    <td> <p>Wählen Sie das Konto aus, das das Dokument enthält, dessen Informationen Sie lesen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -590,11 +585,11 @@ Dieses Aktionsmodul sendet einen Briefumschlag-Entwurf an seine Empfänger.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL DocuSign]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL DocuSign] mit Workfront Fusion</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Konto] </td> 
+   <td role="rowheader">[!UICONTROL-Konto] </td> 
    <td> <p>Wählen Sie das Konto aus, das den Briefumschlagentwurf enthält, den Sie an die Empfänger senden möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -613,11 +608,11 @@ Dieses Modul lädt eine angegebene Datei in einen vorhandenen Envelope in DocuSi
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL DocuSign]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL DocuSign] mit Workfront Fusion</a> in diesem Artikel.</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Konto] </td> 
+   <td role="rowheader">[!UICONTROL-Konto] </td> 
    <td> <p>Wählen Sie das Konto aus, das den Umschlag enthält, in den Sie eine Datei hochladen möchten.</p> </td> 
   </tr> 
   <tr> 

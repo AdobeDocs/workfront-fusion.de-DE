@@ -4,9 +4,9 @@ description: Ein Adobe Workfront Fusion-Datenspeicher kann ähnlich wie eine Dat
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
@@ -27,32 +27,22 @@ Eine Videoeinführung zu Datenspeichern in Workfront Fusion finden Sie unter:
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Keine Workfront Fusion-Lizenzanforderung</p>
-   </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -60,9 +50,9 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
+
+
 
 ## Voraussetzungen
 
@@ -113,7 +103,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p> Wählen Sie den Datenspeicher aus, in dem Sie einen Datensatz erstellen möchten, oder fügen Sie ihn hinzu. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Schlüssel] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul hinzufügen oder ersetzen soll. Der Schlüssel kann später zum Abrufen des Datensatzes verwendet werden. Wenn Sie dieses Feld leer lassen, wird automatisch ein Schlüssel generiert.</p> </td> 
   </tr> 
   <tr> 
@@ -121,7 +111,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Aktivieren Sie diese Option, um den Datensatz zu überschreiben. Der Datensatz, den Sie überschreiben möchten, muss im obigen Feld Schlüssel angegeben werden.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Eintrag] </td> 
+   <td>[!UICONTROL-Eintrag] </td> 
    <td> <p>Geben Sie die gewünschten Werte in die Felder des Datensatzes ein.</p> </td> 
   </tr> 
  </tbody> 
@@ -142,7 +132,7 @@ Sie geben den Datenspeicher und den Schlüssel des Datensatzes an.
    <td> <p>Wählen Sie den Datenspeicher aus, den Sie auf das Vorhandensein des Datensatzes überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Schlüssel] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, auf dessen Existenz das Modul prüfen soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -184,7 +174,7 @@ Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle be
    <td> <p>Wählen Sie den Datenspeicher aus, den Sie auf das Vorhandensein des Datensatzes überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Schlüssel] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul löschen soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -224,7 +214,7 @@ Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle be
    <td> <p> Wählen Sie den Datenspeicher aus, aus dem Sie einen Datensatz abrufen möchten</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Schlüssel] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul abrufen soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -252,7 +242,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL sort]</p> </td> 
-   <td> <p style="font-weight: normal;">Füllen Sie für jedes Feld, nach dem Sie sortieren möchten, die folgenden Felder aus:</p> <p style="font-weight: bold;">[!UICONTROL -Schlüssel]</p> <p>Wählen Sie den Spaltennamen aus, nach dem die Ergebnisse sortiert werden sollen.</p> <p style="font-weight: bold;">[!UICONTROL -Reihenfolge]</p> <p>Wählen Sie aus, ob die Ergebnisse in auf- oder absteigender Reihenfolge sortiert werden sollen.</p> </td> 
+   <td> <p style="font-weight: normal;">Füllen Sie für jedes Feld, nach dem Sie sortieren möchten, die folgenden Felder aus:</p> <p style="font-weight: bold;">[!UICONTROL-Schlüssel]</p> <p>Wählen Sie den Spaltennamen aus, nach dem die Ergebnisse sortiert werden sollen.</p> <p style="font-weight: bold;">[!UICONTROL-Reihenfolge]</p> <p>Wählen Sie aus, ob die Ergebnisse in auf- oder absteigender Reihenfolge sortiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
@@ -284,7 +274,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p> Wählen Sie den Datenspeicher aus, in dem Sie einen Datensatz erstellen möchten, oder fügen Sie ihn hinzu. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Schlüssel] </td> 
+   <td>[!UICONTROL-Schlüssel] </td> 
    <td> <p>Geben Sie den eindeutigen Schlüssel des Datensatzes ein, den das Modul aktualisieren soll.</p> </td> 
   </tr> 
   <tr> 
@@ -292,7 +282,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Aktivieren Sie diese Option, um einen neuen Datensatz zu erstellen, wenn der Datensatz mit dem angegebenen Schlüssel noch nicht vorhanden ist.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Eintrag]</td> 
+   <td>[!UICONTROL-Eintrag]</td> 
    <td> <p> Geben Sie die gewünschten Werte in die Felder des Datensatzes ein, die Sie aktualisieren möchten.</p> </td> 
   </tr> 
  </tbody> 

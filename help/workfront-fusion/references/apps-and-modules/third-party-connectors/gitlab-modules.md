@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '4122'
+source-wordcount: '4095'
 ht-degree: 1%
 
 ---
@@ -27,42 +27,41 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront-Plan*</td>
-  <td> <p>[!UICONTROL Pro] oder höher</p> </td>
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz*</td>
-   <td> <p>[!UICONTROL -Plan], [!UICONTROL -Arbeit]</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Aktuelle Lizenzanforderung: Keine Workfront Fusion-Lizenzanforderung.</p>
-   <p>Oder</p>
-   <p>Legacy-Lizenzanforderung: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
+   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Aktuelle Produktanforderung: Wenn Sie über den Plan [!UICONTROL Select] oder [!UICONTROL Prime] Adobe Workfront verfügen, muss Ihr Unternehmen Adobe Workfront Fusion sowie Adobe Workfront erwerben, um die in diesem Artikel beschriebenen Funktionen nutzen zu können. Workfront Fusion ist im Workfront-Plan [!UICONTROL Ultimate] enthalten.</p>
-   <p>Oder</p>
-   <p>Legacy-Produktanforderung: Ihr Unternehmen muss Adobe Workfront Fusion sowie Adobe Workfront erwerben, um die in diesem Artikel beschriebenen Funktionen nutzen zu können.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-Wenden Sie sich an Ihren Workfront-Administrator, um herauszufinden, über welchen Plan, welchen Lizenztyp oder welchen Zugriff Sie verfügen.
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Verbinden von [!DNL GitLab] mit Workfront Fusion {#connect-gitlab-to-workfront-fusion}
 
@@ -172,7 +171,7 @@ Dieses Instant Trigger-Modul startet ein Szenario, wenn ein Problem kommentiert 
 
 +++**[!UICONTROL Probleme ansehen]**
 
-Dieses [!UICONTROL Instant-Trigger &#x200B;]-Modul startet ein Szenario, wenn ein Problem erstellt wird oder wenn ein vorhandenes Problem aktualisiert, geschlossen oder erneut geöffnet wird.
+Dieses [!UICONTROL Instant-Trigger ]-Modul startet ein Szenario, wenn ein Problem erstellt wird oder wenn ein vorhandenes Problem aktualisiert, geschlossen oder erneut geöffnet wird.
 
 <table style="table-layout:auto"> 
    <col> 
@@ -252,7 +251,7 @@ Dieses Modul für geplante Trigger startet ein Szenario, wenn ein neues Projekt 
    <col> 
    <tbody> 
    <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Verbinden Ihres [!DNL GitLab]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL GitLab] mit Workfront Fusion</a> in diesem Artikel.</td> 
    </tr> 
    <tr> 
@@ -273,7 +272,7 @@ Dieses Modul für geplante Trigger startet ein Szenario, wenn eine neue Verzweig
    <col> 
    <tbody> 
    <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Verbinden Ihres [!DNL GitLab]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL GitLab] mit Workfront Fusion</a> in diesem Artikel.</td> 
    </tr> 
    <tr> 
@@ -363,7 +362,7 @@ Dieses Aktionsmodul hebt einen einzelnen Build eines Projekts auf.
    <col> 
    <tbody> 
    <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Anweisungen zum Verbinden Ihres [!DNL GitLab]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL GitLab] mit Workfront Fusion</a> in diesem Artikel.</td> 
    </tr> 
    <tr> 
@@ -375,7 +374,7 @@ Dieses Aktionsmodul hebt einen einzelnen Build eines Projekts auf.
    <td>Wählen Sie den Build aus, den Sie abbrechen möchten, oder ordnen Sie ihn zu.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL -Commit-Nachricht]</td> 
+   <td role="rowheader">[!UICONTROL-Commit-Nachricht]</td> 
    <td> Geben Sie eine Commit-Nachricht für die Zusammenführung ein oder ordnen Sie sie zu.
     </td> 
    </tr> 
@@ -464,7 +463,7 @@ Informationen zu Feldern finden Sie unter [Erstellen einer Aufgabe](https://docs
 
 Dieses Aktionsmodul erstellt eine Aufgabe für den aktuellen Benutzer in der ausgewählten Zusammenführungsanfrage. Der aktuelle Benutzer ist der Benutzer, der durch die Anmeldeinformationen für die für dieses Modul verwendete Verbindung identifiziert wird.
 
-Informationen zu Feldern finden [&#x200B; unter „Erstellen einer &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#create-a-todo)&quot; in der [!DNL GitLab].
+Informationen zu Feldern finden [ unter „Erstellen einer ](https://docs.gitlab.com/ee/api/merge_requests.html#create-a-todo)&quot; in der [!DNL GitLab].
 
 +++
 
@@ -644,11 +643,11 @@ Dieses Aktionsmodul ruft Problemdetails ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Informationen zum Erstellen einer neuen Verbindung finden Sie unter <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Projekt]</td> 
+   <td role="rowheader">[!UICONTROL-Projekt]</td> 
    <td> <p>Wählen Sie das Projekt aus, das das Problem enthält, zu dem Sie Details abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -781,7 +780,7 @@ Dieses Suchmodul gibt eine Liste von Builds für einen bestimmten Commit in eine
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Informationen zum Erstellen einer neuen Verbindung finden Sie unter <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
@@ -789,7 +788,7 @@ Dieses Suchmodul gibt eine Liste von Builds für einen bestimmten Commit in eine
    <td> <p>Wählen Sie das Projekt aus, das den Commit enthält, für den Sie Builds auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Umfang]</td> 
+   <td role="rowheader">[!UICONTROL-Umfang]</td> 
    <td> Um die Suche auf einen bestimmten Status zu beschränken, wählen Sie den Status aus. Wenn Sie dieses Feld leer lassen, werden alle Builds des Commits zurückgegeben.  </td> 
   </tr> 
  </tbody> 
@@ -865,7 +864,7 @@ Informationen zu Feldern finden Sie unter [Projektproblemnotizen auflisten](http
 
 Dieses Suchmodul gibt alle Probleme in einem angegebenen Projekt zurück.
 
-Informationen zu Feldern finden Sie unter [Auflisten von &#x200B;](https://docs.gitlab.com/ee/api/issues.html#list-project-issues) in der [!DNL GitLab].
+Informationen zu Feldern finden Sie unter [Auflisten von ](https://docs.gitlab.com/ee/api/issues.html#list-project-issues) in der [!DNL GitLab].
 
 +++
 
@@ -1014,7 +1013,7 @@ Dieses Aktionsmodul versucht einen einzelnen Build in einem Commit erneut.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
    <td>Informationen zum Erstellen einer neuen Verbindung finden Sie unter <a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect [!DNL GitLab] to Workfront Fusion]</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 

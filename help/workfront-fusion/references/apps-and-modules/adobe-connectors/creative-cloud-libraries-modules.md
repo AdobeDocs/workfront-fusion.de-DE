@@ -4,9 +4,9 @@ description: Mit den  [!DNL Adobe Workfront Fusion Adobe Creative Cloud] -Biblio
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1410'
 ht-degree: 1%
 
 ---
@@ -27,34 +27,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
-   <p>Oder</p>
-   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
+   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -115,7 +110,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 * [[!UICONTROL Element hochladen]](#upload-an-element)
 
-* [[!UICONTROL [Neues Element in Bibliothek ansehen]]](#watch-new-element-in-library)
+* [!UICONTROL [Neues Element in Bibliothek ansehen]](#watch-new-element-in-library)
 
 * [[!UICONTROL Aktualisierte Elemente ansehen]](#watch-updated-elements)
 
@@ -129,7 +124,7 @@ Dieses Aktionsmodul archiviert ein Element aus einer Bibliothek.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Eine bestehende Creative Cloud Libraries-Verbindung auswählen. Die Verbindungserstellung ist derzeit nicht im Creative Cloud Libraries-Connector verfügbar. Vorhandene Verbindungen funktionieren erwartungsgemäß.</td>
     </tr>
     <tr>
@@ -152,7 +147,7 @@ Dieses Aktionsmodul gibt ein einzelnes Element aus einer Bibliothek zurück.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Eine bestehende Creative Cloud Libraries-Verbindung auswählen. Die Verbindungserstellung ist derzeit nicht im Creative Cloud Libraries-Connector verfügbar. Vorhandene Verbindungen funktionieren erwartungsgemäß.</td>
     </tr>
     <tr>
@@ -164,7 +159,7 @@ Dieses Aktionsmodul gibt ein einzelnes Element aus einer Bibliothek zurück.
       <td>Geben Sie die ID des Elements ein, das Sie abrufen möchten, oder ordnen Sie sie zu.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Auswahl]</td>
+      <td role="rowheader">[!UICONTROL-Auswahl]</td>
       <td>
         <p>Wählen Sie den Typ der Informationen aus, die das Modul zurückgibt. </p>
         <ul>
@@ -179,7 +174,7 @@ Dieses Aktionsmodul gibt ein einzelnes Element aus einer Bibliothek zurück.
             <p>Alle verfügbaren Daten</p>
           </li>
           <li>
-            <p><b>[!UICONTROL -Darstellungen]</b>
+            <p><b>[!UICONTROL-Darstellungen]</b>
             </p>
             <p>Eine reduzierte Liste von Assets, die mit dem Bibliothekselement verknüpft sind</p>
           </li>
@@ -198,7 +193,7 @@ Dieses Aktionsmodul ruft eine Liste von Elementen in einer Bibliothek ab.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Eine bestehende Creative Cloud Libraries-Verbindung auswählen. Die Verbindungserstellung ist derzeit nicht im Creative Cloud Libraries-Connector verfügbar. Vorhandene Verbindungen funktionieren erwartungsgemäß.</td>
     </tr>
     <tr>
@@ -214,7 +209,7 @@ Dieses Aktionsmodul ruft eine Liste von Elementen in einer Bibliothek ab.
       <td >Geben Sie einen MIME-Typ ein oder ordnen Sie ihn zu, um die Ergebnisse auf Elemente zu beschränken, die mit dem angegebenen MIME-Typ identifiziert werden. Beispiel: <code>string</code>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Auswahl]</td>
+      <td role="rowheader">[!UICONTROL-Auswahl]</td>
       <td>
         <p>Wählen Sie den Typ der Informationen aus, die das Modul zurückgibt. </p>
         <ul>
@@ -229,7 +224,7 @@ Dieses Aktionsmodul ruft eine Liste von Elementen in einer Bibliothek ab.
             <p>Alle verfügbaren Daten</p>
           </li>
           <li>
-            <p><b>[!UICONTROL -Darstellungen]</b>
+            <p><b>[!UICONTROL-Darstellungen]</b>
             </p>
             <p>Eine reduzierte Liste von Assets, die mit dem Bibliothekselement verknüpft sind</p>
           </li>
@@ -252,7 +247,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Element zu einer Bibliothek 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Eine bestehende Creative Cloud Libraries-Verbindung auswählen. Die Verbindungserstellung ist derzeit nicht im Creative Cloud Libraries-Connector verfügbar. Vorhandene Verbindungen funktionieren erwartungsgemäß.</td>
     </tr>
     <tr>
@@ -276,7 +271,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Element in einer Bibliothek 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Eine bestehende Creative Cloud Libraries-Verbindung auswählen. Die Verbindungserstellung ist derzeit nicht im Creative Cloud Libraries-Connector verfügbar. Vorhandene Verbindungen funktionieren erwartungsgemäß.</td>
     </tr>
     <tr>
@@ -306,7 +301,7 @@ Dieses Bibliotheksmodul startet ein Trigger, wenn eine neue Bibliothek erstellt 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Eine bestehende Creative Cloud Libraries-Verbindung auswählen. Die Verbindungserstellung ist derzeit nicht im Creative Cloud Libraries-Connector verfügbar. Vorhandene Verbindungen funktionieren erwartungsgemäß.</td>
     </tr>
     <tr>
@@ -325,7 +320,7 @@ Dieses Bibliotheksmodul startet ein Trigger, wenn eine vorhandene Bibliothek akt
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Eine bestehende Creative Cloud Libraries-Verbindung auswählen. Die Verbindungserstellung ist derzeit nicht im Creative Cloud Libraries-Connector verfügbar. Vorhandene Verbindungen funktionieren erwartungsgemäß.</td>
     </tr>
     <tr>
@@ -349,7 +344,7 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Crea
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres Adobe Creative Cloud-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen.</a></p>
     </tr>
     <tr>
@@ -365,11 +360,11 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Crea
         <p>Wählen Sie die Version der [!DNL Adobe Analytics]-API aus, mit der Sie eine Verbindung herstellen möchten.</p>
       </td>
     </tr>    <tr>
-      <td role="rowheader">[!UICONTROL -Methode]</td>
+      <td role="rowheader">[!UICONTROL-Methode]</td>
       <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -409,7 +404,7 @@ Dieses Aktionsmodul lädt ein kleines Datei-Asset in eine vorhandene Bibliothek 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td>Eine bestehende Creative Cloud Libraries-Verbindung auswählen. Die Verbindungserstellung ist derzeit nicht im Creative Cloud Libraries-Connector verfügbar. Vorhandene Verbindungen funktionieren erwartungsgemäß.</td>
     </tr>
     <tr>

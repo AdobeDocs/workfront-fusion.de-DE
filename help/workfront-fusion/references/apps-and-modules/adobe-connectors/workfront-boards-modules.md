@@ -4,9 +4,9 @@ description: Sie können den Adobe Workfront Boards-Connector verwenden, um Ihre
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '2929'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
@@ -27,34 +27,22 @@ Sie können die Adobe Workfront-Pinnwand-Module verwenden, um Datensätze zu les
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
-   <p>Oder</p>
-   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -62,11 +50,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Voraussetzungen
++++## Voraussetzungen
 
 Sie müssen eine Pinnwand in Adobe Workfront konfiguriert haben, bevor Sie eine Verbindung damit herstellen können.
 
@@ -126,7 +110,7 @@ So erstellen Sie eine Workfront Boards-Verbindung:
           <td>Geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Dies finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console].
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL -Authentifizierungs-URL]<p>(Optional)</p></td>
+          <td role="rowheader">[!UICONTROL-Authentifizierungs-URL]<p>(Optional)</p></td>
           <td>Geben Sie die URL ein, die Ihre Workfront-Instanz zur Authentifizierung dieser Verbindung verwenden soll. <p>Der Standardwert lautet <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
@@ -170,7 +154,7 @@ Dieses Aktionsmodul fügt der angegebenen Karte ein Checklisten-Element hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -193,7 +177,7 @@ Dieses Aktionsmodul fügt einer Karte in Pinnwänden eine Unteraufgabe hinzu. Di
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -220,7 +204,7 @@ Dieses Aktionsmodul erstellt eine neue Karte auf einer Workfront-Pinnwand.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -247,7 +231,7 @@ Dieses Aktionsmodul verschiebt eine Karte in eine andere Spalte auf derselben Pi
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -278,7 +262,7 @@ Dieses Aktionsmodul ruft Informationen zu einer bestimmten Karte ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -301,7 +285,7 @@ Dieses Aktionsmodul aktualisiert die Informationen für eine von Ihnen angegeben
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -351,7 +335,7 @@ Dieses Aktionsmodul erstellt eine Pinnwand in Workfront. Sie können den Typ der
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -359,7 +343,7 @@ Dieses Aktionsmodul erstellt eine Pinnwand in Workfront. Sie können den Typ der
    <td>Geben Sie einen Namen für die neue Pinnwand ein oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Vorlage]</td> 
+   <td>[!UICONTROL-Vorlage]</td> 
    <td>Wählen Sie die Vorlage für den Pinnwand-Typ aus, den Sie erstellen möchten.</td> 
   </tr> 
  </tbody> 
@@ -374,7 +358,7 @@ Dieses Aktionsmodul gibt Informationen über eine einzelne Pinnwand zurück, z. 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -399,7 +383,7 @@ Dieses Aktionsmodul erstellt eine neue Spalte auf der angegebenen Pinnwand.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -426,7 +410,7 @@ Dieses Suchmodul gibt Informationen über die Spalte mit dem angegebenen Namen z
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -449,7 +433,7 @@ Dieses Aktionsmodul aktualisiert den Namen oder die WIP-Beschränkung der angege
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -481,7 +465,7 @@ Dieses Aktionsmodul fügt einer Karte ein Tag hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -508,7 +492,7 @@ Dieses Aktionsmodul erstellt ein neues Tag und weist ihm eine Farbe zu.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -540,7 +524,7 @@ Dieses Aktionsmodul hat einen Kommentar auf der angegebenen Karte erstellt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -548,7 +532,7 @@ Dieses Aktionsmodul hat einen Kommentar auf der angegebenen Karte erstellt.
    <td>Geben Sie die ID der Karte ein, der Sie einen Kommentar hinzufügen möchten, oder mappen Sie sie.<p>Die Karten-ID finden Sie in der URL, wenn Sie die Karte in Workfront anzeigen.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Kommentar]</td> 
+   <td>[!UICONTROL-Kommentar]</td> 
    <td>Geben Sie den Text des Kommentars ein, den Sie hinzufügen möchten, oder mappen Sie ihn.</p></td> 
   </tr> 
  </tbody> 
@@ -563,7 +547,7 @@ Dieses Aktionsmodul ruft die Kommentare von der angegebenen Karte ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -588,7 +572,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Workfront Boa
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -596,11 +580,11 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Workfront Boa
    <td> <p>Geben Sie einen Pfad relativ zu ein<code> https://&lt;WORKFRONT_DOMAIN&gt;/boards-service/graphql?</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p><p>Bei den meisten Boards ist die Methode POST. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Dadurch wird der Inhaltstyp der Anfrage bestimmt.</p> <p>Beispiel:<code> { "Content-type":"application/json-stringify()"}</code></p>  </td> 
   </tr> 
   <tr> 
@@ -627,15 +611,15 @@ Dieses Aktionsmodul führt eine benutzerdefinierte GraphQL-Anfrage an die Workfr
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
       <td> <p>Sie können eine bestehende Workfront-Verbindung verwenden, um eine Verbindung zu Workfront Boards herzustellen, oder Sie können eine bestimmte Workfront Boards-Verbindung verwenden. </p><p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Erstellen einer Verbindung zu Workfront</a> in diesem Artikel.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die Methode für diesen Aufruf. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -643,11 +627,11 @@ Dieses Aktionsmodul führt eine benutzerdefinierte GraphQL-Anfrage an die Workfr
    <td> <p>Geben Sie einen Namen für diesen Vorgang ein. Dies kann das Tracking und Debugging des Aufrufs vereinfachen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Variablen, Datenquelle]</td> 
+   <td role="rowheader">[!UICONTROL-Variablen, Datenquelle]</td> 
    <td> <p>Auswählen, ob die Variablen aus einem Formular oder aus einer Sammlung stammen sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Variablen]</td> 
+   <td role="rowheader">[!UICONTROL-Variablen]</td> 
    <td> <p>Klicken Sie für jede Variable, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Schlüssel und den Wert der Variablen ein.</p> </td> 
   </tr> 
   <tr> 

@@ -4,9 +4,9 @@ description: Viele Services stellen Webhooks bereit, mit denen sofortige Benachr
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3746ba1cd213a19a042da1a30b0d57bd1140907c
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ Viele Services stellen Webhooks bereit, mit denen sofortige Benachrichtigungen b
 
 >[!TIP]
 >
->Sie können die Modulliste in einem Connector überprüfen, um festzustellen, ob er über einen sofortigen Trigger verfügt, oder Sie können die Dokumentation des Connectors unter „Fusion[Anwendungen und deren Modulverweise“ &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+>Sie können die Modulliste in einem Connector überprüfen, um festzustellen, ob er über einen sofortigen Trigger verfügt, oder Sie können die Dokumentation des Connectors unter „Fusion[Anwendungen und deren Modulverweise“ ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 >
->Die Dokumentation zu Adobe Workfront Instant Trigger finden Sie unter [Trigger &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers) im Artikel Workfront-Module.
+>Die Dokumentation zu Adobe Workfront Instant Trigger finden Sie unter [Trigger ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers) im Artikel Workfront-Module.
 
 Wenn ein Connector keinen Webhook enthält, können Sie einen der folgenden Schritte ausführen:
 
@@ -35,25 +35,55 @@ Eine Videoeinführung zu Webhooks in Workfront Fusion finden Sie unter:
 * [Einführung in Webhooks](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [Zwischen-Webhooks](https://video.tv.adobe.com/v/3427030/){target=_blank}
 
+## Zugriffsanforderungen
+
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
 ## Webhook-Details anzeigen
 
 Eine Liste von Webhooks finden Sie im Bereich Webhooks .
 
-1. Um den Bereich Webhooks zu öffnen, klicken Sie im linken Navigationsbereich auf ![&#x200B; Symbol Webhooks &#x200B;](assets/webhooks-icon.png)Webhooks).
+1. Um den Bereich Webhooks zu öffnen, klicken Sie im linken Navigationsbereich auf ![ Symbol Webhooks ](assets/webhooks-icon.png)Webhooks).
 
    Hier sehen Sie eine Liste mit Webhooks.
 
    ![Webhook-Liste](assets/list-of-webhooks.png)
 
 1. Um nach einem bestimmten Webhook zu suchen, geben Sie Ihren Suchbegriff in das Suchfeld ein.
-1. Um einen Webhook zu kopieren, klicken Sie auf das Symbol &quot;![&#x200B; kopieren](assets/copy-webhook-icon.png) in der Nähe der URL in der Zeile für diesen Webhook.
+1. Um einen Webhook zu kopieren, klicken Sie auf das Symbol &quot;![ kopieren](assets/copy-webhook-icon.png) in der Nähe der URL in der Zeile für diesen Webhook.
 1. Um einen Webhook zu deaktivieren oder zu aktivieren, deaktivieren oder aktivieren Sie den Umschalter in der Spalte Status in der Zeile für diesen Webhook.
 1. Um festzustellen, ob eine Webhooks-Warteschlange voll ist, überprüfen Sie die Spalte Vollständige Warteschlange . Die Zahl in dieser Spalte ist die Anzahl der Elemente, die sich derzeit in der Warteschlange befinden.
 1. Um die von einem Webhook verarbeiteten Vorgänge anzuzeigen, klicken Sie **Vorgänge** in der Spalte „Vollständige Warteschlange“ für diesen Webhook.
 1. Um festzustellen, ob ein Webhook abgelaufen ist, überprüfen Sie die Spalte Abgelaufen . Abgelaufene Webhooks sind an kein Szenario angehängt oder haben seit 120 Stunden keine Ereignisse erhalten.
 1. Um das Szenario anzuzeigen, in dem ein Webhook verwendet wird, klicken Sie auf die Schaltfläche **Szenario** in der Spalte „Szenario“ für diesen Webhook.
 1. Um die für diesen Webhook verwendete Verbindung anzuzeigen, klicken Sie auf die Schaltfläche **Verbindung** in der Spalte „Verbindung“ für diesen Webhook.
-1. Um Spalten auszublenden oder zuvor ausgeblendete Spalten anzuzeigen, klicken Sie auf das Symbol **Spalten** (![) &#x200B;](assets/glist-column.png) und aktivieren oder deaktivieren Sie die Spaltennamen.
+1. Um Spalten auszublenden oder zuvor ausgeblendete Spalten anzuzeigen, klicken Sie auf das Symbol **Spalten** (![) ](assets/glist-column.png) und aktivieren oder deaktivieren Sie die Spaltennamen.
+
 
 ## Sofortige Trigger planen
 
@@ -107,7 +137,7 @@ Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 T
 
 Wenn in Ihrem Szenario ein Fehler mit einem sofortigen Trigger auftritt, wird das Szenario:
 
-* Beendet sofort, wenn das Szenario auf „Sofort[!UICONTROL &#x200B; eingestellt &#x200B;].
+* Beendet sofort, wenn das Szenario auf „Sofort[!UICONTROL  eingestellt ].
 * Beendet nach drei erfolglosen Versuchen (drei Fehlern), wenn das Szenario wie geplant ausgeführt wird.
 
 Wenn während der Ausführung des Szenarios ein Fehler auftritt, wird das Ereignis während der Rollback-Phase des sofortigen Triggers wieder in die Warteschlange gestellt. In einem solchen Fall können Sie das Szenario korrigieren und erneut ausführen.

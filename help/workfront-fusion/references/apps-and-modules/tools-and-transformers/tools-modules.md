@@ -4,9 +4,9 @@ description: Der  [!DNL Adobe Workfront Fusion Tools]  enthält mehrere nützlic
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '2292'
+source-wordcount: '2277'
 ht-degree: 0%
 
 ---
@@ -21,32 +21,22 @@ Der [!DNL Adobe Workfront Fusion Tools] Abschnitt enthält mehrere nützliche Mo
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
-   <td>
-   <p>Keine Workfront Fusion-Lizenzanforderung</p>
-   </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -54,9 +44,9 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 
 Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
+
+
 
 ## [!UICONTROL Tools] und ihre Felder
 
@@ -67,7 +57,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 ### Trigger
 
-#### [!UICONTROL Grundlegender Trigger &#x200B;]
+#### [!UICONTROL Grundlegender Trigger ]
 
 In diesem Modul können Sie einen benutzerdefinierten Trigger erstellen und dessen Eingabepakete definieren.
 
@@ -78,7 +68,7 @@ Dieses Modul kann beispielsweise für Kontakte oder andere Listen verwendet werd
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Bundle]</td> 
+   <td role="rowheader">[!UICONTROL-Bundle]</td> 
    <td> <p>Erstellen benutzerdefinierter Bundles durch Hinzufügen von Array-Elementen. Klicken Sie für jedes Element, das Sie dem Bundle hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Namen und den Wert des Elements ein.</p> </td> 
   </tr> 
  </tbody> 
@@ -101,7 +91,7 @@ Dieses Modul kann Variablen lesen, die an einer beliebigen Stelle im Szenario fe
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL -Variablen]</td>
+        <td>[!UICONTROL-Variablen]</td>
         <td>Klicken Sie für jede Variable, die das Modul abrufen soll, auf <b>Element hinzufügen</b> und geben Sie den Namen der Variablen ein.</td>
     </tr>
 </table>
@@ -111,7 +101,7 @@ Dieses Modul kann Variablen lesen, die an einer beliebigen Stelle im Szenario fe
 **Beispiele:** Die folgenden möglichen Verwendungen der [!UICONTROL Set]/[!UICONTROL Get(multiple) Variable(s)] sind:
 
 * So speichern Sie einen berechneten Wert für die spätere Verwendung, auch in einer anderen Route. Dies ist nützlich, wenn der Wert in mehreren Modulen verwendet wird und die Formel zur Berechnung des Werts zu komplex ist.
-* So debuggen Sie eine Formel. Wenn eine in einem Modul verwendete Formel scheinbar kein korrektes Ergebnis liefert, kopieren Sie die Formel und fügen Sie sie in ein Modul [!UICONTROL Variable festlegen] ein, das Sie vor dem entsprechenden Modul einfügen. Trennen Sie die Verbindung zu den Modulen nach dem Modul [!UICONTROL Variable festlegen] und führen Sie das Szenario aus. Überprüfen Sie die [!UICONTROL &#x200B; des Moduls &#x200B;]Variable festlegen“, passen Sie die Formel an oder vereinfachen Sie sie, führen Sie das Szenario erneut aus und fahren Sie damit fort, bis das Problem behoben ist.
+* So debuggen Sie eine Formel. Wenn eine in einem Modul verwendete Formel scheinbar kein korrektes Ergebnis liefert, kopieren Sie die Formel und fügen Sie sie in ein Modul [!UICONTROL Variable festlegen] ein, das Sie vor dem entsprechenden Modul einfügen. Trennen Sie die Verbindung zu den Modulen nach dem Modul [!UICONTROL Variable festlegen] und führen Sie das Szenario aus. Überprüfen Sie die [!UICONTROL  des Moduls ]Variable festlegen“, passen Sie die Formel an oder vereinfachen Sie sie, führen Sie das Szenario erneut aus und fahren Sie damit fort, bis das Problem behoben ist.
 
 >[!ENDSHADEBOX]
 
@@ -187,7 +177,7 @@ Dieses Modul erstellt Variablen, die von anderen Modulen in der Route zugeordnet
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Variablen]</td> 
+   <td>[!UICONTROL-Variablen]</td> 
    <td>Klicken Sie für jede Variable, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Namen und den Wert der Variablen ein.</td> 
   </tr> 
   <tr> 
@@ -239,7 +229,7 @@ Diese Funktion kann beispielsweise nützlich sein, wenn Sie die Last des [!DNL t
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL -Verzögerung]</p> </td> 
+   <td> <p>[!UICONTROL-Verzögerung]</p> </td> 
    <td> <p>Geben Sie die Anzahl der Sekunden ein, für die das Szenario angehalten wird.</p> </td> 
   </tr> 
  </tbody> 
@@ -289,7 +279,7 @@ Mit diesem Modul können Sie numerische Werte abrufen, dann eine der ausgewählt
    <td>Aktivieren Sie diese Option, um das Szenario zu stoppen, wenn keine Ergebnisse vorliegen.</td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL -Wert]</p> </td> 
+   <td> <p>[!UICONTROL-Wert]</p> </td> 
    <td> <p>Geben Sie den Wert ein, den Sie aggregieren möchten, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -312,11 +302,11 @@ Dieses Modul führt Werte aus den ausgewählten Feldern empfangener Bundles mith
    <td> <p> Wählen Sie aus dem oben ausgewählten Modul die Felder aus, die Werte enthalten, die Sie in das eine Bundle aggregieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL -Spaltentrennzeichen]</p> </td> 
+   <td> <p>[!UICONTROL-Spaltentrennzeichen]</p> </td> 
    <td> <p>Wählen Sie den Typ des Trennzeichens aus, das die Feldwertspalten im resultierenden Bundle trennt, oder geben Sie ihn ein. Wenn Sie [!UICONTROL Other] auswählen, geben Sie das Zeichen ein, mit dem Werte in das Feld Trennzeichen getrennt werden sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL -Zeilentrennzeichen]</p> </td> 
+   <td> <p>[!UICONTROL-Zeilentrennzeichen]</p> </td> 
    <td> <p>Wählen Sie den Typ des Trennzeichens aus, das die Zeilen mit den Feldwerten im resultierenden Bundle trennt, oder geben Sie ihn ein. Wenn Sie [!UICONTROL Other] auswählen, geben Sie das Zeichen ein, mit dem Werte in das Feld Trennzeichen getrennt werden sollen.</p> </td> 
   </tr> 
   <tr> 
@@ -343,7 +333,7 @@ Dieses Modul führt Werte aus den ausgewählten Feldern empfangener Bundles in e
    <td> <p>Wählen Sie das Modul aus, aus dem Sie Felder aggregieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL -Zeilentrennzeichen]</p> </td> 
+   <td> <p>[!UICONTROL-Zeilentrennzeichen]</p> </td> 
    <td> <p>Wählen Sie den Typ des Trennzeichens aus, das die Zeilen mit den Feldwerten im resultierenden Bundle trennt, oder geben Sie ihn ein. Wenn Sie [!UICONTROL Other] auswählen, geben Sie das Zeichen ein, mit dem Werte in das Feld Trennzeichen getrennt werden sollen.</p> </td> 
   </tr> 
   <tr> 
@@ -355,7 +345,7 @@ Dieses Modul führt Werte aus den ausgewählten Feldern empfangener Bundles in e
    <td>Wählen Sie diese Option, um das Szenario anzuhalten, wenn keine Ergebnisse vorliegen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Text]</td> 
+   <td>[!UICONTROL-Text]</td> 
    <td> <p> Geben Sie den Text ein, den das Modul aggregieren soll, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -382,7 +372,7 @@ Konvertiert einen beliebigen Wert in einen Datentyp „Zeichenfolge“ (Text). D
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Text]</td> 
+   <td role="rowheader">[!UICONTROL-Text]</td> 
    <td> <p>Geben Sie die Daten ein, die Sie in Text konvertieren möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 

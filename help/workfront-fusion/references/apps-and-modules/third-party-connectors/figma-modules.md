@@ -4,9 +4,9 @@ description: Mit den Adobe Workfront Fusion Figma-Modulen können Sie Listen von
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: '2600'
 ht-degree: 1%
 
 ---
@@ -23,34 +23,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 +++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
 
-Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Beliebig</p> </td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenz</td> 
-   <td> <p>Neu: Standard</p><p>Oder</p><p>Aktuell: Arbeit oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td> 
+   <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung</p>
-   <p>Oder</p>
-   <p>Legacy: Workfront Fusion für Arbeitsautomatisierung und -integration </p>
+   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Neu:</p> <ul><li>Prime oder Workfront auswählen: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li><li>Ultimate Workfront-Paket: Workfront Fusion ist enthalten.</li></ul>
-   <p>Oder</p>
-   <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -117,7 +112,7 @@ So erstellen Sie eine Verbindung für Ihre Figma-Module:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-ID]</td>
-        <td>Geben Sie Ihre [!UICONTROL -Grafik] [!UICONTROL -Client-ID] ein.</td>
+        <td>Geben Sie Ihre [!UICONTROL-Grafik] [!UICONTROL-Client-ID] ein.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
@@ -173,7 +168,7 @@ Dieses Aktionsmodul löscht einen einzelnen Kommentar aus einer Datei.
   <col />
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
       </td>
     </tr>
@@ -197,7 +192,7 @@ Dieses Suchmodul listet alle Kommentare auf, die an eine einzelne Datei in [!DNL
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
@@ -231,7 +226,7 @@ Dieses Aktionsmodul postet einen Kommentar in eine Figma-Datei.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
@@ -249,7 +244,7 @@ Dieses Aktionsmodul postet einen Kommentar in eine Figma-Datei.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kommentar]</td>
+      <td role="rowheader">[!UICONTROL-Kommentar]</td>
       <td>Geben Sie den Text des Kommentars ein.</td>
     </tr>
   </tbody>
@@ -276,7 +271,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
@@ -285,15 +280,15 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
         <p>Wählen Sie den Typ des Objekts aus, das Sie abrufen möchten.</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL -Datei]</b>
+            <p><b>[!UICONTROL-Datei]</b>
             </p>
             <p>Das Modul gibt das Dokument zurück, auf das [!UICONTROL Key] als JSON-Objekt verweist. Der Dateischlüssel kann aus einer beliebigen Figmadatei-URL geparst werden.</p>
             <p>Felder finden Sie unter <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Datei oder Bild abrufen: Datei]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL -Dateiknoten]</b>
+            <p><b>[!UICONTROL-Dateiknoten]</b>
             </p>
-            <p>Gibt die Knoten zurück, auf die von IDs als JSON-Objekt verwiesen wird. Die Knoten werden aus der [!DNL Figma]-Datei abgerufen, auf die der [!UICONTROL -Schlüssel] verweist.</p>
+            <p>Gibt die Knoten zurück, auf die von IDs als JSON-Objekt verwiesen wird. Die Knoten werden aus der [!DNL Figma]-Datei abgerufen, auf die der [!UICONTROL-Schlüssel] verweist.</p>
             <p>Felder finden Sie unter <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Datei oder Bild abrufen: Dateiknoten]</a>.</p>
           </li>
           <li>
@@ -322,7 +317,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
@@ -337,7 +332,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Tiefe]</td>
+      <td role="rowheader">[!UICONTROL-Tiefe]</td>
       <td>
         <p>Geben Sie eine Ganzzahl ein, die darstellt, wie tief in der Dokumentstruktur Sie Ergebnisse zurückgeben möchten, oder ordnen Sie sie zu. </p>
         <div class="example"><span class="autonumber"><span><b>Beispiel: </b></span></span>
@@ -375,7 +370,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
@@ -390,7 +385,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       <td>Geben Sie die Version der Datei ein, die das Modul zurückgeben soll, oder ordnen Sie sie zu. Lassen Sie dieses Feld für das aktuelle Modul leer.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Tiefe]</td>
+      <td role="rowheader">[!UICONTROL-Tiefe]</td>
       <td>
         <p>Geben Sie eine Ganzzahl ein, die darstellt, wie tief in der Dokumentstruktur Sie Ergebnisse zurückgeben möchten, oder ordnen Sie sie zu. </p>
         <div class="example"><span class="autonumber"><span><b>Beispiel: </b></span></span>
@@ -425,7 +420,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
@@ -440,7 +435,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       <td>Um das Bild zu skalieren, geben Sie den Skalierungsfaktor ein oder mappen Sie ihn. Diese Zahl muss zwischen 0,01 und 4 liegen.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Format]</td>
+      <td role="rowheader">[!UICONTROL-Format]</td>
       <td>
         <p>Wählen Sie das Format für die Bildausgabe aus.</p>
         <ul>
@@ -485,7 +480,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
   </tbody>
@@ -499,7 +494,7 @@ Dieses Suchmodul gibt den Versionsverlauf einer einzelnen Datei in „Figma.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     <tr>
       <td role="rowheader">[!UICONTROL Datei-ID]</td>
@@ -531,7 +526,7 @@ Dieses Suchmodul gibt eine Liste aller Dateien im angegebenen Projekt zurück.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
@@ -561,7 +556,7 @@ Dieses Suchmodul gibt eine Liste aller Projekte innerhalb des angegebenen Teams 
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
@@ -587,7 +582,7 @@ Dieses Aktionsmodul ruft einen einzelnen Stil, eine einzelne Komponente oder ein
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
@@ -642,7 +637,7 @@ Mit diesem Aktionsmodul können Sie die Figma-API benutzerdefiniert authentifizi
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
+      <td role="rowheader">[!UICONTROL-Verbindung]</td>
       <td> <p>Anweisungen zum Verbinden Ihres [!DNL Figma]-Kontos mit Workfront Fusion finden Sie <a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu Figma</a> in diesem Artikel.</p>
     </tr>
     <tr>
@@ -653,11 +648,11 @@ Mit diesem Aktionsmodul können Sie die Figma-API benutzerdefiniert authentifizi
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Methode]</td>
+      <td role="rowheader">[!UICONTROL-Methode]</td>
       <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL-Kopfzeilen]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>

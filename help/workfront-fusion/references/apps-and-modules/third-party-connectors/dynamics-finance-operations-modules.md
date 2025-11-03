@@ -4,9 +4,9 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 96f8d4f1-f97b-4da8-8d82-83cccb54ec68
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1142'
 ht-degree: 1%
 
 ---
@@ -26,6 +26,46 @@ In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, d
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
+
+## Zugriffsanforderungen
+
++++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
+   <td>
+   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+
 
 ## Verbindung erstellen
 
@@ -97,11 +137,11 @@ Dieses Aktionsmodul erstellt ein neues Entitätselement in Microsoft Dynamics 36
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL -Verbindung]</td>
+    <td>[!UICONTROL-Verbindung]</td>
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL -Entität]</td>
+    <td>[!UICONTROL-Entität]</td>
      <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, den Sie erstellen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -122,11 +162,11 @@ Dieses Aktionsmodul löscht ein Entitätselement aus Dynamics Finance and Operat
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL -Verbindung]</td>
+    <td>[!UICONTROL-Verbindung]</td>
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL -Entität]</td>
+    <td>[!UICONTROL-Entität]</td>
      <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, den Sie löschen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -145,7 +185,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Dynamics Fina
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL-Verbindung]</td> 
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -153,11 +193,11 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Dynamics Fina
    <td> <p>Geben Sie einen Pfad relativ zu Ihrer Dynamics Finance and Operations-URL ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL-Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL-Kopfzeilen]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Dadurch wird der Inhaltstyp der Anfrage bestimmt.</p> <p>Beispiel:<code> {"Content-type":"application/json"}</code></p> <p>Hinweis: Wenn Fehler auftreten und es schwierig ist, deren Ursprung zu ermitteln, sollten Sie die Kopfzeilen basierend auf der Workfront-Dokumentation ändern. Wenn Ihr benutzerdefinierter API-Aufruf einen 422-HTTP-Anfragefehler zurückgibt, versuchen Sie es mit einer <code>"Content-Type":"text/plain"</code>-Kopfzeile.</p> </td> 
   </tr> 
   <tr> 
@@ -185,11 +225,11 @@ Dieses Aktionsmodul gibt Daten aus einem Entitätselement zurück. Das Element w
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL -Verbindung]</td>
+    <td>[!UICONTROL-Verbindung]</td>
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL -Entität]</td>
+    <td>[!UICONTROL-Entität]</td>
      <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, den Sie lesen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -206,11 +246,11 @@ Dieses Aktionsmodul gibt Daten aus einem Entitätselement zurück. Das Element w
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL -Verbindung]</td>
+    <td>[!UICONTROL-Verbindung]</td>
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL -Entität]</td>
+    <td>[!UICONTROL-Entität]</td>
      <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, den Sie aktualisieren möchten, oder ordnen Sie ihn zu.</td> 
   </tr>  
   <tr> 
@@ -233,11 +273,11 @@ Dieses Suchmodul gibt Ergebnisse basierend auf von Ihnen angegebenen Kriterien z
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL-Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Entität]</td> 
+   <td>[!UICONTROL-Entität]</td> 
    <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, nach dem Sie suchen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
