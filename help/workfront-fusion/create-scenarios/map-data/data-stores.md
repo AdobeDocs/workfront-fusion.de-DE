@@ -4,9 +4,9 @@ description: Ein Datenspeicher, ähnlich einer Datenbank oder einer einfachen Ta
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1324'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Fusion-Instanzen der Pakete „Select“ oder &quot;Prime&quot; erhalten:-->
 
   Beispielsweise erhält eine Organisation mit 600.000 Vorgängen 110 MB.
 
-Ihr Unternehmen kann über bis zu 50 Datenspeicher verfügen. Die Gesamtgröße dieser Datenspeicher darf die Gesamtgröße der Datenspeicher Ihres Unternehmens nicht überschreiten.
+Jedes Team in Ihrem Unternehmen kann über bis zu 50 Datenspeicher verfügen. Die Gesamtgröße dieser Datenspeicher darf die Gesamtgröße der Datenspeicher Ihres Unternehmens nicht überschreiten.
 
 ## Erstellen eines Datenspeichers in Workfront Fusion
 
@@ -114,7 +114,7 @@ Bevor Sie einen Datenspeicher in einem Modul verwenden können, müssen Sie den 
       <td> <p>Geben Sie einen Namen für den Datenspeicher ein. </p> </td> 
      </tr> 
      <tr> 
-      <td> <p>[!UICONTROL -Datenstruktur]</p> </td> 
+      <td> <p>[!UICONTROL-Datenstruktur]</p> </td> 
       <td> <p>Eine Datenstruktur ist eine Liste der Spalten für eine Tabelle. Diese Liste gibt den Spaltennamen und den Datentyp an.</p> <p>Führen Sie einen der folgenden Schritte aus:</p> 
        <ul> 
         <li><b>Eine bereits erstellte Datenstruktur auswählen</b></li> 
@@ -224,7 +224,7 @@ Es gibt derzeit kein Tool, das die Wiederherstellung verlorener Daten automatisi
 
    Informationen zum Einfügen von Daten in einen Datenspeicher finden Sie unter [Bearbeiten des Inhalts eines Datenspeichers](#edit-the-contents-of-a-data-store) in diesem Artikel.
 
-### [!UICONTROL Unzureichender &#x200B;])
+### [!UICONTROL Unzureichender ])
 
 Ein [!UICONTROL Speicherplatzmangel] tritt auf, weil den zuvor erstellten Datenspeichern bereits der zugewiesene Datenspeicher zugewiesen wurde.
 
