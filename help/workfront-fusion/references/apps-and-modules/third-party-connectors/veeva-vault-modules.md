@@ -3,9 +3,9 @@ title: Veeva Vault-Module
 description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Veeva Vault verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
+source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
 workflow-type: tm+mt
-source-wordcount: '1661'
+source-wordcount: '2325'
 ht-degree: 3%
 
 ---
@@ -118,18 +118,23 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Dokument](#document)
+* [Objekt](#object)
+* [Sonstiges](#other)
+
 ### Dokument
 
 * [Ein einzelnes Dokument erstellen](#create-a-single-document)
 * [Mehrere Dokumente erstellen](#create-multiple-documents)
 * [Ein einzelnes Dokument löschen](#delete-a-single-document)
+* [Datei herunterladen](#download-file)
 * [Dokumente exportieren](#export-documents)
 * [Ein einzelnes Dokument abrufen](#get-a-single-document)
 * [Benutzeraktion initiieren](#initiate-user-action)
 * [Dokumente auflisten](#list-documents)
 * [Ergebnisse des Dokumentexports abrufen](#retrieve-document-export-results)
-* [Mehrere Dokumente aktualisieren](#update-multiple-documents)
 * [Einzelnes Dokument aktualisieren](#update-a-single-document)
+* [Mehrere Dokumente aktualisieren](#update-multiple-documents)
 
 #### Ein einzelnes Dokument erstellen
 
@@ -196,6 +201,41 @@ Dieses Modul löscht ein einzelnes Dokument, einen Binder oder eine Vorlage.
   <tr> 
    <td role="rowheader"><p>Dokument-ID/Binder-ID/Vorlagenname</p> </td> 
    <td> <p>Wählen Sie die Felder aus, die Sie löschen möchten.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Herunterladen der Datei
+
+Dieses Modul lädt ein Dokument, eine Dokumentversion oder eine Vorlage aus Veeva Vault herunter.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Typ</p> </td> 
+   <td> <p>Wählen Sie aus, ob Sie ein Dokument oder eine Vorlage herunterladen möchten.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Download-Typ</p> </td> 
+   <td> <p>Wählen Sie aus, ob Sie ein Dokument oder eine Dokumentversion herunterladen möchten.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Dokument-ID/Vorlagenname</p> </td> 
+   <td> <p>Geben Sie die ID des Dokuments oder den Namen der Vorlage, die Sie herunterladen möchten, ein oder ordnen Sie sie zu.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Dokument auschecken</p> </td> 
+   <td> <p>Wenn Sie ein Dokument herunterladen, aktivieren Sie diese Option, um das Dokument vor dem Herunterladen auszuchecken.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Wenn Sie eine Dokumentversion herunterladen, wählen Sie die herunterzuladende Version aus.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -387,9 +427,106 @@ Dieses Modul aktualisiert ein einzelnes Dokument, einen Binder oder eine Vorlage
 
 ### Objekt
 
+* [Erstellen eines einzelnen Objektdatensatzes](#create-a-single-object-record)
+* [Löschen eines einzelnen Objektdatensatzes](#delete-a-single-object-record)
+* [Abrufen eines einzelnen Objekts](#get-a-single-object)
+* [Auflisten von Objekten und Datensätzen](#list-objects-records)
+* [Aktualisieren eines einzelnen Objektdatensatzes](#update-a-single-object-record)
 
+#### Erstellen eines einzelnen Objektdatensatzes
 
-#### Objekte auflisten
+Dieses Modul erstellt, kopiert oder tief kopiert einen einzelnen Objektdatensatz.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Typ</p> </td> 
+   <td> <p>Wählen Sie aus, ob ein Datensatz erstellt oder kopiert werden soll oder ob ein Datensatz tief kopiert werden soll.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Migrationsmodus</td> 
+   <td>Wenn Sie einen Datensatz erstellen oder kopieren, aktivieren Sie diese Option, um Objektdatensätze nicht im Anfangszustand und mit minimaler Validierung zu erstellen oder zu aktualisieren, inaktive Datensätze zu erstellen und standardmäßige und systemverwaltete Felder wie <code>createdby_v</code> festzulegen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Keine Trigger</td> 
+   <td>Wenn auf „true“ gesetzt und der Migrationsmodus aktiviert ist, umgeht das Modul alle System-, Standard-, benutzerdefinierten SDK-Trigger und Aktions-Trigger.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Objektname</td> 
+   <td>Geben Sie den Wert des Feldes __v) des Objektnamens ein oder ordnen Sie ihn zu, z. B. <code>product__v</code>, <code>country__v</code> oder <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Datensatz-ID</td> 
+   <td>Wenn Sie einen Datensatz tief kopieren, wählen Sie den zu kopierenden Datensatz aus.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Datensatzfelder</td> 
+   <td>Wenn Sie einen Datensatz tief kopieren, wählen Sie die Felder aus, für die Sie Werte angeben möchten, und geben Sie diese Werte an.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Löschen eines einzelnen Objektdatensatzes
+
+Dieses Modul löscht oder kaskadiert einen einzelnen Objektdatensatz. Durch das kaskadierende Löschen eines Datensatzes werden der Datensatz und alle untergeordneten Objekte gelöscht.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Typ</p> </td> 
+   <td> <p>Wählen Sie aus, ob ein Datensatz gelöscht oder kaskadierend gelöscht werden soll.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Objektname</td> 
+   <td>Wählen Sie das Objekt aus, das Sie löschen möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Datensatz-ID</td> 
+   <td>Wählen Sie die ID des Datensatzes aus, den Sie löschen möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Externe ID</td> 
+   <td>Anstelle der Datensatz-ID können Sie diese benutzerdefinierte externe Dokument-ID verwenden.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Abrufen eines einzelnen Objekts
+
+Dieses Modul ruft Metadaten ab, die für einen bestimmten Objektdatensatz in Ihrem Tresor konfiguriert sind.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Objektname</td> 
+   <td>Wählen Sie das Objekt aus, für das Sie Metadaten abrufen möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Datensatz-ID</td> 
+   <td>Wählen Sie die ID des Datensatzes aus, für den Sie Metadaten abrufen möchten.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Auflisten von Objekten und Datensätzen
 
 Dieses Modul ruft alle Vault-Objekte im authentifizierten Vault ab.
 
@@ -408,6 +545,55 @@ Dieses Modul ruft alle Vault-Objekte im authentifizierten Vault ab.
   <tr> 
    <td role="rowheader">Maximale Anzahl an zurückgegebenen Ergebnissen</td> 
    <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Update a single object record-->
+
+Dieses Modul aktualisiert Felder in einem vorhandenen Objektdatensatz.
+
+Dieses Modul erstellt, kopiert oder tief kopiert einen einzelnen Objektdatensatz.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Typ</p> </td> 
+   <td> <p>Wählen Sie aus, ob ein Datensatz erstellt oder kopiert werden soll oder ob ein Datensatz tief kopiert werden soll.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Migrationsmodus</td> 
+   <td>Aktivieren Sie diese Option, um Objektdatensätze in einem nicht anfänglichen Status und mit minimaler Validierung zu erstellen oder zu aktualisieren, inaktive Datensätze zu erstellen und standardmäßige und systemverwaltete Felder wie <code>createdby_v</code> festzulegen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Keine Trigger</td> 
+   <td>Wenn der Migrationsmodus aktiviert ist, können Sie diese Option aktivieren, um alle System-, Standard-, benutzerdefinierten SDK-Trigger und Aktions-Trigger zu umgehen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Objektname</td> 
+   <td>Geben Sie den Wert des Feldes __v) des Objektnamens ein oder ordnen Sie ihn zu, z. B. <code>product__v</code>, <code>country__v</code> oder <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Datensatz-ID</td> 
+   <td>Kennung des zu aktualisierenden Eintrags auswählen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Land</td> 
+   <td>Geben Sie den Lebenszyklusstatus des Datensatzes an, wenn <code>X-VaultAPI-MigrationMode</code> auf „true“ gesetzt ist.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Statuslabel</td> 
+   <td>Geben Sie den Lebenszyklusstatustyp des Datensatzes an, wenn <code>X-VaultAPI-MigrationMode</code> auf „true“ gesetzt ist. Verwenden Sie das Format <code>base:object_lifecycle:</code> gefolgt vom Objektstatustyp .</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Datensatzfelder</td> 
+   <td>Wenn Sie einen Datensatz tief kopieren, wählen Sie die Felder aus, für die Sie Werte angeben möchten, und geben Sie diese Werte an.</td> 
   </tr> 
  </tbody> 
 </table>
