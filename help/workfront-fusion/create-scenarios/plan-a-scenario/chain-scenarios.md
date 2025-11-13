@@ -3,17 +3,19 @@ title: Mehrere Szenarien verketten
 description: Sie können Szenarien miteinander verketten, sodass ein Szenario ein Trigger zum anderen durchführt, und die vom zweiten Szenario ausgegebenen Daten an das erste zurückgeben.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b41f7795273d35dc4e0c019c568f8939926b875a
+exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
 
-
 # Verketten mehrerer Szenarien
+
+>[!NOTE]
+>
+>Diese Funktion befindet sich derzeit in Beta.
 
 Sie können Szenarien miteinander verketten, sodass ein Szenario ein Trigger zum anderen durchführt, und die vom zweiten Szenario ausgegebenen Daten an das erste zurückgeben. Dies ermöglicht eine modularere Szenarioerstellung, bei der Sie Szenarioabschnitte in mehreren Szenarien nicht duplizieren müssen.
 
@@ -74,7 +76,7 @@ Es wird empfohlen, die Schaltfläche **Zum untergeordneten Szenario wechseln** i
 
 ## Fehler und unvollständige Ausführungen
 
-### Fehlerbehandlung
+### Umgang mit Fehlern
 
 Wenn das untergeordnete Szenario einen Fehler aufweist, kann dies dazu führen, dass Daten an das übergeordnete Element zurückgegeben werden.
 
