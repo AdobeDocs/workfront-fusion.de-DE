@@ -3,9 +3,7 @@ title: Slack-Module
 description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows automatisieren, die Slack verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: bb1cd0c54ae2c81c601d463cdc281d6ae7b8c434
+source-git-commit: 9c5a73e284026cea03296e9a536958f4630fd81c
 workflow-type: tm+mt
 source-wordcount: '4560'
 ht-degree: 8%
@@ -16,7 +14,7 @@ ht-degree: 8%
 
 >[!IMPORTANT]
 >
->In diesem Artikel werden die Module beschrieben, die im neuen Slack-Connector verfügbar sind, der am 14. November 2025 veröffentlicht wurde.
+>In diesem Artikel werden die Module beschrieben, die im neuen Slack-Connector verfügbar sind, der am 17. November 2025 veröffentlicht wurde.
 >
 >Informationen zum alten Slack-Connector finden Sie unter [[!DNL Slack] Module (Legacy)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md).
 
@@ -135,7 +133,7 @@ Dieses Aktionsmodul erstellt eine neue Nachricht.
    <td> <p>Geben Sie den Textinhalt der Nachricht ein, die Sie erstellen möchten.</p> <p>Hinweis: Detaillierte Informationen zur Textformatierung finden Sie unter <a href="https://api.slack.com/reference/surfaces/formatting">Text für Programmoberflächen formatieren</a> in der [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Blöcke]</td> 
+   <td role="rowheader">[!UICONTROL-Blöcke]</td> 
    <td>Blöcke sind wiederverwendbare Komponenten, mit denen Sie Ihre Nachrichten anpassen und organisieren können. Weitere Informationen zu Blöcken finden Sie unter <a href="https://api.slack.com/block-kit">Blockkit</a> in der [!DNL Slack].</td> 
   </tr> 
   <tr> 
@@ -292,7 +290,7 @@ Dieses Suchmodul gibt Nachrichten zurück, die mit einer Suchanfrage übereinsti
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Slack]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
    <td> <p>Geben Sie die Abfrage ein, nach der Sie suchen möchten. </p> <p>Informationen zum Erstellen von Formeln im Zuordnungsbereich finden Sie unter <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">Zuordnen von Elementen mithilfe von Funktionen in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -337,7 +335,7 @@ Mit diesem Aktionsmodul können Sie eine vorhandene Nachricht bearbeiten.
    <td> <p>Geben Sie den neuen Textinhalt der Nachricht ein, die Sie aktualisieren möchten.</p> <p>Weitere Informationen finden Sie unter <a href="https://api.slack.com/docs/formatting">Text für Programmoberflächen formatieren</a> in der [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Blöcke]</td> 
+   <td role="rowheader">[!UICONTROL-Blöcke]</td> 
    <td>Blöcke sind wiederverwendbare Komponenten, mit denen Sie Ihre Nachrichten anpassen und organisieren können. Weitere Informationen zu Blöcken finden Sie unter <a href="https://api.slack.com/block-kit">Blockkit</a> in der [!DNL Slack].</td> 
   </tr> 
   <tr> 
@@ -908,7 +906,7 @@ Dieses Aktionsmodul fügt einem Element eine Reaktion hinzu.
    <td> <p> Geben Sie den Zeitstempel der Nachricht ein, der eine Reaktion hinzugefügt werden soll, oder ordnen Sie ihn zu.</p> <p>Hinweis: Der Zeitstempel kann mit einem anderen Modul abgerufen werden, z. B. dem Modul [!UICONTROL Watch Private Channel].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name der-Reaktion (Emoji)]</td> 
+   <td role="rowheader">[!Name der UICONTROL-Reaktion (Emoji)]</td> 
    <td>Geben Sie den Namen des Emojis ein, das Sie für eine Reaktion verwenden möchten, oder mappen Sie ihn. Beispiel: <code>thumbsup</code>. </td> 
   </tr> 
  </tbody> 
@@ -929,7 +927,7 @@ Dieses Aktionsmodul gibt von einem Benutzer durchgeführte Reaktionen zurück.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Slack]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Benutzer]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Benutzer]</p> </td> 
    <td> <p>Wählen Sie den Benutzer aus, der die Reaktionen erstellt hat, die Sie auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -966,7 +964,7 @@ Dieses Aktionsmodul entfernt eine Reaktion aus einem Element.
    <td> <p> Geben Sie den Zeitstempel der Nachricht ein, aus der Sie eine Reaktion entfernen möchten, oder ordnen Sie ihn zu.</p> <p>Hinweis: Der Zeitstempel kann mit einem anderen Modul abgerufen werden, z. B. dem Modul [!UICONTROL Watch Private Channel].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name der-Reaktion (Emoji)]</td> 
+   <td role="rowheader">[!Name der UICONTROL-Reaktion (Emoji)]</td> 
    <td>Geben Sie den Namen des Emojis ein, das Sie aus der Nachricht entfernen möchten, oder ordnen Sie ihn zu. Beispiel: <code>thumbsup</code>. </td> 
   </tr> 
  </tbody> 
@@ -1356,7 +1354,7 @@ Dieses Aktionsmodul erstellt eine Erinnerung.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Benutzer] </p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Benutzer] </p> </td> 
    <td> <p>Wählen Sie den Benutzer aus, der die Erinnerung erhält.</p> </td> 
   </tr> 
  </tbody> 
