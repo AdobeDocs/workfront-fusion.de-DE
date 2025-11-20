@@ -249,7 +249,7 @@ Dieses Aktionsmodul postet einen Kommentar in eine Figma-Datei.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Kommentar]</td>
+      <td role="rowheader">[!UICONTROL -Kommentar]</td>
       <td>Geben Sie den Text des Kommentars ein.</td>
     </tr>
   </tbody>
@@ -285,15 +285,15 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
         <p>Wählen Sie den Typ des Objekts aus, das Sie abrufen möchten.</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL-Datei]</b>
+            <p><b>[!UICONTROL -Datei]</b>
             </p>
             <p>Das Modul gibt das Dokument zurück, auf das [!UICONTROL Key] als JSON-Objekt verweist. Der Dateischlüssel kann aus einer beliebigen Figmadatei-URL geparst werden.</p>
             <p>Felder finden Sie unter <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Datei oder Bild abrufen: Datei]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL-Dateiknoten]</b>
+            <p><b>[!UICONTROL -Dateiknoten]</b>
             </p>
-            <p>Gibt die Knoten zurück, auf die von IDs als JSON-Objekt verwiesen wird. Die Knoten werden aus der [!DNL Figma]-Datei abgerufen, auf die der [!UICONTROL-Schlüssel] verweist.</p>
+            <p>Gibt die Knoten zurück, auf die von IDs als JSON-Objekt verwiesen wird. Die Knoten werden aus der [!DNL Figma]-Datei abgerufen, auf die der [!UICONTROL -Schlüssel] verweist.</p>
             <p>Felder finden Sie unter <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Datei oder Bild abrufen: Dateiknoten]</a>.</p>
           </li>
           <li>
@@ -322,7 +322,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
@@ -337,7 +337,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Tiefe]</td>
+      <td role="rowheader">[!UICONTROL -Tiefe]</td>
       <td>
         <p>Geben Sie eine Ganzzahl ein, die darstellt, wie tief in der Dokumentstruktur Sie Ergebnisse zurückgeben möchten, oder ordnen Sie sie zu. </p>
         <div class="example"><span class="autonumber"><span><b>Beispiel: </b></span></span>
@@ -375,7 +375,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
@@ -390,7 +390,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       <td>Geben Sie die Version der Datei ein, die das Modul zurückgeben soll, oder ordnen Sie sie zu. Lassen Sie dieses Feld für das aktuelle Modul leer.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Tiefe]</td>
+      <td role="rowheader">[!UICONTROL -Tiefe]</td>
       <td>
         <p>Geben Sie eine Ganzzahl ein, die darstellt, wie tief in der Dokumentstruktur Sie Ergebnisse zurückgeben möchten, oder ordnen Sie sie zu. </p>
         <div class="example"><span class="autonumber"><span><b>Beispiel: </b></span></span>
@@ -425,7 +425,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
@@ -440,7 +440,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       <td>Um das Bild zu skalieren, geben Sie den Skalierungsfaktor ein oder mappen Sie ihn. Diese Zahl muss zwischen 0,01 und 4 liegen.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Format]</td>
+      <td role="rowheader">[!UICONTROL -Format]</td>
       <td>
         <p>Wählen Sie das Format für die Bildausgabe aus.</p>
         <ul>
@@ -485,7 +485,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
   </tbody>
