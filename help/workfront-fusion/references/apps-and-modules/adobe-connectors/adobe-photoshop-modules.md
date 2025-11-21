@@ -645,7 +645,7 @@ Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können 
    <td> Geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Ebenen]</td>
+      <td role="rowheader">[!UICONTROL -Ebenen]</td>
    <td> <p>Klicken Sie für jede Textebene, die Sie bearbeiten möchten, auf <b>Element hinzufügen</b> und geben Sie die Ebenenoptionen ein.<p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Text bearbeiten</a> in der Adobe Photoshop-Dokumentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Ausgabe)-Speicher]</td>
@@ -719,7 +719,7 @@ Um mehrere Ebenen zu bearbeiten, verwenden Sie das Modul [Textebenen bearbeiten]
    <td> Geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Ebenen]</td>
+      <td role="rowheader">[!UICONTROL -Ebenen]</td>
    <td> <p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Textebene bearbeiten</a> in der Adobe Photoshop-Dokumentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ausgabedateispeicher]</td>
@@ -1233,7 +1233,7 @@ Dieses Modul verwendet die Smart Object API Version 2.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-Ebenen]</p>
+        <p>[!UICONTROL -Ebenen]</p>
       </td>
    <td>Klicken Sie für jede Ebene, die Sie dem Smart-Objekt hinzufügen möchten, auf Element hinzufügen und geben Sie den Namen oder die ID des Objekts, den Datei-Service, in dem das Smart-Objekt gespeichert ist, und die URL oder den Pfad der Ebene ein.<p>Beschreibungen der erweiterten Einstellungen in diesem Bereich finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Ersetzen eines Smart-Objekts</a> in der Dokumentation zur Photoshop-API </td> 
     </tr>
@@ -1298,7 +1298,7 @@ Dieses Modul verwendet die Legacy-Version von Smart-Objekten.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-Ebenen]</p>
+        <p>[!UICONTROL -Ebenen]</p>
       </td>
    <td>Klicken Sie für jede Ebene, die Sie dem Smart-Objekt hinzufügen möchten, auf Element hinzufügen und geben Sie den Namen oder die ID des Objekts, den Datei-Service, in dem das Smart-Objekt gespeichert ist, und die URL oder den Pfad der Ebene ein.<p>Beschreibungen der erweiterten Einstellungen in diesem Bereich finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Ersetzen eines Smart-Objekts</a> in der Dokumentation zur Photoshop-API </td> 
     </tr>
@@ -1347,7 +1347,7 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
       <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Photoshop] finden Sie unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Photoshop]</a> in diesem Artikel.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Speicher]</td>
+      <td role="rowheader">[!UICONTROL -Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die Datei gespeichert wird, deren Größe geändert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
@@ -1366,7 +1366,7 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
     </tr>
     <tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Speicher]</td>
+      <td role="rowheader">[!UICONTROL -Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die neue Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
