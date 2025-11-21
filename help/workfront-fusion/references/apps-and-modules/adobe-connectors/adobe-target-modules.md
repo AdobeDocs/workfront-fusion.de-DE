@@ -138,7 +138,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Target]:
         <td>Geben Sie Ihre [!DNL Adobe] Organisations-ID ein. Diese finden Sie im Abschnitt für [!UICONTROL Credentials details] der [!DNL Adobe Developer Console].
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-Mandant]</td>
+        <td role="rowheader">[!UICONTROL -Mandant]</td>
         <td>
           <p> Um Ihren Mandanten zu finden, melden Sie sich bei der [!DNL Adobe Experience Cloud] an, öffnen Sie [!DNL Target] und klicken Sie auf die [!DNL Target]. Verwenden Sie den Mandanten-ID-Wert, wie in der URL-Subdomain angegeben.</p>
           <p>Wenn beispielsweise Ihre URL bei der Anmeldung bei [!DNL Adobe Target] <code>&lt;https://mycompany.experiencecloud.adobe.com/...></code> ist, lautet Ihre Mandanten-ID „mycompany“.</p>
@@ -477,7 +477,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
       <td>Geben Sie einen Namen für diese Aktivität ein oder mappen Sie ihn. Der Name darf nicht länger 250 Zeichen sein.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Optionen]</td>
+      <td role="rowheader">[!UICONTROL -Optionen]</td>
       <td>
         <p>Klicken Sie für jede Option, die Sie der Aktivität hinzufügen möchten, auf <b>[!UICONTROL Element hinzufügen]</b> und füllen Sie die folgenden Felder aus:</p>
         <ul>
@@ -557,7 +557,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Metriken]</td>
+      <td role="rowheader">[!UICONTROL -Metriken]</td>
       <td> </td>
     </tr>
     <tr>
@@ -573,7 +573,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
       <td>Geben Sie das Datum und die Uhrzeit für das Ende der Aktivität im Format <code>YYYY-MM-DD hh:mm:ss.z</code> ein oder mappen Sie sie.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Status]</td>
+      <td role="rowheader">[!UICONTROL -Status]</td>
       <td>
         <p>Geben Sie den Status der Aktivität ein oder mappen Sie ihn.</p>
         <ul>
@@ -596,7 +596,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Priorität]</td>
+      <td role="rowheader">[!UICONTROL -Priorität]</td>
       <td>Geben Sie eine Zahl ein, die die Priorität der Aktivität definiert. Höhere Zahlen haben eine höhere Priorität. Dieser Wert muss zwischen 0 und 999 liegen. Der Standardwert lautet 5.</td>
     </tr>
     <tr>
@@ -651,7 +651,7 @@ Dieses Aktionsmodul erstellt eine AB- oder XT-Aktivität, ein Angebot oder eine 
       <td>Geben Sie einen Namen für diese Aktivität ein oder mappen Sie ihn. Der Name darf nicht länger 250 Zeichen sein.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Inhalt]</td>
+      <td role="rowheader">[!UICONTROL -Inhalt]</td>
       <td>
         <p>Geben Sie den Inhalt des Angebots ein, das dem Benutzer angezeigt werden soll, oder ordnen Sie ihn zu.</p>
       </td>
