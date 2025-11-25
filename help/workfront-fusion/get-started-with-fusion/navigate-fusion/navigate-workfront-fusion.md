@@ -4,7 +4,7 @@ description: Wenn Sie Fusion öffnen, haben Sie viele Optionen für Aktionen. In
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
+source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 In diesem Artikel werden diese Bereiche vorgestellt und Links zu weiteren Informationen zu den einzelnen Bereichen bereitgestellt.
 
-| Bereich | Beschreibung | Weitere Informationen finden Sie unter |
+| Bereich | Beschreibung | Weitere Informationen finden Sie unter  |
 |---|---|---|
 | Organisationsübersicht <br> ![Org-Symbol](assets/org-icon.png) | Hier finden Sie Informationen zu Ihrer Fusion-Organisation. Sie können die Anzahl der von Szenarien in dieser Organisation ausgeführten Vorgänge sowie eine Liste aktiver Szenarien anzeigen. Sie können auch Listen des Teams, der Benutzer und der Umgebungen dieser Organisation anzeigen.<br>Die aktuell ausgewählte Organisation wird über diesem Symbol angezeigt. | [Organisationen und Teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Team-<br> ![Team-Symbol](assets/team-icon.png) | Hier finden Sie Informationen zu Fusion-Teams, z. B. die Anzahl der Vorgänge, die von Szenarien in diesem Team ausgeführt werden, und eine Liste der aktiven Szenarien. Sie können auch die Benutzer in diesem Team anzeigen und verwalten. Wenn Sie ein Team anzeigen, können Sie oben auf dieser Seite in einem Dropdown-Menü ein anderes Team auswählen.<br>Das aktuell ausgewählte Team wird über diesem Symbol angezeigt.<br>Möglicherweise müssen Sie ein Team erstellen, bevor Sie die Team-Übersicht oder einen der in diesem Artikel aufgeführten Team-Abschnitte sehen. | [Organisationen und Teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
