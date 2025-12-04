@@ -4,10 +4,10 @@ description: Sie können den Adobe Workfront Fusion Adobe Workfront-Connector ve
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 6e2593c0f171bae278e86fed53492b8f64ae3d7e
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '7323'
-ht-degree: 8%
+source-wordcount: '7366'
+ht-degree: 12%
 
 ---
 
@@ -36,7 +36,7 @@ Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szen
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -44,22 +44,22 @@ Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szen
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Jedes Paket für Adobe Workfront Workflow und Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Adobe Workfront Fusion erworben werden.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Informationen zu den Angaben in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++## Verbinden von Workfront mit Workfront Fusion 
 
@@ -82,27 +82,27 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL Verbindungstyp]</td>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
           <p><b>Adobe Workfront-Authentifizierungsverbindung </b>.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Verbindungsname]</td>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>Geben Sie einen Namen für die neue Verbindung ein.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client-ID]</td>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
         <td>Geben Sie Ihre Workfront-Client-ID ein. Diese finden Sie im Bereich OAuth2-Anwendungen des Bereichs Setup in Workfront. Öffnen Sie das spezifische Programm, mit dem Sie eine Verbindung herstellen, um die Client-ID anzuzeigen.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
         <td>Geben Sie Ihr Workfront-Client-Geheimnis ein. Diese finden Sie im Bereich OAuth2-Anwendungen des Bereichs Setup in Workfront. Wenn Sie in Workfront kein Client-Geheimnis für Ihr OAuth2-Programm haben, können Sie ein anderes generieren. Anweisungen hierzu finden Sie in der Dokumentation zu Workfront.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL -Authentifizierungs-URL]</td>
+        <td role="rowheader">[!UICONTROL-Authentifizierungs-URL]</td>
         <td>Dies kann der Standardwert bleiben oder Sie können die URL Ihrer Workfront-Instanz gefolgt von <code>/integrations/oauth2</code> eingeben. <p>Beispiel: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
       </tr>
       <tr>
@@ -112,7 +112,7 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
     </tbody>
     </table>
 
-1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie auf **[!UICONTROL Continue]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
    Wenn Sie nicht bei Workfront angemeldet sind, werden Sie zu einem Anmeldebildschirm weitergeleitet. Nach der Anmeldung können Sie die Verbindung zulassen.
 
@@ -133,13 +133,13 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL Verbindungstyp]</td>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
           <p>Wählen Sie <b>Adobe Workfront-Server-zu-Server-Verbindung</b>.</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Verbindungsname]</td>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>Geben Sie einen Namen für die neue Verbindung ein.</p>
         </td>
@@ -157,15 +157,15 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client-ID]</td>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
         <td>Geben Sie Ihre Workfront-Client-ID ein. Diese finden Sie im Bereich OAuth2-Anwendungen des Bereichs Setup in Workfront. Öffnen Sie das spezifische Programm, mit dem Sie eine Verbindung herstellen, um die Client-ID anzuzeigen.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
         <td>Geben Sie Ihr Workfront-Client-Geheimnis ein. Diese finden Sie im Bereich OAuth2-Anwendungen des Bereichs Setup in Workfront. Wenn Sie in Workfront kein Client-Geheimnis für Ihr OAuth2-Programm haben, können Sie ein anderes generieren. Anweisungen hierzu finden Sie in der Dokumentation zu Workfront.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL -Bereiche]</td>
+        <td role="rowheader">[!UICONTROL-Bereiche]</td>
         <td>Geben Sie alle zutreffenden Bereiche für diese Verbindung ein.</td>
       </tr>
       <tr>
@@ -175,7 +175,7 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
     </tbody>
     </table>
 
-1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie auf **[!UICONTROL Continue]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
    Wenn Sie nicht bei Workfront angemeldet sind, werden Sie zu einem Anmeldebildschirm weitergeleitet. Nach der Anmeldung können Sie die Verbindung zulassen.
 
@@ -186,9 +186,9 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
 
 ## Workfront-Module und ihre Felder
 
-Beim Konfigurieren von Workfront-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service können zusätzlich dazu weitere Workfront-Felder angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von Workfront-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service können zusätzlich dazu weitere Workfront-Felder angezeigt werden. Eine fett formatierte Überschrift in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche für Zuordnung über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 
 ![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
@@ -212,7 +212,9 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 +++ **[!UICONTROL Ereignisse ansehen]**
 
-Dieses Trigger-Modul führt ein Szenario in Echtzeit aus, wenn Objekte eines bestimmten Typs in Workfront hinzugefügt, aktualisiert oder gelöscht werden
+Dieses Trigger-Modul führt ein Szenario in Echtzeit aus, wenn Objekte eines bestimmten Typs in Workfront hinzugefügt, aktualisiert oder gelöscht werden.
+
+Das Modul zeigt alle Ereignisabonnements an, die mit dem Webhook verbunden sind. Dazu gehören Ereignisabonnements, die über Fusion erstellt wurden, sowie Ereignisabonnements, die direkt über die API erstellt wurden. Diese Ereignisabonnement-Ansicht ist in der Legacy-Version des Moduls Ereignisse beobachten nicht verfügbar.
 
 Das Modul gibt alle Standardfelder zurück, die mit dem Datensatz verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
@@ -229,7 +231,7 @@ Das Modul gibt alle Standardfelder zurück, die mit dem Datensatz verknüpft sin
       <td>Einen Namen für den Webhook eingeben</td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL -Verbindung]</td> 
+      <td>[!UICONTROL Verbindung]</td> 
       <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
      </tr> 
      <tr> 
@@ -237,7 +239,7 @@ Das Modul gibt alle Standardfelder zurück, die mit dem Datensatz verknüpft sin
       <td>Wählen Sie den Typ des Workfront-Datensatzes aus, den das Modul überwachen soll.</td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL -Status]</td> 
+      <td>[!UICONTROL-Status]</td> 
       <td>Wählen Sie aus, ob der alte oder der neue Status überwacht werden soll.<ul><li><p><b>[!UICONTROL Neuer Status]</b></p><p>Trigger : Ein Szenario, in dem sich der Datensatz <b> einem </b> Wert ändert.</p><p>Wenn beispielsweise der Status auf [!UICONTROL Neuer Status] festgelegt ist und der Filter auf [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress] festgelegt ist, gibt der Webhook einem Szenario einen Trigger, wenn der [!UICONTROL Status] zu [!UICONTROL In Progress] wechselt, unabhängig davon, welcher Status zuvor war. </p></li><li><p><b>[!UICONTROL Alter Status]</b></p><p>Trigger : Ein Szenario, in dem sich der Datensatz <b> einem </b> Wert ändert.</p><p>Wenn beispielsweise der Status auf [!UICONTROL Alter Status] festgelegt ist und der Filter auf [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress] festgelegt ist, gibt der Webhook einem Szenario einen Trigger, wenn ein [!UICONTROL Status], der derzeit [!UICONTROL In Progress] ist, zu einem anderen Status wechselt. </p></li></ul></td> 
      </tr> 
      <tr data-mc-conditions=""> 
@@ -264,7 +266,7 @@ Das Modul gibt alle Standardfelder zurück, die mit dem Datensatz verknüpft sin
 
 Nachdem der Webhook erstellt wurde, können Sie die Adresse des Endpunkts anzeigen, an den Ereignisse gesendet werden.
 
-Weitere Informationen finden Sie im Abschnitt [Beispiele für Ereignis-Payloads](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) im Artikel Ereignisabonnement-API in der Dokumentation zu Workfront.
+Weitere Informationen finden Sie im Abschnitt [Beispiele für Ereignis-Payloads](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) im Artikel Ereignisabonnement-API in der Dokumentation zu Workfront.
 
 Hier finden Sie eine Liste der Workfront-Objekttypen, für die Sie dieses Modul in [Workfront-Objekttypen verwenden können, die für jedes Workfront-Modul verfügbar sind](#workfront-object-types-available-for-each-workfront-module).
 
@@ -281,7 +283,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -289,7 +291,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie den Typ des Workfront-Datensatzes aus, den das Modul überwachen soll.</p> <p>Wählen Sie beispielsweise [!UICONTROL Task] aus, wenn Sie die Ausführung des Szenarios jedes Mal starten möchten, wenn ein Datensatzfeld in einer Aufgabe aktualisiert wird.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Feld]</td> 
+   <td>[!UICONTROL-Feld]</td> 
    <td>Wählen Sie das Feld aus, das das Modul auf Aktualisierungen überwachen soll. Diese Felder spiegeln die Felder wider, die Ihr Workfront-Administrator für das Tracking eingerichtet hat.</td> 
   </tr> 
   <tr> 
@@ -322,7 +324,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -338,7 +340,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie die Felder aus, die im Ausgabepaket für dieses Modul enthalten sein sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Referenz]</td> 
+   <td role="rowheader">[!UICONTROL-Referenz]</td> 
    <td> <p>Wählen Sie die Referenzfelder aus, die Sie in das Ausgabepaket für dieses Modul aufnehmen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -393,7 +395,7 @@ Dieses Aktionsmodul führt eine der folgenden Konvertierungen durch:
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -417,7 +419,7 @@ Dieses Aktionsmodul führt eine der folgenden Konvertierungen durch:
    <td>Wählen Sie alle benutzerdefinierten Formulare aus, die Sie dem neu konvertierten -Objekt hinzufügen möchten, und geben Sie dann Werte für die Felder des benutzerdefinierten Formulars ein.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL -Optionen]</td> 
+   <td>[!UICONTROL-Optionen]</td> 
    <td> <p>Aktivieren Sie beim Konvertieren des -Objekts alle gewünschten Optionen. Je nachdem, in welches Objekt Sie konvertieren oder aus welchem Sie konvertieren, sind Optionen verfügbar.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -452,7 +454,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  </col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -576,7 +578,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -588,11 +590,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Wählen Sie die Version der Workfront-API aus, die das Modul verwenden soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden in Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Dadurch wird der Inhaltstyp der Anfrage bestimmt.</p> <p>Beispiel:<code> {"Content-type":"application/json"}</code></p> <p>Hinweis: Wenn Fehler auftreten und es schwierig ist, deren Ursprung zu ermitteln, sollten Sie die Kopfzeilen basierend auf der Workfront-Dokumentation ändern. Wenn Ihr benutzerdefinierter API-Aufruf einen 422-HTTP-Anfragefehler zurückgibt, versuchen Sie es mit einer <code>"Content-Type":"text/plain"</code>-Kopfzeile.</p> </td> 
   </tr> 
   <tr> 
@@ -600,8 +602,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> <p>Tipp: Es wird empfohlen, Informationen über den JSON-Text und nicht als Abfrageparameter zu senden.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL body]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -628,7 +630,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -677,7 +679,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -700,7 +702,7 @@ Dieses Aktionsmodul erhält vordefinierte Datei-URLs, die später von anderen AP
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -729,7 +731,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -737,20 +739,20 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie den Typ des Workfront-Datensatzes aus, mit dem das Modul interagieren soll.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL -Aktion]</td> 
-   <td> <p>Wählen Sie die Aktion aus, die das Modul ausführen soll.</p> <p>Je nach ausgewähltem [!UICONTROL -Datensatztyp] und [!UICONTROL -Aktion] müssen Sie möglicherweise zusätzliche Felder ausfüllen. Einige Kombinationen dieser beiden Einstellungen erfordern möglicherweise nur eine Datensatz-ID, während andere (wie Project für den <strong>[!UICONTROL Record Type]</strong> und [!UICONTROL Attach Template] für den <strong>[!UICONTROL Action]</strong>) zusätzliche Informationen erfordern (wie eine Objekt-ID und eine Vorlagen-ID).</p><p>Die für einige Aktionen verfügbaren Optionen finden Sie unter <a href="#misc-action-options" class="MCXref xref">Sonstige Aktionsoptionen</a> in diesem Artikel.</p> <p>Detaillierte Informationen zu den einzelnen Feldern finden Sie in der <a href="http://developer.workfront.com/">Workfront-Entwicklerdokumentation</a>. <p><strong>Hinweis</strong>: Die Site mit der Entwicklerdokumentation enthält Informationen nur über API-Version 14, enthält jedoch weiterhin wertvolle Informationen für API-Aufrufe. </p> 
+   <td>[!UICONTROL-Aktion]</td> 
+   <td> <p>Wählen Sie die Aktion aus, die das Modul ausführen soll.</p> <p>Je nach ausgewähltem [!UICONTROL-Datensatztyp] und [!UICONTROL-Aktion] müssen Sie möglicherweise zusätzliche Felder ausfüllen. Einige Kombinationen dieser beiden Einstellungen erfordern möglicherweise nur eine Datensatz-ID, während andere (wie Project für den <strong>[!UICONTROL Record Type]</strong> und [!UICONTROL Attach Template] für den <strong>[!UICONTROL Action]</strong>) zusätzliche Informationen erfordern (wie eine Objekt-ID und eine Vorlagen-ID).</p><p>Die für einige Aktionen verfügbaren Optionen finden Sie unter <a href="#misc-action-options" class="MCXref xref">Sonstige Aktionsoptionen</a> in diesem Artikel.</p> <p>Detaillierte Informationen zu den einzelnen Feldern finden Sie in der <a href="http://developer.workfront.com/">Workfront-Entwicklerdokumentation</a>. <p><strong>Hinweis</strong>: Die Site mit der Entwicklerdokumentation enthält Informationen nur über API-Version 14, enthält jedoch weiterhin wertvolle Informationen für API-Aufrufe. </p> 
     <ol> 
      <li value="1"> <p>Wählen Sie in der linken Navigationsleiste der Workfront Developer-Dokumentationsseite den Datensatztyp aus. Die folgenden Typen verfügen über eigene Seiten:</p> 
       <ul> 
-       <li> <p>[!UICONTROL -Projekte]</p> </li> 
+       <li> <p>[!UICONTROL-Projekte]</p> </li> 
        <li> <p>[!UICONTROL Aufgaben]</p> </li> 
        <li> <p>[!UICONTROL Probleme]</p> </li> 
        <li> <p>[!UICONTROL Benutzer]</p> </li> 
-       <li> <p>[!UICONTROL -Dokumente]</p> </li> 
+       <li> <p>[!UICONTROL-Dokumente]</p> </li> 
       </ul> <p>Wählen Sie für alle anderen Datensatztypen <b>[!UICONTROL Andere Objekte und Endpunkte]</b> aus und suchen Sie den Datensatztyp auf den alphabetisch sortierten Seiten.</p> </li> 
      <li value="2"> <p>Suchen Sie auf der Seite des entsprechenden Datensatztyps (Strg+F bzw. Befehl+F) nach der Aktion.</p> </li> 
      <li value="3"> <p>Anzeigen von Beschreibungen für verfügbare Felder unter der ausgewählten Aktion.</p> </li> 
-    </ol> <p>Hinweis:  <p>Beim Erstellen eines Korrekturabzugs über das Modul [!UICONTROL Misc Action] von Workfront empfiehlt es sich, einen Korrekturabzug ohne erweiterte Optionen zu erstellen und dann den Korrekturabzug mithilfe der [!DNL Workfront Proof] SOAP-API zu aktualisieren.</p><p>Weitere Informationen zum Erstellen eines Korrekturabzugs mit der Workfront-API (die dieses Modul verwendet) finden Sie unter <a href="https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Hinzufügen erweiterter Proofing-Optionen beim Erstellen eines Korrekturabzugs über die Adobe Workfront-API</a></p> </p> </td> 
+    </ol> <p>Hinweis:  <p>Beim Erstellen eines Korrekturabzugs über das Modul [!UICONTROL Misc Action] von Workfront empfiehlt es sich, einen Korrekturabzug ohne erweiterte Optionen zu erstellen und dann den Korrekturabzug mithilfe der [!DNL Workfront Proof] SOAP-API zu aktualisieren.</p><p>Weitere Informationen zum Erstellen eines Korrekturabzugs mit der Workfront-API (die dieses Modul verwendet) finden Sie unter <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Hinzufügen erweiterter Proofing-Optionen beim Erstellen eines Korrekturabzugs über die Adobe Workfront-API</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -930,7 +932,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL -Verbindung]</td>
+    <td>[!UICONTROL Verbindung]</td>
     <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -948,11 +950,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
      <td> <p>Wählen Sie die benutzerdefinierten Formulare aus, die Sie in das Ausgabepaket für dieses Modul aufnehmen möchten, und wählen Sie dann die spezifischen Felder aus den benutzerdefinierten Formularen aus, die Sie in die Ausgabe aufnehmen möchten.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL -Verweise]</td>
+    <td>[!UICONTROL-Verweise]</td>
    <td>Wählen Sie alle Referenzfelder aus, die Sie in die Ausgabe aufnehmen möchten.</td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL -Sammlungen]</td>
+    <td>[!UICONTROL-Sammlungen]</td>
    <td>Wählen Sie alle Referenzfelder aus, die Sie in die Ausgabe aufnehmen möchten.</td> 
   </tr> 
   <tr> 
@@ -1028,16 +1030,16 @@ See a list of the Workfront object types for which you can use this module in [W
 
 Workfront hat kürzlich eine neue Version seines Ereignisabonnement-Services veröffentlicht. Die neue Version ist keine Änderung der Workfront-API, sondern eine Änderung der Ereignisabonnementfunktion. Dieses Aktionsmodul aktualisiert die für dieses Szenario verwendete Ereignis-Payload-Version.
 
-Weitere Informationen zur neuen Ereignisabonnementversion finden Sie unter [Ereignisabonnementversion](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) in der Workfront-Dokumentation
+Weitere Informationen zur neuen Ereignisabonnementversion finden Sie unter [Ereignisabonnementversion](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) in der Workfront-Dokumentation
 
-Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarien während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarien während des Ereignissabonnement-Upgrades V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de).
+Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarien während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarien während des Ereignissabonnement-Upgrades V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -1068,7 +1070,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  </col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -1169,7 +1171,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -1260,7 +1262,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -1272,7 +1274,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Geben Sie die ID des übergeordneten Datensatzes ein, dessen verknüpfte Datensätze Sie lesen möchten, oder ordnen Sie sie zu.</p> <p>Um die ID abzurufen, öffnen Sie das Workfront-Objekt in Ihrem Browser und kopieren Sie den Text am Ende der URL nach „ID=". Beispiel: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL -Sammlungen]</td> 
+   <td>[!UICONTROL-Sammlungen]</td> 
    <td>Wählen Sie den Typ des untergeordneten Datensatzes aus, den das Modul lesen soll, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -1297,7 +1299,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -1329,11 +1331,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie die Felder aus, die in die Ausgabe für dieses Modul aufgenommen werden sollen.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL -Verweise]</td> 
+   <td>[!UICONTROL-Verweise]</td> 
    <td>Wählen Sie alle Referenzfelder aus, die Sie in die Suche einbeziehen möchten.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL -Sammlungen]</td> 
+   <td>[!UICONTROL-Sammlungen]</td> 
    <td>Wählen Sie alle Sammlungen aus, die Sie der Suche hinzufügen möchten.</td> 
   </tr> 
  </tbody> 
@@ -1346,7 +1348,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 >[!IMPORTANT]
 >
 >Dieses Modul wurde durch das Modul Datensätze suchen ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarien zu verwenden.
->&#x200B;>Vorhandene Szenarien, die dieses Modul verwenden, funktionieren weiterhin erwartungsgemäß. Dieses Modul wird im Mai 2025 aus der Modulauswahl entfernt.
+>Vorhandene Szenarien, die dieses Modul verwenden, funktionieren weiterhin erwartungsgemäß. Dieses Modul wird im Mai 2025 aus der Modulauswahl entfernt.
 
 Dieses Suchmodul sucht in einem Objekt in Workfront nach Datensätzen, die mit der angegebenen Suchanfrage übereinstimmen.
 
@@ -1359,7 +1361,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
+   <td>[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -1387,11 +1389,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie die Felder aus, die in die Ausgabe für dieses Modul aufgenommen werden sollen.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL -Verweise]</td> 
+   <td>[!UICONTROL-Verweise]</td> 
    <td>Wählen Sie alle Referenzfelder aus, die Sie in die Suche einbeziehen möchten.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL -Sammlungen]</td> 
+   <td>[!UICONTROL-Sammlungen]</td> 
    <td>Wählen Sie alle Sammlungen aus, die Sie der Suche hinzufügen möchten.</td> 
   </tr> 
  </tbody> 
@@ -2356,9 +2358,9 @@ Es wird empfohlen, dies zu überprüfen, um sicherzustellen, dass es so funktion
 >
 >* Workfront hat kürzlich eine neue Version seines Ereignisabonnement-Services veröffentlicht. Die neue Version ist keine Änderung der Workfront-API, sondern eine Änderung der Ereignisabonnementfunktion. Dieses Aktionsmodul aktualisiert die für dieses Szenario verwendete Ereignis-Payload-Version.
 >
->   Weitere Informationen zur neuen Ereignisabonnementversion finden Sie unter [Ereignisabonnementversion](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) in der Workfront-Dokumentation
+>   Weitere Informationen zur neuen Ereignisabonnementversion finden Sie unter [Ereignisabonnementversion](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) in der Workfront-Dokumentation
 >
->   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarien während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarien während des Ereignissabonnement-Upgrades v2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de)].
+>   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarien während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarien während des Ereignissabonnement-Upgrades v2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Das Workfront-Modul [!UICONTROL Ereignisse beobachten] erstellt Trigger, die auf einem Webhook basieren, der ein Ereignisabonnement in der Workfront-API erstellt. Das Ereignisabonnement ist ein Datensatz, der bestimmt, welche Ereignisse an den Webhook gesendet werden. Wenn Sie beispielsweise ein Modul [!UICONTROL Ereignisse beobachten] einrichten, das auf Probleme überwacht, sendet das Ereignisabonnement nur Ereignisse, die mit Problemen in Zusammenhang stehen.
 
@@ -2408,7 +2410,7 @@ Die folgenden Operatoren sind im Filter Workfront > Ereignisse beobachten verfü
 >
 >Wenn an einem Tag 100 Probleme erstellt werden, aber nur zwei davon Ana zugewiesen sind, wird das Szenario 100-mal ausgeführt. 98 der Ausführungen würden am Trigger anhalten, aber das Filtermodul verbraucht weiterhin Daten und führt Vorgänge in allen Ausführungen aus.
 
-Weitere Informationen zu Workfront-Ereignisabonnements finden Sie unter [FAQs - Ereignisabonnements](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
+Weitere Informationen zu Workfront-Ereignisabonnements finden Sie unter [FAQs - Ereignisabonnements](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 Weitere Informationen zu Webhooks finden Sie unter [Instant Trigger (Webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 

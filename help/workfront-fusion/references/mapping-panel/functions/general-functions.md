@@ -1,13 +1,13 @@
 ---
 title: Allgemeine Funktionen
-description: The following general functions are available in the Adobe Workfront Fusion mapping panel.
+description: Die folgenden allgemeinen Funktionen sind im Bedienfeld "Adobe Workfront Fusion-Zuordnung“ verfügbar.
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 4%
 
 ---
 
@@ -15,14 +15,16 @@ ht-degree: 0%
 
 ## Variablen
 
-There are two general variables that you can use to identify details about an execution:
+Sie können die folgenden allgemeinen Variablen verwenden, um Details zu einer Ausführung anzugeben:
 
-* `executionID`: the ID of this scenario execution
-* `triggerTimestamp`: The time at which this execution was triggered
+* `executionID`: die ID dieser Szenarioausführung
+* `triggerTimestamp`: Der Zeitpunkt, zu dem diese Ausführung ausgelöst wurde
+* `scenarioID`: die ID des aktuell geöffneten Szenarios
+* `operationsConsumed`: Die Anzahl der zu diesem Zeitpunkt im Szenario verwendeten Vorgänge.
 
-## [!UICONTROL get (object or array; path)]
+## [!UICONTROL GET (Objekt oder Array; Pfad)]
 
-Returns the value path of an object or array. To access nested objects, use dot notation. The first item in an array is index 1.
+Gibt den Wertpfad eines Objekts oder Arrays zurück. Verwenden Sie Punktnotation, um auf verschachtelte Objekte zuzugreifen. Das erste Element in einem Array ist Index 1.
 
 >[!BEGINSHADEBOX]
 
@@ -65,15 +67,15 @@ Um `if` Anweisungen zu kombinieren, verwenden Sie die Operatoren `and` und `or` 
 
 ## [!UICONTROL IfEmpty (value1; value2)]
 
-Returns the `value1` if this value is not empty; otherwise it returns the `value2`.
+Gibt den `value1` zurück, wenn dieser Wert nicht leer ist. Andernfalls wird der `value2` zurückgegeben.
 
 >[!BEGINSHADEBOX]
 
-**Examples:**
+**Beispiele:**
 
 * `ifempty(` `A` `;` `B` )
 
-  Returns A
+  Gibt einen
 
 * `ifempty(` `unknown` `;` `B` )
 
@@ -81,17 +83,17 @@ Returns the `value1` if this value is not empty; otherwise it returns the `value
 
 * `ifempty(` `""` `;` `B` )
 
-  Returns B
+  Gibt B zurück
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL switch (expression; value1; result1; [value2; result2; ...]; [else])]
+## [!UICONTROL switch (Ausdruck; Wert1; Ergebnis1; [Wert2; Ergebnis2; …]; [else])]
 
-Evaluates one value (called the expression) against a list of values; returns the result corresponding to the first matching value. To include an  `else` value, add it after the final expression or value.
+Wertet einen Wert (den Ausdruck) anhand einer Werteliste aus und gibt das Ergebnis zurück, das dem ersten übereinstimmenden Wert entspricht. Um einen `else` Wert einzuschließen, fügen Sie ihn nach dem endgültigen Ausdruck oder Wert hinzu.
 
 >[!BEGINSHADEBOX]
 
-**Examples:**
+**Beispiele:**
 
 * `switch( B ; A ; 1 ; B ; 2 ; C ; 3 )`
 
@@ -131,12 +133,12 @@ Wählt nur die angegebenen Schlüssel aus dem Objekt aus.
 
 **Beispiel:**
 
-`pick(` User `;` password `;` email `)`
+`pick(` Benutzer `;` Passwort `;` E-Mail-`)`
 
-Returns a collection of only the user&#39;s password and email address.
+Gibt nur eine Sammlung von Passwort und E-Mail-Adresse der Benutzenden zurück.
 
 >[!ENDSHADEBOX]
 
-## mergeCollections(collection1; collection2)
+## mergeCollections(collection1;collection2)
 
 Führt zwei Sammlungen durch Kombinieren ihrer Schlüssel-Wert-Paare zusammen. Wenn beide Sammlungen denselben Schlüssel enthalten, überschreibt der Wert aus der zweiten Sammlung diesen Wert aus der ersten Sammlung.
