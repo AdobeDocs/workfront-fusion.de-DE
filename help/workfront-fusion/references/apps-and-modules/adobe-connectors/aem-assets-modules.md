@@ -1,19 +1,19 @@
 ---
 title: Adobe Experience Manager Assets-Module
-description: Mit dem Adobe Experience Manager Assets-Connector für Adobe Workfront Fusion können Sie Assets erstellen, hochladen und aktualisieren sowie Ordner und Assets kopieren oder verschieben.
+description: Mit dem Adobe Experience Manager Assets-Connector für Adobe Workfront Fusion können Sie Assets erstellen, hochladen und aktualisieren sowie Ordner und Assets kopieren bzw. verschieben.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
 source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3734'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Adobe Experience Manager Assets-Module
 
-Mit dem Adobe Experience Manager Assets-Connector für Adobe Workfront Fusion können Sie Assets erstellen, hochladen und aktualisieren sowie Ordner und Assets kopieren oder verschieben.
+Mit dem Adobe Experience Manager Assets-Connector für Adobe Workfront Fusion können Sie Assets erstellen, hochladen und aktualisieren sowie Ordner und Assets kopieren bzw. verschieben.
 
 Eine Videoeinführung zum Adobe Experience Manager Assets-Connector finden Sie unter:
 
@@ -21,7 +21,7 @@ Eine Videoeinführung zum Adobe Experience Manager Assets-Connector finden Sie u
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,29 +29,29 @@ Eine Videoeinführung zum Adobe Experience Manager Assets-Connector finden Sie u
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -60,14 +60,14 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 ## Voraussetzungen
 
 * Sie benötigen ein Adobe Experience Manager Assets-Konto, um diese Module verwenden zu können.
-* Sie müssen den Server-zu-Server-Fluss in der Adobe Developer-Konsole einrichten.
+* Sie müssen den Server-zu-Server-Fluss in der Adobe Developer Console einrichten.
 
-  Anweisungen zum Einrichten des Server-zu-Server-Flusses in der Adobe Developer-Konsole finden Sie unter [Generieren von Zugriffstoken für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=de#the-server-to-server-flow).
+  Anweisungen zum Einrichten des Server-zu-Server-Flusses in der Adobe Developer Console finden Sie unter [Generieren von Zugriffs-Token für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=de#the-server-to-server-flow).
 * Ihr technisches Adobe Experience Manager-Konto muss über Schreibberechtigungen verfügen.
 
-  Anweisungen zum Hinzufügen von Schreibberechtigungen für Ihr technisches Adobe Experience Manager-Konto finden Sie unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in der Dokumentation zu Adobe Experience Manager.
+  Anweisungen zum Hinzufügen von Schreibberechtigungen zu Ihrem technischen Adobe Experience Manager-Konto finden Sie in der Dokumentation zu Adobe Experience Manager unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
-## Adobe Experience Manager Assets-API-Informationen
+## Informationen zur Adobe Experience Manager Assets-API
 
 Der Adobe Experience Manager Assets-Connector verwendet Folgendes:
 
@@ -86,11 +86,11 @@ Der Adobe Experience Manager Assets-Connector verwendet Folgendes:
 
 So erstellen Sie eine Verbindung für Ihre Adobe Experience Manager Assets-Module:
 
-1. Klicken Sie neben dem Feld Verbindung auf Hinzufügen .
+1. Klicken Sie neben dem Feld „Verbindung“ auf „Hinzufügen“.
 
-2. Wählen Sie den Verbindungstyp aus, den Sie erstellen:
+2. Wählen Sie den gewünschten Verbindungstyp aus:
 
-   * **AEM Assets as a Cloud Service**
+   * **AEM Assets as a Cloud Service**
 
      Diese Konfiguration erfordert Informationen von der Adobe Admin Console.
 
@@ -98,26 +98,26 @@ So erstellen Sie eine Verbindung für Ihre Adobe Experience Manager Assets-Modul
 
      Diese Konfiguration erfordert einen Benutzernamen und ein Kennwort.
 
-3. Füllen Sie die Felder für den Verbindungstyp aus, den Sie erstellen.
+3. Füllen Sie die Felder für den gewünschten Verbindungstyp aus.
 
-   Informationen zu AEM Assets as a Cloud Service finden Sie [Konfigurieren der Verbindung für AEM Assets as a Cloud Service](#configure-the-connection-for-aem-assets-as-a-cloud-service).
+   Informationen zu AEM Assets as a Cloud Service finden Sie unter [Konfigurieren der Verbindung für AEM Assets as a Cloud Service](#configure-the-connection-for-aem-assets-as-a-cloud-service).
 
    Informationen zu AEM Assets Basic (Adobe Managed Services) finden Sie unter [Konfigurieren der Verbindung für AEM Assets Basic](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
 
-4. Klicken Sie **Fortfahren**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+4. Klicken Sie auf **Weiter**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 
 ### Konfigurieren der Verbindung für AEM Assets as a Cloud Service
 
 >[!NOTE]
 >
->* Die Informationen für diese Felder werden beim Einrichten des Server-zu-Server-Flusses auf der Adobe Developer Console generiert. Diese Werte finden Sie in der JSON-Datei mit den Service-Anmeldeinformationen, die im Rahmen dieses Setups generiert wurde.
+>* Die Informationen für diese Felder werden beim Einrichten des Server-zu-Server-Flusses in der Adobe Developer Console generiert. Diese Werte finden Sie in der JSON-Datei mit den Service-Anmeldeinformationen, die im Rahmen dieses Setups generiert wurde.
 >
->   Anweisungen zum Einrichten eines Server-zu-Server-Flusses auf der Adobe Developer Console finden Sie unter [Generieren von Zugriffstoken für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=de#the-server-to-server-flow).
+>   Anweisungen zum Einrichten des Server-zu-Server-Flusses in der Adobe Developer Console finden Sie unter [Generieren von Zugriffs-Token für Server-seitige APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=de#the-server-to-server-flow).
 >
 >* Ihr technisches Adobe Experience Manager-Konto muss über Schreibberechtigungen verfügen.
 >
->   Anweisungen zum Hinzufügen von Schreibberechtigungen für Ihr technisches Adobe Experience Manager-Konto finden Sie unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in der Dokumentation zu Adobe Experience Manager.
+>   Anweisungen zum Hinzufügen von Schreibberechtigungen zu Ihrem technischen Adobe Experience Manager-Konto finden Sie in der Dokumentation zu Adobe Experience Manager unter [Service-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).
 
 
 <table style="table-layout:auto"> 
@@ -125,30 +125,30 @@ So erstellen Sie eine Verbindung für Ihre Adobe Experience Manager Assets-Modul
           <col/>
           <tbody>
               <tr>
-                  <td role="rowheader">Name der Verbindung</td>
+                  <td role="rowheader">Verbindungsname</td>
                   <td>
-                      <p>Geben Sie einen Namen für diese Verbindung ein.</p>
+                      <p>Geben Sie einen Namen für die Verbindung ein.</p>
                   </td>
               </tr>
               <tr>
-                  <td role="rowheader">Instanz-URL ohne Schrägstrich</td>
-                  <td>Geben Sie die URL für Ihre Adobe Experience Manager-Instanz ein. Geben Sie am Ende der URL keinen Schrägstrich <code>/</code>.</td>
+                  <td role="rowheader">Instanz-URL ohne nachgestellten Schrägstrich</td>
+                  <td>Geben Sie die URL für Ihre Adobe Experience Manager-Instanz ein. Geben Sie am Ende der URL keinen Schrägstrich <code>/</code> an.</td>
               </tr>
               <tr>
                   <td role="rowheader">Ausfülloptionen für Kontodetails</td>
-                  <td>Wählen Sie aus, ob Sie eine JSON zur Beschreibung Ihrer Kontodetails bereitstellen oder Details manuell eingeben möchten.</td>
+                  <td>Wählen Sie aus, ob Sie JSON-Daten mit einer Beschreibung Ihrer Kontodetails bereitstellen oder die entsprechenden Informationen manuell eingeben möchten.</td>
               </tr>
               <tr>
-                  <td role="rowheader">Technische Kontodetails im JSON-Format</td>
-                  <td>Wenn Sie JSON bereitstellen, geben Sie die JSON-Datei ein, die Ihre Kontodetails beschreibt, oder fügen Sie sie ein.</td>
+                  <td role="rowheader">Details zum technischen Konto im JSON-Format</td>
+                  <td>Wenn Sie JSON bereitstellen, geben oder fügen Sie die JSON-Daten mit einer Beschreibung Ihrer Kontodetails ein.</td>
               </tr>
               <tr>
                   <td role="rowheader">Client-ID</td>
-                  <td>Wenn Sie Details manuell eingeben, geben Sie die Client-ID ein, die bei der Server-zu-Server-Einrichtung generiert wurde.</td>
+                  <td>Wenn Sie Details manuell eingeben, geben Sie die beim Server-zu-Server-Setup generierte Client-ID ein.</td>
               </tr>
               <tr>
                   <td role="rowheader">Client-Geheimnis</td>
-                  <td>Wenn Sie Details manuell eingeben, geben Sie den im Server-zu-Server-Setup generierten geheimen Client-Schlüssel ein.</td>
+                  <td>Wenn Sie Details manuell eingeben, geben Sie das beim Server-zu-Server-Setup generierte Client-Geheimnis ein.</td>
               </tr>
               <tr>
                   <td role="rowheader">ID des technischen Kontos</td>
@@ -159,16 +159,16 @@ So erstellen Sie eine Verbindung für Ihre Adobe Experience Manager Assets-Modul
                   <td class="">Wenn Sie Details manuell eingeben, geben Sie die ID Ihrer Organisation ein. Dies ist das Feld „org“ in der JSON-Datei mit den Client-Anmeldeinformationen.</td>
               </tr>
               <tr>
-                  <td role="rowheader">Meta-Bereiche</td>
-                  <td>Geben Sie die im Server-zu-Server-Setup generierten Meta-Bereiche ein.</td>
+                  <td role="rowheader">Metabereiche</td>
+                  <td>Geben Sie die beim Server-zu-Server-Setup generierten Metabereiche ein.</td>
               </tr>
               <tr>
                   <td role="rowheader">Privater Schlüssel</td>
-                  <td>Geben Sie den privaten Schlüssel ein, der bei der Server-zu-Server-Einrichtung generiert wurde. Um den privaten Schlüssel zu extrahieren, klicken Sie auf Extrahieren und geben Sie dann die zu extrahierende Datei und das Kennwort für die Datei ein.</td>
+                  <td>Geben Sie den beim Server-zu-Server-Setup generierten privaten Schlüssel ein. Um den privaten Schlüssel zu extrahieren, klicken Sie auf „Extrahieren“ und geben Sie dann die zu extrahierende Datei sowie das Kennwort für die Datei ein.</td>
               </tr>
               <tr>
                   <td role="rowheader">Authentifizierungs-URL</td>
-                  <td>Authentifizierungs-URL für dieses Konto eingeben.</td>
+                  <td>Geben Sie die Authentifizierungs-URL für dieses Konto ein.</td>
               </tr>
           </tbody>
       </table>
@@ -181,14 +181,14 @@ So erstellen Sie eine Verbindung für Ihre Adobe Experience Manager Assets-Modul
         <col />
         <tbody>
             <tr>
-                <td role="rowheader">Name der Verbindung</td>
+                <td role="rowheader">Verbindungsname</td>
                 <td>
-                    <p>Geben Sie einen Namen für diese Verbindung ein.</p>
+                    <p>Geben Sie einen Namen für die Verbindung ein.</p>
                 </td>
             </tr>
             <tr>
-                <td role="rowheader">Instanz-URL ohne Schrägstrich</td>
-                <td>Geben Sie die URL für Ihre Adobe Experience Manager-Instanz ein. Geben Sie am Ende der URL keinen Schrägstrich <code>/</code>.</td>
+                <td role="rowheader">Instanz-URL ohne nachgestellten Schrägstrich</td>
+                <td>Geben Sie die URL für Ihre Adobe Experience Manager-Instanz ein. Geben Sie am Ende der URL keinen Schrägstrich <code>/</code> an.</td>
             </tr>
             <tr>
                 <td role="rowheader">Benutzername</td>
@@ -204,31 +204,31 @@ So erstellen Sie eine Verbindung für Ihre Adobe Experience Manager Assets-Modul
 
 ## Adobe Experience Manager Assets-Module und ihre Felder
 
-Beim Konfigurieren von Adobe Experience Manager Assets-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service können zusätzlich dazu weitere Adobe Experience Manager Assets-Felder angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von Adobe Experience Manager Assets-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere Adobe Experience Manager Assets-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Dateifunktionen](#files-operations)
+* [Dateivorgänge](#files-operations)
 * [Sonstiges](#other)
-* [Assets (Author-API)](#assets-author-api)
+* [Assets (Autoren-API)](#assets-author-api)
 * [Ereignisse (Autoren-API)](#events-author-api)
 * [Metadaten (Autoren-API)](#metadata-author-api)
 * [Import (Autoren-API)](#import-author-api)
 * [Beziehungen (Autoren-API)](#relations-author-api)
 * [Ordner (Ordner-API)](#folders-folders-api)
 
-### Dateifunktionen
+### Dateivorgänge
 
 * [Upload abschließen](#complete-upload)
-* [Vordefinierte Speicherung abrufen](#get-presigned-storage)
-* [Upload starten](#initiate-upload)
-* [Hochladen eines Assets](#upload-an-asset)
+* [Vorsignierten Speicher abrufen](#get-presigned-storage)
+* [Upload initiieren](#initiate-upload)
+* [Asset hochladen](#upload-an-asset)
 
 #### Upload abschließen
 
-Dieses Aktionsmodul führt einen initiierten Upload durch, nachdem alle Teile der Datei hochgeladen wurden.
+Dieses Aktionsmodul schließt einen initiierten Upload ab, nachdem alle Teile der Datei hochgeladen wurden.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -236,31 +236,31 @@ Dieses Aktionsmodul führt einen initiierten Upload durch, nachdem alle Teile de
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Dateiname</td> 
-   <td> <p>Geben Sie einen Namen für die hochgeladene Datei ein oder mappen Sie ihn.</p> </td> 
+   <td> <p>Geben Sie einen Namen für die hochgeladene Datei ein oder ordnen Sie diesen zu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Upload-Token</td> 
-   <td>Geben Sie das Upload-Token für die Binärdatei ein oder ordnen Sie es zu, wie von der Initiierung angegeben.</td> 
+   <td>Geben Sie das Upload-Token für die Binärdatei ein oder ordnen Sie dieses zu, wie in Rahmen der Initiierung angegeben.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">MIME-Typ</td> 
-   <td>Geben Sie den MIME-Typ für die abgeschlossene Datei ein oder ordnen Sie ihn zu.</td> 
+   <td>Geben Sie den MIME-Typ für die fertiggestellte Datei ein oder ordnen Sie diesen zu.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Vollständiger URI</td> 
-   <td>Geben Sie den vollständigen URI für die Datei ein oder mappen Sie ihn.</td> 
+   <td>Geben Sie den vollständigen URI für die Datei ein oder ordnen Sie diesen zu.</td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### Vordefinierte Speicherung abrufen
+#### Vorsignierten Speicher abrufen
 
-Dieses Aktionsmodul erstellt eine temporäre vordefinierte URL für das sichere Hochladen oder Herunterladen von Dateien aus AEM, ohne dass direkte Anmeldeinformationen erforderlich sind.
+Dieses Aktionsmodul erstellt eine temporäre vorsignierte URL zum sicheren Hochladen oder Herunterladen von Dateien aus AEM, ohne dass dafür direkte Anmeldeinformationen erforderlich sind.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -268,11 +268,11 @@ Dieses Aktionsmodul erstellt eine temporäre vordefinierte URL für das sichere 
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Lookup Type</td> 
-   <td> <p>Wählen Sie aus, ob Sie das Asset anhand seines Pfads oder seiner ID nachschlagen möchten.</p> </td> 
+   <td role="rowheader">Lookup-Typ</td> 
+   <td> <p>Wählen Sie aus, ob das Asset anhand seines Pfads oder seiner ID gesucht werden soll.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Asset</td> 
@@ -280,12 +280,12 @@ Dieses Aktionsmodul erstellt eine temporäre vordefinierte URL für das sichere 
   </tr> 
   <tr> 
    <td role="rowheader">UDID</td> 
-   <td>Geben Sie die UDID für das Asset ein oder ordnen Sie sie zu.</td> 
+   <td>Geben Sie die UDID für das Asset ein oder ordnen Sie diese zu.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Upload starten
+#### Upload initiieren
 
 Dieses Aktionsmodul initiiert einen Upload.
 
@@ -295,25 +295,25 @@ Dieses Aktionsmodul initiiert einen Upload.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Ziel</td> 
-   <td> <p>Wählen Sie den Ordner aus, in den Sie eine Datei hochladen möchten.</p> </td> 
+   <td> <p>Wählen Sie den Ordner aus, in den eine Datei hochgeladen werden soll.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Dateiname</td> 
-   <td> <p>Namen für die hochgeladene Datei eingeben oder zuordnen</p> </td> 
+   <td> <p>Geben Sie einen Namen für die hochgeladene Datei ein oder ordnen Sie diesen zu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Max. zulässige Dateigröße</td> 
-   <td>Geben Sie die Größe der hochgeladenen Datei in Byte ein oder mappen Sie sie.</td> 
+   <td>Geben Sie die Größe der hochgeladenen Datei in Byte ein oder ordnen Sie diese zu.</td> 
   </tr> 
  </tbody> 
 </table>
 
 
-#### Hochladen eines Assets
+#### Asset hochladen
 
 Dieses Aktionsmodul lädt ein Asset in Ihr Adobe Experience Manager Assets-Konto hoch.
 
@@ -323,15 +323,15 @@ Dieses Aktionsmodul lädt ein Asset in Ihr Adobe Experience Manager Assets-Konto
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Ziel</td> 
-   <td> <p>Wählen Sie den Ordner aus, in den Sie ein Asset hochladen möchten.</p> </td> 
+   <td> <p>Wählen Sie den Ordner aus, in den ein Asset hochgeladen werden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Source-Datei</td> 
-   <td>Geben Sie den Namen und die Daten der Quelldatei ein oder mappen Sie sie.</td> 
+   <td role="rowheader">Quelldatei</td> 
+   <td>Geben Sie den Namen und die Daten der Quelldatei ein oder ordnen Sie diese Informationen zu.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -339,17 +339,17 @@ Dieses Aktionsmodul lädt ein Asset in Ihr Adobe Experience Manager Assets-Konto
 ### Sonstiges
 
 
-* [Kopieren von Ordnern oder Assets](#copy-a-folder-or-asset)
-* [Erstellen eines Datensatzes](#create-a-record)
-* [Löschen von Ordnern, Assets oder Ausgabedarstellungen](#delete-a-folder-asset-or-rendition)
-* [Abrufen einer Ordnerauflistung](#get-a-folder-listing)
-* [Erstellen eines benutzerdefinierten API-Aufrufs](#make-a-custom-api-call)
-* [Verschieben von Ordnern oder Assets](#move-a-folder-or-asset)
-* [Aktualisieren eines Datensatzes](#update-a-record)
+* [Ordner oder Asset kopieren](#copy-a-folder-or-asset)
+* [Eintrag erstellen](#create-a-record)
+* [Ordner, Asset oder Ausgabedarstellung löschen](#delete-a-folder-asset-or-rendition)
+* [Ordnerauflistung abrufen](#get-a-folder-listing)
+* [Benutzerdefinierten API-Aufruf erstellen](#make-a-custom-api-call)
+* [Ordner oder Assets verschieben](#move-a-folder-or-asset)
+* [Eintrag aktualisieren](#update-a-record)
 
 
 
-#### Kopieren von Ordnern oder Assets
+#### Ordner oder Asset kopieren
 
 Dieses Aktionsmodul kopiert einen Ordner oder ein Asset an einen anderen Speicherort in Ihrem Adobe Experience Manager Assets-Konto.
 
@@ -359,23 +359,23 @@ Dieses Aktionsmodul kopiert einen Ordner oder ein Asset an einen anderen Speiche
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Eintragstyp</td> 
-   <td> <p>Wählen Sie aus, ob Sie einen Ordner oder ein Asset kopieren möchten.</p> </td> 
+   <td> <p>Wählen Sie aus, ob ein Ordner oder Asset kopiert werden soll.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Ordner/Asset</td> 
-   <td>Wählen Sie den zu kopierenden Ordner oder das zu kopierende Asset aus oder ordnen Sie ihn zu.</td> 
+   <td>Wählen Sie den zu kopierenden Ordner bzw. das zu kopierende Asset aus oder ordnen Sie diese zu.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Zielpfad</td> 
-   <td>Wählen Sie den Pfad für den neuen Ordner oder das neue Asset aus oder ordnen Sie ihn dem Speicherort zu.</td> 
+   <td>Wählen Sie den Speicherpfad für den neuen Ordner oder das neue Asset aus oder ordnen Sie diesen zu.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Name des kopierten Ordners/Assets</td> 
-   <td>Geben Sie einen Namen für den neuen Ordner oder das neue Asset ein. Der in Adobe Experience Manager Assets angezeigte Ordnername ist mit dem Originalnamen identisch. Der hier eingegebene Name erscheint in der URL des neuen Ordners oder Assets.</td> 
+   <td>Geben Sie einen Namen für den neuen Ordner oder das neue Asset ein. Der in Adobe Experience Manager Assets angezeigte Ordnername stimmt mit dem ursprünglichen Namen überein. Der hier eingegebene Name wird in der URL des neuen Ordners oder Assets angezeigt.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Untergeordnete Elemente kopieren</td> 
@@ -383,14 +383,14 @@ Dieses Aktionsmodul kopiert einen Ordner oder ein Asset an einen anderen Speiche
   </tr> 
   <tr> 
    <td role="rowheader">Überschreiben</td> 
-   <td>Aktivieren Sie diese Option, um alle Ordner oder Assets am Zielspeicherort zu überschreiben, die denselben Namen wie der kopierte Ordner oder das kopierte Asset haben.</td> 
+   <td>Aktivieren Sie diese Option, um alle Ordner oder Assets am Zielspeicherort zu überschreiben, die denselben Namen wie der kopierte Ordner oder das kopierte Asset aufweisen.</td> 
   </tr> 
  </tbody> 
 </table>
 
 
 
-#### Erstellen eines Datensatzes
+#### Eintrag erstellen
 
 Dieses Aktionsmodul erstellt einen Ordner oder einen Asset-Kommentar.
 
@@ -400,11 +400,11 @@ Dieses Aktionsmodul erstellt einen Ordner oder einen Asset-Kommentar.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Objekttyp</td> 
-   <td> <p>Wählen Sie aus, ob Sie einen Ordner oder einen Kommentar zu einem Asset erstellen möchten.</p> 
+   <td> <p>Wählen Sie aus, ob ein Ordner oder ein Kommentar zu einem Asset erstellt werden soll.</p> 
     <ul> 
      <li> <p>Ordner</p> <p>Füllen Sie die folgenden Felder aus:</p> 
       <ul> 
@@ -413,7 +413,7 @@ Dieses Aktionsmodul erstellt einen Ordner oder einen Asset-Kommentar.
       </ul> </li> 
      <li> <p>Asset-Kommentar</p> <p>Füllen Sie die folgenden Felder aus:</p> 
       <ul> 
-       <li> <p>Asset-Auswahl</p> <p>Wählen Sie die ID des Assets aus, dem Sie einen Kommentar hinzufügen möchten, oder ordnen Sie sie zu.</p> </li> 
+       <li> <p>Asset-Auswahl</p> <p>Wählen Sie die ID des Assets aus, dem ein Kommentar hinzugefügt werden soll, oder ordnen Sie diese zu.</p> </li> 
        <li> <p>Kommentar</p> <p>Geben Sie den Text des Kommentars ein.</p> </li> 
       </ul> </li> 
     </ul> </td> 
@@ -421,7 +421,7 @@ Dieses Aktionsmodul erstellt einen Ordner oder einen Asset-Kommentar.
  </tbody> 
 </table>
 
-#### Löschen von Ordnern, Assets oder Ausgabedarstellungen
+#### Ordner, Asset oder Ausgabedarstellung löschen
 
 Dieses Aktionsmodul löscht einen Ordner, ein Asset oder eine Ausgabedarstellung.
 
@@ -431,21 +431,21 @@ Dieses Aktionsmodul löscht einen Ordner, ein Asset oder eine Ausgabedarstellung
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Eintragstyp</td> 
-   <td> <p>Wählen Sie aus, ob Sie einen Ordner, ein Asset oder eine Ausgabedarstellung löschen möchten.</p> 
+   <td> <p>Wählen Sie aus, ob ein Ordner, ein Asset oder eine Ausgabedarstellung gelöscht werden soll:</p> 
     <ul> 
-     <li> <p>Ordner</p> <p>Wählen Sie den zu löschenden Ordner aus, indem Sie die Ordner unter seinem Pfad auswählen.</p> </li> 
-     <li> <p>Asset</p> <p>Wählen Sie zuerst die Ordner im Pfad und dann das Asset aus, das Sie löschen möchten.</p> </li> 
-     <li> <p>Ausgabedarstellung</p> <p>Wählen Sie die Ausgabedarstellung aus, indem Sie die Ordner unter ihrem Pfad auswählen.</p> <p>Geben Sie den Namen der Ausgabedarstellung ein oder mappen Sie ihn.</p> </li> 
+     <li> <p>Ordner</p> <p>Wählen Sie den zu löschenden Ordner aus, indem Sie die Ordner unter dem zugehörigen Pfad auswählen.</p> </li> 
+     <li> <p>Asset</p> <p>Wählen Sie zuerst das Asset aus, indem Sie die Ordner unter dem zugehörigen Pfad auswählen, und dann das zu löschende Asset.</p> </li> 
+     <li> <p>Ausgabedarstellung</p> <p>Wählen Sie die Ausgabedarstellung aus, indem Sie die Ordner unter dem zugehörigen Pfad auswählen.</p> <p>Geben Sie den Namen der Ausgabedarstellung ein oder ordnen Sie diesen zu.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Abrufen einer Ordnerauflistung
+#### Ordnerauflistung abrufen
 
 Dieses Aktionsmodul ruft eine Darstellung eines vorhandenen Ordners und seiner untergeordneten Entitäten (Ordner oder Assets) ab.
 
@@ -455,16 +455,16 @@ Dieses Aktionsmodul ruft eine Darstellung eines vorhandenen Ordners und seiner u
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Ordner</td> 
-   <td>Wählen Sie den Ordner aus, den Sie abrufen möchten, oder ordnen Sie ihn zu. Um dem Pfad Unterordner hinzuzufügen, klicken Sie auf das Pluszeichen und wählen Sie den Unterordner aus.</td> 
+   <td>Wählen Sie den Ordner aus, der abgerufen werden soll, oder ordnen Sie diesen zu. Um dem Pfad Unterordner hinzuzufügen, klicken Sie auf das Pluszeichen und wählen Sie den Unterordner aus.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Erstellen eines benutzerdefinierten API-Aufrufs
+#### Benutzerdefinierten API-Aufruf erstellen
 
 Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die Adobe Experience Manager Assets-API durch.
 
@@ -474,7 +474,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die Adobe Exp
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>URL</p> </td> 
@@ -485,16 +485,16 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die Adobe Exp
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kopfzeilen</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p> Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p> </td> 
+   <td role="rowheader">Header</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p> Workfront Fusion fügt automatisch Autorisierungs-Header hinzu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Abfragezeichenfolge</td> 
-   <td> <p>Geben Sie die Abfragezeichenfolge der Anfrage ein. Klicken Sie für jedes Schlüssel/Wert-Paar <b>Element hinzufügen</b> und geben Sie den Schlüssel und den Wert ein.</p> </td> 
+   <td> <p>Geben Sie die Abfragezeichenfolge der Anfrage ein. Klicken Sie für jedes Schlüssel/Wert-Paar auf <b>Element hinzufügen</b> und geben Sie den Schlüssel und den Wert ein.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Textkörper</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -502,7 +502,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die Adobe Exp
  </tbody> 
 </table>
 
-#### Verschieben von Ordnern oder Assets
+#### Ordner oder Assets verschieben
 
 Dieses Aktionsmodul verschiebt das Asset oder den Ordner unter dem angegebenen Pfad an einen neuen Speicherort.
 
@@ -512,34 +512,34 @@ Dieses Aktionsmodul verschiebt das Asset oder den Ordner unter dem angegebenen P
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Eintragstyp</td> 
-   <td> <p>Wählen Sie aus, ob Sie einen Ordner oder ein Asset verschieben möchten.</p> </td> 
+   <td> <p>Wählen Sie aus, ob ein Ordner oder Asset verschoben werden soll.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Ordner/Asset</td> 
-   <td>Wählen Sie den Ordner oder das Asset aus, den/das Sie verschieben möchten, oder ordnen Sie ihn/es zu.</td> 
+   <td>Wählen Sie den Ordner oder das Asset aus, der bzw. das verschoben werden soll, oder ordnen Sie diese zu.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Zielpfad</td> 
-   <td>Wählen Sie den Pfad zum Speicherort aus, an den Sie den Ordner oder das Asset verschieben möchten, oder ordnen Sie ihn zu.</td> 
+   <td>Wählen Sie den Pfad zum Speicherort aus, an den der Ordner oder das Asset verschoben werden soll, oder ordnen Sie diesen zu.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Name des verschobenen Ordners/Assets</td> 
-   <td>Geben Sie einen neuen Namen für den verschobenen Ordner oder das verschobene Asset ein. Der in Adobe Experience Manager Assets angezeigte Ordnername ist mit dem Originalnamen identisch. Der hier eingegebene Name erscheint in der URL des verschobenen Ordners oder Assets.</td> 
+   <td>Geben Sie einen neuen Namen für den verschobenen Ordner bzw. das verschobene Asset ein. Der in Adobe Experience Manager Assets angezeigte Ordnername stimmt mit dem ursprünglichen Namen überein. Der hier eingegebene Name wird in der URL des verschobenen Ordners oder Assets angezeigt.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Überschreiben</td> 
-   <td>Aktivieren Sie diese Option, um alle Ordner oder Assets am Zielspeicherort zu überschreiben, die denselben Namen wie der verschobene Ordner oder das verschobene Asset haben.</td> 
+   <td>Aktivieren Sie diese Option, um alle Ordner oder Assets am Zielspeicherort zu überschreiben, die denselben Namen wie der verschobene Ordner oder das verschobene Asset aufweisen.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Aktualisieren eines Datensatzes
+#### Eintrag aktualisieren
 
-Dieses Aktionsmodul aktualisiert einen vorhandenen Datensatz.
+Dieses Aktionsmodul aktualisiert einen vorhandenen Eintrag.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -547,7 +547,7 @@ Dieses Aktionsmodul aktualisiert einen vorhandenen Datensatz.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Eintragstyp</td> 
@@ -555,12 +555,12 @@ Dieses Aktionsmodul aktualisiert einen vorhandenen Datensatz.
     <ul> 
      <li> <p>Asset-Metadaten</p> 
       <ul> 
-       <li> <p>Wählen Sie das Asset aus, für das Sie Metadaten aktualisieren möchten.</p> </li> 
-       <li> <p>Geben Sie den neuen Titel des Assets ein.</p> </li> 
+       <li> <p>Wählen Sie das Asset aus, für das Metadaten aktualisiert werden sollen.</p> </li> 
+       <li> <p>Geben Sie den neuen Titel für das Asset ein.</p> </li> 
       </ul> </li> 
      <li> <p>Asset-Ausgabedarstellung</p> 
       <ul> 
-       <li> <p>Wählen Sie das Asset aus, für das Sie die Ausgabedarstellung aktualisieren möchten.</p> </li> 
+       <li> <p>Wählen Sie das Asset aus, für das die Ausgabedarstellung aktualisiert werden soll.</p> </li> 
        <li> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </li> 
       </ul> </li> 
     </ul> </td> 
@@ -568,7 +568,7 @@ Dieses Aktionsmodul aktualisiert einen vorhandenen Datensatz.
  </tbody> 
 </table>
 
-### Assets (Author-API)
+### Assets (Autoren-API)
 
 * [Asset löschen](#delete-asset)
 * [Auftragsstatus abrufen](#get-job-status)
@@ -583,14 +583,14 @@ Dieses Aktionsmodul löscht ein einzelnes Asset anhand seiner ID.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kreativelement-ID</td> 
-   <td> <p>Geben Sie die ID des Assets ein, das Sie löschen möchten, oder mappen Sie sie.</p> </td> 
+   <td role="rowheader">Asset-ID</td> 
+   <td> <p>Geben Sie die ID des Assets ein, das gelöscht werden soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">erzwingen</td> 
+   <td role="rowheader">Erzwingen</td> 
    <td>Aktivieren Sie diese Option, um das Löschen des Assets zu erzwingen, selbst wenn es referenziert wird.</td> 
   </tr> 
  </tbody> 
@@ -606,26 +606,26 @@ Dieses Aktionsmodul ruft den aktuellen Status eines asynchronen Auftrags ab.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Vorgangs-ID</td> 
-   <td> <p>Geben Sie die ID des Auftrags ein, für den Sie den Status abrufen möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td role="rowheader">Auftrags-ID</td> 
+   <td> <p>Geben Sie die ID des Auftrags ein, für den der Status abgerufen werden soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Ereignisse (Autoren-API)
 
-#### Ereignisse ansehen
+#### Ereignisse überwachen
 
-Dieses Ereignismodul startet ein Trigger, wenn ein Ereignis in AEM Assets auftritt.
+Dieses Auslösermodul startet ein Szenario, wenn ein Ereignis in AEM Assets auftritt.
 
-Das -Modul enthält ein einzelnes Feld: Webhook. Wählen Sie einen vorhandenen Webhook aus, der für diese Ereignisse verwendet werden soll, oder erstellen Sie einen neuen.
+Das Modul enthält nur das Feld „Webhook“. Wählen Sie einen vorhandenen Webhook aus, der für diese Ereignisse verwendet werden soll, oder erstellen Sie einen neuen.
 
 So erstellen Sie einen neuen Webhook:
 
-1. Klicken Sie **Hinzufügen** neben dem Feld Webhook .
+1. Klicken Sie neben dem Feld „Webhook“ auf **Hinzufügen**.
 1. Füllen Sie die folgenden Felder aus:
 
    <table>
@@ -634,24 +634,24 @@ So erstellen Sie einen neuen Webhook:
      <tbody>
        <tr>
          <td role="rowheader">Webhook-Name</td>
-        <td>Einen Namen für diesen Webhook eingeben.</td>
+        <td>Geben Sie einen Namen für Ihren Webhook ein.</td>
        </tr>
        <tr>
          <td role="rowheader">Verbindung</td>
-        <td>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</td>
+        <td>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</td>
        </tr>
      </tbody>
    </table>
 
-1. Klicken Sie auf Speichern , um den Webhook zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie auf „Speichern“, um den Webhook zu speichern und zum Modul zurückzukehren.
 
 
 ### Metadaten (Autoren-API)
 
-* [Abrufen von Asset-Metadaten](#get-asset-metadata)
-* [Aktualisieren von Asset-Metadaten](#update-asset-metadata)
+* [Asset-Metadaten abrufen](#get-asset-metadata)
+* [Asset-Metadaten aktualisieren](#update-asset-metadata)
 
-#### Abrufen von Asset-Metadaten
+#### Asset-Metadaten abrufen
 
 Dieses Aktionsmodul ruft Metadaten zum angegebenen Asset ab.
 
@@ -661,16 +661,16 @@ Dieses Aktionsmodul ruft Metadaten zum angegebenen Asset ab.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kreativelement-ID</td> 
-   <td> <p>Geben Sie die ID des Assets ein, für das Sie die Metadaten abrufen möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td role="rowheader">Asset-ID</td> 
+   <td> <p>Geben Sie die ID des Assets ein, für das die Metadaten abgerufen werden sollen, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Aktualisieren von Asset-Metadaten
+#### Asset-Metadaten aktualisieren
 
 Dieses Aktionsmodul aktualisiert Metadaten für das angegebene Asset.
 
@@ -680,15 +680,15 @@ Dieses Aktionsmodul aktualisiert Metadaten für das angegebene Asset.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kreativelement-ID</td> 
-   <td> <p>Geben Sie die ID des Assets ein, für das Sie die Metadaten aktualisieren möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td role="rowheader">Asset-ID</td> 
+   <td> <p>Geben Sie die ID des Assets ein, für das die Metadaten aktualisiert werden sollen, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Updates</td> 
-   <td> <p>Klicken Sie für jedes Metadatenelement, das Sie aktualisieren möchten, auf <b>Element hinzufügen</b> und wählen Sie den Vorgang aus. Andere Felder im Feld Element hinzufügen hängen von dem ausgewählten Vorgang ab.</p> </td> 
+   <td> <p>Klicken Sie für jedes zu aktualisierende Metadatenelement auf <b>Element hinzufügen</b> und wählen Sie den entsprechenden Vorgang aus. Die anderen unter „Element hinzufügen“ angezeigten Felder hängen vom jeweils ausgewählten Vorgang ab.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -696,13 +696,13 @@ Dieses Aktionsmodul aktualisiert Metadaten für das angegebene Asset.
 
 ### Import (Autoren-API)
 
-* [Ergebnisse des Importvorgangs abrufen](#get-import-job-results)
-* [Abrufen des Status des Importvorgangs](#get-import-job-status)
-* [Hochladen eines Assets über eine URL](#upload-an-asset-from-a-url)
+* [Ergebnisse des Importauftrags abrufen](#get-import-job-results)
+* [Status des Importauftrags abrufen](#get-import-job-status)
+* [Assets über eine URL hochladen](#upload-an-asset-from-a-url)
 
-#### Ergebnisse des Importvorgangs abrufen
+#### Ergebnisse des Importauftrags abrufen
 
-Dieses Aktionsmodul ruft Ergebnisse für den angegebenen Importvorgang ab.
+Dieses Aktionsmodul ruft Ergebnisse für den angegebenen Importauftrag ab.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -710,18 +710,18 @@ Dieses Aktionsmodul ruft Ergebnisse für den angegebenen Importvorgang ab.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Importvorgang-ID</td> 
-   <td> <p>Geben Sie die ID des Auftrags ein, für den Sie Ergebnisse abrufen möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td role="rowheader">Importauftrags-ID</td> 
+   <td> <p>Geben Sie die ID des Auftrags ein, für den Ergebnisse abgerufen werden sollen, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Abrufen des Status des Importvorgangs
+#### Status des Importauftrags abrufen
 
-Dieses Aktionsmodul ruft den Status des angegebenen Importvorgangs ab.
+Dieses Aktionsmodul ruft den Status des angegebenen Importauftrags ab.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -729,18 +729,18 @@ Dieses Aktionsmodul ruft den Status des angegebenen Importvorgangs ab.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Importvorgang-ID</td> 
-   <td> <p>Geben Sie die ID des Auftrags ein, dessen Status Sie abrufen möchten, oder mappen Sie sie.</p> </td> 
+   <td role="rowheader">Importauftrags-ID</td> 
+   <td> <p>Geben Sie die ID des Auftrags ein, für den der Status abgerufen werden soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Hochladen eines Assets über eine URL
+#### Assets über eine URL hochladen
 
-Dieses Aktionsmodul lädt ein neues Asset hoch, indem Dateien aus den angegebenen URLs importiert werden.
+Dieses Aktionsmodul lädt ein neues Asset hoch, indem Dateien anhand der angegebenen URLs importiert werden.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -748,39 +748,39 @@ Dieses Aktionsmodul lädt ein neues Asset hoch, indem Dateien aus den angegebene
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Titel</td> 
-   <td> <p>Geben Sie einen Titel für das Asset ein oder ordnen Sie ihn zu.</p> </td> 
+   <td> <p>Geben Sie einen Titel für das Asset ein oder ordnen Sie diesen zu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Beschreibung</td> 
-   <td> <p>Geben Sie eine Beschreibung für das Asset ein oder ordnen Sie sie zu.</p> </td> 
+   <td> <p>Geben Sie eine Beschreibung für das Asset ein oder ordnen Sie diese zu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Betreff</td> 
-   <td> <p>Geben Sie einen Betreff für das Asset ein oder mappen Sie ihn.</p> </td> 
+   <td> <p>Geben Sie einen Betreff für das Asset ein oder ordnen Sie diesen zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Ersteller</td> 
-   <td> <p>Geben Sie den Ersteller des Assets ein oder ordnen Sie ihn zu.</p> </td> 
+   <td role="rowheader">Erstellerin bzw. Ersteller</td> 
+   <td> <p>Geben Sie die Erstellerin bzw. den Ersteller des Assets ein oder ordnen Sie diese Person zu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Ablaufdatum</td> 
-   <td> <p>Geben Sie das Ablaufdatum für das Asset ein oder mappen Sie es.</p><p>Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
+   <td> <p>Geben Sie das Ablaufdatum für das Asset ein oder ordnen Sie dieses zu.</p><p>Eine Liste der unterstützten Datums- und Uhrzeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Erzwungene Typumwandlung</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Benutzerdefinierte Metadaten</td> 
-   <td> <p>Klicken Sie für jedes Element der benutzerdefinierten Metadaten, das Sie dem Asset hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Namen und den Wert der Metadaten ein.</p> </td> 
+   <td> <p>Klicken Sie für jedes Element der benutzerdefinierten Metadaten, das dem Asset hinzugefügt werden soll, auf <b>Element hinzufügen</b> und geben Sie den Namen und den Wert der Metadaten ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Ordnerpfad oder -kennung</td> 
-   <td> <p>Wählen Sie aus, ob Sie den Zielordner anhand des Pfads oder der ID angeben möchten, wählen Sie dann den Pfad aus oder geben Sie die ID ein.</p> </td> 
+   <td role="rowheader">Ordnerpfad oder -ID</td> 
+   <td> <p>Legen Sie fest, ob der Zielordner anhand des Pfads oder der ID angegeben werden soll, wählen Sie dann den Pfad aus oder geben Sie die ID ein.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Zu importierende Dateien</td> 
-   <td> <p>Klicken Sie für jede Datei, die Sie importieren möchten, auf <b>Element hinzufügen&lt;/&gt; und geben Sie die Details für die Datei ein. <code>Title</code> </p> </td> 
+   <td> <p>Klicken Sie für jede zu importierende Datei auf <b>„Element hinzufügen“ und geben Sie die Details für die Datei ein. <code>Title</code> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"></td> 
@@ -791,12 +791,12 @@ Dieses Aktionsmodul lädt ein neues Asset hoch, indem Dateien aus den angegebene
 
 ### Beziehungen (Autoren-API)
 
-* [Erstellen von Asset-Beziehungen](#create-asset-relations)
+* [Asset-Beziehungen erstellen](#create-asset-relations)
 * [Asset-Beziehung löschen](#create-asset-relations)
 * [Asset-Beziehungstypen abrufen](#get-asset-relation-types)
 * [Asset-Beziehungen abrufen](#get-asset-relations)
 
-#### Erstellen von Asset-Beziehungen
+#### Asset-Beziehungen erstellen
 
 Dieses Aktionsmodul erstellt neue Asset-Beziehungen für das ausgewählte Asset.
 
@@ -806,15 +806,15 @@ Dieses Aktionsmodul erstellt neue Asset-Beziehungen für das ausgewählte Asset.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kreativelement-ID</td> 
-   <td> <p>Geben Sie die Asset-ID ein, mit der Sie andere Assets verknüpfen möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td role="rowheader">Asset-ID</td> 
+   <td> <p>Geben Sie die Asset-ID ein, mit der andere Assets verknüpft werden sollen, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Zugehörige Assets</td> 
-   <td> <p>Klicken Sie für jedes Asset, das Sie mit dem ausgewählten Asset verknüpfen möchten, auf <b>Element hinzufügen</b> und geben Sie die Asset-ID und den Beziehungstyp ein bzw. ordnen Sie sie zu.</p> </td> 
+   <td role="rowheader">Verwandte Assets</td> 
+   <td> <p>Klicken Sie für jedes mit dem ausgewählten Asset zu verknüpfende Asset auf <b>Element hinzufügen</b> und geben Sie die Asset-ID und den Beziehungstyp ein bzw. ordnen Sie diese Informationen zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -829,23 +829,23 @@ Dieses Aktionsmodul löscht eine Asset-Beziehung für ein Asset.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kreativelement-ID</td> 
-   <td> <p>Geben Sie die Asset-ID ein, aus der Sie eine Beziehung löschen möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td role="rowheader">Asset-ID</td> 
+   <td> <p>Geben Sie die Asset-ID ein, aus der eine Beziehung gelöscht werden soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Zugehörige Assets</td> 
-   <td> <p>Geben Sie den Beziehungstyp ein, den Sie löschen möchten, oder ordnen Sie ihn zu.</p> </td> 
+   <td role="rowheader">Verwandte Assets</td> 
+   <td> <p>Geben Sie den zu löschenden Beziehungstyp ein oder ordnen Sie diesen zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Spezifische ID des zu löschenden zugehörigen Assets angeben</td> 
-   <td> <p>Aktivieren Sie dieses Kontrollkästchen, wenn Sie eine bestimmte Beziehung löschen möchten. Wenn dieses Feld nicht markiert ist, werden alle Relationen des gewählten Typs gelöscht.</p> </td> 
+   <td role="rowheader">Spezifische ID des zu löschenden verwandten Assets angeben</td> 
+   <td> <p>Aktivieren Sie dieses Kontrollkästchen, wenn eine bestimmte Beziehung gelöscht werden soll. Wenn dieses Kontrollkästchen nicht aktiviert ist, werden alle Beziehungen des ausgewählten Typs gelöscht.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kennung des zugehörigen Assets</td> 
-   <td> <p>Wenn Sie eine bestimmte Beziehung löschen, geben Sie die ID der Beziehung ein, die Sie löschen möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td role="rowheader">ID des verwandten Assets</td> 
+   <td> <p>Geben Sie beim Löschen einer bestimmten Beziehung die ID der zu löschenden Beziehung ein oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -853,7 +853,7 @@ Dieses Aktionsmodul löscht eine Asset-Beziehung für ein Asset.
 
 #### Asset-Beziehungstypen abrufen
 
-Dieses Modul listet die Asset-Beziehungstypen auf, die für das angegebene Asset vorhanden sind.
+Dieses Modul listet die für das angegebene Asset vorhandenen Asset-Beziehungstypen auf.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -861,11 +861,11 @@ Dieses Modul listet die Asset-Beziehungstypen auf, die für das angegebene Asset
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kreativelement-ID</td> 
-   <td> <p>Geben Sie die Asset-ID ein, für die Sie Beziehungstypen auflisten möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td role="rowheader">Asset-ID</td> 
+   <td> <p>Geben Sie die Asset-ID ein, für die Beziehungstypen aufgelistet werden sollen, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -880,15 +880,15 @@ Dieses Modul listet die Asset-Beziehungen für das angegebene Asset auf.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kreativelement-ID</td> 
-   <td> <p>Geben Sie die Asset-ID ein, für die Sie Beziehungen auflisten möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td role="rowheader">Asset-ID</td> 
+   <td> <p>Geben Sie die Asset-ID ein, für die Beziehungen aufgelistet werden sollen, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Beziehungstypen</td> 
-   <td> <p>Geben Sie eine kommagetrennte Liste der Beziehungstypen ein, für die Sie die Beziehungen auflisten möchten, oder ordnen Sie sie zu.</p> </td> 
+   <td> <p>Geben Sie eine kommagetrennte Liste der Beziehungstypen ein, für die Beziehungen aufgelistet werden sollen, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -898,11 +898,11 @@ Dieses Modul listet die Asset-Beziehungen für das angegebene Asset auf.
 ### Ordner (Ordner-API)
 
 * [Ordner erstellen](#create-folders)
-* [Löschen eines Ordners nach ID](#delete-a-folder-by-id)
-* [Löschen von Ordnern nach Pfad](#delete-folders-by-path)
-* [Abrufen von Ordnervorgangsergebnissen](#get-folders-job-results)
-* [Abrufen des Auftragsstatus für Ordner](#get-folders-job-status)
-* [Listenordner](#list-folders)
+* [Ordner nach ID löschen](#delete-a-folder-by-id)
+* [Ordner nach Pfad löschen](#delete-folders-by-path)
+* [Ergebnisse des Ordnerauftrags abrufen](#get-folders-job-results)
+* [Status des Ordnerauftrags abrufen](#get-folders-job-status)
+* [Ordner auflisten](#list-folders)
 
 #### Ordner erstellen
 
@@ -916,13 +916,13 @@ Dieses Aktionsmodul erstellt einen neuen Ordner in Adobe Experience Manager Asse
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Zu erstellende Ordner</td> 
-   <td> <p>Klicken Sie für jeden Ordner, den Sie erstellen möchten, auf <b>Element hinzufügen</b> und geben Sie die folgenden Informationen ein:</p>
+   <td> <p>Klicken Sie für jeden zu erstellenden Ordner auf <b>Element hinzufügen</b> und geben Sie die folgenden Informationen ein:</p>
    <ul>
-   <li><b>Neuer Ordnerspeicherort</b><p>Wählen Sie den Pfad zu dem Speicherort aus, an dem Sie den neuen Ordner erstellen möchten.</p></li>
+   <li><b>Speicherort des neuen Ordners</b><p>Wählen Sie den Pfad zu dem Speicherort aus, an dem der neue Ordner erstellt werden soll.</p></li>
        <li> <b>Name</b> <p>Geben Sie einen Namen für den Ordner ein. Dieser Name wird im Dateipfad angezeigt und darf daher keine Leerzeichen oder anderen Zeichen enthalten. </p> </li> 
        <li> <b>Titel</b> <p>Geben Sie einen Titel für den Ordner ein, der anstelle des Namens angezeigt werden kann.</p> </li> 
    </ul> </td> 
@@ -930,7 +930,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner in Adobe Experience Manager Asse
  </tbody> 
 </table>
 
-#### Löschen eines Ordners nach ID
+#### Ordner nach ID löschen
 
 Dieses Aktionsmodul löscht den Adobe Experience Manager Assets-Ordner mit der angegebenen ID.
 
@@ -940,24 +940,24 @@ Dieses Aktionsmodul löscht den Adobe Experience Manager Assets-Ordner mit der a
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Ordner-ID</td> 
-   <td> Geben Sie die ID des Ordners ein, den Sie löschen möchten, oder ordnen Sie sie zu.</td>
+   <td> Geben Sie die ID des Ordners ein, der gelöscht werden soll, oder ordnen Sie diese zu.</td>
   </tr> 
  <tr> 
    <td role="rowheader">Unterordner löschen</td> 
    <td> Aktivieren Sie diese Option, um den Ordner und alle zugehörigen Unterordner zu löschen.</td>
   </tr> 
  <tr> 
-   <td role="rowheader">erzwingen</td> 
-   <td> Aktivieren Sie diese Option, um das Löschen der Ordner zu erzwingen, selbst wenn ein Verweis vorhanden ist.</td>
+   <td role="rowheader">Erzwingen</td> 
+   <td> Aktivieren Sie diese Option, um das Löschen des Ordners zu erzwingen, selbst wenn dieser referenziert wird.</td>
   </tr> 
  </tbody> 
 </table>
 
-#### Löschen von Ordnern nach Pfad
+#### Ordner nach Pfad löschen
 
 Dieses Aktionsmodul löscht die Adobe Experience Manager Assets-Ordner unter den angegebenen Pfaden.
 
@@ -967,24 +967,24 @@ Dieses Aktionsmodul löscht die Adobe Experience Manager Assets-Ordner unter den
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Ordnerpfade</td> 
-   <td>Klicken Sie für jeden Ordner, den Sie löschen möchten, auf <b>Element hinzufügen</b> und wählen Sie den Ordnerpfad aus.</td>
+   <td>Klicken Sie für jeden zu löschenden Ordner auf <b>Element hinzufügen</b> und wählen Sie den Ordnerpfad aus.</td>
   </tr> 
  <tr> 
    <td role="rowheader">Unterordner löschen</td> 
    <td> Aktivieren Sie diese Option, um den Ordner und alle zugehörigen Unterordner zu löschen.</td>
   </tr> 
  <tr> 
-   <td role="rowheader">erzwingen</td> 
+   <td role="rowheader">Erzwingen</td> 
    <td> Aktivieren Sie diese Option, um das Löschen des Assets zu erzwingen, selbst wenn es referenziert wird.</td>
   </tr> 
  </tbody> 
 </table>
 
-#### Abrufen von Ordnervorgangsergebnissen
+#### Ergebnisse des Ordnerauftrags abrufen
 
 Dieses Modul ruft die Ergebnisse eines asynchronen Auftrags ab, der von der Adobe Experience Manager Assets-Ordner-API erstellt wurde.
 
@@ -994,16 +994,16 @@ Dieses Modul ruft die Ergebnisse eines asynchronen Auftrags ab, der von der Adob
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Vorgangs-ID</td> 
-   <td> Geben Sie die ID des Auftrags ein, für den Sie Ergebnisse abrufen möchten, oder ordnen Sie sie zu.</td>
+   <td role="rowheader">Auftrags-ID</td> 
+   <td> Geben Sie die ID des Auftrags ein, für den Ergebnisse abgerufen werden sollen, oder ordnen Sie diese zu.</td>
   </tr> 
  </tbody> 
 </table>
 
-#### Abrufen des Auftragsstatus für Ordner
+#### Status des Ordnerauftrags abrufen
 
 Dieses Modul ruft den Status eines asynchronen Auftrags ab, der von der Adobe Experience Manager Assets-Ordner-API erstellt wurde.
 
@@ -1013,17 +1013,17 @@ Dieses Modul ruft den Status eines asynchronen Auftrags ab, der von der Adobe Ex
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Vorgangs-ID</td> 
-   <td> Geben Sie die ID des Auftrags ein, für den Sie den Status abrufen möchten, oder ordnen Sie sie zu.</td>
+   <td role="rowheader">Auftrags-ID</td> 
+   <td> Geben Sie die ID des Auftrags ein, für den der Status abgerufen werden soll, oder ordnen Sie diese zu.</td>
   </tr> 
  </tbody> 
 </table>
 
 
-#### Listenordner
+#### Ordner auflisten
 
 Dieses Modul listet Unterordner des angegebenen Ordners auf.
 
@@ -1033,11 +1033,11 @@ Dieses Modul listet Unterordner des angegebenen Ordners auf.
  <tbody> 
   <tr> 
    <td role="rowheader">Verbindung</td> 
-   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Adobe Experience Manager Assets-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Verbinden von Adobe Experience Manager Assets mit Workfront Fusion</a>.</p> </td> 
    </tr> 
    <tr> 
-   <td role="rowheader">Ordnerpfad oder -kennung</td> 
-   <td> <p>Wählen Sie aus, ob Sie den Zielordner anhand des Pfads oder der ID angeben möchten, wählen Sie dann den Pfad aus oder geben Sie die ID ein.</p> </td> 
+   <td role="rowheader">Ordnerpfad oder -ID</td> 
+   <td> <p>Legen Sie fest, ob der Zielordner anhand des Pfads oder der ID angegeben werden soll, wählen Sie dann den Pfad aus oder geben Sie die ID ein.</p> </td> 
   </tr> 
  </tbody> 
 </table>
