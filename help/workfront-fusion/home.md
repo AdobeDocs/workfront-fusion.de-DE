@@ -59,4 +59,4 @@ Die Suche in der Dokumentation kann bei strategischer Vorgehensweise effizienter
 
 ### Antwortsuche in Community-Foren
 
-* **Fragen stellen**: Wenn Sie in der Dokumentation keine Antwort auf Ihre Frage finden, wenden Sie sich an die [Workfront Fusion Community-Foren](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2), wo andere Benutzende und Fachleute Ihnen weiterhelfen können.
+* **Fragen stellen**: Wenn Sie in der Dokumentation keine Antwort auf Ihre Frage finden, wenden Sie sich an die [Workfront Fusion Community-Foren](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=de), wo andere Benutzende und Fachleute Ihnen weiterhelfen können.
