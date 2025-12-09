@@ -80,7 +80,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 * Unvollständige Ausführungen sind auf eine Gesamtgröße von **500 MB** pro Team beschränkt. Wenn das Limit von 500 MB erreicht wird, werden für dieses Team keine unvollständigen Ausführungen mehr gespeichert.
 * Workfront Fusion lässt bis zu 5 fehlgeschlagene Vorgänge pro Minute zu.
 
-##  Weitere Versuche
+## Weitere Versuche
 
 * Wenn bei Verwendung des Unterbrechungsmoduls und Angabe der Anweisung „Erneut versuchen“ ein Szenario innerhalb eines Zeitraums von 2 Minuten 10-mal nacheinander fehlschlägt, wird das Szenario automatisch deaktiviert.
 
