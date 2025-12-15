@@ -19,9 +19,9 @@ Viele Services stellen Webhooks bereit, mit denen sofortige Benachrichtigungen b
 
 >[!TIP]
 >
->Sie können die Modulliste in einem Connector überprüfen, um festzustellen, ob er über einen sofortigen Trigger verfügt, oder Sie können die Dokumentation des Connectors unter „Fusion[Anwendungen und deren Modulverweise“ ](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+>Sie können die Modulliste in einem Connector überprüfen, um festzustellen, ob er über einen sofortigen Trigger verfügt, oder Sie können die Dokumentation des Connectors unter „Fusion[Anwendungen und deren Modulverweise“ &#x200B;](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 >
->Die Dokumentation zu Adobe Workfront Instant Trigger finden Sie unter [Trigger ](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers) im Artikel Workfront-Module.
+>Die Dokumentation zu Adobe Workfront Instant Trigger finden Sie unter [Trigger &#x200B;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers) im Artikel Workfront-Module.
 
 Wenn ein Connector keinen Webhook enthält, können Sie einen der folgenden Schritte ausführen:
 
@@ -68,14 +68,14 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 Eine Liste von Webhooks finden Sie im Bereich Webhooks .
 
-1. Um den Bereich Webhooks zu öffnen, klicken Sie im linken Navigationsbereich auf ![ Symbol Webhooks ](assets/webhooks-icon.png)Webhooks).
+1. Um den Bereich Webhooks zu öffnen, klicken Sie im linken Navigationsbereich auf ![&#x200B; Symbol Webhooks &#x200B;](assets/webhooks-icon.png)Webhooks).
 
    Hier sehen Sie eine Liste mit Webhooks.
 
    ![Webhook-Liste](assets/list-of-webhooks.png)
 
 1. Um nach einem bestimmten Webhook zu suchen, geben Sie Ihren Suchbegriff in das Suchfeld ein.
-1. Um einen Webhook zu kopieren, klicken Sie auf das Symbol &quot;![ kopieren](assets/copy-webhook-icon.png) in der Nähe der URL in der Zeile für diesen Webhook.
+1. Um einen Webhook zu kopieren, klicken Sie auf das Symbol &quot;![&#x200B; kopieren](assets/copy-webhook-icon.png) in der Nähe der URL in der Zeile für diesen Webhook.
 1. Um die Priorität für einen Webhook festzulegen, klicken Sie auf das Dropdown-Menü in der Spalte Priorität und wählen Sie die neue Priorität aus.
 
    Webhooks mit höherer Priorität werden zuerst behandelt, was von Vorteil sein kann, wenn ein Worker-Pool viele Automatisierungen hat, die um Ressourcen konkurrieren.
@@ -85,7 +85,7 @@ Eine Liste von Webhooks finden Sie im Bereich Webhooks .
 1. Um festzustellen, ob ein Webhook abgelaufen ist, überprüfen Sie die Spalte Abgelaufen . Abgelaufene Webhooks sind an kein Szenario angehängt oder haben seit 120 Stunden keine Ereignisse erhalten.
 1. Um das Szenario anzuzeigen, in dem ein Webhook verwendet wird, klicken Sie auf die Schaltfläche **Szenario** in der Spalte „Szenario“ für diesen Webhook.
 1. Um die für diesen Webhook verwendete Verbindung anzuzeigen, klicken Sie auf die Schaltfläche **Verbindung** in der Spalte „Verbindung“ für diesen Webhook.
-1. Um Spalten auszublenden oder zuvor ausgeblendete Spalten anzuzeigen, klicken Sie auf das Symbol **Spalten** (![) ](assets/glist-column.png) und aktivieren oder deaktivieren Sie die Spaltennamen.
+1. Um Spalten auszublenden oder zuvor ausgeblendete Spalten anzuzeigen, klicken Sie auf das Symbol **Spalten** (![) &#x200B;](assets/glist-column.png) und aktivieren oder deaktivieren Sie die Spaltennamen.
 1. Um Ereignisabonnements anzuzeigen, die mit einem Workfront-Webhook verknüpft sind, aktivieren Sie das Kontrollkästchen neben dem Webhook und wählen **Details anzeigen** unten auf der Seite aus.
 
    >[!NOTE]
@@ -145,7 +145,7 @@ Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 
 
 Wenn in Ihrem Szenario ein Fehler mit einem sofortigen Trigger auftritt, wird das Szenario:
 
-* Beendet sofort, wenn das Szenario auf „Sofort[!UICONTROL  eingestellt ].
+* Beendet sofort, wenn das Szenario auf „Sofort[!UICONTROL &#x200B; eingestellt &#x200B;].
 * Beendet nach drei erfolglosen Versuchen (drei Fehlern), wenn das Szenario wie geplant ausgeführt wird.
 
 Wenn während der Ausführung des Szenarios ein Fehler auftritt, wird das Ereignis während der Rollback-Phase des sofortigen Triggers wieder in die Warteschlange gestellt. In einem solchen Fall können Sie das Szenario korrigieren und erneut ausführen.
