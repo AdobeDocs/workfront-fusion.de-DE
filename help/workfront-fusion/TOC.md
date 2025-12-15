@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: 04fe3b413638119d06686b420deaeb4f7d37d81c
+source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
 workflow-type: tm+mt
-source-wordcount: '1963'
+source-wordcount: '1970'
 ht-degree: 99%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 99%
    * [Adobe Workfront Fusion-Veröffentlichungen](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion-Versionen 2025 {#fusion-releases-2025}
       * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 17. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+      * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 15. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
       * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 8. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
       * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 1. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
       * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 10. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
@@ -262,7 +263,7 @@ ht-degree: 99%
    * [Hinzufügen eines Filters zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
    * [Hinzufügen eines Webhooks zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
 * Erstellen und Verwalten von Vorlagen  {#create-and-manage-templates}
-   * [Erstellen und Verwalten von Vorlagen &#x200B;](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
+   * [Erstellen und Verwalten von Vorlagen ](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Erstellen neuer Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Erstellen von Szenarios mit Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [Anzeigen, Bearbeiten und Löschen von Vorlagen](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)

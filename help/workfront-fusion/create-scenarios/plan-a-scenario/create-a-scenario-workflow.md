@@ -4,10 +4,10 @@ description: Diesem allgemeinen Workflow folgen, um ein Szenario zu erstellen
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '816'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ Szenarien werden entsprechend den Anforderungen Ihres Unternehmens erstellt, mit
 * [Zuordnen von Daten zwischen Modulen](#map-data-between-modules)
 * [Routing konfigurieren](#configure-routing)
 * [Konfigurieren der Fehlerbehandlung](#configure-error-handling)
-* [Szenarioeinstellungen konfigurieren](#onfigure-scenario-settings)
+* [Konfigurieren von Szenario-Einstellungen](#onfigure-scenario-settings)
 * [Testen und Überarbeiten](#test-and-revise)
 * [Aktivieren des Szenarios](#activate-the-scenario)
 * [Tastaturbefehle für das Workfront Fusion-Szenario](#workfront-fusion-scenario-keyboard-shortcuts)
@@ -35,7 +35,7 @@ Tastaturbefehle
 ## Szenario erstellen und benennen
 
 1. Melden Sie sich bei Ihrem Workfront Fusion-Konto an.
-1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![&#x200B; (](assets/scenarios-icon.png)).
+1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![ (](assets/scenarios-icon.png)).
 
    >[!NOTE]
    >
@@ -91,7 +91,7 @@ Durch die Fehlerbehandlung kann das Szenario von Fehlern wiederhergestellt werde
 
 Anweisungen finden Sie unter [Fehlerbehandlung hinzufügen](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md).
 
-## Szenarioeinstellungen konfigurieren
+## Konfigurieren von Szenario-Einstellungen
 
 Sie können Einstellungen für Ihr gesamtes Szenario konfigurieren, z. B. das Planen eines Szenarios, das Erstellen von Notizen oder das Bestimmen, wie Daten gespeichert werden.
 
@@ -166,6 +166,11 @@ Beim Erstellen oder Bearbeiten eines Szenarios können die folgenden Tastaturbef
    <td role="rowheader">[!UICONTROL Einfügen]</td> 
    <td>Strg+V</td> 
    <td>Befehl+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Nach Modulen suchen]</td> 
+   <td>Strg+K</td> 
+   <td>Befehl+K</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Einfügen von cURL in das Szenario zum Erstellen eines HTTP-Moduls</td> 
