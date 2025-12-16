@@ -57,7 +57,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 Fügen Sie die Fusion-IP-Adressen zu [!DNL Adobe Campaign] hinzu.
 
-* Anweisungen zum Hinzufügen von IP-Adressen zu Ihrer Campaign-Zulassungsliste auf die Zulassungsliste setzte finden Sie unter [Hinzufügen von IP-Adressen ](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) der Adobe Campaign-Dokumentation.
+* Anweisungen zum Hinzufügen von IP-Adressen zu Ihrer Campaign-Zulassungsliste auf die Zulassungsliste setzte finden Sie unter [Hinzufügen von IP-Adressen &#x200B;](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) der Adobe Campaign-Dokumentation.
 * Eine Liste der IP-Adressen, die der Zulassungsliste auf die Zulassungsliste setzte hinzugefügt werden können, finden Sie [Konfigurieren von IP-Adressen für Fusion in der -](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Adobe Campaign-API-Informationen
@@ -200,7 +200,7 @@ Dieses Aktionsmodul erstellt einen neuen Datensatz in [!DNL Adobe Campaign].
    <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Campaign] finden Sie in diesem Artikel unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Campaign]</a>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ressource]</td> 
+   <td role="rowheader">[!UICONTROL -Ressource]</td> 
    <td>Wählen Sie den Typ [!DNL Adobe Campaign] Datensatzes aus, den Sie erstellen möchten, oder wählen Sie **Benutzerdefinierte Ressource** und geben Sie die Ressourcendetails ein.</td> 
   </tr> 
   <tr> 
@@ -227,7 +227,7 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatz aus [!DNL Adobe Campaign].
    <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Campaign] finden Sie in diesem Artikel unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Campaign]</a>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ressource]</td> 
+   <td role="rowheader">[!UICONTROL -Ressource]</td> 
    <td>Wählen Sie den Ressourcentyp aus, den Sie löschen möchten, oder wählen Sie **Benutzerdefinierte Ressource** und geben Sie die Ressourcendetails ein.</td> 
   </tr> 
   <tr> 
@@ -289,7 +289,7 @@ Informationen zu bestimmten Aktionen und Feldern finden Sie unter [[!DNL Adobe C
    <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Campaign] finden Sie in diesem Artikel unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Campaign]</a>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ressource]</td> 
+   <td role="rowheader">[!UICONTROL -Ressource]</td> 
    <td>Wählen Sie den Ressourcentyp aus, für den Sie eine Aktion durchführen möchten, oder wählen Sie **Benutzerdefinierte Ressource** und geben Sie die Ressourcendetails ein.</td> 
   </tr> 
   <tr> 
@@ -298,7 +298,7 @@ Informationen zu bestimmten Aktionen und Feldern finden Sie unter [[!DNL Adobe C
    <ul>
    <li><p><b>[!DNL List]</b></p><p> Verfügbare Felder finden Sie unter <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> in diesem Artikel. </p></li>
      <li><p><b>[!UICONTROL GET]</b></p><p> Verfügbare Felder finden Sie unter <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> in diesem Artikel. </p></li> 
-   <li><p><b>[!UICONTROL Erstellen]</b></p><p> Verfügbare Felder finden Sie unter <a href="#create-a-record" class="MCXref xref" >[!UICONTROL, Datensatz erstellen]</a> in diesem Artikel. </p></li>
+   <li><p><b>[!UICONTROL Erstellen]</b></p><p> Verfügbare Felder finden Sie unter <a href="#create-a-record" class="MCXref xref" >[!UICONTROL , Datensatz erstellen]</a> in diesem Artikel. </p></li>
    <li><p><b>[!UICONTROL aktualisieren]</b></p><p> Informationen zu verfügbaren Feldern finden Sie unter <a href="#update-record" class="MCXref xref" >[!UICONTROL Aktualisieren eines Datensatzes]</a> in diesem Artikel. </p></li>
    <li><p><b>[!UICONTROL Löschen]</b></p><p> Verfügbare Felder finden Sie unter <a href="#delete-record" class="MCXref xref" >[!UICONTROL Datensatz löschen]</a> in diesem Artikel. </p></li>
    </ul>
@@ -320,7 +320,7 @@ Dieses Aktionsmodul liest einen Datensatz aus [!DNL Adobe Campaign].
    <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Campaign] finden Sie in diesem Artikel unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Campaign]</a>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ressource]</td> 
+   <td role="rowheader">[!UICONTROL -Ressource]</td> 
    <td>Wählen Sie den Typ [!DNL Adobe Campaign] Datensatzes aus, den Sie lesen möchten, oder wählen Sie **Benutzerdefinierte Ressource** und geben Sie die Ressourcendetails ein.</td> 
   </tr> 
     <tr> 
@@ -328,11 +328,11 @@ Dieses Aktionsmodul liest einen Datensatz aus [!DNL Adobe Campaign].
    <td>Geben Sie die Zuordnungs-ID des Datensatzes ein, den Sie lesen möchten.</td> 
   </tr> 
  <tr> 
-   <td role="rowheader">[!UICONTROL-Felder, die in die Ausgabe aufgenommen werden sollen] </td> 
+   <td role="rowheader">[!UICONTROL -Felder, die in die Ausgabe aufgenommen werden sollen] </td> 
    <td>Wählen Sie die Felder aus, die Sie in die Ausgabe des Moduls aufnehmen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!Benutzerdefinierte UICONTROL-Felder, die in die Ausgabe aufgenommen werden sollen]</td> 
+   <td role="rowheader">[!UICONTROL Benutzerdefinierte-Felder, die in die Ausgabe aufgenommen werden sollen]</td> 
    <td>Klicken Sie für jedes benutzerdefinierte Feld, das Sie in die Ausgabe aufnehmen möchten, auf <b>[!UICONTROL Hinzufügen]</b> und geben Sie den Namen des benutzerdefinierten Felds ein.</td> 
   </tr> 
  </tbody> 
@@ -379,7 +379,7 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Adobe Campai
    <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Campaign] finden Sie in diesem Artikel unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Campaign]</a>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ressource]</td> 
+   <td role="rowheader">[!UICONTROL -Ressource]</td> 
    <td>Wählen Sie den Typ des Datensatzes aus, [!DNL Adobe Campaign] Sie aktualisieren möchten, oder wählen Sie **Benutzerdefinierte Ressource** und geben Sie die Ressourcendetails ein.</td> 
   </tr> 
     <tr> 
@@ -412,7 +412,7 @@ Dieses Suchmodul gibt Datensätze basierend auf den angegebenen Kriterien zurüc
    <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Campaign] finden Sie in diesem Artikel unter <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Campaign]</a>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ressource]</td> 
+   <td role="rowheader">[!UICONTROL -Ressource]</td> 
    <td>Wählen Sie den Typ [!DNL Adobe Campaign] Datensatzes aus, den Sie zurückgeben möchten, oder wählen Sie **Benutzerdefinierte Ressource** und geben Sie die Ressourcendetails ein.</td> 
   </tr> 
   <tr> 
