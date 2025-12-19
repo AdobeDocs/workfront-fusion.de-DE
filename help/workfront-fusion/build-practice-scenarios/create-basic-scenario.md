@@ -7,22 +7,22 @@ description: Erfahren Sie, wie Sie mit Adobe Workfront Fusion ein einfaches Auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 0%
+source-wordcount: '1419'
+ht-degree: 12%
 
 ---
 
 # Erstellen eines Basisszenarios
 
-Die Rolle von Adobe Workfront Fusion besteht darin, Ihre Prozesse zu automatisieren, damit Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen. Es funktioniert durch die Verknüpfung von Aktionen innerhalb und zwischen Apps und Services, um ein Szenario zu erstellen, das Ihre Daten automatisch überträgt und transformiert. Das Szenario, in dem Sie Daten in einer App oder einem Service erstellen, überwacht und verarbeitet diese Daten, um das gewünschte Ergebnis zu liefern.
+Adobe Workfront Fusion dient dazu, Ihre Prozesse zu automatisieren, sodass Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen. Dies funktioniert durch die Verknüpfung von Aktionen innerhalb und zwischen Anwendungen und Services, um ein Szenario zu erstellen, in dem Ihre Daten automatisch übertragen und umgewandelt werden. Das von Ihnen erstellte Szenario ermöglicht es, auf Daten in einer Anwendung oder einem Service zu achten und diese Daten zu verarbeiten, um das gewünschte Ergebnis zu liefern.
 
 In diesem Beispiel wird erläutert, wie Sie ein Szenario erstellen, in dem in Workfront nach einer Anfrage gesucht und diese in ein Projekt konvertiert wird.
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -30,22 +30,22 @@ In diesem Beispiel wird erläutert, wie Sie ein Szenario erstellen, in dem in Wo
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -76,7 +76,7 @@ Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Z
 
    Das Fenster für die Modulkonfiguration wird geöffnet.
 
-1. Wählen [!UICONTROL &#x200B; im Feld &#x200B;] Ihre Workfront-Verbindung aus.
+1. Wählen [!UICONTROL  im Feld ] Ihre Workfront-Verbindung aus.
 
    Wenn Sie keine Workfront-Verbindung haben, lesen Sie [Verbindung erstellen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 1. Wählen Sie im Feld [!UICONTROL Datensatztyp] die Option **[!UICONTROL Problem]** aus. Dadurch wird das Modul so eingerichtet, dass nur Probleme gesucht werden, darunter auch Anfragen.
@@ -116,14 +116,14 @@ Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Z
 
 1. Bewegen Sie den Mauszeiger über den Teilkreis rechts neben dem Modul und klicken Sie dann auf **[!UICONTROL Weitere Module hinzufügen]**.
 1. Wählen Sie Adobe Workfront aus der Liste der Programme und dann das Modul **[!UICONTROL Objekt konvertieren]** aus.
-1. Wählen [!UICONTROL &#x200B; im Feld &#x200B;] die gleiche Workfront-Verbindung aus, die Sie im vorherigen Modul verwendet haben.
+1. Wählen [!UICONTROL  im Feld ] die gleiche Workfront-Verbindung aus, die Sie im vorherigen Modul verwendet haben.
 1. Wählen Sie im Feld **[!UICONTROL Datensatztyp]** die Option **[!UICONTROL Problem]** aus, da das Modul ein Problem konvertiert.
 1. Wählen Sie im **[!UICONTROL Konvertieren in]** die Option **Projekt** aus.
 1. Klicken Sie neben dem Feld Aufgaben-ID auf den Umschalter Zuordnung , um es zu aktivieren.
 
    Der Umschalter wird blau, wenn er aktiviert ist. Auf diese Weise können Sie die Aufgaben-ID aus dem vorherigen Modul zuordnen.
 
-   ![Umschalter für Zuordnung](assets/map-toggle.png)
+   ![Umschalter „Zuordnung“](assets/map-toggle.png)
 1. Klicken Sie auf **[!UICONTROL Feld]** Aufgaben-ID“.
 
    Es öffnet sich ein Bedienfeld, in dem Sie auswählen können, was als ID der Aufgabe verwendet werden soll, die Sie in ein Projekt konvertieren möchten. Da Sie die Zuordnung aktiviert haben, enthält das Bedienfeld Ausgaben aus allen vorherigen Modulen. Sie haben ID als Ausgabe des vorherigen Moduls ausgewählt, sodass es jetzt im Bedienfeld verfügbar ist.
@@ -162,7 +162,7 @@ Bei diesem Szenario würde ein erfolgreicher Test dazu führen, dass die Anfrage
 
    >[!IMPORTANT]
    >
-   >Speichern Sie häufig, während Sie ein Szenario verfeinern und testen.
+   >Speichern Sie häufig, während Sie ein Szenario verfeinern und testen. Möglicherweise müssen Sie ein neues Problem in Ihrem Workfront-Konto erstellen, um das Szenario Trigger.
 
 >[!TIP]
 >
@@ -175,7 +175,7 @@ Bei diesem Szenario würde ein erfolgreicher Test dazu führen, dass die Anfrage
 >
 >1. Schließen Sie den **[!UICONTROL Anmerkungen]**.
 >
->     Nachdem Sie eine Anmerkung zu einem Szenario hinzugefügt haben, wird ein Punkt auf dem **[!UICONTROL Anmerkungen]**-Symbol ![Anmerkungen-Symbol mit &#x200B;](assets/notes-icon-w-dot.png) Punkt) unten im Szenario-Editor angezeigt.
+>     Nachdem Sie eine Anmerkung zu einem Szenario hinzugefügt haben, wird ein Punkt auf dem **[!UICONTROL Anmerkungen]**-Symbol ![Anmerkungen-Symbol mit ](assets/notes-icon-w-dot.png) Punkt) unten im Szenario-Editor angezeigt.
 >
 >1. Klicken Sie auf **[!UICONTROL Notizen]**-Symbol ![Notizen-Symbol mit Punkt](assets/notes-icon-w-dot.png), um Ihre Notizen anzuzeigen. Wenn Notizen geöffnet sind, wird ein Kreis um das Notizen-Symbol angezeigt.
 >
