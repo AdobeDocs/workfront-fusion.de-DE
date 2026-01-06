@@ -242,7 +242,7 @@ Um einen privaten Schlüssel für Ihre [!DNL Workfront Fusion Jira]-Verbindung z
 >Verwenden Sie die [!DNL Jira Server]-App, um eine Verbindung zu [!DNL Jira Server] oder [!DNL Jira Data Center] herzustellen.
 
 1. Klicken Sie in einem beliebigen [!DNL Jira Server] in Workfront Fusion **[!UICONTROL Hinzufügen]** neben dem Feld [!UICONTROL Verbindung].
-1. Füllen [!UICONTROL  im Bedienfeld ]Verbindung erstellen“ die folgenden Felder aus:
+1. Füllen [!UICONTROL &#x200B; im Bedienfeld &#x200B;]Verbindung erstellen“ die folgenden Felder aus:
 
    <table style="table-layout:auto"> 
     <col> 
@@ -308,9 +308,9 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz hinzugefügt, aktu
      <li value="3"> <p>Wählen Sie die Verbindung aus, die Sie für Ihren Webhook verwenden möchten. </p> <p>Anweisungen zum Verbinden Ihres [!DNL Jira Software]-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von [!DNL Jira Software] mit Workfront Fusion</a>.</p> </li> 
      <li value="4"> <p>Wählen Sie den Datensatztyp aus, auf den die Software achten soll:</p> 
       <ul> 
-       <li>[!UICONTROL-Kommentar] </li> 
+       <li>[!UICONTROL -Kommentar] </li> 
        <li>[!UICONTROL Problem]</li> 
-       <li>[!UICONTROL-Projekt] </li> 
+       <li>[!UICONTROL -Projekt] </li> 
        <li>[!UICONTROL Sprint]</li> 
       </ul> </li> 
     </ol> </td> 
@@ -373,10 +373,10 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den das Modul erstellen soll, und füllen Sie dann die anderen Felder aus, die für diesen Datensatztyp spezifisch sind und im Modul angezeigt werden.</p> 
     <ul> 
-     <li>[!UICONTROL-Anhang]</li> 
-     <li>[!UICONTROL-Kommentar]</li> 
+     <li>[!UICONTROL -Anhang]</li> 
+     <li>[!UICONTROL -Kommentar]</li> 
      <li>[!UICONTROL Problem]</li> 
-     <li>[!UICONTROL-Projekt]</li> 
+     <li>[!UICONTROL -Projekt]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Arbeitsprotokoll]</li> 
     </ul> </td> 
@@ -444,10 +444,10 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den das Modul löschen soll. </p> 
     <ul> 
-     <li>[!UICONTROL-Anhang]</li> 
-     <li>[!UICONTROL-Kommentar]</li> 
+     <li>[!UICONTROL -Anhang]</li> 
+     <li>[!UICONTROL -Kommentar]</li> 
      <li>[!UICONTROL Problem]</li> 
-     <li>[!UICONTROL-Projekt]</li> 
+     <li>[!UICONTROL -Projekt]</li> 
      <li>[!UICONTROL Sprint] </li> 
     </ul> </td> 
   </tr> 
@@ -501,11 +501,11 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td> <p>Wählen Sie den Typ [!DNL Jira] Datensatzes aus, den das Modul lesen soll.</p> 
     <ul> 
-     <li>[!UICONTROL-Anhang]</li> 
+     <li>[!UICONTROL -Anhang]</li> 
      <li>[!UICONTROL Problem]</li> 
-     <li>[!UICONTROL-Projekt]</li> 
+     <li>[!UICONTROL -Projekt]</li> 
      <li>[!UICONTROL Sprint] </li> 
-     <li>[!UICONTROL-Benutzer]</li> 
+     <li>[!UICONTROL -Benutzer]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -541,9 +541,9 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den das Modul aktualisieren soll. Wenn Sie einen Datensatztyp auswählen, werden im Modul andere für diesen Datensatztyp spezifische Felder angezeigt.</p> 
     <ul> 
-     <li>[!UICONTROL-Kommentar]</li> 
+     <li>[!UICONTROL -Kommentar]</li> 
      <li>[!UICONTROL Problem]</li> 
-     <li>[!UICONTROL-Projekt]</li> 
+     <li>[!UICONTROL -Projekt]</li> 
      <li>[!UICONTROL Sprint] </li> 
      <li>[!UICONTROL Problem beim Übergang]</li> 
     </ul> </td> 
@@ -598,9 +598,9 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td> <p>Wählen Sie den Datensatztyp aus, den das Modul auflisten soll. Wenn Sie einen Datensatztyp auswählen, werden im Modul andere für diesen Datensatztyp spezifische Felder angezeigt.</p> 
     <ul> 
-     <li>[!UICONTROL-Kommentar]</li> 
+     <li>[!UICONTROL -Kommentar]</li> 
      <li>[!UICONTROL Problem]</li> 
-     <li>[!UICONTROL-Projekt]</li> 
+     <li>[!UICONTROL -Projekt]</li> 
      <li>[!UICONTROL Sprint-Problem]</li> 
      <li>[!UICONTROL Arbeitsprotokoll]</li> 
     </ul> </td> 
@@ -639,9 +639,9 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
     <ul> 
      <li>[!UICONTROL Probleme]</li> 
      <li> <p>[!UICONTROL Probleme nach JQL (Jira-Abfragesprache)] </p> <p>Weitere Informationen zu JQL finden Sie unter <a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a> auf der Atlassian-Hilfeseite. </p> </li> 
-     <li>[!UICONTROL-Projekt]</li> 
+     <li>[!UICONTROL -Projekt]</li> 
      <li>[!UICONTROL Projekt nach Problem]</li> 
-     <li>[!UICONTROL-Benutzer]</li> 
+     <li>[!UICONTROL -Benutzer]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
