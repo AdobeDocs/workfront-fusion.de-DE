@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
+source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 99%
+source-wordcount: '1979'
+ht-degree: 98%
 
 ---
 
@@ -263,12 +263,13 @@ ht-degree: 99%
    * [Hinzufügen eines Filters zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
    * [Hinzufügen eines Webhooks zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
 * Erstellen und Verwalten von Vorlagen  {#create-and-manage-templates}
-   * [Erstellen und Verwalten von Vorlagen &#x200B;](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
+   * [Erstellen und Verwalten von Vorlagen ](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Erstellen neuer Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Erstellen von Szenarios mit Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [Anzeigen, Bearbeiten und Löschen von Vorlagen](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [Veröffentlichen und Freigeben von Vorlagen](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Aktuell verfügbare Adobe Workfront Fusion-Vorlagen](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
+   * [Vorlagen zur Verbindung von Adobe Workfront Fusion und Jira verwenden](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
    * [Häufig gestellte Fragen zu Adobe Workfront Fusion-Vorlagen](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Referenzen {#references}
    * [Referenzen](/help/workfront-fusion/references/references-toc.md)
