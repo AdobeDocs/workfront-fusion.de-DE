@@ -1196,7 +1196,7 @@ Dieses Modul aktualisiert Metadatenfelder in einer oder mehreren Dateien mit von
    <td> <p>Klicken Sie für jede Datei, für die Sie die Metadaten aktualisieren möchten, auf <b>Element hinzufügen</b> und geben Sie die ID der Datei ein oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Werte] </td> 
+   <td role="rowheader">[!UICONTROL -Werte] </td> 
    <td> <p>Klicken Sie für jedes Feld, für das Sie die Metadaten aktualisieren möchten, auf <b>Element hinzufügen</b> und geben Sie die ID der Felddefinition und den Wert, den Sie in dieses Feld einfügen möchten, ein oder mappen Sie sie. Alle im Feld Datei-IDs angegebenen Dateien werden mit diesem Feldwert aktualisiert.</p> </td> 
   </tr> 
  </tbody> 
@@ -1279,7 +1279,7 @@ So erstellen Sie einen neuen Webhook:
       <td> <p>Geben Sie die ID des Arbeitsbereichs ein, in dem Sie Ereignisse beobachten möchten.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Ereignisse]</td> 
+      <td role="rowheader">[!UICONTROL -Ereignisse]</td> 
       <td> <p>Wählen Sie die Ereignisse aus, für die Sie dieses Modul Trigger erstellen möchten</p> </td> 
      </tr> 
     </tbody> 
