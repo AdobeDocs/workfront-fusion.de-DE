@@ -61,7 +61,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
   Weitere Informationen und Anweisungen finden Sie unter [Einrichtung technischer Konten](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) in der Dokumentation zu Adobe.
 * Sie müssen Systemadministrator-Berechtigungen auf das technische Konto im Bereich Adobe Admin Console-Produktprofile anwenden.
 
-  Informationen und Anweisungen finden Sie unter [Erstellen von Systemadministratoren in Workfront mit der Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Informationen und Anweisungen finden Sie unter [Erstellen von Systemadministratoren in Workfront mit der Adobe Admin Console](https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -156,13 +156,13 @@ Um diese Module verwenden zu können, muss in Workfront Folgendes erstellt werde
 
 1. Erstellen Sie in Workfront einen Benutzer für die Systemintegration. Dieser Benutzer wird nur von Workfront Fusion verwendet und stellt keinen menschlichen Benutzer dar. Aufgaben, die diesem Benutzer zugewiesen sind, führen zu Triggern bei dem Szenario, das Workfront mit Jira synchronisiert.
 
-   Anweisungen finden Sie unter [Benutzer hinzufügen](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) in der Dokumentation zu Workfront.
+   Anweisungen finden Sie unter [Benutzer hinzufügen](https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) in der Dokumentation zu Workfront.
 
 #### Erstellen eines benutzerdefinierten Formulars in Workfront
 
 1. Beginnen Sie in Workfront mit der Erstellung eines benutzerdefinierten Formulars.
 
-   Anweisungen finden Sie unter [Erstellen eines benutzerdefinierten Formulars](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) in der Dokumentation zu Workfront.
+   Anweisungen finden Sie unter [Erstellen eines benutzerdefinierten Formulars](https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) in der Dokumentation zu Workfront.
 1. Benennen Sie das Formular **JIRA-Felder**.
 1. Fügen Sie die folgenden Felder in das benutzerdefinierte Formular ein:
 
@@ -179,7 +179,7 @@ Um diese Module verwenden zu können, muss in Workfront Folgendes erstellt werde
 >
 >Es wird empfohlen, dieses Formular nicht von anderen Benutzern bearbeiten zu lassen. Sie können dies erreichen, indem Sie sicherstellen, dass alle Benutzenden, die zum benutzerdefinierten Formular hinzugefügt werden, nur Lesezugriff haben.
 >
->Anweisungen finden Sie unter [Freigeben eines benutzerdefinierten Formulars](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) in der Dokumentation zu Workfront.
+>Anweisungen finden Sie unter [Freigeben eines benutzerdefinierten Formulars](https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) in der Dokumentation zu Workfront.
 
 ### Konfigurieren von Verbindungen in Workfront Fusion
 
