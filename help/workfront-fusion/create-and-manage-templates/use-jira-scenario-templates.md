@@ -234,7 +234,7 @@ Wenn eine Workfront-Aufgabe zugewiesen wird, ist das Problem in Jira eine Aufgab
 
 #### Konfigurieren des Trigger-Moduls
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf die Vorlage **Workfront zu Jira: JIRA-Problem aus Workfront-Aufgabe oder -** erstellen .
 
@@ -291,7 +291,7 @@ In diesem Szenario wird eine Workfront-Aufgabe oder ein -Problem erstellt, wenn 
 
 +++**Erweitern Sie , um Anweisungen zur Konfiguration von Szenario 2: JIRA für Workfront anzuzeigen: Senden Sie Updates zu Problemen und Kommentare von Jira zurück an Workfront**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Teil 2: JIRA an Workfront: Senden Sie von der Jira2-Vorlage Aktualisierungen zu Problemen und Kommentaren** Workfront zurück.
 
@@ -332,7 +332,7 @@ In diesem Szenario wird eine Workfront-Aufgabe oder ein -Problem erstellt, wenn 
 
 +++**Erweitern Sie , um Anweisungen zum Konfigurieren von Szenario 3: WF-zu-Jira-Änderungen (Aufgaben) anzuzeigen**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf die **Teil 3: Workfront zu Jira: Änderungen an Workfront-Aufgabe zu JIRA-Problem**-Vorlage.
 
@@ -374,7 +374,7 @@ Dieses Szenario sendet Aktualisierungen von Workfront-Problemen an zuvor verbund
 
 +++**Erweitern Sie , um Anweisungen zur Konfiguration von Szenario 4: Workfront zu Jira: Änderungen an Workfront-Problem zu JIRA-Problem anzuzeigen**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Vorlage „Szenario 4: WF-zu-Jira-Änderungen (Probleme**&quot;.
 
@@ -414,7 +414,7 @@ Dieses Szenario sendet Aktualisierungen von Workfront-Problemen an zuvor verbund
 
 +++**Erweitern Sie , um Anweisungen zum Konfigurieren von Szenario 5: Workfront zu Jira: Kommentar in JIRA erstellen, wenn eine neue Notiz zur Aufgabe oder zum Problem von Workfront erscheint**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Vorlage „Szenario 5: Neue WF-zu-Jira-Notizen (Aufgaben und Probleme** .
 
@@ -451,7 +451,7 @@ Dieses Szenario sendet Aktualisierungen von Workfront-Problemen an zuvor verbund
 
 +++**Erweitern Sie , um Anweisungen zur Konfiguration von Szenario 6: Workfront zu Jira: Kommentar in JIRA bei gelöschter Notiz zu Workfront-Aufgabe oder -Problem erstellen anzuzeigen**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Vorlage „Szenario 6: WF-zu-Jira - Notizen (Aufgaben und Probleme) entfernen**.
 
@@ -488,7 +488,7 @@ Dieses Szenario sendet Aktualisierungen von Workfront-Problemen an zuvor verbund
 
 +++**Erweitern Sie , um Anweisungen zur Konfiguration von Szenario 7: Workfront zu Jira: Kommentar in JIRA erstellen, wenn ein neues Dokument zu Workfront-Aufgaben oder -Problemen erstellt wird**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Vorlage „Szenario 7: Neue Anlagen (Aufgaben und Probleme) von WF-zu-Jira**.
 
@@ -524,7 +524,7 @@ Dieses Szenario sendet Aktualisierungen von Workfront-Problemen an zuvor verbund
 
 +++**Erweitern Sie , um Anweisungen zur Konfiguration von Szenario 8: Workfront zu Jira: Erstellen Sie einen Kommentar in JIRA zu einem gelöschten Dokument zu Workfront-Aufgaben oder -Problemen**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Vorlage „Szenario 8: WF-zu-Jira - Anhänge (Aufgaben und Probleme) entfernen**.
 
