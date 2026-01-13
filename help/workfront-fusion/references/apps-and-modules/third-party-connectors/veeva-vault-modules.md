@@ -3,10 +3,10 @@ title: Veeva Vault-Module
 description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Veeva Vault verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
+source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 13%
+source-wordcount: '2539'
+ht-degree: 19%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 13%
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Veeva Vault verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -28,7 +28,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Paket für Adobe Workfront Workflow und Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
@@ -38,19 +38,19 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
    <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
-   <p>Connector-basiert (alt): Workfront Fusion for Work Automation and Integration </p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Adobe Workfront Fusion erworben werden.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Angaben in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -77,7 +77,7 @@ Beim Erstellen einer Verbindung können Sie auswählen, ob ein Kennwort oder ein
      <col> 
      <tbody> 
       <tr> 
-       <td role="rowheader">Name der Verbindung</td> 
+       <td role="rowheader">Verbindungsname</td> 
        <td> <p>Geben Sie einen Namen für die Verbindung ein.</p> </td> 
       </tr> 
       <tr>
@@ -99,7 +99,7 @@ Beim Erstellen einer Verbindung können Sie auswählen, ob ein Kennwort oder ein
      </tbody> 
     </table>
 
-1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu erstellen, und kehren Sie zum Modul zurück.
+1. Klicken Sie auf **[!UICONTROL Fortsetzen]**, um die Verbindung zu erstellen und zum Modul zurückzukehren.
 
 ### Verbinden mit Veeva Vault mithilfe der OAuth2-Authentifizierung
 
@@ -112,9 +112,29 @@ Beim Erstellen einer Verbindung können Sie auswählen, ob ein Kennwort oder ein
      <col> 
      <tbody> 
       <tr> 
-       <td role="rowheader">Name der Verbindung</td> 
+       <td role="rowheader">Verbindungsname</td> 
        <td> <p>Geben Sie einen Namen für die Verbindung ein.</p> </td> 
       </tr> 
+      <tr> 
+       <td role="rowheader">Autorisierungsserveranbieter</td> 
+       <td> <p>Wählen Sie den Anbieter aus, den Sie für diese Authentifizierung verwenden möchten.</p> </td> 
+      </tr> 
+      <tr> 
+       <td role="rowheader">Ping-Host</td> 
+       <td> <p>Wenn Sie PingFederate verwenden, geben Sie den Ping-Host ein.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Umfang</td>
+        <td>
+          <p>Geben Sie den Bereich für diese Verbindung ein.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Mandanten-ID</td>
+        <td>
+          <p>Wenn Sie die Azure AD/Microsoft Entra ID für Ihren Autorisierungs-Server-Anbieter verwenden, geben Sie die Mandanten-ID für diese Verbindung ein.</p>
+        </td>
+      </tr>
       <tr>
         <td role="rowheader">Client-ID</td>
         <td>
@@ -128,18 +148,6 @@ Beim Erstellen einer Verbindung können Sie auswählen, ob ein Kennwort oder ein
         </td>
       </tr>
       <tr>
-        <td role="rowheader">Umfang</td>
-        <td>
-          <p>Geben Sie den Bereich für diese Verbindung ein.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">Mandanten-ID</td>
-        <td>
-          <p>Geben Sie die Mandanten-ID für diese Verbindung ein.</p>
-        </td>
-      </tr>
-      <tr>
         <td role="rowheader">Profil-ID</td>
         <td>
           <p>Geben Sie die ID Ihres OAuth2/Copen ID Connect-Profils ein.</p>
@@ -149,19 +157,25 @@ Beim Erstellen einer Verbindung können Sie auswählen, ob ein Kennwort oder ein
        <td role="rowheader">Vault-DNS</td> 
        <td>Geben Sie Ihr Veeva Vault-DNS (Domain-Name) ein.</p><p>Um Ihr Veeva Vault-DNS zu finden, überprüfen Sie die URL, die Sie für den Zugriff auf Veeva Vault verwenden.</p>Im URL-<code>https://my-dns.veevavault.com</code> wird beispielsweise der DNS <code>my-dns</code>. Sie müssen nicht die gesamte URL eingeben.</td> 
       </tr> 
+      <tr>
+        <td role="rowheader">Ihre Sitzungsablaufzeit in Minuten</td>
+        <td>
+          <p>Geben Sie die Ablaufzeit Ihrer Sitzung in Minuten ein.</p>
+        </td>
+      </tr>
      </tbody> 
     </table>
 
-1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu erstellen, und kehren Sie zum Modul zurück.
+1. Klicken Sie auf **[!UICONTROL Fortsetzen]**, um die Verbindung zu erstellen und zum Modul zurückzukehren.
 
 
 ## Veeva Vault-Module und ihre Felder
 
-Beim Konfigurieren von Veeva Vault-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service zusätzliche Veeva-Vault-Felder angezeigt werden. Eine fett formatierte Überschrift in einem Modul kennzeichnet ein Pflichtfeld.
+Beim Konfigurieren von Veeva Vault-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service zusätzliche Veeva-Vault-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Schaltfläche für Zuordnung über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Dokument](#document)
 * [Objekt](#object)
@@ -392,7 +406,7 @@ Dieses Modul listet alle Dokumente des ausgewählten Typs auf.
   </tr> 
   <tr> 
    <td role="rowheader">Maximale Anzahl an zurückgegebenen Ergebnissen</td> 
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+   <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -410,7 +424,7 @@ Dieses Modul gibt die Ergebnisse eines zuvor angeforderten Dokumentexports zurü
    <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Vorgangs-ID</p> </td> 
+   <td role="rowheader"> <p>Auftrags-ID</p> </td> 
    <td> <p>Geben Sie die ID des Auftrags ein, für den Sie Ergebnisse zurückgeben möchten, oder mappen Sie sie. </p> </td> 
   </tr> 
   </tbody> 
@@ -589,7 +603,7 @@ Dieses Modul ruft alle Vault-Objekte im authentifizierten Vault ab.
   </tr> 
   <tr> 
    <td role="rowheader">Maximale Anzahl an zurückgegebenen Ergebnissen</td> 
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+   <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -645,11 +659,11 @@ Dieses Modul erstellt, kopiert oder tief kopiert einen einzelnen Objektdatensatz
 
 ### Sonstiges
 
-* [Erstellen eines benutzerdefinierten API-Aufrufs](#make-a-custom-api-call)
+* [Benutzerdefinierten API-Aufruf erstellen](#make-a-custom-api-call)
 * [Erstellen einer VQL-Abfrage](#make-a-vql-query)
 * [Protokolle lesen](#read-logs)
 
-#### Erstellen eines benutzerdefinierten API-Aufrufs
+#### Benutzerdefinierten API-Aufruf erstellen
 
 Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Veeva Vault-API durch.
 
@@ -670,7 +684,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Veeva Vault-A
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kopfzeilen</td> 
+   <td role="rowheader">Header</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -679,7 +693,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Veeva Vault-A
   </tr> 
   <tr> 
    <td role="rowheader">Textkörper</td> 
-   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -728,11 +742,11 @@ Dieses Modul gibt Daten aus Audit-Protokollen zurück
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Startdatum</p> </td> 
-   <td> <p>Geben Sie das Startdatum für die Audits ein, die Sie abrufen möchten, oder ordnen Sie es zu.</p><p>Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
+   <td> <p>Geben Sie das Startdatum für die Audits ein, die Sie abrufen möchten, oder ordnen Sie es zu.</p><p>Eine Liste der unterstützten Datums- und Uhrzeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Erzwungene Typumwandlung</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Enddatum</p> </td> 
-   <td> <p>Geben Sie das Enddatum für die Audits ein, die Sie abrufen möchten, oder ordnen Sie es zu.</p><p>Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
+   <td> <p>Geben Sie das Enddatum für die Audits ein, die Sie abrufen möchten, oder ordnen Sie es zu.</p><p>Eine Liste der unterstützten Datums- und Uhrzeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Erzwungene Typumwandlung</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ergebnis-URL </p> </td> 
@@ -740,7 +754,7 @@ Dieses Modul gibt Daten aus Audit-Protokollen zurück
   </tr> 
   <tr> 
    <td role="rowheader">Maximale Anzahl an zurückgegebenen Ergebnissen</td> 
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+   <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td> 
   </tr> 
  </tbody> 
 </table>
