@@ -115,9 +115,9 @@ Die Registerkarte [!UICONTROL Verlauf] zeigt mehr Details an, als auf der Seite 
 
 Sie können den Ausführungsverlauf filtern, um nur Ausführungen mit den angegebenen Werten anzuzeigen.
 
-1. Öffnen Sie den vollständigen Seitenverlauf für ein Szenario, wie in [Ausführungsverlauf des Szenarios anzeigen auf der Registerkarte [!UICONTROL Verlauf] in ](#view-scenario-history-on-the-history-tab) Artikel beschrieben.
+1. Öffnen Sie den vollständigen Seitenverlauf für ein Szenario, wie in [Ausführungsverlauf des Szenarios anzeigen auf der Registerkarte [!UICONTROL Verlauf] in &#x200B;](#view-scenario-history-on-the-history-tab) Artikel beschrieben.
 1. Klicken Sie auf [!UICONTROL filter]-Symbol ![Szenariofiltersymbol](assets/fusion-scenario-filter-icon.png) in der Kopfzeile der Spalte, nach der Sie filtern möchten.
-1. Geben [!UICONTROL  im ] „Filter“ die Werte ein, nach denen gefiltert werden soll.
+1. Geben [!UICONTROL &#x200B; im &#x200B;] „Filter“ die Werte ein, nach denen gefiltert werden soll.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Das Filtersymbol ist in Spalten mit einem aktiven Filter orange.
@@ -134,7 +134,7 @@ You can sort the scenario execution history.
 
 ## Alle Ausführungen eines Szenarios durchsuchen
 
-1. Öffnen Sie den vollständigen Seitenverlauf für ein Szenario, wie in [Ausführungsverlauf des Szenarios anzeigen auf der Registerkarte [!UICONTROL Verlauf] in ](#view-scenario-history-on-the-history-tab) Artikel beschrieben.
+1. Öffnen Sie den vollständigen Seitenverlauf für ein Szenario, wie in [Ausführungsverlauf des Szenarios anzeigen auf der Registerkarte [!UICONTROL Verlauf] in &#x200B;](#view-scenario-history-on-the-history-tab) Artikel beschrieben.
 1. Klicken Sie **[!UICONTROL Volltextsuche]** oben in der Liste der Ausführungen auf.
 
    ODER
@@ -148,17 +148,17 @@ Das Fenster [!UICONTROL Suche im Verlauf] wird geöffnet.
 
    >[!INFO]
    >
-   >**Beispiel:** Wenn Sie die Ausführung finden möchten, mit der ein bestimmtes Projekt erstellt wurde, geben Sie die Projekt-ID in die [!UICONTROL  &quot;]&quot; ein.
+   >**Beispiel:** Wenn Sie die Ausführung finden möchten, mit der ein bestimmtes Projekt erstellt wurde, geben Sie die Projekt-ID in die [!UICONTROL &#x200B; &quot;]&quot; ein.
    >
    >„625ef2ef0006036bd1794b6e52d737c5“
 
-1. (Optional) Um die Suche nach Datumsbereich zu beschränken, wählen Sie das Anfangs- und Enddatum der gewünschten Suche im Bereich [!UICONTROL Nach ]) aus.
+1. (Optional) Um die Suche nach Datumsbereich zu beschränken, wählen Sie das Anfangs- und Enddatum der gewünschten Suche im Bereich [!UICONTROL Nach &#x200B;]) aus.
 
    >[!NOTE]
    >
    >* Ausführungen sind nur für die letzten 30 Tage verfügbar.
    >
-   >* Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 Tage nach der Erstellung auf eine Webhook-Payload zugreifen, wird der Fehler &quot;[!UICONTROL Datei konnte nicht aus dem Speicher gelesen werden“ ].
+   >* Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Wenn Sie mehr als 30 Tage nach der Erstellung auf eine Webhook-Payload zugreifen, wird der Fehler &quot;[!UICONTROL Datei konnte nicht aus dem Speicher gelesen werden“ &#x200B;].
 
 
 1. (Optional) Um die Suche nach Status zu begrenzen, wählen Sie den gewünschten Status in der Dropdown-Liste **[!UICONTROL Nach Status]** aus.
