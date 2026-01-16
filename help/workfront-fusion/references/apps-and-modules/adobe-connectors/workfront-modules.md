@@ -4,7 +4,7 @@ description: Mit dem Adobe Workfront-Connector von Adobe Workfront Fusion könne
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
 workflow-type: tm+mt
 source-wordcount: '7366'
 ht-degree: 99%
@@ -61,7 +61,9 @@ Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erst
 
 Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Verbinden von Workfront mit Workfront Fusion 
++++
+
+## Verbinden von Workfront mit Workfront Fusion
 
 Der Workfront-Connector nutzt OAuth 2.0, um eine Verbindung zu Workfront herzustellen.
 
@@ -740,7 +742,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Aktion]</td> 
-   <td> <p>Wählen Sie die Aktion aus, die vom Modul ausgeführt werden soll.</p> <p>Abhängig von Ihrer Auswahl unter „[!UICONTROL -Eintragstyp]“ und „[!UICONTROL Aktion]“ müssen Sie möglicherweise zusätzliche Felder ausfüllen. Bei bestimmten Kombinationen dieser beiden Einstellungen muss unter Umständen nur eine Eintrags-ID angegeben werden, während für andere (z. B. die Option „Projekt“ unter <strong>[!UICONTROL Eintragstyp]</strong> und die Option „[!UICONTROL Vorlage anfügen]“ unter <strong>[!UICONTROL Aktion]</strong>) zusätzliche Informationen (wie eine Objekt-ID und eine Vorlagen-ID) erforderlich sind.</p><p>Die für einige Aktionen verfügbaren Optionen finden Sie in diesem Artikel unter <a href="#misc-action-options" class="MCXref xref">Sonstige Aktionsoptionen</a>.</p> <p>Weitere Informationen zu den einzelnen Feldern finden Sie in der <a href="http://developer.workfront.com/">Workfront-Entwicklerdokumentation</a>. <p><strong>Hinweis</strong>: Die Site mit der Entwicklerdokumentation enthält nur Informationen bis zur API-Version 14, sie liefert aber dennoch wertvolle Informationen für API-Aufrufe. </p> 
+   <td> <p>Wählen Sie die Aktion aus, die vom Modul ausgeführt werden soll.</p> <p>Abhängig von Ihrer Auswahl unter „[!UICONTROL-Eintragstyp]“ und „[!UICONTROL Aktion]“ müssen Sie möglicherweise zusätzliche Felder ausfüllen. Bei bestimmten Kombinationen dieser beiden Einstellungen muss unter Umständen nur eine Eintrags-ID angegeben werden, während für andere (z. B. die Option „Projekt“ unter <strong>[!UICONTROL Eintragstyp]</strong> und die Option „[!UICONTROL Vorlage anfügen]“ unter <strong>[!UICONTROL Aktion]</strong>) zusätzliche Informationen (wie eine Objekt-ID und eine Vorlagen-ID) erforderlich sind.</p><p>Die für einige Aktionen verfügbaren Optionen finden Sie in diesem Artikel unter <a href="#misc-action-options" class="MCXref xref">Sonstige Aktionsoptionen</a>.</p> <p>Weitere Informationen zu den einzelnen Feldern finden Sie in der <a href="http://developer.workfront.com/">Workfront-Entwicklerdokumentation</a>. <p><strong>Hinweis</strong>: Die Site mit der Entwicklerdokumentation enthält nur Informationen bis zur API-Version 14, sie liefert aber dennoch wertvolle Informationen für API-Aufrufe. </p> 
     <ol> 
      <li value="1"> <p>Wählen Sie im linken Navigationsbereich der Workfront-Entwicklerdokumentation den Eintragstyp aus. Für folgende Typen sind eigene Seiten vorhanden:</p> 
       <ul> 
@@ -1032,7 +1034,7 @@ Workfront hat kürzlich eine neue Version seines Ereignisabonnement-Services ver
 
 Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 
-Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de).
+Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2360,7 +2362,7 @@ Sie sollten überprüfen, ob alles erwartungsgemäß funktioniert.
 >
 >   Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 >
->   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de)].
+>   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Das Workfront-Modul [!UICONTROL Ereignisse überwachen] löst Szenarios auf Basis eines Webhooks aus, der ein Ereignisabonnement in der Workfront-API erstellt. Das Ereignisabonnement ist ein Satz von Daten, der bestimmt, welche Ereignisse an den Webhook gesendet werden. Wenn Sie beispielsweise ein Modul [!UICONTROL Ereignisse überwachen] einrichten, das auf Probleme achtet, sendet das Ereignisabonnement ausschließlich Ereignisse, die mit Problemen in Zusammenhang stehen.
 
