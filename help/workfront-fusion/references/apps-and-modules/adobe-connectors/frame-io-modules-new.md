@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4539'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -349,7 +349,7 @@ Dieses Aktionsmodul erstellt ein neues Asset. Sie können eine lokale Datei hoch
   </tr> -->
     <tr> 
     <td role="rowheader">Upload-Typ </td> 
-    <td> <p>Wählen Sie aus, ob Sie ein Asset aus einer lokalen Datei oder einer Remote-Lebensdauer erstellen möchten.</p> </td> 
+    <td> <p>Wählen Sie aus, ob Sie ein Asset aus einer lokalen Datei oder einer Remote-Datei erstellen möchten.</p> </td> 
    </tr>
     <tr> 
     <td role="rowheader">Dateigröße </td> 
@@ -357,7 +357,7 @@ Dieses Aktionsmodul erstellt ein neues Asset. Sie können eine lokale Datei hoch
    </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Quell-URL] </td> 
-   <td> <p>Wenn Sie das Asset aus einer Remote-Datei erstellen, geben Sie die URL der Datei ein, die Sie hochladen möchten.</p> </td> 
+   <td> <p>Wenn Sie ein Asset aus einer Remote-Datei erstellen, geben Sie die URL der Datei ein, die hochgeladen werden soll.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Quelldatei]</td> 
@@ -370,7 +370,7 @@ Dieses Aktionsmodul erstellt ein neues Asset. Sie können eine lokale Datei hoch
   </tbody> 
 </table>
 
-#### [!UICONTROL Erstellen eines Assets (veraltet)] <!--different for v4-->
+#### [!UICONTROL Erstellen eines Assets (Legacy)] <!--different for v4-->
 
 Dieses Aktionsmodul erstellt ein neues Asset.
 
@@ -1029,8 +1029,8 @@ Dieses Modul listet alle Arbeitsbereiche in einem Konto auf.
 
 * [Erstellen eines Felds auf Kontoebene](#create-an-account-level-field)
 * [Löschen eines Felds auf Kontoebene](#delete-an-account-level-field)
-* [Metadaten abrufen](#get-metadata)
-* [Felder auf Kontoebene auflisten](#list-account-level-fields)
+* [Abrufen von Metadaten](#get-metadata)
+* [Auflisten von Feldern auf Kontoebene](#list-account-level-fields)
 * [Aktualisieren einer Felddefinition auf Kontoebene](#update-an-account-level-field-definition)
 * [Aktualisieren von Metadaten über mehrere Dateien hinweg](#update-metadata-across-multiple-files)
 
@@ -1057,7 +1057,7 @@ Dieses Aktionsmodul erstellt und konfiguriert ein neues Metadatenfeld auf Kontoe
   </tr> 
    <tr> 
    <td role="rowheader">Name </td> 
-   <td> <p>Geben Sie einen Namen für das neue Feld ein oder ordnen Sie ihn zu.</p> </td> 
+   <td> <p>Geben Sie einen Namen für das neue Feld ein oder ordnen Sie dem neuen Feld einen Namen zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1076,16 +1076,16 @@ Dieses Aktionsmodul löscht ein einzelnes Metadatenfeld auf Kontoebene.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Konto-ID] </td> 
-   <td> <p>Wählen Sie das Konto aus, das das zu löschende Metadatenfeld enthält, oder ordnen Sie es zu.</p> </td> 
+   <td> <p>Wählen Sie das Konto aus, das das Metadatenfeld enthält, das Sie löschen möchten, oder ordnen Sie es zu.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Felddefinitions-ID </td> 
-   <td> <p>Geben Sie die ID des Felds ein, das Sie löschen möchten, oder ordnen Sie sie zu. Feld-IDs finden Sie mit dem Modul Felder auf Listenkontenebene .</p> </td> 
+   <td> <p>Geben Sie die ID des Felds ein, das Sie löschen möchten, oder ordnen Sie sie zu. Feld-IDs können Sie über das Modul zum Auflisten von Feldern auf Kontoebene finden.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Metadaten abrufen
+#### Abrufen von Metadaten
 
 Dieses Aktionsmodul ruft die Metadaten für eine Datei in Frame.io ab.
 
@@ -1103,16 +1103,16 @@ Dieses Aktionsmodul ruft die Metadaten für eine Datei in Frame.io ab.
   </tr> 
    <tr> 
    <td role="rowheader">Datei-ID </td> 
-   <td> <p>Geben Sie die ID der Datei ein, für die Sie Metadaten abrufen möchten, oder mappen Sie sie.</p> </td> 
+   <td> <p>Geben Sie die ID der Datei ein, für die Sie Metadaten abrufen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Null anzeigen </td> 
-   <td> <p>Aktivieren Sie diese Option, um Felder mit einem Wert von null in die Ausgabe aufzunehmen.</p> </td> 
+   <td> <p>Aktivieren Sie diese Option, um Felder mit dem Wert „null“ in die Ausgabe aufzunehmen.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### Felder auf Kontoebene auflisten
+#### Auflisten von Feldern auf Kontoebene
 
 Dieses Modul ruft eine Liste von Metadatenfeldern auf Kontoebene für das angegebene Konto ab.
 
@@ -1130,7 +1130,7 @@ Dieses Modul ruft eine Liste von Metadatenfeldern auf Kontoebene für das angege
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Vereinbarungen]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Feldern ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl der Felder ein, die das Modul während jedes Ausführungszyklus eines Szenarios zurückgeben soll, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1153,7 +1153,7 @@ Dieses Modul aktualisiert die Definition eines einzelnen vorhandenen Metadatenfe
   </tr> 
    <tr> 
    <td role="rowheader">Felddefinitions-ID </td> 
-   <td> <p>Geben Sie die ID des Felds ein, das Sie aktualisieren möchten, oder ordnen Sie sie zu. Feld-IDs finden Sie mit dem Modul Felder auf Listenkontenebene .</p> </td> 
+   <td> <p>Geben Sie die ID des Felds ein, das Sie aktualisieren möchten, oder ordnen Sie sie zu. Feld-IDs können Sie über das Modul zum Auflisten von Feldern auf Kontoebene finden.</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">Feldtyp </td> 
@@ -1193,11 +1193,11 @@ Dieses Modul aktualisiert Metadatenfelder in einer oder mehreren Dateien mit von
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Datei-IDs] </td> 
-   <td> <p>Klicken Sie für jede Datei, für die Sie die Metadaten aktualisieren möchten, auf <b>Element hinzufügen</b> und geben Sie die ID der Datei ein oder mappen Sie sie.</p> </td> 
+   <td> <p>Klicken Sie für jede Datei, für die Sie Metadaten aktualisieren möchten, auf <b>Element hinzufügen</b> und geben Sie die ID der Datei ein oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Werte] </td> 
-   <td> <p>Klicken Sie für jedes Feld, für das Sie die Metadaten aktualisieren möchten, auf <b>Element hinzufügen</b> und geben Sie die ID der Felddefinition und den Wert, den Sie in dieses Feld einfügen möchten, ein oder mappen Sie sie. Alle im Feld Datei-IDs angegebenen Dateien werden mit diesem Feldwert aktualisiert.</p> </td> 
+   <td role="rowheader">[!UICONTROL Werte] </td> 
+   <td> <p>Klicken Sie für jedes Feld, für das Sie die Metadaten aktualisieren möchten, auf <b>Element hinzufügen</b> und geben Sie die ID der Felddefinition und den Wert, den Sie in dieses Feld einfügen möchten, ein oder ordnen Sie sie zu. Alle im Feld „Datei-IDs“ angegebenen Dateien werden mit diesem Feldwert aktualisiert.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1205,7 +1205,7 @@ Dieses Modul aktualisiert Metadatenfelder in einer oder mehreren Dateien mit von
 ### Sonstiges
 
 * [Benutzerdefinierten API-Aufruf erstellen](#make-a-custom-api-call)
-* [Ereignisse ansehen](#watch-events)
+* [Ereignisse überwachen](#watch-events)
 * [Aktualisierung des Metadatenwerts überwachen](#watch-metadata-value-updated)
 
 
@@ -1247,16 +1247,16 @@ Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
  </tbody> 
 </table>
 
-#### Ereignisse ansehen
+#### Ereignisse überwachen
 
-Dieses Instant Trigger-Modul startet ein Szenario, wenn das ausgewählte Ereignis in Frame.io auftritt.
+Dieses Instant-Auslösermodul startet ein Szenario, wenn das ausgewählte Ereignis in Frame.io auftritt.
 
-Sie können einen vorhandenen Webhook verwenden oder einen neuen erstellen.
+Sie können entweder einen vorhandenen Webhook verwenden oder einen neuen erstellen.
 
 So erstellen Sie einen neuen Webhook:
 
 1. Klicken Sie neben dem Feld „Webhook“ auf **Hinzufügen**.
-1. Geben Sie die folgenden Informationen ein:
+1. Geben Sie die folgenden Informationen an:
 
    <table style="table-layout:auto"> 
     <col> 
@@ -1272,21 +1272,21 @@ So erstellen Sie einen neuen Webhook:
      </tr> 
      <tr> 
      <td role="rowheader">[!UICONTROL Konto-ID] </td> 
-      <td> <p>Wählen Sie das Konto aus, das den Arbeitsbereich enthält, in dem Sie Ereignisse beobachten möchten, oder ordnen Sie es zu.</p> </td> 
+      <td> <p>Wählen Sie das Konto aus, das den Arbeitsbereich enthält, in dem Sie Ereignisse überwachen möchten, oder ordnen Sie es zu.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Arbeitsbereich-ID]</td> 
-      <td> <p>Geben Sie die ID des Arbeitsbereichs ein, in dem Sie Ereignisse beobachten möchten.</p> </td> 
+      <td> <p>Geben Sie die ID des Arbeitsbereichs ein, in dem Sie Ereignisse überwachen möchten.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Ereignisse]</td> 
-      <td> <p>Wählen Sie die Ereignisse aus, für die Sie dieses Modul Trigger erstellen möchten</p> </td> 
+      <td role="rowheader">[!UICONTROL Ereignisse]</td> 
+      <td> <p>Wählen Sie die Ereignisse aus, die dieses Modul auslösen soll</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Klicken Sie **Speichern**, um den Webhook zu speichern und zum Modul zurückzukehren.
-1. Klicken Sie **Modul Ereignisse** auf OK, um die Konfiguration zu speichern.
+1. Klicken Sie auf **Speichern**, um den Webhook zu speichern und zu dem Modul zurückzukehren.
+1. Klicken Sie im Modul „Ereignisse überwachen“ auf **OK**, um die Konfiguration zu speichern.
 
 
 #### Aktualisierung des Metadatenwerts überwachen
