@@ -90,7 +90,7 @@ Die Fusion-KI kann derzeit Module generieren, die eine Verbindung zu den folgend
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie ein Modul hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
-1. Klicken Sie auf **KI** Assistent![ Symbol KI-Assistent](assets/ai-assistant-icon.png) in der oberen rechten Ecke des Bildschirms.
+1. Klicken Sie auf **KI** Assistent![&#x200B; Symbol KI-Assistent](assets/ai-assistant-icon.png) in der oberen rechten Ecke des Bildschirms.
 1. Geben Sie im Bedienfeld „KI-Assistent“ eine Textaufforderung ein.
 
    Tipps zu Eingabeaufforderungen finden Sie unter [Tipps zum Erstellen von Eingabeaufforderungen für Szenariosegmente](#tips-for-creating-prompts-for-scenario-segments) in diesem Artikel.
