@@ -32,15 +32,15 @@ Adobe Workfront Fusion verbindet Ihre Anwendungen und Webservices nahtlos, sodas
 
 ### Dezember 2025
 
-* [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 15. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
-* [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 8. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
-* [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 1. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+* [Workfront Fusion-Veröffentlichungen: Woche vom 15. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
+* [Workfront Fusion-Veröffentlichungen: Woche vom 8. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+* [Workfront Fusion-Veröffentlichungen: Woche vom 1. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
 
 ### November 2025
 
-* [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 17. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
-* [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 10. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
-* [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 3. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+* [Workfront Fusion-Veröffentlichungen: Woche vom 17. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+* [Workfront Fusion-Veröffentlichungen: Woche vom 10. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+* [Workfront Fusion-Veröffentlichungen: Woche vom 3. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
 
 ### Oktober 2025
 

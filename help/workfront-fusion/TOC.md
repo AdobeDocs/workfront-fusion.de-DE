@@ -5,7 +5,7 @@ user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Re
 source-git-commit: 3ae274720ea2d7e4ee823a8467b750ad6f4d0c52
 workflow-type: tm+mt
 source-wordcount: '1993'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 98%
    * Fusion-Versionen 2025 {#fusion-releases-2025}
       * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 19. Januar 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
       * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 12. Januar 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
-      * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 17. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
-      * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 15. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
-      * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 8. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
-      * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 1. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
-      * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 10. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
-      * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 3. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+      * [Workfront Fusion-Veröffentlichungen: Woche vom 17. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+      * [Workfront Fusion-Veröffentlichungen: Woche vom 15. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
+      * [Workfront Fusion-Veröffentlichungen: Woche vom 8. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+      * [Workfront Fusion-Veröffentlichungen: Woche vom 1. Dezember 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+      * [Workfront Fusion-Veröffentlichungen: Woche vom 10. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+      * [Workfront Fusion-Veröffentlichungen: Woche vom 3. November 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
       * [Workfront Fusion-Veröffentlichungen: Woche vom 20. Oktober 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-20.md)
       * [Workfront Fusion-Veröffentlichungen: Woche vom 27. Oktober 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-27.md)
       * [Workfront Fusion-Veröffentlichungen: Woche vom 13. Oktober 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-13.md)
@@ -265,13 +265,13 @@ ht-degree: 98%
    * [Hinzufügen eines Filters zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
    * [Hinzufügen eines Webhooks zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
 * Erstellen und Verwalten von Vorlagen  {#create-and-manage-templates}
-   * [Erstellen und Verwalten von Vorlagen &#x200B;](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
+   * [Erstellen und Verwalten von Vorlagen ](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Erstellen neuer Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Erstellen von Szenarios mit Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [Anzeigen, Bearbeiten und Löschen von Vorlagen](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [Veröffentlichen und Freigeben von Vorlagen](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [Aktuell verfügbare Adobe Workfront Fusion-Vorlagen](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
-   * [Vorlagen zur Verbindung von Adobe Workfront Fusion und Jira verwenden](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
+   * [Verwenden von Vorlagen zur Verbindung von Adobe Workfront Fusion und Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
    * [Häufig gestellte Fragen zu Adobe Workfront Fusion-Vorlagen](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * Referenzen {#references}
    * [Referenzen](/help/workfront-fusion/references/references-toc.md)
