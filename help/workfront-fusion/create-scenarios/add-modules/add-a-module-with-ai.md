@@ -61,7 +61,7 @@ Ihr Unternehmen muss die folgenden Voraussetzungen erfüllen, um diese Funktion 
 * Ihr Unternehmen muss am Workfront AI Assistant Beta-Programm teilgenommen haben.
 * Adobe muss für Ihr Unternehmen über eine unterzeichnete Adobe Gen AI-Vereinbarung verfügen.
 
-  Weitere Informationen zum Unterzeichnen des Vertrags finden Sie unter [Unterschreiben des Adobe Gen AI-](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)) im Artikel KI-Assistent - Übersicht in der Workfront-Dokumentation.
+  Weitere Informationen zum Unterzeichnen des Vertrags finden Sie unter [Unterschreiben des Adobe Gen AI-](https://experienceleague.adobe.com/de/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)) im Artikel KI-Assistent - Übersicht in der Workfront-Dokumentation.
 
 ## Derzeit unterstützte KI-Modulanwendungen
 
