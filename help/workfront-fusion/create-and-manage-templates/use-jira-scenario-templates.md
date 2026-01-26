@@ -2,20 +2,18 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: scenarios
-title: Vorlagen zur Verbindung von Adobe Workfront Fusion und Jira verwenden
+title: Verwenden von Vorlagen zur Verbindung von Adobe Workfront Fusion und Jira
 description: Verwenden Sie diese Vorlagen, um Workflows zwischen Adobe Workfront Fusion und Jira zu automatisieren.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: c3d1abb898eec6fc84dc1de0fb7799d13d9e3571
+source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
 workflow-type: tm+mt
 source-wordcount: '4171'
 ht-degree: 3%
 
 ---
 
-# Vorlagen zur Verbindung von Adobe Workfront Fusion und Jira verwenden
+# Verwenden von Vorlagen zur Verbindung von Adobe Workfront Fusion und Jira
 
 Adobe Workfront Fusion bietet Vorlagen zur Automatisierung gängiger Workflows zwischen Fusion und Jira.
 
@@ -61,7 +59,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
   Weitere Informationen und Anweisungen finden Sie unter [Einrichtung technischer Konten](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) in der Dokumentation zu Adobe.
 * Sie müssen Systemadministrator-Berechtigungen auf das technische Konto im Bereich Adobe Admin Console-Produktprofile anwenden.
 
-  Informationen und Anweisungen finden Sie unter [Erstellen von Systemadministratoren in Workfront mit der Adobe Admin Console](https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  Informationen und Anweisungen finden Sie unter [Erstellen von Systemadministratoren in Workfront mit der Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -156,13 +154,13 @@ Um diese Module verwenden zu können, muss in Workfront Folgendes erstellt werde
 
 1. Erstellen Sie in Workfront einen Benutzer für die Systemintegration. Dieser Benutzer wird nur von Workfront Fusion verwendet und stellt keinen menschlichen Benutzer dar. Aufgaben, die diesem Benutzer zugewiesen sind, führen zu Triggern bei dem Szenario, das Workfront mit Jira synchronisiert.
 
-   Anweisungen finden Sie unter [Benutzer hinzufügen](https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) in der Dokumentation zu Workfront.
+   Anweisungen finden Sie unter [Benutzer hinzufügen](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) in der Dokumentation zu Workfront.
 
 #### Erstellen eines benutzerdefinierten Formulars in Workfront
 
 1. Beginnen Sie in Workfront mit der Erstellung eines benutzerdefinierten Formulars.
 
-   Anweisungen finden Sie unter [Erstellen eines benutzerdefinierten Formulars](https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) in der Dokumentation zu Workfront.
+   Anweisungen finden Sie unter [Erstellen eines benutzerdefinierten Formulars](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) in der Dokumentation zu Workfront.
 1. Benennen Sie das Formular **JIRA-Felder**.
 1. Fügen Sie die folgenden Felder in das benutzerdefinierte Formular ein:
 
@@ -179,7 +177,7 @@ Um diese Module verwenden zu können, muss in Workfront Folgendes erstellt werde
 >
 >Es wird empfohlen, dieses Formular nicht von anderen Benutzern bearbeiten zu lassen. Sie können dies erreichen, indem Sie sicherstellen, dass alle Benutzenden, die zum benutzerdefinierten Formular hinzugefügt werden, nur Lesezugriff haben.
 >
->Anweisungen finden Sie unter [Freigeben eines benutzerdefinierten Formulars](https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) in der Dokumentation zu Workfront.
+>Anweisungen finden Sie unter [Freigeben eines benutzerdefinierten Formulars](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) in der Dokumentation zu Workfront.
 
 ### Konfigurieren von Verbindungen in Workfront Fusion
 
@@ -234,7 +232,7 @@ Wenn eine Workfront-Aufgabe zugewiesen wird, ist das Problem in Jira eine Aufgab
 
 #### Konfigurieren des Trigger-Moduls
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf die Vorlage **Workfront zu Jira: JIRA-Problem aus Workfront-Aufgabe oder -** erstellen .
 
@@ -291,7 +289,7 @@ In diesem Szenario wird eine Workfront-Aufgabe oder ein -Problem erstellt, wenn 
 
 +++**Erweitern Sie , um Anweisungen zur Konfiguration von Szenario 2: JIRA für Workfront anzuzeigen: Senden Sie Updates zu Problemen und Kommentare von Jira zurück an Workfront**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Teil 2: JIRA an Workfront: Senden Sie von der Jira2-Vorlage Aktualisierungen zu Problemen und Kommentaren** Workfront zurück.
 
@@ -332,7 +330,7 @@ In diesem Szenario wird eine Workfront-Aufgabe oder ein -Problem erstellt, wenn 
 
 +++**Erweitern Sie , um Anweisungen zum Konfigurieren von Szenario 3: WF-zu-Jira-Änderungen (Aufgaben) anzuzeigen**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf die **Teil 3: Workfront zu Jira: Änderungen an Workfront-Aufgabe zu JIRA-Problem**-Vorlage.
 
@@ -374,7 +372,7 @@ Dieses Szenario sendet Aktualisierungen von Workfront-Problemen an zuvor verbund
 
 +++**Erweitern Sie , um Anweisungen zur Konfiguration von Szenario 4: Workfront zu Jira: Änderungen an Workfront-Problem zu JIRA-Problem anzuzeigen**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Vorlage „Szenario 4: WF-zu-Jira-Änderungen (Probleme**&quot;.
 
@@ -414,7 +412,7 @@ Dieses Szenario sendet Aktualisierungen von Workfront-Problemen an zuvor verbund
 
 +++**Erweitern Sie , um Anweisungen zum Konfigurieren von Szenario 5: Workfront zu Jira: Kommentar in JIRA erstellen, wenn eine neue Notiz zur Aufgabe oder zum Problem von Workfront erscheint**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Vorlage „Szenario 5: Neue WF-zu-Jira-Notizen (Aufgaben und Probleme** .
 
@@ -451,7 +449,7 @@ Dieses Szenario sendet Aktualisierungen von Workfront-Problemen an zuvor verbund
 
 +++**Erweitern Sie , um Anweisungen zur Konfiguration von Szenario 6: Workfront zu Jira: Kommentar in JIRA bei gelöschter Notiz zu Workfront-Aufgabe oder -Problem erstellen anzuzeigen**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Vorlage „Szenario 6: WF-zu-Jira - Notizen (Aufgaben und Probleme) entfernen**.
 
@@ -488,7 +486,7 @@ Dieses Szenario sendet Aktualisierungen von Workfront-Problemen an zuvor verbund
 
 +++**Erweitern Sie , um Anweisungen zur Konfiguration von Szenario 7: Workfront zu Jira: Kommentar in JIRA erstellen, wenn ein neues Dokument zu Workfront-Aufgaben oder -Problemen erstellt wird**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Vorlage „Szenario 7: Neue Anlagen (Aufgaben und Probleme) von WF-zu-Jira**.
 
@@ -524,7 +522,7 @@ Dieses Szenario sendet Aktualisierungen von Workfront-Problemen an zuvor verbund
 
 +++**Erweitern Sie , um Anweisungen zur Konfiguration von Szenario 8: Workfront zu Jira: Erstellen Sie einen Kommentar in JIRA zu einem gelöschten Dokument zu Workfront-Aufgaben oder -Problemen**
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach der Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf **Vorlage „Szenario 8: WF-zu-Jira - Anhänge (Aufgaben und Probleme) entfernen**.
 
