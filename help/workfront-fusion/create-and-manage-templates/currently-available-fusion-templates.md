@@ -33,7 +33,7 @@ Wenn Ihr Team Schwierigkeiten hat, die Dynamik aufrechtzuerhalten, weil Projektz
 
 Diese Fusion-Vorlage automatisiert diesen Prozess. Wenn eine Aufgabe frühzeitig abgeschlossen wird, werden alle abhängigen (Nachfolger-)Aufgaben automatisch so geplant, dass sie früher beginnen, was Ihrem Team hilft, schneller zu arbeiten und agil zu bleiben.
 
-### [!BADGE Neu! ]{type=Informative} HTTP>CSV>WF - Erstellen einer Liste von Ereignisuntergruppen nach Domain und Ebene und Exportieren in CSV
+### [!BADGE Neu! &#x200B;]{type=Informative} HTTP>CSV>WF - Erstellen einer Liste von Ereignisuntergruppen nach Domain und Ebene und Exportieren in CSV
 
 Laden Sie Informationen zum Ereignisabonnement herunter, erstellen Sie eine CSV-Datei und laden Sie die Datei in Workfront hoch.
 
