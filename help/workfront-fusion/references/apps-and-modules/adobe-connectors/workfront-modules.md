@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7366'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1034,7 +1034,7 @@ Workfront hat kürzlich eine neue Version seines Ereignisabonnement-Services ver
 
 Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 
-Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de).
+Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2362,7 +2362,7 @@ Sie sollten überprüfen, ob alles erwartungsgemäß funktioniert.
 >
 >   Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 >
->   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de)].
+>   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Das Workfront-Modul [!UICONTROL Ereignisse überwachen] löst Szenarios auf Basis eines Webhooks aus, der ein Ereignisabonnement in der Workfront-API erstellt. Das Ereignisabonnement ist ein Satz von Daten, der bestimmt, welche Ereignisse an den Webhook gesendet werden. Wenn Sie beispielsweise ein Modul [!UICONTROL Ereignisse überwachen] einrichten, das auf Probleme achtet, sendet das Ereignisabonnement ausschließlich Ereignisse, die mit Problemen in Zusammenhang stehen.
 
