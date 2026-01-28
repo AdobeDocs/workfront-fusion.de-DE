@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 671773fa1baaac8e01e0f01546602a738e219fdf
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 6%
+source-wordcount: '548'
+ht-degree: 9%
 
 ---
 
@@ -41,7 +41,7 @@ Mit dem Fusion-Performance-Dashboard können Sie schnell feststellen, welche Sze
  </tbody> 
 </table>
 
-Weitere Informationen zu den Angaben in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -50,6 +50,10 @@ Weitere Informationen zu den Angaben in dieser Tabelle finden Sie unter [Zugriff
 >[!NOTE]
 >
 >Metriken werden nach Worker-Pool angezeigt. Um einen anderen Arbeitskraft-Pool anzuzeigen, klicken Sie auf das Feld Pool in der oberen linken Ecke des Dashboards und wählen Sie dann den Pool aus, für den Sie Metriken anzeigen möchten.
+
+>[!NOTE]
+>
+>Unternehmen können die Bereitstellung eines zusätzlichen Worker-Pools (für insgesamt zwei) anfordern.
 
 Im Fusion-Performance-Dashboard werden die folgenden Metriken angezeigt.
 
