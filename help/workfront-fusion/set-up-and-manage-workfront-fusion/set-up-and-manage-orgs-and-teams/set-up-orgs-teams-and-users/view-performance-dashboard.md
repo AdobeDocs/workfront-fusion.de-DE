@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
+source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 9%
+source-wordcount: '686'
+ht-degree: 7%
 
 ---
 
@@ -61,14 +61,22 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 Im Fusion-Performance-Dashboard werden die folgenden Metriken angezeigt.
 
-* Ausführungen warten auf die Verarbeitung
-Dieses Diagramm zeigt die Anzahl der Ausführungen, die zu einem bestimmten Zeitpunkt auf die Verarbeitung warten.
-* Poolauslastung
+* **Ausführungen warten darauf, verarbeitet zu werden**
+Dieses Diagramm zeigt die Anzahl der Ausführungen, die zu einem bestimmten Zeitpunkt auf die Verarbeitung warten (auch als Ausführungsrückstand bezeichnet).
+
+  Eine hohe Anzahl an Ausführungen, die darauf warten, verarbeitet zu werden, kann sich auf die Leistung in Ihrer Fusion-Instanz auswirken. Sie erhalten eine Benachrichtigung, wenn Ihr Ausführungsrückstand 5000 Ausführungen erreicht. Es wird empfohlen, verantwortliche Szenarien zu identifizieren und sie zu ändern oder zu deaktivieren. Wenn der hohe Ausführungsrückstand weiterhin besteht, schützt das Fusion-Team die Leistung Ihrer Fusion-Instanz, indem es die verantwortlichen Szenarien deaktiviert.
+* **Pool-Nutzung**
 Dieses Diagramm zeigt die Auslastung des Worker-Pools im Zeitverlauf. Wenn in diesem Diagramm routinemäßig die Auslastung des Workerpools angezeigt wird, sollten Sie einige Szenarien einem anderen Pool zuweisen.
-* Ausführungen pro Szenario
+
+  Wenn ein Pool sich der 100%igen Auslastung nähert, können andere Ressourcen, die denselben Pool verwenden, verzögert oder unterbrochen sein. In diesem Fall empfehlen wir, ein Szenario mit hoher Nutzung einem anderen Worker-Pool neu zuzuweisen oder vorhandene Szenarien zu ändern, damit sie weniger ressourcenintensiv sind.
+* **Ausführungen pro Szenario**
 Dieses Diagramm zeigt Ausführungen pro Szenario. Verschiedene Farben stellen verschiedene Szenarien dar. Wenn Sie den Mauszeiger über das Diagramm bewegen, wird ein Fenster angezeigt, das anzeigt, welche Farbe welches Szenario ist.
-* Dauer der Ausführungen
+
+  Anhand dieses Diagramms können Sie feststellen, welche Szenarien möglicherweise einen Ausführungsrückstand oder eine hohe Auslastung des Worker-Pools verursachen.
+* **Dauer der Ausführungen**
 Dieses Diagramm zeigt Ausführungen pro Szenario. Verschiedene Farben stellen verschiedene Szenarien dar. Wenn Sie den Mauszeiger über das Diagramm bewegen, wird ein Fenster angezeigt, das anzeigt, welche Farbe welches Szenario ist.
+
+  Sie können dieses Diagramm verwenden, um Szenarien zu identifizieren, die länger als üblich dauern, einschließlich der Szenarien, die von Problemen mit einer verbundenen App oder einem Service betroffen sind.
 
 ## Anzeigen des Fusion-Performance-Dashboards
 
