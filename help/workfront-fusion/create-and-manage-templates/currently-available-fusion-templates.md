@@ -4,9 +4,9 @@ description: Die folgenden öffentlichen Vorlagen sind derzeit in Adobe Workfron
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
+source-git-commit: 08c0e6d779cea5ebb2b6ebbdb1dfd7fd659b18b0
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '2278'
 ht-degree: 0%
 
 ---
@@ -33,15 +33,11 @@ Wenn Ihr Team Schwierigkeiten hat, die Dynamik aufrechtzuerhalten, weil Projektz
 
 Diese Fusion-Vorlage automatisiert diesen Prozess. Wenn eine Aufgabe frühzeitig abgeschlossen wird, werden alle abhängigen (Nachfolger-)Aufgaben automatisch so geplant, dass sie früher beginnen, was Ihrem Team hilft, schneller zu arbeiten und agil zu bleiben.
 
-### [!BADGE Neu! &#x200B;]{type=Informative} HTTP>CSV>WF - Erstellen einer Liste von Ereignisuntergruppen nach Domain und Ebene und Exportieren in CSV
+### HTTP>CSV>WF - Erstellen einer Liste von Ereignisuntergruppen nach Domain und Ebene und Exportieren in CSV
 
 Laden Sie Informationen zum Ereignisabonnement herunter, erstellen Sie eine CSV-Datei und laden Sie die Datei in Workfront hoch.
 
-<!--New August 8, 2025-->
-
 ### Workfront-Pinnwände - Löschen archivierter Karten aus der angegebenen Spalte (On-Demand)
-
-<!--New March 12, 2025-->
 
 Löschen Sie archivierte Karten aus einer bestimmten Spalte auf einer bestimmten Pinnwand nach Bedarf.
 
@@ -113,6 +109,52 @@ Diese Vorlage erfasst wöchentlich montags um 6 Uhr ET eine Projekt-Grundlinie f
 
 Überprüfen Sie einmal monatlich Ihre Projektvorlagen mithilfe Ihrer eigenen Richtlinie mit dieser einfach zu verwaltenden Vorlage, die die entsprechenden Benutzer über Vorlagen benachrichtigt, die gegen Ihre Richtlinie verstoßen.
 
+### Workfront - Kopieren von benutzerdefinierten Formularänderungen aus der Quellanfrage in ein Projekt oder eine Aufgabe, das bzw. die gelöst wird
+
+Verwenden Sie diese Vorlage, um benutzerdefinierte Formularänderungen aus Problemen/Anfragen in ihre Projekte und/oder Aufgaben zu kopieren.
+
+### Workfront - Daten in benutzerdefinierten Feldern für Projekte, Aufgaben oder Probleme per Batch aktualisieren
+
+Diese Vorlage verwendet eine CSV-Datei, die Sie in Workfront vorbereiten und bereitstellen, um Projekt-, Aufgaben- oder Problemfelddaten zu aktualisieren. Beachten Sie die Hinweise in den Modulen 1 und 2 für Überlegungen und Einschränkungen.
+
+### Workfront: Ändern des Projektstatus von „Planung“ in „aktuell“, wenn eine Aufgabe zu 100 % abgeschlossen ist
+
+Diese Automatisierung aktualisiert den Projektstatus von „Planung“ auf „aktuell“, wenn eine Aufgabe zu 100 % abgeschlossen ist. Beginnt mit einer Suche und wird empfohlen, einmal täglich auszuführen, damit Benutzer Projekte im Status Planung nach Bedarf aktualisieren können.
+
+### Workfront - Suchen von Projektvorlagen, die in der Richtlinienzeit nicht verwendet werden, und Benachrichtigen
+
+Überprüfen Sie einmal monatlich Ihre Projektvorlagen mithilfe Ihrer eigenen Richtlinie mit dieser einfach zu verwaltenden Vorlage, die die entsprechenden Benutzer über Vorlagen benachrichtigt, die gegen Ihre Richtlinie verstoßen.
+
+### Workfront - Beim Hinzufügen eines neuen Dokuments: Erhalten Sie eine vorab erstellte URL, die an den Dokumentbesitzer zurückgegeben wird.
+
+Abrufen einer vorsignierten URL für jedes neue Dokument als Benutzeraktualisierung
+
+### Workfront-Ereignisabonnement-Überwachung (täglich) - Variablen festlegen
+
+Diese Szenariovorlage wird täglich aktiviert, um eine Konsistenzprüfung des Ereignisabonnements in meiner Workfront-Umgebung durchzuführen. Sie identifiziert jedes Ereignisabonnement, das in den letzten 24 Stunden deaktiviert wurde. Wenn ein berechtigtes deaktiviertes Ereignisabonnement gefunden wird, erzeugt das Szenario ein Problem in einer Workfront-Anfrage-Warteschlange, die der Kunde während der Installation des Szenarios identifiziert. Sie können auch entweder eine Routingregel oder eine Team-/Benutzerressource identifizieren, die dem Problem zugewiesen werden soll. Für die Erstellung der Benachrichtigung ist eine interne E-Mail zu neuen Problemen erforderlich, die an den/die Empfänger gesendet wird/werden. Dieser Ansatz sollte für jede Deaktivierung zu einem einzigen Arbeitselement führen.
+
+### Workfront - Sequenzielle Nummerierungsreihen
+
+#### Workfront - Sequenzielle Nummerierungsserie: Benutzerdefiniertes Formular und Feld für Objekt erstellen
+
+Diese Vorlage erstellt ein benutzerdefiniertes Formular und ein benutzerdefiniertes Feld, das von den Workfront-Vorlagen für sequenzielle Nummerierungsreihen verwendet werden soll.
+
+#### Workfront - Sequenzielle Nummerierungsreihen: Portfolios
+
+Diese Vorlage nummeriert Ihre Portfolios sequenziell. Es wird davon ausgegangen, dass Sie ein benutzerdefiniertes Formular und ein benutzerdefiniertes Feld mithilfe der Workfront - Sequential Numbering Series: Create Object Custom Form and Field Template erstellt haben, aber Sie können ein vorhandenes Formular und ein vorhandenes Feld verwenden.
+
+#### Workfront - Sequenzielle Nummerierung: Programme
+
+Diese Vorlage nummeriert Ihre Programme nacheinander. Es wird davon ausgegangen, dass Sie ein benutzerdefiniertes Formular und ein benutzerdefiniertes Feld mithilfe der Workfront - Sequential Numbering Series: Create Object Custom Form and Field Template erstellt haben, aber Sie können ein vorhandenes Formular und ein vorhandenes Feld verwenden.
+
+#### Workfront - Sequenzielle Nummerierungsreihen: Projekte
+
+Diese Vorlage nummeriert Ihre Projekte nacheinander. Es wird davon ausgegangen, dass Sie ein benutzerdefiniertes Formular und ein benutzerdefiniertes Feld mithilfe der Workfront - Sequential Numbering Series: Create Object Custom Form and Field Template erstellt haben, aber Sie können ein vorhandenes Formular und ein vorhandenes Feld verwenden.
+
+#### Workfront - Sequenzielle Nummerierungsreihen: Probleme
+
+Diese Vorlage nummeriert Ihre Probleme sequenziell. Es wird davon ausgegangen, dass Sie ein benutzerdefiniertes Formular und ein benutzerdefiniertes Feld mithilfe der Workfront - Sequential Numbering Series: Create Object Custom Form and Field Template erstellt haben, aber Sie können ein vorhandenes Formular und ein vorhandenes Feld verwenden.
+
 ## Workfront - Workfront Proof-Vorlagen
 
 Diese Vorlagen automatisieren Workflows, die Workfront mit Workfront Proof kombinieren.
@@ -130,6 +172,14 @@ Wenn eine Entscheidung über einen Korrekturabzug getroffen wird, der einem Proj
 ### Workfront Proof > Workfront - Aufgabenaktualisierung und -abschluss (falls genehmigt) bei Korrekturabzugsentscheidung
 
 Wenn einzelne Korrekturabzüge mit einzelnen Aufgaben verknüpft sind, schließt dieses Szenario die zugehörige Aufgabe, wenn eine Genehmigungsentscheidung für den Korrekturabzug getroffen wird. Sofern genehmigt, wird die Aufgabe abgeschlossen und das Projekt aktualisiert.
+
+### Workfront > Workfront Proof - Neuer Korrekturabzug - Benachrichtigen, wenn die genehmigende Person während des Fristablaufs Ausfallzeiten hat
+
+Diese Automatisierung überwacht mit einem Korrekturabzug neue Dokumentversionen (innerhalb eines angegebenen Portfolios). Wenn eine genehmigende Person am Stichtag persönliche Ausfallzeiten in ihrem Profil hat, sendet sie eine Benachrichtigung an den Eigentümer des Korrekturabzugs und den Projektbesitzer.
+
+### Workfront > Workfront Proof - Angegebene genehmigende Person entfernen (falls möglich) und Neue genehmigende Person hinzufügen
+
+Diese Automatisierung findet die Korrekturabzüge einer genehmigenden Person und fügt eine neue genehmigende Person hinzu. Die ursprüngliche genehmigende Person wird aus dem Korrekturabzug entfernt, sofern dies möglich ist. Zusätzliche Aktionen treten auf, wenn die ursprüngliche genehmigende Person die erstellende Person oder der Eigentümer ist. Lesen Sie die Hinweise in Modul 1 für weitere Details.
 
 ## HTTP - Workfront-Vorlagen
 
@@ -184,7 +234,7 @@ Mit dieser Vorlage können Sie sehen, ob es eine Änderung in einem SharePoint-O
 
 Diese Vorlagen unterstützen die Workfront-Anaplan-Integration und erwarten eine bestimmte Konfiguration in Anaplan und Workfront. Informationen zu diesen Vorlagen und den erforderlichen Konfigurationen finden Sie in den Artikeln zu den einzelnen Vorlagen.
 
-Weitere Informationen zur Workfront-Anaplan-Integration finden Sie unter [Adobe Workfront mit Anaplan](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) in der Dokumentation zu Workfront.
+Weitere Informationen zur Workfront-Anaplan-Integration finden Sie unter [Adobe Workfront mit Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration) in der Dokumentation zu Workfront.
 
 >[!NOTE]
 >
@@ -192,19 +242,19 @@ Weitere Informationen zur Workfront-Anaplan-Integration finden Sie unter [Adobe 
 
 ### Workflows zur Ausgabenoptimierung
 
-* [Senden von Adobe Workfront-Projektaktualisierungen an ein  [!DNL Anaplan] Listenelement](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [Senden von Adobe Workfront-Ausgaben an ein  [!DNL Anaplan] Listenelement](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [Senden von tatsächlichen Stundenaktualisierungen an Adobe Workfront an ein  [!DNL Anaplan] Listenelement](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [Senden von Adobe Workfront-Projektaktualisierungen an ein  [!DNL Anaplan] Listenelement](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [Senden von Adobe Workfront-Ausgaben an ein  [!DNL Anaplan] Listenelement](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [Senden von tatsächlichen Stundenaktualisierungen an Adobe Workfront an ein  [!DNL Anaplan] Listenelement](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### Workflows zum Verknüpfen von Budgetanfragen
 
-* [Erstellen eines  [!DNL Anaplan]  aus einer Adobe Workfront-Budgetanfrage](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [Anwenden einer  [!DNL Anaplan]  auf ein Adobe Workfront-Projekt](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [Erstellen eines  [!DNL Anaplan]  aus einer Adobe Workfront-Budgetanfrage](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [Anwenden einer  [!DNL Anaplan]  auf ein Adobe Workfront-Projekt](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### Workflows zum Verknüpfen von Kampagnenanfragen
 
-* [Erstellen eines  [!DNL Anaplan]  aus einer Adobe Workfront-Kampagnenanfrage](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [Budgetzuweisung  [!DNL Anaplan]  eine Adobe Workfront-Kampagnenanfrage oder ein Kampagnenprojekt anwenden](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [Erstellen eines  [!DNL Anaplan]  aus einer Adobe Workfront-Kampagnenanfrage](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [Budgetzuweisung  [!DNL Anaplan]  eine Adobe Workfront-Kampagnenanfrage oder ein Kampagnenprojekt anwenden](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 ## Workfront - Jira-Vorlagen
 
