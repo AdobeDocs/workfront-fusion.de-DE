@@ -5,10 +5,10 @@ author: Becky
 feature: System Setup and Administration
 role: Admin
 exl-id: 823aa376-fbfe-4750-82dc-4f34224c1a48
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ Einige Zeilen enthalten Informationen mit der Beschriftung „Neu“ und „Aktu
    <td role="rowheader">Adobe Workfront-Paket 
    <td> Adobe Workfront-Pakete beziehen sich auf die von Ihrem Unternehmen erworbenen Funktionen. Die meisten Fusion-Funktionen sind in allen Plänen verfügbar. Es gibt jedoch einige Ausnahmen, die nur für Organisationen mit einem Ultimate Workfront-Paket verfügbar sind. 
    <ul><li>Wenden Sie sich an Ihren Workfront-Administrator, um herauszufinden, welches Adobe Workfront-Paket Ihr Unternehmen verwendet, einschließlich der Frage, ob Ihr Unternehmen das neue oder das aktuelle Verpackungsmodell verwendet.</li>
-   <li>Anweisungen, wie ein Workfront-Administrator das Workfront-Paket Ihres Unternehmens finden kann, finden Sie unter <a href="https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">Cluster- und Workfront-Plan Ihres Unternehmens anzeigen</a> in der Workfront-Dokumentation.</li><li>Weitere Informationen zu den neuen Workfront-Packages finden Sie unter <a href="https://business.adobe.com/de/products/workfront/pricing.html">Preise und Verpackung für Adobe Workfront</a>.</li></ul> </td> 
+   <li>Anweisungen, wie ein Workfront-Administrator das Workfront-Paket Ihres Unternehmens finden kann, finden Sie unter <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">Cluster- und Workfront-Plan Ihres Unternehmens anzeigen</a> in der Workfront-Dokumentation.</li><li>Weitere Informationen zu den neuen Workfront-Packages finden Sie unter <a href="https://business.adobe.com/products/workfront/pricing.html">Preise und Verpackung für Adobe Workfront</a>.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Lizenz</td> 
@@ -43,9 +43,9 @@ Einige Zeilen enthalten Informationen mit der Beschriftung „Neu“ und „Aktu
    <li>Wenden Sie sich an Ihren Workfront-Administrator, um herauszufinden, welche Lizenz Ihnen zugewiesen wurde.</li>
    <li>Adobe Workfront stellt auf ein neues Preis- und Verpackungsmodell um. Informationen zu Lizenzen finden Sie unter:
    <ul>
-   <li>Neu: <a href="https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Neue Lizenzen - Übersicht</a></li>
-   <li>Aktuell: <a href="https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Lizenzen - Übersicht</a></li></ul></li>
-   <li>Wenn Sie die richtige Zugriffsebene haben und immer noch keinen Zugriff haben, fragen Sie Ihren Workfront-Administrator, ob er zusätzliche Einschränkungen in Ihrer Zugriffsebene festgelegt hat. Informationen dazu, wie Workfront-Admins Ihre Zugriffsebene ändern können, finden Sie unter <a href="https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">Erstellen oder Ändern benutzerdefinierter Zugriffsebenen</a>.
+   <li>Neu: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Neue Lizenzen - Übersicht</a></li>
+   <li>Aktuell: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Lizenzen - Übersicht</a></li></ul></li>
+   <li>Wenn Sie die richtige Zugriffsebene haben und immer noch keinen Zugriff haben, fragen Sie Ihren Workfront-Administrator, ob er zusätzliche Einschränkungen in Ihrer Zugriffsebene festgelegt hat. Informationen dazu, wie Workfront-Admins Ihre Zugriffsebene ändern können, finden Sie unter <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">Erstellen oder Ändern benutzerdefinierter Zugriffsebenen</a>.
    </ul>
       </p> </td> 
   </tr> 
@@ -55,6 +55,7 @@ Einige Zeilen enthalten Informationen mit der Beschriftung „Neu“ und „Aktu
   <tr> 
    <td role="rowheader">Zugriffsebene</td> 
    <td> Zugriffsebenen sind Berechtigungssätze für Aktionen, die Sie in Fusion ausführen können. Einige Aktionen können beispielsweise nur von einem Fusion-Administrator ausgeführt werden. 
+   </tr>
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>Adobe Workfront Fusion verfügt über ein anderes Lizenzierungsmodell als Workfront. 

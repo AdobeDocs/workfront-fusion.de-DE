@@ -4,8 +4,8 @@ description: Wenn Sie Fusion öffnen, stehen Ihnen zahlreiche Aktionsoptionen zu
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
-workflow-type: ht
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 In diesem Artikel werden diese Bereiche vorgestellt und Links zu weiteren Informationen zu den einzelnen Bereichen bereitgestellt.
 
 | Bereich | Beschreibung | Weitere Informationen finden Sie unter  |
-|---|---|---|
+| --- | --- | --- |
 | Organisationsüberblick <br> ![Organisationssymbol](assets/org-icon.png) | Hier finden Sie Informationen zu Ihrer Fusion-Organisation. Sie können die Anzahl der von Szenarios in dieser Organisation ausgeführten Vorgänge sowie eine Liste aktiver Szenarios anzeigen. Sie können auch Listen des Teams, der Benutzenden und der Umgebungen dieser Organisation anzeigen.<br>Die aktuell ausgewählte Organisation wird über diesem Symbol angezeigt. | [Organisationen und Teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Team-Überblick <br> ![Team-Symbol](assets/team-icon.png) | Hier finden Sie Informationen zu Fusion-Teams, z. B. die Anzahl der Vorgänge, die von Szenarios in diesem Team ausgeführt werden, sowie eine Liste der aktiven Szenarios. Sie können auch die Benutzenden in diesem Team anzeigen und verwalten. Wenn Sie ein Team anzeigen, können Sie oben auf dieser Seite über ein Dropdown-Menü ein anderes Team auswählen.<br>Das aktuell ausgewählte Team wird über diesem Symbol angezeigt.<br>Möglicherweise müssen Sie ein Team erstellen, um den Team-Überblick oder einen der in diesem Artikel aufgeführten Team-Abschnitte sehen zu können. | [Organisationen und Teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Szenarios <br> ![Szenariosymbol](assets/scenarios-icon.png) | Ein Szenario in Fusion stellt einen automatisierten Workflow dar. Beispielsweise kann bei einem Szenario auf eingehende Workfront-Anfragen geachtet werden, die dann in Projekte konvertiert werden, während ein anderes Szenario dazu führt, dass Bilder generiert, diese bei einem Dokumentanbieter hochgeladen und Genehmigungsaufgaben zu Workfront hinzugefügt werden. Der Großteil Ihrer Arbeit in Fusion entfällt auf die Konfiguration und Verwaltung von Szenarios. Im Bereich „Szenarios“ können Sie eine Liste der Szenarios Ihres Teams anzeigen und organisieren, einzelne Szenarios auswählen, die angezeigt oder geändert werden sollen, oder mit der Erstellung eines neuen Szenarios beginnen. | [Überblick über Szenarios](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
