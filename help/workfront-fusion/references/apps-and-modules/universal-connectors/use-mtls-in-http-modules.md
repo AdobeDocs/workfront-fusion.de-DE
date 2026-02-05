@@ -1,17 +1,17 @@
 ---
-title: Verwenden von gegenseitigem TLS in HTTP-Modulen in Adobe Workfront Fusion
+title: Verwenden von Mutual TLS in HTTP-Modulen in Adobe Workfront Fusion
 description: Sie können Mutual TLS in Ihren Adobe Workfront Fusion-HTTP-Modulen verwenden, sodass beide Seiten der Informationstransaktion die Identität der anderen überprüfen können.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+source-git-commit: b48b7ad0954208ae80e99501e9297a3adaede228
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 0%
+source-wordcount: '841'
+ht-degree: 16%
 
 ---
 
-# Verwenden von gegenseitigem TLS in HTTP-Modulen in Adobe Workfront Fusion
+# Verwenden von Mutual TLS in HTTP-Modulen in Adobe Workfront Fusion
 
 ## Gegenseitige TLS - Übersicht
 
@@ -31,7 +31,7 @@ Das gegenseitige TLS ermöglicht es, dass diese Identitätsbestätigung in beide
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -39,29 +39,29 @@ Das gegenseitige TLS ermöglicht es, dass diese Identitätsbestätigung in beide
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -83,6 +83,25 @@ Sie können die folgenden Links verwenden, um die öffentlichen Workfront Fusion
 
 >[!IMPORTANT]
 >
+>* Diese öffentlichen Workfront Fusion-Zertifikate laufen am **2. März 2027** (USA und EU) oder **8. März 2027** (Azure) ab. Nach Ablauf Ihres müssen Sie ein neues Zertifikat in den Webservice hochladen. Wir empfehlen Ihnen Folgendes:
+>
+>   * Notieren Sie sich das Ablaufdatum und legen Sie eine Erinnerung fest, damit Sie das Zertifikat in Ihren Webservice hochladen können.
+>   * Setzen Sie ein Lesezeichen für diese Seite, um die neuen Zertifikate leicht zu finden.
+>
+>* Hierbei handelt es sich um Nicht-Platzhalter-TLS-Zertifikate.
+
+| Rechenzentrum | Downloadlink | Gültige Daten |
+| --- | --- | --- |
+| US-Rechenzentrum | [Herunterladen des Workfront Fusion US-Zertifikats 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | &#x200B;29. Januar 2026 bis 2. März 2027 |
+| EU-Rechenzentrum | [Workfront Fusion EU-Zertifikat 2026 herunterladen](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | &#x200B;29. Januar 2026 bis 2. März 2027 |
+| Azure-Cluster | [Herunterladen des Workfront Fusion Azure-Zertifikats 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | &#x200B;4. Februar 2026 bis 8. März 2027 |
+
+
+### Zertifikate für 2025
+
+>[!IMPORTANT]
+>
+>* Es wird empfohlen, die Zertifikate für 2026 zu installieren, die oben verfügbar sind.
 >* Diese öffentlichen Workfront Fusion-Zertifikate laufen am **4. April 2026** (USA und EU) oder **25. November 2025** (Azure) ab. Nach Ablauf Ihres müssen Sie ein neues Zertifikat in den Webservice hochladen. Wir empfehlen Ihnen Folgendes:
 >
 >   * Notieren Sie sich das Ablaufdatum und legen Sie eine Erinnerung fest, damit Sie das Zertifikat in Ihren Webservice hochladen können.
@@ -91,7 +110,7 @@ Sie können die folgenden Links verwenden, um die öffentlichen Workfront Fusion
 >* Hierbei handelt es sich um Nicht-Platzhalter-TLS-Zertifikate.
 
 | Rechenzentrum | Downloadlink | Gültige Daten |
-|---|---|---|
+| --- | --- | --- |
 | US-Rechenzentrum | [Herunterladen des Workfront Fusion US-Zertifikats 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | &#x200B;3. März 2025 bis 4. April 2026 |
 | EU-Rechenzentrum | [Workfront Fusion EU-Zertifikat 2025 herunterladen](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | &#x200B;3. März 2025 bis 4. April 2026 |
 | Azure-Cluster | [Herunterladen des Workfront Fusion Azure-Zertifikats 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | &#x200B;24. Oktober 2024 bis 25. November 2025 |
@@ -123,7 +142,7 @@ Alle Workfront Fusion [!UICONTROL HTTP]-Anfragemodule haben die Möglichkeit, ge
 
 So aktivieren Sie gegenseitiges TLS in einem [!UICONTROL HTTP]-Anfragemodul:
 
-1. Fügen Sie Ihrem [!UICONTROL &#x200B; ein &#x200B;]HTTP“-Anfragemodul hinzu.
+1. Fügen Sie Ihrem [!UICONTROL  ein ]HTTP“-Anfragemodul hinzu.
 1. Starten Sie die Konfiguration des Moduls.
 
    Anweisungen zum Konfigurieren eines [!UICONTROL HTTP]-Anfragemoduls finden Sie im entsprechenden Artikel unter [Universelle Connectoren](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
