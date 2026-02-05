@@ -4,7 +4,7 @@ description: Sie können Mutual TLS in Ihren Adobe Workfront Fusion-HTTP-Modulen
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: b48b7ad0954208ae80e99501e9297a3adaede228
+source-git-commit: e0b25da3d0c7a2cab454adafc7525f14c4f0b4eb
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 16%
@@ -79,7 +79,7 @@ Anweisungen zum Hochladen des öffentlichen Adobe Workfront Fusion-Zertifikats i
 
 Sie können die folgenden Links verwenden, um die öffentlichen Workfront Fusion-Zertifikate herunterzuladen. Informationen zum Auffinden Ihres Rechenzentrums finden Sie unter [Identifizieren Ihres Rechenzentrums](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) im Artikel Konfigurieren von IP-Adressen für Fusion in der -Zulassungsliste Ihres Unternehmens.
 
-### Zertifikate für 2025
+### Zertifikate für 2026
 
 >[!IMPORTANT]
 >
@@ -142,7 +142,7 @@ Alle Workfront Fusion [!UICONTROL HTTP]-Anfragemodule haben die Möglichkeit, ge
 
 So aktivieren Sie gegenseitiges TLS in einem [!UICONTROL HTTP]-Anfragemodul:
 
-1. Fügen Sie Ihrem [!UICONTROL &#x200B; ein &#x200B;]HTTP“-Anfragemodul hinzu.
+1. Fügen Sie Ihrem [!UICONTROL  ein ]HTTP“-Anfragemodul hinzu.
 1. Starten Sie die Konfiguration des Moduls.
 
    Anweisungen zum Konfigurieren eines [!UICONTROL HTTP]-Anfragemoduls finden Sie im entsprechenden Artikel unter [Universelle Connectoren](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
