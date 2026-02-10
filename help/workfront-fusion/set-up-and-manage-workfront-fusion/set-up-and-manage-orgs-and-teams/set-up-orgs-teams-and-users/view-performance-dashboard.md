@@ -3,9 +3,8 @@ title: Anzeigen des Leistungs-Dashboards für eine Organisation
 description: Fusion-Administratoren können ein Dashboard anzeigen, das Ausführungsmetriken für eine Organisation anzeigt.
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b4c9cd075cc2bb7aa3d5c568bb91fb8ce5c6f31e
+exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
+source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 7%
@@ -93,6 +92,3 @@ Dieses Diagramm zeigt Ausführungen pro Szenario. Verschiedene Farben stellen ve
 1. Um den Zeitbereich des Dashboards zu ändern, klicken Sie in das Feld Zeitbereich in der oberen rechten Ecke des Dashboards und wählen Sie dann einen neuen Zeitrahmen aus. Der längste verfügbare Zeitraum beträgt 24 Stunden, der kürzeste 15 Minuten.
 1. Um die Diagramme zu aktualisieren, klicken Sie auf das Aktualisierungssymbol oben rechts im Dashboard.
 1. Um einen anderen Pool anzuzeigen, klicken Sie auf das Feld Pool in der oberen linken Ecke des Dashboards und wählen Sie dann den Pool aus, den Sie anzeigen möchten.
-
-
-
