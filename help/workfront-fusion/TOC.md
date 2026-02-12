@@ -269,7 +269,7 @@ ht-degree: 99%
    * [Hinzufügen eines Filters zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
    * [Hinzufügen eines Webhooks zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
 * Erstellen und Verwalten von Vorlagen  {#create-and-manage-templates}
-   * [Erstellen und Verwalten von Vorlagen ](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
+   * [Erstellen und Verwalten von Vorlagen &#x200B;](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Erstellen neuer Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Erstellen von Szenarios mit Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [Anzeigen, Bearbeiten und Löschen von Vorlagen](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
