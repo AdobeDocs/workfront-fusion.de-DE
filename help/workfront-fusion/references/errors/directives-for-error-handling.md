@@ -5,20 +5,20 @@ description: In diesem Artikel werden Anweisungen beschrieben, die Sie für die 
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 15%
+ht-degree: 32%
 
 ---
 
-# Anweisungen für die Fehlerbehandlung
+# Anweisungen zur Fehlerbehandlung
 
 Mithilfe von Anweisungen zur Fehlerbehebung können Sie festlegen, was beim Auftreten eines Fehlers in einem Szenario geschieht.
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -26,24 +26,26 @@ Mithilfe von Anweisungen zur Fehlerbehebung können Sie festlegen, was beim Auft
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Anweisungen für die Fehlerbehandlung
++++
+
+## Anweisungen zur Fehlerbehandlung
 
 Die folgenden Anweisungen zur Fehlerbehandlung sind in Workfront Fusion verfügbar.
 
@@ -57,15 +59,15 @@ Die folgenden Anweisungen zur Fehlerbehandlung sind in Workfront Fusion verfügb
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Zusichern</p> <p> <img src="assets/commit.png"> </p> </td> 
-   <td> <ul><li><p>Die Ausführung des Szenarios wird sofort angehalten.</li><li>Eine Commit-Phase wird für alle Module gestartet. </li><li>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>Alle nicht verarbeiteten Pakete werden ignoriert.</p> </li><li><p>Der Status der Szenarioausführung wird als „erfolgreich“ gekennzeichnet. </p> </li></ul></td> 
+   <td> <ul><li><p>Die Ausführung des Szenarios wird sofort angehalten.</li><li>Eine Commit-Phase wird für alle Module gestartet. </li><li>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>Alle nicht verarbeiteten Pakete werden ignoriert.</p> </li><li><p>Der Szenario-Ausführungsstatus wird als „erfolgreich“ gekennzeichnet. </p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Wieder aufnehmen</p> <p> <img src="assets/resume.png"> </p> </td> 
-   <td> <ul><li><p>Es wird eine Ersatzausgabe angegeben und an das Modul geliefert, bei dem ein Fehler auftritt.</p> </li><li><p>Nachfolgende Module werden verarbeitet.</p></li><li> <p>Der Status der Szenarioausführung wird als „erfolgreich“ gekennzeichnet.</p></li></ul> </td> 
+   <td> <ul><li><p>Es wird eine Ersatzausgabe angegeben und an das Modul geliefert, bei dem ein Fehler auftritt.</p> </li><li><p>Nachfolgende Module werden verarbeitet.</p></li><li> <p>Der Szenario-Ausführungsstatus wird als „erfolgreich“ gekennzeichnet.</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ignorieren</p> <p> <img src="assets/ignore.png"> </p> </td> 
-   <td><ul><li> <p>Der Fehler wird ignoriert.</li><li> Nachfolgende Module werden nicht verarbeitet.</p> </li><li><p>Wenn unbearbeitete Bündel vorhanden sind, wird die Ausführung des Szenarios normal fortgesetzt.</p> </li><li><p>Der Status der Szenarioausführung wird als „erfolgreich“ gekennzeichnet.</p> </li></ul></td> 
+   <td><ul><li> <p>Der Fehler wird ignoriert.</li><li> Nachfolgende Module werden nicht verarbeitet.</p> </li><li><p>Wenn unbearbeitete Bündel vorhanden sind, wird die Ausführung des Szenarios normal fortgesetzt.</p> </li><li><p>Der Szenario-Ausführungsstatus wird als „erfolgreich“ gekennzeichnet.</p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Unterbrechen</p> <p> <img src="assets/break.png"> </p> </td> 

@@ -1,31 +1,31 @@
 ---
 title: Workfront Proof-Module
-description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die verwenden [!DNL Workfront Proof] und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Workfront Proof] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '3106'
-ht-degree: 0%
+ht-degree: 22%
 
 ---
 
-# [!DNL Workfront Proof]
+# [!DNL Workfront Proof]-Module
 
-In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Workfront Proof] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Workfront Proof] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 
 Dies ist nützlich, wenn Sie Aufgaben ausführen müssen, die derzeit beim Proofing in Workfront oder in [!DNL Workfront Proof] nicht unterstützt werden, z. B. das Aktualisieren von Korrekturabzügen auf der Grundlage bestimmter Ereignisse und die Suche nach den Empfängern eines Korrekturabzugs.
 
 Der [!DNL Workfront Proof]-Connector wird nicht auf die Anzahl der aktiven Apps angerechnet, die für Ihre Organisation verfügbar sind. Alle Szenarien werden mit der Gesamtanzahl der Szenarien Ihres Unternehmens verrechnet, auch wenn sie nur die [!DNL Workfront Proof]-App verwenden.
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -33,24 +33,26 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Informationen zu Workfront Proof
++++
+
+## Workfront Proof-Informationen
 
 Der Workfront Proof-Connector verwendet Folgendes:
 
@@ -121,19 +123,19 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
 
 3. Klicken Sie [!UICONTROL **Fortfahren**], um die Verbindung zu speichern und zum Modul zurückzukehren
 
-## [!DNL Workfront Proof] Module und ihre Felder
+## [!DNL Workfront Proof]-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Workfront Proof] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Workfront Proof] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Workfront Proof]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Workfront Proof]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Trigger](#triggers)
+* [Auslöser](#triggers)
 * [Aktionen](#actions)
 * [Suchvorgänge](#searches)
 
-### Trigger
+### Auslöser
 
 * [Auf PDF-Zusammenfassung achten](#watch-for-pdf-summary)
 * [[!UICONTROL Aktivität „Korrekturabzug ansehen]](#watch-proof-activity)
@@ -185,8 +187,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Wählen Sie aus, ob Sie eine neue Entscheidung (einschließlich Änderungen des Korrekturabzugsstatus) oder nur Änderungen des Gesamtstatus des Korrekturabzugs anzeigen möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+   <td>[!UICONTROL Beschränkung]</td> 
+   <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -208,7 +210,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Workfront Proof]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -216,8 +218,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Wählen Sie aus, ob Sie nach neuen Korrekturabzügen oder nach neuen allgemeinen Korrekturabzugsentscheidungen suchen möchten.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Limit</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td role="rowheader">Beschränkungen</td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Elemente pro Seite</td> 
@@ -231,7 +233,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 * [[!UICONTROL Korrekturabzug erstellen]](#create-proof)
 * [[!UICONTROL Benutzerdefinierter API-Aufruf]](#custom-api-call)
 * [[!UICONTROL Testversand herunterladen]](#download-proof)
-* [[!UICONTROL Datensatz lesen]](#read-a-record)
+* [[!UICONTROL Eintrag lesen]](#read-a-record)
 * [[!UICONTROL PDF-Zusammenfassung anfordern]](#request-pdf-summary)
 * [[!UICONTROL Korrekturabzug aktualisieren]](#update-proof)
 * [[!UICONTROL Datei hochladen]](#upload-file)
@@ -349,7 +351,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Geben Sie die ID des Testversand-Inhabers ein oder mappen Sie sie. Wenn dieses Feld leer gelassen wird, wird der/die Verantwortliche für den Korrekturabzug auf den aktuellen Benutzer bzw. die aktuelle Benutzerin festgelegt.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Referenz-ID]</td> 
+   <td>[!UICONTROL-Referenz-ID]</td> 
    <td>Geben Sie die Referenz-ID für den Testversand ein.</td> 
   </tr> 
   <tr> 
@@ -373,7 +375,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Wählen Sie für jedes Element aus, ob es im Korrekturabzug angezeigt werden soll.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Workspace ID]</td> 
+   <td>[!UICONTROL Arbeitsbereich-ID]</td> 
    <td>Geben Sie die ID des Arbeitsbereichs ein, in dem Sie den Korrekturabzug erstellen möchten. </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -391,7 +393,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 #### [!UICONTROL Benutzerdefinierter API-Aufruf]
 
-Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Workfront Proof]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, die von den anderen [!DNL Workfront Proof] nicht durchgeführt werden kann.
+Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Workfront Proof]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, was über die anderen [!DNL Workfront Proof]-Module nicht möglich ist.
 
 Das Modul gibt den Status-Code, die Kopfzeilen und den Hauptteil zurück. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
@@ -406,12 +408,12 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Workfront Proof]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL -Methode]</td> 
+   <td>[!UICONTROL Methode]</td> 
    <td>Festlegen der Aktion für den API-Aufruf. Informationen zu verfügbaren Aktionen finden Sie in der <a href="https://api.proofhq.com/">Dokumentation zur Korrekturabzugs-API</a>.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Hauptteil (XML)]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -452,7 +454,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  </tbody> 
 </table>
 
-#### [!UICONTROL Datensatz lesen]
+#### [!UICONTROL Eintrag lesen]
 
 Dieses Aktionsmodul liest Daten aus einem einzelnen Korrekturabzug in [!DNL Workfront Proof].
 
@@ -473,7 +475,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Workfront Proof]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Datensatztyp]</td> 
+   <td>[!UICONTROL Eintragstyp]</td> 
    <td>Wählen Sie aus, ob Sie einen Korrekturabzug, Kommentare zu Korrekturabzügen oder Prüfer für Korrekturabzüge lesen möchten.</td> 
   </tr> 
   <tr> 
@@ -529,7 +531,7 @@ Dieses Aktionsmodul aktualisiert einen vorhandenen Korrekturabzug in [!DNL Workf
 
 Sie geben die ID und den Datensatztyp des Korrekturabzugs an und legen fest, welche Felder in die Ausgabe aufgenommen werden sollen.
 
-Das Modul gibt alle Standardfelder zurück, die mit dem Datensatz verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
 Sie müssen über ausreichende Berechtigungen für den Zugriff auf den Datensatz in [!DNL Workfront Proof] verfügen, um diese Informationen abrufen zu können.
 
@@ -559,7 +561,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
      <li>[!UICONTROL antwortet auf meine Kommentare]</li>
      <li>[!UICONTROL Tägliche Zusammenfassung]</li>
      <li> [!UICONTROL Stündliche Zusammenfassung]</li>
-     <li> [!UICONTROL Nur-Entscheidungen]</li>
+     <li> [!Nur UICONTROL-Entscheidungen]</li>
      <li> [!UICONTROL deaktiviert]</li>
     </ul></td> 
   </tr> 
@@ -631,7 +633,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Workfront Proof]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source-Datei]</td> 
+   <td>[!UICONTROL Quelldatei]</td> 
    <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -659,7 +661,7 @@ Dieses Suchmodul listet alle verfügbaren Workflow-Vorlagen auf.
    <td> <p>Wählen Sie die Informationen aus, die im Ausgabepaket für dieses Modul enthalten sein sollen.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Limit]</td> 
+   <td>[!UICONTROL Beschränkung]</td> 
    <td> <p>Geben Sie die maximale Anzahl von Vorlagen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 

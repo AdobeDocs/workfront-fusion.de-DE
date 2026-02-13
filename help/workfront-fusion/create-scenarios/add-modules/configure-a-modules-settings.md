@@ -4,10 +4,10 @@ description: Sie müssen für jedes Modul, das Sie erstellen, Einstellungen konf
 author: Becky
 feature: Workfront Fusion
 exl-id: ae82d1fe-31e1-424a-9c1a-42dc1a20b749
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 1%
+ht-degree: 32%
 
 ---
 
@@ -23,7 +23,7 @@ Beispielsweise erfordert das Modul Workfront > Dokument hochladen , dass Sie den
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -31,38 +31,40 @@ Beispielsweise erfordert das Modul Workfront > Dokument hochladen , dass Sie den
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Konfigurieren der Moduleinstellungen
++++
+
+## Konfigurieren der Moduleinstellungen
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
 1. Fügen Sie einem Szenario ein neues Modul hinzu.
 
-   Oder
+   ODER
 
    Klicken Sie auf das Modul, das Sie konfigurieren möchten.
 
 1. Erstellen Sie bei Bedarf für das Modul eine **[!UICONTROL Verbindung]** zu Ihrem registrierten Benutzerkonto für diesen bestimmten Dienst, wie in [Verbindungen - Übersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md) beschrieben.
 1. Geben Sie in jedes Feld den entsprechenden Text ein.
 
-   Oder
+   ODER
 
    Ordnen Sie die Ausgabe eines vorherigen Moduls dem Feld zu.
 
