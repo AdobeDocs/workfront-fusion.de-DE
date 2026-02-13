@@ -4,10 +4,10 @@ description: Unterstützung für große Dateien ist derzeit für die Workfront- 
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
+source-git-commit: 2493ce7ccca599e30b44b62558573ce2a55b03e0
 workflow-type: tm+mt
-source-wordcount: '1048'
-ht-degree: 2%
+source-wordcount: '1052'
+ht-degree: 6%
 
 ---
 
@@ -44,6 +44,7 @@ Derzeit unterstützen die folgenden Connectoren große Dateien.
    * PSD-Bearbeitungen anwenden
 * SharePoint
    * Erstellen einer Datei
+   * Datei erstellen (alt)
    * Datei abrufen
 * Salesforce
    * Datei hochladen
