@@ -4,10 +4,10 @@ description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, we
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
-workflow-type: ht
-source-wordcount: '1092'
-ht-degree: 100%
+source-git-commit: 441b192d50e928ce74e54d8bcc0d89f4af348bb5
+workflow-type: tm+mt
+source-wordcount: '1072'
+ht-degree: 96%
 
 ---
 
@@ -76,8 +76,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 
 ## Unvollständige Ausführungen
 
-* Unvollständige Ausführungen sind auf eine Gesamtgröße von **10 MB** pro Szenario beschränkt. Wenn das Limit von 10 MB erreicht wird, werden für dieses Szenario keine weiteren unvollständigen Ausführungen gespeichert.
-* Unvollständige Ausführungen sind auf eine Gesamtgröße von **500 MB** pro Team beschränkt. Wenn das Limit von 500 MB erreicht wird, werden für dieses Team keine unvollständigen Ausführungen mehr gespeichert.
+* Unvollständige Ausführungen sind auf eine Gesamtgröße von **11 GB** oder **100 unvollständige Ausführungen beschränkt** je Szenario, je nachdem, welches Limit zuerst erreicht wird. Wenn ein Limit erreicht wird, werden für dieses Szenario keine weiteren unvollständigen Ausführungen gespeichert.
 * Workfront Fusion lässt bis zu 5 fehlgeschlagene Vorgänge pro Minute zu.
 
 ## Weitere Versuche
