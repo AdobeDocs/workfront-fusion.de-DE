@@ -68,7 +68,7 @@ Dieses Modul führt eine zuvor konfigurierte benutzerdefinierte Funktion aus.
    <td>Wählen Sie die benutzerdefinierte Funktion aus, die Sie ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Parameter] </td> 
+   <td role="rowheader">[!UICONTROL -Parameter] </td> 
    <td>Geben Sie die Werte für die Funktionsparameter ein. Die verfügbaren Parameter basieren auf den Parametern, die beim Erstellen der Funktion konfiguriert wurden.<p>Wenn ein Parameter einen Standardwert hat, wird er nicht im Feld angezeigt, Sie können ihn jedoch überschreiben, indem Sie einen Wert in das Feld eingeben oder zuordnen.</p></td> 
   </tr> 
    </tbody> 

@@ -65,7 +65,7 @@ Bevor Sie benutzerdefinierte Funktionen erstellen können, müssen Sie Ihre Lauf
 >
 >Nach Abschluss der Initialisierung können alle Benutzer im Team, in dem die Initialisierung durchgeführt wurde, Funktionen erstellen und verwenden.
 
-1. Klicken Sie auf **Registerkarte** Funktionen![ (](assets/functions-icon.png)) im linken Bedienfeld.
+1. Klicken Sie auf **Registerkarte** Funktionen![&#x200B; (](assets/functions-icon.png)) im linken Bedienfeld.
 
    Wenn Sie Ihre Laufzeit noch nicht konfiguriert haben, wird die Meldung „Laufzeitumgebung nicht konfiguriert“ angezeigt.
 1. Klicken Sie **Laufzeit initialisieren**.
@@ -85,7 +85,7 @@ Nachdem Ihre Laufzeitumgebung konfiguriert wurde, können Sie mit der Erstellung
 >   * Name ändern
 >   * Standardparameterwerte anzeigen
 
-1. Klicken Sie auf **Registerkarte** Funktionen![ (](assets/functions-icon.png)) im linken Bedienfeld.
+1. Klicken Sie auf **Registerkarte** Funktionen![&#x200B; (](assets/functions-icon.png)) im linken Bedienfeld.
 1. Klicken Sie **Funktion hinzufügen**.
 1. Geben Sie einen Namen für die benutzerdefinierte Funktion ein.
 
