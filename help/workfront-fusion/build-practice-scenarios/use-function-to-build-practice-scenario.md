@@ -7,10 +7,10 @@ description: Erfahren Sie, wie Sie eine Funktion hinzufügen, um ein Arbeitselem
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 19%
+source-wordcount: '603'
+ht-degree: 18%
 
 ---
 
@@ -53,7 +53,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## Voraussetzungen
 
-Sie müssen das unter &quot;[&#x200B; eines einfachen Szenarios“ beschriebene Szenario erstellen](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) bevor Sie dieses Verfahren ausführen.
+Sie müssen das unter &quot;[ eines einfachen Szenarios“ beschriebene Szenario erstellen](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) bevor Sie dieses Verfahren ausführen.
 
 ## Verwenden einer Funktion zum Aktualisieren eines Projekts
 
@@ -111,4 +111,4 @@ Wenn dieses Szenario eine Anfrage in ein Projekt konvertiert, ist der Projektnam
 
 ## Ressourcen
 
-* [Zuordnen von Elementen mithilfe von Funktionen](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+* [Zuordnen von Elementen mithilfe integrierter Funktionen](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)

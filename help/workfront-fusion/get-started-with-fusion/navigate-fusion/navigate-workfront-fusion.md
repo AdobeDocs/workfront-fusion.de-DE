@@ -4,10 +4,10 @@ description: Wenn Sie Fusion öffnen, stehen Ihnen zahlreiche Aktionsoptionen zu
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '775'
+ht-degree: 94%
 
 ---
 
@@ -28,6 +28,7 @@ In diesem Artikel werden diese Bereiche vorgestellt und Links zu weiteren Inform
 | Schlüssel <br> ![Schlüsselsymbol](assets/keys-icon.png) | Öffentliche und private Schlüssel werden zum Ver- und Entschlüsseln von Daten verwendet. Der öffentliche Schlüssel kann verteilt werden. Alle, die über den öffentlichen Schlüssel verfügen, können Daten verschlüsseln. Eine Entschlüsselung ist aber nur mit dem privaten Schlüssel möglich. Ebenso können Benutzende mit einem privaten Schlüssel Daten verschlüsseln, die von allen Personen mit dem öffentlichen Schlüssel entschlüsselt werden können. Im Bereich „Schlüssel“ können Sie Schlüssel anzeigen und verwalten, die Ihrem Team gehören. | [Schlüssel](/help/workfront-fusion/references/modules/keys.md) |
 | Datenspeicher <br> ![Datenspeichersymbol](assets/data-store-icon.png) | Datenspeicher sind kleine Datenbanken, die außerhalb von Szenarios existieren. Mit Datenspeichern können Sie Daten zwischen Szenarios oder zwischen separaten Ausführungen eines Szenarios übertragen. Im Bereich „Datenspeicher“ können Sie Datenspeicher anzeigen und verwalten, die Ihrem Team gehören. | [Datenspeicher](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | Datenstrukturen <br> ![Datenstruktursymbol](assets/data-structure-icon.png) | Datenstrukturen beschreiben das Format der Daten, die an Fusion übertragen werden, und werden häufig zum Serialisieren oder Parsen von Formaten wie JSON, XML und CSV verwendet. Unter „Datenstrukturen“ können Sie Datenstrukturen anzeigen und verwalten, die Ihrem Team gehören. | [Datenstrukturen](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
+| Funktionen <br> ![Funktionssymbol](assets/functions-icon.png) | Benutzerdefinierte Funktionen sind JavaScript-Funktionen, die Szenarien hinzugefügt werden können, um Daten zu bearbeiten und zu transformieren. <br>Ihr Unternehmen muss über eine Lizenz für Adobe App Builder verfügen, um benutzerdefinierte Funktionen erstellen und verwenden zu können. | [Zuordnen von Daten mithilfe benutzerdefinierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
 
 >[!NOTE]
 >

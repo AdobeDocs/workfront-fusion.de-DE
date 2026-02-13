@@ -1,26 +1,27 @@
 ---
-title: Zuordnen von Elementen mithilfe von Funktionen
+title: Zuordnen von Elementen mithilfe integrierter Funktionen
 description: Beim Zuordnen von Elementen können Sie Funktionen verwenden, um einfache oder komplexe Formeln zu erstellen.
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 0%
+source-wordcount: '711'
+ht-degree: 24%
 
 ---
 
-# Zuordnen eines Elements mithilfe von Funktionen
+# Zuordnen eines Elements mithilfe integrierter Funktionen
 
-Beim Zuordnen von Elementen können Sie Funktionen verwenden, um einfache oder komplexe Formeln zu erstellen. Die verfügbaren Funktionen ähneln den Funktionen in Excel und in einigen Programmiersprachen:
+Workfront Fusion enthält integrierte Funktionen, mit denen Sie einfache oder komplexe Formeln erstellen können. Diese Funktionen decken eine Vielzahl von Anwendungsfällen ab, einschließlich Funktionen für Arrays, Zeichenfolgen, Zahlen und Daten aus vorherigen Modulen.
 
-* Sie bewerten allgemeine Logik, Mathematik, Text, Daten und Arrays.
-* Mit ihnen können Sie bedingte Logik und Umwandlungen von Elementwerten durchführen, z. B. einen Text in Großbuchstaben umwandeln, Text kürzen, ein Datum in ein anderes Format konvertieren und vieles mehr.
+Darüber hinaus können Sie benutzerdefinierte Funktionen erstellen, mit denen Ihre Szenarien dann Daten transformieren und bearbeiten können.
+
+Informationen und Anweisungen zu benutzerdefinierten Funktionen finden Sie unter [Zuordnen von Daten mithilfe benutzerdefinierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -28,26 +29,33 @@ Beim Zuordnen von Elementen können Sie Funktionen verwenden, um einfache oder k
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p><ul><li>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li><li>Sie benötigen eine Adobe App Builder-Lizenz, um benutzerdefinierte Funktionen verwenden zu können.</ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## Funktionen in Felder einfügen
+## Zuordnen von Daten mithilfe integrierter Funktionen
+
+Beim Zuordnen von Elementen können Sie Funktionen verwenden, um einfache oder komplexe Formeln zu erstellen. Die verfügbaren Funktionen ähneln den Funktionen in Excel und in einigen Programmiersprachen:
+
+* Sie werten allgemeine Logik, Mathematik, Text, Daten und Arrays aus.
+* Mit ihnen können Sie bedingte Logik anwenden und Elementwerte umwandeln, z. B. einen Text in Großbuchstaben umwandeln, Text kürzen, ein Datum in ein anderes Format konvertieren und vieles mehr.
+
+### Funktionen in Felder einfügen
 
 So fügen Sie eine Funktion in ein Feld ein:
 
@@ -60,7 +68,7 @@ So fügen Sie eine Funktion in ein Feld ein:
    Informationen zu Registerkarten des Zuordnungsbereichs finden Sie unter [Funktionsübersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
    1. Klicken Sie auf den Funktionsnamen.
 
-      Oder
+      ODER
 
       Ziehen Sie die Funktion in das Feld.
 1. Konfigurieren Sie die Funktionsparameter.
@@ -86,7 +94,7 @@ In diesem Beispiel beschränkt die Funktion Teilzeichenfolge den Projektnamen au
 
 >[!ENDSHADEBOX]
 
-## Verschachteln von Funktionen
+### Verschachteln von Funktionen
 
 Sie können Funktionen ineinander verschachteln.
 
@@ -112,7 +120,7 @@ So verschachteln Sie eine Funktion:
 1. Fahren Sie mit der Konfiguration der Funktion wie gewünscht fort.
 1. Fahren Sie mit der Konfiguration des Moduls fort oder klicken Sie auf **OK**.
 
-## [!DNL Google Sheets] verwenden
+### [!DNL Google Sheets] verwenden
 
 Wenn Workfront Fusion keine Funktion enthält, die Sie verwenden möchten, es jedoch in [!DNL Google Sheets] vorhanden ist, können Sie sie wie folgt verwenden:
 

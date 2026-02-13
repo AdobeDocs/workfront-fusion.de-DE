@@ -4,10 +4,10 @@ description: Beim Zuordnen werden die Ausgaben eines Moduls (in Elemente struktu
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ Die anderen Registerkarten umfassen Funktionen, Operatoren und Keywords, mit den
 
 Weitere Informationen zu Funktionsregisterkarten finden Sie unter [Überblick über Funktionen](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Weitere Informationen zum Zuordnen von Elementen mithilfe von Funktionen finden Sie unter [Zuordnen von Elementen mithilfe von Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Weitere Informationen zum Zuordnen von Elementen mithilfe von Funktionen [ Sie unter „Zuordnen von Elementen mithilfe integrierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Sammlungen
 

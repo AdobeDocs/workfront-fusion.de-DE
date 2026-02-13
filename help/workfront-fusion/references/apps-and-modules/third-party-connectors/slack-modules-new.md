@@ -3,14 +3,15 @@ title: Slack-Module
 description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows automatisieren, die Slack verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 0dbe23c5eb7a0d890b7b543f2f310b163baa3793
+exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
+source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
 workflow-type: tm+mt
-source-wordcount: '4580'
-ht-degree: 8%
+source-wordcount: '4581'
+ht-degree: 12%
 
 ---
 
-# [!DNL Slack]
+# [!DNL Slack]-Module
 
 >[!IMPORTANT]
 >
@@ -20,7 +21,7 @@ ht-degree: 8%
 
 In einem [!DNL Adobe Workfront Fusion] Szenario können Sie Workflows automatisieren, die [!DNL Slack] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -34,7 +35,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Paket für Adobe Workfront Workflow und Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
@@ -44,19 +45,19 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
    <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
-   <p>Connector-basiert (alt): Workfront Fusion for Work Automation and Integration </p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Adobe Workfront Fusion erworben werden.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Angaben in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -90,11 +91,11 @@ Der Slack-Connector verwendet Folgendes:
 
 ## [!DNL Slack]-Module und ihre Felder
 
-Beim Konfigurieren [!DNL Slack] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Dienst weitere [!DNL Slack]-Felder angezeigt werden. Eine fett formatierte Überschrift in einem Modul kennzeichnet ein Pflichtfeld.
+Beim Konfigurieren [!DNL Slack] Module zeigt [!DNL Workfront Fusion] die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Slack]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Schaltfläche für Zuordnung über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Nachrichten](#messages)
 * [Dateien](#files)
@@ -136,7 +137,7 @@ Dieses Aktionsmodul erstellt eine neue Nachricht.
    <td> <p>Geben Sie den Textinhalt der Nachricht ein, die Sie erstellen möchten.</p> <p>Hinweis: Detaillierte Informationen zur Textformatierung finden Sie unter <a href="https://api.slack.com/reference/surfaces/formatting">Text für Programmoberflächen formatieren</a> in der [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Blöcke]</td> 
+   <td role="rowheader">[!UICONTROL-Blöcke]</td> 
    <td>Blöcke sind wiederverwendbare Komponenten, mit denen Sie Ihre Nachrichten anpassen und organisieren können. Weitere Informationen zu Blöcken finden Sie unter <a href="https://api.slack.com/block-kit">Blockkit</a> in der [!DNL Slack].</td> 
   </tr> 
   <tr> 
@@ -272,7 +273,7 @@ Dieses Aktionsmodul ruft einen Thread von Nachrichten ab, die an eine Konversati
    <td> <p> Geben Sie den Zeitstempel der Nachricht ein, für die Sie Antworten abrufen möchten, oder ordnen Sie ihn zu.</p> <p>Hinweis: Der Zeitstempel kann mit einem anderen Modul abgerufen werden, z. B. dem Modul [!UICONTROL Watch Public Channel].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL Beschränkung]</td> 
    <td> <p>Geben Sie die maximale Anzahl von Antworten ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -293,11 +294,11 @@ Dieses Suchmodul gibt Nachrichten zurück, die mit einer Suchanfrage übereinsti
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Slack]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
-   <td> <p>Geben Sie die Abfrage ein, nach der Sie suchen möchten. </p> <p>Informationen zum Erstellen von Formeln im Zuordnungsbereich finden Sie unter <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">Zuordnen von Elementen mithilfe von Funktionen in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
+   <td> <p>Geben Sie die Abfrage ein, nach der Sie suchen möchten. </p> <p>Informationen zum Erstellen von Formeln im Zuordnungsbereich finden Sie unter <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">Zuordnen von Elementen mithilfe integrierter Funktionen in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll.</p> </td> 
   </tr> 
   <tr> 
@@ -305,7 +306,7 @@ Dieses Suchmodul gibt Nachrichten zurück, die mit einer Suchanfrage übereinsti
    <td> <p>Wählen Sie aus, ob die zurückgegebenen Nachrichten nach ihrem Score oder Zeitstempel sortiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Wählen Sie aus, ob Nachrichten auf- oder absteigend sortiert werden sollen.</p> </td> 
   </tr> 
  </tbody> 
@@ -338,7 +339,7 @@ Mit diesem Aktionsmodul können Sie eine vorhandene Nachricht bearbeiten.
    <td> <p>Geben Sie den neuen Textinhalt der Nachricht ein, die Sie aktualisieren möchten.</p> <p>Weitere Informationen finden Sie unter <a href="https://api.slack.com/docs/formatting">Text für Programmoberflächen formatieren</a> in der [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Blöcke]</td> 
+   <td role="rowheader">[!UICONTROL-Blöcke]</td> 
    <td>Blöcke sind wiederverwendbare Komponenten, mit denen Sie Ihre Nachrichten anpassen und organisieren können. Weitere Informationen zu Blöcken finden Sie unter <a href="https://api.slack.com/block-kit">Blockkit</a> in der [!DNL Slack].</td> 
   </tr> 
   <tr> 
@@ -371,7 +372,7 @@ Dieses Trigger-Modul startet das Szenario, wenn eine neue Nachricht zu einer Dir
    <td> <p>Wählen Sie die Direktnachrichten-Konversation aus, die Sie auf neue Nachrichten überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Geben Sie die maximale Anzahl an Nachrichten ein, die das Modul während jedes Ausführungszyklus des Szenarios zurückgeben soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -396,7 +397,7 @@ Dieses Trigger-Modul startet das Szenario, wenn eine neue Nachricht zu einem Meh
    <td> <p>Wählen Sie die Direktnachrichten-Konversation aus, die Sie auf neue Nachrichten überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Geben Sie die maximale Anzahl an Nachrichten ein, die das Modul während jedes Ausführungszyklus des Szenarios zurückgeben soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -421,7 +422,7 @@ Dieses Kanalmodul startet das Trigger-Szenario, wenn eine neue Nachricht zu eine
    <td> <p>Privaten Kanal auswählen, der auf neue Nachrichten überwacht werden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Geben Sie die maximale Anzahl an Nachrichten ein, die das Modul während jedes Ausführungszyklus des Szenarios zurückgeben soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -446,7 +447,7 @@ Dieses Kanalmodul startet das Trigger, wenn eine neue Nachricht zu einem öffent
    <td> <p>Wählen Sie den öffentlichen Kanal aus, den Sie auf neue Nachrichten überprüfen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Geben Sie die maximale Anzahl an Nachrichten ein, die das Modul während jedes Ausführungszyklus des Szenarios zurückgeben soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -531,7 +532,7 @@ Dieses Aktionsmodul gibt eine Liste von Dateien basierend auf dem angegebenen Fi
    <td>Geben Sie das letzte Datum ein, ab dem Sie Dateien zurückgeben möchten. Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Typzwang in [!DNL Adobe Workfront Fusion]</a>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL Beschränkung]</td> 
    <td>Geben Sie die maximale Anzahl von Dateien ein, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll, oder mappen Sie sie.</td> 
   </tr> 
  </tbody> 
@@ -581,7 +582,7 @@ Dieses Aktionsmodul erstellt oder lädt eine Datei in [!DNL Slack] hoch
    <td> <p>Klicken Sie für jeden Kanal, in den Sie die Datei hochladen möchten, auf <b>[!UICONTROL Element hinzufügen]</b> und wählen Sie dann den Kanaltyp und den Kanal aus.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source-Datei]</td> 
+   <td role="rowheader">[!UICONTROL Quelldatei]</td> 
    <td>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</td> 
   </tr> 
   <tr> 
@@ -626,7 +627,7 @@ Dieses Dateimodul startet ein Trigger, wenn eine neue Datei hinzugefügt wird.
    <td> <p>Wählen Sie einen Benutzer aus, um nur die vom angegebenen Benutzer erstellten Dateien zurückzugeben.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Geben Sie die maximale Anzahl von Dateien ein, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -766,7 +767,7 @@ Dieses Suchmodul gibt eine Liste aller Kanäle in einem Arbeitsbereich zurück.
    <td> <p>Wählen Sie die Kanaltypen aus, die Sie abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Legen Sie die maximale Anzahl an Kanälen fest, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -795,7 +796,7 @@ Dieses Suchmodul gibt eine Liste der Benutzer im ausgewählten Kanal zurück.
    <td>Wählen Sie den Kanal aus, dessen Mitglieder Sie auflisten möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Legen Sie die maximale Anzahl von Mitgliedern fest, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -909,7 +910,7 @@ Dieses Aktionsmodul fügt einem Element eine Reaktion hinzu.
    <td> <p> Geben Sie den Zeitstempel der Nachricht ein, der eine Reaktion hinzugefügt werden soll, oder ordnen Sie ihn zu.</p> <p>Hinweis: Der Zeitstempel kann mit einem anderen Modul abgerufen werden, z. B. dem Modul [!UICONTROL Watch Private Channel].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name der-Reaktion (Emoji)]</td> 
+   <td role="rowheader">[!Name der UICONTROL-Reaktion (Emoji)]</td> 
    <td>Geben Sie den Namen des Emojis ein, das Sie für eine Reaktion verwenden möchten, oder mappen Sie ihn. Beispiel: <code>thumbsup</code>. </td> 
   </tr> 
  </tbody> 
@@ -930,11 +931,11 @@ Dieses Aktionsmodul gibt von einem Benutzer durchgeführte Reaktionen zurück.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Slack]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Benutzer]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Benutzer]</p> </td> 
    <td> <p>Wählen Sie den Benutzer aus, der die Reaktionen erstellt hat, die Sie auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL Beschränkung]</td> 
    <td> <p>Geben Sie die maximale Anzahl an Reaktionen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -967,7 +968,7 @@ Dieses Aktionsmodul entfernt eine Reaktion aus einem Element.
    <td> <p> Geben Sie den Zeitstempel der Nachricht ein, aus der Sie eine Reaktion entfernen möchten, oder ordnen Sie ihn zu.</p> <p>Hinweis: Der Zeitstempel kann mit einem anderen Modul abgerufen werden, z. B. dem Modul [!UICONTROL Watch Private Channel].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name der-Reaktion (Emoji)]</td> 
+   <td role="rowheader">[!Name der UICONTROL-Reaktion (Emoji)]</td> 
    <td>Geben Sie den Namen des Emojis ein, das Sie aus der Nachricht entfernen möchten, oder ordnen Sie ihn zu. Beispiel: <code>thumbsup</code>. </td> 
   </tr> 
  </tbody> 
@@ -1183,7 +1184,7 @@ Dieses Aktionsmodul lädt 1-30 Benutzer zu einem öffentlichen oder privaten Kan
    <td>Wählen Sie den Kanal aus, zu dem Sie Benutzer einladen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Benutzer]</td> 
+   <td role="rowheader">[!UICONTROL Benutzende]</td> 
    <td> <p>Wählen Sie die Benutzer aus, die Sie zum Kanal hinzufügen möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -1212,7 +1213,7 @@ Dieses Aktionsmodul entfernt einen Benutzer aus einem Kanal.
    <td>Wählen Sie den Kanal aus, aus dem Sie eine Benutzerin oder einen Benutzer entfernen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Benutzer]</td> 
+   <td role="rowheader">[!UICONTROL Benutzende]</td> 
    <td> <p>Wählen Sie den Benutzer aus, den Sie aus dem Kanal entfernen möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -1233,7 +1234,7 @@ Dieses Aktionsmodul gibt eine Liste aller Benutzer in einem Arbeitsbereich zurü
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Slack]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Limit]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Beschränkung]</p> </td> 
    <td> <p>Geben Sie die maximale Anzahl an Benutzern ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -1275,7 +1276,7 @@ Dieses Benutzermodul startet das Trigger, wenn ein neuer Benutzer zum Arbeitsber
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Slack]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Legen Sie die maximale Anzahl von Benutzern fest, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -1357,7 +1358,7 @@ Dieses Aktionsmodul erstellt eine Erinnerung.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Benutzer] </p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Benutzer] </p> </td> 
    <td> <p>Wählen Sie den Benutzer aus, der die Erinnerung erhält.</p> </td> 
   </tr> 
  </tbody> 
@@ -1423,7 +1424,7 @@ Dieser sofortige Trigger startet ein Szenario, wenn eine neue Nachricht oder ein
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Webhook]</p> </td> 
-   <td> <p>Wählen Sie den Webhook aus, den Sie verwenden möchten.</p> <p>Oder</p> <p>Erstellen Sie einen neuen Webhook.</p> 
+   <td> <p>Wählen Sie den Webhook aus, den Sie verwenden möchten.</p> <p>ODER</p> <p>Erstellen Sie einen neuen Webhook.</p> 
     <ol> 
      <li value="1"> <p>Klicken Sie auf <b>[!UICONTROL Hinzufügen]</b>.</p> </li> 
      <li value="2"> <p>Wählen Sie den Ereignistyp.</p> </li> 
@@ -1466,7 +1467,7 @@ Dieses Aktionsmodul aktualisiert den aktuellen Status eines Benutzers.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Status Expiration]</td> 
-   <td>Geben Sie das Datum und die Uhrzeit ein, zu der der Status ablaufen soll, oder ordnen Sie sie zu. Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Typzwang</a>.</td> 
+   <td>Geben Sie das Datum und die Uhrzeit ein, zu der der Status ablaufen soll, oder ordnen Sie sie zu. Eine Liste der unterstützten Datums- und Uhrzeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Erzwungene Typumwandlung</a>.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -1477,7 +1478,7 @@ Dieses Aktionsmodul aktualisiert den aktuellen Status eines Benutzers.
 
 +++ **[!UICONTROL Erstellen eines API-Aufrufs]**
 
-Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Slack]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, die von den anderen [!DNL Slack] nicht durchgeführt werden kann.
+Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Slack]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, was über die anderen [!DNL Slack]-Module nicht möglich ist.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1497,7 +1498,7 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Header]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] fügt die Autorisierungs-Header für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 
@@ -1505,7 +1506,7 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text]</td> 
-   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -1528,4 +1529,3 @@ Die folgende Terminologie kann bei der Konfiguration [!DNL Slack] Module nützli
 * **Privater Kanal**: früher [!UICONTROL Gruppe]
 * **Direktnachricht**: früher [!UICONTROL IM]
 * **channel**: [!UICONTROL Konversation] in der API-Dokumentation, [!UICONTROL channel] in der [!DNL Slack] App.
-
