@@ -6,14 +6,14 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 5dfca593b17a234c80c807470026a7b192cbf7fa
+source-git-commit: 97abe6bf0ff7b10a139268f02f8a1a24f3e31b47
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 23%
+source-wordcount: '488'
+ht-degree: 18%
 
 ---
 
-# Model Context Protocol(MCP)-Modul
+# MCP Agent-Modul
 
 <!--SET UP REDIRECTS-->
 
@@ -22,6 +22,8 @@ Das Model Context Protocol (MCP) ist eine Möglichkeit, KI-Sprachmodelle sicher 
 Sie können beispielsweise einen MCP-Server konfigurieren, um ein KI-Modell mit Gmail zu verbinden. Wenn Sie die Eingabeaufforderung „Give me my last 5 emails from Gmail“ (Gib mir meine letzten 5 E-Mails von Gmail) senden, kann sie auf Gmail zugreifen und die E-Mails zurücksenden.
 
 Mit dem Modul „Model Context Protocol“ (MCP) können Sie eine Benutzeraufforderung mit einem Sprachmodell und MCP-Servern verarbeiten.
+
+Weitere Informationen zu MCP in Fusion-Szenarien finden Sie unter [Hinzufügen einer KI-Eingabeaufforderung zum Szenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
 ## Zugriffsanforderungen
 
@@ -52,17 +54,20 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 +++
 
+## Voraussetzungen
 
-
-
+* Sie müssen alle MCP-Server konfiguriert haben, mit denen Sie eine Verbindung herstellen möchten.
+* Zum ausgewählten LLM (Large Language Model) muss ein LLM-Schlüssel vorhanden sein.
 
 ## Modul für Modellkontext-Protokoll und seine Felder
-
-Wenn Sie das MCP-Modul konfigurieren, zeigt Adobe Workfront Fusion die unten aufgeführten Felder an. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
 ### Eingabeaufforderung verarbeiten
 
 Dieses Aktionsmodul verarbeitet eine Eingabeaufforderung mit dem von Ihnen angegebenen Sprachmodell und MCP-Servern.
+
+>[!NOTE]
+>
+>Dieses Modul muss ein -Objekt zurückgeben. Es wird keine Ausgabe wie Zeichenfolgen oder Zahlen zurückgegeben.
 
 <table style="table-layout:auto"> 
  <col> 

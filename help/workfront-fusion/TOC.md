@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: 5e7a879ee69bea03aed5a936fe0962acdd3a3014
+source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2046'
 ht-degree: 98%
 
 ---
@@ -210,6 +210,7 @@ ht-degree: 98%
       * [Hinzufügen von Modulen](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [Hinzufügen eines Moduls zu einem Szenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [Konfigurieren eines Moduls](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
+      * [Hinzufügen einer KI-Eingabeaufforderung zu Ihrem Szenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
       * [Generieren eines Szenario-Segments mit KI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
       * [Kopieren von Modulen oder Szenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
       * [Erstellen von Szenarios mit Adobe Workfront Fusion-Vorlagen](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
@@ -272,7 +273,7 @@ ht-degree: 98%
    * [Hinzufügen eines Filters zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
    * [Hinzufügen eines Webhooks zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
 * Erstellen und Verwalten von Vorlagen  {#create-and-manage-templates}
-   * [Erstellen und Verwalten von Vorlagen &#x200B;](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
+   * [Erstellen und Verwalten von Vorlagen ](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Erstellen neuer Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Erstellen von Szenarios mit Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [Anzeigen, Bearbeiten und Löschen von Vorlagen](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
