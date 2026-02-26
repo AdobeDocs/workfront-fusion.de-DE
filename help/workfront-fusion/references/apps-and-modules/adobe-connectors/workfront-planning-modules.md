@@ -4,9 +4,9 @@ description: Mit den  [!DNL Adobe Workfront Planning]  können Sie ein Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 86747ffc38fddde91352558277d40572d13ba2b0
+source-git-commit: a58a6c25751eb10365508c06ab1571ce7652d0c8
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1992'
 ht-degree: 52%
 
 ---
@@ -44,7 +44,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 +++
 
-Voraussetzungen für s#
+## Voraussetzungen
 
 Für den Zugriff auf Workfront Planning sind folgende Voraussetzungen erforderlich:
 
@@ -211,7 +211,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 
 ### Auslöser
 
-#### Ereignisse ansehen
+#### Ereignisse überwachen
 
 Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz, ein Datensatztyp oder ein Arbeitsbereich in Workfront Planning erstellt, aktualisiert oder gelöscht wird.
 
@@ -235,7 +235,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz, ein Datensatztyp 
       <td role="rowheader">[!UICONTROL Status]</td>
       <td>Wählen Sie aus, ob der alte oder der neue Status überwacht werden soll.<ul><li><p><b>[!UICONTROL Neuer Status]</b></p><p>Lösen Sie ein Szenario aus, wenn sich der Eintrag <b>in</b> einen bestimmten Wert ändert.</p></li><li><p><b>[!UICONTROL Alter Status]</b></p><p>Lösen Sie ein Szenario aus, wenn sich der Eintrag <b>von</b> einem bestimmten Wert ändert.</p></li></ul></td> 
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Arbeitsbereich]</td>
       <td>Wenn Sie Datensätze beobachten, wählen Sie die Workspace aus, die Sie auf Datensätze überwachen möchten.</td>
     </tr>
     <tr>
@@ -356,7 +356,7 @@ Dieses Aktionsmodul ruft eine Liste von Datensätzen basierend auf von Ihnen ang
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[!UICONTROL Arbeitsbereich]</p>
       </td>
       <td>Geben Sie die Workspace ein, die die zu durchsuchenden Datensätze enthält, oder ordnen Sie sie zu.</td> 
       </tr>
@@ -374,7 +374,7 @@ Dieses Aktionsmodul ruft eine Liste von Datensätzen basierend auf von Ihnen ang
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Bedingung für Filter]</p>
+        <p>[!UICONTROL-Bedingung für Filter]</p>
       </td>
       <td>Bedingung für die Filter auswählen:<ul><li><b>UND</b><p>Das Modul gibt Datensätze zurück, <b> (alle</b> der von Ihnen ausgewählten Feldwerte erfüllen.</p></li><li><b>ODER</b><p>Das Modul gibt Datensätze zurück, <b> (beliebige</b> der ausgewählten Feldwerte erfüllen.</p></li></ul></td> 
       </tr>
@@ -419,7 +419,7 @@ Diese Aktion erstellt in Workfront Planning einen einzigen Datensatz.
   </tbody>
 </table>
 
-### Löschen eines Datensatzes
+### Eintrag löschen
 
 Dieses Aktionsmodul löscht den angegebenen Datensatz in Workfront Planning.
 
@@ -472,7 +472,7 @@ Dieses Aktionsmodul ruft alle Datensätze des angegebenen Typs ab.
       <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning]</a>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Arbeitsbereich]</td>
       <td>Wählen Sie den Arbeitsbereich aus, der die abzurufenden Datensätze enthält, oder ordnen Sie ihn zu.</td>
     </tr>
     <tr>
@@ -500,7 +500,7 @@ Dieses Aktionsmodul ruft eine Liste von Datensatztypen in einem [!DNL Adobe Work
       <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning]</a>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[!UICONTROL Arbeitsbereich]</td>
       <td>Wählen Sie den Arbeitsbereich aus, der die Datensatztypen enthält, die Sie abrufen möchten, oder ordnen Sie ihn zu.</td>
     </tr>
   </tbody>
