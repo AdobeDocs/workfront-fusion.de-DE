@@ -4,9 +4,9 @@ description: Ein Vorgang in Adobe Workfront Fusion ist eine Aufgabe, die von ein
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d630251ec01f5e11bad0305a2f49fb447bf1dd1e
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '412'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,17 @@ Ein Vorgang in Adobe Workfront Fusion ist eine Aufgabe, die von einem Modul ausg
 * Im Allgemeinen wird jede erfolgreiche Ausführung von Aktionsschritten als Vorgang betrachtet.
 * Das erste Modul in einem Szenario wird nur einmal ausgeführt und immer als ein Vorgang gezählt, auch wenn kein Bundle zurückgegeben wird.
 * Wie oft die übrigen Module ausgeführt werden, hängt von der Anzahl der Bundles ab, die sie verarbeiten müssen.  Ein Durchgang eines Moduls für ein Bundle ist ein Vorgang. Eine Ausnahme bildet das Aggregator-Modul, das als ein Vorgang pro Satz von Bundles gezählt wird, die verarbeitet werden.
+* Der Wert von Vorgängen kann abweichen. Einige werden kleiner und einfacher sein, andere werden komplexer sein. Vorgänge werden für Ihre Gesamtleistung angerechnet, unabhängig davon, wie einfach oder komplex sie sein mögen.
 * Vorgänge werden bei der [!UICONTROL Finalisierung] einer Szenarioausführung gezählt.
 * Folgende Vorgänge werden **nicht** gezählt:
    * Alle Filterschritte.
    * Jede Aktion, die einen Fehler verursacht oder angehalten wird.
    * Alle Routen, die nicht ausgeführt werden, weil die Regeln der Route nicht eingehalten wurden, z. B. Ausweich- oder deaktivierte Routen.
    * Jede Aktion, die nicht ausgeführt wird, entweder weil ein Filter keine Daten durchlässt oder weil das Szenario aufgrund eines Fehlers angehalten wurde.
+
+>[!NOTE]
+>
+>Wenn Ihr Unternehmen routinemäßig versucht, mehr Vorgänge zu verwenden, als das Workfront Fusion-Paket zulässt, empfehlen wir, ein Upgrade auf das Ultimate-Paket für Automatisierung und Integration in Erwägung zu ziehen.
 
 ## Limits für Operationen
 
