@@ -4,10 +4,10 @@ description: Die Organisations- und Team-Funktionen von Adobe Workfront Fusion e
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+source-git-commit: 9cb630b713f5fac90acff54fa2034e9d65dd1611
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 2%
 
 ---
 
@@ -26,6 +26,18 @@ Anweisungen zum Erstellen eines Teams finden Sie unter [Erstellen eines Teams](/
 Workfront Fusion-Benutzer gehören einer Organisation an.
 
 Benutzer müssen einer Organisation hinzugefügt werden, bevor sie einem Team hinzugefügt werden.
+
+### Organisationsressourcen
+
+Die folgenden Ressourcen wirken sich auf die gesamte Fusion-Organisation aus und werden daher auf Organisationsebene verwaltet:
+
+* **Worker-Pools:** Ein Worker-Pool ist eine Menge von Workfront Fusion-Verarbeitungsressourcen, die einer bestimmten Organisation zugewiesen sind.
+
+  Weitere Informationen finden Sie unter [Arbeitspools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md).
+
+* **Vorgänge**: Ein Vorgang in Adobe Workfront Fusion ist eine Aufgabe, die von einem Modul ausgeführt wird.
+
+  Weitere Informationen finden Sie unter [Vorgänge](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md).
 
 ### Organisationsrollen
 
