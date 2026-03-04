@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: a5a1f8f596b55b2f1eca9d7874b5885e435b2489
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 2%
+source-wordcount: '1957'
+ht-degree: 26%
 
 ---
 
@@ -18,7 +18,7 @@ Mit dem [!DNL Airtable]-Connector für Adobe Workfront Fusion können Sie ein Sz
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -26,29 +26,29 @@ Mit dem [!DNL Airtable]-Connector für Adobe Workfront Fusion können Sie ein Sz
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -89,8 +89,10 @@ Der Airtable-Connector verwendet Folgendes:
 1. Open your account overview and generate the API key.
 -->
 1. Öffnen Sie Workfront Fusion und **Sie das Dialogfeld** Verbindung erstellen“ des gewünschten Moduls.
+1. Wählen Sie aus, ob Sie ein persönliches Zugriffstoken oder eine OAuth 2-Autorisierung verwenden.
 1. Geben Sie einen Namen für die Verbindung ein.
-1. (Optional) Klicken Sie auf Erweiterte Einstellungen anzeigen und geben Sie Ihre Airtable-Client-ID und Ihren geheimen Client-Schlüssel ein.
+1. (Bedingt) Wenn Sie ein persönliches Zugriffstoken verwenden, klicken Sie auf Erweiterte Einstellungen anzeigen und geben Sie Ihr persönliches Zugriffstoken ein.
+1. (Bedingt) Wenn Sie OAuth 2 verwenden, klicken Sie auf Erweiterte Einstellungen anzeigen und geben Sie Ihre Airtable Client ID und Ihr Client Secret ein.
 1. Klicken Sie auf **Fortfahren**, um die Verbindung herzustellen und zum Modul zurückzukehren.
 
 ## Flugfähige Module und ihre Felder
@@ -100,7 +102,7 @@ Der Airtable-Connector verwendet Folgendes:
 * [Datensatz erstellen](#create-a-record)
 * [Löschen eines Datensatzes](#delete-a-record)
 * [Datensatz abrufen](#get-a-record)
-* [Datensätze suchen](#search-records)
+* [Einträge suchen](#search-records)
 * [Aktualisieren eines Datensatzes](#update-a-record)
 * [Eintrag aktualisieren](#upsert-a-record)
 * [Einträge beobachten](#watch-records)
@@ -113,7 +115,7 @@ Dieses Aktionsmodul erstellt einen neuen Datensatz.
 
 Sie geben die Daten an, die im Datensatz gespeichert werden sollen, und legen fest, wo sie gespeichert werden sollen.
 
-Das Modul gibt alle Standardfelder zurück, die mit dem Datensatz verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
 Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
@@ -173,7 +175,7 @@ Dieses Aktionsmodul löscht einen bestimmten Datensatz.
 
 Sie geben die ID und die Speicherorte des Datensatzes an.
 
-Das Modul gibt die ID des Datensatzes und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+Das Modul gibt daraufhin die ID des Eintrags und alle zugehörigen Felder sowie alle benutzerdefinierten Felder und Werte zurück, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
 Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
@@ -194,7 +196,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie die Tabelle aus, die den Datensatz enthält, den Sie löschen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>Datensatz-ID</td> 
+   <td>Eintrags-ID</td> 
    <td> <p>Geben Sie die eindeutige Airtable-ID des Datensatzes ein, den das Modul löschen soll, oder ordnen Sie sie zu. Sie können die ID abrufen, indem Sie beispielsweise das Modul Datensätze suchen verwenden.</p> </td> 
   </tr> 
  </tbody> 
@@ -221,7 +223,7 @@ Dieses Aktionsmodul ruft Datensatzdetails ab.
    <td> <p> Wählen Sie die Tabelle aus, die den Datensatz enthält, für den Sie Details abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>Datensatz-ID</td> 
+   <td>Eintrags-ID</td> 
    <td> <p> Geben Sie die ID des Datensatzes ein, für den Sie Details abrufen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -264,8 +266,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie die Ansicht aus, nach der Sie nach Datensätzen suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>Limit</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td>Beschränkungen</td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -276,7 +278,7 @@ Dieses Aktionsmodul aktualisiert einen bestimmten Datensatz.
 
 Geben Sie die ID des Datensatzes und die neuen Daten an, die er enthalten soll.
 
-Das Modul gibt alle Standardfelder zurück, die mit dem Datensatz verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
 Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
@@ -297,7 +299,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie die Tabelle aus, die den zu aktualisierenden Datensatz enthält.</p> </td> 
   </tr> 
   <tr> 
-   <td>Datensatz-ID </td> 
+   <td>Eintrags-ID </td> 
    <td> <p>Geben Sie die eindeutige Airtable-ID des Datensatzes ein, den Sie aktualisieren möchten, oder ordnen Sie sie zu. Sie können die ID abrufen, indem Sie beispielsweise das Modul Datensätze suchen verwenden.</p> </td> 
   </tr> 
   <tr> 
@@ -340,7 +342,7 @@ Dieses Aktionsmodul aktualisiert oder fügt einen bestimmten Datensatz ein.
 
 Geben Sie die ID des Datensatzes und die neuen Daten an, die er enthalten soll.
 
-Das Modul gibt alle Standardfelder zurück, die mit dem Datensatz verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
 Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
@@ -361,7 +363,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie die Tabelle aus, die den zu aktualisierenden Datensatz enthält.</p> </td> 
   </tr> 
   <tr> 
-   <td>Datensatz-ID </td> 
+   <td>Eintrags-ID </td> 
    <td> <p>Wenn Sie einen Datensatz aktualisieren, geben Sie die eindeutige Airtable-ID des Datensatzes ein, den das Modul aktualisieren soll, oder mappen Sie sie. Sie können die ID abrufen, indem Sie beispielsweise das Modul Datensätze suchen verwenden.</p> </td> 
   </tr> 
   <tr> 
@@ -427,7 +429,7 @@ Dieses Tabellenmodul startet ein Trigger, wenn ein Datensatz in der angegebenen 
    <td> <p>Feld "Trigger"</p> <p>Ein <code>Created Time</code> oder <code>Last Modified Time</code> Feld, das zum Sortieren von Datensätzen verwendet wird. Wenn Sie in Ihrem Schema kein <code>Created Time</code>- oder <code>Last Modified Time</code> haben, müssen Sie eines erstellen. </p> <p>Titelfeld</p> <p>Ein Feld, das als Bezeichnung für einen Datensatz verwendet wird, z. B. im Dialogfeld „Startpunkt auswählen“.</p> </td> 
   </tr> 
   <tr> 
-   <td>Limit</td> 
+   <td>Beschränkungen</td> 
    <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus überwachen soll, oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
@@ -473,7 +475,7 @@ Jedes Mal, wenn das Formular übermittelt wird, wird das Modul Antworten beobach
 
 #### Benutzerdefinierter API-Aufruf
 
-Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Airtable]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, die von den anderen [!DNL Airtable] nicht durchgeführt werden kann.
+Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Airtable]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, was über die anderen [!DNL Airtable]-Module nicht möglich ist.
 
 Die Aktion basiert auf dem von Ihnen angegebenen Entitätstyp (Allocadia-Objekttyp).
 
@@ -496,7 +498,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kopfzeilen</td> 
+   <td role="rowheader">Header</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -505,7 +507,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
   <tr> 
    <td role="rowheader">Textkörper</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
