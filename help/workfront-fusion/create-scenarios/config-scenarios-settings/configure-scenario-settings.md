@@ -114,7 +114,7 @@ Weitere Informationen zu Warnungen finden Sie unter [Fehlertypen](/help/workfron
 
 ### [!UICONTROL Automatische Bestätigung]
 
-Die Einstellungen [!UICONTROL Automatische ]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
+Die Einstellungen [!UICONTROL Automatische &#x200B;]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
 
 ### Maximale Zyklenanzahl
 
@@ -127,7 +127,7 @@ Das Festlegen weiterer Zyklen kann nützlich sein, wenn Sie eine Verbindungsunte
 
 * Wenn das Szenario mit einem Abrufintervall beginnt, definiert die Einstellung die maximale Anzahl von Triggern, die während der Ausführung des Szenarios zulässig ist.
 
-  Weitere Informationen zum Abrufen von Triggern finden Sie [Abrufen von Triggern ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers) im Artikel Modulübersicht .
+  Weitere Informationen zum Abrufen von Triggern finden Sie [Abrufen von Triggern &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers) im Artikel Modulübersicht .
 
 * Wenn das Szenario mit einem sofortigen Trigger beginnt, wird die Einstellung ignoriert und alle ausstehenden Ereignisse werden während einer einzigen Szenario-Ausführung verarbeitet, ein Ereignis pro Zyklus.
 
