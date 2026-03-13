@@ -34,7 +34,7 @@ Einige Zeilen enthalten Informationen mit der Bezeichnung &quot;Neu&quot; und &q
    <td role="rowheader">Adobe Workfront-Paket 
    <td> Adobe Workfront-Pakete beziehen sich auf die von Ihrem Unternehmen erworbenen Funktionen. Die meisten Fusion-Funktionen sind in allen Plänen verfügbar. Es gibt jedoch einige Ausnahmen, die nur für Organisationen mit einem Ultimate Workfront-Paket verfügbar sind. 
    <ul><li>Wenden Sie sich an Ihren Workfront-Administrator, um herauszufinden, welches Adobe Workfront-Paket Ihr Unternehmen verwendet, einschließlich der Frage, ob Ihr Unternehmen das neue oder das aktuelle Verpackungsmodell verwendet.</li>
-   <li>Anweisungen dazu, wie ein Workfront-Administrator das Workfront-Paket Ihres Unternehmens finden kann, finden Sie unter <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">Anzeigen des Clusters Ihres Unternehmens und des Workfront-Plans</a> im Artikel Firewall Overview.</li><li>Weitere Informationen zu den neuen Workfront-Paketen finden Sie unter <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront-Preise und -Pakete</a>.</li></ul> </td> 
+   <li>Anweisungen dazu, wie ein Workfront-Administrator das Workfront-Paket Ihres Unternehmens finden kann, finden Sie unter <a href="https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">Anzeigen des Clusters Ihres Unternehmens und des Workfront-Plans</a> im Artikel Firewall Overview.</li><li>Weitere Informationen zu den neuen Workfront-Paketen finden Sie unter <a href="https://business.adobe.com/de/products/workfront/pricing.html">Adobe Workfront-Preise und -Pakete</a>.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Lizenz</td> 
@@ -43,9 +43,9 @@ Einige Zeilen enthalten Informationen mit der Bezeichnung &quot;Neu&quot; und &q
    <li>Wenden Sie sich an Ihren Workfront-Administrator, um herauszufinden, welcher Lizenz Sie zugewiesen sind.</li>
    <li>Adobe Workfront stellt auf ein neues Preis- und Verpackungsmodell um. Informationen zu Lizenzen finden Sie unter:
    <ul>
-   <li>Neu: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Neue Lizenzen - Übersicht</a></li>
-   <li>Aktuell: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Übersicht über Lizenzen</a></li></ul></li>
-   <li>Wenn Sie über die richtige Zugriffsebene verfügen und immer noch keinen Zugriff haben, fragen Sie Ihren Workfront-Administrator, ob er zusätzliche Einschränkungen in Ihrer Zugriffsebene festgelegt hat. Weitere Informationen dazu, wie ein Workfront-Administrator Ihre Zugriffsebene ändern kann, finden Sie unter <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">Benutzerdefinierte Zugriffsebenen erstellen und ändern</a>.
+   <li>Neu: <a href="https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">Neue Lizenzen - Übersicht</a></li>
+   <li>Aktuell: <a href="https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Übersicht über Lizenzen</a></li></ul></li>
+   <li>Wenn Sie über die richtige Zugriffsebene verfügen und immer noch keinen Zugriff haben, fragen Sie Ihren Workfront-Administrator, ob er zusätzliche Einschränkungen in Ihrer Zugriffsebene festgelegt hat. Weitere Informationen dazu, wie ein Workfront-Administrator Ihre Zugriffsebene ändern kann, finden Sie unter <a href="https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">Benutzerdefinierte Zugriffsebenen erstellen und ändern</a>.
    </ul>
       </p> </td> 
   </tr> 
