@@ -1,17 +1,17 @@
 ---
-title: Router-Modul hinzufügen und Routen konfigurieren
+title: Hinzufügen eines Router-Moduls und Konfigurieren von Routen
 description: Mit dem Router-Modul können Sie Ihren Fluss in mehrere Routen verzweigen und die Daten innerhalb jeder Route unterschiedlich verarbeiten. Sobald ein Router-Modul ein Bundle erhält, leitet es es es an jede angeschlossene Route in der Reihenfolge weiter, in der die Routen an das Router-Modul angehängt wurden.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 0%
+source-wordcount: '891'
+ht-degree: 13%
 
 ---
 
-# Router-Modul hinzufügen und Routen konfigurieren
+# Hinzufügen eines Router-Moduls und Konfigurieren von Routen
 
 Mit dem Modul Router können Sie Ihr Szenario in mehrere Routen verzweigen und die Daten innerhalb jeder Route unterschiedlich verarbeiten. Wenn ein Router-Modul ein Bundle erhält, leitet es es es an jede angeschlossene Route in der Reihenfolge weiter, in der die Routen an das Router-Modul angehängt wurden.
 
@@ -20,7 +20,7 @@ Routen werden sequenziell verarbeitet, nicht parallel. Ein Bundle wird erst dann
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -28,22 +28,22 @@ Routen werden sequenziell verarbeitet, nicht parallel. Ein Bundle wird erst dann
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -54,12 +54,11 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Router hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
-1. Klicken Sie im Szenario-Editor auf den rechten Griff des Moduls, nach dem Sie den Router hinzufügen möchten.
-1. Wählen Sie **[!UICONTROL Flusssteuerung]** > **Router** in der angezeigten Modulliste aus.
+1. Klicken Sie im Szenario-Editor auf den rechten Griff des Moduls, nach dem Sie den Router hinzufügen möchten, und wählen Sie dann **[!UICONTROL Flusssteuerung]** > **Router** in der angezeigten Modulliste.
 
    ![Route verbinden](assets/connect-the-router-350x108.png)
 
-   Oder
+   ODER
 
    Um das Router-Modul zwischen zwei Modulen einzufügen, klicken Sie auf das Schraubenschlüssel-Symbol unter der Route, die die beiden Module verbindet, und wählen Sie **[!UICONTROL Router hinzufügen]** aus dem Menü.
 
@@ -69,7 +68,11 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 
    Sie können beliebig viele Routen hinzufügen.
 
-1. Um die Reihenfolge der Routen zu überprüfen, klicken Sie auf das Symbol für die automatische Ausrichtung ![Symbol für die automatische Ausrichtung](assets/auto-align.png).
+1. Um die Reihenfolge der Routen zu überprüfen, überprüfen Sie das Label für jede Route. Route 1 wird zuerst ausgeführt, dann Route 2 usw.
+
+   Oder
+
+   Klicken Sie auf das Symbol für die automatische Ausrichtung ![Symbol für die automatische Ausrichtung](assets/auto-align.png).
 
    Die Routen sind in der Reihenfolge ihrer Ausführung angeordnet. Die Top-Route wird zuerst ausgeführt.
 
@@ -84,6 +87,8 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 Sie können nach dem Router-Modul einen Filter für eine Route einfügen, um Pakete zu filtern. Nur Bundles, die den Filter durchlaufen, werden von den Modulen auf der Route verarbeitet.
 
 Wenn Daten den Filter mehrerer Routen übergeben, werden die Daten von beiden Routen verarbeitet. Die Top-Route verarbeitet die Daten zuerst.
+
+Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) ](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
@@ -102,6 +107,8 @@ Wenn Daten den Filter mehrerer Routen übergeben, werden die Daten von beiden Ro
 ## Fallback-Route konfigurieren
 
 Die Fallback-Route ist die Route, die für alle Bundles ausgeführt wird, die keinen Filter an eine andere Route übergeben.
+
+Fallback-Routen zeigen auf dem Titel „Fallback“ an.
 
 Sie können im Filterbedienfeld eine Ausweichroute aktivieren.
 
