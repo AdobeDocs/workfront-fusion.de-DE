@@ -88,7 +88,7 @@ Sie können nach dem Router-Modul einen Filter für eine Route einfügen, um Pak
 
 Wenn Daten den Filter mehrerer Routen übergeben, werden die Daten von beiden Routen verarbeitet. Die Top-Route verarbeitet die Daten zuerst.
 
-Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) ](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
+Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) &#x200B;](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
