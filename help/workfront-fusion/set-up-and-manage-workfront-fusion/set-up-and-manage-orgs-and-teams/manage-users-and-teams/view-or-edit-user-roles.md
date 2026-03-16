@@ -4,10 +4,10 @@ description: Verwalten von Adobe Workfront Fusion-Benutzern in Ihrer Organisatio
 author: Becky
 feature: Workfront Fusion
 exl-id: 32c221fa-856b-4921-9fa6-5e60f2aa08cd
-source-git-commit: 88d7a92a4b117d10ab114e32ab5e61f03bc5a846
+source-git-commit: 3f9390d8947ef2666336c1a4cc6eab8d174849d5
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 25%
+source-wordcount: '516'
+ht-degree: 18%
 
 ---
 
@@ -64,23 +64,19 @@ Adobe Workfront Fusion-Administratoren können Benutzerrollen für ein Unternehm
 1. Klicken Sie **[!UICONTROL Details]** in der Zeile des Benutzers, den Sie anzeigen möchten.
 1. (Optional) Um die Rolle des Benutzers in einer Organisation zu aktualisieren, klicken Sie auf das Dropdown-Menü in der Spalte **[!DNL Role]** in der Zeile der Organisation, in der Sie die Rolle des Benutzers ändern möchten, und wählen Sie dann die neue Rolle aus.
 
-<!--
+### Überlegungen beim Hinzufügen oder Ändern von Organisationseigentümern
 
-### Considerations when adding or changing organization Owners
+Ihr Unternehmen kann über mehr als einen Eigentümer verfügen.
 
-Your organization can have more than one Owner. 
+Beachten Sie beim Zuweisen eines Benutzers zu oder von einer Eigentümerrolle Folgendes.
 
-When assigning a user to or from an Owner role, consider the following. 
-
-* Only an Owner can assign the Owner role, or assign another role to a current Owner.
-* Only Admins can be upgraded to Owner.
-* If there is only one Owner, that Owner role cannot be changed or removed.
-* If there is only one Owner, that Owner cannot be deleted if there are other users in the organization.
-* When an Admin is assigned an Owner role, they automatically become Admin in all teams within the org.
-* When an Owner is assigned to another role, that user automatically becomes a Team Member in all teams.
-* When a new team is created, all Owners are automatically assigned as Team Admins.
-
--->
+* Nur ein Inhaber kann die Rolle „Inhaber“ zuweisen oder einem aktuellen Inhaber eine andere Rolle zuweisen.
+* Nur Administratoren können ein Upgrade auf Inhaber durchführen.
+* Wenn es nur einen Eigentümer gibt, kann diese Eigentümerrolle nicht geändert oder entfernt werden.
+* Wenn nur ein Eigentümer vorhanden ist, kann dieser nicht gelöscht werden, wenn andere Benutzer in der Organisation vorhanden sind.
+* Wenn Admins die Rolle „Eigentümer“ zugewiesen wird, werden sie automatisch zu Admins in allen Teams innerhalb der Organisation.
+* Wenn ein Eigentümer einer anderen Rolle zugewiesen wird, wird dieser Benutzer automatisch in allen Teams zum Team-Mitglied.
+* Wenn ein neues Team erstellt wird, werden alle Eigentümer automatisch als Team-Admins zugewiesen.
 
 ## Anzeigen oder Bearbeiten von Benutzerrollen für ein Team
 
