@@ -84,7 +84,7 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 
    Deaktivierte Routen zeigen graue Punkte, die vom Router zum ersten Modul auf der Route führen, und zeigen das Symbol für deaktivierte Routen ![Symbol für deaktivierte Routen](assets/disabled-route-icon.png) auf dem Titel an.
 
-1. (Optional und bedingt) Um eine deaktivierte Route zu aktivieren, klicken Sie auf das Symbol „Deaktivierte Route![ auf ](assets/disabled-route-icon.png) Routenbeschriftung.
+1. (Optional und bedingt) Um eine deaktivierte Route zu aktivieren, klicken Sie auf das Symbol „Deaktivierte Route![&#x200B; auf &#x200B;](assets/disabled-route-icon.png) Routenbeschriftung.
 1. Fahren Sie fort [Filter zu einer Route hinzufügen](#add-a-filter-to-a-route).
 
 ## Hinzufügen eines Filters zu einer Route
@@ -93,7 +93,7 @@ Sie können nach dem Router-Modul einen Filter für eine Route einfügen, um Pak
 
 Wenn Daten den Filter mehrerer Routen übergeben, werden die Daten von beiden Routen verarbeitet. Die Top-Route verarbeitet die Daten zuerst.
 
-Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) ](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
+Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) &#x200B;](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
