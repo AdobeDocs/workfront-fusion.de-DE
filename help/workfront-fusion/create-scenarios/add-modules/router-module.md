@@ -4,10 +4,10 @@ description: Mit dem Router-Modul können Sie Ihren Fluss in mehrere Routen verz
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: c93a342c2300c5a008a95f180dfebd3abaeb95d0
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 13%
+source-wordcount: '984'
+ht-degree: 11%
 
 ---
 
@@ -80,6 +80,11 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 
    ![Bestellroute](assets/order-routes.png)
 
+1. (Optional) Um eine Route zu deaktivieren, klicken Sie mit der rechten Maustaste auf die Punkte, die vom Router zu dieser Route führen, und wählen Sie **Route deaktivieren**.
+
+   Deaktivierte Routen zeigen graue Punkte, die vom Router zum ersten Modul auf der Route führen, und zeigen das Symbol für deaktivierte Routen ![Symbol für deaktivierte Routen](assets/disabled-route-icon.png) auf dem Titel an.
+
+1. (Optional und bedingt) Um eine deaktivierte Route zu aktivieren, klicken Sie auf das Symbol „Deaktivierte Route![ auf ](assets/disabled-route-icon.png) Routenbeschriftung.
 1. Fahren Sie fort [Filter zu einer Route hinzufügen](#add-a-filter-to-a-route).
 
 ## Hinzufügen eines Filters zu einer Route
@@ -88,7 +93,7 @@ Sie können nach dem Router-Modul einen Filter für eine Route einfügen, um Pak
 
 Wenn Daten den Filter mehrerer Routen übergeben, werden die Daten von beiden Routen verarbeitet. Die Top-Route verarbeitet die Daten zuerst.
 
-Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) &#x200B;](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
+Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) ](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
@@ -101,6 +106,7 @@ Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) &#x200B;](assets/fusi
    Weitere Informationen finden Sie unter [Hinzufügen eines Filters zu einem Szenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Klicken Sie **[!UICONTROL OK]**, um die Filtereinstellungen zu speichern.
+1. (Bedingt) Wenn der Filtername zu lang ist, um in die Beschriftung zu passen, bewegen Sie den Mauszeiger über die Beschriftung, um den gesamten Namen anzuzeigen.
 
 1. Fahren Sie mit [Konfigurieren einer Ausweichroute](#configure-a-fallback-route) fort.
 
