@@ -4,10 +4,10 @@ description: Ein Datenspeicher, ähnlich einer Datenbank oder einer einfachen Ta
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: b59532d96d64f77c04d31d03f6ae5addf15c0dd7
+source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 1%
+source-wordcount: '1356'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ Mit den Datenspeichermodulen können Sie die folgenden Aktionen für Datensätze
 
 * Hinzufügen
 * Ersetzen
-* Update
+* Aktualisieren
 * abrufen
 * Löschen
 * Suchen
@@ -33,7 +33,7 @@ Eine Videoeinführung zu Datenspeichern in Workfront Fusion finden Sie unter:
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -41,22 +41,22 @@ Eine Videoeinführung zu Datenspeichern in Workfront Fusion finden Sie unter:
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -114,7 +114,7 @@ Bevor Sie einen Datenspeicher in einem Modul verwenden können, müssen Sie den 
       <td> <p>Geben Sie einen Namen für den Datenspeicher ein. </p> </td> 
      </tr> 
      <tr> 
-      <td> <p>[!UICONTROL -Datenstruktur]</p> </td> 
+      <td> <p>[!UICONTROL-Datenstruktur]</p> </td> 
       <td> <p>Eine Datenstruktur ist eine Liste der Spalten für eine Tabelle. Diese Liste gibt den Spaltennamen und den Datentyp an.</p> <p>Führen Sie einen der folgenden Schritte aus:</p> 
        <ul> 
         <li><b>Eine bereits erstellte Datenstruktur auswählen</b></li> 
@@ -131,7 +131,7 @@ Bevor Sie einen Datenspeicher in einem Modul verwenden können, müssen Sie den 
 
 ### Einrichten der Datenstruktur
 
-1. Klicken Sie beim Erstellen oder Bearbeiten eines Datenspeichers auf **[!UICONTROL Hinzufügen]**.
+1. Klicken Sie beim Erstellen oder Bearbeiten eines Datenspeichers **[!UICONTROL Hinzufügen]** neben dem Feld Datenstruktur .
 1. Konfigurieren **[!UICONTROL im angezeigten Feld]** Datenstruktur hinzufügen“ die folgenden Felder:
 
    <table style="table-layout:auto">
@@ -184,10 +184,10 @@ Sie können die Eigenschaften und Inhalte eines vorhandenen Datenspeichers im Be
 Zu den Eigenschaften eines Datenspeichers gehören die Datenstruktur, die der Datenspeicher verwendet, sowie die Größe des Datenspeichers.
 
 1. Klicken Sie **[!UICONTROL linken]** auf ![Datenspeicher](assets/data-store-icon.png), um den Bereich [!UICONTROL Datenspeicher] zu öffnen.
-1. Klicken Sie **[!UICONTROL Bearbeiten]** ![Datenspeicher bearbeiten](assets/data-store-edit.png) neben dem Datenspeicher, den Sie bearbeiten möchten.
+1. Aktivieren Sie das Kontrollkästchen neben dem Datenspeicher, den Sie bearbeiten möchten, und klicken Sie dann **Bearbeiten** im Banner unten auf dem Bildschirm.
 1. (Optional) Wenn Sie die von diesem Datenspeicher verwendete Datenstruktur in eine andere vorhandene Datenstruktur ändern möchten, wählen Sie sie aus der **[!UICONTROL Datenstruktur]** aus.
 
-   Oder
+   ODER
 
    (Optional) Wenn Sie die von diesem Datenspeicher verwendete Datenstruktur in eine völlig neue Datenstruktur ändern möchten, finden Sie weitere Informationen unter [Einrichten der Datenstruktur](#set-up-the-data-structure) in diesem Artikel.
 
@@ -197,10 +197,9 @@ Zu den Eigenschaften eines Datenspeichers gehören die Datenstruktur, die der Da
 ### Bearbeiten des Inhalts eines Datenspeichers
 
 1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Datenspeicher]**-Symbol ![Datenspeicher](assets/data-store-icon.png), um den Bereich [!UICONTROL Datenspeicher] zu öffnen.
-1. Klicken Sie **[!UICONTROL Durchsuchen]** neben dem Datenspeicher, den Sie bearbeiten möchten.
-1. (Optional) Sortieren Sie die Spalten neu, indem Sie sie an die gewünschte Position ziehen.
-1. (Optional) [!UICONTROL Bearbeiten] Sie eine einzelne Zelle, indem Sie auf das **[!UICONTROL Bearbeiten]**-Symbol in dieser Zelle klicken und dann den gewünschten Wert eingeben.
+1. Aktivieren Sie das Kontrollkästchen neben dem Datenspeicher, den Sie bearbeiten möchten, und klicken Sie dann **Durchsuchen** im Banner unten auf dem Bildschirm.
 1. (Optional) Fügen Sie dem Datenspeicher ein neues Element hinzu, indem Sie auf **[!UICONTROL Hinzufügen]** klicken und dann die Informationen für das neue Element eingeben.
+1. (Optional) Löschen Sie ein oder mehrere Elemente aus dem Datenspeicher, indem Sie auf das Kontrollkästchen für dieses Element und dann auf **Ausgewählte löschen** oder **Alle löschen** in der oberen rechten Ecke des Bildschirms klicken.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Fehlerbehebung
@@ -224,7 +223,7 @@ Es gibt derzeit kein Tool, das die Wiederherstellung verlorener Daten automatisi
 
    Informationen zum Einfügen von Daten in einen Datenspeicher finden Sie unter [Bearbeiten des Inhalts eines Datenspeichers](#edit-the-contents-of-a-data-store) in diesem Artikel.
 
-### [!UICONTROL Unzureichender &#x200B;])
+### [!UICONTROL Unzureichender ])
 
 Ein [!UICONTROL Speicherplatzmangel] tritt auf, weil den zuvor erstellten Datenspeichern bereits der zugewiesene Datenspeicher zugewiesen wurde.
 
