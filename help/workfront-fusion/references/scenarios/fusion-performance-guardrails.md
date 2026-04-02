@@ -4,10 +4,10 @@ description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, we
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: c41cc27660b15824a560c770ace663739dccdfa2
+source-git-commit: d2bc26f26af530e3d770faba47d24e1d4f73b73d
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 96%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -72,6 +72,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 ## Ausführungsverlauf
 
 * Ausführungsverlaufsprotokolle sind auf eine Größe von **100 MB** beschränkt. Wenn der Ausführungsverlauf diese Größe überschreitet, werden nur die ersten 100 MB angezeigt.
+* Wenn die Ein- oder Ausgabe eines einzelnen Vorgangs größer als 15 MB ist, wird sie nicht im Ausführungsverlauf angezeigt.
 * Wenn ein Szenario mehrere gleichzeitige Ausführungen aufweist, werden auf der Detailseite des Szenarios im Bereich „Ausführungen“ nur 5 Ausführungen angezeigt. Dies gilt auch bei mehr als 5 aktiven Ausführungen.
 
 ## Unvollständige Ausführungen
