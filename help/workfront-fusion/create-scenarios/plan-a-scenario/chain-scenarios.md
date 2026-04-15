@@ -4,14 +4,14 @@ description: Sie können Szenarien miteinander verketten, sodass ein Szenario ei
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
+source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 0%
+source-wordcount: '1267'
+ht-degree: 12%
 
 ---
 
-# Verketten mehrerer Szenarien
+# Verketten mehrerer Szenarios
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Beachten Sie beim Verketten eines Szenarios die folgenden Best Practices.
 
 ### Vermeiden von Rekursionen bei der Verkettung von Szenarien
 
-Rekursionen treten auf, wenn in einem Szenario eine neue Ausführung von sich selbst in Trigger gesetzt wird, wodurch eine neue Ausführung in einer Endlosschleife Trigger wird usw.
+Rekursionen treten auf, wenn ein Szenario sich selbst neu auslöst, wodurch eine neue Ausführung in einer Endlosschleife ausgelöst wird.
 
 Rekursionen können Leistungsprobleme sowohl für die Organisation, der das rekursive Szenario gehört, als auch für andere Organisationen verursachen.
 
@@ -96,12 +96,14 @@ Gehen Sie beim Verketten von Szenarien wie folgt vor, um Rekursionen zu vermeide
 
 * Stellen Sie sicher **dass das übergeordnete Szenario nicht durch untergeordnete Szenarien Trigger werden kann**. Wenn beispielsweise ein übergeordnetes Szenario ausgelöst wird, wenn eine Anfrage erstellt wird, stellen Sie sicher, dass die untergeordneten Szenarien keine Anfragen erstellen.
 * Stellen Sie sicher **dass sich untergeordnete Szenarien nicht gegenseitig**. Wenn beispielsweise untergeordnetes Szenario A untergeordnetes Szenario B aufruft, stellen Sie sicher, dass untergeordnetes Szenario B nicht untergeordnetes Szenario A aufruft.
-* Stellen Sie sicher **dass ein Szenario sich nicht selbst aufrufen**. Beispielsweise wird ein Szenario ausgelöst, wenn eine Aufgabe erstellt wird, und dieses Szenario erstellt zwei Aufgaben. Bei den neu erstellten Aufgaben wird das Szenario erneut Trigger, sodass vier neue Aufgaben erstellt werden. Bei jeder Erstellung einer Aufgabe wird das Szenario ausgelöst und bei jeder Ausführung des Szenarios verdoppelt sich die Anzahl der Aufgaben. Die Anzahl der Aufgaben steigt exponentiell.
+* Stellen Sie sicher **dass ein Szenario sich nicht selbst aufrufen**. Beispielsweise wird ein Szenario ausgelöst, wenn eine Aufgabe erstellt wird und dieses Szenario zwei Aufgaben erstellt. Bei den neu erstellten Aufgaben wird das Szenario erneut ausgelöst, sodass vier neue Aufgaben erstellt werden. Bei jeder Erstellung einer Aufgabe wird das Szenario ausgelöst und bei jeder Ausführung des Szenarios verdoppelt sich die Anzahl der Aufgaben. Die Anzahl der Aufgaben steigt exponentiell.
 
 >[!IMPORTANT]
 >
->* **Wenn ein Szenario eine Rekursion verursacht, wird es vom Fusion Engineering-Team deaktiviert, um weitere Leistungsprobleme zu vermeiden.**
->* Da die Rekursion ein Ergebnis des Szenario-Designs ist, müssen Sie Ihre Szenarien so entwerfen, dass das Szenario keine das Szenario Trigger Aktionen enthält.
+>* **Wenn ein Szenario eine Rekursion verursacht, wird es vom Fusion-Engineering-Team deaktiviert, um weitere Leistungsprobleme zu verhindern.**
+>* Da die Rekursion ein Ergebnis des Szenario-Designs ist, müssen Sie Ihre Szenarios so entwerfen, dass das Szenario keine Aktionen umfasst, die das Szenario auslösen.
+>* Sie können ein Diagramm der Beziehungen zwischen übergeordneten und untergeordneten Szenarien anzeigen.
+>   Anweisungen finden Sie unter [Anzeigen verketteter Szenariobeziehungen](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
 ### Verwenden der Fehlerbehandlung, um eine Antwort sicherzustellen
 

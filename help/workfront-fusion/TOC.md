@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
+source-git-commit: 6885e29b3b14d97bebcb046d86e204bd2fdfbace
 workflow-type: tm+mt
-source-wordcount: '2091'
+source-wordcount: '2104'
 ht-degree: 97%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 97%
 * Fusion-Veröffentlichungen {#fusion-release-activity}
    * [Adobe Workfront Fusion-Veröffentlichungen](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion-Versionen 2026 {#fusion-releases-2026}
+      * [Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 13. April 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 30. März 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 23. März 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
       * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 16. März 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
@@ -266,6 +267,7 @@ ht-degree: 97%
    * [Anzeigen und Lösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
    * [Anzeigen des Ausführungsverlaufs eines Szenarios](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
    * [Anzeigen einer bestimmten Szenario-Ausführung](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
+   * [Anzeigen und Verwalten verketteter Szenariobeziehungen](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
    * [Anzeigen des Datenflusses in einem laufenden Szenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [Anzeigen der Warteschlange eines Webhooks](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
    * [KI-Assistent in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
@@ -280,7 +282,7 @@ ht-degree: 97%
    * [Hinzufügen eines Filters zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
    * [Hinzufügen eines Webhooks zu einem Basisszenario](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
 * Erstellen und Verwalten von Vorlagen  {#create-and-manage-templates}
-   * [Erstellen und Verwalten von Vorlagen &#x200B;](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
+   * [Erstellen und Verwalten von Vorlagen ](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
    * [Erstellen neuer Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
    * [Erstellen von Szenarios mit Vorlagen](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
    * [Anzeigen, Bearbeiten und Löschen von Vorlagen](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
