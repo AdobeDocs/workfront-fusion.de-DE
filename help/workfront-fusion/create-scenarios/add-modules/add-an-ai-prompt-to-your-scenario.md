@@ -3,9 +3,10 @@ title: Hinzufügen einer KI-Eingabeaufforderung zu Ihrem Szenario
 description: Sie können in Ihr Szenario eine KI-Eingabeaufforderung einfügen, die eine Verbindung zu Ihrem
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 09e8ca28c12990a699816671d07f85288d973bc7
+exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,12 +14,6 @@ ht-degree: 0%
 # Hinzufügen einer KI-Eingabeaufforderung zu Ihrem Szenario
 
 Sie können eine KI-Eingabeaufforderung in Ihr Szenario einfügen, indem Sie das Model Context Protocol (MCP) in Kombination mit großen Sprachmodellen (LLMs) verwenden. Wenn Sie diese im MCP Agent-Modul konfigurieren, können Sie mit künstlicher Intelligenz Workflows einrichten, die effizient, sicher und flexibel sind.
-
->[!NOTE]
->
->Diese Funktion ist unabhängig von der Möglichkeit, einem Szenario mithilfe von KI Module hinzuzufügen.
->
->Informationen zum Hinzufügen von Modulen mit KI finden Sie unter [Generieren eines Szenario-Segments mit KI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md).
 
 ## Übersicht über das Modell-Kontextprotokoll
 
