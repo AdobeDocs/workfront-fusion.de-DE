@@ -1,19 +1,20 @@
 ---
-title: 'Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 23. August 2021'
-description: 'Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 23. August 2021'
+title: 'Workfront Fusion-Veröffentlichungsaktivität: Woche vom 23. August 2021'
+description: 'Workfront Fusion-Veröffentlichungsaktivität: Woche vom 23. August 2021'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: c670b466-1203-4530-94ab-b572326369da
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 41%
+source-wordcount: '203'
+ht-degree: 32%
 
 ---
 
-# Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 23. August 2021
+# Workfront Fusion-Veröffentlichungsaktivität: Woche vom 23. August 2021
 
 Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom Dienstag, 23. August 2021 vorgenommen wurden.
 

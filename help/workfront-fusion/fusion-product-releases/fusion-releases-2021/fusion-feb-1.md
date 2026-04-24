@@ -8,11 +8,12 @@ description: Auf dieser Seite werden alle Verbesserungen beschrieben, die in Ado
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: ce0c1c62-d012-4bc2-8d73-69893c1be8da
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 48%
+source-wordcount: '201'
+ht-degree: 52%
 
 ---
 
