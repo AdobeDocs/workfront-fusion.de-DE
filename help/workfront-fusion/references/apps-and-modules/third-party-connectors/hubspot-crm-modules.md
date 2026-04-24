@@ -141,7 +141,7 @@ Dieses Suchmodul sucht nach CRM-Objekten anhand benutzerdefinierter Eigenschafte
    <td role="rowheader">[!UICONTROL Filtern nach] </td> 
    <td> <p>Bitte auswählen, wie die Suche gefiltert werden soll</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Abfrage eingeben oder zuordnen</p> </li> 
+     <li> <p><strong>[!UICONTROL -Abfrage]</strong> </p> <p>Abfrage eingeben oder zuordnen</p> </li> 
      <li> <p><strong>[!UICONTROL Eigenschaften]</strong> </p> <p>Geben Sie die Gruppen oder Filter für Ihre Suche ein.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -673,7 +673,7 @@ Ruft mithilfe der Suchabfrage eine Liste von Kontakten ab.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL HubSpot CRM]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
    <td>Geben Sie die Suchanfrage ein.</td> 
   </tr> 
   <tr> 
@@ -1199,7 +1199,7 @@ Um einen Webhook für dieses Modul zu erstellen, klicken Sie **Hinzufügen** neb
    <td>Geben Sie die Anwendungs-ID ein, die Sie für diesen Webhook verwenden möchten. Die ID finden Sie in Ihrem HubSpot-Entwicklerportal.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Abonnements]</td> 
+   <td role="rowheader">[!UICONTROL -Abonnements]</td> 
    <td> <p>Klicken Sie für jeden Benachrichtigungstyp, den Sie überwachen möchten, auf <b>Element hinzufügen</b> und wählen Sie den Abonnementtyp aus.</p> </td> 
   </tr> 
   <tr> 
