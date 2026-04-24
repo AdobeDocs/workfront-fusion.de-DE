@@ -181,7 +181,7 @@ ht-degree: 94%
    * Überblick über Lizenzierung und Vorgänge {#licensing-and-operations-overviews}
       * [Überblick über Lizenzierung und Vorgänge](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
-      * [ Vorgänge](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+      * [&#x200B; Vorgänge](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
         [Arbeitspools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * Einrichten und Verwalten von Organisationen und Teams {#set-up-and-manage-orgs-and-teams}
       * [Einrichten und Verwalten von Organisationen und Teams: Artikelindex](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
