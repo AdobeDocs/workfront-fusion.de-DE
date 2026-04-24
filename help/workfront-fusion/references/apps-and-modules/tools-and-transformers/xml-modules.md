@@ -4,10 +4,10 @@ description: Die XML-App ermöglicht es, einen im XML-Format formatierten Text m
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '1433'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ Die [!UICONTROL XML]-App ermöglicht es, einen im XML-Format formatierten Text �
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,22 +25,22 @@ Die [!UICONTROL XML]-App ermöglicht es, einen im XML-Format formatierten Text �
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -55,13 +55,13 @@ Das Modul [!UICONTROL XML] > [!UICONTROL XML erstellen] konvertiert ein Bundle i
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Datenstruktur]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Datenstruktur]</p> </td> 
    <td> <p>Die Datenstruktur beschreibt die Struktur der resultierenden XML. Wenn Sie über ein Beispiel für die XML verfügen, die Sie erstellen möchten, können Sie damit die Datenstruktur generieren:</p> 
     <ol> 
-     <li value="1">Klicken Sie auf die Schaltfläche <strong>Hinzufügen</strong>.</li> 
+     <li value="1">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Hinzufügen</strong>.</li> 
      <li value="2">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Generator]</strong>.</li> 
      <li value="3">Kopieren Sie das XML-Beispiel und fügen Sie es in das Feld Beispieldaten ein.</li> 
-     <li value="4">Klicken Sie auf die Schaltfläche <strong>Speichern</strong>.</li> 
+     <li value="4">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Speichern</strong>.</li> 
      <li value="5">Stellen Sie sicher, dass die Datenstruktur erfolgreich generiert wurde.</li> 
      <li value="6">Klicken Sie auf <strong>[!UICONTROL Speichern]</strong>, um die Datenstruktur zu speichern.</li> 
     </ol> </td> 
@@ -91,7 +91,7 @@ Das Modul [!UICONTROL XML] > [!UICONTROL XML erstellen] konvertiert ein Bundle i
 
 Ein typischer Anwendungsfall besteht darin, Daten aus einer [!DNL Google] > Tabelle in XML umzuwandeln.
 
-1. Platzieren Sie das Modul [!DNL Google Sheets] > [!UICONTROL Zeilen auswählen] in Ihrem Szenario, um die Daten abzurufen. Richten Sie das -Modul ein, um Zeilen aus Ihrer [!DNL Google] Tabelle abzurufen. Legen Sie &#x200B;**[!UICONTROL Maximale Anzahl der zurückgegebenen Zeilen]** auf eine kleine Anzahl fest, die zu Testzwecken jedoch größer als 1 ist (z. B. drei). Führen Sie das [!DNL Google Sheets] Modul aus, indem Sie mit der rechten Maustaste darauf klicken und &quot;**[!UICONTROL Nur dieses Modul ausführen]** auswählen. Überprüfen Sie die Ausgabe des Moduls.
+1. Platzieren Sie das Modul [!DNL Google Sheets] > [!UICONTROL Zeilen auswählen] in Ihrem Szenario, um die Daten abzurufen. Richten Sie das -Modul ein, um Zeilen aus Ihrer [!DNL Google] Tabelle abzurufen. Legen Sie die **[!UICONTROL Maximale Anzahl an zurückgegebenen Zeilen]** auf eine kleine Zahl fest, die zu Testzwecken jedoch größer als 1 ist (z. B. drei). Führen Sie das [!DNL Google Sheets] Modul aus, indem Sie mit der rechten Maustaste darauf klicken und &quot;**[!UICONTROL Nur dieses Modul ausführen]** auswählen. Überprüfen Sie die Ausgabe des Moduls.
 1. Verbinden Sie das [!UICONTROL Array Aggregator]-Modul nach dem [!DNL Google Sheets]. Wählen Sie im Setup des Moduls das [!DNL Google Sheets] im Feld **[!UICONTROL Source-Knoten]** aus. Lassen Sie die anderen Felder so, wie sie für den Moment sind.
 1. Verbinden Sie das Modul [!UICONTROL XML] > [!UICONTROL XML erstellen] nach dem Modul [!UICONTROL Array Aggregator].
 
@@ -157,10 +157,10 @@ Das Modul [!UICONTROL XML] > [!UICONTROL Parse XML] analysiert einen XML-formati
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Datenstruktur]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Datenstruktur]</p> </td> 
    <td> <p>Die Datenstruktur beschreibt die Struktur der XML, um die Ausgabe des Moduls im Zuordnungsbereich für die folgenden Module verfügbar zu machen.</p> <p>Wenn Sie über ein Beispiel für die XML verfügen, die Sie parsen möchten, können Sie sie zum Generieren der Datenstruktur verwenden:</p> 
     <ol> 
-     <li value="1">Klicken Sie auf die Schaltfläche <strong>Hinzufügen</strong>.</li> 
+     <li value="1">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Hinzufügen</strong>.</li> 
      <li value="2">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Generator]</strong>.</li> 
      <li value="3">Kopieren Sie das XML-Beispiel und fügen Sie es in das Feld <strong>[!UICONTROL Beispieldaten]</strong> ein.</li> 
      <li value="4">Klicken Sie auf <strong>[!UICONTROL Speichern]</strong>.</li> 
@@ -186,7 +186,7 @@ Das Modul [!UICONTROL XML] > [!UICONTROL Parse XML] analysiert einen XML-formati
 So laden Sie eine XML-Datei von einer URL herunter und analysieren ihren Inhalt:
 
 1. Erstellen Sie ein neues Szenario.
-1. Fügen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL Datei &#x200B;]&quot; hinzu
+1. Fügen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL Datei ]&quot; hinzu
 1. Öffnen Sie die -Konfiguration des Moduls und konfigurieren Sie sie wie folgt:
 
    **URL**: URL der XML-Datei (z. B. `https://siftrss.com/f/rqLy05ayMBJ`)
@@ -201,10 +201,10 @@ So laden Sie eine XML-Datei von einer URL herunter und analysieren ihren Inhalt:
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Datenstruktur]</td> 
+      <td role="rowheader">[!UICONTROL-Datenstruktur]</td> 
       <td> 
        <ol> 
-        <li value="1">Klicken Sie auf die Schaltfläche <strong>Hinzufügen</strong>.</li> 
+        <li value="1">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Hinzufügen</strong>.</li> 
         <li value="2">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Generator]</strong>.</li> 
         <li value="3">Öffnen Sie in Ihrem Webbrowser eine neue Registerkarte oder ein neues Fenster.</li> 
         <li value="4">Fügen Sie die im dritten Schritt verwendete URL in die Adressleiste ein und rufen Sie die XML-Datei ab.</li> 
@@ -245,6 +245,6 @@ wird in dieses Bundle konvertiert:
 
 >[!ENDSHADEBOX]
 
-## Fehlerbehebung: Daten aus dem Modul [!UICONTROL XML analysieren“ können nicht &#x200B;] werden
+## Fehlerbehebung: Daten aus dem Modul [!UICONTROL XML analysieren“ können nicht ] werden
 
 Stellen Sie sicher, dass die Datenstruktur korrekt definiert ist. Alternativ können Sie eine leere Datenstruktur verwenden und das Modul mindestens einmal ausführen, um eine XML-Eingabe zu verarbeiten.

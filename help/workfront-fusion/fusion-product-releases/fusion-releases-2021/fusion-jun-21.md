@@ -9,14 +9,14 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: d9203aa7-f9c4-421c-ae0b-4481d05d5b6f
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '129'
-ht-degree: 58%
+ht-degree: 63%
 
 ---
 
-# Workfront Fusion-Veröffentlichungsaktivität: Woche vom 21. Juni 2021
+# Workfront Fusion-Veröffentlichungen: Woche vom 21. Juni 2021
 
 Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom Dienstag, 21. Juni 2021 vorgenommen wurden.
 

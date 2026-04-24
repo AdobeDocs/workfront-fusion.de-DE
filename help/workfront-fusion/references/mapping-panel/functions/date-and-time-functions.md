@@ -4,7 +4,7 @@ description: Die folgenden Datums- und Uhrzeitfunktionen sind im Zuordnungsberei
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
 workflow-type: tm+mt
 source-wordcount: '1879'
 ht-degree: 2%
@@ -311,7 +311,7 @@ Weitere Informationen finden Sie unter Datum und Text im Artikel [Elementdatenty
    <td> <p>Konvertiert einen Datumswert in einen Textwert. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Format] </td> 
+   <td>[!UICONTROL-Format] </td> 
    <td>Text </td> 
    <td> <p>Ermöglicht die Angabe eines Formats mithilfe von Datums-/Uhrzeitformatierungs-Token. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token zur Datums- und Zeitformatierung</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
@@ -333,7 +333,7 @@ Die Funktion `formatDate` gibt eine Textdarstellung des angegebenen Datumswerts 
 
 **Beispiele:** In diesen Beispielen wurden sowohl das Szenario als auch die Web-Zeitzone auf `Europe/Prague` festgelegt.
 
-![Beispiel für eine Datums-/Uhrzeitfunktion](assets/date&time-functions-examples-350x61.png)
+![Beispiel für eine Datums-/Uhrzeitfunktion](assets/date-time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -374,12 +374,12 @@ Die zweite Spalte zeigt den erwarteten Typ an. Wenn ein anderer Typ angegeben wi
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Text] </td> 
+   <td>[!UICONTROL-Text] </td> 
    <td>Text </td> 
    <td> <p>Konvertiert einen Datumswert in einen Textwert. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Format] </td> 
+   <td>[!UICONTROL-Format] </td> 
    <td>Text </td> 
    <td> <p>Ermöglicht die Angabe eines Formats mithilfe von Datums-/Uhrzeitformatierungs-Token. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token zur Datums- und Zeitformatierung</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
@@ -463,7 +463,7 @@ Dieser Abschnitt ist für Workfront Fusion von der [!DNL Exceljet]-Webseite ange
 
 Wenn Sie ein Datum berechnen müssen, das dem n-ten Wochentag im Monat entspricht (z. B. erster Dienstag, dritter Freitag usw.), können Sie die folgende Formel verwenden:
 
-![n-ten Tag berechnen](assets/date&time-functions-calc-nth-day-350x31.png)
+![n-ten Tag berechnen](assets/date-time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}

@@ -9,14 +9,14 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: f81fdabc-a51a-4a29-b624-1241eba58b38
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 48%
+ht-degree: 52%
 
 ---
 
-# Workfront Fusion-Veröffentlichungsaktivität: Woche vom 16. Mai 2022
+# Workfront Fusion-Veröffentlichungen: Woche vom Dienstag, 16. Mai 2022
 
 Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom Dienstag, 16. Mai 2022 vorgenommen wurden.
 

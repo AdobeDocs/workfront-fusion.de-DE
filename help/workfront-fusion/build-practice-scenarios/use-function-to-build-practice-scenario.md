@@ -7,7 +7,7 @@ description: Erfahren Sie, wie Sie eine Funktion hinzufügen, um ein Arbeitselem
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 18%
@@ -53,7 +53,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## Voraussetzungen
 
-Sie müssen das unter &quot;[&#x200B; eines einfachen Szenarios“ beschriebene Szenario erstellen](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) bevor Sie dieses Verfahren ausführen.
+Sie müssen das unter &quot;[ eines einfachen Szenarios“ beschriebene Szenario erstellen](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) bevor Sie dieses Verfahren ausführen.
 
 ## Verwenden einer Funktion zum Aktualisieren eines Projekts
 
@@ -79,7 +79,7 @@ Wenn dieses Szenario eine Anfrage in ein Projekt konvertiert, ist der Projektnam
 1. Klicken Sie auf das **Name**.
 
    Das Zuordnungsbedienfeld wird geöffnet.
-1. Klicken Sie im Zuordnungsbereich auf das Symbol **Text und binäre Funktionen** . ![Symbol für Textfunktionen](assets/toolbar-icon-text&binary-functions.png)
+1. Klicken Sie im Zuordnungsbereich auf das Symbol **Text und binäre Funktionen** . ![Symbol für Textfunktionen](assets/toolbar-icon-text-binary-functions.png)
 1. Wählen Sie die Funktion **upper**.
 
    Die Funktion wird im Feld Name angezeigt, einschließlich der Formatierung für die erwartete Eingabe.

@@ -4,24 +4,24 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 03f4556d7f903689c85cba966ad875973037a2ba
 workflow-type: tm+mt
 source-wordcount: '2699'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
-# [!DNL Microsoft Office 365 Excel]
+# [!DNL Microsoft Office 365 Excel]-Module
 
-In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Microsoft 365 Excel] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Microsoft 365 Excel] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,29 +29,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -96,13 +96,13 @@ Anweisungen zum Verbinden Ihres [!DNL Office 365 Excel]-Kontos mit [!UICONTROL W
 >
 >Wenn ein Benutzer beispielsweise über die über den Excel-Connector gewährten Berechtigungen zum Lesen von Tabellen verfügt und dann im Outlook-Connector eine Verbindung zum Lesen von E-Mails erstellt, zeigt der Einverständnisbildschirm für Berechtigungen sowohl die bereits erteilte Berechtigung zum Lesen von Tabellen als auch die neu erforderliche Berechtigung zum Schreiben von E-Mails an.
 
-## [!DNL Microsoft Office 365 Excel] Module und ihre Felder
+## [!DNL Microsoft Office 365 Excel]-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Microsoft 365 Excel] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Microsoft 365 Excel] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Microsoft 365 Excel]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Microsoft 365 Excel]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Arbeitsmappe](#workbook)
 * [Arbeitsblatt](#worksheet)
@@ -124,7 +124,7 @@ Dieses Aktionsmodul lädt den Inhalt der angegebenen Excel-Arbeitsmappe herunter
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -147,19 +147,19 @@ Dieses Aktionsmodul sucht nach [!DNL Excel] Arbeitsmappen.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL Ordner]</td> 
    <td> <p>Wählen Sie den Ordner aus, in dem Sie nach Arbeitsmappen suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL filter]</p> </td> 
-   <td> <p>Sie können einen Filter festlegen, um nur nach Arbeitsmappen zu suchen, die den von Ihnen ausgewählten Kriterien entsprechen.</p> <p>Geben Sie für jeden Filter das Feld ein, das vom Filter ausgewertet werden soll, den Operator und den Wert, den der Filter zulassen soll. Sie können mehr als einen Filter verwenden, indem Sie AND- oder OR-Regeln hinzufügen.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>Sie können einen Filter festlegen, um nur nach Arbeitsmappen zu suchen, die den von Ihnen ausgewählten Kriterien entsprechen.</p> <p>Geben Sie für jeden Filter Folgendes an: das Feld, das vom Filter ausgewertet werden soll, den Operator und den Wert, den der Filter zulassen soll. Sie können mehr als einen Filter verwenden, indem Sie AND- oder OR-Regeln hinzufügen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL Beschränkung]</td> 
    <td> <p>Geben Sie die maximale Anzahl von Arbeitsblättern ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -175,19 +175,19 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine Arbeitsmappe erstellt wird.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Ordner]</td> 
+   <td role="rowheader">[!UICONTROL Ordner]</td> 
    <td> <p>Wählen Sie den Ordner aus, der auf neue Arbeitsmappen überwacht werden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL filter]</p> </td> 
-   <td> <p>Sie können einen Filter so einrichten, dass nur Arbeitsmappen überwacht werden, die die von Ihnen ausgewählten Kriterien erfüllen.</p> <p>Geben Sie für jeden Filter das Feld ein, das vom Filter ausgewertet werden soll, den Operator und den Wert, den der Filter zulassen soll. Sie können mehr als einen Filter verwenden, indem Sie AND- oder OR-Regeln hinzufügen.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>Sie können einen Filter so einrichten, dass nur Arbeitsmappen überwacht werden, die die von Ihnen ausgewählten Kriterien erfüllen.</p> <p>Geben Sie für jeden Filter Folgendes an: das Feld, das vom Filter ausgewertet werden soll, den Operator und den Wert, den der Filter zulassen soll. Sie können mehr als einen Filter verwenden, indem Sie AND- oder OR-Regeln hinzufügen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[!UICONTROL Beschränkung]</td> 
    <td> <p>Geben Sie die maximale Anzahl von Arbeitsmappen ein, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -212,11 +212,11 @@ Dieses Aktionsmodul erstellt ein neues Arbeitsblatt innerhalb der ausgewählten 
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL -Arbeitsmappe] </td>
+    <td role="rowheader" >[!UICONTROL-Arbeitsmappe] </td>
    <td> <p>Wählen Sie die Arbeitsmappe aus, der Sie ein Arbeitsblatt hinzufügen möchten, einschließlich des Pfads, wenn sich die Arbeitsmappe nicht im Stammverzeichnis befindet.</p> </td> 
   </tr> 
   <tr> 
@@ -235,11 +235,11 @@ Dieses Aktionsmodul fügt dem ausgewählten Arbeitsblatt eine neue Zeile hinzu.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL -Arbeitsmappe] </td>
+    <td role="rowheader" >[!UICONTROL-Arbeitsmappe] </td>
    <td> <p>Wählen Sie die Arbeitsmappe aus, die das Arbeitsblatt enthält, dem Sie eine Zeile hinzufügen möchten, einschließlich des Pfads, wenn sich die Arbeitsmappe nicht im Stammverzeichnis befindet.</p> </td> 
   </tr> 
   <tr> 
@@ -250,7 +250,7 @@ Dieses Aktionsmodul fügt dem ausgewählten Arbeitsblatt eine neue Zeile hinzu.
    <td role="rowheader"> <p>[!UICONTROL Typ der eingegebenen Werte]</p> </td> 
    <td> <p>Wählen Sie den Typ des Werts aus, der in das Arbeitsblatt eingegeben werden soll. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL -Formeln]</strong> </p> <p> Excel versucht, den angegebenen Ausdruck auszuwerten. Die Namen der Funktionen in einer Formel sind in englischer Sprache. Beispiel: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL-Formeln]</strong> </p> <p> Excel versucht, den angegebenen Ausdruck auszuwerten. Die Namen der Funktionen in einer Formel sind in englischer Sprache. Beispiel: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
      <li> <p><strong>[!UICONTROL Formeln lokal]</strong> </p> <p>Excel versucht, den angegebenen Ausdruck auszuwerten. Die Funktionsnamen sind in der Sprache Ihres Excel-Programms angegeben. Beispiel: <code>=SUM(A1, 1.5)</code> vs <code>=SUMME(A1; 1,5)</code></p> </li> 
      <li> <p><strong>[!UICONTROL value]</strong> </p> <p>Excel wertet den Wert nicht aus. </p> </li> 
     </ul> </td> 
@@ -271,11 +271,11 @@ Dieses Aktionsmodul löscht eine Zeile aus einem Arbeitsblatt.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL -Arbeitsmappe] </td>
+    <td role="rowheader" >[!UICONTROL-Arbeitsmappe] </td>
    <td> <p>Wählen Sie die Arbeitsmappe aus, die das Arbeitsblatt mit der zu löschenden Zeile enthält.</p> </td> 
   </tr> 
   <tr> 
@@ -298,11 +298,11 @@ Dieses Aktionsmodul ruft eine Liste von Zeilen im angegebenen Arbeitsblatt ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL -Arbeitsmappe] </td>
+    <td role="rowheader" >[!UICONTROL-Arbeitsmappe] </td>
    <td> <p>Wählen Sie die Arbeitsmappe aus, die das Arbeitsblatt mit den Zeilen enthält, die Sie auflisten möchten, einschließlich des Pfads, wenn sich die Arbeitsmappe nicht im Stammverzeichnis befindet.</p> </td> 
   </tr> 
   <tr> 
@@ -310,7 +310,7 @@ Dieses Aktionsmodul ruft eine Liste von Zeilen im angegebenen Arbeitsblatt ab.
    <td> <p>Wählen Sie das Arbeitsblatt aus, das die Zeilen enthält, die Sie auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL Beschränkung]</td>
    <td> <p>Geben Sie die maximale Anzahl von Arbeitsblattzeilen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie diese.</p> </td> 
   </tr> 
  </tbody> 
@@ -325,15 +325,15 @@ Dieses Aktionsmodul ruft eine Liste von Arbeitsblättern in der angegebenen Arbe
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL -Arbeitsmappe] </td>
+    <td role="rowheader" >[!UICONTROL-Arbeitsmappe] </td>
    <td> <p>Wählen Sie die Arbeitsmappe aus, die die Arbeitsblätter enthält, die das Modul auflisten soll.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL Beschränkung]</td>
    <td> <p>Geben Sie die maximale Anzahl von Arbeitsblättern ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -348,11 +348,11 @@ Dieses Aktionsmodul aktualisiert eine vorhandene Arbeitsblattzeile.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL -Arbeitsmappe] </td>
+    <td role="rowheader" >[!UICONTROL-Arbeitsmappe] </td>
    <td> <p>Wählen Sie die Arbeitsmappe aus, die das Arbeitsblatt mit der Zeile enthält, die Sie aktualisieren möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -363,7 +363,7 @@ Dieses Aktionsmodul aktualisiert eine vorhandene Arbeitsblattzeile.
    <td role="rowheader"> <p>[!UICONTROL Typ der eingegebenen Werte]</p> </td> 
    <td> <p>Wählen Sie den Typ des Werts aus, der in das Arbeitsblatt eingegeben werden soll. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL -Formeln]</strong> </p> <p> Excel versucht, den angegebenen Ausdruck auszuwerten. Die Namen der Funktionen in einer Formel sind in englischer Sprache. Beispiel: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL-Formeln]</strong> </p> <p> Excel versucht, den angegebenen Ausdruck auszuwerten. Die Namen der Funktionen in einer Formel sind in englischer Sprache. Beispiel: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
      <li> <p><strong>[!UICONTROL Formeln lokal]</strong> </p> <p>Excel versucht, den angegebenen Ausdruck auszuwerten. Die Funktionsnamen sind in der Sprache Ihres Excel-Programms angegeben. Beispiel: <code>=SUM(A1, 1.5)</code> vs <code>=SUMME(A1; 1,5)</code></p> </li> 
      <li> <p><strong>[!UICONTROL value]</strong> </p> <p>Excel wertet den Wert nicht aus. </p> </li> 
     </ul> </td> 
@@ -388,11 +388,11 @@ Dieses Trigger-Modul startet ein Szenario, wenn dem Blatt eine neue Zeile hinzug
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL -Arbeitsmappe] </td>
+    <td role="rowheader" >[!UICONTROL-Arbeitsmappe] </td>
    <td> <p>Wählen Sie die Arbeitsmappe aus, die das Arbeitsblatt enthält, das auf neue Zeilen überwacht werden soll.</p> </td> 
   </tr> 
   <tr>
@@ -404,7 +404,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn dem Blatt eine neue Zeile hinzug
    <td> <p>Aktivieren Sie diese Option, um Pakete für leere Zeilen im Arbeitsblatt nicht zurückzugeben.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL Beschränkung]</td>
    <td> <p>Geben Sie die maximale Anzahl von Arbeitsblattzeilen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie diese.</p> </td> 
   </tr> 
  </tbody> 
@@ -430,11 +430,11 @@ Dieses Aktionsmodul erstellt ein Tabellenelement im Excel-Arbeitsblatt.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Arbeitsmappe] </td> 
+   <td role="rowheader">[!UICONTROL-Arbeitsmappe] </td> 
    <td> <p>Wählen Sie die Arbeitsmappe aus, die das Arbeitsblatt enthält, dem Sie eine Tabelle hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -446,7 +446,7 @@ Dieses Aktionsmodul erstellt ein Tabellenelement im Excel-Arbeitsblatt.
    <td> <p>Aktivieren Sie diese Option, um die erste Zeile als Tabellenüberschriften zu definieren.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Adresse]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Adresse]</p> </td> 
    <td> <p>Legen Sie die Größe der Tabelle fest, indem Sie die oberen linken und unteren rechten Zellen angeben. Beispiel: <code>A1:C10</code> erstellt eine Tabelle mit 3 Spalten und 10 Zeilen.</p> </td> 
   </tr> 
  </tbody> 
@@ -461,11 +461,11 @@ Dieses Aktionsmodul ändert eine vorhandene Tabelle.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL -Arbeitsmappe] </td>
+    <td role="rowheader" >[!UICONTROL-Arbeitsmappe] </td>
    <td> <p>Wählen Sie die Arbeitsmappe aus, die die Tabelle enthält, der Sie eine Zeile hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -473,7 +473,7 @@ Dieses Aktionsmodul ändert eine vorhandene Tabelle.
    <td> <p>Wählen Sie das Arbeitsblatt aus, das die Tabelle enthält, der Sie eine Zeile hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL -Tabelle]</td>
+    <td role="rowheader" >[!UICONTROL-Tabelle]</td>
    <td>Wählen Sie die Tabelle aus, der Sie eine Zeile hinzufügen möchten.</td> 
   </tr> 
   <tr>
@@ -496,7 +496,7 @@ Dieses Aktionsmodul löscht die angegebene Tabelle aus einem [!DNL Excel].
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -520,14 +520,14 @@ Dieses Aktionsmodul ruft Metadaten für die angegebene Tabelle ab.
  <tbody> 
   <tr> 
    <td role="rowheader"> 
-     <p >[!UICONTROL -Verbindung]</p>
+     <p >[!UICONTROL Verbindung]</p>
    </td> 
    <td> 
      <p>Anweisungen zum Verbinden Ihres Office 365-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundlegende Anweisungen</a>.</p>
-    --&gt; </td> 
+     </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL , Tabelle abrufen]</td> 
+   <td role="rowheader">[!UICONTROL, Tabelle abrufen]</td> 
    <td> <p>Wählen Sie aus, wie Sie die Tabelle identifizieren möchten, die Sie abrufen möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Manuell eingeben]</strong> </p> <p>Geben Sie die ID der Arbeitsmappe ein, die die abzurufende Tabelle enthält, oder ordnen Sie sie zu, und geben Sie dann die ID des Arbeitsblatts ein, das die Tabelle enthält, oder ordnen Sie sie zu.</p> <p>Geben Sie im Feld [!UICONTROL Tabellenname] den Namen der Tabelle ein, die Sie abrufen möchten, oder ordnen Sie ihn zu.</p> </li> 
@@ -546,11 +546,11 @@ Dieses Suchmodul ruft eine Liste aller Tabellenzeilen in einer Arbeitsmappe ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL -Arbeitsmappe] </td>
+    <td role="rowheader" >[!UICONTROL-Arbeitsmappe] </td>
    <td> <p>Wählen Sie die Arbeitsmappe aus, die die Tabelle mit den Zeilen enthält, die Sie auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -558,11 +558,11 @@ Dieses Suchmodul ruft eine Liste aller Tabellenzeilen in einer Arbeitsmappe ab.
    <td> <p>Wählen Sie das Arbeitsblatt aus, das die Tabelle mit den Zeilen enthält, die Sie auflisten möchten</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL -Tabelle] </td>
+    <td role="rowheader" >[!UICONTROL-Tabelle] </td>
    <td> <p>Wählen Sie die Tabelle aus, die die Zeilen enthält, die Sie auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL Beschränkung]</td>
    <td> <p>Geben Sie die maximale Anzahl von Tabellenzeilen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -577,11 +577,11 @@ Dieses Suchmodul ruft eine Liste aller Tabellenobjekte ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[!UICONTROL -Arbeitsmappe] </td>
+    <td role="rowheader" >[!UICONTROL-Arbeitsmappe] </td>
    <td> <p>Wählen Sie die Arbeitsmappe aus, die die Tabellen enthält, die Sie auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -589,7 +589,7 @@ Dieses Suchmodul ruft eine Liste aller Tabellenobjekte ab.
    <td> <p>Wählen Sie das Arbeitsblatt aus, das die aufzulistenden Tabellen enthält</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL Beschränkung]</td>
    <td> <p>Geben Sie die maximale Anzahl von Tabellen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -604,7 +604,7 @@ Dieses Aktionsmodul aktualisiert eine vorhandene Tabelle.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -628,7 +628,7 @@ Dieses Aktionsmodul aktualisiert eine vorhandene Tabelle.
    <td>Aktivieren Sie diese Option, um die Gesamtwerte der Tabelle anzuzeigen.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Stil]</td> 
+   <td role="rowheader">[!UICONTROL-Stil]</td> 
    <td>Wählen Sie einen Stil für die neue Tabelle.</td> 
   </tr> 
  </tbody> 
@@ -649,11 +649,11 @@ Dieser Trigger startet ein Szenario, wenn einer Tabelle eine neue Zeile hinzugef
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Arbeitsmappe]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Arbeitsmappe]</p> </td> 
    <td> <p>Wählen Sie die Arbeitsmappe aus, die die Tabelle enthält, die Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -661,11 +661,11 @@ Dieser Trigger startet ein Szenario, wenn einer Tabelle eine neue Zeile hinzugef
    <td> <p> Wählen Sie das Arbeitsblatt aus, das die Tabelle enthält, die Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Tabelle]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Tabelle]</p> </td> 
    <td> <p>Wählen Sie die Tabelle aus, die Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
+    <td role="rowheader" >[!UICONTROL Beschränkung]</td>
    <td> <p>Geben Sie die maximale Anzahl von Zeilen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -685,7 +685,7 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -693,11 +693,11 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
    <td>Geben Sie einen Pfad relativ zu <code>https://graph.microsoft.com</code> ein. Beispiel:<code> /v1.0/me/drive/root/children</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL Methode]</td> 
    td&gt; <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -705,8 +705,8 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL body]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:   <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:   <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -723,11 +723,11 @@ Diese Aktion ruft Daten aus dem definierten Arbeitsblattbereich ab und gibt für
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Arbeitsmappe] </td> 
+   <td role="rowheader">[!UICONTROL-Arbeitsmappe] </td> 
    <td> <p>Wählen Sie die Arbeitsmappe aus, die die Daten enthält, die Sie abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -735,7 +735,7 @@ Diese Aktion ruft Daten aus dem definierten Arbeitsblattbereich ab und gibt für
    <td> <p>Wählen Sie das Arbeitsblatt aus, das die abzurufenden Daten enthält.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Bereich] </td> 
+   <td role="rowheader">[!UICONTROL-Bereich] </td> 
    <td> <p>Geben Sie den Bereich des Blatts an, aus dem Sie Daten abrufen möchten, indem Sie die oberen linken und unteren rechten Zellen angeben. Beispiel: <code>A1:D10</code></p> </td> 
   </tr> 
  </tbody> 

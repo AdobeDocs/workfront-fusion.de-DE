@@ -4,10 +4,10 @@ description: Sie können ein Aktivitätsprotokoll für Ihr Unternehmen anzeigen,
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -43,7 +43,7 @@ Aktivitätsprotokolle enthalten Daten aus drei Monaten. Daten, die älter als dr
  </tbody> 
 </table>
 
-Weitere Informationen zu den Angaben in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
