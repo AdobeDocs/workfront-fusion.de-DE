@@ -4,7 +4,7 @@ description: Mit den  [!DNL Adobe Workfront Planning]  können Sie ein Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: a58a6c25751eb10365508c06ab1571ce7652d0c8
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 52%
@@ -374,7 +374,7 @@ Dieses Aktionsmodul ruft eine Liste von Datensätzen basierend auf von Ihnen ang
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Bedingung für Filter]</p>
+        <p>[!UICONTROL-Bedingung für Filter]</p>
       </td>
       <td>Bedingung für die Filter auswählen:<ul><li><b>UND</b><p>Das Modul gibt Datensätze zurück, <b> (alle</b> der von Ihnen ausgewählten Feldwerte erfüllen.</p></li><li><b>ODER</b><p>Das Modul gibt Datensätze zurück, <b> (beliebige</b> der ausgewählten Feldwerte erfüllen.</p></li></ul></td> 
       </tr>
@@ -479,11 +479,14 @@ Dieses Aktionsmodul ruft alle Datensätze des angegebenen Typs ab.
       <td role="rowheader">[!UICONTROL Eintragstyp]</td>
       <td>Wählen Sie den Typ des Datensatzes aus, den Sie abrufen möchten.</td>
     </tr>
-     <!--<tr>
+    <!--
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Maximum number of returned records]</p>
       </td>
-      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> -->
+      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td>
+    </tr>
+    -->
   </tbody>
 </table>
 

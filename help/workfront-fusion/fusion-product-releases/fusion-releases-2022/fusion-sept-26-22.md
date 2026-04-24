@@ -3,21 +3,20 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Workfront Fusion-Veröffentlichungsaktivität: Woche vom 26. September 2022'
-description: Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom 19. September 2022 vorgenommen wurden.
+title: 'Workfront Fusion-Veröffentlichungen: Woche vom 26. September 2022'
+description: Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom Dienstag, 19. September 2022 vorgenommen wurden.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 779bac51-1fae-43ba-b2cf-32524e935b8c
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 0%
+ht-degree: 23%
 
 ---
 
-# Workfront Fusion-Veröffentlichungsaktivität: Woche vom 26. September 2022
+# Workfront Fusion-Veröffentlichungen: Woche vom 26. September 2022
 
 ## GitLab-Connector und -Module jetzt verfügbar
 

@@ -1,17 +1,17 @@
 ---
-title: Debuggen eines Szenarios
+title: Debugging eines Szenarios
 description: Mit dem Adobe Workfront Fusion DevTool können Sie Szenarien verstehen und Fehler beheben. Das DevTool fügt den Chrome Developer Tools ein zusätzliches Bedienfeld hinzu. Mithilfe dieses Debugger-Bedienfelds können Sie alle manuellen Ausführungen Ihres Szenarios überprüfen, alle ausgeführten Vorgänge überprüfen und die Details jedes durchgeführten API-Aufrufs anzeigen. Sie können sehen, welches Modul, welcher Vorgang oder welche einzelne Antwort den Fehler verursacht hat, und dieses Wissen verwenden, um Ihr Szenario zu verfeinern.
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1468'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# Debuggen eines Szenarios
+# Debugging eines Szenarios
 
 Das Adobe Workfront Fusion-DevTool hilft Ihnen, Szenarien zu verstehen und Fehler zu beheben. Mit dem DevTool können Sie alle manuellen Ausführungen Ihres Szenarios überprüfen, alle ausgeführten Vorgänge überprüfen und die Details jedes durchgeführten API-Aufrufs anzeigen. Sie können sehen, welches Modul, welcher Vorgang oder welche einzelne Antwort den Fehler verursacht hat, und dieses Wissen verwenden, um Ihr Szenario zu verfeinern.
 
@@ -22,11 +22,11 @@ Das Adobe Workfront Fusion-DevTool hilft Ihnen, Szenarien zu verstehen und Fehle
 Eine Videoeinführung und exemplarische Anleitung für das Fusion DevTool finden Sie unter
 
 * [Fusion-Entwicklungstool](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Anleitung zu Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=de)
+* [Anleitung zu Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -34,22 +34,22 @@ Eine Videoeinführung und exemplarische Anleitung für das Fusion DevTool finden
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -111,10 +111,12 @@ Live Stream zeigt an, was im Hintergrund passiert, wenn Sie in Ihrem Szenario ei
       <td role="rowheader"> <p>Liste der Anfragen löschen </p> </td> 
       <td> <p>Klicken Sie auf das Papierkorb-Symbol in der oberen rechten Ecke des linken Bedienfelds von DevTool, um die Liste der Anfragen zu löschen, die vom Workfront Fusion DevTool aufgezeichnet wurden. </p> </td> 
      </tr> 
-     <!--<tr> 
+     <!--
+     <tr>
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
       <td> <p>Click the computer icon <img src="assets/console-computer-icon.png"> in the top-right corner of the Devtool's left panel.</p> <p>Logging in the console is enabled when the computer icon is green.</p> </td> 
-     </tr>-->
+     </tr>
+     -->
      <tr> 
       <td role="rowheader"> <p>Rufen Sie die Anfrage im rohen JSON-Format oder cURL ab.</p> </td> 
       <td> 
@@ -183,7 +185,7 @@ Ermöglicht die Suche nach den Modulwerten für einen bestimmten Begriff. Die Au
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Schlüsselwort]</td> 
+   <td role="rowheader">[!UICONTROL-Schlüsselwort]</td> 
    <td> <p> Geben Sie den Begriff ein, nach dem Sie suchen möchten. </p> </td> 
   </tr> 
   <tr> 
@@ -264,7 +266,7 @@ Kopiert den Namen des ausgewählten Moduls in die Zwischenablage.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modul] </td> 
+   <td role="rowheader">[!UICONTROL Modul] </td> 
    <td> <p>Wählen Sie das Modul aus, dessen Namen Sie kopieren möchten.</p> </td> 
   </tr> 
  </tbody> 
@@ -298,7 +300,7 @@ Sucht im Szenario nach angegebenen Variablen und ersetzt sie durch eine neue Var
    <td> <p>Suchen Sie im Variablenmodul in Ihrem Szenario die Variable, mit der Sie die Variable ersetzen möchten, und kopieren Sie sie in dieses Feld ([!UICONTROL Variable zum Suchen]). Im Feld wird sie mit doppelten geschweiften Klammern angezeigt. Beispiel: <code>&#123;&#123;5.value&#125;&#125;</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Modul]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Modul]</p> </td> 
    <td> <p>Wählen Sie das Variablenmodul aus, in dem Sie die Variable ersetzen möchten. Wenn kein Modul ausgewählt ist, wird die Variable im gesamten Szenario ersetzt.</p> </td> 
   </tr> 
  </tbody> 
@@ -313,12 +315,12 @@ Ermöglicht die Kodierung der eingegebenen Daten in Base64 oder die Dekodierung 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Vorgang] </td> 
+   <td role="rowheader">[!UICONTROL-Vorgang] </td> 
    <td> <p>Wählen Sie aus, ob die Daten aus dem Feld [!UICONTROL Raw Data] in Base64 kodiert oder Base64 in Raw Data dekodiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Rohdaten]</p> </td> 
-   <td> <p> Geben Sie die Daten, die Sie für Base64 codieren möchten, oder Base64 ein, wenn Sie für Rohdaten decodieren möchten, je nach der im Feld [!UICONTROL -Vorgang] oben ausgewählten Option.</p> </td> 
+   <td> <p> Geben Sie die Daten, die Sie für Base64 codieren möchten, oder Base64 ein, wenn Sie für Rohdaten decodieren möchten, je nach der im Feld [!UICONTROL-Vorgang] oben ausgewählten Option.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -342,7 +344,7 @@ Zunächst müssen Sie das Modul, das Sie als Quellmodul verwenden möchten, zur 
    <td> <p>Wählen Sie das Modul aus, das Sie als neue Zuordnungsquelle verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Modul zum Bearbeiten]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Modul zum Bearbeiten]</p> </td> 
    <td> <p>Wählen Sie das Modul aus, für das Sie die Zuordnung ändern möchten, wenn Sie die Zuordnung nicht im gesamten Szenario ändern möchten. </p> </td> 
   </tr> 
  </tbody> 

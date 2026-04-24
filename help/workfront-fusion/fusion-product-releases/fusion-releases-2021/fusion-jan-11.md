@@ -3,27 +3,26 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Workfront Fusion-Veröffentlichungsaktivität: Woche vom 11. Januar 2021'
-description: Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom 11. Januar 2021 vorgenommen wurden.
+title: 'Workfront Fusion-Veröffentlichungen: Woche vom 11. Januar 2021'
+description: Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom Dienstag, 11. Januar 2021 vorgenommen wurden.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: d5732b6c-b039-4bf7-a7e6-e59b6e8f1a63
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
 # Workfront Fusion-Veröffentlichungsaktivität: Woche vom 11. Januar 2021
 
-Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom 11. Januar 2021 vorgenommen wurden.
+Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom Dienstag, 11. Januar 2021 vorgenommen wurden.
 
-Eine Liste aller aktuellen Änderungen finden Sie unter [Adobe Workfront Fusion-Versionsaktivität](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
+Eine Liste aller aktuellen Änderungen finden Sie unter [Adobe Workfront Fusion-Veröffentlichungen](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Eine Liste der letzten Fehlerbehebungen in Workfront Fusion finden Sie auf der Seite [Workfront-Wartungs-Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=de) und suchen Sie nach Updates mit der Bezeichnung Workfront Fusion-Wartungs-Update.
+Eine Liste der letzten Fehlerbehebungen in Workfront Fusion finden Sie auf der Seite [Wartungs-Updates für Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=de). Suchen Sie nach Updates mit der Bezeichnung „Workfront Fusion-Wartungs-Update“.
 
 ## Erweitern von Connectoren und Modulen jetzt verfügbar
 
@@ -56,7 +55,7 @@ Mit den Cvent-Modulen können Sie:
 * Auflisten von Datensätzen basierend auf von Ihnen angegebenen Kriterien
 * Registrieren oder Hinzufügen von Einladungen zu bestimmten Ereignissen
 * Kontakte aktualisieren oder löschen
-* Erstellen eines benutzerdefinierten API-Aufrufs
+* Benutzerdefinierten API-Aufruf erstellen
 
 
 ## Microsoft Dynamics 365-Connector und -Module jetzt verfügbar
@@ -102,21 +101,21 @@ Um den Zugriff auf APIs flexibler zu gestalten, haben wir dem HTTP-Connector ein
 
 Um Ihnen bei der Anpassung und Vereinfachung von Formeln in Ihren Modulen zu helfen, haben wir einige neue Funktionen hinzugefügt.
 
-* Der/Die/Das
+* Die Menüauswahlmöglichkeiten für die 
 
   ```
   omit
   ```
 
   Funktion ist eine allgemeine Funktion, die die angegebenen Schlüssel des -Objekts auslässt und den Rest zurückgibt.
-* Der/Die/Das
+* Die Menüauswahlmöglichkeiten für die 
 
   ```
   pick
   ```
 
   Funktion ist eine allgemeine Funktion, die nur die angegebenen Schlüssel aus dem Objekt auswählt.
-* Der/Die/Das
+* Die Menüauswahlmöglichkeiten für die 
 
   ```
   escapeMarkdown

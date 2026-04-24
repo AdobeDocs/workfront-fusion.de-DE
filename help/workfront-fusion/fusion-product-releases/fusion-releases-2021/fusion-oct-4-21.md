@@ -5,22 +5,21 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 123f49bc-54fd-4f60-8a61-33fce5ec56a6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 1%
+ht-degree: 16%
 
 ---
 
 # Workfront Fusion-Veröffentlichungsaktivität: Woche vom 4. Oktober 2021
 
-Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom 4. Oktober 2021 vorgenommen wurden.
+Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom Dienstag, 4. Oktober 2021 vorgenommen wurden.
 
-Eine Liste aller aktuellen Änderungen finden Sie unter [Adobe Workfront Fusion-Versionsaktivität](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
+Eine Liste aller aktuellen Änderungen finden Sie unter [Adobe Workfront Fusion-Veröffentlichungen](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Eine Liste der letzten Fehlerbehebungen in Workfront Fusion finden Sie auf der Seite [Workfront-Wartungs-Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=de) und suchen Sie nach Updates mit der Bezeichnung Workfront Fusion-Wartungs-Update.
+Eine Liste der letzten Fehlerbehebungen in Workfront Fusion finden Sie auf der Seite [Wartungs-Updates für Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=de). Suchen Sie nach Updates mit der Bezeichnung „Workfront Fusion-Wartungs-Update“.
 
 ## Anzeigen vorhandener Ereignisfilter in Workfront > Module „Ereignisse beobachten“
 
@@ -46,7 +45,7 @@ Aktualisierungen unterstützen die folgenden Rich-Text-Formate:
 * Unterstreichen
 * Liste mit Aufzählungszeichen
 * Zahlenliste
-* Verknüpfung
+* Link
 * Blockquote
 * Bruchstelle
 

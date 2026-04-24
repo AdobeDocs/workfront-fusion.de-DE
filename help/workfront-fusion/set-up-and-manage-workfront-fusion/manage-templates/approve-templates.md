@@ -1,15 +1,15 @@
 ---
 content-type: reference
-title: Vorlagen genehmigen oder ablehnen
+title: Genehmigen oder Ablehnen von Vorlagen
 description: In diesem Artikel wird beschrieben, wie Sie Fusion-Vorlagen genehmigen oder ablehnen.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Benutzer können von ihnen erstellte Vorlagen zur Genehmigung senden, die auf de
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
@@ -32,18 +32,18 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <col>
   <tbody>
     <tr>
-      <td role="rowheader">Adobe Workfront-Plan</td>
+      <td role="rowheader">Adobe Workfront-Abo</td>
       <td><p>Beliebig</p></td>
     </tr>
     <tr data-mc-conditions="">
       <td role="rowheader">Adobe Workfront-Lizenz</td>
-      <td><p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p></td>
+      <td><p>Neu: Standard</p><p>ODER</p><p>Aktuell: [!UICONTROL Work] oder höher</p></td>
     </tr>
     <tr>
       <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td>
       <td>
         <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
-        <p>Oder</p>
+        <p>ODER</p>
         <p>Legacy: Beliebig</p>
       </td>
     </tr>
@@ -55,7 +55,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
           <li>[!UICONTROL Select] oder [!UICONTROL Prime] Workfront-Plan: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li>
           <li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li>
         </ul>
-        <p>Oder</p>
+        <p>ODER</p>
         <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
       </td>
     </tr>
@@ -65,7 +65,8 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 <!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+-->
 
 +++
 

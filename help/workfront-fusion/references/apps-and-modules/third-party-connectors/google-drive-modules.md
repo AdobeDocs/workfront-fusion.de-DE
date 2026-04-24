@@ -1,29 +1,29 @@
 ---
-title: Google-Laufwerkmodule
+title: Google Drive-Module
 description: Mit  [!DNL Adobe Workfront Fusion Google Drive]  Modulen können Sie Ihre Dateien, Ordner oder freigegebenen Laufwerke in Ihrem überwachen, suchen, erstellen, aktualisieren, löschen und verwalten [!DNL Google Drive].
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '2102'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
-# [!DNL Google Drive]
+# [!DNL Google Drive]-Module
 
 Mit den Adobe Workfront Fusion [!DNL Google Drive]-Modulen können Sie Ihre Dateien, Ordner oder freigegebenen Laufwerke in Ihrem [!DNL Google Drive] überwachen, suchen, erstellen, aktualisieren, löschen und verwalten.
 
 In einem Adobe Workfront Fusion-Szenario können Sie Ihr [!DNL Google Drive]-Konto mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -31,29 +31,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -92,20 +92,20 @@ Eine schrittweise Anleitung zum Erstellen des OAuth-Clients (und zum Abrufen von
 
 Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit [!UICONTROL Workfront Fusion] finden Sie unter [Erstellen einer Verbindung mit [!UICONTROL Adobe Workfront Fusion] - Grundlegende Anweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
-## [!DNL Google Drive] Module und ihre Felder
+## [!DNL Google Drive]-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Google Drive] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Google Drive] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Google Drive]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Google Drive]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 
-* [Trigger](#triggers)
+* [Auslöser](#triggers)
 * [Aktionen](#actions)
 
-### Trigger
+### Auslöser
 
 * [[!UICONTROL Alle Dateien ansehen]](#watch-all-files)
 * [[!UICONTROL Kommentare ansehen]](#watch-comments)
@@ -121,7 +121,7 @@ Dieses Dateimodul startet ein Szenario, wenn eine Trigger in Ihrem [!DNL Google 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
@@ -171,11 +171,11 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Kommentar zur ausgewählten 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Datei]</td> 
+   <td>[!UICONTROL-Datei]</td> 
    <td>Wählen Sie die Datei aus, die auf Kommentare überwacht werden soll.</td> 
   </tr> 
   <tr> 
@@ -198,7 +198,7 @@ Dieses Ordnermodul startet ein Trigger-Szenario, wenn eine Datei im angegebenen 
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL -Verbindung] </td>
+    <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr>
@@ -252,7 +252,7 @@ Trigger, wenn eine neue Datei für Sie freigegeben oder eine vorhandene freigege
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
@@ -318,11 +318,11 @@ Dieses Aktionsmodul kopiert eine Datei an den neuen Speicherort.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ziel]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das Ziel aus, in das Sie eine Datei kopieren möchten.</p> 
     <ul> 
      <li>[!UICONTROL Mein Laufwerk]</li> 
@@ -353,11 +353,11 @@ Dieses Aktionsmodul erstellt einen Ordner am angegebenen Speicherort.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ziel]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das Ziel aus, an dem Sie einen Ordner erstellen möchten.</p> 
     <ul> 
      <li>[!UICONTROL Mein Laufwerk]</li> 
@@ -388,7 +388,7 @@ Dieses Aktionsmodul löscht dauerhaft eine Datei oder einen Ordner.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
@@ -407,7 +407,7 @@ Dieses Aktionsmodul ruft die Datei mit der angegebenen ID ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
@@ -442,7 +442,7 @@ Dieses Aktionsmodul ruft den Freigabe-Link für eine Datei in Google Drive ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
@@ -461,7 +461,7 @@ Dieses Aktionsmodul verschiebt eine Datei oder einen Ordner in den Papierkorb.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
@@ -480,11 +480,11 @@ Dieses Suchmodul sucht anhand von Suchkriterien nach Dateien oder Ordnern.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ziel]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das zu durchsuchende Ziellaufwerk aus.</p> 
     <ul> 
      <li>[!UICONTROL Mein Laufwerk]</li> 
@@ -500,21 +500,21 @@ Dieses Suchmodul sucht anhand von Suchkriterien nach Dateien oder Ordnern.
    <td> <p> Wählen Sie aus, ob Sie nach Dateien, Ordnern oder beidem suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Suche]</p> </td> 
+   <td> <p>[!UICONTROL Suchen]</p> </td> 
    <td> <p>Wählen Sie den Typ der Suche aus, die Sie durchführen möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Suche innerhalb von Datei-/Ordnernamen]</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL -Abfrage]</strong> </p> <p>Geben Sie einen Teil des Dateinamens oder des vollständigen Dateinamens (einschließlich des Suffix) ein, nach dem gesucht werden soll.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Geben Sie einen Teil des Dateinamens oder des vollständigen Dateinamens (einschließlich des Suffix) ein, nach dem gesucht werden soll.</p> </li> 
        <li> <p><strong>[!UICONTROL Suchoptionen]</strong> </p> <p>Wählen Sie aus, ob Sie nach dem genauen Begriff suchen möchten oder ob Sie nach Namen suchen möchten, die den Suchbegriff enthalten.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Volltext]-Suche</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL -Abfrage]</strong> </p> <p>Geben Sie einen beliebigen Suchbegriff ein, den Sie in Ihrem [!DNL Google Drive] suchen möchten.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Geben Sie einen beliebigen Suchbegriff ein, den Sie in Ihrem [!DNL Google Drive] suchen möchten.</p> </li> 
       </ul> </li> 
      <li> <p><strong>Benutzerdefinierte Suchanfrage eingeben</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL -Abfrage]</strong> </p> <p>Geben Sie die benutzerdefinierte Suchabfrage ein. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Nach Dateien suchen] dieses Artikels.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Geben Sie die benutzerdefinierte Suchabfrage ein. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Nach Dateien suchen] dieses Artikels.</p> </li> 
        <li> <p><strong>Fügen Sie den oben ausgewählten Ordner zur Abfrage hinzu</strong> </p> <p>Sucht in der übergeordneten Sammlung nach dem Ordner. Dadurch werden alle Dateien und Ordner gefunden, die sich direkt in dem oben ausgewählten Ordner befinden.</p> </li> 
       </ul> </li> 
     </ul> </td> 
@@ -539,11 +539,11 @@ Dieses Aktionsmodul aktualisiert die Metadaten oder Inhalte einer Datei.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ziel]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das Ziel aus, das die Datei enthält, die Sie aktualisieren möchten.</p> 
     <ul> 
      <li>[!UICONTROL Mein Laufwerk]</li> 
@@ -567,7 +567,7 @@ Dieses Aktionsmodul aktualisiert die Metadaten oder Inhalte einer Datei.
    <td>Wählen Sie aus, ob Sie den Inhalt der Datei ersetzen möchten.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source-Datei]</td> 
+   <td>[!UICONTROL Quelldatei]</td> 
    <td>Wenn Sie den Inhalt ersetzen, wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</td> 
   </tr> 
   <tr> 
@@ -586,7 +586,7 @@ Lädt eine Datei in Ihr [!DNL Google Drive] hoch.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
@@ -602,7 +602,7 @@ Lädt eine Datei in Ihr [!DNL Google Drive] hoch.
    <td>Wählen Sie den Ordner aus, in den Sie eine Datei hochladen möchten. </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source-Datei]</td> 
+   <td>[!UICONTROL Quelldatei]</td> 
    <td>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</td> 
   </tr> 
   <tr> 
@@ -625,7 +625,8 @@ Das Hochladen oder Aktualisieren einer Datei schlägt aus verschiedenen Gründen
 * Die hochgeladene Datei ist zu groß und überschreitet die maximale Dateigröße, die für Ihren [!DNL Google Drive] zulässig ist, oder Sie haben Ihr [!DNL Google Drive] Speicherlimit überschritten. Sie können entweder Ihren Speicherplan aktualisieren oder vorhandene Dateien aus dem [!DNL Google Drive]-Service löschen.
 * Der ausgewählte Ordner, in den die Datei hochgeladen werden soll, existiert nicht mehr. In diesem Fall stoppt das Szenario und Sie müssen einen anderen Zielordner im Modul auswählen.
 
-<!-- Not present February 2025
+<!--
+Not present February 2025
 
 ## Search for files
 

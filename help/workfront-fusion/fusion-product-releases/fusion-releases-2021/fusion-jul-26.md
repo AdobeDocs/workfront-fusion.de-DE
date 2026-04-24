@@ -5,22 +5,21 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: b19fcd56-39e2-4f2d-9e84-37441d61acf7
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
 # Workfront Fusion-Veröffentlichungsaktivität: Woche vom 26. Juli 2021
 
-Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom 26. Juli 2021 vorgenommen wurden.
+Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom Dienstag, 26. Juli 2021 vorgenommen wurden.
 
-Eine Liste aller aktuellen Änderungen finden Sie unter [Adobe Workfront Fusion-Versionsaktivität](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
+Eine Liste aller aktuellen Änderungen finden Sie unter [Adobe Workfront Fusion-Veröffentlichungen](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-Eine Liste der letzten Fehlerbehebungen in Workfront Fusion finden Sie auf der Seite [Workfront-Wartungs-Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=de) und suchen Sie nach Updates mit der Bezeichnung Workfront Fusion-Wartungs-Update.
+Eine Liste der letzten Fehlerbehebungen in Workfront Fusion finden Sie auf der Seite [Wartungs-Updates für Workfront](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=de). Suchen Sie nach Updates mit der Bezeichnung „Workfront Fusion-Wartungs-Update“.
 
 ## Vereinfachte Module im Salesforce-Connector
 

@@ -4,8 +4,8 @@ description: Die [!DNL Adobe Workfront Fusion Frame].io modules enable you to mo
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: ht
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+workflow-type: tm+mt
 source-wordcount: '4539'
 ht-degree: 100%
 
@@ -343,10 +343,12 @@ Dieses Aktionsmodul erstellt ein neues Asset. Sie können eine lokale Datei hoch
    <td role="rowheader">[!UICONTROL Pfad] </td> 
    <td> <p>Wählen Sie den Pfad aus, unter dem ein Asset erstellt werden soll.</p> </td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">[!UICONTROL File Name] </td> 
    <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
-  </tr> -->
+  </tr>
+  -->
     <tr> 
     <td role="rowheader">Upload-Typ </td> 
     <td> <p>Wählen Sie aus, ob Sie ein Asset aus einer lokalen Datei oder einer Remote-Datei erstellen möchten.</p> </td> 
@@ -363,10 +365,12 @@ Dieses Aktionsmodul erstellt ein neues Asset. Sie können eine lokale Datei hoch
    <td>[!UICONTROL Quelldatei]</td> 
    <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen der Quelldatei zu.</p> </td> 
   </tr> 
-<!--  <tr> 
-   <td role="rowheader">[!UICONTROL Media type] </td> 
-   <td> <p>Select the media type for this asset.</p> </td> 
-  </tr> -->
+  <!--
+  <tr>
+    <td role="rowheader">[!UICONTROL Media type] </td> 
+    <td> <p>Select the media type for this asset.</p> </td> 
+    </tr>
+  -->
   </tbody> 
 </table>
 
@@ -1317,7 +1321,7 @@ Wählen Sie den Webhook aus, der für dieses Modul verwendet werden soll, oder k
 </table>
 
 
-<!-- 
+<!--
 **Example:** The following API call returns all teams and its details in your [!DNL Frame.io] account:
 
 URL: `/v2/teams`

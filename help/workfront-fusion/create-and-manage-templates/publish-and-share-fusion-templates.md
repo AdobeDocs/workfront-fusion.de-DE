@@ -4,10 +4,10 @@ description: Wenn Sie eine Vorlage erstellen, wird die Vorlage für alle Ihre Te
 author: Becky
 feature: Workfront Fusion
 exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
-source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '483'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
@@ -19,7 +19,7 @@ Informationen zum Erstellen einer Vorlage finden Sie unter [Erstellen einer neue
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,22 +27,22 @@ Informationen zum Erstellen einer Vorlage finden Sie unter [Erstellen einer neue
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -56,7 +56,7 @@ Eine Vorlage muss erstellt werden, bevor sie veröffentlicht oder freigegeben we
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Teamvorlagen“.
 1. Klicken Sie **Veröffentlichen** in der Zeile der Vorlage, die Sie veröffentlichen möchten.
 
-   Oder
+   ODER
 
 
    Klicken Sie auf den Namen der Vorlage, die Sie veröffentlichen möchten, und klicken Sie dann auf **[!UICONTROL Veröffentlichen]** in der rechten oberen Ecke des Bildschirms.
@@ -93,7 +93,8 @@ Die folgenden Status sind verfügbar:
 * **[!UICONTROL Veröffentlicht]**: Diese Vorlage ist nur für den Vorlagenautor und dessen Team sichtbar. Sie können veröffentlichte Vorlagen zur Genehmigung senden und einen freigabefähigen Link kopieren.
 * **[!UICONTROL Genehmigt]**: Diese Vorlage ist für alle Workfront Fusion-Benutzenden auf der Registerkarte [!UICONTROL Öffentliche Vorlagen] sichtbar. Sie können einen freigabefähigen Link kopieren, indem [!UICONTROL Optionen] in der oberen rechten Ecke des Bildschirms klicken.
 
-<!--You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
+<!--
+You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
 
 * **Eye icon**: The template is published, it is visible only for the team, and the approval request was not sent.
 * **Yellow checkmark icon**: The template is published, it is visible only for the team, and the approval request was sent.

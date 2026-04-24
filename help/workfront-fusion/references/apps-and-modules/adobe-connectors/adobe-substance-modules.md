@@ -1,18 +1,19 @@
 ---
 title: Adobe Substance-Module
-description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die verwenden [!DNL Adobe Substance] und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Adobe Substance] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2e44c89d487100b3245b40f6927185a0ff12ef2f
+exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 25%
+ht-degree: 32%
 
 ---
 
 # [!DNL Adobe Substance] Module
 
-In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Adobe Substance] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Adobe Substance] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenario erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -28,7 +29,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Paket für Adobe Workfront Workflow und Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
@@ -38,19 +39,19 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
    <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
-   <p>Connector-basiert (alt): Workfront Fusion for Work Automation and Integration </p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Adobe Workfront Fusion erworben werden.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Angaben in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -66,11 +67,11 @@ Bevor Sie den [!DNL Adobe Substance]-Connector verwenden können, müssen Sie si
 
 ## [!DNL Adobe Substance]-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Adobe Substance]-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Dienst weitere [!DNL Adobe Substance]-Felder angezeigt werden. Ein Sternchen neben dem Feldnamen in einem Modul zeigt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Adobe Substance]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Adobe Substance]-Felder angezeigt werden. Ein Sternchen neben dem Feldnamen in einem Modul zeigt ein erforderliches Feld an.
 
-Wenn die Schaltfläche für Zuordnung über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Verbundwerkstoffe](#composites)
 * [Szenen](#scenes)
@@ -94,7 +95,8 @@ Dieses Aktionsmodul generiert Inhalte für ein 3D-Composite, das das ausgewählt
    <td role="rowheader">Andere Felder</td> 
    <td>Konfigurieren Sie weitere Felder nach Bedarf. Weitere Informationen zu Feldern finden Sie in der <a href="https://s3d.adobe.io/docs#/operations/v1/composites/compose">Adobe Substance API-Dokumentation</a>.</td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">Camera name</td> 
    <td>Enter or map the name of an existing camera that has been previously defined in the source 3D file.</td> 
   </tr> 
@@ -105,7 +107,8 @@ Dieses Aktionsmodul generiert Inhalte für ein 3D-Composite, das das ausgewählt
   <tr> 
    <td role="rowheader">Enable ground plane</td> 
    <td>Enable this to enable the auto-generated ground plane under the hero asset. This is useful if the 3D scene contains only a hero asset, without additional elements.</td> 
-  </tr> -->
+  </tr>
+  -->
  </tbody> 
 </table>
 

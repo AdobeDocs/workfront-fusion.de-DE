@@ -4,10 +4,10 @@ description: Mit den Adobe I/O Events-Modulen können Sie ein Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 3%
+ht-degree: 44%
 
 ---
 
@@ -17,7 +17,7 @@ Mit den Adobe I/O Events-Modulen können Sie ein Adobe Workfront Fusion-Szenario
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,29 +25,29 @@ Mit den Adobe I/O Events-Modulen können Sie ein Adobe Workfront Fusion-Szenario
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -82,7 +82,7 @@ Der Adobe I/O Events-Connector verwendet Folgendes:
 
 So erstellen Sie eine Verbindung für Ihre Adobe I/O Events-Module:
 
-1. Klicken Sie neben dem Feld Verbindung auf Hinzufügen .
+1. Klicken Sie neben dem Feld „Verbindung“ auf „Hinzufügen“.
 
 1. Füllen Sie die folgenden Felder aus:
 
@@ -93,9 +93,9 @@ So erstellen Sie eine Verbindung für Ihre Adobe I/O Events-Module:
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">Name der Verbindung</td>
+        <td role="rowheader">Verbindungsname</td>
         <td>
-          <p>Geben Sie einen Namen für diese Verbindung ein.</p>
+          <p>Geben Sie einen Namen für die Verbindung ein.</p>
         </td>
       </tr>
       <tr>
@@ -146,21 +146,21 @@ So erstellen Sie eine Verbindung für Ihre Adobe I/O Events-Module:
     </tbody>
     </table>
 
-1. Klicken Sie **Fortfahren**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie auf **Weiter**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 ## Adobe I/O Events-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Adobe I/O Events] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Adobe I/O Events] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Adobe I/O Events]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Adobe I/O Events]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Trigger](#triggers)
+* [Auslöser](#triggers)
 * [Aktionen](#actions)
 * [Suchvorgänge](#searches)
 
-### Trigger
+### Auslöser
 
 <!--Becky start here-->
 
@@ -170,7 +170,7 @@ Dieses Aktionsmodul verwendet einen Webhook, um eine Ereignisbeschreibung zu ers
 
 So erstellen Sie einen Webhook:
 
-1. Klicken Sie **Hinzufügen** neben dem Feld Webhook .
+1. Klicken Sie neben dem Feld „Webhook“ auf **Hinzufügen**.
 1. Füllen Sie die folgenden Felder aus:
 
    <table>
@@ -179,11 +179,11 @@ So erstellen Sie einen Webhook:
      <tbody>
        <tr>
          <td role="rowheader">[!UICONTROL Webhook-Name]</td>
-        <td>Einen Namen für diesen Webhook eingeben.</td>
+        <td>Geben Sie einen Namen für Ihren Webhook ein.</td>
        </tr>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
-        <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
+         <td role="rowheader">[!UICONTROL Verbindung]</td>
+        <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe I/O Events] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe I/O Events]</a>.</td>
        </tr>
        <tr>
          <td role="rowheader">
@@ -212,12 +212,12 @@ So erstellen Sie einen Webhook:
      </tbody>
    </table>
 
-1. Klicken Sie auf Speichern , um den Webhook zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie auf „Speichern“, um den Webhook zu speichern und zum Modul zurückzukehren.
 
 ### Aktionen
 
 * [Provider- und Ereignis-IDs abrufen](#get-provider-and-event-ids)
-* [Erstellen eines benutzerdefinierten API-Aufrufs](#make-a-custom-api-call)
+* [Benutzerdefinierten API-Aufruf erstellen](#make-a-custom-api-call)
 
 #### Provider- und Ereignis-IDs abrufen
 
@@ -228,8 +228,8 @@ Dieses Suchmodul ruft die Adobe I/O Events-IDs für den angegebenen Anbieter und
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
-        <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
+         <td role="rowheader">[!UICONTROL Verbindung]</td>
+        <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe I/O Events] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe I/O Events]</a>.</td>
        </tr>
        <tr>
          <td role="rowheader">
@@ -251,7 +251,7 @@ Dieses Suchmodul ruft die Adobe I/O Events-IDs für den angegebenen Anbieter und
    </table>
 
 
-#### Erstellen eines benutzerdefinierten API-Aufrufs
+#### Benutzerdefinierten API-Aufruf erstellen
 
 Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe I/O Events]-API durch
 
@@ -260,12 +260,12 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL -Verbindung]</td>
-        <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
+     <td role="rowheader">[!UICONTROL Verbindung]</td>
+        <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe I/O Events] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe I/O Events]</a>.</td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL path]</p>
+        <p>[!UICONTROL Pfad]</p>
       </td>
       <td>
         <p>Pfad eingeben für <code>https://api.adobe.io/events</code></p>
@@ -273,14 +273,14 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Methode]</p>
+        <p>[!UICONTROL Methode]</p>
       </td>
       <td>
   <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p>  
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL Header]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -294,8 +294,8 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die [!DNL Ado
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL body]</td>
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+      <td role="rowheader">[!UICONTROL Text]</td>
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -313,8 +313,8 @@ Dieses Suchmodul ruft alle Ereignisse für eine Registrierung aus einem Journal 
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL -Verbindung]</td>
-        <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe I/O Events] finden Sie unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe I/O Events]</a> in diesem Artikel.</td>
+         <td role="rowheader">[!UICONTROL Verbindung]</td>
+        <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe I/O Events] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe I/O Events]</a>.</td>
        </tr>
        <tr>
          <td role="rowheader">
@@ -329,7 +329,7 @@ Dieses Suchmodul ruft alle Ereignisse für eine Registrierung aus einem Journal 
            [!UICONTROL Maximale Anzahl der zurückgegebenen Ereignisse]
          </td>
          <td>
-              Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie. 
+              Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu. 
          </td>
        </tr>
        <tr>
@@ -339,13 +339,15 @@ Dieses Suchmodul ruft alle Ereignisse für eine Registrierung aus einem Journal 
          <td>Datum eingeben oder zuordnen. Das Modul gibt Ereignisse zurück, die nach diesem Datum aufgetreten sind.
          </td>
        </tr>
-<!--       <tr>
+<!--
+<tr>
          <td role="rowheader">
            [!UICONTROL Seek]
          </td>
          <td>
          </td>
-       </tr>-->
+       </tr>
+-->
        <tr>
          <td role="rowheader">
            [!UICONTROL Neueste]
@@ -358,7 +360,7 @@ Dieses Suchmodul ruft alle Ereignisse für eine Registrierung aus einem Journal 
    </table>
 &lt;!—
 
-Ereignisse ansehen
+Ereignisse überwachen
 
 Dieses Ereignismodul startet ein Trigger, wenn ein Ereignis im ausgewählten Adobe-Produkt oder -Service auftritt.
 
@@ -368,7 +370,7 @@ Dieses Ereignismodul startet ein Trigger, wenn ein Ereignis im ausgewählten Ado
    <tbody> 
    <tr> 
    <td role="rowheader">Webhook</td> 
-   <td><p>Wählen Sie den Webhook aus, den Sie für diesen Trigger verwenden möchten, oder fügen Sie einen neuen Webhook hinzu. </p><p>Um einen neuen Webhook hinzuzufügen, <ol><li>Klicken Sie <b>Hinzufügen</b> neben dem Webhook-Feld.</li><li>Geben Sie Folgendes ein: <ul><li>Ein Name für den Webhook</li><li>Die Verbindung, die Sie für diesen Webhook verwenden möchten</li><li>Die Quelle der Ereignisse, die Sie beobachten möchten</li></ul></li><li>Klicken Sie <b>Speichern</b>, um den Webhook zu speichern und zum Modul zurückzukehren. </td> 
+   <td><p>Wählen Sie den Webhook aus, den Sie für diesen Trigger verwenden möchten, oder fügen Sie einen neuen Webhook hinzu. </p><p>Um einen neuen Webhook hinzuzufügen, <ol><li>Klicken Sie <b>Hinzufügen</b> neben dem Webhook-Feld.</li><li>Geben Sie Folgendes ein: <ul><li>Ein Name für den Webhook</li><li>Die Verbindung, die Sie für diesen Webhook verwenden möchten</li><li>Die Quelle der Ereignisse, die Sie beobachten möchten</li></ul></li><li>Klicken Sie auf <b>Speichern</b>, um den Webhook zu speichern und zu dem Modul zurückzukehren. </td> 
    </tr> 
    </tbody> 
 </table>

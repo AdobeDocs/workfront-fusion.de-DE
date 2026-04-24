@@ -1,19 +1,19 @@
 ---
 content-type: reference
-title: Vorlagen bearbeiten
+title: Bearbeiten von Vorlagen
 description: In diesem Artikel wird beschrieben, wie Sie Fusion-Vorlagen bearbeiten.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Vorlagen bearbeiten
+# Bearbeiten von Vorlagen
 
 Adobe Workfront Fusion-Vorlagen sind vorgefertigte Szenarien zur Automatisierung und Optimierung verschiedener Workflows. Mit diesen Vorlagen können Sie Integrationen und Automatisierungen schnell einrichten, ohne alles von Grund auf neu erstellen zu müssen.
 
@@ -21,7 +21,7 @@ Als Administrator sind Sie berechtigt, von anderen erstellte Vorlagen anzuzeigen
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
@@ -30,18 +30,18 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
   <col>
   <tbody>
     <tr>
-      <td role="rowheader">Adobe Workfront-Plan</td>
+      <td role="rowheader">Adobe Workfront-Abo</td>
       <td><p>Beliebig</p></td>
     </tr>
     <tr data-mc-conditions="">
       <td role="rowheader">Adobe Workfront-Lizenz</td>
-      <td><p>Neu: Standard</p><p>Oder</p><p>Aktuell: [!UICONTROL Work] oder höher</p></td>
+      <td><p>Neu: Standard</p><p>ODER</p><p>Aktuell: [!UICONTROL Work] oder höher</p></td>
     </tr>
     <tr>
       <td role="rowheader">Lizenz für Adobe Workfront Fusion**</td>
       <td>
         <p>Aktuell: Keine Workfront Fusion-Lizenzanforderung.</p>
-        <p>Oder</p>
+        <p>ODER</p>
         <p>Legacy: Beliebig</p>
       </td>
     </tr>
@@ -53,7 +53,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
           <li>[!UICONTROL Select] oder [!UICONTROL Prime] Workfront-Plan: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</li>
           <li>[!UICONTROL Ultimate] Workfront-Plan: Workfront Fusion ist enthalten.</li>
         </ul>
-        <p>Oder</p>
+        <p>ODER</p>
         <p>Aktuell: Ihr Unternehmen muss Adobe Workfront Fusion erwerben.</p>
       </td>
     </tr>
@@ -63,7 +63,8 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
 <!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md). -->
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+-->
 
 +++
 
@@ -105,7 +106,7 @@ Mit [!DNL Workfront Fusion template] [!UICONTROL Assistent] können Sie zukünft
 1. Wiederholen Sie die Schritte 2-4 für jedes Feld, für das Sie Informationen bereitstellen möchten.
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern und das Modul zu schließen.
 
-Der Veröffentlichungsprozess ist derselbe wie bei einem Standardbenutzer. Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)Veröffentlichen und Freigeben von Vorlagen“.
+Der Veröffentlichungsprozess ist derselbe wie bei einem Standardbenutzer. Weitere Informationen finden Sie [ Abschnitt ](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)Veröffentlichen und Freigeben von Vorlagen“.
 
 ## Vorlagenstatus
 
