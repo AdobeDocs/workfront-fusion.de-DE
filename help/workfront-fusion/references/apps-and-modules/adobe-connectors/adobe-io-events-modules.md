@@ -4,9 +4,9 @@ description: Mit den Adobe I/O Events-Modulen können Sie ein Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1099'
 ht-degree: 44%
 
 ---
@@ -161,8 +161,6 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 * [Suchvorgänge](#searches)
 
 ### Auslöser
-
-<!--Becky start here-->
 
 #### Erstellen einer Ereignisregistrierung
 
@@ -358,7 +356,6 @@ Dieses Suchmodul ruft alle Ereignisse für eine Registrierung aus einem Journal 
        </tr>
      </tbody>
    </table>
-&lt;!—
 
 Ereignisse überwachen
 

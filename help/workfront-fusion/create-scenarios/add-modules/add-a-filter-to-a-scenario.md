@@ -4,9 +4,9 @@ description: In einigen Szenarien müssen Sie nur mit Bundles arbeiten, die best
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '528'
 ht-degree: 19%
 
 ---
@@ -71,7 +71,7 @@ Sie müssen beide Module zu einem Szenario hinzufügen, bevor Sie einen Filter z
    >Sie können Werte über das Zuordnungsbedienfeld in Filterfelder eingeben
    >Weitere Informationen zur Zuordnung finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-   Wenn der Filter beispielsweise Dateien in Adobe Workfront übergeben soll, die mit XML enden, geben Sie **[!UICONTROL Dateinamen]** in das erste Feld ein und .**[!UICONTROL xml]** im zweiten Feld an. Im Dropdown-Menü zwischen ihnen wählen Sie **[!UICONTROL Endet mit (Groß-/Kleinschreibung wird nicht beachtet)]**. Dieser Filter würde für eingehende Bundles des ersten Moduls (Workfront) gelten. Nur Bundles mit XML-Dateien würden an das nächste Modul weitergegeben.
+   Wenn der Filter beispielsweise Dateien in Adobe Workfront übergeben soll, die mit XML enden, geben Sie **[!UICONTROL Dateiname]** in das erste Feld und .**[!UICONTROL xml]** in das zweite Feld ein. Im Dropdown-Menü zwischen ihnen wählen Sie **[!UICONTROL Endet mit (Groß-/Kleinschreibung wird nicht beachtet)]**. Dieser Filter würde für eingehende Bundles des ersten Moduls (Workfront) gelten. Nur Bundles mit XML-Dateien würden an das nächste Modul weitergegeben.
 
    ![Filter einrichten](assets/set-up-filter-box.png)
 
@@ -87,7 +87,7 @@ Sie können einen vorhandenen Filter kopieren und an einer anderen Stelle im Sze
 1. Klicken Sie mit der rechten Maustaste auf die Verbindungspunkte zwischen den Modulen, in denen sich der Filter befindet.
 1. Wählen Sie **Filter kopieren** aus.
 1. Klicken Sie mit der rechten Maustaste auf die Verbindungspunkte zwischen Modulen, in die Sie den Filter einfügen möchten.
-1. Wählen Sie **Filter einfügen
+1. Filter **Einfügen** auswählen
 1. (Optional) Um den Filter anzupassen, klicken Sie auf das Filtersymbol oder die Kennzeichnung und geben Sie Werte ein, wie in [Hinzufügen eines Filters zwischen zwei Modulen](#add-a-filter-between-two-modules) in diesem Artikel beschrieben.
 
 

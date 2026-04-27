@@ -4,10 +4,10 @@ description: Mit den  [!DNL Adobe Campaign]  können Sie ein Adobe Workfront Fus
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 36%
+source-wordcount: '1449'
+ht-degree: 35%
 
 ---
 
@@ -57,7 +57,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 Fügen Sie die Fusion-IP-Adressen zu [!DNL Adobe Campaign] hinzu.
 
-* Anweisungen zum Hinzufügen von IP-Adressen zu Ihrer Campaign-Zulassungsliste finden Sie unter [Hinzufügen von IP-Adressen &#x200B;](https://experienceleague.adobe.com/de/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) der Adobe Campaign-Dokumentation.
+* Anweisungen zum Hinzufügen von IP-Adressen zu Ihrer Campaign-Zulassungsliste finden Sie unter [Hinzufügen von IP-Adressen ](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) der Adobe Campaign-Dokumentation.
 * Eine Liste der IP-Adressen, die der Zulassungsliste hinzugefügt werden können, finden Sie [Konfigurieren von IP-Adressen für Fusion in der -](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Adobe Campaign-API-Informationen
@@ -81,7 +81,7 @@ Der Adobe Campaign-Connector verwendet Folgendes:
 >
 >Es wird dringend empfohlen, eine Server-zu-Server-Verbindung zu erstellen. Adobe Campaign hat seine API so aktualisiert, dass nur Server-zu-Server-Verbindungen akzeptiert werden. Wenn Sie eine Verbindung zu Campaign Version 8 oder höher herstellen, **müssen** eine Server-zu-Server-Verbindung erstellen.
 >
->Weitere Informationen zu den neuen Verbindungsanforderungen von Campaign finden Sie unter [Migration technischer Campaign-Benutzerinnen und -Benutzer zu Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html?lang=de) in der Campaign-Dokumentation.
+>Weitere Informationen zu den neuen Verbindungsanforderungen von Campaign finden Sie unter [Migration technischer Campaign-Benutzerinnen und -Benutzer zu Adobe Developer Console](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/ims-migration.html) in der Campaign-Dokumentation.
 
 1. Klicken Sie in einem [!DNL Adobe Campaign] Modul **[!UICONTROL Hinzufügen]** neben dem Feld [!UICONTROL Verbindung].
 1. Füllen Sie die folgenden Felder aus:
@@ -254,11 +254,13 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Camp
     <tr>
       <td role="rowheader">[!UICONTROL Aktion]</td>
       <td><p>Wählen Sie die Aktion aus, die der API-Aufruf ausführen soll.</p>
-      <p>[!UICONTROL Abfrage ausführen]</p>
-      <p>[!UICONTROL schreiben]</p>
-      <p>[!UICONTROL Entität aus neuerer Zeit abrufen]</p>
-      <p>[!UICONTROL Alle auswählen]</p>
-      <p>[!UICONTROL Push-Ereignis]</p>
+      <ul>
+      <li><p>[!UICONTROL Abfrage ausführen]</p></li>
+      <li><p>[!UICONTROL schreiben]</p></li>
+      <li><p>[!UICONTROL Entität aus neuerer Zeit abrufen]</p></li>
+      <li><p>[!UICONTROL Alle auswählen]</p></li>
+      <li><p>[!UICONTROL Push-Ereignis]</p></li>
+      </ul>
     </td>
     </tr>
     <tr>
@@ -280,7 +282,7 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Camp
 
 Dieses Aktionsmodul führt eine ausgewählte Aktion für ein Objekt in der [!DNL Adobe Campaign]-API aus.
 
-Informationen zu bestimmten Aktionen und Feldern finden Sie unter [[!DNL Adobe Campaign]  - API-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de).
+Informationen zu bestimmten Aktionen und Feldern finden Sie unter [[!DNL Adobe Campaign]  - API-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -300,7 +302,7 @@ Informationen zu bestimmten Aktionen und Feldern finden Sie unter [[!DNL Adobe C
    <ul>
    <li><p><b>[!DNL List]</b></p><p> Verfügbare Felder finden Sie unter <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> in diesem Artikel. </p></li>
      <li><p><b>[!UICONTROL GET]</b></p><p> Verfügbare Felder finden Sie unter <a href="#search" class="MCXref xref" >[!UICONTROL Search]</a> in diesem Artikel. </p></li> 
-   <li><p><b>[!UICONTROL Erstellen]</b></p><p> Verfügbare Felder finden Sie unter <a href="#create-a-record" class="MCXref xref" >[!UICONTROL , Datensatz erstellen]</a> in diesem Artikel. </p></li>
+   <li><p><b>[!UICONTROL Erstellen]</b></p><p> Verfügbare Felder finden Sie unter <a href="#create-a-record" class="MCXref xref" >[!UICONTROL, Datensatz erstellen]</a> in diesem Artikel. </p></li>
    <li><p><b>[!UICONTROL aktualisieren]</b></p><p> Informationen zu verfügbaren Feldern finden Sie unter <a href="#update-record" class="MCXref xref" >[!UICONTROL Aktualisieren eines Datensatzes]</a> in diesem Artikel. </p></li>
    <li><p><b>[!UICONTROL Löschen]</b></p><p> Verfügbare Felder finden Sie unter <a href="#delete-record" class="MCXref xref" >[!UICONTROL Datensatz löschen]</a> in diesem Artikel. </p></li>
    </ul>
@@ -330,11 +332,11 @@ Dieses Aktionsmodul liest einen Datensatz aus [!DNL Adobe Campaign].
    <td>Geben Sie die Zuordnungs-ID des Datensatzes ein, den Sie lesen möchten.</td> 
   </tr> 
  <tr> 
-   <td role="rowheader">[!UICONTROL -Felder, die in die Ausgabe aufgenommen werden sollen] </td> 
+   <td role="rowheader">[!UICONTROL-Felder, die in die Ausgabe aufgenommen werden sollen] </td> 
    <td>Wählen Sie die Felder aus, die Sie in die Ausgabe des Moduls aufnehmen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Benutzerdefinierte-Felder, die in die Ausgabe aufgenommen werden sollen]</td> 
+   <td role="rowheader">[!Benutzerdefinierte UICONTROL-Felder, die in die Ausgabe aufgenommen werden sollen]</td> 
    <td>Klicken Sie für jedes benutzerdefinierte Feld, das Sie in die Ausgabe aufnehmen möchten, auf <b>[!UICONTROL Hinzufügen]</b> und geben Sie den Namen des benutzerdefinierten Felds ein.</td> 
   </tr> 
  </tbody> 

@@ -4,9 +4,9 @@ description: Fusion-Administratoren können ein Dashboard anzeigen, das Ausführ
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
-source-git-commit: 1d8504b10d9ca74a5df5532232cda235c67b0185
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '694'
 ht-degree: 7%
 
 ---
@@ -60,11 +60,11 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 Im Fusion-Performance-Dashboard werden die folgenden Metriken angezeigt.
 
-* **Ausführungen warten darauf, verarbeitet zu werden**
+* **Ausführungen warten auf die Verarbeitung**
 Dieses Diagramm zeigt die Anzahl der Ausführungen, die zu einem bestimmten Zeitpunkt auf die Verarbeitung warten (auch als Ausführungsrückstand bezeichnet).
 
   Eine hohe Anzahl an Ausführungen, die darauf warten, verarbeitet zu werden, kann sich auf die Leistung in Ihrer Fusion-Instanz auswirken. Sie erhalten eine Benachrichtigung, wenn Ihr Ausführungsrückstand 5000 Ausführungen erreicht. Es wird empfohlen, verantwortliche Szenarien zu identifizieren und sie zu ändern oder zu deaktivieren. Wenn der hohe Ausführungsrückstand weiterhin besteht, schützt das Fusion-Team die Leistung Ihrer Fusion-Instanz, indem es die verantwortlichen Szenarien deaktiviert.
-* **Pool-Nutzung**
+* **Poolauslastung**
 Dieses Diagramm zeigt die Auslastung des Worker-Pools im Zeitverlauf. Wenn in diesem Diagramm routinemäßig die Auslastung des Workerpools angezeigt wird, sollten Sie einige Szenarien einem anderen Pool zuweisen.
 
   Wenn ein Pool sich der 100%igen Auslastung nähert, können andere Ressourcen, die denselben Pool verwenden, verzögert oder unterbrochen sein. In diesem Fall empfehlen wir, ein Szenario mit hoher Nutzung einem anderen Worker-Pool neu zuzuweisen oder vorhandene Szenarien zu ändern, damit sie weniger ressourcenintensiv sind.
@@ -79,7 +79,7 @@ Dieses Diagramm zeigt Ausführungen pro Szenario. Verschiedene Farben stellen ve
 
 ## Anzeigen des Fusion-Performance-Dashboards
 
-1. Klicken Sie in Fusion im linken Navigationsbereich auf Leistung .
+1. Klicken Sie in Fusion **linken** auf „Performance“.
 
    Das Dashboard wird geöffnet.
 

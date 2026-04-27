@@ -4,20 +4,20 @@ description: Beim Zuordnen von Elementen können Sie Funktionen verwenden, um ei
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 24%
+source-wordcount: '717'
+ht-degree: 23%
 
 ---
 
-# Zuordnen eines Elements mithilfe integrierter Funktionen
+# Map an item using built-in functions
 
 Workfront Fusion enthält integrierte Funktionen, mit denen Sie einfache oder komplexe Formeln erstellen können. Diese Funktionen decken eine Vielzahl von Anwendungsfällen ab, einschließlich Funktionen für Arrays, Zeichenfolgen, Zahlen und Daten aus vorherigen Modulen.
 
 Darüber hinaus können Sie benutzerdefinierte Funktionen erstellen, mit denen Ihre Szenarien dann Daten transformieren und bearbeiten können.
 
-Informationen und Anweisungen zu benutzerdefinierten Funktionen finden Sie unter [Zuordnen von Daten mithilfe benutzerdefinierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
+For information and instructions on custom functions, see [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
 
 ## Zugriffsanforderungen
 
@@ -38,7 +38,7 @@ Informationen und Anweisungen zu benutzerdefinierten Funktionen finden Sie unter
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p><ul><li>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li><li>Sie benötigen eine Adobe App Builder-Lizenz, um benutzerdefinierte Funktionen verwenden zu können.</ul>
+   <p><ul><li>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li><li>You must have an Adobe App Builder license to use custom functions.</ul>
    </td> 
   </tr>
  </tbody> 
@@ -48,45 +48,45 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 +++
 
-## Zuordnen von Daten mithilfe integrierter Funktionen
+## Map data using built-in functions
 
 Beim Zuordnen von Elementen können Sie Funktionen verwenden, um einfache oder komplexe Formeln zu erstellen. Die verfügbaren Funktionen ähneln den Funktionen in Excel und in einigen Programmiersprachen:
 
 * Sie werten allgemeine Logik, Mathematik, Text, Daten und Arrays aus.
 * Mit ihnen können Sie bedingte Logik anwenden und Elementwerte umwandeln, z. B. einen Text in Großbuchstaben umwandeln, Text kürzen, ein Datum in ein anderes Format konvertieren und vieles mehr.
 
-### Funktionen in Felder einfügen
+### Insert functions into fields
 
-So fügen Sie eine Funktion in ein Feld ein:
+To insert a function into a field:
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie Daten zuordnen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
-1. Klicken Sie auf das Feld, in das Sie eine Funktion einfügen möchten.
-1. Wählen Sie die Registerkarte im Bedienfeld Zuordnung aus, die die Funktion enthält, die Sie einfügen möchten.
+1. Click the field where you want to insert a function.
+1. Select the tab in the mapping panel that contains the function you want to insert.
 
-   Informationen zu Registerkarten des Zuordnungsbereichs finden Sie unter [Funktionsübersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
-   1. Klicken Sie auf den Funktionsnamen.
+   For information on mapping panel tabs, see [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+1. Click the function name.
 
-      ODER
+   ODER
 
-      Ziehen Sie die Funktion in das Feld.
-1. Konfigurieren Sie die Funktionsparameter.
+   Drag the function into the field.
+1. Configure the function parameters.
 
-   Um eine Erklärung der Funktionsparameter zu erhalten, bewegen Sie den Mauszeiger über die Funktion im Zuordnungsbereich.
+   For an explanation of function parameters, hover over the function in the mapping panel.
 
-   Weitere Informationen zu Funktionen und ihren Parametern finden Sie in den Artikeln unter [Funktionsverweise: Artikelindex](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md).
+   For more information on functions and their parameters, see the articles under [Function references: article index](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md).
 
-1. Fahren Sie mit der Konfiguration des Moduls fort oder klicken Sie auf **OK**.
+1. Continue configuring the module, or click **OK**.
 
 >[!TIP]
 >
->Wenn Sie eine komplexe Formel erstellen, die Sie in einem anderen Feld wiederverwenden möchten, können Sie auf das Feld klicken, das die Kombination enthält, sie mit Befehlstaste A oder Strg-A auswählen und sie dann kopieren und in das andere Feld einfügen.
+>When you create a complex formula that you want to reuse in another field, you can click the field that contains the combination, use Cmd-A or Ctrl-A to select it, then copy and paste it into the other field.
 
 
 >[!BEGINSHADEBOX]
 
-**Beispiel:** Einige Datentypen verhindern, dass Benutzer mehr als eine bestimmte Anzahl von Zeichen eingeben. Sie können die Funktion Teilzeichenfolge verwenden, um einen Wert auf eine bestimmte Anzahl von Zeichen zu beschränken.
+**Example:** Some data types prevent users from entering more than a certain number of characters. You can use the substring function to limit a value to a certain number of characters.
 
 In diesem Beispiel beschränkt die Funktion Teilzeichenfolge den Projektnamen auf 50 Zeichen.
 
@@ -131,13 +131,13 @@ Wenn Workfront Fusion keine Funktion enthält, die Sie verwenden möchten, es je
 1. Konfigurieren Sie das Modul:
 
    1. Wählen Sie die neu erstellte Tabelle im Feld **[!UICONTROL Tabelle]** aus.
-   1. Fügen Sie die Formel, die die [!DNL Google Sheets] enthält, in das Feld **[!UICONTROL Wert]** ein.
+   1. Insert your formula containing the [!DNL Google Sheets] function(s) into the **[!UICONTROL Value]** field.
 
-      Sie können die Ausgabe vorhergehender Module wie gewohnt verwenden.
+      You can use the output of preceding modules as usual.
 
-      ![Verwenden von Google Sheets-Funktionen](assets/exploit-google-sheet-functions-350x218.png)
+      ![Use Google Sheets functions](assets/exploit-google-sheet-functions-350x218.png)
 
-1. Fügen Sie das Modul **[!UICONTROL Google] >[!UICONTROL Zelle abrufen]** ein, um das berechnete Ergebnis zu erhalten.
-1. Konfigurieren Sie das Modul mit derselben Zellen-ID, die Sie in Schritt 4 verwendet haben.
+1. Insert the **[!UICONTROL Google Sheets] >[!UICONTROL Get a cell]** module to obtain the calculated result.
+1. Configure the module, using the same Cell ID that you used in step 4.
 
-   ![Verwenden von Google Sheets-Funktionen](assets/exploit-google-sheet-functions-2-350x187.png)
+   ![Use Google Sheets functions](assets/exploit-google-sheet-functions-2-350x187.png)

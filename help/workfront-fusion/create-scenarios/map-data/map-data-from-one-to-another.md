@@ -1,19 +1,19 @@
 ---
-title: Zuordnen von Informationen von einem Modul zu einem anderen
-description: Bei der Zuordnung werden die Ausgaben eines Moduls, strukturiert in Elemente, den Eingabefeldern eines anderen Moduls zugewiesen.
+title: Zuordnen von Informationen zwischen Modulen
+description: Beim Zuordnen werden die Ausgaben eines Moduls (in Elemente strukturiert) den Eingabefeldern eines anderen Moduls zugewiesen.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 0%
+source-wordcount: '777'
+ht-degree: 17%
 
 ---
 
-# Zuordnen von Informationen von einem Modul zu einem anderen
+# Zuordnen von Informationen zwischen Modulen
 
-Beim Mapping werden die Ausgaben eines Moduls den Eingabefeldern eines anderen Moduls zugewiesen.
+Beim Zuordnen werden die Ausgaben eines Moduls den Eingabefeldern eines anderen Moduls zugewiesen.
 
 Das Zuordnungsbedienfeld wird angezeigt, wenn Sie auf ein Feld klicken, in das Sie einen Wert einfügen können, der von einem vorherigen Modul in einem Szenario ausgegeben wurde.
 
@@ -21,7 +21,7 @@ Sie können auch eine Formel erstellen, indem Sie eine beliebige Kombination von
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,22 +29,22 @@ Sie können auch eine Formel erstellen, indem Sie eine beliebige Kombination von
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -78,7 +78,7 @@ Weitere Informationen finden Sie unter [Modul konfigurieren](/help/workfront-fus
 
 ### Problem: Fehlende Elemente im Zuordnungsbereich
 
-Im Zuordnungsbereich werden Ausgabeelemente aus vorherigen Modulen angezeigt. Gelegentlich fehlen einige Elemente in diesem Bedienfeld. Sie können das Modul ausführen, dem die Ausgabe im Szenario-Editor fehlt, und das Zuordnungsbedienfeld kann diese Elemente dann in späteren Modulen einbeziehen. Die genaue Vorgehensweise unterscheidet sich je nach Modultyp
+Im Zuordnungsbereich werden Ausgabeelemente aus vorherigen Modulen angezeigt. Gelegentlich fehlen einige Elemente in diesem Bedienfeld. Sie können das Modul ausführen, dem die Ausgabe im Szenario-Editor fehlt, und das Zuordnungsbedienfeld kann diese Elemente dann in späteren Modulen einbeziehen. Die genaue Vorgehensweise unterscheidet sich je nach Modultyp.
 
 * [Sofortiger Trigger](#instant-trigger)
 * [Trigger wird abgerufen](#polling-trigger)

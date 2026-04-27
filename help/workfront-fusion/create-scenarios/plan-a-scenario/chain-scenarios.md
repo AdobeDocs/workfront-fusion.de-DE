@@ -4,9 +4,9 @@ description: Sie können Szenarien miteinander verketten, sodass ein Szenario ei
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 12%
 
 ---
@@ -60,51 +60,51 @@ Betrachten Sie die folgenden Beispielanwendungsfälle für Verkettungsszenarien:
 
 * **Fehlerbehandlung**: Unternehmen nutzen häufig dieselben Aktionen zur Fehlerbehandlung in mehreren Szenarien, z. B. eine Route zur Fehlerbehandlung, die ein Fehlerprotokoll an einen Datenspeicher sendet und eine Slack-Benachrichtigung erstellt. Sie können mit diesen Aktionen ein untergeordnetes Szenario erstellen und dieses Szenario in Fehlerbehandlungsrouten in mehreren Szenarien verketten.
 
-* **Verlängerung der**: Sie können Verkettungen für große Batch-Vorgänge mit lang laufenden Aktionen verwenden, z. B. wenn Sie Dateien exportieren und importieren möchten. Dieser Vorgang dauert einige Zeit, wenn viele Dateien vorhanden sind. Da untergeordnete Szenarien nicht mit der maximalen Wartezeit des übergeordneten Szenarios verrechnet werden, können Sie die Ausführungszeit überschreiten, indem Sie mehrere untergeordnete Szenarien zum Exportieren oder Importieren der Dateien verwenden.
+* **Verlängerung der**: Sie können Verkettungen für große Batch-Vorgänge mit lang laufenden Aktionen verwenden, z. B. beim Exportieren und Importieren von Dateien. Dieser Vorgang dauert einige Zeit, wenn viele Dateien vorhanden sind. Da untergeordnete Szenarien nicht mit der maximalen Wartezeit des übergeordneten Szenarios verrechnet werden, können Sie die Ausführungszeit überschreiten, indem Sie mehrere untergeordnete Szenarien zum Exportieren oder Importieren der Dateien verwenden.
 
 * **Ersetzen von Iteratoren** Durch Ersetzen von Iteratoren durch untergeordnete Szenarien kann die Speichernutzung reduziert werden, z. B. bei komplexen Vorgängen in einer Iteration, die zu einem Fehler wegen zu wenig Arbeitsspeicher führt. Sie können ein separates Szenario für den komplexen Vorgang erstellen und den Iterator durch das Modul Untergeordnetes Szenario aufrufen ersetzen
 
 * **Datensatz suchen und erstellen**: Sie können beispielsweise ein Szenario erstellen, in dem nach einem Benutzer gesucht wird. Wenn sie vorhanden sind, werden sie als genehmigende Person hinzugefügt, deren Zugriff überprüft und genehmigt werden muss. Wenn sie nicht vorhanden sind, erstellt das Szenario eine Anfrage, in die der Administrator einen neuen Benutzer aufnehmen kann.
 
-## Anzeigen des Ausführungsverlaufs für verkettete Szenarien
+## Viewing execution history for chained scenarios
 
-Sie können den Ausführungsverlauf für verkettete Szenarien anzeigen, indem Sie den Verlauf jedes Szenarios in der Kette anzeigen. Beispielsweise würde der Ausführungsverlauf des übergeordneten Szenarios Informationen über Module und Daten enthalten, die direkt im übergeordneten Szenario verarbeitet werden. Um den Ausführungsverlauf für Module und Daten, die in einem untergeordneten Szenario verarbeitet werden, anzuzeigen, öffnen Sie das untergeordnete Szenario und zeigen Sie dort den Ausführungsverlauf an.
+You can view execution history for chained scenarios by viewing the history of each scenario included in the chain. For example, the parent scenario&#39;s execution history would include information about modules and data processed directly in the parent scenario. To view execution history for modules and data processed in a child scenario, open the child scenario and view the execution history there.
 
-Es wird empfohlen, die Schaltfläche **Zum untergeordneten Szenario wechseln** im Modul Untergeordnetes Szenario aufrufen zu verwenden, um schnell zum untergeordneten Szenario zu wechseln, in dem Sie den Ausführungsverlauf anzeigen können. Das untergeordnete Szenario wird in einem anderen Browser-Fenster geöffnet, sodass übergeordnete und untergeordnete Szenarien gleichzeitig angezeigt werden.
+We recommend using the **Go to the child scenario** button in the Call a child scenario module to quickly go to the child scenario, where you can view its execution history. The child scenario opens in another browser window, allowing you to see parent and child scenarios at the same time.
 
-![Wechseln Sie zur Schaltfläche für das untergeordnete Szenario](assets/go-to-the-child-button.png)
+![Go to the child scenario button](assets/go-to-the-child-button.png)
 
-## Fehler und unvollständige Ausführungen
+## Errors and incomplete executions
 
 ### Umgang mit Fehlern
 
-Wenn das untergeordnete Szenario einen Fehler aufweist, kann dies dazu führen, dass Daten an das übergeordnete Element zurückgegeben werden.
+If the child scenario errors out, that may affect getting data back to your parent.
 
-Es wird empfohlen, die Fehlerbehandlung im untergeordneten Szenario zu konfigurieren, um sicherzustellen, dass das übergeordnete Szenario nicht auf die Antwort des untergeordneten Szenarios wartet, wenn im untergeordneten Szenario ein Fehler auftritt.
+We recommend configuring error handling in the child scenario to ensure that if something goes wrong in the child scenario, the parent scenario is not stuck waiting for the response from the child scenario.
 
 ## Best Practices
 
-Beachten Sie beim Verketten eines Szenarios die folgenden Best Practices.
+Consider the following best practices when chaining a scenario.
 
-### Vermeiden von Rekursionen bei der Verkettung von Szenarien
+### Avoid recursion when chaining scenarios
 
 Rekursionen treten auf, wenn ein Szenario sich selbst neu auslöst, wodurch eine neue Ausführung in einer Endlosschleife ausgelöst wird.
 
 Rekursionen können Leistungsprobleme sowohl für die Organisation, der das rekursive Szenario gehört, als auch für andere Organisationen verursachen.
 
-Gehen Sie beim Verketten von Szenarien wie folgt vor, um Rekursionen zu vermeiden:
+When chaining scenarios, follow these practices to avoid recursion:
 
-* Stellen Sie sicher **dass das übergeordnete Szenario nicht durch untergeordnete Szenarien Trigger werden kann**. Wenn beispielsweise ein übergeordnetes Szenario ausgelöst wird, wenn eine Anfrage erstellt wird, stellen Sie sicher, dass die untergeordneten Szenarien keine Anfragen erstellen.
-* Stellen Sie sicher **dass sich untergeordnete Szenarien nicht gegenseitig**. Wenn beispielsweise untergeordnetes Szenario A untergeordnetes Szenario B aufruft, stellen Sie sicher, dass untergeordnetes Szenario B nicht untergeordnetes Szenario A aufruft.
-* Stellen Sie sicher **dass ein Szenario sich nicht selbst aufrufen**. Beispielsweise wird ein Szenario ausgelöst, wenn eine Aufgabe erstellt wird und dieses Szenario zwei Aufgaben erstellt. Bei den neu erstellten Aufgaben wird das Szenario erneut ausgelöst, sodass vier neue Aufgaben erstellt werden. Bei jeder Erstellung einer Aufgabe wird das Szenario ausgelöst und bei jeder Ausführung des Szenarios verdoppelt sich die Anzahl der Aufgaben. Die Anzahl der Aufgaben steigt exponentiell.
+* Ensure that **child scenarios cannot trigger the parent scenario**. For example, if a parent scenario is triggered when a request is created, ensure that the child scenarios do not create requests.
+* Ensure that **child scenarios do not call each other**. For example, If child scenario A calls child scenario B, ensure that child scenario B does not call child scenario A.
+* Ensure that **a scenario cannot call itself**. Beispielsweise wird ein Szenario ausgelöst, wenn eine Aufgabe erstellt wird und dieses Szenario zwei Aufgaben erstellt. Bei den neu erstellten Aufgaben wird das Szenario erneut ausgelöst, sodass vier neue Aufgaben erstellt werden. Bei jeder Erstellung einer Aufgabe wird das Szenario ausgelöst und bei jeder Ausführung des Szenarios verdoppelt sich die Anzahl der Aufgaben. Die Anzahl der Aufgaben steigt exponentiell.
 
 >[!IMPORTANT]
 >
 >* **Wenn ein Szenario eine Rekursion verursacht, wird es vom Fusion-Engineering-Team deaktiviert, um weitere Leistungsprobleme zu verhindern.**
 >* Da die Rekursion ein Ergebnis des Szenario-Designs ist, müssen Sie Ihre Szenarios so entwerfen, dass das Szenario keine Aktionen umfasst, die das Szenario auslösen.
->* Sie können ein Diagramm der Beziehungen zwischen übergeordneten und untergeordneten Szenarien anzeigen.
->   Anweisungen finden Sie unter [Anzeigen verketteter Szenariobeziehungen](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
+>* You can view a diagram of the relationships between parent and child scenarios.
+>   For instructions, see [View chained scenario relationships](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
-### Verwenden der Fehlerbehandlung, um eine Antwort sicherzustellen
+### Use error handling to ensure a response
 
-Da das übergeordnete Szenario auf eine Antwort des untergeordneten Szenarios wartet, bevor es fortgesetzt werden kann, müssen Sie sicherstellen, dass das untergeordnete Szenario so aufgebaut ist, dass es eine Antwort bereitstellt, selbst wenn ein Fehler auftritt.
+Because the parent scenario is waiting for a response from the child scenario before it can continue, you must ensure that the child scenario is built so that it will provide a response even if it encounters an error.

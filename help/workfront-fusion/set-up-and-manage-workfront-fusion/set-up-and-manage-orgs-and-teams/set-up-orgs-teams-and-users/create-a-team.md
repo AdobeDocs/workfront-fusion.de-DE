@@ -1,29 +1,29 @@
 ---
 title: Erstellen eines Teams
-description: Teams sind kleinere Gruppen innerhalb der Organisation und teilen Fusion-Ressourcen wie Szenarien, Verbindungen und Vorlagen. Sie können so viele Teams erstellen, wie Sie möchten.
+description: Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 0%
+ht-degree: 28%
 
 ---
 
 # Erstellen eines Teams
 
-Teams sind kleinere Gruppen innerhalb der Organisation und teilen Fusion-Ressourcen wie Szenarien, Verbindungen und Vorlagen. Sie können so viele Teams erstellen, wie Sie möchten.
+Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
 
-Organisationen können so viele Teams haben, wie sie benötigen, und Benutzer können zu einem oder mehreren Teams gehören.
+Organizations may have as many teams as they need, and users may belong to one or more teams.
 
 >[!NOTE]
 >
->Da Teams Ressourcen gemeinsam nutzen, ist es manchmal nützlich, wenn ein Team nur ein Mitglied hat. Beispielsweise können Benutzende, die an Schulungen teilnehmen, Verbindungen zu ihren jeweiligen Workfront-Konten erstellen. Alle Teammitglieder können sich auch mit dem jeweiligen Workfront-Konto verbinden. In diesem Fall empfehlen wir, dass der Benutzer das einzige Mitglied eines Schulungsteams ist.
+>Because teams share resources, it is sometimes useful for a team to have only one member. For example, users in training may create connections to their individual Workfront accounts. Any team members would also be able to connect to the individual Workfront account. In this case we recommend that the user be the only member of a training team.
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -31,16 +31,16 @@ Organisationen können so viele Teams haben, wie sie benötigen, und Benutzer k�
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -53,28 +53,28 @@ Organisationen können so viele Teams haben, wie sie benötigen, und Benutzer k�
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
 ## Erstellen eines Teams
 
-Organisationsverantwortliche und Administratoren können Teams erstellen. Teams werden erstellt, indem ein neues Team zu einer Organisation hinzugefügt wird.
+Organization owners and administrators are able to create teams. Teams are created by adding a new team to an organization.
 
-So erstellen Sie ein Team:
+To create a team:
 
-1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Organisationsübersicht]**
-1. Wählen Sie die Registerkarte **[!UICONTROL Teams]** aus.
-1. Klicken Sie **[!UICONTROL Neues Team hinzufügen]**.
-   ![Team erstellen](assets/create-new-team-button.png)
-1. Geben Sie einen Namen für das neue Team ein und klicken Sie auf **Hinzufügen**.
+1. In the left navigation panel, click **[!UICONTROL Org overview]**.
+1. Select the **[!UICONTROL Teams]** tab.
+1. Click **[!UICONTROL Add a new team]**.
+   ![Create a team](assets/create-new-team-button.png)
+1. Enter a name for the new team, and click **Add**.
 
-## Bearbeiten eines Teams
+## Edit a team
 
-Sie können den Namen eines Teams bearbeiten.
+You can edit the name of a team.
 
-1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Organisationsübersicht]**
-1. Wählen Sie die Registerkarte **[!UICONTROL Teams]** aus.
-1. Suchen Sie das Team, dessen Namen Sie bearbeiten möchten, und klicken Sie dann in **Zeile** Teams auf „Bearbeiten“.
-1. Geben Sie einen neuen Namen für das Team ein und klicken Sie dann auf **Speichern**.
+1. In the left navigation panel, click **[!UICONTROL Org overview]**.
+1. Select the **[!UICONTROL Teams]** tab.
+1. Locate the team that you want to edit the name of, then click **Edit** in the line for that team.
+1. Enter a new name for the team, then click **Save**.
 

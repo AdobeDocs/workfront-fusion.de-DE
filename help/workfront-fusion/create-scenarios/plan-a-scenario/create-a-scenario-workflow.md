@@ -4,9 +4,9 @@ description: Diesem allgemeinen Workflow folgen, um ein Szenario zu erstellen
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
+source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '782'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ Tastaturbefehle
 ## Szenario erstellen und benennen
 
 1. Melden Sie sich bei Ihrem Workfront Fusion-Konto an.
-1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![&#x200B; (](assets/scenarios-icon.png)).
+1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![ (](assets/scenarios-icon.png)).
 
    >[!NOTE]
    >
@@ -115,7 +115,7 @@ Durch das Testen Ihres Szenarios können Sie feststellen, ob Ihr Szenario wie be
 
 ## Aktivieren des Szenarios
 
-Dieses Beispielszenario hat kein Trigger-Modul. Wenn dies ein Szenario wäre, das Sie für echte Daten verwenden würden, würde es mit einem Trigger-Modul beginnen, und das letzte, was Sie tun würden, wäre, es zu aktivieren. Nachdem Sie ein Szenario aktiviert haben, wird es standardmäßig alle 15 Minuten ausgeführt. Sie können dies ändern, indem Sie festlegen, wann und wie oft die Ausführung erfolgen soll.
+Nachdem Sie ein Szenario aktiviert haben, wird es standardmäßig alle 15 Minuten ausgeführt. Sie können dies ändern, indem Sie festlegen, wann und wie oft die Ausführung erfolgen soll.
 
 Weitere Informationen zum Aktivieren von Szenarien finden Sie unter [Aktivieren oder Deaktivieren eines Szenarios](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
