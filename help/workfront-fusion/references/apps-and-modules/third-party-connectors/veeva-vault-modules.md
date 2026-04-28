@@ -4,10 +4,10 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
-source-git-commit: 323e7d10795991bbcb6c1439db0af90e4331e687
+source-git-commit: d64d894cfb0e1905c135cdf5ea39f11cd7a6e5f2
 workflow-type: tm+mt
-source-wordcount: '3683'
-ht-degree: 14%
+source-wordcount: '4125'
+ht-degree: 13%
 
 ---
 
@@ -182,6 +182,9 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 
 * [Dokument](#document)
 * [Objekt](#object)
+* [Multi-Datei-Extraktion](#multi-file-extract)
+* [Laden mehrerer Dateien](#multi-file-load)
+* [Datei-Staging](#file-staging)
 * [Sonstiges](#other)
 
 ### Dokument
@@ -991,6 +994,148 @@ Dieses Modul erstellt, kopiert oder tief kopiert einen einzelnen Objektdatensatz
   <tr> 
    <td role="rowheader">Datensatzfelder</td> 
    <td>Wenn Sie einen Datensatz tief kopieren, wählen Sie die Felder aus, für die Sie Werte angeben möchten, und geben Sie diese Werte an.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Multi-Datei-Extraktion
+
+* [Mehrere Dateien extrahieren](#extract-multiple-files)
+* [Abrufen von Extraktergebnissen](#retrieve-extract-results)
+
+#### Mehrere Dateien extrahieren
+
+Dieses Aktionsmodul erstellt einen Ladevorgang zum Extrahieren einer oder mehrerer Datendateien.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Verbinden von Veeva Vault mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Datendateien</td> 
+   <td>Klicken Sie für jede Datei, die Sie extrahieren möchten, auf <b>Element hinzufügen</b> und geben Sie Folgendes ein:
+   <ul>
+   <li>Objekttyp</li>
+   <li>VQL-Kriterien (Optional): Um den Datensatz so zu filtern, dass er nur Dateien enthält, die bestimmte Kriterien erfüllen, geben Sie die Kriterien in Vault Query Language (VQL) ein.</li>
+   </ul>
+    </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Abrufen von Extraktergebnissen
+
+Dieses Aktionsmodul ruft Ergebnisse einer angegebenen Extraktionsanfrage ab.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Verbinden von Veeva Vault mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Auftrags-ID</p> </td> 
+   <td> <p>Geben Sie den Auftrag ein, für den Sie Ergebnisse abrufen möchten, oder ordnen Sie ihn zu. Sie können dies über das Modul Datendateien extrahieren zuordnen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Aufgaben ID</td> 
+   <td> <p>Geben Sie die Aufgabe ein, für die Sie Ergebnisse abrufen möchten, oder ordnen Sie sie zu. Sie können dies über das Modul Datendateien extrahieren zuordnen.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Laden mehrerer Dateien
+
+* [Mehrere Dateien laden](#load-multiple-files)
+* [Abrufen von Protokollergebnissen](#retrieve-log-results)
+
+#### Mehrere Dateien laden
+
+Dieses Modul erstellt einen Ladevorgang und lädt einen Satz von Datendateien.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Verbinden von Veeva Vault mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Datei</td> 
+   <td>Geben Sie den Dateipfad der CSV-Datei ein, die für diesen Auftrag verwendet werden soll, oder ordnen Sie ihn zu.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Bestellung</td> 
+   <td>Geben Sie die Reihenfolge für die Dateiliste ein oder ordnen Sie sie zu.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Keine Trigger</td> 
+   <td>Wählen Sie Ja aus, um Trigger bei Datensätzen oder Dokumenten zu umgehen.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Abrufen von Protokollergebnissen
+
+Dieses Aktionsmodul ruft ein Protokoll der Ergebnisse des Ladevorgangs ab.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Verbinden von Veeva Vault mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Auftrags-ID</p> </td> 
+   <td> <p>Geben Sie den Auftrag ein, für den Sie Ergebnisse abrufen möchten, oder ordnen Sie ihn zu. Sie können dies über das Modul Datendateien laden zuordnen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Aufgaben ID</td> 
+   <td> <p>Geben Sie die Aufgabe ein, für die Sie Ergebnisse abrufen möchten, oder ordnen Sie sie zu. Sie können dies über das Modul Datendateien laden zuordnen.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Typ</td> 
+   <td> <p>Wählen Sie aus, ob erfolgreiche oder fehlgeschlagene Aufträge abgerufen werden sollen.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Datei-Staging
+
+#### Elemente unter dem Pfad auflisten
+
+Dieses Modul gibt eine Liste von Dateien und Ordnern für den angegebenen Pfad zurück.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Verbinden von Veeva Vault mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Persönlichen Ordner auswählen</td> 
+   <td>Wählen Sie den Basisordner aus, in dem die Elemente aufgelistet werden sollen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Bestellung</td> 
+   <td>Geben Sie die Reihenfolge für die Dateiliste ein oder ordnen Sie sie zu.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Keine Trigger</td> 
+   <td>Wählen Sie Ja aus, um Trigger bei Datensätzen oder Dokumenten zu umgehen.</td> 
   </tr> 
  </tbody> 
 </table>
