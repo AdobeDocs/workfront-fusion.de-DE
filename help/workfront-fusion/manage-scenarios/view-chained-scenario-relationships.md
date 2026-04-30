@@ -3,10 +3,11 @@ title: Verkettete Szenariobeziehungen anzeigen
 description: Sie können eine Zuordnung der Beziehungen zwischen übergeordneten und untergeordneten Szenarien erstellen.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e7b12ec51474440990cc28996bc70fd97688b082
+exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
+source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 20%
+source-wordcount: '485'
+ht-degree: 18%
 
 ---
 
@@ -88,5 +89,6 @@ So zeigen Sie die Beziehungszuordnung für ein verkettetes Szenario an:
 
    * Wenn Sie nur einen Teil der Karte anzeigen, ist dieser Teil auf der vereinfachten Karte dunkler.
    * Das aktuelle Szenario ist auf der vereinfachten Karte blau markiert.
+1. Um den Ausführungsverlauf für die Kette anzuzeigen, klicken Sie auf die Registerkarte Verlauf oben in der Ansicht.
 
-
+   Sie können auf einen Verlauf klicken, um die spezifischen Daten anzuzeigen, die zwischen verketteten Szenarien übergeben werden.
