@@ -5,9 +5,9 @@ description: Sie können bestimmte Einstellungen für Szenarien im Bedienfeld Sz
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1306'
 ht-degree: 7%
 
 ---
@@ -58,6 +58,10 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 1. Aktivieren oder deaktivieren Sie die Szenario-Einstellungen nach Bedarf. Siehe [Optionen für Szenarioeinstellungen](#scenario-settings-options) unten.
 
 ## Optionen für Szenarioeinstellungen
+
+### Beschreibung
+
+Hier können Sie eine Beschreibung für das Szenario eingeben, die in der Liste Szenarien angezeigt wird. Beschreibungen sind auf 240 Zeichen beschränkt.
 
 ### [!UICONTROL Sequenzielle Verarbeitung]
 
@@ -114,7 +118,7 @@ Weitere Informationen zu Warnungen finden Sie unter [Fehlertypen](/help/workfron
 
 ### [!UICONTROL Automatische Bestätigung]
 
-Die Einstellungen [!UICONTROL Automatische &#x200B;]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
+Die Einstellungen [!UICONTROL Automatische ]) gelten für Transaktionen und definieren die Verarbeitung eines Szenarios. Wenn die Option „Auto Commit“ aktiviert ist, beginnt die Commit-Phase für jedes Modul sofort nach Abschluss der Vorgangsphase. Bei deaktivierter Option „Automatisches Commit“ erfolgt kein Commit, bis Vorgänge für alle Module ausgeführt werden (dies ist der Standardmodus).
 
 ### Maximale Zyklenanzahl
 
@@ -127,7 +131,7 @@ Das Festlegen weiterer Zyklen kann nützlich sein, wenn Sie eine Verbindungsunte
 
 * Wenn das Szenario mit einem Abrufintervall beginnt, definiert die Einstellung die maximale Anzahl von Triggern, die während der Ausführung des Szenarios zulässig ist.
 
-  Weitere Informationen zum Abrufen von Triggern finden Sie [Abrufen von Triggern &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers) im Artikel Modulübersicht .
+  Weitere Informationen zum Abrufen von Triggern finden Sie [Abrufen von Triggern ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers) im Artikel Modulübersicht .
 
 * Wenn das Szenario mit einem sofortigen Trigger beginnt, wird die Einstellung ignoriert und alle ausstehenden Ereignisse werden während einer einzigen Szenario-Ausführung verarbeitet, ein Ereignis pro Zyklus.
 

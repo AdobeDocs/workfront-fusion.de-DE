@@ -4,10 +4,11 @@ title: Verwalten von Szenarien im Bereich Szenarien
 description: Dieser Abschnitt enthält Artikel zum Verwalten von Szenarien in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8801b8c175b3cf6ed7b0dc98a8b3d269ca2bbd2b
+exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 21%
+source-wordcount: '463'
+ht-degree: 19%
 
 ---
 
@@ -54,6 +55,9 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 1. Um nach einem bestimmten Szenario zu suchen, beginnen Sie, etwas in die Suchleiste einzugeben. Szenarien werden bei der Eingabe gefiltert.
 1. Um ein Szenario zu aktivieren oder zu deaktivieren, suchen Sie das Szenario in der Liste und wechseln Sie dann in der Spalte **Status** für dieses Szenario.
 1. Um direkt zur Detailseite eines Szenarios zu wechseln, suchen Sie das Szenario in der Liste und klicken Sie dann **Öffnen** in der Zeile für dieses Szenario.
+1. Um einem Szenario eine Beschreibung hinzuzufügen, klicken Sie auf die Spalte Beschreibung für dieses Szenario und geben Sie eine Beschreibung ein.
+
+   Beschreibungen können bis zu 240 Zeichen lang sein.
 1. Um ein Szenario zu klonen, klicken Sie auf das Kontrollkästchen in der Zeile für dieses Szenario und wählen **Klonen** in der Leiste unten auf dem Bildschirm aus.
 
    Weitere Informationen zu Klonszenarien finden Sie unter [Szenario durch Klonen kopieren](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md#copy-a-scenario-by-cloning) im Artikel Module oder Szenarien kopieren .
@@ -61,4 +65,3 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 1. Um einem Worker-Pool ein oder mehrere Szenarien zuzuweisen, aktivieren Sie das Kontrollkästchen neben jedem Szenario, das Sie einem Pool zuweisen möchten, und klicken Sie dann in der Leiste am unteren **auf &quot;** zu Worker-Pool zuweisen. Wählen Sie den Worker-Pool aus, dem Sie die Szenarien zuweisen möchten.
 1. Um ein Szenario zu löschen, aktivieren Sie das Kontrollkästchen neben dem Szenario, das Sie löschen möchten, und klicken Sie dann **Löschen** in der Leiste unten auf der Seite.
 1. Um Listenspalten auszublenden, klicken Sie auf das Symbol **Spalten** (![Spalten-Symbol](assets/glist-column.png) und aktivieren oder deaktivieren Sie die Kontrollkästchen neben den Spaltennamen.
-
