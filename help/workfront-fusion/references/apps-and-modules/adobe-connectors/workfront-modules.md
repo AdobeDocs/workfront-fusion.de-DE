@@ -4,10 +4,10 @@ description: Mit dem Adobe Workfront-Connector von Adobe Workfront Fusion könne
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '7366'
-ht-degree: 100%
+source-wordcount: '7298'
+ht-degree: 98%
 
 ---
 
@@ -92,7 +92,7 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
       <tr>
         <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
-          <p>Geben Sie einen Namen für die neue Verbindung ein. </p>
+          <p>Geben Sie einen Namen für die neue Verbindung ein.</p>
         </td>
       </tr>
       <tr>
@@ -109,7 +109,7 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host-Präfix]</td>
-        <td>In den meisten Fällen sollte dieser Wert auf <code>origin</code> gesetzt werden. 
+        <td>In den meisten Fällen sollte dieser Wert auf <code>origin</code> gesetzt werden.
       </tr>
     </tbody>
     </table>
@@ -143,7 +143,7 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
       <tr>
         <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
-          <p>Geben Sie einen Namen für die neue Verbindung ein. </p>
+          <p>Geben Sie einen Namen für die neue Verbindung ein.</p>
         </td>
       </tr>
       <tr>
@@ -172,7 +172,7 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host-Präfix]</td>
-        <td>In den meisten Fällen sollte dieser Wert auf <code>origin</code> gesetzt werden. 
+        <td>In den meisten Fällen sollte dieser Wert auf <code>origin</code> gesetzt werden.
       </tr>
     </tbody>
     </table>
@@ -219,6 +219,17 @@ Dieses Auslösermodul führt ein Szenario in Echtzeit aus, wenn Objekte eines be
 Das Modul zeigt alle Ereignisabonnements an, die mit dem Webhook verbunden sind. Dazu gehören Ereignisabonnements, die über Fusion erstellt wurden, sowie Ereignisabonnements, die direkt über die API erstellt wurden. Diese Ereignisabonnementansicht ist in der Legacy-Version des Moduls „Ereignisse überwachen“ nicht verfügbar.
 
 Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+
+>[!IMPORTANT]
+>
+>Sie können dieses Modul später bearbeiten, wodurch der Webhook bearbeitet wird.
+>
+>Beachten Sie beim Aktualisieren eines Webhooks Folgendes:
+>
+>* Der bearbeitete Webhook wird von Workfront-Ereignisabonnements als neues Abonnement behandelt. Der Verlauf der Ereignisabonnements wird für die vorherige Webhook-Konfiguration nicht beibehalten, da dies als separates Ereignisabonnement betrachtet wird.
+>* Der Wechsel vom alten zum neuen Ereignisabonnement ist möglicherweise nicht perfekt synchronisiert. Es ist daher möglich, ein Ereignis zweimal zu erhalten (wenn das neue Abonnement vor dem alten abläuft) oder ein Ereignis zu verpassen (wenn das alte Abonnement vor dem Start des neuen abläuft).
+>
+>Weitere Informationen zum Bearbeiten von Webhooks finden Sie unter [Bearbeiten von Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
 1. Klicken Sie rechts neben dem Feld **Webhook** auf **[!UICONTROL Hinzufügen]**.
 
@@ -1036,7 +1047,7 @@ Workfront hat kürzlich eine neue Version seines Ereignisabonnement-Services ver
 
 Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 
-Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de).
+Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2368,7 +2379,7 @@ Sie sollten überprüfen, ob alles erwartungsgemäß funktioniert.
 >
 >   Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 >
->   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de)].
+>   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 Das Workfront-Modul [!UICONTROL Ereignisse überwachen] löst Szenarios auf Basis eines Webhooks aus, der ein Ereignisabonnement in der Workfront-API erstellt. Das Ereignisabonnement ist ein Satz von Daten, der bestimmt, welche Ereignisse an den Webhook gesendet werden. Wenn Sie beispielsweise ein Modul [!UICONTROL Ereignisse überwachen] einrichten, das auf Probleme achtet, sendet das Ereignisabonnement ausschließlich Ereignisse, die mit Problemen in Zusammenhang stehen.
 

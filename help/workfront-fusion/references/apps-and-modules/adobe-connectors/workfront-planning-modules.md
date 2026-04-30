@@ -4,10 +4,10 @@ description: Mit den  [!DNL Adobe Workfront Planning]  können Sie ein Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+source-git-commit: 35cbede1551bd8d158d2ef502b436bc2f760bcae
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 52%
+source-wordcount: '2106'
+ht-degree: 50%
 
 ---
 
@@ -100,7 +100,7 @@ Sie können direkt aus einem Workfront Planning Fusion-Modul heraus eine Verbind
       <tr>
         <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
-          <p>Geben Sie einen Namen für die neue Verbindung ein. </p>
+          <p>Geben Sie einen Namen für die neue Verbindung ein.</p>
         </td>
       </tr>
       <tr>
@@ -117,7 +117,7 @@ Sie können direkt aus einem Workfront Planning Fusion-Modul heraus eine Verbind
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host-Präfix]</td>
-        <td>In den meisten Fällen sollte dieser Wert auf <code>origin</code> gesetzt werden. 
+        <td>In den meisten Fällen sollte dieser Wert auf <code>origin</code> gesetzt werden.
       </tr>
     </tbody>
     </table>
@@ -151,7 +151,7 @@ Sie können direkt aus einem Workfront Planning Fusion-Modul heraus eine Verbind
       <tr>
         <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
-          <p>Geben Sie einen Namen für die neue Verbindung ein. </p>
+          <p>Geben Sie einen Namen für die neue Verbindung ein.</p>
         </td>
       </tr>
       <tr>
@@ -180,7 +180,7 @@ Sie können direkt aus einem Workfront Planning Fusion-Modul heraus eine Verbind
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host-Präfix]</td>
-        <td>In den meisten Fällen sollte dieser Wert auf <code>origin</code> gesetzt werden. 
+        <td>In den meisten Fällen sollte dieser Wert auf <code>origin</code> gesetzt werden.
       </tr>
     </tbody>
     </table>
@@ -214,6 +214,17 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 #### Ereignisse überwachen
 
 Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz, ein Datensatztyp oder ein Arbeitsbereich in Workfront Planning erstellt, aktualisiert oder gelöscht wird.
+
+>[!IMPORTANT]
+>
+>Sie können dieses Modul später bearbeiten, wodurch der Webhook bearbeitet wird.
+>
+>Beachten Sie beim Aktualisieren eines Webhooks Folgendes:
+>
+>* Der bearbeitete Webhook wird von Workfront-Ereignisabonnements als neues Abonnement behandelt. Der Verlauf der Ereignisabonnements wird für die vorherige Webhook-Konfiguration nicht beibehalten, da dies als separates Ereignisabonnement betrachtet wird.
+>* Der Wechsel vom alten zum neuen Ereignisabonnement ist möglicherweise nicht perfekt synchronisiert. Es ist daher möglich, ein Ereignis zweimal zu erhalten (wenn das neue Abonnement vor dem alten abläuft) oder ein Ereignis zu verpassen (wenn das alte Abonnement vor dem Start des neuen abläuft).
+>
+>Weitere Informationen zum Bearbeiten von Webhooks finden Sie unter [Bearbeiten von Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
 <table style="table-layout:auto"> 
   <col/>
@@ -374,7 +385,7 @@ Dieses Aktionsmodul ruft eine Liste von Datensätzen basierend auf von Ihnen ang
       </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Bedingung für Filter]</p>
+        <p>[!UICONTROL-Bedingung für Filter]</p>
       </td>
       <td>Bedingung für die Filter auswählen:<ul><li><b>UND</b><p>Das Modul gibt Datensätze zurück, <b> (alle</b> der von Ihnen ausgewählten Feldwerte erfüllen.</p></li><li><b>ODER</b><p>Das Modul gibt Datensätze zurück, <b> (beliebige</b> der ausgewählten Feldwerte erfüllen.</p></li></ul></td> 
       </tr>

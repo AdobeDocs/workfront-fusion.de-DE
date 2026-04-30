@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: 97545ffb73017e147b73c32776ca890761c0f235
+source-git-commit: b13664750da1280aa2d6ac3c419271ea18cbe9fc
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2388'
 ht-degree: 93%
 
 ---
@@ -182,7 +182,7 @@ ht-degree: 93%
    * Überblick über Lizenzierung und Vorgänge {#licensing-and-operations-overviews}
       * [Überblick über Lizenzierung und Vorgänge](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
-      * [&#x200B; Vorgänge](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+      * [ Vorgänge](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
         [Arbeitspools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * Einrichten und Verwalten von Organisationen und Teams {#set-up-and-manage-orgs-and-teams}
       * [Einrichten und Verwalten von Organisationen und Teams: Artikelindex](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
@@ -275,6 +275,7 @@ ht-degree: 93%
    * [Ausführen des Szenario-Scoring-Experten](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [Löschen von Szenario-Elementen](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
    * [Verwalten von Szenarien im Bereich Szenarien](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
+   * [Webhooks bearbeiten](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
 * Erstellen von Übungsszenarios {#build-practice-scenarios}
    * [Erstellen von Übungsszenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [Erstellen eines Basisszenarios](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
