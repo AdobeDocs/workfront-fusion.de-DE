@@ -197,7 +197,7 @@ Dieses Aktionsmodul erstellt einen Begrenzungs-Endpunkt oder eine Drosselungskon
    <td>Geben Sie die Adobe IMS-ID der Organisation ein oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methoden]</td> 
+   <td role="rowheader">[!UICONTROL -Methoden]</td> 
    <td>Wählen Sie die in dieser Konfiguration zu verwendenden Methoden aus.</td> 
   </tr> 
   <tr> 
@@ -237,7 +237,7 @@ Dieses Aktionsmodul erstellt einen Begrenzungs-Endpunkt oder eine Drosselungskon
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Methoden]</td> 
+   <td role="rowheader">[!UICONTROL -Methoden]</td> 
    <td>Wählen Sie die in dieser Konfiguration zu verwendenden Methoden aus.</td> 
   </tr> 
   <tr> 
@@ -435,7 +435,7 @@ Dieses Aktionsmodul erstellt ein Multi-Artefakt-Paket.
    <td>Wählen Sie den Pakettyp aus, den Sie erstellen möchten.<ul><li><p><b>Voll</b></p>Das Paket enthält alle Artefakte</p></li><li><p><b>Teilweise</b></p><p>Das Paket enthält nur Artefakte, die Sie hinzufügen. </p></li><ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Artefakte]</td> 
+   <td role="rowheader">[!UICONTROL -Artefakte]</td> 
    <td>Wenn Sie ein Teilpaket erstellen, klicken Sie für jedes Artefakt, das Sie hinzufügen möchten, auf <b>Artefakt hinzufügen</b> und geben Sie die ID, den Typ und den Titel des Artefakts an. </td> 
   </tr> 
   <tr> 
@@ -890,7 +890,7 @@ Dieses Aktionsmodul erstellt eine neue Inhaltsvorlage oder ein neues Inhaltsfrag
    <td>Um benutzerdefinierte Eigenschaften in die neue Vorlage aufzunehmen, wählen Sie „Metadaten hinzufügen“ und geben Sie den Schlüssel und den Wert der Metadaten ein oder ordnen Sie ihn zu. Wiederholen Sie den Vorgang für jedes benutzerdefinierte Feld, das Sie einbeziehen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Inhalt]</td> 
+   <td role="rowheader">[!UICONTROL -Inhalt]</td> 
    <td>Geben Sie den Inhalt des Fragments ein oder mappen Sie ihn.</td> 
   </tr> 
   <tr> 
