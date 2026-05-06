@@ -108,11 +108,11 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Firefly]-Module:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-ID]</td>
-        <td>Geben Sie Ihre [!UICONTROL Adobe] [!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
+        <td>Geben Sie Ihre [!UICONTROL Adobe] [!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-        <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
+        <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
         </tr>
       </tbody>
     </table>
@@ -283,7 +283,7 @@ Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version di
     <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly dem Stil des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Stil &gt; Vorgaben]</td> 
+   <td role="rowheader">[!UICONTROL -Stil &gt; Vorgaben]</td> 
    <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabenstile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Entwicklerdokumentation für Adobe.</td> 
   </tr> 
   <tr> 
@@ -362,7 +362,7 @@ Dieses Aktionsmodul kombiniert von Firefly generierte Bilder, um eine Bildkompos
     <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly dem Stil des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Stil &gt; Vorgaben]</td> 
+   <td role="rowheader">[!UICONTROL -Stil &gt; Vorgaben]</td> 
    <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabenstile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Entwicklerdokumentation für Adobe.</td> 
   </tr> 
   <tr> 
