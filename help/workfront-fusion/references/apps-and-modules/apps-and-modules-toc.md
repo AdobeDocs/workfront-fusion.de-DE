@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 6e483986a4297a18e34f8481aa2105f9474fb290
+source-git-commit: 5f2f7cf0a21fd9fb8792c93833668e7fb45547e6
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 98%
+source-wordcount: '498'
+ht-degree: 96%
 
 ---
 
@@ -45,6 +45,7 @@ Fusion bietet Connectoren für zahlreiche Produkte und Services von Adobe.
 * [Adobe Creative Cloud Libraries-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
 * [Adobe Experience Manager Assets-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Adobe Experience Manager Forms-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+* [Adobe Firefly Audio- und Videomodule](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
 * [Adobe Firefly-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Adobe Frame.io (V4)-Betamodule](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe Frame.io (V3)-Legacy-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
