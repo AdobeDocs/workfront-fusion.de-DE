@@ -1,19 +1,19 @@
 ---
 title: Adobe Journey Optimizer-Module
-description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die verwenden [!DNL Adobe Journey Optimizer] und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Adobe Journey Optimizer] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: 957fd49572a59c655b9dc1fda2d55bcbaf48e1cc
 workflow-type: tm+mt
-source-wordcount: '3709'
-ht-degree: 0%
+source-wordcount: '3721'
+ht-degree: 27%
 
 ---
 
-# [!DNL Adobe Journey Optimizer]
+# [!DNL Adobe Journey Optimizer]-Module
 
-In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Adobe Journey Optimizer] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden. Mit [!DNL Adobe Journey Optimizer]-Modulen können Sie Datensätze erstellen, lesen, aktualisieren oder löschen oder einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Journey Optimizer]-API durchführen.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Adobe Journey Optimizer] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden. Mit [!DNL Adobe Journey Optimizer]-Modulen können Sie Datensätze erstellen, lesen, aktualisieren oder löschen oder einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Journey Optimizer]-API durchführen.
 
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenario erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
@@ -22,7 +22,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -30,29 +30,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -74,7 +74,7 @@ Der Adobe Journey Optimizer-Connector verwendet Folgendes:
  <tbody> 
   <tr> 
    <td role="rowheader">Basis-URL</td> 
-   <td>{connection.url}</td> 
+   <td><pre><code>&#123;&#123;connection.url&#125;&#125;</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">API-Tag</td> 
@@ -100,7 +100,7 @@ Sie können eine Verbindung in einem beliebigen Adobe Journey Optimizer-Modul er
         <tr>
         <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
-          <p>Geben Sie einen Namen für diese Verbindung ein.</p>
+          <p>Geben Sie einen Namen für die Verbindung ein.</p>
         </td>
         </tr>
         <tr>
@@ -109,7 +109,7 @@ Sie können eine Verbindung in einem beliebigen Adobe Journey Optimizer-Modul er
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Typ]</td>
-        <td>Wählen Sie aus, ob Sie eine Verbindung zu einem Service-Konto oder einem persönlichen Konto herstellen möchten.</td>
+        <td>Wählen Sie aus, ob eine Verbindung zu einem Service-Konto oder einem persönlichen Konto hergestellt werden soll.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-ID]</td>
@@ -117,7 +117,7 @@ Sie können eine Verbindung in einem beliebigen Adobe Journey Optimizer-Modul er
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-        <td>Geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console]</td>
+        <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Organisations-ID]</td>
@@ -135,13 +135,13 @@ Sie können eine Verbindung in einem beliebigen Adobe Journey Optimizer-Modul er
    <!--Markdown 0032 placeholder-->
 
 
-## [!DNL Adobe Journey Optimizer] Module und ihre Felder
+## [!DNL Adobe Journey Optimizer]-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Adobe Journey Optimizer] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Adobe Journey Optimizer] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Adobe Journey Optimizer]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Adobe Journey Optimizer]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Konfigurationsverwaltung](#configuration-management)
 * [Package-Verwaltung](#package-management)
@@ -173,8 +173,8 @@ Dieses Aktionsmodul erstellt einen Begrenzungs-Endpunkt oder eine Drosselungskon
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Konfigurationstyp auswählen]</td> 
@@ -264,8 +264,8 @@ Dieses Aktionsmodul stellt die angegebene Begrenzungs- oder Drosselungskonfigura
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Konfigurationstyp auswählen]</td> 
@@ -287,8 +287,8 @@ Dieses Aktionsmodul aktualisiert die angegebene Begrenzungs- oder Drosselungskon
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Konfigurationstyp auswählen]</td> 
@@ -306,8 +306,8 @@ Dieses Aktionsmodul hebt die Bereitstellung einer Begrenzungs- oder Drosselungsk
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Konfigurationstyp auswählen]</td> 
@@ -329,8 +329,8 @@ Dieses Aktionsmodul überprüft, ob eine Begrenzungs- oder Drosselungskonfigurat
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Konfigurationstyp auswählen]</td> 
@@ -354,8 +354,8 @@ Wenn die Konfiguration bereitgestellt wurde, muss die Bereitstellung aufgehoben 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Konfigurationstyp auswählen]</td> 
@@ -377,8 +377,8 @@ Dieses Aktionsmodul gibt die Begrenzungs- oder Drosselungskonfiguration zurück,
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Konfigurationstyp auswählen]</td> 
@@ -415,8 +415,8 @@ Dieses Aktionsmodul erstellt ein Multi-Artefakt-Paket.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name]</td> 
@@ -454,8 +454,8 @@ Dieses Aktionsmodul fügt Artefakte zu einem Paket hinzu oder löscht sie aus ei
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Aktion auswählen]</td> 
@@ -473,8 +473,8 @@ Dieses Aktionsmodul löscht ein Multi-Artefakt-Paket.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Package-ID]</td> 
@@ -492,8 +492,8 @@ Dieses Aktionsmodul ruft Details des angegebenen Pakets ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Package-ID]</td> 
@@ -513,8 +513,8 @@ Sie müssen ein Paket veröffentlichen, bevor Sie es importieren können.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Package-ID]</td> 
@@ -536,8 +536,8 @@ Sie müssen ein Paket veröffentlichen, bevor Sie es importieren können.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Package-ID]</td> 
@@ -555,8 +555,8 @@ Dieses Aktionsmodul sendet einen Import für ein Paket, nachdem Sie Konflikte ü
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Package-ID]</td> 
@@ -795,13 +795,13 @@ This action module imports a snapshot containing artifacts.
 
 ### Datensatz-Management
 
-* [Erstellen eines Datensatzes](#create-a-record)
-* [Aktualisieren eines Datensatzes](#update-a-record)
-* [Löschen eines Datensatzes](#delete-a-record)
+* [Eintrag erstellen](#create-a-record)
+* [Eintrag aktualisieren](#update-a-record)
+* [Eintrag löschen](#delete-a-record)
 * [Patch eines Datensatzes](#patch-a-record)
 * [Datensatz abrufen](#get-a-record)
 
-#### Erstellen eines Datensatzes
+#### Eintrag erstellen
 
 Dieses Aktionsmodul erstellt eine neue Inhaltsvorlage oder ein neues Inhaltsfragment.
 
@@ -810,8 +810,8 @@ Dieses Aktionsmodul erstellt eine neue Inhaltsvorlage oder ein neues Inhaltsfrag
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content-Typ auswählen]</td> 
@@ -900,7 +900,7 @@ Dieses Aktionsmodul erstellt eine neue Inhaltsvorlage oder ein neues Inhaltsfrag
  </tbody> 
 </table>
 
-#### Aktualisieren eines Datensatzes
+#### Eintrag aktualisieren
 
 Dieses Aktionsmodul aktualisiert eine Inhaltsvorlage oder ein Inhaltsfragment.
 
@@ -909,8 +909,8 @@ Dieses Aktionsmodul aktualisiert eine Inhaltsvorlage oder ein Inhaltsfragment.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content-Typ auswählen]</td> 
@@ -919,7 +919,7 @@ Dieses Aktionsmodul aktualisiert eine Inhaltsvorlage oder ein Inhaltsfragment.
   </tbody> 
   </table>
 
-#### Löschen eines Datensatzes
+#### Eintrag löschen
 
 Dieses Aktionsmodul löscht eine Inhaltsvorlage oder ein Inhaltsfragment.
 
@@ -928,8 +928,8 @@ Dieses Aktionsmodul löscht eine Inhaltsvorlage oder ein Inhaltsfragment.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content-Typ auswählen]</td> 
@@ -951,8 +951,8 @@ Dieses Aktionsmodul aktualisiert einen Datensatz mit PATCH im JSON Pointer-Forma
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content-Typ auswählen]</td> 
@@ -978,8 +978,8 @@ Dieses Aktionsmodul gibt die Inhaltsvorlage oder das Inhaltsfragment zurück, di
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content-Typ auswählen]</td> 
@@ -1003,15 +1003,15 @@ Dieses Aktionsmodul gibt die Inhaltsvorlage oder das Inhaltsfragment zurück, di
 
 #### Trigger einer unitären Nachrichtenausführung
 
-Trigger Dieses Aktionsmodul sendet eine einheitliche Nachricht an die von Ihnen angegebenen Empfänger.
+Dieses Aktionsmodul sendet eine einheitliche Nachricht an die von Ihnen angegebenen Empfänger.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Anfrage-ID]</td> 
@@ -1031,7 +1031,7 @@ Trigger Dieses Aktionsmodul sendet eine einheitliche Nachricht an die von Ihnen 
    <li><p><b>E-Mail-Adresse</b></p></li>
    <li><p><b>Mobiltelefonnummer</b></p></li>
    <li><p><b>Vorname</b></p></li>
-   <li><p><b>Last name</b></p></li>
+   <li><p><b>Nachname</b></p></li>
    <li><p><b>Produkt</b></p>Geben Sie das mit dieser Nachricht verknüpfte Produkt ein oder ordnen Sie es zu. Dies wird für die dynamische Variablenersetzung im Nachrichteninhalt verwendet.</li>
    </ul></td> 
   </tr> 
@@ -1047,8 +1047,8 @@ Dieses Aktionsmodul Trigger die Ausführung einer zielgruppenbasierten Nachricht
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Anfrage-ID]</td> 
@@ -1074,8 +1074,8 @@ Dieses Aktionsmodul überprüft den Status einer zielgruppenbasierten Batch-Nach
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Nachrichtenausführungs-ID]</td> 
@@ -1118,8 +1118,8 @@ Dieses Aktionsmodul prüft die Abhängigkeiten auf Paket-Artefakte. Auf diese We
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Package-ID]</td> 
@@ -1141,8 +1141,8 @@ Dieses Aktionsmodul prüft, ob ein Importvorgang erfolgreich oder fehlgeschlagen
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Vorgangs-ID]</td> 
@@ -1168,8 +1168,8 @@ Dieses Suchmodul listet alle abhängigen Objekte für Objekte im angegebenen Pak
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Package-Objekte]</td> 
@@ -1195,8 +1195,8 @@ Dieses Aktionsmodul listet alle Begrenzungs- oder Drosselungskonfigurationen auf
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Konfigurationstyp auswählen]</td> 
@@ -1214,8 +1214,8 @@ Dieses Suchmodul listet den aktuellen Export- und Importvorgang auf. Sie können
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start]</td> 
@@ -1223,7 +1223,7 @@ Dieses Suchmodul listet den aktuellen Export- und Importvorgang auf. Sie können
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</td> 
-      <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td>
+      <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sortieren nach]</td> 
@@ -1247,8 +1247,8 @@ Dieses Suchmodul listet alle Pakete in Ihrer Organisation auf. Sie können Abfra
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start]</td> 
@@ -1256,7 +1256,7 @@ Dieses Suchmodul listet alle Pakete in Ihrer Organisation auf. Sie können Abfra
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</td> 
-      <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td>
+      <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sortieren nach]</td> 
@@ -1278,8 +1278,8 @@ Dieses Suchmodul listet alle Begrenzungs- oder Drosselungskonfigurationen auf.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content-Typ auswählen]</td> 
@@ -1308,7 +1308,7 @@ Dieses Suchmodul listet alle Begrenzungs- oder Drosselungskonfigurationen auf.
 ### Sonstiges
 
 
-#### Erstellen eines benutzerdefinierten API-Aufrufs
+#### Benutzerdefinierten API-Aufruf erstellen
 
 Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die Adobe Journey Optimizer-API durch.
 
@@ -1317,8 +1317,8 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die Adobe Jou
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Verbindung]</td>
-   <td>Anweisungen zum Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer] finden Sie unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu [!DNL Adobe Journey Optimizer]</a> in diesem Artikel.</td> 
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Journey Optimizer]</a>.</td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
@@ -1328,12 +1328,12 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die Adobe Jou
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Methode]</p>
+        <p>[!UICONTROL Methode]</p>
       </td>
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kopfzeilen]</td>
+      <td role="rowheader">[!UICONTROL Header]</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -1347,8 +1347,8 @@ Dieses Aktionsmodul führt einen benutzerdefinierten API-Aufruf an die Adobe Jou
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL body]</td>
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+      <td role="rowheader">[!UICONTROL Text]</td>
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
