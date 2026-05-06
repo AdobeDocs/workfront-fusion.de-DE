@@ -4,9 +4,9 @@ description: In einem  [!DNL Adobe Workfront Fusion]  können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
-source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+source-git-commit: 42b5b5729b68bf8cea9940fb261a15293db52be1
 workflow-type: tm+mt
-source-wordcount: '4581'
+source-wordcount: '4621'
 ht-degree: 12%
 
 ---
@@ -80,7 +80,7 @@ Der Slack-Connector verwendet Folgendes:
  <tbody> 
   <tr> 
    <td role="rowheader">Basis-URL</td> 
-   <td>{{IfEmpty(parameters.domain, 'https://slack.com/api/')}}</td> 
+   <td><pre><code>&#123;&#123;ifempty(parameters.domain, 'https://slack.com/api/')&#125;&#125;</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">API-Tag</td> 
@@ -931,7 +931,7 @@ Dieses Aktionsmodul gibt von einem Benutzer durchgeführte Reaktionen zurück.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Slack]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Benutzer]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Benutzende]</p> </td> 
    <td> <p>Wählen Sie den Benutzer aus, der die Reaktionen erstellt hat, die Sie auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -1358,7 +1358,7 @@ Dieses Aktionsmodul erstellt eine Erinnerung.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Benutzer] </p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Benutzende] </p> </td> 
    <td> <p>Wählen Sie den Benutzer aus, der die Erinnerung erhält.</p> </td> 
   </tr> 
  </tbody> 

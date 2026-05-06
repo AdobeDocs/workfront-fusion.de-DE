@@ -4,10 +4,10 @@ description: Die folgenden Zeichenfolgenfunktionen sind im Bedienfeld "Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 4%
+source-wordcount: '778'
+ht-degree: 5%
 
 ---
 
@@ -106,7 +106,7 @@ Reguläre Ausdrücke (in `/.../` eingeschlossen) können als Suchzeichenfolge ve
 
 **Beispiel:**
 
-![Ersetzen](assets/replace---1-350x31.png)
+![Replace](assets/replace---1-350x31.png)
 
 Alle diese Zahlen X X X X werden durch X ersetzt
 
@@ -339,7 +339,7 @@ Gibt zurück: b2b30b8ae1f9e5b40fbb0696eaabdbfd8d0c087f
 
 ## [!UICONTROL SHA256 (Text; [Encoding]; [key])]
 
-Berechnet den SHA256-Hash einer Zeichenfolge. Wenn das Schlüsselargument angegeben wird, wird stattdessen ein sha256-HMAC-Hash zurückgegeben. Unterstützte Kodierungen: „hex“ (Standard), „base64“ oder „latin1“.>
+Berechnet den SHA256-Hash einer Zeichenfolge. Wenn das Schlüsselargument angegeben wird, wird stattdessen ein sha256-HMAC-Hash zurückgegeben. Unterstützte Codierungen: „hex“ (Standard), „base64“ oder „latin1“.>
 
 >[!BEGINSHADEBOX]
 
@@ -392,3 +392,144 @@ Transformiert Text in base64.
 Gibt zurück: d29ya2zyb250==
 
 >[!ENDSHADEBOX]
+
+
+### [!UICONTROL CONCAT(Zeichenfolge1; Trennzeichen; Zeichenfolge2; …)]
+
+[!BADGE Neu!]{type=Informative}
+
+Verkettet Zeichenfolgen mit jeweils einem Trennzeichen.
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `concat("Hello"; " "; "World")`
+
+  Gibt Hello World zurück
+* `concat("a"; "-"; "b"; "c")`
+
+  Gibt a-b-c zurück.
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL LEFT(Zeichenfolge;Länge)]
+
+[!BADGE Neu!]{type=Informative}
+
+Gibt die angegebene Anzahl von Zeichen auf der linken Seite einer Zeichenfolge zurück.
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `left("Hello"; 3)`
+
+  Retouren-Hilfe
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL RIGHT(Zeichenfolge;Länge)]
+
+[!BADGE Neu!]{type=Informative}
+
+Gibt die angegebene Anzahl von Zeichen rechts von einer Zeichenfolge zurück.
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `right("Hello"; 3)`
+
+  Lob zurückgeben
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL removeAccents(string)]
+
+[!BADGE Neu!]{type=Informative}
+
+Entfernt diakritische Zeichen (Akzente) aus Zeichen mit Akzenten.
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `removeAccents("Héllo wörld")`
+
+  Gibt Hello world zurück
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL replacePattern(string; pattern; replace)]
+
+[!BADGE Neu!]{type=Informative}
+
+Ersetzt alle Übereinstimmungen eines Musters für reguläre Ausdrücke mit einem
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `replacePattern("foo123bar"; "\\d+"; "\_")`
+
+  Gibt foo\_bar zurück
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortAscString(string1; string2; …)]
+
+[!BADGE Neu!]{type=Informative}
+
+Gibt die bereitgestellten Zeichenfolgen in aufsteigender (alphabetischer) Reihenfolge zurück.
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `sortAscString("banana"; "apple"; "cherry")`
+
+  Gibt \[„apple“, „banana“, „cherry“] zurück
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortDescString(string1; string2; …)]
+
+[!BADGE Neu!]{type=Informative}
+
+Gibt die angegebenen Zeichenfolgen in absteigender (umgekehrter alphabetischer) Reihenfolge zurück.
+
+**Syntax:** `sortDescString(string1; string2; ...)`
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `sortDescString("banana"; "apple"; "cherry")`
+
+  Gibt \[„Kirsche“, „Banane“, „Apfel“] zurück
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL PASCAL(Zeichenfolge)]
+
+[!BADGE Neu!]{type=Informative}
+
+Konvertiert eine Zeichenfolge in PascalCase, indem der erste Buchstabe eines jeden Worts großgeschrieben und Leerzeichen entfernt werden.
+
+**Syntax:** `pascal(string)`
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `pascal("hello world")`
+
+  Gibt HelloWorld zurück
+* `pascal("foo bar baz")`
+
+  Gibt FooBarBaz zurück
+
+>[!ENDSHADEBOX]
+
+

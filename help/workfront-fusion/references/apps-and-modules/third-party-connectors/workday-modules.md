@@ -1,28 +1,28 @@
 ---
 filename: workday-modules
 title: Workday-Module
-description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die verwenden [!DNL Workday] und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Workday] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 5967d83107337e6567c0bb3974ba4047ed520f11
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 2%
+source-wordcount: '1063'
+ht-degree: 52%
 
 ---
 
-# [!DNL Workday]
+# [!DNL Workday]-Module
 
-In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Workday] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Workday] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -30,29 +30,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -76,7 +76,7 @@ Der Workday-Connector verwendet Folgendes:
  <tbody> 
   <tr> 
    <td role="rowheader">Basis-URL</td> 
-   <td>https://{{connection.servicesUrl}}/api</td> 
+   <td><pre><code>https://&#123;&#123;connection.servicesUrl&#125;&#125;/api</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">API-Tag</td> 
@@ -131,13 +131,13 @@ Der Workday-Connector verwendet Folgendes:
 
 3. Klicken Sie [!UICONTROL Fortfahren], um die Verbindung zu speichern und zum Modul zurückzukehren
 
-## [!DNL Workday] Module und ihre Felder
+## [!DNL Workday]-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Workday] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Workday] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Workday]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Workday]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Aktion](#action)
 
@@ -146,16 +146,16 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
 
 ### Aktion
 
-* [[!UICONTROL Datensatz erstellen]](#create-a-record)
+* [[!UICONTROL Eintrag erstellen]](#create-a-record)
 
 * [[!UICONTROL Löschen eines Datensatzes]](#delete-a-record)
 
-* [[!UICONTROL Erstellen eines benutzerdefinierten API-Aufrufs]](#make-a-custom-api-call)
+* [[!UICONTROL Benutzerdefinierten API-Aufruf durchführen]](#make-a-custom-api-call)
 
-* [[!UICONTROL Aktualisieren eines Datensatzes]](#update-a-record)
+* [[!UICONTROL Eintrag aktualisieren]](#update-a-record)
 
 
-#### [!UICONTROL Datensatz erstellen]
+#### [!UICONTROL Eintrag erstellen]
 
 Dieses Aktionsmodul erstellt einen einzelnen Datensatz in [!DNL Workday].
 
@@ -164,12 +164,12 @@ Dieses Aktionsmodul erstellt einen einzelnen Datensatz in [!DNL Workday].
     <col/>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL -Verbindung]</td>
+            <td role="rowheader">[!UICONTROL Verbindung]</td>
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit Workfront Fusion</a>.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Datensatztyp]</td>
-            <td>Wählen Sie den Typ des Datensatzes aus, den Sie erstellen möchten.</td>
+            <td  role="rowheader">[!UICONTROL Eintragstyp]</td>
+            <td>Wählen Sie den Typ des Eintrags aus, der erstellt werden soll.</td>
         </tr>
         <tr>
             <td role="rowheader">[!UICONTROL ID] </td>
@@ -193,11 +193,11 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatz in [!DNL Workday].
     </col>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL -Verbindung]</td>
+            <td role="rowheader">[!UICONTROL Verbindung]</td>
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit Workfront Fusion</a>.</td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Datensatztyp]</td>
+            <td  role="rowheader">[!UICONTROL Eintragstyp]</td>
             <td>Wählen Sie den Typ des Datensatzes aus, den Sie löschen möchten.</td>
         </tr>
         <tr>
@@ -216,9 +216,9 @@ Dieses Aktionsmodul löscht einen einzelnen Datensatz in [!DNL Workday].
 </table>
 
 
-### [!UICONTROL Erstellen eines benutzerdefinierten API-Aufrufs]
+### [!UICONTROL Benutzerdefinierten API-Aufruf durchführen]
 
-Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Workday]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, die von den anderen [!DNL Workday] nicht durchgeführt werden kann.
+Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Workday]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, was über die anderen [!DNL Workday]-Module nicht möglich ist.
 
 Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
@@ -237,20 +237,20 @@ Das Modul gibt den Status-Code zusammen mit den Kopfzeilen und dem Hauptteil des
    <td>Geben Sie einen Pfad relativ zu <code style="color: #ff1493;">https://&lt;tenantHostname>/api/&lt;serviceName>/&lt;version>/&lt;tenant></code> ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] fügt die Autorisierungs-Header für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL body]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -258,7 +258,7 @@ Das Modul gibt den Status-Code zusammen mit den Kopfzeilen und dem Hauptteil des
  </tbody> 
 </table>
 
-#### [!UICONTROL Aktualisieren eines Datensatzes]
+#### [!UICONTROL Eintrag aktualisieren]
 
 Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Workday].
 
@@ -267,16 +267,16 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Workday].
     <col/>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL -Verbindung]</td>
+            <td role="rowheader">[!UICONTROL Verbindung]</td>
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Datensatztyp]</td>
+            <td  role="rowheader">[!UICONTROL Eintragstyp]</td>
             <td>Wählen Sie den Typ des Datensatzes aus, den Sie aktualisieren möchten.</td>
         </tr>
         <tr>
             <td role="rowheader">[!UICONTROL ID] </td>
-            <td>Geben Sie die ID des Datensatzes ein, den Sie aktualisieren möchten, oder mappen Sie sie.</td>
+            <td>Geben Sie die ID des Eintrags ein, der aktualisiert werden soll, oder ordnen Sie diese zu.</td>
         </tr>
         <tr>
             <td role="rowheader">[!UICONTROL Unterressourcen-ID]</td>
@@ -303,11 +303,11 @@ Dieses Aktionsmodul liest einen einzelnen Datensatz.
     </col>
     <tbody>
         <tr>
-            <td role="rowheader">[!UICONTROL -Verbindung]</td>
+            <td role="rowheader">[!UICONTROL Verbindung]</td>
             <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">[!UICONTROL Datensatztyp]</td>
+            <td  role="rowheader">[!UICONTROL Eintragstyp]</td>
             <td>Wählen Sie den Typ des Datensatzes aus, den Sie löschen möchten.</td>
         </tr>
         <tr>
@@ -330,15 +330,15 @@ Dieses Suchmodul ruft eine Liste von Datensätzen des angegebenen Typs ab.
       <col/>
       <tbody>
           <tr>
-              <td role="rowheader">[!UICONTROL -Verbindung]</td>
+              <td role="rowheader">[!UICONTROL Verbindung]</td>
               <td>Anweisungen zum Verbinden Ihres [!DNL Workday]-Kontos mit Workfront Fusion finden Sie unter <a href="#Connect" class="MCXref xref" >Verbinden von [!DNL Workday] mit Workfront Fusion</a></td>
           </tr>
           <tr>
-              <td  role="rowheader">[!UICONTROL Datensatztyp]</td>
+              <td  role="rowheader">[!UICONTROL Eintragstyp]</td>
               <td>Wählen Sie den Typ des Datensatzes aus, den Sie abrufen möchten.</td>
           </tr>
           <tr>
-              <td role="rowheader">[!UICONTROL Limit]</td>
+              <td role="rowheader">[!UICONTROL Beschränkung]</td>
               <td >
                   <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus abrufen soll, oder mappen Sie sie.</p>
               </td>

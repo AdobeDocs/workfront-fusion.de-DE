@@ -4,10 +4,10 @@ description: Die folgenden allgemeinen Funktionen sind im Bedienfeld "Adobe Work
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 4%
+source-wordcount: '471'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ Sie können die folgenden allgemeinen Variablen verwenden, um Details zu einer A
 
 * `executionID`: die ID dieser Szenarioausführung
 * `triggerTimestamp`: Der Zeitpunkt, zu dem diese Ausführung ausgelöst wurde
-* `scenarioID`: die ID des aktuell geöffneten Szenarios
+* `scenarioID`: Die ID des derzeit geöffneten Szenarios
 * `operationsConsumed`: Die Anzahl der zu diesem Zeitpunkt im Szenario verwendeten Vorgänge.
 
 ## [!UICONTROL GET (Objekt oder Array; Pfad)]
@@ -142,3 +142,102 @@ Gibt nur eine Sammlung von Passwort und E-Mail-Adresse der Benutzenden zurück.
 ## mergeCollections(collection1;collection2)
 
 Führt zwei Sammlungen durch Kombinieren ihrer Schlüssel-Wert-Paare zusammen. Wenn beide Sammlungen denselben Schlüssel enthalten, überschreibt der Wert aus der zweiten Sammlung diesen Wert aus der ersten Sammlung.
+
+### [!UICONTROL isBlank(value)]
+
+Gibt `true` zurück, wenn der Wert `null` oder eine leere Zeichenfolge ist, andernfalls gibt `false` zurück. Im Gegensatz zu `ifEmpty` behandelt diese Funktion die Zeichenfolge `0` oder nur Leerzeichen nicht als leer.
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `isBlank("")     `
+
+  Gibt „true“ zurück
+* `isBlank(null)   `
+
+  Gibt „true“ zurück
+* `isBlank("Hello")`
+
+  Gibt „false“ zurück
+* `isBlank(0)      `
+
+  Gibt „false“ zurück
+* `isBlank(" ")    `
+
+  Gibt „false“ zurück
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL IN(Wert;Wert1;Wert2; …)]
+
+Gibt &quot;`true`&quot; zurück, wenn der Wert einem der angegebenen Werte entspricht (strikte Gleichheit, keine Typenzwang).
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `in("B"; "A"; "B"; "C")`
+
+  Gibt „true“ zurück
+* `in("D"; "A"; "B"; "C")`
+
+  Gibt „false“ zurück
+* `in(2; 1; 2; 3)        `
+
+  Gibt „true“ zurück
+* `in("2"; 1; 2; 3)      `
+
+  Gibt „false“ zurück
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL ifin(Wert;Wert1;Wert2; …; trueExpression; falseExpression)]
+
+Gibt `trueExpression` zurück, wenn der Wert mit einem der angegebenen Übereinstimmungswerte übereinstimmt. Gibt andernfalls `falseExpression` zurück. Erfordert mindestens 3 Argumente (Wert, ein Übereinstimmungswert und trueExpression + falseExpression).
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `ifin("B"; "A"; "B"; "yes"; "no")`
+
+  Gibt ja zurück
+* `ifin("D"; "A"; "B"; "yes"; "no")`
+
+  Gibt keine zurück.
+* `ifin("X"; "X"; "found"; "not found")`
+
+  Rückgaben gefunden
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL case(indexNumber; value1; value2; …)]
+
+Gibt den Wert an der durch die Indexnummer angegebenen Position zurück (1-basiert). Gibt `null` zurück, wenn der Index außerhalb des Bereichs liegt oder 0 ist.
+
+>[!BEGINSHADEBOX]
+
+**Beispiel:**
+
+* `case(1; "Sun"; "Mon"; "Tue")`
+
+  Gibt Sun zurück
+* `case(2; "Sun"; "Mon"; "Tue")`
+
+  Gibt Mon zurück
+* `case(3; "Sun"; "Mon"; "Tue")`
+
+  Gibt „true“ zurück
+* `case(5; "a"; "b")           `
+
+  Gibt null zurück
+
+>[!NOTE]
+>
+>Es wird empfohlen, dies zu verwenden, um den Tagesnamen von einem Datum abzurufen:
+>`case(dayOfWeek(date); "Sun"; "Mon"; "Tue"; "Wed"; "Thu"; "Fri"; "Sat")`
+
+>[!ENDSHADEBOX]
+

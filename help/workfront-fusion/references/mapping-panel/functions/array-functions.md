@@ -4,10 +4,10 @@ description: Die folgenden Array-Funktionen sind im Bedienfeld "Adobe Workfront 
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
+source-git-commit: 869927a3bc9849fa136078c8acb195f56aee0320
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 1%
+source-wordcount: '648'
+ht-degree: 2%
 
 ---
 
@@ -231,6 +231,30 @@ yourArray = [3,4,5,6,7]
 * `arrayDifference [myArray, yourArray, symmetric]`
 
   Gibt `[1,2,6,7]` zurück
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL arrayElement(array;index)]
+
+[!BADGE Neu!]{type=Informative}
+
+
+Gibt das Element mit dem angegebenen Index 1 im Array zurück. Gibt `null` zurück, wenn der Index außerhalb des Bereichs oder kleiner als 1 ist.
+
+>[!BEGINSHADEBOX]
+
+**Beispiele:**
+
+* `arrayElement(\[10; 20; 30]; 2)`
+
+  Gibt 20 zurück
+* `arrayElement(\[10; 20; 30]; 1)`
+
+  Gibt 10 zurück
+* `arrayElement(\[10; 20; 30]; 5)`
+
+  Gibt null zurück
 
 >[!ENDSHADEBOX]
 

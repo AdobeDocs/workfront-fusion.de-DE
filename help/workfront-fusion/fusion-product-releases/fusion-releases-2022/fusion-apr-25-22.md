@@ -1,20 +1,19 @@
 ---
-title: 'Workfront Fusion release activity: Week of April 25, 2022'
-description: 'Workfront Fusion release activity: Week of April 25, 2022'
+title: 'Workfront Fusion-Veröffentlichungsaktivität: Woche vom 25. April 2022'
+description: 'Workfront Fusion-Veröffentlichungsaktivität: Woche vom 25. April 2022'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: c1d5645f-9bca-4f04-b2e4-526530d9ecbd
-source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
+source-git-commit: a48a7f5f6577782dbc043e322a3c769781ffd63b
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 36%
 
 ---
 
-# Workfront Fusion release activity: Week of April 25, 2022
+# Workfront Fusion-Veröffentlichungsaktivität: Woche vom 25. April 2022
 
 Auf dieser Seite werden alle Verbesserungen beschrieben, die in Adobe Workfront Fusion in der Woche vom Dienstag, 25. April 2022 vorgenommen wurden.
 
