@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 5f2f7cf0a21fd9fb8792c93833668e7fb45547e6
+source-git-commit: e6c0e85d110bef2c09bcbdf0e9a291b607afa6d1
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '502'
 ht-degree: 96%
 
 ---
@@ -47,6 +47,7 @@ Fusion bietet Connectoren für zahlreiche Produkte und Services von Adobe.
 * [Adobe Experience Manager Forms-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Adobe Firefly Audio- und Videomodule](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
 * [Adobe Firefly-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+* [Adobe Firefly Lightroom-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
 * [Adobe Frame.io (V4)-Betamodule](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe Frame.io (V3)-Legacy-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe I/O Events-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
