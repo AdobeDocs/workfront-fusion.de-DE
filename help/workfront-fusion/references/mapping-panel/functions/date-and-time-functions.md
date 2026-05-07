@@ -4,9 +4,9 @@ description: Die folgenden Datums- und Uhrzeitfunktionen sind im Zuordnungsberei
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: fc7f98c128f73a60d75750c6bd57ec8ddc31954c
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2375'
 ht-degree: 4%
 
 ---
@@ -294,6 +294,31 @@ Gibt das früheste Datum aus der Liste zurück.
 >[!ENDSHADEBOX]
 
 
+### [!UICONTROL endOfMonth(date)]
+
+[!BADGE Neu!]{type=Informative}
+
+Gibt den letzten Moment des Monats des angegebenen Datums zurück - die letzte Millisekunde des letzten Tages (23.:59:.999). Erfasst automatisch die Anzahl der Tage im Monat, einschließlich Schaltjahren.
+
+>[!BEGINSHADEBOX]
+
+**Beispiele:**
+
+* `endOfMonth("2016-06-15T12:30:00.000Z")`
+
+  Gibt 2016-06-30T23.:59:.999Z zurück
+
+* `endOfMonth("2016-01-01T00:00:00.000Z")`
+
+  Gibt 2016-01-31T23.:59:.999Z zurück
+
+* `endOfMonth("2016-02-01T00:00:00.000Z")`
+
+  Gibt 2016-02-29T23.:59:.999Z zurück
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL HOUR(Datum)]
 
 [!BADGE Neu!]{type=Informative}
@@ -310,6 +335,35 @@ Gibt die Stunde des Datums als eine Zahl zwischen 0 und 23 zurück.
 * `hour("2016-12-08T00:00:00.000Z")`
 
   Gibt 0 zurück
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL isWeekend(date)]
+
+[!BADGE Neu!]{type=Informative}
+
+Gibt `true` zurück, wenn das Datum auf einen Samstag oder Sonntag fällt, und `false` für einen anderen Tag. Das Ergebnis wird in der konfigurierten Zeitzone des Szenarios ermittelt.
+
+>[!BEGINSHADEBOX]
+
+**Beispiele:**
+
+* `isWeekend("2016-12-10T00:00:00.000Z")`
+
+  Gibt „true“ zurück (Samstag)
+
+* `isWeekend("2016-12-11T00:00:00.000Z")`
+
+  Gibt „true“ zurück (Sonntag)
+
+* `isWeekend("2016-12-12T00:00:00.000Z")`
+
+  Gibt „false“ zurück (Montag)
+
+* `isWeekend("2016-12-09T00:00:00.000Z")`
+
+  Gibt „false“ zurück (Freitag)
 
 >[!ENDSHADEBOX]
 
@@ -370,6 +424,27 @@ Gibt die Sekunde des Datums als eine Zahl zwischen 0 und 59 zurück.
 * `second("2016-12-08T15:55:00.000Z")`
 
   Gibt 0 zurück
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL startOfMonth(Datum)]
+
+[!BADGE Neu!]{type=Informative}
+
+Gibt den ersten Moment des Monats des angegebenen Datums zurück - Mitternacht am 1. Tag (00::00:.000). Das Ergebnis ist zeitzonenorientiert.
+
+>[!BEGINSHADEBOX]
+
+**Beispiele:**
+
+* `startOfMonth("2016-06-15T12:30:00.000Z")`
+
+  Gibt 2016-06-01T00-:00:.000Z zurück
+
+* `startOfMonth("2024-02-14T08:00:00.000Z")`
+
+  Gibt 2024-02-01T00-:00:.000Z zurück
 
 >[!ENDSHADEBOX]
 
