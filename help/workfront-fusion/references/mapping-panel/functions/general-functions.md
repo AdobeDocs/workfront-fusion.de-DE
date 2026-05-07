@@ -4,9 +4,9 @@ description: Die folgenden allgemeinen Funktionen sind im Bedienfeld "Adobe Work
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: 5709c9c0f8efd2c29ff7dbc0391a5b496a467c6a
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '478'
 ht-degree: 8%
 
 ---
@@ -20,6 +20,7 @@ Sie können die folgenden allgemeinen Variablen verwenden, um Details zu einer A
 * `executionID`: die ID dieser Szenarioausführung
 * `triggerTimestamp`: Der Zeitpunkt, zu dem diese Ausführung ausgelöst wurde
 * `scenarioID`: Die ID des derzeit geöffneten Szenarios
+* `scenarioName`: Der Name des aktuell ausgeführten Szenarios
 * `operationsConsumed`: Die Anzahl der zu diesem Zeitpunkt im Szenario verwendeten Vorgänge.
 
 ## [!UICONTROL GET (Objekt oder Array; Pfad)]
