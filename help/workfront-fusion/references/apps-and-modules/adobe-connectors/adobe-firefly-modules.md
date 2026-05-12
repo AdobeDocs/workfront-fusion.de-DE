@@ -4,10 +4,10 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: a766080defca64b4ce5d8ecd8b19fdfc3ff26470
+source-git-commit: 4e432e277c84f95b3792cb7c295cba41a5563244
 workflow-type: tm+mt
-source-wordcount: '2519'
-ht-degree: 21%
+source-wordcount: '3886'
+ht-degree: 15%
 
 ---
 
@@ -108,11 +108,11 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Firefly]-Module:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-ID]</td>
-        <td>Geben Sie Ihre [!UICONTROL Adobe] [!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
+        <td>Geben Sie Ihre [!UICONTROL Adobe] [!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-        <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
+        <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
         </tr>
       </tbody>
     </table>
@@ -236,6 +236,63 @@ Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version di
 
 Dieses Modul ist veraltet und wird in naher Zukunft entfernt. Verwenden Sie stattdessen das Modul Bild ausfüllen .
 
+### Generieren eines adaptiven Composite
+
+Dieses Aktionsmodul setzt ein Betreffbild nahtlos in ein Hintergrundbild an einer maskierten Position zusammen. Sie können steuern, wie stark Schatten angewendet werden, wie die Beleuchtung und Farbe des Objekts mit dem Hintergrund harmonisiert werden und ob die ursprünglichen Hintergrunddetails im maskierten Bereich erhalten bleiben.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Firefly] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Firefly]</a>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Hintergrund &gt; Bild &gt; Source]</td> 
+   <td>Wählen Sie aus, wie Sie das Hintergrundbild bereitstellen. Das Hintergrundbild ist die Zielszene, in der das Objekt zusammengestellt wird.<ul><li><p><b>Bild hochladen</b></p><p>Laden Sie das Hintergrundbild hoch oder ordnen Sie die Bilddatei aus einem vorherigen Modul zu.</p></li><li><p><b>Bild-URL</b></p><p>Geben Sie die URL des Hintergrundbilds ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Hintergrund &gt; Füllbereichsmaske &gt; Source]</td> 
+   <td>Wählen Sie aus, wie Sie die Füllbereichsmaske bereitstellen. Die Füllbereichsmaske gibt den Bereich des Hintergrunds an, in dem das Objekt platziert wird.<ul><li><p><b>Bild hochladen</b></p><p>Laden Sie das Bild mit der Füllbereichsmaske hoch oder ordnen Sie die Bilddatei aus einem vorherigen Modul zu.</p></li><li><p><b>Bild-URL</b></p><p>Geben Sie die URL des Füllbereichsmaskenbildes ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Objekt &gt; Bild &gt; Source]</td> 
+   <td>Wählen Sie aus, wie Sie das Objektbild bereitstellen. Das Objektbild ist das Quellbild des Objekts, das in den Hintergrund eingefügt werden soll.<ul><li><p><b>Bild hochladen</b></p><p>Laden Sie das Objektbild hoch oder ordnen Sie die Bilddatei aus einem vorherigen Modul zu.</p></li><li><p><b>Bild-URL</b></p><p>Geben Sie die URL des Objektbildes ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Objekt &gt; Maske &gt; Source]</td> 
+   <td>Wählen Sie aus, wie Sie die Objektmaske bereitstellen. Die Objektmaske ist die Segmentierungsmaske für das Objekt.<ul><li><p><b>Bild hochladen</b></p><p>Laden Sie das Objektmaskenbild hoch oder ordnen Sie die Bilddatei aus einem vorherigen Modul zu.</p></li><li><p><b>Bild-URL</b></p><p>Geben Sie die URL des Objektmaskenbildes ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Anzahl der Varianten]</td> 
+   <td>Geben Sie eine Zahl zwischen 1 und 3 ein. Das Modul generiert diese Anzahl von zusammengesetzten Varianten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]*</td> 
+   <td>Klicken Sie <b>Element hinzufügen</b>, um einen Seed-Wert hinzuzufügen, und geben Sie dann eine Ganzzahl ein oder ordnen Sie sie zu. Verwenden Sie pro Variante einen Seed. Die Anzahl der Seed-Werte muss mit dem Wert von [!UICONTROL Anzahl der Varianten] übereinstimmen, wenn beide angegeben werden.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Harmonisierung]*</td> 
+   <td>Geben Sie eine Zahl zwischen 0 und 1 ein, um zu steuern, wie stark die Farben und die Beleuchtung des Objekts an den Hintergrund angepasst werden. <code>0.0</code> gilt für minimale Harmonisierung und <code>1.0</code> für maximale Harmonisierung.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Schattenintensität]*</td> 
+   <td>Geben Sie eine Zahl zwischen 0 und 1 ein, um die Schattenintensität im zusammengesetzten Ergebnis zu steuern. Niedrigere Werte reduzieren den Schatten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Hintergrund beibehalten]*</td> 
+   <td>Wählen Sie aus, ob die ursprünglichen Hintergrunddetails beim Erstellen im maskierten Bereich beibehalten werden sollen. <ul><li><b>Ja</b><p>Die ursprünglichen Hintergrunddetails innerhalb des maskierten Bereichs bleiben beim Zusammensetzen erhalten.</p></li><li><b>Nein</b><p>Die ursprünglichen Hintergrunddetails innerhalb des maskierten Bereichs bleiben beim Zusammensetzen nicht erhalten.</p></li><li><b>Nicht definiert</b><p>Verwenden Sie das Standardverhalten für diese Option.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL-Ausgabe &gt; Medientyp]*</td> 
+   <td>Wählen Sie das Dateiformat aus, in dem der generierte Verbund gespeichert werden soll.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* Diese Felder sind erweiterte Felder und werden nur angezeigt, wenn Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]** auswählen.
+
 ### Bild erzeugen
 
 Dieses Aktionsmodul generiert ein - und -Bild basierend auf einer von Ihnen angegebenen Eingabeaufforderung. Sie können auch ein optionales Referenzbild angeben. Das generierte Bild entspricht dem Stil des Referenzbilds.
@@ -283,7 +340,7 @@ Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version di
     <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly dem Stil des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Stil &gt; Vorgaben]</td> 
+   <td role="rowheader">[!UICONTROL-Stil &gt; Vorgaben]</td> 
    <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabenstile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Entwicklerdokumentation für Adobe.</td> 
   </tr> 
   <tr> 
@@ -362,7 +419,7 @@ Dieses Aktionsmodul kombiniert von Firefly generierte Bilder, um eine Bildkompos
     <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly dem Stil des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Stil &gt; Vorgaben]</td> 
+   <td role="rowheader">[!UICONTROL-Stil &gt; Vorgaben]</td> 
    <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabenstile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Entwicklerdokumentation für Adobe.</td> 
   </tr> 
   <tr> 
@@ -371,6 +428,108 @@ Dieses Aktionsmodul kombiniert von Firefly generierte Bilder, um eine Bildkompos
   </tr> 
  </tbody> 
 </table>
+
+### Erzeugen von Bildern mit Image5
+
+Dieses Aktionsmodul generiert ein Bild mit dem [!DNL Adobe Firefly] Image5-Modell. Sie stellen eine Textaufforderung und optional ein Referenzbild bereit, um die Generierung zu leiten.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Firefly] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Firefly]</a>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>Geben Sie eine Beschreibung des Bildes ein, das Sie generieren möchten, oder mappen Sie sie. Die Eingabeaufforderung muss zwischen 1 und 1500 Zeichen lang sein. Mehr Details in der Eingabeaufforderung ermöglichen Ihnen mehr Kontrolle darüber, was im Bild angezeigt wird.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seitenverhältnis]</td> 
+   <td>Wählen Sie die Form des generierten Bildes aus. Wenn ein Referenzbild bereitgestellt wird, wählen Sie <b>Auto</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL-Auflösung]</td> 
+   <td>Wählen Sie die Auflösung des erzeugten Bildes aus. Die Generierung höherer Auflösungen dauert länger.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Referenzbild]</td> 
+   <td>Geben Sie optional ein Referenzbild an, um die Generierung zu leiten. Klicken Sie <b>Element hinzufügen</b> und geben Sie das Bild ein. Wenn Sie ein Referenzbild verwenden, setzen Sie [!UICONTROL Seitenverhältnis] auf <b>Auto</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seed]*</td> 
+   <td>Klicken Sie <b>Element hinzufügen</b> und geben Sie eine Ganzzahl ein, um ein bestimmtes Generierungsergebnis zu reproduzieren. Leer lassen, um ein zufälliges Ergebnis zu erzeugen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Ursachenaufforderung]*</td> 
+   <td>Wählen Sie die Strategie zur umgehenden Argumentation aus, die bei der Generierung verwendet wird.<ul><li><p><b>Qualität : Erzeugt eine Bildbeschreibung</b></p><p>Erzeugt eine Bildbeschreibung in der Ausgabe des Moduls.</p></li><li><p><b>Geschwindigkeit - Schnellere Generierung, keine Beschreibung</b></p><p>Erzeugt das Bild schneller, lässt aber die Bildbeschreibung leer.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Locale]*</td> 
+   <td>Geben Sie einen Sprach- und Regionscode ein oder mappen Sie ihn, um den generierten Inhalt auf ein bestimmtes Land und eine bestimmte Sprache anzupassen. <p>Das Gebietsschema muss im ISO-639-1-Sprachcode und in der ISO-3166-1-Region angegeben werden.</p><p>Beispiel: <code>en-US</code></p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Anzahl der Varianten]*</td> 
+   <td>Geben Sie die Anzahl der Bilder ein, die pro Anfrage generiert werden sollen. Derzeit wird nur 1 unterstützt. Um mehrere Bilder zu generieren, senden Sie separate Anfragen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL-Modell]*</td> 
+   <td>Wählen Sie das [!DNL Firefly] aus, das Sie zum Generieren des Bildes verwenden möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Beschränkung]</td> 
+   <td>Geben Sie die maximale Anzahl von Ergebnissen ein, mit denen das Modul während eines Ausführungszyklus arbeiten soll, oder mappen Sie sie.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+*Diese Felder sind erweitert und werden nur angezeigt, wenn Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]** auswählen.
+
+### Präzise Komposition generieren
+
+Dieses Aktionsmodul platziert ein Objekt im maskierten Bereich eines Hintergrundbildes und wendet generative Harmonisierung an, sodass das Objekt sich natürlich mit dem Hintergrund vermischt.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Firefly] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Firefly]</a>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Hintergrund &gt; Bild &gt; Source]</td> 
+   <td>Wählen Sie aus, wie Sie das Hintergrundbild bereitstellen. Das Hintergrundbild ist die Zielszene, in der das Objekt zusammengestellt wird.<ul><li><p><b>Bild hochladen</b></p><p>Laden Sie das Hintergrundbild hoch oder ordnen Sie die Bilddatei aus einem vorherigen Modul zu.</p></li><li><p><b>Bild-URL</b></p><p>Geben Sie die URL des Hintergrundbilds ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Hintergrund &gt; Füllbereichsmaske &gt; Source]</td> 
+   <td>Wählen Sie aus, wie Sie die Füllbereichsmaske bereitstellen. Die Füllbereichsmaske gibt den Bereich des Hintergrunds an, in dem das Objekt platziert wird.<ul><li><p><b>Bild hochladen</b></p><p>Laden Sie das Bild mit der Füllbereichsmaske hoch oder ordnen Sie die Bilddatei aus einem vorherigen Modul zu.</p></li><li><p><b>Bild-URL</b></p><p>Geben Sie die URL des Füllbereichsmaskenbildes ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Objekt &gt; Bild &gt; Source]</td> 
+   <td>Wählen Sie aus, wie Sie das Objektbild bereitstellen. Das Objektbild ist das Quellbild des Objekts, das in den Hintergrund eingefügt werden soll.<ul><li><p><b>Bild hochladen</b></p><p>Laden Sie das Objektbild hoch oder ordnen Sie die Bilddatei aus einem vorherigen Modul zu.</p></li><li><p><b>Bild-URL</b></p><p>Geben Sie die URL des Objektbildes ein oder mappen Sie sie.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Anzahl der Varianten]</td> 
+   <td>Geben Sie eine Zahl zwischen 1 und 3 ein. Das Modul generiert diese Anzahl von zusammengesetzten Varianten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]*</td> 
+   <td>Klicken Sie <b>Element hinzufügen</b>, um einen Seed-Wert hinzuzufügen, und geben Sie dann eine Ganzzahl ein oder ordnen Sie sie zu. Verwenden Sie pro Variante einen Seed. Die Anzahl der Seed-Werte muss mit dem Wert von [!UICONTROL Anzahl der Varianten] übereinstimmen, wenn beide angegeben werden.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Blend]*</td> 
+   <td>Geben Sie eine Zahl zwischen 0 und 1 ein, um die Mischung zwischen dem harmonischen und ursprünglichen Erscheinungsbild des Objekts zu steuern. <code>0.0</code> wendet eine vollständige Harmonisierung an, wobei <code>1.0</code> das Erscheinungsbild des ursprünglichen Objekts beibehalten wird.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL-Ausgabe &gt; Medientyp]*</td> 
+   <td>Wählen Sie das Dateiformat aus, in dem der generierte Verbund gespeichert werden soll.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* Diese Felder sind erweiterte Felder und werden nur angezeigt, wenn Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]** auswählen.
 
 ### Erzeugen ähnlicher Bilder
 
@@ -419,6 +578,59 @@ Dieses Aktionsmodul generiert Bilder, die dem von Ihnen angegebenen Quellbild ä
  </tbody> 
 </table>
 
+
+### Video generieren
+
+Dieses Aktionsmodul generiert ein Video aus einer Textaufforderung. Sie können auch ein oder mehrere Referenzbilder bereitstellen, die die Videogenerierung leiten.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Firefly] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Firefly]</a>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>Geben Sie eine Beschreibung des Videos ein, das Sie generieren möchten, oder mappen Sie sie. Mehr Details in der Eingabeaufforderung ermöglichen Ihnen mehr Kontrolle darüber, was im Video angezeigt wird.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Bild &gt; Bedingungen]</td> 
+   <td>Geben Sie optional ein oder mehrere Referenzbilder an, die die Videogenerierung leiten sollen. Klicken <b> für jedes </b> auf „Element hinzufügen“.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL sizeS]</td> 
+   <td>Klicken Sie <b>Element hinzufügen</b> und geben Sie die Dimensionen des generierten Videos ein oder ordnen Sie sie zu.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Bitratenfaktor]*</td> 
+   <td>Geben Sie eine Zahl zwischen 0 und 63 ein, um den Bitratenfaktor für das generierte Video festzulegen.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Videoeinstellungen &gt; Kamerabewegung]*</td> 
+   <td>Wählen Sie die Kamerabewegung aus, die Sie im erzeugten Video verwenden möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Videoeinstellungen &gt; Eingabeaufforderungsstil]*</td> 
+   <td>Wählen Sie den Eingabeaufforderungsstil aus, den Sie für das generierte Video verwenden möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Videoeinstellungen &gt; Aufnahmewinkel]*</td> 
+   <td>Wählen Sie den Aufnahmewinkel aus, den Sie im erzeugten Video verwenden möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Videoeinstellungen &gt; Aufnahmegröße]*</td> 
+   <td>Wählen Sie die Aufnahmegröße aus, die Sie im generierten Video verwenden möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Beschränkung]</td> 
+   <td>Geben Sie die maximale Anzahl von Ergebnissen ein, mit denen das Modul während eines Ausführungszyklus arbeiten soll, oder mappen Sie sie.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* Diese Felder sind erweiterte Felder und werden nur angezeigt, wenn Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]** auswählen.
 
 ### Benutzerdefinierten API-Aufruf erstellen
 
