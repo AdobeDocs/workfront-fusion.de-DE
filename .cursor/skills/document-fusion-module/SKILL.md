@@ -100,6 +100,7 @@ Erfassen Sie beim Arbeiten mit dem Screenshot der Standardansicht jedes sichtbar
    ```
    [!UICONTROL Background > Image > Source]
    ```
+
 2. Lesen Sie den Hilfetext unter dem Feld im Screenshot (graue/gelbe Beschriftung). Verwenden Sie sie als Grundlage für die Beschreibung.
 3. Verweisen Sie mit dem API-Kontext aus Schritt 3a, um zu identifizieren, was das Feld darstellt (z. B. `background.fillAreaMask` ist „der Bereich des Hintergrunds, in dem das Objekt platziert werden wird„).
 4. Schreiben Sie die Beschreibung, indem Sie **Was das Feld ist** (über die API) mit **Wie Sie es bereitstellen** (über den Text und Feldtyp des UI-Helpers) kombinieren.
@@ -123,6 +124,7 @@ Arbeiten mit dem Screenshot der erweiterten Ansicht:
    ```html
    <td role="rowheader">[!UICONTROL Seeds]*</td>
    ```
+
 4. Fügen Sie nach dem `</table>` diese Fußnote in einer eigenen Zeile hinzu:
 
    ```markdown
