@@ -4,7 +4,7 @@ description: Die folgenden Zeichenfolgenfunktionen sind im Bedienfeld "Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: 469bd8cfff897ab956e75ca61ae9608114d0d2c6
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 5%
@@ -404,10 +404,10 @@ Verkettet Zeichenfolgen mit jeweils einem Trennzeichen.
 
 **Beispiel:**
 
-* `concat("Hello"; " "; "World")`
+* `concat(; Hello ; World)`
 
   Gibt Hello World zurück
-* `concat("a"; "-"; "b"; "c")`
+* `concat(-; a ; b; c)`
 
   Gibt a-b-c zurück.
 
