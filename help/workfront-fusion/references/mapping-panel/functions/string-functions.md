@@ -4,7 +4,7 @@ description: Die folgenden Zeichenfolgenfunktionen sind im Bedienfeld "Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: 469bd8cfff897ab956e75ca61ae9608114d0d2c6
+source-git-commit: 6080b35e3c22098cb856f477d49356f4412a6a23
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 5%
@@ -394,7 +394,7 @@ Gibt zurück: d29ya2zyb250==
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL CONCAT(Zeichenfolge1; Trennzeichen; Zeichenfolge2; …)]
+### [!UICONTROL CONCAT(Trennzeichen; Zeichenfolge1; Zeichenfolge2; …)]
 
 [!BADGE Neu!]{type=Informative}
 
