@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
 TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 898
@@ -174,6 +176,6 @@ Weitere Informationen zur `get()` finden Sie unter [Allgemeine Funktionen](/help
 
 ## Konvertieren von Array-Elementen in eine Reihe von Bundles
 
-Arrays können mithilfe des Moduls [!UICONTROL Iterator“ in eine Reihe von Bundles ] werden. Weitere Informationen finden Sie [[!UICONTROL  Modul ]Iterator](/help/workfront-fusion/references/modules/iterator-module.md).
+Arrays können mithilfe des Moduls [!UICONTROL Iterator“ in eine Reihe von Bundles &#x200B;] werden. Weitere Informationen finden Sie [[!UICONTROL &#x200B; Modul &#x200B;]Iterator](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ![Serie von Bundles](assets/series-of-bundles.png)

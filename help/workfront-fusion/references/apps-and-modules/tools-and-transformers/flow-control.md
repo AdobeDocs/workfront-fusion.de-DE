@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
 TQID: https://experienceleague.adobe.com/Gs6NF8KOawlRGN5FpVjY7-8agSjAKm8WYrSzu0ZLt8w
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 634
@@ -63,7 +64,7 @@ Sie können ein [!UICONTROL Repeater]-Modul verwenden, um eine Aufgabe eine best
         <td>Geben Sie die Anzahl der Wiederholungen des Moduls ein oder mappen Sie sie. Diese Zahl muss größer oder gleich 0 und kleiner oder gleich 10.000 sein.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL-Schritt]</td>
+        <td>[!UICONTROL -Schritt]</td>
         <td>Dies ist die Zahl, um die das Modul den Wert erhöht. Der Standardwert lautet 1.</td>
     </tr>
 </table>
@@ -73,7 +74,7 @@ Sie können ein [!UICONTROL Repeater]-Modul verwenden, um eine Aufgabe eine best
 Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E-Mails mit den Betreffen „Hello 1“, „Hello 2“ usw. zu senden, indem Sie das Modul **[!UICONTROL E-Mail] > [!UICONTROL E-Mail senden]** mit dem Modul [!UICONTROL Repeater] verbinden.
 
 1. Klicken Sie auf [!UICONTROL Fluss]-Symbol ![Flusssteuerungs-Symbol](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) unten im Bildschirm und klicken Sie dann im angezeigten Menü auf **[!UICONTROL Repeater]**.
-1. Klicken Sie auf das [!UICONTROL Repeater]-Modul und dann in ]**angezeigten Feld auf**[!UICONTROL  Automatisch verbinden.
+1. Klicken Sie auf das [!UICONTROL Repeater]-Modul und dann in **angezeigten Feld auf** Automatisch verbinden.
 
    Das Repeater-Modul wird geöffnet.
 
@@ -85,7 +86,7 @@ Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E
 
    Der Wert des Elements erhöht sich bei jeder Wiederholung um diesen Wert, der im Feld **[!UICONTROL Schritt]** angegeben ist, das Sie durch Auswahl von **[!UICONTROL Erweiterte Einstellungen anzeigen]** anzeigen können. Diese Zahl ist standardmäßig 1.
 
-1. Klicken Sie **[!UICONTROL OK]**, um das ]**&quot;**[!UICONTROL &quot; zu schließen.
+1. Klicken Sie **[!UICONTROL OK]**, um das **&quot;**&quot; zu schließen.
 
 1. Klicken Sie auf die App oder das Service-Modul, das mit dem [!UICONTROL Repeater]-Modul verbunden ist.
 1. Geben Sie in das sich öffnende Feld die Informationen ein, die Sie wiederholen möchten.
@@ -98,7 +99,7 @@ Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E
 
 >[!NOTE]
 >
->Die Anzahl der Wiederholungen wird nicht durch den Wert von `i` bestimmt, wie dies bei der Programmierung in einer Schleife der Fall wäre. Das Modul wiederholt die im Feld „Wiederholungen[!UICONTROL  angegebenen ]. Der Wert `i` ändert sich mit jeder Iteration des [!DNL repeater] Moduls und kann späteren Modulen zugeordnet werden. Im obigen Beispiel wird der Wert von `i` der „Hello“-Nachricht zugeordnet, was zu Meldungen mit dem Wert „Hello 1“, „Hello 2“ usw. führt.
+>Die Anzahl der Wiederholungen wird nicht durch den Wert von `i` bestimmt, wie dies bei der Programmierung in einer Schleife der Fall wäre. Das Modul wiederholt die im Feld „Wiederholungen[!UICONTROL &#x200B; angegebenen &#x200B;]. Der Wert `i` ändert sich mit jeder Iteration des [!DNL repeater] Moduls und kann späteren Modulen zugeordnet werden. Im obigen Beispiel wird der Wert von `i` der „Hello“-Nachricht zugeordnet, was zu Meldungen mit dem Wert „Hello 1“, „Hello 2“ usw. führt.
 
 >[!ENDSHADEBOX]
 

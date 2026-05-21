@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
 TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2507
@@ -133,7 +135,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue E-Mail zur Verarbeitun
    <td> <p>Wählen Sie den Ordner aus, der E-Mails enthält, die Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Kriterien]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Kriterien]</p> </td> 
    <td> <p>Wählen Sie die Kriterien aus, nach denen Sie E-Mails ansehen möchten:</p> 
     <ul> 
      <li>[!UICONTROL Alle E-Mails]</li> 
@@ -227,7 +229,7 @@ Dieses Aktionsmodul erstellt einen neuen Entwurf und fügt ihn einem ausgewählt
    <td> <p>Geben Sie die Betreffzeile der E-Mail ein oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Inhalt] </td> 
+   <td role="rowheader">[!UICONTROL -Inhalt] </td> 
    <td> <p>Geben Sie den E-Mail-Inhalt im HTML-Format mit HTML-Tags oder im Nur-Text-Format ein oder mappen Sie ihn.</p> </td> 
   </tr> 
   <tr> 
@@ -235,7 +237,7 @@ Dieses Aktionsmodul erstellt einen neuen Entwurf und fügt ihn einem ausgewählt
    <td> <p>Klicken Sie für jeden Anhang, den Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Dateiname]</strong> </p> <p>Geben Sie den Dateinamen einschließlich der Erweiterung ein. </p> </li> 
-     <li> <p><strong>[!UICONTROL-Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
+     <li> <p><strong>[!UICONTROL -Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL content-ID]</strong> </p> <p>Geben Sie die Inhalts-ID ein, um den Anhang (Bild) in den Inhalt einzufügen.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -311,7 +313,7 @@ Dieses Aktionsmodul entfernt eine E-Mail oder einen Entwurf aus dem ausgewählte
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL löschen]</td> 
-   <td> <p>Aktivieren Sie diese Option, um alle Nachrichten, die im aktuell geöffneten Postfach als [!UICONTROL Deleted] gekennzeichnet sind, dauerhaft zu entfernen.</p> <p>Hinweis: In [!DNL Gmail] wird dieses Verhalten durch die Einstellung im Abschnitt [!UICONTROL-Einstellungen] &gt;[!UICONTROL Weiterleitung POP/IMAP im IMAP-Zugriff] gesteuert.</p> </td> 
+   <td> <p>Aktivieren Sie diese Option, um alle Nachrichten, die im aktuell geöffneten Postfach als [!UICONTROL Deleted] gekennzeichnet sind, dauerhaft zu entfernen.</p> <p>Hinweis: In [!DNL Gmail] wird dieses Verhalten durch die Einstellung im Abschnitt [!UICONTROL -Einstellungen] &gt;[!UICONTROL Weiterleitung POP/IMAP im IMAP-Zugriff] gesteuert.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -337,7 +339,7 @@ Dieses Modul gibt E-Mails zurück, die den angegebenen Kriterien entsprechen.
    <td> <p>Aktivieren Sie diese Option, wenn Sie die ungelesene E-Mail nach dem Abrufen der Details als gelesen markieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Kriterien]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Kriterien]</p> </td> 
    <td> <p>Wählen Sie die Kriterien der E-Mails aus, die Sie abrufen möchten:</p> 
     <ul> 
      <li>[!UICONTROL Alle E-Mails]</li> 
@@ -490,7 +492,7 @@ Sendet eine neue E-Mail.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Inhalt] </td> 
+   <td role="rowheader">[!UICONTROL -Inhalt] </td> 
    <td> <p>Geben Sie den E-Mail-Inhalt im HTML-Format mithilfe von HTML-Tags ein oder ordnen Sie ihn zu oder im Klartext, je nachdem, was Sie im Feld [!UICONTROL Content Type] ausgewählt haben.</p> </td> 
   </tr> 
   <tr> 
@@ -498,7 +500,7 @@ Sendet eine neue E-Mail.
    <td> <p>Klicken Sie für jeden Anhang, den Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Dateiname]</strong> </p> <p>Geben Sie den Dateinamen einschließlich der Erweiterung ein. </p> </li> 
-     <li> <p><strong>[!UICONTROL-Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
+     <li> <p><strong>[!UICONTROL -Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL content-ID]</strong> </p> <p>Geben Sie die Inhalts-ID ein, um den Anhang (Bild) in den Inhalt einzufügen.</p> </li> 
     </ul> </td> 
   </tr> 

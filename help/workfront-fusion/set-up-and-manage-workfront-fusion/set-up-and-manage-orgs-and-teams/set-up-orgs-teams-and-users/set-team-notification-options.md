@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
 TQID: https://experienceleague.adobe.com/-HytP4gfrhiiSn-dg5ndg1YC6NTMC-NURYzSFgO5kIo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 309
@@ -70,11 +71,11 @@ Die Optionen für E-Mail-Benachrichtigungen werden auf Team-Ebene festgelegt.
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">'[!UICONTROL-Warnung in Szenarioausführung]'</td> 
+      <td role="rowheader">'[!UICONTROL -Warnung in Szenarioausführung]'</td> 
       <td> <p>Erhalten einer E-Mail bei einer Warnung in einem ausgeführten Szenario</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Fehler bei Szenarioausführung]</td> 
+      <td role="rowheader">[!UICONTROL -Fehler bei Szenarioausführung]</td> 
       <td>Erhalten Sie eine E-Mail, wenn bei der Ausführung eines Szenarios ein Fehler auftritt.</td> 
      </tr> 
      <tr> 

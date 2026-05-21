@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
 TQID: https://experienceleague.adobe.com/luvZBccaWY5-8muR71o8C82qVROYJvcuAqt3Ol2LZac
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 329
@@ -59,11 +60,11 @@ Dieses Aktionsmodul fragt ein JSON-Objekt ab und gibt ein Array zurück.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ausdruck]</td> 
+   <td role="rowheader">[!UICONTROL -Ausdruck]</td> 
    <td>Geben Sie den Ausdruck ein, den Sie zum Auswerten des JSON-Objekts verwenden möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Daten] </td> 
+   <td role="rowheader">[!UICONTROL -Daten] </td> 
    <td> Geben Sie das zu überprüfende JSON-Objekt ein.  </td> 
   </tr> 
   <tr> 

@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
 TQID: https://experienceleague.adobe.com/P3u8zyUET3--vugSBysaE59lNIPOBGLpzjYMqDrU9Pc
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 441
@@ -67,7 +68,7 @@ Die anderen Registerkarten umfassen Funktionen, Operatoren und Keywords, mit den
 
 Weitere Informationen zu Funktionsregisterkarten finden Sie unter [Überblick über Funktionen](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Weitere Informationen zum Zuordnen von Elementen mithilfe von Funktionen [ Sie unter „Zuordnen von Elementen mithilfe integrierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Weitere Informationen zum Zuordnen von Elementen mithilfe von Funktionen [&#x200B; Sie unter „Zuordnen von Elementen mithilfe integrierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Sammlungen
 

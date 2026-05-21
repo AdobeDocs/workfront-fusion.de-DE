@@ -5,9 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
 TQID: https://experienceleague.adobe.com/1hI4NuUl2eEAgWyXRKLHQ3-6MM9-2tFyujGbRfHSBmU
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 3886
@@ -112,11 +115,11 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Firefly]-Module:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-ID]</td>
-        <td>Geben Sie Ihre [!UICONTROL Adobe] [!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
+        <td>Geben Sie Ihre [!UICONTROL Adobe] [!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-        <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
+        <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td>
         </tr>
       </tbody>
     </table>
@@ -289,7 +292,7 @@ Dieses Aktionsmodul setzt ein Betreffbild nahtlos in ein Hintergrundbild an eine
    <td>Wählen Sie aus, ob die ursprünglichen Hintergrunddetails beim Erstellen im maskierten Bereich beibehalten werden sollen. <ul><li><b>Ja</b><p>Die ursprünglichen Hintergrunddetails innerhalb des maskierten Bereichs bleiben beim Zusammensetzen erhalten.</p></li><li><b>Nein</b><p>Die ursprünglichen Hintergrunddetails innerhalb des maskierten Bereichs bleiben beim Zusammensetzen nicht erhalten.</p></li><li><b>Nicht definiert</b><p>Verwenden Sie das Standardverhalten für diese Option.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ausgabe &gt; Medientyp]*</td> 
+   <td role="rowheader">[!UICONTROL -Ausgabe &gt; Medientyp]*</td> 
    <td>Wählen Sie das Dateiformat aus, in dem der generierte Verbund gespeichert werden soll.</td> 
   </tr> 
  </tbody> 
@@ -344,7 +347,7 @@ Dieses Modul funktioniert mit der Firefly API V3 Async. Die vorherige Version di
     <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly dem Stil des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Stil &gt; Vorgaben]</td> 
+   <td role="rowheader">[!UICONTROL -Stil &gt; Vorgaben]</td> 
    <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabenstile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Entwicklerdokumentation für Adobe.</td> 
   </tr> 
   <tr> 
@@ -423,7 +426,7 @@ Dieses Aktionsmodul kombiniert von Firefly generierte Bilder, um eine Bildkompos
     <td>Geben Sie eine Zahl zwischen 0 und 100 ein, um zu steuern, wie streng Firefly dem Stil des Quellbilds folgt. Höhere Zahlen bedeuten, dass Firefly dem Bild genauer folgt.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Stil &gt; Vorgaben]</td> 
+   <td role="rowheader">[!UICONTROL -Stil &gt; Vorgaben]</td> 
    <td>Wenn Sie einen Vorgabestil verwenden möchten, klicken Sie auf Element hinzufügen und geben Sie den gewünschten Stil ein, oder ordnen Sie ihn zu.<p>Eine Liste der Vorgabenstile finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Bildmodellstile</a> in der Entwicklerdokumentation für Adobe.</td> 
   </tr> 
   <tr> 
@@ -454,7 +457,7 @@ Dieses Aktionsmodul generiert ein Bild mit dem [!DNL Adobe Firefly] Image5-Model
    <td>Wählen Sie die Form des generierten Bildes aus. Wenn ein Referenzbild bereitgestellt wird, wählen Sie <b>Auto</b>.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Auflösung]</td> 
+   <td role="rowheader">[!UICONTROL -Auflösung]</td> 
    <td>Wählen Sie die Auflösung des erzeugten Bildes aus. Die Generierung höherer Auflösungen dauert länger.</td> 
   </tr> 
   <tr> 
@@ -478,7 +481,7 @@ Dieses Aktionsmodul generiert ein Bild mit dem [!DNL Adobe Firefly] Image5-Model
    <td>Geben Sie die Anzahl der Bilder ein, die pro Anfrage generiert werden sollen. Derzeit wird nur 1 unterstützt. Um mehrere Bilder zu generieren, senden Sie separate Anfragen.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Modell]*</td> 
+   <td role="rowheader">[!UICONTROL -Modell]*</td> 
    <td>Wählen Sie das [!DNL Firefly] aus, das Sie zum Generieren des Bildes verwenden möchten.</td> 
   </tr> 
   <tr> 
@@ -527,7 +530,7 @@ Dieses Aktionsmodul platziert ein Objekt im maskierten Bereich eines Hintergrund
    <td>Geben Sie eine Zahl zwischen 0 und 1 ein, um die Mischung zwischen dem harmonischen und ursprünglichen Erscheinungsbild des Objekts zu steuern. <code>0.0</code> wendet eine vollständige Harmonisierung an, wobei <code>1.0</code> das Erscheinungsbild des ursprünglichen Objekts beibehalten wird.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ausgabe &gt; Medientyp]*</td> 
+   <td role="rowheader">[!UICONTROL -Ausgabe &gt; Medientyp]*</td> 
    <td>Wählen Sie das Dateiformat aus, in dem der generierte Verbund gespeichert werden soll.</td> 
   </tr> 
  </tbody> 

@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
 TQID: https://experienceleague.adobe.com/cIq5yfUbJsb3v8DbVjWv7hCP6kOkTbGmGouBirjETpo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1643
@@ -115,7 +117,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL ServiceNow]-Module:
       <td>Geben Sie Ihr ServiceNow-Kennwort ein.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL-Instanz]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL -Instanz]</p> </td> 
       <td> <p>Geben Sie die Adresse Ihres [!DNL ServiceNow] Kontos ohne <code>https://</code> ein (normalerweise <code>&lt;company>.service-now.com</code>).</p> </td> 
      </tr> 
     </tbody> 
@@ -154,7 +156,7 @@ Dieses Trigger-Modul aktiviert ein Szenario, wenn ein Datensatz erstellt oder ak
    <td> <p>Anweisungen zum Verbinden Ihres ServiceNow-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL ServiceNow] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, Tabellentyp]</td> 
+   <td role="rowheader">[!UICONTROL , Tabellentyp]</td> 
    <td>Wählen Sie aus, ob es sich bei der Tabelle, die Sie beobachten möchten, um eine benutzerdefinierte Tabelle oder eine Standardtabelle handelt.</td> 
   </tr> 
   <tr> 
@@ -162,7 +164,7 @@ Dieses Trigger-Modul aktiviert ein Szenario, wenn ein Datensatz erstellt oder ak
    <td>Wählen Sie den Typ des Datensatzes aus, den Sie beobachten möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Anzeige]</td> 
+   <td role="rowheader">[!UICONTROL -Anzeige]</td> 
    <td>Wählen Sie den Typ der Werte aus, die Sie anzeigen möchten.</td> 
   </tr> 
   <tr> 
@@ -206,7 +208,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Anweisungen zum Verbinden Ihres ServiceNow-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL ServiceNow] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, Tabellentyp]</td> 
+   <td role="rowheader">[!UICONTROL , Tabellentyp]</td> 
    <td>Wählen Sie aus, ob Sie einen Datensatz in einer benutzerdefinierten Tabelle oder einer Standardtabelle erstellen möchten.</td> 
   </tr> 
   <tr> 
@@ -340,7 +342,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Geben Sie die eindeutige [!DNL ServiceNow]-ID des Datensatzes ein, den das Modul lesen soll, oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, Tabellentyp]</td> 
+   <td role="rowheader">[!UICONTROL , Tabellentyp]</td> 
    <td>Wählen Sie aus, ob sich der Datensatz, den Sie lesen möchten, in einer benutzerdefinierten Tabelle oder einer Standardtabelle befindet.</td> 
   </tr> 
   <tr> 
@@ -348,7 +350,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Wählen Sie den Typ [!DNL ServiceNow] Datensatzes aus, den das Modul lesen soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Anzeige]</td> 
+   <td role="rowheader">[!UICONTROL -Anzeige]</td> 
    <td>Wählen Sie den Typ der Werte aus, die Sie anzeigen möchten.</td> 
   </tr> 
   <tr> 
@@ -377,7 +379,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Geben Sie die eindeutige [!DNL ServiceNow]-ID des Datensatzes ein, den Sie aktualisieren möchten, oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, Tabellentyp]</td> 
+   <td role="rowheader">[!UICONTROL , Tabellentyp]</td> 
    <td>Wählen Sie aus, ob sich der zu aktualisierende Datensatz in einer benutzerdefinierten Tabelle oder einer Standardtabelle befindet.</td> 
   </tr> 
   <tr> 
@@ -431,7 +433,7 @@ Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag verknüpft sind,
    <td> <p>Anweisungen zum Verbinden Ihres ServiceNow-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL ServiceNow] mit [!UICONTROL Workfront Fusion]</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL, Tabellentyp]</td> 
+   <td role="rowheader">[!UICONTROL , Tabellentyp]</td> 
    <td>Wählen Sie aus, ob die zu durchsuchende Tabelle eine benutzerdefinierte Tabelle oder eine Standardtabelle ist.</td> 
   </tr> 
   <tr> 
@@ -452,7 +454,7 @@ Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag verknüpft sind,
     <ul> 
      <li> <p><strong>[!UICONTROL Erweiterte Abfrage]</strong> </p> 
       <ul> 
-       <li> <p>[!UICONTROL-Suchanfrage]</p> <p>Geben Sie die benutzerdefinierte Suchabfrage ein. Informationen zum [!DNL ServiceNow] benutzerdefinierter Suchabfragen finden Sie in der <a href="https://docs.servicenow.com/bundle/orlando-platform-user-interface/page/use/common-ui-elements/reference/r_OpAvailableFiltersQueries.html">ServiceNow-Abfragedokumentation</a>.</p> </li> 
+       <li> <p>[!UICONTROL -Suchanfrage]</p> <p>Geben Sie die benutzerdefinierte Suchabfrage ein. Informationen zum [!DNL ServiceNow] benutzerdefinierter Suchabfragen finden Sie in der <a href="https://docs.servicenow.com/bundle/orlando-platform-user-interface/page/use/common-ui-elements/reference/r_OpAvailableFiltersQueries.html">ServiceNow-Abfragedokumentation</a>.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Simple]</strong> </p> 
       <ul> 
@@ -462,7 +464,7 @@ Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag verknüpft sind,
     </ul> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Anzeige]</td> 
+   <td role="rowheader">[!UICONTROL -Anzeige]</td> 
    <td>Wählen Sie den Typ der Werte aus, die Sie anzeigen möchten.</td> 
   </tr> 
   <tr> 

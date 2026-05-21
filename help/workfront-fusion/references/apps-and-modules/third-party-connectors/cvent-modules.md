@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b7e16180-1db8-4aff-bb7b-69ca98194b00
 TQID: https://experienceleague.adobe.com/3Zi0MPk58Fvcshiq87skNQ3LlAMwGyRJ54KnktwX8cw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1134
@@ -121,7 +123,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 
 * [[!UICONTROL Benutzerdefinierter API-Aufruf]](#create-meeting-request)
 * [[!UICONTROL Eintrag lesen]](#read-a-record)
-* [[!UICONTROL Registrieren des ]](#register-invitee)
+* [[!UICONTROL Registrieren des &#x200B;]](#register-invitee)
 * [[!UICONTROL Einladende hinzufügen]](#add-invitee)
 * [[!UICONTROL Kontakt löschen]](#delete-contact)
 * [[!UICONTROL Kontakt aktualisieren]](#update-contact)
@@ -181,7 +183,7 @@ Dieses Aktionsmodul liest Informationen zu einem bestimmten Datensatz.
  </tbody> 
 </table>
 
-#### [!UICONTROL Registrieren des ]
+#### [!UICONTROL Registrieren des &#x200B;]
 
 Dieses Aktionsmodul registriert eine Einladung für ein Ereignis.
 

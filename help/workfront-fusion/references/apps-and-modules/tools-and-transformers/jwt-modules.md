@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
 TQID: https://experienceleague.adobe.com/90zhDiLzi34ES2MPE-hg26mmSHZ-XQIgZJIFeW4vwy4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 528
@@ -74,7 +75,7 @@ Dieses Modul generiert ein JWT basierend auf dem ausgewählten Algorithmus.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Algorithmus]</td> 
+   <td role="rowheader">[!UICONTROL -Algorithmus]</td> 
    <td> <p>Wählen Sie den Algorithmus aus, mit dem Sie den JWT generieren möchten.</p> <ul>
    <li><b>HS256</b>: HMAC mit SHA-256-Hash-Algorithmus</li>
    <li><b>HS384</b>: HMAC mit SHA-384-Hash-Algorithmus</li>

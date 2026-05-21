@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
 TQID: https://experienceleague.adobe.com/tcZa29ScrpuQdLtY973vxCXPoPvuJ-X15ms7wDs5p04
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 986
@@ -75,7 +77,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL]</td> 
+   <td role="rowheader"></td> 
    <td> <p>Wählen Sie den Schlüssel aus, der Ihre grundlegenden Authentifizierungsdaten enthält, oder klicken Sie auf <strong>[!UICONTROL Hinzufügen]</strong>, um Ihre Anmeldeinformationen einem neuen Schlüssel hinzuzufügen. </p> <p>Hinweis: Sie können weitere Anmeldeinformationen hinzufügen, um einfach zwischen den einzelnen Verbindungen zu wechseln.</p> </td> 
   </tr> 
   <tr> 
@@ -112,7 +114,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] ist eine mehrteilige HTTP-Anfrage zum Senden von Dateien und Daten. Es wird häufig verwendet, um Dateien auf den Server hochzuladen.</p> <p>Fügen Sie Felder hinzu, die in der Anfrage gesendet werden sollen. Jedes Feld muss ein Schlüssel-Wert-Paar enthalten.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL text]</strong> </p> <p>Geben Sie den Schlüssel und den Wert ein, die innerhalb des Anfragetexts gesendet werden sollen.</p> </li> 
-       <li> <p><strong>[!UICONTROL-Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten. Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Datei zu.</p> </li> 
+       <li> <p><strong>[!UICONTROL -Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten. Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Datei zu.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

@@ -5,8 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
 TQID: https://experienceleague.adobe.com/jHKSttikcFb-V7D5gVCmet9WgnfvRrQGY8dNQhU6kNA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 3224
@@ -187,7 +191,7 @@ Konvertiert eine Datei in ein ausgewähltes Ausgabeformat.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Format]</td> 
+   <td role="rowheader">[!UICONTROL -Format]</td> 
    <td>Wählen Sie aus, ob Sie das Eingabeformat der zu konvertierenden Datei angeben möchten. Wenn kein Wert angegeben ist, wird die Erweiterung der Eingabedatei als Eingabeformat verwendet.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -235,7 +239,7 @@ Ermöglicht das Hinzufügen einer oder mehrerer Dateien zum ZIP, RAR, 7Z, TAR, T
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Datei von URL importieren]</p> </td> 
-   <td> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie archivieren möchten.</p> <p><strong>[!UICONTROL-Kopfzeilen]</strong> </p> <p>Definieren Sie Anfrage-Header (optional). Dies ist beispielsweise dann nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist.</p> </td> 
+   <td> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie archivieren möchten.</p> <p><strong>[!UICONTROL -Kopfzeilen]</strong> </p> <p>Definieren Sie Anfrage-Header (optional). Dies ist beispielsweise dann nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Ausgabeformat]</td> 
@@ -278,7 +282,7 @@ Führt mindestens zwei Dateien in einer PDF zusammen. Wenn Eingabedateien keine 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Datei von URL importieren]</p> </td> 
-   <td> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie archivieren möchten.</p> <p><strong>[!UICONTROL-Kopfzeilen]</strong> </p> <p>Definieren Sie Anfrage-Header (optional). Dies ist beispielsweise dann nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist.</p> </td> 
+   <td> <p><strong>[!UICONTROL URL]</strong> </p> <p>Geben Sie die URL der Datei ein, die Sie archivieren möchten.</p> <p><strong>[!UICONTROL -Kopfzeilen]</strong> </p> <p>Definieren Sie Anfrage-Header (optional). Dies ist beispielsweise dann nützlich, wenn für die angegebene URL eine Autorisierung erforderlich ist.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Ausgabeformat]</td> 
@@ -431,7 +435,7 @@ Dieses Modul erstellt einen Auftrag. Ein Auftrag kann eine oder mehrere Aufgaben
    <td> <p>Fügen Sie Aufgaben hinzu, die innerhalb des Auftrags ausgeführt werden sollen.</p> <p>Beschreibungen der Felder der Vorgänge finden Sie im entsprechenden Abschnitt.</p> 
     <ul> 
      <li><a href="#convert-a-file" class="MCXref xref">[!UICONTROL Datei konvertieren]</a> </li> 
-     <li><a href="#capture-a-website" class="MCXref xref">[!UICONTROL, um eine Website zu erfassen]e</a> </li> 
+     <li><a href="#capture-a-website" class="MCXref xref">[!UICONTROL , um eine Website zu erfassen]e</a> </li> 
      <li><a href="#optimize-a-file" class="MCXref xref">[!UICONTROL Datei optimieren]</a> </li> 
      <li><a href="#create-an-archive" class="MCXref xref">[!UICONTROL Archiv erstellen]</a> </li> 
      <li><a href="#merge-files" class="MCXref xref">[!UICONTROL Dateien zusammenführen]</a> </li> 
@@ -663,7 +667,7 @@ Dieses Modul ruft alle Aufgaben in Ihrem Konto basierend auf den Filtereinstellu
    <td> <p>Geben Sie die Auftrags-ID ein oder ordnen Sie sie zu, um nur Aufgaben innerhalb des angegebenen Auftrags zurückzugeben.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Vorgang] </td> 
+   <td role="rowheader">[!UICONTROL -Vorgang] </td> 
    <td> <p>Geben Sie den Vorgangstyp ein, um nur Aufgaben mit dem angegebenen Vorgang zurückzugeben. </p> <p>Hinweis: Verwenden Sie das Modul [!UICONTROL List Possible Operations], um Vorgänge abzurufen.</p> </td> 
   </tr> 
   <tr> 
@@ -793,8 +797,8 @@ In der folgenden Tabelle finden Sie mögliche Fehler und deren Lösungen:
    <td role="rowheader"> <p>[!UICONTROL RuntimeError:] </p> <p><span style="font-weight: normal;">[!UICONTROL Maximale Anzahl von Wiederholungen überschritten.]</span> </p> </td> 
    <td> <p>Suchen Sie den entsprechenden [!DNL CloudConvert] Auftrag in der Liste der Aufträge im [!DNL CloudConvert]-Dashboard und überprüfen Sie die Dauer des Auftrags:</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-duration-350x177.png" style="width: 350;height: 177;"> </p> <p>Der Timeout des Moduls [!DNL CloudConvert] &gt; [!UICONTROL Convert a File] ist auf 3 Minuten festgelegt. Wenn die Dauer des Auftrags 3 Minuten überschreitet (möglicherweise aufgrund einer temporären Überlastung des [!DNL CloudConvert]-Services), gibt das Modul den oben genannten Fehler aus.</p> <p>Erwägen Sie in diesem Fall eine der folgenden Optionen:</p> 
     <ul> 
-     <li>Aktivieren Sie die Option <strong>[!UICONTROL Speicherung unvollständiger Ausführungen zulassen</strong> in den Szenarioeinstellungen, um die unvollständigen Ausführungen für eine spätere manuelle Auflösung zu speichern. Optional können Sie dem [!DNL CloudConvert]-Modul mit der [!UICONTROL Break]-Direktive eine Fehlerbehandlungsroute anhängen, um die unvollständigen Ausführungen automatisch aufzulösen.</li> 
-     <li>Deaktivieren Sie die Option <strong>[!UICONTROL Datei herunterladen</strong> im Modul [!DNL CloudConvert] &gt; [!UICONTROL Datei konvertieren]. In diesem Fall wartet das Modul nicht auf das Konvertierungsergebnis. Um das Konvertierungsergebnis zu erhalten, erstellen Sie ein neues Szenario und verwenden Sie den Trigger [!DNL CloudConvert] &gt; [!UICONTROL New Job Event].</li> 
+     <li>Aktivieren Sie die Option <strong>Speicherung unvollständiger Ausführungen zulassen</strong> in den Szenarioeinstellungen, um die unvollständigen Ausführungen für eine spätere manuelle Auflösung zu speichern. Optional können Sie dem [!DNL CloudConvert]-Modul mit der [!UICONTROL Break]-Direktive eine Fehlerbehandlungsroute anhängen, um die unvollständigen Ausführungen automatisch aufzulösen.</li> 
+     <li>Deaktivieren Sie die Option <strong>Datei herunterladen</strong> im Modul [!DNL CloudConvert] &gt; [!UICONTROL Datei konvertieren]. In diesem Fall wartet das Modul nicht auf das Konvertierungsergebnis. Um das Konvertierungsergebnis zu erhalten, erstellen Sie ein neues Szenario und verwenden Sie den Trigger [!DNL CloudConvert] &gt; [!UICONTROL New Job Event].</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
