@@ -1,27 +1,33 @@
 ---
-title: Partnermodule
-description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die verwenden [!DNL Bynder] und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+title: Bynder-Module
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Bynder] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/2NCbEM8bb0s7m30uCFTWK-wYdhCYKEZC-W01Zr21mRw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 0%
+source-wordcount: 1863
+ht-degree: 31%
 
 ---
 
-# [!DNL Bynder]
+# [!DNL Bynder]-Module
 
-In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Bynder] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Bynder] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,29 +35,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -100,7 +106,7 @@ Sie können direkt aus einem [!DNL Bynder]-Modul heraus eine Verbindung von Work
    Anweisungen zum Generieren der Client-ID und des Client-Geheimnisses finden Sie unter [Generieren einer Client-ID und eines Client-Geheimnisses in [!DNL Bynder] (optional)](#generate-a-client-id-and-client-secret-in-bynder-optional) in diesem Artikel.
 
 1. Geben [!UICONTROL &#x200B; im Fenster &quot;]&quot; Ihren Benutzernamen (E-Mail-Adresse) und Ihr Passwort ein.
-1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu erstellen, und kehren Sie zum Modul zurück.
+1. Klicken Sie auf **[!UICONTROL Fortsetzen]**, um die Verbindung zu erstellen und zum Modul zurückzukehren.
 
 ### Generieren einer [!UICONTROL Client-ID] und [!UICONTROL Client-]) in [!DNL Bynder] (optional)
 
@@ -117,17 +123,17 @@ Anweisungen zum Erstellen einer App in [!DNL Bynder] finden Sie unter [OAuth 2.0
 >   * Azure-Cluster: `https://app-az.workfrontfusion.com/oauth/cb/workfront-bynder`
 >* Bunter verwendet den Gewährungstyp Autorisierungs-Code/Aktualisierungstoken. Dies ist der einzige Gewährungstyp, den der Fusion Bunter-Connector verwendet.
 
-## [!DNL Bynder] Module und ihre Felder
+## [!DNL Bynder]-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Bynder] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Bynder] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Bynder]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Bynder]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Aktionen](#actions)
 * [Suchvorgänge](#searches)
-* [Trigger](#triggers)
+* [Auslöser](#triggers)
 
 ### Aktionen
 
@@ -150,7 +156,7 @@ Dieses Aktionsmodul fügt einem oder mehreren Assets ein Tag hinzu
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -173,7 +179,7 @@ Dieses Aktionsmodul fügt ein oder mehrere Assets zu einer Sammlung hinzu.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -189,7 +195,7 @@ Dieses Aktionsmodul fügt ein oder mehrere Assets zu einer Sammlung hinzu.
 
 #### [!UICONTROL Benutzerdefinierter API-Aufruf]
 
-Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Bynder]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, die von den anderen [!DNL Bynder] nicht durchgeführt werden kann.
+Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die [!DNL Bynder]-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, was über die anderen [!DNL Bynder]-Module nicht möglich ist.
 
 Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
@@ -200,7 +206,7 @@ Das Modul gibt einen Status-Code zusammen mit den Kopfzeilen und dem Hauptteil d
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -208,11 +214,11 @@ Das Modul gibt einen Status-Code zusammen mit den Kopfzeilen und dem Hauptteil d
    <td>Geben Sie einen Pfad relativ zu <code>https://{your-bynder-domain}/api/{api-version}/</code> ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -220,8 +226,8 @@ Das Modul gibt einen Status-Code zusammen mit den Kopfzeilen und dem Hauptteil d
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL body]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -238,7 +244,7 @@ Dieses Aktionsmodul lädt ein einzelnes Asset herunter.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -261,7 +267,7 @@ Dieses Aktionsmodul liest die Metadaten eines Assets.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -284,7 +290,7 @@ Dieses Aktionsmodul entfernt ein Tag aus einem oder mehreren Assets
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -307,7 +313,7 @@ Dieses Aktionsmodul entfernt ein oder mehrere Assets aus einer Sammlung.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -330,7 +336,7 @@ Dieses Aktionsmodul aktualisiert die Metadaten eines vorhandenen Assets.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -338,7 +344,7 @@ Dieses Aktionsmodul aktualisiert die Metadaten eines vorhandenen Assets.
    <td>Geben Sie die ID des Assets ein, für das Sie Metadaten aktualisieren möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Felder]</td> 
+   <td role="rowheader">[!UICONTROL Felder]</td> 
    <td> <p>Wählen Sie die Felder aus, für die Sie Informationen eingeben möchten, und geben Sie dann die Informationen, mit denen Sie die Metadaten aktualisieren möchten, in diese Felder ein oder ordnen Sie sie zu. </p> </td> 
   </tr> 
   <tr> 
@@ -357,7 +363,7 @@ Dieses Aktionsmodul lädt ein einzelnes Asset hoch.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -369,7 +375,7 @@ Dieses Aktionsmodul lädt ein einzelnes Asset hoch.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source-Datei]</td> 
+   <td role="rowheader">[!UICONTROL Quelldatei]</td> 
    <td>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</td> 
   </tr> 
   <tr> 
@@ -393,11 +399,11 @@ Dieses Suchmodul ruft alle Elemente eines bestimmten Typs ab.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
+   <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td> <p>Wählen Sie den Typ des aufzulistenden Datensatzes aus.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Alle Sammlungen lesen]</strong> </p> </li> 
@@ -410,8 +416,8 @@ Dieses Suchmodul ruft alle Elemente eines bestimmten Typs ab.
    <td> <p>Wählen Sie die Felder aus, die Sie in die Ausgabe des Moduls aufnehmen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Assets ein, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung]</td> 
+   <td> <p>Geben Sie die maximale Anzahl von Assets ein, die das Modul während jedes Ausführungszyklus eines Szenarios zurückgeben soll, oder ordnen Sie eine Zahl zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -425,7 +431,7 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Assets.
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -454,13 +460,13 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Assets.
    <td> <p>Wählen Sie die Felder aus, die Sie in die Ausgabe des Moduls aufnehmen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Assets ein, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung]</td> 
+   <td> <p>Geben Sie die maximale Anzahl von Assets ein, die das Modul während jedes Ausführungszyklus eines Szenarios zurückgeben soll, oder ordnen Sie eine Zahl zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Trigger
+### Auslöser
 
 #### [!UICONTROL Überwachen von Assets]
 
@@ -471,7 +477,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Asset erstellt oder aktualis
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-    <td role="rowheader"> <p>[!UICONTROL -Verbindung]</p> </td> 
+    <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -479,7 +485,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Asset erstellt oder aktualis
     <td>Wählen Sie aus, ob das Szenario gestartet werden soll, wenn ein neues Asset erstellt oder ein vorhandenes Asset aktualisiert wird.</td>
   </tr> 
   <tr>
-     <td role="rowheader">[!UICONTROL -Sammlungen]</td>
+     <td role="rowheader">[!UICONTROL Sammlungen]</td>
    <td> <p>Wählen Sie die Sammlung aus, die Sie auf neue Assets überwachen möchten. Um alle Sammlungen zu sehen, lassen Sie dieses Feld leer.</p> </td> 
   </tr> 
   <tr> 
@@ -487,7 +493,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Asset erstellt oder aktualis
     <td>Wählen Sie die Felder aus, die Sie in die Ausgabe aufnehmen möchten.</td>
   </tr> 
   <tr> 
-    <td role="rowheader">[!UICONTROL Limit]</td>
+    <td role="rowheader">[!UICONTROL Beschränkung]</td>
 
 <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll.</p> </td> 
   </tr> 

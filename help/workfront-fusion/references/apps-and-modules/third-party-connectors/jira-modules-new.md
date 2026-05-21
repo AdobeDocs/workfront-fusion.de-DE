@@ -4,9 +4,14 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: e65d868dc2165cbe800600f271f6b03d0a906cb4
+TQID: https://experienceleague.adobe.com/fSi-9BIxl4qI-Vz7Yw9WJoqIX-GlmYDc5u-PGSh5mfc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2348'
+source-wordcount: 2399
 ht-degree: 25%
 
 ---
@@ -108,7 +113,7 @@ Um eine OAuth2-Verbindung zu Jira herzustellen, müssen Sie eine Anwendung in Ji
 
    | Fusion-Rechenzentrum | Callback-URL |
    |---|---|
-   | USA | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
    | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
    | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
 
@@ -132,7 +137,7 @@ Um eine OAuth2-Verbindung zu Jira herzustellen, müssen Sie eine Anwendung in Ji
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Verbindungsname</p> </td> 
-      <td> <p>Geben Sie einen Namen für die neue Verbindung ein. </p> </td> 
+      <td> <p>Geben Sie einen Namen für die neue Verbindung ein.</p> </td> 
      </tr> 
      <tr>
       <td role="rowheader">Service-URL</td>
@@ -191,7 +196,7 @@ Das Erstellen einer Basisverbindung zu Jira unterscheidet sich, je nachdem, ob S
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Verbindungsname</p> </td> 
-      <td> <p>Geben Sie einen Namen für die neue Verbindung ein. </p> </td> 
+      <td> <p>Geben Sie einen Namen für die neue Verbindung ein.</p> </td> 
      </tr> 
      <tr>
       <td role="rowheader">Service-URL</td>
@@ -239,7 +244,7 @@ Das Erstellen einer Basisverbindung zu Jira unterscheidet sich, je nachdem, ob S
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Verbindungsname</p> </td> 
-      <td> <p>Geben Sie einen Namen für die neue Verbindung ein. </p> </td> 
+      <td> <p>Geben Sie einen Namen für die neue Verbindung ein.</p> </td> 
      </tr> 
      <tr>
       <td role="rowheader">Service-URL</td>
@@ -274,7 +279,7 @@ Möglicherweise benötigen Sie bei der Konfiguration Ihres PAT die folgenden Inf
 
   | Fusion-Rechenzentrum | Umleitungs-URL |
   |---|---|
-  | USA | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
   | EU | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
   | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
 
@@ -338,9 +343,9 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz hinzugefügt, aktu
 * [Problem zum Sprint hinzufügen](#add-issue-to-sprint)
 * [Erstellen eines Datensatzes](#create-a-record)
 * [Benutzerdefinierter API-Aufruf](#custom-api-call)
-* [Löschen eines Datensatzes](#delete-a-record)
+* [Eintrag löschen](#delete-a-record)
 * [Herunterladen eines Anhangs](#download-an-attachment)
-* [Datensatz lesen](#read-a-record)
+* [Eintrag lesen](#read-a-record)
 * [Eintrag aktualisieren](#update-a-record)
 
 #### Problem zum Sprint hinzufügen
@@ -437,7 +442,7 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten 
  </tbody> 
 </table>
 
-#### Löschen eines Datensatzes
+#### Eintrag löschen
 
 Dieses Aktionsmodul löscht den angegebenen Datensatz.
 
@@ -490,7 +495,7 @@ Dieses Aktionsmodul lädt den angegebenen Anhang herunter.
  </tbody> 
 </table>
 
-#### Datensatz lesen
+#### Eintrag lesen
 
 Dieses Aktionsmodul liest Daten aus dem angegebenen Datensatz in Jira.
 

@@ -4,10 +4,15 @@ description: Die [!DNL Adobe Workfront Fusion Frame].io modules enable you to mo
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2663'
-ht-degree: 44%
+source-wordcount: 2662
+ht-degree: 45%
 
 ---
 
@@ -116,7 +121,7 @@ Um Ihr [!DNL Frame.io]-Konto mithilfe eines API-Tokens mit Workfront Fusion zu v
 1. Klicken Sie auf **[!UICONTROL Neu]**.
 1. Geben Sie den Namen des Tokens ein, wählen Sie die gewünschten Bereiche aus und klicken Sie auf **[!UICONTROL Erstellen]**.
 1. Kopieren Sie das angegebene Token.
-1. Wechseln Sie zu Workfront Fusion und öffnen Sie das Dialogfeld [!DNL Frame.io]Verbindung erstellen **[!UICONTROL des]**.
+1. Wechseln Sie zu Workfront Fusion und öffnen Sie das Dialogfeld **[!UICONTROL Verbindung erstellen]** des [!DNL Frame.io].
 1. Wählen Sie im Feld **[!UICONTROL Verbindungstyp]** die Option **[!DNL Frame.io]**.
 1. Geben Sie das Token, das Sie in Schritt 5 kopiert haben, in das Feld **[!UICONTROL Ihr [!DNL Frame.io] API-Schlüssel]** ein
 1. Klicken Sie **[!UICONTROL Weiter]**, um die Verbindung herzustellen und zum Modul zurückzukehren.
@@ -130,7 +135,7 @@ Sie können mit OAuth 2.0 PKCE mit einer optionalen Client-ID eine Verbindung zu
 
 #### Herstellen einer Verbindung zu [!DNL Frame.io] über OAuth 2.0 PKCE (ohne Client-ID)
 
-1. Wechseln Sie zu Workfront Fusion und öffnen Sie das Dialogfeld [!DNL Frame.io]Verbindung erstellen **[!UICONTROL des]**.
+1. Wechseln Sie zu Workfront Fusion und öffnen Sie das Dialogfeld **[!UICONTROL Verbindung erstellen]** des [!DNL Frame.io].
 1. Wählen Sie im Feld **[!UICONTROL Verbindungstyp]** die Option **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**.
 1. Geben Sie im Feld „Verbindungsname“ einen **[!UICONTROL für die neue]** ein.
 1. Klicken Sie **[!UICONTROL Weiter]**, um die Verbindung herzustellen und zum Modul zurückzukehren.
@@ -153,7 +158,7 @@ Sie können mit OAuth 2.0 PKCE mit einer optionalen Client-ID eine Verbindung zu
 
 
 1. Kopieren Sie die bereitgestellte `client_id`.
-1. Wechseln Sie zu Workfront Fusion und öffnen Sie das Dialogfeld [!DNL Frame.io]Verbindung erstellen **[!UICONTROL des]**.
+1. Wechseln Sie zu Workfront Fusion und öffnen Sie das Dialogfeld **[!UICONTROL Verbindung erstellen]** des [!DNL Frame.io].
 1. Wählen Sie im Feld **[!UICONTROL Verbindungstyp]** die Option **[!UICONTROL [!DNL Frame.io]OAuth 2.0 PKCE]**.
 1. Geben Sie im Feld „Verbindungsname“ einen **[!UICONTROL für die neue]** ein.
 1. Klicken Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]**.
@@ -735,7 +740,7 @@ Dieses Suchmodul ruft alle Projekte für das angegebene Team ab.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Beschränkung] </td> 
-   <td> <p>Geben Sie die maximale Anzahl von Projekten ein, die das Modul während jedes Ausführungszyklus des Szenarios zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Projekten ein, die das Modul während jedes Ausführungszyklus eines Szenarios zurückgeben soll, oder ordnen Sie eine Zahl zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>

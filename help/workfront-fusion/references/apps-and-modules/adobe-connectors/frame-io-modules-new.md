@@ -4,10 +4,16 @@ description: Die [!DNL Adobe Workfront Fusion Frame].io modules enable you to mo
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/aqE-HRALPymeQ8S3v6W1DGXOKmWIBCCWETigPp232jA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4539'
-ht-degree: 100%
+source-wordcount: 4588
+ht-degree: 99%
 
 ---
 
@@ -893,7 +899,8 @@ Dieses Suchmodul ruft alle Projekte für das angegebene Team ab.
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Projekte] </td> 
-   <td> <p>Geben Sie die maximale Anzahl von Projekten ein, die das Modul während jedes Ausführungszyklus eines Szenarios zurückgeben soll, oder ordnen Sie eine Zahl zu.</p> </td> 
+   <td> <p>Maximale Anzahl von Projekten eingeben oder zuordnen
+   Das Modul soll bei jedem Ausführungszyklus des Szenarios zurückgegeben werden.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1024,7 +1031,8 @@ Dieses Modul listet alle Arbeitsbereiche in einem Konto auf.
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Arbeitsbereiche] </td> 
-   <td> <p>Geben Sie die maximale Anzahl von Arbeitsbereichen ein, die das Modul während jedes Ausführungszyklus eines Szenarios zurückgeben soll, oder ordnen Sie eine Zahl zu.</p> </td> 
+   <td> <p>Maximale Anzahl von Arbeitsbereichen eingeben oder zuordnen
+   Das Modul soll bei jedem Ausführungszyklus des Szenarios zurückgegeben werden.</p> </td> 
   </tr> 
  </tbody> 
 </table>

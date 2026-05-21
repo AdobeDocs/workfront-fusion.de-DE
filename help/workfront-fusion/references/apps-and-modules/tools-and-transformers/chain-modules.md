@@ -4,10 +4,13 @@ description: Mithilfe dieser Module können Sie Szenarien verketten und einen Au
 author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
+TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 1%
+source-wordcount: 625
+ht-degree: 15%
 
 ---
 
@@ -26,7 +29,7 @@ Anweisungen zum Planen von verketteten Szenarien finden Sie unter [Verketten meh
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -34,22 +37,22 @@ Anweisungen zum Planen von verketteten Szenarien finden Sie unter [Verketten meh
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -57,7 +60,7 @@ Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Z
 
 ## Kettenmodule und ihre Felder
 
-### Trigger
+### Auslöser
 
 #### Daten von übergeordneter Seite empfangen
 
@@ -67,7 +70,7 @@ So konfigurieren Sie den Empfang von Daten aus dem übergeordneten Modul:
 
 1. Um eine vorhandene Datenstruktur zu verwenden, wählen Sie im Feld Datenstruktur die Datenstruktur aus, die für die Eingabedaten des Szenarios verwendet werden soll.
 
-   Oder
+   ODER
 
    Um eine neue Datenstruktur zu erstellen, die als Eingabedaten des Szenarios verwendet werden soll, klicken Sie auf **Hinzufügen** neben dem Feld „Datenstruktur“ und erstellen Sie die Datenstruktur.
 
@@ -91,7 +94,7 @@ So konfigurieren Sie das Modul „Untergeordnetes Szenario aufrufen“
 1. Fügen Sie Ihrem Szenario das Modul Untergeordnetes Szenario aufrufen hinzu.
 1. Um ein vorhandenes untergeordnetes Szenario zu verwenden, wählen Sie im Feld Kette das untergeordnete Szenario aus, das Sie aufrufen möchten.
 
-   Oder
+   ODER
 
    Um ein neues untergeordnetes Szenario zu erstellen, klicken Sie auf Hinzufügen neben dem Feld Kette . Das untergeordnete Szenario wird in einem separaten Fenster angezeigt, in dem die Empfängerdaten von übergeordneten Modulen und die Rückgabeantwort von übergeordneten Modulen vorhanden sind.
 
@@ -115,7 +118,7 @@ So konfigurieren Sie das Modul Responder hinzufügen:
 
 1. Um eine vorhandene Datenstruktur zu verwenden, wählen Sie im Feld Datenstruktur die Datenstruktur aus, die für die Daten verwendet wird, die das untergeordnete Szenario an das übergeordnete Szenario zurückgibt.
 
-   Oder
+   ODER
 
    Um eine neue Datenstruktur für die Daten zu erstellen, klicken Sie **Hinzufügen** neben dem Feld Datenstruktur und erstellen Sie die Datenstruktur.
 

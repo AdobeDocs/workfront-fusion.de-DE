@@ -4,20 +4,28 @@ description: Mit den  [!DNL Adobe Acrobat Sign]  können Sie ein Adobe Workfront
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+TQID: https://experienceleague.adobe.com/bIhgpTsd4d1GOHARM2tYljUIJTt1JNRA-8JslmAuMRk
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '6763'
-ht-degree: 1%
+source-wordcount: 6796
+ht-degree: 12%
 
 ---
 
-# [!DNL Adobe Acrobat Sign]
+# [!DNL Adobe Acrobat Sign]-Module
 
 Mit den [!DNL Adobe Acrobat Sign] Modulen können Sie ein Adobe Workfront Fusion-Szenario auf der Grundlage von Ereignissen in Ihrem [!DNL Adobe Acrobat Sign]-Konto starten, Vereinbarungen erstellen, lesen oder aktualisieren und andere Datensätze suchen, anhand der von Ihnen festgelegten Kriterien nach Datensätzen suchen und Dokumente hochladen.
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,29 +33,29 @@ Mit den [!DNL Adobe Acrobat Sign] Modulen können Sie ein Adobe Workfront Fusion
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -83,19 +91,19 @@ Neue Benutzer in [!DNL Adobe Sign] sollten einige der Einschränkungen bei der A
 
 ![Adobe Sign-Empfehlungen](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
-## [!DNL Adobe Acrobat Sign] Module und ihre Felder
+## [!DNL Adobe Acrobat Sign]-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Adobe Acrobat Sign] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Adobe Acrobat Sign] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Adobe Acrobat Sign]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Adobe Acrobat Sign]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Trigger](#triggers)
+* [Auslöser](#triggers)
 * [Aktionen](#actions)
 * [Suchvorgänge](#searches)
 
-### Trigger
+### Auslöser
 
 <!--
 * [Watch for agreements](#watch-for-agreements) 
@@ -111,14 +119,14 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine Vereinbarung erstellt oder 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
 <td>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a></td>  </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL filter]</td> 
+   <td role="rowheader">[!UICONTROL Filter]</td> 
    <td>Wählen Sie aus, ob auf neue, aktualisierte oder beides Datensätze geachtet werden soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Datensatztyp] </td> 
+   <td role="rowheader">[!UICONTROL Eintragstyp] </td> 
    <td>Wählen Sie den Datensatztyp aus, den der Datensatz überwachen soll.</td> 
   </tr> 
   <tr> 
@@ -127,7 +135,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine Vereinbarung erstellt oder 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Vereinbarungen]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,20 +156,20 @@ Dieses Ereignismodul startet ein Trigger, wenn ein ausgewähltes Ereignis auftri
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook-Name]</td> 
-   <td> <p>Einen Namen für den Webhook eingeben</p> </td> 
+   <td> <p>Geben Sie einen Namen für den Webhook ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Bereiche]</td> 
+   <td role="rowheader">[!UICONTROL Bereiche]</td> 
    <td> 
     <ul> 
      <li> <p>[!UICONTROL -Konto]</p> </li> 
-     <li> <p>[!UICONTROL -Gruppe]</p> </li> 
-     <li> <p>[!UICONTROL -Benutzer]</p> </li> 
-     <li> <p>[!UICONTROL -Ressource]</p> <p>Wenn Sie [!UICONTROL Resource] auswählen, geben Sie die Ressourcen-ID und den Ressourcentyp ein.</p> </li> 
+     <li> <p>[!UICONTROL Gruppe]</p> </li> 
+     <li> <p>[!UICONTROL Benutzende]</p> </li> 
+     <li> <p>[!UICONTROL Ressource]</p> <p>Wenn Sie [!UICONTROL Resource] auswählen, geben Sie die Ressourcen-ID und den Ressourcentyp ein.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -214,7 +222,7 @@ Dieses Ereignismodul startet ein Trigger, wenn ein ausgewähltes Ereignis auftri
 * [Upload document](#upload-document)
 -->
 
-+++ **[!UICONTROL Datensatz erstellen]**
++++ **[!UICONTROL Eintrag erstellen]**
 
 Dieses Aktionsmodul erstellt einen neuen Datensatz des ausgewählten Typs.
 
@@ -223,15 +231,15 @@ Dieses Aktionsmodul erstellt einen neuen Datensatz des ausgewählten Typs.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
    <td>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
+   <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den Sie erstellen möchten.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Group]</b> </p> </li> 
@@ -263,7 +271,7 @@ Dieses Aktionsmodul erstellt einen neuen Datensatz des ausgewählten Typs.
      <li> <p><b>[!UICONTROL Freigabemodus]</b> </p> <p>Geben Sie an, wer Zugriff auf das Bibliotheksdokument haben soll.</p> </li> 
      <li> <p><b>[!UICONTROL Library Document State]</b> </p> <p>Wählen Sie aus, ob das Dokument den Status Authoring aufweist oder aktiv ist.</p> </li> 
      <li> <p><b>[!UICONTROL Bibliotheksvorlagentyp]</b> </p> <p>Klicken Sie für jeden gewünschten Bibliotheksvorlagentyp auf <b>[!UICONTROL Element hinzufügen]</b> und wählen Sie den Vorlagentyp aus.</p> </li> 
-     <li> <p><b>[!UICONTROL Letztes Ereignisdatum]</b> </p> <p>Geben Sie das letzte Datum ein, an dem ein Ereignis im Bibliotheksdokument aufgetreten ist.</p> <p>Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </li> 
+     <li> <p><b>[!UICONTROL Letztes Ereignisdatum]</b> </p> <p>Geben Sie das letzte Datum ein, an dem ein Ereignis im Bibliotheksdokument aufgetreten ist.</p> <p>Eine Liste der unterstützten Datums- und Uhrzeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Erzwungene Typumwandlung</a>.</p> </li> 
      <li> <p><b>[!UICONTROL Library Document Status]</b> </p> <p>Wählen Sie den Status des Bibliotheksdokuments aus.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -291,7 +299,7 @@ Dieses Aktionsmodul erstellt einen neuen Datensatz des ausgewählten Typs.
     <ul> 
      <li> <p><b>[!UICONTROL Datei-Info]</b> </p> <p>Klicken Sie für jede Datei, die Sie dem Web-Formular hinzufügen möchten, auf Hinzufügen und füllen Sie die folgenden Felder aus:</p> 
       <ul> 
-       <li> <p>[!UICONTROL Dateityp]</p> <p>[!UICONTROL -Dokument]</p> </li> 
+       <li> <p>[!UICONTROL Dateityp]</p> <p>[!UICONTROL Dokument]</p> </li> 
        <li> <p>[!UICONTROL Vorübergehendes Dokument]</p> </li> 
        <li> <p>[!UICONTROL URL-Dateiinformationen]</p> </li> 
       </ul> </li> 
@@ -356,10 +364,10 @@ Dieses Aktionsmodul erstellt eine Vereinbarung, sendet sie zur Signatur und gibt
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
 <td>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a></td>  </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
    <td>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
@@ -417,7 +425,7 @@ Dieses Aktionsmodul erstellt eine Vereinbarung, sendet sie zur Signatur und gibt
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Status]</td> 
+   <td role="rowheader">[!UICONTROL Status]</td> 
    <td> <p>Status für diese Vereinbarung auswählen.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Authoring]</b> </p> <p>Sie können weiterhin Felder für diese Vereinbarung bearbeiten oder hinzufügen.</p> </li> 
@@ -496,15 +504,15 @@ Dieses Aktionsmodul erstellt Datensätze, die mit einem von Ihnen ausgewählten 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt automatisch Autorisierungs-Header hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
+   <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td>Wählen Sie den Datensatztyp des ursprünglichen Datensatzes aus, mit dem Sie die erstellten Datensätze verknüpfen möchten.</td> 
   </tr> 
   <tr> 
@@ -583,7 +591,7 @@ Dieses Aktionsmodul erstellt Datensätze, die mit einem von Ihnen ausgewählten 
    <td role="rowheader">[!UICONTROL Widget-bezogene Felder]</td> 
    <td> <p>Wählen Sie den entsprechenden Datensatz aus, den Sie erstellen möchten.</p> 
     <ul> 
-     <li> <p>[!UICONTROL -Ansichten]</p> <p>Füllen Sie die folgenden Felder aus.</p> 
+     <li> <p>[!UICONTROL Ansichten]</p> <p>Füllen Sie die folgenden Felder aus.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL name]</b> </p> <p>Namen der angeforderten Web-Formular-Ansicht auswählen</p> </li> 
        <li> <p><b>[!UICONTROL Benutzer automatisch anmelden]</b> </p> <p>Wählen Sie <b>[!UICONTROL Yes]</b> aus, um den Benutzer automatisch anzumelden. Wählen Sie <b>[!UICONTROL No]</b> aus, um Anmeldeinformationen anzufordern. Der Standardwert ist [!UICONTROL No].</p> </li> 
@@ -594,7 +602,7 @@ Dieses Aktionsmodul erstellt Datensätze, die mit einem von Ihnen ausgewählten 
         <ul> 
          <li> <p><b>[!UICONTROL email]</b> </p> <p>E-Mail-Adresse der Person eingeben, die das neu erstellte Web-Formular erhält</p> </li> 
          <li> <p><b>[!UICONTROL comment]</b> </p> <p>Geben Sie einen Kommentar ein, der beschreibt, wie der API-Aufrufer die Identität des Unterzeichners ermittelt hat. Diese Informationen werden im Audit-Protokoll der [!DNL Adobe Acrobat Sign] angezeigt.</p> </li> 
-         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Geben Sie ein Ablaufdatum für die Personalisierung dieses Web-Formulars ein. </p> <p>Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Typzwang</a>.</p> </li> 
+         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Geben Sie ein Ablaufdatum für die Personalisierung dieses Web-Formulars ein. </p> <p>Eine Liste der unterstützten Datums- und Uhrzeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Erzwungene Typumwandlung</a>.</p> </li> 
          <li> <p><b>[!UICONTROL wiederverwendbar]</b> </p> <p>Wählen Sie <b>[!UICONTROL Yes]</b>, wenn der vorgesehene Unterzeichner das Formular mehrmals signieren kann.</p> </li> 
         </ul> </li> 
       </ul> </li> 
@@ -614,28 +622,28 @@ Mit diesem Modul können Sie einen benutzerdefinierten API-Aufruf durchführen.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Pfad eingeben für <code>https://api.[region].adobesign.com/api/rest/v6/</code></p> <p>Hinweis: Eine Liste der verfügbaren Endpunkte finden Sie in der [!DNL Adobe Sign] API-Referenz.</p> </td> 
+   <td> <p>Pfad eingeben für <code>https://api.[region].adobesign.com/api/rest/v6/</code></p> <p>Hinweis: Eine Liste der verfügbaren Endpunkte finden Sie in der API-Referenz von [!DNL Adobe Sign].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Methode]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Methode]</p> </td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt automatisch Autorisierungs-Header hinzu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Abfragezeichenfolge] </td> 
    <td> <p>Geben Sie die Abfragezeichenfolge der Anfrage ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL body]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -658,15 +666,15 @@ Dieses Aktionsmodul listet alle Datensätze des ausgewählten Typs auf, auf den 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt automatisch Autorisierungs-Header hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
+   <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td>Wählen Sie den Datensatztyp aus, für den Sie verknüpfte Datensätze abrufen möchten.</td> 
   </tr> 
   <tr> 
@@ -691,7 +699,7 @@ Dieses Aktionsmodul listet alle Datensätze des ausgewählten Typs auf, auf den 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Datensätze]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> <p>Hinweis: Dieses Feld wird mit dem Feld [!UICONTROL Cursor] oder [!UICONTROL Start Index] für die Paginierung kombiniert. Wenn beispielsweise die [!UICONTROL Maximale Anzahl der zurückgegebenen Ereignisse] 100 und der [!UICONTROL Start index] 101 ist, gibt das Modul die Datensätze 101-200 oder die zweite Ergebnisseite zurück.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> <p>Hinweis: Dieses Feld wird mit dem Feld [!UICONTROL Cursor] oder [!UICONTROL Start Index] für die Paginierung kombiniert. Wenn beispielsweise die [!UICONTROL Maximale Anzahl der zurückgegebenen Ereignisse] 100 und der [!UICONTROL Start index] 101 ist, gibt das Modul die Datensätze 101-200 oder die zweite Ergebnisseite zurück.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URLs der übergeordneten Domain]</td> 
@@ -711,15 +719,15 @@ Dieses Aktionsmodul ruft Informationen aus einem einzelnen Datensatz ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt automatisch Autorisierungs-Header hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
+   <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td>Wählen Sie den Datensatztyp aus, für den Sie verknüpfte Datensätze abrufen möchten.</td> 
   </tr> 
   <tr> 
@@ -740,15 +748,15 @@ Weitere Informationen zu einem einzelnen Datensatz lesen.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt automatisch Autorisierungs-Header hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
+   <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td>Wählen Sie den Datensatztyp aus, für den Sie verknüpfte Datensätze abrufen möchten.</td> 
   </tr> 
   <tr> 
@@ -764,7 +772,7 @@ Weitere Informationen zu einem einzelnen Datensatz lesen.
 
 +++
 
-+++ **[!UICONTROL Aktualisieren eines Datensatzes]**
++++ **[!UICONTROL Eintrag aktualisieren]**
 
 Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Adobe Acrobat Sign].
 
@@ -781,19 +789,19 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Adobe Acroba
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt automatisch Autorisierungs-Header hinzu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Datensatz-ID] </td> 
-   <td>Geben Sie die ID des Datensatzes ein, den Sie aktualisieren möchten, oder mappen Sie sie.</td> 
+   <td>Geben Sie die ID des Eintrags ein, der aktualisiert werden soll, oder ordnen Sie diese zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
+   <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td>Wählen Sie den Typ des Datensatzes aus, den Sie aktualisieren möchten.</td> 
   </tr> 
   <tr> 
@@ -842,15 +850,15 @@ Dieses Aktionsmodul aktualisiert Datensätze, die sich auf ein bestimmtes Objekt
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt automatisch Autorisierungs-Header hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Datensatztyp]</td> 
+   <td role="rowheader">[!UICONTROL Eintragstyp]</td> 
    <td>Wählen Sie den Datensatztyp des Datensatzes aus, mit dem die zugehörigen Felder verknüpft sind.</td> 
   </tr> 
   <tr> 
@@ -880,17 +888,17 @@ Dieses Aktionsmodul aktualisiert Datensätze, die sich auf ein bestimmtes Objekt
          <li> <p><b>[!UICONTROL name]</b> </p> <p>Geben Sie den Namen der Gruppe ein oder mappen Sie ihn.</p> </li> 
          <li> <p><b>[!UICONTROL Library Document Creation visible]</b> </p> <p>Diese Einstellungen bestimmen, ob der Benutzer Bibliotheksdokumente erstellen kann</p> 
           <ul> 
-           <li> <p>[!UICONTROL -Wert]</p> <p>zulassen</p> </li> 
+           <li> <p>[!UICONTROL Wert]</p> <p>zulassen</p> </li> 
            <li> <p>[!UICONTROL vererbt]</p> <p>Gruppeneinstellungen von Gruppe oder Konto übernehmen</p> </li> 
           </ul> </li> 
          <li> <p><b>[!UICONTROL Senden eingeschränkt an Workflows]</b> </p> <p>Diese Einstellungen bestimmen, ob der Benutzer Vereinbarungen nur mithilfe von Workflows erstellen kann.</p> 
           <ul> 
-           <li> <p>[!UICONTROL -Wert]</p> <p>zulassen</p> </li> 
+           <li> <p>[!UICONTROL Wert]</p> <p>zulassen</p> </li> 
            <li> <p>[!UICONTROL vererbt]</p> <p>Gruppeneinstellungen von Gruppe oder Konto übernehmen</p> </li> 
           </ul> </li> 
          <li> <p><b>[!UICONTROL Benutzer can send]</b> </p> 
           <ul> 
-           <li> <p>[!UICONTROL -Wert]</p> <p>zulassen</p> </li> 
+           <li> <p>[!UICONTROL Wert]</p> <p>zulassen</p> </li> 
            <li> <p>[!UICONTROL vererbt]</p> <p>Gruppeneinstellungen von Gruppe oder Konto übernehmen</p> </li> 
           </ul> </li> 
         </ul> </li> 
@@ -920,12 +928,12 @@ Laden Sie ein vorübergehendes Dokument hoch. Ein vorübergehendes Dokument steh
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt Autorisierungs-Header automatisch hinzu.</p> </td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt automatisch Autorisierungs-Header hinzu.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Datensatz-ID]</td> 
@@ -959,11 +967,11 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Vereinbar
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Adobe Acrobat Sign]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
@@ -1007,7 +1015,7 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Vereinbar
    <td> <p>Die E-Mail-Adresse eines Teilnehmers. </p> <p>Klicken Sie für jede externe ID, die Sie hinzufügen möchten, auf <b>[!UICONTROL Hinzufügen]</b> und geben Sie die externe ID ein bzw. mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Role]</td> 
+   <td role="rowheader">[!UICONTROL Rolle]</td> 
    <td>Wählen Sie Rollen aus, die die zurückgegebenen Ergebnisse enthalten sollen.</td> 
   </tr> 
   <tr> 
@@ -1044,7 +1052,7 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Vereinbar
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -1,23 +1,26 @@
 ---
-title: Anzeigen von Benutzern in einer Organisation
+title: Anzeigen von Benutzenden in einer Organisation
 description: Sie können eine Liste der Benutzer Ihrer Organisation anzeigen
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c6d6e01-b76c-4f1c-a310-e2b7fd48d1b2
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+TQID: https://experienceleague.adobe.com/-Uv4ZTTIlP-XtRZHz7YGl9KpAyH5f2-lU-uPh51xXTI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 0%
+source-wordcount: 240
+ht-degree: 42%
 
 ---
 
-# Anzeigen von Benutzern in einer Organisation
+# Anzeigen von Benutzenden in einer Organisation
 
 Sie können eine Liste von Benutzern in Ihrer Organisation anzeigen, sortieren und filtern.
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,16 +28,16 @@ Sie können eine Liste von Benutzern in Ihrer Organisation anzeigen, sortieren u
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -47,7 +50,7 @@ Sie können eine Liste von Benutzern in Ihrer Organisation anzeigen, sortieren u
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 

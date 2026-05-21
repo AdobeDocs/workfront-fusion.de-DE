@@ -4,9 +4,17 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: 4303
 ht-degree: 13%
 
 ---
@@ -194,7 +202,7 @@ Sie können die Zertifikatsautorisierung verwenden, um eine Verbindung zu ShareP
     </tbody> 
    </table>
 
-1. Klicken Sie auf **Weiter**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie auf **Continue**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 ## Microsoft SharePoint-Module und ihre Felder
 
@@ -339,7 +347,7 @@ Dieses Modul hat Details zum angegebenen Ordner abgerufen
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Site, Laufwerk und Datei eingeben                IDs]</td> 
+   <td role="rowheader">[!UICONTROL Website-, Laufwerk- und Datei-IDs eingeben]</td> 
    <td> <p>Wählen Sie aus, wie Sie den Speicherort der Datei identifizieren möchten, die Sie erhalten möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Manuell eingeben]</strong> </p> <p>Geben Sie die <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> und <strong>[!UICONTROL Folder Path]</strong> für den Ordner ein, den Sie abrufen möchten, oder ordnen Sie sie zu.</p> </li> 
@@ -362,7 +370,7 @@ Dieses Aktionsmodul aktualisiert die Metadaten eines Ordners oder einer Datei
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Site, Laufwerk und Datei eingeben                IDs]</td> 
+   <td role="rowheader">[!UICONTROL Website-, Laufwerk- und Datei-IDs eingeben]</td> 
    <td> <p>Wählen Sie aus, wie Sie den Speicherort der Datei identifizieren möchten, die Sie erhalten möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Manuell eingeben]</strong> </p> <p>Geben Sie die <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong> und <strong>[!UICONTROL Folder or Item ID]</strong> für den Ordner oder die Datei ein, den bzw. die Sie abrufen möchten, oder ordnen Sie sie zu.</p> </li> 

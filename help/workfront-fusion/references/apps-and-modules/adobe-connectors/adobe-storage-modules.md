@@ -3,19 +3,27 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
-title: Adobe-Speichermodule
+title: Adobe Storage-Module
 description: In einem Adobe Workfront Fusion-Szenario müssen Sie Projekte in der Adobe Admin Console erstellen und verwalten.
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+TQID: https://experienceleague.adobe.com/sp6gMeEhVxN0QjviLXm9GnI7NSLEp93PnSQkH45zHXI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 3%
+source-wordcount: 1413
+ht-degree: 28%
 
 ---
 
-# Adobe-Speichermodule
+# Adobe Storage-Module
 
 In einem Adobe Workfront Fusion-Szenario können Sie Projekte in der Adobe Admin Console erstellen und verwalten.
 
@@ -25,7 +33,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -33,29 +41,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -84,12 +92,12 @@ Wählen Sie auf der Adobe Admin Console-Seite die Registerkarte Produkte in der 
 
 1. Suchen Sie die E-Mail-Adresse des Benutzers des technischen Kontos in Ihrem Unternehmen und kopieren Sie sie.
 1. Wenn eine Liste angezeigt wird, klicken Sie auf den Link oben.
-1. Dies ist die Produktionsinstanz, in der die Benutzer arbeiten.
+1. Dies ist die Produktionsinstanz, in der die Benutzenden arbeiten.
 1. Klicken Sie in der angezeigten Liste bei ausgewählter Registerkarte Produktprofile auf den Namen des Workfront-Produktprofils.
 
    Diese Liste enthält alle Benutzenden, die bereits Ihrer Produktionsinstanz von Workfront zugewiesen sind.
 
-1. Wählen Sie die **Administratoren** oberhalb der Benutzerliste aus.
+1. Wählen Sie die Registerkarte **Admins** über der Benutzerliste aus.
 1. Wählen Sie **Admin hinzufügen** aus.
 1. Geben Sie im Feld Produktprofil-Administratoren hinzufügen die E-Mail-Adressen des technischen Kontos ein und klicken Sie dann auf **Speichern**.
 
@@ -99,7 +107,7 @@ Wählen Sie auf der Adobe Admin Console-Seite die Registerkarte Produkte in der 
 
 ### Erstellen der Verbindung in Workfront Fusion
 
-So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Storage]:
+So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Storage]-Module:
 
 1. Klicken Sie in einem beliebigen Modul **[!UICONTROL Hinzufügen]** neben dem Feld Verbindung .
 
@@ -118,7 +126,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Storage]:
         <tr>
         <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
-          <p>Geben Sie einen Namen für diese Verbindung ein.</p>
+          <p>Geben Sie einen Namen für die Verbindung ein.</p>
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL Client-ID]</td>
@@ -126,7 +134,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Storage]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-        <td>Geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des Projekts in der [!DNL Adobe Developer Console].</td>
+        <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des Projekts in der [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS-Organisations-ID]</td>
@@ -135,15 +143,15 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Storage]:
       </tbody>
     </table>
 
-1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie auf **[!UICONTROL Weiter]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 ## Adobe-Speichermodule und ihre Felder
 
-Beim Konfigurieren von Adobe User Management-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus werden möglicherweise weitere Adobe-Benutzerverwaltungsfelder angezeigt, je nach Faktoren wie Ihrer Zugriffsebene in der App oder im Service. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von Adobe User Management-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus werden möglicherweise weitere Adobe-Benutzerverwaltungsfelder angezeigt, je nach Faktoren wie Ihrer Zugriffsebene in der App oder im Service. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [ESM-Speicher](#esm-stores)
 * [Einladungen](#invitations)
@@ -170,7 +178,7 @@ Dieses Aktionsmodul richtet einen neuen ESM-Speicher (Enterprise Storage Managem
   </tr> 
   <tr> 
    <td role="rowheader">Projektname</td> 
-   <td>Geben Sie einen Namen für das neue Projekt ein oder mappen Sie ihn.</td> 
+   <td>Geben Sie einen Namen für das neue Projekt ein oder ordnen Sie dem neuen Projekt einen Namen zu.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,7 +259,7 @@ Dieses Aktionsmodul sendet eine Einladung, um einem neuen Benutzer Zugriff auf e
    <td>Geben Sie die E-Mail-Adresse des Benutzers ein, den Sie in den Store einladen möchten, oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Kreativelement-ID</td> 
+   <td role="rowheader">Asset-ID</td> 
    <td>Geben Sie die ID des Assets ein, zu dem Sie den Benutzer einladen möchten, oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
@@ -307,7 +315,7 @@ Dieses Aktionsmodul sendet eine Einladung, um einem neuen Benutzer Zugriff auf e
 
 ### Sonstiges
 
-#### Erstellen eines benutzerdefinierten API-Aufrufs
+#### Benutzerdefinierten API-Aufruf erstellen
 
 Dieses Aktionsmodul führt eine benutzerdefinierte HTTP-Anfrage an die Adobe-Speicher-API durch.
 
@@ -334,7 +342,7 @@ Dieses Aktionsmodul führt eine benutzerdefinierte HTTP-Anfrage an die Adobe-Spe
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">Kopfzeilen</td>
+      <td role="rowheader">Header</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -349,7 +357,7 @@ Dieses Aktionsmodul führt eine benutzerdefinierte HTTP-Anfrage an die Adobe-Spe
     </tr>
     <tr>
       <td role="rowheader">Textkörper</td>
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

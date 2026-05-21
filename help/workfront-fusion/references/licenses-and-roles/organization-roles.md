@@ -4,14 +4,17 @@ description: Dieser Artikel enthält Informationen über den Zugriff und die Ber
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+TQID: https://experienceleague.adobe.com/r2AIAgWN-yH4OMHGhjyURrg58H1gJg-o6-QfeIvax7s
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 33%
+source-wordcount: 286
+ht-degree: 6%
 
 ---
 
-# Organisations- und Teamfunktionen
+# Organisations- und Team-Rollen
 
 In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den verschiedenen Team- und Organisationsrollen in Workfront Fusion zur Verfügung stehen.
 
@@ -30,7 +33,7 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p>[!UICONTROL Inhaber]</p> </th> 
+   <th> <p>[!UICONTROL Besitzerin bzw. Besitzer]</p> </th> 
    <th> <p>[!UICONTROL admin]</p> </th> 
    <th> <p>[!UICONTROL -Member]</p> </th> 
    <th> <p>[!UICONTROL Buchhalter]</p> </th> 
@@ -482,7 +485,7 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
    <td> </td> 
   </tr> 
   <tr> 
-   <td> <p style="text-align: left;">Vorlagen bearbeiten</p> </td> 
+   <td> <p style="text-align: left;">Bearbeiten von Vorlagen</p> </td> 
    <td>✓ </td> 
    <td>✓ </td> 
    <td> </td> 

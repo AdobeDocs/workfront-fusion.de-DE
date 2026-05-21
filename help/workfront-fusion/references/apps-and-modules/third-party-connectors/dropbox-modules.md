@@ -1,19 +1,25 @@
 ---
 title: Dropbox-Module
-description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Dropbox verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden. Auf diese Weise können Sie Aktivitäten wie das Überwachen, Suchen, Abrufen, Auflisten, Erstellen und Bearbeiten von Dateien und Ordnern in Ihrer Dropbox automatisieren.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Dropbox verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.Auf diese Weise können Sie Aktivitäten wie das Überwachen, Suchen, Abrufen, Auflisten, Erstellen und Bearbeiten von Dateien und Ordnern in Ihrer Dropbox automatisieren.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: 3307
 ht-degree: 26%
 
 ---
 
 # [!DNL Dropbox]-Module
 
-In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!UICONTROL Dropbox] oder [!DNL Dropbox Business] verwenden, und diese mit mehreren Anwendungen und Services von Drittanbietern verbinden. Auf diese Weise können Sie Aktivitäten wie das Überwachen, Suchen, Abrufen, Auflisten, Erstellen und Bearbeiten von Dateien und Ordnern in Ihrer [!UICONTROL Dropbox] automatisieren.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!UICONTROL Dropbox] oder [!DNL Dropbox Business] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.Damit können Sie Aktivitäten wie das Überwachen, Suchen, Abrufen, Auflisten, Erstellen und Bearbeiten von Dateien und Ordnern in Ihrer [!UICONTROL Dropbox automatisieren].
 
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -125,7 +131,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Dropbox]-Module:
         <td>Geben Sie Ihre [!UICONTROL Dropbox] [!UICONTROL Client-ID] ein. </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-        <td>Geben Sie Ihren [!DNL Dropbox] [!UICONTROL Client Secret] ein. </td>
+        <td>Geben Sie Ihr [!DNL Dropbox]-[!UICONTROL Client-Geheimnis] ein. </td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Kontotyp]</td>
@@ -138,7 +144,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Dropbox]-Module:
       </tbody>
     </table>
 
-1. Klicken Sie auf **[!UICONTROL Weiter]**, um die Verbindung zu speichern und zum Modul zurückzukehren.## [!DNL Dropbox] Module und ihre Felder
+1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu speichern und zum Modul zurückzukehren.## [!DNL Dropbox] Module und deren Felder
 
 ## [!DNL Dropbox]-Module und ihre Felder
 

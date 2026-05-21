@@ -4,16 +4,21 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 96f8d4f1-f97b-4da8-8d82-83cccb54ec68
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/MSvJMXg8hyI8piqHpn1OnEPEoCcP1Tn-za1veFtHeIo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 1%
+source-wordcount: 1147
+ht-degree: 40%
 
 ---
 
 # [!DNL Microsoft Dynamics 365 Finance and Operations modules]
 
-In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Microsoft Dynamics 365] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Microsoft Dynamics 365] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 
 >[!NOTE]
 >
@@ -23,13 +28,13 @@ In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, d
 
 
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -37,29 +42,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -90,7 +95,7 @@ So erstellen Sie eine Verbindung für Ihre Microsoft Dynamics 365 Finance and Op
         <tr>
         <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
-          <p>Geben Sie einen Namen für diese Verbindung ein.</p>
+          <p>Geben Sie einen Namen für die Verbindung ein.</p>
         </td>
         </tr>
         <tr>
@@ -112,7 +117,7 @@ So erstellen Sie eine Verbindung für Ihre Microsoft Dynamics 365 Finance and Op
       </tbody>
     </table>
 
-1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie auf **[!UICONTROL Weiter]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 
 
@@ -137,7 +142,7 @@ Dieses Aktionsmodul erstellt ein neues Entitätselement in Microsoft Dynamics 36
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL -Verbindung]</td>
+    <td>[!UICONTROL Verbindung]</td>
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -145,7 +150,7 @@ Dieses Aktionsmodul erstellt ein neues Entitätselement in Microsoft Dynamics 36
      <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, den Sie erstellen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL body]</td>
+    <td>[!UICONTROL Text]</td>
      <td> <p>Geben Sie einen JSON-Text ein, der die Daten enthält, die Sie in das neue Entitätselement aufnehmen möchten, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -162,7 +167,7 @@ Dieses Aktionsmodul löscht ein Entitätselement aus Dynamics Finance and Operat
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL -Verbindung]</td>
+    <td>[!UICONTROL Verbindung]</td>
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -176,7 +181,7 @@ Dieses Aktionsmodul löscht ein Entitätselement aus Dynamics Finance and Operat
  </tbody> 
 </table>
 
-### Erstellen eines benutzerdefinierten API-Aufrufs
+### Benutzerdefinierten API-Aufruf erstellen
 
 Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Dynamics Finance and Operations-API durch.
 
@@ -185,7 +190,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Dynamics Fina
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -193,20 +198,20 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Dynamics Fina
    <td> <p>Geben Sie einen Pfad relativ zu Ihrer Dynamics Finance and Operations-URL ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methode]</td> 
+   <td role="rowheader">[!UICONTROL Methode]</td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
-   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Dadurch wird der Inhaltstyp der Anfrage bestimmt.</p> <p>Beispiel:<code> {"Content-type":"application/json"}</code></p> <p>Hinweis: Wenn Fehler auftreten und es schwierig ist, deren Ursprung zu ermitteln, sollten Sie die Kopfzeilen basierend auf der Workfront-Dokumentation ändern. Wenn Ihr benutzerdefinierter API-Aufruf einen 422-HTTP-Anfragefehler zurückgibt, versuchen Sie es mit einer <code>"Content-Type":"text/plain"</code>-Kopfzeile.</p> </td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Dadurch wird der Content-Typ der Anfrage bestimmt.</p> <p>Beispiel:<code> {"Content-type":"application/json"}</code></p> <p>Hinweis: Wenn Fehler auftreten und es schwierig ist, deren Ursprung zu ermitteln, sollten Sie die Header anhand der Workfront-Dokumentation ändern. Wenn Ihr benutzerdefinierter API-Aufruf einen 422-HTTP-Anfragefehler zurückgibt, versuchen Sie es dem Header <code>"Content-Type":"text/plain"</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Abfragezeichenfolge]</td> 
-   <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> <p>Tipp: Es wird empfohlen, Informationen über den JSON-Text und nicht als Abfrageparameter zu senden.</p> </td> 
+   <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> <p>Tipp: Es wird empfohlen, Informationen mittels JSON-Text und nicht als Abfrageparameter zu senden.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL body]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -225,7 +230,7 @@ Dieses Aktionsmodul gibt Daten aus einem Entitätselement zurück. Das Element w
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL -Verbindung]</td>
+    <td>[!UICONTROL Verbindung]</td>
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -246,7 +251,7 @@ Dieses Aktionsmodul gibt Daten aus einem Entitätselement zurück. Das Element w
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL -Verbindung]</td>
+    <td>[!UICONTROL Verbindung]</td>
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -258,7 +263,7 @@ Dieses Aktionsmodul gibt Daten aus einem Entitätselement zurück. Das Element w
      <td> Die Primären Schlüsselfelder identifizieren das Element. Klicken Sie für jedes Primärschlüsselfeld, das Sie bereitstellen möchten, auf <b>Element hinzufügen</b> und geben Sie den eindeutigen Schlüssel und Wert, der dieses Element identifiziert, ein oder ordnen Sie ihn zu. </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL body]</td>
+    <td>[!UICONTROL Text]</td>
      <td> <p>Geben Sie einen JSON-Text ein, der die Daten enthält, die Sie in das neue Entitätselement aufnehmen möchten, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -273,8 +278,8 @@ Dieses Suchmodul gibt Ergebnisse basierend auf von Ihnen angegebenen Kriterien z
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung]</td> 
-   <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+   <td>[!UICONTROL Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden Ihrer Workfront-Anwendung mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL -Entität]</td> 
@@ -282,11 +287,11 @@ Dieses Suchmodul gibt Ergebnisse basierend auf von Ihnen angegebenen Kriterien z
   </tr> 
   <tr> 
    <td>[!UICONTROL Suchkriterien]</td> 
-   <td> <p>Geben Sie das Feld ein, nach dem Sie suchen möchten, den Operator, den Sie in Ihrer Abfrage verwenden möchten, und den Wert, nach dem Sie in dem Feld suchen.</p> </td> 
+   <td> <p>Geben Sie das Feld ein, nach dem gesucht werden soll, den gewünschten Operator für die Abfrage und den Wert, nach dem im Feld gesucht werden soll.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td>[!UICONTROL Beschränkung]</td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Sortieren nach]</td> 

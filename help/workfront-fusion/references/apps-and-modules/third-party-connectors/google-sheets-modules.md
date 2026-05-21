@@ -4,22 +4,29 @@ description: Für die Verwendung  [!DNL Google Sheets]  Adobe Workfront Fusion b
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/jotAS2NHIZV4NNM0tvhGFlTnT-owWSKo8zo7cV4J7dM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 0%
+source-wordcount: 4067
+ht-degree: 11%
 
 ---
 
-# [!DNL Google Sheets]
+# [!DNL Google Sheets]-Module
 
-In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Google Sheets] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
+In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Google Sheets] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 
 Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie unter [Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,29 +34,29 @@ Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -84,13 +91,13 @@ Der Google Sheets-Connector verwendet Folgendes:
 
 ## Google Sheets-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Google Forms] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Google Sheets] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Google Forms]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Google Sheets]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-### Trigger
+### Auslöser
 
 #### [!UICONTROL Zeilen ansehen]
 
@@ -107,7 +114,7 @@ Das Modul ruft nur neue Zeilen ab, die noch nicht ausgefüllt wurden. Der Trigge
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -143,7 +150,7 @@ Das Modul ruft nur neue Zeilen ab, die noch nicht ausgefüllt wurden. Der Trigge
    <td> <ul><li><p style="font-weight: bold;">[!UICONTROL Seriennummer]</p> <p>Die Felder „Datum“, „Uhrzeit“, „Datum/Uhrzeit“ und „Dauer“ werden als Dubletten im Format „Seriennummer“ ausgegeben, wie es von Lotus 1-2-3 populär gemacht wird. Der ganze Zahlenteil des Werts (links vom Dezimaltrennzeichen) zählt die Tage seit dem 30. Dezember 1899. Der Bruchteil (rechts neben der Dezimalstelle) zählt die Zeit als einen Bruchteil des Tages. Zum Beispiel wäre der 1. Januar 1900 mittags 2,5, 2 weil es 2 Tage nach dem 30. Dezember 1899 ist, und .5 weil mittags ein halber Tag ist. 1. Februar 1900 um 15 Uhr wäre 33.625 Uhr. Damit wird das Jahr 1900 korrekt als Schaltjahr behandelt.</p> </li><li><p style="font-weight: bold;">[!UICONTROL formatierter String]</p> <p>Die Felder für Datum, Uhrzeit, Datum/Uhrzeit und Dauer werden als Zeichenfolgen im angegebenen Zahlenformat ausgegeben (das vom Gebietsschema der Tabelle abhängt).</p></li><ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Legen Sie die maximale Anzahl von Ergebnissen fest, mit denen Workfront Fusion während eines Ausführungszyklus arbeiten soll.</p> </td> 
   </tr> 
  </tbody> 
@@ -167,18 +174,18 @@ Das Modul ruft nur neue Zeilen ab, die noch nicht ausgefüllt wurden. Der Trigge
 
 Dieses Modul fügt eine Zeile zu einem Blatt hinzu.
 
-Beim Konfigurieren von [!DNL Google Sheets] zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service weitere [!DNL Google Sheets] angezeigt werden. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!DNL Google Sheets]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Google Sheets]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -206,7 +213,7 @@ Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Werte] </td> 
+   <td>[!UICONTROL Werte] </td> 
    <td> <p>Geben Sie die gewünschten Zellen der Zeile ein, die Sie hinzufügen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
@@ -237,7 +244,7 @@ Erstellt eine neue Tabelle in einer ausgewählten Tabelle.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -264,7 +271,7 @@ Löscht einen Wert aus einer angegebenen Zelle.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -291,7 +298,7 @@ Löscht Werte aus einer angegebenen Zeile.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -316,7 +323,7 @@ Löscht Werte aus einer angegebenen Zeile.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -360,7 +367,7 @@ Löscht eine angegebene Zeile.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -387,7 +394,7 @@ Löscht eine bestimmte Tabelle.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -410,7 +417,7 @@ Ruft einen Wert aus einer ausgewählten Zelle ab.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -445,7 +452,7 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung]</td> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
    <td> <p>Anweisungen zum Verbinden Ihres Google Sheets-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -453,11 +460,11 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
    <td>Geben Sie einen Pfad relativ zu <code>https://sheets.googleapis.com/v4/</code> ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Methode]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Methode]</p> </td> 
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Kopfzeilen]</td> 
+   <td role="rowheader">[!UICONTROL Header]</td> 
    <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu. Beispiel: <code>{"Content-type":"application/json"}</code>. Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -465,8 +472,8 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
    <td> <p> Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL body]</td> 
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:   <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:   <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -481,7 +488,7 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -497,7 +504,7 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten API-Aufruf durchf�
    <td> <p>Geben Sie die ID der Zelle ein, die Sie aktualisieren möchten. Beispiel: <code>A5</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Wert]</td> 
+   <td>[!UICONTROL Wert]</td> 
    <td> <p>Geben Sie den neuen Wert für die Zelle ein.</p> </td> 
   </tr> 
   <tr> 
@@ -520,7 +527,7 @@ Mit diesem Modul können Sie den Zelleninhalt in einer ausgewählten Zeile ände
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -548,7 +555,7 @@ Mit diesem Modul können Sie den Zelleninhalt in einer ausgewählten Zeile ände
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Werte] </td> 
+   <td>[!UICONTROL Werte] </td> 
    <td> <p>Geben Sie die Werte in die gewünschten Zellen der Zeile ein, die Sie ändern (aktualisieren) möchten, oder ordnen Sie sie ihnen zu.</p> </td> 
   </tr> 
   <tr> 
@@ -576,7 +583,7 @@ Mit diesem Modul können Sie den Zelleninhalt in einer ausgewählten Zeile ände
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -619,7 +626,7 @@ Dieses Modul gibt eine Liste aller Blätter in einer Tabelle zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -638,7 +645,7 @@ Durchsucht Zeilen mithilfe der Filteroptionen.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres Google Sheets-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -658,7 +665,7 @@ Durchsucht Zeilen mithilfe der Filteroptionen.
    <td>Wählen Sie den Spaltenbereich aus, mit dem Sie arbeiten möchten. Beispiel: <code>A-F</code></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL filter]</td> 
+   <td>[!UICONTROL Filter]</td> 
    <td> <p>Legen Sie den Filter fest, den Sie zum Suchen nach Zeilen verwenden möchten.</p> <!--<p>For more information about filters, see <a href="/help/workfront-fusion/create-scenarios/add-modules/" class="MCXref xref">Add a filter to a scenario in [!UICONTROL Adobe Workfront Fusion]</a>.</p>--> </td> 
   </tr> 
   <tr> 
@@ -693,7 +700,7 @@ Gibt Ergebnisse zurück, die den angegebenen Kriterien entsprechen.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Sheets]-Kontos mit Workfront Fusion finden Sie <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Verbindung erstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -745,7 +752,7 @@ Dabei ist „E“ die Spalte und „ist null“ die Bedingung. Sie können eine 
 1. Klicken Sie [!UICONTROL &#x200B; Fenster &#x200B;]Zeichnung“ auf das Symbol **[!UICONTROL Textfeld]** (![Textfeld](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) oben im Fenster.
 1. Entwerfen Sie eine Schaltfläche und klicken Sie auf **[!UICONTROL Schaltfläche „Speichern und]**&quot; in der oberen rechten Ecke:
 1. Die Schaltfläche wird in Ihrem Arbeitsblatt platziert. Klicken Sie auf die drei vertikalen Punkte in der oberen rechten Ecke der Schaltfläche:
-1. Wählen Sie **[!UICONTROL Skript zuweisen..].** aus dem Menü.
+1. Wählen Sie **[!UICONTROL Menü Skript zuweisen..].** aus.
 1. Geben Sie den Namen Ihres Skripts (Funktion) ein, z. B. `runScenario`, und klicken Sie auf **[!UICONTROL OK]**:
 1. Wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Skript-]**) in der Hauptmenüleiste aus.
 

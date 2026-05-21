@@ -1,13 +1,18 @@
 ---
-title: Trello Module
+title: Trello-Module
 description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Trello verwenden, und es mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/OIQOEivCkKstdfGnDsqlkNLHqU0nk81BaWTL1wJu-GI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '5386'
-ht-degree: 0%
+source-wordcount: 5401
+ht-degree: 8%
 
 ---
 
@@ -15,13 +20,13 @@ ht-degree: 0%
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!UICONTROL Trello] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,29 +34,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -90,11 +95,11 @@ Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion 
 
 ## [!UICONTROL Trello]-Module und ihre Felder
 
-Beim Konfigurieren von [!UICONTROL Trello]-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können zusätzliche [!UICONTROL Trello]-Felder angezeigt werden, abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!UICONTROL Trello]-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können zusätzliche [!UICONTROL Trello]-Felder angezeigt werden, abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Pinnwände](#boards)
 * [Listen](#lists)
@@ -115,7 +120,7 @@ Dieses Aktionsmodul schließt (archiviert) oder öffnet eine angegebene Pinnwand
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -140,7 +145,7 @@ Dieses Aktionsmodul weist einem Board, das Sie angeben, ein Mitglied zu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -178,7 +183,7 @@ Dieses Aktionsmodul erstellt eine neue Pinnwand mit den ausgewählten Einstellun
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -269,7 +274,7 @@ Dieses Aktionsmodul bearbeitet die Einstellungen einer vorhandenen Pinnwand.
 > <col> 
 > <tbody> 
 >  <tr> 
->   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+>   <td role="rowheader">[!UICONTROL Verbindung] </td> 
 >   <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
 >  </tr> 
 >  <tr> 
@@ -367,7 +372,7 @@ Dieses Aktionsmodul ruft die Details einer Pinnwand ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -388,7 +393,7 @@ Dieses Suchmodul ruft Informationen zu einer Pinnwand ab, die Sie angeben.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -421,7 +426,7 @@ Dieses Aktionsmodul entfernt ein Mitglied aus einer Pinnwand.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -446,11 +451,11 @@ Dieses Trigger-Modul beginnt ein Szenario, wenn eine neue Pinnwand hinzugefügt 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
    <td> <p>Geben Sie die maximale Anzahl von Pinnwänden ein, die das Modul bei jedem Ausführungszyklus des Szenarios zurückgeben soll, oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -469,7 +474,7 @@ Dieses Aktionsmodul erstellt eine Liste auf einer Pinnwand, für die Sie angeben
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -506,7 +511,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Liste.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -543,7 +548,7 @@ Dieses Aktionsmodul ruft Details zu einer bestimmten Liste ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -564,7 +569,7 @@ Dieses Kartenmodul wird aktiviert, wenn eine Trigger in eine bestimmte Liste ver
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -572,12 +577,12 @@ Dieses Kartenmodul wird aktiviert, wenn eine Trigger in eine bestimmte Liste ver
    <td>Wählen Sie die Pinnwand aus, die die Liste enthält, die Sie auf Karten überprüfen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Liste]</td> 
+   <td role="rowheader">[!UICONTROL Liste]</td> 
    <td>Wählen Sie die Liste aus, die Sie auf Karten überwachen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -595,7 +600,7 @@ Dieses Aktionsmodul fügt der ausgewählten Karte einen Anhang hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -628,7 +633,7 @@ Dieses Aktionsmodul archiviert oder sendet eine Karte zurück an die Pinnwand.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -653,7 +658,7 @@ Dieses Aktionsmodul erstellt eine Karte in einer ausgewählten Liste.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -686,7 +691,7 @@ Dieses Aktionsmodul erstellt eine Karte in einer ausgewählten Liste.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fälligkeitsdatum]</td> 
-   <td> <p> Geben Sie ein Fälligkeitsdatum für die Karte ein. Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
+   <td> <p> Geben Sie ein Fälligkeitsdatum für die Karte ein. Eine Liste der unterstützten Datums- und Uhrzeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Erzwungene Typumwandlung</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
@@ -697,7 +702,7 @@ Dieses Aktionsmodul erstellt eine Karte in einer ausgewählten Liste.
    <td> <p>Geben Sie die URL einer Datei ein, die Sie der Karte als Anhang hinzufügen möchten, oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Source-Datei]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Quelldatei]</p> </td> 
    <td> <p>Geben Sie Informationen zu einer Datei ein, die Sie der Karte als Anhang hinzufügen möchten, oder ordnen Sie sie zu. Wählen Sie eine Datei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Datei zu</p> 
      <p>Hinweis: Pro Anhang gibt es eine Beschränkung von 10 MB für Datei-Uploads. Die [!UICONTROL Business Class]- und [!UICONTROL Trello Gold]-Mitglieder haben jedoch eine Dateiuploadbegrenzung von 250 MB pro Anhang.</p> 
      </li> 
@@ -725,7 +730,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Karte.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -758,7 +763,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Karte.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fälligkeitsdatum]</td> 
-   <td> <p> Geben Sie ein Fälligkeitsdatum für die Karte ein. Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
+   <td> <p> Geben Sie ein Fälligkeitsdatum für die Karte ein. Eine Liste der unterstützten Datums- und Uhrzeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Erzwungene Typumwandlung</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
@@ -794,7 +799,7 @@ Dieses Aktionsmodul ruft die Details einer ausgewählten Karte ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -823,7 +828,7 @@ Dieses Aktionsmodul gibt Karten zurück, die mit der Suchanfrage übereinstimmen
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -874,7 +879,7 @@ Dieses Kartenmodul startet ein Trigger, wenn eine neue Karte hinzugefügt wird.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -887,8 +892,8 @@ Dieses Kartenmodul startet ein Trigger, wenn eine neue Karte hinzugefügt wird.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -906,7 +911,7 @@ Dieses Aktionsmodul fügt das angegebene Mitglied zur angegebenen Karte hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -937,7 +942,7 @@ Dieses Aktionsmodul ruft Informationen über [!UICONTROL Trello]-Mitglieder ab.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -950,7 +955,7 @@ Dieses Aktionsmodul ruft Informationen über [!UICONTROL Trello]-Mitglieder ab.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Member]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -974,7 +979,7 @@ Dieses Aktionsmodul erstellt eine Checkliste für die ausgewählte Karte.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1011,7 +1016,7 @@ Dieses Aktionsmodul fügt ein Element zu einer bestimmten Checkliste hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1048,7 +1053,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Checkliste.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1072,7 +1077,7 @@ Dieses Aktionsmodul bearbeitet eine vorhandene Checkliste.
    <td> <p>Wählen Sie aus, ob Sie das Element oben hinzufügen oder am Ende der Checkliste anhängen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Status]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Status]</p> </td> 
    <td> <p>Auswählen, ob das Checklisten-Element vollständig oder unvollständig ist.</p> </td> 
   </tr> 
  </tbody> 
@@ -1091,7 +1096,7 @@ Dieses Aktionsmodul fügt einer ausgewählten Karte einen Titel hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1118,7 +1123,7 @@ Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1145,7 +1150,7 @@ Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1162,11 +1167,11 @@ Dieses Aktionsmodul fügt einen Kommentar zu einer ausgewählten Karte hinzu.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL seit] </td> 
-   <td> <p>Legen Sie das Startdatum des Zeitraums fest, in dem der Kommentar erstellt wurde. Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
+   <td> <p>Legen Sie das Startdatum des Zeitraums fest, in dem der Kommentar erstellt wurde. Eine Liste der unterstützten Datums- und Uhrzeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Erzwungene Typumwandlung</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL davor] </td> 
-   <td> <p>Legen Sie das Enddatum des Zeitraums fest, in dem der Kommentar erstellt wurde. Eine Liste der unterstützten Datums- und Zeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Typzwang</a>.</p> </td> 
+   <td> <p>Legen Sie das Enddatum des Zeitraums fest, in dem der Kommentar erstellt wurde. Eine Liste der unterstützten Datums- und Uhrzeitformate finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Erzwungene Typumwandlung</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1182,7 +1187,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Kommentar hinzugefügt wird.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Verbindung] </td> 
+   <td role="rowheader">[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres [!UICONTROL Trello]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -1197,8 +1202,8 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Kommentar hinzugefügt wird.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Geben Sie die maximale Anzahl von Kommentaren ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td role="rowheader">[!UICONTROL Beschränkung] </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Kommentaren ein, die das Modul während jedes Ausführungszyklus eines Szenarios zurückgeben soll, oder ordnen Sie eine Zahl zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>

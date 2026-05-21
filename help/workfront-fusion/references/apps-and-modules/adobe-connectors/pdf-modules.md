@@ -5,9 +5,19 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
-workflow-type: ht
-source-wordcount: '4151'
+TQID: https://experienceleague.adobe.com/IMoZJbCBhHsko7g3MA5otzXcWUfkTPLQVhgWbpBdSyQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 4312
 ht-degree: 100%
 
 ---
@@ -120,11 +130,11 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe PDF Services]-Module:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client-ID]</td>
-          <td>Geben Sie Ihre [!DNL Adobe]-[!UICONTROL Client-ID] ein. Diese finden Sie im Abschnitt mit den [!UICONTROL Anmeldeinformationen] der [!DNL Adobe Developer Console].<p>Anweisungen zum Auffinden von Anmeldeinformationen finden Sie unter <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication?lang=de#credentials" class="MCXref xref" >Anmeldeinformationen</a> in der Entwicklerdokumentation von Adobe.</p></td>
+          <td>Geben Sie Ihre [!DNL Adobe]-[!UICONTROL Client-ID] ein. Diese finden Sie im Abschnitt mit den [!UICONTROL Anmeldeinformationen-Details] der [!DNL Adobe Developer Console].<p>Anweisungen zum Auffinden von Anmeldeinformationen finden Sie unter <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication?lang=de#credentials" class="MCXref xref" >Anmeldeinformationen</a> in der Entwicklerdokumentation von Adobe.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-          <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dieses finden Sie im Abschnitt mit den [!UICONTROL Anmeldeinformationen] der [!DNL Adobe Developer Console].<p>Anweisungen zum Auffinden von Anmeldeinformationen finden Sie unter <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication?lang=de#credentials" class="MCXref xref" >Anmeldeinformationen</a> in der Entwicklerdokumentation von Adobe.</p>
+          <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Diese finden Sie im Abschnitt mit den [!UICONTROL Anmeldeinformationen-Details] der [!DNL Adobe Developer Console].<p>Anweisungen zum Auffinden von Anmeldeinformationen finden Sie unter <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication?lang=de#credentials" class="MCXref xref" >Anmeldeinformationen</a> in der Entwicklerdokumentation von Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL ID des technischen Kontos] (nur JWT)</td>
@@ -132,7 +142,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe PDF Services]-Module:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Organisations-ID] (nur JWT)</td>
-          <td>Geben Sie Ihre [!DNL Adobe] [!UICONTROL Organisations-ID] ein. Diese finden Sie im Abschnitt mit den [!UICONTROL Anmeldeinformationen] der [!DNL Adobe Developer Console].<p>Anweisungen zum Auffinden von Anmeldeinformationen finden Sie unter <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication?lang=de#credentials" class="MCXref xref" >Anmeldeinformationen</a> in der Entwicklerdokumentation von Adobe.</p>
+          <td>Geben Sie Ihre [!DNL Adobe] [!UICONTROL Organisations-ID] ein. Diese finden Sie im Abschnitt mit den [!UICONTROL Anmeldeinformationen-Details] der [!DNL Adobe Developer Console].<p>Anweisungen zum Auffinden von Anmeldeinformationen finden Sie unter <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication?lang=de#credentials" class="MCXref xref" >Anmeldeinformationen</a> in der Entwicklerdokumentation von Adobe.</p>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Metabereiche] (nur JWT)</td>
@@ -166,7 +176,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe PDF Services]-Module:
       </tr>
        </tbody>
     </table>
-1. Klicken Sie auf **[!UICONTROL Weiter]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie auf **[!UICONTROL Continue]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 
 ## [!DNL Adobe PDF Services]-Module und ihre Felder

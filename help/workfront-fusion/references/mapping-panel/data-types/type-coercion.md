@@ -1,21 +1,24 @@
 ---
-title: Typzwang
+title: Erzwungene Typumwandlung
 description: In diesem Dokument wird beschrieben, wie sich Adobe Workfront Fusion in Situationen verhält, in denen es Werte in erwarteten und unerwarteten Datenformaten erhält.
 author: Becky
 feature: Workfront Fusion
 exl-id: a8bdd36d-c01f-4019-a3ea-fb185101500e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/rqDQTI-IuOW95TbguHt-F2-4lugdaOfJf-7dcwXk5ZE
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 6%
+source-wordcount: 709
+ht-degree: 9%
 
 ---
 
-# Typzwang
+# Erzwungene Typumwandlung
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel verwenden zu können:
 
@@ -35,7 +38,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
    <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] Lizenz**</td> 
    <td>
    <p>Aktuelle Lizenzanforderung: Keine Workfront Fusion-Lizenzanforderung.</p>
-   <p>Oder</p>
+   <p>ODER</p>
    <p>Legacy-Lizenzanforderung: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
@@ -43,7 +46,7 @@ Sie müssen über folgenden Zugriff verfügen, um die Funktion in diesem Artikel
    <td role="rowheader">Produkt</td> 
    <td>
    <p>Aktuelle Produktanforderung: Wenn Sie über den Plan [!UICONTROL Select] oder [!UICONTROL Prime] Adobe Workfront verfügen, muss Ihr Unternehmen Adobe Workfront Fusion sowie Adobe Workfront erwerben, um die in diesem Artikel beschriebenen Funktionen nutzen zu können. Workfront Fusion ist im Workfront-Plan [!UICONTROL Ultimate] enthalten.</p>
-   <p>Oder</p>
+   <p>ODER</p>
    <p>Legacy-Produktanforderung: Ihr Unternehmen muss Adobe Workfront Fusion sowie Adobe Workfront erwerben, um die in diesem Artikel beschriebenen Funktionen nutzen zu können.</p>
    </td> 
   </tr> 
@@ -56,7 +59,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 +++
 
-### Typzwang
+### Erzwungene Typumwandlung
 
 In diesem Dokument wird beschrieben, wie sich Adobe Workfront Fusion in Situationen verhält, in denen es Werte in erwarteten und unerwarteten Datenformaten erhält.
 
@@ -83,8 +86,8 @@ In diesem Dokument wird beschrieben, wie sich Adobe Workfront Fusion in Situatio
    <td> <p>Wenn der empfangene Wert nicht vom Array-Typ ist, erstellt Workfront Fusion ein Array und das erste (und einzige) Element ist der empfangene Wert.</p> </td> 
   </tr> 
   <tr> 
-   <td>boolean </td> 
-   <td>boolean </td> 
+   <td>Boolescher Wert </td> 
+   <td>Boolescher Wert </td> 
    <td> <p>Der Wert wird unverändert übergeben.</p> </td> 
   </tr> 
   <tr> 
@@ -114,7 +117,7 @@ In diesem Dokument wird beschrieben, wie sich Adobe Workfront Fusion in Situatio
   </tr> 
   <tr> 
    <td>Puffer </td> 
-   <td>date </td> 
+   <td>Datum </td> 
    <td> <p>Der Wert wird in ISO 8601-Text und anschließend in Binärdaten konvertiert, indem die für die Umwandlung in Text genannten Schritte ausgeführt werden.</p> </td> 
   </tr> 
   <tr> 
@@ -144,16 +147,16 @@ In diesem Dokument wird beschrieben, wie sich Adobe Workfront Fusion in Situatio
   </tr> 
   <tr> 
    <td>Datum </td> 
-   <td>date </td> 
+   <td>Datum </td> 
    <td> <p>Der Wert wird unverändert übergeben.</p> </td> 
   </tr> 
   <tr> 
-   <td>date </td> 
+   <td>Datum </td> 
    <td>Text </td> 
    <td> <p>Workfront Fusion versucht, den Text in ein Datum zu konvertieren. Wenn die Konvertierung fehlschlägt, wird ein Validierungsfehler zurückgegeben. Datum muss Tag, Monat und Jahr enthalten. Datum kann Zeit und Zeitzone enthalten. Die Standardzeitzone basiert auf Ihren Einstellungen. Beispiele:</p> <p><code>2016-06-20T17:26:44.356Z</code> </p> <p><code>2016-06-20 19:26:44 GMT+02:00</code> </p> <p><code>2016-06-20 19:26+0200</code> </p> <p><code>2016-06-20 17:26:44</code> </p> <p><code>2016-06-20</code> </p> <p><code>2016/06/20 17:26:44</code> </p> <p><code>2016/06/20 19:26:44+02:00</code> </p> <p><code>2016/06/20 17:26</code> </p> <p><code>2016/06/20 5:26 PM</code> </p> <p><code>2016/06/20</code> </p> <p><code>06/20/2016 17:26:44</code> </p> <p><code>06/20/2016 19:26:44+02:00</code> </p> <p><code>06/20/2016 17:26</code> </p> <p><code>06/20/2016 5:26 PM</code> </p> <p><code>06/20/2016</code> </p> <p><code>20.6.2016 17:26:44</code> </p> <p><code>20.6.2016 19:26:44+02:00</code> </p> <p><code>20.6.2016 17:26</code> </p> <p><code>20.6.2016</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>date </td> 
+   <td>Datum </td> 
    <td>Sonstige </td> 
    <td> <p>Workfront Fusion gibt einen Validierungsfehler zurück.</p> </td> 
   </tr> 
@@ -194,7 +197,7 @@ In diesem Dokument wird beschrieben, wie sich Adobe Workfront Fusion in Situatio
   </tr> 
   <tr> 
    <td>Text </td> 
-   <td>date </td> 
+   <td>Datum </td> 
    <td> <p>Der Wert wird in ISO 8601-Text konvertiert.</p> </td> 
   </tr> 
   <tr> 

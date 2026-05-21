@@ -4,10 +4,16 @@ description: Mit den Adobe Workfront Fusion Figma-Modulen können Sie Listen von
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 545bc38a619c44dd39bb746d751775f63e7aa16d
+TQID: https://experienceleague.adobe.com/sr5gzukvb4qLZHn0lszB15dVogIfa-VrLwqEAWd69oA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2638'
-ht-degree: 14%
+source-wordcount: 2643
+ht-degree: 19%
 
 ---
 
@@ -29,7 +35,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Paket für Adobe Workfront Workflow und Workfront Automation and Integration</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
@@ -39,19 +45,19 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
    <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
-   <p>Connector-basiert (alt): Workfront Fusion for Work Automation and Integration </p>
+   <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Adobe Workfront Fusion erworben werden.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Angaben in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -104,23 +110,23 @@ So erstellen Sie eine Verbindung für Ihre Figma-Module:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td role="rowheader">[!UICONTROL Verbindungstyp]</td>
         <td>
           <p> Wählen Sie <code>Figma</code> ohne das ältere Tag aus. </p><p>Die Figma änderte im Januar 2025 ihre Authentifizierungspflichten. Der <code>Figma</code> Verbindungstyp erfüllt die neuen Anforderungen. Der <code>Figma (Legacy)</code> Verbindungstyp ist veraltet und wird in Zukunft entfernt.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
-          <p>Geben Sie einen Namen für diese Verbindung ein.</p>
+          <p>Geben Sie einen Namen für die Verbindung ein.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td role="rowheader">[!UICONTROL Client-ID]</td>
         <td>Geben Sie Ihre [!UICONTROL Figma] [!UICONTROL Client ID] ein.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
         <td>Geben Sie Ihr Figma [!UICONTROL Client Secret] ein.</td>
         </tr>
         <tr>
@@ -140,11 +146,11 @@ So erstellen Sie eine Verbindung für Ihre Figma-Module:
 
 ## [!DNL Figma]-Module und ihre Felder
 
-Beim Konfigurieren von [!DNL Figma]-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Dienst weitere [!DNL Figma]-Felder angezeigt werden. Eine fett formatierte Überschrift in einem Modul kennzeichnet ein Pflichtfeld.
+Beim Konfigurieren von [!DNL Figma]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL Figma]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Schaltfläche für Zuordnung über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Kommentare](#comments)
 
@@ -164,7 +170,7 @@ Wenn die Schaltfläche für Zuordnung über einem Feld oder einer Funktion angez
 * [Kommentar posten](#post-a-comment)
 
 
-#### [!UICONTROL Löschen eines Kommentars]
+#### [!UICONTROL Kommentar löschen]
 
 Dieses Aktionsmodul löscht einen einzelnen Kommentar aus einer Datei.
 
@@ -188,7 +194,7 @@ Dieses Aktionsmodul löscht einen einzelnen Kommentar aus einer Datei.
   </tbody>
 </table>
 
-#### [!UICONTROL Auflisten von Kommentaren]
+#### [!UICONTROL Kommentare auflisten]
 
 Dieses Suchmodul listet alle Kommentare auf, die an eine einzelne Datei in [!DNL Figma] angehängt sind.
 
@@ -264,7 +270,7 @@ Dieses Aktionsmodul postet einen Kommentar in eine Figma-Datei.
 
 * [Projektdateien auflisten](#list-project-files)
 
-* [Auflisten von Projekten](#list-projects)
+* [Projekte auflisten](#list-projects)
 
 
 #### [!UICONTROL Datei oder Bild abrufen]
@@ -517,7 +523,7 @@ Dieses Suchmodul gibt den Versionsverlauf einer einzelnen Datei in „Figma.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Dateien]</td>
-      <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td>
+      <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td>
     </tr>
   </tbody>
 </table>
@@ -547,7 +553,7 @@ Dieses Suchmodul gibt eine Liste aller Dateien im angegebenen Projekt zurück.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Dateien]</td>
-      <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td>
+      <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td>
     </tr>
   </tbody>
 </table>
@@ -570,7 +576,7 @@ Dieses Suchmodul gibt eine Liste aller Projekte innerhalb des angegebenen Teams 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Projekte]</td>
-      <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td>
+      <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td>
     </tr>
   </tbody>
 </table>
@@ -630,7 +636,7 @@ Dieses Aktionsmodul ruft einen einzelnen Stil, eine einzelne Komponente oder ein
 
 * [Durchführen eines API-Aufrufs](#make-an-api-call)
 
-* [Ereignisse ansehen](#watch-events)
+* [Ereignisse überwachen](#watch-events)
 
 
 #### [!UICONTROL Erstellen eines API-Aufrufs]
@@ -673,7 +679,7 @@ Mit diesem Aktionsmodul können Sie die Figma-API benutzerdefiniert authentifizi
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Text]</td>
-   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

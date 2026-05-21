@@ -4,10 +4,13 @@ description: Der  [!DNL Adobe Workfront Fusion Tools]  enthält mehrere nützlic
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/wNEGIZZjU-UCd6BFuXe6wm7uKS8brMs3L1dGqAIh9-o
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 0%
+source-wordcount: 2289
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ Der [!DNL Adobe Workfront Fusion Tools] Abschnitt enthält mehrere nützliche Mo
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,22 +30,22 @@ Der [!DNL Adobe Workfront Fusion Tools] Abschnitt enthält mehrere nützliche Mo
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -50,12 +53,12 @@ Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Z
 
 ## [!UICONTROL Tools] und ihre Felder
 
-* [Trigger](#triggers)
+* [Auslöser](#triggers)
 * [Aktionen](#actions)
 * [Aggregatoren](#aggregators)
 * [Transformatoren](#transformers)
 
-### Trigger
+### Auslöser
 
 #### [!UICONTROL Grundlegender Trigger &#x200B;]
 
@@ -279,7 +282,7 @@ Mit diesem Modul können Sie numerische Werte abrufen, dann eine der ausgewählt
    <td>Aktivieren Sie diese Option, um das Szenario zu stoppen, wenn keine Ergebnisse vorliegen.</td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL -Wert]</p> </td> 
+   <td> <p>[!UICONTROL Wert]</p> </td> 
    <td> <p>Geben Sie den Wert ein, den Sie aggregieren möchten, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -345,7 +348,7 @@ Dieses Modul führt Werte aus den ausgewählten Feldern empfangener Bundles in e
    <td>Wählen Sie diese Option, um das Szenario anzuhalten, wenn keine Ergebnisse vorliegen.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Text]</td> 
+   <td>[!UICONTROL Text]</td> 
    <td> <p> Geben Sie den Text ein, den das Modul aggregieren soll, oder ordnen Sie ihn zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -372,7 +375,7 @@ Konvertiert einen beliebigen Wert in einen Datentyp „Zeichenfolge“ (Text). D
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Text]</td> 
+   <td role="rowheader">[!UICONTROL Text]</td> 
    <td> <p>Geben Sie die Daten ein, die Sie in Text konvertieren möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
  </tbody> 

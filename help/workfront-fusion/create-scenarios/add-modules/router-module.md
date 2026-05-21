@@ -4,9 +4,12 @@ description: Mit dem Router-Modul können Sie Ihren Fluss in mehrere Routen verz
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c93a342c2300c5a008a95f180dfebd3abaeb95d0
+TQID: https://experienceleague.adobe.com/ZKrvE8zGuVmfPCTMx7LZHw979aPLo89lARWejMCSETs
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: 986
 ht-degree: 11%
 
 ---
@@ -70,7 +73,7 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 
 1. Um die Reihenfolge der Routen zu überprüfen, überprüfen Sie das Label für jede Route. Route 1 wird zuerst ausgeführt, dann Route 2 usw.
 
-   Oder
+   ODER
 
    Klicken Sie auf das Symbol für die automatische Ausrichtung ![Symbol für die automatische Ausrichtung](assets/auto-align.png).
 

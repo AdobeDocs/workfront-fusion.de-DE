@@ -4,10 +4,13 @@ description: Beim Erstellen oder Bearbeiten eines Szenarios können Sie Einstell
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/Gs6NF8KOawlRGN5FpVjY7-8agSjAKm8WYrSzu0ZLt8w
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 2%
+source-wordcount: 634
+ht-degree: 17%
 
 ---
 
@@ -17,7 +20,7 @@ Beim Erstellen oder Bearbeiten eines Szenarios können Sie Einstellungen konfigu
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,22 +28,22 @@ Beim Erstellen oder Bearbeiten eines Szenarios können Sie Einstellungen konfigu
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -71,7 +74,7 @@ Sie können ein [!UICONTROL Repeater]-Modul verwenden, um eine Aufgabe eine best
 Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E-Mails mit den Betreffen „Hello 1“, „Hello 2“ usw. zu senden, indem Sie das Modul **[!UICONTROL E-Mail] > [!UICONTROL E-Mail senden]** mit dem Modul [!UICONTROL Repeater] verbinden.
 
 1. Klicken Sie auf [!UICONTROL Fluss]-Symbol ![Flusssteuerungs-Symbol](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) unten im Bildschirm und klicken Sie dann im angezeigten Menü auf **[!UICONTROL Repeater]**.
-1. Klicken Sie auf das [!UICONTROL Repeater]-Modul und dann in **[!UICONTROL angezeigten Feld auf]** Automatisch verbinden.
+1. Klicken Sie auf das [!UICONTROL Repeater]-Modul und dann in **angezeigten Feld auf** Automatisch verbinden.
 
    Das Repeater-Modul wird geöffnet.
 
@@ -83,7 +86,7 @@ Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E
 
    Der Wert des Elements erhöht sich bei jeder Wiederholung um diesen Wert, der im Feld **[!UICONTROL Schritt]** angegeben ist, das Sie durch Auswahl von **[!UICONTROL Erweiterte Einstellungen anzeigen]** anzeigen können. Diese Zahl ist standardmäßig 1.
 
-1. Klicken Sie **[!UICONTROL OK]**, um das **[!UICONTROL &quot;]**&quot; zu schließen.
+1. Klicken Sie **[!UICONTROL OK]**, um das **&quot;**&quot; zu schließen.
 
 1. Klicken Sie auf die App oder das Service-Modul, das mit dem [!UICONTROL Repeater]-Modul verbunden ist.
 1. Geben Sie in das sich öffnende Feld die Informationen ein, die Sie wiederholen möchten.
@@ -106,7 +109,7 @@ Ein [!UICONTROL Iterator] ist ein spezieller Modultyp, der ein Array in eine Rei
 
 ## Array-Aggregator
 
-Ein Array-Aggregator ist ein spezieller Modultyp, mit dem mehrere Bundles zu einem Bundle zusammengeführt werden können. Weitere Informationen finden Sie unter [Aggregator-Modul](/help/workfront-fusion/references/modules/aggregator-module.md).
+Ein Array-Aggregator ist ein spezieller Modultyp, mit dem mehrere Bundles zu einem Bundle zusammengeführt werden können. Weitere Informationen finden Sie unter [Aggregatormodul](/help/workfront-fusion/references/modules/aggregator-module.md).
 
 ## [!UICONTROL Router]
 

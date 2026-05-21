@@ -4,10 +4,15 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
-source-git-commit: 413736673426c1a77dac9f15defa43d4348638b5
+TQID: https://experienceleague.adobe.com/yq8DHWbrroXJ-Rc2j1LQqDejh6JuKOsffdd3bQaFAyA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 21%
+source-wordcount: 2053
+ht-degree: 22%
 
 ---
 
@@ -141,7 +146,7 @@ Dieses Aktionsmodul erstellt ein neues Ereignis.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL reminder]</td> 
-   <td>Geben Sie die Anzahl der Minuten vor Beginn des Ereignisses ein oder ordnen Sie sie zu, wenn die Erinnerung ausgelöst werden soll.</td> 
+   <td>Anzahl der Minuten vor Ereignisbeginn eingeben oder zuordnen, nach denen die Erinnerung Trigger werden soll.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Wichtigkeit]</td> 
@@ -154,17 +159,17 @@ Dieses Aktionsmodul erstellt ein neues Ereignis.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sensitivity] </td> 
-   <td> <p>Wählen Sie die Empfindlichkeit dieses Ereignisses.</p> 
+   <td> <p>Wählen Sie die Empfindlichkeit dieses Ereignisses aus.</p> 
     <ul> 
      <li><strong>[!UICONTROL normal]</strong> </li> 
      <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>Der Empfänger sieht die Nachricht "[!UICONTROL Please treat as Personal]".</p> </li> 
-     <li> <p><strong>[!UICONTROL Privat]</strong> </p> <p>Der Empfänger erhält die Nachricht "[!UICONTROL Please have see this as Private]". Dieses Ereignis wird nicht durch die Posteingangsregeln des Empfängers weitergeleitet oder umgeleitet.</p> </li> 
-     <li> <p><strong>[!UICONTROL VERTRAULICH]</strong> </p> <p>Der Empfänger erhält die Meldung "[!UICONTROL , bitte behandeln Sie dies als vertraulich]". </p> </li> 
+     <li> <p><strong>[!UICONTROL Privat]</strong> </p> <p>Der Empfänger sieht die Nachricht "[!UICONTROL Bitte als privat behandeln]". Dieses Ereignis wird von den Posteingangsregeln des Empfängers nicht weitergeleitet oder umgeleitet.</p> </li> 
+     <li> <p><strong>[!UICONTROL VERTRAULICH]</strong> </p> <p>Der Empfänger sieht die Nachricht "[!UICONTROL Bitte als vertraulich behandeln]". </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body Content Type]</td> 
-   <td>Legen Sie fest, ob der Textkörperinhalt Nur-Text oder HTML ist.</td> 
+   <td role="rowheader">[!UICONTROL Hauptteil-Inhaltstyp]</td> 
+   <td>Wählen Sie aus, ob der Textinhalt Nur-Text oder HTML ist.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Hauptteilinhalt]</td> 
@@ -265,7 +270,7 @@ Dieses Suchmodul ruft Details zu einem Ereignis ab, wenn das Ereignis im ausgew�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td> <p>Legen Sie die Filterbedingungen fest, um die Ergebnisse zu filtern. Sie können nach den folgenden Eigenschaften filtern:</p> 
+   <td> <p>Filterbedingungen festlegen, um Ergebnisse zu filtern. Sie können nach den folgenden Eigenschaften filtern:</p> 
     <ul> 
      <li>[!UICONTROL Betreff]</li> 
      <li>[!UICONTROL Ereignis-ID]</li> 
@@ -275,17 +280,17 @@ Dieses Suchmodul ruft Details zu einem Ereignis ab, wenn das Ereignis im ausgew�
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Reihenfolge nach]</td> 
-   <td> <p>Wählen Sie aus, wie die Ergebnisse sortiert werden sollen.</p> 
+   <td role="rowheader">[!UICONTROL Sortieren nach]</td> 
+   <td> <p>Wählen Sie aus, wie Sie die Ergebnisse sortieren möchten.</p> 
     <ul> 
-     <li><strong>[!UICONTROL Subject]</strong>, aufsteigend oder absteigend</li> 
+     <li><strong>[!UICONTROL subject]</strong>, aufsteigend oder absteigend</li> 
      <li><strong>[!UICONTROL Erstellungsdatum Uhrzeit]</strong>, aufsteigend oder absteigend</li> 
      <li><strong>[!UICONTROL Datum der letzten Änderung]</strong>, aufsteigend oder absteigend</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Beschränkung]</td> 
-   <td>Geben Sie die maximale Anzahl von Ereignissen ein, die Workfront Fusion während eines Szenarienausführungszyklus zurückgeben soll.</td> 
+   <td>Geben Sie die maximale Anzahl von Ereignissen ein, die Workfront Fusion während eines Szenario-Ausführungszyklus zurückgeben soll.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -300,7 +305,7 @@ Dieses Aktionsmodul aktualisiert ein vorhandenes Ereignis.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Verbindung] </td> 
-   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung mit Adobe Workfront Fusion herstellen - Grundlegende Anweisungen</a>.</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Office 365]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Ereignis-ID]</td> 
@@ -369,7 +374,7 @@ Dieses Aktionsmodul aktualisiert ein vorhandenes Ereignis.
      <li>[!UICONTROL Tentative]</li> 
      <li>[!UICONTROL Besetzt]</li> 
      <li>[!UICONTROL Abwesend]</li> 
-     <li>[!UICONTROL Arbeitet an anderer Stelle]</li> 
+     <li>[!UICONTROL , anderswo arbeiten]</li> 
      <li>[!DNL Unknown]</li> 
     </ul> </td> 
   </tr> 
@@ -383,7 +388,7 @@ Dieses Aktionsmodul aktualisiert ein vorhandenes Ereignis.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Kategorie]</td> 
-   <td>Geben Sie die Kategorien ein, die das Ereignis im Kalender anzeigen soll, oder ordnen Sie sie zu.</td> 
+   <td>Geben Sie die Kategorien ein, die das Ereignis wie im Kalender angezeigt werden soll, oder ordnen Sie sie zu.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -394,7 +399,7 @@ Dieses Kalendermodul ruft Details zu einem Trigger ab, wenn das Ereignis im ausg
 
 >[!NOTE]
 >
->Um nach gelöschten Vorkommen einer Ereignisreihe zu suchen, wählen Sie [!UICONTROL Nach Aktualisierungszeit] im Feld [!UICONTROL Ereignisse &#x200B;]. Dieses Modul sucht nicht nach gelöschten Einzelereignissen oder gelöschten Ereignisreihen.
+>Um nach gelöschten Vorkommen einer Ereignisreihe zu suchen, wählen Sie [!UICONTROL Nach Aktualisierungszeit] im Feld [!UICONTROL Ereignisse &#x200B;]. Dieses Modul überwacht nicht auf gelöschte einzelne Ereignisse oder gelöschte Ereignisreihen.
 
 
 <table style="table-layout:auto"> 
@@ -517,12 +522,12 @@ Dieses Suchmodul ruft eine Liste aller Kalender der authentifizierten Benutzende
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Beschränkung]</td> 
-   <td>Geben Sie die maximale Anzahl von Kalendern ein, die Workfront Fusion während eines Szenarienausführungszyklus zurückgeben soll.</td> 
+   <td>Geben Sie die maximale Anzahl von Kalendern ein, die Workfront Fusion während eines Szenario-Ausführungszyklus zurückgeben soll.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Kalender aktualisieren]
+#### [!UICONTROL Aktualisieren eines Kalenders]
 
 Dieses Aktionsmodul bearbeitet einen vorhandenen Kalender.
 
