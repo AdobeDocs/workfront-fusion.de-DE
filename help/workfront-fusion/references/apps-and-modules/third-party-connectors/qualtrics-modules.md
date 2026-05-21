@@ -4,10 +4,12 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 80b441b7-c808-4c4f-b9ff-d614650dbb73
-source-git-commit: b4353a0746f4f427c70d0a213e5dde36ff869ab8
+TQID: https://experienceleague.adobe.com/gbH5KTIEYyIAVMSjhmnAyuApEPu7i3eicmMvmJC-gi4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 59%
+source-wordcount: 352
+ht-degree: 60%
 
 ---
 
@@ -89,7 +91,7 @@ Der Qualtrics-Connector verwendet Folgendes:
 Sie können eine Verbindung zu Ihrem [!DNL Qualtrics]-Konto direkt aus einem [!UICONTROL Qualtrics]-Modul heraus erstellen.
 
 1. Klicken Sie in einem [!UICONTROL Qualtrics]-Modul **[!UICONTROL Hinzufügen]** neben dem Feld [!UICONTROL Verbindung].
-1. Geben Sie die folgenden Informationen ein:
+1. Folgende Angaben sind erforderlich:
 
    <table style="table-layout:auto"> 
     <col> 

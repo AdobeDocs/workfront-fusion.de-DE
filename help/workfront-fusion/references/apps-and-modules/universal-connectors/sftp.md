@@ -4,10 +4,13 @@ description: Mit  [!DNL Adobe Workfront Fusion SFTP]  Modulen können Sie Datei�
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: 54c368d335b30f55cab19595a5b4740dde6013a7
+TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 0%
+source-wordcount: 2238
+ht-degree: 14%
 
 ---
 
@@ -17,7 +20,7 @@ Mit den Adobe Workfront Fusion SFTP-Modulen können Sie Dateiänderungen in eine
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,29 +28,29 @@ Mit den Adobe Workfront Fusion SFTP-Modulen können Sie Dateiänderungen in eine
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -98,7 +101,7 @@ Um Ihr SFTP-Konto mit Workfront Fusion zu verbinden, müssen Sie eine Verbindung
    <td> <p>Sie können eine Reihe von Algorithmen für den Schlüsselaustausch eingeben. Das Modul priorisiert Algorithmen basierend auf der Reihenfolge, in der sie hinzugefügt wurden. Klicken Sie für jeden Algorithmus, den Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie den Algorithmus aus.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Chiffren] </td> 
+   <td role="rowheader">[!UICONTROL-Chiffren] </td> 
    <td> <p>Sie können einen Satz von Chiffren für den Schlüsselaustausch eingeben. Das Modul priorisiert Chiffren basierend auf der Reihenfolge, in der sie hinzugefügt wurden. Klicken Sie für jede Chiffre, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie die Chiffre aus.</p> </td> 
   </tr> 
  </tbody> 
@@ -150,13 +153,13 @@ Der SFTP-Connector unterstützt beim Erstellen einer Verbindung Folgendes:
 
 ## [!UICONTROL SFTP]-Module und ihre Felder
 
-Beim Konfigurieren von [!UICONTROL SFTP]-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können zusätzliche [!UICONTROL SFTP]-Felder angezeigt werden, abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!UICONTROL SFTP]-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können zusätzliche [!UICONTROL SFTP]-Felder angezeigt werden, abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-### Trigger
+### Auslöser
 
 * [Überwachen von Dateien in einem Ordner](#watch-files-in-a-folder)
 * [Überwachen von Unterordnern in einem Ordner](#watch-subfolders-in-a-folder)
@@ -170,11 +173,11 @@ Gibt Dateien mit Details zurück, wenn eine Datei in einem angegebenen Ordner er
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, den Sie beobachten möchten. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben oder einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -183,7 +186,7 @@ Gibt Dateien mit Details zurück, wenn eine Datei in einem angegebenen Ordner er
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Dateien]</td> 
-   <td> <p> Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td> <p> Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -197,23 +200,23 @@ Gibt Ordner mit Details zurück, wenn ein Ordner in einem angegebenen Ordner ers
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td> 
+   <td>[!UICONTROL Verbindung] </td> 
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, den Sie beobachten möchten, oder ordnen Sie ihn zu. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Dateien]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Aktionen
 
-* [Erstellen eines Ordners](#create-a-folderr)
+* [Ordner erstellen](#create-a-folderr)
 * [Löschen einer Datei](#delete-a-file)
 * [Löschen eines Ordners](#delete-a-folder)
 * [Datei abrufen](#get-a-file)
@@ -237,11 +240,11 @@ Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL Ordner] </td> 
    <td> <p>Geben Sie einen vorhandenen Ordner als Speicherort für den neuen Ordner an. Sie können einen absoluten Pfad wie <code>/home/user/file.txt</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./</code>.</p> </td> 
   </tr> 
   <tr> 
@@ -249,7 +252,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
    <td> <p> Geben Sie den Ordnernamen ein.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL -Berechtigungen]</p> </td> 
+   <td> <p>[!UICONTROL Berechtigungen]</p> </td> 
    <td> <p>Festlegen der gewünschten Ordnerberechtigungen. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
@@ -262,7 +265,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -279,7 +282,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -298,7 +301,7 @@ Dieses Modul ruft Dateidetails ab, einschließlich der Daten einer Datei.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -321,7 +324,7 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -329,11 +332,11 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
    <td> <p> Geben Sie die Puffergröße in Byte ein. Der Wert definiert die Größe der vom Server übertragenen Blöcke. Einige Server können Probleme verursachen oder Dateien beschädigen, wenn der Wert zu hoch ist.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, der die Dateien oder Ordner enthält, die Sie auflisten möchten, oder ordnen Sie ihn zu. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Suche] </td> 
+   <td>[!UICONTROL Suchen] </td> 
    <td> <p>Geben Sie den Suchbegriff ein oder ordnen Sie ihn zu. Wenn Sie beispielsweise nach Dateien mit der Dateierweiterung .txt suchen möchten, geben Sie <code>.txt</code> ein. Sie können auch den Namen der Datei eingeben oder zuordnen, nach der Sie suchen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -350,7 +353,7 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -362,7 +365,7 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -370,11 +373,11 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
    <td> <p>Wählen Sie aus, ob Sie Dateien, Ordner oder beides abrufen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL Ordner] </td> 
    <td> <p>Geben Sie den Ordner ein, der die Dateien oder Ordner enthält, die Sie auflisten möchten, oder ordnen Sie ihn zu. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Suche] </td> 
+   <td>[!UICONTROL Suchen] </td> 
    <td> <p>Geben Sie den Suchbegriff ein oder ordnen Sie ihn zu. Wenn Sie beispielsweise nach Dateien mit der Dateierweiterung .txt suchen möchten, geben Sie <code>.txt</code> ein. Sie können auch den Namen der Datei eingeben oder zuordnen, nach der Sie suchen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -391,7 +394,7 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximale Anzahl der zurückgegebenen Ergebnisse]</td> 
-   <td> <p>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</p> </td> 
+   <td> <p>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -403,7 +406,7 @@ Dieses Modul gibt Dateien aus einem angegebenen Ordner zurück.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -426,7 +429,7 @@ Benennt eine Datei um.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -449,7 +452,7 @@ Ermöglicht das Ändern der Dateiberechtigungen.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -457,7 +460,7 @@ Ermöglicht das Ändern der Dateiberechtigungen.
    <td> <p> Geben Sie den Pfad zur zu verschiebenden Datei ein. Sie können einen absoluten Pfad wie <code>/home/user/file.txt</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./file.txt</code>.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL -Berechtigungen]</p> </td> 
+   <td> <p>[!UICONTROL Berechtigungen]</p> </td> 
    <td> <p>Legen Sie die gewünschten Dateiberechtigungen fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
@@ -472,19 +475,19 @@ Mit diesem Modul können Sie eine Datei auf den SFTP-Server hochladen.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Verbindung] </td>
+   <td>[!UICONTROL Verbindung] </td>
    <td> <p>Anweisungen zum Verbinden Ihres SFTP-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">Verbinden von SFTP mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ordner] </td> 
+   <td>[!UICONTROL Ordner] </td> 
    <td> <p>Geben Sie einen vorhandenen Ordner als Speicherort für die Datei an. Sie können einen absoluten Pfad wie <code>/home/user/</code> angeben. Sie können auch einen relativen Pfad angeben, der auf einen bestimmten Ordner des angemeldeten Benutzers verweist, z. B. <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source-Datei]</td> 
+   <td>[!UICONTROL Quelldatei]</td> 
    <td> <p> Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL -Berechtigungen]</p> </td> 
+   <td> <p>[!UICONTROL Berechtigungen]</p> </td> 
    <td> <p>Legen Sie die gewünschten Berechtigungen für die Datei oder den Ordner fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
   <tr> 

@@ -1,12 +1,15 @@
 ---
 title: XML
-description: Die XML-App ermöglicht es, einen im XML-Format formatierten Text mithilfe des XML&map;gt;-Parse-XML-Moduls zu analysieren und in ein Bundle zu konvertieren, um die Daten für andere Module verfügbar zu machen. Sie können ein Bundle auch über das XML-Modul "*.gt;“ in einen XML-formatierten Text konvertieren
+description: Die XML-App ermöglicht es, einen XML-formatierten Text über das XML> Parse XML-Modul zu analysieren und in ein Bundle zu konvertieren, um die Daten für andere Module verfügbar zu machen. Sie können ein Bundle auch über das XML>-Modul in einen XML-formatierten Text konvertieren
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: 1433
 ht-degree: 8%
 
 ---
@@ -55,13 +58,13 @@ Das Modul [!UICONTROL XML] > [!UICONTROL XML erstellen] konvertiert ein Bundle i
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Datenstruktur]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Datenstruktur]</p> </td> 
    <td> <p>Die Datenstruktur beschreibt die Struktur der resultierenden XML. Wenn Sie über ein Beispiel für die XML verfügen, die Sie erstellen möchten, können Sie damit die Datenstruktur generieren:</p> 
     <ol> 
-     <li value="1">Klicken Sie auf die Schaltfläche <strong>Hinzufügen</strong>.</li> 
+     <li value="1">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Hinzufügen</strong>.</li> 
      <li value="2">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Generator]</strong>.</li> 
      <li value="3">Kopieren Sie das XML-Beispiel und fügen Sie es in das Feld Beispieldaten ein.</li> 
-     <li value="4">Klicken Sie auf die Schaltfläche <strong>Speichern</strong>.</li> 
+     <li value="4">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Speichern</strong>.</li> 
      <li value="5">Stellen Sie sicher, dass die Datenstruktur erfolgreich generiert wurde.</li> 
      <li value="6">Klicken Sie auf <strong>[!UICONTROL Speichern]</strong>, um die Datenstruktur zu speichern.</li> 
     </ol> </td> 
@@ -109,7 +112,7 @@ Ein typischer Anwendungsfall besteht darin, Daten aus einer [!DNL Google] > Tabe
    Ein Feld, das dem Stamm-Array-Attribut entspricht, wird im Setup des JSON-Moduls als zuordnungsfähiges Feld angezeigt.
 1. Klicken Sie auf **[!UICONTROL Map]**-Schaltfläche neben dem Feld und ordnen Sie das `Array[]` aus der Ausgabe des [!UICONTROL Array] zu:
 1. Klicken Sie **[!UICONTROL OK]**, um die Einrichtung des XML-Moduls zu schließen.
-1. Öffnen Sie das Setup des Moduls [!UICONTROL Array Aggregator]. Ändern Sie die **[!UICONTROL Zielstruktur]** von Benutzerdefiniert in das Feld eines XML-Moduls, das dem übergeordneten XML-Element entspricht. Ordnen Sie Elemente aus dem [!DNL Google Sheets]-Modul den entsprechenden Feldern zu.
+1. Öffnen Sie das Setup des Moduls [!UICONTROL Array Aggregator]. Ändern Sie die **[!UICONTROL Zielstruktur]** von Benutzerdefiniert in das Feld eines XML-Moduls, das dem übergeordneten XML-Element entspricht.Ordnen Sie Elemente aus dem [!DNL Google Sheets] den entsprechenden Feldern zu.
 1. Klicken Sie **[!UICONTROL OK]**, um die Einrichtung des Array Aggregator-Moduls zu schließen.
 1. Führen Sie das Szenario aus.
 
@@ -157,10 +160,10 @@ Das Modul [!UICONTROL XML] > [!UICONTROL Parse XML] analysiert einen XML-formati
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Datenstruktur]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Datenstruktur]</p> </td> 
    <td> <p>Die Datenstruktur beschreibt die Struktur der XML, um die Ausgabe des Moduls im Zuordnungsbereich für die folgenden Module verfügbar zu machen.</p> <p>Wenn Sie über ein Beispiel für die XML verfügen, die Sie parsen möchten, können Sie sie zum Generieren der Datenstruktur verwenden:</p> 
     <ol> 
-     <li value="1">Klicken Sie auf die Schaltfläche <strong>Hinzufügen</strong>.</li> 
+     <li value="1">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Hinzufügen</strong>.</li> 
      <li value="2">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Generator]</strong>.</li> 
      <li value="3">Kopieren Sie das XML-Beispiel und fügen Sie es in das Feld <strong>[!UICONTROL Beispieldaten]</strong> ein.</li> 
      <li value="4">Klicken Sie auf <strong>[!UICONTROL Speichern]</strong>.</li> 
@@ -186,7 +189,7 @@ Das Modul [!UICONTROL XML] > [!UICONTROL Parse XML] analysiert einen XML-formati
 So laden Sie eine XML-Datei von einer URL herunter und analysieren ihren Inhalt:
 
 1. Erstellen Sie ein neues Szenario.
-1. Fügen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL Datei &#x200B;]&quot; hinzu
+1. Fügen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL Datei ]&quot; hinzu
 1. Öffnen Sie die -Konfiguration des Moduls und konfigurieren Sie sie wie folgt:
 
    **URL**: URL der XML-Datei (z. B. `https://siftrss.com/f/rqLy05ayMBJ`)
@@ -201,10 +204,10 @@ So laden Sie eine XML-Datei von einer URL herunter und analysieren ihren Inhalt:
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Datenstruktur]</td> 
+      <td role="rowheader">[!UICONTROL-Datenstruktur]</td> 
       <td> 
        <ol> 
-        <li value="1">Klicken Sie auf die Schaltfläche <strong>Hinzufügen</strong>.</li> 
+        <li value="1">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Hinzufügen</strong>.</li> 
         <li value="2">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Generator]</strong>.</li> 
         <li value="3">Öffnen Sie in Ihrem Webbrowser eine neue Registerkarte oder ein neues Fenster.</li> 
         <li value="4">Fügen Sie die im dritten Schritt verwendete URL in die Adressleiste ein und rufen Sie die XML-Datei ab.</li> 
@@ -245,6 +248,6 @@ wird in dieses Bundle konvertiert:
 
 >[!ENDSHADEBOX]
 
-## Fehlerbehebung: Daten aus dem Modul [!UICONTROL XML analysieren“ können nicht &#x200B;] werden
+## Fehlerbehebung: Daten aus dem Modul [!UICONTROL XML analysieren“ können nicht ] werden
 
 Stellen Sie sicher, dass die Datenstruktur korrekt definiert ist. Alternativ können Sie eine leere Datenstruktur verwenden und das Modul mindestens einmal ausführen, um eine XML-Eingabe zu verarbeiten.

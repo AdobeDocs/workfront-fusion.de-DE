@@ -4,9 +4,13 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/Odm53LiZwpv6l-WOLmsvwAdCG1WeyN3CAJfI38o4lXc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: 2717
 ht-degree: 16%
 
 ---
@@ -129,7 +133,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Aktivieren Sie diese Option, um gelöschte Ereignisse einzuschließen.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Abfrage] </td> 
+   <td>[!UICONTROL-Abfrage] </td> 
    <td> <p>Geben Sie den Text ein, für den Sie Ergebnisse zurückgeben möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -236,7 +240,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Geben Sie eine Beschreibung für das Ereignis ein oder mappen Sie sie. Dieses Feld unterstützt HTML.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Speicherort]</td> 
+   <td>[!UICONTROL-Speicherort]</td> 
    <td>Geben Sie einen Ort für das Ereignis im Textformular ein.</td> 
   </tr> 
   <tr> 
@@ -343,7 +347,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p> Aktivieren Sie diese Option, um wiederkehrende Ereignisse als einzelne Instanzen zu behandeln. Wenn Sie beispielsweise eine wöchentliche Besprechung haben und diese Option aktiviert ist, gibt das Modul jede wöchentliche Besprechung als separates Ereignis zurück.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Abfrage]</td> 
+   <td>[!UICONTROL-Abfrage]</td> 
    <td> <p>Geben Sie den Suchbegriff ein, nach dem Sie suchen möchten, oder ordnen Sie ihn zu. </p> </td> 
   </tr> 
   <tr> 
@@ -407,7 +411,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Geben Sie eine Beschreibung für das Ereignis ein oder mappen Sie sie. Dieses Feld unterstützt HTML.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Speicherort]</td> 
+   <td>[!UICONTROL-Speicherort]</td> 
    <td>Geben Sie einen Ort für das Ereignis im Textformular ein.</td> 
   </tr> 
   <tr> 
@@ -489,11 +493,11 @@ Dieses Aktionsmodul durchläuft die Teilnehmer für ein Ereignis und gibt jeden 
 
 ## Trigger eines Szenarios vor einem Ereignis
 
-Sie können ein Szenario zu einer bestimmten Zeit vor einem Ereignis mithilfe von standardmäßigen [!DNL Google Calendar]-E-Mail-Erinnerungen und dem Modul [!UICONTROL Webhooks] >[!UICONTROL Benutzerdefinierter &#x200B;]).
+Sie können ein Szenario zu einer bestimmten Zeit vor einem Ereignis mithilfe von standardmäßigen [!DNL Google Calendar]-E-Mail-Erinnerungen und dem Modul [!UICONTROL Webhooks] >[!UICONTROL Benutzerdefinierter ]).
 
 1. Verwenden Sie das Modul [!UICONTROL Google] >[!UICONTROL Ereignis aktualisieren], um eine E-Mail-Erinnerung zu Ihrem Ereignis hinzuzufügen:
 
-   ![Ereignisszenario vor Trigger &#x200B;](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
+   ![Ereignisszenario vor Trigger ](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. Erstellen Sie ein neues Szenario, das mit dem Modul [!UICONTROL Webhooks] > [!UICONTROL Benutzerdefinierter Mailhook] beginnt.
 

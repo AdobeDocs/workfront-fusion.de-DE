@@ -1,25 +1,27 @@
 ---
 title: Erstellen eines Teams
-description: Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
+description: Teams sind kleinere Gruppen innerhalb der Organisation und teilen Fusion-Ressourcen wie Szenarien, Verbindungen und Vorlagen. Sie können so viele Teams erstellen, wie Sie möchten.
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
-source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
+TQID: https://experienceleague.adobe.com/-7x51V-z5F-LIK2eALXr66tPkSI5fJ4iLyXH28aR9CY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: 358
 ht-degree: 28%
 
 ---
 
 # Erstellen eines Teams
 
-Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
+Teams sind kleinere Gruppen innerhalb der Organisation und teilen Fusion-Ressourcen wie Szenarien, Verbindungen und Vorlagen. Sie können so viele Teams erstellen, wie Sie möchten.
 
-Organizations may have as many teams as they need, and users may belong to one or more teams.
+Organisationen können so viele Teams haben, wie sie benötigen, und Benutzer können zu einem oder mehreren Teams gehören.
 
 >[!NOTE]
 >
->Because teams share resources, it is sometimes useful for a team to have only one member. For example, users in training may create connections to their individual Workfront accounts. Any team members would also be able to connect to the individual Workfront account. In this case we recommend that the user be the only member of a training team.
+>Da Teams Ressourcen gemeinsam nutzen, ist es manchmal nützlich, wenn ein Team nur ein Mitglied hat. Beispielsweise können Benutzende, die an Schulungen teilnehmen, Verbindungen zu ihren jeweiligen Workfront-Konten erstellen. Alle Teammitglieder können sich auch mit dem jeweiligen Workfront-Konto verbinden. In diesem Fall empfehlen wir, dass der Benutzer das einzige Mitglied eines Schulungsteams ist.
 
 ## Zugriffsanforderungen
 
@@ -59,22 +61,22 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## Erstellen eines Teams
 
-Organization owners and administrators are able to create teams. Teams are created by adding a new team to an organization.
+Organisationsverantwortliche und Administratoren können Teams erstellen. Teams werden erstellt, indem ein neues Team zu einer Organisation hinzugefügt wird.
 
-To create a team:
+So erstellen Sie ein Team:
 
-1. In the left navigation panel, click **[!UICONTROL Org overview]**.
-1. Select the **[!UICONTROL Teams]** tab.
-1. Click **[!UICONTROL Add a new team]**.
-   ![Create a team](assets/create-new-team-button.png)
-1. Enter a name for the new team, and click **Add**.
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Organisationsübersicht]**.
+1. Wählen Sie die Registerkarte **[!UICONTROL Teams]** aus.
+1. Klicken Sie **[!UICONTROL Neues Team hinzufügen]**.
+   ![Team erstellen](assets/create-new-team-button.png)
+1. Geben Sie einen Namen für das neue Team ein und klicken Sie auf **Hinzufügen**.
 
-## Edit a team
+## Bearbeiten eines Teams
 
-You can edit the name of a team.
+Sie können den Namen eines Teams bearbeiten.
 
-1. In the left navigation panel, click **[!UICONTROL Org overview]**.
-1. Select the **[!UICONTROL Teams]** tab.
-1. Locate the team that you want to edit the name of, then click **Edit** in the line for that team.
-1. Enter a new name for the team, then click **Save**.
+1. Klicken Sie im linken Navigationsbereich auf **[!UICONTROL Organisationsübersicht]**.
+1. Wählen Sie die Registerkarte **[!UICONTROL Teams]** aus.
+1. Suchen Sie das Team, dessen Namen Sie bearbeiten möchten, und klicken Sie dann in **Zeile** Teams auf „Bearbeiten“.
+1. Geben Sie einen neuen Namen für das Team ein und klicken Sie dann auf **Speichern**.
 

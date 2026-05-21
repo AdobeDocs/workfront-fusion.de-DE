@@ -4,10 +4,13 @@ description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/uvPSzwplYFdC6R7xZ3UE-LXF7rhlGzJ7cIwF-x42ayQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4099'
-ht-degree: 10%
+source-wordcount: 4690
+ht-degree: 8%
 
 ---
 
@@ -171,7 +174,7 @@ Dieses Instant Trigger-Modul startet ein Szenario, wenn ein Problem kommentiert 
 
 +++**[!UICONTROL Probleme ansehen]**
 
-Dieses [!UICONTROL Instant-Trigger &#x200B;]-Modul startet ein Szenario, wenn ein Problem erstellt wird oder wenn ein vorhandenes Problem aktualisiert, geschlossen oder erneut geöffnet wird.
+Dieses [!UICONTROL Instant-Trigger ]-Modul startet ein Szenario, wenn ein Problem erstellt wird oder wenn ein vorhandenes Problem aktualisiert, geschlossen oder erneut geöffnet wird.
 
 <table style="table-layout:auto"> 
    <col> 
@@ -374,7 +377,7 @@ Dieses Aktionsmodul hebt einen einzelnen Build eines Projekts auf.
    <td>Wählen Sie den Build aus, den Sie abbrechen möchten, oder ordnen Sie ihn zu.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL -Commit-Nachricht]</td> 
+   <td role="rowheader">[!UICONTROL-Commit-Nachricht]</td> 
    <td> Geben Sie eine Commit-Nachricht für die Zusammenführung ein oder ordnen Sie sie zu.
     </td> 
    </tr> 
@@ -463,7 +466,7 @@ Informationen zu Feldern finden Sie unter [Erstellen einer Aufgabe](https://docs
 
 Dieses Aktionsmodul erstellt eine Aufgabe für den aktuellen Benutzer in der ausgewählten Zusammenführungsanfrage. Der aktuelle Benutzer ist der Benutzer, der durch die Anmeldeinformationen für die für dieses Modul verwendete Verbindung identifiziert wird.
 
-Informationen zu Feldern finden [&#x200B; unter „Erstellen einer &#x200B;](https://docs.gitlab.com/ee/api/merge_requests.html#create-a-todo)&quot; in der [!DNL GitLab].
+Informationen zu Feldern finden [ unter „Erstellen einer ](https://docs.gitlab.com/ee/api/merge_requests.html#create-a-todo)&quot; in der [!DNL GitLab].
 
 +++
 
@@ -788,7 +791,7 @@ Dieses Suchmodul gibt eine Liste von Builds für einen bestimmten Commit in eine
    <td> <p>Wählen Sie das Projekt aus, das den Commit enthält, für den Sie Builds auflisten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Umfang]</td> 
+   <td role="rowheader">[!UICONTROL-Umfang]</td> 
    <td> Um die Suche auf einen bestimmten Status zu beschränken, wählen Sie den Status aus. Wenn Sie dieses Feld leer lassen, werden alle Builds des Commits zurückgegeben.  </td> 
   </tr> 
  </tbody> 
@@ -864,7 +867,7 @@ Informationen zu Feldern finden Sie unter [Projektproblemnotizen auflisten](http
 
 Dieses Suchmodul gibt alle Probleme in einem angegebenen Projekt zurück.
 
-Informationen zu Feldern finden Sie unter [Auflisten von &#x200B;](https://docs.gitlab.com/ee/api/issues.html#list-project-issues) in der [!DNL GitLab].
+Informationen zu Feldern finden Sie unter [Auflisten von ](https://docs.gitlab.com/ee/api/issues.html#list-project-issues) in der [!DNL GitLab].
 
 +++
 

@@ -4,9 +4,12 @@ description: Ein Aggregator-Modul ist ein Modultyp, der dazu dient, mehrere Date
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: 810
 ht-degree: 11%
 
 ---
@@ -91,7 +94,7 @@ Die folgende Abbildung zeigt eine typische Einrichtung des Moduls [!UICONTROL Ag
 
 >[!NOTE]
 >
->Pakete, die von Modulen zwischen dem Quellmodul und dem [!UICONTROL Aggregator]-Modul generiert werden, werden nicht vom [!UICONTROL Aggregator]-Modul ausgegeben. Auf diese Bundles können die Module im Fluss nach dem [!UICONTROL Aggregator“ nicht &#x200B;]. Wenn Sie Daten aus einem Bundle benötigen, das von einem Modul zwischen dem Quellmodul und dem [!UICONTROL Aggregator]-Modul ausgegeben wird, stellen Sie sicher, dass Sie das angegebene Element in die Einrichtung des [!UICONTROL Aggregator]-Moduls einbeziehen (z. B. im Feld [!UICONTROL Aggregierte Felder] bei der Einrichtung des [!UICONTROL Array-Aggregator]-Moduls).
+>Pakete, die von Modulen zwischen dem Quellmodul und dem [!UICONTROL Aggregator]-Modul generiert werden, werden nicht vom [!UICONTROL Aggregator]-Modul ausgegeben. Auf diese Bundles können die Module im Fluss nach dem [!UICONTROL Aggregator“ nicht ]. Wenn Sie Daten aus einem Bundle benötigen, das von einem Modul zwischen dem Quellmodul und dem [!UICONTROL Aggregator]-Modul ausgegeben wird, stellen Sie sicher, dass Sie das angegebene Element in die Einrichtung des [!UICONTROL Aggregator]-Moduls einbeziehen (z. B. im Feld [!UICONTROL Aggregierte Felder] bei der Einrichtung des [!UICONTROL Array-Aggregator]-Moduls).
 
 
 ## Beispielszenario der Funktionsweise von Aggregatoren
@@ -104,11 +107,11 @@ Das folgende Szenario zeigt, wie man:
 
 * Das erste Modul überwacht ein Postfach auf eingehende E-Mails. Der Trigger [!UICONTROL E] >[!UICONTROL E-Mails ansehen] gibt ein Bundle mit dem `Attachments[]` aus, bei dem es sich um ein Array handelt, das alle E-Mail-Anhänge enthält.
 
-* Das zweite Modell durchläuft die Anhänge der E-Mail: [!UICONTROL E-] > [!UICONTROL Anhänge &#x200B;]) Der Iterator nimmt die Elemente aus dem `Attachments[]`-Array einzeln und sendet sie als separate Bundles weiter.
+* Das zweite Modell durchläuft die Anhänge der E-Mail: [!UICONTROL E-] > [!UICONTROL Anhänge ]) Der Iterator nimmt die Elemente aus dem `Attachments[]`-Array einzeln und sendet sie als separate Bundles weiter.
 
-* Das dritte Modul ist der Aggregator. Es aggregiert die vom Modul [!UICONTROL E-Mail] > [!UICONTROL Anhänge &#x200B;] Pakete. [!UICONTROL Archivieren] > [!UICONTROL Erstellen eines Archiv-Aggregators] speichert alle Pakete, die es empfängt, und gibt ein einzelnes Bundle aus, das die ZIP-Datei enthält.
+* Das dritte Modul ist der Aggregator. Es aggregiert die vom Modul [!UICONTROL E-Mail] > [!UICONTROL Anhänge ] Pakete. [!UICONTROL Archivieren] > [!UICONTROL Erstellen eines Archiv-Aggregators] speichert alle Pakete, die es empfängt, und gibt ein einzelnes Bundle aus, das die ZIP-Datei enthält.
 
-* Das letzte Modul lädt die resultierende ZIP-Datei in [!DNL Dropbox] hoch.  [!DNL Dropbox] > [!UICONTROL Datei hochladen] ruft die ZIP-Datei aus dem Modul [!UICONTROL Archiv] > [!UICONTROL Archiv erstellen] auf und lädt sie in [!DNL Dropbox] hoch.
+* Das letzte Modul lädt die resultierende ZIP-Datei in [!DNL Dropbox] hoch. [!DNL Dropbox] > [!UICONTROL Datei hochladen] bezieht die ZIP-Datei aus dem Modul [!UICONTROL Archiv] > [!UICONTROL Archiv erstellen] und lädt sie in [!DNL Dropbox] hoch.
 
 
 

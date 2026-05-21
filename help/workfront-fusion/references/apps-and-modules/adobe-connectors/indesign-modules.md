@@ -7,13 +7,17 @@ navigation-topic: apps-and-their-modules
 title: Adobe InDesign-Module
 description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Adobe InDesign verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
-source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
+exl-id: 8164487a-d114-4e31-9d1c-8404fc89a04b
+TQID: https://experienceleague.adobe.com/D2JdaOqvTA5SUsKm9U8Sjss6dJFMZv2Uo5RGk25QphQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 20%
+source-wordcount: 1702
+ht-degree: 22%
 
 ---
-
 
 # Adobe InDesign-Module
 
@@ -123,7 +127,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 * [Löschen eines benutzerdefinierten Skripts](#delete-a-custom-script)
 * [Zusammenführen von Daten](#merge-data)
 * [Links neu zuordnen](#remap-links)
-* [Senden einer Anfrage zur Ausführung eines benutzerdefinierten Skripts](#submit-a-custom-script-execution-request)
+* [Eine Anfrage zur Ausführung eines benutzerdefinierten Skripts senden](#submit-a-custom-script-execution-request)
 
 #### Erstellen von Ausgabedarstellungen
 
@@ -149,7 +153,7 @@ Dieses Aktionsmodul erstellt eine JPEG-, PNG- oder PDF-Ausgabedarstellung eines 
       <td role="rowheader">
         <p>Assets</p>
       </td>
-      <td>Für jedes Asset, das Sie der Ausgabedarstellung hinzufügen möchten:<ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Sie kann nicht mit "..“ hochgefahren werden oder "/". Es muss ein gültiger Dateiname vorhanden sein.</td>
+      <td>Für jedes Asset, das Sie der Ausgabedarstellung hinzufügen möchten:<ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Er kann nicht mit "…“ oder "/" hochgefahren werden. Es muss ein gültiger Dateiname vorhanden sein.</td>
     </tr>
     <tr>
       <td role="rowheader">Zieldokument</td>
@@ -198,7 +202,7 @@ Dieses Modul erstellt InDesign-Dokumente oder PDFs, indem CSV-Daten mit InDesign
       <td role="rowheader">
         <p>Assets</p>
       </td>
-      <td>Für jedes Asset, das Sie der Datenzusammenführung hinzufügen möchten:<ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Sie kann nicht mit "..“ hochgefahren werden oder "/". Es muss ein gültiger Dateiname vorhanden sein.</td>
+      <td>Für jedes Asset, das Sie der Datenzusammenführung hinzufügen möchten:<ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Er kann nicht mit "…“ oder "/" hochgefahren werden. Es muss ein gültiger Dateiname vorhanden sein.</td>
     </tr>
     <tr>
       <td role="rowheader">Zieldokument</td>
@@ -234,7 +238,7 @@ Dieses Modul ersetzt dateibasierte Links in InDesign-Dokumenten durch Adobe Expe
       <td role="rowheader">
         <p>Assets</p>
       </td>
-      <td>Für jedes Asset, das Sie dem Modul hinzufügen möchten:<ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Sie kann nicht mit "..“ hochgefahren werden oder "/". Es muss ein gültiger Dateiname vorhanden sein.</td>
+      <td>Für jedes Asset, das Sie dem Modul hinzufügen möchten:<ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Er kann nicht mit "…“ oder "/" hochgefahren werden. Es muss ein gültiger Dateiname vorhanden sein.</td>
     </tr>
     <tr>
       <td role="rowheader">Zieldokument</td>
@@ -250,7 +254,7 @@ Dieses Modul ersetzt dateibasierte Links in InDesign-Dokumenten durch Adobe Expe
   </tbody>
 </table>
 
-#### Senden einer Anfrage zur Ausführung eines benutzerdefinierten Skripts
+#### Eine Anfrage zur Ausführung eines benutzerdefinierten Skripts senden
 
 Dieses Aktionsmodul sendet eine Ausführungsanfrage für ein benutzerdefiniertes Skript. Sie definieren die Eingabe-Assets und -Parameter, die das benutzerdefinierte Skript während der Ausführung verwenden soll.
 
@@ -272,7 +276,7 @@ Dieses Aktionsmodul sendet eine Ausführungsanfrage für ein benutzerdefiniertes
       <td role="rowheader">
         <p>Assets</p>
       </td>
-      <td>Für jedes Asset, für das Sie eine Ausführungsanfrage senden möchten, <ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Sie kann nicht mit "..“ hochgefahren werden oder "/". Es muss ein gültiger Dateiname vorhanden sein.</td>
+      <td>Für jedes Asset, für das Sie eine Ausführungsanfrage senden möchten, <ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Er kann nicht mit "…“ oder "/" hochgefahren werden. Es muss ein gültiger Dateiname vorhanden sein.</td>
     </tr>
     <tr>
       <td role="rowheader">Andere Felder</td>
@@ -324,7 +328,7 @@ Dieses Modul ruft die Datenzusammenführungs-Tags aus einem Dokument ab.
       <td role="rowheader">
         <p>Assets</p>
       </td>
-      <td>Für jedes Asset, das Sie dem Modul hinzufügen möchten:<ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Sie kann nicht mit "..“ hochgefahren werden oder "/". Es muss ein gültiger Dateiname vorhanden sein.</td>
+      <td>Für jedes Asset, das Sie dem Modul hinzufügen möchten:<ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Er kann nicht mit "…“ oder "/" hochgefahren werden. Es muss ein gültiger Dateiname vorhanden sein.</td>
     </tr>
     <tr>
       <td role="rowheader">Zieldokument</td>
@@ -356,7 +360,7 @@ Dieses Modul ruft umfassende Informationen zu INDD/IDML-Dokumenten ab und gibt D
       <td role="rowheader">
         <p>Assets</p>
       </td>
-      <td>Für jedes Asset, das Sie dem Modul hinzufügen möchten:<ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Sie kann nicht mit "..“ hochgefahren werden oder "/". Es muss ein gültiger Dateiname vorhanden sein.</td>
+      <td>Für jedes Asset, das Sie dem Modul hinzufügen möchten:<ol><li>Klicken Sie <b>Element hinzufügen</b>.</li><li>Wählen Sie die Quelle des Assets aus oder ordnen Sie sie zu.</li><li>Geben Sie ein Ziel ein. Das Ziel ist ein Pfad relativ zu einem temporären Basisverzeichnis (Arbeitsverzeichnis), in das die Ressource heruntergeladen wird. Dadurch werden die Assets innerhalb der Parameter identifiziert. Er kann nicht mit "…“ oder "/" hochgefahren werden. Es muss ein gültiger Dateiname vorhanden sein.</td>
     </tr>
     <tr>
       <td role="rowheader">Zieldokument</td>

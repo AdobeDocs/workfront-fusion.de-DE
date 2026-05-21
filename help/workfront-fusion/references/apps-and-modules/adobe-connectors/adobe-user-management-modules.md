@@ -8,10 +8,14 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+TQID: https://experienceleague.adobe.com/Z8KIPMacTfdO2BJtbczdW3Tsrbb-MTB1rgY60FdPgps
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2373'
-ht-degree: 3%
+source-wordcount: 2385
+ht-degree: 18%
 
 ---
 
@@ -25,7 +29,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -33,29 +37,29 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: Keine Workfront Fusion-Lizenzanforderung</p>
+   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfront Fusion-Lizenzen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -63,7 +67,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 ## Erstellen einer Verbindung mit Adobe User Management
 
-So erstellen Sie eine Verbindung für Ihre [!DNL Adobe User Management]:
+So erstellen Sie eine Verbindung für Ihre [!DNL Adobe User Management]-Module:
 
 1. Klicken Sie in einem beliebigen Modul **[!UICONTROL Hinzufügen]** neben dem Feld Verbindung .
 
@@ -78,7 +82,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe User Management]:
         <tr>
         <td role="rowheader">[!UICONTROL Verbindungsname]</td>
         <td>
-          <p>Geben Sie einen Namen für diese Verbindung ein.</p>
+          <p>Geben Sie einen Namen für die Verbindung ein.</p>
         </td>
         </tr>
         <tr>
@@ -87,7 +91,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe User Management]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Typ]</td>
-        <td>Wählen Sie aus, ob Sie eine Verbindung zu einem Service-Konto oder einem persönlichen Konto herstellen möchten.</td>
+        <td>Wählen Sie aus, ob eine Verbindung zu einem Service-Konto oder einem persönlichen Konto hergestellt werden soll.</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-ID]</td>
@@ -95,7 +99,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe User Management]:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-        <td>Geben Sie Ihren [!DNL Adobe] [!UICONTROL Client Secret] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console]</td>
+        <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Diese finden Sie im Abschnitt [!UICONTROL Anmeldeinformationen] des [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS-Organisations-ID]</td>
@@ -108,17 +112,17 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe User Management]:
       </tbody>
     </table>
 
-1. Klicken Sie **[!UICONTROL Fortfahren]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+1. Klicken Sie auf **[!UICONTROL Weiter]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
 
 
 ## Adobe User Management-Module und ihre Felder
 
-Beim Konfigurieren von Adobe User Management-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus werden möglicherweise weitere Adobe-Benutzerverwaltungsfelder angezeigt, je nach Faktoren wie Ihrer Zugriffsebene in der App oder im Service. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von Adobe User Management-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus werden möglicherweise weitere Adobe-Benutzerverwaltungsfelder angezeigt, je nach Faktoren wie Ihrer Zugriffsebene in der App oder im Service. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 
 * [Suchvorgänge](#searches)
@@ -147,7 +151,7 @@ Dieses Suchmodul ruft eine Liste aller Benutzergruppen und Produktprofile in Ihr
   </tr> 
   <tr> 
    <td role="rowheader">Maximale Anzahl an zurückgegebenen Ergebnissen</td> 
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+   <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,7 +206,7 @@ Dieses Suchmodul ruft eine Liste aller Benutzer in der angegebenen Benutzergrupp
   </tr> 
   <tr> 
    <td role="rowheader">Maximale Anzahl an zurückgegebenen Ergebnissen</td> 
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+   <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -221,7 +225,7 @@ Dieses Suchmodul gibt alle Benutzer der Organisation zurück, die mit der Verbin
   </tr> 
   <tr> 
    <td role="rowheader">Maximale Anzahl an zurückgegebenen Ergebnissen</td> 
-   <td>Geben Sie die maximale Anzahl von Datensätzen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder mappen Sie sie.</td> 
+   <td>Geben Sie die maximale Anzahl von Einträgen ein, die das Modul während jedes Szenario-Ausführungszyklus zurückgeben soll, oder ordnen Sie diese zu.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -246,7 +250,7 @@ Dieses Aktionsmodul fügt einen Benutzer als Mitglied der angegebenen Gruppe(n) 
    <td>Anweisungen zum Erstellen einer Verbindung mit Adobe User Management finden Sie unter <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Erstellen einer Verbindung mit Adobe User Management</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Benutzerin bzw. Benutzer</td> 
+   <td role="rowheader">Benutzerin oder Benutzer</td> 
    <td>Geben Sie den Benutzer ein, den Sie den Gruppen hinzufügen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -293,7 +297,7 @@ Dieses Aktionsmodul erstellt einen neuen Benutzer in der Organisation.
    <td>Wenn Sie einen Benutzer mit einer Federated ID mit einer Domain-basierten Anmeldung erstellen, geben Sie die Domain ein oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Benutzerin bzw. Benutzer</td> 
+   <td role="rowheader">Benutzerin oder Benutzer</td> 
    <td>Wenn Sie einen Benutzer mit einer Federated ID mit einer Domain-basierten Anmeldung erstellen, geben Sie den Benutzer ein, den dieser neue Benutzer repräsentieren soll, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -332,7 +336,7 @@ Dieses Aktionsmodul entfernt die Mitgliedschaft eines Benutzers aus den angegebe
    <td>Anweisungen zum Erstellen einer Verbindung mit Adobe User Management finden Sie unter <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Erstellen einer Verbindung mit Adobe User Management</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Benutzerin bzw. Benutzer</td> 
+   <td role="rowheader">Benutzerin oder Benutzer</td> 
    <td>Geben Sie den Benutzer ein, den Sie aus den Gruppen entfernen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -365,7 +369,7 @@ Dieses Aktionsmodul aktualisiert einen vorhandenen Benutzer.
    <td>Anweisungen zum Erstellen einer Verbindung mit Adobe User Management finden Sie unter <a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >Erstellen einer Verbindung mit Adobe User Management</a> in diesem Artikel.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Benutzerin bzw. Benutzer</td> 
+   <td role="rowheader">Benutzerin oder Benutzer</td> 
    <td>Geben Sie die ID des Benutzers ein, den Sie aktualisieren möchten, oder ordnen Sie sie zu. Dies ist die E-Mail-Adresse des Benutzers, z. B. <code>user@example.com</code></td> 
   </tr> 
   <tr> 
@@ -529,7 +533,7 @@ Dieses Aktionsmodul aktualisiert eine vorhandene Benutzergruppe.
 ### Sonstiges
 
 
-#### Erstellen eines benutzerdefinierten API-Aufrufs
+#### Benutzerdefinierten API-Aufruf erstellen
 
 Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Adobe User Management-API durch.
 
@@ -556,7 +560,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Adobe User Ma
    <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP-Anfragemethoden</a>.</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">Kopfzeilen</td>
+      <td role="rowheader">Header</td>
       <td>
         <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p>
         <p>Beispiel: <code>{"Content-type":"application/json"}</code></p>
@@ -571,7 +575,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Adobe User Ma
     </tr>
     <tr>
       <td role="rowheader">Textkörper</td>
-   <td> <p>Fügen Sie den Hauptteil des Inhalts für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

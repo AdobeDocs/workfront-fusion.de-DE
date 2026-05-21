@@ -4,9 +4,12 @@ description: Mit dem Adobe Workfront Fusion DevTool können Sie Szenarien verste
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/7NXYVXxbQvgKnqvRUNV-ySBApe9kl-Kn57sSKCh4NLE
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: 1487
 ht-degree: 7%
 
 ---
@@ -22,7 +25,7 @@ Das Adobe Workfront Fusion-DevTool hilft Ihnen, Szenarien zu verstehen und Fehle
 Eine Videoeinführung und exemplarische Anleitung für das Fusion DevTool finden Sie unter
 
 * [Fusion-Entwicklungstool](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Anleitung zu Devtool](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=de)
+* [Anleitung für Entwickler](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
 
 ## Zugriffsanforderungen
 
@@ -185,7 +188,7 @@ Ermöglicht die Suche nach den Modulwerten für einen bestimmten Begriff. Die Au
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Schlüsselwort]</td> 
+   <td role="rowheader">[!UICONTROL-Schlüsselwort]</td> 
    <td> <p> Geben Sie den Begriff ein, nach dem Sie suchen möchten. </p> </td> 
   </tr> 
   <tr> 
@@ -315,12 +318,12 @@ Ermöglicht die Kodierung der eingegebenen Daten in Base64 oder die Dekodierung 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Vorgang] </td> 
+   <td role="rowheader">[!UICONTROL-Vorgang] </td> 
    <td> <p>Wählen Sie aus, ob die Daten aus dem Feld [!UICONTROL Raw Data] in Base64 kodiert oder Base64 in Raw Data dekodiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Rohdaten]</p> </td> 
-   <td> <p> Geben Sie die Daten, die Sie für Base64 codieren möchten, oder Base64 ein, wenn Sie für Rohdaten decodieren möchten, je nach der im Feld [!UICONTROL -Vorgang] oben ausgewählten Option.</p> </td> 
+   <td> <p> Geben Sie die Daten, die Sie für Base64 codieren möchten, oder Base64 ein, wenn Sie für Rohdaten decodieren möchten, je nach der im Feld [!UICONTROL-Vorgang] oben ausgewählten Option.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -344,7 +347,7 @@ Zunächst müssen Sie das Modul, das Sie als Quellmodul verwenden möchten, zur 
    <td> <p>Wählen Sie das Modul aus, das Sie als neue Zuordnungsquelle verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Modul zum Bearbeiten]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Modul zum Bearbeiten]</p> </td> 
    <td> <p>Wählen Sie das Modul aus, für das Sie die Zuordnung ändern möchten, wenn Sie die Zuordnung nicht im gesamten Szenario ändern möchten. </p> </td> 
   </tr> 
  </tbody> 

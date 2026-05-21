@@ -1,17 +1,19 @@
 ---
-title: Videoübersichten
+title: Videoüberblicke
 description: Diese Videos können bei der Planung eines Szenarios hilfreich sein
 author: Becky
 feature: Workfront Fusion
 exl-id: 875b4c9a-7065-4960-9fdc-85fb0a4bf146
-source-git-commit: 914f108dc7e13e89806f233812a687cdc06cf1c8
+TQID: https://experienceleague.adobe.com/aWLSSTNkbmQAePryPq8-WPMR6dEhVG1XYiVcKNahRfs
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 1%
+source-wordcount: 60
+ht-degree: 21%
 
 ---
 
-# Videoübersichten
+# Videoüberblicke
 
 Diese Videos helfen Ihnen dabei, sich mit einigen Funktionen von Adobe Workfront Fusion vertraut zu machen.
 
@@ -25,7 +27,7 @@ Diese Videos helfen Ihnen dabei, sich mit einigen Funktionen von Adobe Workfront
 * [Zwischen-Webhooks](https://video.tv.adobe.com/v/3427030/){target=_blank}
 * [Datenspeicher](https://video.tv.adobe.com/v/3427029/){target=_blank}
 * [Fusion-Entwicklungstool](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Synchronisieren von Ordnern](https://video.tv.adobe.com/v/3427033/){target=_blank}
+* [Ordner synchronisieren](https://video.tv.adobe.com/v/3427033/){target=_blank}
 
 ## Connectoren
 

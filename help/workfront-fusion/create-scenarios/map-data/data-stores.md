@@ -4,9 +4,12 @@ description: Ein Datenspeicher, ähnlich einer Datenbank oder einer einfachen Ta
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
+TQID: https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: 1366
 ht-degree: 8%
 
 ---
@@ -114,7 +117,7 @@ Bevor Sie einen Datenspeicher in einem Modul verwenden können, müssen Sie den 
       <td> <p>Geben Sie einen Namen für den Datenspeicher ein. </p> </td> 
      </tr> 
      <tr> 
-      <td> <p>[!UICONTROL -Datenstruktur]</p> </td> 
+      <td> <p>[!UICONTROL-Datenstruktur]</p> </td> 
       <td> <p>Eine Datenstruktur ist eine Liste der Spalten für eine Tabelle. Diese Liste gibt den Spaltennamen und den Datentyp an.</p> <p>Führen Sie einen der folgenden Schritte aus:</p> 
        <ul> 
         <li><b>Eine bereits erstellte Datenstruktur auswählen</b></li> 
@@ -183,7 +186,7 @@ Sie können die Eigenschaften und Inhalte eines vorhandenen Datenspeichers im Be
 
 Zu den Eigenschaften eines Datenspeichers gehören die Datenstruktur, die der Datenspeicher verwendet, sowie die Größe des Datenspeichers.
 
-1. Klicken Sie **[!UICONTROL linken]** auf ![Datenspeicher](assets/data-store-icon.png), um den Bereich [!UICONTROL Datenspeicher] zu öffnen.
+1. Klicken Sie **[!UICONTROL linken ](assets/data-store-icon.png) auf ![Datenspeicher]**, um den Bereich [!UICONTROL Datenspeicher] zu öffnen.
 1. Aktivieren Sie das Kontrollkästchen neben dem Datenspeicher, den Sie bearbeiten möchten, und klicken Sie dann **Bearbeiten** im Banner unten auf dem Bildschirm.
 1. (Optional) Wenn Sie die von diesem Datenspeicher verwendete Datenstruktur in eine andere vorhandene Datenstruktur ändern möchten, wählen Sie sie aus der **[!UICONTROL Datenstruktur]** aus.
 
@@ -212,7 +215,7 @@ Zu den Eigenschaften eines Datenspeichers gehören die Datenstruktur, die der Da
 
 Es gibt derzeit kein Tool, das die Wiederherstellung verlorener Daten automatisieren kann.
 
-#### Abhilfe
+#### Problemumgehung
 
 1. Untersuchen Sie alle Ausführungsprotokolle von Szenarien, in denen Elemente in den Datenspeicher eingefügt wurden.
 
@@ -223,11 +226,11 @@ Es gibt derzeit kein Tool, das die Wiederherstellung verlorener Daten automatisi
 
    Informationen zum Einfügen von Daten in einen Datenspeicher finden Sie unter [Bearbeiten des Inhalts eines Datenspeichers](#edit-the-contents-of-a-data-store) in diesem Artikel.
 
-### [!UICONTROL Unzureichender &#x200B;])
+### [!UICONTROL Unzureichender ])
 
 Ein [!UICONTROL Speicherplatzmangel] tritt auf, weil den zuvor erstellten Datenspeichern bereits der zugewiesene Datenspeicher zugewiesen wurde.
 
-#### Abhilfe
+#### Problemumgehung
 
 1. Bearbeiten Sie einen Ihrer vorhandenen Datenspeicher, um weniger Speicherplatz zu verbrauchen. Dadurch wird Speicherplatz für Ihren neuen Datenspeicher freigegeben.
 
@@ -241,7 +244,7 @@ Ein [!UICONTROL Speicherplatzmangel] tritt auf, weil den zuvor erstellten Datens
 
 Der Fehler [!UICONTROL Maximale Anzahl von Stores erreicht] tritt auf, weil Ihr Unternehmen alle verfügbaren Datenspeicher verwendet hat.
 
-#### Abhilfe
+#### Problemumgehung
 
 Um die Anzahl der vorhandenen Datenspeicher zu reduzieren, sollten Sie einen der folgenden Schritte ausführen:
 

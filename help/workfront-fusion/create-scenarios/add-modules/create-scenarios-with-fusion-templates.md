@@ -1,23 +1,25 @@
 ---
-title: Erstellen von Szenarien mit Vorlagen
+title: Erstellen von Szenarios mit Vorlagen
 description: Mit der Funktion "Adobe Workfront Fusion-Vorlagen“ können Sie bestehende Vorlagen erstellen und als Ausgangspunkt für Ihre Workfront Fusion-Szenarien verwenden.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9bc5f195-c406-45e9-9a1e-5c8a2a0e0ded
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+TQID: https://experienceleague.adobe.com/b6P6739Vad2S9ZkYJr24KVCv5FE99Cz6ZGAwkcF-yYE
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 0%
+source-wordcount: 415
+ht-degree: 23%
 
 ---
 
-# Erstellen von Szenarien mit Vorlagen
+# Erstellen von Szenarios mit Vorlagen
 
 Mit Adobe Workfront Fusion-Vorlagen können Sie bestehende Vorlagen erstellen und als Ausgangspunkt für Ihre Workfront Fusion-Szenarien verwenden.
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -25,22 +27,22 @@ Mit Adobe Workfront Fusion-Vorlagen können Sie bestehende Vorlagen erstellen un
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -52,7 +54,7 @@ Sie müssen eine Teamvorlage erstellen, bevor Sie sie verwenden können.
 
 ## Erstellen eines Szenarios aus einer Vorlage
 
-1. Klicken Sie auf **Registerkarte** Vorlagen![&#x200B; (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Vorlagen![ (Vorlagensymbol](assets/templates-icon.png) im linken Navigationsbereich.
 1. Klicken Sie auf die Registerkarte, die die gewünschte Vorlage enthält (**Öffentliche Vorlagen** oder **Teamvorlagen**).
 1. Suchen Sie mithilfe der Suchleiste in der linken oberen Ecke des Bildschirms nach einer bestimmten Vorlage. Sie können nach Vorlagennamen oder eingeschlossenen Programmen suchen.
 1. Klicken Sie auf die Vorlage, die Sie zum Erstellen eines Szenarios verwenden möchten.

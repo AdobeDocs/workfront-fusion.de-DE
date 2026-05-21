@@ -4,9 +4,11 @@ description: Wenn Sie Fusion öffnen, stehen Ihnen zahlreiche Aktionsoptionen zu
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
+TQID: https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: 775
 ht-degree: 94%
 
 ---
@@ -17,7 +19,7 @@ ht-degree: 94%
 
 In diesem Artikel werden diese Bereiche vorgestellt und Links zu weiteren Informationen zu den einzelnen Bereichen bereitgestellt.
 
-| Bereich | Beschreibung | Weitere Informationen finden Sie unter  |
+| Bereich | Beschreibung | Weitere Informationen finden Sie unter |
 | --- | --- | --- |
 | Organisationsüberblick <br> ![Organisationssymbol](assets/org-icon.png) | Hier finden Sie Informationen zu Ihrer Fusion-Organisation. Sie können die Anzahl der von Szenarios in dieser Organisation ausgeführten Vorgänge sowie eine Liste aktiver Szenarios anzeigen. Sie können auch Listen des Teams, der Benutzenden und der Umgebungen dieser Organisation anzeigen.<br>Die aktuell ausgewählte Organisation wird über diesem Symbol angezeigt. | [Organisationen und Teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Team-Überblick <br> ![Team-Symbol](assets/team-icon.png) | Hier finden Sie Informationen zu Fusion-Teams, z. B. die Anzahl der Vorgänge, die von Szenarios in diesem Team ausgeführt werden, sowie eine Liste der aktiven Szenarios. Sie können auch die Benutzenden in diesem Team anzeigen und verwalten. Wenn Sie ein Team anzeigen, können Sie oben auf dieser Seite über ein Dropdown-Menü ein anderes Team auswählen.<br>Das aktuell ausgewählte Team wird über diesem Symbol angezeigt.<br>Möglicherweise müssen Sie ein Team erstellen, um den Team-Überblick oder einen der in diesem Artikel aufgeführten Team-Abschnitte sehen zu können. | [Organisationen und Teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |

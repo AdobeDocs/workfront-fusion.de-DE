@@ -1,17 +1,19 @@
 ---
-title: Anzeigen und Auflösen unvollständiger Ausführungen
+title: Anzeigen und Lösen unvollständiger Ausführungen
 description: Der Ordner [!UICONTROL Unvollständige Ausführungen] speichert Szenario-Ausführungen, die aufgrund eines Fehlers nicht erfolgreich abgeschlossen wurden. Jede gespeicherte unvollständige Ausführung kann entweder manuell oder automatisch aufgelöst werden.
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+TQID: https://experienceleague.adobe.com/iTS5K7IjJzZdlqX2kCuPBCKojdmM-Id9xa-lRrY2FKI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 5%
+source-wordcount: 584
+ht-degree: 7%
 
 ---
 
-# Anzeigen und Auflösen unvollständiger Ausführungen
+# Anzeigen und Lösen unvollständiger Ausführungen
 
 Der Ordner [!UICONTROL Unvollständige Ausführungen] speichert Szenario-Ausführungen, die aufgrund eines Fehlers nicht erfolgreich abgeschlossen wurden. Jede gespeicherte unvollständige Ausführung kann entweder manuell oder automatisch aufgelöst werden.
 
@@ -23,7 +25,7 @@ Der Ordner [!UICONTROL Unvollständige Ausführungen] speichert Szenario-Ausfüh
 
 ## Vorschau für vollständigen Artikel hervorgehoben {#highlighted-preview-article-level}
 
-<span class="preview">Die Informationen auf dieser Seite beziehen sich auf Funktionen, die noch nicht allgemein verfügbar sind. Sie ist nur in der Sandbox-Vorschau -Umgebung verfügbar.</span>## Anzeigen unvollständiger Ausführungen
+<span class="preview">Die Informationen auf dieser Seite beziehen sich auf Funktionen, die noch nicht allgemein verfügbar sind. Sie ist nur in der Sandbox-Vorschau-Umgebung verfügbar.</span>## Unvollständige Ausführungen anzeigen
 
 Wenn bei einem Modul während seines Vorgangs ein Fehler auftritt, wird eine neue unvollständige Ausführung zum Ordner Unvollständige Ausführungen hinzugefügt. Jede unvollständige Ausführung enthält den Blueprint des Szenarios und alle Bundles, die dem fehlgeschlagenen Modul zugeordnet werden können. Die Liste der unvollständigen Ausführungen kann durch Klicken auf die Registerkarte [!UICONTROL Unvollständige Ausführungen] auf der Seite mit den Szenario-Details geöffnet werden.
 

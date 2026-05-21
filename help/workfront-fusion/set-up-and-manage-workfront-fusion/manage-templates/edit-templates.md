@@ -6,9 +6,13 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/J7kDB9abxI53dRs6xZikcHRDbgHZZfEhWLzGDUw2CRg
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: d968a1bc-9a90-4926-a531-bcf272c32aadid: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: 772
 ht-degree: 4%
 
 ---
@@ -106,7 +110,7 @@ Mit [!DNL Workfront Fusion template] [!UICONTROL Assistent] können Sie zukünft
 1. Wiederholen Sie die Schritte 2-4 für jedes Feld, für das Sie Informationen bereitstellen möchten.
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern und das Modul zu schließen.
 
-Der Veröffentlichungsprozess ist derselbe wie bei einem Standardbenutzer. Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)Veröffentlichen und Freigeben von Vorlagen“.
+Der Veröffentlichungsprozess ist derselbe wie bei einem Standardbenutzer. Weitere Informationen finden Sie [ Abschnitt ](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)Veröffentlichen und Freigeben von Vorlagen“.
 
 ## Vorlagenstatus
 

@@ -4,10 +4,13 @@ description: Mit den Adobe Workfront Fusion HubSpot CRM-Modulen können Sie Erei
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
+TQID: https://experienceleague.adobe.com/F-jLL4aF0bSUiFpDjJr-DVBU8ZnbqNHKiFzjEjmalxw
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '7314'
-ht-degree: 9%
+source-wordcount: 7326
+ht-degree: 10%
 
 ---
 
@@ -141,7 +144,7 @@ Dieses Suchmodul sucht nach CRM-Objekten anhand benutzerdefinierter Eigenschafte
    <td role="rowheader">[!UICONTROL Filtern nach] </td> 
    <td> <p>Bitte auswählen, wie die Suche gefiltert werden soll</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL -Abfrage]</strong> </p> <p>Abfrage eingeben oder zuordnen</p> </li> 
+     <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Abfrage eingeben oder zuordnen</p> </li> 
      <li> <p><strong>[!UICONTROL Eigenschaften]</strong> </p> <p>Geben Sie die Gruppen oder Filter für Ihre Suche ein.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -673,7 +676,7 @@ Ruft mithilfe der Suchabfrage eine Liste von Kontakten ab.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL HubSpot CRM]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
    <td>Geben Sie die Suchanfrage ein.</td> 
   </tr> 
   <tr> 
@@ -1199,7 +1202,7 @@ Um einen Webhook für dieses Modul zu erstellen, klicken Sie **Hinzufügen** neb
    <td>Geben Sie die Anwendungs-ID ein, die Sie für diesen Webhook verwenden möchten. Die ID finden Sie in Ihrem HubSpot-Entwicklerportal.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Abonnements]</td> 
+   <td role="rowheader">[!UICONTROL-Abonnements]</td> 
    <td> <p>Klicken Sie für jeden Benachrichtigungstyp, den Sie überwachen möchten, auf <b>Element hinzufügen</b> und wählen Sie den Abonnementtyp aus.</p> </td> 
   </tr> 
   <tr> 
@@ -1618,7 +1621,7 @@ Dieses Aktionsmodul gibt alle Formulare zurück, die in dem Konto erstellt wurde
 
 
 
-&lt;!—#### Übermittlungen für ein Formular beobachten - Es muss eine funktionierende Verbindung gefunden werden>—>
+&lt;!—#### Übermittlungen für ein Formular ansehen - Es muss eine funktionierende Verbindung gefunden werden>—>
 
 ### Social Media (Broadcast)
 
@@ -2129,7 +2132,7 @@ Ermöglicht die Durchführung eines benutzerdefinierten API-Aufrufs.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text]</td> 
-   <td> <p>Fügen Sie den Hauptteil des API-Aufrufs in Form eines standardmäßigen JSON-Objekts hinzu. Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrer JSON-Datei verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
+   <td> <p>Fügen Sie den Textinhalt für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
   </tr> 
  </tbody> 
 </table>

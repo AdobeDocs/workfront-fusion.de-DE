@@ -1,17 +1,19 @@
 ---
-title: Hinzufügen eines Benutzers zu einem Team
+title: Hinzufügen von Benutzenden zu einem Team
 description: Ihre Benutzer werden Teams zugewiesen, wenn Sie sie erstellen. Wenn ein vorhandener Benutzer einem Team hinzugefügt werden muss, können Sie ihn auf der Seite Benutzer des Teams hinzufügen.
 author: Becky
 feature: Workfront Fusion
 exl-id: c972a9f0-5195-4d80-8a19-4251d8ec57de
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+TQID: https://experienceleague.adobe.com/OrXq9QrehAn2GnWWvEjgj0rm4W9JEgRvhESMJIvRJEY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 0%
+source-wordcount: 323
+ht-degree: 31%
 
 ---
 
-# Hinzufügen eines Benutzers zu einem Team
+# Hinzufügen von Benutzenden zu einem Team
 
 Ihre Benutzer werden Teams zugewiesen, wenn Sie sie erstellen. Wenn ein vorhandener Benutzer einem Team hinzugefügt werden muss, können Sie ihn auf der Seite Benutzer des Teams hinzufügen.
 
@@ -19,7 +21,7 @@ Informationen zum Hinzufügen eines Benutzers zu Fusion finden Sie unter [Hinzuf
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,22 +29,22 @@ Informationen zum Hinzufügen eines Benutzers zu Fusion finden Sie unter [Hinzuf
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -52,7 +54,7 @@ Das Hinzufügen eines Benutzers zu einem Team wird von der Seite aus für dieses
 
 1. Gehen Sie zu dem Team, dem Sie den Benutzer hinzufügen möchten, indem Sie im linken Bereich **Organisationsübersicht** auswählen, auf die Registerkarte **Teams** auf der Seite Organisation klicken und das Team auswählen.
 
-   Oder
+   ODER
 
    Wenn Sie sich auf der Seite für ein anderes Team befinden, klicken Sie auf das Dropdown-Menü Team oben auf der Seite.
 

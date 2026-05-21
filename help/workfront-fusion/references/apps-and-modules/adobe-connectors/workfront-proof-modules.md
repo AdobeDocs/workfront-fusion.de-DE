@@ -4,10 +4,13 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/PE6mgMsKjoQLz5JeXx6EN-xYsm-x1DpaIrtHBnRE1PY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 22%
+source-wordcount: 3117
+ht-degree: 23%
 
 ---
 
@@ -351,7 +354,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Geben Sie die ID des Testversand-Inhabers ein oder mappen Sie sie. Wenn dieses Feld leer gelassen wird, wird der/die Verantwortliche für den Korrekturabzug auf den aktuellen Benutzer bzw. die aktuelle Benutzerin festgelegt.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Referenz-ID]</td> 
+   <td>[!UICONTROL-Referenz-ID]</td> 
    <td>Geben Sie die Referenz-ID für den Testversand ein.</td> 
   </tr> 
   <tr> 
@@ -433,7 +436,7 @@ Dieses Aktionsmodul lädt die Quelldatei eines bestimmten Korrekturabzugs herunt
 
 Sie geben die ID des Korrekturabzugs an.
 
-Das -Modul gibt den Inhalt der Quelldatei zurück, die zum Erstellen des Korrekturabzugs verwendet wird. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+Das -Modul gibt den Inhalt der Quelldatei zurück, die zum Erstellen des Korrekturabzugs verwendet wird.Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
 Sie müssen über ausreichende Berechtigungen für den Zugriff auf den Datensatz in [!DNL Workfront Proof] verfügen, um diese Informationen abrufen zu können.
 
@@ -561,7 +564,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
      <li>[!UICONTROL antwortet auf meine Kommentare]</li>
      <li>[!UICONTROL Tägliche Zusammenfassung]</li>
      <li> [!UICONTROL Stündliche Zusammenfassung]</li>
-     <li> [!UICONTROL Nur-Entscheidungen]</li>
+     <li> [!Nur UICONTROL-Entscheidungen]</li>
      <li> [!UICONTROL deaktiviert]</li>
     </ul></td> 
   </tr> 
@@ -598,7 +601,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Geben Sie die ID des Korrekturabzugs ein, den Sie aktualisieren möchten, oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Korrekturabzug-Name]</td> 
+   <td>[!UICONTROL Name des Korrekturabzugs]</td> 
    <td>Geben Sie den Namen des Korrekturabzugs ein, den Sie aktualisieren möchten, oder mappen Sie ihn.</td> 
   </tr> 
   <tr> 
@@ -671,7 +674,7 @@ Dieses Suchmodul listet alle verfügbaren Workflow-Vorlagen auf.
 
 Dieses Suchmodul sucht in einem -Objekt nach Datensätzen, [!DNL Workfront Proof] mit der angegebenen Suchanfrage übereinstimmen.
 
-Das Modul gibt die ID des Korrekturabzugs zurück, wenn es nach einem Korrekturabzug sucht. Oder es gibt die Benutzer-IDs, E-Mails, Namen, Positionen und E-Mail-Aliase der Empfänger zurück, wenn es nach Empfängern sucht. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+Das Modul gibt die ID des Korrekturabzugs zurück, wenn es nach einem Korrekturabzug sucht. Oder es gibt die Benutzer-IDs, E-Mails, Namen, Positionen und E-Mail-Aliase der Empfänger zurück, wenn es nach Empfängern sucht.Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
 Sie müssen über ausreichende Berechtigungen für den Zugriff auf den Datensatz in [!DNL Workfront Proof] verfügen, um diese Informationen abrufen zu können.
 

@@ -1,13 +1,16 @@
 ---
-title: Archivierungsmodule
+title: Archivmodule
 description: In einem Adobe Workfront Fusion-Szenario können Sie ein Archiv, z. B. eine ZIP-Datei, mit mehreren Anwendungen und Services von Drittanbietern verbinden. Sie können beispielsweise ein Szenario konfigurieren, das
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/hcfjBqNDF3zEVJMLmekD-O8lmzMLyKk6Xp9JKTXcVWc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 0%
+source-wordcount: 651
+ht-degree: 32%
 
 ---
 
@@ -15,11 +18,11 @@ ht-degree: 0%
 
 In einem Adobe Workfront Fusion-Szenario können Sie ein Archiv, z. B. eine ZIP-Datei, in Ihrem Szenario verwenden, sodass Sie es in Ihren Automatisierungen oder Integrationen verwenden können.
 
-Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenarios erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
+Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Erstellen von Szenarios: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -27,22 +30,22 @@ Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szen
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -50,11 +53,11 @@ Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Z
 
 ## [!UICONTROL Archivieren] Module und ihre Felder
 
-Beim Konfigurieren von [!UICONTROL Archiv]-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können zusätzliche [!UICONTROL Archivieren]-Felder angezeigt werden, abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service. Ein fett gedruckter Titel in einem Modul gibt ein erforderliches Feld an.
+Beim Konfigurieren von [!UICONTROL Archiv]-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können zusätzliche [!UICONTROL Archivieren]-Felder angezeigt werden, abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
-Wenn die Zuordnungsschaltfläche über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![Umschalter für Zuordnung](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Aktionen](#actions)
 * [Aggregatoren](#aggregators)
@@ -73,7 +76,7 @@ Das Modul gibt die ID der Datei und aller zugehörigen Felder sowie alle benutze
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Source-Datei]</td> 
+   <td>[!UICONTROL Quelldatei]</td> 
    <td> <p>  <p>Quelldatei aus einem vorherigen Modul auswählen oder die Quelldaten zuordnen.</p></p>  </td> 
   </tr> 
  </tbody> 
@@ -108,7 +111,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie aus, ob Sie Dateien zu einem [!UICONTROL ZIP]-, GZIP- oder einem [!UICONTROL TAR]-Archiv hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Kommentar]</td> 
+   <td>[!UICONTROL-Kommentar]</td> 
    <td>Geben Sie einen Kommentar ein, den Sie dem Archiv hinzufügen möchten.</td> 
   </tr> 
   <tr> 
@@ -124,7 +127,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p> Geben Sie einen Namen für das erstellte Archiv ein. Keine Erweiterung hinzufügen.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source-Datei]</td> 
+   <td>[!UICONTROL Quelldatei]</td> 
    <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
  </tbody> 
@@ -132,7 +135,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 >[!BEGINSHADEBOX]
 
-**Beispiel:** eingehende E-Mails mit dem Modul [!DNL Gmail] > [!UICONTROL E-Mails &#x200B;]. Wenn eine E-Mail empfangen wird, werden ihre Anhänge in einzelne Bundles iteriert, dann in der [!DNL ZIP] archiviert und im definierten Dropbox-Ordner gespeichert.
+**Beispiel:** eingehende E-Mails mit dem Modul [!DNL Gmail] > [!UICONTROL E-Mails ]. Wenn eine E-Mail empfangen wird, werden ihre Anhänge in einzelne Bundles iteriert, dann in der [!DNL ZIP] archiviert und im definierten Dropbox-Ordner gespeichert.
 
 ![Beispiel für Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
@@ -152,7 +155,7 @@ Dieses Transformatormodul komprimiert Binärdaten mit einem Deflationsalgorithmu
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Daten] </td> 
+   <td>[!UICONTROL-Daten] </td> 
    <td> <p>Geben Sie die Daten, die Sie komprimieren möchten, mit der Deflate-Funktion ein oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -167,7 +170,7 @@ Dieses Transformatormodul dekomprimiert Binärdaten mithilfe eines Inflationsalg
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Daten] </td> 
+   <td>[!UICONTROL-Daten] </td> 
    <td> <p>Geben Sie die Daten, die Sie dekomprimieren möchten, mithilfe der Inflate-Funktion ein oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 

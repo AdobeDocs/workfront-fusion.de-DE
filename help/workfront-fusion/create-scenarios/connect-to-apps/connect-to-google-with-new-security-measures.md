@@ -1,19 +1,22 @@
 ---
 title: Verbinden von Adobe Workfront Fusion mit Google Services mit aktualisierten Sicherheitsmaßnahmen
-description: Google has introduced restrictions on how users can use their API. This article describes how to connect Adobe Workfront Fusion to Google, accounting for these update security measures.
+description: Google hat Einschränkungen für die Verwendung seiner API eingeführt. In diesem Artikel wird beschrieben, wie Sie Adobe Workfront Fusion mit Google verbinden, wobei diese Sicherheitsmaßnahmen für die Aktualisierung berücksichtigt werden.
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
+TQID: https://experienceleague.adobe.com/R2hPx1AF2Vul-mQFWYiZLOm63-o6QIhgW1Azn9AMOIg
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: 804
 ht-degree: 18%
 
 ---
 
 # Verbinden von Adobe Workfront Fusion mit Google Services mit aktualisierten Sicherheitsmaßnahmen
 
-Google has introduced restrictions on how users can use their API. This article describes how to connect Adobe Workfront Fusion to Google, accounting for these update security measures.
+Google hat Einschränkungen für die Verwendung seiner API eingeführt. In diesem Artikel wird beschrieben, wie Sie Adobe Workfront Fusion mit Google verbinden, wobei diese Sicherheitsmaßnahmen für die Aktualisierung berücksichtigt werden.
 
 ## Zugriffsanforderungen
 
@@ -53,29 +56,29 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 +++
 
-## Google Services restrictions
+## Einschränkungen bei Google Services
 
-Google introduced restrictions on how users can use their API as of June 1st, 2020. These security measures protect Google users from leakage or misuse of their personal data on Google.
+Google hat ab dem 1. Juni 2020 Einschränkungen für die Verwendung seiner API eingeführt. Diese Sicherheitsmaßnahmen schützen Google-Benutzer vor unbeabsichtigten oder missbräuchlichen Verwendungen ihrer personenbezogenen Daten in Google.
 
-These restrictions are related to the Gmail and Google Drive apps.
+Diese Einschränkungen beziehen sich auf die Apps Gmail und Google Drive.
 
-For more information about these restrictions, see &quot;Additional Requirements for Specific API Scopes&quot; in the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes)
+Weitere Informationen zu diesen Einschränkungen finden Sie unter „Zusätzliche Anforderungen für bestimmte API-Bereiche“ in der [Benutzerdatenrichtlinie für Google-API-Services](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes)
 
-To access restricted scopes, the connected service (Adobe Workfront Fusion or any other service that accesses the user&#39;s data via the API) must be verified, and must have a Letter of Assessment to prove that the service is secure and transparent about how they use the data. Workfront Fusion complies with all of Google&#39;s requirements for access to restricted scopes. However, most of the third-party connected services in Workfront Fusion don&#39;t have the Letter of Assessment, and therefore don&#39;t comply with Google terms. Because of that, Workfront Fusion is not permitted to send data to these services.
+Um auf eingeschränkte Bereiche zugreifen zu können, muss der verbundene Dienst (Adobe Workfront Fusion oder jeder andere Dienst, der über die API auf die Daten des Benutzers zugreift) überprüft werden. Außerdem muss er über ein Bewertungsschreiben verfügen, um nachzuweisen, dass der Dienst bei der Verwendung der Daten sicher und transparent ist. Workfront Fusion erfüllt alle Google-Anforderungen für den Zugriff auf eingeschränkte Bereiche. Allerdings verfügen die meisten der mit Workfront Fusion verbundenen Services von Drittanbietern nicht über das Beurteilungsschreiben und erfüllen daher nicht die Google-Bedingungen. Aus diesem Grund ist es Workfront Fusion nicht gestattet, Daten an diese Services zu senden.
 
-## Exceptions to Google Services restrictions
+## Ausnahmen von den Google Services-Einschränkungen
 
-There are a few exceptions that make it possible to send data to an unapproved third-party service that doesn&#39;t have the Letter of Assessment without violating any of the new restrictions. They differ based on Google Workspace with the Workfront Fusion OAuth client, Google Workspace with another OAuth client, or @gmail.com and @googlemail.com.
+Es gibt einige Ausnahmen, die es ermöglichen, Daten an einen nicht genehmigten Drittanbieterdienst zu senden, der nicht über das Begutachtungsschreiben verfügt, ohne die neuen Einschränkungen zu verletzen. Sie unterscheiden sich je nach Google Workspace mit dem Workfront Fusion OAuth-Client, Google Workspace mit einem anderen OAuth-Client oder @gmail.com und @googlemail.com.
 
-* [Google Workspace with Workfront Fusion OAuth client](#google-workspace-with-workfront-fusion-oauth-client)
-* [Google Workspace with another OAuth client](#google-workspace-with-another-oauth-client)
-* [@gmail.com and @googlemail.com](#gmailcom-and-googlemailcom)
+* [Google Workspace mit Workfront Fusion OAuth-Client](#google-workspace-with-workfront-fusion-oauth-client)
+* [Google Workspace mit einem anderen OAuth-Client](#google-workspace-with-another-oauth-client)
+* [@gmail.com und @googlemail.com](#gmailcom-and-googlemailcom)
 
-### Google Workspace with Workfront Fusion OAuth client
+### Google Workspace mit Workfront Fusion OAuth-Client
 
-Workfront Fusion uses the Domain-wide Installation exception. Domain-wide Installation is suited for Google Workspace users, and allows users to integrate unapproved services without any limitations. If you are a Google Workspace user, you don&#39;t have to perform any additional steps and can directly connect to unapproved services.
+Workfront Fusion verwendet die Domain-weite Installationsausnahme. Die Domain-weite Installation ist für Benutzende von Google Workspace geeignet und ermöglicht es Benutzenden, nicht genehmigte Services ohne Einschränkungen zu integrieren. Wenn Sie ein Google Workspace-Benutzer sind, müssen Sie keine zusätzlichen Schritte ausführen und können direkt eine Verbindung zu nicht genehmigten Services herstellen.
 
-### Google Workspace with another OAuth client
+### Google Workspace mit einem anderen OAuth-Client
 
 Google Workspace-Benutzende, die lieber ihren eigenen OAuth-Client statt des Workfront Fusion-OAuth-Clients verwenden, können sich über den Internal Use-Ansatz mit Google Services verbinden. Diese Option ist für fortgeschrittene Benutzer gedacht. Anweisungen finden Sie unter [Verbinden von Adobe Workfront Fusion mit Google Services mithilfe eines benutzerdefinierten OAuth-Clients](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 

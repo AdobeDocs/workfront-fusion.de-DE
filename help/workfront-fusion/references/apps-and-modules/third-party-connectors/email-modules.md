@@ -1,19 +1,22 @@
 ---
 title: E-Mail-Module
-description: In einem Adobe Workfront Fusion-Szenario können Sie Ihr E-Mail-Konto mit mehreren Anwendungen und Services von Drittanbietern verbinden. Damit können Sie E-Mails über IMAP herunterladen, E-Mails über SMTP senden, neue Entwürfe erstellen, E-Mails von einem Ordner in einen anderen verschieben und kopieren, E-Mails als gelesen oder ungelesen markieren und E-Mails löschen.
+description: In einem Adobe Workfront Fusion-Szenario können Sie Ihr E-Mail-Konto mit mehreren Anwendungen und Services von Drittanbietern verbinden.Auf diese Weise können Sie E-Mails über IMAP herunterladen, E-Mails über SMTP senden, neue Entwürfe erstellen, E-Mails von einem Ordner in einen anderen verschieben und kopieren, E-Mails als gelesen oder ungelesen markieren und E-Mails löschen.
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: 2507
 ht-degree: 11%
 
 ---
 
 # E-Mail-Module
 
-In einem Adobe Workfront Fusion-Szenario können Sie Ihr E-Mail-Konto mit mehreren Anwendungen und Services von Drittanbietern verbinden. Damit können Sie E-Mails über IMAP herunterladen, E-Mails über SMTP senden, neue Entwürfe erstellen, E-Mails von einem Ordner in einen anderen verschieben und kopieren, E-Mails als gelesen oder ungelesen markieren und E-Mails löschen.
+In einem Adobe Workfront Fusion-Szenario können Sie Ihr E-Mail-Konto mit mehreren Anwendungen und Services von Drittanbietern verbinden.Auf diese Weise können Sie E-Mails über IMAP herunterladen, E-Mails über SMTP senden, neue Entwürfe erstellen, E-Mails von einem Ordner in einen anderen verschieben und kopieren, E-Mails als gelesen oder ungelesen markieren und E-Mails löschen.
 
 ## Zugriffsanforderungen
 
@@ -130,7 +133,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue E-Mail zur Verarbeitun
    <td> <p>Wählen Sie den Ordner aus, der E-Mails enthält, die Sie beobachten möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Kriterien]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Kriterien]</p> </td> 
    <td> <p>Wählen Sie die Kriterien aus, nach denen Sie E-Mails ansehen möchten:</p> 
     <ul> 
      <li>[!UICONTROL Alle E-Mails]</li> 
@@ -224,7 +227,7 @@ Dieses Aktionsmodul erstellt einen neuen Entwurf und fügt ihn einem ausgewählt
    <td> <p>Geben Sie die Betreffzeile der E-Mail ein oder mappen Sie sie.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Inhalt] </td> 
+   <td role="rowheader">[!UICONTROL-Inhalt] </td> 
    <td> <p>Geben Sie den E-Mail-Inhalt im HTML-Format mit HTML-Tags oder im Nur-Text-Format ein oder mappen Sie ihn.</p> </td> 
   </tr> 
   <tr> 
@@ -232,7 +235,7 @@ Dieses Aktionsmodul erstellt einen neuen Entwurf und fügt ihn einem ausgewählt
    <td> <p>Klicken Sie für jeden Anhang, den Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Dateiname]</strong> </p> <p>Geben Sie den Dateinamen einschließlich der Erweiterung ein. </p> </li> 
-     <li> <p><strong>[!UICONTROL -Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
+     <li> <p><strong>[!UICONTROL-Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL content-ID]</strong> </p> <p>Geben Sie die Inhalts-ID ein, um den Anhang (Bild) in den Inhalt einzufügen.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -308,7 +311,7 @@ Dieses Aktionsmodul entfernt eine E-Mail oder einen Entwurf aus dem ausgewählte
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL löschen]</td> 
-   <td> <p>Aktivieren Sie diese Option, um alle Nachrichten, die im aktuell geöffneten Postfach als [!UICONTROL Deleted] gekennzeichnet sind, dauerhaft zu entfernen.</p> <p>Hinweis: In [!DNL Gmail] wird dieses Verhalten durch die Einstellung im Abschnitt [!UICONTROL -Einstellungen] &gt;[!UICONTROL Weiterleitung POP/IMAP im IMAP-Zugriff] gesteuert.</p> </td> 
+   <td> <p>Aktivieren Sie diese Option, um alle Nachrichten, die im aktuell geöffneten Postfach als [!UICONTROL Deleted] gekennzeichnet sind, dauerhaft zu entfernen.</p> <p>Hinweis: In [!DNL Gmail] wird dieses Verhalten durch die Einstellung im Abschnitt [!UICONTROL-Einstellungen] &gt;[!UICONTROL Weiterleitung POP/IMAP im IMAP-Zugriff] gesteuert.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -334,7 +337,7 @@ Dieses Modul gibt E-Mails zurück, die den angegebenen Kriterien entsprechen.
    <td> <p>Aktivieren Sie diese Option, wenn Sie die ungelesene E-Mail nach dem Abrufen der Details als gelesen markieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Kriterien]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Kriterien]</p> </td> 
    <td> <p>Wählen Sie die Kriterien der E-Mails aus, die Sie abrufen möchten:</p> 
     <ul> 
      <li>[!UICONTROL Alle E-Mails]</li> 
@@ -487,7 +490,7 @@ Sendet eine neue E-Mail.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Inhalt] </td> 
+   <td role="rowheader">[!UICONTROL-Inhalt] </td> 
    <td> <p>Geben Sie den E-Mail-Inhalt im HTML-Format mithilfe von HTML-Tags ein oder ordnen Sie ihn zu oder im Klartext, je nachdem, was Sie im Feld [!UICONTROL Content Type] ausgewählt haben.</p> </td> 
   </tr> 
   <tr> 
@@ -495,7 +498,7 @@ Sendet eine neue E-Mail.
    <td> <p>Klicken Sie für jeden Anhang, den Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie Folgendes ein:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Dateiname]</strong> </p> <p>Geben Sie den Dateinamen einschließlich der Erweiterung ein. </p> </li> 
-     <li> <p><strong>[!UICONTROL -Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
+     <li> <p><strong>[!UICONTROL-Daten]</strong> </p> <p>Geben Sie den Pfad zu dem Ordner ein, in den Sie die Anlage hochladen möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL content-ID]</strong> </p> <p>Geben Sie die Inhalts-ID ein, um den Anhang (Bild) in den Inhalt einzufügen.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -542,7 +545,7 @@ Sendet eine neue E-Mail.
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL from] </td> 
-   <td> <p>Geben Sie die E-Mail-Adresse (und ggf. den Namen) ein, die im Feld [!UICONTROL Von] in der E-Mail angezeigt wird, oder ordnen Sie sie zu. </p> <p>Wichtig: Verwenden Sie die richtige Syntax: <code>name@email.com</code> oder <code>"Name" name@email.com</code>.</p> <p>Hinweis: Normalerweise verwendet Workfront Fusion die E-Mail-Adresse, die Sie beim Erstellen der Verbindung eingegeben haben, als Absenderadresse. Wenn Sie eine andere E-Mail-Adresse eingeben, kann beim Senden einer Nachricht ein Fehler auftreten, da Ihr Konto möglicherweise nicht berechtigt ist, E-Mails von einer anderen Adresse als Ihrer eigenen zu senden. Z. B. <code>test@mail.com</code> oder "<code>John Bush" test@email.com</code>.</p> </td> 
+   <td> <p>Geben Sie die E-Mail-Adresse (und ggf. den Namen) ein, die im Feld [!UICONTROL Von] in der E-Mail angezeigt wird, oder ordnen Sie sie zu. </p> <p>Wichtig: Verwenden Sie die richtige Syntax: <code>name@email.com</code> oder <code>"Name" name@email.com</code>.</p> <p>Hinweis: Normalerweise verwendet Workfront Fusion die E-Mail-Adresse, die Sie beim Erstellen der Verbindung eingegeben haben, als Absenderadresse. Wenn Sie eine andere E-Mail-Adresse eingeben, kann beim Senden einer Nachricht ein Fehler auftreten, da Ihr Konto möglicherweise nicht berechtigt ist, E-Mails von einer anderen Adresse als Ihrer eigenen zu senden. E.g. <code>test@mail.com</code> oder "<code>John Bush" test@email.com</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

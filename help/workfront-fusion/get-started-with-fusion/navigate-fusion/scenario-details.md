@@ -1,17 +1,19 @@
 ---
-title: Übersicht über Szenario-Details
+title: Überblick über Szenario-Details
 description: Szenariodetails in Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
+TQID: https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 1%
+source-wordcount: 576
+ht-degree: 18%
 
 ---
 
-# Übersicht über Szenario-Details
+# Überblick über Szenario-Details
 
 Die Seite mit den Szenario-Details ist die Startseite eines bestimmten Szenarios. Sie bietet Zugriff auf bestimmte Informationen für das Szenario, das auf der Seite dargestellt wird.
 
@@ -21,7 +23,7 @@ Weitere Informationen zum Szenario-Editor finden Sie unter [Der Szenario-Editor]
 
 ## Zugriffsanforderungen
 
-+++ Erweitern Sie , um die Zugriffsanforderungen für die -Funktion in diesem Artikel anzuzeigen.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
 <table style="table-layout:auto">
  <col> 
@@ -29,22 +31,22 @@ Weitere Informationen zum Szenario-Editor finden Sie unter [Der Szenario-Editor]
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Jedes Adobe Workfront-Workflow-Paket und jedes Adobe Workfront-Automatisierungs- und Integrationspaket</p><p>Workfront Ultimate</p><p>Workfront Prime und Select-Pakete, mit einem zusätzlichen Kauf von Workfront Fusion.</p> </td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Arbeit oder höher</p> </td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Produkt</td> 
    <td>
-   <p>Wenn Ihr Unternehmen über ein Select- oder Prime Workfront-Paket verfügt, das keine Workfront-Automatisierung und -Integration enthält, muss Ihr Unternehmen Adobe Workfront Fusion erwerben.</li></ul>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -52,7 +54,7 @@ Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Z
 
 1. Klicken Sie **[!UICONTROL linken Panel auf]** Registerkarte „Szenario“ und dann auf ein Szenario, zu dem Sie Details anzeigen möchten.
 
-   Oder
+   ODER
 
    Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil „Bearbeitung beenden](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
@@ -103,7 +105,7 @@ Weitere Informationen zu den Informationen in dieser Tabelle finden Sie unter [Z
       <td>Klicken Sie auf das Szenario-Diagramm, um den Szenario-Editor zu öffnen und Änderungen an Ihrem Szenario vorzunehmen.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Optionen]</td> 
+      <td role="rowheader">[!UICONTROL Optionen]</td> 
       <td> <p>Dieses Menü bietet zusätzliche Optionen, ohne den Szenario-Editor öffnen zu müssen. Dazu gehören:</p> 
        <ul> 
         <li>[!UICONTROL Planung]</li> 

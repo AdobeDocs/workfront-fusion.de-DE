@@ -4,9 +4,12 @@ description: Die Adobe Workfront Fusion-JSON-App bietet Module zur Verarbeitung 
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/hyUiO-ocxPsI8Wz0A34ZZ2LyBNbJWGrY5CbquHVQvHI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: 1230
 ht-degree: 14%
 
 ---
@@ -135,7 +138,7 @@ Dieses Aggregator-Modul aggregiert die Ausgabe eines vorherigen Moduls in JSON.
    <td> <p>Wählen Sie das Modul aus, das die Daten ausgibt, die Sie in JSON aggregieren möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Datenstruktur]</td> 
+   <td role="rowheader">[!UICONTROL-Datenstruktur]</td> 
    <td> <p>Wählen Sie die Datenstruktur aus, die Sie zum Erstellen von JSON verwenden möchten. Die Datenstruktur bestimmt, welche anderen Felder in diesem Modul verfügbar sind. Weitere Informationen finden Sie unter <a href="#data-structure" class="MCXref xref">Datenstruktur</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -203,7 +206,7 @@ Dieses Aktionsmodul analysiert eine JSON-Zeichenfolge in eine Datenstruktur, mit
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Datenstruktur]</td> 
+   <td role="rowheader">[!UICONTROL-Datenstruktur]</td> 
    <td> <p>Wählen Sie die Datenstruktur aus, die Sie zum Erstellen von JSON verwenden möchten. Weitere Informationen finden Sie unter <a href="#data-structure" class="MCXref xref">Datenstruktur</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
@@ -279,7 +282,7 @@ Dieses Aktionsmodul wandelt ein -Objekt in eine JSON-Zeichenfolge um.
 
 ## Fehlerbehebung
 
-### Daten aus dem Modul [!UICONTROL JSON analysieren“ können nicht &#x200B;] werden
+### Daten aus dem Modul [!UICONTROL JSON analysieren“ können nicht ] werden
 
 Stellen Sie sicher, dass der JSON-Inhalt ordnungsgemäß dem [!UICONTROL Parse JSON]-Modul zugeordnet ist und dass die Datenstruktur korrekt definiert ist. Weitere Informationen finden Sie unter [Umwandeln von Datensätzen in JSON](#transforming-data-records-to-json) in diesem Artikel.
 

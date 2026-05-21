@@ -4,9 +4,12 @@ description: Sie können das Text-Parser-Tool verwenden, um Text zu analysieren,
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 5be274105bf13a48e7e76eaa6bd3b62c315f97a9
+TQID: https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: 1324
 ht-degree: 11%
 
 ---
@@ -183,7 +186,7 @@ Eine Diskussion über reguläre Ausdrücke würde den Rahmen dieses Artikels spr
   </tr> 
   <tr> 
    <td>[!UICONTROL SingleLine]</td> 
-   <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Punkt (.) mit Zeilenumbruchzeichen (<code>\n</code>) übereinstimmt.</td> 
+   <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Zeitraum (.) Entspricht Zeilenumbruchzeichen (<code>\n</code>).</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Die Routenausführung auch dann fortsetzen, wenn das Modul keine Ergebnisse zurückgibt]</td> 
@@ -226,7 +229,7 @@ Durchsucht den eingegebenen Text nach einem angegebenen Wert oder regulären Aus
   </tr> 
   <tr> 
    <td>[!UICONTROL SingleLine]</td> 
-   <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Punkt (.) mit Zeilenumbruchzeichen (<code>\n</code>) übereinstimmt.</td> 
+   <td>Aktivieren Sie diese Option, um sicherzustellen, dass der Zeitraum (.) Entspricht Zeilenumbruchzeichen (<code>\n</code>).</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Text] </td> 
@@ -263,7 +266,7 @@ Der Grund dafür ist, dass das „i“ nur die Anzahl der Übereinstimmungen pro
 
 ![Übereinstimmung](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
-Um die Übereinstimmungswerte abzurufen, die Sie benötigen, um dem zu analysierenden Teil Klammern hinzuzufügen (z. B. um nur aus „filename.docx“ - „docx“ zu extrahieren), sollten die Klammern gemäß dem Regex-Ausdruck, den wir für dieses Szenario verwenden, auf \ angewendet werden.(.+)
+Um die Übereinstimmungswerte abzurufen, die Sie benötigen, um dem zu analysierenden Teil Klammern hinzuzufügen (z. B. um nur aus „filename.docx“ - „docx“ zu extrahieren), sollten die Klammern gemäß dem Regex-Ausdruck, den wir für dieses Szenario verwenden, auf \.(.+) angewendet werden.
 
 Erfasst das DOCX, platziert es in einer Gruppe und lässt das &quot;.“ Raus damit.
 

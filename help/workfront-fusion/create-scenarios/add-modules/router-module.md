@@ -4,9 +4,11 @@ description: Mit dem Router-Modul können Sie Ihren Fluss in mehrere Routen verz
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: c93a342c2300c5a008a95f180dfebd3abaeb95d0
+TQID: https://experienceleague.adobe.com/ZKrvE8zGuVmfPCTMx7LZHw979aPLo89lARWejMCSETs
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: 986
 ht-degree: 11%
 
 ---
@@ -70,7 +72,7 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 
 1. Um die Reihenfolge der Routen zu überprüfen, überprüfen Sie das Label für jede Route. Route 1 wird zuerst ausgeführt, dann Route 2 usw.
 
-   Oder
+   ODER
 
    Klicken Sie auf das Symbol für die automatische Ausrichtung ![Symbol für die automatische Ausrichtung](assets/auto-align.png).
 
@@ -84,7 +86,7 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 
    Deaktivierte Routen zeigen graue Punkte, die vom Router zum ersten Modul auf der Route führen, und zeigen das Symbol für deaktivierte Routen ![Symbol für deaktivierte Routen](assets/disabled-route-icon.png) auf dem Titel an.
 
-1. (Optional und bedingt) Um eine deaktivierte Route zu aktivieren, klicken Sie auf das Symbol „Deaktivierte Route![&#x200B; auf &#x200B;](assets/disabled-route-icon.png) Routenbeschriftung.
+1. (Optional und bedingt) Um eine deaktivierte Route zu aktivieren, klicken Sie auf das Symbol „Deaktivierte Route![ auf ](assets/disabled-route-icon.png) Routenbeschriftung.
 1. Fahren Sie fort [Filter zu einer Route hinzufügen](#add-a-filter-to-a-route).
 
 ## Hinzufügen eines Filters zu einer Route
@@ -93,7 +95,7 @@ Sie können nach dem Router-Modul einen Filter für eine Route einfügen, um Pak
 
 Wenn Daten den Filter mehrerer Routen übergeben, werden die Daten von beiden Routen verarbeitet. Die Top-Route verarbeitet die Daten zuerst.
 
-Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) &#x200B;](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
+Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) ](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
