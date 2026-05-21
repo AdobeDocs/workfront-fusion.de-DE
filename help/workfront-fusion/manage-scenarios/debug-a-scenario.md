@@ -28,7 +28,7 @@ Das Adobe Workfront Fusion-DevTool hilft Ihnen, Szenarien zu verstehen und Fehle
 Eine Videoeinführung und exemplarische Anleitung für das Fusion DevTool finden Sie unter
 
 * [Fusion-Entwicklungstool](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Anleitung für Entwickler](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
+* [Anleitung für Entwickler](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=de)
 
 ## Zugriffsanforderungen
 
