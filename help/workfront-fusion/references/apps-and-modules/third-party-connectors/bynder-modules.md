@@ -5,8 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
 TQID: https://experienceleague.adobe.com/2NCbEM8bb0s7m30uCFTWK-wYdhCYKEZC-W01Zr21mRw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1863
@@ -102,7 +105,7 @@ Sie können direkt aus einem [!DNL Bynder]-Modul heraus eine Verbindung von Work
 
    Anweisungen zum Generieren der Client-ID und des Client-Geheimnisses finden Sie unter [Generieren einer Client-ID und eines Client-Geheimnisses in [!DNL Bynder] (optional)](#generate-a-client-id-and-client-secret-in-bynder-optional) in diesem Artikel.
 
-1. Geben [!UICONTROL  im Fenster &quot;]&quot; Ihren Benutzernamen (E-Mail-Adresse) und Ihr Passwort ein.
+1. Geben [!UICONTROL &#x200B; im Fenster &quot;]&quot; Ihren Benutzernamen (E-Mail-Adresse) und Ihr Passwort ein.
 1. Klicken Sie auf **[!UICONTROL Fortsetzen]**, um die Verbindung zu erstellen und zum Modul zurückzukehren.
 
 ### Generieren einer [!UICONTROL Client-ID] und [!UICONTROL Client-]) in [!DNL Bynder] (optional)
@@ -180,7 +183,7 @@ Dieses Aktionsmodul fügt ein oder mehrere Assets zu einer Sammlung hinzu.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Sammlungs-ID]</td> 
+   <td role="rowheader">[!UICONTROL -Sammlungs-ID]</td> 
    <td> <p>Geben Sie die ID der Sammlung ein, der Sie Assets hinzufügen möchten, oder mappen Sie sie.</p> <p> </p> </td> 
   </tr> 
   <tr> 
@@ -314,7 +317,7 @@ Dieses Aktionsmodul entfernt ein oder mehrere Assets aus einer Sammlung.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Bynder]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Bynder] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Sammlungs-ID]</td> 
+   <td role="rowheader">[!UICONTROL -Sammlungs-ID]</td> 
    <td> <p>Geben Sie die ID der Sammlung ein, aus der Sie Assets entfernen möchten, oder mappen Sie sie.</p> <p> </p> </td> 
   </tr> 
   <tr> 
@@ -435,7 +438,7 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Assets.
    <td role="rowheader">[!UICONTROL Suchkriterien]</td> 
    <td> <p>Geben Sie die Suchkriterien ein. </p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL-Feld]</strong> </p> <p>Wählen Sie das Feld aus, das Sie für Ihre Suche verwenden möchten</p> </li> 
+     <li> <p><strong>[!UICONTROL -Feld]</strong> </p> <p>Wählen Sie das Feld aus, das Sie für Ihre Suche verwenden möchten</p> </li> 
      <li> <p><strong>[!UICONTROL Logischer Operator]</strong> </p> <p>Wählen Sie den Operator aus, den Sie für Ihre Suche verwenden möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL value]</strong> </p> <p>Geben Sie den Wert, nach dem im ausgewählten Feld gesucht werden soll, ein oder ordnen Sie ihn zu. Der Werttyp sollte mit dem Datentyp des ausgewählten Felds übereinstimmen. </p> <p>Weitere Informationen zu Datentypen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Elementdatentypen</a>.</p> </li> 
     </ul> </td> 
