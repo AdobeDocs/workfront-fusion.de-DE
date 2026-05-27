@@ -1036,7 +1036,7 @@ Dieses Instant-Trigger-Modul startet ein Szenario, wenn ein Element in SharePoin
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
--->
+  -->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Wählen Sie einen vorhandenen Webhook aus oder klicken Sie auf Hinzufügen und geben Sie die Verbindung ein, um einen neuen Webhook zu erstellen.</p> 
