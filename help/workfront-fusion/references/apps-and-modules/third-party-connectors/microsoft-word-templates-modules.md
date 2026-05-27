@@ -5,8 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
 TQID: https://experienceleague.adobe.com/oP6roNkIFZJ3kCdRiE1MtmYuNQFRrcNJRPMESXP-2Sw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1363
@@ -187,7 +190,7 @@ Mit diesem Transformatormodul können Sie ein Dokument mit von Ihnen angegebenen
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Datenquelle]</td> 
+   <td role="rowheader">[!UICONTROL -Datenquelle]</td> 
    <td> <p>Wählen Sie eine Option aus, um anzugeben, ob die von Ihnen verwendeten Daten aus einem Formular oder aus einer Rohdatenerfassung (nicht verarbeitete Computerdaten) stammen.</p> </td> 
   </tr> 
   <tr> 
