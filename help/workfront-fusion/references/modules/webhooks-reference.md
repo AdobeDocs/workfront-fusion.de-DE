@@ -7,9 +7,9 @@ exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
 TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
 workflow-type: tm+mt
-source-wordcount: 1272
+source-wordcount: 1300
 ht-degree: 10%
 
 ---
@@ -82,6 +82,10 @@ Eine Liste von Webhooks finden Sie im Bereich Webhooks .
 1. Um die Priorität für einen Webhook festzulegen, klicken Sie auf das Dropdown-Menü in der Spalte Priorität und wählen Sie die neue Priorität aus.
 
    Webhooks mit höherer Priorität werden zuerst behandelt, was von Vorteil sein kann, wenn ein Worker-Pool viele Automatisierungen hat, die um Ressourcen konkurrieren.
+
+   >[!NOTE]
+   >
+   >Nur Benutzer mit der Rolle [!UICONTROL Team-]) oder mit der Rolle [!UICONTROL Administrator] oder [!UICONTROL Eigentümer] können die Priorität eines Webhooks ändern. Für andere Benutzer ist das Dropdown-Menü Priorität deaktiviert.
 1. Um einen Webhook zu deaktivieren oder zu aktivieren, deaktivieren oder aktivieren Sie den Umschalter in der Spalte Status in der Zeile für diesen Webhook.
 1. Um festzustellen, ob eine Webhooks-Warteschlange voll ist, überprüfen Sie die Spalte Vollständige Warteschlange . Die Zahl in dieser Spalte ist die Anzahl der Elemente, die sich derzeit in der Warteschlange befinden.
 1. Um die von einem Webhook verarbeiteten Vorgänge anzuzeigen, klicken Sie **Vorgänge** in der Spalte „Vollständige Warteschlange“ für diesen Webhook.
