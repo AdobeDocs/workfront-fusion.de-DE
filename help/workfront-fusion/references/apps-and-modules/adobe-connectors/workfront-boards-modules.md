@@ -5,12 +5,9 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
 TQID: https://experienceleague.adobe.com/0yHy2mMpsOxPH-cphARzE3LmIlAmYLNQTpXxFgb6dvo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2906
@@ -541,7 +538,7 @@ Dieses Aktionsmodul hat einen Kommentar auf der angegebenen Karte erstellt.
    <td>Geben Sie die ID der Karte ein, der Sie einen Kommentar hinzufügen möchten, oder mappen Sie sie.<p>Die Karten-ID finden Sie in der URL, wenn Sie die Karte in Workfront anzeigen.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Kommentar]</td> 
+   <td>[!UICONTROL-Kommentar]</td> 
    <td>Geben Sie den Text des Kommentars ein, den Sie hinzufügen möchten, oder mappen Sie ihn.</p></td> 
   </tr> 
  </tbody> 
@@ -628,7 +625,7 @@ Dieses Aktionsmodul führt eine benutzerdefinierte GraphQL-Anfrage an die Workfr
    <td> <p>Wählen Sie die Methode für diesen Aufruf. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
    <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> </td> 
   </tr> 
   <tr> 
@@ -636,11 +633,11 @@ Dieses Aktionsmodul führt eine benutzerdefinierte GraphQL-Anfrage an die Workfr
    <td> <p>Geben Sie einen Namen für diesen Vorgang ein. Dies kann das Tracking und Debugging des Aufrufs vereinfachen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Variablen, Datenquelle]</td> 
+   <td role="rowheader">[!UICONTROL-Variablen, Datenquelle]</td> 
    <td> <p>Auswählen, ob die Variablen aus einem Formular oder aus einer Sammlung stammen sollen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Variablen]</td> 
+   <td role="rowheader">[!UICONTROL-Variablen]</td> 
    <td> <p>Klicken Sie für jede Variable, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Schlüssel und den Wert der Variablen ein.</p> </td> 
   </tr> 
   <tr> 
