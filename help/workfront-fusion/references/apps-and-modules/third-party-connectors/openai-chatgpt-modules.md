@@ -5,10 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c8138d82-fa5a-4e69-b3cb-aa232099cb33
 TQID: https://experienceleague.adobe.com/1k6WyDRiula-WnmQkPxPSeASokz25JpE4dp1eeSo7K8
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1456
@@ -174,7 +172,7 @@ Dieses Aktionsmodul ermittelt, ob Text gegen die Inhaltsrichtlinie von OpenAI ve
    <td> Klicken Sie für jedes Textbeispiel, das Sie einbeziehen möchten, auf <b>Element hinzufügen</b> und geben Sie den Text ein oder ordnen Sie ihn zu. Einschließen des gesamten Textbeispiels.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modell]</td> 
+   <td role="rowheader">[!UICONTROL-Modell]</td> 
    <td> Geben Sie die ID des zu verwendenden Modells ein oder mappen Sie sie. Mit dem Modul Modelle abrufen können Sie alle verfügbaren Modelle anzeigen. </td> 
   </tr> 
  </tbody> 
@@ -193,7 +191,7 @@ Dieses Aktionsmodul gibt eine bearbeitete Version einer von Ihnen bereitgestellt
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modell]</td> 
+   <td role="rowheader">[!UICONTROL-Modell]</td> 
    <td> Geben Sie die ID des zu verwendenden Modells ein oder mappen Sie sie. Mit dem Modul Modelle abrufen können Sie alle verfügbaren Modelle anzeigen. </td> 
   </tr> 
   <tr> 
@@ -201,7 +199,7 @@ Dieses Aktionsmodul gibt eine bearbeitete Version einer von Ihnen bereitgestellt
    <td> Geben Sie den Text ein, den Sie bearbeiten möchten, oder ordnen Sie ihn zu. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Anweisung]</td> 
+   <td role="rowheader">[!UICONTROL-Anweisung]</td> 
    <td> Geben Sie die Anweisungen für die Bearbeitung ein oder ordnen Sie sie zu. Beispiel: „Korrigieren Sie die Rechtschreibfehler.“ </td> 
   </tr> 
   <tr> 
@@ -224,7 +222,7 @@ Dieses Aktionsmodul erstellt einen Einbettungsvektor, der den Eingabetext darste
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modell]</td> 
+   <td role="rowheader">[!UICONTROL-Modell]</td> 
    <td> Geben Sie die ID des zu verwendenden Modells ein oder mappen Sie sie. Mit dem Modul Modelle abrufen können Sie alle verfügbaren Modelle anzeigen. </td> 
   </tr> 
   <tr> 
@@ -255,11 +253,11 @@ Dieses Aktionsmodul gibt bei einer Liste von Nachrichten, die eine Konversation 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL OpenAI (ChatGPT & DALL-E)]-Kontos mit Workfront Fusion finden Sie <a href="#connecting-openaichatgpt-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL OpenAI (ChatGPT & DALL-E)] mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Modell]</td> 
+   <td role="rowheader">[!UICONTROL-Modell]</td> 
    <td> Geben Sie die ID des zu verwendenden Modells ein oder mappen Sie sie. Mit dem Modul Modelle abrufen können Sie alle verfügbaren Modelle anzeigen. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Nachrichten]</td> 
+   <td role="rowheader">[!UICONTROL-Nachrichten]</td> 
    <td>Nachrichten beschreiben das bisherige Gespräch. Klicken Sie für jede Nachricht, die Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und füllen Sie Folgendes aus:
    <ul>
    <li> <b>Rolle</b>: Wählen Sie die Rolle des Autors dieser Nachricht aus.</li>

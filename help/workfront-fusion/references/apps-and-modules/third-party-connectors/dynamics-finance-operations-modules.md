@@ -5,10 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 96f8d4f1-f97b-4da8-8d82-83cccb54ec68
 TQID: https://experienceleague.adobe.com/MSvJMXg8hyI8piqHpn1OnEPEoCcP1Tn-za1veFtHeIo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1147
@@ -146,7 +144,7 @@ Dieses Aktionsmodul erstellt ein neues Entitätselement in Microsoft Dynamics 36
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL -Entität]</td>
+    <td>[!UICONTROL-Entität]</td>
      <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, den Sie erstellen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -171,7 +169,7 @@ Dieses Aktionsmodul löscht ein Entitätselement aus Dynamics Finance and Operat
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL -Entität]</td>
+    <td>[!UICONTROL-Entität]</td>
      <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, den Sie löschen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -234,7 +232,7 @@ Dieses Aktionsmodul gibt Daten aus einem Entitätselement zurück. Das Element w
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL -Entität]</td>
+    <td>[!UICONTROL-Entität]</td>
      <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, den Sie lesen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
@@ -255,7 +253,7 @@ Dieses Aktionsmodul gibt Daten aus einem Entitätselement zurück. Das Element w
     <td> <p>Anweisungen zum Verbinden von Microsoft Dynamics 365 Finance and Operations mit Workfront Fusion finden Sie <a href="#create-a-connection" class="MCXref xref">Erstellen einer Verbindung</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-    <td>[!UICONTROL -Entität]</td>
+    <td>[!UICONTROL-Entität]</td>
      <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, den Sie aktualisieren möchten, oder ordnen Sie ihn zu.</td> 
   </tr>  
   <tr> 
@@ -282,7 +280,7 @@ Dieses Suchmodul gibt Ergebnisse basierend auf von Ihnen angegebenen Kriterien z
    <td> <p>Anweisungen zum Verbinden Ihrer Workfront-Anwendung mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront mit Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Entität]</td> 
+   <td>[!UICONTROL-Entität]</td> 
    <td>Geben Sie den Entitätstyp Dynamics Finance and Operations ein, nach dem Sie suchen möchten, oder ordnen Sie ihn zu.</td> 
   </tr> 
   <tr> 
