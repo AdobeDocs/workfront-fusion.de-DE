@@ -5,8 +5,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 80899745-de1e-4fa8-a398-e5e8e35aa6f4
 TQID: https://experienceleague.adobe.com/1cqWKL8dU7DQmLbQz8ig9az1pcDz1AOSE8G0RAOExss
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 308
@@ -28,7 +27,7 @@ Teams sind Benutzergruppen, die den Zugriff auf bestimmte Ressourcen gemeinsam n
 
 Sie können eine Liste der Teams Ihrer Organisation anzeigen und die Namen der Teams bearbeiten.
 
-Informationen zum Hinzufügen von Benutzern zu Teams finden [&#x200B; unter „Hinzufügen eines Benutzers zu einem Team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
+Informationen zum Hinzufügen von Benutzern zu Teams finden [ unter „Hinzufügen eines Benutzers zu einem Team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Zugriffsanforderungen
 
