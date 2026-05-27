@@ -5,10 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
 TQID: https://experienceleague.adobe.com/fHIb5n3hU15APXxrrQiEmT-KS9aIlN-4hjUByFfpG-I
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 4621
@@ -142,7 +140,7 @@ Dieses Aktionsmodul erstellt eine neue Nachricht.
    <td> <p>Geben Sie den Textinhalt der Nachricht ein, die Sie erstellen möchten.</p> <p>Hinweis: Detaillierte Informationen zur Textformatierung finden Sie unter <a href="https://api.slack.com/reference/surfaces/formatting">Text für Programmoberflächen formatieren</a> in der [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Blöcke]</td> 
+   <td role="rowheader">[!UICONTROL-Blöcke]</td> 
    <td>Blöcke sind wiederverwendbare Komponenten, mit denen Sie Ihre Nachrichten anpassen und organisieren können. Weitere Informationen zu Blöcken finden Sie unter <a href="https://api.slack.com/block-kit">Blockkit</a> in der [!DNL Slack].</td> 
   </tr> 
   <tr> 
@@ -299,7 +297,7 @@ Dieses Suchmodul gibt Nachrichten zurück, die mit einer Suchanfrage übereinsti
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Slack]-Kontos mit [!DNL Workfront Fusion] finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Erstellen einer Verbindung zu [!DNL Adobe Workfront Fusion] - Grundlegende Anweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
    <td> <p>Geben Sie die Abfrage ein, nach der Sie suchen möchten. </p> <p>Informationen zum Erstellen von Formeln im Zuordnungsbereich finden Sie unter <a href="/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md" class="MCXref xref">Zuordnen von Elementen mithilfe integrierter Funktionen in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -344,7 +342,7 @@ Mit diesem Aktionsmodul können Sie eine vorhandene Nachricht bearbeiten.
    <td> <p>Geben Sie den neuen Textinhalt der Nachricht ein, die Sie aktualisieren möchten.</p> <p>Weitere Informationen finden Sie unter <a href="https://api.slack.com/docs/formatting">Text für Programmoberflächen formatieren</a> in der [!DNL Slack].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Blöcke]</td> 
+   <td role="rowheader">[!UICONTROL-Blöcke]</td> 
    <td>Blöcke sind wiederverwendbare Komponenten, mit denen Sie Ihre Nachrichten anpassen und organisieren können. Weitere Informationen zu Blöcken finden Sie unter <a href="https://api.slack.com/block-kit">Blockkit</a> in der [!DNL Slack].</td> 
   </tr> 
   <tr> 
@@ -915,7 +913,7 @@ Dieses Aktionsmodul fügt einem Element eine Reaktion hinzu.
    <td> <p> Geben Sie den Zeitstempel der Nachricht ein, der eine Reaktion hinzugefügt werden soll, oder ordnen Sie ihn zu.</p> <p>Hinweis: Der Zeitstempel kann mit einem anderen Modul abgerufen werden, z. B. dem Modul [!UICONTROL Watch Private Channel].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name der-Reaktion (Emoji)]</td> 
+   <td role="rowheader">[!Name der UICONTROL-Reaktion (Emoji)]</td> 
    <td>Geben Sie den Namen des Emojis ein, das Sie für eine Reaktion verwenden möchten, oder mappen Sie ihn. Beispiel: <code>thumbsup</code>. </td> 
   </tr> 
  </tbody> 
@@ -973,7 +971,7 @@ Dieses Aktionsmodul entfernt eine Reaktion aus einem Element.
    <td> <p> Geben Sie den Zeitstempel der Nachricht ein, aus der Sie eine Reaktion entfernen möchten, oder ordnen Sie ihn zu.</p> <p>Hinweis: Der Zeitstempel kann mit einem anderen Modul abgerufen werden, z. B. dem Modul [!UICONTROL Watch Private Channel].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name der-Reaktion (Emoji)]</td> 
+   <td role="rowheader">[!Name der UICONTROL-Reaktion (Emoji)]</td> 
    <td>Geben Sie den Namen des Emojis ein, das Sie aus der Nachricht entfernen möchten, oder ordnen Sie ihn zu. Beispiel: <code>thumbsup</code>. </td> 
   </tr> 
  </tbody> 

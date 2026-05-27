@@ -5,13 +5,8 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
 TQID: https://experienceleague.adobe.com/bIhgpTsd4d1GOHARM2tYljUIJTt1JNRA-8JslmAuMRk
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 6796
@@ -131,7 +126,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine Vereinbarung erstellt oder 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text suchen]</td> 
-   <td> <p>Geben Sie Begriffe ein, nach denen Sie suchen möchten. Das -Modul gibt Datensätze zurück, die diese Begriffe als Feldwerte enthalten.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/de/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-Suche - Funktionsweise</a>.</p> </td> 
+   <td> <p>Geben Sie Begriffe ein, nach denen Sie suchen möchten. Das -Modul gibt Datensätze zurück, die diese Begriffe als Feldwerte enthalten.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-Suche - Funktionsweise</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Vereinbarungen]</td> 
@@ -166,7 +161,7 @@ Dieses Ereignismodul startet ein Trigger, wenn ein ausgewähltes Ereignis auftri
    <td role="rowheader">[!UICONTROL Bereiche]</td> 
    <td> 
     <ul> 
-     <li> <p>[!UICONTROL -Konto]</p> </li> 
+     <li> <p>[!UICONTROL-Konto]</p> </li> 
      <li> <p>[!UICONTROL Gruppe]</p> </li> 
      <li> <p>[!UICONTROL Benutzende]</p> </li> 
      <li> <p>[!UICONTROL Ressource]</p> <p>Wenn Sie [!UICONTROL Resource] auswählen, geben Sie die Ressourcen-ID und den Ressourcentyp ein.</p> </li> 
@@ -176,10 +171,10 @@ Dieses Ereignismodul startet ein Trigger, wenn ein ausgewähltes Ereignis auftri
    <td role="rowheader">[!UICONTROL Ressourcenebene]</td> 
    <td> <p>Wählen Sie den Ressourcentyp aus, den Sie überwachen möchten.</p> 
     <ul> 
-     <li> <p>[!UICONTROL -Vereinbarungen]</p> </li> 
+     <li> <p>[!UICONTROL-Vereinbarungen]</p> </li> 
      <li> <p>[!UICONTROL Widgets]</p> </li> 
      <li> <p>[!UICONTROL MegaSigns]</p> </li> 
-     <li> <p>[!UICONTROL -Bibliotheksdokumente]</p> </li> 
+     <li> <p>[!UICONTROL-Bibliotheksdokumente]</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -187,7 +182,7 @@ Dieses Ereignismodul startet ein Trigger, wenn ein ausgewähltes Ereignis auftri
    <td>Wählen Sie die [!DNL Adobe Sign] Ereignisse aus, die das Modul beobachten soll.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Anzeigename der-Anwendung]</td> 
+   <td role="rowheader">[!Anzeigename der UICONTROL-Anwendung]</td> 
    <td>Der Anzeigename der Anwendung, über die der Webhook erstellt wird.</td> 
   </tr> 
   <tr> 
@@ -199,7 +194,7 @@ Dieses Ereignismodul startet ein Trigger, wenn ein ausgewähltes Ereignis auftri
    <td> <p>Diese Einstellung funktioniert nur für Administratorkonten</p> <p>Klicken Sie für jede E-Mail-Adresse, an die Sie Benachrichtigungen zu Problemen senden möchten, auf <b>[!UICONTROL Hinzufügen]</b> und geben Sie die E-Mail-Adresse ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Bedingte Parameter der-Vereinbarung]</td> 
+   <td role="rowheader">[!Bedingte Parameter der UICONTROL-Vereinbarung]</td> 
    <td>Wenn Sie bedingte Parameter hinzufügen möchten, wählen Sie <b>[!UICONTROL Yes]</b> für den Datensatztyp aus, dem Sie Parameter hinzufügen möchten, und wählen Sie dann <b>[!UICONTROL Yes]</b> für alle Parameter aus, die Sie aktivieren möchten.</td> 
   </tr> 
  </tbody> 
@@ -243,7 +238,7 @@ Dieses Aktionsmodul erstellt einen neuen Datensatz des ausgewählten Typs.
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den Sie erstellen möchten.</p> 
     <ul> 
      <li> <p><b>[!UICONTROL Group]</b> </p> </li> 
-     <li> <p><b>[!UICONTROL -Bibliotheksdokument]</b> </p> </li> 
+     <li> <p><b>[!UICONTROL-Bibliotheksdokument]</b> </p> </li> 
      <li> <p><b>[!UICONTROL user]</b> </p> </li> 
      <li> <p><b>[!UICONTROL Web Form] ([!UICONTROL Widget])</b> </p> </li> 
     </ul> </td> 
@@ -286,7 +281,7 @@ Dieses Aktionsmodul erstellt einen neuen Datensatz des ausgewählten Typs.
      <li> <p><b>[!UICONTROL Vorname]</b> </p> <p>Geben Sie den Vornamen des Benutzers ein.</p> </li> 
      <li> <p><b>[!UICONTROL Nachname]</b> </p> <p>Geben Sie den Nachnamen des Benutzers ein</p> </li> 
      <li> <p><b>[!UICONTROL Firma]</b> </p> <p>Geben Sie den Namen der Firma des Benutzers ein.</p> </li> 
-     <li> <p><b>[!UICONTROL -Initialen]</b> </p> <p>Geben Sie die Initialen des Benutzers ein.</p> </li> 
+     <li> <p><b>[!UICONTROL-Initialen]</b> </p> <p>Geben Sie die Initialen des Benutzers ein.</p> </li> 
      <li> <p><b>[!UICONTROL locale]</b> </p> <p>Geben Sie das Gebietsschema des Benutzers ein. Dadurch wird die Sprache der Benutzeroberfläche bestimmt. </p> </li> 
      <li> <p><b>[!UICONTROL Phone]</b> </p> <p>Telefonnummer des Benutzers eingeben</p> </li> 
      <li> <p><b>Primäre Gruppen-ID</b> </p> <p>Geben Sie die Gruppe ein, der der neue Benutzer hinzugefügt wird. Wenn nichts eingegeben wird, wird der Benutzer der Standardgruppe für das Konto hinzugefügt.</p> </li> 
@@ -376,7 +371,7 @@ Dieses Aktionsmodul erstellt eine Vereinbarung, sendet sie zur Signatur und gibt
     <ul> 
      <li> <p><b>[!UICONTROL Dateityp]</b> </p> 
       <ul> 
-       <li> <p><b>[!UICONTROL -Dokument]</b> </p> <p>Füllen Sie die folgenden Felder aus:</p> 
+       <li> <p><b>[!UICONTROL-Dokument]</b> </p> <p>Füllen Sie die folgenden Felder aus:</p> 
         <ul> 
          <li> <p><b>[!UICONTROL Erstellungsdatum]</b> </p> <p>Geben Sie das Datum, an dem das Dokument erstellt wurde, im Format <code>yyyy-MM-dd'T'HH:mm:ssZ</code> ein oder ordnen Sie es zu. Beispiel: <code>2016-02-25T18:46:19Z</code> stellt die UTC-Zeit dar.</p> </li> 
          <li> <p><b>[!UICONTROL ID]</b> </p> <p>Geben Sie die ID des Dokuments ein oder mappen Sie sie.</p> </li> 
@@ -406,7 +401,7 @@ Dieses Aktionsmodul erstellt eine Vereinbarung, sendet sie zur Signatur und gibt
    <td role="rowheader">[!UICONTROL Teilnehmereinstellungen Info]</td> 
    <td> <p>Klicken Sie für jedes Teilnehmerset, das Sie hinzufügen möchten, auf <b>[!UICONTROL Element hinzufügen]</b> und füllen Sie die folgenden Felder aus.</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL -Member]</b> </p> <p>Klicken Sie für jede Person, die Sie zum Teilnehmerset hinzufügen möchten, auf <b>[!UICONTROL Element hinzufügen]</b> und geben Sie die E-Mail-Adresse der Person ein.</p> </li> 
+     <li> <p><b>[!UICONTROL-Member]</b> </p> <p>Klicken Sie für jede Person, die Sie zum Teilnehmerset hinzufügen möchten, auf <b>[!UICONTROL Element hinzufügen]</b> und geben Sie die E-Mail-Adresse der Person ein.</p> </li> 
      <li> <p><b>[!UICONTROL order]</b> </p> <p>Geben Sie die Reihenfolge an, in der dieser Teilnehmer die Vereinbarung unterzeichnen soll. Beispielsweise muss die Teilnehmergruppe mit dem Bestellwert 1 zuerst signieren, 2 muss als Nächstes signieren usw. Die Bestellnummern müssen mit einer beginnen und weisen keine Lücken in der Serie auf. </p> </li> 
      <li> <p><b>[!UICONTROL role]</b> </p> <p>Wählen Sie eine Rolle für dieses Teilnehmerset aus. Alle Teilnehmer des Sets erhalten diese Rolle.</p> </li> 
      <li> <p><b>[!UICONTROL ID]</b> </p> <p>Die ID dieses Teilnehmersatzes eingeben oder zuordnen.</p> </li> 
@@ -516,7 +511,7 @@ Dieses Aktionsmodul erstellt Datensätze, die mit einem von Ihnen ausgewählten 
    <td>Wählen Sie den Datensatztyp des ursprünglichen Datensatzes aus, mit dem Sie die erstellten Datensätze verknüpfen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Vereinbarung]/[!UICONTROL -Bibliotheksdokument]/[!UICONTROL -Benutzer]/[!UICONTROL -Widget-ID]</td> 
+   <td role="rowheader">[!UICONTROL-Vereinbarung]/[!UICONTROL-Bibliotheksdokument]/[!UICONTROL-Benutzer]/[!UICONTROL-Widget-ID]</td> 
    <td>Geben Sie die ID des Objekts ein, mit dem Sie den erstellten Datensatz verknüpfen möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
@@ -544,7 +539,7 @@ Dieses Aktionsmodul erstellt Datensätze, die mit einem von Ihnen ausgewählten 
        <li> <p><b>[!UICONTROL locale]</b> </p> <p>Geben Sie die Sprache ein, in der Sie die Ansicht erstellen möchten. </p> </li> 
        <li> <p><b>[!UICONTROL Keine Chrome-Markierung]</b> </p> <p>Wählen Sie <b>[!UICONTROL Yes]</b> aus, um die eingebettete Seite ohne Navigationskopfzeile oder -fußzeile anzuzeigen.</p> </li> 
        <li> <p><b>[!UICONTROL kann Dateien bearbeiten]</b> </p> <p>Wählen Sie <b>[!UICONTROL Yes]</b> aus, wenn Sie den Abschnitt „Datei-Upload“ durch Hinzufügen oder Entfernen von Dateien bearbeiten möchten. Dies ist kein Zugriffskontrollmechanismus. Der Standardwert ist [!UICONTROL Yes].</p> </li> 
-       <li> <p><b>[!UICONTROL -Bibliotheksdokument]</b> </p> <p>Wählen Sie <b>[!UICONTROL Yes]</b> aus, wenn Links für Bibliotheksdokumente sichtbar sein sollen. Der Standardwert ist [!UICONTROL Yes].</p> </li> 
+       <li> <p><b>[!UICONTROL-Bibliotheksdokument]</b> </p> <p>Wählen Sie <b>[!UICONTROL Yes]</b> aus, wenn Links für Bibliotheksdokumente sichtbar sein sollen. Der Standardwert ist [!UICONTROL Yes].</p> </li> 
        <li> <p><b>[!UICONTROL Lokale Datei]</b> </p> <p>Wählen Sie <b>[!UICONTROL Yes]</b> aus, wenn die Schaltfläche Lokaler Datei-Upload angezeigt werden soll. Der Standardwert ist [!UICONTROL Yes].</p> </li> 
        <li> <p><b>[!UICONTROL Web Connectors]</b> </p> <p>Wählen Sie <b>[!UICONTROL Yes]</b>, wenn die Links zum Anhängen von Dokumenten aus Web-Quellen angezeigt werden sollen. Der Standardwert lautet Ja.</p> </li> 
        <li> <p><b>[!UICONTROL ist in der Vorschau ausgewählt]</b> </p> <p>Wählen Sie <b>[!UICONTROL Yes]</b> aus, um für die Seite „Erstellen“ den Autorenmodus festzulegen.</p> </li> 
@@ -808,8 +803,8 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Adobe Acroba
    <td role="rowheader">[!UICONTROL Andere Felder]</td> 
    <td> <p>Geben Sie Informationen in bestimmte Felder basierend auf dem Datensatztyp und verwandten Feldern ein.</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL -Vereinbarung]</b> </p> <p>Wenn Sie wesentliche Änderungen an einem Abkommen erwarten, empfehlen wir als Best Practice die Erstellung eines neuen Abkommens, anstatt das bestehende zu aktualisieren.</p> </li> 
-     <li> <p><b>[!UICONTROL -Bibliotheksdokument]</b> </p> <p>Wählen Sie die Felder aus, die Sie aktualisieren möchten, und füllen Sie dann die ausgewählten Felder aus:</p> 
+     <li> <p><b>[!UICONTROL-Vereinbarung]</b> </p> <p>Wenn Sie wesentliche Änderungen an einem Abkommen erwarten, empfehlen wir als Best Practice die Erstellung eines neuen Abkommens, anstatt das bestehende zu aktualisieren.</p> </li> 
+     <li> <p><b>[!UICONTROL-Bibliotheksdokument]</b> </p> <p>Wählen Sie die Felder aus, die Sie aktualisieren möchten, und füllen Sie dann die ausgewählten Felder aus:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Status]</b> </p> <p>Wählen Sie den neuen Status für das Bibliotheksdokument aus.</p> </li> 
        <li> <p><b>[!UICONTROL name]</b> </p> <p>Namen der Bibliotheksvorlage eingeben oder zuordnen</p> </li> 
@@ -825,7 +820,7 @@ Dieses Aktionsmodul aktualisiert einen einzelnen Datensatz in [!DNL Adobe Acroba
        <li> <p><b>[!UICONTROL Primäre Gruppen-ID]</b> </p> <p>Geben Sie die Gruppe ein, der der neue Benutzer hinzugefügt wird. Wenn nichts eingegeben wird, wird der Benutzer der Standardgruppe für das Konto hinzugefügt.</p> </li> 
        <li> <p><b>[!UICONTROL Auftragstitel]</b> </p> <p>Geben Sie die Stellenbezeichnung des Benutzers ein.</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Web-Formular] ([!UICONTROL -Widget])</b> </p> <p>Geben Sie Informationen in bestimmte Felder basierend auf dem Datensatztyp und verwandten Feldern ein.</p> </li> 
+     <li> <p><b>[!UICONTROL Web-Formular] ([!UICONTROL-Widget])</b> </p> <p>Geben Sie Informationen in bestimmte Felder basierend auf dem Datensatztyp und verwandten Feldern ein.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -862,15 +857,15 @@ Dieses Aktionsmodul aktualisiert Datensätze, die sich auf ein bestimmtes Objekt
    <td>Wählen Sie den Datensatztyp des Datensatzes aus, mit dem die zugehörigen Felder verknüpft sind.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Vereinbarung]/[!UICONTROL -Bibliotheksdokument]/[!UICONTROL -Benutzer]/[!UICONTROL -Widget-ID]</td> 
+   <td role="rowheader">[!UICONTROL-Vereinbarung]/[!UICONTROL-Bibliotheksdokument]/[!UICONTROL-Benutzer]/[!UICONTROL-Widget-ID]</td> 
    <td>Geben Sie die ID des Objekts ein, mit dem Sie den erstellten Datensatz verknüpfen möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Andere Felder]</td> 
    <td> <p>Geben Sie Informationen in bestimmte Felder basierend auf dem Datensatztyp und verwandten Feldern ein.</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL -Vereinbarung]</b> </p> <p>Wenn Sie wesentliche Änderungen an einem Abkommen erwarten, empfehlen wir als Best Practice die Erstellung eines neuen Abkommens, anstatt das bestehende zu aktualisieren.</p> </li> 
-     <li> <p><b>[!UICONTROL -Bibliotheksdokument]</b> </p> <p>Wählen Sie die Felder aus, die Sie aktualisieren möchten, und füllen Sie dann die ausgewählten Felder aus:</p> 
+     <li> <p><b>[!UICONTROL-Vereinbarung]</b> </p> <p>Wenn Sie wesentliche Änderungen an einem Abkommen erwarten, empfehlen wir als Best Practice die Erstellung eines neuen Abkommens, anstatt das bestehende zu aktualisieren.</p> </li> 
+     <li> <p><b>[!UICONTROL-Bibliotheksdokument]</b> </p> <p>Wählen Sie die Felder aus, die Sie aktualisieren möchten, und füllen Sie dann die ausgewählten Felder aus:</p> 
       <ul> 
        <li> <p><b>[!UICONTROL state]</b> </p> <p>Wählen Sie den neuen Status für das Bibliotheksdokument aus.</p> </li> 
        <li> <p><b>[!UICONTROL HINWEIS]</b> </p> <p>Geben Sie den Text der Anmerkung ein oder mappen Sie ihn.</p> </li> 
@@ -907,7 +902,7 @@ Dieses Aktionsmodul aktualisiert Datensätze, die sich auf ein bestimmtes Objekt
        <li> <p><b>[!UICONTROL state]</b> </p> <p>Wählen Sie den neuen Status für den Benutzer aus und geben Sie einen Kommentar dazu ein, warum Sie den Benutzer aktivieren oder deaktivieren möchten.</p> </li> 
        <li> <p><b>[!UICONTROL locale]</b> </p> <p>Geben Sie das Gebietsschema des Benutzers ein. Dadurch wird die Sprache der Benutzeroberfläche bestimmt. </p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL Web-Formular] ([!UICONTROL -Widget])</b> </p> <p>Geben Sie Informationen in bestimmte Felder basierend auf dem Datensatztyp und verwandten Feldern ein.</p> </li> 
+     <li> <p><b>[!UICONTROL Web-Formular] ([!UICONTROL-Widget])</b> </p> <p>Geben Sie Informationen in bestimmte Felder basierend auf dem Datensatztyp und verwandten Feldern ein.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -980,7 +975,7 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Vereinbar
     <ul> 
      <li> <p><b>[!UICONTROL Text suchen]</b> </p> <p>Geben Sie den Text ein, den Sie in den Vereinbarungsmetadaten finden möchten. Jedes Wort wird als separates Textelement behandelt. </p> </li> 
      <li> <p><b>[!UICONTROL Text suchen in]</b> </p> <p>Wählen Sie die Metadatenfelder aus, in denen Sie Text suchen möchten. Wenn Sie nichts auswählen, durchsuchen die Module alle Metadaten.</p> </li> 
-    </ul> <p>Das Modul gibt alle Vereinbarungen zurück, die einen der eingegebenen Texte in einem der ausgewählten Felder enthalten. Beispiel: Wenn Sie „Frühlingskampagne“ eingeben und die Optionen Titel und Notiz auswählen, werden Vereinbarungen mit den Wörtern „Frühling“ oder „Kampagne“ in Titel oder Notiz zurückgegeben.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/de/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Suche - Funktionsweise</a>.</p> </td> 
+    </ul> <p>Das Modul gibt alle Vereinbarungen zurück, die einen der eingegebenen Texte in einem der ausgewählten Felder enthalten. Beispiel: Wenn Sie „Frühlingskampagne“ eingeben und die Optionen Titel und Notiz auswählen, werden Vereinbarungen mit den Wörtern „Frühling“ oder „Kampagne“ in Titel oder Notiz zurückgegeben.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Suche - Funktionsweise</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Erstellungsdatum]</td> 

@@ -5,13 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
 TQID: https://experienceleague.adobe.com/hugbkrxjvBcwIiPQMfM9VIcRby-zpFK6U5hRmrF38Lc
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1884
@@ -250,7 +246,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Wählen Sie die Felder aus, für die Sie bei der Erstellung des Datensatzes Werte einbeziehen möchten. Die verfügbaren Felder hängen vom Entitätstyp ab.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL -Eigenschaftsfelder]</td> 
+   <td role="rowheader">[!UICONTROL-Eigenschaftsfelder]</td> 
    <td> Dies sind die von Ihnen ausgewählten Felder. Geben Sie den Wert ein, den der Datensatz für eine bestimmte Eigenschaft haben soll. </td> 
   </tr> 
  </tbody> 
@@ -389,7 +385,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Wählen Sie die Felder aus, für die Sie bei der Erstellung des Datensatzes Werte einbeziehen möchten. Die verfügbaren Felder hängen vom Entitätstyp ab.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL -Eigenschaftsfelder]</td> 
+   <td role="rowheader">[!UICONTROL-Eigenschaftsfelder]</td> 
    <td>Dies sind die von Ihnen ausgewählten Felder. Geben Sie den Wert ein, den der Datensatz für eine bestimmte Eigenschaft haben soll.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -431,7 +427,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td role="rowheader">[!UICONTROL sort]</td> 
    <td> <p>Geben Sie die Reihenfolge an, in der Elemente zurückgegeben werden. Sie können mehrere Sortierungen hinzufügen.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL -Feld]</strong> </p> <p>Geben Sie das Feld an, nach dem Sie die Ergebnisse sortieren möchten.</p> </li> 
+     <li> <p><strong>[!UICONTROL-Feld]</strong> </p> <p>Geben Sie das Feld an, nach dem Sie die Ergebnisse sortieren möchten.</p> </li> 
      <li> <p><strong>[!UICONTROL Direction]</strong> </p> <p>Geben Sie die Sortierrichtung an (aufsteigend oder absteigend).</p> </li> 
     </ul> </td> 
   </tr> 
