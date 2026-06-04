@@ -7,61 +7,68 @@ exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
 TQID: https://experienceleague.adobe.com/MeGV8WNtXy8HkizGkUutuhw2ctdmf3DFIkRWBRXPzA0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+hide: true
+source-git-commit: b84dea9d44b4112a8d905b631720727e557351df
 workflow-type: tm+mt
-source-wordcount: 310
-ht-degree: 34%
+source-wordcount: 30
+ht-degree: 50%
 
 ---
 
 # KI-Assistent in Workfront Fusion
 
-Der KI-Assistent kann Informationen aus der Workfront-Dokumentation finden, sodass Sie Adobe Experience League nicht mehr aufrufen müssen, um die benötigte Hilfe zu erhalten.
+Diese Funktion ist veraltet, und dieser Artikel wird in naher Zukunft entfernt.
 
-## Zugriffsanforderungen
+<!--
 
-+++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
+AI Assistant can locate information from Workfront documentation, eliminating the need for you to visit Adobe Experience League to get the help you need. 
+
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront-Paket</td> 
-   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
-   <td> <p>Standard</p><p>Work oder höher</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Produkt</td> 
+   <td role="rowheader">Product</td> 
    <td>
-   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</li></ul>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## Voraussetzungen
+## Prerequisites
 
-Adobe muss eine unterzeichnete Adobe Gen AI-Vereinbarung in der Datei haben.
+Adobe must have a signed Adobe Gen AI agreement on file.
 
-Weitere Informationen zum Unterzeichnen des Vertrags finden Sie unter [Unterschreiben des Adobe Gen AI-](https://experienceleague.adobe.com/de/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)) im Artikel KI-Assistent - Übersicht in der Workfront-Dokumentation.
+For more information on signing the agreement, see [Sign the Adobe Gen AI agreement](https://experienceleague.adobe.com/de/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) in the article AI Assistant overview in the Workfront documentation.
 
-## Abrufen von Informationen aus dem KI-Assistenten
+## Get information from AI Assistant
 
-So rufen Sie Informationen oder Anweisungen aus der Workfront Fusion-Dokumentation mithilfe des KI-Assistenten ab:
+To get information or instructions from the Workfront Fusion documentation using AI Assistant:
 
-1. Klicken Sie auf **KI** Assistent![&#x200B; Symbol KI-Assistent](assets/ai-assistant-icon.png) in der oberen rechten Ecke des Bildschirms.
-1. Geben Sie im Bedienfeld KI-Assistent Ihre Eingabeaufforderung in den Textbereich unten im Bedienfeld ein.
+1. Click the **AI Assistant** icon ![AI Assistant icon](assets/ai-assistant-icon.png) near the upper-right corner of the screen.
+1. In the AI Assistant panel, enter your prompt in the text area near the bottom of the panel.
 
-   Je nachdem, wie groß oder komplex die Eingabeaufforderung ist, kann es einige Minuten dauern, bis der KI-Assistent die Informationen findet. Wir empfehlen einfache Eingabeaufforderungen.
+   AI Assistant may take a few moments to locate the information, depending on how large or complex the prompt is. We recommend simple prompts.
 
-1. Zeigen Sie die Antwort im Bedienfeld KI-Assistent an.
-1. (Optional) Wenn die Antwort nicht die benötigten Informationen enthält, verfeinern Sie Ihre Antwort und versuchen Sie es erneut.
-1. (Optional und bedingt) Wenn die Antwort einen Link zu einem Adobe Experience League-Artikel enthält, klicken Sie auf den Link, um den Artikel in einem neuen Fenster zu öffnen.
+1. View the response in the AI Assistant panel.
+1. (Optional) If the response does not contain the information you need, refine your response and try again.
+1. (Optional and conditional) If the response includes a link to an Adobe Experience League article, click the link to open the article in a new window.
+
+-->
