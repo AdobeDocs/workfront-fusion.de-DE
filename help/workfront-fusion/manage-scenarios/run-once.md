@@ -3,7 +3,8 @@ title: Einmalige Ausführung verwenden, um ein Szenario zu testen
 description: Sie können ein Szenario ohne externen Trigger testen, indem Sie die Schaltfläche Einmal ausführen verwenden.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
 workflow-type: tm+mt
 source-wordcount: 332
