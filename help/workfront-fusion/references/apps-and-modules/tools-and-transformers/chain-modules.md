@@ -96,7 +96,7 @@ Dieses Modul befindet sich im übergeordneten Szenario. Die Felder spiegeln die 
 > * **Verwenden Sie beim Platzieren dieses Moduls in einem Iterator Vorsicht.** Wenn Sie in einem großen Iterator für jedes Element ein untergeordnetes Szenario bereitstellen, wird die Plattform erheblich ausgelastet. Erwägen Sie, die Logik des untergeordneten Szenarios einzubinden oder freigegebene Suchen außerhalb des Iterators vorab zu berechnen.
 > * **Feuer und Vergessen** bedeutet, dass das Elternteil keine Sicht darauf hat, ob das Kind gelaufen ist oder erfolgreich war. Verwenden Sie diese Option nur, wenn Kinderfehler unabhängig überwacht werden.
 >
-> Eine vollständige Entwurfsanleitung finden Sie unter [Verketten mehrerer Szenarien](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+> Eine vollständige Entwurfsanleitung finden Sie unter [Verketten mehrerer Szenarien](https://experienceleague.adobe.com/de/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
 
 >[!NOTE]
 >
