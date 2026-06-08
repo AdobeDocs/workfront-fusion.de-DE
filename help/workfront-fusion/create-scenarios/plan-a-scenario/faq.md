@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
 TQID: https://experienceleague.adobe.com/PQablbYLDlXlY5mc7qMAXMrXnUeeHA6sSc-aMVHa6HY
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 554
@@ -81,10 +82,10 @@ Weitere Informationen finden Sie unter [Überblick über Verbindungen](/help/wor
 
 Ein [!UICONTROL Aggregator] führt Daten in einer Sammlung zusammen. Ein Beispiel dafür sind Dateien, die in ein ZIP-Archiv komprimiert und als E-Mail-Anhang gesendet werden.
 
-Weitere Informationen finden Sie [[!UICONTROL  Modul ]Aggregator](/help/workfront-fusion/references/modules/aggregator-module.md).
+Weitere Informationen finden Sie [[!UICONTROL &#x200B; Modul &#x200B;]Aggregator](/help/workfront-fusion/references/modules/aggregator-module.md).
 
 ## Was passiert, wenn ich Workfront Fusion eine E-Mail verarbeiten lasse, die mehr als einen Anhang enthält?
 
 ### Antwort
 
-Wenn Sie das Modul [!UICONTROL E]Mail[!UICONTROL  zum Abrufen von ] verwenden, wird jeder Anhang einzeln über die übrigen Module im Szenario gesendet. Ähnliche Module sind auch in anderen Apps verfügbar, die mehrere Dateien gleichzeitig erhalten.
+Wenn Sie das Modul [!UICONTROL E]Mail[!UICONTROL &#x200B; zum Abrufen von &#x200B;] verwenden, wird jeder Anhang einzeln über die übrigen Module im Szenario gesendet. Ähnliche Module sind auch in anderen Apps verfügbar, die mehrere Dateien gleichzeitig erhalten.
