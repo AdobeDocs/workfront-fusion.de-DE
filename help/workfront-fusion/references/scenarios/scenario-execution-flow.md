@@ -8,7 +8,7 @@ exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
 TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 770
 ht-degree: 1%
@@ -51,7 +51,7 @@ Wenn das erste Modul ein Bundle zurückgibt, durchläuft das Bundle den Rest des
 
 **Beispiel:** In diesem Szenario, in dem Dokumente aus Adobe Workfront heruntergeladen und an einen Ordner in [!DNL Dropbox] gesendet werden, fließen die Daten wie folgt:
 
-Der erste Schritt des Szenarios, der vom ersten Modul ausgeführt wird, besteht darin, nach Dokumenten in Workfront zu suchen. Jedes gefundene Dokument wird als ein Bundle betrachtet. Wenn das Modul ausgeführt wird, ohne dass Pakete gefunden werden, endet das Szenario nach dem ersten Modul.
+Der erste Schritt des Szenarios, der vom ersten Modul ausgeführt wird, besteht darin, in Workfront nach Dokumenten zu suchen. Jedes gefundene Dokument wird als ein Bundle betrachtet. Wenn das Modul ausgeführt wird, ohne dass Pakete gefunden werden, endet das Szenario nach dem ersten Modul.
 
 Wenn ein Bundle zurückgegeben wird, durchläuft das Bundle den Rest des Szenarios. In diesem Beispiel besteht der Rest des Szenarios aus dem zweiten Modul , das das Bundle in den [!DNL Dropbox] Ordner hochlädt.
 

@@ -9,7 +9,7 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 777
 ht-degree: 17%
@@ -124,8 +124,8 @@ Sie können Folgendes ausführen:
 
 So führen Sie das einzelne Modul aus:
 
-1. Klicken Sie mit der rechten Maustaste auf das Modul und klicken Sie **[!UICONTROL Nur dieses Modul ausführen]** in dem angezeigten Menü auf..
-1. Geben Sie Beispielwerte für die Eingabeelemente ein und klicken Sie dann auf **[!UICONTROL OK]** .
+1. Klicken Sie mit der rechten Maustaste auf das Modul und klicken Sie **[!UICONTROL Nur dieses Modul ausführen]** in dem angezeigten Menü.
+1. Geben Sie Beispielwerte für die Eingabeelemente an und klicken Sie dann auf **[!UICONTROL OK]**.
 1. Wenn das Modul fertig ausgeführt wird, klicken Sie auf die Blase über dem Modul, um die vollständige Ausgabe zu überprüfen.
 
    Das Zuordnungsfeld für spätere Module enthält jetzt alle Elemente in der Modulausgabe.
