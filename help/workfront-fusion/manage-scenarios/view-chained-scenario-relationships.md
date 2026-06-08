@@ -4,14 +4,22 @@ description: Sie können eine Zuordnung der Beziehungen zwischen übergeordneten
 author: Becky
 feature: Workfront Fusion
 exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
-source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 18%
+source-wordcount: '557'
+ht-degree: 16%
 
 ---
 
 # Anzeigen und Verwalten verketteter Szenariobeziehungen
+
+>[!IMPORTANT]
+>
+>Diese Funktion befindet sich in Beta und wird für geschäftskritische Produktions-Workflows nicht empfohlen. Als Beta-Funktion kann sich das Verhalten ändern, und Sonderfälle können möglicherweise nicht vollständig verarbeitet werden.
+>
+>Für stabile Integrationen sollten Sie erwägen, ein zweites Szenario über einen Webhook mit einem HTTP-Anfrage-Modul auszulösen. Dieses Muster verwendet vollständig unterstützte Primitive und bietet jedem Szenario eine unabhängige Ausführungskontrolle.
+>
+>Wenn Sie verkettete Szenarien verwenden möchten, lesen Sie [Verketten mehrerer Szenarien miteinander](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) um Entwurfsanleitungen zu erhalten.
 
 Sie können eine Zuordnung der Beziehungen zwischen übergeordneten und untergeordneten Szenarien erstellen. Sie können die Zuordnung auch verwenden, um zu verschiedenen Szenarien in der Kette zu springen.
 

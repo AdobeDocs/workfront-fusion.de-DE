@@ -5,20 +5,23 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 15%
+source-wordcount: 883
+ht-degree: 10%
 
 ---
 
 # Kettenmodule
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Diese Funktion befindet sich derzeit in Beta.
+>Diese Funktion befindet sich in Beta und wird für geschäftskritische Produktions-Workflows nicht empfohlen. Als Beta-Funktion kann sich das Verhalten ändern, und Sonderfälle können möglicherweise nicht vollständig verarbeitet werden.
+>
+>Für stabile Integrationen sollten Sie erwägen, ein zweites Szenario über einen Webhook mit einem HTTP-Anfrage-Modul auszulösen. Dieses Muster verwendet vollständig unterstützte Primitive und bietet jedem Szenario eine unabhängige Ausführungskontrolle.
+>
+>Wenn Sie verkettete Szenarien verwenden möchten, lesen Sie [Verketten mehrerer Szenarien miteinander](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) um Entwurfsanleitungen zu erhalten.
 
 Mithilfe der Kettenmodule können Sie ein Szenario mit einem anderen verbinden.
 
@@ -84,6 +87,16 @@ So konfigurieren Sie den Empfang von Daten aus dem übergeordneten Modul:
 
 Dieses Modul befindet sich im übergeordneten Szenario. Die Felder spiegeln die Datenstruktur wider, die im untergeordneten Szenario im Feld Daten vom übergeordneten Modul empfangen festgelegt ist.
 
+>[!IMPORTANT]
+>
+> Überprüfen Sie Folgendes, bevor Sie dieses Modul in einem Produktionsszenario konfigurieren:
+>
+> * **Aktivieren Sie in diesem Szenario nicht &quot;Trigger zuletzt übertragen (CTL**, wenn „Auslösen und vergessen“ deaktiviert ist. Die CTL versucht es erneut, wenn sie auf eine untergeordnete Antwort wartet, wodurch eine unbegrenzte Wiederholungsschleife entsteht.
+> * **Verwenden Sie beim Platzieren dieses Moduls in einem Iterator Vorsicht.** Wenn Sie in einem großen Iterator für jedes Element ein untergeordnetes Szenario bereitstellen, wird die Plattform erheblich ausgelastet. Erwägen Sie, die Logik des untergeordneten Szenarios einzubinden oder freigegebene Suchen außerhalb des Iterators vorab zu berechnen.
+> * **Feuer und Vergessen** bedeutet, dass das Elternteil keine Sicht darauf hat, ob das Kind gelaufen ist oder erfolgreich war. Verwenden Sie diese Option nur, wenn Kinderfehler unabhängig überwacht werden.
+>
+> Eine vollständige Entwurfsanleitung finden Sie unter [Verketten mehrerer Szenarien](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+
 >[!NOTE]
 >
 >* Sie können über dieses Modul ein vorhandenes untergeordnetes Szenario auswählen oder ein neues erstellen.
@@ -112,7 +125,11 @@ So konfigurieren Sie das Modul „Untergeordnetes Szenario aufrufen“
 
 Dies ist das untergeordnete Szenario und sendet Daten in der ausgewählten Struktur an das übergeordnete Szenario. Sie können diese Daten in späteren Modulen im übergeordneten Szenario zuordnen.
 
-Wenn Ihr untergeordnetes Szenario mehrere Routen hat, empfehlen wir, dieses Modul zu einer Route hinzuzufügen, die immer nach einer anderen Route ausgeführt wird.
+>[!IMPORTANT]
+>
+> Wenn Ihr untergeordnetes Szenario mehrere Routen hat, müssen **sicherstellen** dass die Antwort an das übergeordnete Modul von jedem Ausführungspfad aus erreichbar ist. Wenn sich das Modul Antwort zurückgeben auf einer Route befindet, die übersprungen oder nicht ausgeführt wird, wartet das übergeordnete Szenario auf unbestimmte Zeit auf eine Antwort, die nie eintrifft.
+>
+> Fügen Sie die Antwort zum Zurückkehren zum übergeordneten Modul nach dem Router auf einer Route hinzu, die unabhängig vom Ergebnis des Routers immer ausgeführt wird, oder fügen Sie Fehlerbehandlung hinzu, um sicherzustellen, dass eine Antwort immer zurückgegeben wird, auch wenn ein Fehler auftritt.
 
 So konfigurieren Sie das Modul Responder hinzufügen:
 

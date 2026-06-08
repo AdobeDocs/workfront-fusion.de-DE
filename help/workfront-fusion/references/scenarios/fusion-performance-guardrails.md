@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 1101
-ht-degree: 94%
+source-wordcount: 1351
+ht-degree: 77%
 
 ---
 
@@ -27,6 +26,12 @@ Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, weshalb Adobe W
 * Der standardmäßige Timeout für Szenario-Ausführungen beträgt **40 Minuten**. Wird bei der Ausführung dieser Timeout erreicht, unterbricht Workfront Fusion je nach Szenario die Szenario-Ausführung nach dem nächsten Zyklus bzw. Vorgang. Dadurch wird das Szenario kurz nach Erreichen des 40-Minuten-Limits beendet.
 
   Verkettungsszenarios zählen nicht für den Timeout bei Szenario-Ausführungen. Ein übergeordnetes Szenario baut keine Zeit auf, während auf die Ausführung eines untergeordneten Szenarios gewartet wird.
+
+  >[!IMPORTANT]
+  >
+  > Obwohl die Verkettung Workflows ermöglicht, dass sie länger als 40 Minuten ausgeführt werden, sollte dies als Signal für das Entwurfsrisiko und nicht als unterstützte Problemumgehung behandelt werden. Übergeordnete Szenarien, die mehrere untergeordnete Szenarien mit langer Laufzeit umfassen, haben keine allgemeine Zeitüberschreitungsgrenze. Wenn ein untergeordnetes Szenario hängt oder ein Platform-Problem auftritt, wartet das übergeordnete Element unbegrenzt, ohne dass ein Fehler auftritt und ohne dass eine automatische Wiederherstellung erfolgt.
+  >
+  > Wenn Ihr Szenario-Design eine Verkettung erfordert, um das Limit von 40 Minuten zu vermeiden, überprüfen Sie Ihre Architektur, bevor Sie sie in der Produktion bereitstellen. Entwurfsanleitungen finden Sie [Verketten mehrerer ](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)).
 * Die maximale Größe einer Szenario-Blueprint beträgt **5 MB**. Wir empfehlen jedoch, die Szenariogröße bei unter **3 MB** zu belassen.
 
   Anwendungsmodule, die Daten mit einer großen Anzahl von Feldern erstellen oder aktualisieren, können zu sehr großen Blueprints führen.
@@ -35,6 +40,14 @@ Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, weshalb Adobe W
    * Nutzen Sie bei Verwendung anderer Anwendungen benutzerdefinierte API-Module, um mit jedem Eintragstyp zu interagieren, der über eine große Anzahl von Feldern verfügt.
 
 * Es gibt zwar keine Begrenzung für die Anzahl der Module in einem Szenario, aber Szenarios mit mehr als 150 Modulen beeinträchtigen die Leistung Ihres Workfront Fusion-Systems. Aus diesem Grund raten wir davon ab, Szenarios mit mehr als 150 Modulen zu erstellen.
+
+## Verkettete Szenarien
+
+* Die Funktion zur Szenarioverkettung befindet sich in Beta und wird für geschäftskritische Workflows nicht empfohlen. Als Beta-Funktion kann sich das Verhalten ändern, und Sonderfälle können möglicherweise nicht vollständig verarbeitet werden.
+
+  Bei stabilen Integrationen sollten Sie erwägen, über einen Webhook mithilfe eines HTTP-Anforderungsmoduls ein zweites Szenario auszulösen. Dieses Muster verwendet vollständig unterstützte Primitive und gibt jedem Szenario eine unabhängige Ausführungskontrolle.
+
+  Wenn Sie verkettete Szenarien verwenden möchten, lesen Sie die Entwurfsanleitungen und Einschränkungen im Artikel [Verketten mehrerer Szenarien](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
 
 ## Vorgänge
 
@@ -77,6 +90,8 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 * Ausführungsverlaufsprotokolle sind auf eine Größe von **100 MB** beschränkt. Wenn der Ausführungsverlauf diese Größe überschreitet, werden nur die ersten 100 MB angezeigt.
 * Wenn die Ein- oder Ausgabe eines einzelnen Vorgangs größer als 15 MB ist, wird sie nicht im Ausführungsverlauf angezeigt.
 * Wenn ein Szenario mehrere gleichzeitige Ausführungen aufweist, werden auf der Detailseite des Szenarios im Bereich „Ausführungen“ nur 5 Ausführungen angezeigt. Dies gilt auch bei mehr als 5 aktiven Ausführungen.
+* Wenn ein Szenario Teil eines verketteten Netzwerks ist, wird der Ausführungsverlauf für jedes Szenario in der Kette separat verwaltet. Es gibt keine einheitliche Ablaufverfolgungsansicht für übergeordnete und untergeordnete Szenarien. Um eine verkettete Ausführung zu untersuchen, öffnen Sie den Ausführungsverlauf jedes Szenarios einzeln.
+* Wenn die Ein- oder Ausgabe eines einzelnen Vorgangs 15 MB überschreitet, wird sie nicht im Ausführungsverlauf angezeigt. Diese Beschränkung gilt für Daten, die über Kettenmodule zwischen übergeordneten und untergeordneten Szenarien übergeben werden.
 
 ## Unvollständige Ausführungen
 

@@ -5,20 +5,23 @@ author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 1266
-ht-degree: 12%
+source-wordcount: 1705
+ht-degree: 9%
 
 ---
 
 # Verketten mehrerer Szenarios
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Diese Funktion befindet sich derzeit in Beta.
+>Diese Funktion befindet sich in Beta und wird für geschäftskritische Produktions-Workflows nicht empfohlen. Als Beta-Funktion kann sich das Verhalten ändern, und Sonderfälle können möglicherweise nicht vollständig verarbeitet werden.
+>
+>Für stabile Integrationen sollten Sie erwägen, ein zweites Szenario über einen Webhook mit einem HTTP-Anfrage-Modul auszulösen. Dieses Muster verwendet vollständig unterstützte Primitive und bietet jedem Szenario eine unabhängige Ausführungskontrolle.
+>
+>Wenn Sie verkettete Szenarien verwenden möchten, lesen Sie die Entwurfsanleitungen und -einschränkungen in diesem Artikel sorgfältig durch, insbesondere den Abschnitt [Best Practices](#best-practices).
 
 Sie können Szenarien miteinander verketten, sodass ein Szenario ein Trigger zum anderen durchführt, und die vom zweiten Szenario ausgegebenen Daten an das erste zurückgeben. Dies ermöglicht eine modularere Szenarioerstellung, bei der Sie Szenarioabschnitte in mehreren Szenarien nicht duplizieren müssen.
 
@@ -63,7 +66,9 @@ Betrachten Sie die folgenden Beispielanwendungsfälle für Verkettungsszenarien:
 
 * **Fehlerbehandlung**: Unternehmen nutzen häufig dieselben Aktionen zur Fehlerbehandlung in mehreren Szenarien, z. B. eine Route zur Fehlerbehandlung, die ein Fehlerprotokoll an einen Datenspeicher sendet und eine Slack-Benachrichtigung erstellt. Sie können mit diesen Aktionen ein untergeordnetes Szenario erstellen und dieses Szenario in Fehlerbehandlungsrouten in mehreren Szenarien verketten.
 
-* **Verlängerung der**: Sie können Verkettungen für große Batch-Vorgänge mit lang laufenden Aktionen verwenden, z. B. beim Exportieren und Importieren von Dateien. Dieser Vorgang dauert einige Zeit, wenn viele Dateien vorhanden sind. Da untergeordnete Szenarien nicht mit der maximalen Wartezeit des übergeordneten Szenarios verrechnet werden, können Sie die Ausführungszeit überschreiten, indem Sie mehrere untergeordnete Szenarien zum Exportieren oder Importieren der Dateien verwenden.
+* **Verlängerungszeit**: Sie können die Verkettung für große Batch-Vorgänge verwenden, bei denen die Gesamtverarbeitungszeit die 40-minütige Ausführungsgrenze eines einzelnen Szenarios überschreiten würde. Gehen Sie jedoch mit diesem Muster vorsichtig vor: Ein übergeordnetes Szenario, das mit mehreren untergeordneten Szenarien mit langer Laufzeit verkettet ist, hat keine allgemeine Zeitüberschreitungsgrenze. Wenn ein untergeordnetes Szenario hängt oder ein Platform-Problem auftritt, wartet das übergeordnete Element unbegrenzt, ohne dass ein Fehler angezeigt wird.
+
+  Bevor Sie die Verkettung zur Verlängerung der Ausführungszeit verwenden, überlegen Sie, ob die Batch-Größe reduziert, die Häufigkeit erhöht oder das Design neu strukturiert werden kann, um lange sequenzielle Ketten zu vermeiden. Siehe [Best Practices](#best-practices) unten.
 
 * **Ersetzen von Iteratoren** Durch Ersetzen von Iteratoren durch untergeordnete Szenarien kann die Speichernutzung reduziert werden, z. B. bei komplexen Vorgängen in einer Iteration, die zu einem Fehler wegen zu wenig Arbeitsspeicher führt. Sie können ein separates Szenario für den komplexen Vorgang erstellen und den Iterator durch das Modul Untergeordnetes Szenario aufrufen ersetzen
 
@@ -111,3 +116,39 @@ Gehen Sie beim Verketten von Szenarien wie folgt vor, um Rekursionen zu vermeide
 ### Verwenden der Fehlerbehandlung, um eine Antwort sicherzustellen
 
 Da das übergeordnete Szenario auf eine Antwort des untergeordneten Szenarios wartet, bevor es fortgesetzt werden kann, müssen Sie sicherstellen, dass das untergeordnete Szenario so aufgebaut ist, dass es eine Antwort bereitstellt, selbst wenn ein Fehler auftritt.
+
+### Verwenden Sie nicht die Einstellung „Commit Trigger Last (CTL)“
+
+Es wird nicht empfohlen, die Szenarioeinstellung &quot;Trigger zuletzt übertragen (CTL)“ mit verketteten Szenarien zu verwenden. Wenn Sie ein Wiederholungsverhalten für ein Szenario benötigen, das eine Verkettung verwendet, implementieren Sie es explizit mithilfe einer Fehlerbehandlungsroute mit einer definierten maximalen Wiederholungsanzahl.
+
+### Schachtelungstiefe begrenzen
+
+Verkettete Szenario-Netzwerke auf zwei Tiefenebenen beschränken (übergeordnet → untergeordnet). Szenarien, die drei oder mehr Ebenen tief verschachtelt sind (Eltern → Kind → Enkel), erhöhen die Komplexität erheblich, reduzieren die Beobachtbarkeit und erschweren die Diagnose von Fehlern ohne technischen Support.
+
+Wenn Ihr Design eine tiefere Verschachtelung erfordert, dokumentieren Sie die vollständige Kettenzuordnung und stellen Sie sicher, dass die Überwachung vor der Bereitstellung in der Produktion eingerichtet ist.
+
+### Verwenden Sie Feuer und vergessen Sie sorgfältig
+
+Wenn **Auslösen und Vergessen** im Modul Untergeordnetes Szenario aufrufen aktiviert ist, sendet das übergeordnete Szenario das untergeordnete Szenario und fährt sofort fort, ohne auf eine Antwort zu warten. Das übergeordnete Element hat keine Sicht darauf, ob das untergeordnete Szenario ausgeführt wurde, erfolgreich war oder fehlgeschlagen ist.
+
+Verwenden Sie Fire and Forget nur, wenn:
+
+* Das untergeordnete Szenario führt Protokollierungen, Benachrichtigungen oder Überwachungsschreibvorgänge durch, die sich nicht auf die Logik des übergeordneten Szenarios auswirken
+* Sie verfügen über eine unabhängige Überwachung, um Fehler bei untergeordneten Elementen im Hintergrund zu erkennen
+
+Verwenden Sie nicht Fire and Forget, wenn:
+
+* Das untergeordnete Szenario schreibt, von denen das übergeordnete Element abhängig ist
+* Sie müssen wissen, ob das untergeordnete Szenario erfolgreich war, bevor das übergeordnete Element fortgesetzt wird
+* Der Workflow ist transaktional oder erfordert genau einmalige Verarbeitungsgarantien
+
+### Vermeiden Sie den Aufruf untergeordneter Szenarien in Iteratoren mit hohem Volumen
+
+Durch das Aufrufen eines untergeordneten Szenariomoduls in einem BasicFeeder oder einem anderen Iterator wird für jedes verarbeitete Element ein untergeordnetes Szenario gesendet. Bei hoher Artikelanzahl (Hunderte oder mehr pro Ausführung) führt dies zu einem erheblichen Dispatch-Overhead und erhöht die Anfälligkeit für Probleme mit der Plattformzuverlässigkeit.
+
+Bevor Sie dieses Muster verwenden:
+
+* Erwägen, ob die Logik des untergeordneten Szenarios als Module direkt in das übergeordnete Szenario eingebunden werden kann
+* Führen Sie eine Vorberechnung aller Suchen durch, die für jede Iteration außerhalb des Iterators denselben Wert zurückgeben, anstatt pro Element einen Kettenaufruf zu senden
+* Überprüfen Sie die realistische maximale Elementanzahl und wenden Sie sich an Ihren Administrator, bevor Sie sie in der Produktion bereitstellen
+
