@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
+source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
 workflow-type: tm+mt
 source-wordcount: 523
 ht-degree: 18%
@@ -18,7 +18,7 @@ Sie können eine bestimmte Szenario-Ausführung erneut auslösen, um die Daten m
 
 Wenn Sie beispielsweise ein Szenario aktualisieren, um eine Aktion hinzuzufügen, z. B. ein Problem zu erstellen, können Sie eine Ausführung, die vor dem Update stattgefunden hat, erneut auslösen. Das aktualisierte Szenario wird unter Verwendung des auslösenden Ereignisses des ursprünglichen Szenarios ausgeführt, aber es enthält auch die aktualisierte Aktion. In diesem Beispiel erstellt das Szenario ein Problem im Rahmen der neuen Ausführung.
 
-Eine erneute Auslösung ist für Szenarien mit Webhook-Triggern und für untergeordnete Szenarien verfügbar.
+Eine erneute Auslösung ist für Szenarien mit Webhook-Triggern und für verkettete Szenarien verfügbar.
 
 Beim erneuten Auslösen eines Szenarios, das einen Webhook verwendet, kann das ursprüngliche Webhook-Ereignis erneut verwendet werden, sodass Sie das Ereignis nicht neu erstellen müssen, um das Szenario erneut auszulösen.
 
