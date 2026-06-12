@@ -32,7 +32,7 @@ Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, weshalb Adobe W
   >
   > Obwohl die Verkettung Workflows ermöglicht, dass sie länger als 40 Minuten ausgeführt werden, sollte dies als Signal für das Entwurfsrisiko und nicht als unterstützte Problemumgehung behandelt werden. Übergeordnete Szenarien, die mehrere untergeordnete Szenarien mit langer Laufzeit umfassen, haben keine allgemeine Zeitüberschreitungsgrenze. Wenn ein untergeordnetes Szenario hängt oder ein Platform-Problem auftritt, wartet das übergeordnete Element unbegrenzt, ohne dass ein Fehler auftritt und ohne dass eine automatische Wiederherstellung erfolgt.
   >
-  > Wenn Ihr Szenario-Design eine Verkettung erfordert, um das Limit von 40 Minuten zu vermeiden, überprüfen Sie Ihre Architektur, bevor Sie sie in der Produktion bereitstellen. Entwurfsanleitungen finden Sie [Verketten mehrerer &#x200B;](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)).
+  > Wenn Ihr Szenario-Design eine Verkettung erfordert, um das Limit von 40 Minuten zu vermeiden, überprüfen Sie Ihre Architektur, bevor Sie sie in der Produktion bereitstellen. Entwurfsanleitungen finden Sie [Verketten mehrerer &#x200B;](https://experienceleague.adobe.com/de/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)).
 * Die maximale Größe einer Szenario-Blueprint beträgt **5 MB**. Wir empfehlen jedoch, die Szenariogröße bei unter **3 MB** zu belassen.
 
   Anwendungsmodule, die Daten mit einer großen Anzahl von Feldern erstellen oder aktualisieren, können zu sehr großen Blueprints führen.
