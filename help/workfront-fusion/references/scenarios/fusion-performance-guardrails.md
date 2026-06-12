@@ -7,10 +7,10 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
-source-wordcount: 1351
-ht-degree: 77%
+source-wordcount: 1360
+ht-degree: 76%
 
 ---
 
@@ -41,6 +41,7 @@ Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, weshalb Adobe W
    * Nutzen Sie bei Verwendung anderer Anwendungen benutzerdefinierte API-Module, um mit jedem Eintragstyp zu interagieren, der über eine große Anzahl von Feldern verfügt.
 
 * Es gibt zwar keine Begrenzung für die Anzahl der Module in einem Szenario, aber Szenarios mit mehr als 150 Modulen beeinträchtigen die Leistung Ihres Workfront Fusion-Systems. Aus diesem Grund raten wir davon ab, Szenarios mit mehr als 150 Modulen zu erstellen.
+* Szenarionamen dürfen nicht mehr als 120 Zeichen enthalten.
 
 ## Verkettete Szenarien
 
