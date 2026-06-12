@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
 source-wordcount: 1360
@@ -31,7 +32,7 @@ Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, weshalb Adobe W
   >
   > Obwohl die Verkettung Workflows ermöglicht, dass sie länger als 40 Minuten ausgeführt werden, sollte dies als Signal für das Entwurfsrisiko und nicht als unterstützte Problemumgehung behandelt werden. Übergeordnete Szenarien, die mehrere untergeordnete Szenarien mit langer Laufzeit umfassen, haben keine allgemeine Zeitüberschreitungsgrenze. Wenn ein untergeordnetes Szenario hängt oder ein Platform-Problem auftritt, wartet das übergeordnete Element unbegrenzt, ohne dass ein Fehler auftritt und ohne dass eine automatische Wiederherstellung erfolgt.
   >
-  > Wenn Ihr Szenario-Design eine Verkettung erfordert, um das Limit von 40 Minuten zu vermeiden, überprüfen Sie Ihre Architektur, bevor Sie sie in der Produktion bereitstellen. Entwurfsanleitungen finden Sie [Verketten mehrerer ](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)).
+  > Wenn Ihr Szenario-Design eine Verkettung erfordert, um das Limit von 40 Minuten zu vermeiden, überprüfen Sie Ihre Architektur, bevor Sie sie in der Produktion bereitstellen. Entwurfsanleitungen finden Sie [Verketten mehrerer &#x200B;](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)).
 * Die maximale Größe einer Szenario-Blueprint beträgt **5 MB**. Wir empfehlen jedoch, die Szenariogröße bei unter **3 MB** zu belassen.
 
   Anwendungsmodule, die Daten mit einer großen Anzahl von Feldern erstellen oder aktualisieren, können zu sehr großen Blueprints führen.
