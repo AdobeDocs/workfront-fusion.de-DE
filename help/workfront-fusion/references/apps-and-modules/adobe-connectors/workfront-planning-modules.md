@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 9f736464e38e7885ff528ff114008175ff2db82e
 workflow-type: tm+mt
-source-wordcount: 2101
-ht-degree: 50%
+source-wordcount: 2236
+ht-degree: 47%
 
 ---
 
@@ -277,6 +277,8 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz, ein Datensatztyp 
       </tr>
   </tbody>
 </table>
+
+Ein Beispiel für die Verwendung der erweiterten Logik in diesem Modul finden Sie [Beispiel für die erweiterte Logik im Modul Ereignisse beobachten](#example-of-advanced-logic-in-the-watch-events-module).
 
 ### Aktionen
 
@@ -571,3 +573,40 @@ Der folgende JSONata-Ausdruck erstellt eine für Menschen lesbare Ausgabe der Pl
 
 Informationen zur Verwendung von JSONata-Modulen finden Sie unter [JSONata-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
 
+## Beispiel für die erweiterte Logik im Modul Ereignisse beobachten
+
+Dies ist ein Beispiel für das Format, das die erweiterte Logik bei Verwendung des Moduls Workfront-Planung > Ereignisse beobachten annimmt.
+
+```
+[
+  {
+    "fieldName": "recordTypeId",
+    "fieldValue": "Rt68c886502d4b5554ee80896b",
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "planning"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "active"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  }
+]
+```
+
+Beachten Sie Folgendes bei der Verwendung der erweiterten Logik im Modul Ereignisse beobachten:
+
+* Der erste `"fieldvalue":` ist die Kennung des Planungs-Datensatztyps, die von der URL abgerufen wird. In diesem Beispiel ist die Kennung des Planungs-Datensatztyps `Rt68c886502d4b5554ee80896b`.
+* Planungsdaten werden in einem Array namens `data ` zurückgegeben, das in diesem Beispiel als `"fieldName": "data"` angezeigt wird.
+* Planning-Feldnamen werden als IDs zurückgegeben, die mit `F` beginnen.
+* Da dieses Beispiel mit einem `OR` Filter-Connector ausgewertet wird, hat es zwei Einträge für dasselbe Feld (`F68c886502d4b5554eec808975`).  Die beiden Dropdown-Optionen, nach denen das Modul filtert, sind `"planning"` und `"active"`.
