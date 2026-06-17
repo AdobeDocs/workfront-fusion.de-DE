@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
-source-git-commit: b84dea9d44b4112a8d905b631720727e557351df
+source-git-commit: e6ebc56a6e7d068ccf14411e2af91b3f79d0ca24
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2452'
 ht-degree: 54%
 
 ---
@@ -380,7 +380,7 @@ ht-degree: 54%
          * [Adobe Target-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
          * [Adobe User Management-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
          * [Adobe Workfront-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-         * [Adobe Workfront Planning-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
+         * [Adobe Workfront-Planungsmodule](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Einheitliche Überprüfungs- und Genehmigungsmodule für Adobe Workfront](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
          * [Workfront Boards-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
          * [Workfront Proof-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
       * Connectoren für Drittanbieteranwendungen {#third-party-app-connectors}
