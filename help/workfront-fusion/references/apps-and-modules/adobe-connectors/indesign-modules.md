@@ -9,16 +9,13 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 exl-id: 8164487a-d114-4e31-9d1c-8404fc89a04b
 TQID: https://experienceleague.adobe.com/D2JdaOqvTA5SUsKm9U8Sjss6dJFMZv2Uo5RGk25QphQ
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 18401e01219383f86e1553e16b21057497d24cc0
 workflow-type: tm+mt
-source-wordcount: 1702
-ht-degree: 22%
+source-wordcount: 2240
+ht-degree: 17%
 
 ---
 
@@ -452,3 +449,121 @@ Dieses Modul führt einen benutzerdefinierten API-Aufruf an die Adobe InDesign-A
   </tr> 
   </tbody>
 </table>
+
+### Nicht kategorisiert
+
+#### PDF in InDesign konvertieren
+
+Dieses Modul konvertiert ein PDF-Dokument in ein bearbeitbares InDesign-Format (INDD oder IDML). Die Ausgabe ist eine ZIP-Datei (Standardname „output.zip„) mit Unterordnern, die nach jeder Eingabe-PDF benannt sind, mit dem konvertierten Dokument und den zugehörigen Assets. Wenn die Option Links einbetten auf „false“ gesetzt ist, werden die Assets in einem separaten Ordner in der ZIP-Datei bereitgestellt. Wenn „true“ festgelegt ist, werden alle Links in die InDesign-Datei eingebettet.
+
+
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Verbindung</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu Adobe InDesign finden Sie unter <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Erstellen einer Verbindung zu Adobe InDesign</a> in diesem Artikel.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Eingabe von Assets</td>
+      <td>Klicken Sie für jedes Asset, das Sie konvertieren möchten, auf <b>Element hinzufügen</b> und geben Sie die URL des Assets ein und weisen Sie einen lokalen Dateinamen zu. Der Dateiname wird später im Modul referenziert.</td>
+    </tr>
+  <tr> 
+   <td>Zieldokumente</td> 
+   <td>Klicken Sie für jedes Dokument, das Sie konvertieren möchten, auf <b>Element hinzufügen</b> und geben Sie den zugewiesenen Dateinamen aus dem Feld Eingabe-Assets ein.</td> 
+  </tr> 
+  <tr> 
+   <td>Ausgabeformat</td> 
+   <td>Wählen Sie aus, ob Sie die Dateien in INDD- oder IDML-Dateien konvertieren möchten.</td> 
+  </tr> 
+  <tr> 
+   <td>Links einbetten</td> 
+   <td>Wählen Sie Ja , wenn alle Bild- und Asset-Links direkt in die INDD- oder IDML-Datei eingebettet werden sollen. Wählen Sie Nein aus, um diese Assets in einem separaten Ordner in der ZIP-Datei zu platzieren.</td> 
+  </tr> 
+  <tr> 
+   <td>Name der ZIP-Ausgabedatei</td> 
+   <td>Geben Sie einen Namen für die ZIP-Ausgabedatei ein, oder benennen Sie ihn.</td> 
+  </tr> 
+  <tr> 
+   <td>Ausgaben</td> 
+   <td>Wählen Sie für jede Datei, die Sie ausgeben möchten, den Speichertyp aus und geben Sie Speicherdetails ein.</td> 
+  </tr> 
+  <tr> 
+   <td>Maximale Anzahl an zurückgegebenen Ergebnissen</td> 
+   <td>Geben Sie die maximale Anzahl von Ergebnissen ein, die das Modul für jeden Ausführungszyklus zurückgeben soll.</td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Senden eines benutzerdefinierten Skripts
+
+Dieses Modul sendet benutzerdefinierte Skriptpakete zur Registrierung und gibt eine URL für die Veröffentlichung von Ausführungsanfragen für das registrierte Skript zurück.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Verbindung</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu Adobe InDesign finden Sie unter <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Erstellen einer Verbindung zu Adobe InDesign</a> in diesem Artikel.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Skriptpaket</td>
+      <td>Ordnen Sie die Quelldatei einem vorherigen Modul zu, z. B. einem Modul Dokument herunterladen . Dies sollte eine ZIP-Datei sein.</td>
+    </tr>
+  <tr> 
+   <td>Dateiname</td> 
+   <td>Geben Sie den Namen der hochgeladenen Datei, die das Skriptpaket enthält, ein oder ordnen Sie ihn zu.</td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Benutzerdefinierte Skript-App-Version aktualisieren
+
+Dieses Modul aktualisiert die Konfiguration der InDesign-App-Version für ein registriertes benutzerdefiniertes Skript. Auf diese Weise können Sie Versionsstrategien angeben, einschließlich der Verwendung der neuesten Version, der Behebung einer Hauptversion oder der Behebung einer bestimmten Haupt- und Nebenversion.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Verbindung</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu Adobe InDesign finden Sie unter <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Erstellen einer Verbindung zu Adobe InDesign</a> in diesem Artikel.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Skriptname</td>
+      <td>Geben Sie den Namen des zu aktualisierenden benutzerdefinierten Skripts ein oder ordnen Sie ihn zu. Dies ist der <code>capability</code> Wert, der bei der Registrierung des Skripts zurückgegeben wurde.</td>
+    </tr>
+  <tr> 
+   <td>App-Versionsstrategie</td> 
+   <td>Wählen Sie die App-Versionsstrategie aus, die Sie verwenden möchten.
+   <ul>
+   <li><b>Immer die neueste Version verwenden</b></li>
+   <li><b>An Hauptversion anheften</b><p>Geben Sie die Nummer für die Hauptversion ein, auf die Sie diese anwenden möchten, oder mappen Sie sie.</p></li>
+   <li><b>An Haupt- und Nebenversion anheften</b><p>Geben Sie die Haupt- und Nebenversion ein, auf die Sie dies anwenden möchten.</p></li>
+   </ul></td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Aktuelle Anwendungsversionen abrufen
+
+Dieses Modul ruft Informationen zu allen verfügbaren Versionen der InDesign-App ab, einschließlich Hauptversion, Nebenversion und Status für jede registrierte App-Version.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Verbindung</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu Adobe InDesign finden Sie unter <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Erstellen einer Verbindung zu Adobe InDesign</a> in diesem Artikel.</td>
+      </tr>
+  <tr> 
+   <td>Maximale Anzahl an zurückgegebenen Ergebnissen</td> 
+   <td>Geben Sie die maximale Anzahl von Ergebnissen ein, die das Modul für jeden Ausführungszyklus zurückgeben soll.</td> 
+  </tr> 
+  </tbody>
+</table>
+
