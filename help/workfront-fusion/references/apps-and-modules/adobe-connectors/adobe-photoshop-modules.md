@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 19cca2c98ca25a7aee5c5c067d7287ab98c8b79f
 workflow-type: tm+mt
 source-wordcount: 6526
@@ -648,7 +650,7 @@ Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können 
    <td> Geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Ebenen]</td>
+      <td role="rowheader">[!UICONTROL -Ebenen]</td>
    <td> <p>Klicken Sie für jede Textebene, die Sie bearbeiten möchten, auf <b>Element hinzufügen</b> und geben Sie die Ebenenoptionen ein.<p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Text bearbeiten</a> in der Adobe Photoshop-Dokumentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Ausgabe)-Speicher]</td>
@@ -722,7 +724,7 @@ Um mehrere Ebenen zu bearbeiten, verwenden Sie das Modul [Textebenen bearbeiten]
    <td> Geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Ebenen]</td>
+      <td role="rowheader">[!UICONTROL -Ebenen]</td>
    <td> <p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Textebene bearbeiten</a> in der Adobe Photoshop-Dokumentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ausgabedateispeicher]</td>
@@ -1236,7 +1238,7 @@ Dieses Modul verwendet die Smart Object API Version 2.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-Ebenen]</p>
+        <p>[!UICONTROL -Ebenen]</p>
       </td>
    <td>Klicken Sie für jede Ebene, die Sie dem Smart-Objekt hinzufügen möchten, auf Element hinzufügen und geben Sie den Namen oder die ID des Objekts, den Datei-Service, in dem das Smart-Objekt gespeichert ist, und die URL oder den Pfad der Ebene ein.<p>Beschreibungen der erweiterten Einstellungen in diesem Bereich finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Ersetzen eines Smart-Objekts</a> in der Dokumentation zur Photoshop-API </td> 
     </tr>
@@ -1301,7 +1303,7 @@ Dieses Modul verwendet die Legacy-Version von Smart-Objekten.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL-Ebenen]</p>
+        <p>[!UICONTROL -Ebenen]</p>
       </td>
    <td>Klicken Sie für jede Ebene, die Sie dem Smart-Objekt hinzufügen möchten, auf Element hinzufügen und geben Sie den Namen oder die ID des Objekts, den Datei-Service, in dem das Smart-Objekt gespeichert ist, und die URL oder den Pfad der Ebene ein.<p>Beschreibungen der erweiterten Einstellungen in diesem Bereich finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Ersetzen eines Smart-Objekts</a> in der Dokumentation zur Photoshop-API </td> 
     </tr>
@@ -1350,7 +1352,7 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
       <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Speicher]</td>
+      <td role="rowheader">[!UICONTROL -Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die Datei gespeichert wird, deren Größe geändert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
@@ -1369,7 +1371,7 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
     </tr>
     <tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Speicher]</td>
+      <td role="rowheader">[!UICONTROL -Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die neue Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
@@ -1563,7 +1565,7 @@ Dieses Modul erstellt oder bearbeitet einen Verbund in Photoshop.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Modus]</td>
+      <td role="rowheader">[!UICONTROL -Modus]</td>
       <td>
         <p>Wählen Sie den Farbmodus für dieses Bild.</p>
       </td>
@@ -1587,7 +1589,7 @@ Dieses Modul erstellt oder bearbeitet einen Verbund in Photoshop.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Auflösung]</td>
+      <td role="rowheader">[!UICONTROL -Auflösung]</td>
       <td>
         <p>Geben <b> im Feld </b> den Wert der Auflösung in Dichteeinheiten (Pixel pro Zoll) ein. Der Standardwert ist 72.</p>
       </td>
@@ -1623,7 +1625,7 @@ Dieses Modul erstellt oder bearbeitet einen Verbund in Photoshop.
       </td>
     </tr>
      <tr>
-      <td role="rowheader">[!UICONTROL-Auflösung]</td>
+      <td role="rowheader">[!UICONTROL -Auflösung]</td>
       <td>
         <p>Wählen Sie die Einheit aus, die Sie für die Auflösung verwenden möchten, und wählen Sie dann den Wert für die gewünschte Auflösung aus.</p>
       </td>
@@ -1659,7 +1661,7 @@ Dieses Modul erstellt oder bearbeitet einen Verbund in Photoshop.
       </td>
     </tr>
      <tr>
-      <td role="rowheader">[!UICONTROL-Ebenen]</td>
+      <td role="rowheader">[!UICONTROL -Ebenen]</td>
       <td>
         <p>Klicken Sie für jede weitere hinzuzufügende Ebene auf <b>Element hinzufügen</b> und geben Sie Ebenendetails ein. </p><p>Weitere Informationen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">Erstellen oder Bearbeiten eines Composite</a> in der Adobe-Dokumentation.</p>
       </td>
