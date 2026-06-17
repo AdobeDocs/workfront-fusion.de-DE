@@ -4,13 +4,10 @@ description: Mit den Adobe Workfront-Modulen für Inhalte und Genehmigungen kön
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 8b031ed2093d4844f05c52db9fc79ce9e7e4b85c
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
 workflow-type: tm+mt
 source-wordcount: 3743
 ht-degree: 15%
@@ -21,7 +18,7 @@ ht-degree: 15%
 
 Mit den Modulen Adobe Workfront Unified Review and Approvals können Sie Genehmigungsdetails abrufen, eine Entscheidung über ein Asset treffen, Genehmigungsteilnehmer hinzufügen oder löschen, Genehmigungsphasen hinzufügen oder aktualisieren, Phasen sperren oder entsperren und benutzerdefinierte API-Aufrufe durchführen.
 
-Informationen zu einheitlichen Workfront-Überprüfungen und -Genehmigungen finden Sie unter [Einheitliche Überprüfung und Genehmigung - Übersicht](https://experienceleague.adobe.com/de/docs/workfront/using/review-and-approve-work/document-approvals-overview) in der Dokumentation zu Workfront.
+Informationen zu einheitlichen Workfront-Überprüfungen und -Genehmigungen finden Sie unter [Einheitliche Überprüfung und Genehmigung - Übersicht](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) in der Dokumentation zu Workfront.
 
 ## Zugriffsanforderungen
 
@@ -140,7 +137,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 * [Löschen einer Entscheidung in einem Stadium](#delete-a-decision-on-a-stage)
 * [Löschen eines Stadiums](#delete-a-stage)
 * [Löschen einer Vorlage](#delete-a-template)
-* [# Löschen einer Genehmigung](#delete-an-approval)
+* [Löschen einer Genehmigung](#delete-an-approval)
 * [Entscheidungen löschen](#delete-decisions)
 * [Teilnehmer löschen](#delete-participants)
 * [Stadium sperren](#lock-a-stage)
