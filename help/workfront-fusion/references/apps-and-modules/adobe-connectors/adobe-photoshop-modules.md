@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 19cca2c98ca25a7aee5c5c067d7287ab98c8b79f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
 workflow-type: tm+mt
-source-wordcount: 6526
-ht-degree: 13%
+source-wordcount: 7285
+ht-degree: 12%
 
 ---
 
@@ -20,10 +18,21 @@ ht-degree: 13%
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Adobe Photoshop] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 
-
 Anweisungen zum Erstellen eines Szenarios finden Sie in den Artikeln unter [Szenario erstellen: Artikelindex](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex](/help/workfront-fusion/references/modules/modules-toc.md).
+
+>[!IMPORTANT]
+>
+>Adobe Photoshop hat einige Elemente seiner API verworfen, die Fusion verwendet, um Aktionen in Photoshop durchzuführen.
+>
+>**Daher werden einige der vorhandenen Photoshop-Module nach dem 30. Juli 2026 nicht mehr funktionieren.**
+>
+>Es wird empfohlen, alle Szenarien, die diese Module verwenden, so bald wie möglich auf die aktualisierten Module zu aktualisieren.
+>
+>Eine Liste der betroffenen Module finden Sie unter [Aktualisierungen der Einstellung von Adobe Photoshop-API](#adobe-photoshop-api-deprecation-updates).
+>
+>Eine Erläuterung der Auswirkungen von API-Änderungen auf Workfront Fusion finden Sie unter [Übersicht über APIs in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
 
 ## Zugriffsanforderungen
 
@@ -70,6 +79,34 @@ Bevor Sie den [!DNL Adobe Photoshop]-Connector verwenden können, müssen Sie si
 * Sie müssen über ein aktives [!DNL Adobe Photoshop] verfügen.
 * Sie müssen über eine Firefly Services-Lizenz verfügen.
 * Sie müssen über eine Client-ID und ein Client-Geheimnis verfügen. Sie können diese von der Adobe Developer Console beziehen.
+
+## Aktualisierungen der Einstellung von Adobe Photoshop-APIs
+
+Adobe Photoshop hat einige Elemente seiner API verworfen, die Fusion verwendet, um Aktionen in Photoshop durchzuführen.
+
+**Daher werden einige der vorhandenen Photoshop-Module nach dem 30. Juli 2026 nicht mehr funktionieren.**
+
+In dieser Tabelle wird dokumentiert, welche Module von dieser Einstellung betroffen sind und auf welches Modul Sie aktualisieren sollten.
+
+| Veraltetes Modul | Auf neues Modul aktualisieren |
+|---|---|
+| PSD-Bearbeitungen anwenden | Erstellen oder Bearbeiten eines Composite |
+| Bildformat konvertieren | Erstellen oder Bearbeiten eines Composite |
+| Erstellen von zusammengesetzten Elementen | Erstellen oder Bearbeiten eines Composite |
+| Erstellen einer neuen PSD | Erstellen oder Bearbeiten eines Composite |
+| Ausgabedarstellungen erstellen | Erstellen oder Bearbeiten eines Composite |
+| Bearbeiten von Textebenen | Ausführen von Photoshop-Aktionen, -Skripten und -Transformationen |
+| Bearbeiten von Textebenen 2 | Ausführen von Photoshop-Aktionen, -Skripten und -Transformationen |
+| Ausführen einer JSON-Aktion | Ausführen von Photoshop-Aktionen, -Skripten und -Transformationen |
+| Tiefenunschärfe ausführen | (Nicht verfügbar) |
+| Ausführen von Photoshop-Aktionen | Ausführen von Photoshop-Aktionen, -Skripten und -Transformationen |
+| Ausführen eines Produktzuschnitts | Ausführen von Photoshop-Aktionen, -Skripten und -Transformationen |
+| Abrufen von Ebeneninformationen | Manifest erzeugen |
+| Ändern der Bildgröße | Erstellen oder Bearbeiten eines Composite |
+| Smart-Objekt ersetzen | Erstellen oder Bearbeiten eines Composite |
+| Smart-Objekt 2 ersetzen | Erstellen oder Bearbeiten eines Composite |
+| Drehen von Bildern | Ausführen von Photoshop-Aktionen, -Skripten und -Transformationen |
+| Wasserzeichen für ein Bild | Erstellen oder Bearbeiten eines Composite |
 
 ## Adobe Photoshop-API-Informationen
 
@@ -169,26 +206,480 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 
 ![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [PSD-Bearbeitungen anwenden](#apply-psd-edits)
-* [Automatische Farbkorrektur eines Bildes](#auto-color-correct-an-image)
-* [Bildformat konvertieren](#convert-image-format)
-* [Erstellen einer Maske](#create-a-mask)
-* [Erstellen einer neuen PSD](#create-a-new-psd)
-* [Bearbeiten von Textebenen](#edit-text-layers)
-* [Bearbeiten von Textebenen (alt)](#edit-text-layers-legacy)
-* [Ausführen einer JSON-Aktion](#execute-an-action-json)
-* [Tiefenunschärfe ausführen](#execute-depth-blur)
-* [Ausführen von Photoshop-Aktionen](#execute-photoshop-actions)
-* [Ausführen eines Produktzuschnitts](#execute-product-crop)
-* [Abrufen von Ebeneninformationen](#get-layer-info)
-* [Benutzerdefinierten API-Aufruf erstellen](#make-a-custom-api-call)
-* [Hintergrund entfernen](#remove-background)
-* [Ersetzen eines Smart-Objekts](#replace-a-smart-object)
-* [Ersetzen eines Smart-Objekts (alt)](#replace-a-smart-object-legacy)
-* [Ändern der Bildgröße](#resize-an-image)
-* [Wasserzeichen für ein Bild](#watermark-an-image)
+### Aktionen
 
-### PSD-Bearbeitungen anwenden
+* [HEX in RGB konvertieren](#convert-hex-to-rgb)
+* [Erstellen einer Zeichenfläche](#create-an-artboard)
+* [Erstellen oder Bearbeiten eines Composite](#create-or-edit-a-composite)
+* [Bearbeiten eines Bildes mit verschiedenen Anpassungen](#edit-an-image-with-various-adjustments)
+* [Ausführen von Photoshop-Aktionen, -Skripten und -Transformationen](#execute-photoshop-actions-scripts-and-transformations)
+* [Manifest erzeugen](#generate-a-manifest)
+* [Hintergrund entfernen](#remove-background)
+
+#### HEX in RGB konvertieren
+
+Dieses Modul konvertiert einen HEX-Farbcode in RGB-Farbe.
+
+
+
+Dieses Modul nimmt Bildanpassungen im Lightroom-Stil vor.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL HEX]</td>
+      <td>Geben Sie den HEX-Code ein, den Sie in RGB konvertieren möchten, oder ordnen Sie ihn zu.</td>
+    </tr>
+    </tbody>
+</table>
+
+#### Erstellen einer Zeichenfläche
+
+Dieses Modul erstellt eine neue Zeichenfläche in Photoshop.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>Klicken Sie für jedes Bild, das Sie dieser Zeichenfläche hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Quelltyp und den Speicherort des Bildes ein.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Zeichenflächen-Abstand]</p>
+      </td>
+   <td>Geben Sie den Abstand in Pixel ein, den Sie zwischen den einzelnen Zeichenflächen haben möchten, oder mappen Sie ihn zu.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ausgaben]</td>
+      <td>
+        <p>Klicken Sie für jede konvertierte Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie den Speicherort, den Speicherort und andere Optionen wie aufgeführt ein.</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+#### Erstellen oder Bearbeiten eines Composite
+
+Dieses Modul erstellt oder bearbeitet einen Verbund in Photoshop.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>Klicken Sie für jedes Bild, das Sie dieser Zeichenfläche hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Quelltyp und den Speicherort des Bildes ein.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Breite]</p>
+      </td>
+   <td>Wenn Sie ein Bild erstellen, geben Sie die Bildbreite in Pixel ein.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Höhe]</td>
+      <td>
+        <p>Wenn Sie ein Bild erstellen, geben Sie die Bildhöhe in Pixel ein.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL-Modus]</td>
+      <td>
+        <p>Wählen Sie den Farbmodus für dieses Bild.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Fill]</td>
+      <td>
+        <p>Wählen Sie den Füllungstyp für die Hintergrundebene aus.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>
+        <p>Geben Sie einen Namen für das neue Bild ein oder mappen Sie ihn.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Pixel-Skalierungsfaktor]</td>
+      <td>
+        <p>Geben Sie den Pixelskalierungsfaktor ein oder mappen Sie ihn. Dies muss eine Zahl zwischen 0,1 und 1 sein.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL-Auflösung]</td>
+      <td>
+        <p>Geben <b> im Feld </b> den Wert der Auflösung in Dichteeinheiten (Pixel pro Zoll) ein. Der Standardwert ist 72.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Profiltyp]</td>
+      <td>
+        <p>Wenn Sie das Standardfarbprofil überschreiben möchten, wählen Sie einen Profiltyp aus und geben Sie die Details wie aufgeführt ein.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Zuschneiden &gt; Oben / Links / Unten / Rechts]</td>
+      <td>
+        <p>Geben Sie die Grenzen ein, auf die Sie das Bild zuschneiden möchten.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL ausblenden]</td>
+      <td>
+        <p>Wählen Sie Ja , um Pixel außerhalb der Zuschnittgrenzen auszublenden. Wenn dies auf „false“ gesetzt ist, werden Pixel außerhalb der Zuschnittgrenzen gelöscht. Der Standardwert lautet „false“.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Größe ändern &gt; Breite]</td>
+      <td>
+        <p>Wählen Sie die Einheit aus, die Sie für die Breite verwenden möchten, und wählen Sie dann den Wert aus, der die gewünschte Breite darstellt. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Größe ändern &gt; Höhe]</td>
+      <td>
+        <p>Wählen Sie die Einheit aus, die Sie für die Höhe verwenden möchten, und wählen Sie dann den Wert aus, der für die gewünschte Höhe steht. </p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL-Auflösung]</td>
+      <td>
+        <p>Wählen Sie die Einheit aus, die Sie für die Auflösung verwenden möchten, und wählen Sie dann den Wert für die gewünschte Auflösung aus.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Resample]</td>
+      <td>
+        <p>Wählen Sie die beim Ändern der Größe zu verwendende Resampling-Methode aus.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Proportionen beschränken]</td>
+      <td>
+        <p>Wählen Sie Ja , um das Seitenverhältnis zwischen Breite und Höhe beizubehalten. Wählen Sie Nein , um eine unabhängige Einstellung der Breite und Höhe zu ermöglichen.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Rastern]</td>
+      <td>
+        <p>Wählen Sie aus, ob das Bild gerastert werden soll.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL scale styles]</td>
+      <td>
+        <p>Wählen Sie aus, ob beim Ändern der Bildgröße eine Skalierung auf Stile angewendet werden soll.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Beschneiden nach]</td>
+      <td>
+        <p>Wählen Sie aus, ob transparente Pixel gekürzt werden sollen.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL-Ebenen]</td>
+      <td>
+        <p>Klicken Sie für jede weitere hinzuzufügende Ebene auf <b>Element hinzufügen</b> und geben Sie Ebenendetails ein. </p><p>Weitere Informationen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">Erstellen oder Bearbeiten eines Composite</a> in der Adobe-Dokumentation.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Standardschriftart PostScript Name]</td>
+      <td>
+        <p>Geben Sie den PostScript-Namen der Standardschriftart ein, die Sie verwenden möchten, oder ordnen Sie ihn zu.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL fehlende Schriftstrategie]</td>
+      <td>
+        <p>Wählen Sie aus, ob bei der Erstellung oder Bearbeitung ein Fehler auftreten soll oder ob die Standardschriftart verwendet werden soll, wenn keine Schriftart verfügbar ist.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Zusätzliche Schriftarten]</td>
+      <td>
+        <p>Klicken Sie für jede Schriftart, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die Quell-URL der Schriftart ein. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ausgaben]</td>
+      <td>
+        <p>Klicken Sie für jede bearbeitete Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie die Ausgabedetails ein. </p><p>Weitere Informationen finden Sie <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">Erstellen oder Bearbeiten eines Composite</a> in der Dokumentation zu Adobe.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Maximale Anzahl an Ergebnissen]</td>
+      <td>
+        <p>Geben Sie die maximale Anzahl von Ergebnissen ein, mit denen das Modul während eines Ausführungszyklus arbeiten soll, oder mappen Sie sie.</p>
+      </td>
+      </tr>
+      </tbody>
+</table>
+
+#### Bearbeiten eines Bildes mit verschiedenen Anpassungen
+
+Dieses Modul nimmt Bildanpassungen im Lightroom-Stil vor.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>Geben Sie den Quelltyp und den Speicherort des Bildes ein oder ordnen Sie ihn zu.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Andere Felder]</p>
+      </td>
+   <td><p>Weitere Informationen finden Sie <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/edit">Bearbeiten eines Bildes mit verschiedenen Anpassungen</a> in der Dokumentation zu Adobe.</p></td> 
+    </tr>
+    </tbody>
+</table>
+
+#### Ausführen von Photoshop-Aktionen, -Skripten und -Transformationen
+
+Dieses Modul führt Aktionen, Skripte und Umwandlungen aus, die in der Firefly Photoshop-API verfügbar sind.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>Geben Sie den Quelltyp und den Speicherort des Bildes ein oder ordnen Sie ihn zu.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Aktionen]</p>
+      </td>
+   <td><p>Klicken Sie für jede Aktion, die Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie die Quelle, URL und den Namen der Aktion ein.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL UXP-Quelle]</p>
+      </td>
+   <td><p>Wenn Sie ein UDP-Skript verwenden, wählen Sie aus, ob Sie eine URL oder Inline-Inhalte bereitstellen, geben Sie dann die URL oder den Inhalt ein oder mappen Sie ihn.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Zusätzliche Inhalte]</p>
+      </td>
+   <td><p>Fügen Sie bis zu 25 Dateien hinzu, die von der Aktion oder UXP referenziert werden.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ausgaben]</td>
+      <td>
+        <p>Klicken Sie für jede bearbeitete Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie das Format, das Ziel und das Ausgabemuster ein.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Maximale Anzahl an Ergebnissen]</td>
+      <td>
+        <p>Geben Sie die maximale Anzahl von Ergebnissen ein, mit denen das Modul während eines Ausführungszyklus arbeiten soll, oder mappen Sie sie.</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
+#### Manifest erzeugen
+
+Dieses Modul generiert ein PSD-Manifest für das angegebene Eingabebild.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Quelle]</td>
+      <td>
+        <p>Geben Sie den Quelltyp und den Speicherort des Bildes ein oder ordnen Sie ihn zu.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ausgaben]</td>
+      <td>
+        <p>Klicken Sie für jede bearbeitete Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie die Zieldetails ein.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Ebenenminiaturansichten einschließen]</p>
+      </td>
+   <td><p>Wählen Sie Ja aus, wenn Sie das Modul zum Generieren einer Miniaturansicht für jede Ebene im Manifest verwenden möchten.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximale Tiefe der Miniaturansichten]</p>
+      </td>
+   <td><p>Geben Sie die maximale Tiefe für Miniatur-Ausgabedarstellungen ein oder mappen Sie sie. Geben Sie für keine maximale Tiefe <code>0</code> ein.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layer-Miniaturansichtsformat]</p>
+      </td>
+   <td><p>Wählen Sie aus, ob die Miniaturen im JPEG- oder PNG-Format vorliegen sollen.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Smart-Objektdaten extrahieren]</td>
+      <td>
+        <p>Wählen Sie aus, ob eingebettete Smart-Objekte extrahiert und eine vordefinierte URL in das Manifest aufgenommen werden sollen.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Auf Transparenz trimmen]</td>
+      <td>
+        <p>Wählen Sie aus, ob die Miniaturansichten der Ebenen gekürzt werden sollen, um transparente Pixel zu entfernen.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Maximale Anzahl an Ergebnissen]</td>
+      <td>
+        <p>Geben Sie die maximale Anzahl von Ergebnissen ein, mit denen das Modul während eines Ausführungszyklus arbeiten soll, oder mappen Sie sie.</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
+#### Hintergrund entfernen
+
+Dieses Aktionsmodul identifiziert das Hauptsubjekt Ihres Bildes und entfernt den Hintergrund.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Eingabe)-Speicher]</td>
+      <td>
+        <p>Wählen Sie den Datei-Service aus, in dem die Datei gespeichert wird, aus der der Hintergrund entfernt werden soll.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Eingabe)-Dateispeicherort]</p>
+      </td>
+   <td> Geben Sie die URL oder den Pfad der Datei ein, aus der bzw. dem Sie den Hintergrund entfernen möchten, oder ordnen Sie sie zu. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Ausgabe)-Speicher]</td>
+      <td>
+        <p>Wählen Sie den Datei-Service aus, in dem die neue Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Ausgabe)-Dateispeicherort]</p>
+      </td>
+   <td> Geben Sie die URL oder den Pfad ein, unter dem die neue Datei gespeichert werden soll, oder mappen Sie sie.  Dies ist nur erforderlich, wenn Sie für den Ausgabespeicher keinen internen Fusion-Speicher ausgewählt haben.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL überschreiben]</td>
+      <td>
+        <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll. Dies gilt nur für Dateien im Adobe-Speicher.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Farbraum]</p>
+      </td>
+   <td>Wählen Sie aus, ob das Ausgabebild RGB- oder RGBA-Farbe verwenden soll. </td> 
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maskenformat]</p>
+      </td>
+   <td>Wählen Sie aus, ob die Kanten des Bildes weich (gefedert) oder binär sein sollen. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL optimieren]</p>
+      </td>
+   <td>Wählen Sie Leistung aus, um die Geschwindigkeit zu optimieren, oder Batch, um Wartezeiten zuzulassen. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Nachbearbeitungsprozess]</p>
+      </td>
+   <td>Wählen Sie aus, ob die Nachbearbeitung aktiviert werden soll.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Version]</p>
+      </td>
+   <td>Der Standardwert ist 4.0</td> 
+    </tr> 
+    </tbody>
+</table>
+
+
+### Legacy
+
+* [Anwenden von PSD-Bearbeitungen (veraltet)](#apply-psd-edits-legacy)
+* [Automatische Farbkorrektur eines Bildes (veraltet)](#auto-color-correct-an-image-legacy)
+* [Bildformat konvertieren (veraltet)](#convert-image-format-legacy)
+* [Erstellen einer Maske (veraltet)](#create-a-mask-legacy)
+* [Erstellen einer neuen PSD (veraltet)](#create-a-new-psd-legacy)
+* [Erstellen von Ausgabedarstellungen (veraltet)](#create-renditions-legacy)
+* [Bearbeiten von Textebenen (alt)](#edit-text-layers-legacy)
+* [Bearbeiten von Textebenen 2 (alt)](#edit-text-layers-2-legacy)
+* [Ausführen einer JSON-Aktion (alt)](#execute-an-action-json-legacy)
+* [Tiefenunschärfe ausführen (alt)](#execute-depth-blur-legacy)
+* [Ausführen von Photoshop-Aktionen (veraltet)](#execute-photoshop-actions-legacy)
+* [Ausführen eines Produktzuschnitts (veraltet)](#execute-product-crop-legacy)
+* [Abrufen von Ebeneninformationen (veraltet)](#get-layer-info-legacy)
+* [Erstellen eines benutzerdefinierten API-Aufrufs (veraltet)](#make-a-custom-api-call-legacy)
+* [Hintergrund entfernen (veraltet)](#remove-background-legacy)
+* [Ersetzen eines Smart-Objekts (alt)](#replace-a-smart-object-legacy)
+* [Ersetzen eines Smart-Objekts 2 (alt)](#replace-a-smart-object-2-legacy)
+* [Größe eines Bildes ändern (veraltet)](#resize-an-image-legacy)
+* [Wasserzeichen für ein Bild (veraltet)](#watermark-an-image-legacy)
+
+#### Anwenden von PSD-Bearbeitungen (veraltet)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten ](#create-or-edit-a-composite)&quot;.
 
 Dieses Aktionsmodul wendet eine Vielzahl von Bearbeitungen auf Dokument- und Ebenenebene an.
 
@@ -319,7 +810,7 @@ Dieses Modul unterstützt große Dateien. Weitere Informationen zu großen Datei
     </tbody>
 </table>
 
-### Automatische Farbkorrektur eines Bildes
+#### Automatische Farbkorrektur eines Bildes (veraltet)
 
 Dieses Aktionsmodul korrigiert automatisch das angegebene Bild.
 
@@ -370,7 +861,12 @@ Dieses Aktionsmodul korrigiert automatisch das angegebene Bild.
     </tbody>
 </table>
 
-### Bildformat konvertieren
+#### Bildformat konvertieren (veraltet)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten ](#create-or-edit-a-composite)&quot;.
 
 Dieses Aktionsmodul konvertiert eine Datei in JPEG, PNG, PSD oder TIFF.
 
@@ -427,7 +923,7 @@ Dieses Aktionsmodul konvertiert eine Datei in JPEG, PNG, PSD oder TIFF.
     </tbody>
 </table>
 
-### Erstellen einer Maske
+#### Erstellen einer Maske (veraltet)
 
 Dieses Aktionsmodul gibt eine PNG-Datei mit einer Maske zurück, die um das Subjekt herum angewendet wird.
 
@@ -502,7 +998,12 @@ Dieses Aktionsmodul gibt eine PNG-Datei mit einer Maske zurück, die um das Subj
     </tbody>
 </table>
 
-### Erstellen einer neuen PSD
+#### Erstellen einer neuen PSD (veraltet)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten ](#create-or-edit-a-composite)&quot;.
 
 Dieses Aktionsmodul erstellt eine neue PSD mit optionalen Ebenen und generiert Ausgabedarstellungen oder speichert sie als PSD.
 
@@ -607,7 +1108,67 @@ Dieses Aktionsmodul erstellt eine neue PSD mit optionalen Ebenen und generiert A
     </tbody>
 </table>
 
-### Bearbeiten von Textebenen
+#### Erstellen von Ausgabedarstellungen (veraltet)
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Eingabe)-Speicher]</td>
+      <td>
+        <p>Wählen Sie den Datei-Service aus, in dem die zu bearbeitende Datei gespeichert ist.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Eingabe)-Dateispeicherort]</p>
+      </td>
+   <td> Geben Sie die URL oder den Pfad der Datei ein, die Sie bearbeiten möchten, oder ordnen Sie sie zu. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ausgaben]</td>
+      <td>
+        <p>Klicken Sie für jede Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie die Speicher-, Speicherort-, Typ- und Überschreibungsoption wie aufgeführt ein.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Ausgänge)-Speicher]</td>
+      <td>
+        <p>Wählen Sie den Datei-Service aus, in dem die bearbeitete Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Ausgabe) Dateispeicherort]</p>
+      </td>
+   <td> Geben Sie die URL oder den Pfad ein, unter dem die bearbeitete Datei gespeichert wird, oder mappen Sie sie.  Dies ist nur erforderlich, wenn Sie für den Ausgabespeicher keinen internen Fusion-Speicher ausgewählt haben.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output)-Typ]</p>
+      </td>
+   <td> Dateityp für die bearbeitete Datei auswählen. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Ausgänge) überschreiben]</td>
+      <td>
+        <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll.</p>
+      </td>
+    </tr>
+      </tbody>
+</table>
+
+#### Bearbeiten von Textebenen (alt)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
 
 Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können separate Bearbeitungsdetails für mehrere Ebenen in derselben Datei eingeben.
 
@@ -650,7 +1211,7 @@ Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können 
    <td> Geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Ebenen]</td>
+      <td role="rowheader">[!UICONTROL-Ebenen]</td>
    <td> <p>Klicken Sie für jede Textebene, die Sie bearbeiten möchten, auf <b>Element hinzufügen</b> und geben Sie die Ebenenoptionen ein.<p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Text bearbeiten</a> in der Adobe Photoshop-Dokumentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Ausgabe)-Speicher]</td>
@@ -679,7 +1240,12 @@ Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können 
   </tbody>
 </table>
 
-### Bearbeiten von Textebenen (alt)
+#### Bearbeiten von Textebenen 2 (alt)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
 
 Dieses Aktionsmodul bearbeitet eine Textebene in einer Photoshop-Datei.
 
@@ -724,7 +1290,7 @@ Um mehrere Ebenen zu bearbeiten, verwenden Sie das Modul [Textebenen bearbeiten]
    <td> Geben Sie den Speicherort und den Dateispeicherort der Schriftart ein. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Ebenen]</td>
+      <td role="rowheader">[!UICONTROL-Ebenen]</td>
    <td> <p>Weitere Informationen zu Ebenenoptionen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Textebene bearbeiten</a> in der Adobe Photoshop-Dokumentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ausgabedateispeicher]</td>
@@ -760,7 +1326,12 @@ Um mehrere Ebenen zu bearbeiten, verwenden Sie das Modul [Textebenen bearbeiten]
 </table>
 
 
-### Ausführen einer JSON-Aktion
+#### Ausführen einer JSON-Aktion (alt)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
 
 Dieses Aktionsmodul führt Photoshop-Aktionen mithilfe von JSON-Befehlen aus.
 
@@ -836,7 +1407,11 @@ Dieses Aktionsmodul führt Photoshop-Aktionen mithilfe von JSON-Befehlen aus.
       </tbody>
 </table>
 
-### Tiefenunschärfe ausführen
+#### Tiefenunschärfe ausführen (alt)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
 
 Dieses Aktionsmodul führt „Tiefenunschärfe“ für die ausgewählte Datei aus.
 
@@ -893,7 +1468,12 @@ Dieses Aktionsmodul führt „Tiefenunschärfe“ für die ausgewählte Datei au
   </tbody>
 </table>
 
-### Ausführen von Photoshop-Aktionen
+#### Ausführen von Photoshop-Aktionen (veraltet)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
 
 Dieses Aktionsmodul führt eine Photoshop-Aktion für das ausgewählte Bild aus.
 
@@ -980,7 +1560,12 @@ Dieses Aktionsmodul führt eine Photoshop-Aktion für das ausgewählte Bild aus.
   </tbody>
 </table>
 
-### Ausführen eines Produktzuschnitts
+#### Ausführen eines Produktzuschnitts (veraltet)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
 
 Dieses Aktionsmodul führt das Produktzuschneiden für das ausgewählte Bild aus.
 
@@ -1055,7 +1640,12 @@ Dieses Aktionsmodul führt das Produktzuschneiden für das ausgewählte Bild aus
   </tbody>
 </table>
 
-### Abrufen von Ebeneninformationen
+#### Abrufen von Ebeneninformationen (veraltet)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Manifest ](#generate-a-manifest)generieren.
 
 Dieses Aktionsmodul ruft Ebeneninformationen aus der angegebenen PSD-Datei ab.
 
@@ -1088,7 +1678,7 @@ Dieses Aktionsmodul ruft Ebeneninformationen aus der angegebenen PSD-Datei ab.
   </tbody>
 </table>
 
-### Benutzerdefinierten API-Aufruf erstellen
+#### Benutzerdefinierten API-Aufruf erstellen
 
 Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Photoshop-API durch.
 
@@ -1135,82 +1725,17 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Photoshop-API
   </tbody>
 </table>
 
-### Hintergrund entfernen
+#### Ersetzen eines Smart-Objekts (alt)
 
-Dieses Aktionsmodul identifiziert das Hauptsubjekt Ihres Bildes und entfernt den Hintergrund.
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten ](#create-or-edit-a-composite)&quot;.
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Verbindung]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Eingabe)-Speicher]</td>
-      <td>
-        <p>Wählen Sie den Datei-Service aus, in dem die Datei gespeichert wird, aus der der Hintergrund entfernt werden soll.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Eingabe)-Dateispeicherort]</p>
-      </td>
-   <td> Geben Sie die URL oder den Pfad der Datei ein, aus der bzw. dem Sie den Hintergrund entfernen möchten, oder ordnen Sie sie zu. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Ausgabe)-Speicher]</td>
-      <td>
-        <p>Wählen Sie den Datei-Service aus, in dem die neue Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Ausgabe)-Dateispeicherort]</p>
-      </td>
-   <td> Geben Sie die URL oder den Pfad ein, unter dem die neue Datei gespeichert werden soll, oder mappen Sie sie.  Dies ist nur erforderlich, wenn Sie für den Ausgabespeicher keinen internen Fusion-Speicher ausgewählt haben.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL überschreiben]</td>
-      <td>
-        <p>Wählen Sie aus, ob die neu bearbeitete Datei alle bereits vorhandenen Ausgabedateien überschreiben soll. Dies gilt nur für Dateien im Adobe-Speicher.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Farbraum]</p>
-      </td>
-   <td>Wählen Sie aus, ob das Ausgabebild RGB- oder RGBA-Farbe verwenden soll. </td> 
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maskenformat]</p>
-      </td>
-   <td>Wählen Sie aus, ob die Kanten des Bildes weich (gefedert) oder binär sein sollen. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL optimieren]</p>
-      </td>
-   <td>Wählen Sie Leistung aus, um die Geschwindigkeit zu optimieren, oder Batch, um Wartezeiten zuzulassen. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Nachbearbeitungsprozess]</p>
-      </td>
-   <td>Wählen Sie aus, ob die Nachbearbeitung aktiviert werden soll.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Version]</p>
-      </td>
-   <td>Der Standardwert ist 4.0</td> 
-    </tr> 
-    </tbody>
-</table>
-
-### Ersetzen eines Smart-Objekts
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten ](#create-or-edit-a-composite)&quot;.
 
 Dieses Aktionsmodul ersetzt ein Smart-Objekt in einer PSD-Ebene und generiert neue Ausgabedarstellungen.
 
@@ -1238,7 +1763,7 @@ Dieses Modul verwendet die Smart Object API Version 2.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Ebenen]</p>
+        <p>[!UICONTROL-Ebenen]</p>
       </td>
    <td>Klicken Sie für jede Ebene, die Sie dem Smart-Objekt hinzufügen möchten, auf Element hinzufügen und geben Sie den Namen oder die ID des Objekts, den Datei-Service, in dem das Smart-Objekt gespeichert ist, und die URL oder den Pfad der Ebene ein.<p>Beschreibungen der erweiterten Einstellungen in diesem Bereich finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Ersetzen eines Smart-Objekts</a> in der Dokumentation zur Photoshop-API </td> 
     </tr>
@@ -1275,7 +1800,7 @@ Dieses Modul verwendet die Smart Object API Version 2.
      </tbody>
 </table>
 
-### Ersetzen eines Smart-Objekts (alt)
+#### Ersetzen eines Smart-Objekts 2 (alt)
 
 Dieses Aktionsmodul ersetzt ein Smart-Objekt in einer PSD-Ebene und generiert neue Ausgabedarstellungen.
 
@@ -1303,7 +1828,7 @@ Dieses Modul verwendet die Legacy-Version von Smart-Objekten.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Ebenen]</p>
+        <p>[!UICONTROL-Ebenen]</p>
       </td>
    <td>Klicken Sie für jede Ebene, die Sie dem Smart-Objekt hinzufügen möchten, auf Element hinzufügen und geben Sie den Namen oder die ID des Objekts, den Datei-Service, in dem das Smart-Objekt gespeichert ist, und die URL oder den Pfad der Ebene ein.<p>Beschreibungen der erweiterten Einstellungen in diesem Bereich finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Ersetzen eines Smart-Objekts</a> in der Dokumentation zur Photoshop-API </td> 
     </tr>
@@ -1339,7 +1864,12 @@ Dieses Modul verwendet die Legacy-Version von Smart-Objekten.
     </tbody>
 </table>
 
-### Ändern der Bildgröße
+#### Größe eines Bildes ändern (veraltet)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten ](#create-or-edit-a-composite)&quot;.
 
 Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seitenverhältnis verwendet wird.
 
@@ -1352,7 +1882,7 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
       <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Speicher]</td>
+      <td role="rowheader">[!UICONTROL-Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die Datei gespeichert wird, deren Größe geändert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
@@ -1371,7 +1901,7 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
     </tr>
     <tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Speicher]</td>
+      <td role="rowheader">[!UICONTROL-Speicher]</td>
       <td>
         <p>Wählen Sie den Datei-Service aus, in dem die neue Datei gespeichert werden soll.</p><p>Wenn Sie Fusion Internal Storage auswählen, wird die Datei für spätere Module verfügbar, aber nicht außerhalb des Szenarios.</p>
       </td>
@@ -1409,7 +1939,12 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
     </tbody>
 </table>
 
-### Wasserzeichen für ein Bild
+#### Wasserzeichen für ein Bild (veraltet)
+
+>[!NOTE]
+>
+>Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten ](#create-or-edit-a-composite)&quot;.
 
 Dieses Aktionsmodul fügt dem ausgewählten Bild ein Wasserzeichen hinzu.
 
@@ -1499,346 +2034,3 @@ Dieses Aktionsmodul fügt dem ausgewählten Bild ein Wasserzeichen hinzu.
       </td>
     </tbody>
 </table>
-
-
-### Erstellen einer Zeichenfläche
-
-Dieses Modul erstellt eine neue Zeichenfläche in Photoshop.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Verbindung]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Images]</td>
-      <td>
-        <p>Klicken Sie für jedes Bild, das Sie dieser Zeichenfläche hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Quelltyp und den Speicherort des Bildes ein.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Zeichenflächen-Abstand]</p>
-      </td>
-   <td>Geben Sie den Abstand in Pixel ein, den Sie zwischen den einzelnen Zeichenflächen haben möchten, oder mappen Sie ihn zu.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Ausgaben]</td>
-      <td>
-        <p>Klicken Sie für jede konvertierte Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie den Speicherort, den Speicherort und andere Optionen wie aufgeführt ein.</p>
-      </td>
-    </tr>
-    </tbody>
-</table>
-
-### Erstellen oder Bearbeiten eines Composite
-
-Dieses Modul erstellt oder bearbeitet einen Verbund in Photoshop.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Verbindung]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Images]</td>
-      <td>
-        <p>Klicken Sie für jedes Bild, das Sie dieser Zeichenfläche hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Quelltyp und den Speicherort des Bildes ein.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Breite]</p>
-      </td>
-   <td>Wenn Sie ein Bild erstellen, geben Sie die Bildbreite in Pixel ein.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Höhe]</td>
-      <td>
-        <p>Wenn Sie ein Bild erstellen, geben Sie die Bildhöhe in Pixel ein.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL -Modus]</td>
-      <td>
-        <p>Wählen Sie den Farbmodus für dieses Bild.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Fill]</td>
-      <td>
-        <p>Wählen Sie den Füllungstyp für die Hintergrundebene aus.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Name]</td>
-      <td>
-        <p>Geben Sie einen Namen für das neue Bild ein oder mappen Sie ihn.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Pixel-Skalierungsfaktor]</td>
-      <td>
-        <p>Geben Sie den Pixelskalierungsfaktor ein oder mappen Sie ihn. Dies muss eine Zahl zwischen 0,1 und 1 sein.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL -Auflösung]</td>
-      <td>
-        <p>Geben <b> im Feld </b> den Wert der Auflösung in Dichteeinheiten (Pixel pro Zoll) ein. Der Standardwert ist 72.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Profiltyp]</td>
-      <td>
-        <p>Wenn Sie das Standardfarbprofil überschreiben möchten, wählen Sie einen Profiltyp aus und geben Sie die Details wie aufgeführt ein.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Zuschneiden &gt; Oben / Links / Unten / Rechts]</td>
-      <td>
-        <p>Geben Sie die Grenzen ein, auf die Sie das Bild zuschneiden möchten.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL ausblenden]</td>
-      <td>
-        <p>Wählen Sie Ja , um Pixel außerhalb der Zuschnittgrenzen auszublenden. Wenn dies auf „false“ gesetzt ist, werden Pixel außerhalb der Zuschnittgrenzen gelöscht. Der Standardwert lautet „false“.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Größe ändern &gt; Breite]</td>
-      <td>
-        <p>Wählen Sie die Einheit aus, die Sie für die Breite verwenden möchten, und wählen Sie dann den Wert aus, der die gewünschte Breite darstellt. </p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Größe ändern &gt; Höhe]</td>
-      <td>
-        <p>Wählen Sie die Einheit aus, die Sie für die Höhe verwenden möchten, und wählen Sie dann den Wert aus, der für die gewünschte Höhe steht. </p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL -Auflösung]</td>
-      <td>
-        <p>Wählen Sie die Einheit aus, die Sie für die Auflösung verwenden möchten, und wählen Sie dann den Wert für die gewünschte Auflösung aus.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Resample]</td>
-      <td>
-        <p>Wählen Sie die beim Ändern der Größe zu verwendende Resampling-Methode aus.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Proportionen beschränken]</td>
-      <td>
-        <p>Wählen Sie Ja , um das Seitenverhältnis zwischen Breite und Höhe beizubehalten. Wählen Sie Nein , um eine unabhängige Einstellung der Breite und Höhe zu ermöglichen.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Rastern]</td>
-      <td>
-        <p>Wählen Sie aus, ob das Bild gerastert werden soll.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL scale styles]</td>
-      <td>
-        <p>Wählen Sie aus, ob beim Ändern der Bildgröße eine Skalierung auf Stile angewendet werden soll.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Beschneiden nach]</td>
-      <td>
-        <p>Wählen Sie aus, ob transparente Pixel gekürzt werden sollen.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL -Ebenen]</td>
-      <td>
-        <p>Klicken Sie für jede weitere hinzuzufügende Ebene auf <b>Element hinzufügen</b> und geben Sie Ebenendetails ein. </p><p>Weitere Informationen finden Sie unter <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">Erstellen oder Bearbeiten eines Composite</a> in der Adobe-Dokumentation.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Standardschriftart PostScript Name]</td>
-      <td>
-        <p>Geben Sie den PostScript-Namen der Standardschriftart ein, die Sie verwenden möchten, oder ordnen Sie ihn zu.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL fehlende Schriftstrategie]</td>
-      <td>
-        <p>Wählen Sie aus, ob bei der Erstellung oder Bearbeitung ein Fehler auftreten soll oder ob die Standardschriftart verwendet werden soll, wenn keine Schriftart verfügbar ist.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Zusätzliche Schriftarten]</td>
-      <td>
-        <p>Klicken Sie für jede Schriftart, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die Quell-URL der Schriftart ein. </p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Ausgaben]</td>
-      <td>
-        <p>Klicken Sie für jede bearbeitete Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie die Ausgabedetails ein. </p><p>Weitere Informationen finden Sie <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">Erstellen oder Bearbeiten eines Composite</a> in der Dokumentation zu Adobe.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Maximale Anzahl an Ergebnissen]</td>
-      <td>
-        <p>Geben Sie die maximale Anzahl von Ergebnissen ein, mit denen das Modul während eines Ausführungszyklus arbeiten soll, oder mappen Sie sie.</p>
-      </td>
-      </tr>
-      </tbody>
-</table>
-
-### Bearbeiten eines Bildes mit verschiedenen Anpassungen
-
-Dieses Modul nimmt Bildanpassungen im Lightroom-Stil vor.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Verbindung]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Images]</td>
-      <td>
-        <p>Geben Sie den Quelltyp und den Speicherort des Bildes ein oder ordnen Sie ihn zu.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Andere Felder]</p>
-      </td>
-   <td><p>Weitere Informationen finden Sie <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/edit">Bearbeiten eines Bildes mit verschiedenen Anpassungen</a> in der Dokumentation zu Adobe.</p></td> 
-    </tr>
-    </tbody>
-</table>
-
-### Ausführen von Photoshop-Aktionen, -Skripten und -Transformationen
-
-Dieses Modul führt Aktionen, Skripte und Umwandlungen aus, die in der Firefly Photoshop-API verfügbar sind.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Verbindung]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Images]</td>
-      <td>
-        <p>Geben Sie den Quelltyp und den Speicherort des Bildes ein oder ordnen Sie ihn zu.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Aktionen]</p>
-      </td>
-   <td><p>Klicken Sie für jede Aktion, die Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie die Quelle, URL und den Namen der Aktion ein.</p></td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL UXP-Quelle]</p>
-      </td>
-   <td><p>Wenn Sie ein UDP-Skript verwenden, wählen Sie aus, ob Sie eine URL oder Inline-Inhalte bereitstellen, geben Sie dann die URL oder den Inhalt ein oder mappen Sie ihn.</p></td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Zusätzliche Inhalte]</p>
-      </td>
-   <td><p>Fügen Sie bis zu 25 Dateien hinzu, die von der Aktion oder UXP referenziert werden.</p></td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Ausgaben]</td>
-      <td>
-        <p>Klicken Sie für jede bearbeitete Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie das Format, das Ziel und das Ausgabemuster ein.</p>
-      </td>
-    </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Maximale Anzahl an Ergebnissen]</td>
-      <td>
-        <p>Geben Sie die maximale Anzahl von Ergebnissen ein, mit denen das Modul während eines Ausführungszyklus arbeiten soll, oder mappen Sie sie.</p>
-      </td>
-      </tr>
-    </tbody>
-</table>
-
-### Manifest erzeugen
-
-Dieses Modul generiert ein PSD-Manifest für das angegebene Eingabebild.
-
-
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Verbindung]</td>
-      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Photoshop] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Photoshop]</a>.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Quelle]</td>
-      <td>
-        <p>Geben Sie den Quelltyp und den Speicherort des Bildes ein oder ordnen Sie ihn zu.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Ausgaben]</td>
-      <td>
-        <p>Klicken Sie für jede bearbeitete Datei, die Sie erstellen möchten, auf Element hinzufügen und geben Sie die Zieldetails ein.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Ebenenminiaturansichten einschließen]</p>
-      </td>
-   <td><p>Wählen Sie Ja aus, wenn Sie das Modul zum Generieren einer Miniaturansicht für jede Ebene im Manifest verwenden möchten.</p></td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximale Tiefe der Miniaturansichten]</p>
-      </td>
-   <td><p>Geben Sie die maximale Tiefe für Miniatur-Ausgabedarstellungen ein oder mappen Sie sie. Geben Sie für keine maximale Tiefe <code>0</code> ein.</p></td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Layer-Miniaturansichtsformat]</p>
-      </td>
-   <td><p>Wählen Sie aus, ob die Miniaturen im JPEG- oder PNG-Format vorliegen sollen.</p></td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Smart-Objektdaten extrahieren]</td>
-      <td>
-        <p>Wählen Sie aus, ob eingebettete Smart-Objekte extrahiert und eine vordefinierte URL in das Manifest aufgenommen werden sollen.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Auf Transparenz trimmen]</td>
-      <td>
-        <p>Wählen Sie aus, ob die Miniaturansichten der Ebenen gekürzt werden sollen, um transparente Pixel zu entfernen.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Maximale Anzahl an Ergebnissen]</td>
-      <td>
-        <p>Geben Sie die maximale Anzahl von Ergebnissen ein, mit denen das Modul während eines Ausführungszyklus arbeiten soll, oder mappen Sie sie.</p>
-      </td>
-      </tr>
-    </tbody>
-</table>
-
