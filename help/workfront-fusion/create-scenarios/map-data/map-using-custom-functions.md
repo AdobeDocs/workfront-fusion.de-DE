@@ -3,10 +3,11 @@ title: Zuordnen von Daten mithilfe benutzerdefinierter Funktionen
 description: Beim Zuordnen von Elementen können Sie Funktionen verwenden, um einfache oder komplexe Formeln zu erstellen.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 109ea8a6b3c37918110dc930a19ac85ef3e6d764
+exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
+source-git-commit: bf8274d9a80af75022fd600aee99c511b2e2d9e5
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 20%
+source-wordcount: '640'
+ht-degree: 16%
 
 ---
 
@@ -53,9 +54,19 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## Konfigurieren einer benutzerdefinierten Funktion
 
-Benutzerdefinierte Funktionen werden im Bereich „Funktionen“ von Workfront Fusion konfiguriert. Nachdem eine Funktion konfiguriert wurde, können Sie sie mit dem Adobe App Builder-Connector zu einem Szenario hinzufügen.
+Sie können im Bereich Funktionen eine benutzerdefinierte Funktion erstellen, die in mehreren Szenarien verwendet werden kann, oder Sie können benutzerdefinierte Funktionen in einzelnen Szenarien konfigurieren.
 
-### Initialisieren der Laufzeitumgebung
+* [Erstellen einer benutzerdefinierten Funktion zur Verwendung in mehreren Szenarien](#create-a-custom-function-to-use-in-multiple-scenarios)
+* [Erstellen einer benutzerdefinierten Funktion innerhalb eines Szenarios](#create-a-custom-function-within-a-scenario)
+
+### Erstellen einer benutzerdefinierten Funktion zur Verwendung in mehreren Szenarien
+
+Benutzerdefinierte Funktionen, die in mehreren Szenarien verwendet werden können, werden im Bereich „Funktionen“ von Workfront Fusion konfiguriert. Nachdem eine Funktion konfiguriert wurde, können Sie sie mit dem Adobe App Builder-Connector zu einem Szenario hinzufügen.
+
+* [Initialisieren der Laufzeitumgebung](#initialize-your-runtime-environment)
+* [Erstellen einer benutzerdefinierten Funktion im Bereich „Funktionen“](#create-a-custom-function-in-the-functions-area)
+
+#### Initialisieren der Laufzeitumgebung
 
 Bevor Sie benutzerdefinierte Funktionen erstellen können, müssen Sie Ihre Laufzeitumgebung initialisieren. Dies muss nur erfolgen, wenn Ihr Team keine benutzerdefinierten Funktionen hat.
 
@@ -65,14 +76,14 @@ Bevor Sie benutzerdefinierte Funktionen erstellen können, müssen Sie Ihre Lauf
 >
 >Nach Abschluss der Initialisierung können alle Benutzer im Team, in dem die Initialisierung durchgeführt wurde, Funktionen erstellen und verwenden.
 
-1. Klicken Sie auf **Registerkarte** Funktionen![&#x200B; (](assets/functions-icon.png)) im linken Bedienfeld.
+1. Klicken Sie auf **Registerkarte** Funktionen![ (](assets/functions-icon.png)) im linken Bedienfeld.
 
    Wenn Sie Ihre Laufzeit noch nicht konfiguriert haben, wird die Meldung „Laufzeitumgebung nicht konfiguriert“ angezeigt.
 1. Klicken Sie **Laufzeit initialisieren**.
 
    Nach einiger Zeit wird eine Liste Funktionen mit zwei Beispielfunktionen angezeigt.
 
-### Erstellen einer benutzerdefinierten Funktion
+#### Erstellen einer benutzerdefinierten Funktion im Bereich „Funktionen“
 
 Nachdem Ihre Laufzeitumgebung konfiguriert wurde, können Sie mit der Erstellung benutzerdefinierter Funktionen beginnen.
 
@@ -85,7 +96,7 @@ Nachdem Ihre Laufzeitumgebung konfiguriert wurde, können Sie mit der Erstellung
 >   * Name ändern
 >   * Standardparameterwerte anzeigen
 
-1. Klicken Sie auf **Registerkarte** Funktionen![&#x200B; (](assets/functions-icon.png)) im linken Bedienfeld.
+1. Klicken Sie auf **Registerkarte** Funktionen![ (](assets/functions-icon.png)) im linken Bedienfeld.
 1. Klicken Sie **Funktion hinzufügen**.
 1. Geben Sie einen Namen für die benutzerdefinierte Funktion ein.
 
@@ -96,9 +107,14 @@ Nachdem Ihre Laufzeitumgebung konfiguriert wurde, können Sie mit der Erstellung
    Sie können Standardparameter überschreiben, wenn Sie die Funktion zu einem Szenario hinzufügen.
 1. Klicken Sie auf **Speichern**.
 
+### Erstellen einer benutzerdefinierten Funktion innerhalb eines Szenarios
+
+Um innerhalb eines Szenarios eine benutzerdefinierte Funktion zu erstellen, verwenden Sie das Modul **Benutzerdefinierten Codeblock ausführen** im Adobe App Builder Connector.
+
+Anweisungen finden Sie unter [Adobe App Builder-Modul](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+
 ## Hinzufügen einer benutzerdefinierten Funktion zu einem Szenario
 
 Um einem Szenario eine benutzerdefinierte Funktion hinzuzufügen, verwenden Sie den Adobe App Builder-Connector.
 
 Anweisungen finden Sie unter [Adobe App Builder-Modul](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
-

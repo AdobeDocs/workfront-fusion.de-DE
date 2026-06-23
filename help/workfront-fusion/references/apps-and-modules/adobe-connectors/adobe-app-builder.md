@@ -3,10 +3,11 @@ title: Adobe App Builder-Modul
 description: Mit dem Adobe App Builder-Connector können Sie benutzerdefinierte Funktionen in Ihren Szenarien verwenden.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8250d4fdad8ed7ffe63cd003f6e0cb325cbbfa8d
+exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
+source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 31%
+source-wordcount: '365'
+ht-degree: 26%
 
 ---
 
@@ -45,15 +46,32 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 +++
 
-## Adobe App Builder-Modul
+## Adobe App Builder-Module
 
-Das einzige derzeit verfügbare Adobe App Builder-Modul ist die Aktion „Ausführen“, mit der Sie eine zuvor konfigurierte benutzerdefinierte JavaScript-Funktion verwenden können.
+### Benutzerdefinierten Codeblock ausführen
+
+Mit diesem Modul können Sie einen Code-Block ausführen. Sie konfigurieren den Code-Block beim Einrichten des Moduls. Er wird ausgeführt, wenn das Modul während der Ausführung eines Szenarios ausgeführt wird.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td>
+   <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Code-Block]</td> 
+   <td>Geben Sie den Code-Block ein, den das Modul ausführen soll.<p>Um den Code für eine einfachere Lesbarkeit zu formatieren, klicken Sie auf das Symbol <b>Code formatieren</b>.</td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Benutzerdefinierte Funktion ausführen
+
+In diesem Modul können Sie eine zuvor konfigurierte benutzerdefinierte JavaScript-Funktion verwenden, die im Bereich „Funktionen“ gespeichert ist.
 
 Anweisungen zum Konfigurieren einer benutzerdefinierten Funktion finden Sie unter [Zuordnen von Daten mithilfe benutzerdefinierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
-
-### Ausführen einer Aktion
-
-Dieses Modul führt eine zuvor konfigurierte benutzerdefinierte Funktion aus.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -68,10 +86,8 @@ Dieses Modul führt eine zuvor konfigurierte benutzerdefinierte Funktion aus.
    <td>Wählen Sie die benutzerdefinierte Funktion aus, die Sie ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Parameter] </td> 
+   <td role="rowheader">[!UICONTROL-Parameter] </td> 
    <td>Geben Sie die Werte für die Funktionsparameter ein. Die verfügbaren Parameter basieren auf den Parametern, die beim Erstellen der Funktion konfiguriert wurden.<p>Wenn ein Parameter einen Standardwert hat, wird er nicht im Feld angezeigt, Sie können ihn jedoch überschreiben, indem Sie einen Wert in das Feld eingeben oder zuordnen.</p></td> 
   </tr> 
    </tbody> 
 </table>
-
-
