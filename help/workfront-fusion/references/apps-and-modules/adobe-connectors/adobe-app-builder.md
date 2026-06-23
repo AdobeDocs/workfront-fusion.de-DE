@@ -4,10 +4,10 @@ description: Mit dem Adobe App Builder-Connector können Sie benutzerdefinierte 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
+source-git-commit: 73fd05c383efe0dd618e90cc7ddb0062d01086ef
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 26%
+source-wordcount: '289'
+ht-degree: 32%
 
 ---
 
@@ -48,26 +48,30 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## Adobe App Builder-Module
 
-### Benutzerdefinierten Codeblock ausführen
+<!--
 
-Mit diesem Modul können Sie einen Code-Block ausführen. Sie konfigurieren den Code-Block beim Einrichten des Moduls. Er wird ausgeführt, wenn das Modul während der Ausführung eines Szenarios ausgeführt wird.
+### Run a custom code block
+
+This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Verbindung]</td>
-   <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Select the connection that contains the custom function that you want to run. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Code-Block]</td> 
-   <td>Geben Sie den Code-Block ein, den das Modul ausführen soll.<p>Um den Code für eine einfachere Lesbarkeit zu formatieren, klicken Sie auf das Symbol <b>Code formatieren</b>.</td> 
+   <td role="rowheader">[!UICONTROL Code block]</td> 
+   <td>Enter the block of code that you want the module to run.<p>To format the code for easier reading, click the <b>Format code</b> icon.</td> 
   </tr> 
    </tbody> 
 </table>
 
-### Benutzerdefinierte Funktion ausführen
+-->
+
+### Benutzerdefinierte Funktion oder Codeblock ausführen
 
 In diesem Modul können Sie eine zuvor konfigurierte benutzerdefinierte JavaScript-Funktion verwenden, die im Bereich „Funktionen“ gespeichert ist.
 
@@ -86,7 +90,7 @@ Anweisungen zum Konfigurieren einer benutzerdefinierten Funktion finden Sie unte
    <td>Wählen Sie die benutzerdefinierte Funktion aus, die Sie ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Parameter] </td> 
+   <td role="rowheader">[!UICONTROL-Parameter] </td> 
    <td>Geben Sie die Werte für die Funktionsparameter ein. Die verfügbaren Parameter basieren auf den Parametern, die beim Erstellen der Funktion konfiguriert wurden.<p>Wenn ein Parameter einen Standardwert hat, wird er nicht im Feld angezeigt, Sie können ihn jedoch überschreiben, indem Sie einen Wert in das Feld eingeben oder zuordnen.</p></td> 
   </tr> 
    </tbody> 
