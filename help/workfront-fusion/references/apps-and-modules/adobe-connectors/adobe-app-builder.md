@@ -4,7 +4,7 @@ description: Mit dem Adobe App Builder-Connector können Sie benutzerdefinierte 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: eb4c1ed6991606928beccbb57a8a86182e58a9e7
+source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 19%
@@ -82,11 +82,11 @@ Informationen zu Paketen finden Sie unter [Verwenden benutzerdefinierter Funktio
    <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Paket]</td> 
+   <td role="rowheader">[!UICONTROL-Paket]</td> 
    <td>Wählen Sie das Paket aus, das die Funktion enthält, die Sie im Szenario ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Variable] </td> 
+   <td role="rowheader">[!UICONTROL-Variable] </td> 
    <td>Wählen Sie die Funktion aus, die Sie im Szenario ausführen möchten.</p></td> 
   </tr> 
    </tbody> 
@@ -107,11 +107,11 @@ Informationen zu Paketen finden Sie unter [Verwenden benutzerdefinierter Funktio
    <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Paket]</td> 
+   <td role="rowheader">[!UICONTROL-Paket]</td> 
    <td>Wählen Sie das Paket aus, das die Variable enthält, die Sie in das Szenario integrieren möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Variable] </td> 
+   <td role="rowheader">[!UICONTROL-Variable] </td> 
    <td>Wählen Sie die Variable aus, die Sie in das Szenario aufnehmen möchten.</p></td> 
   </tr> 
    </tbody> 
@@ -136,11 +136,12 @@ Anweisungen zum Konfigurieren einer benutzerdefinierten Funktion finden Sie unte
    <td>Wählen Sie die benutzerdefinierte Funktion aus, die Sie ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Parameter] </td> 
+   <td role="rowheader">[!UICONTROL-Parameter] </td> 
    <td>Geben Sie die Werte für die Funktionsparameter ein. Die verfügbaren Parameter basieren auf den Parametern, die beim Erstellen der Funktion konfiguriert wurden.<p>Wenn ein Parameter einen Standardwert hat, wird er nicht im Feld angezeigt, Sie können ihn jedoch überschreiben, indem Sie einen Wert in das Feld eingeben oder zuordnen.</p></td> 
   </tr> 
    </tbody> 
 </table>
+
 
 
 
