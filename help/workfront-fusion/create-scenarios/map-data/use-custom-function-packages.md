@@ -3,7 +3,7 @@ title: Verwenden benutzerdefinierter Funktionspakete
 description: Beim Zuordnen von Elementen können Sie Funktionen verwenden, um einfache oder komplexe Formeln zu erstellen.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 94e8c499a1e94b9553211d3ace1c57ef75267710
+source-git-commit: eb4c1ed6991606928beccbb57a8a86182e58a9e7
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 6%
@@ -62,7 +62,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 Wenn Ihr Team diese Funktion zum ersten Mal verwendet, müssen Sie die Umgebung einrichten, in der die Funktionen ausgeführt werden. Dies ist nur einmal pro Team möglich.
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 
    Wenn die Umgebung nicht eingerichtet wurde, wird der Bildschirm **Laufzeitumgebung nicht konfiguriert** angezeigt.
 
@@ -94,7 +94,7 @@ Wenn Ihr Team diese Funktion zum ersten Mal verwendet, müssen Sie die Umgebung 
 
 ## Erstellen und Öffnen eines Pakets
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 
 1. Wählen Sie die Registerkarte für die Verbindung aus, in der Sie arbeiten möchten.
 
@@ -153,7 +153,7 @@ Mit Entwürfen können Sie sicher Änderungen vornehmen. Sie können einen Entwu
 
 #### Erstellen oder Bearbeiten einer Funktion im Bereich Pakete
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 1. Wählen Sie im Bereich **Funktionen** die Option **Funktion erstellen**.
 
    ODER
@@ -196,7 +196,7 @@ Mit Entwürfen können Sie sicher Änderungen vornehmen. Sie können einen Entwu
 
 Auf der Registerkarte **Parameter** können Sie die Informationen beschreiben, die Ihre Funktion bei jeder Ausführung benötigt.
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 1. Wählen Sie im Bereich **Funktionen** die Option **Funktion erstellen**.
 
    ODER
@@ -218,7 +218,7 @@ Diese Eingaben werden zu den Feldern, die Sie beim Testen ausfüllen, und zu den
 
 Es wird empfohlen, eine Funktion vor ihrer Veröffentlichung zu testen.
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 1. Wählen Sie im Bereich **Funktionen** die Option **Funktion erstellen**.
 
    ODER
@@ -249,7 +249,7 @@ Nachdem eine Funktion veröffentlicht wurde, wird die Schaltfläche **Veröffent
 
 #### Funktion löschen
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 1. Klicken Sie auf das Kontrollkästchen neben einer vorhandenen Funktion und wählen Sie **Löschen** in der Aktionsleiste am unteren Rand der Seite aus.
 
 >[!WARNING]
@@ -262,7 +262,7 @@ Variablen sind wiederverwendbare Werte, die Ihre Funktionen verwenden können, z
 
 ### Erstellen oder Bearbeiten einer Variablen
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 1. Wählen Sie auf der **Variablen** die Option **Neue Variable** aus.
 
    ODER
@@ -285,7 +285,7 @@ Variablen sind wiederverwendbare Werte, die Ihre Funktionen verwenden können, z
 
 ### Löschen einer Variablen
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 1. Klicken Sie auf **Registerkarte** auf das Symbol **Löschen** neben der Variablen, die Sie löschen möchten.
 
 >[!WARNING]
@@ -298,14 +298,14 @@ Einige Funktionen erfordern zusätzliche Bibliotheken, um ihre Aufgabe zu erfül
 
 ### Bibliotheken hinzufügen
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 1. Geben Sie auf **Registerkarte** einen oder mehrere Bibliotheksnamen ein, getrennt durch Kommas. Sie können eine bestimmte Version anfordern, indem Sie sie nach dem Namen hinzufügen (z. B. `axios, lodash@4.17.21`).
 
 1. Klicken Sie auf **Installieren**.
 
 ### Bibliothek entfernen
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 1. Klicken Sie auf **Registerkarte** auf das Symbol **Löschen** neben der Bibliothek, die Sie entfernen möchten.
 
 >[!WARNING]
@@ -316,7 +316,7 @@ Einige Funktionen erfordern zusätzliche Bibliotheken, um ihre Aufgabe zu erfül
 
 Jedes Mal, wenn Sie einen Entwurf einer Funktion speichern, speichert Fusion eine Kopie. Auf **Registerkarte** Verlauf“ können Sie frühere Versionen anzeigen und wiederherstellen.
 
-1. Klicken Sie auf **Registerkarte** Pakete![&#x200B; Pakete](assets/packages-icon.png) im linken Navigationsbereich.
+1. Klicken Sie auf **Registerkarte** Pakete![ Pakete](assets/packages-icon.png) im linken Navigationsbereich.
 1. Wählen Sie auf **Registerkarte** Verlauf“ auf der linken Seite eine Funktion aus, um deren zuletzt gespeicherte Versionen anzuzeigen.
 1. Wählen Sie eine Version aus, um genau anzuzeigen, was sie zu diesem Zeitpunkt enthielt.
 1. Um eine Version wiederherzustellen, klicken Sie auf **Als Entwurf wiederherstellen**.
@@ -355,3 +355,5 @@ To add one:
 >Publish a function before using it in a scenario, and turn on **Public** for any variable you want to use there.
 
 -->
+
+
