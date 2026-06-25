@@ -4,10 +4,10 @@ description: Mit dem Adobe App Builder-Connector können Sie benutzerdefinierte 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 042f32f35e630ec76a7356fa750f5238f74a6f25
+source-git-commit: 54a188eda2ac9f535d16e0e865cbf27c48a1ee74
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 23%
+source-wordcount: '506'
+ht-degree: 19%
 
 ---
 
@@ -48,34 +48,9 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## Adobe App Builder-Module
 
-<!--
+### Benutzerdefinierten Codeblock ausführen
 
-### Run a custom code block
-
-This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td>
-   <td>Select the connection that contains the custom function that you want to run. </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Code block]</td> 
-   <td>Enter the block of code that you want the module to run.<p>To format the code for easier reading, click the <b>Format code</b> icon.</td> 
-  </tr> 
-   </tbody> 
-</table>
-
--->
-
-### Ausführen einer benutzerdefinierten Funktion aus einem Paket
-
-Dieses Modul führt eine Funktion aus einem Paket aus.
-
-<!--For information on packages, see []().-->
+Mit diesem Modul können Sie einen Code-Block ausführen. Sie konfigurieren den Code-Block beim Einrichten des Moduls. Er wird ausgeführt, wenn das Modul während der Ausführung eines Szenarios ausgeführt wird.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -86,11 +61,32 @@ Dieses Modul führt eine Funktion aus einem Paket aus.
    <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Paket]</td> 
+   <td role="rowheader">[!UICONTROL Code-Block]</td> 
+   <td>Geben Sie den Code-Block ein, den das Modul ausführen soll.<p>Um den Code für eine einfachere Lesbarkeit zu formatieren, klicken Sie auf das Symbol <b>Code formatieren</b>.</td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Ausführen einer benutzerdefinierten Funktion aus einem Paket
+
+Dieses Modul führt eine Funktion aus einem Paket aus.
+
+Informationen zu Paketen finden Sie unter [Verwenden benutzerdefinierter Funktionspakete](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td>
+   <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL-Paket]</td> 
    <td>Wählen Sie das Paket aus, das die Funktion enthält, die Sie im Szenario ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Variable] </td> 
+   <td role="rowheader">[!UICONTROL-Variable] </td> 
    <td>Wählen Sie die Funktion aus, die Sie im Szenario ausführen möchten.</p></td> 
   </tr> 
    </tbody> 
@@ -100,7 +96,7 @@ Dieses Modul führt eine Funktion aus einem Paket aus.
 
 Dieses Modul bringt eine in einem Paket konfigurierte Variable in Ihr Szenario.
 
-<!--For information on packages, see []().-->
+Informationen zu Paketen finden Sie unter [Verwenden benutzerdefinierter Funktionspakete](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -111,11 +107,11 @@ Dieses Modul bringt eine in einem Paket konfigurierte Variable in Ihr Szenario.
    <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Paket]</td> 
+   <td role="rowheader">[!UICONTROL-Paket]</td> 
    <td>Wählen Sie das Paket aus, das die Variable enthält, die Sie in das Szenario integrieren möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Variable] </td> 
+   <td role="rowheader">[!UICONTROL-Variable] </td> 
    <td>Wählen Sie die Variable aus, die Sie in das Szenario aufnehmen möchten.</p></td> 
   </tr> 
    </tbody> 
@@ -140,7 +136,7 @@ Anweisungen zum Konfigurieren einer benutzerdefinierten Funktion finden Sie unte
    <td>Wählen Sie die benutzerdefinierte Funktion aus, die Sie ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Parameter] </td> 
+   <td role="rowheader">[!UICONTROL-Parameter] </td> 
    <td>Geben Sie die Werte für die Funktionsparameter ein. Die verfügbaren Parameter basieren auf den Parametern, die beim Erstellen der Funktion konfiguriert wurden.<p>Wenn ein Parameter einen Standardwert hat, wird er nicht im Feld angezeigt, Sie können ihn jedoch überschreiben, indem Sie einen Wert in das Feld eingeben oder zuordnen.</p></td> 
   </tr> 
    </tbody> 
