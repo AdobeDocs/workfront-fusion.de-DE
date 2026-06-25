@@ -130,4 +130,4 @@ Wenn die Struktur mehrdeutig ist (keine klare Parallele), **stop** und zeigen Si
 
 ## Referenzen
 
-- Übereinstimmung mit den **[Workfront](https://experienceleague.adobe.com/?lang=de)** Dokumentationsstilen und Repo-Konventionen (Commit-/PR-Regeln, wenn der Benutzer einen Commit ausführt).
+- Übereinstimmung mit den **[Workfront](https://experienceleague.adobe.com/de?lang=de)** Dokumentationsstilen und Repo-Konventionen (Commit-/PR-Regeln, wenn der Benutzer einen Commit ausführt).
