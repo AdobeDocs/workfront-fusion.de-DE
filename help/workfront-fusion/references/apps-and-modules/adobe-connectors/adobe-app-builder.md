@@ -4,10 +4,10 @@ description: Mit dem Adobe App Builder-Connector können Sie benutzerdefinierte 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 73fd05c383efe0dd618e90cc7ddb0062d01086ef
+source-git-commit: 042f32f35e630ec76a7356fa750f5238f74a6f25
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 32%
+source-wordcount: '409'
+ht-degree: 23%
 
 ---
 
@@ -70,6 +70,56 @@ This module allows you to run a code block. You configure the code block when yo
 </table>
 
 -->
+
+### Ausführen einer benutzerdefinierten Funktion aus einem Paket
+
+Dieses Modul führt eine Funktion aus einem Paket aus.
+
+<!--For information on packages, see []().-->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td>
+   <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL -Paket]</td> 
+   <td>Wählen Sie das Paket aus, das die Funktion enthält, die Sie im Szenario ausführen möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL -Variable] </td> 
+   <td>Wählen Sie die Funktion aus, die Sie im Szenario ausführen möchten.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Variable aus Paket verwenden
+
+Dieses Modul bringt eine in einem Paket konfigurierte Variable in Ihr Szenario.
+
+<!--For information on packages, see []().-->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td>
+   <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL -Paket]</td> 
+   <td>Wählen Sie das Paket aus, das die Variable enthält, die Sie in das Szenario integrieren möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL -Variable] </td> 
+   <td>Wählen Sie die Variable aus, die Sie in das Szenario aufnehmen möchten.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
 
 ### Benutzerdefinierte Funktion oder Codeblock ausführen
 
