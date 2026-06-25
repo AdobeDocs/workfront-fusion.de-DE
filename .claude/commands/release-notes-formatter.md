@@ -73,7 +73,7 @@ Regeln:
 >Production for everyone: {Month Day, Year}
 ```
 
-5. **Hauptteil**: Funktionsbeschreibung und dann Link zur Hilfedokumentation
+&#x200B;5. **Hauptteil**: Funktionsbeschreibung und dann Link zur Hilfedokumentation
 
 #### Übersichtsseiten
 
@@ -90,10 +90,10 @@ Regeln:
 * [Document enhancements](#document-enhancements)
 ```
 
-5. **H3 pro Produktbereich** mit HTML-Funktionstabelle (siehe .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
+&#x200B;5. **H3 pro Produktbereich** mit HTML-Funktionstabelle (siehe .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
    - Innerhalb jeder Tabelle **Neueste Funktionen zuerst** - die neueste Zeile wird oben in der Tabelle angezeigt (nach der Kopfzeile)
 
-6. **Nachfolgende Abschnitte** (H2): Versionshinweise für andere Bereiche, Desktop Proofing Viewer-Updates, Ankündigungen, API-Version, Wartungs-Updates, Schulungs-Updates
+&#x200B;6. **Nachfolgende Abschnitte** (H2): Versionshinweise für andere Bereiche, Desktop Proofing Viewer-Updates, Ankündigungen, API-Version, Wartungs-Updates, Schulungs-Updates
 
 ### Schritt 3: Validieren von Links
 

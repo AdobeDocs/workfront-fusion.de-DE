@@ -9,7 +9,7 @@ ht-degree: 3%
 
 Detaillierte Regeln für die `writing-quality`. Die Datei SKILL.md behandelt die gängigsten Regeln. Diese Datei enthält die vollständige Referenz für Zeichensetzung, Terminologie, Großbuchstaben und Prozedurformatierung.
 
----
+&#x200B;---
 
 ## Interpunktion
 
@@ -85,7 +85,7 @@ Verwenden Sie sparsam. Stattdessen sollte man den Satz neu formulieren.
 - Für Kombinationen: Ein-/Ausschalter
 - Verwendung für Internetadressen und -teile
 
----
+&#x200B;---
 
 ## Beispiele für Großbuchstaben
 
@@ -117,7 +117,7 @@ Verwenden Sie sparsam. Stattdessen sollte man den Satz neu formulieren.
 - UI-Groß-/Kleinschreibung folgen
 - Wenn die Schaltfläche in der Benutzeroberfläche nur mit Großbuchstaben angezeigt wird, schreiben Sie sie stattdessen in Satzbuchstaben
 
----
+&#x200B;---
 
 ## Terminologie
 
@@ -147,7 +147,7 @@ Das sind verschiedene Wörter mit unterschiedlichen Bedeutungen. Benutzen Sie da
 
 Verwenden Sie immer die Dateierweiterung, nicht das Akronym „Upload a .pdf file“ (nicht „Upload a PDF„).
 
----
+&#x200B;---
 
 ## Prozedurformatierung
 
@@ -210,7 +210,7 @@ Dokumentieren Sie zunächst den einfachsten Weg:
 - Leerzeichen um Klammern
 - Nicht für Hauptmenü verwenden - verwendet das Hauptmenü-Snippet
 
----
+&#x200B;---
 
 ## Fett und kursiv gedruckte Referenz
 
@@ -230,7 +230,7 @@ Dokumentieren Sie zunächst den einfachsten Weg:
 - Text, den der Benutzer eingeben soll: &quot;*.workfront.com* in das URL-Feld eingeben“
 - Nie für Hervorhebung - Stattdessen den Satz umstrukturieren
 
----
+&#x200B;---
 
 ## Hinweise, Tipps, Warnungen — Detaillierte Anleitungen
 
@@ -258,15 +258,15 @@ Dokumentieren Sie zunächst den einfachsten Weg:
 - Verknüpfte Notizen zu einer mit Aufzählungszeichen kombinieren
 - Keine Notizen verwenden, um neue Funktionen anzukündigen - den Artikeltext überarbeiten
 
----
+&#x200B;---
 
 ## Querverweismuster
 
 | Situation | Muster |
 |-----------|---------|
-| Nach Erteilung der Informationen | „Weitere Informationen finden Sie unter [Artikelname](link).“ |
-| Ohne vorherige Information | „Weitere Informationen finden Sie unter [Artikelname](link).“ |
-| So fügen Sie einen Abschnitt in einem anderen Artikel ein | „Weitere Informationen finden Sie unter [Abschnitt] in [Artikelname](link).“ |
+| Nach Erteilung der Informationen | „Weitere Informationen finden Sie unter [Artikelname] (link).“ |
+| Ohne vorherige Information | „Weitere Informationen finden Sie unter [Artikelname] (link).“ |
+| So fügen Sie einen Abschnitt in einem anderen Artikel ein | „Weitere Informationen finden Sie unter [Abschnitt] in [Artikelname] (link).“ |
 | So fügen Sie einen Abschnitt im selben Artikel ein | „Weitere Informationen finden Sie [Abschnitt] in diesem Artikel.“ |
 
 Platzierung:
@@ -274,7 +274,7 @@ Platzierung:
 - In Verfahrensschritten: Neue Zeile nach dem Schritt
 - Mehrere Verweise: Aufzählungsliste
 
----
+&#x200B;---
 
 ## DQTI-Qualitätsmerkmale
 
@@ -302,7 +302,7 @@ Platzierung:
 | Abrufbarkeit | Kann ein Leser Überschriften scannen und den Inhalt verstehen? Werden Links bereitgestellt? |
 | Visuelle Wirksamkeit | Listen für mehr als 3 Elemente? Tabellen für Vergleiche? Keine Textwand-Absätze? |
 
----
+&#x200B;---
 
 ## Allgemeine Fehlerbehebungen
 
