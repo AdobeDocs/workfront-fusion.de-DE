@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
 nudge: true
-source-git-commit: 11674a9ee27ae94532a85b6702bafe3e54b26fd7
+source-git-commit: cf686d3b04eadfa7aea314bdd995c25cdea370a5
 workflow-type: tm+mt
-source-wordcount: '2461'
+source-wordcount: '2465'
 ht-degree: 53%
 
 ---
@@ -239,6 +239,7 @@ ht-degree: 53%
       * [Zuordnen von Informationen zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
       * [Zuordnen von Elementen mithilfe integrierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
       * [Zuordnen von Daten mithilfe benutzerdefinierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
+      * [Verwenden benutzerdefinierter Funktionspakete](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)
       * [Zuordnen von Arrays und Array-Elementen](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [Zuordnen einer Datei zwischen Modulen](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [Datenspeicher](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
