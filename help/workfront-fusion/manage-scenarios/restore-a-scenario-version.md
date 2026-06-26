@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
 workflow-type: tm+mt
-source-wordcount: 633
-ht-degree: 14%
+source-wordcount: 713
+ht-degree: 12%
 
 ---
 
@@ -102,7 +101,7 @@ Die Funktion Änderungen anzeigen zeigt die Unterschiede zwischen zwei Szenariov
 
 ### Untersuchen von Änderungen
 
-&#x200B;
+
 Jede Änderung wird auf der Seite angezeigt, zu der sie gehört, und durch das gefärbt, was die Wiederherstellung tun würde
 Führen Sie Folgendes aus:
 
@@ -110,9 +109,7 @@ Führen Sie Folgendes aus:
 * Grün (rechts): Diese Änderung ist in der Version auf der rechten Seite und würde hinzugefügt, wenn die Version wiederhergestellt würde.
 
 Wenn etwas geändert wurde, wird der Wert nicht entfernt oder hinzugefügt, sondern links rot und rechts grün angezeigt.
-&#x200B;
 Änderungen werden in Abschnitten gruppiert:
-&#x200B;
 
 * **Szenario**: Name, Beschreibung und Typ.
 * **Szenarioeinstellungen**: Zeitplan- und Verarbeitungsoptionen.
@@ -121,9 +118,5 @@ Wenn etwas geändert wurde, wird der Wert nicht entfernt oder hinzugefügt, sond
 * **Router routes**: Routen und deren Inhalte.
 * **Fehler-Handler**: Verzweigungen für die Fehlerbehandlung.
 * **Verwaiste Gruppen**: Nicht verbundene Module auf der Arbeitsfläche.
-&#x200B;
 Wenn die beiden Versionen identisch sind, zeigt die Ansicht die Meldung an **Keine Unterschiede gefunden**.
-&#x200B;
-
-
 
