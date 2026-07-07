@@ -4,7 +4,7 @@ description: Beim Zuordnen von Elementen können Sie Funktionen verwenden, um ei
 author: Becky
 feature: Workfront Fusion
 exl-id: dc4e697a-a65c-48bc-99de-8e26fbeb7ba7
-source-git-commit: cf686d3b04eadfa7aea314bdd995c25cdea370a5
+source-git-commit: 314c4535a5ef14794458f40002a53ee529c1a4b6
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 15%
@@ -80,7 +80,7 @@ Bevor Sie benutzerdefinierte Funktionen erstellen können, müssen Sie Ihre Lauf
 >
 >Nach Abschluss der Initialisierung können alle Benutzer im Team, in dem die Initialisierung durchgeführt wurde, Funktionen erstellen und verwenden.
 
-1. Klicken Sie auf **Registerkarte** Funktionen![&#x200B; (](assets/functions-icon.png)) im linken Bedienfeld.
+1. Klicken Sie auf **Registerkarte** Funktionen![ (](assets/functions-icon.png)) im linken Bedienfeld.
 
    Wenn Sie Ihre Laufzeit noch nicht konfiguriert haben, wird die Meldung „Laufzeitumgebung nicht konfiguriert“ angezeigt.
 1. Klicken Sie **Laufzeit initialisieren**.
@@ -100,7 +100,7 @@ Nachdem Ihre Laufzeitumgebung konfiguriert wurde, können Sie mit der Erstellung
 >   * Name ändern
 >   * Standardparameterwerte anzeigen
 
-1. Klicken Sie auf **Registerkarte** Funktionen![&#x200B; (](assets/functions-icon.png)) im linken Bedienfeld.
+1. Klicken Sie auf **Registerkarte** Funktionen![ (](assets/functions-icon.png)) im linken Bedienfeld.
 1. Klicken Sie **Funktion hinzufügen**.
 1. Geben Sie einen Namen für die benutzerdefinierte Funktion ein.
 
@@ -122,3 +122,4 @@ Anweisungen finden Sie unter [Adobe App Builder-Modul](/help/workfront-fusion/re
 Um einem Szenario eine benutzerdefinierte Funktion hinzuzufügen, verwenden Sie den Adobe App Builder-Connector.
 
 Anweisungen finden Sie unter [Adobe App Builder-Modul](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+
