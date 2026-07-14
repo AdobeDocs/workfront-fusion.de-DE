@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 754e6eee17449c4b58632702d94941f30efb1d81
 workflow-type: tm+mt
-source-wordcount: 1535
+source-wordcount: 1571
 ht-degree: 13%
 
 ---
@@ -78,7 +78,8 @@ So verwenden Sie einen Webhook, um eine App mit Workfront Fusion zu verbinden:
 1. Wenn Sie die eingehenden Daten überprüfen möchten, wählen **im Feld** Datenstruktur“ die Datenstruktur aus, die Sie verwenden möchten, oder fügen Sie sie hinzu.
 
    Informationen zu Datenstrukturen finden Sie unter [Datenstrukturen](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
-1. Im Feld **Anmeldeinformationen** können Sie Anmeldeinformationen eingeben, die für die Autorisierung verwendet werden sollen. Um Anmeldeinformationen einzugeben, klicken Sie auf **Hinzufügen** und geben Sie die Anmeldeinformationen ein.
+1. Wählen **im Feld „Autorisierungstyp** aus, ob dieser Webhook eine einfache Autorisierung oder ein Client-Zertifikat verwendet.
+1. Im Feld **Anmeldeinformationen** können Sie Anmeldeinformationen eingeben, die für die Autorisierung verwendet werden sollen. Um Anmeldeinformationen einzugeben, klicken Sie auf **Hinzufügen** und geben Sie die Anmeldeinformationen ein. Dies können der Benutzername und das Kennwort für die Standardauthentifizierung oder das Client-Zertifikat und der öffentliche Schlüssel für die Zertifikatauthentifizierung sein.
 1. Aktivieren Sie bei Bedarf weitere Einstellungen.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
