@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 754e6eee17449c4b58632702d94941f30efb1d81
+source-git-commit: 8af4c12773be538823d252f5022e1613e5629d2d
 workflow-type: tm+mt
-source-wordcount: 1571
-ht-degree: 13%
+source-wordcount: 1909
+ht-degree: 10%
 
 ---
 
@@ -68,7 +68,16 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 >
 >Verwenden Sie eines der HTTP-Module, um einen Webhook eines Drittanbieters (einen ausgehenden Webhook) aufzurufen. Weitere Informationen finden Sie unter [HTTP-Module](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-So verwenden Sie einen Webhook, um eine App mit Workfront Fusion zu verbinden:
+Um einen Webhook zum Verbinden einer App mit Workfront Fusion zu verwenden, können Sie den Webhook so einrichten, dass er sich entweder mit einem Client-Zertifikat (MTLS) oder mit der Standardauthentifizierung authentifiziert.
+
+* [Verwenden eines Webhooks mit einem Client-Zertifikat (MTLS)](#use-a-webhook-with-a-client-certificate-mtls)
+* [Verwenden eines Webhooks mit einfacher Authentifizierung](#use-a-webhook-with-basic-authentication)
+
+### Verwenden eines Webhooks mit einem Client-Zertifikat (mTLS)
+
+Mit mTLS geben Sie ein Client-Zertifikat und einen privaten Schlüssel an. Fusion verwendet das Zertifikat und den Schlüssel, um sich beim Aufruf des Webhooks beim Ziel-Service zu authentifizieren. Durch diese bidirektionale Authentifizierung kann Ihr Webhook sicherer sein als die Standardauthentifizierung.
+
+Weitere Informationen zu mTLS finden Sie unter [Gegenseitige TLS - Übersicht](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md#mutual-tls-overview) im Artikel Verwenden von mTLS in HTTP-Modulen.
 
 1. Fügen Sie das **[!UICONTROL Webhooks]** > **[!UICONTROL Benutzerdefinierter Webhook]** Instant Trigger-Modul zu Ihrem Szenario hinzu.
 
@@ -78,8 +87,42 @@ So verwenden Sie einen Webhook, um eine App mit Workfront Fusion zu verbinden:
 1. Wenn Sie die eingehenden Daten überprüfen möchten, wählen **im Feld** Datenstruktur“ die Datenstruktur aus, die Sie verwenden möchten, oder fügen Sie sie hinzu.
 
    Informationen zu Datenstrukturen finden Sie unter [Datenstrukturen](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
-1. Wählen **im Feld „Autorisierungstyp** aus, ob dieser Webhook eine einfache Autorisierung oder ein Client-Zertifikat verwendet.
-1. Im Feld **Anmeldeinformationen** können Sie Anmeldeinformationen eingeben, die für die Autorisierung verwendet werden sollen. Um Anmeldeinformationen einzugeben, klicken Sie auf **Hinzufügen** und geben Sie die Anmeldeinformationen ein. Dies können der Benutzername und das Kennwort für die Standardauthentifizierung oder das Client-Zertifikat und der öffentliche Schlüssel für die Zertifikatauthentifizierung sein.
+1. Wählen Sie im Feld **Autorisierungstyp** die Option **[!UICONTROL Client-Zertifikat]**.
+1. Wählen Sie **Feld** die für die Autorisierung zu verwendenden Anmeldeinformationen aus oder fügen Sie neue Anmeldeinformationen hinzu.
+1. (Bedingt) So fügen Sie Anmeldeinformationen hinzu:
+   1. Klicken Sie auf **Hinzufügen**
+   1. Geben Sie einen Namen für den neuen Zugangsschlüssel ein
+   1. Fügen Sie im Feld **Zertifikat** Ihr Zertifikat ein.
+   1. Fügen Sie im Feld **Privater Schlüssel** Ihren privaten Schlüssel ein.
+
+      >[!TIP]
+      >
+      >Wenn Sie das Zertifikat oder den privaten Schlüssel aus einer kombinierten Datei extrahieren müssen, klicken Sie auf **Extrahieren** neben diesem Feld, wählen Sie aus, was Sie extrahieren möchten, und geben Sie die Datei und das Kennwort an.
+   1. Klicken Sie **Schlüssel erstellen**.
+   1. Wählen Sie im Webhook-Bedienfeld im Feld **Anmeldeinformationen** den neuen Schlüssel aus.
+1. Aktivieren Sie bei Bedarf weitere Einstellungen.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
+
+Nachdem Sie einen Webhook erstellt haben, wird eine eindeutige URL angezeigt. Dies ist die Adresse, an die der Webhook Daten sendet. Workfront Fusion validiert die an diese Adresse gesendeten Daten und gibt sie dann zur Verarbeitung im Szenario weiter.
+
+>[!NOTE]
+>
+>Nachdem Sie einen Webhook erstellt haben, können Sie ihn in mehr als einem Szenario gleichzeitig verwenden.
+
+### Verwenden eines Webhooks mit einfacher Authentifizierung
+
+Die einfache Authentifizierung verwendet einen Benutzernamen und ein Kennwort, um sich bei dem Service zu authentifizieren, mit dem Sie eine Verbindung herstellen.
+
+1. Fügen Sie das **[!UICONTROL Webhooks]** > **[!UICONTROL Benutzerdefinierter Webhook]** Instant Trigger-Modul zu Ihrem Szenario hinzu.
+
+1. Klicken Sie **[!UICONTROL Hinzufügen]** neben dem Feld Webhook und geben Sie einen Namen für den neuen Webhook ein.
+1. (Optional) Klicken Sie auf **[!UICONTROL Erweiterte Einstellungen]**.
+1. Geben Sie **[!UICONTROL Feld IP-]**) eine kommagetrennte Liste der IP-Adressen ein, von denen das Modul Daten akzeptieren kann.
+1. Wenn Sie die eingehenden Daten überprüfen möchten, wählen **im Feld** Datenstruktur“ die Datenstruktur aus, die Sie verwenden möchten, oder fügen Sie sie hinzu.
+
+   Informationen zu Datenstrukturen finden Sie unter [Datenstrukturen](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. Wählen Sie im Feld **Autorisierungstyp** die Option **[!UICONTROL Einfache Authentifizierung]** aus.
+1. Geben Sie im Feld **Anmeldeinformationen** die Anmeldeinformationen ein, die für die Autorisierung verwendet werden sollen. Um Anmeldeinformationen einzugeben, klicken Sie auf **Hinzufügen** und geben Sie den Benutzernamen und das Kennwort für die Standardauthentifizierung ein.
 1. Aktivieren Sie bei Bedarf weitere Einstellungen.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
