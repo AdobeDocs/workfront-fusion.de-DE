@@ -97,6 +97,7 @@ Hinweise:
   
   {Regular description paragraph(s).}
   ```
+
 - Jede Funktion sollte mit „Weitere Informationen finden Sie unter […]&quot; enden. Link zum entsprechenden Hilfeartikel. Überprüfen Sie, ob das Verknüpfungsziel im Repository vorhanden ist.
 
 ## Schritt 4: Hinzufügen der Seite zum Übersichtsindex
@@ -111,6 +112,7 @@ Hinweise:
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - Wenn dies die erste Version eines neuen Jahres ist, fügen Sie eine neue `## Fusion releases in {YYYY}` Überschrift über der Überschrift des Vorjahres hinzu und verpacken Sie den Abschnitt *Vorjahr* in einem `+++ **Click to open**` / `+++` ausblendbaren Block, falls er noch nicht vorhanden ist (nur das aktuelle Jahr bleibt erweitert).
 
 ## Schritt 5: Hinzufügen der Seite zum Inhaltsverzeichnis
@@ -123,6 +125,7 @@ Hinweise:
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - Wenn die Überschrift des aktuellen Jahres noch nicht vorhanden ist, fügen Sie `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}` über der Überschrift des Vorjahres hinzu.
 - **Fügen Sie** das `{hide-from-toc}`-Präfix neuen Einträgen hinzu - das wird nur für ältere Einträge verwendet, wenn sie außerhalb des sichtbaren Navigationsbereichs liegen (siehe Bekannte Inkonsistenzen unten).
 
