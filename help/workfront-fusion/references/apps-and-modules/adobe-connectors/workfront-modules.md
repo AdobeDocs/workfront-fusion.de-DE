@@ -5,20 +5,14 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2:
-  - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
 workflow-type: tm+mt
-source-wordcount: 7298
-ht-degree: 98%
+source-wordcount: 7518
+ht-degree: 95%
 
 ---
 
@@ -791,6 +785,10 @@ Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden könne
 
 #### Sonstige Aktionsoptionen
 
+* [Aufgabe](#task)
+* [Problem](#issue)
+* [Projekt](#project)
+
 ##### Aufgabe
 
 <table style="table-layout:auto">
@@ -1058,7 +1056,7 @@ Workfront hat kürzlich eine neue Version seines Ereignisabonnement-Services ver
 
 Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 
-Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de).
+Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -1373,8 +1371,8 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 >[!IMPORTANT]
 >
->Dieses Modul wurde durch das Modul „Einträge suchen“ ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarios zu verwenden.
->Vorhandene Szenarios, die dieses Modul nutzen, funktionieren weiterhin erwartungsgemäß. Dieses Modul wurde im Mai 2025 aus der Modulauswahl entfernt.
+>Dieses Modul wurde durch das Modul Datensätze suchen ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarien zu verwenden.
+>Vorhandene Szenarien, die dieses Modul verwenden, funktionieren weiterhin erwartungsgemäß. Dieses Modul wird im Mai 2025 aus der Modulauswahl entfernt.
 
 Dieses Suchmodul sucht in einem Objekt in Workfront nach Einträgen, die mit Ihrer Suchanfrage übereinstimmen.
 
@@ -2382,6 +2380,13 @@ Sie sollten überprüfen, ob alles erwartungsgemäß funktioniert.
 
 ## Ereignisabonnementfilter in den Workfront-Modulen [!UICONTROL Ereignisse überwachen]
 
+Mit Filtern in Ereignisabonnements können Sie sicherstellen, dass Ihre Szenarien nur ausgeführt werden, wenn bestimmte Parameter erfüllt sind.
+
+* [Best Practices für Ereignisabonnementfilter](#event-subscription-filter-best-practices)
+* [Erweiterte Filter verwenden](#using-advanced-filters)
+
+### Best Practices für Ereignisabonnementfilter
+
 >[!NOTE]
 >
 >* Es wird ausdrücklich empfohlen, Ereignisabonnementfilter in den Modulen [!UICONTROL Ereignisse überwachen] zu verwenden.
@@ -2390,7 +2395,7 @@ Sie sollten überprüfen, ob alles erwartungsgemäß funktioniert.
 >
 >   Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 >
->   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de)].
+>   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 Das Workfront-Modul [!UICONTROL Ereignisse überwachen] löst Szenarios auf Basis eines Webhooks aus, der ein Ereignisabonnement in der Workfront-API erstellt. Das Ereignisabonnement ist ein Satz von Daten, der bestimmt, welche Ereignisse an den Webhook gesendet werden. Wenn Sie beispielsweise ein Modul [!UICONTROL Ereignisse überwachen] einrichten, das auf Probleme achtet, sendet das Ereignisabonnement ausschließlich Ereignisse, die mit Problemen in Zusammenhang stehen.
 
@@ -2408,13 +2413,13 @@ Die folgenden Operatoren sind im Filter unter „Workfront“ > „Ereignisse ü
 * Kleiner oder gleich
 * Enthält
 * Vorhanden
-   * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
+  * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
 * Existiert nicht
-   * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
+  * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
 * Geändert
-   * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
-   * Dieser Operator ignoriert das Feld „Status“.
-   * Wählen Sie bei Verwendung von `Changed` im Feld **Eintragsursprung** die Option **Nur aktualisierte Ereignisse** aus.
+  * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
+  * Dieser Operator ignoriert das Feld „Status“.
+  * Wählen Sie bei Verwendung von `Changed` im Feld **Eintragsursprung** die Option **Nur aktualisierte Ereignisse** aus.
 
 >[!IMPORTANT]
 >
@@ -2424,7 +2429,7 @@ Die folgenden Operatoren sind im Filter unter „Workfront“ > „Ereignisse ü
 >
 >**Beispiel:** Nehmen wir ein Szenario an, bei dem neue Probleme verarbeitet werden, die der Benutzerin Ana zugewiesen sind.
 >
->### Filtern von Ereignissen mithilfe eines Ereignisabonnementfilters (empfohlen)
+>#### Filtern von Ereignissen mithilfe eines Ereignisabonnementfilters (empfohlen)
 >
 >Mit dem Ereignisfilter können Sie den Webhook so einrichten, dass das Szenario ausgelöst wird, wenn ein Problem während der Problemerstellung Ana zugewiesen wird. Ana hat die Benutzer-ID b378489d8f7cd3cee0539260720a84b7.
 >
@@ -2432,7 +2437,7 @@ Die folgenden Operatoren sind im Filter unter „Workfront“ > „Ereignisse ü
 >
 >Wenn an einem Tag 100 Probleme erstellt werden, aber nur zwei davon Ana zugewiesen sind, wird das Szenario zweimal ausgeführt.
 >
->### Filtern von Ereignissen innerhalb des Szenarios (nicht empfohlen)
+>#### Filtern von Ereignissen innerhalb des Szenarios (nicht empfohlen)
 >
 >Um Ereignisse so zu filtern, dass nur die Probleme verarbeitet werden, die Ana zugewiesen sind, können Sie nach dem Modul [!UICONTROL Ereignisse überwachen] einen Filter erstellen.
 >
@@ -2445,3 +2450,26 @@ Weitere Informationen zu Workfront-Ereignisabonnements finden Sie unter [Häufig
 Weitere Informationen zu Webhooks finden Sie unter [Instant-Auslöser (Webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 Weitere Informationen zu Filtern in Szenarios finden Sie unter [Hinzufügen eines Filters zu einem Szenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+
+### Erweiterte Filter verwenden
+
+Das Modul Workfront > Ereignisse beobachten bietet zwei Filtertypen.
+
+* **Einfach**: Dieser Filter bietet eine Schnittstelle, über die Sie Felder, Operatoren und Werte zusammen mit AND- und OR-Operatoren auswählen können, um einen Filter zu erstellen.
+* **Erweitert**: Mit diesem Filter können Sie JSON hochladen, die Ihren Filter darstellt.
+
+#### Einfache und erweiterte Filter im Vergleich
+
+Der Hauptunterschied zwischen den beiden Typen ist der Status des Filters.
+
+* **Einfach**: Beim Einrichten eines einfachen Filters können Sie auswählen, ob Sie nach dem alten oder dem neuen Status eines Felds filtern möchten. Das heißt, Sie entscheiden, ob Sie das Szenario aktivieren möchten, wenn sich das Feld **von** einem bestimmten Wert ändert, oder ob es aktiviert werden soll, wenn sich der Wert **von** ändert. Mit AND und OR können Sie mehrere Felder und Werte einbeziehen, sie müssen jedoch denselben Status aufweisen. Sie können für einige Felder nicht den alten und für andere den neuen Status verwenden.
+* **Erweitert**: Sie können die JSON in einem erweiterten Filter konfigurieren, um Werte für den alten und den neuen Status im selben Filter anzugeben. Sie können beispielsweise angeben, dass Sie ein Szenario in den Trigger versetzen möchten, wenn ein Projekt von einem Planungsstatus in einen aktuellen Status wechselt. Dadurch würden Projekte ausgeschlossen, die von „Planung“ in „Eingestellt“ oder von „Gesperrt“ in „Aktuell“ wechseln.
+
+<!--
+
+#### Advanced filter examples
+
+-->
+
+<!--CHECK ON EDITING FILTERS-->
+
