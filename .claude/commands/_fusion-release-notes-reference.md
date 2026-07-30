@@ -10,7 +10,7 @@ ht-degree: 0%
 Arbeitbeispiele für die `fusion-release-notes`-Kenntnisse, basierend auf den tatsächlichen letzten Seiten in
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
----
+&#x200B;---
 
 ## Beispiel 1: Einfache Multifunktionswoche
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
----
+&#x200B;---
 
 ## Beispiel 2: Woche mit einem Aktionsaufruf (erforderlich/veraltet)
 
@@ -96,7 +96,7 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
----
+&#x200B;---
 
 ## Beispiel 3: Start des neuen Connectors
 
@@ -118,7 +118,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 
 Fragen Sie bei einem Connector-Launch wie diesem immer (gemäß Schritt 1 der Kenntnisse), ob der Benutzer eine Umleitung dafür einrichten möchte.
 
----
+&#x200B;---
 
 ## Aktualisierungsmuster für Übersichtsseite (`fusion-release-activity.md`)
 
@@ -151,7 +151,7 @@ Beginn eines ganz neuen Jahres (nur Beispiel - Führen Sie dies aus, wenn die er
 +++
 ```
 
----
+&#x200B;---
 
 ## Aktualisierungsmuster für TOC.md
 
@@ -166,7 +166,7 @@ Hinzufügen der Woche vom 20. Juli 2026 als neuester Eintrag:
         ...
 ```
 
----
+&#x200B;---
 
 ## Redirects repo reference (für Schritt 7)
 
@@ -181,7 +181,7 @@ Zeilenregeln (aus der README dieses Repositorys):
 
 Nach dem Hinzufügen einer Zeile muss ein PR im `redirects`-Repository noch ausgelöst und zusammengeführt werden, bevor es live geschaltet wird (ca. 5 Minuten nach der Zusammenführung für 1:1-Umleitungen). Diese Fähigkeit fügt die Zeile nur hinzu, nachdem der Benutzer sie bestätigt hat - sie erhöht die PR nicht.
 
----
+&#x200B;---
 
 ## Bekannte Inkonsistenzen in vorhandenen Seiten (nur zur Referenz - kopieren Sie diese nicht in neue Seiten)
 
