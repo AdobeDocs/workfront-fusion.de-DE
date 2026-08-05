@@ -5,9 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 6a176c74f45b17ed9fbf80b2d87cf45873067f74
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: d4cfac1293b7c0523cc0e45872013238a7bdb364
 workflow-type: tm+mt
 source-wordcount: 217
 ht-degree: 42%
@@ -55,7 +54,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## Wiederherstellen eines gelöschten Szenarios
 
-1. Klicken Sie in der linken Navigation auf Team-Übersicht .
+1. Klicken Sie in der linken Navigation auf Organisationsübersicht .
 1. Klicken Sie auf **Registerkarte** Papierkorb) oben im Fenster.
 1. (Optional) Filtern Sie die Liste der gelöschten Szenarien, indem Sie einen Suchbegriff in die Leiste **Suche** eingeben, einen Datumsbereich im Feld **Gelöscht zwischen** auswählen oder ein bestimmtes Team aus der Dropdown-Liste **Team** auswählen.
 1. Wählen Sie ein oder mehrere Szenarien aus, die Sie wiederherstellen möchten, und klicken Sie dann **Wiederherstellen** in der Leiste am unteren Bildschirmrand.
