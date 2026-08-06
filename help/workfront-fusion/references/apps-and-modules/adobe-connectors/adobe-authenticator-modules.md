@@ -5,17 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
 TQID: https://experienceleague.adobe.com/8yRmtq6RJPuw97tGe5lreoyUd85pd1BVvIFaZjmeof4
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1513
-ht-degree: 34%
+source-wordcount: 1515
+ht-degree: 33%
 
 ---
 
@@ -46,7 +42,7 @@ Eine Liste der verfügbaren Adobe-APIs finden Sie unter [Adobe-APIs](https://dev
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -71,10 +67,10 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 * Sie müssen Zugriff auf die Adobe Developer Console haben.
 * Sie müssen über ein Projekt in der Adobe Developer Console verfügen, das die API enthält, mit der sich das Modul verbinden soll. Sie haben folgende Möglichkeiten:
 
-   * Erstellen Sie ein neues Projekt mit der -API.
+  * Erstellen Sie ein neues Projekt mit der -API.
 
-     ODER
-   * Fügen Sie die API zu einem vorhandenen Projekt hinzu.
+    ODER
+  * Fügen Sie die API zu einem vorhandenen Projekt hinzu.
 
   Informationen zum Erstellen oder Hinzufügen einer API zu einem Projekt in der Adobe Developer Console finden Sie unter [Erstellen eines Projekts](https://developer.adobe.com/dep/guides/dev-console/create-project/) in der Dokumentation zu Adobe.
 

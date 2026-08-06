@@ -5,16 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
 TQID: https://experienceleague.adobe.com/ylQwzctWz1sE03eGhHWxjf48mKxHiuZVy-HN07Mtmh0
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2371
-ht-degree: 12%
+source-wordcount: 2373
+ht-degree: 11%
 
 ---
 
@@ -60,7 +57,7 @@ Weitere Informationen zur OAuth 2.0-Authentifizierung finden Sie unter [OAuth 2.
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -126,7 +123,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
       <td> <p>Wählen Sie aus, ob Sie ein Service-Konto oder ein persönliches Konto verwenden.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL -Flusstyp]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL-Flusstyp]</p> </td> 
       <td> <p>Fluss zum Abrufen von Token auswählen.</p> 
        <ul> 
         <li><strong>[!UICONTROL Autorisierungs-Code]</strong>: Geben Sie die <code>[!UICONTROL Authorize URI]</code> und <code>[!UICONTROL Token URI]</code> aus der API-Dokumentation des Services ein.</li> 
@@ -134,11 +131,11 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Umfang] </td> 
+      <td role="rowheader">[!UICONTROL-Umfang] </td> 
       <td> <p>Individuelle Bereiche hinzufügen. Diese Informationen finden Sie in der Entwicklerdokumentation (API) des jeweiligen Services.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Bereichstrennzeichen] </td> 
+      <td role="rowheader">[!UICONTROL-Bereichstrennzeichen] </td> 
       <td> <p>Wählen Sie aus, durch welche Bereiche oben getrennt werden soll. Diese Informationen finden Sie in der Entwicklerdokumentation (API) des jeweiligen Services.</p> <p>Warnung: Wenn das Trennzeichen nicht richtig festgelegt ist, kann Workfront Fusion die Verbindung nicht erstellen, und es wird ein Fehler wegen ungültigen Umfangs angezeigt.</p> </td> 
      </tr> 
      <tr> 
@@ -213,7 +210,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Token-Platzierung]</p> </td> 
-      <td> <p>Wählen Sie aus, ob das Token beim Herstellen einer Verbindung zur angegebenen URL im [!UICONTROL -Header], [!UICONTROL -Abfragezeichenfolge] oder in beiden gesendet werden soll.</p> <p>Token werden am häufigsten im Anfrage-Header gesendet.</p> </td> 
+      <td> <p>Wählen Sie aus, ob das Token beim Herstellen einer Verbindung zur angegebenen URL im [!UICONTROL-Header], [!UICONTROL-Abfragezeichenfolge] oder in beiden gesendet werden soll.</p> <p>Token werden am häufigsten im Anfrage-Header gesendet.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Header Token Name] </td> 
@@ -234,7 +231,7 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 Im folgenden Beispiel wird gezeigt, wie das Anforderungsmodul [!UICONTROL HTTP] > [!UICONTROL Erstellen einer OAuth 2.0] für die Verbindung mit [!DNL Google] verwendet wird.
 
 1. Stellen Sie sicher, dass Sie ein Projekt erstellt, OAuth-Einstellungen konfiguriert und Ihre Anmeldeinformationen generiert haben, wie im Artikel [Verbinden von Adobe Workfront Fusion mit [!DNL Google Services] Verwenden eines benutzerdefinierten OAuth-Clients](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md) beschrieben.
-1. Öffnen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL OAuth 2.0-Anfrage &#x200B;].
+1. Öffnen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL OAuth 2.0-Anfrage ].
 1. Klicken Sie in einem beliebigen Modul **[!UICONTROL Hinzufügen]** neben dem Feld Verbindung .
 1. Geben Sie die folgenden Werte ein:
 
@@ -255,7 +252,7 @@ Im folgenden Beispiel wird gezeigt, wie das Anforderungsmodul [!UICONTROL HTTP] 
       <td> <p>Wählen Sie aus, ob Sie ein Service-Konto oder ein persönliches Konto verwenden.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL -Flusstyp]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL-Flusstyp]</p> </td> 
       <td> <p>[!UICONTROL Autorisierungs-Code]</p> </td> 
      </tr> 
      <tr> 
@@ -267,11 +264,11 @@ Im folgenden Beispiel wird gezeigt, wie das Anforderungsmodul [!UICONTROL HTTP] 
       <td><code>https://www.googleapis.com/oauth2/v4/token</code> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Umfang] </td> 
+      <td role="rowheader">[!UICONTROL-Umfang] </td> 
       <td> <p>Individuelle Bereiche hinzufügen. Weitere Informationen zu Bereichen finden Sie unter <a href="https://developers.google.com/identity/protocols/oauth2/scopes">OAuth 2.O-Bereiche für [!DNL Google] APIs</a> in der [!DNL Google].</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Bereichstrennzeichen] </td> 
+      <td role="rowheader">[!UICONTROL-Bereichstrennzeichen] </td> 
       <td> <p>[!UICONTROL LEERZEICHEN]</p> </td> 
      </tr> 
      <tr> 
@@ -296,7 +293,7 @@ Im folgenden Beispiel wird gezeigt, wie das Anforderungsmodul [!UICONTROL HTTP] 
 
 Nachdem Sie eine OAuth 2.0-Verbindung hergestellt haben, fahren Sie mit dem Einrichten des Moduls wie gewünscht fort. Alle Autorisierungs-Token sind automatisch in dieser Anfrage und in jeder anderen Anfrage enthalten, die dieselbe Verbindung verwendet.
 
-Beim Konfigurieren des Moduls [!UICONTROL HTTP] > [!UICONTROL OAuth 2.0-Anfrage &#x200B;]) zeigt Workfront Fusion die unten aufgeführten Felder an. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
+Beim Konfigurieren des Moduls [!UICONTROL HTTP] > [!UICONTROL OAuth 2.0-Anfrage ]) zeigt Workfront Fusion die unten aufgeführten Felder an. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
 Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion angezeigt wird, können Sie damit Variablen und Funktionen für dieses Feld festlegen. Weitere Informationen finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -344,7 +341,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] ist eine mehrteilige HTTP-Anfrage zum Senden von Dateien und Daten. Es wird häufig verwendet, um Dateien auf den Server hochzuladen.</p> <p>Fügen Sie Felder hinzu, die in der Anfrage gesendet werden sollen. Jedes Feld muss ein Schlüssel-Wert-Paar enthalten.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL text]</strong> </p> <p>Geben Sie den Schlüssel und den Wert ein, die innerhalb des Anfragetexts gesendet werden sollen.</p> </li> 
-       <li> <p><strong>[!UICONTROL -Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt; [!UICONTROL Datei abrufen]), oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt; [!UICONTROL Datei abrufen]), oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

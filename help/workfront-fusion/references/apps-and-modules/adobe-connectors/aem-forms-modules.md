@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e0d7a655-1353-4d24-83d4-7da73d859a63
 TQID: https://experienceleague.adobe.com/LTNDa0pulA4RE5tG59Fui-5bPlKxqHoQHEsKOp485No
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 50%
+source-wordcount: 602
+ht-degree: 49%
 
 ---
 
@@ -41,7 +39,7 @@ Sie können ein Formular in [!DNL Adobe Experience Manager Forms] so konfigurier
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -112,7 +110,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Experience Manager Forms]
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL -Instanz-URL ohne Schrägstrich]</td>
+        <td role="rowheader">[!UICONTROL-Instanz-URL ohne Schrägstrich]</td>
         <td>
           <p>Geben Sie die URL ein, über die Sie auf das Konto zugreifen möchten, ohne den abschließenden Schrägstrich.</p>
         </td>

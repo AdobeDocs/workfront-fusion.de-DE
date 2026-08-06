@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 50a1b6a8f8e3ad09c8734e901f8f0dab36f79e2e
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 899
-ht-degree: 16%
+source-wordcount: 901
+ht-degree: 15%
 
 ---
 
@@ -51,7 +50,7 @@ Das gegenseitige TLS ermöglicht es, dass diese Identitätsbestätigung in beide
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -175,7 +174,7 @@ Alle Workfront Fusion [!UICONTROL HTTP]-Anfragemodule haben die Möglichkeit, ge
 
 So aktivieren Sie gegenseitiges TLS in einem [!UICONTROL HTTP]-Anfragemodul:
 
-1. Fügen Sie Ihrem [!UICONTROL &#x200B; ein &#x200B;]HTTP“-Anfragemodul hinzu.
+1. Fügen Sie Ihrem [!UICONTROL  ein ]HTTP“-Anfragemodul hinzu.
 1. Starten Sie die Konfiguration des Moduls.
 
    Anweisungen zum Konfigurieren eines [!UICONTROL HTTP]-Anfragemoduls finden Sie im entsprechenden Artikel unter [Universelle Connectoren](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).

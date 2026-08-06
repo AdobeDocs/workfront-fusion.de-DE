@@ -5,14 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
 TQID: https://experienceleague.adobe.com/oP6roNkIFZJ3kCdRiE1MtmYuNQFRrcNJRPMESXP-2Sw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1363
+source-wordcount: 1365
 ht-degree: 13%
 
 ---
@@ -44,7 +41,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -190,7 +187,7 @@ Mit diesem Transformatormodul können Sie ein Dokument mit von Ihnen angegebenen
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Datenquelle]</td> 
+   <td role="rowheader">[!UICONTROL-Datenquelle]</td> 
    <td> <p>Wählen Sie eine Option aus, um anzugeben, ob die von Ihnen verwendeten Daten aus einem Formular oder aus einer Rohdatenerfassung (nicht verarbeitete Computerdaten) stammen.</p> </td> 
   </tr> 
   <tr> 

@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
 TQID: https://experienceleague.adobe.com/NRXOXLNBdwj3Xxf1SiHHyQ-6-DkqYGFexJnyoseVjpk
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1382
+source-wordcount: 1384
 ht-degree: 24%
 
 ---
@@ -20,7 +18,7 @@ ht-degree: 24%
 
 Mit den Adobe Workfront Fusion [!DNL Google Team Drive]-Modulen können Sie Dateien überwachen, hochladen, aktualisieren, kopieren, löschen oder abrufen und Ordner in Ihrem [!DNL Google Shared Drive] erstellen.
 
-Um [!DNL Google Team Drive] mit Adobe Workfront Fusion verwenden zu können, benötigen Sie ein [!DNL Google Workspace]. Wenn Sie noch kein solches Konto haben, können Sie ein [!DNL Google Workspace] Konto bei der [[!DNL Google Workspace] Anmeldeseite“ &#x200B;](https://workspace.google.com/business/signup/welcome).
+Um [!DNL Google Team Drive] mit Adobe Workfront Fusion verwenden zu können, benötigen Sie ein [!DNL Google Workspace]. Wenn Sie noch kein solches Konto haben, können Sie ein [!DNL Google Workspace] Konto bei der [[!DNL Google Workspace] Anmeldeseite“ ](https://workspace.google.com/business/signup/welcome).
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Google Team Drive] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 
@@ -47,7 +45,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -347,7 +345,7 @@ Ruft Dateien- und/oder Ordnerdetails basierend auf dem Suchbegriff ab.
    <td> <p>Wählen Sie die Art der Suche aus, die Sie durchführen möchten - siehe unten.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL -Abfrage]</p> </td> 
+   <td> <p>[!UICONTROL-Abfrage]</p> </td> 
    <td> 
     <ul> 
      <li style="font-weight: bold;"> <p>[!UICONTROL Innerhalb von Dateinamen suchen]</p> <p style="font-weight: normal;">Geben Sie den Dateinamen (einschließlich der Dateierweiterung) ein, wenn die Option [!UICONTROL Suche nach exaktem Begriff] ausgewählt ist, oder geben Sie den Teil des Namens ein, wenn die Option [!UICONTROL Suche nach Namen, die den gesuchten Begriff enthalten] ausgewählt ist.</p> </li> 

@@ -3,9 +3,9 @@ title: Adobe Firefly Audio- und Videomodule
 description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die Adobe Firefly-Audio und -Video verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-source-git-commit: f54338aa35b8453ac991c9e16974f2b61fd30168
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1620'
 ht-degree: 14%
 
 ---
@@ -37,7 +37,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

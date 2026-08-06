@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
 TQID: https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2662
-ht-degree: 45%
+source-wordcount: 2664
+ht-degree: 44%
 
 ---
 
@@ -58,7 +56,7 @@ Eine Videoeinführung zum Frame.io-Connector finden Sie über folgenden Link:
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -114,7 +112,7 @@ Sie können eine Verbindung zu [!DNL Frame.io] über ein API-Token oder mithilfe
 
 ### Verbindung zu [!DNL Frame.io] über ein API-Token herstellen
 
-Um Ihr [!DNL Frame.io]-Konto mithilfe eines API-Tokens mit Workfront Fusion zu verbinden, müssen Sie das API-Token in Ihrem [!DNL Frame.io]-Konto erstellen und in das Dialogfeld [!DNL Frame.io]&#x200B;[!UICONTROL &#x200B; Verbindung erstellen] von Workfront Fusion einfügen.
+Um Ihr [!DNL Frame.io]-Konto mithilfe eines API-Tokens mit Workfront Fusion zu verbinden, müssen Sie das API-Token in Ihrem [!DNL Frame.io]-Konto erstellen und in das Dialogfeld [!DNL Frame.io][!UICONTROL  Verbindung erstellen] von Workfront Fusion einfügen.
 
 1. Melden Sie sich bei Ihrem [!DNL Frame.io] an.
 1. Navigieren Sie zur Seite **[!UICONTROL Token]** im [!DNL Frame.io] Developer.

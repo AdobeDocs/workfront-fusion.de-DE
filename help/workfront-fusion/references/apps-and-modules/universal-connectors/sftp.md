@@ -5,13 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
 TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2238
+source-wordcount: 2240
 ht-degree: 14%
 
 ---
@@ -39,7 +37,7 @@ Mit den Adobe Workfront Fusion SFTP-Modulen können Sie Dateiänderungen in eine
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -103,7 +101,7 @@ Um Ihr SFTP-Konto mit Workfront Fusion zu verbinden, müssen Sie eine Verbindung
    <td> <p>Sie können eine Reihe von Algorithmen für den Schlüsselaustausch eingeben. Das Modul priorisiert Algorithmen basierend auf der Reihenfolge, in der sie hinzugefügt wurden. Klicken Sie für jeden Algorithmus, den Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie den Algorithmus aus.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Chiffren] </td> 
+   <td role="rowheader">[!UICONTROL-Chiffren] </td> 
    <td> <p>Sie können einen Satz von Chiffren für den Schlüsselaustausch eingeben. Das Modul priorisiert Chiffren basierend auf der Reihenfolge, in der sie hinzugefügt wurden. Klicken Sie für jede Chiffre, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie die Chiffre aus.</p> </td> 
   </tr> 
  </tbody> 
