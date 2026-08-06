@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 7285
-ht-degree: 12%
+source-wordcount: 7501
+ht-degree: 11%
 
 ---
 
@@ -55,7 +55,7 @@ Informationen zu Modulen finden Sie in den Artikeln unter [Module: Artikelindex]
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -654,7 +654,7 @@ Dieses Aktionsmodul identifiziert das Hauptsubjekt Ihres Bildes und entfernt den
 </table>
 
 
-### Legacy
+### Vorgängerversion
 
 * [Anwenden von PSD-Bearbeitungen (veraltet)](#apply-psd-edits-legacy)
 * [Automatische Farbkorrektur eines Bildes (veraltet)](#auto-color-correct-an-image-legacy)
@@ -681,7 +681,7 @@ Dieses Aktionsmodul identifiziert das Hauptsubjekt Ihres Bildes und entfernt den
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten &#x200B;](#create-or-edit-a-composite)&quot;.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines &#x200B;](#create-or-edit-a-composite)&quot;.
 
 Dieses Aktionsmodul wendet eine Vielzahl von Bearbeitungen auf Dokument- und Ebenenebene an.
 
@@ -868,7 +868,7 @@ Dieses Aktionsmodul korrigiert automatisch das angegebene Bild.
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten &#x200B;](#create-or-edit-a-composite)&quot;.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines &#x200B;](#create-or-edit-a-composite)&quot;.
 
 Dieses Aktionsmodul konvertiert eine Datei in JPEG, PNG, PSD oder TIFF.
 
@@ -1005,7 +1005,7 @@ Dieses Aktionsmodul gibt eine PNG-Datei mit einer Maske zurück, die um das Subj
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten &#x200B;](#create-or-edit-a-composite)&quot;.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines &#x200B;](#create-or-edit-a-composite)&quot;.
 
 Dieses Aktionsmodul erstellt eine neue PSD mit optionalen Ebenen und generiert Ausgabedarstellungen oder speichert sie als PSD.
 
@@ -1170,7 +1170,7 @@ Dieses Aktionsmodul erstellt eine neue PSD mit optionalen Ebenen und generiert A
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
+>Aktualisieren Sie dieses Modul auf [&#x200B; Modul „Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
 
 Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können separate Bearbeitungsdetails für mehrere Ebenen in derselben Datei eingeben.
 
@@ -1247,7 +1247,7 @@ Dieses Aktionsmodul bearbeitet Textebenen in einer Photoshop-Datei. Sie können 
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
+>Aktualisieren Sie dieses Modul auf [&#x200B; Modul „Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
 
 Dieses Aktionsmodul bearbeitet eine Textebene in einer Photoshop-Datei.
 
@@ -1333,7 +1333,7 @@ Um mehrere Ebenen zu bearbeiten, verwenden Sie das Modul [Textebenen bearbeiten]
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
+>Aktualisieren Sie dieses Modul auf [&#x200B; Modul „Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
 
 Dieses Aktionsmodul führt Photoshop-Aktionen mithilfe von JSON-Befehlen aus.
 
@@ -1475,7 +1475,7 @@ Dieses Aktionsmodul führt „Tiefenunschärfe“ für die ausgewählte Datei au
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
+>Aktualisieren Sie dieses Modul auf [&#x200B; Modul „Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
 
 Dieses Aktionsmodul führt eine Photoshop-Aktion für das ausgewählte Bild aus.
 
@@ -1567,7 +1567,7 @@ Dieses Aktionsmodul führt eine Photoshop-Aktion für das ausgewählte Bild aus.
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
+>Aktualisieren Sie dieses Modul auf [&#x200B; Modul „Ausführen von Photoshop-Aktionen, -Skripten und -](#execute-photoshop-actions-scripts-and-transformations)&quot;.
 
 Dieses Aktionsmodul führt das Produktzuschneiden für das ausgewählte Bild aus.
 
@@ -1647,7 +1647,7 @@ Dieses Aktionsmodul führt das Produktzuschneiden für das ausgewählte Bild aus
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Manifest &#x200B;](#generate-a-manifest)generieren.
+>Aktualisieren Sie dieses Modul zum Modul [Manifest generieren](#generate-a-manifest).
 
 Dieses Aktionsmodul ruft Ebeneninformationen aus der angegebenen PSD-Datei ab.
 
@@ -1732,12 +1732,12 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Photoshop-API
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten &#x200B;](#create-or-edit-a-composite)&quot;.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines &#x200B;](#create-or-edit-a-composite)&quot;.
 
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten &#x200B;](#create-or-edit-a-composite)&quot;.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines &#x200B;](#create-or-edit-a-composite)&quot;.
 
 Dieses Aktionsmodul ersetzt ein Smart-Objekt in einer PSD-Ebene und generiert neue Ausgabedarstellungen.
 
@@ -1871,7 +1871,7 @@ Dieses Modul verwendet die Legacy-Version von Smart-Objekten.
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten &#x200B;](#create-or-edit-a-composite)&quot;.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines &#x200B;](#create-or-edit-a-composite)&quot;.
 
 Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seitenverhältnis verwendet wird.
 
@@ -1946,7 +1946,7 @@ Mit dieser Aktion wird die Größe eines Bildes geändert, wobei dasselbe Seiten
 >[!NOTE]
 >
 >Dieses Modul wird nicht mehr unterstützt und funktioniert nach dem 30. Juli 2026 nicht mehr.
->Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines zusammengesetzten &#x200B;](#create-or-edit-a-composite)&quot;.
+>Aktualisieren Sie dieses Modul zum Modul [Erstellen oder Bearbeiten eines &#x200B;](#create-or-edit-a-composite)&quot;.
 
 Dieses Aktionsmodul fügt dem ausgewählten Bild ein Wasserzeichen hinzu.
 

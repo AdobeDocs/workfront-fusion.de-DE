@@ -12,10 +12,10 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 6796
-ht-degree: 12%
+source-wordcount: 6798
+ht-degree: 11%
 
 ---
 
@@ -42,7 +42,7 @@ Mit den [!DNL Adobe Acrobat Sign] Modulen können Sie ein Adobe Workfront Fusion
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion-Lizenz</td> 
    <td>
-   <p>Betriebsbasiert: keine Workfront Fusion-Lizenz erforderlich</p>
+   <p>Betriebsbasiert: Verfügbar für Organisationen mit betriebsbasierten Lizenzen</p>
    <p>Connector-basiert (veraltet): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -131,7 +131,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine Vereinbarung erstellt oder 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text suchen]</td> 
-   <td> <p>Geben Sie Begriffe ein, nach denen Sie suchen möchten. Das -Modul gibt Datensätze zurück, die diese Begriffe als Feldwerte enthalten.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/de/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-Suche - Funktionsweise</a>.</p> </td> 
+   <td> <p>Geben Sie Begriffe ein, nach denen Sie suchen möchten. Das -Modul gibt Datensätze zurück, die diese Begriffe als Feldwerte enthalten.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign-Suche - Funktionsweise</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximale Anzahl der zurückgegebenen Vereinbarungen]</td> 
@@ -980,7 +980,7 @@ Dieses Suchmodul sucht anhand der von Ihnen angegebenen Kriterien nach Vereinbar
     <ul> 
      <li> <p><b>[!UICONTROL Text suchen]</b> </p> <p>Geben Sie den Text ein, den Sie in den Vereinbarungsmetadaten finden möchten. Jedes Wort wird als separates Textelement behandelt. </p> </li> 
      <li> <p><b>[!UICONTROL Text suchen in]</b> </p> <p>Wählen Sie die Metadatenfelder aus, in denen Sie Text suchen möchten. Wenn Sie nichts auswählen, durchsuchen die Module alle Metadaten.</p> </li> 
-    </ul> <p>Das Modul gibt alle Vereinbarungen zurück, die einen der eingegebenen Texte in einem der ausgewählten Felder enthalten. Beispiel: Wenn Sie „Frühlingskampagne“ eingeben und die Optionen Titel und Notiz auswählen, werden Vereinbarungen mit den Wörtern „Frühling“ oder „Kampagne“ in Titel oder Notiz zurückgegeben.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/de/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Suche - Funktionsweise</a>.</p> </td> 
+    </ul> <p>Das Modul gibt alle Vereinbarungen zurück, die einen der eingegebenen Texte in einem der ausgewählten Felder enthalten. Beispiel: Wenn Sie „Frühlingskampagne“ eingeben und die Optionen Titel und Notiz auswählen, werden Vereinbarungen mit den Wörtern „Frühling“ oder „Kampagne“ in Titel oder Notiz zurückgegeben.</p> <p>Weitere Informationen zum Suchen von Feldern in [!DNL Adobe Acrobat Sign] finden Sie unter „Funktionsweise der Textsuche“ in <a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign] Suche - Funktionsweise</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Erstellungsdatum]</td> 
