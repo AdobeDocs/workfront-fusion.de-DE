@@ -5,11 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
 TQID: https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 050fb237c489859fa0ffacf2afeb665b8503598b
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e6873ab923b73175d1889b44df5d7c1baf9d42fb
 workflow-type: tm+mt
 source-wordcount: 2392
 ht-degree: 4%
@@ -691,7 +689,7 @@ Weitere Informationen finden Sie unter Datum und Text im Artikel [Elementdatenty
    <td> <p>Konvertiert einen Datumswert in einen Textwert. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Format] </td> 
+   <td>[!UICONTROL-Format] </td> 
    <td>Text </td> 
    <td> <p>Ermöglicht die Angabe eines Formats mithilfe von Datums-/Uhrzeitformatierungs-Token. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token zur Datums- und Zeitformatierung</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
@@ -754,12 +752,12 @@ Die zweite Spalte zeigt den erwarteten Typ an. Wenn ein anderer Typ angegeben wi
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Text] </td> 
+   <td>[!UICONTROL-Text] </td> 
    <td>Text </td> 
    <td> <p>Konvertiert einen Datumswert in einen Textwert. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Format] </td> 
+   <td>[!UICONTROL-Format] </td> 
    <td>Text </td> 
    <td> <p>Ermöglicht die Angabe eines Formats mithilfe von Datums-/Uhrzeitformatierungs-Token. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token zur Datums- und Zeitformatierung</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
@@ -954,3 +952,4 @@ Es ist jedoch vorzuziehen, stattdessen das halb offene Intervall zu verwenden (d
 `2019-09-01 ≤ D < 2019-10-01`
 
 `2019-09-01T00:00:00.000Z ≤ D < 2019-10-01T00:00:00.000Z`
+
