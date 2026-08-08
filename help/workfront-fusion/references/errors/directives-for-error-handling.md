@@ -10,10 +10,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: e6873ab923b73175d1889b44df5d7c1baf9d42fb
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 31%
+source-wordcount: 529
+ht-degree: 34%
 
 ---
 
@@ -63,27 +63,32 @@ Die folgenden Anweisungen zur Fehlerbehandlung sind in Workfront Fusion verfügb
    <td> <ul><li><p>Die Ausführung des Szenarios wird sofort angehalten.</li><li>Eine Rollback-Phase wird für alle Module gestartet, um sie alle in den Ausgangszustand zurückzuversetzen. </li><li>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>In den meisten Fällen wird das Szenario nach der Anzahl aufeinander folgender Fehler, die in den Szenario-Einstellungen angegeben sind, deaktiviert. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Anzahl aufeinander folgender Fehler</a>.</p> </li><li><p>Der Ausführungsstatus des Szenarios wird als „Fehler“ markiert.</p></li></ul> <p><b>Hinweis</b>: Dies ist das Standardverhalten, wenn dem Modul keine Fehler-Handler-Route angehängt ist und die <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Speichern unvollständiger Ausführungen zulassen</a> nicht aktiviert ist.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Zusichern</p> <p> <img src="assets/commit.png"> </p> </td> 
-   <td> <ul><li><p>Die Ausführung des Szenarios wird sofort angehalten.</li><li>Eine Commit-Phase wird für alle Module gestartet. </li><li>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>Alle nicht verarbeiteten Pakete werden ignoriert.</p> </li><li><p>Der Szenario-Ausführungsstatus wird als „erfolgreich“ gekennzeichnet. </p> </li></ul></td> 
+   <td role="rowheader"> <p>Unterbrechen</p> <p> <img src="assets/break.png"> </p> </td> 
+   <td><ul><li> <p>Der Zustand der Szenarioausführung wird in der Warteschlange für unvollständige Ausführungen gespeichert, wo der Fehler manuell behoben werden kann. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">Anzeigen und Auflösen unvollständiger Ausführungen</a>.</p> <p>Es gibt jedoch einige Ausnahmen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">Speichern unvollständiger Ausführungen zulassen</a> im Artikel Konfigurieren von Szenario-Einstellungen</a>.</p></li><li> <p>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>Wenn unbearbeitete  Pakete vorhanden sind, wird die Ausführung des Szenarios normal fortgesetzt.</p> </li><li><p>Der Ausführungsstatus des Szenarios wird als „Warnung“ markiert, wenn die Option [!UICONTROL Ausführung automatisch abschließen] deaktiviert ist.</p></li></ul> <p>Weitere Informationen finden Sie im Abschnitt <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> in diesem Artikel</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Wieder aufnehmen</p> <p> <img src="assets/resume.png"> </p> </td> 
    <td> <ul><li><p>Es wird eine Ersatzausgabe angegeben und an das Modul geliefert, bei dem ein Fehler auftritt.</p> </li><li><p>Nachfolgende Module werden verarbeitet.</p></li>Wenn sich der Fehler-Handler auf einem Router befindet, wird das Szenario wie erwartet durch die Routen fortgesetzt.<li></li><li> <p>Der Szenario-Ausführungsstatus wird als „erfolgreich“ gekennzeichnet.</p></li></ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader"> <p>Zusichern</p> <p> <img src="assets/commit.png"> </p> </td> 
+   <td> <ul><li><p>Die Ausführung des Szenarios wird sofort angehalten.</li><li>Eine Commit-Phase wird für alle Module gestartet. </li><li>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>Alle nicht verarbeiteten Pakete werden ignoriert.</p> </li><li><p>Der Szenario-Ausführungsstatus wird als „erfolgreich“ gekennzeichnet. </p> </li></ul></td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>Ignorieren</p> <p> <img src="assets/ignore.png"> </p> </td> 
    <td><ul><li> <p>Der Fehler wird ignoriert.</li><li> Nachfolgende Module werden nicht verarbeitet.</p> </li><li><p>Wenn unbearbeitete Bündel vorhanden sind, wird die Ausführung des Szenarios normal fortgesetzt.</p> </li><li>Wenn sich der Fehler-Handler auf einem Router befindet, werden nachfolgende Routen von diesem Router übersprungen.</li><li><p>Der Szenario-Ausführungsstatus wird als „erfolgreich“ gekennzeichnet.</p> </li></ul></td> 
-  </tr> 
+  </tr>
+
+<!--
+
   <tr> 
-   <td role="rowheader"> <p>Unterbrechen</p> <p> <img src="assets/break.png"> </p> </td> 
-   <td><ul><li> <p>Der Zustand der Szenarioausführung wird in der Warteschlange für unvollständige Ausführungen gespeichert, wo der Fehler manuell behoben werden kann. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">Anzeigen und Auflösen unvollständiger Ausführungen</a>.</p> <p>Es gibt jedoch einige Ausnahmen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">Speichern unvollständiger Ausführungen zulassen</a> im Artikel Konfigurieren von Szenario-Einstellungen</a>.</p></li><li> <p>Nachfolgende Module werden nicht verarbeitet.</p></li><li> <p>Wenn unbearbeitete Bündel vorhanden sind, wird die Ausführung des Szenarios normal fortgesetzt.</p> </li><li><p>Der Ausführungsstatus des Szenarios wird als „Warnung“ markiert, wenn die Option [!UICONTROL Ausführung automatisch abschließen] deaktiviert ist.</p></li></ul> <p>Weitere Informationen finden Sie im Abschnitt <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> in diesem Artikel</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>Erneut versuchen</p> <p> <img src="assets/retry.png"> </p> </td> 
-   <td> <p>In einigen Fällen kann es nützlich sein, ein fehlerhaftes Modul erneut auszuführen, wenn die Wahrscheinlichkeit besteht, dass der Grund für den Fehler im Laufe der Zeit vergeht.</p> <p>Workfront Fusion bietet derzeit keine Wiederholungsrichtlinie an, obwohl mehrere Problemumgehungen verwendet werden können, um die Funktionalität nachzuahmen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/create-scenarios/config-error-handling/retry.md" class="MCXref xref">Fehlerbehandlung bei erneuten Zustellversuchen</a>.</p> </td> 
+   <td role="rowheader"> <p>Retry</p> <p> <img src="assets/retry.png"> </p> </td> 
+   <td> <p>In some cases it may be useful to re-execute a failing module when there is a chance that the reason for the failure might pass over time.</p> <p>Workfront Fusion currently does not offer the Retry directive, though several workarounds can be employed to mimic its functionality. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/retry.md" class="MCXref xref">Retry error handling</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+-->
 
 >[!NOTE]
 >
@@ -96,3 +101,4 @@ Die folgenden Anweisungen zur Fehlerbehandlung sind in Workfront Fusion verfügb
 
 * Informationen zum Rollback und zur Rollback-Phase finden Sie unter [Rollback](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) im Artikel Szenario, Ausführungszyklen und Phasen .
 * Informationen zur Commit-Phase finden Sie [Commit](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit) im Artikel Szenario, Ausführungszyklen und Phasen .
+

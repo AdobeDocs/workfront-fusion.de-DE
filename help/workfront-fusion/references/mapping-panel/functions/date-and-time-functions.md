@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: e6873ab923b73175d1889b44df5d7c1baf9d42fb
 workflow-type: tm+mt
-source-wordcount: 2375
+source-wordcount: 2392
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ### now
 
-Ruft die aktuelle Zeit im Format JJJJ-MM-TT-hh:mm:ss ab.
+Ruft die aktuelle Zeit im Format ` YYYY-MM-DD-hh:mm:ss`.
 
 ### Zeitstempel
 
@@ -725,11 +725,11 @@ Die Funktion `formatDate` gibt eine Textdarstellung des angegebenen Datumswerts 
 
 * `formatDate(1. Date created;DD.MM.YYYY HH:mm;UTC)`
 
-  Gibt 01.10.2018 07 :32
+  Gibt 01.10.2018 07:32 zurück
 
 * `formatDate(now;DD.MM.YYYY HH:mm)`
 
-  Gibt 19.03.2019 15 zurück:30
+  Gibt 19.03.2019 15:30 zurück
 
 >[!ENDSHADEBOX]
 
@@ -954,3 +954,4 @@ Es ist jedoch vorzuziehen, stattdessen das halb offene Intervall zu verwenden (d
 `2019-09-01 ≤ D < 2019-10-01`
 
 `2019-09-01T00:00:00.000Z ≤ D < 2019-10-01T00:00:00.000Z`
+
