@@ -3,7 +3,7 @@ user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
 nudge: true
-source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
+source-git-commit: 79ead2c1fd03403e8e18ecfd7a346be3b1ff890f
 workflow-type: tm+mt
 source-wordcount: '2521'
 ht-degree: 52%
@@ -467,7 +467,7 @@ ht-degree: 52%
       * [Markdown-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
       * [Mathematische Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
       * [MIME-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-      * [MCP-Agent-Modul (Model Context Protocol)](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+      * {hide-from-toc}[MCP Agent (Model Context Protocol)-Modul](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
       * [Text-Parser-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
       * [Tools-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
       * [XML-Module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
