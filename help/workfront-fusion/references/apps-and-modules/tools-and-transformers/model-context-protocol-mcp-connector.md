@@ -6,18 +6,15 @@ feature: Workfront Fusion
 hide: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 TQID: https://experienceleague.adobe.com/KC5YvcNC-EQG4bnPA5pOVbGWZHdqa0XKYHKPMLwY-24
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 490
 ht-degree: 18%
 
 ---
 
 # MCP Agent-Modul
-
-<!--SET UP REDIRECTS-->
 
 Das Model Context Protocol (MCP) ist eine Möglichkeit, KI-Sprachmodelle sicher mit anderen Anwendungen zu verbinden. Sie konfigurieren MCP-Server, die dem KI-Modell den Zugriff auf die Anwendung ermöglichen. Sie können dann eine Eingabeaufforderung an das KI-Modell senden und es kann Informationen aus der Anwendung zurückgeben.
 
@@ -83,7 +80,7 @@ Dieses Aktionsmodul verarbeitet eine Eingabeaufforderung mit dem von Ihnen angeg
        <li><b>LLM</b>: Wählen Sie das große Sprachmodell aus, mit dem dieser Schlüssel verknüpft ist.</li>
        <li><b>Schlüssel</b>: Geben Sie den API-Schlüssel für das ausgewählte Modell ein oder ordnen Sie ihn zu.</li>
        <li><b>Modell</b>: Wählen Sie das LLM-Modell aus, das der Schlüssel verwenden soll.</li>
-       <li><b>Max Tokens</b>: Geben Sie die maximale Anzahl von Token ein, die das LLM in seiner Antwort generieren kann, oder ordnen Sie sie zu.<p>Ein Token entspricht in der Regel vier Zeichen oder 0,75 eines Wortes im Englischen. „Hello world“ entspricht zwei Token und „Authentication“ entspricht einem Token zu zwei Token.</li>
+       <li><b>Maximale Anzahl von Token</b>: Geben Sie die maximale Anzahl von Token ein, die das LLM in seiner Antwort generieren kann, oder ordnen Sie sie zu.<p>Ein Token entspricht in der Regel vier Zeichen oder 0,75 eines Wortes im Englischen. „Hello world“ entspricht zwei Token und „Authentication“ entspricht einem Token zu zwei Token.</li>
       </ul>
     </td> 
   </tr> 
