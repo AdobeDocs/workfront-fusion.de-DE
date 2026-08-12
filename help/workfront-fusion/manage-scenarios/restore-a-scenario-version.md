@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 713
-ht-degree: 12%
+source-wordcount: 754
+ht-degree: 11%
 
 ---
 
@@ -19,6 +18,11 @@ ht-degree: 12%
 Adobe Workfront Fusion speichert bei jeder Änderung eine Version des Szenarios.
 
 Sie können Blueprints für frühere Versionen eines Szenarios anzeigen, wiederherstellen, umbenennen oder herunterladen.
+
+>[!NOTE]
+>
+>Zuvor gespeicherte Szenario-Versionen sind nach der Erstellung der nächsten Szenario-Version 60 Tage lang verfügbar.
+>Um den Szenario-Versionsverlauf über diesen Zeitraum hinaus für Audit-Zwecke aufzubewahren, empfehlen wir, eine Blueprint des Szenarios an einem anderen Speicherort zu speichern und zu archivieren.
 
 ## Zugriffsanforderungen
 
@@ -80,7 +84,7 @@ Die Funktion Änderungen anzeigen zeigt die Unterschiede zwischen zwei Szenariov
 1. Klicken Sie auf [!UICONTROL Mehr]-Symbol ![Mehr](assets/more-icon.png) unten im Bildschirm und anschließend auf **[!UICONTROL Frühere Versionen]**.
 
    Eine Liste der vorherigen Versionen wird angezeigt.
-&#x200B;
+   &#x200B;
 1. Klicken Sie **die Szenario** Version, die Sie anzeigen möchten, auf „Änderungen anzeigen“.
 1. Die **Änderungen überprüfen** wird geöffnet und vergleicht diese Version mit Ihrem aktuellen Szenario.
 
@@ -102,7 +106,7 @@ Die Funktion Änderungen anzeigen zeigt die Unterschiede zwischen zwei Szenariov
 
 ### Untersuchen von Änderungen
 
-
+&#x200B;
 Jede Änderung wird auf der Seite angezeigt, zu der sie gehört, und durch das gefärbt, was die Wiederherstellung tun würde
 Führen Sie Folgendes aus:
 
@@ -110,7 +114,9 @@ Führen Sie Folgendes aus:
 * Grün (rechts): Diese Änderung ist in der Version auf der rechten Seite und würde hinzugefügt, wenn die Version wiederhergestellt würde.
 
 Wenn etwas geändert wurde, wird der Wert nicht entfernt oder hinzugefügt, sondern links rot und rechts grün angezeigt.
+&#x200B;
 Änderungen werden in Abschnitten gruppiert:
+&#x200B;
 
 * **Szenario**: Name, Beschreibung und Typ.
 * **Szenarioeinstellungen**: Zeitplan- und Verarbeitungsoptionen.
@@ -119,5 +125,7 @@ Wenn etwas geändert wurde, wird der Wert nicht entfernt oder hinzugefügt, sond
 * **Router routes**: Routen und deren Inhalte.
 * **Fehler-Handler**: Verzweigungen für die Fehlerbehandlung.
 * **Verwaiste Gruppen**: Nicht verbundene Module auf der Arbeitsfläche.
+&#x200B;
 Wenn die beiden Versionen identisch sind, zeigt die Ansicht die Meldung an **Keine Unterschiede gefunden**.
+&#x200B;
 
