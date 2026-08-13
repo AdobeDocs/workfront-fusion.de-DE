@@ -7,10 +7,10 @@ exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 TQID: https://experienceleague.adobe.com/0NhWgeBcqYtVJ7XKqZ30O1lg3fKSs7YijEhhYBQ-jfg
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 629
-ht-degree: 18%
+source-wordcount: 659
+ht-degree: 16%
 
 ---
 
@@ -80,7 +80,7 @@ Möglicherweise müssen Sie auf das Dreipunkt-Symbol im Bereich Steuerelemente k
 
 | Aktion | Details |
 | ---------- | ---------- |
-| Speichern Sie. <p>![Speichersymbol](assets/save-icon.png)</p> | Nach dem Speichern Ihres Szenarios wird eine neue Version unter dem Dreipunkt-Menü verfügbar sein, falls Sie in Zukunft darauf zugreifen müssen. Zuvor gespeicherte Szenario-Versionen sind nur für 60 Tage verfügbar. |
+| Speichern Sie. <p>![Speichersymbol](assets/save-icon.png)</p> | <p>Nach dem Speichern Ihres Szenarios wird eine neue Version unter dem Dreipunkt-Menü verfügbar sein, falls Sie in Zukunft darauf zugreifen müssen. Zuvor gespeicherte Szenario-Versionen sind nach der Erstellung der nächsten Szenario-Version 60 Tage lang verfügbar. </p><p>Um den Szenario-Versionsverlauf über 60 Tage hinaus für Audit-Zwecke aufzubewahren, empfehlen wir, eine Blueprint des Szenarios an einem anderen Speicherort zu speichern und zu archivieren.</p> |
 | Szenario-Einstellungen <p>![Symbol für Szenario-Einstellungen](assets/scenario-settings-icon.png)</p> | Das Bedienfeld Szenario-Einstellungen enthält erweiterte Einstellungen für das Szenario. Weitere Informationen zu den verfügbaren Einstellungen finden Sie unter [Szenarioeinstellungen konfigurieren](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Anmerkungen  <p>![Notizensymbol](assets/notes-icon.png)</p> | Machen Sie sich Notizen zum Szenario. Andere Benutzende können diese Notizen anzeigen, wenn sie sich im Szenario befinden. |
 | Automatisch ausrichten <p>![Symbol für automatische Ausrichtung](assets/auto-align-icon.png)</p> | Automatische Ausrichtung der Module in Ihrem Szenario. |
