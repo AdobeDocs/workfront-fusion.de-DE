@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: f0e185778e01b71a91837531a082e88485e97ca2
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 6075
+source-wordcount: 6097
 ht-degree: 35%
 
 ---
@@ -206,7 +203,8 @@ Sie können direkt aus einem Workfront Planning Fusion-Modul heraus eine Verbind
 
 >[!IMPORTANT]
 >
->Die Module in diesem Abschnitt gehören zum Workfront Planning V2-Connector.Module im Workfront Planning V1-Connector finden Sie unter [[!DNL Adobe Workfront Planning] Module der Version 1 und deren Felder](#adobe-workfront-planning-version-1-modules-and-their-fields).
+>Die Module in diesem Abschnitt gehören zum Workfront Planning V2-Connector.
+>Module im Workfront Planning V1-Connector finden Sie unter [[!DNL Adobe Workfront Planning] Module der Version 1 und deren Felder](#adobe-workfront-planning-version-1-modules-and-their-fields).
 
 Beim Konfigurieren von Workfront-Planungsmodulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere Workfront-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
@@ -266,7 +264,7 @@ Dieses Aktionsmodul erstellt einen neuen Arbeitsbereich in Planning.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>Besitzerin bzw. Besitzer</p>
+        <p>Besitzer bzw. Besitzerin</p>
       </td>
       <td>Geben Sie die Adobe IMS-Benutzer-ID des Benutzers ein, dem der Arbeitsbereich gehören soll, oder ordnen Sie sie zu.</td> 
     </tr>
@@ -380,7 +378,7 @@ Dieses Aktionsmodul aktualisiert einen neuen Arbeitsbereich in Planning.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>Besitzerin bzw. Besitzer</p>
+        <p>Besitzer bzw. Besitzerin</p>
       </td>
       <td>Geben Sie die Adobe IMS-Benutzer-ID des Benutzers ein, dem der Arbeitsbereich gehören soll, oder ordnen Sie sie zu.</td> 
     </tr>
@@ -1467,6 +1465,11 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz, ein Datensatztyp 
 >
 >Weitere Informationen zum Bearbeiten von Webhooks finden Sie unter [Bearbeiten von Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
+>[!NOTE]
+>
+>Nach dem 23. August 2026 aktiviert Fusion standardmäßig die authToken-basierte Sicherheit für alle Workfront Planning > Watch Event-Module, einschließlich vorhandener Module.
+
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1531,7 +1534,8 @@ Ein Beispiel für die Verwendung der erweiterten Logik in diesem Modul finden Si
 
 >[!IMPORTANT]
 >
->Die Module in diesem Abschnitt gehören zum Workfront Planning V1-Connector.Module im Workfront Planning V2-Connector finden Sie unter [[!DNL Adobe Workfront Planning] Module der Version 2 und deren Felder](#adobe-workfront-planning-version-2-modules-and-their-fields).
+>Die Module in diesem Abschnitt gehören zum Workfront Planning V1-Connector.
+>Module im Workfront Planning V2-Connector finden Sie unter [[!DNL Adobe Workfront Planning] Module der Version 2 und deren Felder](#adobe-workfront-planning-version-2-modules-and-their-fields).
 
 Beim Konfigurieren von Workfront-Planungsmodulen zeigt Workfront Fusion die unten aufgeführten Felder an. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere Workfront-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
@@ -1723,7 +1727,7 @@ Dieses Aktionsmodul ruft eine Liste von Datensätzen basierend auf von Ihnen ang
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Bedingung für Filter]</p>
+        <p>[!UICONTROL-Bedingung für Filter]</p>
       </td>
       <td>Bedingung für die Filter auswählen:<ul><li><b>UND</b><p>Das Modul gibt Datensätze zurück, <b> (alle</b> der von Ihnen ausgewählten Feldwerte erfüllen.</p></li><li><b>ODER</b><p>Das Modul gibt Datensätze zurück, <b> (beliebige</b> der ausgewählten Feldwerte erfüllen.</p></li></ul></td> 
     </tr>
