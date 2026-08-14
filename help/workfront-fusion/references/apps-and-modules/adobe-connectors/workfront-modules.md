@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
+source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
 workflow-type: tm+mt
-source-wordcount: 7518
-ht-degree: 95%
+source-wordcount: 7626
+ht-degree: 94%
 
 ---
 
@@ -217,13 +217,11 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 
 ### Auslöser
 
-<!--
-* [Watch Events](#watch-events) 
-* [Watch Record](#watch-record) 
-* [Watch Field](#watch-field)
--->
+* [Ereignisse überwachen](#watch-events)
+* [Uhrenfeld](#watch-field)
+* [Überwachungsdatensatz](#watch-record)
 
-+++ **[!UICONTROL Ereignisse überwachen]**
+#### [!UICONTROL Ereignisse überwachen]
 
 Dieses Auslösermodul führt ein Szenario in Echtzeit aus, wenn Objekte eines bestimmten Typs in Workfront hinzugefügt, aktualisiert oder gelöscht werden.
 
@@ -294,9 +292,7 @@ Weitere Informationen finden Sie in der Workfront-Dokumentation im Artikel „Er
 
 Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden können, finden Sie unter [Für die einzelnen Workfront-Module verfügbare Workfront-Objekttypen](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Feld überwachen]**
+#### [!UICONTROL Feld überwachen]
 
 Dieses Auslösermodul führt ein Szenario aus, wenn ein von Ihnen angegebenes Feld aktualisiert wird. Das Modul gibt sowohl den alten als auch den neuen Wert des angegebenen Felds zurück. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
@@ -331,9 +327,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden können, finden Sie unter [Für die einzelnen Workfront-Module verfügbare Workfront-Objekttypen](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Eintrag überwachen]**
+#### [!UICONTROL Eintrag überwachen]
 
 Dieses Auslösermodul führt ein Szenario aus, wenn Objekte eines bestimmten Typs hinzugefügt und/oder aktualisiert werden. Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag bzw. den Einträgen verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
 
@@ -384,25 +378,21 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden können, finden Sie unter [Für die einzelnen Workfront-Module verfügbare Workfront-Objekttypen](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-
 ### Aktionen
 
-<!--
-* [Convert object](#convert-object) 
-* [Create a record (attaching custom forms)](#create-a-record-attaching-custom-forms) 
-* [Create a record](#create-a-record) 
-* [Custom API Call](#custom-api-call) 
-* [Delete Record](#delete-record) 
-* [Download Document](#download-document) 
-* [Misc Action](#misc-action) 
-* [Read a Record](#read-a-record) 
-* [Update Record](#update-record) 
-* [Upload Document](#upload-document)
--->
+* [Objekt konvertieren](#convert-object)
+* [Eintrag erstellen](#create-a-record)
+* [Benutzerdefinierter API-Aufruf](#custom-api-call)
+* [Datensatz löschen](#delete-record)
+* [Dokument herunterladen](#download-document)
+* [Abrufen einer vordefinierten Datei-URL](#get-a-presigned-file-url)
+* [Misc-Aktion](#misc-action)
+* [Datensatz lesen](#read-a-record)
+* [Payload-Version der Ereignisse aktualisieren](#update-events-payload-version)
+* [Eintrag aktualisieren](#update-a-record)
+* [Dokument hochladen](#upload-document)
 
-+++ **[!UICONTROL Objekt konvertieren]**
+#### [!UICONTROL Objekt konvertieren]
 
 Dieses Aktionsmodul führt eine der folgenden Konvertierungen durch:
 
@@ -457,9 +447,7 @@ Dieses Aktionsmodul führt eine der folgenden Konvertierungen durch:
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Eintrag erstellen]** 
+#### [!UICONTROL Eintrag erstellen]
 
 Dieses Aktionsmodul erstellt ein Objekt, z. B. ein Projekt, eine Aufgabe oder ein Problem in Workfront, und ermöglicht das Hinzufügen eines benutzerdefinierten Formulars zum neuen Objekt. Mit dem Modul können Sie auswählen, welche Objektfelder im Modul verfügbar sind.
 
@@ -525,8 +513,6 @@ Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden könne
 >
 >   Anweisungen finden Sie unter [Verwalten mehrerer Benutzender | CSV-Massen-Upload](https://helpx.adobe.com/de/enterprise/using/bulk-upload-users.html) in der Adobe-Dokumentation.
 
-+++
-
 <!--
 
 +++ **[!UICONTROL Create Record (Legacy)]**
@@ -580,7 +566,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **[!UICONTROL Benutzerdefinierter API-Aufruf]**
+#### [!UICONTROL Benutzerdefinierter API-Aufruf]
 
 Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten Aufruf an die Workfront-API durchführen. Auf diese Weise können Sie eine Datenflussautomatisierung erstellen, was über die anderen Workfront-Module nicht möglich ist.
 
@@ -637,9 +623,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden können, finden Sie unter [Für die einzelnen Workfront-Module verfügbare Workfront-Objekttypen](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Eintrag löschen]**
+#### [!UICONTROL Eintrag löschen]
 
 Dieses Aktionsmodul löscht ein Objekt, z. B. ein Projekt, eine Aufgabe oder ein Problem in Workfront.
 
@@ -686,9 +670,7 @@ Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden könne
 >1. Fügen Sie dem Modul „Eintrag löschen“ Anweisungen zur Fehlerbehandlung hinzu, um den Fehler zu ignorieren, der durch den Timeout nach 40 Sekunden verursacht wird.
 
 
-+++
-
-+++ **[!UICONTROL Dokument herunterladen]**
+#### [!UICONTROL Dokument herunterladen]
 
 Dieses Aktionsmodul lädt ein Dokument von Workfront herunter.
 
@@ -715,9 +697,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden können, finden Sie unter [Für die einzelnen Workfront-Module verfügbare Workfront-Objekttypen](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **Vorsignierte Datei-URL abrufen**
+#### Abrufen einer vordefinierten Datei-URL
 
 Dieses Aktionsmodul ruft vorsignierte Datei-URLs ab, die später von anderen APIs verwendet werden können.
 
@@ -740,9 +720,7 @@ Dieses Aktionsmodul ruft vorsignierte Datei-URLs ab, die später von anderen API
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Sonstige Aktion]**
+#### [!UICONTROL Sonstige Aktion]
 
 Mit diesem Aktionsmodul können Sie Aktionen für die API durchführen.
 
@@ -789,13 +767,13 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden können, finden Sie unter [Für die einzelnen Workfront-Module verfügbare Workfront-Objekttypen](#workfront-object-types-available-for-each-workfront-module).
 
-#### Sonstige Aktionsoptionen
+##### Sonstige Aktionsoptionen
 
 * [Aufgabe](#task)
 * [Problem](#issue)
 * [Projekt](#project)
 
-##### Aufgabe
+###### Aufgabe
 
 <table style="table-layout:auto">
  <col> 
@@ -843,7 +821,7 @@ Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden könne
  </tbody> 
 </table>
 
-##### Problem
+###### Problem
 
 <table style="table-layout:auto">
  <col> 
@@ -890,7 +868,7 @@ Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden könne
 
 
 
-##### Projekt
+###### Projekt
 
 <table style="table-layout:auto">
  <col> 
@@ -943,9 +921,7 @@ Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden könne
 
 
 
-+++
-
-+++ **[!UICONTROL Eintrag lesen]**
+#### [!UICONTROL Eintrag lesen]
 
 Dieses Aktionsmodul ruft Daten aus einem einzelnen Eintrag ab.
 
@@ -995,8 +971,6 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 </table>
 
 Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden können, finden Sie unter [Für die einzelnen Workfront-Module verfügbare Workfront-Objekttypen](#workfront-object-types-available-for-each-workfront-module).
-
-+++
 
 <!--
 
@@ -1052,11 +1026,9 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
 -->
 
-+++ **Ereignis-Payload-Version aktualisieren**
+#### Payload-Version der Ereignisse aktualisieren
 
 Workfront hat kürzlich eine neue Version seines Ereignisabonnement-Services veröffentlicht. Die neue Version bewirkt keine Änderung der Workfront-API, sondern der Ereignisabonnementfunktion. Dieses Aktionsmodul aktualisiert die für dieses Szenario verwendete Ereignis-Payload-Version.
 
@@ -1080,9 +1052,7 @@ Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereigni
 </table>
 
 
-+++
-
-+++ **Eintrag aktualisieren**
+#### Eintrag aktualisieren
 
 
 Dieses Aktionsmodul aktualisiert ein Objekt, z. B. ein Projekt, eine Aufgabe oder ein Problem. Mit dem Modul können Sie auswählen, welche Objektfelder im Modul verfügbar sind.
@@ -1128,8 +1098,6 @@ Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden könne
 >
 > Bei der Eingabe von Text für ein benutzerdefiniertes Feld oder ein Objekt vom Typ [!UICONTROL Notiz] (Kommentar oder Antwort) können Sie mithilfe von HTML-Tags im Feld [!UICONTROL Notizentext] Rich-Text erstellen, z. B. fett oder kursiv formatierten Text.
 
-
-+++
 
 <!--
 
@@ -1180,11 +1148,9 @@ See a list of the Workfront object types for which you can use this module in [W
 >* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
 >* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
-+++
-
 -->
 
-+++ **[!UICONTROL Dokument hochladen]**
+#### [!UICONTROL Dokument hochladen]
 
 Dieses Aktionsmodul lädt ein Dokument in ein Workfront-Objekt hoch, z. B. in ein Projekt, eine Aufgabe oder ein Problem. Mit diesem Modul wird das Dokument in Blöcken hochgeladen, was einen reibungsloseren Upload-Prozess in Workfront ermöglicht.
 
@@ -1224,8 +1190,6 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 </table>
 
 Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden können, finden Sie unter [Für die einzelnen Workfront-Module verfügbare Workfront-Objekttypen](#workfront-object-types-available-for-each-workfront-module).
-
-+++
 
 <!--
 
@@ -1274,12 +1238,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ### Suchvorgänge
 
-<!--
-* [Read Related Records](#read-related-records) 
-* [Search](#search)
--->
+* [Lesen verwandter Datensätze](#read-related-records)
+* [Suchen](#search)
+* [Suche (veraltet)](#search-legacy)
 
-+++ **[!UICONTROL Verwandte Einträge lesen]**
+#### [!UICONTROL Verwandte Einträge lesen]
 
 Dieses Suchmodul liest Einträge, die mit Ihrer Suchanfrage in einem bestimmten übergeordneten Objekt übereinstimmen.
 
@@ -1314,9 +1277,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Suche]**
+#### [!UICONTROL Suche]
 
 Dieses Suchmodul sucht in einem Objekt in Workfront nach Einträgen, die mit Ihrer Suchanfrage übereinstimmen.
 
@@ -1371,14 +1332,12 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Suchen (Legacy)]**
+#### [!UICONTROL Suchen (Legacy)]
 
 >[!IMPORTANT]
 >
->Dieses Modul wurde durch das Modul Datensätze suchen ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarien zu verwenden.
->Vorhandene Szenarien, die dieses Modul verwenden, funktionieren weiterhin erwartungsgemäß. Dieses Modul wird im Mai 2025 aus der Modulauswahl entfernt.
+>Dieses Modul wurde durch das Modul „Einträge suchen“ ersetzt. Es wird empfohlen, dieses Modul in neuen Szenarios zu verwenden.
+>Vorhandene Szenarios, die dieses Modul nutzen, funktionieren weiterhin erwartungsgemäß. Dieses Modul wurde im Mai 2025 aus der Modulauswahl entfernt.
 
 Dieses Suchmodul sucht in einem Objekt in Workfront nach Einträgen, die mit Ihrer Suchanfrage übereinstimmen.
 
@@ -1428,8 +1387,6 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
   </tr> 
  </tbody> 
 </table>
-
-+++
 
 <!--
 not visible Jan 6, 2025
@@ -1488,13 +1445,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## Für die einzelnen Workfront-Module verfügbare Workfront-Objekttypen
 
-<!--
-[Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module)
-* [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
-* [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)
--->
+* [Für jedes Workfront-Trigger-Modul verfügbare Objekttypen](#object-types-available-for-each-workfront-trigger-module)
+* [Für jedes Workfront-Aktionsmodul verfügbare Objekttypen](#object-types-available-for-each-workfront-action-module)
+* [Für jedes Workfront-Suchmodul verfügbare Objekttypen](#object-types-available-for-each-workfront-search-module)
 
-+++**Für die einzelnen Workfront-Auslösermodule verfügbare Objekttypen**
+### Für jedes Workfront-Trigger-Modul verfügbare Objekttypen
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1758,9 +1713,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**Für die einzelnen Workfront-Aktionsmodule verfügbare Objekttypen**
+### Für jedes Workfront-Aktionsmodul verfügbare Objekttypen
 
 >[!NOTE]
 >
@@ -2181,9 +2134,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**Für die einzelnen Workfront-Suchmodule verfügbare Objekttypen**
+### Für jedes Workfront-Suchmodul verfügbare Objekttypen
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2381,8 +2332,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
 Sie sollten überprüfen, ob alles erwartungsgemäß funktioniert.
-
-+++
 
 ## Ereignisabonnementfilter in den Workfront-Modulen [!UICONTROL Ereignisse überwachen]
 
