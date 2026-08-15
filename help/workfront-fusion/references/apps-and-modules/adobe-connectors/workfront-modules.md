@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 7626
-ht-degree: 94%
+source-wordcount: 7689
+ht-degree: 93%
 
 ---
 
@@ -277,6 +277,13 @@ Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag verknüpft sind,
       <td>
        <p>Wählen Sie aus, ob das Szenario eine Überwachung anhand der Option „[!UICONTROL Nur neue Einträge]“, „[!UICONTROL Nur aktualisierte Einträge]“, „[!UICONTROL Neue und aktualisierte Einträge]“ oder „[!DNL Deleted Records Only]“ durchführen soll.</p>
        <p><b>HINWEIS</b>: Wenn Sie die Option „[!UICONTROL Neue und aktualisierte Einträge]“ auswählen, werden im Rahmen der Webhook-Erstellung zwei Ereignisabonnements (für dieselbe Webhook-Adresse) erstellt.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Sichere Hooks aktivieren]</td> 
+      <td>
+       <p>Wählen Sie aus, ob die authToken-basierte Sicherheit für diesen Webhook aktiviert werden soll.</p><p>
+       <b>HINWEIS</b>: Nach dem 23. August 2026 aktiviert Fusion standardmäßig die authToken-basierte Sicherheit für alle Workfront &gt; Watch Event-Module, einschließlich der vorhandenen. Wenn ein bestimmter Webhooks unterbrochen wird oder Sie dies aus Kompatibilitätsgründen deaktivieren müssen, können Sie die Option Sichere Hooks aktivieren vor dem 23. August 2026 deaktivieren.</p>
        </td> 
      </tr> 
     </tbody> 
