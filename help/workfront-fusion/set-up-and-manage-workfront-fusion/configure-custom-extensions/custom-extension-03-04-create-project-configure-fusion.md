@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
 workflow-type: tm+mt
 source-wordcount: 1360
@@ -184,7 +186,7 @@ Wir verwenden überall `fusion/nav-organization/1`. Um stattdessen den Abschnitt
 
    Es wird empfohlen, den Ordner nach dem Erweiterungspunkt (`fusion-nav-organization-1`) zu benennen. Der genaue Name liegt bei Ihnen, er muss jedoch mit dem übereinstimmen, auf den Sie in `app.config.yaml` verweisen.
 
-1. Fahren Sie fort[ den Erweiterungspunkt in `app.config.yaml`](#declare-the-extension-point-in-appconfigyaml) zu deklarieren.
+1. Fahren Sie fort[&#x200B; den Erweiterungspunkt in `app.config.yaml`](#declare-the-extension-point-in-appconfigyaml) zu deklarieren.
 
 ## Deklarieren des Erweiterungspunkts in `app.config.yaml`
 

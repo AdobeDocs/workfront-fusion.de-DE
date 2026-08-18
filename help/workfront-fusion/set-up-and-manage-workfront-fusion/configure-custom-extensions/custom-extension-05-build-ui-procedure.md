@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
 workflow-type: tm+mt
 source-wordcount: 440
@@ -63,7 +65,7 @@ Beide Frames laden dieselbe `index.html`. Ein kleiner Frontend-Router entscheide
    Diese Routen sind wie folgt der vorherigen Konfiguration zugeordnet:
 
    * Die Standardroute (`index`) rendert **`ExtensionRegistration`**, den ausgeblendeten Rahmen, der `register(...)` aufruft.
-   * Die `my-widget` Route rendert **`DashboardWidget`**, Ihre sichtbare Benutzeroberfläche. Dies entspricht dem `url: "/index.html#/my-widget"`, den Sie von `getWidget()` auf [vorherigen Seite) ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md).
+   * Die `my-widget` Route rendert **`DashboardWidget`**, Ihre sichtbare Benutzeroberfläche. Dies entspricht dem `url: "/index.html#/my-widget"`, den Sie von `getWidget()` auf [vorherigen Seite) &#x200B;](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md).
 
    >[!NOTE]
    >

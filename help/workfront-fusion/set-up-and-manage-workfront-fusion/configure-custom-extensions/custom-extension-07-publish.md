@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 925a8ee910434c474d527c2914897d7c42e4a3d1
 workflow-type: tm+mt
 source-wordcount: 1236
@@ -48,7 +50,7 @@ Standardmäßig zeigt Fusion nur **veröffentlichte** Erweiterungen an. Hierbei 
 Eine Bereitstellung im **Staging**-Arbeitsbereich wird nicht veröffentlicht und daher nicht eigenständig in Fusion angezeigt. Es gibt zwei Möglichkeiten, eine Erweiterung zu testen, bevor Sie sie veröffentlichen:
 
 * **Lokale Vorschau** mit `aio app run` (siehe [Lokale Vorschau von Benutzeroberflächenerweiterungen](https://developer.adobe.com/uix/docs/guides/preview-extension-locally/) in der Dokumentation zu Adobe). Es wird nichts bereitgestellt, und nur Sie sehen es.
-* **Laden Sie sie von Stage in Fusion** indem Sie einen Benutzer-Testschalter in Ihrem Fusion-Profil einschalten. Dies wird in [ Artikel unter „Testen eines Staging-Builds in ](#test-a-stage-build-in-fusion)&quot; beschrieben.
+* **Laden Sie sie von Stage in Fusion** indem Sie einen Benutzer-Testschalter in Ihrem Fusion-Profil einschalten. Dies wird in [&#x200B; Artikel unter „Testen eines Staging-Builds in &#x200B;](#test-a-stage-build-in-fusion)&quot; beschrieben.
 
 ## Testen eines Staging-Builds in Fusion
 

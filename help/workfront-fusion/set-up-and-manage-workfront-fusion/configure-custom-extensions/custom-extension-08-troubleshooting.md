@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
 workflow-type: tm+mt
 source-wordcount: 1136
@@ -125,7 +127,7 @@ Fusion ermöglicht nur Erweiterungen, die auf dem App Builder CDN (`*.adobeio-st
 
 **Was bedeutet:** Der Endpunkt Hooks **Team-Bereich**, `teamId` ist also ein erforderlicher Abfrageparameter.
 
-**fix:**-Aufruf `/api/v3/hooks?teamId=<team.id>`. Die Hooks kommen nur für das aktive Team zurück. Um eine Organisation abzudecken, schleifen Sie ihre Teams und fusionieren Sie. Szenarien akzeptieren dagegen `organizationId`. Siehe [ zur Fusion v3-API](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md#fusion-v3-api-specifics).
+**fix:**-Aufruf `/api/v3/hooks?teamId=<team.id>`. Die Hooks kommen nur für das aktive Team zurück. Um eine Organisation abzudecken, schleifen Sie ihre Teams und fusionieren Sie. Szenarien akzeptieren dagegen `organizationId`. Siehe [&#x200B; zur Fusion v3-API](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md#fusion-v3-api-specifics).
 
 
 ## `aio`-Fehler
