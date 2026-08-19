@@ -3,12 +3,11 @@ title: Erneutes Auslösen einer bestimmten Szenarioausführung
 description: Sie können eine bestimmte Szenario-Ausführung erneut auslösen, um die Daten mithilfe eines aktualisierten Szenario-Blueprints zu verarbeiten oder ihren Datenfluss anzuzeigen.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
-source-wordcount: 561
-ht-degree: 17%
+source-wordcount: 599
+ht-degree: 16%
 
 ---
 
@@ -27,6 +26,12 @@ Bei Verwendung verketteter Szenarien kann die erneute Auslösung auch auf ein un
 Weitere Informationen zu Webhooks finden Sie unter [Instant-Auslöser (Webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 Weitere Informationen zu Verkettungsszenarien finden Sie unter [Verketten mehrerer Szenarien](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
+
+
+
+>[!NOTE]
+>
+>Im Ausführungsverlauf werden nur Daten von bis zu 256 KB gespeichert. Daher können Ausführungen mit Eingabedaten von mehr als 256 KB nicht erneut ausgelöst werden. Jeder Versuch, eine solche Ausführung erneut auszulösen, schlägt mit einer Fehlermeldung fehl.
 
 ## Zugriffsanforderungen
 
