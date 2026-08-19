@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
 workflow-type: tm+mt
-source-wordcount: 6097
-ht-degree: 35%
+source-wordcount: 6620
+ht-degree: 33%
 
 ---
 
@@ -642,17 +642,61 @@ Dieses Modul aktualisiert einen Datensatztyp.
 
 ### Datensätze (v2)
 
-* [Eintrag erstellen](#create-a-record-v2)
+* [Erstellen eines Datensatzes (v2)](#create-a-record-v2)
+* [Erstellen eines Datensatzes (alt)](#create-a-record-legacy)
 * [Eintrag löschen](#delete-a-record-v2)
 * [Datensatz abrufen](#get-a-record-v2)
 * [Datensätze nach Datensatztyp abrufen](#get-records-by-record-type-v2)
 * [Datensätze verschieben](#move-records-v2)
-* [Datensätze suchen](#search-records-v2)
-* [Eintrag aktualisieren](#update-a-record-v2)
+* [Datensätze suchen (v2)](#search-records-v2)
+* [Datensätze suchen (veraltet)](#search-records-legacy)
+* [Aktualisieren eines Datensatzes (v2)](#update-a-record-v2)
+* [Aktualisieren eines Datensatzes (veraltet)](#update-a-record-legacy)
 
 #### Erstellen eines Datensatzes (v2)
 
+Diese Aktion erstellt in Workfront Planning einen einzigen Datensatz. In dieser Version des Moduls können Sie die Felder auswählen, für die Sie Werte angeben möchten, wodurch bei der Erstellung des Datensatzes eine kleinere, effizientere Payload erstellt wird.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Arbeitsbereich]</p>
+      </td>
+      <td>Wählen Sie den Arbeitsbereich aus, in dem Sie einen Datensatz erstellen möchten.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Eintragstyp]</p>
+      </td>
+      <td>Wählen Sie den Typ des Eintrags aus, der erstellt werden soll.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Zuzuordnende Felder auswählen</p>
+      </td>
+      <td>Wählen Sie die Felder aus, für die Sie beim Erstellen des Moduls Werte angeben möchten.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Andere Felder</p>
+      </td>
+      <td>Geben Sie die Werte ein, die der neue Datensatz haben soll. Diese Felder basieren auf dem ausgewählten Datensatztyp und den ausgewählten Feldern und sind für Ihre Workfront Planning-Organisation eindeutig.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Erstellen eines Datensatzes (alt)
+
 Diese Aktion erstellt in Workfront Planning einen einzigen Datensatz.
+
+Es wird empfohlen, das neue Modul Datensatz erstellen zu verwenden, in dem Sie die Felder auswählen können, für die Sie Werte angeben möchten. Durch die Auswahl von Feldern wird beim Erstellen des Datensatzes eine kleinere, effizientere Payload erstellt.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -799,7 +843,48 @@ Dieses Modul ordnet einen oder mehrere Datensätze innerhalb eines Datensatztyps
 
 #### Datensätze suchen (v2)
 
+Gibt Datensätze basierend auf von Ihnen angegebenen Kriterien zurück.In dieser Version des Moduls können Sie die Felder auswählen, für die Sie Werte angeben möchten, wodurch bei der Suche nach Datensätzen eine kleinere, effizientere Payload erstellt wird.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Arbeitsbereich]</p>
+      </td>
+      <td>Wählen Sie den Arbeitsbereich aus, der die Datensätze enthält, die Sie abrufen möchten.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Eintragstyp]</p>
+      </td>
+      <td>Wählen Sie den Datensatztyp aus, der die abzurufenden Datensätze enthält.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Zuzuordnende Felder auswählen</p>
+      </td>
+      <td>Wählen Sie die Felder aus, deren Werte Sie aktualisieren möchten.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Andere Felder]</p>
+      </td>
+      <td>Geben Sie für jedes Feld, nach dem Sie filtern möchten, den Operator und den Wert für dieses Feld ein. Diese Felder basieren auf dem ausgewählten Datensatztyp und den ausgewählten Feldern und sind für Ihre Workfront Planning-Organisation eindeutig.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Datensätze suchen (veraltet)
+
 Gibt Datensätze anhand von angegebenen Kriterien zurück.
+
+Es wird empfohlen, das neue Modul Datensatzaktualisierung zu verwenden, mit dem Sie die Felder auswählen können, für die Sie Werte angeben möchten. Durch die Auswahl von Feldern wird bei der Aktualisierung des Datensatzes eine kleinere, effizientere Payload erstellt.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -832,8 +917,56 @@ Gibt Datensätze anhand von angegebenen Kriterien zurück.
 
 #### Aktualisieren eines Datensatzes (v2)
 
+Dieses Modul aktualisiert den angegebenen Datensatz. In dieser Version des Moduls können Sie die Felder auswählen, für die Sie Werte angeben möchten, wodurch bei der Aktualisierung des Datensatzes eine kleinere, effizientere Payload erstellt wird.
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Arbeitsbereich]</p>
+      </td>
+      <td>Wählen Sie den Arbeitsbereich aus, der den Datensatz enthält, den Sie aktualisieren möchten.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Datensatztyp-ID]</p>
+      </td>
+      <td>Wählen Sie den Typ des Datensatzes aus, den Sie aktualisieren möchten.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Datensatz-ID]</p>
+      </td>
+      <td>Geben Sie die ID des Datensatzes ein, den Sie aktualisieren möchten, oder mappen Sie sie.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Zuzuordnende Felder auswählen</p>
+      </td>
+      <td>Wählen Sie die Felder aus, deren Werte Sie aktualisieren möchten.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Andere Felder]</p>
+      </td>
+      <td>Werte für andere Felder eingeben. Die verfügbaren Felder hängen vom ausgewählten Datensatz und den ausgewählten Feldern ab.</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+#### Aktualisieren eines Datensatzes (veraltet)
+
 Dieses Modul aktualisiert den angegebenen Datensatz.
 
+Es wird empfohlen, das neue Modul Datensatzaktualisierung zu verwenden, mit dem Sie die Felder auswählen können, für die Sie Werte angeben möchten. Durch die Auswahl von Feldern wird bei der Aktualisierung des Datensatzes eine kleinere, effizientere Payload erstellt.
 
 
 <table style="table-layout:auto"> 
@@ -870,7 +1003,6 @@ Dieses Modul aktualisiert den angegebenen Datensatz.
     </tr>
   </tbody>
 </table>
-
 
 ### Felder (v2)
 
