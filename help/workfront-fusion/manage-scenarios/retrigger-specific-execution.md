@@ -3,12 +3,11 @@ title: Erneutes Auslösen einer bestimmten Szenarioausführung
 description: Sie können eine bestimmte Szenario-Ausführung erneut auslösen, um die Daten mithilfe eines aktualisierten Szenario-Blueprints zu verarbeiten oder ihren Datenfluss anzuzeigen.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
 workflow-type: tm+mt
-source-wordcount: 523
-ht-degree: 18%
+source-wordcount: 561
+ht-degree: 17%
 
 ---
 
@@ -58,6 +57,10 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 +++
 
 ## Erneutes Auslösen einer Ausführung
+
+>[!NOTE]
+>
+>Im Ausführungsverlauf werden nur Daten von bis zu 256 KB gespeichert. Daher können Ausführungen mit Eingabedaten von mehr als 256 KB nicht erneut ausgelöst werden. Jeder Versuch, eine solche Ausführung erneut auszulösen, schlägt mit einer Fehlermeldung fehl.
 
 Sie können eine Szenarioausführung erneut über das Diagramm des Szenarios, den Verlaufsbereich des Szenarios oder die Seite der spezifischen Szenarioausführung auslösen.
 
