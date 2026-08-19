@@ -3,7 +3,8 @@ title: Erneutes Auslösen einer bestimmten Szenarioausführung
 description: Sie können eine bestimmte Szenario-Ausführung erneut auslösen, um die Daten mithilfe eines aktualisierten Szenario-Blueprints zu verarbeiten oder ihren Datenfluss anzuzeigen.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
 source-wordcount: 599
