@@ -3,11 +3,10 @@ title: Adobe Workfront MCP-Module
 description: Mit dem Adobe Workfront MCP-Modul können Sie eine Eingabeaufforderung in englischer Sprache an den MCP-Server von Adobe Workfront senden und die Anforderung von einem KI-Modell ausführen lassen.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
 workflow-type: tm+mt
-source-wordcount: 841
+source-wordcount: 871
 ht-degree: 17%
 
 ---
@@ -19,6 +18,8 @@ Der Adobe Workfront MCP-Connector ist eine dedizierte Fusion-Integration für Ad
 Sie können beispielsweise die Eingabeaufforderung „Alle meine aktiven Projekte im Verzug finden und ihren Status zusammenfassen“ eingeben und das Modul gibt eine zusammenfassende Antwort zurück, anstatt mehrere GET- und FILTER-Module verketten zu müssen.
 
 Sie können einschränken, welche Workfront-Aktionen die KI durchführen darf, sodass selbst ein unbeaufsichtigtes Szenario garantieren kann, dass keine unerwarteten destruktiven Aktionen durchgeführt werden.
+
+Standardmäßig verwendet dieses Modul Adobe Managed AI mit dem `claude-sonnet-5`. Sie können das Modul mithilfe eines Schlüssels und anderer von Ihnen bereitgestellter Anmeldeinformationen für die Verwendung eines anderen LLM konfigurieren.
 
 Weitere Informationen zu MCP in Fusion-Szenarien finden Sie unter [Hinzufügen einer KI-Eingabeaufforderung zum Szenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
@@ -133,7 +134,7 @@ Dieses Aktionsmodul verarbeitet unter Verwendung des von Ihnen angegebenen Sprac
   </tr>  </tbody> 
 </table>
 
-Eine Liste der Tools, die Sie für die Felder Schreibgeschützte Tools und Schreib-/Löschtools auswählen können, finden Sie unter [Adobe Workfront MCP Server Tools](https://experienceleague.adobe.com/de/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) in der Dokumentation zu Workfront.
+Eine Liste der Tools, die Sie für die Felder Schreibgeschützte Tools und Schreib-/Löschtools auswählen können, finden Sie unter [Adobe Workfront MCP Server Tools](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) in der Dokumentation zu Workfront.
 
 Das -Modul gibt die folgenden Informationen zurück, die Sie in nachfolgenden Modulen im Szenario zuordnen können:
 
