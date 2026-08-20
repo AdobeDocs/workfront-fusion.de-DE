@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 2906
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -108,7 +108,7 @@ So erstellen Sie eine Workfront Boards-Verbindung:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Typ]</td>
-          <td>Wählen Sie aus, ob Sie eine Verbindung zu einem Service-Konto oder einem persönlichen Konto herstellen möchten.</td>
+          <td>Wählen Sie aus, ob eine Verbindung zu einem Service-Konto oder einem persönlichen Konto hergestellt werden soll.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client-ID]<p>(Optional)</p></td>
@@ -602,7 +602,7 @@ Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Workfront Boa
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text]</td> 
-   <td> <p>Fügen Sie den Hauptteilinhalt für den API-Aufruf in Form einer in JSON eingebetteten GraphQL hinzu. </p> <p>Beispiel:</p><p>In diesem Beispiel wird ein Spaltenname aktualisiert. Sie können die <code>boardId</code> und <code>columnId</code> als GUIDs entweder hartcodiert oder von einem vorherigen Modul zugeordnet einbeziehen.<p><pre>{<br> „query“: „mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
+   <td> <p>Fügen Sie den Hauptteilinhalt für den API-Aufruf in Form einer in JSON eingebetteten GraphQL hinzu. </p> <p>Beispiel:</p><p>In diesem Beispiel wird ein Spaltenname aktualisiert. Sie können die <code>boardId</code> und <code>columnId</code> als GUIDs entweder hartcodiert oder von einem vorherigen Modul zugeordnet einbeziehen.<p><pre>{<br> „query“: „mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }&#x200B;}"<br>}</pre><p>Hinweis:  <p>Wenn Sie bedingte Anweisungen wie <code>if</code> in Ihrem JSON-Objekt verwenden, setzen Sie die Anführungszeichen außerhalb der bedingten Anweisung.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

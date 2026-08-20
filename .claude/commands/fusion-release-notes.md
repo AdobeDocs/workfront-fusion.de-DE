@@ -1,10 +1,10 @@
 ---
 name: fusion-release-notes
 description: Erstellen Sie eine neue wöchentliche Versionshinweisseite für Workfront Fusion und fügen Sie sie in die Übersichtsseite zur Versionsaktivität und in das Inhaltsverzeichnis ein. Verwenden Sie diese Option, wenn Benutzende neue Versionshinweise zu Fusion oder eine wöchentliche Versionsseite schreiben, hinzufügen oder entwerfen möchten oder darum bitten, neue Fusion-Funktionen für eine Version zu dokumentieren. Verwenden Sie nicht für Workfront (Quicksilver)-Versionshinweise in Produktankündigungen/Produktversionen - verwenden Sie für diese Versionshinweise Release-Formatter.
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 1%
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ Fragen Sie den Benutzer (falls noch nicht angegeben) nach der Liste der Funktion
 - Eine klare Beschreibung dessen, was sich geändert hat und warum es wichtig ist
 - Die Hilfeartikel, auf die er verweist (Überprüfen Sie, ob der Pfad vorhanden ist - raten Sie nicht)
 - Ob eine Benutzer-/Admin-Aktion erforderlich ist oder ob es sich um eine Einstellung handelt (`>[!IMPORTANT]` Legende erforderlich)
+- **Ob es sich um einen neuen Connector-Launch handelt** (ein brandneuer Connector/eine brandneue App wird verfügbar, nicht nur neue Module, die einem vorhandenen Connector hinzugefügt werden). Wenn ja, überspringen Sie **Trigger (** 7) nicht die Frage nach einer Umleitung, nur weil der Versionshinweis selbst fertig ist.
 
 ## Schritt 2: Dateinamen und Datum bestimmen
 
@@ -134,7 +135,23 @@ Hinweise:
 - Mehrere Inhaltsverzeichniseinträge von Anfang 2026 sind versehentlich unter der Überschrift `Fusion releases - 2025` verschachtelt, obwohl die Seiten selbst Versionen von 2026 sind. Wenn Sie einen neuen Eintrag hinzufügen, überprüfen Sie immer, ob er unter der Überschrift &quot;**Jahr“ landet** und nicht an der Stelle, an der der vorherige Eintrag liegt.
 - Bei einigen älteren Seitentiteln/H1s wird das Komma vor dem Jahr weggelassen (`July 13 2026` statt `July 13, 2026`). Verwenden Sie auf neuen Seiten immer das Komma .
 
-## Schritt 6: Endgültige Checkliste
+## Schritt 7: Neuer Connector wird gestartet - Fragen nach einer Umleitung (nicht überspringen)
+
+**Dieser Schritt gilt immer dann, wenn in Schritt 1 ein neuer Connector-Start identifiziert wurde.** Es ist einfach, den Versionshinweis nach Schritt 5 als „fertig“ zu betrachten und dies zu vergessen — eine neue Connector-Funktion als unvollständig zu behandeln, bis dieser Schritt auf die eine oder andere Weise angegangen wurde.
+
+Fragen Sie den Benutzer: *„Möchten Sie eine Umleitung für den neuen Connector-Artikel einrichten?“*
+
+- Wenn **nein**, beachte das und fahre fort — nichts weiter zu tun.
+- Wenn **ja**, stellen Sie Folgendes zusammen:
+  - Der **Quellpfad** (muss mit `/en` beginnen, keine Leerzeichen)
+  - Das **Ziel** - ein relativer Pfad, der mit `/en` beginnt, oder eine vollständige `https`-URL (keine Leerzeichen)
+- Fügen Sie die Zeile unter dem gleichrangigen `Adobe-Enterprise-Docs/redirects`-Repository hinzu und `redirects/` Sie eine Datei pro Umgebung (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Zeilenregeln (aus der README dieses Repositorys):
+  - Keine doppelten `source` und kein doppeltes `source`/`destination`.
+  - Die Umleitung darf keine Umleitungsschleife verursachen.
+- **Diese Qualifikation fügt die CSV-Zeile nur hinzu, nachdem der Benutzer sie bestätigt hat.** Das Erhöhen des PR im `redirects`-Repository ist ein separater Schritt, den diese Fähigkeit nicht ausführt. Informieren Sie den Benutzer darüber, dass ein PR noch dort geöffnet und zusammengeführt werden muss, bevor die Umleitung live geschaltet wird (~5 Minuten nach der Zusammenführung für 1:1-Umleitungen).
+
+## Schritt 8: Endgültige Checkliste
 
 - [ ] Datei im richtigen Pfad ohne vorangestellte Nullen im Datum erstellt
 - [ ] Frontmatter verwendet `hidefromtoc: true`, keine erfundenen `exl-id`/`TQID`
@@ -144,6 +161,7 @@ Hinweise:
 - [ ] Neue Seite wurde als neuester Eintrag in `fusion-release-activity.md` unter dem richtigen Jahr/Monat hinzugefügt
 - [ ] Neue Seite wurde als neuester Eintrag in `TOC.md` unter der korrekten Jahresüberschrift hinzugefügt
 - [ ] Neujahr/Monat-Überschriften werden bei Bedarf erstellt, wobei das Vorjahr in `fusion-release-activity.md` ausgeblendet wird
+- [ ] **Wenn eine Funktion ein neuer Connector-Launch war: nach einer Umleitung gefragt (Schritt 7) und entweder eingerichtet oder ausdrücklich abgelehnt**
 
 ## Weitere Ressourcen
 
