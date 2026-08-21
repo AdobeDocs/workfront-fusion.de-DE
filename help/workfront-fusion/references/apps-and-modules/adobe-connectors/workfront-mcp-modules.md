@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
 workflow-type: tm+mt
-source-wordcount: 841
+source-wordcount: 871
 ht-degree: 17%
 
 ---
@@ -19,6 +19,8 @@ Der Adobe Workfront MCP-Connector ist eine dedizierte Fusion-Integration für Ad
 Sie können beispielsweise die Eingabeaufforderung „Alle meine aktiven Projekte im Verzug finden und ihren Status zusammenfassen“ eingeben und das Modul gibt eine zusammenfassende Antwort zurück, anstatt mehrere GET- und FILTER-Module verketten zu müssen.
 
 Sie können einschränken, welche Workfront-Aktionen die KI durchführen darf, sodass selbst ein unbeaufsichtigtes Szenario garantieren kann, dass keine unerwarteten destruktiven Aktionen durchgeführt werden.
+
+Standardmäßig verwendet dieses Modul Adobe Managed AI mit dem `claude-sonnet-5`. Sie können das Modul mithilfe eines Schlüssels und anderer von Ihnen bereitgestellter Anmeldeinformationen für die Verwendung eines anderen LLM konfigurieren.
 
 Weitere Informationen zu MCP in Fusion-Szenarien finden Sie unter [Hinzufügen einer KI-Eingabeaufforderung zum Szenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
