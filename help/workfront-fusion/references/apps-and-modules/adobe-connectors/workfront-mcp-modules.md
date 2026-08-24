@@ -139,7 +139,7 @@ Dieses Aktionsmodul verarbeitet unter Verwendung des von Ihnen angegebenen Sprac
   </tr>  </tbody> 
 </table>
 
-Eine Liste der Tools, die Sie für die Felder Schreibgeschützte Tools und Schreib-/Löschtools auswählen können, finden Sie unter [Adobe Workfront MCP Server Tools](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) in der Dokumentation zu Workfront.
+Eine Liste der Tools, die Sie für die Felder Schreibgeschützte Tools und Schreib-/Löschtools auswählen können, finden Sie unter [Adobe Workfront MCP Server Tools](https://experienceleague.adobe.com/de/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools) in der Dokumentation zu Workfront.
 
 Das -Modul gibt die folgenden Informationen zurück, die Sie in nachfolgenden Modulen im Szenario zuordnen können:
 
