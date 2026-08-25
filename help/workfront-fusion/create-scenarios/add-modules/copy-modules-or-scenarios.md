@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 914
-ht-degree: 11%
+source-wordcount: 941
+ht-degree: 10%
 
 ---
 
@@ -83,6 +83,10 @@ Das Kopieren einer Gruppe von Modulen ähnelt dem Kopieren eines einzelnen Modul
 1. Verbinden Sie die eingefügten Module mit dem Szenario, indem Sie sie an die entsprechende Position im Szenario ziehen.
 
    Sie können auch Tastaturbefehle zum Kopieren und Einfügen verwenden.
+
+>[!NOTE]
+>
+>Anstatt eine Gruppe von Modulen zu kopieren, können Sie eine Gruppe von Modulen in ein neues verkettetes Szenario verschieben. Anweisungen finden Sie unter [Module in eine Kette verschieben](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 ## Szenario durch Klonen kopieren
 
