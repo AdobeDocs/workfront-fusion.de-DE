@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
+source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
 workflow-type: tm+mt
-source-wordcount: 871
-ht-degree: 17%
+source-wordcount: 884
+ht-degree: 16%
 
 ---
 
@@ -21,6 +21,10 @@ Sie können beispielsweise die Eingabeaufforderung „Alle meine aktiven Projekt
 Sie können einschränken, welche Workfront-Aktionen die KI durchführen darf, sodass selbst ein unbeaufsichtigtes Szenario garantieren kann, dass keine unerwarteten destruktiven Aktionen durchgeführt werden.
 
 Standardmäßig verwendet dieses Modul Adobe Managed AI mit dem `claude-sonnet-5`. Sie können das Modul mithilfe eines Schlüssels und anderer von Ihnen bereitgestellter Anmeldeinformationen für die Verwendung eines anderen LLM konfigurieren.
+
+>[!NOTE]
+>
+>Die Nutzung von Adobe Managed AI ist auf 25 USD pro Organisation und Monat beschränkt.
 
 Weitere Informationen zu MCP in Fusion-Szenarien finden Sie unter [Hinzufügen einer KI-Eingabeaufforderung zum Szenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 

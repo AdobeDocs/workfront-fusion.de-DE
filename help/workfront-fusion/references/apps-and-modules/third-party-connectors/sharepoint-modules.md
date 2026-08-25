@@ -12,10 +12,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 4305
-ht-degree: 13%
+source-wordcount: 4844
+ht-degree: 12%
 
 ---
 
@@ -97,6 +97,7 @@ Der SharePoint-Connector verwendet Folgendes:
 * [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines - [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe der erweiterten Einstellungen](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe der Zertifikatautorisierung](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
+* [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines Service-Prinzipals](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 
 ### Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines [!DNL Microsoft]
 
@@ -204,6 +205,97 @@ Sie können die Zertifikatsautorisierung verwenden, um eine Verbindung zu ShareP
 
 1. Klicken Sie auf **Continue**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
+### Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines Service-Prinzipals
+
+Sie können eine Verbindung erstellen, die einen Service-Prinzipal (eine Anwendungs-API-Verbindung) anstelle eines persönlichen Kontos verwendet. Dies ist nützlich, wenn Sie möchten, dass die Verbindung als Anwendung oder Service-Identität und nicht als eine bestimmte Person ausgeführt wird. Die Integration funktioniert beispielsweise nicht, wenn diese Person das Unternehmen verlässt oder ihr Passwort ändert.
+
+>[!IMPORTANT]
+>
+>Dieser Verbindungstyp ist nur für das Modul [Erstellen eines API-](#make-an-api-call)) verfügbar. Andere SharePoint-Module erfordern einen der anderen in diesem Artikel beschriebenen Verbindungstypen.
+
+* [Voraussetzungen für das Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines Service-Prinzipals](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
+* [Erstellen der App-Registrierung in der Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)
+* [Erstellen von Client-Geheimnissen](#create-a-client-secret)
+* [API-Berechtigungen erteilen](#grant-api-permissions)
+* [Erfassen von Verbindungsdetails](#collect-your-connection-details)
+* [Erstellen der Verbindung](#create-the-connection)
+
+#### Voraussetzungen für das Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines Service-Prinzipals
+
+Sie benötigen **Globaler Administrator**, **Anwendungsadministrator** oder **Privilegierter Rollenadministrator** Zugriff in der Microsoft Entra ID, um die Anwendung zu registrieren und Berechtigungen zu erteilen. Wenn Sie diesen Zugriff nicht haben, bitten Sie jemanden in Ihrem IT- oder Identitäts-Team, diese Schritte für Sie auszuführen.
+
+Fahren Sie [Erstellen der App-Registrierung in der Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id) fort.
+
+#### Erstellen der App-Registrierung in der Microsoft Entra ID
+
+1. Melden Sie sich beim [!DNL Microsoft Entra] Admin Center an.
+1. Navigieren Sie **[!UICONTROL App-Registrierungen]** > **[!UICONTROL Neue Registrierung]**.
+1. Geben Sie der App einen klaren, erkennbaren Namen. Beispiel: `Make - SharePoint Integration`.
+1. Lassen Sie **[!UICONTROL Umleitungs-URI]** leer. Für diese Verbindung muss sich niemand über einen Browser anmelden.
+1. Wählen Sie **[!UICONTROL Registrieren]** aus.
+1. Fahren Sie mit [Erstellen eines Client-Geheimnisses](#create-a-client-secret) fort.
+
+#### Erstellen von Client-Geheimnissen
+
+1. Navigieren Sie in Ihrer neuen App-Registrierung zu **[!UICONTROL Zertifikate und Geheimnisse]**.
+1. Wählen Sie **[!UICONTROL Neues Client-Geheimnis]**, fügen Sie eine Beschreibung hinzu und wählen Sie einen Ablaufzeitraum aus.
+1. Bestätigen Sie die Angaben mithilfe der Schaltfläche **[!UICONTROL Hinzufügen]**.
+1. Kopieren Sie den (Wert **[!UICONTROL der geheimen Daten]**. Er wird nur einmal angezeigt. Wenn Sie die Seite verlassen möchten, bevor Sie sie kopieren, müssen Sie eine neue erstellen.
+1. Fahren Sie fort [API-Berechtigungen erteilen](#grant-api-permissions).
+
+#### API-Berechtigungen erteilen
+
+>[!IMPORTANT]
+>
+>BECKY CHECK ME: Im Gegensatz zu Azure DevOps unterstützt Microsoft Graph in diesem Schritt direkt Anwendungsberechtigungen. Bestätigen Sie die genauen Berechtigungen, die das Modul „API-Aufruf durchführen“ benötigt (z. B. einen Sites-Berechtigungsbereich), bevor Sie diesen Abschnitt veröffentlichen, und aktualisieren Sie die folgenden Schritte entsprechend.
+
+1. Navigieren Sie in Ihrer App-Registrierung zu **[!UICONTROL API-Berechtigungen]**.
+1. Wählen Sie **[!UICONTROL Berechtigung hinzufügen]** und dann **[!UICONTROL Microsoft-Diagramm]** aus.
+1. Wählen Sie **[!UICONTROL Anwendungsberechtigungen]** aus.
+1. Wählen Sie die Berechtigungen aus, die Ihre API-Aufrufe benötigen, und wählen Sie dann **[!UICONTROL Berechtigungen hinzufügen]**.
+1. Wählen Sie **[!UICONTROL Administratorzustimmung für Ihre Organisation erteilen]** und bestätigen Sie dann.
+1. Fahren Sie [Verbindungsdetails erfassen](#collect-your-connection-details) fort.
+
+#### Erfassen von Verbindungsdetails
+
+Beachten Sie auf der Seite **[!UICONTROL Übersicht]** der App-Registrierung die folgenden Werte. Diese werden beim Erstellen der Verbindung im Modul eingegeben.
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">[!UICONTROL Mandanten-ID]</td>
+   <td>Auf der Seite Überblick mit der Beschriftung <b>Verzeichnis (Mandanten-ID</b>.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client-ID]</td>
+   <td>Auf der Seite Überblick mit der Bezeichnung <b>Anwendungs-(Client-)ID</b>.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
+   <td>Der Wert, den Sie in "<a href="#create-a-client-secret" class="MCXref xref"> eines Client-Geheimnisses“ kopiert </a>.</td>
+  </tr>
+ </tbody>
+</table>
+
+Fahren Sie [Verbindung erstellen](#create-the-connection) fort.
+
+#### Erstellen der Verbindung
+
+1. Klicken Sie im Modul [!UICONTROL API-Aufruf ausführen] auf **[!UICONTROL Hinzufügen]** neben dem Feld Verbindung , um das Feld **[!UICONTROL Verbindung erstellen]** zu öffnen.
+1. Klicken Sie **[!UICONTROL Erweiterte Einstellungen anzeigen]**.
+1. Wählen Sie im Feld [!UICONTROL Verbindungstyp] die Option **[!UICONTROL Service-Prinzipal]**.
+1. Geben Sie Folgendes ein:
+
+   * [!UICONTROL Mandanten-ID]
+   * [!UICONTROL Client-ID]
+   * [!UICONTROL Client Secret] (Client-Geheimnis)
+
+1. Klicken Sie auf **Continue**, um die Verbindung zu speichern und zum Modul zurückzukehren.
+
+   Wenn alles korrekt eingerichtet ist, wird die Verbindung erfolgreich validiert.
+
 ## Microsoft SharePoint-Module und ihre Felder
 
 Beim Konfigurieren von Microsoft SharePoint Online-Modulen zeigt Workfront Fusion die unten aufgeführten Felder an. Abhängig von Faktoren wie Ihrer Zugriffsebene in der App oder dem Service werden möglicherweise auch zusätzliche Microsoft SharePoint Online-Felder angezeigt. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
@@ -222,6 +314,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 ### Laufwerkselement
 
 * [Erstellen einer Datei](#create-a-file)
+* [Datei erstellen (alt)](#create-a-file-legacy)
 * [Ordner erstellen](#create-a-folder)
 * [Datei abrufen](#get-a-file)
 * [Ordner abrufen](#get-a-folder)

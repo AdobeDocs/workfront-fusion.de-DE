@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 6620
+source-wordcount: 6660
 ht-degree: 33%
 
 ---
@@ -1600,11 +1600,6 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz, ein Datensatztyp 
 >
 >Weitere Informationen zum Bearbeiten von Webhooks finden Sie unter [Bearbeiten von Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
->[!NOTE]
->
->Nach dem 23. August 2026 aktiviert Fusion standardmäßig die authToken-basierte Sicherheit für alle Workfront Planning > Watch Event-Module, einschließlich vorhandener Module.
-
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1654,6 +1649,13 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz, ein Datensatztyp 
         <p>[!UICONTROL Von dieser Verbindung vorgenommene Aktualisierungen ausschließen]</p>
       </td>
       <td>Aktivieren Sie diese Option, um zu verhindern, dass das Szenario ausgelöst wird, wenn eine Änderung durch die von diesem Modul verwendete Verbindung vorgenommen wird. Dadurch wird verhindert, dass eine weitere Instanz des Szenarios ausgelöst wird, wenn dieses Szenario eine auslösende Aktion ausführt.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Sichere Hooks aktivieren]</td>
+      <td>
+       <p>Wählen Sie aus, ob die authToken-basierte Sicherheit für diesen Webhook aktiviert werden soll.</p><p>
+       <b>HINWEIS</b>: Seit dem 23. August 2026 aktiviert Fusion standardmäßig die authToken-basierte Sicherheit für alle Workfront Planning &gt; Watch Event-Module, einschließlich vorhandener. Wenn ein bestimmter Webhook beschädigt wird oder Sie dies aus Kompatibilitätsgründen deaktivieren müssen, können Sie die Option Sichere Hooks aktivieren deaktivieren.</p>
+      </td>
     </tr>
   </tbody>
 </table>
