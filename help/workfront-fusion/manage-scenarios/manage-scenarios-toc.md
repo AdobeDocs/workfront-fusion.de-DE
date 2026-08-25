@@ -7,12 +7,11 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
 TQID: https://experienceleague.adobe.com/EUSuZIyMovl2W3PlmmGaJ6rivpwQWZIJMKbZ4VGJDgw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 336cdb956b69b996b2eaa7f08508e2efaae56a0e
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 110
-ht-degree: 53%
+source-wordcount: 115
+ht-degree: 51%
 
 ---
 
@@ -30,6 +29,7 @@ ht-degree: 53%
 * [Webhook-Warteschlange anzeigen](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [Anzeigen des Datenflusses in einem laufenden Szenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
 * [Verkettete Szenariobeziehungen anzeigen](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
+* [Module in eine Kette verschieben](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
 * [KI-Assistent in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [Ausführen des Szenario-Scoring-Experten](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [Löschen von Szenario-Elementen](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)

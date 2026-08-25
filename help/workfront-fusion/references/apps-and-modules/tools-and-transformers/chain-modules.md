@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 883
+source-wordcount: 913
 ht-degree: 10%
 
 ---
@@ -29,6 +28,10 @@ Mithilfe der Kettenmodule können Sie ein Szenario mit einem anderen verbinden.
 <!--This article will be about the specific module configuration-->
 
 Anweisungen zum Planen von verketteten Szenarien finden Sie unter [Verketten mehrerer Szenarien](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
+
+>[!NOTE]
+>
+>Anstatt diese Module manuell zu konfigurieren, können Sie vorhandene Module in einem Szenario auswählen und in ein neues untergeordnetes Szenario verschieben. Anweisungen finden Sie unter [Module in eine Kette verschieben](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 
 ## Zugriffsanforderungen
@@ -96,7 +99,7 @@ Dieses Modul befindet sich im übergeordneten Szenario. Die Felder spiegeln die 
 > * **Verwenden Sie beim Platzieren dieses Moduls in einem Iterator Vorsicht.** Wenn Sie in einem großen Iterator für jedes Element ein untergeordnetes Szenario bereitstellen, wird die Plattform erheblich ausgelastet. Erwägen Sie, die Logik des untergeordneten Szenarios einzubinden oder freigegebene Suchen außerhalb des Iterators vorab zu berechnen.
 > * **Feuer und Vergessen** bedeutet, dass das Elternteil keine Sicht darauf hat, ob das Kind gelaufen ist oder erfolgreich war. Verwenden Sie diese Option nur, wenn Kinderfehler unabhängig überwacht werden.
 >
-> Eine vollständige Entwurfsanleitung finden Sie unter [Verketten mehrerer Szenarien](https://experienceleague.adobe.com/de/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+> Eine vollständige Entwurfsanleitung finden Sie unter [Verketten mehrerer Szenarien](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
 
 >[!NOTE]
 >
