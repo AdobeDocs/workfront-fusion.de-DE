@@ -3,7 +3,8 @@ title: Module in eine Kette verschieben
 description: Sie können eine Gruppe von Modulen in einem Szenario auswählen und sie in ein neues verkettetes Szenario verschieben, ohne Zuordnungen oder Datenstrukturen manuell neu zu erstellen.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: f1a80f64edc410ae76bfbba1280df7232e2d09c5
 workflow-type: tm+mt
 source-wordcount: 513
