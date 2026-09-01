@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
 nudge: true
-source-git-commit: fedd3e509b76cb7db5bf814c1677a2a5a6699aa7
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
-source-wordcount: '2604'
-ht-degree: 50%
+source-wordcount: '2652'
+ht-degree: 49%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 50%
 * Fusion-Veröffentlichungen {#fusion-release-activity}
   * [Adobe Workfront Fusion-Veröffentlichungen](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion-Versionen - 2026 {#fusion-releases-2026}
+    * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 31. August 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-31.md)
     * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 24. August 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-24.md)
     * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 17. August 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-17.md)
     * [Workfront Fusion-Veröffentlichungsaktivität: Woche vom 10. August 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-10.md)
@@ -208,7 +209,7 @@ ht-degree: 50%
       * [Hinzufügen von Benutzenden zu einem Team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
       * [Benachrichtigungsoptionen festlegen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
       * [Anzeigen des Aktivitätsprotokolls für eine Organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
-      * [Anzeigen des Leistungs-Dashboards für eine Organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performance-dashboard.md)
+      * [Anzeigen des Insights-Dashboards für eine Organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-insights-dashboard.md)
     * Verwalten von Benutzenden und Teams {#manage-users-and-teams}
       * [Verwalten von Benutzenden und Teams: Artikelindex](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
       * [Anzeigen von Benutzenden in einer Organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-users-in-an-org.md)
@@ -231,6 +232,16 @@ ht-degree: 50%
     * [Verwalten von Vorlagen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
     * [Genehmigen oder Ablehnen von Vorlagen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
     * [Bearbeiten von Vorlagen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
+  * Workfront-Speicher verwenden {#use-workfront-storage}
+    * [Verwenden des Workfront-Speichers](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/use-workfront-storage-toc.md)
+    * [Speicherübersicht](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)
+    * [Initialisieren des Speichers](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md)
+    * [Anzeigen und Verwalten von Speicher in Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-and-manage-storage-in-workfront-fusion.md)
+    * [Dateien in Speicher hochladen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/upload-files-to-storage.md)
+    * [Dateien aus dem Speicher herunterladen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/download-files-from-storage.md)
+    * [Löschen von Dateien aus dem Speicher](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/delete-files-from-storage.md)
+    * [Anzeigen des Dateiversionsverlaufs im Speicher](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)
+    * [Erstellen von Szenarien aus dem Speicher](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md)
 * Erstellen von Szenarios {#create-scenarios}
   * [Erstellen von Szenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
   * Planen eines Szenarios {#plan-a-scenario}

@@ -1,5 +1,5 @@
 ---
-title: Anzeigen des Leistungs-Dashboards für eine Organisation
+title: Anzeigen des Insights-Dashboards für eine Organisation
 description: Fusion-Administratoren können ein Dashboard anzeigen, das Ausführungsmetriken für eine Organisation anzeigt.
 author: Becky
 feature: Workfront Fusion
@@ -7,16 +7,16 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
 source-wordcount: 694
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
-# Anzeigen des Leistungs-Dashboards für eine Organisation
+# Anzeigen des Insights-Dashboards für eine Organisation
 
-Mit dem Fusion-Performance-Dashboard können Sie schnell feststellen, welche Szenarien am häufigsten ausgeführt werden, wo Verzögerungen auftreten und wie effektiv Ihre Worker-Pools funktionieren. Dies bietet Echtzeiteinblicke in Ausführungsvolumen, Warteschlangentiefe, Poolauslastung und Leistung auf Szenario-Ebene.
+Mit dem Fusion Insights-Dashboard können Sie schnell feststellen, welche Szenarien am häufigsten ausgeführt werden, wo Verzögerungen auftreten und wie effektiv Ihre Worker-Pools funktionieren. Dies bietet Echtzeiteinblicke in Ausführungsvolumen, Warteschlangentiefe, Poolauslastung und Leistung auf Szenario-Ebene.
 
 ## Zugriffsanforderungen
 
@@ -47,7 +47,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 +++
 
-## Komponenten des Leistungs-Dashboards
+## Komponenten des Insights-Dashboards
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 -->
 
-Im Fusion-Performance-Dashboard werden die folgenden Metriken angezeigt.
+Im Dashboard „Fusion Insights“ werden die folgenden Metriken angezeigt.
 
 * **Ausführungen warten auf die Verarbeitung**
 Dieses Diagramm zeigt die Anzahl der Ausführungen, die zu einem bestimmten Zeitpunkt auf die Verarbeitung warten (auch als Ausführungsrückstand bezeichnet).
@@ -80,9 +80,9 @@ Dieses Diagramm zeigt Ausführungen pro Szenario. Verschiedene Farben stellen ve
 
   Sie können dieses Diagramm verwenden, um Szenarien zu identifizieren, die länger als üblich dauern, einschließlich der Szenarien, die von Problemen mit einer verbundenen App oder einem Service betroffen sind.
 
-## Anzeigen des Fusion-Performance-Dashboards
+## Anzeigen des Fusion Insights-Dashboards
 
-1. Klicken Sie in Fusion **linken** auf „Performance“.
+1. Klicken Sie in Fusion **linken** auf „Insights“.
 
    Das Dashboard wird geöffnet.
 
