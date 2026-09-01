@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
 TQID: https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
-source-wordcount: 775
-ht-degree: 94%
+source-wordcount: 895
+ht-degree: 82%
 
 ---
 
@@ -23,6 +22,7 @@ In diesem Artikel werden diese Bereiche vorgestellt und Links zu weiteren Inform
 | Bereich | Beschreibung | Weitere Informationen finden Sie unter |
 | --- | --- | --- |
 | Organisationsüberblick <br> ![Organisationssymbol](assets/org-icon.png) | Hier finden Sie Informationen zu Ihrer Fusion-Organisation. Sie können die Anzahl der von Szenarios in dieser Organisation ausgeführten Vorgänge sowie eine Liste aktiver Szenarios anzeigen. Sie können auch Listen des Teams, der Benutzenden und der Umgebungen dieser Organisation anzeigen.<br>Die aktuell ausgewählte Organisation wird über diesem Symbol angezeigt. | [Organisationen und Teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
+| Insights <br> ![Insights-Symbol](assets/insights-icon.png) | Hier sehen Sie ein Dashboard mit Ausführungsmetriken für Ihre Organisation, z. B. welche Szenarien am häufigsten ausgeführt werden, wo es zu Verzögerungen kommt und wie effektiv Ihre Worker-Pools funktionieren. | [Anzeigen des Insights-Dashboards für eine Organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-insights-dashboard.md) |
 | Team-Überblick <br> ![Team-Symbol](assets/team-icon.png) | Hier finden Sie Informationen zu Fusion-Teams, z. B. die Anzahl der Vorgänge, die von Szenarios in diesem Team ausgeführt werden, sowie eine Liste der aktiven Szenarios. Sie können auch die Benutzenden in diesem Team anzeigen und verwalten. Wenn Sie ein Team anzeigen, können Sie oben auf dieser Seite über ein Dropdown-Menü ein anderes Team auswählen.<br>Das aktuell ausgewählte Team wird über diesem Symbol angezeigt.<br>Möglicherweise müssen Sie ein Team erstellen, um den Team-Überblick oder einen der in diesem Artikel aufgeführten Team-Abschnitte sehen zu können. | [Organisationen und Teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | Szenarios <br> ![Szenariosymbol](assets/scenarios-icon.png) | Ein Szenario in Fusion stellt einen automatisierten Workflow dar. Beispielsweise kann bei einem Szenario auf eingehende Workfront-Anfragen geachtet werden, die dann in Projekte konvertiert werden, während ein anderes Szenario dazu führt, dass Bilder generiert, diese bei einem Dokumentanbieter hochgeladen und Genehmigungsaufgaben zu Workfront hinzugefügt werden. Der Großteil Ihrer Arbeit in Fusion entfällt auf die Konfiguration und Verwaltung von Szenarios. Im Bereich „Szenarios“ können Sie eine Liste der Szenarios Ihres Teams anzeigen und organisieren, einzelne Szenarios auswählen, die angezeigt oder geändert werden sollen, oder mit der Erstellung eines neuen Szenarios beginnen. | [Überblick über Szenarios](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
 | Vorlagen <br> ![Vorlagensymbol](assets/templates-icon.png) | Vorlagen sind vorgefertigte Szenarios, die Sie für Ihre eigenen Anwendungsfälle konfigurieren können. Hier sehen Sie öffentliche Szenarios, die von Workfront Fusion bereitgestellt werden, sowie von Ihrem Team erstellte Vorlagen. | [Erstellen und Verwalten von Vorlagen: Artikelindex](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md) |
@@ -32,6 +32,8 @@ In diesem Artikel werden diese Bereiche vorgestellt und Links zu weiteren Inform
 | Datenspeicher <br> ![Datenspeichersymbol](assets/data-store-icon.png) | Datenspeicher sind kleine Datenbanken, die außerhalb von Szenarios existieren. Mit Datenspeichern können Sie Daten zwischen Szenarios oder zwischen separaten Ausführungen eines Szenarios übertragen. Im Bereich „Datenspeicher“ können Sie Datenspeicher anzeigen und verwalten, die Ihrem Team gehören. | [Datenspeicher](/help/workfront-fusion/create-scenarios/map-data/data-stores.md) |
 | Datenstrukturen <br> ![Datenstruktursymbol](assets/data-structure-icon.png) | Datenstrukturen beschreiben das Format der Daten, die an Fusion übertragen werden, und werden häufig zum Serialisieren oder Parsen von Formaten wie JSON, XML und CSV verwendet. Unter „Datenstrukturen“ können Sie Datenstrukturen anzeigen und verwalten, die Ihrem Team gehören. | [Datenstrukturen](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md) |
 | Funktionen <br> ![Funktionssymbol](assets/functions-icon.png) | Benutzerdefinierte Funktionen sind JavaScript-Funktionen, die Szenarien hinzugefügt werden können, um Daten zu bearbeiten und zu transformieren. <br>Ihr Unternehmen muss über eine Lizenz für Adobe App Builder verfügen, um benutzerdefinierte Funktionen erstellen und verwenden zu können. | [Zuordnen von Daten mithilfe benutzerdefinierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md) |
+| <br> ![Symbol „Pakete](assets/packages-icon.png) | Mit Paketen können Sie Ihre eigene benutzerdefinierte Logik in Fusion erstellen und ausführen, ohne die Fusion-Schnittstelle zu verlassen. Im Bereich Pakete können Sie die Pakete anzeigen und verwalten, die Ihrem Team gehören. | [Benutzerdefinierte Funktionspakete verwenden](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md) |
+| <br> ![Speichersymbol](assets/storage-icon.png) | Die Massenspeicherung bietet Ihrem Team direkten Zugriff auf Ihre Adobe Enterprise Storage Management (ESM)-Repositorys. Sie können Ordner durchsuchen, Dateien hochladen und herunterladen, den Dateiversionsverlauf anzeigen und Automatisierungsszenarien erstellen, ohne Fusion verlassen zu müssen. | [Speicherübersicht](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md) |
 
 >[!NOTE]
 >
