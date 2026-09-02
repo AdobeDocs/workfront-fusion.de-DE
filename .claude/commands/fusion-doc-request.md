@@ -25,11 +25,11 @@ Slack-Verbindungen in dieser Umgebung sind fehlerhaft (abgelaufene Token, trennt
 
 Die Anfragevorlage enthält die folgenden Felder: „Jedes extrahieren“:
 
-* **Funktionstitel**
-* **Beschreibung**
-* **Punkte, die der Dokumentation hinzugefügt werden müssen** *(manchmal vorhanden - spezifische Abschnitte/Details, die der Antragsteller abdecken möchte; behandeln Sie diese nach Bedarf, nicht optional, falls angegeben)*
-* **Voraussichtliches Veröffentlichungsdatum**
-* **Ankündigung erforderlich** *(Ja/Nein - nur zur Information; siehe oben stehenden Hinweis. Aktion für dieses Feld nicht ausführen.)*
+&#x200B;* **Funktionstitel**
+&#x200B;* **Beschreibung**
+&#x200B;* **Punkte, die der Dokumentation hinzugefügt werden müssen** *(manchmal vorhanden - spezifische Abschnitte/Details, die der Antragsteller abdecken möchte; behandeln Sie diese nach Bedarf, nicht optional, falls angegeben)*
+&#x200B;* **Voraussichtliches Veröffentlichungsdatum**
+&#x200B;* **Ankündigung erforderlich** *(Ja/Nein - nur zur Information; siehe oben stehenden Hinweis. Aktion für dieses Feld nicht ausführen.)*
 
 Wenn die Anfrage mit der vollständigen Spezifikation auf eine Confluence-Wiki-Seite verweist, rufen Sie sie ab (`get_wiki_content`), bevor Sie die Dokumentation schreiben. Verlassen Sie sich nicht nur auf die Slack-Zusammenfassung für technische Details (exakte Feldnamen, Schritte, Benutzeroberflächen-Kennzeichnungen) - rufen Sie diese aus der Wiki-Spezifikation ab, wenn eine verknüpft ist.
 
@@ -37,8 +37,8 @@ Wenn die Anfrage mit der vollständigen Spezifikation auf eine Confluence-Wiki-S
 
 Suchen Sie die relevanten vorhandenen Artikel in diesem Repository (Grep für zugehörige Modulnamen, Benutzeroberflächen-Bezeichnungen oder Einstellungsnamen - raten Sie nicht auf die Datei). Aktualisieren Sie sie, um die Änderung widerzuspiegeln, wobei Sie der vorhandenen Struktur, Überschriftenebene und dem Hausstil dieses Artikels folgen.
 
-* Erfinden Sie keine technischen Details (exakte Feldnamen, Berechtigungsumfänge, Konfigurationsschritte), die nicht in der Slack-Anfrage oder verknüpften Wiki-Spezifikation enthalten sind. Wenn etwas nicht bestätigt ist, kennzeichnen Sie es inline als HTML-Kommentar (z. B. `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), anstatt es zu erraten - nie als sichtbarer Hinweis. Er darf nicht auf der veröffentlichten Seite gerendert werden.
-* Wenn dies eine brandneue Artikeldatei erfordert (nicht nur eine Änderung an einer bestehenden), folgen Sie den ständigen Konventionen dieses Repositorys: keine fabrizierten `exl-id`/`TQID` in der Frontseite, verkabeln Sie die neue Seite in das entsprechende Inhaltsverzeichnis und konvertieren Sie die Datei nach der Erstellung in CRLF/no-BOM (das `Write`-Tool verwendet standardmäßig LF).
+&#x200B;* Erfinden Sie keine technischen Details (exakte Feldnamen, Berechtigungsumfänge, Konfigurationsschritte), die nicht in der Slack-Anfrage oder verknüpften Wiki-Spezifikation enthalten sind. Wenn etwas nicht bestätigt ist, kennzeichnen Sie es inline als HTML-Kommentar (z. B. `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), anstatt es zu erraten - nie als sichtbarer Hinweis. Er darf nicht auf der veröffentlichten Seite gerendert werden.
+&#x200B;* Wenn dies eine brandneue Artikeldatei erfordert (nicht nur eine Änderung an einer bestehenden), folgen Sie den ständigen Konventionen dieses Repositorys: keine fabrizierten `exl-id`/`TQID` in der Frontseite, verkabeln Sie die neue Seite in das entsprechende Inhaltsverzeichnis und konvertieren Sie die Datei nach der Erstellung in CRLF/no-BOM (das `Write`-Tool verwendet standardmäßig LF).
 
 ## Schritt 3: Workfront-Aufgabe erstellen
 
@@ -78,15 +78,15 @@ Rufen Sie vor dem Aufruf „create“ `read_workflow_docs` mit `workfront://tool
 
 Klarer Bericht:
 
-* Welche DOC-Datei(en) Sie geändert haben und was Sie hinzugefügt haben.
-* Aufgabenname und URL.
-* Die genauen Feldwerte, die Sie festgelegt haben, einschließlich der Felder für das Vorschaudatum.
-* Alles, worauf man nicht ganz vertrauen konnte - z.B. Slack war nicht erreichbar und man arbeitete nur aus eingefügtem Text, der Zielartikel war mehrdeutig oder ein technisches Detail war nicht im Quellmaterial vorhanden und wurde markiert, anstatt geraten zu werden.
+&#x200B;* Welche DOC-Datei(en) Sie geändert haben und was Sie hinzugefügt haben.
+&#x200B;* Aufgabenname und URL.
+&#x200B;* Die genauen Feldwerte, die Sie festgelegt haben, einschließlich der Felder für das Vorschaudatum.
+&#x200B;* Alles, worauf man nicht ganz vertrauen konnte - z.B. Slack war nicht erreichbar und man arbeitete nur aus eingefügtem Text, der Zielartikel war mehrdeutig oder ein technisches Detail war nicht im Quellmaterial vorhanden und wurde markiert, anstatt geraten zu werden.
 
 ## Bekannte Werte (aus früheren Ausführungen)
 
 Bestätigen Sie, dass diese immer noch aufgelöst werden, anstatt davon auszugehen, dass sie dauerhaft sind:
 
-* Projekt „Produktdokumentationsaufgaben - für Entwicklungsprobleme, die Messaging erfordern“ ist der ID `5e69583f00236b9f767c3e3944100ee4` zugeordnet
-* Benutzerdefiniertes Formular für die Produktdokumentation (`categoryID`) ist `5d7275b9000514604bd969d418725843`
-* Benutzerdefinierte Felder: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+&#x200B;* Projekt „Produktdokumentationsaufgaben - für Entwicklungsprobleme, die Messaging erfordern“ ist der ID `5e69583f00236b9f767c3e3944100ee4` zugeordnet
+&#x200B;* Benutzerdefiniertes Formular für die Produktdokumentation (`categoryID`) ist `5d7275b9000514604bd969d418725843`
+&#x200B;* Benutzerdefinierte Felder: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
