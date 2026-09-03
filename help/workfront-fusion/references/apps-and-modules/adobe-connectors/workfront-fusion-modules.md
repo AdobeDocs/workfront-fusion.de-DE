@@ -3,9 +3,8 @@ title: Workfront Fusion-Module
 description: Mit dem Workfront Fusion-Connector können Sie Ihre eigene Fusion-Organisation innerhalb eines Szenarios verwalten, einschließlich Datensätzen, Hooks, Szenarien und Verbindungen.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 1665553df806ba49ee9b52199fdcc587a5bb6337
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 05cd734c1bc65f58d60c2668f91e065342290341
 workflow-type: tm+mt
 source-wordcount: 1374
 ht-degree: 21%
@@ -68,11 +67,11 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client-ID]</td> 
-      <td>Geben Sie Ihre [!DNL Adobe]-[!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
+      <td>Geben Sie Ihre [!DNL Adobe]-[!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client-Geheimnis]</td> 
-      <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
+      <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Organisations-ID]</td> 
@@ -416,4 +415,6 @@ Dieses Modul gibt die Regions- und Organisations-ID für jede Fusion-Organisatio
   </tr> 
  </tbody> 
 </table>
+
+
 
