@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
 workflow-type: tm+mt
-source-wordcount: 6660
+source-wordcount: 6739
 ht-degree: 33%
 
 ---
@@ -408,6 +405,7 @@ Dieses Aktionsmodul aktualisiert einen neuen Arbeitsbereich in Planning.
 * [Abrufen globaler Datensatztypen](#get-global-record-types-v2)
 * [Datensatztyp abrufen](#get-a-record-type-v2)
 * [Datensatztypen abrufen](#get-record-types-v2)
+* [Konfiguration des Datensatztyps neu erstellen](#recast-record-type-configuration-v2)
 * [Aktualisieren eines Datensatztyps](#update-a-record-type-v2)
 
 #### Erstellen eines Datensatztyps (v2)
@@ -553,6 +551,27 @@ Dieses Modul ruft eine Liste der in einem bestimmten Arbeitsbereich verfügbaren
         <p>[!UICONTROL Maximale Anzahl der zurückgegebenen Datensatztypen]</p>
       </td>
       <td>Geben Sie die maximale Anzahl von Datensatztypen ein, die das Modul während eines Ausführungszyklus zurückgibt, oder ordnen Sie sie zu.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Konfiguration des Datensatztyps neu erstellen (V2)
+
+Dieses Modul ruft alle Datensatztypen im Arbeitsbereich ab, gruppiert nach ihrem Abschnitt, zusammen mit den Feldern jedes Datensatztyps und den Auswahloptionen jedes Felds. Die Ausgabe ist als Abschnitt > Datensatztyp > Felder strukturiert.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Verbindung]</td>
+      <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Workfront Planning]</a>.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Arbeitsbereich-ID]</p>
+      </td>
+      <td>Geben Sie die ID des Arbeitsbereichs ein, für den Sie die Konfiguration des Datensatztyps abrufen möchten, oder ordnen Sie sie zu.</td> 
     </tr>
   </tbody>
 </table>
@@ -1864,7 +1883,7 @@ Dieses Aktionsmodul ruft eine Liste von Datensätzen basierend auf von Ihnen ang
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Bedingung für Filter]</p>
+        <p>[!UICONTROL-Bedingung für Filter]</p>
       </td>
       <td>Bedingung für die Filter auswählen:<ul><li><b>UND</b><p>Das Modul gibt Datensätze zurück, <b> (alle</b> der von Ihnen ausgewählten Feldwerte erfüllen.</p></li><li><b>ODER</b><p>Das Modul gibt Datensätze zurück, <b> (beliebige</b> der ausgewählten Feldwerte erfüllen.</p></li></ul></td> 
     </tr>
