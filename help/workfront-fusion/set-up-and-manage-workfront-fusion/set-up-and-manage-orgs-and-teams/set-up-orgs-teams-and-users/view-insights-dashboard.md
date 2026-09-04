@@ -7,10 +7,10 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 5%
+source-wordcount: 848
+ht-degree: 4%
 
 ---
 
@@ -79,6 +79,8 @@ Dieses Diagramm zeigt Ausführungen pro Szenario. Verschiedene Farben stellen ve
 Dieses Diagramm zeigt Ausführungen pro Szenario. Verschiedene Farben stellen verschiedene Szenarien dar. Wenn Sie den Mauszeiger über das Diagramm bewegen, wird ein Fenster angezeigt, das anzeigt, welche Farbe welches Szenario ist.
 
   Sie können dieses Diagramm verwenden, um Szenarien zu identifizieren, die länger als üblich dauern, einschließlich der Szenarien, die von Problemen mit einer verbundenen App oder einem Service betroffen sind.
+* **Ausführungsprotokoll**
+In dieser Tabelle werden alle fehlgeschlagenen oder warnenden Szenarien in Ihrer Organisation aufgelistet, sodass Sie Problemausführungen finden und beheben können, ohne das Dashboard verlassen zu müssen.
 
 ## Anzeigen des Fusion Insights-Dashboards
 
@@ -95,3 +97,25 @@ Dieses Diagramm zeigt Ausführungen pro Szenario. Verschiedene Farben stellen ve
 1. Um den Zeitbereich des Dashboards zu ändern, klicken Sie in das Feld Zeitbereich in der oberen rechten Ecke des Dashboards und wählen Sie dann einen neuen Zeitrahmen aus. Der längste verfügbare Zeitraum beträgt 24 Stunden, der kürzeste 15 Minuten.
 1. Um die Diagramme zu aktualisieren, klicken Sie auf das Aktualisierungssymbol oben rechts im Dashboard.
 1. Um einen anderen Pool anzuzeigen, klicken Sie auf das Feld Pool in der oberen linken Ecke des Dashboards und wählen Sie dann den Pool aus, den Sie anzeigen möchten.
+
+## Filtern und Speichern von Ausführungen im Ausführungsprotokoll
+
+Verwenden Sie das Ausführungsprotokoll, um Szenario-Ausführungen zu finden, bei denen ein Fehler aufgetreten ist oder in Ihrer Organisation eine Warnung zurückgegeben wurde, und reaktivieren Sie alle Szenarien, die nach wiederholten Fehlern automatisch deaktiviert wurden.
+
+1. Filtern Sie im Ausführungsprotokoll Ausführungen nach einem der folgenden Kriterien:
+
+   * [!UICONTROL Team]
+   * [!UICONTROL Szenario]
+   * [!UICONTROL Ausführungstyp]
+   * [!UICONTROL Datumsbereich]
+   * [!UICONTROL Deaktivierungsstatus]
+   * [!UICONTROL Fehlermeldung]
+
+   Bei den meisten Filtern können Sie festlegen, dass nur die ausgewählten Werte oder alles außer ihnen übereinstimmen sollen.
+
+1. Klicken Sie auf eine Ausführung, um weitere Details zu ihrem Fehler anzuzeigen.
+1. Um ein oder mehrere Szenarien, die nach wiederholten Fehlern automatisch deaktiviert wurden, erneut zu aktivieren, wählen Sie die Ausführungen aus und klicken Sie dann auf **Aktivieren**.
+
+   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
+
+   Untersuchen Sie vor der Reaktivierung eines Szenarios die Ursache der Fehler, z. B. abgelaufene Anmeldeinformationen oder ein Connector-Problem, damit das Szenario nicht sofort wieder fehlschlägt.
