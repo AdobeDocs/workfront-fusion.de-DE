@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
 workflow-type: tm+mt
-source-wordcount: 848
+source-wordcount: 849
 ht-degree: 4%
 
 ---
@@ -63,6 +62,9 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 Im Dashboard „Fusion Insights“ werden die folgenden Metriken angezeigt.
 
+* **Protokolle zu fehlgeschlagenen Ausführungen**
+In dieser Tabelle werden alle fehlgeschlagenen oder warnenden Szenarien in Ihrer Organisation aufgelistet, sodass Sie Problemausführungen finden und beheben können, ohne das Dashboard verlassen zu müssen.
+
 * **Ausführungen warten auf die Verarbeitung**
 Dieses Diagramm zeigt die Anzahl der Ausführungen, die zu einem bestimmten Zeitpunkt auf die Verarbeitung warten (auch als Ausführungsrückstand bezeichnet).
 
@@ -79,8 +81,6 @@ Dieses Diagramm zeigt Ausführungen pro Szenario. Verschiedene Farben stellen ve
 Dieses Diagramm zeigt Ausführungen pro Szenario. Verschiedene Farben stellen verschiedene Szenarien dar. Wenn Sie den Mauszeiger über das Diagramm bewegen, wird ein Fenster angezeigt, das anzeigt, welche Farbe welches Szenario ist.
 
   Sie können dieses Diagramm verwenden, um Szenarien zu identifizieren, die länger als üblich dauern, einschließlich der Szenarien, die von Problemen mit einer verbundenen App oder einem Service betroffen sind.
-* **Ausführungsprotokoll**
-In dieser Tabelle werden alle fehlgeschlagenen oder warnenden Szenarien in Ihrer Organisation aufgelistet, sodass Sie Problemausführungen finden und beheben können, ohne das Dashboard verlassen zu müssen.
 
 ## Anzeigen des Fusion Insights-Dashboards
 
@@ -116,6 +116,6 @@ Verwenden Sie das Ausführungsprotokoll, um Szenario-Ausführungen zu finden, be
 1. Klicken Sie auf eine Ausführung, um weitere Details zu ihrem Fehler anzuzeigen.
 1. Um ein oder mehrere Szenarien, die nach wiederholten Fehlern automatisch deaktiviert wurden, erneut zu aktivieren, wählen Sie die Ausführungen aus und klicken Sie dann auf **Aktivieren**.
 
-   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
-
-   Untersuchen Sie vor der Reaktivierung eines Szenarios die Ursache der Fehler, z. B. abgelaufene Anmeldeinformationen oder ein Connector-Problem, damit das Szenario nicht sofort wieder fehlschlägt.
+   >[!NOTE]
+   >
+   >Untersuchen Sie vor der Reaktivierung eines Szenarios die Ursache der Fehler, z. B. abgelaufene Anmeldeinformationen oder ein Connector-Problem, damit das Szenario nicht sofort wieder fehlschlägt.
