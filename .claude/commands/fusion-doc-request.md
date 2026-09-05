@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Handhabung einer Fusion-Dokumentationsanfrage über die
-source-git-commit: e354c51f13bd4f15172de068cac9720bd097eb8d
+source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,18 @@ Die Anfragevorlage enthält die folgenden Felder: „Jedes extrahieren“:
 
 Wenn die Anfrage mit der vollständigen Spezifikation auf eine Confluence-Wiki-Seite verweist, rufen Sie sie ab (`get_wiki_content`), bevor Sie die Dokumentation schreiben. Verlassen Sie sich nicht nur auf die Slack-Zusammenfassung für technische Details (exakte Feldnamen, Schritte, Benutzeroberflächen-Kennzeichnungen) - rufen Sie diese aus der Wiki-Spezifikation ab, wenn eine verknüpft ist.
 
+Wenn die Anfrage stattdessen auf eine sekundäre Nicht-Confluence-Quelle (z. B. einen Experience League-Community-Beitrag, einen Support-Artikel, eine von KI generierte Zusammenfassung) und nicht auf eine autorisierende Spezifikation verweist, können Sie diese verwenden, um technische Details auszufüllen, denen der Slack-Text fehlt, sie jedoch als weniger vertraulich behandeln als die Slack-Anfrage selbst. Wenn sie mit dem Slack-Text kollidiert oder ihn hinzufügt (ein anderer Name für dieselbe Schaltfläche/dasselbe Feld, ein Detail, das in Slack überhaupt nicht erwähnt wird), wählen Sie nicht schweigend einen aus - schreiben Sie das Dokument mit dem Wortlaut der Slack-Anfrage als Hauptquelle und kennzeichnen Sie die Diskrepanz inline mit einem HTML-Kommentar (z. B. `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) gemäß der Anleitung in Schritt 2.
+
 ## Schritt 2: Dokumentation aktualisieren
 
 Suchen Sie die relevanten vorhandenen Artikel in diesem Repository (Grep für zugehörige Modulnamen, Benutzeroberflächen-Bezeichnungen oder Einstellungsnamen - raten Sie nicht auf die Datei). Aktualisieren Sie sie, um die Änderung widerzuspiegeln, wobei Sie der vorhandenen Struktur, Überschriftenebene und dem Hausstil dieses Artikels folgen.
 
 &#x200B;* Erfinden Sie keine technischen Details (exakte Feldnamen, Berechtigungsumfänge, Konfigurationsschritte), die nicht in der Slack-Anfrage oder verknüpften Wiki-Spezifikation enthalten sind. Wenn etwas nicht bestätigt ist, kennzeichnen Sie es inline als HTML-Kommentar (z. B. `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), anstatt es zu erraten - nie als sichtbarer Hinweis. Er darf nicht auf der veröffentlichten Seite gerendert werden.
-&#x200B;* Wenn dies eine brandneue Artikeldatei erfordert (nicht nur eine Änderung an einer bestehenden), folgen Sie den ständigen Konventionen dieses Repositorys: keine fabrizierten `exl-id`/`TQID` in der Frontseite, verkabeln Sie die neue Seite in das entsprechende Inhaltsverzeichnis und konvertieren Sie die Datei nach der Erstellung in CRLF/no-BOM (das `Write`-Tool verwendet standardmäßig LF).
+&#x200B;* Wenn dies eine brandneue Artikeldatei erfordert (nicht nur eine Bearbeitung einer vorhandenen), folgen Sie den ständigen Konventionen dieses Repositorys: keine fabrizierten `exl-id`/`TQID` in Frontmatter und konvertieren Sie die Datei nach der Erstellung in CRLF/no-BOM (das `Write`-Tool ist standardmäßig auf LF eingestellt).
+&#x200B;* Die Verkabelung einer neuen Seite in „das Inhaltsverzeichnis“ bedeutet beides, nicht nur eine - eine Seite kann von einem Unterindex aus verknüpft werden, während sie für die Leser weiterhin unsichtbar ist:
+  - Die Master-Navigationsdatei für den Produktbereich (z.B. `help/workfront-fusion/TOC.md`) - diese steuert tatsächlich den veröffentlichten Navigationsbaum.
+  - Alle In-Content-Unterindizes/Landingpages, die auch auf Artikel dieser Art verweisen (z. B. `apps-and-modules-toc.md` für eine neue Seite mit Connector-Modulen).
+    Überprüfen Sie beide explizit und bestätigen Sie, dass der neue Eintrag in derselben Liste auf derselben Verschachtelungsebene liegt, da seine nächsten gleichrangigen Artikel in jeder Datei - nehmen Sie nicht an, dass das Hinzufügen zu einer Datei die andere abdeckt.
 
 ## Schritt 3: Workfront-Aufgabe erstellen
 
@@ -50,6 +56,7 @@ Aufgabenfelder:
 |---|---|
 | `name` | `Becky - {Feature Title}` |
 | `projectID` | Von der obigen Projektsuche |
+| `parentID` | die ID der übergeordneten Aufgabe (`parentID`, ein Systemfeld - kein `DE:` Präfix) - siehe Bekannte Werte unten. Dadurch wird die neue Aufgabe zu einer Teilaufgabe, nicht zu einer Aufgabe der obersten Ebene im Projekt. |
 | `assignedToID` | Der aktuelle Benutzer von `insights_get_current_user` |
 | `categoryID` | die benutzerdefinierte Formular-ID der Produktdokumentation - siehe Bekannte Werte unten. Wenn es jemals unklar ist, fragen Sie zur Bestätigung `task.task_categoryID` nach einer kürzlich durchgeführten gleichrangigen Aufgabe in diesem Projekt ab. |
 | `description` | den **vollständigen Slack-Nachrichtentext** (alle Felder aus der Anfragevorlage, keine Umschreibung), gefolgt von einem Link zur Slack-Konversation |
@@ -88,5 +95,6 @@ Klarer Bericht:
 Bestätigen Sie, dass diese immer noch aufgelöst werden, anstatt davon auszugehen, dass sie dauerhaft sind:
 
 &#x200B;* Projekt „Produktdokumentationsaufgaben - für Entwicklungsprobleme, die Messaging erfordern“ ist der ID `5e69583f00236b9f767c3e3944100ee4` zugeordnet
+&#x200B;* Die übergeordnete Aufgabe „Becky - Aufgaben aus dem Fusion-Dokumentations-Kanal“ ist der ID `6a9b065100003a7554832780c2015e93` (im selben Projekt) zugeordnet und wird mit `insights_find_id_by_name` (Entity `task`) statt mit Hartkodierung aufgelöst, falls sie sich ändert.
 &#x200B;* Benutzerdefiniertes Formular für die Produktdokumentation (`categoryID`) ist `5d7275b9000514604bd969d418725843`
 &#x200B;* Benutzerdefinierte Felder: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
