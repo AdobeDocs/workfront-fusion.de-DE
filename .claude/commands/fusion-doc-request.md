@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Handhabung einer Fusion-Dokumentationsanfrage über die
-source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
+source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Dies ist ein anderer Workflow als die `fusion-release-notes`. Diese Qualifikatio
 
 ## Schritt 1: Anforderungsdetails abrufen
 
-Wenn ein Slack-Link angegeben ist, analysieren Sie die `channel_id` und `message_ts` aus der URL und rufen Sie den Thread ab (`slack_get_thread_replies` oder `slack_read_thread`, je nachdem, welches Slack MCP-Tool verbunden ist - versuchen Sie beide, wenn einer fehlschlägt). Behalten Sie den Permalink/die URL des Threads bei - er wird in Schritt 3 benötigt.
+Wenn ein Slack-Link angegeben ist, analysieren Sie die `channel_id` und `message_ts` aus der URL und rufen Sie den Thread ab (`slack_get_thread_replies` oder `slack_read_thread`, je nachdem, welches Slack MCP-Tool verbunden ist - versuchen Sie beide, wenn einer fehlschlägt). Behalten Sie den Permalink/die URL des Threads bei - er wird in Schritt 4 benötigt.
 
 Slack-Verbindungen in dieser Umgebung sind fehlerhaft (abgelaufene Token, trennt die Verbindung zur Sitzungsmitte). Wenn ein Abruf fehlschlägt:
 - Einmal versuchen.
@@ -33,9 +33,17 @@ Die Anfragevorlage enthält die folgenden Felder: „Jedes extrahieren“:
 
 Wenn die Anfrage mit der vollständigen Spezifikation auf eine Confluence-Wiki-Seite verweist, rufen Sie sie ab (`get_wiki_content`), bevor Sie die Dokumentation schreiben. Verlassen Sie sich nicht nur auf die Slack-Zusammenfassung für technische Details (exakte Feldnamen, Schritte, Benutzeroberflächen-Kennzeichnungen) - rufen Sie diese aus der Wiki-Spezifikation ab, wenn eine verknüpft ist.
 
-Wenn die Anfrage stattdessen auf eine sekundäre Nicht-Confluence-Quelle (z. B. einen Experience League-Community-Beitrag, einen Support-Artikel, eine von KI generierte Zusammenfassung) und nicht auf eine autorisierende Spezifikation verweist, können Sie diese verwenden, um technische Details auszufüllen, denen der Slack-Text fehlt, sie jedoch als weniger vertraulich behandeln als die Slack-Anfrage selbst. Wenn sie mit dem Slack-Text kollidiert oder ihn hinzufügt (ein anderer Name für dieselbe Schaltfläche/dasselbe Feld, ein Detail, das in Slack überhaupt nicht erwähnt wird), wählen Sie nicht schweigend einen aus - schreiben Sie das Dokument mit dem Wortlaut der Slack-Anfrage als Hauptquelle und kennzeichnen Sie die Diskrepanz inline mit einem HTML-Kommentar (z. B. `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) gemäß der Anleitung in Schritt 2.
+Wenn die Anfrage stattdessen auf eine sekundäre Nicht-Confluence-Quelle (z. B. einen Experience League-Community-Beitrag, einen Support-Artikel, eine von KI generierte Zusammenfassung) und nicht auf eine autorisierende Spezifikation verweist, können Sie diese verwenden, um technische Details auszufüllen, denen der Slack-Text fehlt, sie jedoch als weniger vertraulich behandeln als die Slack-Anfrage selbst. Wenn sie mit dem Slack-Text kollidiert oder ihn hinzufügt (ein anderer Name für dieselbe Schaltfläche/dasselbe Feld, ein Detail, das in Slack überhaupt nicht erwähnt wird), wählen Sie nicht schweigend einen aus - schreiben Sie das Dokument mit dem Wortlaut der Slack-Anfrage als Hauptquelle und kennzeichnen Sie die Diskrepanz inline mit einem HTML-Kommentar (z. B. `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) gemäß der Anleitung in Schritt 3.
 
-## Schritt 2: Dokumentation aktualisieren
+## Schritt 2: Erstellen Sie eine Verzweigung für die Anfrage
+
+Bevor Sie Dateien berühren, erstellen Sie eine neue Git-Verzweigung für diese Anfrage und checken Sie sie aus. Verzweigen Sie von der aktuellen Standardverzweigung (`main`) und nicht von der Verzweigung, die ausgecheckt werden soll.
+
+Benennen Sie die Verzweigung `becky-{short-kebab-case-description}`, abgeleitet von **Feature Title** - das erste Wort muss `becky` werden, das der bestehenden Verzweigungskonvention dieses Repositorys entspricht (z. B. `becky-webhook-update`, `becky-storage-beta-sos`). Halten Sie es kurz - ein paar Worte, nicht den ganzen Titel wörtlich.
+
+Wenn der Arbeitsbaum nicht sauber ist (nicht zugesicherte Änderungen aus nicht verwandten Arbeiten), stoppen Sie und informieren Sie den Benutzer, anstatt ihn zu verzweigen.
+
+## Schritt 3: Dokumentation aktualisieren
 
 Suchen Sie die relevanten vorhandenen Artikel in diesem Repository (Grep für zugehörige Modulnamen, Benutzeroberflächen-Bezeichnungen oder Einstellungsnamen - raten Sie nicht auf die Datei). Aktualisieren Sie sie, um die Änderung widerzuspiegeln, wobei Sie der vorhandenen Struktur, Überschriftenebene und dem Hausstil dieses Artikels folgen.
 
@@ -46,7 +54,7 @@ Suchen Sie die relevanten vorhandenen Artikel in diesem Repository (Grep für zu
   - Alle In-Content-Unterindizes/Landingpages, die auch auf Artikel dieser Art verweisen (z. B. `apps-and-modules-toc.md` für eine neue Seite mit Connector-Modulen).
     Überprüfen Sie beide explizit und bestätigen Sie, dass der neue Eintrag in derselben Liste auf derselben Verschachtelungsebene liegt, da seine nächsten gleichrangigen Artikel in jeder Datei - nehmen Sie nicht an, dass das Hinzufügen zu einer Datei die andere abdeckt.
 
-## Schritt 3: Workfront-Aufgabe erstellen
+## Schritt 4: Workfront-Aufgabe erstellen
 
 Projekt: **Produktdokumentationsaufgaben - für Entwicklungsprobleme, die Messaging erfordern**. Lösen Sie seine ID mit `insights_find_id_by_name` (Entität `project`) auf anstatt sie hartcodiert zu haben, falls sie sich jemals ändert - siehe Bekannte Werte unten für die letzte aufgelöste ID.
 
@@ -81,10 +89,11 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 Rufen Sie vor dem Aufruf „create“ `read_workflow_docs` mit `workfront://tools/create-any-object` auf. Dieser Aufruf legt benutzerdefinierte Felder und einen Aufzählungswert (`DE:Preview Date Known`) fest, wofür er gemäß den Regeln des MCP-Servers erforderlich ist.
 
-## Schritt 4: Zurück an den Benutzer bestätigen
+## Schritt 5: Zurück an den Benutzer bestätigen
 
 Klarer Bericht:
 
+&#x200B;* Die von Ihnen erstellte Verzweigung.
 &#x200B;* Welche DOC-Datei(en) Sie geändert haben und was Sie hinzugefügt haben.
 &#x200B;* Aufgabenname und URL.
 &#x200B;* Die genauen Feldwerte, die Sie festgelegt haben, einschließlich der Felder für das Vorschaudatum.
