@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 49e408630449952f67d3530f03b7a8755e0e6f6a
 workflow-type: tm+mt
-source-wordcount: 2420
-ht-degree: 8%
+source-wordcount: 3236
+ht-degree: 6%
 
 ---
 
@@ -68,13 +68,24 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 >
 >Verwenden Sie eines der HTTP-Module, um einen Webhook eines Drittanbieters (einen ausgehenden Webhook) aufzurufen. Weitere Informationen finden Sie unter [HTTP-Module](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-Um einen Webhook zu verwenden, um eine App mit Workfront Fusion zu verbinden, können Sie den Webhook für die Authentifizierung mit einem Client-Zertifikat (mTLS), Standardauthentifizierung oder Adobe Identity Management System (IMS) einrichten.
+Um einen Webhook zum Verbinden einer App mit Workfront Fusion zu verwenden, können Sie den Webhook für die Authentifizierung mithilfe eines Client-Zertifikats (mTLS), einer Standardauthentifizierung, eines Adobe Identity Management-Systems (IMS), eines API-Schlüssels oder einer HMAC-Signatur einrichten.
+
+>[!NOTE]
+>
+>**Die API-Schlüsselauthentifizierung ist jetzt der standardmäßige Autorisierungstyp** für neue Webhooks. Zuvor war keine Autorisierung vorausgewählt. Sie können weiterhin den Autorisierungstyp eines Webhooks in einen anderen Typ ändern oder den leeren Wert für „Keine Autorisierung“ auswählen.
+
+* [Webhook konfigurieren](#configure-a-webhook)
+* [Konfigurieren der Datenstruktur des Webhooks](#configure-the-webhook-s-data-structure)
+
+### Webhook konfigurieren
 
 * [Verwenden eines Webhooks mit einem Client-Zertifikat (MTLS)](#use-a-webhook-with-a-client-certificate-mtls)
 * [Verwenden eines Webhooks mit einfacher Authentifizierung](#use-a-webhook-with-basic-authentication)
 * [Verwenden eines Webhooks mit dem Adobe Identity Management System (IMS)](#use-a-webhook-with-adobe-identity-management-system-ims)
+* [Webhook mit API-Schlüsselauthentifizierung verwenden](#use-a-webhook-with-api-key-authentication)
+* [Webhook mit HMAC-Signaturauthentifizierung verwenden](#use-a-webhook-with-hmac-signature-authentication)
 
-### Verwenden eines Webhooks mit einem Client-Zertifikat (mTLS)
+#### Verwenden eines Webhooks mit einem Client-Zertifikat (mTLS)
 
 Mit mTLS geben Sie ein Client-Zertifikat und einen privaten Schlüssel an. Fusion verwendet das Zertifikat und den Schlüssel, um sich beim Aufruf des Webhooks beim Ziel-Service zu authentifizieren. Durch diese bidirektionale Authentifizierung kann Ihr Webhook sicherer sein als die Standardauthentifizierung.
 
@@ -85,7 +96,7 @@ Weitere Informationen zu mTLS finden Sie unter [Gegenseitige TLS - Übersicht](/
 1. Klicken Sie **[!UICONTROL Hinzufügen]** neben dem Feld Webhook und geben Sie einen Namen für den neuen Webhook ein.
 1. (Optional) Klicken Sie auf **[!UICONTROL Erweiterte Einstellungen]**.
 1. Geben Sie **[!UICONTROL Feld IP-]**) eine kommagetrennte Liste der IP-Adressen ein, von denen das Modul Daten akzeptieren kann.
-1. (Optional) Klicken Sie im Feld **[!UICONTROL Ursprungsbeschränkungen]** für jeden Ursprung, den Sie diesen Webhook aufrufen lassen möchten, auf **Element hinzufügen** und geben Sie das Ursprungsmuster ein. Wenn Sie einen beliebigen Ursprung zulassen möchten, lassen Sie dieses Feld leer.
+1. (Optional) Klicken Sie im Feld **[!UICONTROL Zulässige Ursprünge]** für jeden Ursprung, den Sie diesen Webhook aufrufen lassen möchten, auf **Element hinzufügen** und geben Sie das Ursprungsmuster ein. Wenn Sie einen beliebigen Ursprung zulassen möchten, lassen Sie dieses Feld leer.
 
    Dieses Feld akzeptiert die folgenden Muster:
 
@@ -117,7 +128,7 @@ Nachdem Sie einen Webhook erstellt haben, wird eine eindeutige URL angezeigt. Di
 >
 >Nachdem Sie einen Webhook erstellt haben, können Sie ihn in mehr als einem Szenario gleichzeitig verwenden.
 
-### Verwenden eines Webhooks mit einfacher Authentifizierung
+#### Verwenden eines Webhooks mit einfacher Authentifizierung
 
 Die einfache Authentifizierung verwendet einen Benutzernamen und ein Kennwort, um sich bei dem Service zu authentifizieren, mit dem Sie eine Verbindung herstellen.
 
@@ -126,7 +137,7 @@ Die einfache Authentifizierung verwendet einen Benutzernamen und ein Kennwort, u
 1. Klicken Sie **[!UICONTROL Hinzufügen]** neben dem Feld Webhook und geben Sie einen Namen für den neuen Webhook ein.
 1. (Optional) Klicken Sie auf **[!UICONTROL Erweiterte Einstellungen]**.
 1. Geben Sie **[!UICONTROL Feld IP-]**) eine kommagetrennte Liste der IP-Adressen ein, von denen das Modul Daten akzeptieren kann.
-1. (Optional) Klicken Sie im Feld **[!UICONTROL Ursprungsbeschränkungen]** für jeden Ursprung, den Sie diesen Webhook aufrufen lassen möchten, auf **Element hinzufügen** und geben Sie das Ursprungsmuster ein. Wenn Sie einen beliebigen Ursprung zulassen möchten, lassen Sie dieses Feld leer.
+1. (Optional) Klicken Sie im Feld **[!UICONTROL Zulässige Ursprünge]** für jeden Ursprung, den Sie diesen Webhook aufrufen lassen möchten, auf **Element hinzufügen** und geben Sie das Ursprungsmuster ein. Wenn Sie einen beliebigen Ursprung zulassen möchten, lassen Sie dieses Feld leer.
 
    Dieses Feld akzeptiert die folgenden Muster:
 
@@ -147,7 +158,7 @@ Nachdem Sie einen Webhook erstellt haben, wird eine eindeutige URL angezeigt. Di
 >
 >Nachdem Sie einen Webhook erstellt haben, können Sie ihn in mehr als einem Szenario gleichzeitig verwenden.
 
-### Verwenden eines Webhooks mit dem Adobe Identity Management System (IMS)
+#### Verwenden eines Webhooks mit dem Adobe Identity Management System (IMS)
 
 Die Adobe Identity Management System (IMS)-Authentifizierung verwendet die Adobe IMS-Anmeldedaten Ihres Unternehmens, um sich bei dem Service zu authentifizieren, mit dem Sie eine Verbindung herstellen.
 
@@ -156,7 +167,7 @@ Die Adobe Identity Management System (IMS)-Authentifizierung verwendet die Adobe
 1. Klicken Sie **[!UICONTROL Hinzufügen]** neben dem Feld Webhook und geben Sie einen Namen für den neuen Webhook ein.
 1. (Optional) Klicken Sie auf **[!UICONTROL Erweiterte Einstellungen]**.
 1. Geben Sie **[!UICONTROL Feld IP-]**) eine kommagetrennte Liste der IP-Adressen ein, von denen das Modul Daten akzeptieren kann.
-1. (Optional) Klicken Sie im Feld **[!UICONTROL Ursprungsbeschränkungen]** für jeden Ursprung, den Sie diesen Webhook aufrufen lassen möchten, auf **Element hinzufügen** und geben Sie das Ursprungsmuster ein. Wenn Sie einen beliebigen Ursprung zulassen möchten, lassen Sie dieses Feld leer.
+1. (Optional) Klicken Sie im Feld **[!UICONTROL Zulässige Ursprünge]** für jeden Ursprung, den Sie diesen Webhook aufrufen lassen möchten, auf **Element hinzufügen** und geben Sie das Ursprungsmuster ein. Wenn Sie einen beliebigen Ursprung zulassen möchten, lassen Sie dieses Feld leer.
 
    Dieses Feld akzeptiert die folgenden Muster:
 
@@ -170,6 +181,80 @@ Die Adobe Identity Management System (IMS)-Authentifizierung verwendet die Adobe
 1. (Optional) Geben Sie im Feld **Erlaubte Clients** eine kommagetrennte Liste der Client-IDs ein, die diesen Webhook aufrufen dürfen. Lassen Sie diese Einstellung leer, um jeden Client zu akzeptieren, dessen Token vom vertrauenswürdigen Aussteller und der vertrauenswürdigen Zielgruppe gültig signiert ist.
 1. (Optional) Geben Sie im Feld **Erlaubte Benutzer** eine kommagetrennte Liste von Benutzer-IDs ein, die diesen Webhook aufrufen dürfen. Lassen Sie diese Einstellung leer, um beliebige Benutzer zuzulassen.
 1. (Optional) Geben Sie im Feld **Erforderliche Bereiche** eine kommagetrennte Liste von Bereichen ein, die im `scope` des Tokens vorhanden sein müssen. Lassen Sie dieses Feld leer, um die Umfangsüberprüfung zu überspringen.
+1. Aktivieren Sie bei Bedarf weitere Einstellungen.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
+
+Nachdem Sie einen Webhook erstellt haben, wird eine eindeutige URL angezeigt. Dies ist die Adresse, an die der Webhook Daten sendet. Workfront Fusion validiert die an diese Adresse gesendeten Daten und gibt sie dann zur Verarbeitung im Szenario weiter.
+
+>[!NOTE]
+>
+>Nachdem Sie einen Webhook erstellt haben, können Sie ihn in mehr als einem Szenario gleichzeitig verwenden.
+
+#### Webhook mit API-Schlüsselauthentifizierung verwenden
+
+Die API-Schlüsselauthentifizierung schützt einen Webhook-Endpunkt mit einem einzelnen Schlüssel, der entweder als Anfrage-Header oder Abfrageparameter gesendet wird. Dies ist der Standardautorisierungstyp für neue Webhooks.
+
+1. Fügen Sie das **[!UICONTROL Webhooks]** > **[!UICONTROL Benutzerdefinierter Webhook]** Instant Trigger-Modul zu Ihrem Szenario hinzu.
+
+1. Klicken Sie **[!UICONTROL Hinzufügen]** neben dem Feld Webhook und geben Sie einen Namen für den neuen Webhook ein.
+1. (Optional) Klicken Sie auf **[!UICONTROL Erweiterte Einstellungen]**.
+1. Geben Sie **[!UICONTROL Feld IP-]**) eine kommagetrennte Liste der IP-Adressen ein, von denen das Modul Daten akzeptieren kann.
+1. (Optional) Klicken Sie im Feld **[!UICONTROL Zulässige Ursprünge]** für jeden Ursprung, den Sie diesen Webhook aufrufen lassen möchten, auf **Element hinzufügen** und geben Sie das Ursprungsmuster ein. Wenn Sie einen beliebigen Ursprung zulassen möchten, lassen Sie dieses Feld leer.
+
+   Dieses Feld akzeptiert die folgenden Muster:
+
+   * Exakter Host-Name: `app.example.com`
+   * Platzhalter-Subdomain: `*.example.com`
+   * Schema-qualifiziert: ` https://app.example.com` oder `https://*.example.com`
+1. Wenn Sie die eingehenden Daten überprüfen möchten, wählen **im Feld** Datenstruktur“ die Datenstruktur aus, die Sie verwenden möchten, oder fügen Sie sie hinzu.
+
+   Informationen zu Datenstrukturen finden Sie unter [Datenstrukturen](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. Wählen Sie im Feld **Autorisierungstyp** die Option **[!UICONTROL API-Schlüssel-]** aus, falls diese nicht bereits ausgewählt ist.
+1. Wählen Sie im **Schlüssel** den API-Schlüssel aus, der für die Autorisierung verwendet werden soll, oder fügen Sie einen neuen API-Schlüssel hinzu, indem Sie auf **Hinzufügen** klicken und neue Anmeldeinformationen eingeben:
+   1. Geben Sie einen Namen für den neuen Zugangsdaten-Schlüssel ein.
+   1. Geben Sie im **Schlüssel** den Schlüsselwert ein, mit dem Sie sich authentifizieren möchten. Verwenden Sie das Augensymbol neben dem Feld, um es während der Eingabe ein- oder auszublenden.
+   1. Wählen Sie im Feld **API** Schlüsselplatzierung) aus, ob der Schlüssel in der Kopfzeile oder als Abfrageparameter gesendet werden soll.
+   1. Geben Sie im Feld **API-Schlüsselparametername** den Namen der Kopfzeile oder des Abfrageparameters ein, unter dem der Schlüssel gesendet wird, z. B. `X-API-Key`.
+   1. Klicken Sie **Schlüssel erstellen**.
+   1. Wählen Sie im Webhook-Bedienfeld im Feld **Anmeldeinformationen** den neuen Schlüssel aus.
+1. Aktivieren Sie bei Bedarf weitere Einstellungen.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
+
+Nachdem Sie einen Webhook erstellt haben, wird eine eindeutige URL angezeigt. Dies ist die Adresse, an die der Webhook Daten sendet. Workfront Fusion validiert die an diese Adresse gesendeten Daten und gibt sie dann zur Verarbeitung im Szenario weiter.
+
+>[!NOTE]
+>
+>Nachdem Sie einen Webhook erstellt haben, können Sie ihn in mehr als einem Szenario gleichzeitig verwenden.
+
+#### Webhook mit HMAC-Signaturauthentifizierung verwenden
+
+Die HMAC-Signaturauthentifizierung überprüft, ob eingehende Anforderungen mit einem gemeinsamen Signaturgeheimnis signiert wurden, sodass Manipulationen und gefälschte Aufrufe verhindert werden, ohne dass bei jeder Anforderung das Geheimnis selbst gesendet wird.
+
+1. Fügen Sie das **[!UICONTROL Webhooks]** > **[!UICONTROL Benutzerdefinierter Webhook]** Instant Trigger-Modul zu Ihrem Szenario hinzu.
+
+1. Klicken Sie **[!UICONTROL Hinzufügen]** neben dem Feld Webhook und geben Sie einen Namen für den neuen Webhook ein.
+1. (Optional) Klicken Sie auf **[!UICONTROL Erweiterte Einstellungen]**.
+1. Geben Sie **[!UICONTROL Feld IP-]**) eine kommagetrennte Liste der IP-Adressen ein, von denen das Modul Daten akzeptieren kann.
+1. (Optional) Klicken Sie im Feld **[!UICONTROL Zulässige Ursprünge]** für jeden Ursprung, den Sie diesen Webhook aufrufen lassen möchten, auf **Element hinzufügen** und geben Sie das Ursprungsmuster ein. Wenn Sie einen beliebigen Ursprung zulassen möchten, lassen Sie dieses Feld leer.
+
+   Dieses Feld akzeptiert die folgenden Muster:
+
+   * Exakter Host-Name: `app.example.com`
+   * Platzhalter-Subdomain: `*.example.com`
+   * Schema-qualifiziert: ` https://app.example.com` oder `https://*.example.com`
+1. Wenn Sie die eingehenden Daten überprüfen möchten, wählen **im Feld** Datenstruktur“ die Datenstruktur aus, die Sie verwenden möchten, oder fügen Sie sie hinzu.
+
+   Informationen zu Datenstrukturen finden Sie unter [Datenstrukturen](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. Wählen Sie im Feld **Autorisierungstyp** die Option **[!UICONTROL HMAC-Signatur]**.
+1. Wählen Sie im **Schlüssel**-Feld die Signatur aus, die für die Autorisierung verwendet werden soll, oder fügen Sie eine neue Signatur hinzu, indem Sie auf **Hinzufügen** klicken und neue Anmeldeinformationen eingeben.
+   1. Geben Sie einen Namen für den neuen Zugangsdaten-Schlüssel ein.
+   1. Geben Sie im Feld **Signaturgeheimnis** den gemeinsamen geheimen Schlüssel ein, den Sie verwenden möchten. Verwenden Sie das Augensymbol neben dem Feld, um es während der Eingabe ein- oder auszublenden.
+   1. Wählen Sie **Feld** den zu verwendenden Hash-Algorithmus aus, z. B. SHA-256.
+   1. Geben Sie **Feld „Signaturkopfzeile** den Namen der Kopfzeile ein, aus der die Signatur gelesen wird, z. B. `x-fusion-signature-256`.
+   1. Wählen Sie **Feld &quot;** Codierung“ die Codierung des Signaturwerts aus, z. B. hexadezimal.
+   1. (Optional) Geben Sie im Feld **Signaturpräfix** ein Präfix ein, wenn erwartet wird, dass dem Signaturwert ein Präfix vorangestellt wird, z. B. `sha256=`.
+   1. Klicken Sie **Schlüssel erstellen**.
+   1. Wählen Sie im Webhook-Bedienfeld im Feld **Anmeldeinformationen** den neuen Schlüssel aus.
 1. Aktivieren Sie bei Bedarf weitere Einstellungen.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
