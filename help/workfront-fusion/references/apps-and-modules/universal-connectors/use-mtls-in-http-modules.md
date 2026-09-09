@@ -5,9 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: ffd91f83940f37b15229b79fa04b5a3596bd97fb
 workflow-type: tm+mt
 source-wordcount: 901
 ht-degree: 15%
@@ -95,12 +94,12 @@ Sie können die folgenden Links verwenden, um die öffentlichen Workfront Fusion
 
 Laden Sie die folgende ZIP-Datei herunter, entpacken Sie sie und verwenden Sie die PEM-Datei für Ihr Rechenzentrum.
 
-[Herunterladen von Workfront Fusion 2026-Zertifikaten](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+[Herunterladen von Workfront Fusion 2026-Zertifikaten](assets/fusion-prod-mtls-certificate-2026-updated.zip)
 
 | Rechenzentrum | Downloadlink | Gültige Daten |
 | --- | --- | --- |
 | US AWS Datacenter | `fusion-prod-us-mtls-certificate-2026.pem` | &#x200B;29. Januar 2026 bis 2. März 2027 |
-| US Azure Cluster | `fusion-prod-az-mtls-certificate.pem` | &#x200B;21. September 2025 bis 23. Oktober 2026 |
+| US Azure Cluster | `fusion-prod-az-mtls-certificate-2026-sept.pem` | &#x200B;19. August 2026 bis 6. März 2027 |
 | EU AWS Datacenter | `fusion-prod-eu-mtls-certificate-2026.pem` | &#x200B;29. Januar 2026 bis 2. März 2027 |
 | EU-Azure-Cluster | `fusion-prod-eu-az-mtls-certificate-2026.pem` | &#x200B;4. Februar 2026 bis 8. März 2027 |
 
@@ -175,7 +174,7 @@ Alle Workfront Fusion [!UICONTROL HTTP]-Anfragemodule haben die Möglichkeit, ge
 
 So aktivieren Sie gegenseitiges TLS in einem [!UICONTROL HTTP]-Anfragemodul:
 
-1. Fügen Sie Ihrem [!UICONTROL &#x200B; ein &#x200B;]HTTP“-Anfragemodul hinzu.
+1. Fügen Sie Ihrem [!UICONTROL  ein ]HTTP“-Anfragemodul hinzu.
 1. Starten Sie die Konfiguration des Moduls.
 
    Anweisungen zum Konfigurieren eines [!UICONTROL HTTP]-Anfragemoduls finden Sie im entsprechenden Artikel unter [Universelle Connectoren](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
