@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Handhabung einer Fusion-Dokumentationsanfrage über die
-source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
+source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ Slack-Verbindungen in dieser Umgebung sind fehlerhaft (abgelaufene Token, trennt
 
 Die Anfragevorlage enthält die folgenden Felder: „Jedes extrahieren“:
 
-&#x200B;* **Funktionstitel**
-&#x200B;* **Beschreibung**
-&#x200B;* **Punkte, die der Dokumentation hinzugefügt werden müssen** *(manchmal vorhanden - spezifische Abschnitte/Details, die der Antragsteller abdecken möchte; behandeln Sie diese nach Bedarf, nicht optional, falls angegeben)*
-&#x200B;* **Voraussichtliches Veröffentlichungsdatum**
-&#x200B;* **Ankündigung erforderlich** *(Ja/Nein - nur zur Information; siehe oben stehenden Hinweis. Aktion für dieses Feld nicht ausführen.)*
+* **Funktionstitel**
+* **Beschreibung**
+* **Punkte, die der Dokumentation hinzugefügt werden müssen** *(manchmal vorhanden - spezifische Abschnitte/Details, die der Antragsteller abdecken möchte; behandeln Sie diese nach Bedarf, nicht optional, falls angegeben)*
+* **Voraussichtliches Veröffentlichungsdatum**
+* **Ankündigung erforderlich** *(Ja/Nein - nur zur Information; siehe oben stehenden Hinweis. Aktion für dieses Feld nicht ausführen.)*
 
 Wenn die Anfrage mit der vollständigen Spezifikation auf eine Confluence-Wiki-Seite verweist, rufen Sie sie ab (`get_wiki_content`), bevor Sie die Dokumentation schreiben. Verlassen Sie sich nicht nur auf die Slack-Zusammenfassung für technische Details (exakte Feldnamen, Schritte, Benutzeroberflächen-Kennzeichnungen) - rufen Sie diese aus der Wiki-Spezifikation ab, wenn eine verknüpft ist.
 
@@ -47,9 +47,9 @@ Wenn der Arbeitsbaum nicht sauber ist (nicht zugesicherte Änderungen aus nicht 
 
 Suchen Sie die relevanten vorhandenen Artikel in diesem Repository (Grep für zugehörige Modulnamen, Benutzeroberflächen-Bezeichnungen oder Einstellungsnamen - raten Sie nicht auf die Datei). Aktualisieren Sie sie, um die Änderung widerzuspiegeln, wobei Sie der vorhandenen Struktur, Überschriftenebene und dem Hausstil dieses Artikels folgen.
 
-&#x200B;* Erfinden Sie keine technischen Details (exakte Feldnamen, Berechtigungsumfänge, Konfigurationsschritte), die nicht in der Slack-Anfrage oder verknüpften Wiki-Spezifikation enthalten sind. Wenn etwas nicht bestätigt ist, kennzeichnen Sie es inline als HTML-Kommentar (z. B. `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), anstatt es zu erraten - nie als sichtbarer Hinweis. Er darf nicht auf der veröffentlichten Seite gerendert werden.
-&#x200B;* Wenn dies eine brandneue Artikeldatei erfordert (nicht nur eine Bearbeitung einer vorhandenen), folgen Sie den ständigen Konventionen dieses Repositorys: keine fabrizierten `exl-id`/`TQID` in Frontmatter und konvertieren Sie die Datei nach der Erstellung in CRLF/no-BOM (das `Write`-Tool ist standardmäßig auf LF eingestellt).
-&#x200B;* Die Verkabelung einer neuen Seite in „das Inhaltsverzeichnis“ bedeutet beides, nicht nur eine - eine Seite kann von einem Unterindex aus verknüpft werden, während sie für die Leser weiterhin unsichtbar ist:
+* Erfinden Sie keine technischen Details (exakte Feldnamen, Berechtigungsumfänge, Konfigurationsschritte), die nicht in der Slack-Anfrage oder verknüpften Wiki-Spezifikation enthalten sind. Wenn etwas nicht bestätigt ist, kennzeichnen Sie es inline als HTML-Kommentar (z. B. `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), anstatt es zu erraten - nie als sichtbarer Hinweis. Er darf nicht auf der veröffentlichten Seite gerendert werden.
+* Wenn dies eine brandneue Artikeldatei erfordert (nicht nur eine Bearbeitung einer vorhandenen), folgen Sie den ständigen Konventionen dieses Repositorys: keine fabrizierten `exl-id`/`TQID` in Frontmatter und konvertieren Sie die Datei nach der Erstellung in CRLF/no-BOM (das `Write`-Tool ist standardmäßig auf LF eingestellt).
+* Die Verkabelung einer neuen Seite in „das Inhaltsverzeichnis“ bedeutet beides, nicht nur eine - eine Seite kann von einem Unterindex aus verknüpft werden, während sie für die Leser weiterhin unsichtbar ist:
   - Die Master-Navigationsdatei für den Produktbereich (z.B. `help/workfront-fusion/TOC.md`) - diese steuert tatsächlich den veröffentlichten Navigationsbaum.
   - Alle In-Content-Unterindizes/Landingpages, die auch auf Artikel dieser Art verweisen (z. B. `apps-and-modules-toc.md` für eine neue Seite mit Connector-Modulen).
     Überprüfen Sie beide explizit und bestätigen Sie, dass der neue Eintrag in derselben Liste auf derselben Verschachtelungsebene liegt, da seine nächsten gleichrangigen Artikel in jeder Datei - nehmen Sie nicht an, dass das Hinzufügen zu einer Datei die andere abdeckt.
@@ -70,10 +70,13 @@ Aufgabenfelder:
 | `description` | den **vollständigen Slack-Nachrichtentext** (alle Felder aus der Anfragevorlage, keine Umschreibung), gefolgt von einem Link zur Slack-Konversation |
 | `DE:Release notes` | Ein formatierter Versionshinweis, siehe Format unten |
 | `DE:Preview Date Known` | `Yes`, standardmäßig |
-| `DE:Preview Date` | das **erwartete Veröffentlichungsdatum) der Anfrage** |
+| `DE:Preview Date` | Standardmäßig das in der ursprünglichen Slack-Nachricht angegebene Datum (das **Veröffentlichungsdatum der Anfrage**) |
+| `taskConstraint` + `constraintDate` | Legen Sie `taskConstraint` auf `MFO` (Muss abgeschlossen sein am) fest, wobei `constraintDate` = das in der ursprünglichen Slack-Nachricht angegebene Datum (das **erwartete Veröffentlichungsdatum)**, sodass das geplante Abschlussdatum der Aufgabe auch mit diesem übereinstimmt. |
 | Produkt/Bereich | Wählen Sie `Fusion` aus (ein Aufzählungsfeld im Produktdokumentationsformular; bestätigen Sie den genauen Feldnamen mit `insights_search_fields`, falls er unklar ist). |
 
-Legen Sie die Felder für das Vorschaudatum als Teil desselben Erstellungsaufrufs fest - lassen Sie sie nicht zu einem späteren Zeitpunkt liegen oder warten Sie, bis Sie gefragt werden. Wenn der/die Benutzende später ein anderes Datum angibt oder sagt, dass das Datum noch nicht wirklich bekannt ist, aktualisiert dies entsprechend, füllt es aber standardmäßig jedes Mal aus.
+Legen Sie die Felder für das Vorschaudatum und das geplante Abschlussdatum im Rahmen desselben Erstellungsaufrufs fest - lassen Sie sie nicht auf später oder warten Sie, gefragt zu werden. Wenn der/die Benutzende später ein anderes Datum angibt oder sagt, dass das Datum noch nicht wirklich bekannt ist, aktualisiert dies entsprechend, füllt es aber standardmäßig jedes Mal aus.
+
+Für neue Aufgaben wird standardmäßig die Beschränkung „So bald wie möglich“ mit der Dauer 0 verwendet, unter der `plannedStartDate`/`plannedCompletionDate` von der Planung abgeleitet werden und ein direktes Schreiben an beide im Hintergrund gelöscht wird (kein Fehler, das Datum ändert sich einfach nicht). Durch Festlegen von `taskConstraint: "MFO"` mit `constraintDate` können Sie das geplante Abschlussdatum zuverlässig an das in der Slack-Nachricht angegebene Datum anheften. `workfront://knowledge/task/update` vor diesem Schreiben lesen : Es handelt sich um ein Feld für die Planung/das Datum gemäß den Regeln des MCP-Servers.
 
 Format der Versionshinweise für das `DE:Release notes` Feld. Beginnen Sie immer mit `***FUSION***` in einer eigenen Zeile, dann mit einer leeren Zeile, dann mit dem Titel - dadurch wird die Anmerkung auf einen Blick als zu Fusion gehörend (im Gegensatz zu Core Workfront) markiert:
 
@@ -93,17 +96,17 @@ Rufen Sie vor dem Aufruf „create“ `read_workflow_docs` mit `workfront://tool
 
 Klarer Bericht:
 
-&#x200B;* Die von Ihnen erstellte Verzweigung.
-&#x200B;* Welche DOC-Datei(en) Sie geändert haben und was Sie hinzugefügt haben.
-&#x200B;* Aufgabenname und URL.
-&#x200B;* Die genauen Feldwerte, die Sie festgelegt haben, einschließlich der Felder für das Vorschaudatum.
-&#x200B;* Alles, worauf man nicht ganz vertrauen konnte - z.B. Slack war nicht erreichbar und man arbeitete nur aus eingefügtem Text, der Zielartikel war mehrdeutig oder ein technisches Detail war nicht im Quellmaterial vorhanden und wurde markiert, anstatt geraten zu werden.
+* Die von Ihnen erstellte Verzweigung.
+* Welche DOC-Datei(en) Sie geändert haben und was Sie hinzugefügt haben.
+* Aufgabenname und URL.
+* Die genauen Feldwerte, die Sie festgelegt haben, einschließlich der Felder für das Vorschaudatum.
+* Alles, worauf man nicht ganz vertrauen konnte - z.B. Slack war nicht erreichbar und man arbeitete nur aus eingefügtem Text, der Zielartikel war mehrdeutig oder ein technisches Detail war nicht im Quellmaterial vorhanden und wurde markiert, anstatt geraten zu werden.
 
 ## Bekannte Werte (aus früheren Ausführungen)
 
 Bestätigen Sie, dass diese immer noch aufgelöst werden, anstatt davon auszugehen, dass sie dauerhaft sind:
 
-&#x200B;* Projekt „Produktdokumentationsaufgaben - für Entwicklungsprobleme, die Messaging erfordern“ ist der ID `5e69583f00236b9f767c3e3944100ee4` zugeordnet
-&#x200B;* Die übergeordnete Aufgabe „Becky - Aufgaben aus dem Fusion-Dokumentations-Kanal“ ist der ID `6a9b065100003a7554832780c2015e93` (im selben Projekt) zugeordnet und wird mit `insights_find_id_by_name` (Entity `task`) statt mit Hartkodierung aufgelöst, falls sie sich ändert.
-&#x200B;* Benutzerdefiniertes Formular für die Produktdokumentation (`categoryID`) ist `5d7275b9000514604bd969d418725843`
-&#x200B;* Benutzerdefinierte Felder: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* Projekt „Produktdokumentationsaufgaben - für Entwicklungsprobleme, die Messaging erfordern“ ist der ID `5e69583f00236b9f767c3e3944100ee4` zugeordnet
+* Die übergeordnete Aufgabe „Becky - Aufgaben aus dem Fusion-Dokumentations-Kanal“ ist der ID `6a9b065100003a7554832780c2015e93` (im selben Projekt) zugeordnet und wird mit `insights_find_id_by_name` (Entity `task`) statt mit Hartkodierung aufgelöst, falls sie sich ändert.
+* Benutzerdefiniertes Formular für die Produktdokumentation (`categoryID`) ist `5d7275b9000514604bd969d418725843`
+* Benutzerdefinierte Felder: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`

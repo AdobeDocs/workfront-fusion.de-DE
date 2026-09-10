@@ -1,25 +1,22 @@
 ---
-title: Adobe Workfront Planning-Module
+title: Adobe Workfront-Planung-Module
 description: Mit den  [!DNL Adobe Workfront Planning]  können Sie ein Adobe Workfront Fusion-Szenario auf der Grundlage von Ereignissen in Ihrem  [!DNL Adobe] Workfront Planning-Konto starten, Vereinbarungen und andere Datensätze erstellen, lesen oder aktualisieren, nach Datensätzen anhand von von Ihnen festgelegten Kriterien suchen und Dokumente hochladen.
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 6739
+source-wordcount: 6777
 ht-degree: 33%
 
 ---
 
 
-# Adobe Workfront Planning-Module
+# Adobe Workfront-Planung-Module
 
 Mit den [!DNL Adobe Workfront Planning]-Modulen können Sie einen Trigger erstellen, wenn in Workfront Planning Ereignisse eintreten. Sie können auch Datensätze erstellen, lesen, aktualisieren und löschen oder einen benutzerdefinierten API-Aufruf an Ihr [!DNL Adobe Workfront Planning]-Konto durchführen.
 
@@ -1679,6 +1676,12 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Datensatz, ein Datensatztyp 
        <b>HINWEIS</b>: Seit dem 23. August 2026 aktiviert Fusion standardmäßig die authToken-basierte Sicherheit für alle Workfront Planning &gt; Watch Event-Module, einschließlich vorhandener. Wenn ein bestimmter Webhook beschädigt wird oder Sie dies aus Kompatibilitätsgründen deaktivieren müssen, können Sie die Option Sichere Hooks aktivieren deaktivieren.</p>
       </td>
     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Benutzerdefiniertes Token]</td>
+      <td>
+       <p>(Optional) Wenn [!UICONTROL Enable secured hooks] auf [!UICONTROL Yes] eingestellt ist, können Sie zum Schützen des Webhooks Ihren eigenen Tokenwert eingeben. Wenn Sie dieses Feld leer lassen, generiert Fusion automatisch ein Token für Sie.</p>
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -1886,7 +1889,7 @@ Dieses Aktionsmodul ruft eine Liste von Datensätzen basierend auf von Ihnen ang
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL -Bedingung für Filter]</p>
+        <p>[!UICONTROL-Bedingung für Filter]</p>
       </td>
       <td>Bedingung für die Filter auswählen:<ul><li><b>UND</b><p>Das Modul gibt Datensätze zurück, <b> (alle</b> der von Ihnen ausgewählten Feldwerte erfüllen.</p></li><li><b>ODER</b><p>Das Modul gibt Datensätze zurück, <b> (beliebige</b> der ausgewählten Feldwerte erfüllen.</p></li></ul></td> 
     </tr>
