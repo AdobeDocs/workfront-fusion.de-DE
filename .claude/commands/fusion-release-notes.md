@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: Erstellen Sie eine neue wöchentliche Versionshinweisseite für Workfront Fusion und fügen Sie sie in die Übersichtsseite zur Versionsaktivität und in das Inhaltsverzeichnis ein. Verwenden Sie diese Option, wenn Benutzende neue Versionshinweise zu Fusion oder eine wöchentliche Versionsseite schreiben, hinzufügen oder entwerfen möchten oder darum bitten, neue Fusion-Funktionen für eine Version zu dokumentieren. Verwenden Sie nicht für Workfront (Quicksilver)-Versionshinweise in Produktankündigungen/Produktversionen - verwenden Sie für diese Versionshinweise Release-Formatter.
-source-git-commit: fcdbfd246808c5cc7a81c4f01990a077ca189112
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/de/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## {Feature title}
 
@@ -98,7 +98,6 @@ Hinweise:
   
   {Regular description paragraph(s).}
   ```
-
 - Jede Funktion sollte mit „Weitere Informationen finden Sie unter […]&quot; enden. Link zum entsprechenden Hilfeartikel. Überprüfen Sie, ob das Verknüpfungsziel im Repository vorhanden ist.
 
 ## Schritt 4: Hinzufügen der Seite zum Übersichtsindex
@@ -113,7 +112,6 @@ Hinweise:
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - Wenn dies die erste Version eines neuen Jahres ist, fügen Sie eine neue `## Fusion releases in {YYYY}` Überschrift über der Überschrift des Vorjahres hinzu und verpacken Sie den Abschnitt *Vorjahr* in einem `+++ **Click to open**` / `+++` ausblendbaren Block, falls er noch nicht vorhanden ist (nur das aktuelle Jahr bleibt erweitert).
 
 ## Schritt 5: Hinzufügen der Seite zum Inhaltsverzeichnis
@@ -126,7 +124,6 @@ Hinweise:
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - Wenn die Überschrift des aktuellen Jahres noch nicht vorhanden ist, fügen Sie `* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}` über der Überschrift des Vorjahres hinzu.
 - **Fügen Sie** das `{hide-from-toc}`-Präfix neuen Einträgen hinzu - das wird nur für ältere Einträge verwendet, wenn sie außerhalb des sichtbaren Navigationsbereichs liegen (siehe Bekannte Inkonsistenzen unten).
 
@@ -145,10 +142,11 @@ Fragen Sie den Benutzer: *„Möchten Sie eine Umleitung für den neuen Connecto
 - Wenn **ja**, stellen Sie Folgendes zusammen:
   - Der **Quellpfad** (muss mit `/en` beginnen, keine Leerzeichen)
   - Das **Ziel** - ein relativer Pfad, der mit `/en` beginnt, oder eine vollständige `https`-URL (keine Leerzeichen)
-- Fügen Sie die Zeile unter dem gleichrangigen `Adobe-Enterprise-Docs/redirects`-Repository `redirects/redirects-prod.csv` (**)**. Nie zu `redirects-dev.csv` oder `redirects-stage.csv` hinzufügen - Produktion ist die einzige Umgebung, die diese Fähigkeit jemals berührt.
+- Fügen Sie die Zeile zum gleichrangigen `Adobe-Enterprise-Docs/redirects`-Repository zu `redirects/redirects-prod.csv` (**keine andere Datei** hinzu. Fügen Sie sie niemals zu `redirects-dev.csv`, `redirects-stage.csv` oder einer anderen Datei in diesem Repository hinzu - prod ist die einzige Umgebung, die diese Qualifikation jemals berührt. Die Verzweigung sollte nur die Änderung dieser einen Datei enthalten.
 - Zeilenregeln (aus der README dieses Repositorys):
   - Keine doppelten `source` und kein doppeltes `source`/`destination`.
   - Die Umleitung darf keine Umleitungsschleife verursachen.
+- Nehmen Sie die Änderung an einer neuen Verzweigung im `redirects`-Repository mit dem Namen `workfront-{month}-{day}-{year}-{topic}` vor (in Kleinbuchstaben, z. B. `workfront-sep-10-2026-aem-mcp-redirect`) - übertragen Sie sie dort niemals direkt `main`.
 - **Diese Qualifikation fügt die CSV-Zeile nur hinzu, nachdem der Benutzer sie bestätigt hat.** Das Erhöhen des PR im `redirects`-Repository ist ein separater Schritt, den diese Fähigkeit nicht ausführt. Informieren Sie den Benutzer darüber, dass ein PR noch dort geöffnet und zusammengeführt werden muss, bevor die Umleitung live geschaltet wird (~5 Minuten nach der Zusammenführung für 1:1-Umleitungen).
 
 ## Schritt 8: Endgültige Checkliste
