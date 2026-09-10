@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: Erstellen Sie eine neue wöchentliche Versionshinweisseite für Workfront Fusion und fügen Sie sie in die Übersichtsseite zur Versionsaktivität und in das Inhaltsverzeichnis ein. Verwenden Sie diese Option, wenn Benutzende neue Versionshinweise zu Fusion oder eine wöchentliche Versionsseite schreiben, hinzufügen oder entwerfen möchten oder darum bitten, neue Fusion-Funktionen für eine Version zu dokumentieren. Verwenden Sie nicht für Workfront (Quicksilver)-Versionshinweise in Produktankündigungen/Produktversionen - verwenden Sie für diese Versionshinweise Release-Formatter.
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -145,10 +145,11 @@ Fragen Sie den Benutzer: *„Möchten Sie eine Umleitung für den neuen Connecto
 - Wenn **ja**, stellen Sie Folgendes zusammen:
   - Der **Quellpfad** (muss mit `/en` beginnen, keine Leerzeichen)
   - Das **Ziel** - ein relativer Pfad, der mit `/en` beginnt, oder eine vollständige `https`-URL (keine Leerzeichen)
-- Fügen Sie die Zeile unter dem gleichrangigen `Adobe-Enterprise-Docs/redirects`-Repository hinzu und `redirects/` Sie eine Datei pro Umgebung (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Fügen Sie die Zeile zum gleichrangigen `Adobe-Enterprise-Docs/redirects`-Repository zu `redirects/redirects-prod.csv` (**keine andere Datei** hinzu. Fügen Sie sie niemals zu `redirects-dev.csv`, `redirects-stage.csv` oder einer anderen Datei in diesem Repository hinzu - prod ist die einzige Umgebung, die diese Qualifikation jemals berührt. Die Verzweigung sollte nur die Änderung dieser einen Datei enthalten.
 - Zeilenregeln (aus der README dieses Repositorys):
   - Keine doppelten `source` und kein doppeltes `source`/`destination`.
   - Die Umleitung darf keine Umleitungsschleife verursachen.
+- Nehmen Sie die Änderung an einer neuen Verzweigung im `redirects`-Repository mit dem Namen `workfront-{month}-{day}-{year}-{topic}` vor (in Kleinbuchstaben, z. B. `workfront-sep-10-2026-aem-mcp-redirect`) - übertragen Sie sie dort niemals direkt `main`.
 - **Diese Qualifikation fügt die CSV-Zeile nur hinzu, nachdem der Benutzer sie bestätigt hat.** Das Erhöhen des PR im `redirects`-Repository ist ein separater Schritt, den diese Fähigkeit nicht ausführt. Informieren Sie den Benutzer darüber, dass ein PR noch dort geöffnet und zusammengeführt werden muss, bevor die Umleitung live geschaltet wird (~5 Minuten nach der Zusammenführung für 1:1-Umleitungen).
 
 ## Schritt 8: Endgültige Checkliste
