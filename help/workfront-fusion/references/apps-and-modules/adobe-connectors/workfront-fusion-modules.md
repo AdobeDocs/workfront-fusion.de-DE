@@ -3,12 +3,11 @@ title: Workfront Fusion-Module
 description: Mit dem Workfront Fusion-Connector können Sie Ihre eigene Fusion-Organisation innerhalb eines Szenarios verwalten, einschließlich Datensätzen, Hooks, Szenarien und Verbindungen.
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
 workflow-type: tm+mt
-source-wordcount: 1374
-ht-degree: 21%
+source-wordcount: 1430
+ht-degree: 20%
 
 ---
 
@@ -68,11 +67,11 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client-ID]</td> 
-      <td>Geben Sie Ihre [!DNL Adobe]-[!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
+      <td>Geben Sie Ihre [!DNL Adobe]-[!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client-Geheimnis]</td> 
-      <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
+      <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Organisations-ID]</td> 
@@ -276,6 +275,9 @@ Aktualisiert einen angegebenen Datensatz.
 
 ### Exportieren
 
+* [Aktivitätsprotokolle exportieren](#export-activity-logs)
+* [Szenarien exportieren](#export-scenarios)
+
 #### Aktivitätsprotokolle exportieren
 
 Dieses Modul exportiert Aktivitätsprotokolle.
@@ -311,6 +313,25 @@ Dieses Modul exportiert Aktivitätsprotokolle.
   <tr> 
    <td role="rowheader">Richtung</td> 
    <td>Wählen Sie aus, ob die Ergebnisse auf- oder absteigend sortiert werden sollen.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Szenarien exportieren
+
+Dieses Modul exportiert Fusion-Blueprints für ein oder mehrere Szenarien.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden von Workfront Fusion mit Workfront Fusion finden Sie unter <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront Fusion mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  <tr> 
+   <td role="rowheader">Szenariokennungen</td> 
+   <td>Klicken Sie für jedes Szenario, das Sie exportieren möchten, auf <b>Element hinzufügen</b> und geben Sie die Szenario-ID ein.</td> 
+  </tr> 
   </tr> 
  </tbody> 
 </table>
