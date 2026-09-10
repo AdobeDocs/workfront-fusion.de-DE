@@ -3,7 +3,8 @@ title: Adobe Experience Manager MCP-Module
 description: Mit dem Adobe Experience Manager MCP-Modul können Sie eine Eingabeaufforderung in englischer Sprache an den MCP-Server von Adobe Experience Manager senden und die Anforderung von einem KI-Modell ausführen lassen.
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 06271bbe8dd3c5eb7e3c6b45b71e7e0f7fd4d444
 workflow-type: tm+mt
 source-wordcount: 1020
