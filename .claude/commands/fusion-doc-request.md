@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Handhabung einer Fusion-Dokumentationsanfrage über die
-source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
+source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -70,10 +70,13 @@ Aufgabenfelder:
 | `description` | den **vollständigen Slack-Nachrichtentext** (alle Felder aus der Anfragevorlage, keine Umschreibung), gefolgt von einem Link zur Slack-Konversation |
 | `DE:Release notes` | Ein formatierter Versionshinweis, siehe Format unten |
 | `DE:Preview Date Known` | `Yes`, standardmäßig |
-| `DE:Preview Date` | das **erwartete Veröffentlichungsdatum) der Anfrage** |
+| `DE:Preview Date` | Standardmäßig das in der ursprünglichen Slack-Nachricht angegebene Datum (das **Veröffentlichungsdatum der Anfrage**) |
+| `taskConstraint` + `constraintDate` | Legen Sie `taskConstraint` auf `MFO` (Muss abgeschlossen sein am) fest, wobei `constraintDate` = das in der ursprünglichen Slack-Nachricht angegebene Datum (das **erwartete Veröffentlichungsdatum)**, sodass das geplante Abschlussdatum der Aufgabe auch mit diesem übereinstimmt. |
 | Produkt/Bereich | Wählen Sie `Fusion` aus (ein Aufzählungsfeld im Produktdokumentationsformular; bestätigen Sie den genauen Feldnamen mit `insights_search_fields`, falls er unklar ist). |
 
-Legen Sie die Felder für das Vorschaudatum als Teil desselben Erstellungsaufrufs fest - lassen Sie sie nicht zu einem späteren Zeitpunkt liegen oder warten Sie, bis Sie gefragt werden. Wenn der/die Benutzende später ein anderes Datum angibt oder sagt, dass das Datum noch nicht wirklich bekannt ist, aktualisiert dies entsprechend, füllt es aber standardmäßig jedes Mal aus.
+Legen Sie die Felder für das Vorschaudatum und das geplante Abschlussdatum im Rahmen desselben Erstellungsaufrufs fest - lassen Sie sie nicht auf später oder warten Sie, gefragt zu werden. Wenn der/die Benutzende später ein anderes Datum angibt oder sagt, dass das Datum noch nicht wirklich bekannt ist, aktualisiert dies entsprechend, füllt es aber standardmäßig jedes Mal aus.
+
+Für neue Aufgaben wird standardmäßig die Beschränkung „So bald wie möglich“ mit der Dauer 0 verwendet, unter der `plannedStartDate`/`plannedCompletionDate` von der Planung abgeleitet werden und ein direktes Schreiben an beide im Hintergrund gelöscht wird (kein Fehler, das Datum ändert sich einfach nicht). Durch Festlegen von `taskConstraint: "MFO"` mit `constraintDate` können Sie das geplante Abschlussdatum zuverlässig an das in der Slack-Nachricht angegebene Datum anheften. `workfront://knowledge/task/update` vor diesem Schreiben lesen : Es handelt sich um ein Feld für die Planung/das Datum gemäß den Regeln des MCP-Servers.
 
 Format der Versionshinweise für das `DE:Release notes` Feld. Beginnen Sie immer mit `***FUSION***` in einer eigenen Zeile, dann mit einer leeren Zeile, dann mit dem Titel - dadurch wird die Anmerkung auf einen Blick als zu Fusion gehörend (im Gegensatz zu Core Workfront) markiert:
 

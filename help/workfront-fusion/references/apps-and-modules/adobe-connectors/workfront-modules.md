@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 7687
-ht-degree: 93%
+source-wordcount: 7725
+ht-degree: 92%
 
 ---
 
@@ -284,6 +284,12 @@ Das Modul gibt alle Standardfelder zurück, die mit dem Eintrag verknüpft sind,
       <td>
        <p>Wählen Sie aus, ob die authToken-basierte Sicherheit für diesen Webhook aktiviert werden soll.</p><p>
        <b>HINWEIS</b>: Seit dem 23. August 2026 aktiviert Fusion standardmäßig die authToken-basierte Sicherheit für alle Workfront &gt; Ereignismodule beobachten, einschließlich vorhandener Module. Wenn ein bestimmter Webhook beschädigt wird oder Sie dies aus Kompatibilitätsgründen deaktivieren müssen, können Sie die Option Sichere Hooks aktivieren deaktivieren.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Benutzerdefiniertes Token]</td> 
+      <td>
+       <p>(Optional) Wenn [!UICONTROL Enable secured hooks] auf [!UICONTROL Yes] eingestellt ist, können Sie zum Schützen des Webhooks Ihren eigenen Tokenwert eingeben. Wenn Sie dieses Feld leer lassen, generiert Fusion automatisch ein Token für Sie.</p>
        </td> 
      </tr> 
     </tbody> 
