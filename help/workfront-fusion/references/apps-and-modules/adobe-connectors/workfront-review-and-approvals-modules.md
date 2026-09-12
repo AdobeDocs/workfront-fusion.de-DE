@@ -10,10 +10,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
+source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
 workflow-type: tm+mt
-source-wordcount: 3743
-ht-degree: 15%
+source-wordcount: 3631
+ht-degree: 16%
 
 ---
 
@@ -135,7 +135,6 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 * [Teilnehmer hinzufügen oder aktualisieren](#add-or-update-participants)
 * [Massenlöschvorlagen](#bulk-delete-templates)
 * [Erstellen einer Vorlage](#create-a-template)
-* [Erstellen einer Genehmigung](#create-an-approval)
 * [Stadien erstellen](#create-stages)
 * [Löschen einer Entscheidung in einem Stadium](#delete-a-decision-on-a-stage)
 * [Löschen eines Stadiums](#delete-a-stage)
@@ -237,35 +236,6 @@ Dieses Aktionsmodul erstellt eine Validierungsvorlage
     <tr>
       <td role="rowheader"><p>Freigegeben für</p></td>
       <td>Klicken Sie für jeden Benutzer, für den Sie die Vorlage freigeben möchten, auf <b>Element hinzufügen</b> und Benutzer-ID sowie auf die gewünschte Zugriffsebene.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Erstellen einer Genehmigung
-
-Dieses Aktionsmodul erstellt eine Genehmigung für ein Dokument im Adobe Cloud-Speicher, einschließlich Staging-Daten oder einer Vorlage.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Verbindung</td>
-      <td>Anweisungen zum Erstellen einer Verbindung mit einheitlichen Adobe Workfront-Überprüfungen und -Genehmigungen finden Sie unter <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Verbindung mit einheitlichen Adobe Workfront-Überprüfungen und -Genehmigungen</a> in diesem Artikel.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Dokument-ID</p></td>
-      <td>Geben Sie die ID des Assets ein, für das Sie eine Genehmigung erstellen möchten, oder ordnen Sie sie zu.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Schritte</p>
-      </td>
-      <td>Klicken Sie für jeden Schritt, den Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie die Daten für den Schritt ein.<p>Weitere Informationen finden Sie unter <a href="#stages-fields" class="MCXref xref" >Stadienfelder</a> in diesem Artikel. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Vorlagen ID</p></td>
-      <td>Geben Sie die ID der Vorlage ein, die Sie für diese Genehmigung verwenden möchten, oder ordnen Sie sie zu.</td> 
       </tr>
   </tbody>
 </table>
