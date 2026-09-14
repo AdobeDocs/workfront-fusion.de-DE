@@ -7,13 +7,12 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
+    internal-label: Workfront
+source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
 workflow-type: tm+mt
-source-wordcount: 1360
-ht-degree: 76%
-
+source-wordcount: '1445'
+ht-degree: 72%
 ---
-
 # Leistungsleitlinien für Fusion
 
 Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, weshalb Adobe Workfront Fusion auf hohe Leistung ausgelegt ist. Da lang laufende Szenarios das Arbeitstempo verlangsamen können, wurde Workfront Fusion unter Berücksichtigung von Leistungsleitlinien entwickelt, durch die die Ausführungszeit, die Datengröße und andere Szenarioparameter begrenzt werden. Die Designerinnen und Designer sollten sich dieser Leitlinien bewusst sein und sie in ihre Design-Praktiken integrieren.
@@ -37,8 +36,8 @@ Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, weshalb Adobe W
 
   Anwendungsmodule, die Daten mit einer großen Anzahl von Feldern erstellen oder aktualisieren, können zu sehr großen Blueprints führen.
 
-   * Achten Sie bei Verwendung der Workfront-Anwendung darauf, nur die Felder auszuwählen, die für Ihre Anwendungsfälle zum Erstellen oder Aktualisieren erforderlich sind.
-   * Nutzen Sie bei Verwendung anderer Anwendungen benutzerdefinierte API-Module, um mit jedem Eintragstyp zu interagieren, der über eine große Anzahl von Feldern verfügt.
+  * Achten Sie bei Verwendung der Workfront-Anwendung darauf, nur die Felder auszuwählen, die für Ihre Anwendungsfälle zum Erstellen oder Aktualisieren erforderlich sind.
+  * Nutzen Sie bei Verwendung anderer Anwendungen benutzerdefinierte API-Module, um mit jedem Eintragstyp zu interagieren, der über eine große Anzahl von Feldern verfügt.
 
 * Es gibt zwar keine Begrenzung für die Anzahl der Module in einem Szenario, aber Szenarios mit mehr als 150 Modulen beeinträchtigen die Leistung Ihres Workfront Fusion-Systems. Aus diesem Grund raten wir davon ab, Szenarios mit mehr als 150 Modulen zu erstellen.
 * Szenarionamen dürfen nicht mehr als 120 Zeichen enthalten.
@@ -79,10 +78,14 @@ Weitere Informationen finden Sie unter [Arbeiten mit großen Dateien](/help/work
 * Die standardmäßige Maximalgröße einer Payload beträgt **5 MB**.
 * Webhooks sind auf **100 Anfragen pro Sekunde** beschränkt. Wenn dieses Limit erreicht ist, sendet Workfront Fusion den Status 429 ([!UICONTROL Zu viele Anfragen]).
 * Workfront Fusion speichert Webhook-Payloads 30 Tage lang. Der Zugriff auf eine Webhook-Payload mehr als 30 Tage nach dem Empfang führt zum Fehler [!UICONTROL Fehler beim Lesen der Datei aus dem Speicher].
+* Die Warteschlange eines Webhooks kann bis zu 100.000 Ereignisse in **Warteschlange**. Die Warteschlange wird gefüllt, wenn ein Szenario, das den Webhook verwendet, deaktiviert ist oder so eingestellt ist, dass es nach einem Zeitplan anstatt sofort ausgeführt wird. Wenn die Warteschlange 100.000 Ereignisse erreicht, werden neue Ereignisse mit dem Fehler „Warteschlange ist voll“ und einem 400-Status-Code zurückgewiesen.
+
+  Wenn bei Workfront- und Planning-Ereignissen die Warteschlange über einen längeren Zeitraum hinweg voll bleibt, wird das Ereignisabonnement deaktiviert, dann eingefroren und Workfront Fusion empfängt keine Ereignisse mehr für dieses Abonnement.
+
 * Webhooks werden automatisch deaktiviert, wenn einer der folgenden Punkte zutrifft:
 
-   * Der Webhook wurde seit mehr als 5 Tagen mit keinem Szenario verbunden.
-   * Der Webhook wird nur in inaktiven Szenarios verwendet, die seit mehr als 30 Tagen inaktiv sind.
+  * Der Webhook wurde seit mehr als 5 Tagen mit keinem Szenario verbunden.
+  * Der Webhook wird nur in inaktiven Szenarios verwendet, die seit mehr als 30 Tagen inaktiv sind.
 
 * Deaktivierte Webhooks werden automatisch gelöscht und ihre Registrierung wird aufgehoben, wenn sie mit keinem Szenario verbunden sind und seit mehr als 30 Tagen einen deaktivierten Status aufweisen.
 * Der Timeout für eine Webhook-Antwort erfolgt nach 5 Minuten.
