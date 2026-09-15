@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: Handhabung einer Fusion-Dokumentationsanfrage über die
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: Verarbeiten einer Fusion-Dokumentationsanfrage über #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Fusion-Dokumentationsanfrage
 
@@ -25,11 +23,11 @@ Slack-Verbindungen in dieser Umgebung sind fehlerhaft (abgelaufene Token, trennt
 
 Die Anfragevorlage enthält die folgenden Felder: „Jedes extrahieren“:
 
-&#x200B;* **Funktionstitel**
-&#x200B;* **Beschreibung**
-&#x200B;* **Punkte, die der Dokumentation hinzugefügt werden müssen** *(manchmal vorhanden - spezifische Abschnitte/Details, die der Antragsteller abdecken möchte; behandeln Sie diese nach Bedarf, nicht optional, falls angegeben)*
-&#x200B;* **Voraussichtliches Veröffentlichungsdatum**
-&#x200B;* **Ankündigung erforderlich** *(Ja/Nein - nur zur Information; siehe oben stehenden Hinweis. Aktion für dieses Feld nicht ausführen.)*
+* **Funktionstitel**
+* **Beschreibung**
+* **Punkte, die der Dokumentation hinzugefügt werden müssen** *(manchmal vorhanden - spezifische Abschnitte/Details, die der Antragsteller abdecken möchte; behandeln Sie diese nach Bedarf, nicht optional, falls angegeben)*
+* **Voraussichtliches Veröffentlichungsdatum**
+* **Ankündigung erforderlich** *(Ja/Nein - nur zur Information; siehe oben stehenden Hinweis. Aktion für dieses Feld nicht ausführen.)*
 
 Wenn die Anfrage mit der vollständigen Spezifikation auf eine Confluence-Wiki-Seite verweist, rufen Sie sie ab (`get_wiki_content`), bevor Sie die Dokumentation schreiben. Verlassen Sie sich nicht nur auf die Slack-Zusammenfassung für technische Details (exakte Feldnamen, Schritte, Benutzeroberflächen-Kennzeichnungen) - rufen Sie diese aus der Wiki-Spezifikation ab, wenn eine verknüpft ist.
 
@@ -43,16 +41,19 @@ Benennen Sie die Verzweigung `becky-{short-kebab-case-description}`, abgeleitet 
 
 Wenn der Arbeitsbaum nicht sauber ist (nicht zugesicherte Änderungen aus nicht verwandten Arbeiten), stoppen Sie und informieren Sie den Benutzer, anstatt ihn zu verzweigen.
 
+Diese Qualifikation erstellt und übergibt an die Verzweigung, pusht sie jedoch nicht oder öffnet eine Pull-Anfrage - überlassen Sie dies der Benutzerin oder dem Benutzer, es sei denn, sie bittet Sie separat darum.
+
 ## Schritt 3: Dokumentation aktualisieren
 
 Suchen Sie die relevanten vorhandenen Artikel in diesem Repository (Grep für zugehörige Modulnamen, Benutzeroberflächen-Bezeichnungen oder Einstellungsnamen - raten Sie nicht auf die Datei). Aktualisieren Sie sie, um die Änderung widerzuspiegeln, wobei Sie der vorhandenen Struktur, Überschriftenebene und dem Hausstil dieses Artikels folgen.
 
-&#x200B;* Erfinden Sie keine technischen Details (exakte Feldnamen, Berechtigungsumfänge, Konfigurationsschritte), die nicht in der Slack-Anfrage oder verknüpften Wiki-Spezifikation enthalten sind. Wenn etwas nicht bestätigt ist, kennzeichnen Sie es inline als HTML-Kommentar (z. B. `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), anstatt es zu erraten - nie als sichtbarer Hinweis. Er darf nicht auf der veröffentlichten Seite gerendert werden.
-&#x200B;* Wenn dies eine brandneue Artikeldatei erfordert (nicht nur eine Bearbeitung einer vorhandenen), folgen Sie den ständigen Konventionen dieses Repositorys: keine fabrizierten `exl-id`/`TQID` in Frontmatter und konvertieren Sie die Datei nach der Erstellung in CRLF/no-BOM (das `Write`-Tool ist standardmäßig auf LF eingestellt).
-&#x200B;* Die Verkabelung einer neuen Seite in „das Inhaltsverzeichnis“ bedeutet beides, nicht nur eine - eine Seite kann von einem Unterindex aus verknüpft werden, während sie für die Leser weiterhin unsichtbar ist:
+* Erfinden Sie keine technischen Details (exakte Feldnamen, Berechtigungsumfänge, Konfigurationsschritte), die nicht in der Slack-Anfrage oder verknüpften Wiki-Spezifikation enthalten sind. Wenn etwas nicht bestätigt ist, kennzeichnen Sie es inline als HTML-Kommentar (z. B. `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`), anstatt es zu erraten - nie als sichtbarer Hinweis. Er darf nicht auf der veröffentlichten Seite gerendert werden.
+* Wenn dies eine brandneue Artikeldatei erfordert (nicht nur eine Bearbeitung einer vorhandenen), folgen Sie den ständigen Konventionen dieses Repositorys: keine fabrizierten `exl-id`/`TQID` in Frontmatter und konvertieren Sie die Datei nach der Erstellung in CRLF/no-BOM (das `Write`-Tool ist standardmäßig auf LF eingestellt).
+* Die Verkabelung einer neuen Seite in „das Inhaltsverzeichnis“ bedeutet beides, nicht nur eine - eine Seite kann von einem Unterindex aus verknüpft werden, während sie für die Leser weiterhin unsichtbar ist:
   - Die Master-Navigationsdatei für den Produktbereich (z.B. `help/workfront-fusion/TOC.md`) - diese steuert tatsächlich den veröffentlichten Navigationsbaum.
   - Alle In-Content-Unterindizes/Landingpages, die auch auf Artikel dieser Art verweisen (z. B. `apps-and-modules-toc.md` für eine neue Seite mit Connector-Modulen).
     Überprüfen Sie beide explizit und bestätigen Sie, dass der neue Eintrag in derselben Liste auf derselben Verschachtelungsebene liegt, da seine nächsten gleichrangigen Artikel in jeder Datei - nehmen Sie nicht an, dass das Hinzufügen zu einer Datei die andere abdeckt.
+* Lassen Sie die Dokumentänderungen auf der Verzweigung unverbindlich. Führen Sie `git commit` (oder `git add`) nicht als Teil dieser Qualifikation aus. Der Benutzer übernimmt die Änderungen, wenn er bereit ist, nachdem er sie überprüft hat. Nur übertragen, wenn der Benutzer Sie ausdrücklich dazu auffordert.
 
 ## Schritt 4: Workfront-Aufgabe erstellen
 
@@ -78,6 +79,11 @@ Legen Sie die Felder für das Vorschaudatum und das geplante Abschlussdatum im R
 
 Für neue Aufgaben wird standardmäßig die Beschränkung „So bald wie möglich“ mit der Dauer 0 verwendet, unter der `plannedStartDate`/`plannedCompletionDate` von der Planung abgeleitet werden und ein direktes Schreiben an beide im Hintergrund gelöscht wird (kein Fehler, das Datum ändert sich einfach nicht). Durch Festlegen von `taskConstraint: "MFO"` mit `constraintDate` können Sie das geplante Abschlussdatum zuverlässig an das in der Slack-Nachricht angegebene Datum anheften. `workfront://knowledge/task/update` vor diesem Schreiben lesen : Es handelt sich um ein Feld für die Planung/das Datum gemäß den Regeln des MCP-Servers.
 
+Das Feld `description` hat eine feste Beschränkung auf 4.000 Zeichen. Wenn der vollständige Slack-Nachrichtentext nicht passt:
+
+1. Erstellen Sie die Aufgabe zuerst mit einer kurzen `description`: Funktionstitel, erwartetes Veröffentlichungsdatum, Ankündigung erforderlich, eine einzeilige Zusammenfassung der Anfrage, ein Hinweis, dass der vollständige Anfragetext als erster Kommentar zur Aufgabe gepostet wird, und der Slack-Thread-Link.
+1. Veröffentlichen Sie dann den vollständigen, wörtlichen Slack-Nachrichtentext (alle Vorlagenfelder, keine Umschreibung) als Kommentar zur neu erstellten Aufgabe über `comment-stream_create_comment` (`objectCode` `task`, `objectID` der ID der neuen Aufgabe) - für dieses Tool gibt es keine vergleichbare Längenbegrenzung. Schließen Sie sowohl `content` (Nur-Text) als auch `contentHTML` (strukturiert mit Überschriften/Listen, nicht nur bloße `<p>`-Tags) ein.
+
 Format der Versionshinweise für das `DE:Release notes` Feld. Beginnen Sie immer mit `***FUSION***` in einer eigenen Zeile, dann mit einer leeren Zeile, dann mit dem Titel - dadurch wird die Anmerkung auf einen Blick als zu Fusion gehörend (im Gegensatz zu Core Workfront) markiert:
 
 ```markdown
@@ -96,17 +102,18 @@ Rufen Sie vor dem Aufruf „create“ `read_workflow_docs` mit `workfront://tool
 
 Klarer Bericht:
 
-&#x200B;* Die von Ihnen erstellte Verzweigung.
-&#x200B;* Welche DOC-Datei(en) Sie geändert haben und was Sie hinzugefügt haben.
-&#x200B;* Aufgabenname und URL.
-&#x200B;* Die genauen Feldwerte, die Sie festgelegt haben, einschließlich der Felder für das Vorschaudatum.
-&#x200B;* Alles, worauf man nicht ganz vertrauen konnte - z.B. Slack war nicht erreichbar und man arbeitete nur aus eingefügtem Text, der Zielartikel war mehrdeutig oder ein technisches Detail war nicht im Quellmaterial vorhanden und wurde markiert, anstatt geraten zu werden.
+* Die von Ihnen erstellte Verzweigung (lokal übertragen, nicht gepusht und keine Pull-Anfrage geöffnet - pro Schritt 2).
+* Welche DOC-Datei(en) Sie geändert haben und was Sie hinzugefügt haben.
+* Vergewissern Sie sich, dass die Änderungen in der Verzweigung nicht bestätigt wurden und die Überprüfung durch den Benutzer aussteht.
+* Aufgabenname und URL.
+* Die genauen Feldwerte, die Sie festgelegt haben, einschließlich der Felder für das Vorschaudatum.
+* Alles, worauf man nicht ganz vertrauen konnte - z.B. Slack war nicht erreichbar und man arbeitete nur aus eingefügtem Text, der Zielartikel war mehrdeutig oder ein technisches Detail war nicht im Quellmaterial vorhanden und wurde markiert, anstatt geraten zu werden.
 
 ## Bekannte Werte (aus früheren Ausführungen)
 
 Bestätigen Sie, dass diese immer noch aufgelöst werden, anstatt davon auszugehen, dass sie dauerhaft sind:
 
-&#x200B;* Projekt „Produktdokumentationsaufgaben - für Entwicklungsprobleme, die Messaging erfordern“ ist der ID `5e69583f00236b9f767c3e3944100ee4` zugeordnet
-&#x200B;* Die übergeordnete Aufgabe „Becky - Aufgaben aus dem Fusion-Dokumentations-Kanal“ ist der ID `6a9b065100003a7554832780c2015e93` (im selben Projekt) zugeordnet und wird mit `insights_find_id_by_name` (Entity `task`) statt mit Hartkodierung aufgelöst, falls sie sich ändert.
-&#x200B;* Benutzerdefiniertes Formular für die Produktdokumentation (`categoryID`) ist `5d7275b9000514604bd969d418725843`
-&#x200B;* Benutzerdefinierte Felder: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* Projekt „Produktdokumentationsaufgaben - für Entwicklungsprobleme, die Messaging erfordern“ ist der ID `5e69583f00236b9f767c3e3944100ee4` zugeordnet
+* Die übergeordnete Aufgabe „Becky - Aufgaben aus dem Fusion-Dokumentations-Kanal“ ist der ID `6a9b065100003a7554832780c2015e93` (im selben Projekt) zugeordnet und wird mit `insights_find_id_by_name` (Entity `task`) statt mit Hartkodierung aufgelöst, falls sie sich ändert.
+* Benutzerdefiniertes Formular für die Produktdokumentation (`categoryID`) ist `5d7275b9000514604bd969d418725843`
+* Benutzerdefinierte Felder: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
