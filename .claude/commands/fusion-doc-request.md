@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: Handhabung einer Fusion-Dokumentationsanfrage über die
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: Verarbeiten einer Fusion-Dokumentationsanfrage über #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Fusion-Dokumentationsanfrage
 
@@ -43,6 +41,8 @@ Benennen Sie die Verzweigung `becky-{short-kebab-case-description}`, abgeleitet 
 
 Wenn der Arbeitsbaum nicht sauber ist (nicht zugesicherte Änderungen aus nicht verwandten Arbeiten), stoppen Sie und informieren Sie den Benutzer, anstatt ihn zu verzweigen.
 
+Diese Qualifikation erstellt und übergibt an die Verzweigung, pusht sie jedoch nicht oder öffnet eine Pull-Anfrage - überlassen Sie dies der Benutzerin oder dem Benutzer, es sei denn, sie bittet Sie separat darum.
+
 ## Schritt 3: Dokumentation aktualisieren
 
 Suchen Sie die relevanten vorhandenen Artikel in diesem Repository (Grep für zugehörige Modulnamen, Benutzeroberflächen-Bezeichnungen oder Einstellungsnamen - raten Sie nicht auf die Datei). Aktualisieren Sie sie, um die Änderung widerzuspiegeln, wobei Sie der vorhandenen Struktur, Überschriftenebene und dem Hausstil dieses Artikels folgen.
@@ -53,6 +53,7 @@ Suchen Sie die relevanten vorhandenen Artikel in diesem Repository (Grep für zu
   - Die Master-Navigationsdatei für den Produktbereich (z.B. `help/workfront-fusion/TOC.md`) - diese steuert tatsächlich den veröffentlichten Navigationsbaum.
   - Alle In-Content-Unterindizes/Landingpages, die auch auf Artikel dieser Art verweisen (z. B. `apps-and-modules-toc.md` für eine neue Seite mit Connector-Modulen).
     Überprüfen Sie beide explizit und bestätigen Sie, dass der neue Eintrag in derselben Liste auf derselben Verschachtelungsebene liegt, da seine nächsten gleichrangigen Artikel in jeder Datei - nehmen Sie nicht an, dass das Hinzufügen zu einer Datei die andere abdeckt.
+&#x200B;* Lassen Sie die Dokumentänderungen auf der Verzweigung unverbindlich. Führen Sie `git commit` (oder `git add`) nicht als Teil dieser Qualifikation aus. Der Benutzer übernimmt die Änderungen, wenn er bereit ist, nachdem er sie überprüft hat. Nur übertragen, wenn der Benutzer Sie ausdrücklich dazu auffordert.
 
 ## Schritt 4: Workfront-Aufgabe erstellen
 
@@ -78,6 +79,11 @@ Legen Sie die Felder für das Vorschaudatum und das geplante Abschlussdatum im R
 
 Für neue Aufgaben wird standardmäßig die Beschränkung „So bald wie möglich“ mit der Dauer 0 verwendet, unter der `plannedStartDate`/`plannedCompletionDate` von der Planung abgeleitet werden und ein direktes Schreiben an beide im Hintergrund gelöscht wird (kein Fehler, das Datum ändert sich einfach nicht). Durch Festlegen von `taskConstraint: "MFO"` mit `constraintDate` können Sie das geplante Abschlussdatum zuverlässig an das in der Slack-Nachricht angegebene Datum anheften. `workfront://knowledge/task/update` vor diesem Schreiben lesen : Es handelt sich um ein Feld für die Planung/das Datum gemäß den Regeln des MCP-Servers.
 
+Das Feld `description` hat eine feste Beschränkung auf 4.000 Zeichen. Wenn der vollständige Slack-Nachrichtentext nicht passt:
+
+1. Erstellen Sie die Aufgabe zuerst mit einer kurzen `description`: Funktionstitel, erwartetes Veröffentlichungsdatum, Ankündigung erforderlich, eine einzeilige Zusammenfassung der Anfrage, ein Hinweis, dass der vollständige Anfragetext als erster Kommentar zur Aufgabe gepostet wird, und der Slack-Thread-Link.
+1. Veröffentlichen Sie dann den vollständigen, wörtlichen Slack-Nachrichtentext (alle Vorlagenfelder, keine Umschreibung) als Kommentar zur neu erstellten Aufgabe über `comment-stream_create_comment` (`objectCode` `task`, `objectID` der ID der neuen Aufgabe) - für dieses Tool gibt es keine vergleichbare Längenbegrenzung. Schließen Sie sowohl `content` (Nur-Text) als auch `contentHTML` (strukturiert mit Überschriften/Listen, nicht nur bloße `<p>`-Tags) ein.
+
 Format der Versionshinweise für das `DE:Release notes` Feld. Beginnen Sie immer mit `***FUSION***` in einer eigenen Zeile, dann mit einer leeren Zeile, dann mit dem Titel - dadurch wird die Anmerkung auf einen Blick als zu Fusion gehörend (im Gegensatz zu Core Workfront) markiert:
 
 ```markdown
@@ -96,8 +102,9 @@ Rufen Sie vor dem Aufruf „create“ `read_workflow_docs` mit `workfront://tool
 
 Klarer Bericht:
 
-&#x200B;* Die von Ihnen erstellte Verzweigung.
+&#x200B;* Die von Ihnen erstellte Verzweigung (lokal übertragen, nicht gepusht und keine Pull-Anfrage geöffnet - pro Schritt 2).
 &#x200B;* Welche DOC-Datei(en) Sie geändert haben und was Sie hinzugefügt haben.
+&#x200B;* Vergewissern Sie sich, dass die Änderungen in der Verzweigung nicht bestätigt wurden und die Überprüfung durch den Benutzer aussteht.
 &#x200B;* Aufgabenname und URL.
 &#x200B;* Die genauen Feldwerte, die Sie festgelegt haben, einschließlich der Felder für das Vorschaudatum.
 &#x200B;* Alles, worauf man nicht ganz vertrauen konnte - z.B. Slack war nicht erreichbar und man arbeitete nur aus eingefügtem Text, der Zielartikel war mehrdeutig oder ein technisches Detail war nicht im Quellmaterial vorhanden und wurde markiert, anstatt geraten zu werden.

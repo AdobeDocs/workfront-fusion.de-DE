@@ -5,13 +5,12 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 06271bbe8dd3c5eb7e3c6b45b71e7e0f7fd4d444
+    internal-label: Workfront
+source-git-commit: f39af7ec908c7ae62924635ef2d08584cf79310a
 workflow-type: tm+mt
-source-wordcount: 1020
+source-wordcount: '1020'
 ht-degree: 11%
-
 ---
-
 # Adobe Experience Manager MCP-Module
 
 Der Adobe Experience Manager MCP-Connector ist eine dedizierte Fusion-Integration für Adobe Experience Managers eigenen MCP-Server (Model Context Protocol). Im Gegensatz zu einem typischen Connector, bei dem jedes Modul eine feste Aktion ausführt, verfügt dieser Connector über ein einziges Modul, das eine offene, englischsprachige Anweisung akzeptiert und es einem KI-Modell ermöglicht zu entscheiden, welche Adobe Experience Manager-Vorgänge erforderlich sind, um sie zu erfüllen, und zwar über Bereiche wie Sites, digitale Assets, Inhaltsfragmente, Ordner, das Inhalts-Repository und Inhalts-KI hinweg.
@@ -98,7 +97,7 @@ Jede Ausführung dieses Moduls ist eine einzelne, in sich abgeschlossene Ausfüh
 
 Da jeder Durchgang unabhängig ist, hat das Modul keinen Speicher für frühere Durchgänge. Um ein mehrgängiges, konversatives Erlebnis über mehrere Läufe hinweg zu erstellen, speichern Sie die vorherige Frage und Antwort. Sie können dafür einen Datenspeicher verwenden und diesen Verlauf dann zu Beginn der nächsten Eingabeaufforderung als Text einbeziehen, gefolgt von der neuen Frage.
 
-Informationen zu Datenspeichern finden Sie unter [Datenspeicher](/help/workfront-fusion/create-scenarios/data-stores/data-store-overview.md).
+Informationen zu Datenspeichern finden Sie unter [Datenspeicher](/help/workfront-fusion/create-scenarios/map-data/data-stores.md).
 
 <table style="table-layout:auto"> 
  <col/>

@@ -7,15 +7,15 @@ exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
 TQID: https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 6d107dda1c657e7b0b7ae44cfebecc97421ca47e
 workflow-type: tm+mt
-source-wordcount: 3034
-ht-degree: 35%
-
+source-wordcount: '3056'
+ht-degree: 34%
 ---
-
 # [!DNL Salesforce]-Module
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Salesforce] verwenden, und sie mit mehreren Anwendungen und Services von Drittanbietern verbinden.
@@ -111,7 +111,7 @@ Weitere Informationen zu Suchmöglichkeiten finden Sie in der [!DNL Salesforce] 
 
 ## Erstellen einer Verbindung zu den [!DNL Salesforce]
 
-So erstellen Sie eine Verbindung für Ihre [!DNL Salesforce]-Module:
+Um eine Verbindung für Ihre [!DNL Salesforce]-Module zu erstellen, können Sie sich mit OAuth 2 oder PKCE authentifizieren.
 
 1. Klicken Sie in einem beliebigen [!DNL Salesforce]-Modul neben dem Feld „Verbindung“ auf **[!UICONTROL Hinzufügen]**.
 
@@ -139,6 +139,12 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Salesforce]-Module:
         <td role="rowheader">[!UICONTROL Typ]</td>
         <td>
           <p>Wählen Sie aus, ob eine Verbindung zu einem Service-Konto oder einem persönlichen Konto hergestellt werden soll.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Verbindungstyp]</td>
+        <td>
+          <p>Wählen Sie aus, ob Sie sich mit OAuth 2 oder PKCE authentifizieren möchten.</p>
         </td>
       </tr>
       <tr>
