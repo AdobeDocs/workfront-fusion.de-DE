@@ -3,13 +3,12 @@ title: Arbeitspools
 description: Ein Worker-Pool ist eine Menge an Workfront Fusion-Verarbeitungsressourcen, die einer oder mehreren bestimmten Organisationen zugewiesen ist. Alle Fusion-Vorgänge und -Verarbeitungen erfolgen im Kontext des zugewiesenen Worker-Pools einer Organisation.
 author: Becky
 feature: Workfront Fusion
-source-git-commit: bb94083eb9f58dc3ae9f94a59288da43317b567b
+exl-id: 8bf508a8-d1f9-455f-af89-62f688289137
+source-git-commit: b95974d19c3dcb2fea0d6323c2b747665216a2e7
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # Arbeitskräftepools
 
 Ein Worker-Pool ist eine Menge an Workfront Fusion-Verarbeitungsressourcen, die einer bestimmten Organisation zugewiesen ist. Alle Fusion-Vorgänge und -Verarbeitungen erfolgen im Kontext des zugewiesenen Worker-Pools einer Organisation.
