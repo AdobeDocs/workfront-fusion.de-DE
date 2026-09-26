@@ -4,19 +4,23 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
-TQID: https://experienceleague.adobe.com/1gzJh1C9Trah5ABH9oSeihxOyA7K2oTXkU021jHpoCI
+TQID: 'https://experienceleague.adobe.com/1gzJh1C9Trah5ABH9oSeihxOyA7K2oTXkU021jHpoCI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1558
+source-wordcount: '1558'
 ht-degree: 26%
-
 ---
-
 # Box-Module
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Box] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden. Überwacht einen angegebenen Ordner, um auf Dateiänderungen zu prüfen, vorhandene Dateien zu ändern und zu löschen oder neue Dateien in einen Ordner hochzuladen.
@@ -345,7 +349,7 @@ Dieses Aktionsmodul ruft Ordnermetadaten nach Ordner-ID ab.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Umfang]</td> 
+   <td role="rowheader">[!UICONTROL-Umfang]</td> 
    <td> <p>Wählen Sie den Umfang aus, den Sie für diesen Metadatenabruf verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -408,7 +412,7 @@ Dieses Aktionsmodul erstellt oder aktualisiert die Metadaten eines Ordners.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Umfang]</td> 
+   <td role="rowheader">[!UICONTROL-Umfang]</td> 
    <td> <p>Wählen Sie den Bereich aus, den Sie für diese Metadatenaktualisierung verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -434,11 +438,11 @@ Dieses Suchmodul sucht nach Elementen, die dem Benutzer oder dem gesamten Untern
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Box]-Kontos mit Workfront Fusion finden Sie unter <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Verbindung zu Adobe Workfront Fusion herstellen - Grundanweisungen</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Abfrage]</td> 
+   <td role="rowheader">[!UICONTROL-Abfrage]</td> 
    <td> <p>Geben Sie die Zeichenfolge ein, nach der gesucht werden soll, oder ordnen Sie sie zu. Diese Abfrage wird mit Elementnamen, Beschreibungen, Textinhalten von Dateien und verschiedenen anderen Feldern der verschiedenen Elementtypen abgeglichen.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Umfang]</td> 
+   <td role="rowheader">[!UICONTROL-Umfang]</td> 
    <td> <p>Wählen Sie aus, ob Sie nach Inhalten suchen, die mit dem Benutzer verknüpft sind, dessen Anmeldeinformationen für die in diesem Modul verwendete Verbindung verwendet werden, oder nach Inhalten suchen, die mit dem gesamten Unternehmen verknüpft sind.</p> </td> 
   </tr> 
   <tr> 

@@ -4,16 +4,18 @@ description: Ein Vorgang in Adobe Workfront Fusion ist eine Aufgabe, die von ein
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-TQID: https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA
+TQID: 'https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 413
+source-wordcount: '413'
 ht-degree: 1%
-
 ---
-
 # Vorgänge
 
 Ein Vorgang in Adobe Workfront Fusion ist eine Aufgabe, die von einem Modul ausgeführt wird. Zu Tracking-Zwecken ist jede erfolgreiche Aktion, die von einem Modul ausgeführt wird, ein Vorgang.
@@ -26,10 +28,10 @@ Ein Vorgang in Adobe Workfront Fusion ist eine Aufgabe, die von einem Modul ausg
 * Der Wert von Vorgängen kann abweichen. Einige werden kleiner und einfacher sein, andere werden komplexer sein. Vorgänge werden für Ihre Gesamtleistung angerechnet, unabhängig davon, wie einfach oder komplex sie sein mögen.
 * Vorgänge werden bei der [!UICONTROL Finalisierung] einer Szenarioausführung gezählt.
 * Folgende Vorgänge werden **nicht** gezählt:
-   * Alle Filterschritte.
-   * Jede Aktion, die einen Fehler verursacht oder angehalten wird.
-   * Alle Routen, die nicht ausgeführt werden, weil die Regeln der Route nicht eingehalten wurden, z. B. Ausweich- oder deaktivierte Routen.
-   * Jede Aktion, die nicht ausgeführt wird, entweder weil ein Filter keine Daten durchlässt oder weil das Szenario aufgrund eines Fehlers angehalten wurde.
+  * Alle Filterschritte.
+  * Jede Aktion, die einen Fehler verursacht oder angehalten wird.
+  * Alle Routen, die nicht ausgeführt werden, weil die Regeln der Route nicht eingehalten wurden, z. B. Ausweich- oder deaktivierte Routen.
+  * Jede Aktion, die nicht ausgeführt wird, entweder weil ein Filter keine Daten durchlässt oder weil das Szenario aufgrund eines Fehlers angehalten wurde.
 
 >[!NOTE]
 >

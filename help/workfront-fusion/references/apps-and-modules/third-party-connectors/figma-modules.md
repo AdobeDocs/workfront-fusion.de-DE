@@ -4,19 +4,23 @@ description: Mit den Adobe Workfront Fusion Figma-Modulen können Sie Listen von
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-TQID: https://experienceleague.adobe.com/sr5gzukvb4qLZHn0lszB15dVogIfa-VrLwqEAWd69oA
+TQID: 'https://experienceleague.adobe.com/sr5gzukvb4qLZHn0lszB15dVogIfa-VrLwqEAWd69oA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2645
+source-wordcount: '2645'
 ht-degree: 19%
-
 ---
-
 # [!DNL Figma] Module
 
 Mit den Adobe Workfront Fusion [!DNL Figma]-Modulen können Sie Listen mit Kommentaren, Dateien, Dateiversionen oder Projekten abrufen. Sie können auch einen Kommentar posten oder einen Aufruf an die [!DNL Figma]-API durchführen.
@@ -255,7 +259,7 @@ Dieses Aktionsmodul postet einen Kommentar in eine Figma-Datei.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Kommentar]</td>
+      <td role="rowheader">[!UICONTROL-Kommentar]</td>
       <td>Geben Sie den Text des Kommentars ein.</td>
     </tr>
   </tbody>
@@ -291,15 +295,15 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
         <p>Wählen Sie den Typ des Objekts aus, das Sie abrufen möchten.</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL -Datei]</b>
+            <p><b>[!UICONTROL-Datei]</b>
             </p>
             <p>Das Modul gibt das Dokument zurück, auf das [!UICONTROL Key] als JSON-Objekt verweist. Der Dateischlüssel kann aus einer beliebigen Figmadatei-URL geparst werden.</p>
             <p>Felder finden Sie unter <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Datei oder Bild abrufen: Datei]</a>.</p>
           </li>
           <li>
-            <p><b>[!UICONTROL -Dateiknoten]</b>
+            <p><b>[!UICONTROL-Dateiknoten]</b>
             </p>
-            <p>Gibt die Knoten zurück, auf die von IDs als JSON-Objekt verwiesen wird. Die Knoten werden aus der [!DNL Figma]-Datei abgerufen, auf die der [!UICONTROL -Schlüssel] verweist.</p>
+            <p>Gibt die Knoten zurück, auf die von IDs als JSON-Objekt verwiesen wird. Die Knoten werden aus der [!DNL Figma]-Datei abgerufen, auf die der [!UICONTROL-Schlüssel] verweist.</p>
             <p>Felder finden Sie unter <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Datei oder Bild abrufen: Dateiknoten]</a>.</p>
           </li>
           <li>
@@ -328,7 +332,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
@@ -343,7 +347,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Tiefe]</td>
+      <td role="rowheader">[!UICONTROL-Tiefe]</td>
       <td>
         <p>Geben Sie eine Ganzzahl ein, die darstellt, wie tief in der Dokumentstruktur Sie Ergebnisse zurückgeben möchten, oder ordnen Sie sie zu. </p>
         <div class="example"><span class="autonumber"><span><b>Beispiel: </b></span></span>
@@ -381,7 +385,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
@@ -396,7 +400,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       <td>Geben Sie die Version der Datei ein, die das Modul zurückgeben soll, oder ordnen Sie sie zu. Lassen Sie dieses Feld für das aktuelle Modul leer.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Tiefe]</td>
+      <td role="rowheader">[!UICONTROL-Tiefe]</td>
       <td>
         <p>Geben Sie eine Ganzzahl ein, die darstellt, wie tief in der Dokumentstruktur Sie Ergebnisse zurückgeben möchten, oder ordnen Sie sie zu. </p>
         <div class="example"><span class="autonumber"><span><b>Beispiel: </b></span></span>
@@ -431,7 +435,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
     <tr>
@@ -446,7 +450,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
       <td>Um das Bild zu skalieren, geben Sie den Skalierungsfaktor ein oder mappen Sie ihn. Diese Zahl muss zwischen 0,01 und 4 liegen.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL -Format]</td>
+      <td role="rowheader">[!UICONTROL-Format]</td>
       <td>
         <p>Wählen Sie das Format für die Bildausgabe aus.</p>
         <ul>
@@ -491,7 +495,7 @@ Dieses Aktionsmodul ruft eine einzelne Datei oder ein einzelnes Bild aus einer F
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL -Dateischlüssel]</td>
+      <td role="rowheader">[!UICONTROL-Dateischlüssel]</td>
       <td>Wählen Sie die Datei aus, aus der Sie JSON zurückgeben möchten.</td>
     </tr>
   </tbody>

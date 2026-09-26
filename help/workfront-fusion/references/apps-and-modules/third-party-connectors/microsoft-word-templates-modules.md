@@ -4,19 +4,23 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-TQID: https://experienceleague.adobe.com/oP6roNkIFZJ3kCdRiE1MtmYuNQFRrcNJRPMESXP-2Sw
+TQID: 'https://experienceleague.adobe.com/oP6roNkIFZJ3kCdRiE1MtmYuNQFRrcNJRPMESXP-2Sw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Data collection
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1365
+source-wordcount: '1365'
 ht-degree: 13%
-
 ---
-
 # [!DNL Microsoft Word Template]-Module
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Microsoft Word Templates] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
@@ -190,7 +194,7 @@ Mit diesem Transformatormodul können Sie ein Dokument mit von Ihnen angegebenen
    <td>Geben Sie einen Dateinamen (einschließlich Erweiterung) für die Zielausgabedatei ein.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Datenquelle]</td> 
+   <td role="rowheader">[!UICONTROL-Datenquelle]</td> 
    <td> <p>Wählen Sie eine Option aus, um anzugeben, ob die von Ihnen verwendeten Daten aus einem Formular oder aus einer Rohdatenerfassung (nicht verarbeitete Computerdaten) stammen.</p> </td> 
   </tr> 
   <tr> 

@@ -4,11 +4,14 @@ description: Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, we
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
+TQID: 'https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 72%
@@ -31,7 +34,7 @@ Die Arbeitsautomatisierung erfordert eine schnelle Verarbeitung, weshalb Adobe W
   >
   > Obwohl die Verkettung Workflows ermöglicht, dass sie länger als 40 Minuten ausgeführt werden, sollte dies als Signal für das Entwurfsrisiko und nicht als unterstützte Problemumgehung behandelt werden. Übergeordnete Szenarien, die mehrere untergeordnete Szenarien mit langer Laufzeit umfassen, haben keine allgemeine Zeitüberschreitungsgrenze. Wenn ein untergeordnetes Szenario hängt oder ein Platform-Problem auftritt, wartet das übergeordnete Element unbegrenzt, ohne dass ein Fehler auftritt und ohne dass eine automatische Wiederherstellung erfolgt.
   >
-  > Wenn Ihr Szenario-Design eine Verkettung erfordert, um das Limit von 40 Minuten zu vermeiden, überprüfen Sie Ihre Architektur, bevor Sie sie in der Produktion bereitstellen. Entwurfsanleitungen finden Sie [Verketten mehrerer &#x200B;](https://experienceleague.adobe.com/de/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)).
+  > Wenn Ihr Szenario-Design eine Verkettung erfordert, um das Limit von 40 Minuten zu vermeiden, überprüfen Sie Ihre Architektur, bevor Sie sie in der Produktion bereitstellen. Entwurfsanleitungen finden Sie [Verketten mehrerer ](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)).
 * Die maximale Größe einer Szenario-Blueprint beträgt **5 MB**. Wir empfehlen jedoch, die Szenariogröße bei unter **3 MB** zu belassen.
 
   Anwendungsmodule, die Daten mit einer großen Anzahl von Feldern erstellen oder aktualisieren, können zu sehr großen Blueprints führen.

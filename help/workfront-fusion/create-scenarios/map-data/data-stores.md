@@ -4,19 +4,23 @@ description: Ein Datenspeicher, ähnlich einer Datenbank oder einer einfachen Ta
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-TQID: https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs
+TQID: 'https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1366
+source-wordcount: '1366'
 ht-degree: 8%
-
 ---
-
 # Erstellen und Verwalten von Datenspeichern
 
 Ein Datenspeicher, ähnlich einer Datenbank oder einer einfachen Tabelle, kann Daten aus Szenarien speichern und ermöglicht so die Übertragung von Daten zwischen einzelnen Szenarien oder Szenarioausführungen. Sie können einen Datenspeicher verwenden, um während der Synchronisierung neue Daten aus verschiedenen Systemen zu speichern.
@@ -79,7 +83,7 @@ Fusion-Instanzen im Ultimate-Paket erhalten:
 
 ### Prime-Pläne auswählen
 
-Fusion-Instanzen der Pakete „Select“ oder &quot;Prime&quot; erhalten:-->
+Fusion-Instanzen der Select- oder Prime-Pakete erhalten:—>
 
 * 100 MB für die ersten 500.000 Vorgänge.
 
@@ -120,7 +124,7 @@ Bevor Sie einen Datenspeicher in einem Modul verwenden können, müssen Sie den 
       <td> <p>Geben Sie einen Namen für den Datenspeicher ein. </p> </td> 
      </tr> 
      <tr> 
-      <td> <p>[!UICONTROL -Datenstruktur]</p> </td> 
+      <td> <p>[!UICONTROL-Datenstruktur]</p> </td> 
       <td> <p>Eine Datenstruktur ist eine Liste der Spalten für eine Tabelle. Diese Liste gibt den Spaltennamen und den Datentyp an.</p> <p>Führen Sie einen der folgenden Schritte aus:</p> 
        <ul> 
         <li><b>Eine bereits erstellte Datenstruktur auswählen</b></li> 
@@ -189,7 +193,7 @@ Sie können die Eigenschaften und Inhalte eines vorhandenen Datenspeichers im Be
 
 Zu den Eigenschaften eines Datenspeichers gehören die Datenstruktur, die der Datenspeicher verwendet, sowie die Größe des Datenspeichers.
 
-1. Klicken Sie **![[!UICONTROL linken &#x200B;]](assets/data-store-icon.png) auf [Datenspeicher]**, um den Bereich [!UICONTROL Datenspeicher] zu öffnen.
+1. Klicken Sie **[!UICONTROL linken ](assets/data-store-icon.png) auf ![Datenspeicher]**, um den Bereich [!UICONTROL Datenspeicher] zu öffnen.
 1. Aktivieren Sie das Kontrollkästchen neben dem Datenspeicher, den Sie bearbeiten möchten, und klicken Sie dann **Bearbeiten** im Banner unten auf dem Bildschirm.
 1. (Optional) Wenn Sie die von diesem Datenspeicher verwendete Datenstruktur in eine andere vorhandene Datenstruktur ändern möchten, wählen Sie sie aus der **[!UICONTROL Datenstruktur]** aus.
 
@@ -229,7 +233,7 @@ Es gibt derzeit kein Tool, das die Wiederherstellung verlorener Daten automatisi
 
    Informationen zum Einfügen von Daten in einen Datenspeicher finden Sie unter [Bearbeiten des Inhalts eines Datenspeichers](#edit-the-contents-of-a-data-store) in diesem Artikel.
 
-### [!UICONTROL Unzureichender &#x200B;])
+### [!UICONTROL Unzureichender ])
 
 Ein [!UICONTROL Speicherplatzmangel] tritt auf, weil den zuvor erstellten Datenspeichern bereits der zugewiesene Datenspeicher zugewiesen wurde.
 

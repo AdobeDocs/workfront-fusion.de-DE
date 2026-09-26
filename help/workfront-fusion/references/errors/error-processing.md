@@ -5,20 +5,23 @@ description: Manchmal kann während der Ausführung eines Szenarios ein Fehler a
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-TQID: https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc
+TQID: 'https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1214
+source-wordcount: '1227'
 ht-degree: 8%
-
 ---
-
 # Fehlertypen
 
 Manchmal kann während der Ausführung eines Szenarios ein Fehler auftreten. Dies geschieht normalerweise, wenn ein Service aufgrund eines Fehlers bei der Verbindung mit dem Service nicht verfügbar ist oder wenn eine Validierung fehlschlägt.
@@ -63,10 +66,10 @@ Verbindungsfehler sind einer der häufigsten Fehler. Sie werden in der Regel dur
 * Tritt der Fehler im ersten Modul auf, wird die Ausführung des Szenarios mit einer Warnmeldung beendet. Workfront Fusion versucht dann wiederholt, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, deaktiviert Workfront Fusion das Szenario.
 * Wenn der Verbindungsfehler auf einem anderen Modul als dem ersten auftritt, hängen die nachfolgenden Schritte von der Option Speichern unvollständiger Ausführungen zulassen in den erweiterten Einstellungen des Szenarios ab:
 
-   * Wenn diese Option aktiviert ist, wird die Ausführung des Szenarios in den Ordner &quot;[!UICONTROL &#x200B; Ausführungen“ verschoben] in dem Workfront Fusion wiederholt versucht, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, verbleibt die Ausführung im Ordner Unvollständige Ausführungen, bis sie vom Benutzer manuell behoben wird.
+  * Wenn diese Option aktiviert ist, wird die Ausführung des Szenarios in den Ordner &quot;[!UICONTROL  Ausführungen“ verschoben] in dem Workfront Fusion wiederholt versucht, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, verbleibt die Ausführung im Ordner Unvollständige Ausführungen, bis sie vom Benutzer manuell behoben wird.
 
-     Weitere Informationen zu unvollständigen Ausführungen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
-   * Wenn diese Option deaktiviert ist, endet die Ausführung des Szenarios mit einem Fehler und einer darauf folgenden Rollback-Phase. Workfront Fusion versucht dann wiederholt, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, deaktiviert Workfront Fusion das Szenario.
+    Weitere Informationen zu unvollständigen Ausführungen finden Sie unter [Anzeigen und Auflösen unvollständiger Ausführungen](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
+  * Wenn diese Option deaktiviert ist, endet die Ausführung des Szenarios mit einem Fehler und einer darauf folgenden Rollback-Phase. Workfront Fusion versucht dann wiederholt, das Szenario in zunehmenden Zeitintervallen erneut auszuführen. Wenn alle Versuche fehlschlagen, deaktiviert Workfront Fusion das Szenario.
 
   Weitere Informationen zur Einstellung Speichern unvollständiger Ausführungen zulassen finden Sie unter [Speichern unvollständiger Ausführungen zulassen](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) im Artikel Konfigurieren von Szenario-Einstellungen.
 
@@ -86,7 +89,7 @@ Die zunehmenden Zeitintervalle verhindern, dass häufig ausgeführte Szenarien V
 
 **Beispiel:**
 
-Ein Szenario enthält den [!DNL Google Sheets] Trigger [!UICONTROL Zeilen &#x200B;]. [!DNL Google Sheets] ist aufgrund von Wartungsarbeiten beim Starten von Workfront Fusion für 30 Minuten nicht verfügbar und kann daher keine neuen Zeilen abrufen. Das Szenario stoppt und versucht es in 10 Minuten erneut. Da [!DNL Google Sheets] immer noch nicht verfügbar ist, kann Workfront Fusion weiterhin keine Informationen zu neuen Zeilen abrufen. Die nächste Ausführung des Szenarios ist in 1 Stunde geplant. [!DNL Google Sheets] ist derzeit wieder verfügbar und das Szenario wird erfolgreich ausgeführt.
+Ein Szenario enthält den [!DNL Google Sheets] Trigger [!UICONTROL Zeilen ]. [!DNL Google Sheets] ist aufgrund von Wartungsarbeiten beim Starten von Workfront Fusion für 30 Minuten nicht verfügbar und kann daher keine neuen Zeilen abrufen. Das Szenario stoppt und versucht es in 10 Minuten erneut. Da [!DNL Google Sheets] immer noch nicht verfügbar ist, kann Workfront Fusion weiterhin keine Informationen zu neuen Zeilen abrufen. Die nächste Ausführung des Szenarios ist in 1 Stunde geplant. [!DNL Google Sheets] ist derzeit wieder verfügbar und das Szenario wird erfolgreich ausgeführt.
 
 >[!ENDSHADEBOX]
 
@@ -139,7 +142,7 @@ Weitere Informationen finden Sie unter [Anzahl aufeinander folgender Fehler](/he
 
 **Beispiel:**
 
-In einem Szenario ist der Workfront-Trigger [!UICONTROL Datensatz &#x200B;]) so eingestellt, dass auf Dokumente geachtet wird. Das Szenario wird ausgeführt, während Sie ein großes Dokument hochladen, z. B. ein langes Video. Da [!UICONTROL Workfront Fusion] versucht, das Video herunterzuladen, während es noch auf Workfront hochgeladen wird, endet das Szenario mit der `IncompleteDataError`.
+In einem Szenario ist der Workfront-Trigger [!UICONTROL Datensatz ]) so eingestellt, dass auf Dokumente geachtet wird. Das Szenario wird ausgeführt, während Sie ein großes Dokument hochladen, z. B. ein langes Video. Da [!UICONTROL Workfront Fusion] versucht, das Video herunterzuladen, während es noch auf Workfront hochgeladen wird, endet das Szenario mit der `IncompleteDataError`.
 
 >[!ENDSHADEBOX]
 

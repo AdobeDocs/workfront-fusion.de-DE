@@ -4,21 +4,27 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-TQID: https://experienceleague.adobe.com/oe0aoid5lPYljLtCBKV7GKd8KGNKh-LGQYD2d83-9eo
+TQID: 'https://experienceleague.adobe.com/oe0aoid5lPYljLtCBKV7GKd8KGNKh-LGQYD2d83-9eo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2042
+source-wordcount: '2042'
 ht-degree: 26%
-
 ---
-
 # [!DNL Anaplan] Module
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Anaplan] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
@@ -246,7 +252,7 @@ Dieses Aktionsmodul fügt ein neues Element zu einer Liste in Anaplan hinzu.
         <td>Geben Sie einen Namen für das neue Element ein.</td>
     </tr>
     <tr>
-        <td>[!UICONTROL -Code]</td>
+        <td>[!UICONTROL-Code]</td>
         <td>Geben Sie den Code für den neuen Artikel ein. Codes sind benutzergenerierte Codes, mit denen Sie zwischen Zeileneinträgen mit demselben Namen unterscheiden können.</td>
     </tr>
     <tr>
@@ -289,7 +295,7 @@ Dieses Aktionsmodul löscht einen vorhandenen Datensatz.
     <ul> 
      <li> <p><b>Aktion</b> </p> <p>Wählen Sie die zu löschende Aktion aus oder ordnen Sie sie zu.</p> </li> 
      <li> <p><b>Listenelement</b> </p> <p>Wählen Sie die Liste aus, aus der Sie ein Element löschen möchten, und geben Sie dann die ID oder den Code des Elements ein, das Sie löschen möchten, oder ordnen Sie sie zu</p>  </li> 
-     <li> <p><b>[!UICONTROL -Datei]</b> </p> <p>Wählen Sie die zu löschende Datei aus oder ordnen Sie sie zu.</p> </li> 
+     <li> <p><b>[!UICONTROL-Datei]</b> </p> <p>Wählen Sie die zu löschende Datei aus oder ordnen Sie sie zu.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -470,7 +476,7 @@ Dieses Aktionsmodul importiert, exportiert, löscht oder verarbeitet eine Aktion
                   <p style="font-weight: normal;">Geben Sie die ID der Importdefinition ein, die Sie verwenden möchten, oder mappen Sie sie zu.</p>
                 </li>
                 <li>
-                 <p><b>[!UICONTROL -Prozess]</b>
+                 <p><b>[!UICONTROL-Prozess]</b>
                  </p>
                   <p>Geben Sie die ID des Prozesses ein, den Sie verwenden möchten, oder ordnen Sie sie zu. </p>
                 </li>
@@ -566,7 +572,7 @@ Dieses Suchmodul gibt alle Datensätze des ausgewählten Typs zurück, auf die z
    <td> <p>Wählen Sie den Typ des Datensatzes aus, den Sie abrufen möchten.</p> 
       <ul> 
        <li> <p><b>[!UICONTROL Workspace]</b> </p> </li> 
-       <li> <p><b>[!UICONTROL -Modelle]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL-Modelle]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Zeileneinträge]</b> </p> <p>Wählen Sie die ID des Modells aus, das die [!DNL line] Elemente enthält, die Sie abrufen möchten, oder ordnen Sie sie zu.</p> </li> 
        <li> <p><b>[!UICONTROL Modelllisten]</b> </p> <p>Wählen Sie die ID der Workspace und die Modell-ID aus bzw. ordnen Sie sie zu, die die Modelllisten enthalten, die Sie abrufen möchten.</p> </li> 
        <li> <p><b>[!UICONTROL Modellkalender]</b> </p> <p>Wählen Sie die ID der Workspace aus, die den abzurufenden Modellkalender enthält, oder ordnen Sie sie zu.</p> </li> 

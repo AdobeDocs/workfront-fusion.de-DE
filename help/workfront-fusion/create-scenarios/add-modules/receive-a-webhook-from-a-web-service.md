@@ -4,16 +4,18 @@ description: Wenn ein Webservice derzeit keinen dedizierten Connector in Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 51ef13fb-2978-4927-8d5f-7d83995f11e0
-TQID: https://experienceleague.adobe.com/Ux37ZShkz3kxnJg3Guwqvqt8TISuzV0kAVZ-kKfy0zI
+TQID: 'https://experienceleague.adobe.com/Ux37ZShkz3kxnJg3Guwqvqt8TISuzV0kAVZ-kKfy0zI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 354
+source-wordcount: '354'
 ht-degree: 27%
-
 ---
-
 # Webhook für einen Webservice ohne Connector konfigurieren
 
 Wenn ein Webservice derzeit keinen dedizierten Connector in Workfront Fusion hat, aber das Senden von Webhooks unterstützt, können Sie den Service mit dem benutzerdefinierten Webhook-Modul als sofortigen Trigger zu einem Szenario hinzufügen. Dieser Prozess wird als Empfang eines Webhooks bezeichnet und erfordert einige Konfigurationen auf der Seite der Anwendung, mit der Sie eine Verbindung herstellen.

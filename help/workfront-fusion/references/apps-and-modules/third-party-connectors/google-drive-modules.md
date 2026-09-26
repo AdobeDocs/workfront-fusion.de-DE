@@ -1,25 +1,35 @@
 ---
 title: Google Drive-Module
-description: Mit  [!DNL Adobe Workfront Fusion Google Drive]  Modulen können Sie Ihre Dateien, Ordner oder freigegebenen Laufwerke in Ihrem überwachen, suchen, erstellen, aktualisieren, löschen und verwalten [!DNL Google Drive].
+description: Mit den [!DNL Adobe Workfront Fusion Google Drive]-Modulen können Sie Ihre Dateien, Ordner oder freigegebenen Laufwerke in Ihrem [!DNL Google Drive] überwachen, suchen, erstellen, aktualisieren, löschen und verwalten.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-TQID: https://experienceleague.adobe.com/CZbsq-vawa775PIQ-LzGRxjRIaiHJinVSrwikRnsNPs
+TQID: 'https://experienceleague.adobe.com/CZbsq-vawa775PIQ-LzGRxjRIaiHJinVSrwikRnsNPs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2110
+source-wordcount: '2111'
 ht-degree: 15%
-
 ---
-
 # [!DNL Google Drive]-Module
 
 Mit den Adobe Workfront Fusion [!DNL Google Drive]-Modulen können Sie Ihre Dateien, Ordner oder freigegebenen Laufwerke in Ihrem [!DNL Google Drive] überwachen, suchen, erstellen, aktualisieren, löschen und verwalten.
@@ -184,7 +194,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn ein Kommentar zur ausgewählten 
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Datei]</td> 
+   <td>[!UICONTROL-Datei]</td> 
    <td>Wählen Sie die Datei aus, die auf Kommentare überwacht werden soll.</td> 
   </tr> 
   <tr> 
@@ -331,7 +341,7 @@ Dieses Aktionsmodul kopiert eine Datei an den neuen Speicherort.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ziel]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das Ziel aus, in das Sie eine Datei kopieren möchten.</p> 
     <ul> 
      <li>[!UICONTROL Mein Laufwerk]</li> 
@@ -366,7 +376,7 @@ Dieses Aktionsmodul erstellt einen Ordner am angegebenen Speicherort.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ziel]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das Ziel aus, an dem Sie einen Ordner erstellen möchten.</p> 
     <ul> 
      <li>[!UICONTROL Mein Laufwerk]</li> 
@@ -493,7 +503,7 @@ Dieses Suchmodul sucht anhand von Suchkriterien nach Dateien oder Ordnern.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ziel]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das zu durchsuchende Ziellaufwerk aus.</p> 
     <ul> 
      <li>[!UICONTROL Mein Laufwerk]</li> 
@@ -514,16 +524,16 @@ Dieses Suchmodul sucht anhand von Suchkriterien nach Dateien oder Ordnern.
     <ul> 
      <li> <p><strong>[!UICONTROL Suche innerhalb von Datei-/Ordnernamen]</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL -Abfrage]</strong> </p> <p>Geben Sie einen Teil des Dateinamens oder des vollständigen Dateinamens (einschließlich des Suffix) ein, nach dem gesucht werden soll.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Geben Sie einen Teil des Dateinamens oder des vollständigen Dateinamens (einschließlich des Suffix) ein, nach dem gesucht werden soll.</p> </li> 
        <li> <p><strong>[!UICONTROL Suchoptionen]</strong> </p> <p>Wählen Sie aus, ob Sie nach dem genauen Begriff suchen möchten oder ob Sie nach Namen suchen möchten, die den Suchbegriff enthalten.</p> </li> 
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Volltext]-Suche</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL -Abfrage]</strong> </p> <p>Geben Sie einen beliebigen Suchbegriff ein, den Sie in Ihrem [!DNL Google Drive] suchen möchten.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Geben Sie einen beliebigen Suchbegriff ein, den Sie in Ihrem [!DNL Google Drive] suchen möchten.</p> </li> 
       </ul> </li> 
      <li> <p><strong>Benutzerdefinierte Suchanfrage eingeben</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL -Abfrage]</strong> </p> <p>Geben Sie die benutzerdefinierte Suchabfrage ein. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Nach Dateien suchen] dieses Artikels.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Abfrage]</strong> </p> <p>Geben Sie die benutzerdefinierte Suchabfrage ein. Weitere Informationen finden Sie im Abschnitt [!UICONTROL Nach Dateien suchen] dieses Artikels.</p> </li> 
        <li> <p><strong>Fügen Sie den oben ausgewählten Ordner zur Abfrage hinzu</strong> </p> <p>Sucht in der übergeordneten Sammlung nach dem Ordner. Dadurch werden alle Dateien und Ordner gefunden, die sich direkt in dem oben ausgewählten Ordner befinden.</p> </li> 
       </ul> </li> 
     </ul> </td> 
@@ -552,7 +562,7 @@ Dieses Aktionsmodul aktualisiert die Metadaten oder Inhalte einer Datei.
    <td> <p>Anweisungen zum Verbinden Ihres [!DNL Google Drive]-Kontos mit Workfront Fusion finden Sie unter <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Google Drive] mit [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Ziel]</td> 
+   <td>[!UICONTROL-Ziel]</td> 
    <td> <p>Wählen Sie das Ziel aus, das die Datei enthält, die Sie aktualisieren möchten.</p> 
     <ul> 
      <li>[!UICONTROL Mein Laufwerk]</li> 

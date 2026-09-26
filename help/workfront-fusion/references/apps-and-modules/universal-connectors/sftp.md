@@ -1,21 +1,24 @@
 ---
 title: SFTP-Module
-description: Mit  [!DNL Adobe Workfront Fusion SFTP]  Modulen können Sie Dateiänderungen in einem ausgewählten Ordner/Unterordner überwachen, neue Dateien in den gewünschten Ordner hochladen, vorhandene Dateien, die sich bereits in einem Ordner befinden, ändern oder löschen oder Dateiberechtigungen ändern.
+description: Mit den [!DNL Adobe Workfront Fusion SFTP] können Sie Dateiänderungen in einem ausgewählten Ordner/Unterordner überwachen, neue Dateien in den gewünschten Ordner hochladen, vorhandene Dateien, die sich bereits in einem Ordner befinden, ändern oder löschen oder Dateiberechtigungen ändern.
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
+TQID: 'https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2240
+source-wordcount: '2241'
 ht-degree: 15%
-
 ---
-
 # SFTP-Module
 
 Mit den Adobe Workfront Fusion SFTP-Modulen können Sie Dateiänderungen in einem ausgewählten Ordner/Unterordner überwachen, neue Dateien in den gewünschten Ordner hochladen, vorhandene Dateien ändern oder löschen, die sich bereits in einem Ordner befinden, oder Dateiberechtigungen ändern.
@@ -103,7 +106,7 @@ Um Ihr SFTP-Konto mit Workfront Fusion zu verbinden, müssen Sie eine Verbindung
    <td> <p>Sie können eine Reihe von Algorithmen für den Schlüsselaustausch eingeben. Das Modul priorisiert Algorithmen basierend auf der Reihenfolge, in der sie hinzugefügt wurden. Klicken Sie für jeden Algorithmus, den Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie den Algorithmus aus.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Chiffren] </td> 
+   <td role="rowheader">[!UICONTROL-Chiffren] </td> 
    <td> <p>Sie können einen Satz von Chiffren für den Schlüsselaustausch eingeben. Das Modul priorisiert Chiffren basierend auf der Reihenfolge, in der sie hinzugefügt wurden. Klicken Sie für jede Chiffre, die Sie hinzufügen möchten, auf <b>Element hinzufügen</b> und wählen Sie die Chiffre aus.</p> </td> 
   </tr> 
  </tbody> 
@@ -255,7 +258,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Berechtigungen]</p> </td> 
-   <td> <p>Festlegen der gewünschten Ordnerberechtigungen. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
+   <td> <p>Festlegen der gewünschten Ordnerberechtigungen. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -463,7 +466,7 @@ Ermöglicht das Ändern der Dateiberechtigungen.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Berechtigungen]</p> </td> 
-   <td> <p>Legen Sie die gewünschten Dateiberechtigungen fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
+   <td> <p>Legen Sie die gewünschten Dateiberechtigungen fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -490,7 +493,7 @@ Mit diesem Modul können Sie eine Datei auf den SFTP-Server hochladen.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Berechtigungen]</p> </td> 
-   <td> <p>Legen Sie die gewünschten Berechtigungen für die Datei oder den Ordner fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
+   <td> <p>Legen Sie die gewünschten Berechtigungen für die Datei oder den Ordner fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Puffergröße (B)]</p> </td> 

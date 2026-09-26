@@ -4,16 +4,18 @@ description: Eine Datenstruktur ist ein Dokument, in dem das Format der an Adobe
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-TQID: https://experienceleague.adobe.com/e8cGFEEP3-wxExVZNNRG8bf-6CbpN56xGTGbHSV6MVg
+TQID: 'https://experienceleague.adobe.com/e8cGFEEP3-wxExVZNNRG8bf-6CbpN56xGTGbHSV6MVg'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 242
+source-wordcount: '242'
 ht-degree: 1%
-
 ---
-
 # Datenstrukturen
 
 Eine Datenstruktur ist ein Dokument oder Muster, das das Format der in Adobe Workfront Fusion verarbeiteten Daten detailliert beschreibt. Basierend auf diesem Dokument kann der Szenario-Editor herausfinden, welches Modul welche Art von Daten zurückgibt oder erhält. Die Datenstrukturdokumente werden am häufigsten zum Serialisieren/Analysieren von Datenformaten wie JSON, XML, CSV und anderen verwendet.

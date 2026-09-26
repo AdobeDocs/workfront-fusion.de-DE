@@ -4,16 +4,18 @@ description: Einige Module können Dateien verarbeiten. Diese Module können ent
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-TQID: https://experienceleague.adobe.com/DVCy-0qCEuwZJqbGQPd3Pu9erVaX1wosPUWEtTFLkq4
+TQID: 'https://experienceleague.adobe.com/DVCy-0qCEuwZJqbGQPd3Pu9erVaX1wosPUWEtTFLkq4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 412
+source-wordcount: '412'
 ht-degree: 24%
-
 ---
-
 # Zuordnen einer Datei zwischen Modulen
 
 Einige Module können Dateien verarbeiten. Diese Module können entweder eine Ausgabedatei zur weiteren Verarbeitung zurückgeben oder verlangen, dass eine Datei zur Verarbeitung an sie übergeben wird. Dateien können zugeordnet werden, sodass eine von einem Modul ausgegebene Datei von einem anderen Modul verarbeitet werden kann.

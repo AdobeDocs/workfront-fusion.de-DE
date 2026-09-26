@@ -4,16 +4,18 @@ description: Da die Anwendungen, mit denen Workfront Fusion eine Verbindung hers
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-TQID: https://experienceleague.adobe.com/UZ0f1dI1YPiM9C7dYJYyCg0dhd5F025yG10K5-M5YrM
+TQID: 'https://experienceleague.adobe.com/UZ0f1dI1YPiM9C7dYJYyCg0dhd5F025yG10K5-M5YrM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 373
+source-wordcount: '373'
 ht-degree: 27%
-
 ---
-
 # Aktualisieren eines Moduls auf eine neue Version
 
 Da die Anwendungen, mit denen Workfront Fusion eine Verbindung herstellt, möglicherweise neue Versionen aktualisieren oder veröffentlichen, ist es gelegentlich erforderlich, dass Fusion aktualisierte Module für diese Anwendungen veröffentlicht.
@@ -59,7 +61,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
    ![Aktualisierungssymbol](assets/update-indicator-workfront.png)
 1. Wählen Sie eine der folgenden Optionen:
 
-   * Um ein neues Modul auszuwählen, das dieses ersetzen soll (anstatt ein Upgrade des Moduls durchzuführen), klicken Sie auf **Neue auswählen** und fahren Sie dann wie [Aktualisieren eines Nicht-Workfront-Moduls auf eine neue Version) &#x200B;](#upgrade-a-non-workfront-module-to-a-new-version).
+   * Um ein neues Modul auszuwählen, das dieses ersetzen soll (anstatt ein Upgrade des Moduls durchzuführen), klicken Sie auf **Neue auswählen** und fahren Sie dann wie [Aktualisieren eines Nicht-Workfront-Moduls auf eine neue Version) ](#upgrade-a-non-workfront-module-to-a-new-version).
    * Um nur dieses Modul zu aktualisieren und die Modulkonfiguration beizubehalten, klicken Sie auf **Aktualisieren**.
    * Um alle Workfront-Module im Szenario zu aktualisieren, klicken Sie auf **Alle aktualisieren**.
 

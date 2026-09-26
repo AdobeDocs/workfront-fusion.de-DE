@@ -4,18 +4,20 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie ein Archiv, z.
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-TQID: https://experienceleague.adobe.com/hcfjBqNDF3zEVJMLmekD-O8lmzMLyKk6Xp9JKTXcVWc
+TQID: 'https://experienceleague.adobe.com/hcfjBqNDF3zEVJMLmekD-O8lmzMLyKk6Xp9JKTXcVWc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 651
+source-wordcount: '651'
 ht-degree: 32%
-
 ---
-
 # [!UICONTROL Archivieren] Module
 
 In einem Adobe Workfront Fusion-Szenario können Sie ein Archiv, z. B. eine ZIP-Datei, in Ihrem Szenario verwenden, sodass Sie es in Ihren Automatisierungen oder Integrationen verwenden können.
@@ -113,7 +115,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td> <p>Wählen Sie aus, ob Sie Dateien zu einem [!UICONTROL ZIP]-, GZIP- oder einem [!UICONTROL TAR]-Archiv hinzufügen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL -Kommentar]</td> 
+   <td>[!UICONTROL-Kommentar]</td> 
    <td>Geben Sie einen Kommentar ein, den Sie dem Archiv hinzufügen möchten.</td> 
   </tr> 
   <tr> 
@@ -137,7 +139,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
 
 >[!BEGINSHADEBOX]
 
-**Beispiel:** eingehende E-Mails mit dem Modul [!DNL Gmail] > [!UICONTROL E-Mails &#x200B;]. Wenn eine E-Mail empfangen wird, werden ihre Anhänge in einzelne Bundles iteriert, dann in der [!DNL ZIP] archiviert und im definierten Dropbox-Ordner gespeichert.
+**Beispiel:** eingehende E-Mails mit dem Modul [!DNL Gmail] > [!UICONTROL E-Mails ]. Wenn eine E-Mail empfangen wird, werden ihre Anhänge in einzelne Bundles iteriert, dann in der [!DNL ZIP] archiviert und im definierten Dropbox-Ordner gespeichert.
 
 ![Beispiel für Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
@@ -157,7 +159,7 @@ Dieses Transformatormodul komprimiert Binärdaten mit einem Deflationsalgorithmu
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Daten] </td> 
+   <td>[!UICONTROL-Daten] </td> 
    <td> <p>Geben Sie die Daten, die Sie komprimieren möchten, mit der Deflate-Funktion ein oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 
@@ -172,7 +174,7 @@ Dieses Transformatormodul dekomprimiert Binärdaten mithilfe eines Inflationsalg
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL -Daten] </td> 
+   <td>[!UICONTROL-Daten] </td> 
    <td> <p>Geben Sie die Daten, die Sie dekomprimieren möchten, mithilfe der Inflate-Funktion ein oder mappen Sie sie.</p> </td> 
   </tr> 
  </tbody> 

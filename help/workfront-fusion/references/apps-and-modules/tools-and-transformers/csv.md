@@ -4,18 +4,21 @@ description: Mit den CSV-Modulen von Adobe Workfront Fusion können Sie CSV-Date
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-TQID: https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs
+TQID: 'https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 941
+source-wordcount: '952'
 ht-degree: 10%
-
 ---
-
 # CSV
 
 Mit den Adobe Workfront Fusion [!UICONTROL CSV]-Modulen können Sie CSV-Dateien erstellen und CSV-Text aus einem empfangenen Textwert oder einer Datei analysieren.
@@ -55,7 +58,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## [!UICONTROL CSV erstellen]
 
-Mit [!UICONTROL &#x200B; Aggregator „CSV erstellen] können Sie CSV-Text aus empfangenen Textwerten erstellen.
+Mit [!UICONTROL  Aggregator „CSV erstellen] können Sie CSV-Text aus empfangenen Textwerten erstellen.
 
 Weitere Informationen zu Aggregatoren finden Sie unter [Aggregatormodul](/help/workfront-fusion/references/modules/aggregator-module.md).
 
@@ -84,7 +87,7 @@ Weitere Informationen zu Aggregatoren finden Sie unter [Aggregatormodul](/help/w
 
 ## [!UICONTROL CSV erstellen (erweitert)]
 
-Mit [!UICONTROL &#x200B; Aggregator CSV erstellen (erweitert] können Sie CSV-Text aus empfangenen Textwerten erstellen. Sie verwendet eine Datenstruktur, die die CSV-Spalten in der resultierenden CSV-Datei definiert. Nach der Definition erscheinen die Spalten als Felder bei der Einrichtung des CSV-Moduls und können einem späteren Modul im Szenario zugeordnet werden.
+Mit [!UICONTROL  Aggregator CSV erstellen (erweitert] können Sie CSV-Text aus empfangenen Textwerten erstellen. Sie verwendet eine Datenstruktur, die die CSV-Spalten in der resultierenden CSV-Datei definiert. Nach der Definition erscheinen die Spalten als Felder bei der Einrichtung des CSV-Moduls und können einem späteren Modul im Szenario zugeordnet werden.
 
 Weitere Informationen zu Aggregatoren finden Sie unter [Aggregatormodul](/help/workfront-fusion/references/modules/aggregator-module.md).
 
@@ -97,7 +100,7 @@ Weitere Informationen zu Aggregatoren finden Sie unter [Aggregatormodul](/help/w
         <td>Wählen Sie das Modul aus, das die Felder ausgibt, die Sie zum Erstellen der CSV-Datei verwenden möchten.</td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Datenstruktur]</td> 
+   <td role="rowheader">[!UICONTROL-Datenstruktur]</td> 
    <td> <p>Wählen Sie die Datenstruktur aus, um die Felder wie gewünscht zu aggregieren. Nachdem Sie die Datenstruktur definiert haben, können Sie die Elemente den entsprechenden Feldern zuordnen.</p> <p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md" class="MCXref xref">Datenstrukturen</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -123,7 +126,7 @@ Weitere Informationen zu Aggregatoren finden Sie unter [Aggregatormodul](/help/w
 Dieses Beispiel zeigt, wie Google-Kontakte in eine CSV-Datei mit zwei Spalten namens „Vollständiger Name“ und „E-Mail“ exportiert werden. Das Ausgabepaket des Moduls [!UICONTROL Google-] > [!UICONTROL Kontakte aus einer Gruppe abrufen] weist die folgende Struktur auf. Die E-Mail-Adressen werden in den <code>[!UICONTROL E-Mails[]]</code> item: ein Array von Sammlungen, wobei jede Sammlung zwei Elemente enthält: <code>label</code> und <code>E-Mail</code>.
 ![Transformieren](/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png)
 
-Das Modul Einfache [!DNL Create CSV] bietet eine Liste von Kontrollkästchen, die den Elementen auf der obersten Ebene eines Bundles entsprechen. Wenn Sie versuchen, „Vollständiger Name<code> auszuwählen,</code> und <code>Emails</code> für Elemente erzeugt [!UICONTROL &#x200B; Modul &#x200B;]CSV erstellen) die folgende Ausgabe, die möglicherweise nicht das ist, was Sie möchten:
+Das Modul Einfache [!DNL Create CSV] bietet eine Liste von Kontrollkästchen, die den Elementen auf der obersten Ebene eines Bundles entsprechen. Wenn Sie versuchen, „Vollständiger Name<code> auszuwählen,</code> und <code>Emails</code> für Elemente erzeugt [!UICONTROL  Modul ]CSV erstellen) die folgende Ausgabe, die möglicherweise nicht das ist, was Sie möchten:
 
 ```
 "emails","fullName"

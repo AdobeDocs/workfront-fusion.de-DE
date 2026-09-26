@@ -4,16 +4,18 @@ description: Die Adobe Workfront Fusion [!UICONTROL JWT]-App bietet ein Modul, d
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-TQID: https://experienceleague.adobe.com/90zhDiLzi34ES2MPE-hg26mmSHZ-XQIgZJIFeW4vwy4
+TQID: 'https://experienceleague.adobe.com/90zhDiLzi34ES2MPE-hg26mmSHZ-XQIgZJIFeW4vwy4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 528
+source-wordcount: '528'
 ht-degree: 18%
-
 ---
-
 # [!UICONTROL JWT]-Modul
 
 Die Adobe Workfront Fusion [!UICONTROL JWT]-App bietet ein Modul, das JWT-Token basierend auf dem bereitgestellten Algorithmus erstellt.
@@ -75,7 +77,7 @@ Dieses Modul generiert ein JWT basierend auf dem ausgewählten Algorithmus.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Algorithmus]</td> 
+   <td role="rowheader">[!UICONTROL-Algorithmus]</td> 
    <td> <p>Wählen Sie den Algorithmus aus, mit dem Sie den JWT generieren möchten.</p> <ul>
    <li><b>HS256</b>: HMAC mit SHA-256-Hash-Algorithmus</li>
    <li><b>HS384</b>: HMAC mit SHA-384-Hash-Algorithmus</li>
@@ -106,7 +108,7 @@ Dieses Modul generiert ein JWT basierend auf dem ausgewählten Algorithmus.
    <li><b>Zielgruppe</b></li>
    <li><b>Aussteller</b></li>
    <li><b>jwtid</b></li>
-   <li><b>Subjekt</b></li>
+   <li><b>subject</b></li>
    <li><b>noTimestamp</b></li>
    <li><b>Kopfzeile</b></li>
    <li><b>keyId</b></li>

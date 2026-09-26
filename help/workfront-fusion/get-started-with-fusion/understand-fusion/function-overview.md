@@ -4,18 +4,20 @@ description: Beim Zuordnen von Elementen können Sie Funktionen verwenden, um ei
 author: Becky
 feature: Workfront Fusion
 exl-id: e07730cb-52be-46db-a365-93cdbed1021c
-TQID: https://experienceleague.adobe.com/qms9CZ6iX1V4AtOotaaLWy3FxiTm5C7S9hYgJmx-7S4
+TQID: 'https://experienceleague.adobe.com/qms9CZ6iX1V4AtOotaaLWy3FxiTm5C7S9hYgJmx-7S4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: '296'
 ht-degree: 59%
-
 ---
-
 # Überblick über Funktionen
 
 Workfront Fusion enthält integrierte Funktionen, mit denen Sie einfache oder komplexe Formeln erstellen können. Diese Funktionen decken eine Vielzahl von Anwendungsfällen ab, einschließlich Funktionen für Arrays, Zeichenfolgen, Zahlen und Daten aus vorherigen Modulen.
@@ -35,10 +37,10 @@ Das Zuordnungs-Panel enthält die folgenden Registerkarten. Jede Registerkarte u
 
 | Funktionstyp | Weitere Informationen finden Sie unter: |
 | --- | --- |
-| **Aus anderen Modulen zuordnen**<br>![&#x200B; Aus anderen Modulen zuordnen](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Informationen zwischen Modulen zuordnen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-| **Allgemeine Funktionen**<br>![&#x200B; Allgemeine Funktionen](assets/toolbar-icon-general-function.png) | [Allgemeine Funktionen](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
-| **Mathematische Funktionen**<br>![&#x200B; Mathematische Funktionen](assets/toolbar-icon-math-functions.png) | [Mathematische Funktionen](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
-| **Text- und Binärfunktionen**<br>![&#x200B; Zeichenfolgen-Funktionen](assets/toolbar-icon-text-binary-functions.png) | [Zeichenfolgen-Funktionen](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
+| **Aus anderen Modulen zuordnen**<br>![ Aus anderen Modulen zuordnen](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Informationen zwischen Modulen zuordnen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+| **Allgemeine Funktionen**<br>![ Allgemeine Funktionen](assets/toolbar-icon-general-function.png) | [Allgemeine Funktionen](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
+| **Mathematische Funktionen**<br>![ Mathematische Funktionen](assets/toolbar-icon-math-functions.png) | [Mathematische Funktionen](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
+| **Text- und Binärfunktionen**<br>![ Zeichenfolgen-Funktionen](assets/toolbar-icon-text-binary-functions.png) | [Zeichenfolgen-Funktionen](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
 | **Datum und Uhrzeit** <br> ![Datums- und Uhrzeitfunktionen](assets/toolbar-icon-date-time-functions.png) | <ul><li>[Datums- und Uhrzeitfunktionen](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Token zum Formatieren von Datum und Uhrzeit](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Token zum Parsen von Datum und Uhrzeit](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **Funktionen zum Arbeiten mit Arrays**<br> ![Array-Funktionen](assets/toolbar-icon-functions-for-arrays.png) | [Array-Funktionen](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 

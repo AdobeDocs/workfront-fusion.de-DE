@@ -10,10 +10,12 @@ product_v2:
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
     internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 4f637dcb9d7865f73b41faa5b0acf397944bb559
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '5202'
 ht-degree: 11%
@@ -22,7 +24,7 @@ ht-degree: 11%
 
 Mit den Modulen Adobe Workfront Unified Review and Approvals können Sie Genehmigungsdetails abrufen, eine Entscheidung über ein Asset treffen, Genehmigungsteilnehmer hinzufügen oder löschen, Genehmigungsphasen hinzufügen oder aktualisieren, Phasen sperren oder entsperren und benutzerdefinierte API-Aufrufe durchführen.
 
-Informationen zu einheitlichen Workfront-Überprüfungen und -Genehmigungen finden Sie unter [Einheitliche Überprüfung und Genehmigung - Übersicht](https://experienceleague.adobe.com/de/docs/workfront/using/review-and-approve-work/document-approvals-overview) in der Dokumentation zu Workfront.
+Informationen zu einheitlichen Workfront-Überprüfungen und -Genehmigungen finden Sie unter [Einheitliche Überprüfung und Genehmigung - Übersicht](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) in der Dokumentation zu Workfront.
 
 ## Zugriffsanforderungen
 

@@ -4,19 +4,23 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-TQID: https://experienceleague.adobe.com/fBUiP2f1zw2GMSqvZzoak1mQlnJrBATZw56YazKzuQw
+TQID: 'https://experienceleague.adobe.com/fBUiP2f1zw2GMSqvZzoak1mQlnJrBATZw56YazKzuQw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 3723
+source-wordcount: '3723'
 ht-degree: 27%
-
 ---
-
 # [!DNL Adobe Journey Optimizer]-Module
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Adobe Journey Optimizer] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden. Mit [!DNL Adobe Journey Optimizer]-Modulen können Sie Datensätze erstellen, lesen, aktualisieren oder löschen oder einen benutzerdefinierten API-Aufruf an die [!DNL Adobe Journey Optimizer]-API durchführen.
@@ -203,7 +207,7 @@ Dieses Aktionsmodul erstellt einen Begrenzungs-Endpunkt oder eine Drosselungskon
    <td>Geben Sie die Adobe IMS-ID der Organisation ein oder mappen Sie sie.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methoden]</td> 
+   <td role="rowheader">[!UICONTROL-Methoden]</td> 
    <td>Wählen Sie die in dieser Konfiguration zu verwendenden Methoden aus.</td> 
   </tr> 
   <tr> 
@@ -243,7 +247,7 @@ Dieses Aktionsmodul erstellt einen Begrenzungs-Endpunkt oder eine Drosselungskon
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Methoden]</td> 
+   <td role="rowheader">[!UICONTROL-Methoden]</td> 
    <td>Wählen Sie die in dieser Konfiguration zu verwendenden Methoden aus.</td> 
   </tr> 
   <tr> 
@@ -441,7 +445,7 @@ Dieses Aktionsmodul erstellt ein Multi-Artefakt-Paket.
    <td>Wählen Sie den Pakettyp aus, den Sie erstellen möchten.<ul><li><p><b>Voll</b></p>Das Paket enthält alle Artefakte</p></li><li><p><b>Teilweise</b></p><p>Das Paket enthält nur Artefakte, die Sie hinzufügen. </p></li><ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Artefakte]</td> 
+   <td role="rowheader">[!UICONTROL-Artefakte]</td> 
    <td>Wenn Sie ein Teilpaket erstellen, klicken Sie für jedes Artefakt, das Sie hinzufügen möchten, auf <b>Artefakt hinzufügen</b> und geben Sie die ID, den Typ und den Titel des Artefakts an. </td> 
   </tr> 
   <tr> 
@@ -896,7 +900,7 @@ Dieses Aktionsmodul erstellt eine neue Inhaltsvorlage oder ein neues Inhaltsfrag
    <td>Um benutzerdefinierte Eigenschaften in die neue Vorlage aufzunehmen, wählen Sie „Metadaten hinzufügen“ und geben Sie den Schlüssel und den Wert der Metadaten ein oder ordnen Sie ihn zu. Wiederholen Sie den Vorgang für jedes benutzerdefinierte Feld, das Sie einbeziehen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Inhalt]</td> 
+   <td role="rowheader">[!UICONTROL-Inhalt]</td> 
    <td>Geben Sie den Inhalt des Fragments ein oder mappen Sie ihn.</td> 
   </tr> 
   <tr> 

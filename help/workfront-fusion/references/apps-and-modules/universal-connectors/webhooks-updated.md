@@ -4,18 +4,21 @@ description: Ein Webhook ist ein HTTP-Aufruf, der von einem Ereignis ausgelöst 
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-TQID: https://experienceleague.adobe.com/VuJQ4w3kfMUJ4H-m1PdN-F8242KOJRPz1holJRxSE0Y
+TQID: 'https://experienceleague.adobe.com/VuJQ4w3kfMUJ4H-m1PdN-F8242KOJRPz1holJRxSE0Y'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 49e408630449952f67d3530f03b7a8755e0e6f6a
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 3236
+source-wordcount: '3236'
 ht-degree: 6%
-
 ---
-
 # Webhooks
 
 
@@ -471,30 +474,30 @@ Die maximale Wartezeit für das Senden einer Antwort beträgt 5 Minuten. Wenn di
 >
 >**Beispiel:**
 >
->Konfigurieren Sie [!UICONTROL &#x200B; Modul &#x200B;]Webhook-Antwort“ wie folgt:
+>Konfigurieren Sie [!UICONTROL  Modul ]Webhook-Antwort“ wie folgt:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>2xx Erfolgs-HTTP-Status-Code, z. B. 200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Text] </td> 
->&gt;   <td> <p>HTML Code</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Benutzerdefinierte Kopfzeilen]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>key</strong>: Content-Type</li> 
->&gt;     <li><strong>Wert</strong>: text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>2xx Erfolgs-HTTP-Status-Code, z. B. 200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Text] </td> 
+&gt;   <td> <p>HTML Code</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Benutzerdefinierte Kopfzeilen]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>key</strong>: Content-Type</li> 
+&gt;     <li><strong>Wert</strong>: text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Benutzerdefinierte Kopfzeilen](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -509,23 +512,23 @@ Die maximale Wartezeit für das Senden einer Antwort beträgt 5 Minuten. Wenn di
 >**Beispiel:** Konfigurieren Sie das Modul [!UICONTROL Webhook-]) wie folgt:
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
->&gt;   <td> <p>3xx HTTP-Status-Code der Weiterleitung, z. B. 303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Benutzerdefinierte Kopfzeilen]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL key]</strong>: Speicherort</li> 
->&gt;     <li><strong>[!UICONTROL Value]</strong>: Die URL, zu der Sie umleiten möchten.</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td> <p>3xx HTTP-Status-Code der Weiterleitung, z. B. 303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[!UICONTROL Benutzerdefinierte Kopfzeilen]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[!UICONTROL key]</strong>: Speicherort</li> 
+&gt;     <li><strong>[!UICONTROL Value]</strong>: Die URL, zu der Sie umleiten möchten.</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webhook-Antwort](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

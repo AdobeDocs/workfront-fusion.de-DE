@@ -4,16 +4,18 @@ description: Sie können MIME-Typen in Adobe Workfront Fusion verwenden. MIME-Ty
 author: Becky
 feature: Workfront Fusion
 exl-id: 9259356b-5b42-4b6d-9854-fce9718d14e3
-TQID: https://experienceleague.adobe.com/65lJuH7aL35rZCYDowjJuxuQAh88LHNyL3XRQVDJoOY
+TQID: 'https://experienceleague.adobe.com/65lJuH7aL35rZCYDowjJuxuQAh88LHNyL3XRQVDJoOY'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 358
+source-wordcount: '358'
 ht-degree: 25%
-
 ---
-
 # [!UICONTROL MIME] Module
 
 Sie können MIME-Typen in Adobe Workfront Fusion verwenden. MIME-Typen (Multipurpose Internet Mail Extension) sind Bezeichnungen, mit denen Software verschiedene Arten von im Internet freigegebenen Daten identifizieren kann. Webserver und Browser verwenden den MIME-Typ, um zu bestimmen, was mit einer Datei getan werden soll. Beispielsweise wird eine Datei mit dem MIME-Typ `text/html` in einem Browser anders verarbeitet als eine Datei mit dem MIME-Typ `image/jpeg`. MIME-Typen funktionieren unabhängig von Betriebssystem und Hardware.
@@ -78,12 +80,12 @@ Dieses Transformatormodul gibt den MIME-Typ zurück, der mit einem bestimmten Da
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Datei]</td> 
+   <td role="rowheader">[!UICONTROL-Datei]</td> 
    <td> <p>Geben Sie die Datei ein, für die Sie den MIME-Typ bestimmen möchten, oder ordnen Sie sie zu. </p> <p>Sie können die Datei wie folgt eingeben:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Dateipfad]</strong> </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span>/file/image.jpeg</p> </li> 
      <li><strong>[!UICONTROL Dateiname]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span>image.jpeg</p> </li> 
-     <li><strong>[!UICONTROL -Dateierweiterung]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span>jpeg</p> </li> 
+     <li><strong>[!UICONTROL-Dateierweiterung]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span>jpeg</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

@@ -4,18 +4,21 @@ description: In einem Adobe Workfront Fusion-Szenario können Sie Workflows auto
 author: Becky
 feature: Workfront Fusion
 exl-id: b7e16180-1db8-4aff-bb7b-69ca98194b00
-TQID: https://experienceleague.adobe.com/3Zi0MPk58Fvcshiq87skNQ3LlAMwGyRJ54KnktwX8cw
+TQID: 'https://experienceleague.adobe.com/3Zi0MPk58Fvcshiq87skNQ3LlAMwGyRJ54KnktwX8cw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1136
+source-wordcount: '1136'
 ht-degree: 34%
-
 ---
-
 # [!DNL Cvent]-Module
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Cvent] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
@@ -123,7 +126,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 
 * [[!UICONTROL Benutzerdefinierter API-Aufruf]](#create-meeting-request)
 * [[!UICONTROL Eintrag lesen]](#read-a-record)
-* [[!UICONTROL Registrieren des &#x200B;]](#register-invitee)
+* [[!UICONTROL Registrieren des ]](#register-invitee)
 * [[!UICONTROL Einladende hinzufügen]](#add-invitee)
 * [[!UICONTROL Kontakt löschen]](#delete-contact)
 * [[!UICONTROL Kontakt aktualisieren]](#update-contact)
@@ -183,7 +186,7 @@ Dieses Aktionsmodul liest Informationen zu einem bestimmten Datensatz.
  </tbody> 
 </table>
 
-#### [!UICONTROL Registrieren des &#x200B;]
+#### [!UICONTROL Registrieren des ]
 
 Dieses Aktionsmodul registriert eine Einladung für ein Ereignis.
 

@@ -1,21 +1,24 @@
 ---
 title: Frame.io (Legacy)-Module
-description: Die [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] Konto.
+description: Mit den [!DNL Adobe Workfront Fusion Frame].io-Modulen können Sie Assets und Kommentare in Ihrem [!DNL Frame.io]-Konto überwachen, erstellen, aktualisieren, abrufen oder löschen.
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-TQID: https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4
+TQID: 'https://experienceleague.adobe.com/uL3krmkiGJ5VPBQRbd1ynAApZVNcEaMGVGPmVPXKVV4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2664
+source-wordcount: '2681'
 ht-degree: 44%
-
 ---
-
 # [!DNL Frame.io] Legacy-Module
 
 >[!IMPORTANT]
@@ -114,7 +117,7 @@ Sie können eine Verbindung zu [!DNL Frame.io] über ein API-Token oder mithilfe
 
 ### Verbindung zu [!DNL Frame.io] über ein API-Token herstellen
 
-Um Ihr [!DNL Frame.io]-Konto mithilfe eines API-Tokens mit Workfront Fusion zu verbinden, müssen Sie das API-Token in Ihrem [!DNL Frame.io]-Konto erstellen und in das Dialogfeld [!DNL Frame.io]&#x200B;[!UICONTROL &#x200B; Verbindung erstellen] von Workfront Fusion einfügen.
+Um Ihr [!DNL Frame.io]-Konto mithilfe eines API-Tokens mit Workfront Fusion zu verbinden, müssen Sie das API-Token in Ihrem [!DNL Frame.io]-Konto erstellen und in das Dialogfeld [!DNL Frame.io][!UICONTROL  Verbindung erstellen] von Workfront Fusion einfügen.
 
 1. Melden Sie sich bei Ihrem [!DNL Frame.io] an.
 1. Navigieren Sie zur Seite **[!UICONTROL Token]** im [!DNL Frame.io] Developer.

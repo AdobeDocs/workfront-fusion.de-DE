@@ -4,18 +4,21 @@ description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
-TQID: https://experienceleague.adobe.com/tcZa29ScrpuQdLtY973vxCXPoPvuJ-X15ms7wDs5p04
+TQID: 'https://experienceleague.adobe.com/tcZa29ScrpuQdLtY973vxCXPoPvuJ-X15ms7wDs5p04'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 988
+source-wordcount: '988'
 ht-degree: 24%
-
 ---
-
 # [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]-Modul
 
 Mit diesem Adobe Workfront Fusion-Modul können Sie eine HTTP-Anfrage mit HTTP-Standardautorisierung konfigurieren und an einen Server senden. Die empfangene HTTP-Antwort ist dann im Ausgabepaket enthalten.
@@ -77,7 +80,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"></td> 
+   <td role="rowheader">[!UICONTROL]</td> 
    <td> <p>Wählen Sie den Schlüssel aus, der Ihre grundlegenden Authentifizierungsdaten enthält, oder klicken Sie auf <strong>[!UICONTROL Hinzufügen]</strong>, um Ihre Anmeldeinformationen einem neuen Schlüssel hinzuzufügen. </p> <p>Hinweis: Sie können weitere Anmeldeinformationen hinzufügen, um einfach zwischen den einzelnen Verbindungen zu wechseln.</p> </td> 
   </tr> 
   <tr> 
@@ -114,7 +117,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] ist eine mehrteilige HTTP-Anfrage zum Senden von Dateien und Daten. Es wird häufig verwendet, um Dateien auf den Server hochzuladen.</p> <p>Fügen Sie Felder hinzu, die in der Anfrage gesendet werden sollen. Jedes Feld muss ein Schlüssel-Wert-Paar enthalten.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL text]</strong> </p> <p>Geben Sie den Schlüssel und den Wert ein, die innerhalb des Anfragetexts gesendet werden sollen.</p> </li> 
-       <li> <p><strong>[!UICONTROL -Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten. Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Datei zu.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten. Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Datei zu.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
