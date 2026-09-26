@@ -77,7 +77,7 @@ Dieses Modul generiert ein JWT basierend auf dem ausgewählten Algorithmus.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Algorithmus]</td> 
+   <td role="rowheader">[!UICONTROL -Algorithmus]</td> 
    <td> <p>Wählen Sie den Algorithmus aus, mit dem Sie den JWT generieren möchten.</p> <ul>
    <li><b>HS256</b>: HMAC mit SHA-256-Hash-Algorithmus</li>
    <li><b>HS384</b>: HMAC mit SHA-384-Hash-Algorithmus</li>

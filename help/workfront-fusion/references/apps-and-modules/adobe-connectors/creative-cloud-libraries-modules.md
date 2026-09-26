@@ -118,7 +118,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 
 * [[!UICONTROL Element hochladen]](#upload-an-element)
 
-* [!UICONTROL [Neues Element in Bibliothek ansehen]](#watch-new-element-in-library)
+* [[!UICONTROL [Neues Element in Bibliothek ansehen]]](#watch-new-element-in-library)
 
 * [[!UICONTROL Aktualisierte Elemente ansehen]](#watch-updated-elements)
 
@@ -167,7 +167,7 @@ Dieses Aktionsmodul gibt ein einzelnes Element aus einer Bibliothek zurück.
       <td>Geben Sie die ID des Elements ein, das Sie abrufen möchten, oder ordnen Sie sie zu.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Auswahl]</td>
+      <td role="rowheader">[!UICONTROL -Auswahl]</td>
       <td>
         <p>Wählen Sie den Typ der Informationen aus, die das Modul zurückgibt. </p>
         <ul>
@@ -182,7 +182,7 @@ Dieses Aktionsmodul gibt ein einzelnes Element aus einer Bibliothek zurück.
             <p>Alle verfügbaren Daten</p>
           </li>
           <li>
-            <p><b>[!UICONTROL-Darstellungen]</b>
+            <p><b>[!UICONTROL -Darstellungen]</b>
             </p>
             <p>Eine reduzierte Liste von Assets, die mit dem Bibliothekselement verknüpft sind</p>
           </li>
@@ -217,7 +217,7 @@ Dieses Aktionsmodul ruft eine Liste von Elementen in einer Bibliothek ab.
       <td >Geben Sie einen MIME-Typ ein oder ordnen Sie ihn zu, um die Ergebnisse auf Elemente zu beschränken, die mit dem angegebenen MIME-Typ identifiziert werden. Beispiel: <code>string</code>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL-Auswahl]</td>
+      <td role="rowheader">[!UICONTROL -Auswahl]</td>
       <td>
         <p>Wählen Sie den Typ der Informationen aus, die das Modul zurückgibt. </p>
         <ul>
@@ -232,7 +232,7 @@ Dieses Aktionsmodul ruft eine Liste von Elementen in einer Bibliothek ab.
             <p>Alle verfügbaren Daten</p>
           </li>
           <li>
-            <p><b>[!UICONTROL-Darstellungen]</b>
+            <p><b>[!UICONTROL -Darstellungen]</b>
             </p>
             <p>Eine reduzierte Liste von Assets, die mit dem Bibliothekselement verknüpft sind</p>
           </li>

@@ -23,7 +23,7 @@ ht-degree: 24%
 
 Mit den Adobe Workfront Fusion [!DNL Google Team Drive]-Modulen können Sie Dateien überwachen, hochladen, aktualisieren, kopieren, löschen oder abrufen und Ordner in Ihrem [!DNL Google Shared Drive] erstellen.
 
-Um [!DNL Google Team Drive] mit Adobe Workfront Fusion verwenden zu können, benötigen Sie ein [!DNL Google Workspace]. Wenn Sie noch kein solches Konto haben, können Sie ein [!DNL Google Workspace] Konto bei der [[!DNL Google Workspace] Anmeldeseite“ ](https://workspace.google.com/business/signup/welcome).
+Um [!DNL Google Team Drive] mit Adobe Workfront Fusion verwenden zu können, benötigen Sie ein [!DNL Google Workspace]. Wenn Sie noch kein solches Konto haben, können Sie ein [!DNL Google Workspace] Konto bei der [[!DNL Google Workspace] Anmeldeseite“ &#x200B;](https://workspace.google.com/business/signup/welcome).
 
 In einem Adobe Workfront Fusion-Szenario können Sie Workflows automatisieren, die [!DNL Google Team Drive] verwenden, und diese mit verschiedenen Anwendungen und Services von Drittanbietern verbinden.
 
@@ -350,7 +350,7 @@ Ruft Dateien- und/oder Ordnerdetails basierend auf dem Suchbegriff ab.
    <td> <p>Wählen Sie die Art der Suche aus, die Sie durchführen möchten - siehe unten.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL-Abfrage]</p> </td> 
+   <td> <p>[!UICONTROL -Abfrage]</p> </td> 
    <td> 
     <ul> 
      <li style="font-weight: bold;"> <p>[!UICONTROL Innerhalb von Dateinamen suchen]</p> <p style="font-weight: normal;">Geben Sie den Dateinamen (einschließlich der Dateierweiterung) ein, wenn die Option [!UICONTROL Suche nach exaktem Begriff] ausgewählt ist, oder geben Sie den Teil des Namens ein, wenn die Option [!UICONTROL Suche nach Namen, die den gesuchten Begriff enthalten] ausgewählt ist.</p> </li> 

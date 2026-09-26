@@ -65,13 +65,13 @@ Das Modul [!UICONTROL XML] > [!UICONTROL XML erstellen] konvertiert ein Bundle i
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Datenstruktur]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Datenstruktur]</p> </td> 
    <td> <p>Die Datenstruktur beschreibt die Struktur der resultierenden XML. Wenn Sie über ein Beispiel für die XML verfügen, die Sie erstellen möchten, können Sie damit die Datenstruktur generieren:</p> 
     <ol> 
-     <li value="1">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Hinzufügen</strong>.</li> 
+     <li value="1">Klicken Sie auf die Schaltfläche <strong>Hinzufügen</strong>.</li> 
      <li value="2">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Generator]</strong>.</li> 
      <li value="3">Kopieren Sie das XML-Beispiel und fügen Sie es in das Feld Beispieldaten ein.</li> 
-     <li value="4">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Speichern</strong>.</li> 
+     <li value="4">Klicken Sie auf die Schaltfläche <strong>Speichern</strong>.</li> 
      <li value="5">Stellen Sie sicher, dass die Datenstruktur erfolgreich generiert wurde.</li> 
      <li value="6">Klicken Sie auf <strong>[!UICONTROL Speichern]</strong>, um die Datenstruktur zu speichern.</li> 
     </ol> </td> 
@@ -167,10 +167,10 @@ Das Modul [!UICONTROL XML] > [!UICONTROL Parse XML] analysiert einen XML-formati
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Datenstruktur]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Datenstruktur]</p> </td> 
    <td> <p>Die Datenstruktur beschreibt die Struktur der XML, um die Ausgabe des Moduls im Zuordnungsbereich für die folgenden Module verfügbar zu machen.</p> <p>Wenn Sie über ein Beispiel für die XML verfügen, die Sie parsen möchten, können Sie sie zum Generieren der Datenstruktur verwenden:</p> 
     <ol> 
-     <li value="1">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Hinzufügen</strong>.</li> 
+     <li value="1">Klicken Sie auf die Schaltfläche <strong>Hinzufügen</strong>.</li> 
      <li value="2">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Generator]</strong>.</li> 
      <li value="3">Kopieren Sie das XML-Beispiel und fügen Sie es in das Feld <strong>[!UICONTROL Beispieldaten]</strong> ein.</li> 
      <li value="4">Klicken Sie auf <strong>[!UICONTROL Speichern]</strong>.</li> 
@@ -196,7 +196,7 @@ Das Modul [!UICONTROL XML] > [!UICONTROL Parse XML] analysiert einen XML-formati
 So laden Sie eine XML-Datei von einer URL herunter und analysieren ihren Inhalt:
 
 1. Erstellen Sie ein neues Szenario.
-1. Fügen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL Datei ]&quot; hinzu
+1. Fügen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL Datei &#x200B;]&quot; hinzu
 1. Öffnen Sie die -Konfiguration des Moduls und konfigurieren Sie sie wie folgt:
 
    **URL**: URL der XML-Datei (z. B. `https://siftrss.com/f/rqLy05ayMBJ`)
@@ -211,10 +211,10 @@ So laden Sie eine XML-Datei von einer URL herunter und analysieren ihren Inhalt:
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Datenstruktur]</td> 
+      <td role="rowheader">[!UICONTROL -Datenstruktur]</td> 
       <td> 
        <ol> 
-        <li value="1">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Hinzufügen</strong>.</li> 
+        <li value="1">Klicken Sie auf die Schaltfläche <strong>Hinzufügen</strong>.</li> 
         <li value="2">Klicken Sie auf die Schaltfläche <strong>[!UICONTROL Generator]</strong>.</li> 
         <li value="3">Öffnen Sie in Ihrem Webbrowser eine neue Registerkarte oder ein neues Fenster.</li> 
         <li value="4">Fügen Sie die im dritten Schritt verwendete URL in die Adressleiste ein und rufen Sie die XML-Datei ab.</li> 
@@ -255,6 +255,6 @@ wird in dieses Bundle konvertiert:
 
 >[!ENDSHADEBOX]
 
-## Fehlerbehebung: Daten aus dem Modul [!UICONTROL XML analysieren“ können nicht ] werden
+## Fehlerbehebung: Daten aus dem Modul [!UICONTROL XML analysieren“ können nicht &#x200B;] werden
 
 Stellen Sie sicher, dass die Datenstruktur korrekt definiert ist. Alternativ können Sie eine leere Datenstruktur verwenden und das Modul mindestens einmal ausführen, um eine XML-Eingabe zu verarbeiten.

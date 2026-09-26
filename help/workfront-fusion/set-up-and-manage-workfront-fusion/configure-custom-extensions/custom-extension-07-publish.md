@@ -52,7 +52,7 @@ Standardmäßig zeigt Fusion nur **veröffentlichte** Erweiterungen an. Hierbei 
 Eine Bereitstellung im **Staging**-Arbeitsbereich wird nicht veröffentlicht und daher nicht eigenständig in Fusion angezeigt. Es gibt zwei Möglichkeiten, eine Erweiterung zu testen, bevor Sie sie veröffentlichen:
 
 * **Lokale Vorschau** mit `aio app run` (siehe [Lokale Vorschau von Benutzeroberflächenerweiterungen](https://developer.adobe.com/uix/docs/guides/preview-extension-locally/) in der Dokumentation zu Adobe). Es wird nichts bereitgestellt, und nur Sie sehen es.
-* **Laden Sie sie von Stage in Fusion** indem Sie einen Benutzer-Testschalter in Ihrem Fusion-Profil einschalten. Dies wird in [ Artikel unter „Testen eines Staging-Builds in ](#test-a-stage-build-in-fusion)&quot; beschrieben.
+* **Laden Sie sie von Stage in Fusion** indem Sie einen Benutzer-Testschalter in Ihrem Fusion-Profil einschalten. Dies wird in [&#x200B; Artikel unter „Testen eines Staging-Builds in &#x200B;](#test-a-stage-build-in-fusion)&quot; beschrieben.
 
 ## Testen eines Staging-Builds in Fusion
 

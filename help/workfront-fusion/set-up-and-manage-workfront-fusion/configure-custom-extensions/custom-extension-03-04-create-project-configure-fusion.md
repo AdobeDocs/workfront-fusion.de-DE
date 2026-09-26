@@ -188,7 +188,7 @@ Wir verwenden überall `fusion/nav-organization/1`. Um stattdessen den Abschnitt
 
    Es wird empfohlen, den Ordner nach dem Erweiterungspunkt (`fusion-nav-organization-1`) zu benennen. Der genaue Name liegt bei Ihnen, er muss jedoch mit dem übereinstimmen, auf den Sie in `app.config.yaml` verweisen.
 
-1. Fahren Sie fort[ den Erweiterungspunkt in `app.config.yaml`](#declare-the-extension-point-in-appconfigyaml) zu deklarieren.
+1. Fahren Sie fort[&#x200B; den Erweiterungspunkt in `app.config.yaml`](#declare-the-extension-point-in-appconfigyaml) zu deklarieren.
 
 ## Deklarieren des Erweiterungspunkts in `app.config.yaml`
 

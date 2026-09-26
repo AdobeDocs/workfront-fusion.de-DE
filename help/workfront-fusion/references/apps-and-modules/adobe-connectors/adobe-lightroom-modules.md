@@ -216,7 +216,7 @@ Dieses Aktionsmodul ruft eine Lightroom-Server-Versions-ID ab und zeigt an, ob d
       <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Lightroom] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Lightroom]</a>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL]</td>
+      <td role="rowheader"></td>
       <td>
         <p>Wenn Sie bestimmte Anmeldeinformationen angeben möchten, um sicherzustellen, dass ein bestimmter Server ausgeführt wird, klicken Sie auf <b>Element hinzufügen</b> und geben Sie die Anmeldeinformationen ein.</p><p>Autorisierungskopfzeilen werden automatisch hinzugefügt.</p>
       </td>
@@ -237,7 +237,7 @@ Dieses Aktionsmodul ruft Metadaten aus einem Katalog in Adobe Lightroom ab. Ein 
       <td>Anweisungen zum Erstellen einer Verbindung zu den [!DNL Adobe Lightroom] finden Sie in diesem Artikel unter <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Erstellen einer Verbindung zu den [!DNL Adobe Lightroom]</a>.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL]</td>
+      <td role="rowheader"></td>
       <td>
         <p>Wenn Sie bestimmte Anmeldeinformationen angeben möchten, um sicherzustellen, dass Sie auf das richtige Benutzerkonto zugreifen können, klicken Sie auf Element hinzufügen und geben Sie die Anmeldeinformationen ein.</p><p>Autorisierungskopfzeilen werden automatisch hinzugefügt.</p>
       </td>
@@ -691,7 +691,7 @@ Dieses Aktionsmodul fügt dem angegebenen Album mindestens ein Asset hinzu. Sie 
         <p>Wählen Sie aus, ob dieses Asset als Bild für das Album angezeigt werden soll.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL-Reihenfolge]</td>
+      <td role="rowheader">[!UICONTROL -Reihenfolge]</td>
       <td>
         <p>Geben Sie die Reihenfolge des Assets an.</p>
       </td>

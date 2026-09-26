@@ -625,7 +625,7 @@ Dieses Aktionsmodul erstellt einen neuen Datensatz.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL-Datenbank]  </td>
+      <td role="rowheader">[!UICONTROL -Datenbank]  </td>
       <td>
         <p>Geben Sie die Datenbank ein, die Sie verwenden möchten, oder ordnen Sie sie zu.</p>
       </td>

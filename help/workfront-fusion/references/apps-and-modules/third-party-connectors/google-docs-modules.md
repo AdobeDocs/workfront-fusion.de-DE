@@ -140,7 +140,7 @@ Mit diesem Aktionsmodul können Sie ein neues Dokument im ausgewählten Ordner e
    <td> <p>Geben Sie einen Namen für das Dokument ein.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Inhalt]</td> 
+   <td role="rowheader">[!UICONTROL -Inhalt]</td> 
    <td> <p>Geben Sie den Inhalt des Dokuments ein. Sie können HTML zum Formatieren des Dokuments einbeziehen.</p> </td> 
   </tr> 
   <tr> 
@@ -326,7 +326,7 @@ Möglicherweise müssen Sie Ihre Berechtigungen erweitern.
     <ul> 
      <li>[!UICONTROL Image] (Standard)</li> 
      <li>[!UICONTROL Zeichnung]</li> 
-     <li>[!UICONTROL-Diagramm]</li> 
+     <li>[!UICONTROL -Diagramm]</li> 
     </ul> <p>Hinweis:  <p>Für weitere Zuordnungen dieser Objekte verwenden Sie bitte den Wert [!UICONTROL Inline Objects Array] in der Ausgabe dieses Moduls (anstelle von [!UICONTROL inlineObjects]).</p> <p>Die [!UICONTROL Inline Objects Array]-Objekte werden in der gleichen Reihenfolge sortiert, in der sie im Dokument erscheinen. Dies erleichtert die weitere Verarbeitung.</p> </p> </td> 
   </tr> 
  </tbody> 

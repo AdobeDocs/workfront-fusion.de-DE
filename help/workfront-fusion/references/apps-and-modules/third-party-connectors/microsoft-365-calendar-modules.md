@@ -179,7 +179,7 @@ Dieses Aktionsmodul erstellt ein neues Ereignis.
    <td>Geben Sie den Text der Nachricht ein, die mit dem Ereignis verknüpft ist, oder mappen Sie ihn. Sie kann im HTML- oder Textformat vorliegen (wie im Feld [!UICONTROL Hauptteil-Inhaltstyp] weiter oben angegeben).</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Speicherort]</td> 
+   <td role="rowheader">[!UICONTROL -Speicherort]</td> 
    <td> <p>Ereignisortdetails eingeben oder zuordnen.</p> </td> 
   </tr> 
   <tr> 
@@ -194,7 +194,7 @@ Dieses Aktionsmodul erstellt ein neues Ereignis.
      <li>[!UICONTROL Tentative]</li> 
      <li>[!UICONTROL Besetzt]</li> 
      <li>[!UICONTROL Abwesend]</li> 
-     <li>[!UICONTROL, anderswo arbeiten]</li> 
+     <li>[!UICONTROL , anderswo arbeiten]</li> 
      <li>[!UICONTROL unbekannt]</li> 
     </ul> </td> 
   </tr> 
@@ -207,7 +207,7 @@ Dieses Aktionsmodul erstellt ein neues Ereignis.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Kategorien]</td> 
+   <td role="rowheader">[!UICONTROL -Kategorien]</td> 
    <td>Klicken Sie für jede Kategorie, die das Ereignis wie im Kalender angezeigt werden soll, auf <b>Element hinzufügen</b> und geben Sie die Kategorie ein oder ordnen Sie sie zu.</td> 
   </tr> 
  </tbody> 
@@ -362,7 +362,7 @@ Dieses Aktionsmodul aktualisiert ein vorhandenes Ereignis.
    <td>Geben Sie den Text der Nachricht ein, die mit dem Ereignis verknüpft ist, oder mappen Sie ihn. Sie kann im HTML- oder Textformat vorliegen (wie im Feld [!UICONTROL Hauptteil-Inhaltstyp] weiter oben angegeben).</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Speicherort]</td> 
+   <td role="rowheader">[!UICONTROL -Speicherort]</td> 
    <td> <p>Details zum Veranstaltungsort eingeben.</p> </td> 
   </tr> 
   <tr> 
@@ -377,7 +377,7 @@ Dieses Aktionsmodul aktualisiert ein vorhandenes Ereignis.
      <li>[!UICONTROL Tentative]</li> 
      <li>[!UICONTROL Besetzt]</li> 
      <li>[!UICONTROL Abwesend]</li> 
-     <li>[!UICONTROL, anderswo arbeiten]</li> 
+     <li>[!UICONTROL , anderswo arbeiten]</li> 
      <li>[!DNL Unknown]</li> 
     </ul> </td> 
   </tr> 
@@ -402,7 +402,7 @@ Dieses Kalendermodul ruft Details zu einem Trigger ab, wenn das Ereignis im ausg
 
 >[!NOTE]
 >
->Um nach gelöschten Vorkommen einer Ereignisreihe zu suchen, wählen Sie [!UICONTROL Nach Aktualisierungszeit] im Feld [!UICONTROL Ereignisse ]. Dieses Modul überwacht nicht auf gelöschte einzelne Ereignisse oder gelöschte Ereignisreihen.
+>Um nach gelöschten Vorkommen einer Ereignisreihe zu suchen, wählen Sie [!UICONTROL Nach Aktualisierungszeit] im Feld [!UICONTROL Ereignisse &#x200B;]. Dieses Modul überwacht nicht auf gelöschte einzelne Ereignisse oder gelöschte Ereignisreihen.
 
 
 <table style="table-layout:auto"> 

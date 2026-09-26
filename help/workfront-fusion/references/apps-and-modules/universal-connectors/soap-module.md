@@ -142,7 +142,7 @@ Folgendes würde von [!UICONTROL Workfront Fusion nicht korrekt erkannt]:
 </complexType>
 ```
 
-Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `wsdl:arrayType`, die in [!UICONTROL Workfront Fusion noch nicht unterstützt ].
+Dieses Beispiel enthält die Verweise `soapenc:Array`, `soapenc:arrayType` und `wsdl:arrayType`, die in [!UICONTROL Workfront Fusion noch nicht unterstützt &#x200B;].
 
 >[!ENDSHADEBOX]
 

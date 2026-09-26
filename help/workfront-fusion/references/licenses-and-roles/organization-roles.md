@@ -37,7 +37,7 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
    <th> </th> 
    <th> <p>[!UICONTROL Besitzerin bzw. Besitzer]</p> </th> 
    <th> <p>[!UICONTROL admin]</p> </th> 
-   <th> <p>[!UICONTROL-Member]</p> </th> 
+   <th> <p>[!UICONTROL -Member]</p> </th> 
    <th> <p>[!UICONTROL Buchhalter]</p> </th> 
   </tr> 
  </thead> 
@@ -95,9 +95,9 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
   <tr> 
    <th> </th> 
    <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -214,9 +214,9 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
   <tr> 
    <th> </th> 
    <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -263,9 +263,9 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
   <tr> 
    <th> </th> 
    <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -312,9 +312,9 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
   <tr> 
    <th> </th> 
    <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -368,9 +368,9 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
   <tr> 
    <th> </th> 
    <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -417,9 +417,9 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
   <tr> 
    <th> </th> 
    <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -466,9 +466,9 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
   <tr> 
    <th> </th> 
    <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -522,9 +522,9 @@ In diesem Artikel werden der Zugriff und die Funktionen beschrieben, die den ver
   <tr> 
    <th> </th> 
    <th> <p style="text-align: left;">[!UICONTROL admin]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Member]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Überwachung]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL-Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Member]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Überwachung]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL -Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 

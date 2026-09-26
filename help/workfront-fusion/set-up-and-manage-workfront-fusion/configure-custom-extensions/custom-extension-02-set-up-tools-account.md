@@ -63,7 +63,7 @@ Das Adobe-Tool wird auf **Node.js** ausgeführt. Sie müssen die Version **LTS**
 
 1. (Bedingt) Wenn `node` nicht gefunden wird, schließen und öffnen Sie das Terminal erneut oder starten Sie den Computer neu.
 
-1. Fahren Sie mit [Installieren des Adobe I/O-CLI (`aio`)) ](#install-the-adobe-io-cli-aio).
+1. Fahren Sie mit [Installieren des Adobe I/O-CLI (`aio`)) &#x200B;](#install-the-adobe-io-cli-aio).
 
 >[!TIP]
 >

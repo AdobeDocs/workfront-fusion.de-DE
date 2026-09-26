@@ -290,7 +290,7 @@ Dieses Suchmodul sucht anhand bestimmter Kriterien nach Nachrichten.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Suchen]</td> 
-   <td>Geben Sie Ihre Suchanfrage ein. Informationen zum Schreiben einer Suchanfrage finden Sie im [!DNL Microsoft] Support-Artikel <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Search Mail and People in [!DNL Outlook.com]</a>.</td> 
+   <td>Geben Sie Ihre Suchanfrage ein. Informationen zum Schreiben einer Suchanfrage finden Sie im [!DNL Microsoft] Support-Artikel <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Search Mail and People in [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sortieren nach]</td> 
@@ -336,7 +336,7 @@ Dieses Trigger-Modul startet ein Szenario, wenn eine neue E-Mail-Nachricht gesen
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Suchen]</td> 
-   <td>Geben Sie Ihre Suchanfrage ein. Das -Modul gibt Nachrichten zurück, die mit dieser Abfrage übereinstimmen. Informationen zum Schreiben einer Suchanfrage finden Sie im [!DNL Microsoft] Support-Artikel <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Search Mail and People in [!DNL Outlook.com]</a>.</td> 
+   <td>Geben Sie Ihre Suchanfrage ein. Das -Modul gibt Nachrichten zurück, die mit dieser Abfrage übereinstimmen. Informationen zum Schreiben einer Suchanfrage finden Sie im [!DNL Microsoft] Support-Artikel <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">Search Mail and People in [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Beschränkung] </td> 

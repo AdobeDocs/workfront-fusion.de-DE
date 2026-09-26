@@ -124,7 +124,7 @@ Bevor Sie einen Datenspeicher in einem Modul verwenden können, müssen Sie den 
       <td> <p>Geben Sie einen Namen für den Datenspeicher ein. </p> </td> 
      </tr> 
      <tr> 
-      <td> <p>[!UICONTROL-Datenstruktur]</p> </td> 
+      <td> <p>[!UICONTROL -Datenstruktur]</p> </td> 
       <td> <p>Eine Datenstruktur ist eine Liste der Spalten für eine Tabelle. Diese Liste gibt den Spaltennamen und den Datentyp an.</p> <p>Führen Sie einen der folgenden Schritte aus:</p> 
        <ul> 
         <li><b>Eine bereits erstellte Datenstruktur auswählen</b></li> 
@@ -193,7 +193,7 @@ Sie können die Eigenschaften und Inhalte eines vorhandenen Datenspeichers im Be
 
 Zu den Eigenschaften eines Datenspeichers gehören die Datenstruktur, die der Datenspeicher verwendet, sowie die Größe des Datenspeichers.
 
-1. Klicken Sie **[!UICONTROL linken ](assets/data-store-icon.png) auf ![Datenspeicher]**, um den Bereich [!UICONTROL Datenspeicher] zu öffnen.
+1. Klicken Sie **![[!UICONTROL linken &#x200B;]](assets/data-store-icon.png) auf [Datenspeicher]**, um den Bereich [!UICONTROL Datenspeicher] zu öffnen.
 1. Aktivieren Sie das Kontrollkästchen neben dem Datenspeicher, den Sie bearbeiten möchten, und klicken Sie dann **Bearbeiten** im Banner unten auf dem Bildschirm.
 1. (Optional) Wenn Sie die von diesem Datenspeicher verwendete Datenstruktur in eine andere vorhandene Datenstruktur ändern möchten, wählen Sie sie aus der **[!UICONTROL Datenstruktur]** aus.
 
@@ -233,7 +233,7 @@ Es gibt derzeit kein Tool, das die Wiederherstellung verlorener Daten automatisi
 
    Informationen zum Einfügen von Daten in einen Datenspeicher finden Sie unter [Bearbeiten des Inhalts eines Datenspeichers](#edit-the-contents-of-a-data-store) in diesem Artikel.
 
-### [!UICONTROL Unzureichender ])
+### [!UICONTROL Unzureichender &#x200B;])
 
 Ein [!UICONTROL Speicherplatzmangel] tritt auf, weil den zuvor erstellten Datenspeichern bereits der zugewiesene Datenspeicher zugewiesen wurde.
 

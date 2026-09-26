@@ -126,7 +126,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 
 * [[!UICONTROL Benutzerdefinierter API-Aufruf]](#create-meeting-request)
 * [[!UICONTROL Eintrag lesen]](#read-a-record)
-* [[!UICONTROL Registrieren des ]](#register-invitee)
+* [[!UICONTROL Registrieren des &#x200B;]](#register-invitee)
 * [[!UICONTROL Einladende hinzufügen]](#add-invitee)
 * [[!UICONTROL Kontakt löschen]](#delete-contact)
 * [[!UICONTROL Kontakt aktualisieren]](#update-contact)
@@ -186,7 +186,7 @@ Dieses Aktionsmodul liest Informationen zu einem bestimmten Datensatz.
  </tbody> 
 </table>
 
-#### [!UICONTROL Registrieren des ]
+#### [!UICONTROL Registrieren des &#x200B;]
 
 Dieses Aktionsmodul registriert eine Einladung für ein Ereignis.
 

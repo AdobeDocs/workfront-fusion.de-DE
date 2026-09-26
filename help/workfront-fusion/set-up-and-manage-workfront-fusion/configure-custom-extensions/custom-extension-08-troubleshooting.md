@@ -129,7 +129,7 @@ Fusion ermöglicht nur Erweiterungen, die auf dem App Builder CDN (`*.adobeio-st
 
 **Was bedeutet:** Der Endpunkt Hooks **Team-Bereich**, `teamId` ist also ein erforderlicher Abfrageparameter.
 
-**fix:**-Aufruf `/api/v3/hooks?teamId=<team.id>`. Die Hooks kommen nur für das aktive Team zurück. Um eine Organisation abzudecken, schleifen Sie ihre Teams und fusionieren Sie. Szenarien akzeptieren dagegen `organizationId`. Siehe [ zur Fusion v3-API](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md#fusion-v3-api-specifics).
+**fix:**-Aufruf `/api/v3/hooks?teamId=<team.id>`. Die Hooks kommen nur für das aktive Team zurück. Um eine Organisation abzudecken, schleifen Sie ihre Teams und fusionieren Sie. Szenarien akzeptieren dagegen `organizationId`. Siehe [&#x200B; zur Fusion v3-API](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md#fusion-v3-api-specifics).
 
 
 ## `aio`-Fehler

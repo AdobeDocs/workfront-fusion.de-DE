@@ -196,7 +196,7 @@ Dieses Aktionsmodul ändert die Berechtigungseinstellungen einer Datei oder eine
             <td>[!UICONTROL Berechtigungen]</td>
             <td>
                <p>Legen Sie die gewünschten Datei- oder Ordnerberechtigungen fest. Verwenden Sie die chmod-Parameter. Beispiel: <code>777 </code>oder <code>-rwxrwxrwx</code>.</p>
-               <p>Berechtigungen müssen mit dem <code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code> übereinstimmen.</p>
+               <p>Berechtigungen müssen mit dem <code> /(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3,4}/</code> übereinstimmen.</p>
             </td>
          </tr>
    </tbody>

@@ -366,7 +366,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
    <td>Geben Sie die ID des Testversand-Inhabers ein oder mappen Sie sie. Wenn dieses Feld leer gelassen wird, wird der/die Verantwortliche für den Korrekturabzug auf den aktuellen Benutzer bzw. die aktuelle Benutzerin festgelegt.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Referenz-ID]</td> 
+   <td>[!UICONTROL -Referenz-ID]</td> 
    <td>Geben Sie die Referenz-ID für den Testversand ein.</td> 
   </tr> 
   <tr> 
@@ -576,7 +576,7 @@ Beim Konfigurieren dieses Moduls werden die folgenden Felder angezeigt.
      <li>[!UICONTROL antwortet auf meine Kommentare]</li>
      <li>[!UICONTROL Tägliche Zusammenfassung]</li>
      <li> [!UICONTROL Stündliche Zusammenfassung]</li>
-     <li> [!Nur UICONTROL-Entscheidungen]</li>
+     <li> [!UICONTROL Nur-Entscheidungen]</li>
      <li> [!UICONTROL deaktiviert]</li>
     </ul></td> 
   </tr> 

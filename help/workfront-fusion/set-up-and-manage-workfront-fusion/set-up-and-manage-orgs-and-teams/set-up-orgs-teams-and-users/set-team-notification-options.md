@@ -84,7 +84,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
    ![Menü „Szenario überschreiben“](assets/view-notification-override.png)
 
-1. Informationen zum Wiederherstellen der Standardeinstellungen für einen Benachrichtigungstyp finden Sie unter [Wiederherstellen der ](#restore-notification-defaults)) in diesem Artikel.
+1. Informationen zum Wiederherstellen der Standardeinstellungen für einen Benachrichtigungstyp finden Sie unter [Wiederherstellen der &#x200B;](#restore-notification-defaults)) in diesem Artikel.
 
 Änderungen an der Liste der Benachrichtigungsoptionen werden automatisch gespeichert.
 

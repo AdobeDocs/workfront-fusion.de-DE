@@ -170,7 +170,7 @@ Dieses Aktionsmodul fügt ein oder mehrere Assets zu Sammlungen hinzu.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sammlungs-ID]</td> 
-   <td>Klicken Sie für jede Sammlung, der Sie die Assets hinzufügen möchten, auf <strong>[Sammlungs-ID]</strong> und geben Sie die [!UICONTROL-Sammlungs-ID] ein oder mappen Sie sie.</li> 
+   <td>Klicken Sie für jede Sammlung, der Sie die Assets hinzufügen möchten, auf <strong>[Sammlungs-ID]</strong> und geben Sie die [!UICONTROL -Sammlungs-ID] ein oder mappen Sie sie.</li> 
    </td> 
   </tr> 
   <tr> 
@@ -290,7 +290,7 @@ Dieses Aktionsmodul entfernt ein oder mehrere Assets aus Sammlungen.
   <tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sammlungs-ID]</td> 
-   <td>Klicken Sie für jede Sammlung, aus der Sie Assets entfernen möchten, auf <strong>[Sammlungs-ID]</strong> und geben Sie die [!UICONTROL-Sammlungs-ID] ein oder mappen Sie sie.</li> 
+   <td>Klicken Sie für jede Sammlung, aus der Sie Assets entfernen möchten, auf <strong>[Sammlungs-ID]</strong> und geben Sie die [!UICONTROL -Sammlungs-ID] ein oder mappen Sie sie.</li> 
    </td> 
   </tr> 
   <tr> 
@@ -370,7 +370,7 @@ Dieses Aktionsmodul lädt eine Datei in Ihr [!DNL Widen]-Konto hoch.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Metadaten]</td> 
-   <td>Wählen Sie die Metadatenfelder aus, die Sie in den Datei-Upload einbeziehen möchten. Geben Sie für jedes Feld den [!UICONTROL-Wert] für das Feld ein.</td> 
+   <td>Wählen Sie die Metadatenfelder aus, die Sie in den Datei-Upload einbeziehen möchten. Geben Sie für jedes Feld den [!UICONTROL -Wert] für das Feld ein.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -393,7 +393,7 @@ Dieses Aktionsmodul ruft eine Liste von Assets in einer Sammlung ab.
   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Widen]-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Widen] mit Workfront Fusion </a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Sammlungs-ID]</td> 
+   <td role="rowheader">[!UICONTROL -Sammlungs-ID]</td> 
    <td> <p>Geben Sie die ID der Sammlung ein, die die Assets enthält, die Sie lesen möchten, oder ordnen Sie sie zu.</p> </td> 
   </tr> 
   <tr> 
@@ -409,7 +409,7 @@ Dieses Aktionsmodul ruft eine Liste von Assets in einer Sammlung ab.
    <td> <p>Wählen Sie die Eigenschaft aus, nach der Sie die Assets sortieren möchten. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Reihenfolge]</td> 
+   <td role="rowheader">[!UICONTROL -Reihenfolge]</td> 
    <td>Wählen Sie aus, ob Assets in auf- oder absteigender Reihenfolge sortiert werden sollen.</td> 
   </tr> 
   <tr> 
@@ -440,7 +440,7 @@ Dieses Suchmodul ruft eine Liste von Assets ab, die den spezifischen Suchkriteri
    <td> <p>Wählen Sie aus, wie die Assets sortiert werden sollen. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Reihenfolge]</td> 
+   <td role="rowheader">[!UICONTROL -Reihenfolge]</td> 
    <td>Wählen Sie aus, ob Assets in auf- oder absteigender Reihenfolge sortiert werden sollen.</td> 
   </tr> 
   <tr> 

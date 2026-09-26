@@ -62,11 +62,11 @@ Dieses Aktionsmodul fragt ein JSON-Objekt ab und gibt ein Array zurück.
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Ausdruck]</td> 
+   <td role="rowheader">[!UICONTROL -Ausdruck]</td> 
    <td>Geben Sie den Ausdruck ein, den Sie zum Auswerten des JSON-Objekts verwenden möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Daten] </td> 
+   <td role="rowheader">[!UICONTROL -Daten] </td> 
    <td> Geben Sie das zu überprüfende JSON-Objekt ein.  </td> 
   </tr> 
   <tr> 

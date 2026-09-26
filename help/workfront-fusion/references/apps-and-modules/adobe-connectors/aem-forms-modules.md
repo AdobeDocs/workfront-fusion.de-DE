@@ -120,7 +120,7 @@ So erstellen Sie eine Verbindung für Ihre [!DNL Adobe Experience Manager Forms]
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL-Instanz-URL ohne Schrägstrich]</td>
+        <td role="rowheader">[!UICONTROL -Instanz-URL ohne Schrägstrich]</td>
         <td>
           <p>Geben Sie die URL ein, über die Sie auf das Konto zugreifen möchten, ohne den abschließenden Schrägstrich.</p>
         </td>
