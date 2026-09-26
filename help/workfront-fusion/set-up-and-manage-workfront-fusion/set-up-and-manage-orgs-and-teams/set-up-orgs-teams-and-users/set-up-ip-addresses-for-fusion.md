@@ -4,18 +4,21 @@ description: Fusion verwendet bestimmte IP-Adressen und Domains für die Web-Kom
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-TQID: https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10
+TQID: 'https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 569
-ht-degree: 8%
-
+source-wordcount: '554'
+ht-degree: 6%
 ---
-
 # Konfigurieren von IP-Adressen für Fusion in der Zulassungsliste Ihrer Organisation
 
 Da Adobe Workfront Fusion mit dem Netzwerk Ihres Unternehmens kommuniziert, muss die Firewall Ihres Unternehmens so konfiguriert sein, dass diese Kommunikation möglich ist. Firewalls sind hochwirksame Sicherheitsmaßnahmen, die durch die Trennung des Unternehmensnetzwerks vom Internet funktionieren. Sie stellen sicher, dass nur ausgewählte Daten und der Netzwerk-Traffic in das Netzwerk des Unternehmens bzw. aus diesem heraus verschoben werden können. Die Firewall lässt Daten basierend auf der Website, die die Daten sendet oder empfängt, zu oder blockiert diese. Als Fusion-Administrator müssen Sie sicherstellen, dass Daten, die an oder von Fusion gesendet werden, die Firewall Ihrer Organisation durchlaufen können.

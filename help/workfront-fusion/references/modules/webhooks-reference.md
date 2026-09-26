@@ -4,16 +4,18 @@ description: Viele Services stellen Webhooks bereit, mit denen sofortige Benachr
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
+TQID: 'https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1300
-ht-degree: 10%
-
+source-wordcount: '1322'
+ht-degree: 9%
 ---
-
 # Instant Trigger (Webhooks)
 
 Viele Services stellen Webhooks bereit, mit denen sofortige Benachrichtigungen bereitgestellt werden können, sobald eine bestimmte Änderung (ein bestimmtes Ereignis) im Service eintritt. Für die Verarbeitung dieser Ereignisse wird die Verwendung von Sofort-Triggern empfohlen. Instant Trigger zeigen das `Instant`-Tag in der Modulliste für einen bestimmten Connector an.

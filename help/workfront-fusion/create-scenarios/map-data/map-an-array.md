@@ -4,18 +4,21 @@ description: Sie können ein Array oder einzelne Array-Elemente einem Modulfeld 
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
+TQID: 'https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 898
+source-wordcount: '898'
 ht-degree: 10%
-
 ---
-
 # Zuordnen eines Arrays oder Array-Elements
 
 Ein Array ist ein Bundle-Element, das Folgendes enthalten kann:
@@ -141,28 +144,28 @@ Die Formel lässt sich wie folgt erklären:
 
 * `map`
 
-   1. Der erste Parameter der `map()` ist das gesamte Array-Element.
-   1. Der zweite Parameter ist der Rohname des Wertelements. Um den Rohnamen zu erhalten, bewegen Sie den Mauszeiger über das Element im Bedienfeld [!UICONTROL Zuordnung]:
+  1. Der erste Parameter der `map()` ist das gesamte Array-Element.
+  1. Der zweite Parameter ist der Rohname des Wertelements. Um den Rohnamen zu erhalten, bewegen Sie den Mauszeiger über das Element im Bedienfeld [!UICONTROL Zuordnung]:
 
-      ![Rohname abrufen](assets/obtain-raw-name-350x124.png)
+     ![Rohname abrufen](assets/obtain-raw-name-350x124.png)
 
-      >[!NOTE]
-      >
-      >Bei allen Parametern wird zwischen Groß- und Kleinschreibung unterschieden. Auch wenn sich in diesem Beispiel die Beschriftung des Elements nur in Großbuchstaben von seinem Rohnamen unterscheidet, muss der Rohname verwendet werden.
+     >[!NOTE]
+     >
+     >Bei allen Parametern wird zwischen Groß- und Kleinschreibung unterschieden. Auch wenn sich in diesem Beispiel die Beschriftung des Elements nur in Großbuchstaben von seinem Rohnamen unterscheidet, muss der Rohname verwendet werden.
 
-   1. Der dritte Parameter ist der Rohname des Schlüsselelements:
+  1. Der dritte Parameter ist der Rohname des Schlüsselelements:
 
-      ![Dritter Parameter](assets/3rd-parameter-350x166.png)
+     ![Dritter Parameter](assets/3rd-parameter-350x166.png)
 
-   1. Der vierte Parameter ist der gegebene Schlüsselwert.
+  1. Der vierte Parameter ist der gegebene Schlüsselwert.
 
   Da die Funktion `map()` ein Array zurückgibt (da mit dem angegebenen Schlüsselwert weitere Elemente vorhanden sein könnten), muss die Funktion `get()` angewendet werden, um das erste Element zu erhalten:
 
 * `get`
 
-   1. Der erste Parameter der Funktion `get()` ist das Ergebnis der Funktion `map()` .
+  1. Der erste Parameter der Funktion `get()` ist das Ergebnis der Funktion `map()` .
 
-   1. Der zweite Parameter ist der Index des Elements. In diesem Beispiel ist der Index `1`.
+  1. Der zweite Parameter ist der Index des Elements. In diesem Beispiel ist der Index `1`.
 
 Dieses Beispiel generiert die folgende Ausgabe:
 

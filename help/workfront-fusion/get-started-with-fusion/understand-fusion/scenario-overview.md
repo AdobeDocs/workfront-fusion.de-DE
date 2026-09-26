@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion erfordert zusätzlich zu einer Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-TQID: https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc
+TQID: 'https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # Überblick über Szenarios
 
 Adobe Workfront Fusion dient dazu, Ihre Prozesse zu automatisieren, damit Ihre Benutzenden nicht so viel Zeit mit Routineaufgaben verbringen müssen. Dies funktioniert durch die Verknüpfung von Aktionen innerhalb und zwischen Anwendungen und Services, um ein Szenario zu erstellen, in dem Ihre Daten automatisch übertragen und umgewandelt werden. Das von Ihnen erstellte Szenario ermöglicht es, auf Daten in einer Anwendung oder einem Service zu achten und diese Daten zu verarbeiten, um das gewünschte Ergebnis zu liefern.
@@ -111,5 +113,5 @@ Eine Liste der dedizierten Connectoren finden Sie unter [Fusion-Anwendungen und 
 * Ein Glossar der in Workfront Fusion verwendeten Begriffe finden Sie im [Adobe Workfront Fusion-Glossar](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md).
 * Informationen zum Erstellen eines Übungsszenarios finden Sie unter [Erstellen eines Basisszenarios](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 * Informationen zum Erstellen und Verwalten von Szenarios finden Sie in den Artikeln, die unter den folgenden Themen aufgeführt sind:
-   * [Erstellen von Szenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * [Verwalten von Szenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
+  * [Erstellen von Szenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
+  * [Verwalten von Szenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
