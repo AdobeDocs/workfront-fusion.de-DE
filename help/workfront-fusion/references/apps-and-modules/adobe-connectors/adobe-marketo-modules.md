@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e84d0b7b77dd55c6f045c0b8d4d13aa16bfd29e6
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 99%
+source-wordcount: '2657'
+ht-degree: 86%
 ---
 # [!DNL Marketo]-Module
 
@@ -214,9 +214,12 @@ Dieses Auslösermodul startet ein Szenario, wenn ein Eintrag erstellt oder aktua
 
 * [[!UICONTROL Leads zu einer Liste hinzufügen]](#add-leads-to-a-list)
 * [[!UICONTROL Programm klonen]](#clone-a-program)
+* [[!UICONTROL Erstellen eines Massenextraktionsauftrags]](#create-a-bulk-extract-job)
 * [[!UICONTROL Eintrag erstellen]](#create-a-record)
 * [[!UICONTROL Benutzerdefinierter API-Aufruf]](#custom-api-call)
+* [[!UICONTROL Massenextraktionsdatei herunterladen]](#download-a-bulk-extract-file)
 * [[!UICONTROL Datei herunterladen]](#download-a-file)
+* [[!UICONTROL Status des Massenextraktionsauftrags abrufen]](#get-bulk-extract-job-status)
 * [[!UICONTROL Eintrag lesen]](#read-a-record)
 * [[!UICONTROL Leads aus einer Liste entfernen]](#remove-leads-from-a-list)
 * [[!UICONTROL Kampagne planen]](#schedule-a-campaign)
@@ -269,6 +272,45 @@ Dieses Aktionsmodul erstellt eine Kopie eines Programms mit der ID des vorhanden
   <tr> 
    <td role="rowheader">[!UICONTROL Ordner-ID]</td> 
    <td>Geben Sie die ID des Ordners ein, in dem das neue Programm gespeichert werden soll, oder ordnen Sie diese zu.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Erstellen eines Massenextraktionsauftrags]
+
+Dieses Aktionsmodul erstellt einen Massenextraktionsauftrag für Lead- und Personendatensätze. Verwenden Sie [!UICONTROL Status des Massenextraktionsauftrags abrufen] um den Auftrag zu überprüfen und [!UICONTROL Massenextraktionsdatei herunterladen] um den abgeschlossenen Export abzurufen. Dieses Modul gibt die Export-ID zurück, die von den Status- und Download-Modulen verwendet wird.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Marketo]-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Marketo] mit Workfront Fusion</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Felder]</td> 
+   <td> <p>Klicken Sie für jedes Feld, das Sie zum Massenextraktionsauftrag hinzufügen möchten, auf <b>Element hinzufügen</b> und geben Sie den Feld-API-Namen ein.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Ausgabeformat]</td> 
+   <td> <p>Wählen Sie das Dateiformat für die Extraktion aus: CSV, TSV oder SSV.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Filtern nach]</td> 
+   <td> <p>Wählen Sie den Filter für dieses Modul aus und geben Sie dann die erforderlichen Informationen in die angezeigten Felder ein:</p>
+   <ul> 
+    <li> <p><strong>[!UICONTROL Smart List]</strong> </p> <p>Smart-Listen-ID eingeben oder zuordnen.</p> </li> 
+    <li> <p><strong>[!UICONTROL hat Datumsbereich erstellt]</strong> </p> <p>Wählen Sie das Start- und Enddatum aus, zwischen denen Sie suchen möchten.</p> </li> 
+   </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Benutzerdefinierte Spaltenüberschriften]</td> 
+   <td> <p>Klicken Sie für jede benutzerdefinierte Spaltenüberschrift, die Sie in den Extraktionsauftrag aufnehmen möchten, auf <b>Element hinzufügen</b> und geben Sie den API-Namen des Felds und den Text der Spaltenüberschrift ein.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Auftrag sofort einreihen]</td> 
+   <td> <p>Wählen Sie Ja , um den Auftrag in die Warteschlange einzureihen und sofort nach der Erstellung auszuführen. Wählen Sie Nein , um den Auftrag später mit einem separaten Schritt in die Warteschlange aufzunehmen.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -362,6 +404,33 @@ Mit diesem Aktionsmodul können Sie einen benutzerdefinierten authentifizierten 
    <td role="rowheader">[!UICONTROL Felder]</td> 
    <td> <p>Klicken Sie für jedes dem API-Aufruf hinzuzufügende Feld auf <b>Element hinzufügen</b> und geben Sie den Schlüssel und den Wert des Felds ein.</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Texttyp]</td> 
+   <td> <p>Wählen Sie das Format des Anfragetexts aus: <b>[!UICONTROL URL-codiert (Felder)]</b> oder <b>[!UICONTROL JSON]</b>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Anfragetext (JSON)]</td> 
+   <td> <p>Wird nur verwendet, wenn [!UICONTROL body type] auf [!UICONTROL JSON] gesetzt ist. Geben Sie einen rohen JSON-Text ein.</p> <p>Wichtig: Ändern Sie bei Verwendung von JSON die obige Kopfzeile [!UICONTROL Content-Type] von <code>application/x-www-form-urlencoded</code> in <code>application/json</code>, da Marketo andernfalls die Anfrage ablehnen kann.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Massenextraktionsdatei herunterladen]
+
+Dieses Aktionsmodul ruft die Datei für einen abgeschlossenen Massenextraktionsauftrag ab.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Marketo]-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Marketo] mit Workfront Fusion</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Export-ID]</td> 
+   <td>Geben Sie die ID des Massenextraktionsauftrags ein, für den Sie die Datei herunterladen möchten, oder ordnen Sie sie zu.</td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -380,6 +449,25 @@ Dieses Aktionsmodul lädt eine Datei unter Verwendung der Datei-ID herunter.
   <tr> 
    <td role="rowheader">[!UICONTROL Datei-ID]</td> 
    <td>Geben Sie die ID der Datei ein, die heruntergeladen werden soll, oder ordnen Sie diese zu.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Status des Massenextraktionsauftrags abrufen]
+
+Dieses Aktionsmodul ruft den Status eines Massenextraktionsauftrags mithilfe seiner Auftrags-ID ab.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Verbindung]</p> </td> 
+   <td> <p>Anweisungen zum Verbinden Ihres [!DNL Marketo]-Kontos mit Workfront Fusion finden Sie in diesem Artikel unter <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Verbinden von [!DNL Marketo] mit Workfront Fusion</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Export-ID]</td> 
+   <td>Geben Sie die ID des Massenextraktionsauftrags ein, dessen Status Sie überprüfen möchten, oder mappen Sie sie.</td> 
   </tr> 
  </tbody> 
 </table>
