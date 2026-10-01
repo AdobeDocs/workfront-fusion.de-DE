@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
 nudge: true
-source-git-commit: 8b99d756bfddf8342a4a8cf672b13c3e98879f61
+source-git-commit: 740f7e0e96d0eb4e6290f42f52b75eb64de791dc
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 49%
+source-wordcount: '2710'
+ht-degree: 48%
 ---
 
 # Adobe Workfront Fusion-Dokumentation {#using}
@@ -233,6 +233,10 @@ ht-degree: 49%
     * [Verwalten von Vorlagen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
     * [Genehmigen oder Ablehnen von Vorlagen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
     * [Bearbeiten von Vorlagen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
+  * Fusion MCP-Server verwenden {#use-fusion-mcp-server}
+    * [Fusion MCP Server verwenden: Artikelindex](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/use-fusion-mcp-server-toc.md)
+    * [Konfigurieren des Adobe Workfront Fusion MCP-Servers](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/configure-fusion-mcp-server.md)
+    * [Adobe Workfront Fusion MCP-Server-Tools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md)
   * Workfront-Speicher verwenden {#use-workfront-storage}
     * [Verwenden des Workfront-Speichers](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/use-workfront-storage-toc.md)
     * [Speicherübersicht](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)
