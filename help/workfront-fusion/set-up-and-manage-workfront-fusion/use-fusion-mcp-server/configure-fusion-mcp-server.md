@@ -126,7 +126,7 @@ Fügen Sie Fusion als benutzerdefinierten MCP-Server hinzu.
 
 ### ChatGPT im Web
 
-1. Melden Sie sich bei [ChatGPT) ](https://chatgpt.com).
+1. Melden Sie sich bei [ChatGPT) &#x200B;](https://chatgpt.com).
 2. Navigieren Sie zu [https://chatgpt.com/plugins](https://chatgpt.com/plugins). (Der Entwicklermodus muss möglicherweise unter „Einstellungen **aktiviert werden** In Geschäfts-/Unternehmensplänen muss ein Administrator benutzerdefinierte Connectoren zulassen.)
 3. Klicken Sie auf **+**.
 4. Geben Sie einen &quot;**&quot;**.
