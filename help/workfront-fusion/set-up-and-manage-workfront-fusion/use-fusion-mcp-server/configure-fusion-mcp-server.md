@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren des Adobe Workfront Fusion MCP-Servers
 description: Verbinden Sie Adobe Workfront Fusion mit einer MCP-kompatiblen KI-Agentenplattform oder mit Coworker (eigenständig oder in der rechten Leiste von Fusion).
-source-git-commit: 6d447c16d199c69ae670f59bb56cf79464cbe057
+source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 1%
@@ -126,7 +126,7 @@ Fügen Sie Fusion als benutzerdefinierten MCP-Server hinzu.
 
 ### ChatGPT im Web
 
-1. Melden Sie sich bei [ChatGPT) &#x200B;](https://chatgpt.com).
+1. Melden Sie sich bei [ChatGPT) ](https://chatgpt.com).
 2. Navigieren Sie zu [https://chatgpt.com/plugins](https://chatgpt.com/plugins). (Der Entwicklermodus muss möglicherweise unter „Einstellungen **aktiviert werden** In Geschäfts-/Unternehmensplänen muss ein Administrator benutzerdefinierte Connectoren zulassen.)
 3. Klicken Sie auf **+**.
 4. Geben Sie einen &quot;**&quot;**.
@@ -178,3 +178,4 @@ Der Agent agiert wie Sie und verwendet dabei Ihre Fusion-Rolle und Team-Berechti
 ### Sieht der Agent meine Verbindungsgeheimnisse?
 
 Nein. Verbindungs- und Schlüssel-Tools geben Metadaten (Name, Typ, Bereiche, Gültigkeit) zurück, keine Anmeldeinformationen oder geheimen Werte.
+

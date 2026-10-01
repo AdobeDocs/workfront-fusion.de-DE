@@ -1,7 +1,7 @@
 ---
 title: Adobe Workfront Fusion MCP-Server-Tools
 description: Referenzliste der Tools, die der Adobe Workfront Fusion-MCP-Server für KI-Agentenplattformen und -Mitarbeiter bereitstellt.
-source-git-commit: 322a34df48a5218bc045e6cac6a5a8b3837e8c2e
+source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 7%
@@ -175,4 +175,5 @@ Alle Tools in diesem Artikel sind in Coworker verfügbar, sowohl eigenständig a
 ## So werden Tools aktualisiert
 
 Wenn Adobe eine neue Version des Fusion MCP-Servers veröffentlicht, übernehmen Connected Agents automatisch den aktualisierten Toolsatz. Sie müssen die Verbindung nicht wiederherstellen.
+
 
