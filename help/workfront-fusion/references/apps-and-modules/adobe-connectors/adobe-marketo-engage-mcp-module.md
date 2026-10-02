@@ -243,6 +243,6 @@ Sie können Eingabeaufforderungen wie die folgenden verwenden:
 ## Reference links used while compiling this
 
 * Adobe Marketo Engage MCP server (developer documentation):
-  https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server
+  https://experienceleague.adobe.com/de/docs/marketo-developer/marketo/mcp-server
 
   -->
