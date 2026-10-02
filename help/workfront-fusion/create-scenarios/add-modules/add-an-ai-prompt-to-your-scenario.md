@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 5168f8b0baae4201773899f418bdf0c8b5bf3ef1
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '405'
 ht-degree: 0%
 ---
 # Hinzufügen einer KI-Eingabeaufforderung zu Ihrem Szenario
@@ -44,4 +44,9 @@ Die Verwendung von MCP in Ihren Szenarien bietet die folgenden Vorteile:
 
 Sie können Ihrem Szenario eine KI-Eingabeaufforderung hinzufügen, indem Sie das MCP Agent-Modul verwenden.
 
-Anweisungen finden Sie unter [MCP Agent-Modul](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md).
+Anweisungen finden Sie in den folgenden Artikeln für bestimmte Server:
+
+* [Adobe Experience Manager MCP-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md).
+* [Adobe Marketo Engage MCP-Modul](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md).
+* [Adobe Workfront MCP-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md).
+* [MCP Agent-Modul](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md).
