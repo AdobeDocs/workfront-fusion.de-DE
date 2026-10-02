@@ -15,16 +15,16 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: a6430648344a5d02960bac7447331679e8abebe4
 workflow-type: tm+mt
-source-wordcount: '5202'
-ht-degree: 11%
+source-wordcount: '5905'
+ht-degree: 16%
 ---
 # Einheitliche Prüfungs- und Genehmigungsmodule für Adobe Workfront
 
 Mit den Modulen Adobe Workfront Unified Review and Approvals können Sie Genehmigungsdetails abrufen, eine Entscheidung über ein Asset treffen, Genehmigungsteilnehmer hinzufügen oder löschen, Genehmigungsphasen hinzufügen oder aktualisieren, Phasen sperren oder entsperren und benutzerdefinierte API-Aufrufe durchführen.
 
-Informationen zu einheitlichen Workfront-Überprüfungen und -Genehmigungen finden Sie unter [Einheitliche Überprüfung und Genehmigung - Übersicht](https://experienceleague.adobe.com/de/docs/workfront/using/review-and-approve-work/document-approvals-overview) in der Dokumentation zu Workfront.
+Informationen zu einheitlichen Workfront-Überprüfungen und -Genehmigungen finden Sie unter [Einheitliche Überprüfung und Genehmigung - Übersicht](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview) in der Dokumentation zu Workfront.
 
 ## Zugriffsanforderungen
 
@@ -131,6 +131,7 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 
 * [Aktionen](#actions)
 * [Suchvorgänge](#searches)
+* [Auslöser](#triggers)
 * [Sonstiges](#other)
 
 ### Aktionen
@@ -1353,6 +1354,89 @@ Dieses Suchmodul durchsucht gruppierte Genehmigungen anhand einer benannten Ansi
 </table>
 
 <!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
+
+### Auslöser
+
+* [Validierungs-Events ansehen](#watch-approval-events)
+
+#### Validierungs-Events ansehen
+
+Dieses Trigger-Modul führt ein Szenario in Echtzeit aus, wenn genehmigungsbezogene Ereignisse in Adobe Workfront Unified Review and Approvals auftreten.
+
+Das Modul gibt alle Standardfelder zurück, die mit dem Validierungsereignis verknüpft sind, sowie alle benutzerdefinierten Felder und Werte, auf die die Verbindung zugreift. Sie können diese Informationen in nachfolgenden Modulen im Szenario zuordnen.
+
+So konfigurieren Sie den Webhook für das Modul Validierungsereignisse beobachten:
+
+1. Klicken Sie rechts neben dem Feld **Webhook** auf **[!UICONTROL Hinzufügen]**.
+
+1. Konfigurieren Sie den Webhook im angezeigten Feld **[!UICONTROL Hook hinzufügen]**.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td>[!UICONTROL Webhook-Name]</td> 
+      <td>Geben Sie einen Namen für den Webhook ein.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Verbindung]</td> 
+      <td> <p>Anweisungen zum Verbinden Ihrer Workfront-App mit Workfront Fusion finden Sie unter <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref">Mit Adobe Workfront verbinden - Einheitliche Überprüfung und Genehmigungen</a> in diesem Artikel.</p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Eintragstyp]</td> 
+      <td>Wählen Sie den Typ des Genehmigungsdatensatzes aus, den das Modul überwachen soll.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Konfigurationstyp]</td> 
+      <td>Wählen Sie aus, ob Sie einen einfachen oder erweiterten Filter verwenden möchten.<p>Informationen zu einfachen oder erweiterten Filtern finden Sie unter <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">Verwenden erweiterter Filter</a> im Artikel zu Workfront-Modulen.</p></td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Ereignisfilter-Payload]</td> 
+      <td>Wenn Sie erweiterte Filter verwenden, geben Sie die JSON-Datei ein, die den Filter beschreibt.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Filter-Connector]</td> 
+      <td>Wenn Sie erweiterte Filter verwenden, wählen Sie den Connector aus, den Sie für den Filter verwenden möchten.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Status]</td> 
+      <td>Wenn Sie einen einfachen Filter verwenden, wählen Sie aus, ob Sie den alten oder den neuen Status überwachen möchten.<ul><li><p><b>[!UICONTROL Neuer Status]</b></p><p>Lösen Sie ein Szenario aus, wenn sich der Eintrag <b>in</b> einen bestimmten Wert ändert.</p><p>Wenn beispielsweise der Status auf „[!UICONTROL Neuer Status]“ und der Filter auf „[!UICONTROL Status] [!UICONTROL gleich] [!UICONTROL In Arbeit]“ gesetzt ist, löst der Webhook beim Wechsel des [!UICONTROL Status] zu „[!UICONTROL In Arbeit]“ ein Szenario aus. Dies gilt unabhängig vom vorherigen Status.</p></li><li><p><b>[!UICONTROL Alter Status]</b></p><p>Lösen Sie ein Szenario aus, wenn sich der Eintrag <b>von</b> einem bestimmten Wert ändert.</p><p>Wenn beispielsweise der Status auf „[!UICONTROL Alter Status]“ und der Filter auf „[!UICONTROL Status] [!UICONTROL gleich] [!UICONTROL In Arbeit]“ gesetzt ist, löst der Webhook beim Wechsel eines [!UICONTROL Status] vom Typ „[!UICONTROL In Arbeit]“ zu einem anderen Status ein Szenario aus.</p></li></ul></td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td> <p>[!UICONTROL Ereignisfilter]</p> </td> 
+      <td> <p>Wenn Sie einen einfachen Filter verwenden, legen Sie Filter fest.</p> <p>Geben Sie für jeden Filter Folgendes an: das Feld, das vom Filter ausgewertet werden soll, den Operator und den Wert, den der Filter zulassen soll. Sie können mehr als einen Filter verwenden, indem Sie UND-Regeln hinzufügen.</p> <p><b>HINWEIS</b>: Filter in vorhandenen Workfront-Webhooks können nicht bearbeitet werden. Um verschiedene Filter für Workfront-Ereignisabonnements einzurichten, entfernen Sie den aktuellen Webhook und erstellen Sie einen neuen.</p> <p>Weitere Informationen zu Ereignisfiltern finden Sie unter <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Ereignisabonnementfilter in den Workfront- &gt; [!UICONTROL Ereignisse beobachten]-Modulen</a> im Artikel zu Workfront-Modulen.</p> </td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td>Von dieser Verbindung stammende Ereignisse ausschließen</td> 
+      <td>Wenn Sie einen einfachen Trigger verwenden, aktivieren Sie diese Option, um Ereignisse auszuschließen, die mit demselben Connector erstellt oder aktualisiert wurden, den dieses Filtermodul verwendet. Dadurch lassen sich Situationen verhindern, in denen ein Szenario von sich selbst ausgelöst und in einer Endlosschleife wiederholt wird. Diese Option steht möglicherweise nicht für alle Validierungsereignistypen zur Verfügung.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Eintragsursprung]</td> 
+      <td>
+       <p>Wählen Sie aus, ob das Szenario eine Überwachung anhand der Option „[!UICONTROL Nur neue Einträge]“, „[!UICONTROL Nur aktualisierte Einträge]“, „[!UICONTROL Neue und aktualisierte Einträge]“ oder „[!DNL Deleted Records Only]“ durchführen soll.</p>
+       <p><b>HINWEIS</b>: Wenn Sie die Option „[!UICONTROL Neue und aktualisierte Einträge]“ auswählen, werden im Rahmen der Webhook-Erstellung zwei Ereignisabonnements (für dieselbe Webhook-Adresse) erstellt.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Sichere Hooks aktivieren]</td> 
+      <td>
+       <p>Wählen Sie aus, ob die authToken-basierte Sicherheit für diesen Webhook aktiviert werden soll.</p><p>
+       <b>HINWEIS</b>: Seit dem 23. August 2026 aktiviert Fusion standardmäßig die authToken-basierte Sicherheit für alle Workfront &gt; Ereignismodule beobachten, einschließlich vorhandener Module. Wenn ein bestimmter Webhook beschädigt wird oder Sie dies aus Kompatibilitätsgründen deaktivieren müssen, können Sie die Option Sichere Hooks aktivieren deaktivieren.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Benutzerdefiniertes Token]</td> 
+      <td>
+       <p>(Optional) Wenn [!UICONTROL Enable secured hooks] auf [!UICONTROL Yes] eingestellt ist, können Sie zum Schützen des Webhooks Ihren eigenen Tokenwert eingeben. Wenn Sie dieses Feld leer lassen, generiert Fusion automatisch ein Token für Sie.</p>
+       </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+Nachdem der Webhook erstellt wurde, können Sie die Adresse des Endpunkts anzeigen, an den Ereignisse gesendet werden.
+
+Weitere Informationen finden Sie in der Workfront-Dokumentation im Artikel „Ereignisabonnement-API“ unter [Beispiele für Ereignis-Payloads](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads).
 
 ### Sonstiges
 
