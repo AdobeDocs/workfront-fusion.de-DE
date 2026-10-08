@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 818b14eb26bab6d81f95daf1c8c7ee831402c879
 workflow-type: tm+mt
-source-wordcount: '2406'
-ht-degree: 25%
+source-wordcount: '2675'
+ht-degree: 22%
 ---
 # Jira-Module
 
@@ -78,10 +78,14 @@ Informationen zu Adobe Workfront Fusion-Lizenzen finden Sie unter [Adobe Workfro
 
 ## Verbinden von Jira mit Workfront Fusion
 
-Das Verfahren zum Erstellen einer Verbindung zu Jira unterscheidet sich je nachdem, ob Sie eine Basisverbindung oder eine OAuth2-Verbindung erstellen.
+Das Verfahren zum Erstellen einer Verbindung zu Jira hängt vom Kontotyp und der von Ihnen verwendeten Authentifizierungsmethode ab. Verwenden Sie eine persönliche Kontoverbindung, wenn eine Verbindung mit einem einzelnen Jira-Benutzer verknüpft ist. Verwenden Sie eine Service-Kontoverbindung, wenn die Verbindung mit einer dedizierten Automatisierung oder einer Nicht-Benutzeridentität ausgeführt werden soll.
+
+Wählen Sie im Feld **Verbindungstyp** die entsprechende Authentifizierungsmethode für Ihr Jira-Konto aus:
 
 * [Erstellen einer OAuth2-Verbindung mit Jira](#create-an-oauth2-connection-to-jira)
 * [Erstellen einer Basisverbindung zu Jira](#create-a-basic-connection-to-jira)
+* [Erstellen einer Service-Konto-API-Token-Verbindung zu Jira](#create-a-service-account-api-token-connection-to-jira)
+* [Erstellen einer OAuth2-Verbindung für ein Service-Konto mit Jira](#create-a-service-account-oauth2-connection-to-jira)
 
 ### Erstellen einer OAuth2-Verbindung mit Jira
 
@@ -195,7 +199,7 @@ Das Erstellen einer Basisverbindung zu Jira unterscheidet sich, je nachdem, ob S
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>Verbindungstyp</p> </td> 
-      <td> <p>Wählen Sie aus, ob Sie eine Basisverbindung oder eine OAuth 2-Verbindung erstellen.</p> </td> 
+      <td> <p>Wählen Sie <b>Standard</b> für diese Verbindung aus.</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Verbindungsname</p> </td> 
@@ -243,7 +247,7 @@ Das Erstellen einer Basisverbindung zu Jira unterscheidet sich, je nachdem, ob S
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>Verbindungstyp</p> </td> 
-      <td> <p>Wählen Sie aus, ob Sie eine Basisverbindung oder eine OAuth 2-Verbindung erstellen.</p> </td> 
+      <td> <p>Wählen Sie <b>Standard</b> für diese Verbindung aus.</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Verbindungsname</p> </td> 
@@ -294,6 +298,33 @@ Um einen Pfad zu verwenden, müssen Sie Folgendes in der `jira/bin/WEB-INF/class
 * `jira.rest.csrf.disabled = true`
 
 Wenn diese Datei nicht vorhanden ist, müssen Sie sie erstellen.
+
+### Erstellen einer Service-Konto-API-Token-Verbindung zu Jira
+
+Verwenden Sie diese Option für ein Jira-Service-Konto, das sich mit einem API-Token authentifiziert. Wählen Sie im Feld **Verbindungstyp** die Option **Service-Konto-API-Token**.
+
+1. Klicken Sie in einem beliebigen Jira-Modul **Hinzufügen** neben dem Feld **Verbindung**.
+1. Wählen Sie im Feld **Verbindungstyp** die Option **Service-Konto-API-Token**.
+1. Geben Sie einen **Verbindungsnamen“**.
+1. Geben Sie die **Service-URL** für Ihre Jira-Instanz ein.
+1. Wählen Sie den entsprechenden **Jira-Kontotyp** aus.
+1. Geben Sie das API-Token für das Jira-Service-Konto ein.
+1. Wählen Sie die **API-Version** aus, die diese Verbindung verwenden soll.
+1. Klicken Sie **Fortfahren**, um die Verbindung herzustellen und zum Modul zurückzukehren.
+
+### Erstellen einer OAuth2-Verbindung für ein Service-Konto mit Jira
+
+Verwenden Sie diese Option für ein Jira-Service-Konto, das sich bei OAuth 2 authentifiziert. Wählen Sie im Feld **Verbindungstyp** die Option **Service-Konto OAuth 2** aus.
+
+1. Klicken Sie in einem beliebigen Jira-Modul **Hinzufügen** neben dem Feld **Verbindung**.
+1. Wählen Sie im Feld **Verbindungstyp** die Option **Service-Konto OAuth 2** aus.
+1. Geben Sie einen **Verbindungsnamen“**.
+1. Geben Sie die **Service-URL** für Ihre Jira-Instanz ein.
+1. Wählen Sie den entsprechenden **Jira-Kontotyp** aus.
+1. Geben Sie die **Client-ID** und **Client-Geheimnis** für die Jira OAuth 2-Anwendung ein, die mit dem Service-Konto verknüpft ist.
+1. Geben Sie optional (**Bereiche) ein** die für die Verbindung erforderlich sind.
+1. Wählen Sie die **API-Version** aus, die diese Verbindung verwenden soll.
+1. Klicken Sie **Fortfahren**, um die Verbindung herzustellen und zum Modul zurückzukehren.
 
 ## Jira-Module und ihre Felder
 
