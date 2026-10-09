@@ -79,7 +79,7 @@ Das Modul erfordert eine JWT-Verbindung. Die Verbindung speichert das Signaturma
 
 ### Erstellen einer JWT-Verbindung in Fusion
 
-1. Fügen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL JWT-Anfrage ]) zu Ihrem Szenario hinzu.
+1. Fügen Sie das Modul [!UICONTROL HTTP] > [!UICONTROL JWT-Anfrage &#x200B;]) zu Ihrem Szenario hinzu.
 1. Klicken Sie **[!UICONTROL Hinzufügen]** neben dem Feld **[!UICONTROL Verbindung]**.
 1. Konfigurieren Sie die Verbindungsfelder:
 
@@ -132,7 +132,7 @@ Das Modul erfordert eine JWT-Verbindung. Die Verbindung speichert das Signaturma
 
 ## [!UICONTROL HTTP] > [!UICONTROL Erstellen einer JWT-Anfrage] Modul und seine Felder
 
-Wenn Sie das Modul [!UICONTROL HTTP] > [!UICONTROL JWT-Anfrage ]) konfigurieren, zeigt Adobe Workfront Fusion die unten aufgeführten Felder in der gleichen Reihenfolge an, in der sie in der Modulbenutzeroberfläche angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld. Als erweitert markierte Felder werden ausgeblendet, es sei denn, Sie wählen **[!UICONTROL Erweiterte Einstellungen anzeigen]** aus.
+Wenn Sie das Modul [!UICONTROL HTTP] > [!UICONTROL JWT-Anfrage &#x200B;]) konfigurieren, zeigt Adobe Workfront Fusion die unten aufgeführten Felder in der gleichen Reihenfolge an, in der sie in der Modulbenutzeroberfläche angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld. Als erweitert markierte Felder werden ausgeblendet, es sei denn, Sie wählen **[!UICONTROL Erweiterte Einstellungen anzeigen]** aus.
 
 <table style="table-layout:auto">
  <col>
@@ -230,7 +230,7 @@ Wenn Sie das Modul [!UICONTROL HTTP] > [!UICONTROL JWT-Anfrage ]) konfigurieren,
 1. Das Modul erfasst die Ansprüche im Feld [!UICONTROL JWT-Payload (Ansprüche].
 1. Reservierte Ansprüche wie <code>exp</code>, <code>iat</code>, und <code>nbf</code> werden in numerische Datumswerte konvertiert.
 1. Das Modul wendet die [!UICONTROL Signaturoptionen] an und signiert das Token mit dem Algorithmus aus der Verbindung.
-1. Das signierte Token wird in der Anfrage-Kopfzeile platziert, die durch [!UICONTROL Kopfzeilenname) definiert ].
+1. Das signierte Token wird in der Anfrage-Kopfzeile platziert, die durch [!UICONTROL Kopfzeilenname) definiert &#x200B;].
 1. Wenn [!UICONTROL Token Type] festgelegt ist, fügt das Modul das Präfix vor dem Token hinzu. Beispiel: <code>Bearer eyJ…</code>.
 1. Die Anfrage wird gesendet und die Antwort wird auf die gleiche Weise verarbeitet wie das standardmäßige Modul [!UICONTROL HTTP] > [!UICONTROL Anfrage erstellen].
 
@@ -281,7 +281,7 @@ Nein. Der Algorithmus wird durch die -Verbindung festgelegt. Wenn Sie einen ande
 
 ### Kann ich das Token in einer benutzerdefinierten Kopfzeile senden?
 
-Ja. Legen Sie [!UICONTROL  Feld &quot;]&quot; auf einen benutzerdefinierten Namen fest, es darf jedoch keinen Punkt (`.`) enthalten.
+Ja. Legen Sie [!UICONTROL &#x200B; Feld &quot;]&quot; auf einen benutzerdefinierten Namen fest, es darf jedoch keinen Punkt (`.`) enthalten.
 
 ### Kann ich das Roh-Token ohne `Bearer` senden?
 
