@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e3b9a5e08e78c9ddd4829ab288c353a058409a5c
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 19%
+source-wordcount: '1194'
+ht-degree: 16%
 ---
 # [!UICONTROL HTTP] > [!UICONTROL Anfrage stellen] Modul
 
@@ -109,7 +109,7 @@ Beim Konfigurieren des Moduls [!UICONTROL HTTP] > [!UICONTROL Anfrage stellen] z
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data] ist eine mehrteilige HTTP-Anfrage zum Senden von Dateien und Daten. Es wird häufig verwendet, um Dateien auf den Server hochzuladen.</p> <p>Fügen Sie Felder hinzu, die in der Anfrage gesendet werden sollen. Jedes Feld muss ein Schlüssel-Wert-Paar enthalten.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL text]</strong> </p> <p>Geben Sie den Schlüssel und den Wert ein, die innerhalb des Anfragetexts gesendet werden sollen.</p> </li> 
-       <li> <p><strong>[!UICONTROL -Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt; [!UICONTROL Datei abrufen] oder [!UICONTROL Google-Laufwerk] &gt; Datei herunterladen), oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </li> 
+       <li> <p><strong>[!UICONTROL-Datei]</strong> </p> <p>Geben Sie den Schlüssel und anschließend die Quelldatei ein, die Sie im Anfrageinhalt senden möchten.</p> <p>Ordnen Sie die Datei zu, die Sie aus dem vorherigen Modul hochladen möchten (z. B. [!UICONTROL HTTP] &gt; [!UICONTROL Datei abrufen] oder [!UICONTROL Google-Laufwerk] &gt; Datei herunterladen), oder geben Sie den Dateinamen und die Dateidaten manuell ein.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -128,6 +128,14 @@ Beim Konfigurieren des Moduls [!UICONTROL HTTP] > [!UICONTROL Anfrage stellen] z
   <tr> 
    <td role="rowheader">[!UICONTROL Zeitüberschreitung] </td> 
    <td> <p>Angeben des Zeitlimits für Anfragen in Sekunden (1-300). Der Standardwert ist 40 Sekunden.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Wiederholungsanzahl]</td> 
+   <td> <p>Geben Sie an, wie oft die Anfrage bei Verbindungsfehlern (ETIMEDOUT, ECONRESET, EPROTO) wiederholt werden soll. Der Standardwert lautet 3. Auf 0 setzen, um weitere Zustellversuche zu deaktivieren.</p> <p>Diese Einstellung wird nur wirksam, wenn [!UICONTROL Alle Status als Fehler auswerten] aktiviert ist.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Zusätzliche Wiederholungsstatus-Codes]</td> 
+   <td> <p>Geben Sie zusätzliche HTTP-Status-Codes an, die als wiederholbar behandelt werden sollen, wenn [!UICONTROL Alle Status als Fehler auswerten] aktiviert ist. Standardmäßig können nur die Codes 408, 429 und alle 5xx erneut versucht werden.</p> <p>Wenn Sie diesem Feld einen Status-Code hinzufügen, wird es zu einem wiederholbaren Verbindungsfehler und Trigger versucht es gemäß der Einstellung [!UICONTROL Wiederholungsanzahl] erneut. Nicht hier aufgeführte Status-Codes behalten ihr Standardverhalten bei. Codes, die normalerweise nicht wiederholt werden können, wie z. B. 404 oder 422, können durch Hinzufügen hier wiederholt werden.</p> <p><b>Beispiel:</b> Wenn Sie [!UICONTROL Alle Status als Fehler auswerten] aktivieren, [!UICONTROL Wiederholungsanzahl] auf 4 setzen und diesem Feld 422 hinzufügen, wird eine HTTP 422-Antwort wie andere Verbindungsfehler als wiederholbar behandelt und erneut versucht.</p> <p><b>Hinweis:</b> Die Einstellung [!UICONTROL Timeout] bestimmt, wie lange jeder Versuch warten darf. Es wird keine Pause zwischen weiteren Zustellversuchen definiert. Diese Einstellung wird nur wirksam, wenn [!UICONTROL Alle Status als Fehler auswerten] aktiviert ist.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL - Cookies für andere HTTP-Module freigeben]</td> 
