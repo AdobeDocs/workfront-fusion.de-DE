@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 7c25013f7a94000651e8331199ad985d40651ae3
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 26%
+source-wordcount: '2637'
+ht-degree: 16%
 ---
 # AWS S3-Module
 
@@ -88,7 +88,196 @@ Der AWS S3-Connector verwendet Folgendes:
 
 ## Verbinden von [!DNL AWS] mit Workfront Fusion {#connect-aws-to-workfront-fusion}
 
-Um [!DNL AWS S3] mit Workfront Fusion zu verbinden, müssen Sie Ihr [!DNL AWS]-Konto mit Workfront Fusion verbinden. Dazu müssen Sie zunächst einen API-Benutzer in [!DNL AWS] ([!UICONTROL ) &#x200B;].
+* [Verbinden von AWS mit Workfront Fusion über eine Federated-Verbindung](#connect-aws-to-workfront-fusion-using-a-federated-connection)
+* [Verbinden von AWS mit Workfront Fusion mithilfe einer API-Benutzerin oder eines -Benutzers](#connect-aws-to-workfront-fusion-using-an-api-user)
+
+### Verbinden von AWS mit Workfront Fusion über eine Federated-Verbindung
+
++++ Erweitern Sie , um Anweisungen für diesen Verbindungstyp anzuzeigen.
+
+* [Voraussetzungen für das Verbinden von AWS mit Workfront Fusion über eine Federated-Verbindung](#prerequisites-to-connecting-aws-to-workfront-fusion-using-a-federated-connection)
+* [Hinzufügen von Workfront Fusion als Identitätsanbieter in AWS](#add-workfront-fusion-as-an-identity-provider-in-aws)
+* [Erstellen der IAM-Rolle](#create-the-iam-role)
+* [Erstellen der Verbindung in Workfront Fusion](#create-the-connection-in-workfront-fusion)
+* [Fügen Sie die Verbindung zur Vertrauensrichtlinie der Rolle hinzu](#add-the-connection-to-the-roles-trust-policy)
+* [Verbindung überprüfen](#verify-the-connection)
+* [Fehlerbehebung](#troubleshooting)
+
+Über eine Federated Connection kann Workfront Fusion auf Ihr AWS-Konto zugreifen, ohne dass Sie einen IAM-Benutzer erstellen oder einen Zugriffsschlüssel in Fusion speichern müssen.
+Sie registrieren Workfront Fusion stattdessen als vertrauenswürdigen Identitätsanbieter in Ihrem AWS-Konto und konfigurieren, welche einzelne Fusion-Verbindung eine bestimmte IAM-Rolle verwenden darf. Wenn die Verbindung ausgeführt wird, stellt Fusion einen kurzlebigen Identitätsnachweis bereit, und AWS gibt temporäre Anmeldeinformationen zurück, die selbstständig ablaufen. Es wird nie ein langlebiger Schlüssel erstellt, gespeichert oder gedreht.
+
+>[!NOTE]
+>
+>Das Einrichten dieser Verbindung führt zu zwei Besuchen der AWS-Konsole. Zuerst erstellen Sie die Rolle und dann die Verbindung in Workfront Fusion. Kehren Sie dann zu AWS zurück, um die Vertrauensrichtlinie abzuschließen. Dies liegt daran, dass ein Teil der Vertrauensrichtlinie eine bestimmte Verbindung identifiziert und diese Kennung erst vorhanden ist, wenn die Verbindung erstellt wurde.
+
+#### Voraussetzungen für das Verbinden von AWS mit Workfront Fusion über eine Federated-Verbindung
+
+Um diese Verbindung zu erstellen, benötigen Sie Folgendes:
+
+* Berechtigung in AWS IAM zum Erstellen eines Identitätsanbieters und zum Erstellen und Bearbeiten von Rollen. Dies bedeutet in der Regel die Richtlinie oder das Äquivalent. Wenn Sie diesen Zugriff nicht haben, fragen Sie jemanden in Ihrer Cloud oder
+Ihr Sicherheits-Team führt die AWS-Schritte für Sie aus.
+* Die Möglichkeit, Verbindungen in Workfront Fusion zu erstellen.
+
+
+#### Hinzufügen von Workfront Fusion als Identitätsanbieter in AWS
+
+Dieser Schritt teilt AWS mit, dass von Workfront Fusion ausgestellte Token vertrauenswürdig sind. Dies erfolgt einmal pro AWS-Konto. Wenn dieser Provider bereits von einer Person in Ihrer Organisation hinzugefügt wurde, fahren Sie mit [Erstellen der IAM-Rolle](#create-the-iam-role) fort.
+
+1. Melden Sie sich bei der AWS-Konsole an und gehen Sie zu **IAM** > **Identitätsanbieter**.
+1. Wählen Sie **Anbieter hinzufügen** aus.
+1. Wählen Sie für den Provider-Typ **OpenID Connect** aus.
+1. Geben Sie unter der Provider-URL Folgendes ein und wählen Sie dann **Miniaturbild abrufen**:
+
+   ```
+   https://oidc.automations.adobe.com
+   ```
+
+1. Geben Sie unter „Zielgruppe“ Folgendes ein:
+
+   ```
+   sts.amazonaws.com
+   ```
+
+1. Wählen Sie **Anbieter hinzufügen** aus.
+1. Fahren Sie mit [Erstellen der IAM-Rolle](#create-the-iam-role) fort.
+
+#### Erstellen der IAM-Rolle
+
+Die Rolle definiert, was die Verbindung in Ihrem AWS-Konto tun darf. Pro Verbindung wird eine Rolle erstellt, sodass der Zugriff jeder Verbindung unabhängig gewährt und widerrufen werden kann.
+
+1. Wechseln Sie in IAM zu **Rollen** und wählen Sie **Rolle erstellen** aus.
+1. Wählen Sie für den Typ „Vertrauenswürdige Entität“ die Option **Web-Identität**.
+1. Wählen Sie unter Identitätsanbieter die Option `oidc.automations.adobe.com` aus.
+1. Wählen Sie unter Zielgruppe die Option `sts.amazonaws.com` aus.
+1. Wählen Sie **Weiter** aus und fügen Sie dann die für diese Verbindung erforderlichen Berechtigungsrichtlinien hinzu.
+Nur die Berechtigungen erteilen, die die Verbindung tatsächlich verwendet. Beispiel: eine Verbindung, die nur aus liest
+Ein Behälter benötigt keine `AmazonS3FullAccess`.
+1. Geben Sie der Rolle einen klaren, erkennbaren Namen. Beispiel: `WorkfrontFusionFederatedConnection`.
+1. Wählen Sie **Rolle erstellen** aus.
+1. Öffnen Sie die soeben erstellte Rolle und kopieren Sie ihren ARN aus dem Bereich Zusammenfassung . So sieht es aus: `arn:aws:iam::123456789012:role/WorkfrontFusionFederatedConnection`
+
+1. Fahren Sie [Verbindung in Workfront Fusion erstellen](#create-the-connection-in-workfront-fusion) fort.
+
+#### Erstellen der Verbindung in Workfront Fusion
+
+1. Wählen Sie im Bildschirm „Verbindungs-Setup“ des Moduls den Verbindungstyp aus.
+1. Geben Sie die Rolle ARN ein, die Sie in kopiert haben [Erstellen der IAM-Rolle](#create-the-iam-role).
+1. Wählen Sie **Erstellen** aus.
+Workfront Fusion zeigt drei Werte an. Sie verwenden sie im nächsten Verfahren.
+
+<table>
+  <tr>
+    <td>Aussteller</td>
+    <td>Immer <code>https://oidc.automations.adobe.com</code>. Dies entspricht dem Identitätsanbieter, den Sie in AWS hinzugefügt haben.</td>
+  </tr>
+  <tr>
+    <td>Betreff</td>
+    <td>Identifiziert diese Verbindung. Es sieht wie <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code> aus. Es ist für jede Verbindung, die Sie erstellen, anders.</td>
+  </tr>
+  <tr>
+    <td>Zielgruppe</td>
+    <td>Immer <code>sts.amazonaws.com</code>.</td>
+  </tr>
+</table>
+
+1. Lassen Sie dieses Bedienfeld geöffnet und kopieren Sie den Wert des Betreffs.
+
+   >[!NOTE]
+   >
+   >Schließen Sie das Bedienfeld nicht und klicken Sie nicht auf Abbrechen. Die Verbindung wird erst beendet, wenn Sie die verbleibenden Vorgänge abgeschlossen haben. Wenn Sie das Bedienfeld schließen, müssen Sie die Verbindung löschen und erneut beginnen, da eine neue Verbindung einen neuen Betreff erhält.
+
+1. Fahren Sie fort [Verbindung zur Vertrauensrichtlinie der Rolle hinzufügen](#add-the-connection-to-the-roles-trust-policy).
+
+#### Fügen Sie die Verbindung zur Vertrauensrichtlinie der Rolle hinzu
+
+Bis zum Abschluss dieses Vorgangs vertraut die Rolle Workfront Fusion im Allgemeinen, lässt jedoch noch nicht zu, dass diese spezifische Verbindung verwendet wird.
+
+1. Kehren Sie in einer neuen Browser-Registerkarte zur AWS-Konsole zurück und öffnen Sie die von Ihnen erstellte Rolle.
+1. Wählen Sie die Registerkarte **Vertrauensstellungen** und dann **Vertrauensrichtlinie bearbeiten**.
+1. Ersetzen Sie die Richtlinie durch Folgendes und ersetzen Sie dabei Ihre eigenen Werte:
+
+   * `123456789012` durch Ihre AWS-Konto-ID ersetzen
+   * Ersetzen Sie den `sub` durch den Betreff, den Sie aus Workfront Fusion kopiert haben.
+
+
+   ```
+   {
+     "Version": "2012-10-17",
+     "Statement": [
+       {
+         "Effect": "Allow", 
+         "Principal": {
+           "Federated": "arn:aws:iam::123456789012:oidc-provider/oidc.automations.adobe.com"
+       },
+       "Action": "sts:AssumeRoleWithWebIdentity", "Condition": {
+        "StringEquals": {
+          "oidc.automations.adobe.com:sub": "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", 
+          "oidc.automations.adobe.com:aud": "sts.amazonaws.com"
+        }
+       }
+      }
+    ]
+   }
+   ```
+
+1. Wählen Sie **Richtlinie aktualisieren**.
+1. Fahren Sie [Verbindung überprüfen](#verify-the-connection) fort.
+
+>[!TIP]
+>
+>Wenn mehr als eine Verbindung dieselbe Rolle verwenden soll, listen Sie die Subjekte als Array auf. AWS ermöglicht die Verwendung der Rolle, wenn das Token mit einem Wert in der Liste übereinstimmt:
+>
+>```
+>"oidc.automations.adobe.com:sub": [ "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:29011"
+>]
+>```
+>
+>Ersetzen Sie den Unterwert nicht durch einen Platzhalter. Dadurch kann jede Verbindung in Ihrer Organisation die Rolle verwenden, einschließlich Verbindungen, die später von anderen Personen erstellt wurden
+
+
+#### Verbindung überprüfen
+
+1. Kehren Sie zur Browser-Registerkarte von Workfront Fusion zurück, auf der das Bedienfeld Verbindung noch geöffnet ist.
+1. Klicken Sie auf **Speichern**.
+
+   Workfront Fusion kontaktiert AWS, wodurch die Vertrauensrichtlinie überprüft und temporäre Anmeldeinformationen zurückgegeben werden. Wenn alles richtig eingerichtet ist, wird die Verbindung erfolgreich validiert, und Sie können mit dem Einrichten des Moduls fortfahren.
+   Wenn die Überprüfung fehlschlägt, bleibt das Bedienfeld geöffnet und zeigt den Fehler an. Korrigieren Sie das Problem in AWS und klicken Sie erneut auf Speichern . Sie müssen die Verbindung nicht neu erstellen, und das Betreff ändert sich nicht.
+
+Ab diesem Zeitpunkt erneuert die Verbindung ihre eigenen Anmeldeinformationen. Es gibt keinen Schlüssel zum Drehen und nichts läuft ab, was Sie pflegen müssen.
+
+#### Fehlerbehebung
+
+
+<table>
+  <tr>
+    <th>Fehler</th>
+    <th>Bedeutung</th>
+    <th>Was zu überprüfen ist</th>
+  </tr>
+  <tr>
+    <td>InvalidIdentityToken</td>
+    <td>AWS konnte das Token nicht mit einem registrierten Identitätsanbieter abgleichen.</td>
+    <td>Vergewissern Sie sich, dass Sie den unter Workfront Fusion hinzufügen beschriebenen Identitätsanbieter als Identitätsanbieter in AWS hinzugefügt haben und dass die URL exakt https://oidc.automations.adobe.com lautet, ohne abschließenden Schrägstrich.</td>
+  </tr>
+  <tr>
+    <td>Zugriff verweigert, wenn die Rolle übernommen wird</td>
+    <td>Der Identitätsanbieter ist registriert, die Vertrauensrichtlinie stimmt jedoch nicht mit dieser Verbindung überein.</td>
+    <td>Stellen Sie sicher, dass der Unterwert in der Vertrauensrichtlinie zeichenweise mit dem in Workfront Fusion angezeigten Betreff identisch ist und dass die -Hilfe sts.amazonaws.com lautet. Ein aus einer anderen Verbindung kopiertes Subjekt ist die häufigste Ursache.</td>
+  </tr>
+  <tr>
+    <td>Die Verbindung funktioniert und schlägt später fehl</td>
+    <td> </td>
+    <td>Überprüfen Sie, ob die Berechtigungsrichtlinien der Rolle geändert wurden oder ob die Rolle gelöscht und neu erstellt wurde. Durch das Neuerstellen einer Rolle ändert sich zwar nicht deren ARN, aber ihre Vertrauensrichtlinie wird zurückgesetzt.</td>
+  </tr>
+</table>
+
++++
+
+### Verbinden von AWS mit Workfront Fusion mithilfe einer API-Benutzerin oder eines -Benutzers
+
++++ Erweitern Sie , um Anweisungen für diesen Verbindungstyp anzuzeigen.
+
+Um [!DNL AWS S3] mit Workfront Fusion zu verbinden, müssen Sie Ihr [!DNL AWS]-Konto mit Workfront Fusion verbinden. Dazu müssen Sie zunächst einen API-Benutzer in [!DNL AWS] ([!UICONTROL ) ].
 
 1. Melden Sie sich bei Ihrem [!DNL AWS] [!UICONTROL IAM]-Konto an.
 1. Navigieren Sie **[!UICONTROL Identitäts- und Zugriffsverwaltung]** > **[!UICONTROL Zugriffsverwaltung]** > **[!UICONTROL Benutzer]**.
@@ -101,11 +290,16 @@ Um [!DNL AWS S3] mit Workfront Fusion zu verbinden, müssen Sie Ihr [!DNL AWS]-K
 1. Kopieren Sie die bereitgestellten **[!UICONTROL Zugriffsschlüssel-ID]** und **[!UICONTROL geheimer Zugriffsschlüssel]**.
 
 1. Wechseln Sie zu Workfront Fusion und öffnen Sie das Dialogfeld **[!UICONTROL Verbindung erstellen]** des [!DNL AWS S3].
-1. Geben Sie [!UICONTROL &#x200B; Schritt 7 die &#x200B;]Zugriffsschlüssel-ID“ und [!UICONTROL Geheimer Zugriffsschlüssel] in die entsprechenden Felder ein und klicken Sie auf **[!UICONTROL Weiter]**, um die Verbindung herzustellen.
+1. Geben Sie [!UICONTROL  Schritt 7 die ]Zugriffsschlüssel-ID“ und [!UICONTROL Geheimer Zugriffsschlüssel] in die entsprechenden Felder ein und klicken Sie auf **[!UICONTROL Weiter]**, um die Verbindung herzustellen.
 
 Die Verbindung wurde hergestellt. Sie können mit der Einrichtung des Moduls fortfahren.
 
++++
+
 ## [!DNL AWS S3]-Module und ihre Felder
+
+* [Aktionen](#actions)
+* [Suchvorgänge](#searches)
 
 Beim Konfigurieren von [!DNL AWS S3]-Modulen werden in Workfront Fusion die unten aufgeführten Felder angezeigt. Darüber hinaus können abhängig von Faktoren wie Ihrer Zugriffsebene in der Anwendung oder im Service weitere [!DNL AWS S3]-Felder angezeigt werden. Ein fett formatierter Titel in einem Modul kennzeichnet ein Pflichtfeld.
 
@@ -163,7 +357,7 @@ Dieses Aktionsmodul lädt eine Datei aus einem Bucket herunter.
    <td> <p>Wählen Sie Ihren regionalen Endpunkt aus. Weitere Informationen finden Sie unter <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">Regionale Endpunkte</a> in der [!DNL AWS].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Bucket] </td> 
+   <td role="rowheader">[!UICONTROL-Bucket] </td> 
    <td> <p>Wählen Sie den Bucket aus, von dem Sie die Datei herunterladen möchten.</p> </td> 
   </tr> 
   <tr> 
@@ -294,7 +488,7 @@ Dieses Aktionsmodul lädt eine Datei in einen AWS S3-Bucket hoch.
    <td> <p>Wählen Sie eine Quelldatei aus einem vorherigen Modul aus oder ordnen Sie den Namen und die Daten der Quelldatei zu.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Kopfzeilen] (optional)</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Kopfzeilen] (optional)</p> </td> 
    <td> <p> Klicken Sie für jede Kopfzeile, die Sie hinzufügen möchten<b> auf „Element hinzufügen</b> und geben Sie den Schlüssel und den Wert der Kopfzeile ein.</p><p> Verfügbare Kopfzeilen finden Sie unter <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">PutObject</a> in der AWS-Dokumentation.</p> </td> 
   </tr> 
  </tbody> 
@@ -322,11 +516,11 @@ Gibt eine Liste mit Dateien von einem angegebenen Speicherort zurück.
    <td> <p>Wählen Sie Ihren regionalen Endpunkt aus. Weitere Informationen finden Sie unter <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">Regionale Endpunkte</a> in der [!DNL AWS].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Bucket] </td> 
+   <td role="rowheader">[!UICONTROL-Bucket] </td> 
    <td> <p>Wählen Sie den [!DNL Amazon S3]-Bucket aus, nach dem Sie nach Dateien suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Präfix]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Präfix]</p> </td> 
    <td> <p> Geben Sie einen Pfad zu einem Ordner ein, in dem Dateien gesucht werden sollen, z. B. <code>workfrontfusion/work.</code></p> </td> 
   </tr> 
  </tbody> 
@@ -349,11 +543,11 @@ Gibt eine Liste mit Ordnern von einem angegebenen Speicherort zurück.
    <td> <p>Wählen Sie Ihren regionalen Endpunkt aus. Weitere Informationen finden Sie unter <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">Regionale Endpunkte</a> in der [!DNL AWS].</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Bucket] </td> 
+   <td role="rowheader">[!UICONTROL-Bucket] </td> 
    <td> <p>Wählen Sie den [!DNL Amazon S3]-Bucket aus, nach dem Sie nach Ordnern suchen möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL -Präfix] (optional)</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL-Präfix] (optional)</p> </td> 
    <td> <p> Pfad zu einem Ordner, in dem Ordner gesucht werden sollen, z. B. <code>workfrontfusion/work.</code></p> </td> 
   </tr> 
  </tbody> 
