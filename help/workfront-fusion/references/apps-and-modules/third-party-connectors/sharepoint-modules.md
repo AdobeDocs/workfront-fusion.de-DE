@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: c9bf5c68e4977027944114c35414fa5f46ea8751
+source-git-commit: be0cf391e02e3f8c2547494aeac0de5b7296c85d
 workflow-type: tm+mt
-source-wordcount: '5851'
+source-wordcount: '5808'
 ht-degree: 10%
 ---
 # Microsoft SharePoint Online-Module
@@ -98,7 +98,7 @@ Der SharePoint-Connector verwendet Folgendes:
 
 ## Verbinden von Microsoft SharePoint Online mit Workfront Fusion {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
-* [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines - [!DNL Microsoft] &#x200B;](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
+* [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines - [!DNL Microsoft] ](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe der erweiterten Einstellungen](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe der Zertifikatautorisierung](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 * [Verbinden von Microsoft SharePoint Online mit Workfront Fusion mithilfe eines Service-Prinzipals](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
@@ -262,10 +262,6 @@ Fahren Sie [Erstellen der App-Registrierung in der Microsoft Entra ID](#create-t
 1. Fahren Sie fort [API-Berechtigungen erteilen](#grant-api-permissions).
 
 #### API-Berechtigungen erteilen (Service-Prinzipal)
-
->[!IMPORTANT]
->
->BECKY CHECK ME: Im Gegensatz zu Azure DevOps unterstützt Microsoft Graph in diesem Schritt direkt Anwendungsberechtigungen. Bestätigen Sie die genauen Berechtigungen, die das Modul „API-Aufruf durchführen“ benötigt (z. B. einen Sites-Berechtigungsbereich), bevor Sie diesen Abschnitt veröffentlichen, und aktualisieren Sie die folgenden Schritte entsprechend.
 
 1. Navigieren Sie in Ihrer App-Registrierung zu **[!UICONTROL API-Berechtigungen]**.
 1. Wählen Sie **[!UICONTROL Berechtigung hinzufügen]** und dann **[!UICONTROL Microsoft-Diagramm]** aus.
@@ -1032,7 +1028,7 @@ Dieses Aktionsmodul ruft eine Liste aller Elemente in einer angegebenen Site ab.
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Listen]</td> 
+   <td role="rowheader">[!UICONTROL-Listen]</td> 
    <td> <p>Wählen Sie aus, wie Sie die Website identifizieren möchten, von der Sie Listen abrufen möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Manuell eingeben]</strong> </p> <p>Geben Sie die <strong>[!UICONTROL Site ID]</strong> ein, die die Listen enthält, die Sie zurückgeben möchten, oder ordnen Sie sie zu.</p> </li> 
@@ -1101,7 +1097,7 @@ Dieses Aktionsmodul gibt die Daten einer angegebenen Seite zurück.
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL , Seite abrufen]</td> 
+   <td role="rowheader">[!UICONTROL, Seite abrufen]</td> 
    <td> <p>Wählen Sie aus, wie Sie die abzurufende Seite identifizieren möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Manuell eingeben]</strong> </p> <p>Geben Sie die <strong>[!UICONTROL Site ID]und </strong>[!UICONTROL Page ID]<strong> ein oder ordnen Sie sie </strong>.</p> </li> 
@@ -1151,7 +1147,7 @@ Dieses Aktionsmodul veröffentlicht die neueste Version der ausgewählten Seite.
    <td> <p>Anweisungen zum Verbinden Ihres Microsoft SharePoint Online-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Verbinden von Microsoft SharePoint Online mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL , Seite veröffentlichen]</td> 
+   <td role="rowheader">[!UICONTROL, Seite veröffentlichen]</td> 
    <td> <p>Wählen Sie aus, wie Sie die Seite identifizieren möchten, die Sie veröffentlichen möchten.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Manuell eingeben]</strong> </p> <p>Geben Sie die <strong>[!UICONTROL Site ID]und </strong>[!UICONTROL Page ID]<strong> ein oder ordnen Sie sie </strong>.</p> </li> 
@@ -1327,7 +1323,7 @@ Dieses Instant-Trigger-Modul startet ein Szenario, wenn ein Element in SharePoin
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>Wählen Sie einen vorhandenen Webhook aus oder klicken Sie auf Hinzufügen und geben Sie die Verbindung ein, um einen neuen Webhook zu erstellen.</p> 
