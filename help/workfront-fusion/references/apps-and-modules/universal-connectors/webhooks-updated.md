@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
 workflow-type: tm+mt
-source-wordcount: '3236'
+source-wordcount: '3219'
 ht-degree: 6%
 ---
 # Webhooks
@@ -126,10 +126,6 @@ Weitere Informationen zu mTLS finden Sie unter [Gegenseitige TLS - Übersicht](/
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Nachdem Sie einen Webhook erstellt haben, wird eine eindeutige URL angezeigt. Dies ist die Adresse, an die der Webhook Daten sendet. Workfront Fusion validiert die an diese Adresse gesendeten Daten und gibt sie dann zur Verarbeitung im Szenario weiter.
-
->[!NOTE]
->
->Nachdem Sie einen Webhook erstellt haben, können Sie ihn in mehr als einem Szenario gleichzeitig verwenden.
 
 #### Verwenden eines Webhooks mit einfacher Authentifizierung
 
@@ -551,3 +547,4 @@ Wenn einige Elemente im Zuordnungsbereich bei der Einrichtung der Module nach de
 ![Datenstruktur neu bestimmen](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Führen Sie dann die Schritte aus, die im Abschnitt [Konfigurieren der Datenstruktur des Webhooks](#configure-the-webhook-s-data-structure) in diesem Artikel beschrieben sind.
+
