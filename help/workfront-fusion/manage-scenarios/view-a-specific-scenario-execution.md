@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cd90795caaf835de238b52e30fddbcc6da9e9443
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 23%
@@ -88,7 +88,7 @@ Sie können eine Ausführung aus dem Szenarioverlauf des Szenarios anzeigen.
 >Um einen Link zu einem bestimmten Modul zu erstellen, fügen Sie bei der Anzeige der folgenden Seiten `?moduleId=<module-id>` zur URL hinzu:
 >
 >* Szenario-Bearbeitungsseite (URL endet in `/edit`)
->* Bestimmte Ausführung eines Szenarios (URL endet auf `/logs/<log-id>`)
+>* Bestimmte Szenario-Ausführung (URL endet in `/logs/<log-id>`)
 >
 >`<module-id>` bezieht sich auf die Zahl neben der Modulbeschriftung beim Anzeigen des Szenarios.
 >
