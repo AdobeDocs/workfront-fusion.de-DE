@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
+source-git-commit: c0d5bb30cb41d9ad8db07c1ea13a533df10bcb43
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3193'
 ht-degree: 6%
 ---
 # Webhooks
@@ -325,10 +325,6 @@ Beim Erstellen oder Bearbeiten eines benutzerdefinierten Webhooks in Fusion kön
 ## Die Webhook-Warteschlange
 
 Wenn ein Webhook Daten empfängt und kein aktives Szenario diese Daten erwartet, werden die Daten in der Warteschlange gespeichert. Nachdem Sie das Szenario aktiviert haben, werden alle Pakete, die in der Warteschlange warten, sequenziell verarbeitet.
-
->[!IMPORTANT]
->
->Webhook-Warteschlangen werden von Szenarien gemeinsam verwendet, die denselben Webhook verwenden. Wenn eines der Szenarien deaktiviert ist, werden alle eingehenden Daten in der Warteschlange gehalten.
 
 ## Unterstützte eingehende Datenformate
 
