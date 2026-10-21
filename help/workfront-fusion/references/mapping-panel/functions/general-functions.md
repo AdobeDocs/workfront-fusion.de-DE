@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8ea986eb6573bb49accfad312bb0796faa2642ab
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 9%
+source-wordcount: '750'
+ht-degree: 6%
 ---
 # Allgemeine Funktionen
 
@@ -22,11 +22,39 @@ ht-degree: 9%
 
 Sie können die folgenden allgemeinen Variablen verwenden, um Details zu einer Ausführung anzugeben:
 
-* `executionID`: die ID dieser Szenarioausführung
-* `triggerTimestamp`: Der Zeitpunkt, zu dem diese Ausführung ausgelöst wurde
-* `scenarioID`: Die ID des derzeit geöffneten Szenarios
+* `executionId`: die ID dieser Szenarioausführung
+* `scenarioId`: Die ID des derzeit geöffneten Szenarios
 * `scenarioName`: Der Name des aktuell ausgeführten Szenarios
+* `scenarioUrl`: ein Link zum aktuellen Szenario in der Benutzeroberfläche von Fusion
+* `executionUrl`: ein Link zur aktuellen Szenarioausführung in der Benutzeroberfläche von Fusion
+* `scenarioApiUrl`: Die Fusion-API-URL für das aktuelle Szenario
+* `executionApiUrl`: Die URL der Fusion-API mit Details zur aktuellen Ausführung
+* `teamId`: die ID des Fusion-Teams, dem das aktuelle Szenario gehört
+* `organizationId`: die ID der Fusion-Organisation, die mit der aktuellen Ausführung verknüpft ist. Dies ist keine Adobe IMS-Organisations-ID.
+* `triggerTimestamp`: Der Zeitpunkt, zu dem diese Ausführung ausgelöst wurde
 * `operationsConsumed`: Die Anzahl der zu diesem Zeitpunkt im Szenario verwendeten Vorgänge.
+
+Bei Variablennamen wird zwischen Groß- und Kleinschreibung unterschieden. Verwenden Sie beispielsweise `scenarioUrl`, nicht `scenarioURL`.
+
+Sie können diese Variablen in zugeordneten Feldern verwenden, ohne URLs oder hartcodierte Team- und Organisations-IDs zu erstellen. Sie können beispielsweise Folgendes in ein zugeordnetes Textfeld in einer Benachrichtigung aufnehmen:
+
+<pre><code>
+Scenario: &#123;&#123;scenarioName&#125;&#125;
+Open scenario: &#123;&#123;scenarioUrl&#125;&#125;
+Open execution: &#123;&#123;executionUrl&#125;&#125;
+Team: &#123;&#123;teamId&#125;&#125;
+Organization: &#123;&#123;organizationId&#125;&#125;
+</code></pre>
+
+Beachten Sie bei der Verwendung dieser Variablen Folgendes:
+
+* Die Werte werden bei der Ausführung des Szenarios aufgelöst. Im Zuordnungsbereich werden die Variablen aufgelistet, aber ihre Werte werden nicht in der Vorschau angezeigt.
+* `scenarioUrl` und `executionUrl` sind mit dem Szenario und der Ausführung in der Benutzeroberfläche von Fusion verknüpft. `scenarioApiUrl` und `executionApiUrl` sind API-Endpunkt-URLs, keine Links zu Fusion-Seiten.
+* Die API-URL-Variablen geben nur Text zurück. Sie stellen keine Anfrage und geben keine Authentifizierungsdaten an. Es gelten weiterhin die normale API-Authentifizierung und -Berechtigungen.
+* Links gewähren keinen zusätzlichen Zugriff. Es gelten die normalen Fusion-Berechtigungen.
+* `executionUrl` wird nicht für Ausführungen generiert, die nicht im Ausführungsverlauf gespeichert sind, z. B. Sandbox-Ausführungen oder Ausführungen mit deaktivierter Verlaufssynchronisierung. Ein generierter Link garantiert nicht, dass die Ausführungsdetails zum Zeitpunkt der Verwendung verfügbar sind.
+* `scenarioUrl` kann weder für eine Vorlage noch für ein nicht gespeichertes Szenario generiert werden.
+* Wenn eine URL nicht generiert werden kann, hat die Variable keinen Wert.
 
 ## [!UICONTROL GET (Objekt oder Array; Pfad)]
 
