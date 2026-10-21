@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 50583b23190de0fee568f020722482d8e9aed76b
+source-git-commit: d1a3b44e3b96a7b54a96f96dec9869ae5d928e77
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 90%
+source-wordcount: '538'
+ht-degree: 89%
 ---
 # Referenzen zu Fusion-Anwendungen und ihren Modulen: Artikelindex
 
@@ -62,6 +62,7 @@ Fusion bietet Connectoren für zahlreiche Produkte und Services von Adobe.
 * [Adobe Firefly Lightroom-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
 * [Adobe Frame.io (V4)-Betamodule](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe Frame.io (V3)-Legacy-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+* [Adobe Fusion MCP-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-fusion-mcp-modules.md)
 * [Adobe I/O Events-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
 * [Adobe InDesign-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/indesign-modules.md)
 * [Adobe Journey Optimizer-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
