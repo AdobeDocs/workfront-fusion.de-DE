@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 20%
+source-wordcount: '1550'
+ht-degree: 19%
 ---
 # Workfront Fusion-Module
 
@@ -127,12 +127,12 @@ Dieses Modul erstellt eine Kopie des angegebenen Datensatzes.
    <td> Wählen Sie den Typ des Datensatzes aus, den Sie klonen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Szenario-ID</td> 
-   <td> Geben Sie die ID des Szenarios ein, das Sie klonen möchten, oder mappen Sie sie. </td> 
+   <td role="rowheader">Szenario-ID/Hook-ID/Datenstruktur-ID</td> 
+   <td> Geben Sie die ID des Elements ein, das Sie klonen möchten, oder ordnen Sie sie zu. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Name</td> 
-   <td> Geben Sie einen Namen für das neue Szenario ein oder mappen Sie ihn.</td> 
+   <td> Geben Sie einen Namen für das neue Szenario, den neuen Hook oder die neue Datenstruktur ein oder ordnen Sie ihn zu.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,6 +202,10 @@ Dieses Modul gibt mithilfe von Cursor-basierten Paging- und Eigenschaftsfiltern 
   <tr> 
    <td role="rowheader">Eintragstyp</td> 
    <td>Wählen Sie den Datensatztyp aus, für den Sie eine Liste zurückgeben möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Felder</td> 
+   <td>Wählen Sie alle Felder aus, die Sie in die Ergebnisse aufnehmen möchten.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Eigenschaft</td> 
@@ -380,9 +384,36 @@ Dieses Modul ruft die Abhängigkeiten des Datensatzes ab.
    <td> Wählen Sie den Datensatztyp aus, für den Sie Abhängigkeiten abrufen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Szenario-ID</td> 
+   <td role="rowheader">Szenario-ID/Hook-ID</td> 
    <td> Geben Sie die ID des Datensatzes ein, für den Sie Abhängigkeiten abrufen möchten, oder ordnen Sie sie zu. </td> 
   </tr> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Datensatzabhängigkeiten abrufen
+
+Dieses Modul identifiziert, was von einer bestimmten Ressource abhängt. Verwenden Sie dieses Modul, bevor Sie eine Ressource löschen, um zu überprüfen, ob etwas von dieser Ressource abhängt und von ihrem Löschen betroffen sein könnte.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden von Workfront Fusion mit Workfront Fusion finden Sie unter <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront Fusion mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Eintragstyp</td> 
+   <td>Wählen Sie den Datensatztyp aus, den Sie auf abhängige Elemente überprüfen möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Art</td> 
+   <td>Wählen Sie die Art der abhängigen Elemente aus, auf die Sie prüfen möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID</td> 
+   <td>Geben Sie die ID des Datensatzes ein, für den Sie Angehörige zurückgeben möchten, oder ordnen Sie sie zu.</td> 
   </tr> 
  </tbody> 
 </table>

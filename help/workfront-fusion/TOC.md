@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
 nudge: true
-source-git-commit: 316b112552e5383fdca3f408223594a2fbb6f535
+source-git-commit: d31db4d825746ac3e7b19cd8f7efcc593bc03bf7
 workflow-type: tm+mt
-source-wordcount: '2795'
-ht-degree: 47%
+source-wordcount: '2752'
+ht-degree: 48%
 ---
 
 # Adobe Workfront Fusion-Dokumentation {#using}
@@ -414,6 +414,7 @@ ht-degree: 47%
       * [Adobe Firefly Lightroom-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
       * [Adobe Frame.io (V4)-Betamodule](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
       * [Adobe Frame.io (V3)-Legacy-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+      * [Adobe Fusion MCP-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-fusion-mcp-modules.md)
       * [Adobe I/O Events-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
       * [Adobe InDesign-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/indesign-modules.md)
       * [Adobe Journey Optimizer-Module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
