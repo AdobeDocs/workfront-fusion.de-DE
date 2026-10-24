@@ -20,7 +20,7 @@ feature_v2:
 source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 8%
+ht-degree: 9%
 ---
 # Kontextreferenz zu Fusion
 
@@ -64,7 +64,7 @@ Jede Entität verfügt über eine **Fusion-ID** (die von den Fusion-eigenen APIs
 | Team | `team.id` | *(Teams sind nur Fusion; keine IMS-ID)* |
 | Benutzerin oder Benutzer | `user.id` | `imsUserId` |
 
-## Felder `organization`
+## `organization`-Felder
 
 Diese Felder befinden sich im aktiven Organisationsdatensatz. Die meisten Erweiterungen erfordern nur `id`, `name` und die Kennungen .
 
@@ -90,7 +90,7 @@ Diese Felder befinden sich im aktiven Organisationsdatensatz. Die meisten Erweit
 | `usersCount` | number | Anzahl der Benutzer in der Organisation |
 | `nextReset` | Zeichenfolge (Datum) | Beim nächsten Zurücksetzen der Nutzungszähler. Siehe [Daten](#dates) |
 
-## Felder `team`
+## `team`-Felder
 
 Diese Felder sind vorhanden, wenn ein Team aktiv ist. Für den Fall, dass das Team `undefined` wird (z. B. auf einem Bildschirm auf Organisationsebene, wo kein Team ausgewählt ist), müssen Sie einen Fallback bereitstellen.
 
@@ -108,7 +108,7 @@ Diese Felder sind vorhanden, wenn ein Team aktiv ist. Für den Fall, dass das Te
 | `isDeleted` | Boolescher Wert | Ob das Team als gelöscht markiert ist. |
 | `created` | Zeichenfolge (Datum) | Als das Team erstellt wurde. Siehe [Daten](#dates). |
 
-## Felder `user`
+## `user`-Felder
 
 Diese Felder gelten für den angemeldeten Fusion-Benutzer.
 

@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: b800142d824927e5765eed50a831731e6b5d9925
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 16%
@@ -98,7 +98,7 @@ Möglicherweise müssen Sie auf das Dreipunkt-Symbol im Bereich Steuerelemente k
 ![Tools-Bereich](assets/tools-scenario-editor.png)
 
 | Aktion | Details |
-|---------- | ---------- |
+| ---------- | ---------- |
 | Flusssteuerung | Einstellungen konfigurieren, um den Datenfluss zu steuern. Weitere Informationen finden Sie [Link erforderlich]. |
 | Tools | Der Abschnitt Tools enthält mehrere nützliche Module, die Ihre Szenarien verbessern können. Weitere Informationen finden Sie [Link erforderlich]. |
 | Text-Parser | Verwenden Sie das Text-Parser-Tool, um Text zur Verwendung in anderen Szenario-Modulen zu analysieren. Der Text-Parser benötigt keine Verbindung. Weitere Informationen finden Sie [Link erforderlich]. |
