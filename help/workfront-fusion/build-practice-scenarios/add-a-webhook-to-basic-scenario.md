@@ -10,15 +10,15 @@ exl-id: 28ecca1f-a9c3-4b3d-95f5-73cb9a5dc4b9
 TQID: https://experienceleague.adobe.com/V3cpVf8NzJdGjSZvPA0Hy0Uui-zSdd986plS1Us0oNI
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 4cd8b43e9ce9a16aca16397ce140cdd2467bf7d4
 workflow-type: tm+mt
-source-wordcount: 513
-ht-degree: 22%
-
+source-wordcount: '905'
+ht-degree: 13%
 ---
-
 # Hinzufügen eines Webhooks zu einem Basisszenario
 
 Webhooks, auch als Instant Trigger bezeichnet, sind eine spezielle Art von Szenariomodul, das ein Trigger starten kann, wenn eine Änderung vorgenommen wird, anstatt nach einem bestimmten Zeitplan.
@@ -26,6 +26,10 @@ Webhooks, auch als Instant Trigger bezeichnet, sind eine spezielle Art von Szena
 In diesem Beispiel fügen Sie einen Webhook hinzu, um ein Szenario zu starten, sobald Anforderungen an eine bestimmte Anfragewarteschlange gesendet wurden. Das Szenario konvertiert diese Anfragen dann in ein Projekt.
 
 Dieses Beispiel ändert das in erstellte Szenario [Erstellen eines einfachen Szenarios](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
+
+>[!NOTE]
+>
+>Workfront Fusion stellt den Szenario-Editor auf ein neues Erlebnis um. Während dieser Umstellung sind sowohl die klassischen als auch die neuen Erlebnisse verfügbar und Sie können jederzeit zwischen ihnen wechseln. Es wird empfohlen, die neue -Version zu verwenden. Weitere Informationen finden Sie unter [Neue und klassische Erlebnisse](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) im Artikel Szenario-Editor.
 
 ## Zugriffsanforderungen
 
@@ -60,10 +64,67 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 Sie müssen das unter &quot;[&#x200B; eines einfachen Szenarios“ beschriebene Szenario erstellen](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) bevor Sie dieses Verfahren ausführen.
 
-## Webhook hinzufügen und konfigurieren
+## Webhook in der neuen -Version hinzufügen und konfigurieren (empfohlen)
 
+* [Webhook-Modul hinzufügen](#add-the-webhook-module)
+* [Aktualisieren des zweiten Moduls](#update-the-second-module)
+* [Testen und Aktivieren](#test-and-activate)
 
 ### Webhook-Modul hinzufügen
+
+1. Öffnen Sie das Szenario im Szenario-Editor.
+1. Klicken Sie mit der rechten Maustaste auf das erste Modul und wählen Sie **[!UICONTROL Modul löschen]**.
+
+   Das Modul wird gelöscht, wobei ein leerer Platzhalter verbleibt.
+
+1. Klicken Sie auf das leere Modul, um die Liste der Apps und Services zu öffnen.
+
+   ![App- und Service-Auswahl](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
+
+1. **Adobe Workfront**.
+1. Wählen Sie **Ereignisse ansehen** aus.
+1. Klicken Sie neben dem Feld „Webhook“ auf **Hinzufügen**.
+1. Wählen Sie im Feld Datensatztyp die Option **Problem** aus, damit das Modul einen Trigger für Änderungen bei Problemen durchführt.
+1. Wählen Sie im Feld Status die Option **Neuer Status**. Dies ist ein Pflichtfeld, das für den Filter verwendet wird, der in diesem Beispiel nicht abgedeckt wird.
+1. Wählen Sie im Feld Datensatzherkunft die Option **Nur neuer Datensatz**. Dadurch kann das Szenario einen Trigger auslösen, wenn ein Problem hinzugefügt wird, und nicht, wenn ein Problem aktualisiert oder gelöscht wird.
+1. Klicken Sie **Speichern**, um die Modulkonfiguration zu speichern.
+
+### Aktualisieren des zweiten Moduls
+
+1. Öffnen Sie das Szenario.
+1. Klicken Sie auf **Objekt konvertieren**-Modul, um es zu öffnen.
+1. Löschen Sie im Feld „Anfrage-ID“ den Block „Schwarze ID“. Der Block ist schwarz, da das Modul, von dem aus er zugeordnet wurde, nicht mehr verfügbar ist.
+1. Wählen Sie den ID-Block unter dem ersten Modul (Ereignisse beobachten) aus, um ihn dem zweiten Modul zuzuordnen.
+1. Klicken Sie auf **OK**.
+
+### Testen und Aktivieren
+
+1. Klicken Sie auf **[!UICONTROL Symbol „Einmal]**&quot;.
+
+   „Einmal ausführen“ ist in der neuen -Version nur als Symbol verfügbar. Bewegen Sie den Mauszeiger über das Symbol, um die QuickInfo **[!UICONTROL Einmal ausführen]** anzuzeigen.
+
+   ![Schaltfläche „Szenario ausführen“](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+   Das Szenario muss ausgeführt werden, um auf die neue Anfrage warten zu können.
+1. Wechseln Sie zur Workfront-Umgebung, mit der sich Fusion verbindet, und fügen Sie ein Problem hinzu.
+
+   Das Szenario sollte ausgeführt werden.
+1. Überprüfen Sie die Ausgabe, um sicherzustellen, dass das Szenario erwartungsgemäß ausgeführt wurde.
+1. Wenn Sie sich vergewissert haben, dass das Szenario erwartungsgemäß funktioniert, klicken Sie auf den Umschalter **Planung**, um **Ein**.
+
+   Dadurch wird das Szenario aktiviert.
+
+   ![Umschalter „Planung“](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. Klicken Sie auf **Speichern**-Symbol ![Speichern](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) im Bereich Steuerelemente , um den Fortschritt des Szenarios zu speichern.
+
+## Hinzufügen und Konfigurieren des Webhooks in der klassischen Benutzeroberfläche
+
+* [Hinzufügen des Webhook-Moduls (klassisch)](#add-the-webhook-module-classic)
+* [Aktualisieren des zweiten Moduls (Classic)](#update-the-second-module-classic)
+* [Testen und Aktivieren (klassisch)](#test-and-activate-classic)
+
+### Hinzufügen des Webhook-Moduls (klassisch)
 
 1. Öffnen Sie das Szenario im Szenario-Editor.
 1. Klicken Sie mit der rechten Maustaste auf das erste Modul und wählen Sie **Modul löschen**.
@@ -78,7 +139,7 @@ Sie müssen das unter &quot;[&#x200B; eines einfachen Szenarios“ beschriebene 
 1. Wählen Sie im Feld Datensatzherkunft die Option **Nur neuer Datensatz**. Dadurch kann das Szenario einen Trigger auslösen, wenn ein Problem hinzugefügt wird, und nicht, wenn ein Problem aktualisiert oder gelöscht wird.
 1. Klicken Sie **Speichern**, um die Modulkonfiguration zu speichern.
 
-## Aktualisieren des zweiten Moduls
+### Aktualisieren des zweiten Moduls (Classic)
 
 1. Öffnen Sie das Szenario.
 1. Klicken Sie auf **Objekt konvertieren**-Modul, um es zu öffnen.
@@ -86,9 +147,7 @@ Sie müssen das unter &quot;[&#x200B; eines einfachen Szenarios“ beschriebene 
 1. Wählen Sie den ID-Block unter dem ersten Modul (Ereignisse beobachten) aus, um ihn dem zweiten Modul zuzuordnen.
 1. Klicken Sie auf **OK**.
 
-
-
-### Testen und Aktivieren
+### Testen und Aktivieren (klassisch)
 
 1. Klicken Sie **[!UICONTROL Einmal ausführen]** in der linken unteren Ecke des Szenario-Editors.
 

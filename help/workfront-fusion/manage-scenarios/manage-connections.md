@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 25%
+source-wordcount: '446'
+ht-degree: 22%
 ---
 # Verwalten von Verbindungen
 
@@ -71,6 +71,10 @@ Sie können alle Verbindungen über den Bereich Verbindungen verwalten.
 1. (Optional) Um eine Verbindung erneut zu autorisieren, klicken **in** Zeile für diese Verbindung auf „Erneut autorisieren“.
 1. (Optional) Um sicherzustellen, dass die Verbindung zum Service funktioniert, klicken Sie auf **Überprüfen** in der Zeile für diese Verbindung.
 1. (Optional) Um eine Verbindung zu löschen, klicken Sie in **Zeile für diese** auf „Löschen“ und dann auf **Wirklich?**.
+
+>[!NOTE]
+>
+>Um in den Modulen eines Szenarios eine andere Verbindung zu verwenden, können Sie eine Verbindung in ein oder alle kompatiblen Module aus derselben App im Szenario-Editor kopieren. Weitere Informationen finden Sie unter [&#x200B; und Ersetzen von Variablen, Quellen und Verbindungen in einem Szenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
 
 ## Erneuern einer Verbindung
 

@@ -14,7 +14,7 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 17%
@@ -75,7 +75,7 @@ So weisen Sie den Eingabefeldern eines Moduls Ausgabeelemente zu:
    Suchergebnisse enthalten den Suchbegriff und unterscheiden nicht zwischen Groß- und Kleinschreibung.
 1. Um einen Wert auszuwählen, der ein Element einer Sammlung ist, klicken Sie auf den Pfeil neben dieser Sammlung und wählen Sie das Element aus, wenn es angezeigt wird.
 
-   ![Sammlungselement](assets/collection-dropdown.png)
+   ![Sammlungselement](/help/workfront-fusion/get-started-with-fusion/understand-fusion/assets/new-collection-dropdown.png)
 
 1. Klicken Sie auf ein Element im Zuordnungsbereich, um es in das Feld einzufügen.
 

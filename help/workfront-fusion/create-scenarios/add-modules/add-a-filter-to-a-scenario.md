@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 19%
+source-wordcount: '942'
+ht-degree: 11%
 ---
 # Hinzufügen eines Filters zu einem Szenario
 
@@ -26,6 +26,10 @@ Sie können einen Filter zwischen zwei Modulen hinzufügen und überprüfen, ob 
 
 * Wenn dies der Fall ist, werden die Bundles an das nächste Modul im Szenario weitergegeben.
 * Ist dies nicht der Fall, wird die Verarbeitung für die Bundles beendet.
+
+>[!NOTE]
+>
+>Workfront Fusion stellt den Szenario-Editor auf ein neues Erlebnis um. Während dieser Umstellung sind sowohl die klassischen als auch die neuen Erlebnisse verfügbar und Sie können jederzeit zwischen ihnen wechseln. Es wird empfohlen, die neue -Version zu verwenden. Weitere Informationen finden Sie unter [Neue und klassische Erlebnisse](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) im Artikel Szenario-Editor.
 
 ## Zugriffsanforderungen
 
@@ -60,7 +64,37 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 Sie müssen beide Module zu einem Szenario hinzufügen, bevor Sie einen Filter zwischen ihnen hinzufügen können.
 
-## Fügen Sie einen Filter zwischen zwei Modulen hinzu:
+## Hinzufügen eines Filters zwischen zwei Modulen
+
+* [Hinzufügen eines Filters zwischen zwei Modulen in der neuen -Version (empfohlen)](#add-a-filter-between-two-modules-in-the-new-experience-recommended)
+* [Hinzufügen eines Filters zwischen zwei Modulen im klassischen Erlebnis](#add-a-filter-between-two-modules-in-the-classic-experience)
+
+### Hinzufügen eines Filters zwischen zwei Modulen in der neuen -Version (empfohlen)
+
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
+1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
+1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
+1. Klicken Sie mit der linken Maustaste auf den Pfad zwischen den Modulen, denen Sie einen Filter hinzufügen möchten.
+
+   Das **[!UICONTROL Filter einrichten]** wird direkt geöffnet. (Durch Klicken mit der rechten Maustaste auf den Pfad wird stattdessen ein anderes Menü geöffnet.)
+
+1. Geben Sie im angezeigten Feld einen **[!UICONTROL Titel]** für den Filter ein.
+1. Definieren Sie den Filter **[!UICONTROL Bedingung]**.
+
+   Geben Sie im ersten Feld das Feld ein, nach dem Sie filtern möchten, den Operator und (bei Bedarf) den Wert, mit dem Sie das Feld vergleichen möchten.
+
+   >[!TIP]
+   >
+   >Sie können Werte über das Zuordnungsbedienfeld in Filterfelder eingeben
+   >Weitere Informationen zur Zuordnung finden Sie unter [Zuordnen von Informationen von einem Modul zu einem anderen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+   Wenn der Filter beispielsweise Dateien in Adobe Workfront übergeben soll, die mit XML enden, geben Sie **[!UICONTROL Dateiname]** in das erste Feld und .**[!UICONTROL xml]** in das zweite Feld ein. Im Dropdown-Menü zwischen ihnen wählen Sie **[!UICONTROL Endet mit (Groß-/Kleinschreibung wird nicht beachtet)]**. Dieser Filter würde für eingehende Bundles des ersten Moduls (Workfront) gelten. Nur Bundles mit XML-Dateien würden an das nächste Modul weitergegeben.
+
+   ![Filter einrichten](assets/new-filter-setup-xml-example.png)
+
+1. Klicken Sie auf **[!DNL OK]**.
+
+### Hinzufügen eines Filters zwischen zwei Modulen im klassischen Erlebnis
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
@@ -86,6 +120,22 @@ Sie müssen beide Module zu einem Szenario hinzufügen, bevor Sie einen Filter z
 
 Sie können einen vorhandenen Filter kopieren und an einer anderen Stelle im Szenario einfügen.
 
+* [Kopieren eines Filters in die neue -Version (empfohlen)](#copy-a-filter-in-the-new-experience-recommended)
+* [Kopieren eines Filters in der klassischen Benutzeroberfläche](#copy-a-filter-in-the-classic-experience)
+
+### Kopieren eines Filters in die neue -Version (empfohlen)
+
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
+1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
+1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
+1. Klicken Sie mit der rechten Maustaste auf den Pfad zwischen den Modulen, in denen sich der Filter befindet.
+1. Wählen Sie **Filter kopieren** aus.
+1. Klicken Sie mit der rechten Maustaste auf den Pfad zwischen den Modulen, in die Sie den Filter einfügen möchten.
+1. Wählen Sie **Filter einfügen** aus.
+1. (Optional) Um den Filter anzupassen, klicken Sie auf das Filtersymbol oder die Kennzeichnung und geben Sie Werte ein, wie in [Hinzufügen eines Filters zwischen zwei Modulen in der neuen -Version](#add-a-filter-between-two-modules-in-the-new-experience-recommended) in diesem Artikel beschrieben.
+
+### Kopieren eines Filters in der klassischen Benutzeroberfläche
+
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie einen Filter hinzufügen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
@@ -93,7 +143,7 @@ Sie können einen vorhandenen Filter kopieren und an einer anderen Stelle im Sze
 1. Wählen Sie **Filter kopieren** aus.
 1. Klicken Sie mit der rechten Maustaste auf die Verbindungspunkte zwischen Modulen, in die Sie den Filter einfügen möchten.
 1. Filter **Einfügen** auswählen
-1. (Optional) Um den Filter anzupassen, klicken Sie auf das Filtersymbol oder die Kennzeichnung und geben Sie Werte ein, wie in [Hinzufügen eines Filters zwischen zwei Modulen](#add-a-filter-between-two-modules) in diesem Artikel beschrieben.
+1. (Optional) Um den Filter anzupassen, klicken Sie auf das Filtersymbol oder die Kennzeichnung und geben Sie Werte ein, wie in [Hinzufügen eines Filters zwischen zwei Modulen im klassischen Erlebnis](#add-a-filter-between-two-modules-in-the-classic-experience) in diesem Artikel beschrieben.
 
 
 

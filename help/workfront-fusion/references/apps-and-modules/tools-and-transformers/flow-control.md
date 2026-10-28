@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 17%
+source-wordcount: '684'
+ht-degree: 16%
 ---
 # Flusssteuerung
 
 Beim Erstellen oder Bearbeiten eines Szenarios können Sie Einstellungen konfigurieren, um den Datenfluss zu steuern.
+
+>[!NOTE]
+>
+>Workfront Fusion stellt den Szenario-Editor auf ein neues Erlebnis um. Während dieser Umstellung sind sowohl die klassischen als auch die neuen Erlebnisse verfügbar und Sie können jederzeit zwischen ihnen wechseln. Es wird empfohlen, die neue -Version zu verwenden. Weitere Informationen finden Sie unter [Neue und klassische Erlebnisse](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) im Artikel Szenario-Editor.
 
 ## Zugriffsanforderungen
 
@@ -75,7 +79,7 @@ Sie können ein [!UICONTROL Repeater]-Modul verwenden, um eine Aufgabe eine best
 
 Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E-Mails mit den Betreffen „Hello 1“, „Hello 2“ usw. zu senden, indem Sie das Modul **[!UICONTROL E-Mail] > [!UICONTROL E-Mail senden]** mit dem Modul [!UICONTROL Repeater] verbinden.
 
-1. Klicken Sie auf [!UICONTROL Fluss]-Symbol ![Flusssteuerungs-Symbol](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) unten im Bildschirm und klicken Sie dann im angezeigten Menü auf **[!UICONTROL Repeater]**.
+1. Klicken Sie auf [!UICONTROL Fluss]-Symbol ![Flusssteuerungs-Symbol](/help/workfront-fusion/references/apps-and-modules/assets/new-flow-control-icon.png) unten im Bildschirm und klicken Sie dann im angezeigten Menü auf **[!UICONTROL Repeater]**.
 1. Klicken Sie auf das [!UICONTROL Repeater]-Modul und dann in **angezeigten Feld auf** Automatisch verbinden.
 
    Das Repeater-Modul wird geöffnet.
@@ -84,7 +88,7 @@ Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E
 
    In diesem Beispiel geben Sie 5 ein.
 
-   ![Repeater](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![Repeater](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater.png)
 
    Der Wert des Elements erhöht sich bei jeder Wiederholung um diesen Wert, der im Feld **[!UICONTROL Schritt]** angegeben ist, das Sie durch Auswahl von **[!UICONTROL Erweiterte Einstellungen anzeigen]** anzeigen können. Diese Zahl ist standardmäßig 1.
 
@@ -95,7 +99,7 @@ Sie können beispielsweise ein [!UICONTROL Repeater]-Modul verwenden, um fünf E
 
    In unserem E-Mail-Beispiel geben Sie Hello in das Feld [!UICONTROL Subject] ein und ordnen dann `i` aus dem Repeater-Modul zu.
 
-   ![Repeater](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![Repeater](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater-3.png)
 
 
 

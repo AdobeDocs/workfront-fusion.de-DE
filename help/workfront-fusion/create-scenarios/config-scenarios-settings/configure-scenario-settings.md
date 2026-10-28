@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 850372a59529141a31a1a55035c55a3e506e69fb
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 6%
+source-wordcount: '1757'
+ht-degree: 5%
 ---
 # Konfigurieren von Szenario-Einstellungen
 
 Sie können bestimmte Einstellungen für Szenarien im Bedienfeld Szenario-Einstellungen konfigurieren.
+
+>[!NOTE]
+>
+>Workfront Fusion stellt den Szenario-Editor auf ein neues Erlebnis um. Während dieser Umstellung sind sowohl die klassischen als auch die neuen Erlebnisse verfügbar und Sie können jederzeit zwischen ihnen wechseln. Es wird empfohlen, die neue -Version zu verwenden. Weitere Informationen finden Sie unter [Neue und klassische Erlebnisse](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) im Artikel Szenario-Editor.
 
 ## Zugriffsanforderungen
 
@@ -51,6 +55,23 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 +++
 
 ## Szenarioeinstellungen öffnen
+
+* [Szenarioeinstellungen in der neuen -Version öffnen (empfohlen)](#open-the-scenario-settings-in-the-new-experience-recommended)
+* [Öffnen Sie die Szenario-Einstellungen in der klassischen -Version](#open-the-scenario-settings-in-the-classic-experience)
+
+### Szenarioeinstellungen in der neuen -Version öffnen (empfohlen)
+
+1. Klicken Sie **linken** auf „Szenarien“.
+1. Suchen Sie das gewünschte Szenario und klicken Sie dann auf den Namen.
+1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
+1. Klicken Sie auf **Symbol** Szenarioeinstellungen![&#x200B; im Bereich Steuerelemente &#x200B;](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scenario-settings-icon-new.png) das Symbol Szenarioeinstellungen .
+
+   Möglicherweise müssen Sie zunächst auf das Dreipunkt-Symbol im Bereich Steuerelemente klicken, um es anzuzeigen.
+
+   Im angezeigten Bedienfeld [!UICONTROL Szenarioeinstellungen] können Sie verschiedene erweiterte Einstellungen für das Szenario konfigurieren.
+1. Aktivieren oder deaktivieren Sie die Szenario-Einstellungen nach Bedarf. Siehe [Optionen für Szenarioeinstellungen](#scenario-settings-options) unten.
+
+### Öffnen Sie die Szenario-Einstellungen in der klassischen -Version
 
 1. Klicken Sie **linken** auf „Szenarien“.
 1. Suchen Sie das gewünschte Szenario und klicken Sie dann auf den Namen.
@@ -150,13 +171,13 @@ Das Festlegen weiterer Zyklen kann nützlich sein, wenn Sie eine Verbindungsunte
 
 **Beispiele:** Workfront > [!UICONTROL Eintrag beobachten] überwacht neue Probleme, die auftreten, und Workfront > [!UICONTROL Objekt konvertieren] konvertiert die neue Anfrage in ein Projekt und weist ihr die entsprechende Vorlage zu.
 
-![Szenario-Einstellungen](assets/scenario-settings-ex-1-350x157.png)
+![Szenario-Einstellungen](assets/new-scenario-settings-ex-1.png)
 
 Eine Einstellung [!UICONTROL Weitere Zyklen] wird nur angewendet, wenn Sie die Ausführung des Szenarios planen. Wenn Sie die Schaltfläche [!UICONTROL Einmal ausführen] verwenden, werden die Zykluseinstellungen berücksichtigt.
 
 #### Die maximale Anzahl von Zyklen ist auf 1 festgelegt (Standard)
 
-![Maximale Zyklenanzahl](assets/max-number-cycles-1-350x201.png)
+![Maximale Zyklenanzahl](assets/new-max-number-cycles.png)
 
 Die maximale Anzahl von Zyklen im Modul Workfront > Datensätze überwachen ist auf `10` festgelegt.
 Wenn 100 Anfragen an Workfront gesendet werden und das Feld Maximale Anzahl von Zyklen auf 10 festgelegt ist, werden 90 Dateien nach einer Szenario-Ausführung nicht verarbeitet. Die nächsten 10 Dateien werden im nächsten geplanten Szenario verarbeitet.
@@ -169,9 +190,7 @@ Wenn dem Dropbox-Ordner 100 Dateien hinzugefügt werden und die Option Maximale 
 
 Alle Dateien werden innerhalb eines Szenario-Durchgangs verarbeitet.
 
-Die bereits ausgeführten Zyklen werden in den Details des Szenarios angezeigt:
-
-![Szenario-Detail](assets/scenario-detail-350x207.png)
+Die bereits ausgeführten Zyklen werden im Bereich Verlauf auf der Seite „Szenario-Details“ angezeigt.
 
 Weitere Informationen zu dieser Seite finden Sie unter [Szenariodetails](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 
@@ -192,6 +211,34 @@ Weitere Informationen zu Fehlern finden Sie unter [Fehlertypen](/help/workfront-
 Um eine Überschreibung auf Szenario-Ebene für einen Benachrichtigungstyp festzulegen, aktivieren oder deaktivieren Sie das Kontrollkästchen neben dem Benachrichtigungstyp.
 
 Weitere Informationen zu Benachrichtigungseinstellungen, einschließlich Überschreibungen auf Szenario-Ebene, finden Sie [Festlegen von Benachrichtigungsoptionen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md).
+
+### Temporäre Debug-Protokolle
+
+>[!NOTE]
+>
+>* Temporäre Debug-Protokolle sind nur im neuen Szenario-Designer verfügbar und nur, wenn die Funktion für Ihre Organisation aktiviert ist.
+>* Das Ändern der Einstellung erfordert die Berechtigung zum Bearbeiten des Szenarios.
+
+Anfrage- und Antwortdetails werden nicht für jede geplante oder ausgelöste Ausführung gespeichert, da sie viel Speicher benötigen. Einmal ausführen sorgt dafür, dass sie immer beibehalten werden.
+
+Um Anfrage- und Antwortdetails für die regulären Ausführungen des Szenarios zu erfassen, wählen Sie aus, wie lange sie erfasst werden sollen:
+
+* Für die nächste 1 Stunde
+* Für den nächsten Tag
+* Für die nächste Ausführung
+* Für die nächsten 10 Durchgänge
+
+Die Änderung gilt sofort. Sie müssen das Szenario nicht speichern.
+
+Während temporäre Debug-Protokolle aktiviert sind, zeigt die Einstellung an, wann sie bis zum aktiviert bleiben, oder wie viele Durchläufe noch übrig sind. Um die Erfassung von Anfrage- und Antwortdetails zu stoppen, klicken Sie auf **Deaktivieren**.
+
+Debug-Protokolle werden automatisch deaktiviert, wenn die Zeit oder die Anzahl der Ausführungen verbraucht ist. Jeder Durchgang zählt, einschließlich geplanter Durchgänge, bei denen keine neuen Daten gefunden werden.
+
+>[!NOTE]
+>
+>Temporäre Debug-Protokolle sind nur in der neuen -Version verfügbar und nur, wenn die Funktion für Ihre Organisation aktiviert ist. Um diese Einstellung zu ändern, benötigen Sie die Berechtigung zum Bearbeiten des Szenarios.
+
+<!-- BECKY CHECK ME: section added from the 10/23/26 release notes. Confirm the exact option labels, where the setting sits in the panel (I placed it before Worker pool), and the access requirement wording. Add a screenshot. -->
 
 ### Arbeitspool
 

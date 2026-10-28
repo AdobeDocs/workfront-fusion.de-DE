@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 16%
 ---
 # Anzeigen und Verwalten verketteter Szenariobeziehungen
@@ -64,21 +64,17 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 Sie können eine Zuordnung des aktuellen Szenarios und der übergeordneten oder untergeordneten Szenarios anzeigen. Die Karte zeigt ein Diagramm des Datenflusses durch die verketteten Szenarien.
 
-![Verkettete Szenariobeziehungen](assets/chained-scenario-relationships-2.png)
-
-<!--get a better picture-->
-
 So zeigen Sie die Beziehungszuordnung für ein verkettetes Szenario an:
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenario“ im linken Bereich und klicken Sie dann auf das Szenario.
 
    ODER
 
-   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil zum Beenden der Bearbeitung](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
+   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil zum Beenden der Bearbeitung](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
 1. Klicken Sie auf **Registerkarte** Beziehungen“.
 
-   ![Registerkarte „Beziehungen“](assets/relations-tab.png)
+   ![Registerkarte „Beziehungen“](assets/new-relationships-tab.png)
 
 1. Allgemeine Details zu den einzelnen verketteten Szenarien finden Sie unter Tags .
 

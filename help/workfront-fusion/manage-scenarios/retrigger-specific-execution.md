@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 16%
@@ -82,7 +82,7 @@ Sie können eine Szenarioausführung erneut über das Diagramm des Szenarios, de
 1. Suchen Sie die Ausführung, die Sie erneut auslösen möchten, in der Liste Ausführungen rechts auf der Seite.
 1. Klicken Sie **diesem Szenario** Erneut auslösen“.
 
-![Aus Diagramm erneut auslösen](assets/retrigger-from-diagram.png)
+![Aus Diagramm erneut auslösen](assets/new-retrigger-from-diagram.png)
 
 ### Auslösen einer Ausführung aus dem Szenarioverlauf
 
@@ -95,7 +95,7 @@ Sie können eine Szenarioausführung erneut über das Diagramm des Szenarios, de
 1. Suchen Sie die Ausführung, die Sie erneut auslösen möchten. Sie können die Volltextsuche verwenden, um sie bei Bedarf zu finden.
 1. Klicken Sie **diesem Szenario** Erneut auslösen“.
 
-![Aus dem Verlauf auslösen](assets/retrigger-from-history.png)
+![Aus dem Verlauf auslösen](assets/new-retrigger-from-history.png)
 
 ### Auslösen eines Szenarios von der Ausführungsseite des Szenarios
 
@@ -108,7 +108,7 @@ Sie können eine Szenarioausführung erneut über das Diagramm des Szenarios, de
 1. Klicken Sie auf der Ausführungsseite auf **Erneut auslösen**.
 
 
-![Aus Ausführung auslösen](assets/retrigger-from-execution.png)
+![Aus Ausführung auslösen](assets/new-retrigger-from-execution.png)
 
 
 

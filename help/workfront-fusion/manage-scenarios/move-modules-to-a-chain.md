@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 17%
+source-wordcount: '563'
+ht-degree: 16%
 ---
 # Module in eine Kette verschieben
 
@@ -21,6 +21,10 @@ ht-degree: 17%
 >Diese Funktion befindet sich in Beta und wird für geschäftskritische Produktions-Workflows nicht empfohlen. Als Beta-Funktion kann sich das Verhalten ändern, und Sonderfälle können möglicherweise nicht vollständig verarbeitet werden.
 
 Sie können eine Gruppe von Modulen in einem Szenario auswählen und sie in ein neues verkettetes Szenario verschieben, ohne Zuordnungen oder Datenstrukturen manuell neu zu erstellen. Dies bietet eine einfache Möglichkeit, große Szenarien zu modularisieren.
+
+>[!NOTE]
+>
+>Workfront Fusion stellt den Szenario-Editor auf ein neues Erlebnis um. Während dieser Umstellung sind sowohl die klassischen als auch die neuen Erlebnisse verfügbar und Sie können jederzeit zwischen ihnen wechseln. Es wird empfohlen, die neue -Version zu verwenden. Weitere Informationen finden Sie unter [Neue und klassische Erlebnisse](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) im Artikel Szenario-Editor.
 
 Wenn Sie eine Gruppe von Modulen in eine Kette verschieben, führt Workfront Fusion Folgendes aus:
 

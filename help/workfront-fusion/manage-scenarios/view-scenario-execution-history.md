@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 12%
+source-wordcount: '987'
+ht-degree: 11%
 ---
 # Anzeigen des Ausführungsverlaufs eines Szenarios
 
@@ -26,7 +26,13 @@ Ein Szenarioereignis ist eine Änderung des Szenarios, z. B. das Bearbeiten, Akt
 
 >[!NOTE]
 >
->Im Verlauf eines Szenarios werden alle Ausführungen eines Szenarios in den letzten 30 Tagen angezeigt.
+>* Im Verlauf eines Szenarios werden alle Ausführungen eines Szenarios in den letzten 30 Tagen angezeigt.
+>* In der neuen -Version verfügt der Szenario-Editor auch über ein Bedienfeld Ausführungsverlauf . Darin werden Status, Dauer, Vorgänge und Datengröße jedes Durchgangs angezeigt. Hier können Sie:
+>
+>   * Nach Status filtern
+>   * Ereignisse suchen
+>   * Verwenden Sie **Zurück** und **Weiter**, um zwischen Ausführungen zu wechseln, ohne zur Ausführungsliste zurückzukehren
+>   * Wählen Sie ein Ereignis aus, das zentriert werden soll, und markieren Sie das entsprechende Modul auf der Arbeitsfläche. Wenn Vorgangsdetails verfügbar sind, wird das Bedienfeld „Anfrage“ und „Antwort“ für dieses Ereignis geöffnet.
 
 ## Zugriffsanforderungen
 
@@ -72,7 +78,7 @@ Die Registerkarte [!UICONTROL Verlauf] zeigt mehr Details an, als auf der Seite 
 
    ODER
 
-   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil zum Beenden der Bearbeitung](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
+   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil zum Beenden der Bearbeitung](assets/new-exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
 1. Klicken Sie **Verlauf** neben dem Namen des Szenarios.
    ![Registerkarte „Verlauf“](assets/history-tab.png)
@@ -103,7 +109,7 @@ Die Registerkarte [!UICONTROL Verlauf] zeigt mehr Details an, als auf der Seite 
 
    ODER
 
-   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil zum Beenden der Bearbeitung](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
+   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil zum Beenden der Bearbeitung](assets/new-exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Verlauf“ im rechten Bedienfeld.
 1. (Optional) Klicken Sie auf die Ausführung im rechten Bedienfeld, um detaillierte Informationen zu einer ausgewählten Szenario-Ausführung zu erhalten.

@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Integrations
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 25%
@@ -67,7 +67,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 Um einen Fehler bedingt auszulösen, können Sie ein Modul so konfigurieren, dass es während seines Vorgangs absichtlich fehlschlägt. Eine Möglichkeit besteht darin, das Modul [!UICONTROL JSON] > [!UICONTROL Parse JSON] zu verwenden, das so konfiguriert ist, dass es optional einen Fehler auslöst (in diesem `BundleValidationError`):
 
-![JSON-Fehler](assets/json-parse-json.png)
+![JSON-Fehler](assets/new-json-parse-json.png)
 
 Anschließend können Sie eine der Fehlerbehandlungsanweisungen an die Fehlerbehandlungsroute anhängen:
 
@@ -78,4 +78,4 @@ Anschließend können Sie eine der Fehlerbehandlungsanweisungen an die Fehlerbeh
 
 Das folgende Beispiel zeigt die Verwendung der [!DNL Rollback]-Direktive:
 
-![Rollback-Direktive](assets/rollback-directive.png)
+![Rollback-Direktive](assets/new-rollback-directive.png)
