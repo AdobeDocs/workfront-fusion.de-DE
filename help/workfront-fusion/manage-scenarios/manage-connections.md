@@ -59,7 +59,7 @@ Sie können alle Verbindungen über den Bereich Verbindungen verwalten.
 >
 >Um ein neues Team auszuwählen, klicken Sie auf den Dropdown-Pfeil neben dem Team-Namen oben auf der Seite. Wählen Sie ein neues Team aus der Liste aus.
 
-1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![ der linken Navigationsleiste auf Verbindungen ](assets/connections-icon.png)Verbindungssymbol).
+1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![&#x200B; der linken Navigationsleiste auf Verbindungen &#x200B;](assets/connections-icon.png)Verbindungssymbol).
 1. (Optional) Um die Umgebung oder den Typ anzugeben, klicken Sie auf die Dropdown-Listen Umgebungstyp und Typ und wählen Sie eine Option aus.
 
    >[!NOTE]
@@ -74,7 +74,7 @@ Sie können alle Verbindungen über den Bereich Verbindungen verwalten.
 
 >[!NOTE]
 >
->Um in den Modulen eines Szenarios eine andere Verbindung zu verwenden, können Sie eine Verbindung in ein oder alle kompatiblen Module aus derselben App im Szenario-Editor kopieren. Weitere Informationen finden Sie unter [ und Ersetzen von Variablen, Quellen und Verbindungen in einem Szenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
+>Um in den Modulen eines Szenarios eine andere Verbindung zu verwenden, können Sie eine Verbindung in ein oder alle kompatiblen Module aus derselben App im Szenario-Editor kopieren. Weitere Informationen finden Sie unter [&#x200B; und Ersetzen von Variablen, Quellen und Verbindungen in einem Szenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
 
 ## Erneuern einer Verbindung
 
@@ -82,5 +82,5 @@ Workfront Fusion erhält in der Regel für unbegrenzte Zeit Zugriffsrechte für 
 
 So erneuern Sie eine Verbindung:
 
-1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![ der linken Navigationsleiste auf Verbindungen ](assets/connections-icon.png)Verbindungssymbol).
+1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![&#x200B; der linken Navigationsleiste auf Verbindungen &#x200B;](assets/connections-icon.png)Verbindungssymbol).
 1. (Optional) Um eine Verbindung erneut zu autorisieren, klicken **in** Zeile für diese Verbindung auf „Erneut autorisieren“.

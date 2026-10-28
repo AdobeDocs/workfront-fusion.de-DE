@@ -93,7 +93,7 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 
    Deaktivierte Routen zeigen graue Punkte, die vom Router zum ersten Modul auf der Route führen, und zeigen das Symbol für deaktivierte Routen ![Symbol für deaktivierte Routen](assets/disabled-route-icon.png) auf dem Titel an.
 
-1. (Optional und bedingt) Um eine deaktivierte Route zu aktivieren, klicken Sie auf das Symbol „Deaktivierte Route![ auf ](assets/disabled-route-icon.png) Routenbeschriftung.
+1. (Optional und bedingt) Um eine deaktivierte Route zu aktivieren, klicken Sie auf das Symbol „Deaktivierte Route![&#x200B; auf &#x200B;](assets/disabled-route-icon.png) Routenbeschriftung.
 1. Fahren Sie [Hinzufügen eines Filters zu einer Route in der neuen -Version](#add-a-filter-to-a-route-in-the-new-experience-recommended) fort.
 
 ### Hinzufügen eines Router-Moduls zu einem Szenario in der klassischen -Version
@@ -131,8 +131,8 @@ Sie müssen ein Router-Modul hinzufügen, bevor Sie Routen konfigurieren.
 
    Deaktivierte Routen zeigen graue Punkte, die vom Router zum ersten Modul auf der Route führen, und zeigen das Symbol für deaktivierte Routen ![Symbol für deaktivierte Routen](assets/disabled-route-icon.png) auf dem Titel an.
 
-1. (Optional und bedingt) Um eine deaktivierte Route zu aktivieren, klicken Sie auf das Symbol „Deaktivierte Route![ auf ](assets/disabled-route-icon.png) Routenbeschriftung.
-1. Fahren Sie [In der klassischen -Version mit dem Schritt Filter zu einer Route hinzufügen ](#add-a-filter-to-a-route-in-the-classic-experience).
+1. (Optional und bedingt) Um eine deaktivierte Route zu aktivieren, klicken Sie auf das Symbol „Deaktivierte Route![&#x200B; auf &#x200B;](assets/disabled-route-icon.png) Routenbeschriftung.
+1. Fahren Sie [In der klassischen -Version mit dem Schritt Filter zu einer Route hinzufügen &#x200B;](#add-a-filter-to-a-route-in-the-classic-experience).
 
 ## Hinzufügen eines Filters zu einer Route
 
@@ -140,7 +140,7 @@ Sie können nach dem Router-Modul einen Filter für eine Route einfügen, um Pak
 
 Wenn Daten den Filter mehrerer Routen übergeben, werden die Daten von beiden Routen verarbeitet. Die Top-Route verarbeitet die Daten zuerst.
 
-Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) ](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
+Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) &#x200B;](assets/fusion-scenario-filter-icon.png) Routenbeschriftung an.
 
 * [Hinzufügen eines Filters zu einer Route in der neuen -Version (empfohlen)](#add-a-filter-to-a-route-in-the-new-experience-recommended)
 * [Hinzufügen eines Filters zu einer Route in der klassischen Benutzeroberfläche](#add-a-filter-to-a-route-in-the-classic-experience)
@@ -181,7 +181,7 @@ Router mit Filtern zeigen das Filtersymbol ![Filtersymbol) ](assets/fusion-scena
 1. Klicken Sie **[!UICONTROL OK]**, um die Filtereinstellungen zu speichern.
 1. (Bedingt) Wenn der Filtername zu lang ist, um in die Beschriftung zu passen, bewegen Sie den Mauszeiger über die Beschriftung, um den gesamten Namen anzuzeigen.
 
-1. Fahren Sie [Konfigurieren einer Ausweichroute in der klassischen ](#configure-a-fallback-route-in-the-classic-experience)) fort.
+1. Fahren Sie [Konfigurieren einer Ausweichroute in der klassischen &#x200B;](#configure-a-fallback-route-in-the-classic-experience)) fort.
 
 ## Fallback-Route konfigurieren
 

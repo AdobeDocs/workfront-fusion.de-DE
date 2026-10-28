@@ -62,7 +62,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie Änderungen vornehmen möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
-1. Klicken Sie auf **Symbol** Suchen und Ersetzen![ im Bereich Steuerelemente ](assets/find-replace-icon.png)Suchen und Ersetzen“.
+1. Klicken Sie auf **Symbol** Suchen und Ersetzen![&#x200B; im Bereich Steuerelemente &#x200B;](assets/find-replace-icon.png)Suchen und Ersetzen“.
 
    Möglicherweise müssen Sie auf das Dreipunkt-Symbol im Bereich Steuerelemente klicken, um das Symbol „Suchen und Ersetzen“ anzuzeigen.
 

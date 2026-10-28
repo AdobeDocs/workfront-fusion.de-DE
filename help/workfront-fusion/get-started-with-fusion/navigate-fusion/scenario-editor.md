@@ -90,7 +90,7 @@ Wenn der Umschalter nicht angezeigt wird, ist das neue Erlebnis für Ihre Organi
 
 ### Öffnen Sie den Szenario-Editor und fügen Sie ein Modul hinzu:
 
-1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![ (](assets/scenarios-icon.png)).
+1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![&#x200B; (](assets/scenarios-icon.png)).
 1. Klicken Sie auf das Platzhaltermodul, um die Liste der Apps und Services zu öffnen.
 1. Wählen Sie die App oder den Service aus, mit der bzw. dem Sie beginnen möchten:
 
@@ -149,7 +149,7 @@ Möglicherweise müssen Sie auf das Dreipunkt-Symbol im Bereich Steuerelemente k
 | Anmerkungen <p>![Notizensymbol](assets/notes-icon-new.png)</p> | Machen Sie sich Notizen zum Szenario. Andere Benutzende können diese Notizen anzeigen, wenn sie sich im Szenario befinden. Weitere Informationen finden Sie unter [Hinzufügen von Anmerkungen zu einem Szenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
 | Automatisch ausrichten <p>![Symbol für automatische Ausrichtung](assets/auto-align-icon-new.png)</p> | Automatische Ausrichtung der Module in Ihrem Szenario. |
 | Suchmodule <p>![Suchmodulsymbol](assets/search-modules-icon-new.png)</p> | Wählen Sie ein Modul aus dieser Liste aus, um zu diesem Modul im Szenario zu wechseln, oder geben Sie einen Suchbegriff ein, um ein Modul zu finden, und klicken Sie dann auf die Suchergebnisse, die zu diesem Modul geleitet werden sollen. Sie können nach Modulnamen, ID, Typ oder Anwendung suchen. |
-| Suchen und Ersetzen <p>![Symbol „Suchen und Ersetzen](assets/find-and-replace-icon-new.png)</p> | <p>Variablen, zugeordnete Wertquellen oder Verbindungen in den Modulen des Szenarios suchen und ersetzen. Verwenden Sie die Registerkarten für Folgendes:</p><ul><li>Ersetzen Sie eine zugeordnete Variable im gesamten Szenario oder in einem Modul.</li><li>Ordnen Sie Verweise von einem Quellmodul einem anderen neu zu.</li><li>Kopieren Sie eine Verbindung zu einem oder allen kompatiblen Modulen aus derselben App.</li></ul><p>Das Bedienfeld zeigt eine Vorschau der Module an, die betroffen sind, bevor Sie die Änderung vornehmen. Wählen Sie eine Zeile in der Vorschau aus, um zu diesem Modul auf der Arbeitsfläche zu wechseln.</p> <p>Weitere Informationen finden Sie unter [ und Ersetzen von Variablen, Quellen und Verbindungen in einem Szenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).</p> |
+| Suchen und Ersetzen <p>![Symbol „Suchen und Ersetzen](assets/find-and-replace-icon-new.png)</p> | <p>Variablen, zugeordnete Wertquellen oder Verbindungen in den Modulen des Szenarios suchen und ersetzen. Verwenden Sie die Registerkarten für Folgendes:</p><ul><li>Ersetzen Sie eine zugeordnete Variable im gesamten Szenario oder in einem Modul.</li><li>Ordnen Sie Verweise von einem Quellmodul einem anderen neu zu.</li><li>Kopieren Sie eine Verbindung zu einem oder allen kompatiblen Modulen aus derselben App.</li></ul><p>Das Bedienfeld zeigt eine Vorschau der Module an, die betroffen sind, bevor Sie die Änderung vornehmen. Wählen Sie eine Zeile in der Vorschau aus, um zu diesem Modul auf der Arbeitsfläche zu wechseln.</p> <p>Weitere Informationen finden Sie unter [&#x200B; und Ersetzen von Variablen, Quellen und Verbindungen in einem Szenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).</p> |
 | Snippets <p>![Snippets-Symbol](assets/snippets-icon-new.png)</p> | <p>Snippets sind Szenarioabschnitte, die als Einheit gespeichert werden. Um eines zu erstellen, wählen Sie Module aus und speichern Sie sie als Snippet. Im Snippets-Bedienfeld können Sie Snippets suchen, taggen, in der Vorschau anzeigen, anheften, sortieren, per Drag-and-Drop ziehen und importieren und exportieren. Sie können Snippets für Teams oder Organisationen freigeben oder eine Kopie direkt an einen anderen Benutzer senden. Freigegebene Snippets werden auf ihrer eigenen Registerkarte angezeigt.</p> <p>Weitere Informationen finden Sie unter [Szenarioabschnitte mit Snippets speichern und wiederverwenden](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md).</p> |
 | Fluss erläutern <p>![Flusssymbol erläutern](assets/explain-flow-icon-new.png)</p> | Zeigen Sie eine Animation an, in der bewegte Punkte zeigen, wie Daten durch das Szenario fließen. |
 | Blueprint exportieren <p>![Blueprint-Symbol exportieren](assets/export-blueprint-icon-new.png)</p> | Exportiert einen Blueprint des aktuellen Szenarios. Weitere Informationen finden Sie unter [Module oder Szenarien kopieren](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md). |
@@ -206,7 +206,7 @@ Die neue Arbeitsfläche ändert auch das Aussehen von Szenarien.
 | Links | Die Verknüpfungen zwischen den Modulen sind gekrümmt und enden in Pfeilspitzen, die die Richtung zeigen. Fehler-Handler-Links sind gestrichelt dargestellt. |
 | Modulstatus | Die Indikatoren Grün, Gelb und Rot zeigen den Status der einzelnen Module an. |
 | Zoom-Detail | Kartendetails werden beim Vergrößern angezeigt. Beim Verkleinern vereinfachen Module die Symbole, sodass Sie immer noch das gesamte Szenario sehen können. |
-| Falten eines Routers | Im Bearbeitungsmodus können Sie einen Router falten, um seine Routen auszublenden. Weitere Informationen finden Sie unter [Router ](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router). |
+| Falten eines Routers | Im Bearbeitungsmodus können Sie einen Router falten, um seine Routen auszublenden. Weitere Informationen finden Sie unter [Router &#x200B;](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router). |
 | Dunkler Modus | Die Arbeitsfläche entspricht der Einstellung für Ihr dunkles Erscheinungsbild in Ihren Adobe-Voreinstellungen, einschließlich Modulkarten, Links, Bedienfeldern, Steuerelementen und Statusinformationen. |
 | Rechtes Bedienfeld | Das Modul-Setup, die Modulinspektion, der Modul-Browser, Suchen und Ersetzen, Snippets[Live-Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) und Anfrage- und Antwortdetails werden im selben Bedienfeld auf der rechten Seite der Arbeitsfläche geöffnet. |
 
@@ -217,7 +217,7 @@ Die neue Arbeitsfläche ändert auch das Aussehen von Szenarien.
 
 ### Öffnen Sie den Szenario-Editor und fügen Sie ein Modul hinzu: (Classic)
 
-1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![ (](assets/scenarios-icon.png)).
+1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![&#x200B; (](assets/scenarios-icon.png)).
 1. Klicken Sie auf das Fragezeichensymbol ![Fragesymbol](assets/question-mark-full-size.png), suchen Sie nach der App oder dem Service, mit der bzw. dem Sie beginnen möchten, und klicken Sie darauf. Detaillierte Informationen zum Konfigurieren eines Moduls finden Sie unter [Modul konfigurieren](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ### Verfügbare Szenario-Editor-Aktionen (klassisch)

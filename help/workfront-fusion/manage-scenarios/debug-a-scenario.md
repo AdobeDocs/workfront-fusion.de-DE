@@ -45,7 +45,7 @@ Das Adobe Workfront Fusion-DevTool hilft Ihnen, Szenarien zu verstehen und Fehle
 >
 >Diese Tools sind auch weiterhin auf der Registerkarte **Tools** des DevTools verfügbar, zusammen mit dem Modul Fokus , Module nach Zuordnung suchen und Base 64 . Sie können auch die `base64()`- und Binärkonvertierungsfunktionen in Zuordnungen verwenden.
 >
->Sie können Anfrage- und Antwortdetails auch direkt aus dem [Live-Protokoll](/help/workfront-fusion/manage-scenarios/live-trail.md) und dem Ausführungsverlauf im Szenario-Editor anzeigen. Weitere Informationen zum Suchen und Ersetzen finden Sie unter [Variablen, Quellen und Verbindungen in einem Szenario suchen und ](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
+>Sie können Anfrage- und Antwortdetails auch direkt aus dem [Live-Protokoll](/help/workfront-fusion/manage-scenarios/live-trail.md) und dem Ausführungsverlauf im Szenario-Editor anzeigen. Weitere Informationen zum Suchen und Ersetzen finden Sie unter [Variablen, Quellen und Verbindungen in einem Szenario suchen und &#x200B;](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
 <!-- BECKY CHECK ME: DevTool screenshots (10/27/26) show all ten tools still on the Tools tab, so this note now says the seven built-in tools are available in both places. The release notes implied only Focus a module, Find modules by mapping, and Base 64 would remain. Confirm after release whether the other seven are removed from the DevTool, and update this note and the Tools section if so.  -->
 <!-- BECKY CHECK ME: note added from the 10/23/26 release notes; the DevTool is NOT being removed. This article still needs a fuller restructure (new/classic split for the seven tools, Live Trail section or separate article). Confirm the menu labels. -->
 
@@ -264,7 +264,7 @@ Ermöglicht die Suche nach den Modulwerten für einen bestimmten Begriff. Die Au
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Schlüsselwort]</td> 
+   <td role="rowheader">[!UICONTROL -Schlüsselwort]</td> 
    <td> <p> Geben Sie den Begriff ein, nach dem Sie suchen möchten. </p> </td> 
   </tr> 
   <tr> 
@@ -394,12 +394,12 @@ Ermöglicht die Kodierung der eingegebenen Daten in Base64 oder die Dekodierung 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Vorgang] </td> 
+   <td role="rowheader">[!UICONTROL -Vorgang] </td> 
    <td> <p>Wählen Sie aus, ob die Daten aus dem Feld [!UICONTROL Raw Data] in Base64 kodiert oder Base64 in Raw Data dekodiert werden sollen.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Rohdaten]</p> </td> 
-   <td> <p> Geben Sie die Daten, die Sie für Base64 codieren möchten, oder Base64 ein, wenn Sie für Rohdaten decodieren möchten, je nach der im Feld [!UICONTROL-Vorgang] oben ausgewählten Option.</p> </td> 
+   <td> <p> Geben Sie die Daten, die Sie für Base64 codieren möchten, oder Base64 ein, wenn Sie für Rohdaten decodieren möchten, je nach der im Feld [!UICONTROL -Vorgang] oben ausgewählten Option.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -423,7 +423,7 @@ Zunächst müssen Sie das Modul, das Sie als Quellmodul verwenden möchten, zur 
    <td> <p>Wählen Sie das Modul aus, das Sie als neue Zuordnungsquelle verwenden möchten.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL-Modul zum Bearbeiten]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL -Modul zum Bearbeiten]</p> </td> 
    <td> <p>Wählen Sie das Modul aus, für das Sie die Zuordnung ändern möchten, wenn Sie die Zuordnung nicht im gesamten Szenario ändern möchten. </p> </td> 
   </tr> 
  </tbody> 
