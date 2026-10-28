@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f11394266811578664228f44a6202bc6621a75a0
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '966'
 ht-degree: 10%
 ---
 # Kopieren von Modulen oder Szenarios
@@ -69,18 +69,19 @@ Beachten Sie beim Einfügen von Modulen in ein anderes Szenario Folgendes:
 
 ### Module kopieren
 
-Das Kopieren einer Gruppe von Modulen ähnelt dem Kopieren eines einzelnen Moduls.
+Sie können ein einzelnes Modul oder eine Gruppe von Modulen kopieren.
+
+
+>[!NOTE]
+>
+>Sie können mehrere Module auswählen, indem Sie die [!UICONTROL Umschalt]-Taste gedrückt halten und auf die Module klicken, die Sie kopieren möchten. Beim Kopieren einer Gruppe von Modulen werden auch alle Verbindungsleitungen, Filter oder Routing-Logiken zwischen ihnen kopiert.
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in das Sie ein Modul kopieren möchten.
 1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
-1. Klicken Sie mit der rechten Maustaste auf das Modul, das Sie kopieren möchten.
-
-   >[!NOTE]
-   >
-   >Sie können mehrere Module auswählen, indem Sie die [!UICONTROL Umschalt]-Taste gedrückt halten und auf die Module klicken, die Sie kopieren möchten. Beim Kopieren einer Gruppe von Modulen werden auch alle Verbindungsleitungen, Filter oder Routing-Logiken zwischen ihnen kopiert.
-
-1. Wählen Sie **[!UICONTROL Modul kopieren]** aus.
+1. Wenn Sie mehrere Module kopieren möchten, halten Sie die Umschalttaste gedrückt und klicken Sie auf die Module, die Sie kopieren möchten.
+1. Klicken Sie mit der rechten Maustaste auf das Modul oder eines der Module, das Sie kopieren möchten.
+1. Wählen Sie **[!UICONTROL Modul kopieren]** oder **[!UICONTROL Module kopieren]**.
 1. Bewegen Sie den Cursor in den Bereich des Szenarios, in dem die Kopie des Szenarios erstellt werden soll.
 1. Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Einfügen]**.
 1. Verbinden Sie die eingefügten Module mit dem Szenario, indem Sie sie an die entsprechende Position im Szenario ziehen.
@@ -101,7 +102,7 @@ Beim Klonen eines Szenarios wird eine Kopie des Szenarios erstellt, die Sie dann
 
       ODER
 
-      Wenn Sie an dem Szenario im Szenario-Editor arbeiten, klicken Sie auf den Pfeil nach links ![Beenden der Bearbeitung](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
+      Wenn Sie an dem Szenario im Szenario-Editor arbeiten, klicken Sie auf den Pfeil nach links ![Beenden der Bearbeitung](assets/new-exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
 1. Klicken Sie **[!UICONTROL rechts oben]** der Seite mit der rechten Maustaste auf „Optionen“.
 1. Wählen Sie **[!UICONTROL Klonen]** aus.

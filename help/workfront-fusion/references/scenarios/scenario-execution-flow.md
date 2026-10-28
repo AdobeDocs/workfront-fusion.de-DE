@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 1%
+source-wordcount: '821'
+ht-degree: 0%
 ---
 # Ausführungsfluss von Szenarios
 
 In diesem Artikel wird erläutert, wie ein Szenario ausgeführt wird, wie Daten durch es fließen und wie die von den einzelnen Modulen verarbeiteten Daten angezeigt werden.
+
+>[!NOTE]
+>
+>Workfront Fusion stellt den Szenario-Editor auf ein neues Erlebnis um. Während dieser Umstellung sind sowohl die klassischen als auch die neuen Erlebnisse verfügbar und Sie können jederzeit zwischen ihnen wechseln. Es wird empfohlen, die neue -Version zu verwenden. Weitere Informationen finden Sie unter [Neue und klassische Erlebnisse](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) im Artikel Szenario-Editor.
 
 Informationen zum Datenfluss durch ein aktives Szenario finden Sie unter [Datenfluss in einem laufenden Szenario anzeigen](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
@@ -43,7 +47,7 @@ Der erste Schritt des Szenarios, der vom ersten Modul ausgeführt wird, besteht 
 
 Wenn das erste Modul ein Bundle zurückgibt, durchläuft das Bundle den Rest des Szenarios. In diesem Beispiel würde das Bundle an das zweite Modul gehen, das die Anfrage in ein Projekt konvertiert.
 
-![Ausführungsfluss des Workfront-Szenarios](assets/example-execution-flow-wf-only.png)
+![Ausführungsfluss des Workfront-Szenarios](assets/new-example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -51,13 +55,13 @@ Wenn das erste Modul ein Bundle zurückgibt, durchläuft das Bundle den Rest des
 
 >[!BEGINSHADEBOX]
 
-**Beispiel:** In diesem Szenario, in dem Dokumente aus Adobe Workfront heruntergeladen und an einen Ordner in [!DNL Dropbox] gesendet werden, fließen die Daten wie folgt:
+**Beispiel** In diesem Szenario, in dem Dokumente aus Adobe Workfront heruntergeladen und an einen Ordner in [!DNL Dropbox] gesendet werden, fließen die Daten wie folgt:
 
 Der erste Schritt des Szenarios, der vom ersten Modul ausgeführt wird, besteht darin, in Workfront nach Dokumenten zu suchen. Jedes gefundene Dokument wird als ein Bundle betrachtet. Wenn das Modul ausgeführt wird, ohne dass Pakete gefunden werden, endet das Szenario nach dem ersten Modul.
 
 Wenn ein Bundle zurückgegeben wird, durchläuft das Bundle den Rest des Szenarios. In diesem Beispiel besteht der Rest des Szenarios aus dem zweiten Modul , das das Bundle in den [!DNL Dropbox] Ordner hochlädt.
 
-![Ausführungsfluss des Integrationsszenarios](assets/example-execution-flow-wf-dropbox.png)
+![Ausführungsfluss des Integrationsszenarios](assets/new-example-execution-flow-wf-dropbox.png)
 
 Wenn das erste Modul mehrere Bundles zurückgibt, wird das erste Bundle in [!DNL Dropbox] hochgeladen, bevor das zweite Bundle hochgeladen wird. Dann wird das zweite Bundle hochgeladen, dann das dritte und so weiter.
 
@@ -78,7 +82,7 @@ Für jedes Modul durchläuft das Bundle einen 4-stufigen Prozess, bevor es zum n
 
 Nach Abschluss eines Szenario-Durchgangs zeigt jedes Modul ein Symbol mit der Anzahl der ausgeführten Vorgänge an. Sie können auf dieses Symbol klicken, um die detaillierten Informationen zu den verarbeiteten Bundles für jeden Schritt im Prozess anzuzeigen. Sie können sehen, welche Moduleinstellungen verwendet wurden und welche Bundles von den einzelnen Modulen zurückgegeben wurden.
 
-![Verarbeitete Bundles](assets/Info-processed-bundles.png)
+![Verarbeitete Bundles](assets/new-Info-processed-bundles.png)
 
 In diesem Beispiel erhielt das Modul Eingabeinformationen wie:
 

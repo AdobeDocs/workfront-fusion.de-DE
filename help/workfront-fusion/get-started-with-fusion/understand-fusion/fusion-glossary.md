@@ -16,15 +16,18 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 98%
+source-wordcount: '976'
+ht-degree: 93%
 ---
 # Adobe Workfront Fusion-Glossar
 
 Im folgenden Glossar werden einige häufig verwendete Begriffe in Adobe Workfront Fusion erläutert.
 
+>[!NOTE]
+>
+>Workfront Fusion stellt den Szenario-Editor auf ein neues Erlebnis um. Während dieser Umstellung sind sowohl die klassischen als auch die neuen Erlebnisse verfügbar und Sie können jederzeit zwischen ihnen wechseln. Es wird empfohlen, die neue -Version zu verwenden. Weitere Informationen finden Sie unter [Neue und klassische Erlebnisse](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) im Artikel Szenario-Editor.
 
 <table style="table-layout:auto">
  <col> 
@@ -88,7 +91,7 @@ Im folgenden Glossar werden einige häufig verwendete Begriffe in Adobe Workfron
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Modul</p> </td> 
-   <td> <p>Ein einzelner Schritt innerhalb eines Szenarios, mit dem innerhalb der zugehörigen Anwendung oder des zugehörigen Services eine Funktion ausgeführt wird, z. B. zum Erstellen eines Eintrags.</p> <p>Jede Anwendung bzw. jeder Service verfügt über verschiedene Module, die definieren, wie auf eine Anfrage reagiert wird.</p>  <p> <img src="assets/module.png"> </p> <p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Überblick über Module</a>.</p> </td> 
+   <td> <p>Ein einzelner Schritt innerhalb eines Szenarios, mit dem innerhalb der zugehörigen Anwendung oder des zugehörigen Services eine Funktion ausgeführt wird, z. B. zum Erstellen eines Eintrags.</p> <p>Jede Anwendung bzw. jeder Service verfügt über verschiedene Module, die definieren, wie auf eine Anfrage reagiert wird.</p>  <p> <img src="assets/new-module.png"> </p> <p>Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Überblick über Module</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Vorgang</p> </td> 
@@ -104,7 +107,7 @@ Im folgenden Glossar werden einige häufig verwendete Begriffe in Adobe Workfron
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Szenario</p> </td> 
-   <td> <p>Eine benutzerseitig erstellte Reihe automatisierter Schritte, die jeweils von einem Modul repräsentiert und ausgeführt werden. Der Zweck eines Szenarios besteht darin, Daten zu verschieben und zu bearbeiten.</p> <p> <img src="assets/entire-scenario-blank.png" style="width: 350;height: 178;"> </p> <p> Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">Überblick über Szenarios</a>.</p> </td> 
+   <td> <p>Eine benutzerseitig erstellte Reihe automatisierter Schritte, die jeweils von einem Modul repräsentiert und ausgeführt werden. Der Zweck eines Szenarios besteht darin, Daten zu verschieben und zu bearbeiten.</p> <p> <img src="assets/new-scenario-example-unmarked.png" style="width: 350;height: 92;"> </p> <p> Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">Überblick über Szenarios</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Szenario-Segment</p> </td> 

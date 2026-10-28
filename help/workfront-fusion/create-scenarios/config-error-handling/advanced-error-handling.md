@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 12%
+source-wordcount: '950'
+ht-degree: 11%
 ---
 # Hinzufügen von Filterung und Verschachtelung zu Fehlerbehandlungsrouten
 
 Sie können Ihrer Fehlerbehandlungsroute erweiterte Techniken zur Fehlerbehandlung hinzufügen, indem Sie Filterung und Verschachtelung einschließen.
+
+>[!NOTE]
+>
+>Workfront Fusion stellt den Szenario-Editor auf ein neues Erlebnis um. Während dieser Umstellung sind sowohl die klassischen als auch die neuen Erlebnisse verfügbar und Sie können jederzeit zwischen ihnen wechseln. Es wird empfohlen, die neue -Version zu verwenden. Weitere Informationen finden Sie unter [Neue und klassische Erlebnisse](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) im Artikel Szenario-Editor.
 
 ## Zugriffsanforderungen
 
@@ -74,7 +78,13 @@ Informationen dazu, wie Fusion verschiedene Datentypen auswertet und verarbeitet
 
 ### Beispiel: Fehlerbehandlung mit Filtern
 
+<!-- BECKY CHECK ME: this example scenario (through the end of the Nesting example below) is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience (recommend using Workfront modules instead of Dropbox, consistent with other rebuilt articles) - not just new screenshots of this same Dropbox scenario. Flagging only, not editing - see tracking spreadsheet. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>In diesem Beispiel wird der klassische Szenario-Editor verwendet.
 
 Dieses Beispielszenario zeigt, wie diese Filter bei der Fehlerbehandlung funktionieren.
 
@@ -122,7 +132,13 @@ Die Fortsetzungsanweisung liefert dann den Ordnerpfad als Ausgabe für das fehlg
 
 Fehlerhandler-Routen können für alle Module mit Ausnahme von Routern erstellt und konfiguriert werden. Daher können Sie eine Fehler-Handler-Route für ein Modul erstellen, das bereits Teil einer vorhandenen Fehler-Handler-Route ist.
 
+<!-- BECKY CHECK ME: this example scenario is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience - see the flag on the "Example: Error handling with filters" example above. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>In diesem Beispiel wird der klassische Szenario-Editor verwendet.
 
 Beispiel:
 

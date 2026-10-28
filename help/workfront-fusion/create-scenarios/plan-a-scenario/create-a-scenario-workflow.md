@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '774'
 ht-degree: 3%
 ---
 # Workflow zum Erstellen eines Szenarios
@@ -40,7 +40,7 @@ Tastaturbefehle
 ## Szenario erstellen und benennen
 
 1. Melden Sie sich bei Ihrem Workfront Fusion-Konto an.
-1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![&#x200B; (](assets/scenarios-icon.png)).
+1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![ (](assets/scenarios-icon.png)).
 
    >[!NOTE]
    >
@@ -152,11 +152,13 @@ Beim Erstellen oder Bearbeiten eines Szenarios können die folgenden Tastaturbef
    <td>Strg+Umschalt+Eingabe</td> 
    <td>Befehlstaste+Umschalt+Eingabe</span> </td> 
   </tr> 
+<!--
   <tr> 
-   <td role="rowheader">[!UICONTROL DevTool öffnen]</td> 
+   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
    <td>F12</td> 
-   <td>Strg+Fn+F12</span> </td> 
+   <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Mehrere Module auswählen]</td> 
    <td>Umschalt+Ziehen</td> 

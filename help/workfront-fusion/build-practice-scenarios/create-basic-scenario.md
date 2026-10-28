@@ -10,20 +10,24 @@ exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
 TQID: https://experienceleague.adobe.com/4SeGiWeAsMRQbbk15I5IoL8-ZYe5WLeF6z9URFpTQQI
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 347280547bea92c0ee498da519495569a3cac661
 workflow-type: tm+mt
-source-wordcount: 1426
-ht-degree: 12%
-
+source-wordcount: '2691'
+ht-degree: 6%
 ---
-
 # Erstellen eines Basisszenarios
 
 Adobe Workfront Fusion dient dazu, Ihre Prozesse zu automatisieren, sodass Sie sich auf neue Aufgaben konzentrieren können, anstatt dieselben Aufgaben immer wieder zu wiederholen. Dies funktioniert durch die Verknüpfung von Aktionen innerhalb und zwischen Anwendungen und Services, um ein Szenario zu erstellen, in dem Ihre Daten automatisch übertragen und umgewandelt werden. Das von Ihnen erstellte Szenario ermöglicht es, auf Daten in einer Anwendung oder einem Service zu achten und diese Daten zu verarbeiten, um das gewünschte Ergebnis zu liefern.
 
 In diesem Beispiel wird erläutert, wie Sie ein Szenario erstellen, in dem in Workfront nach einer Anfrage gesucht und diese in ein Projekt konvertiert wird.
+
+>[!NOTE]
+>
+>Workfront Fusion stellt den Szenario-Editor auf ein neues Erlebnis um. Während dieser Umstellung sind sowohl die klassischen als auch die neuen Erlebnisse verfügbar und Sie können jederzeit zwischen ihnen wechseln. Es wird empfohlen, die neue -Version zu verwenden. Weitere Informationen finden Sie unter [Neue und klassische Erlebnisse](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) im Artikel Szenario-Editor.
 
 ## Zugriffsanforderungen
 
@@ -54,9 +58,176 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 +++
 
-## Erstellen eines Übungsszenarios
+## Erstellen eines Übungsszenarios in der neuen -Version (empfohlen)
+
+* [Erstellen des Szenarios](#begin-creating-the-scenario)
+* [Hinzufügen und Konfigurieren des ersten Moduls](#add-and-configure-the-first-module)
+* [Hinzufügen und Konfigurieren des zweiten Moduls](#add-and-configure-the-second-module)
+* [Testen des Szenarios](#test-the-scenario)
+* [Aktivieren des Szenarios](#activate-the-scenario)
 
 ### Erstellen des Szenarios
+
+1. Klicken Sie **Bereich &quot;**&quot; auf **Neues Szenario erstellen**.
+
+   Informationen zum Auffinden des Bereichs „Szenarien“ finden Sie unter [Navigieren in Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md).
+
+   Der Szenario-Editor wird angezeigt, wobei in der Mitte ein leeres Platzhaltermodul enthalten ist.
+
+   ![Platzhaltermodul](assets/new-placeholder-module.png)
+
+1. Klicken Sie oben links auf den Namen des Szenarios und geben Sie dann einen Namen ein.
+1. Fahren Sie mit [Hinzufügen und konfigurieren Sie das erste Modul](#add-and-configure-the-first-module) fort.
+
+### Hinzufügen und Konfigurieren des ersten Moduls
+
+1. Klicken Sie auf das Platzhaltermodul, um die Liste der Apps und Services zu öffnen.
+
+   Ein Bedienfeld wird rechts neben dem Modul geöffnet.
+
+   ![App- und Service-Auswahl](assets/new-connector-picker.png)
+
+1. **Adobe Workfront**:
+
+   * Mithilfe des Bedienfelds auf der linken Seite nach Kategorie suchen ([!UICONTROL Favoriten], [!UICONTROL Alle Apps], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative &amp; Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI] oder [!UICONTROL integriert]) oder
+   * Geben Sie einen Begriff in das Suchfeld ein, um die Liste zu filtern.
+
+   Die Liste ändert sich und zeigt alle Workfront-Module an, die Sie verwenden können.
+
+1. Klicken Sie auf das **[!UICONTROL Suche]**-Modul.
+
+   Das Fenster für die Modulkonfiguration wird geöffnet.
+
+1. Wählen [!UICONTROL  im Feld ] Ihre Workfront-Verbindung aus.
+
+   Wenn Sie keine Workfront-Verbindung haben, lesen Sie [Verbindung erstellen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+1. Wählen Sie im Feld [!UICONTROL Datensatztyp] die Option **[!UICONTROL Problem]** aus. Dadurch wird das Modul so eingerichtet, dass nur Probleme gesucht werden, darunter auch Anfragen.
+
+   Sie finden **[!UICONTROL Problem]** in der Liste, wenn Sie mit der Eingabe des Worts &quot;[!UICONTROL Problem] beginnen.
+
+1. Wählen Sie im **[!UICONTROL Ergebnissatz]** die Option **[!UICONTROL Erster übereinstimmender Datensatz]**.
+
+   Dadurch wird das Modul so eingestellt, dass nur der erste gefundene Datensatz zurückgegeben wird, der die Kriterien erfüllt.
+1. Konfigurieren **[!UICONTROL im Bereich &quot;]**&quot; die Kriterien, um die spezifische Aufgabe zurückzugeben.
+
+   1. Wählen Sie im ersten Feld unter [!UICONTROL Suchkriterien] das Feld aus, das Sie in Ihre Suche einbeziehen möchten. Wählen Sie für dieses Beispiel **[!UICONTROL Name]** aus.
+
+      Sie finden **[!UICONTROL Name]** in der Liste, wenn Sie mit der Eingabe des Wortes &quot;[!UICONTROL name] beginnen.
+   1. Klicken Sie für den -Operator auf den Dropdown-Pfeil neben **Vorhanden** und ändern Sie ihn in [!UICONTROL **Enthält (ignoriert Groß-/Kleinschreibung)**].
+
+      Auf diese Weise kann das Modul Projekte mit den ausgewählten Wörtern im Namen finden, auch wenn Sie nicht den gesamten Namen oder nur die falsche Groß-/Kleinschreibung (z. B. alle Großbuchstaben) eingeben.
+   1. Geben Sie im letzten Feld unter [!UICONTROL Suchkriterien] ein Wort oder eine Phrase ein, von dem Sie wissen, dass es/sie im Namen der Aufgabe ist, nach der Sie suchen.
+
+1. Wählen Sie in **[!UICONTROL Liste]** Ausgaben“ die Felder aus, die vom Modul ausgegeben werden sollen. Wählen Sie für dieses Beispiel die Felder **[!UICONTROL ID]** und **[!UICONTROL Name]** aus.
+
+   >[!TIP]
+   >
+   >Sie können **Befehlstaste+F** ([!DNL Mac] OS) oder **Strg+F** ([!DNL Windows] OS) verwenden, um ein Feld schnell zu finden.
+
+1. Klicken Sie **[!UICONTROL OK]**, um die Modulkonfiguration zu speichern.
+
+1. Klicken Sie mit der rechten Maustaste auf das Modul **[!UICONTROL Umbenennen]**, geben Sie dann einen Namen ein, der beschreibt, was das Modul tun soll (z. B. nach Anfragen suchen), und klicken Sie dann auf **[!UICONTROL OK]**.
+
+   Der Name wird direkt unter dem Modul angezeigt. Darunter finden Sie in Workfront Fusion eine kurze Beschreibung des Aktionstyps, der vom Modul ausgeführt wird.
+
+   ![Modul umbenannt](assets/new-renamed-module.png)
+
+1. Fahren Sie mit [Hinzufügen und konfigurieren Sie das zweite Modul](#add-and-configure-the-second-module) fort.
+
+### Hinzufügen und Konfigurieren des zweiten Moduls
+
+1. Bewegen Sie den Mauszeiger über den rechten Rand des Moduls und klicken Sie dann auf **[!UICONTROL Weitere Module hinzufügen]** wenn es angezeigt wird.
+1. Wählen Sie **Adobe Workfront** aus der Liste der Programme und dann das Modul **[!UICONTROL Objekt konvertieren]** aus.
+1. Wählen [!UICONTROL  im Feld ] die gleiche Workfront-Verbindung aus, die Sie im vorherigen Modul verwendet haben.
+1. Wählen Sie im Feld **[!UICONTROL Datensatztyp]** die Option **[!UICONTROL Problem]** aus, da das Modul ein Problem konvertiert.
+1. Wählen Sie im **[!UICONTROL Konvertieren in]** die Option **Projekt** aus.
+1. Klicken Sie neben dem Feld Aufgaben-ID auf den Umschalter Zuordnung , um es zu aktivieren.
+
+   Der Umschalter wird blau, wenn er aktiviert ist. Auf diese Weise können Sie die Aufgaben-ID aus dem vorherigen Modul zuordnen.
+
+   ![Umschalter „Zuordnung“](assets/new-map-toggle.png)
+1. Klicken Sie auf **[!UICONTROL Feld]** Aufgaben-ID“.
+
+   Es öffnet sich ein Bedienfeld, in dem Sie auswählen können, was als ID der Aufgabe verwendet werden soll, die Sie in ein Projekt konvertieren möchten. Da Sie die Zuordnung aktiviert haben, enthält das Bedienfeld Ausgaben aus allen vorherigen Modulen. Sie haben ID als Ausgabe des vorherigen Moduls ausgewählt, sodass es jetzt im Bedienfeld verfügbar ist.
+
+   Dieses Bedienfeld wird als Zuordnungs-Bedienfeld bezeichnet. Weitere Informationen zum Zuordnungsbereich finden Sie unter [Zuordnungsübersicht](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md).
+1. Wählen **ID** im Zuordnungsbereich aus.
+
+   Im Feld ID wird ein ID-Block angezeigt. Es zeigt die Nummer des Moduls, dem es zugeordnet ist, und das Feld, das zugeordnet ist.
+
+   ![Map ID](assets/new-map-id.png)
+
+1. Klicken Sie auf das **Vorlagen** ID), geben Sie den Namen der Workfront-Vorlage ein, die Sie für dieses Projekt verwenden möchten, und wählen Sie sie aus, wenn sie in der Liste angezeigt wird.
+1. Klicken Sie **[!UICONTROL OK]**, um die Modulkonfiguration zu speichern.
+
+1. Klicken Sie mit der rechten Maustaste auf das Modul **[!UICONTROL Umbenennen]**, geben Sie dann einen Namen ein, der beschreibt, was das Modul tun soll (z. B. „In Projekt konvertieren„), und klicken Sie dann auf **[!UICONTROL OK]**.
+
+1. Fahren Sie mit [Testen des Szenarios](#test-the-scenario) fort.
+
+### Testen des Szenarios
+
+Bevor Sie Ihr Szenario aktivieren, müssen Sie es testen, indem Sie es mindestens einmal ausführen und die Ergebnisse anzeigen. Auf diese Weise können Sie verstehen, wie Daten durch das Szenario fließen, und Fehler finden.
+
+Bei diesem Szenario würde ein erfolgreicher Test dazu führen, dass die Anfrage gefunden und in ein Projekt konvertiert wird.
+
+1. Klicken Sie auf **[!UICONTROL Symbol „Einmal]**&quot;.
+
+   „Einmal ausführen“ ist in der neuen -Version nur als Symbol verfügbar. Bewegen Sie den Mauszeiger über das Symbol, um die QuickInfo **[!UICONTROL Einmal ausführen]** anzuzeigen.
+
+   ![Schaltfläche „Szenario ausführen“](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. Klicken Sie nach der Ausführung des Szenarios auf die Blase über dem ersten Modul, um Informationen über das vom Modul verarbeitete Datenpaket anzuzeigen, einschließlich der Daten, die aus der vom Modul zurückgegebenen Anfrage abgerufen wurden.
+
+1. Klicken Sie auf die Blase „Ausführungs-Inspektor“ über dem zweiten Modul, um die Eingabe (die Anfrage) und die Ausgabe (das konvertierte Projekt) anzuzeigen.
+
+   ![Bubble des Ausführungs-Inspektors](assets/new-execution-bubble.png)
+
+   Weitere Informationen zu den Daten in den Inspektionsblasen finden Sie unter:
+
+   * Allgemeine Informationen finden Sie unter [Ausführungsfluss von Szenarien](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
+   * Informationen zu verarbeiteten Bundles finden Sie unter [Szenarioausführung, Zyklen und Phasen](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+
+1. Klicken Sie auf **Speichern**-Symbol ![Speichern](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) im Bereich Steuerelemente , um den Fortschritt des Szenarios zu speichern.
+
+   >[!IMPORTANT]
+   >
+   >Speichern Sie häufig, während Sie ein Szenario verfeinern und testen. Möglicherweise müssen Sie ein neues Problem in Ihrem Workfront-Konto erstellen, um das Szenario Trigger.
+
+>[!TIP]
+>
+>Wir empfehlen die optionale, aber nützliche Vorgehensweise, Hinweise zu jedem Modul hinzuzufügen.
+>
+>1. Klicken Sie mit der rechten Maustaste auf ein Modul und wählen Sie **[!UICONTROL Anmerkung hinzufügen]**.
+>1. Geben Sie in der angezeigten Anmerkung eine Übersicht für das Modul ein.
+>
+>    Sie können mehrere Notizen für ein Modul hinzufügen.
+>
+>1. Schließen Sie den **[!UICONTROL Anmerkungen]**.
+>
+>     Nachdem Sie einem Szenario eine Anmerkung hinzugefügt haben, wird ein Punkt auf dem **[!UICONTROL Anmerkungen]**-Symbol ![Anmerkungen-Symbol mit Punkt](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png) im Bereich Steuerelemente angezeigt.
+>
+>1. Klicken Sie auf **[!UICONTROL Notizen]**-Symbol ![Notizen-Symbol mit Punkt](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png), um Ihre Notizen anzuzeigen. Wenn Notizen geöffnet sind, wird ein Kreis um das Notizen-Symbol angezeigt.
+>
+
+### Aktivieren des Szenarios
+
+Der letzte Schritt beim Erstellen eines Szenarios besteht darin, es zu aktivieren.
+
+Da dieses Szenario nach einem bestimmten Problem sucht, ist es nicht erforderlich, es zu aktivieren. Durch die Aktivierung eines Szenarios wird es nach einem Zeitplan ausgeführt oder wenn eine bestimmte Aktion in einem Programm stattfindet. Nachdem Sie ein Szenario aktiviert haben, wird es standardmäßig alle 15 Minuten ausgeführt. Sie können dies ändern, indem Sie festlegen, wann und wie oft die Ausführung erfolgen soll.
+
+Weitere Informationen zum Aktivieren von Szenarien finden Sie unter [Aktivieren oder Deaktivieren eines Szenarios](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+
+Weitere Informationen zu Zeitplänen finden Sie unter [Planen eines Szenarios](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
+
+## Erstellen eines Übungsszenarios in der klassischen -Version
+
+* [Beginnen Sie mit der Erstellung des Szenarios (klassisch)](#begin-creating-the-scenario-classic)
+* [Hinzufügen und Konfigurieren des ersten Moduls (Classic)](#add-and-configure-the-first-module-classic)
+* [Hinzufügen und Konfigurieren des zweiten Moduls (Classic)](#add-and-configure-the-second-module-classic)
+* [Testen des Szenarios (klassisch)](#test-the-scenario-classic)
+* [Aktivieren des Szenarios (klassisch)](#activate-the-scenario-classic)
+
+### Beginnen Sie mit der Erstellung des Szenarios (klassisch)
 
 1. Klicken Sie **Bereich &quot;**&quot; auf **Neues Szenario erstellen**.
 
@@ -65,9 +236,9 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
    Der Szenario-Editor wird angezeigt, wobei in der Mitte ein leeres Modul enthalten ist.
 
 1. Wählen Sie **[!UICONTROL Platzhalternamen]** Neues Szenario“ in der linken oberen Ecke aus und geben Sie dann einen Namen ein.
-1. Fahren Sie mit [Hinzufügen und konfigurieren Sie das erste Modul](#add-and-configure-the-first-module) fort.
+1. Fahren Sie mit [Hinzufügen und konfigurieren Sie das erste Modul (klassisch)](#add-and-configure-the-first-module-classic) fort.
 
-### Hinzufügen und Konfigurieren des ersten Moduls
+### Hinzufügen und Konfigurieren des ersten Moduls (Classic)
 
 1. Klicken Sie auf das leere Modul, um die App auszuwählen, aus der Sie ein Modul auswählen möchten.
 
@@ -81,7 +252,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
    Das Fenster für die Modulkonfiguration wird geöffnet.
 
-1. Wählen [!UICONTROL &#x200B; im Feld &#x200B;] Ihre Workfront-Verbindung aus.
+1. Wählen [!UICONTROL  im Feld ] Ihre Workfront-Verbindung aus.
 
    Wenn Sie keine Workfront-Verbindung haben, lesen Sie [Verbindung erstellen](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 1. Wählen Sie im Feld [!UICONTROL Datensatztyp] die Option **[!UICONTROL Problem]** aus. Dadurch wird das Modul so eingerichtet, dass nur Probleme gesucht werden, darunter auch Anfragen.
@@ -115,13 +286,13 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
    ![Modul umbenannt](assets/module-renamed-wf.png)
 
-1. Fahren Sie mit [Hinzufügen und konfigurieren Sie das zweite Modul](#add-and-configure-the-second-module) fort.
+1. Fahren Sie mit [Hinzufügen und konfigurieren Sie das zweite Modul (klassisch)](#add-and-configure-the-second-module-classic) fort.
 
-## Hinzufügen und Konfigurieren des zweiten Moduls
+### Hinzufügen und Konfigurieren des zweiten Moduls (Classic)
 
 1. Bewegen Sie den Mauszeiger über den Teilkreis rechts neben dem Modul und klicken Sie dann auf **[!UICONTROL Weitere Module hinzufügen]**.
 1. Wählen Sie Adobe Workfront aus der Liste der Programme und dann das Modul **[!UICONTROL Objekt konvertieren]** aus.
-1. Wählen [!UICONTROL &#x200B; im Feld &#x200B;] die gleiche Workfront-Verbindung aus, die Sie im vorherigen Modul verwendet haben.
+1. Wählen [!UICONTROL  im Feld ] die gleiche Workfront-Verbindung aus, die Sie im vorherigen Modul verwendet haben.
 1. Wählen Sie im Feld **[!UICONTROL Datensatztyp]** die Option **[!UICONTROL Problem]** aus, da das Modul ein Problem konvertiert.
 1. Wählen Sie im **[!UICONTROL Konvertieren in]** die Option **Projekt** aus.
 1. Klicken Sie neben dem Feld Aufgaben-ID auf den Umschalter Zuordnung , um es zu aktivieren.
@@ -145,9 +316,9 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 1. Klicken Sie mit der rechten Maustaste auf das Modul **[!UICONTROL Umbenennen]**, geben Sie dann einen Namen ein, der beschreibt, was das Modul tun soll (z. B. „In Projekt konvertieren„), und klicken Sie dann auf **[!UICONTROL OK]**.
 
-1. Fahren Sie mit [Testen des Szenarios](#test-the-scenario) fort.
+1. Fahren Sie [Testen des Szenarios (klassisch)](#test-the-scenario-classic) fort.
 
-## Testen des Szenarios
+### Testen des Szenarios (klassisch)
 
 Bevor Sie Ihr Szenario aktivieren, müssen Sie es testen, indem Sie es mindestens einmal ausführen und die Ergebnisse anzeigen. Auf diese Weise können Sie verstehen, wie Daten durch das Szenario fließen, und Fehler finden.
 
@@ -180,12 +351,12 @@ Bei diesem Szenario würde ein erfolgreicher Test dazu führen, dass die Anfrage
 >
 >1. Schließen Sie den **[!UICONTROL Anmerkungen]**.
 >
->     Nachdem Sie eine Anmerkung zu einem Szenario hinzugefügt haben, wird ein Punkt auf dem **[!UICONTROL Anmerkungen]**-Symbol ![Anmerkungen-Symbol mit &#x200B;](assets/notes-icon-w-dot.png) Punkt) unten im Szenario-Editor angezeigt.
+>     Nachdem Sie eine Anmerkung zu einem Szenario hinzugefügt haben, wird ein Punkt auf dem **[!UICONTROL Anmerkungen]**-Symbol ![Anmerkungen-Symbol mit ](assets/notes-icon-w-dot.png) Punkt) unten im Szenario-Editor angezeigt.
 >
 >1. Klicken Sie auf **[!UICONTROL Notizen]**-Symbol ![Notizen-Symbol mit Punkt](assets/notes-icon-w-dot.png), um Ihre Notizen anzuzeigen. Wenn Notizen geöffnet sind, wird ein Kreis um das Notizen-Symbol angezeigt.
 >
 
-## Aktivieren des Szenarios
+### Aktivieren des Szenarios (klassisch)
 
 Der letzte Schritt beim Erstellen eines Szenarios besteht darin, es zu aktivieren.
 

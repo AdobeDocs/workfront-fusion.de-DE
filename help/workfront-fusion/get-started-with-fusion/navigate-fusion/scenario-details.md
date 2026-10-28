@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '583'
 ht-degree: 18%
 ---
 # Überblick über Szenario-Details
@@ -59,11 +59,11 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
    ODER
 
-   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil „Bearbeitung beenden](assets/exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
+   Wenn Sie das Szenario im Szenario-Editor bearbeiten, klicken Sie auf den Pfeil nach links ![Pfeil „Bearbeitung beenden](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) in der oberen linken Ecke des Fensters.
 
 1. Auf der angezeigten Seite können Sie die in der folgenden Tabelle aufgelisteten Elemente überprüfen:
 
-   ![Szenario-Detail](assets/scenario-detail-350x207.png)
+   ![Szenario-Detail](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -111,9 +111,11 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
       <td role="rowheader">[!UICONTROL Optionen]</td> 
       <td> <p>Dieses Menü bietet zusätzliche Optionen, ohne den Szenario-Editor öffnen zu müssen. Dazu gehören:</p> 
        <ul> 
+        <li>[!UICONTROL Ausführung entsperren]</li> 
         <li>[!UICONTROL Planung]</li> 
         <li>[!UICONTROL Umbenennen]</li> 
         <li>[!UICONTROL Klon]</li> 
+        <li>[!UICONTROL Klonen als Vorlage]</li> 
         <li>[!UICONTROL Löschen]</li> 
        </ul> </td> 
      </tr> 

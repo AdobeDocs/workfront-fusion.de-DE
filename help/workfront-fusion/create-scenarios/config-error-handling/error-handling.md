@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 9%
+source-wordcount: '1677'
+ht-degree: 6%
 ---
 # Hinzufügen einer Fehlerbehandlungsroute
 
@@ -39,6 +39,10 @@ Weitere Informationen zu Anweisungen zur Fehlerbehandlung finden Sie unter [Anwe
 >
 >Workfront Fusion unterstützt die Fehlerbehandlung auf Routenebene, sodass Sie einmal pro Route eine Fehlerbehandlungslogik definieren können, anstatt jedem einzelnen Modul Fehler-Handler zuzuordnen.
 >Da die Fehlerbehandlung auf Routenebene eine besser skalierbare, konsistente und architektonisch saubere Methode zur Fehlerverwaltung ist, insbesondere in erweiterten Automatisierungen mit mehreren Zweigen, empfehlen wir die Verwendung der Fehlerbehandlung auf Routenebene als Best Practice.
+
+>[!NOTE]
+>
+>Workfront Fusion stellt den Szenario-Editor auf ein neues Erlebnis um. Während dieser Umstellung sind sowohl die klassischen als auch die neuen Erlebnisse verfügbar und Sie können jederzeit zwischen ihnen wechseln. Es wird empfohlen, die neue -Version zu verwenden. Weitere Informationen finden Sie unter [Neue und klassische Erlebnisse](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) im Artikel Szenario-Editor.
 
 ## Zugriffsanforderungen
 
@@ -88,9 +92,9 @@ Fehler werden von der folgenden Hierarchie behandelt:
 
 ### Beispiel
 
-Betrachten Sie das folgende Beispielszenario:
+Betrachten Sie das folgende Beispielszenario, das hier in der kompakten Ansicht zur besseren Lesbarkeit gezeigt wird:
 
-![Beispielszenario mit Routen und Fehler-Handlern](assets/error-handling-route-example-with-numbers.png)
+![Beispielszenario mit Routen und Fehler-Handlern](assets/new-error-handler-examples-with-numbers.png)
 
 1. Dieses Modul verfügt über einen Fehler-Handler. Jeder Fehler in diesem Modul wird von der Commit-Direktive behandelt.
 1. Dieses Modul hat keinen Fehler-Handler. Wenn bei diesem Modul ein Fehler auftritt, wird der Fehler vom Handler auf dem Router verarbeitet, der die Route des Moduls erstellt hat. Jeder Fehler in diesem Modul wird von der Rollback-Direktive behandelt.
@@ -113,7 +117,41 @@ Sie können einen Fehler-Handler zu einem Modul oder Router hinzufügen.
 
 ### Hinzufügen eines Fehler-Handlers zu einem Modul
 
-So fügen Sie einem Modul einen Fehler-Handler hinzu:
+* [Hinzufügen eines Fehler-Handlers zu einem Modul in der neuen -Version (empfohlen)](#add-an-error-handler-to-a-module-in-the-new-experience-recommended)
+* [Hinzufügen eines Fehler-Handlers zu einem Modul in der klassischen -Version](#add-an-error-handler-to-a-module-in-the-classic-experience)
+
+#### Hinzufügen eines Fehler-Handlers zu einem Modul in der neuen -Version (empfohlen)
+
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
+1. Wählen Sie das Szenario aus, in dem Sie eine Fehlerbehandlungsroute hinzufügen möchten.
+1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
+1. Klicken Sie mit der rechten Maustaste auf das Modul, dem Sie eine Fehler-Handler-Route hinzufügen möchten, und wählen Sie **[!UICONTROL Fehler-Handler hinzufügen]**:
+
+   ![Fehler-Handler im Menü hinzufügen](assets/new-add-error-handler-in-menu.png)
+
+   Dem Modul wird eine Fehler-Handler-Route hinzugefügt. Wenn das Modul das letzte Modul in einer Route ist, folgt der Fehler-Handler direkt dem Modul. Wenn das Modul danach weitere Module hat, wird eine separate Fehler-Handler-Route hinzugefügt.
+
+   Das Modul zur Fehlerbehandlung zeigt eine Liste der Anweisungen sowie der in Ihrem Szenario verwendeten Apps an.
+
+   ![Anweisungen zur Fehlerbehandlung](assets/new-error-handling-directives.png)
+
+1. Wählen Sie eine der Anweisungen.
+
+   ODER
+
+   Fügen Sie ein oder mehrere Module zur Fehler-Handler-Route hinzu.
+
+   Wenn Sie der Route weitere Module hinzufügen, wird die Ignorieren-Direktive standardmäßig angewendet. Wenn ein Fehler auftritt, werden die nachfolgenden Module auf dieser Route verarbeitet.
+
+   Weitere Informationen zu Anweisungen finden Sie unter [Anweisungen zur Fehlerbehandlung](#error-handling-directives) in diesem Artikel.
+
+1. (Optional) Fügen Sie einen Filter zur Route für die Fehlerbehandlung hinzu. Anweisungen finden Sie unter [Hinzufügen von Filtern und Verschachtelungen zu Routen für die Fehlerbehandlung](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>Eine Fehlerhandler-Route ist durch eine gepunktete Linie mit einer roten Beschriftung **[!UICONTROL Fehlerhandler]** gekennzeichnet.
+
+#### Hinzufügen eines Fehler-Handlers zu einem Modul in der klassischen -Version
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie eine Fehlerbehandlungsroute hinzufügen möchten.
@@ -145,6 +183,40 @@ So fügen Sie einem Modul einen Fehler-Handler hinzu:
 >Eine Route für Fehler-Handler besteht aus transparenten Kreisen, während eine reguläre Route aus durchgezogenen Kreisen besteht.
 
 ### Hinzufügen eines Fehler-Handlers zu einem Router
+
+* [Hinzufügen eines Fehler-Handlers zu einem Router in der neuen -Version (empfohlen)](#add-an-error-handler-to-a-router-in-the-new-experience-recommended)
+* [Hinzufügen eines Fehler-Handlers zu einem Router in der klassischen -Version](#add-an-error-handler-to-a-router-in-the-classic-experience)
+
+#### Hinzufügen eines Fehler-Handlers zu einem Router in der neuen -Version (empfohlen)
+
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
+1. Wählen Sie das Szenario aus, in dem Sie eine Fehlerbehandlungsroute hinzufügen möchten.
+1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
+1. Klicken Sie mit der rechten Maustaste auf den Router, dem Sie eine Fehler-Handler-Route hinzufügen möchten, und wählen Sie **[!UICONTROL Fehler-Handler hinzufügen]**.
+
+   Dem Router wird eine Fehler-Handler-Route hinzugefügt.
+
+   Das Modul zur Fehlerbehandlung zeigt eine Liste der Anweisungen sowie der in Ihrem Szenario verwendeten Apps an.
+
+   ![Anweisungen zur Fehlerbehandlung](assets/new-error-handling-directives.png)
+
+1. Wählen Sie eine der Anweisungen.
+
+   ODER
+
+   Fügen Sie ein oder mehrere Module zur Fehler-Handler-Route hinzu.
+
+   Wenn Sie der Route weitere Module hinzufügen, wird die Ignorieren-Direktive standardmäßig angewendet. Wenn ein Fehler auftritt, werden die nachfolgenden Module auf dieser Route verarbeitet.
+
+   Weitere Informationen zu Anweisungen finden Sie unter [Anweisungen zur Fehlerbehandlung](#error-handling-directives) in diesem Artikel.
+
+1. (Optional) Fügen Sie einen Filter zur Route für die Fehlerbehandlung hinzu. Anweisungen finden Sie unter [Hinzufügen von Filtern und Verschachtelungen zu Routen für die Fehlerbehandlung](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>Eine Fehlerhandler-Route ist durch eine gepunktete Linie mit einer roten Beschriftung **[!UICONTROL Fehlerhandler]** gekennzeichnet.
+
+#### Hinzufügen eines Fehler-Handlers zu einem Router in der klassischen -Version
 
 1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
 1. Wählen Sie das Szenario aus, in dem Sie eine Fehlerbehandlungsroute hinzufügen möchten.

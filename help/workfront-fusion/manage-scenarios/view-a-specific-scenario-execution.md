@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cd90795caaf835de238b52e30fddbcc6da9e9443
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 23%
+source-wordcount: '695'
+ht-degree: 15%
 ---
 # Anzeigen einer bestimmten Szenario-Ausführung
 
@@ -74,7 +74,7 @@ Sie können eine Ausführung aus dem Szenarioverlauf des Szenarios anzeigen.
 
 1. Um die Ausgabe eines Moduls anzuzeigen, klicken Sie auf die Blase Ausgabedetails neben dem Modul. Die Zahl in der Bubble gibt die Anzahl der Bundles an, die vom Modul ausgegeben werden.
 
-   ![Ausgabeblase in der Nähe eines Moduls](assets/output-bubble.png)
+   ![Ausgabeblase in der Nähe eines Moduls](assets/new-output-bubble.png)
 
 1. Um die Bundles anzuzeigen, die einen Filter durchlaufen haben, klicken Sie auf den Filter. Die Zahl in der Nähe des Filters gibt die Anzahl der Bundles an, die den Filter passiert haben.
 1. Um im Ausführungsbereich nach einem bestimmten Modul oder Ereignis zu suchen, geben Sie den Suchbegriff in das Feld **Ausführungsereignisse suchen** ein. Die Ergebnisse werden während der Eingabe angezeigt.
@@ -93,3 +93,21 @@ Sie können eine Ausführung aus dem Szenarioverlauf des Szenarios anzeigen.
 >`<module-id>` bezieht sich auf die Zahl neben der Modulbeschriftung beim Anzeigen des Szenarios.
 >
 >Dies kann beim Debuggen von Szenarien oder beim Kopieren der Modulkonfiguration nützlich sein.
+
+## Überprüfen einer Ausführung im neuen Szenario-Editor
+
+Wenn Sie in der neuen -Version eine Ausführung über den Ausführungsverlauf öffnen, können Sie mit den Steuerelementen auf der rechten Seite der Arbeitsfläche den Fehler finden, ohne das Szenario zu bearbeiten:
+
+![Überprüfen einer Ausführung](assets/review-an-execution.png)
+
+| Kontrollvariante | Details |
+| ---------- | ---------- |
+| Zum nächsten Fehler oder Warnhinweis gehen | Zeigt an, bei wie vielen Modulen im aktuellen Zyklus ein Problem aufgetreten ist. Jeder Klick bewegt sich zum nächsten, zuerst zu Fehlern und dann zu Warnungen, von links nach rechts. Das Modul wird zentriert und der erste fehlgeschlagene Vorgang wird geöffnet. Die Schaltfläche wird ausgeblendet, wenn bei der Ausführung keine Fehler oder Warnungen aufgetreten sind. |
+| Suchmodule | Suchen Sie ein Modul nach Namen und zentrieren Sie es auf der Arbeitsfläche. Drücken Sie Strg+K (Windows) oder Befehl+K (Mac). |
+| Anmerkungen | Ein- oder Ausblenden der Notizen des Szenarios. Dieses Steuerelement wird nur angezeigt, wenn das Szenario Anmerkungen enthält und die Anmerkungen hier schreibgeschützt sind. |
+| Fluss erläutern | Die Reihenfolge der Ausführung der Module des Szenarios animieren. Klicken Sie erneut darauf oder drücken Sie Esc, um den Vorgang zu beenden. |
+| Vergrößern, Verkleinern, Fokus und Minikarte | Arbeiten Sie auf die gleiche Weise wie im Bearbeitungsmodus. |
+
+Der **Compact view**-Schalter ist auch in der oberen rechten Ecke verfügbar. Wenn Sie eine Ausführung überprüfen, wird das Layout nur geändert, während Sie diese Ausführung betrachten. Die Einstellung der kompakten Ansicht wird zur Bearbeitung nicht geändert, und es wird nichts im Szenario gespeichert.
+
+Wählen Sie ein Ereignis aus der Ausführung aus, um es zu zentrieren, und markieren Sie das entsprechende Modul. Wenn Vorgangsdetails verfügbar sind, wird das Bedienfeld „Anfrage“ und „Antwort“ geöffnet. Wenn das Bedienfeld keine Daten enthält, wurden Anfrage- und Antwortdetails für diese Ausführung nicht beibehalten. Informationen zum Erfassen dieser Daten für zukünftige Ausführungen finden Sie unter [Temporäre Debug-Protokolle](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).
