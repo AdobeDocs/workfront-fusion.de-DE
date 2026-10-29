@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
 workflow-type: tm+mt
-source-wordcount: '7725'
+source-wordcount: '7804'
 ht-degree: 92%
 ---
 # Adobe Workfront-Module
@@ -312,6 +312,13 @@ Nachdem der Webhook erstellt wurde, können Sie die Adresse des Endpunkts anzeig
 Weitere Informationen finden Sie in der Workfront-Dokumentation im Artikel „Ereignisabonnement-API“ unter [Beispiele für Ereignis-Payloads](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads).
 
 Eine Liste der Workfront-Objekttypen, für die Sie dieses Modul verwenden können, finden Sie unter [Für die einzelnen Workfront-Module verfügbare Workfront-Objekttypen](#workfront-object-types-available-for-each-workfront-module).
+
+>[!NOTE]
+>
+>Die Duplikatserkennung gilt für Benachrichtigungen, die eine `x-event-id` Kopfzeile enthalten und ihre `User-Agent` als `Workfront Event Subscription` identifizieren.
+>
+>Wenn Fusion eine geeignete Benachrichtigung erhält, wird die Ereignis-ID für diesen Webhook **eine Stunde)**. Wenn während dieses Zeitraums eine weitere Benachrichtigung mit derselben Ereignis-ID am selben Webhook eingeht, quittiert Fusion diese, ohne sie für die Szenario-Verarbeitung weiterzuleiten.
+>Die Duplikatserkennung ist für jeden Webhook spezifisch. Dasselbe Ereignis kann von verschiedenen Webhooks unabhängig verarbeitet werden. Durch das Empfangen eines Duplikats wird der Zeitraum von einer Stunde nicht neu gestartet.
 
 #### [!UICONTROL Feld überwachen]
 
