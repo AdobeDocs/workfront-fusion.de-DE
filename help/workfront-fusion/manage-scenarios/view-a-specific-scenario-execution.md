@@ -11,14 +11,16 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 15%
+source-wordcount: '953'
+ht-degree: 11%
 ---
 # Anzeigen einer bestimmten Szenario-Ausführung
 
 Sie können Details zu einer bestimmten Szenario-Ausführung anzeigen, einschließlich Filtern und Suchen nach Szenario-Ereignissen.
+
+Sie können auch Details zur Szenario-Ausführung für jedes Modul und jeden Filter anzeigen.
 
 ## Zugriffsanforderungen
 
@@ -74,9 +76,13 @@ Sie können eine Ausführung aus dem Szenarioverlauf des Szenarios anzeigen.
 
 1. Um die Ausgabe eines Moduls anzuzeigen, klicken Sie auf die Blase Ausgabedetails neben dem Modul. Die Zahl in der Bubble gibt die Anzahl der Bundles an, die vom Modul ausgegeben werden.
 
+   Um bestimmte Bundles in der Modulausgabe anzuzeigen, können Sie die Suchleiste des Ausgabefelds verwenden oder nach Bundles mit einem bestimmten Status (z. B. Erfolg, Warnung oder Fehlgeschlagen) filtern.
+
    ![Ausgabeblase in der Nähe eines Moduls](assets/new-output-bubble.png)
 
 1. Um die Bundles anzuzeigen, die einen Filter durchlaufen haben, klicken Sie auf den Filter. Die Zahl in der Nähe des Filters gibt die Anzahl der Bundles an, die den Filter passiert haben.
+
+   Um bestimmte vom Filter verarbeitete Bundles anzuzeigen, können Sie die Suchleiste des Filters verwenden oder nach Bundles mit einem bestimmten Status filtern (z. B. Bestanden oder Fehlgeschlagen).
 1. Um im Ausführungsbereich nach einem bestimmten Modul oder Ereignis zu suchen, geben Sie den Suchbegriff in das Feld **Ausführungsereignisse suchen** ein. Die Ergebnisse werden während der Eingabe angezeigt.
 1. Um die Suchergebnisse des Ausführungsbereichs nach Status wie Erfolg oder Warnung zu begrenzen, klicken Sie auf das **Statusfilter** und wählen Sie den Status aus.
 
@@ -93,6 +99,23 @@ Sie können eine Ausführung aus dem Szenarioverlauf des Szenarios anzeigen.
 >`<module-id>` bezieht sich auf die Zahl neben der Modulbeschriftung beim Anzeigen des Szenarios.
 >
 >Dies kann beim Debuggen von Szenarien oder beim Kopieren der Modulkonfiguration nützlich sein.
+
+
+## Überprüfen der Ausgabe aus Modulen und Filtern
+
+Sie können die Szenario-Ausgabe untersuchen, um festzustellen, ob sich das Szenario wie erwartet verhalten hat.
+
+1. Um die Ausgabe eines Moduls anzuzeigen, klicken Sie auf die Blase Ausgabedetails neben dem Modul. Die Zahl in der Bubble gibt die Anzahl der Bundles an, die vom Modul ausgegeben werden.
+
+   Um bestimmte Bundles in der Modulausgabe anzuzeigen, können Sie die Suchleiste des Ausgabefelds verwenden oder nach Bundles mit einem bestimmten Status (z. B. Erfolg, Warnung oder Fehlgeschlagen) filtern.
+
+   ![Ausgabeblase in der Nähe eines Moduls](assets/output-bubble.png)
+
+1. Um die Bundles anzuzeigen, die einen Filter durchlaufen haben, klicken Sie auf den Filter. Die Zahl in der Nähe des Filters gibt die Anzahl der Bundles an, die den Filter passiert haben.
+
+   Um bestimmte vom Filter verarbeitete Bundles anzuzeigen, können Sie die Suchleiste des Filters verwenden oder nach Bundles mit einem bestimmten Status filtern (z. B. Bestanden oder Fehlgeschlagen).
+1. Um im Ausführungsbereich nach einem bestimmten Modul oder Ereignis zu suchen, geben Sie den Suchbegriff in das Feld **Ausführungsereignisse suchen** ein. Die Ergebnisse werden während der Eingabe angezeigt.
+1. Um die Suchergebnisse des Ausführungsbereichs nach Status wie Erfolg oder Warnung zu begrenzen, klicken Sie auf das **Statusfilter** und wählen Sie den Status aus.
 
 ## Überprüfen einer Ausführung im neuen Szenario-Editor
 
