@@ -59,7 +59,7 @@ Sie können alle Verbindungen über den Bereich Verbindungen verwalten.
 >
 >Um ein neues Team auszuwählen, klicken Sie auf den Dropdown-Pfeil neben dem Team-Namen oben auf der Seite. Wählen Sie ein neues Team aus der Liste aus.
 
-1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![ der linken Navigationsleiste auf Verbindungen ](assets/connections-icon.png)Verbindungssymbol).
+1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![&#x200B; der linken Navigationsleiste auf Verbindungen &#x200B;](assets/connections-icon.png)Verbindungssymbol).
 1. (Optional) Um den Namen einer Verbindung umzubenennen oder zu bearbeiten, klicken Sie auf den Namen und nehmen Sie die Änderung vor.
 1. Um Metadaten für eine Verbindung zu bearbeiten, klicken Sie auf das Metadatenfeld und nehmen Sie die Änderung vor.
 
@@ -85,5 +85,5 @@ Workfront Fusion erhält in der Regel für unbegrenzte Zeit Zugriffsrechte für 
 
 So erneuern Sie eine Verbindung:
 
-1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![ der linken Navigationsleiste auf Verbindungen ](assets/connections-icon.png)Verbindungssymbol).
+1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![&#x200B; der linken Navigationsleiste auf Verbindungen &#x200B;](assets/connections-icon.png)Verbindungssymbol).
 1. (Optional) Um eine Verbindung erneut zu autorisieren, klicken **in** Zeile für diese Verbindung auf „Erneut autorisieren“.
