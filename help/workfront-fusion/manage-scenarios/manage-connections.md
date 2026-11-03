@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 849e1bd273945528faba033d8d77a97990e1cda1
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 22%
+source-wordcount: '476'
+ht-degree: 21%
 ---
 # Verwalten von Verbindungen
 
@@ -59,22 +59,25 @@ Sie können alle Verbindungen über den Bereich Verbindungen verwalten.
 >
 >Um ein neues Team auszuwählen, klicken Sie auf den Dropdown-Pfeil neben dem Team-Namen oben auf der Seite. Wählen Sie ein neues Team aus der Liste aus.
 
-1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![&#x200B; der linken Navigationsleiste auf Verbindungen &#x200B;](assets/connections-icon.png)Verbindungssymbol).
+1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![ der linken Navigationsleiste auf Verbindungen ](assets/connections-icon.png)Verbindungssymbol).
+1. (Optional) Um den Namen einer Verbindung umzubenennen oder zu bearbeiten, klicken Sie auf den Namen und nehmen Sie die Änderung vor.
+1. Um Metadaten für eine Verbindung zu bearbeiten, klicken Sie auf das Metadatenfeld und nehmen Sie die Änderung vor.
+
+   Metadaten sind ein Text- oder E-Mail-Feld, das auf dem Connector basiert. Sie können dieses Feld verwenden, um Informationen über die Verbindung einzuschließen, was hilfreich ist, wenn Sie mehrere Verbindungen für denselben Connector haben.
+1. (Optional) Um anzuzeigen, welche Berechtigungen Workfront Fusion für eine Verbindung erteilt wurden, klicken Sie auf das Symbol Anzeigen ![Verbindungsberechtigungen anzeigen](assets/view-connection-permissions.png) für diese Verbindung.
 1. (Optional) Um die Umgebung oder den Typ anzugeben, klicken Sie auf die Dropdown-Listen Umgebungstyp und Typ und wählen Sie eine Option aus.
 
    >[!NOTE]
    >
    >Umgebung und Typ dienen nur Ihrer eigenen Bequemlichkeit bei der Identifizierung von Verbindungen. Sie haben keine Auswirkungen auf die Funktionalität der Verbindung.
 
-1. (Optional) Um anzuzeigen, welche Berechtigungen Workfront Fusion für eine Verbindung erteilt wurden, klicken Sie auf das Symbol Anzeigen ![Verbindungsberechtigungen anzeigen](assets/view-connection-permissions.png) für diese Verbindung.
-1. (Optional) Um den Namen einer Verbindung umzubenennen oder zu bearbeiten, klicken Sie auf den Namen und nehmen Sie die Änderung vor.
-1. (Optional) Um eine Verbindung erneut zu autorisieren, klicken **in** Zeile für diese Verbindung auf „Erneut autorisieren“.
-1. (Optional) Um sicherzustellen, dass die Verbindung zum Service funktioniert, klicken Sie auf **Überprüfen** in der Zeile für diese Verbindung.
-1. (Optional) Um eine Verbindung zu löschen, klicken Sie in **Zeile für diese** auf „Löschen“ und dann auf **Wirklich?**.
+1. (Optional) Um eine Verbindung erneut zu genehmigen, klicken Sie auf die Verbindung und anschließend **Erneut genehmigen** im Banner unten auf dem Bildschirm.
 
->[!NOTE]
->
->Um in den Modulen eines Szenarios eine andere Verbindung zu verwenden, können Sie eine Verbindung in ein oder alle kompatiblen Module aus derselben App im Szenario-Editor kopieren. Weitere Informationen finden Sie unter [&#x200B; und Ersetzen von Variablen, Quellen und Verbindungen in einem Szenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
+   >[!NOTE]
+   >
+   >Durch die erneute Autorisierung werden Metadaten auf den Standardwert zurückgesetzt.
+1. (Optional) Um zu überprüfen, ob die Verbindung zum Service funktioniert, klicken Sie auf die Verbindung und dann **Überprüfen** in dem Banner am unteren Bildschirmrand.
+1. (Optional) Um eine Verbindung zu löschen, klicken Sie auf die Verbindung und anschließend **Löschen** im Banner am unteren Bildschirmrand.
 
 ## Erneuern einer Verbindung
 
@@ -82,5 +85,5 @@ Workfront Fusion erhält in der Regel für unbegrenzte Zeit Zugriffsrechte für 
 
 So erneuern Sie eine Verbindung:
 
-1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![&#x200B; der linken Navigationsleiste auf Verbindungen &#x200B;](assets/connections-icon.png)Verbindungssymbol).
+1. Um den Bereich Verbindungen zu öffnen, klicken Sie ![ der linken Navigationsleiste auf Verbindungen ](assets/connections-icon.png)Verbindungssymbol).
 1. (Optional) Um eine Verbindung erneut zu autorisieren, klicken **in** Zeile für diese Verbindung auf „Erneut autorisieren“.
