@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '981'
 ht-degree: 10%
 ---
 # Anzeigen einer bestimmten Szenario-Ausführung
@@ -127,7 +127,7 @@ Wenn Sie in der neuen -Version eine Ausführung über den Ausführungsverlauf ö
 | Kontrollvariante | Details |
 | ---------- | ---------- |
 | Zum nächsten Fehler oder Warnhinweis gehen | Zeigt an, bei wie vielen Modulen im aktuellen Zyklus ein Problem aufgetreten ist. Jeder Klick bewegt sich zum nächsten, zuerst zu Fehlern und dann zu Warnungen, von links nach rechts. Das Modul wird zentriert und der erste fehlgeschlagene Vorgang wird geöffnet. Die Schaltfläche wird ausgeblendet, wenn bei der Ausführung keine Fehler oder Warnungen aufgetreten sind. |
-| Suchmodule | Suchen Sie ein Modul nach Namen und zentrieren Sie es auf der Arbeitsfläche. Drücken Sie Strg+K (Windows) oder Befehl+K (Mac). |
+| Suchen | Suchen Sie ein Modul nach Name oder ID und zentrieren Sie es auf der Arbeitsfläche. Drücken Sie Strg+K (Windows) oder Befehl+K (Mac). |
 | Anmerkungen | Ein- oder Ausblenden der Notizen des Szenarios. Dieses Steuerelement wird nur angezeigt, wenn das Szenario Anmerkungen enthält und die Anmerkungen hier schreibgeschützt sind. |
 | Fluss erläutern | Die Reihenfolge der Ausführung der Module des Szenarios animieren. Klicken Sie erneut darauf oder drücken Sie Esc, um den Vorgang zu beenden. |
 | Vergrößern, Verkleinern, Fokus und Minikarte | Arbeiten Sie auf die gleiche Weise wie im Bearbeitungsmodus. |

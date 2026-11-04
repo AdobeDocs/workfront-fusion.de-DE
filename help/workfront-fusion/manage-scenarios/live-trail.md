@@ -6,9 +6,9 @@ feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: 94449f8511d7480f1a4fc0ac6e8db9b067977abd
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '539'
 ht-degree: 17%
 ---
 
@@ -58,7 +58,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 
 
-Der Live-Pfad wird im Bedienfeld auf der rechten Seite der Arbeitsfläche geöffnet. Wenn Sie das Bedienfeld während eines Durchgangs schließen, können Sie es über eine kleine Registerkarte auf der rechten Seite des Bildschirms erneut öffnen, ohne die erfassten Ereignisse zu verlieren.
+Der Live-Pfad wird im Bedienfeld auf der rechten Seite der Arbeitsfläche geöffnet. Sie können die Größe des Bedienfelds ändern, indem Sie an seiner linken Kante ziehen. Wenn Sie das Bedienfeld während eines Durchgangs schließen, können Sie es über eine kleine Registerkarte auf der rechten Seite des Bildschirms erneut öffnen, ohne die erfassten Ereignisse zu verlieren.
 
 ## Überprüfen von Ereignissen im Live-Protokoll
 

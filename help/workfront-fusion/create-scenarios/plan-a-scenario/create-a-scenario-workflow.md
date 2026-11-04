@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '810'
 ht-degree: 3%
 ---
 # Workflow zum Erstellen eines Szenarios
@@ -40,7 +40,7 @@ Tastaturbefehle
 ## Szenario erstellen und benennen
 
 1. Melden Sie sich bei Ihrem Workfront Fusion-Konto an.
-1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![&#x200B; (](assets/scenarios-icon.png)).
+1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![ (](assets/scenarios-icon.png)).
 
    >[!NOTE]
    >
@@ -185,6 +185,10 @@ Beim Erstellen oder Bearbeiten eines Szenarios können die folgenden Tastaturbef
   </tr> 
  </tbody> 
 </table>
+
+>[!NOTE]
+>
+>Der neue Szenario-Editor verfügt über zusätzliche Tastaturbefehle, einschließlich Tastaturbefehle zum Bestätigen oder Schließen von Bedienfeldern, zum Wechseln zwischen Modulen und zum Öffnen einer Liste aller Tastaturbefehle. Weitere Informationen finden Sie unter [Tastaturbefehle](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#keyboard-shortcuts) im Artikel Szenario-Editor.
 
 
 
