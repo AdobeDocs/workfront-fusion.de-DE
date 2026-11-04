@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 2%
+source-wordcount: '616'
+ht-degree: 1%
 ---
 # Elementdatentypen
 
@@ -47,7 +47,7 @@ Informationen dazu, welche Elementtypen in Workfront Fusion untereinander konver
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Datum</p> </td> 
-   <td> <p>Datumsangaben werden im ISO 8601-Datumsformat eingegeben, z. B. <code>2015-09-18T11:58Z</code>. Sie können die Zeitzone in Ihren Profileinstellungen ändern. </p> <p>Wenn Sie auf ein Feld klicken, für das ein Datum erforderlich ist, wird in den Moduleinstellungen ein Popup-Kalender angezeigt. Bei einigen Elementen ist keine Zeit erforderlich.</p> <p>Die Werte von Datumselementen werden mithilfe der in Ihrem Profil ausgewählten lokalen Zeitzone und Web-Zeitzone formatiert. Sie können die ISO 8601-Version des Werts eines Datumselements anzeigen, indem Sie den Mauszeiger über das Element bewegen.</p> <p>Hinweis: Wenn der ISO-Wert nicht angezeigt wird, ist das Element wahrscheinlich Text, kein Datum.</p> <p>Die Uhrzeit wird im <code>hours:minutes:seconds</code> Format eingegeben, z. B. <code>14:03:52</code>.</p> </td> 
+   <td> <p>Datumsangaben werden im ISO 8601-Datumsformat eingegeben, z. B. <code>2015-09-18T11:58Z</code>. Sie können die Zeitzone in Ihren Profileinstellungen ändern. </p> <p>Wenn Sie auf ein Feld klicken, für das ein Datum erforderlich ist, wird in den Moduleinstellungen ein Popup-Kalender angezeigt. Bei einigen Elementen ist keine Zeit erforderlich.</p> <p>Die Werte von Datumselementen werden mithilfe der in Ihrem Profil ausgewählten lokalen Zeitzone und Web-Zeitzone formatiert. Sie können die ISO 8601-Version des Werts eines Datumselements anzeigen, indem Sie den Mauszeiger über das Element bewegen.</p> <p>Informationen zum Anzeigen und Verwalten von Zeitzoneneinstellungen in Ihrem Fusion-Profil finden Sie unter [Anzeigen und Verwalten von Zeitzonen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).</p> <p>Hinweis: Wenn der ISO-Wert nicht angezeigt wird, ist das Element wahrscheinlich Text, kein Datum.</p> <p>Die Uhrzeit wird im <code>hours:minutes:seconds</code> Format eingegeben, z. B. <code>14:03:52</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Puffer (Binärdaten)</p> </td> 
