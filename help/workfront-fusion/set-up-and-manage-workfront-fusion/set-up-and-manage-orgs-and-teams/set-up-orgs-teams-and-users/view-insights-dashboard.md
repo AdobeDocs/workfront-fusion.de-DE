@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 45c755a2f6152b6e230864e4c840d0334705bd22
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1334'
 ht-degree: 3%
 ---
 # Anzeigen des Insights-Dashboards für eine Organisation
@@ -208,6 +208,7 @@ Verwenden Sie das Ausführungsprotokoll, um Szenario-Ausführungen zu finden, be
    Bei den meisten Filtern können Sie festlegen, dass nur die ausgewählten Werte oder alles außer ihnen übereinstimmen sollen.
 
 1. Klicken Sie auf eine Ausführung, um weitere Details zu ihrem Fehler anzuzeigen.
+1. Um eine Klartext-Erklärung eines Fehlers zu erhalten, bewegen Sie den Mauszeiger über die fehlgeschlagene Ausführung und klicken Sie auf **[!UICONTROL Erläutern]**. Weitere Informationen finden Sie unter [Szenariofehler mit KI erläutern](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 1. Um ein oder mehrere Szenarien, die nach wiederholten Fehlern automatisch deaktiviert wurden, erneut zu aktivieren, wählen Sie die Ausführungen aus und klicken Sie dann auf **Aktivieren**.
 
    >[!NOTE]

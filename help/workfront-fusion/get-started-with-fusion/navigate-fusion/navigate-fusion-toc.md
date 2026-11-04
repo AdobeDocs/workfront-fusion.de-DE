@@ -15,9 +15,9 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '34'
 ht-degree: 100%
 ---
 # Navigieren in Fusion: Artikelindex
@@ -26,4 +26,3 @@ ht-degree: 100%
 * [Überblick über den Szenario-Editor](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
 * [Überblick über Szenario-Details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
 * [Wechseln zwischen Organisationen oder Teams](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
-* [Ändern von Profileinstellungen](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
