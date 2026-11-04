@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 11%
+source-wordcount: '980'
+ht-degree: 10%
 ---
 # Anzeigen einer bestimmten Szenario-Ausführung
 
@@ -85,6 +85,7 @@ Sie können eine Ausführung aus dem Szenarioverlauf des Szenarios anzeigen.
    Um bestimmte vom Filter verarbeitete Bundles anzuzeigen, können Sie die Suchleiste des Filters verwenden oder nach Bundles mit einem bestimmten Status filtern (z. B. Bestanden oder Fehlgeschlagen).
 1. Um im Ausführungsbereich nach einem bestimmten Modul oder Ereignis zu suchen, geben Sie den Suchbegriff in das Feld **Ausführungsereignisse suchen** ein. Die Ergebnisse werden während der Eingabe angezeigt.
 1. Um die Suchergebnisse des Ausführungsbereichs nach Status wie Erfolg oder Warnung zu begrenzen, klicken Sie auf das **Statusfilter** und wählen Sie den Status aus.
+1. Um eine Klartext-Erklärung eines Fehlers bei der Ausführung zu erhalten, klicken Sie unter **[!UICONTROL Fehler]** Erläutern“. Weitere Informationen finden Sie unter [Szenariofehler mit KI erläutern](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 
 
 
