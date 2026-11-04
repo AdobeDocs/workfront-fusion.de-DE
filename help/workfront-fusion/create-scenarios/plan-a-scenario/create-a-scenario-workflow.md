@@ -40,7 +40,7 @@ Tastaturbefehle
 ## Szenario erstellen und benennen
 
 1. Melden Sie sich bei Ihrem Workfront Fusion-Konto an.
-1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![ (](assets/scenarios-icon.png)).
+1. Klicken Sie **[!UICONTROL linken Bedienfeld]** Szenarios![&#x200B; (](assets/scenarios-icon.png)).
 
    >[!NOTE]
    >

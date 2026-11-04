@@ -105,7 +105,7 @@ Weitere Informationen zum Anzeigen einer Ausführung finden Sie unter [Anzeigen 
 ## Erklären Sie einen Fehler auf der Seite „Insights“
 
 1. Klicken Sie in Fusion **[!UICONTROL linken]** auf „Insights“.
-1. Bewegen Sie in [!UICONTROL  Tabelle „Fehlgeschlagene ]&quot; den Mauszeiger über die fehlerhafte Zeile, die Sie anzeigen möchten.
+1. Bewegen Sie in [!UICONTROL &#x200B; Tabelle „Fehlgeschlagene &#x200B;]&quot; den Mauszeiger über die fehlerhafte Zeile, die Sie anzeigen möchten.
 
    Eine **[!UICONTROL Erläutern]**-Schaltfläche wird angezeigt.
 
