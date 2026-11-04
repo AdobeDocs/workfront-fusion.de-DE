@@ -21,7 +21,7 @@ ht-degree: 4%
 ---
 # Datums- und Uhrzeitfunktionen
 
-Weitere Informationen zum Anzeigen und Verwalten der Zeitzoneneinstellungen, die von Ihrem Fusion-Profil verwendet werden, finden [ unter „Anzeigen und Verwalten von Zeitzonen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).
+Weitere Informationen zum Anzeigen und Verwalten der Zeitzoneneinstellungen, die von Ihrem Fusion-Profil verwendet werden, finden [&#x200B; unter „Anzeigen und Verwalten von Zeitzonen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).
 
 ## Variablen
 
@@ -696,7 +696,7 @@ Weitere Informationen finden Sie unter Datum und Text im Artikel [Elementdatenty
    <td> <p>Konvertiert einen Datumswert in einen Textwert. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Format] </td> 
+   <td>[!UICONTROL -Format] </td> 
    <td>Text </td> 
    <td> <p>Ermöglicht die Angabe eines Formats mithilfe von Datums-/Uhrzeitformatierungs-Token. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token zur Datums- und Zeitformatierung</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
@@ -759,12 +759,12 @@ Die zweite Spalte zeigt den erwarteten Typ an. Wenn ein anderer Typ angegeben wi
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Text] </td> 
+   <td>[!UICONTROL -Text] </td> 
    <td>Text </td> 
    <td> <p>Konvertiert einen Datumswert in einen Textwert. </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL-Format] </td> 
+   <td>[!UICONTROL -Format] </td> 
    <td>Text </td> 
    <td> <p>Ermöglicht die Angabe eines Formats mithilfe von Datums-/Uhrzeitformatierungs-Token. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Token zur Datums- und Zeitformatierung</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 

@@ -78,7 +78,7 @@ Die Liste Zeitzonenoptionen wird geöffnet.
 1. Suchen Sie im Web-Bereich der Liste Zeitzonenoptionen nach Ihrem Namen.
 
    Rechts neben Ihrem Namen wird die aktuelle Zeitzoneneinstellung des Benutzers angezeigt.
-1. Klicken Sie zum Bearbeiten der Zeitzone neben ![ Zeitzone auf ](assets/edit-timezone-icon.png)Zeitzone bearbeiten“.
+1. Klicken Sie zum Bearbeiten der Zeitzone neben ![&#x200B; Zeitzone auf &#x200B;](assets/edit-timezone-icon.png)Zeitzone bearbeiten“.
 1. Wählen Sie im Fenster Details ändern im Feld **Zeitzone** die Zeitzone aus, die Sie für sich selbst festlegen möchten.
 1. Klicken Sie auf **Speichern**.
 
@@ -96,7 +96,7 @@ Die Liste Zeitzonenoptionen wird geöffnet.
 1. Suchen Sie im Bereich Szenarien der Liste Zeitzonenoptionen die Organisation, für die Sie die Zeitzone anzeigen oder verwalten möchten.
 
    Die aktuelle Zeitzoneneinstellung des Unternehmens wird rechts neben dem Organisationsnamen angezeigt.
-1. Klicken Sie zum Bearbeiten der Zeitzone neben ![ Zeitzone auf ](assets/edit-timezone-icon.png)Zeitzone bearbeiten“.
+1. Klicken Sie zum Bearbeiten der Zeitzone neben ![&#x200B; Zeitzone auf &#x200B;](assets/edit-timezone-icon.png)Zeitzone bearbeiten“.
 1. Wählen Sie im Fenster Details ändern im Feld **Zeitzone** die Zeitzone aus, die Sie für Ihre Organisation festlegen möchten.
 1. Klicken Sie auf **Speichern**.
 
