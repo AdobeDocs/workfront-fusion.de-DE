@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
+source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
 workflow-type: tm+mt
-source-wordcount: '7804'
-ht-degree: 92%
+source-wordcount: '7761'
+ht-degree: 90%
 ---
 # Adobe Workfront-Module
 
@@ -84,14 +84,15 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## Verbinden von Workfront mit Workfront Fusion
 
-Der Workfront-Connector nutzt OAuth 2.0, um eine Verbindung zu Workfront herzustellen.
-
 Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ihrem Workfront-Konto herstellen.
 
-* [Herstellen einer Verbindung mit Workfront per Client-ID und Client-Geheimnis](#connect-to-workfront-using-client-id-and-client-secret)
+Neue Verbindungen und Verbindungen, die Sie erneut autorisieren, melden Sie sich mit Ihrem Adobe-Konto (Adobe IMS- oder Experience Cloud-Anmeldung) an. Sie verwenden keine Workfront OAuth2-Anwendung.
+
+* [Verbindung mit Workfront über Ihr Adobe-Konto herstellen](#connect-to-workfront-using-your-adobe-account)
+* [Vorhandene Verbindung erneut autorisieren](#reauthorize-an-existing-connection)
 * [Herstellen einer Verbindung mit Workfront per Server-zu-Server-Verbindung](#connect-to-workfront-using-a-server-to-server-connection)
 
-### Herstellen einer Verbindung mit Workfront per Client-ID und Client-Geheimnis
+### Verbindung mit Workfront über Ihr Adobe-Konto herstellen
 
 1. Klicken Sie in einem beliebigen Adobe Workfront-Modul neben dem Feld „Verbindung“ auf **Hinzufügen**.
 1. Füllen Sie die folgenden Felder aus:
@@ -115,32 +116,38 @@ Sie können direkt aus einem Workfront Fusion-Modul heraus eine Verbindung zu Ih
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client-ID]</td>
-        <td>Geben Sie Ihre Workfront-Client-ID ein. Diese finden Sie im Workfront-Bereich „Setup“ unter „OAuth2-Programme“. Öffnen Sie die Anwendung, zu der eine Verbindung hergestellt werden soll, um die Client-ID anzuzeigen.</td>
+        <td role="rowheader">[!UICONTROL Instanzname]</td>
+        <td>
+          <p>Geben Sie den Namen Ihrer Instanz ein (auch als Domain bezeichnet).</p><p>Wenn Ihre URL z. B. <code>https://example.my.workfront.com</code> lautet, geben Sie <code>example</code> ein.</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Client-Geheimnis]</td>
-        <td>Geben Sie Ihr Workfront-Client-Geheimnis ein. Diese finden Sie im Workfront-Bereich „Setup“ unter „OAuth2-Programme“. Wenn Sie in Workfront kein Client-Geheimnis für Ihre OAuth2-Anwendung besitzen, können Sie ein anderes generieren. Anweisungen hierzu finden Sie in der Workfront-Dokumentation.</td>
+        <td role="rowheader">[!UICONTROL Instanzen-Lane]</td>
+        <td>
+          <p>Geben Sie den Umgebungstyp für die Verbindung ein.</p><p>Wenn Ihre URL z. B. <code>https://example.my.workfront.com</code> lautet, geben Sie <code>my</code> ein.</p>
+        </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Authentifizierungs-URL]</td>
-        <td>Hier kann der Standardwert bleiben. Sie können aber auch die URL Ihrer Workfront-Instanz gefolgt von <code>/integrations/oauth2</code> eingeben. <p>Beispiel: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+        <td role="rowheader">[!UICONTROL Scopes] <i>(optional)</i></td>
+        <td>Geben Sie alle zusätzlichen Bereiche für diese Verbindung ein. Lassen Sie dieses Feld leer, um die Standardbereiche zu verwenden.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host-Präfix]</td>
-        <td>In den meisten Fällen sollte dieser Wert auf <code>origin</code> gesetzt werden.
+        <td>In den meisten Fällen sollte dieser Wert auf <code>origin</code> gesetzt werden.</td>
       </tr>
     </tbody>
     </table>
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**, um die Verbindung zu speichern und zum Modul zurückzukehren.
 
-   Wenn Sie nicht bei Workfront angemeldet sind, werden Sie zu einem Anmeldebildschirm weitergeleitet. Nach der Anmeldung können Sie die Verbindung zulassen.
+   Wenn Sie nicht bei Ihrem Adobe-Konto angemeldet sind, werden Sie zur Adobe-Anmeldeseite weitergeleitet. Nach der Anmeldung können Sie die Verbindung zulassen.
 
 >[!NOTE]
 >
->* OAuth 2.0-Verbindungen zur Workfront-API sind nicht mehr auf API-Schlüssel angewiesen.
->* Um eine Verbindung zu einer Workfront-Sandbox-Umgebung herzustellen, müssen Sie in dieser Umgebung eine OAuth2-Anwendung erstellen und dann die Client-ID und das Client-Geheimnis, die von dieser Anwendung generiert wurden, in Ihrer Verbindung verwenden.
+>Verbindungen, die Sie vor dem 5. November 2026 erstellt haben, funktionieren weiterhin. Um eine bestehende Verbindung zur Adobe-Anmeldung zu wechseln, müssen Sie sie erneut autorisieren.
+
+Informationen zum erneuten Autorisieren einer Verbindung finden Sie unter [Verbindungen verwalten](/help/workfront-fusion/manage-scenarios/manage-connections.md).
+
 
 ### Herstellen einer Verbindung mit Workfront per Server-zu-Server-Verbindung
 
@@ -1062,7 +1069,7 @@ Workfront hat kürzlich eine neue Version seines Ereignisabonnement-Services ver
 
 Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 
-Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de).
+Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2378,7 +2385,7 @@ Mit Filtern in Ereignisabonnements können Sie sicherstellen, dass Ihre Szenarie
 >
 >   Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 >
->   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de).
+>   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 Das Workfront-Modul [!UICONTROL Ereignisse überwachen] löst Szenarios auf Basis eines Webhooks aus, der ein Ereignisabonnement in der Workfront-API erstellt. Das Ereignisabonnement ist ein Satz von Daten, der bestimmt, welche Ereignisse an den Webhook gesendet werden. Wenn Sie beispielsweise ein Modul [!UICONTROL Ereignisse überwachen] einrichten, das auf Probleme achtet, sendet das Ereignisabonnement ausschließlich Ereignisse, die mit Problemen in Zusammenhang stehen.
 
