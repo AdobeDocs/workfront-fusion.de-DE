@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1538'
 ht-degree: 8%
 ---
 # Hinzufügen eines Moduls zu einem Szenario
@@ -84,7 +84,7 @@ Weitere Informationen zu Trigger-Modulen finden Sie unter [Trigger-Module](/help
 
 1. Konfigurieren Sie das Modul .
 
-   Die Einstellungen des Moduls werden im Bedienfeld auf der rechten Seite der Arbeitsfläche geöffnet.
+   Die Einstellungen des Moduls werden im Bedienfeld auf der rechten Seite der Arbeitsfläche geöffnet. Sie können die Größe des Bedienfelds ändern, indem Sie an seiner linken Kante ziehen.
 
    Anweisungen zur Konfiguration bestimmter Module finden Sie im Artikel für die ausgewählten Programme, der unter [Fusion-Programme und ihre Modulverweise: Artikelindex](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md) aufgeführt ist.
 
@@ -139,7 +139,7 @@ Weitere Informationen zu Trigger-Modulen finden Sie unter [Trigger-Module](/help
 
 1. Konfigurieren Sie das Modul .
 
-   Die Einstellungen des Moduls werden im Bedienfeld auf der rechten Seite der Arbeitsfläche geöffnet.
+   Die Einstellungen des Moduls werden im Bedienfeld auf der rechten Seite der Arbeitsfläche geöffnet. Sie können die Größe des Bedienfelds ändern, indem Sie an seiner linken Kante ziehen.
 
    Anweisungen zur Konfiguration bestimmter Module finden Sie im Artikel für die ausgewählten Programme, der unter [Fusion-Programme und ihre Modulverweise: Artikelindex](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md) aufgeführt ist.
 
@@ -180,7 +180,7 @@ Weitere Informationen zu Trigger-Modulen finden Sie unter [Trigger-Module](/help
 
 1. Konfigurieren Sie das Modul .
 
-   Die Einstellungen des Moduls werden im Bedienfeld auf der rechten Seite der Arbeitsfläche geöffnet.
+   Die Einstellungen des Moduls werden im Bedienfeld auf der rechten Seite der Arbeitsfläche geöffnet. Sie können die Größe des Bedienfelds ändern, indem Sie an seiner linken Kante ziehen.
 
    Anweisungen zur Konfiguration bestimmter Module finden Sie im Artikel für die ausgewählten Programme, der unter [Fusion-Programme und ihre Modulverweise: Artikelindex](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md) aufgeführt ist.
 

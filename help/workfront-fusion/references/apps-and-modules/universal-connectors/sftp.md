@@ -14,7 +14,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 2e3a811de0e4336305997cbf46e86db3553f4770
 workflow-type: tm+mt
 source-wordcount: '2241'
 ht-degree: 15%
@@ -258,7 +258,7 @@ Dieses Aktionsmodul erstellt einen neuen Ordner am angegebenen Speicherort.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Berechtigungen]</p> </td> 
-   <td> <p>Festlegen der gewünschten Ordnerberechtigungen. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
+   <td> <p>Festlegen der gewünschten Ordnerberechtigungen. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -466,7 +466,7 @@ Ermöglicht das Ändern der Dateiberechtigungen.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Berechtigungen]</p> </td> 
-   <td> <p>Legen Sie die gewünschten Dateiberechtigungen fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
+   <td> <p>Legen Sie die gewünschten Dateiberechtigungen fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -493,7 +493,7 @@ Mit diesem Modul können Sie eine Datei auf den SFTP-Server hochladen.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Berechtigungen]</p> </td> 
-   <td> <p>Legen Sie die gewünschten Berechtigungen für die Datei oder den Ordner fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
+   <td> <p>Legen Sie die gewünschten Berechtigungen für die Datei oder den Ordner fest. Verwenden Sie chmod-Parameter. Beispiel: <code>777</code> oder <code>-rwxrwxrwx</code>.</p> <p>Diese Berechtigungen müssen dem Muster entsprechen <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>Weitere Informationen zu chmod finden Sie in der <a href="https://ss64.com/bash/chmod.html">chmod-Dokumentation</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Puffergröße (B)]</p> </td> 

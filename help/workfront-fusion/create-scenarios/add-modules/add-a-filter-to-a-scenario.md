@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 11%
+source-wordcount: '1012'
+ht-degree: 10%
 ---
 # Hinzufügen eines Filters zu einem Szenario
 
@@ -77,6 +77,10 @@ Sie müssen beide Module zu einem Szenario hinzufügen, bevor Sie einen Filter z
 1. Klicken Sie mit der linken Maustaste auf den Pfad zwischen den Modulen, denen Sie einen Filter hinzufügen möchten.
 
    Das **[!UICONTROL Filter einrichten]** wird direkt geöffnet. (Durch Klicken mit der rechten Maustaste auf den Pfad wird stattdessen ein anderes Menü geöffnet.)
+
+   Das Filterbedienfeld zeigt an, zwischen welchen beiden Modulen sich der Filter befindet. Neben dem Bereichstitel sehen Sie die Modul-IDs, z. B. **#12 → #13**. Oberhalb der Filtereinstellungen zeigt eine Zeile wie **Zwischen ● Router #12 → ● HTTP #13** die Farbe und den Namen jedes Moduls an. Bewegen Sie den Mauszeiger über einen Modulnamen, um die Aktion anzuzeigen. Solange das Bedienfeld geöffnet ist, hat die Beschriftung des Filters an der Verbindung eine sich bewegende gestrichelte Kontur.
+
+   ![Filterbedienfeld](/help/workfront-fusion/fusion-product-releases/assets/04-filter-panel-light.png)
 
 1. Geben Sie im angezeigten Feld einen **[!UICONTROL Titel]** für den Filter ein.
 1. Definieren Sie den Filter **[!UICONTROL Bedingung]**.

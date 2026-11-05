@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: e2420c8a25fd9e38c4b0300b00560fe1837a5e43
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '577'
 ht-degree: 15%
 ---
 # Erläuterung eines Szenariofehlers mit KI
@@ -27,6 +27,8 @@ Fehler können in den folgenden Bereichen von Workfront Fusion erklärt werden:
 >[!NOTE]
 >
 >Die **[!UICONTROL Erläutern]**-Schaltfläche ist nur im neuen Szenario-Designer verfügbar. Sie ist nicht im alten Szenario-Designer verfügbar.
+>
+>Ihr Unternehmen muss über eine KI-Lizenz verfügen, um diese Funktion nutzen zu können.
 
 ## Zugriffsanforderungen
 

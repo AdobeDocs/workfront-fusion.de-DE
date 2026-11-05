@@ -21,7 +21,7 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 2e3a811de0e4336305997cbf46e86db3553f4770
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 11%
@@ -182,7 +182,7 @@ Eine Diskussion über reguläre Ausdrücke würde den Rahmen dieses Artikels spr
  <tbody> 
   <tr> 
    <td>[!UICONTROL Muster] </td> 
-   <td> <p>Geben Sie das Muster für reguläre Ausdrücke ein. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE]&#x200B;[+-]?\d+)?</code> extrahiert alle Ziffern im angegebenen Text.</p> <p>Hinweis:  <p>Das Muster muss mindestens eine Erfassungsgruppe in Klammern <code>()</code>. Wenn das Muster keine Erfassungsgruppen enthält, ist das Ausgabepaket leer.</p> </p> </td> 
+   <td> <p>Geben Sie das Muster für reguläre Ausdrücke ein. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Beispiel: </b></span></span> <code>&#91;+-&#93;?(\d+(\.\d+)?|\.\d+)(&#91;eE&#93;&#91;+-&#93;?\d+)?</code> extrahiert alle Ziffern im angegebenen Text.</p> <p>Hinweis:  <p>Das Muster muss mindestens eine Erfassungsgruppe in Klammern <code>()</code>. Wenn das Muster keine Erfassungsgruppen enthält, ist das Ausgabepaket leer.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Globale Übereinstimmung]</td> 
