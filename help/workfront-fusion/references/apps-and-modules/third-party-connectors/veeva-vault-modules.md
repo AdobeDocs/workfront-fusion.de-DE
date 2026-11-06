@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cb90aa39325068566e17bbb102969a537e527dc2
 workflow-type: tm+mt
-source-wordcount: '4127'
-ht-degree: 13%
+source-wordcount: '4353'
+ht-degree: 14%
 ---
 # Veeva Vault-Module
 
@@ -1152,13 +1152,65 @@ Dieses Modul gibt eine Liste von Dateien und Ordnern für den angegebenen Pfad z
 
 ### Sonstiges
 
-* [Benutzerdefinierten API-Aufruf erstellen](#make-a-custom-api-call)
+* [Erstellen eines benutzerdefinierten API-Aufrufs](#make-a-custom-api-call)
+* [Erstellen eines benutzerdefinierten API-Aufrufs (veraltet)](#make-a-custom-api-call-legacy)
 * [Erstellen einer VQL-Abfrage](#make-a-vql-query)
 * [Protokolle lesen](#read-logs)
 
-#### Benutzerdefinierten API-Aufruf erstellen
+#### Erstellen eines benutzerdefinierten API-Aufrufs
 
-Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Veeva Vault-API durch.
+Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Veeva Vault-API durch. Es unterstützt mehrere Anfragetexttypen.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung</td> 
+   <td> <p>Anweisungen zum Verbinden Ihres Veeva Vault-Kontos mit Workfront Fusion finden Sie unter <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Verbinden von Veeva Vault mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td>Geben Sie einen Pfad relativ zu <code>baseurl/api/v</code> ein.  Beispiel: <code>/objects/documents</code>. <code>baseurl/api/v/</code> nicht einschließen, da es bereits eingeschlossen ist.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Methode</td> 
+   <td> <p>Wählen Sie die HTTP-Anfragemethode aus, die Sie zum Konfigurieren des API-Aufrufs benötigen. Weitere Informationen finden Sie unter <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP-Anfragemethoden</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Header</td> 
+   <td> <p>Fügen Sie die Header der Anfrage in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion fügt die Autorisierungskopfzeilen für Sie hinzu.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Abfragezeichenfolge</td> 
+   <td> <p>Fügen Sie die Abfrage für den API-Aufruf in Form eines standardmäßigen JSON-Objekts hinzu.</p> <p>Beispiel: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Texttyp</td> 
+   <td> <p>Wählen Sie den Texttyp aus, den Sie mit der Anfrage senden möchten:</p>
+     <ul>
+       <li><code>urlencoded</code></li>
+       <li><code>multipart_form_data</code></li>
+       <li><code>raw</code></li>
+       <li><code>binary</code></li>
+     </ul>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Inhalt anfordern</td> 
+   <td> <p>Wenn Sie einen rohen oder binären Texttyp verwenden, geben Sie den Textinhalt für den API-Aufruf ein oder ordnen Sie ihn zu.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Felder</td> 
+   <td> <p>Wenn Sie einen urlencodierten oder mehrteiligen Formulardatentext oder einen binären Nachrichtentext für jedes Feld verwenden, für das Sie Daten hinzufügen möchten, klicken Sie auf <b>Element hinzufügen</b> und geben Sie den Schlüssel und den Wert des Felds ein.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### Erstellen eines benutzerdefinierten API-Aufrufs (veraltet)
+
+Dieses Aktionsmodul führt einen benutzerdefinierten Aufruf an die Veeva Vault-API durch. Dieses Modul unterstützt nur den `raw`. Um andere Textkörpertypen zu verwenden, verwenden Sie das [Erstellen eines benutzerdefinierten API-Aufrufs](#make-a-custom-api-call).
 
 <table style="table-layout:auto"> 
  <col> 
