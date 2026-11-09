@@ -1,10 +1,10 @@
 ---
 title: Konfigurieren des Adobe Workfront Fusion MCP-Servers
 description: Verbinden Sie Adobe Workfront Fusion mit einer MCP-kompatiblen KI-Agentenplattform oder mit Coworker (eigenständig oder in der rechten Leiste von Fusion).
-source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
+source-git-commit: d5861015b3bb0e9c176fcf4fd71db426671764dd
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 1%
+source-wordcount: '1343'
+ht-degree: 8%
 ---
 
 # Konfigurieren des Adobe Workfront Fusion MCP-Servers
@@ -13,9 +13,78 @@ Mit dem Adobe Workfront Fusion MCP-Server können Sie über eine unterstützte K
 
 Eine Liste der im Adobe Workfront Fusion MCP-Server verfügbaren Tools finden Sie unter [Adobe Workfront Fusion MCP-Server-Tools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md).
 
-## Unterstützte KI-Agentenplattformen
+## Zugriffsanforderungen
 
-Der Fusion MCP-Server funktioniert mit jeder KI-Agent-Plattform, die MCP- (Model Context Protocol) und Remote- (Streamable HTTP) MCP-Server mit OAuth unterstützt.
++++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront-Paket</td> 
+   <td> <p>Ein beliebiges Adobe Workfront Workflow- und Adobe Workfront Automation and Integration-Paket</p><p>Workfront Ultimate</p><p>Workfront Prime- und Select-Pakete bei zusätzlichem Kauf von Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront-Lizenzen</td> 
+   <td> <p>Standard</p><p>Work oder höher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Produkt</td> 
+   <td>
+   <p>Wenn Ihre Organisation über ein Workfront Select- oder Prime-Paket ohne Workfront Automation and Integration verfügt, muss Ihre Organisation Adobe Workfront Fusion erwerben.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
+## Voraussetzungen
+
+Bevor Sie Fusion mit einer KI-Agent-Plattform verbinden können, müssen Sie Folgendes tun:
+
+* Sie besitzen eine aktive Adobe Workfront Fusion-Lizenz und Zugriff auf mindestens eine Fusion-Organisation.
+* Verwenden Sie eine Benutzerrolle und Teamrollen von Fusion, die Zugriff auf die Daten gewähren, mit denen Sie arbeiten möchten.
+* Melden Sie sich mit einem Adobe ID (Adobe Identity Management System, IMS) an.
+* Zugriff auf eine MCP-kompatible KI-Agentenplattform oder auf Coworker haben.
+
+## Unterstützte MCP-Anwendungen
+
+Der Fusion MCP-Server funktioniert mit den folgenden Anwendungen.
+
+**Chat-Anwendungen**
+
+* Claude Anthropica
+* OpenAI ChatGPT
+* Microsoft 365 Copilot
+
+**Entwickler-Tools**
+
+* Anthropischer Claude-Code
+* Cursor
+* GitHub-Copilot
+* VS-Code
+* OpenAI-Code
+* MCP Inspector, mcp-remote und andere Tools, die einen lokalen Callback verwenden
+
+**Automatisierungs- und KI-Plattformen**
+
+* Adobe Workfront Fusion
+* Google Vertex-KI-Suche
+* Glean
+* Writer AI Studio
+* Postman
+
+### Einschränkungen
+
+* Nur die in diesem Abschnitt aufgeführten Anwendungen können eine Verbindung zum Fusion MCP-Server herstellen.
+* Desktop-Programme und Befehlszeilenschnittstellen (CLIs) funktionieren, wenn sie den Anmeldungsrückruf auf Ihrem eigenen Computer erhalten (`localhost`).
+* Sie können keine eigenen Programme hinzufügen. Um Unterstützung für ein neues Programm anzufordern, wenden Sie sich an das Fusion-Team unter [fusiondev@adobe.com](mailto:fusiondev@adobe.com).
+
+<!-- BECKY CHECK ME: Other parts of this article might conflict with these limitations. See the comments in the important note below, in the section Connect Fusion to a custom MCP solution, and in the troubleshooting table. -->
 
 >[!NOTE]
 >
@@ -30,44 +99,36 @@ Dieser Artikel führt Sie durch die Schritte zur Verbindung von:
 
 >[!IMPORTANT]
 >
->Wenn Sie eine andere MCP-kompatible Plattform wie Gemini, Cursor oder VS-Code verwenden, befolgen Sie die Dokumentation dieser Plattform, um einen benutzerdefinierten MCP-Server hinzuzufügen. Geben Sie nach Aufforderung zur Eingabe der MCP-Server-URL Folgendes ein:
+>Wenn Sie eine andere MCP-kompatible Plattform verwenden, befolgen Sie die Dokumentation dieser Plattform, um einen benutzerdefinierten MCP-Server hinzuzufügen. Geben Sie nach Aufforderung zur Eingabe der MCP-Server-URL Folgendes ein:
 >
 >```
 >https://mcp.fusion.adobe.com/mcp
 >```
 
-## Voraussetzungen
-
-Bevor Sie Fusion mit einer KI-Agent-Plattform verbinden können, müssen Sie Folgendes tun:
-
-* Sie besitzen eine aktive Adobe Workfront Fusion-Lizenz und Zugriff auf mindestens eine Fusion-Organisation.
-* Verwenden Sie eine Benutzerrolle und Teamrollen von Fusion, die Zugriff auf die Daten gewähren, mit denen Sie arbeiten möchten.
-* Melden Sie sich mit einem Adobe ID (Adobe Identity Management System, IMS) an.
-* Zugriff auf eine MCP-kompatible KI-Agentenplattform oder auf Coworker haben.
-
 ## Verwenden von Fusion mit einem Kollegen
 
 Ein Mitarbeiter ist der KI-Agent von Adobe. Fusion ist in Coworker integriert, sodass Sie keine MCP-URL eingeben oder eine OAuth-App registrieren müssen. Sie können Coworker with Fusion an zwei Stellen verwenden:
 
-* [Coworker (standalone)](#use-fusion-in-coworker): Arbeiten Sie mit Fusion zusammen mit Ihren anderen Adobe-Programmen.
-* [Kollege in der rechten Leiste von Fusion](#use-coworker-in-the-fusion-right-rail): Öffnen Sie den Kollege in einem Bedienfeld in der Benutzeroberfläche von Fusion.
+* Coworker (standalone): Arbeiten Sie mit Fusion zusammen mit Ihren anderen Adobe-Apps.
+* Mitarbeiter in der rechten Leiste von Fusion: Öffnen Sie den Mitarbeiter in einem Bedienfeld in der Benutzeroberfläche von Fusion.
 
 Beide verwenden dieselben Fusion MCP-Tools, Ihren Adobe ID und Ihre Fusion-Berechtigungen. Die Einstellungen der Lese- oder Schreib-MCP-Tools gelten für beide. Destruktive Aktionen wie Löschen, Warteschlange löschen oder überschreiben fragen immer nach einer Bestätigung.
 
 ### Verwenden von Fusion in einem Kollegen
 
-1. Offener Kollege.
-2. Öffnen Sie **Anpassung** > **Integrationen**
-3. Suchen Sie **fusion-mcp** und klicken Sie auf **Test**.
-4. Wenn Sie Zugriff auf mehr als eine Fusion-Organisation haben, wird sie automatisch ausgewählt. Sie können einen Kollegen bitten, die Organisation bei Bedarf später zu wechseln.
+1. Offener Kollege. Sie finden ihn unter https://experience.adobe.com/#/coworker.
+1. Öffnen Sie **Anpassungen** > **Integrationen**
+1. Suchen oder suchen Sie **fusion-mcp** und klicken Sie darauf.
+1. Klicken Sie im sich öffnenden Fenster auf **Test**.
+1. Wenn Sie Zugriff auf mehr als eine Fusion-Organisation haben, wird sie automatisch ausgewählt. Sie können einen Kollegen bitten, die Organisation bei Bedarf später zu wechseln.
 
 ### Verwenden von Coworker in der rechten Leiste von Fusion
 
 In Fusion wird Coworker in der rechten Leiste geöffnet
 
 1. Anmelden bei Workfront Fusion.
-2. Klicken Sie auf **Symbol &quot;**&quot; in der rechten Leiste.
-3. Stellen Sie eine Frage im Bedienfeld.
+1. Klicken Sie auf **Symbol &quot;**&quot; in der rechten Leiste.
+1. Stellen Sie eine Frage im Bedienfeld.
 
 ### Beispiel-Prompts
 
@@ -85,17 +146,17 @@ Fügen Sie Fusion als benutzerdefinierten Connector hinzu.
 > In Claude Team/Enterprise müssen Sie Besitzer sein, um einen benutzerdefinierten Connector hinzufügen zu können. Weitere Informationen finden Sie unter [Erste Schritte mit benutzerdefinierten Connectoren mit Remote-MCP](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) in der Claude-Dokumentation.
 
 1. Anmelden bei [Claude](https://claude.ai).
-2. Wählen Sie im linken Menü **Anpassen** aus.
-3. Wählen Sie **Connectoren** aus.
-4. Wählen Sie **+** und dann **Benutzerdefinierten Connector hinzufügen** aus.
-5. Geben Sie einen Namen (z. B. &quot;Workfront Fusion„) und die MCP-Server-URL ein:
+1. Wählen Sie im linken Menü **Anpassen** aus.
+1. Wählen Sie **Connectoren** aus.
+1. Wählen Sie **+** und dann **Benutzerdefinierten Connector hinzufügen** aus.
+1. Geben Sie einen Namen (z. B. &quot;Workfront Fusion„) und die MCP-Server-URL ein:
 
    ```
    https://mcp.fusion.adobe.com/mcp
    ```
 
-6. Klicken Sie auf **Verbinden**.
-7. Anmelden. Wählen Sie ein Profil und eine Fusion-Organisation aus.
+1. Klicken Sie auf **Verbinden**.
+1. Anmelden. Wählen Sie ein Profil und eine Fusion-Organisation aus.
 
 Für Claude-Code können Sie den Server über die Befehlszeile hinzufügen:
 
@@ -110,34 +171,30 @@ Fügen Sie Fusion als benutzerdefinierten MCP-Server hinzu.
 ### ChatGPT Desktop oder Codex
 
 1. Öffnen Sie in ChatGPT **Einstellungen**.
-2. Klicken Sie **Plugins**.
-3. Klicken Sie **Server hinzufügen**.
-4. Geben Sie einen Namen für den Server ein.
-5. Wählen Sie für den Typ **Streamable HTTP** aus.
-6. MCP-Server-URL eingeben:
+1. Klicken Sie **Plugins**.
+1. Klicken Sie **Server hinzufügen**.
+1. Geben Sie einen Namen für den Server ein.
+1. Wählen Sie für den Typ **Streamable HTTP** aus.
+1. MCP-Server-URL eingeben:
 
    ```
    https://mcp.fusion.adobe.com/mcp
    ```
 
-7. Klicken Sie auf **Speichern**.
-8. Klicken Sie **Authentifizieren** für den neuen Server und melden Sie sich an.
-9. Stellen Sie sicher, dass der Umschalter neben dem Server eingeschaltet ist.
+1. Klicken Sie auf **Speichern**.
+1. Klicken Sie **Authentifizieren** für den neuen Server und melden Sie sich an.
+1. Stellen Sie sicher, dass der Umschalter neben dem Server eingeschaltet ist.
 
 ### ChatGPT im Web
 
 1. Melden Sie sich bei [ChatGPT) &#x200B;](https://chatgpt.com).
-2. Navigieren Sie zu [https://chatgpt.com/plugins](https://chatgpt.com/plugins). (Der Entwicklermodus muss möglicherweise unter „Einstellungen **aktiviert werden** In Geschäfts-/Unternehmensplänen muss ein Administrator benutzerdefinierte Connectoren zulassen.)
-3. Klicken Sie auf **+**.
-4. Geben Sie einen &quot;**&quot;**.
-5. Wählen Sie **Verbindung** die Option **Server-URL** und geben Sie die MCP-Server-URL ein.
-6. Lassen Sie **Authentifizierung** auf **OAuth**.
-7. Lesen Sie die Risikomeldung und aktivieren Sie das Kontrollkästchen.
-8. Klicken Sie **Erstellen** und melden Sie sich mit Ihrer an.
-
-## Verbinden von Fusion mit einer benutzerdefinierten MCP-Lösung
-
-Wenn Sie Ihr eigenes Programm oder Ihren eigenen Agenten erstellen, stellen Sie eine direkte Verbindung mit dem Fusion MCP-Server her.
+1. Navigieren Sie zu [https://chatgpt.com/plugins](https://chatgpt.com/plugins). (Der Entwicklermodus muss möglicherweise unter „Einstellungen **aktiviert werden** In Geschäfts-/Unternehmensplänen muss ein Administrator benutzerdefinierte Connectoren zulassen.)
+1. Klicken Sie auf **+**.
+1. Geben Sie einen &quot;**&quot;**.
+1. Wählen Sie **Verbindung** die Option **Server-URL** und geben Sie die MCP-Server-URL ein.
+1. Lassen Sie **Authentifizierung** auf **OAuth**.
+1. Lesen Sie die Risikomeldung und aktivieren Sie das Kontrollkästchen.
+1. Klicken Sie **Erstellen** und melden Sie sich mit Ihrer an.
 
 ## Zu einer anderen Fusion-Organisation wechseln
 
@@ -159,7 +216,7 @@ Der Agent verwendet `fusion_orgs_list` und `fusion_orgs_set`. Der Wechsel gilt n
 | Es wird eine Meldung angezeigt, dass der MCP-Zugriff deaktiviert ist. | Der MCP-Zugriff für Ihre Fusion-Organisation ist deaktiviert. | Bitten Sie Ihren Fusion-Administrator, es zu aktivieren. |
 | Der Agent kann Szenarien lesen, sie jedoch nicht erstellen, ausführen, aktualisieren oder löschen. | MCP-Schreibwerkzeuge sind deaktiviert oder in der Team-Rolle nicht zulässig. | Bitten Sie Ihren Fusion-Administrator, Schreib-Tools zu aktivieren oder Ihnen die erforderliche Team-Rolle zu gewähren. |
 | Benutzerdefinierte App-Authentifizierung wird abgelehnt. | Callback-URL ist nicht auf der Zulassungsliste. | Bitten Sie Ihren Administrator, die genaue Callback-URL hinzuzufügen. |
-| Fusion wird nicht in der rechten Leiste von „Coworker“ aufgelistet oder Coworker fehlt in der rechten Leiste von Fusion. | Die Funktion ist für Ihre Organisation nicht aktiviert. <!-- BECKY CHECK ME: confirm whether this is the correct admin guidance before publishing. --> | Wenden Sie sich an Ihren Fusion-Administrator. |
+| Fusion wird nicht in der rechten Leiste von „Coworker“ aufgelistet oder Coworker fehlt in der rechten Leiste von Fusion. | Die Funktion ist für Ihre Organisation nicht aktiviert. | Wenden Sie sich an Ihren Fusion-Administrator. |
 
 ## Häufig gestellte Fragen
 

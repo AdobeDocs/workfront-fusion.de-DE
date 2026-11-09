@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
+source-git-commit: d3bb4ef202fd92ab7663ad5c2816c70e8bab6685
 workflow-type: tm+mt
-source-wordcount: '7761'
-ht-degree: 90%
+source-wordcount: '7773'
+ht-degree: 89%
 ---
 # Adobe Workfront-Module
 
@@ -2403,11 +2403,11 @@ Die folgenden Operatoren sind im Filter unter „Workfront“ > „Ereignisse ü
 * Kleiner oder gleich
 * Enthält
 * Vorhanden
-  * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
+  * Dieser Operator benötigt keinen Wert, daher ist das Wertfeld nicht im Filter enthalten.
 * Existiert nicht
-  * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
+  * Dieser Operator benötigt keinen Wert, daher ist das Wertfeld nicht im Filter enthalten.
 * Geändert
-  * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
+  * Dieser Operator benötigt keinen Wert, daher ist das Wertfeld nicht im Filter enthalten.
   * Dieser Operator ignoriert das Feld „Status“.
   * Wählen Sie bei Verwendung von `Changed` im Feld **Eintragsursprung** die Option **Nur aktualisierte Ereignisse** aus.
 
