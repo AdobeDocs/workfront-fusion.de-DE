@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
+source-git-commit: d3bb4ef202fd92ab7663ad5c2816c70e8bab6685
 workflow-type: tm+mt
-source-wordcount: '7761'
-ht-degree: 90%
+source-wordcount: '7773'
+ht-degree: 89%
 ---
 # Adobe Workfront-Module
 
@@ -1069,7 +1069,7 @@ Workfront hat kürzlich eine neue Version seines Ereignisabonnement-Services ver
 
 Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 
-Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de).
+Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 <table style="table-layout:auto">
  <col> 
@@ -2385,7 +2385,7 @@ Mit Filtern in Ereignisabonnements können Sie sicherstellen, dass Ihre Szenarie
 >
 >   Weitere Informationen zur neuen Ereignisabonnementversion finden Sie in der Workfront-Dokumentation unter [Ereignisabonnement-Versionierung](https://experienceleague.adobe.com/de/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning).
 >
->   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=de).
+>   Ressourcen zum Beibehalten Ihrer Workfront Fusion-Szenarios während des Ereignisabonnement-Upgrades, einschließlich einer Webinar-Aufzeichnung, finden Sie unter [Beibehalten Ihrer Fusion-Szenarios beim Upgrade auf Ereignisabonnements V2](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 Das Workfront-Modul [!UICONTROL Ereignisse überwachen] löst Szenarios auf Basis eines Webhooks aus, der ein Ereignisabonnement in der Workfront-API erstellt. Das Ereignisabonnement ist ein Satz von Daten, der bestimmt, welche Ereignisse an den Webhook gesendet werden. Wenn Sie beispielsweise ein Modul [!UICONTROL Ereignisse überwachen] einrichten, das auf Probleme achtet, sendet das Ereignisabonnement ausschließlich Ereignisse, die mit Problemen in Zusammenhang stehen.
 
@@ -2403,11 +2403,11 @@ Die folgenden Operatoren sind im Filter unter „Workfront“ > „Ereignisse ü
 * Kleiner oder gleich
 * Enthält
 * Vorhanden
-  * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
+  * Dieser Operator benötigt keinen Wert, daher ist das Wertfeld nicht im Filter enthalten.
 * Existiert nicht
-  * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
+  * Dieser Operator benötigt keinen Wert, daher ist das Wertfeld nicht im Filter enthalten.
 * Geändert
-  * Dieser Operator benötigt keinen Wert und das Wertfeld ist nicht vorhanden.
+  * Dieser Operator benötigt keinen Wert, daher ist das Wertfeld nicht im Filter enthalten.
   * Dieser Operator ignoriert das Feld „Status“.
   * Wählen Sie bei Verwendung von `Changed` im Feld **Eintragsursprung** die Option **Nur aktualisierte Ereignisse** aus.
 
