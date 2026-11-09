@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: ddf7d3e48a5aee72d8f39b5b6746d1e3e884a7d0
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '554'
 ht-degree: 7%
 ---
 # Anzeigen und Lösen unvollständiger Ausführungen
@@ -25,10 +25,6 @@ Der Ordner [!UICONTROL Unvollständige Ausführungen] speichert Szenario-Ausfüh
 >Standardmäßig ist das Speichern unvollständiger Ausführungen deaktiviert. Um sie zu aktivieren, aktivieren Sie die Option [!UICONTROL Speichern unvollständiger Ausführungen zulassen] in den erweiterten Einstellungen des Szenarios.
 >
 >Weitere Informationen zu Szenario-Einstellungen finden Sie unter [Konfigurieren von Szenario-Einstellungen](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
-
-Vorschau für vollständigen Artikel {#highlighted-preview-article-level} hervorgehoben
-
-<span class="preview">Die Informationen auf dieser Seite beziehen sich auf Funktionen, die noch nicht allgemein verfügbar sind. Sie ist nur in der Sandbox-Vorschau-Umgebung verfügbar.</span>
 
 ## Anzeigen unvollständiger Ausführungen
 
