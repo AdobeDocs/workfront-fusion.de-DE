@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 1eeb0f543b77b52c18c45ebc773e0322391d2042
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 27%
@@ -22,7 +22,7 @@ Da die Anwendungen, mit denen Workfront Fusion eine Verbindung herstellt, mögli
 
 Wenn in einem Szenario ein grünes Upgrade-Modulsymbol auf einem Modul angezeigt wird, hat Workfront Fusion eine neue Version dieses Moduls veröffentlicht.
 
-![Aktualisierungssymbol](assets/update-indicator-workfront.png)
+![Aktualisierungssymbol](assets/new-update-indicator-workfront.png)
 
 Sie können das Modul aktualisieren, ohne ein neues Szenario zu erstellen.
 
@@ -57,8 +57,8 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## Aktualisieren eines Workfront-Moduls auf eine neue Version
 
-1. Klicken Sie auf das Symbol **Modul aktualisieren** ![Upgrade-Symbol](assets/upgrade-icon.png) auf dem Modul, das Sie auf eine neue Version aktualisieren möchten.
-   ![Aktualisierungssymbol](assets/update-indicator-workfront.png)
+1. Klicken Sie auf das Symbol **Modul aktualisieren** ![Upgrade-Symbol](assets/new-upgrade-icon.png) auf dem Modul, das Sie auf eine neue Version aktualisieren möchten.
+   ![Aktualisierungssymbol](assets/new-update-indicator-workfront.png)
 1. Wählen Sie eine der folgenden Optionen:
 
    * Um ein neues Modul auszuwählen, das dieses ersetzen soll (anstatt ein Upgrade des Moduls durchzuführen), klicken Sie auf **Neue auswählen** und fahren Sie dann wie [Aktualisieren eines Nicht-Workfront-Moduls auf eine neue Version) &#x200B;](#upgrade-a-non-workfront-module-to-a-new-version).
@@ -73,7 +73,7 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
 
 ## Aktualisieren eines Nicht-Workfront-Moduls auf eine neue Version
 
-1. Klicken Sie auf das Symbol **Modul aktualisieren** ![Upgrade-Symbol](assets/upgrade-icon.png) auf dem Modul, das Sie auf eine neue Version aktualisieren möchten.
+1. Klicken Sie auf das Symbol **Modul aktualisieren** ![Upgrade-Symbol](assets/new-upgrade-icon.png) auf dem Modul, das Sie auf eine neue Version aktualisieren möchten.
    <!--![Update icon](assets/update-indicator.png)-->
 1. Klicken Sie **Neu wählen**.
 1. Wählen Sie das Modul aus, das Sie das vorherige Modul ersetzen möchten.
