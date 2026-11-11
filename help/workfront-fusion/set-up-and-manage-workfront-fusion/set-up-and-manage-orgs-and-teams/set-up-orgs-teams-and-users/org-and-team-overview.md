@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 2%
+source-wordcount: '795'
+ht-degree: 1%
 ---
 # Übersicht über Adobe Workfront Fusion-Organisationen und -Teams
 
@@ -87,3 +87,25 @@ Benutzende haben in jedem ihrer Teams eine der folgenden Rollen:
 * **[!UICONTROL Team Eingeschränktes Mitglied]**: Die Funktionalität für diese Rolle ist derzeit nicht verfügbar und wird in naher Zukunft verfügbar gemacht. Es wird derzeit nicht empfohlen, dieser Rolle Benutzer zuzuweisen.
 
 Informationen zu bestimmten Aktionen, die Benutzern in den einzelnen Team-Rollen zur Verfügung stehen, finden Sie unter [Organisation und Team-Rollen](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
+
+### Benutzerdefinierte Team-Rollen
+
+<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
+
+Zusätzlich zu den vordefinierten Team-Rollen verfügt jedes Team über die Registerkarte **[!UICONTROL Rollen]** , auf der Sie Ihre eigenen Rollen erstellen können. Sie können Rollen erstellen, aktualisieren und löschen sowie genau auswählen, welche Berechtigungen jede Rolle enthält. Sie sind nicht mehr auf einen festen Satz von Rollen beschränkt.
+
+Anweisungen finden Sie unter [Teamrollen anzeigen und verwalten](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
+Mit benutzerdefinierten Rollen können Sie:
+
+* Gewähren Sie jeder Person nur den Zugriff, den ihre Arbeit benötigt, wodurch das Risiko versehentlicher Änderungen an kritischen Szenarien reduziert wird.
+* Richten Sie den Zugriff so ein, dass er der Funktionsweise Ihres Unternehmens entspricht, anstatt Ihre Teams in die vordefinierten Rollen einzufügen.
+* Verwalten Sie den Zugriff selbst, ohne sich an den Support zu wenden.
+
+Jeder Benutzer mit der **[!UICONTROL Mitglieder verwalten]** Berechtigung in einem Team kann Rollen in diesem Team erstellen, aktualisieren, löschen und zuweisen. In den vordefinierten Rollen ist diese Berechtigung in den Rollen Team-Admin und Organisationsverantwortliche enthalten.
+
+* Organisationsverantwortliche können Rollen in allen Teams erstellen und verwalten.
+* Organisations-Admins können Rollen nur in den Teams verwalten, denen sie angehören, und wo sie über die Berechtigung **[!UICONTROL Mitglieder verwalten]** verfügen.
+* Team-Administratoren können Rollen in ihren Teams verwalten.
+
+<!-- BECKY CHECK ME: The source does not describe the steps in the Roles tab, the list of permissions that you can choose from, or whether you can edit or delete the predefined roles. Add the steps and permissions list once confirmed. Also confirm that Team Admins can manage roles (the source says the Manage members permission was previously given to Team Admin and Org Owner roles, and that team and org admins can create roles only in the teams where they are admins). -->
