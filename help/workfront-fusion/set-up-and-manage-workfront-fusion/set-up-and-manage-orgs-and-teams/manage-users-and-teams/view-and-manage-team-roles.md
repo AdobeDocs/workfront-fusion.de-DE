@@ -137,7 +137,7 @@ Eine von Ihnen erstellte Rolle ist im Team verfügbar. Sie können sie Team-Mitg
    <td>Anzeigen, Erstellen, Bearbeiten, Löschen</td>
   </tr>
  <tr>
-   <td role="rowheader">[!UICONTROL-Schlüssel]</td>
+   <td role="rowheader">[!UICONTROL -Schlüssel]</td>
    <td>Anzeigen, Erstellen, Bearbeiten, Löschen</td>
   </tr>
  <tr>
@@ -193,7 +193,7 @@ Sie können die Rollen in einem Team in ein anderes Team kopieren, sodass Sie ni
       <td> <p>Die Rolle im Zielteam, in die die Quellrolle kopiert wird.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Änderungen]</td> 
+      <td role="rowheader">[!UICONTROL -Änderungen]</td> 
       <td> <p>Ob sich die Zielrolle von der Quellrolle unterscheidet. <b>[!UICONTROL Already in sync]</b> bedeutet beispielsweise, dass die Zielrolle bereits über dieselben Berechtigungen wie die Quellrolle verfügt.</p> </td> 
      </tr> 
      <tr> 

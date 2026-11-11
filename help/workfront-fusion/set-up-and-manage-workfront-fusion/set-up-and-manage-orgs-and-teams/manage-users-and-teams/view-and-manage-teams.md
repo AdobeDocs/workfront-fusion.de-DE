@@ -32,7 +32,7 @@ Sie können eine Liste der Teams Ihrer Organisation anzeigen und die Namen der T
 
 Informationen zum Erstellen und Verwalten der Rollen in einem Team finden Sie unter [Teamrollen anzeigen und verwalten](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
 
-Informationen zum Hinzufügen von Benutzern zu Teams finden [ unter „Hinzufügen eines Benutzers zu einem Team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
+Informationen zum Hinzufügen von Benutzern zu Teams finden [&#x200B; unter „Hinzufügen eines Benutzers zu einem Team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Zugriffsanforderungen
 
