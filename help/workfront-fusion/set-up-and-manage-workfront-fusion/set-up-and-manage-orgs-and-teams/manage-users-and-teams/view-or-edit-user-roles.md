@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 62dff65d6de1c2301ca8e99f5aaeda05e6a34ffe
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '542'
 ht-degree: 18%
 ---
 # Anzeigen oder Bearbeiten von Benutzerrollen
@@ -87,7 +87,12 @@ Beachten Sie beim Zuweisen eines Benutzers zu oder von einer Eigentümerrolle Fo
 
 Adobe Workfront Fusion-Administratoren und Team-Administratoren können Benutzerrollen anzeigen und aktualisieren.
 
+>[!NOTE]
+>
+>Zusätzlich zu den vordefinierten Rollen kann ein Team über benutzerdefinierte Rollen verfügen. Informationen zum Erstellen und Verwalten benutzerdefinierter Rollen finden Sie unter [Team-Rollen anzeigen und verwalten](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
 1. Wählen Sie, während Sie als Workfront Fusion-Administrator angemeldet sind **[!UICONTROL im linken Navigationsbereich]** Alle Benutzer“ aus.
 1. Klicken Sie **[!UICONTROL Details]** in der Zeile des Benutzers, den Sie anzeigen möchten.
 1. Klicken Sie auf das Symbol Teams in der Spalte **[!DNL Role]** in der Zeile der Organisation, die das Team enthält, in dem Sie die Rolle des Benutzers anzeigen oder bearbeiten möchten.
 1. (Optional) Um die Rolle des Benutzers in einem Team zu aktualisieren, klicken Sie auf das Dropdown-Menü in der Spalte **[!DNL Role]** in der Zeile des Teams, in der Sie die Rolle des Benutzers ändern möchten, und wählen Sie dann die neue Rolle aus.
+

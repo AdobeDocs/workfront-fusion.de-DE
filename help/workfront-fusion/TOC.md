@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion-Dokumentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Nutzen Sie die Dokumente, Tutorials und zusätzlichen Ressourcen, um zu erfahren, wie Sie Adobe Workfront Fusion in Ihrer Organisation implementieren und effektiv nutzen können.
 nudge: true
-source-git-commit: 41ba069a36eeddbadbd993602a3b5f7ede60cefa
+source-git-commit: f5e074eee39c7626f8ccd0ecb722d26d9667b908
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2826'
 ht-degree: 46%
 ---
 
@@ -225,6 +225,7 @@ ht-degree: 46%
       * [Anzeigen oder Bearbeiten von Benutzerdetails](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
       * [Anzeigen oder Bearbeiten von Benutzerrollen](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
       * [Anzeigen und Verwalten von Teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-teams.md)
+      * [Teamrollen anzeigen und verwalten](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)
       * [Löschen von Benutzenden in der Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
   * Konfigurieren benutzerdefinierter Erweiterungen {#configure-custom-extensions}
     * [Benutzerdefinierte UI-Erweiterungen: Artikelindex](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-00-readme.md)

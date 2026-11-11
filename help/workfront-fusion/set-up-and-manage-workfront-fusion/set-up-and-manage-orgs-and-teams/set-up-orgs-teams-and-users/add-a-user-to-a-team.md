@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 31%
+source-wordcount: '347'
+ht-degree: 29%
 ---
 # Hinzufügen von Benutzenden zu einem Team
 
@@ -66,3 +66,7 @@ Das Hinzufügen eines Benutzers zu einem Team wird von der Seite aus für dieses
 1. Klicken Sie **rechts neben** Namen des Benutzers auf „Ohne“ und wählen Sie dann die Rolle aus, die er im Team haben soll.
 
    Der Benutzer wird dem Team mit der ausgewählten Rolle hinzugefügt.
+
+   >[!NOTE]
+   >
+   >Zusätzlich zu den vordefinierten Rollen kann ein Team über benutzerdefinierte Rollen verfügen. Informationen zum Erstellen benutzerdefinierter Rollen finden Sie unter [Team-Rollen anzeigen und verwalten](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
