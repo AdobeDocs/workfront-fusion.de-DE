@@ -4,13 +4,11 @@ description: Mit dem Adobe App Builder-Connector können Sie benutzerdefinierte 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
+source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 19%
-
+source-wordcount: '754'
+ht-degree: 16%
 ---
-
 # Adobe App Builder-Modul
 
 Im Bereich Funktionen von Fusion können Sie benutzerdefinierte Funktionen erstellen. Anschließend fügen Sie diese Funktionen in Form eines Adobe App Builder-Moduls zu Ihren Szenarien hinzu.
@@ -45,6 +43,62 @@ Da benutzerdefinierte Funktionen über Adobe App Builder funktionieren, muss Ihr
 Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriffsanforderungen in der Dokumentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
+
+## Erstellen einer Verbindung mit Adobe App Builder
+
+Die Verbindung verwendet die Adobe I/O Runtime-Anmeldeinformationen eines App Builder-Projektarbeitsbereichs. Bevor Sie die Verbindung erstellen, rufen Sie diese Anmeldeinformationen von der Adobe Developer Console ab.
+
+### Abrufen Ihrer Laufzeitanmeldeinformationen
+
+1. Melden Sie sich bei der [Adobe Developer Console](https://developer.adobe.com/console) mit dem Unternehmen an, das über Ihre App Builder-Lizenz verfügt.
+1. Öffnen Sie das App Builder-Projekt, das Ihre Funktionen enthält, und wählen Sie dann den Arbeitsbereich aus, mit dem Sie eine Verbindung herstellen möchten (z. B **„Produktion**).
+1. Klicken Sie **oben rechts auf** Alle herunterladen“, um die JSON-Datei für die Workspace-Konfiguration herunterzuladen.
+1. Öffnen Sie die Datei und suchen Sie den Abschnitt `runtime` . Sie enthält Folgendes:
+
+   * `namespace`: Der Wert, der in das Feld **Namespace** eingegeben werden soll
+   * `auth`: Ein Wert im Format `username:password`. Der Teil vor dem Doppelpunkt ist **Benutzername** und der Teil nach dem Doppelpunkt ist **Kennwort**.
+
+   >[!NOTE]
+   >
+   >Sie können den Namespace und die Authentifizierungswerte auch finden, indem Sie `aio runtime namespace get` oder `aio app use` in der Adobe I/O-CLI ausführen.
+
+### Erstellen der Verbindung
+
+1. Klicken Sie im -Modul **Hinzufügen** neben dem Feld **Verbindung**.
+1. Füllen Sie die folgenden Felder aus:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Verbindungsname]</td> 
+      <td>Geben Sie einen Namen für die Verbindung ein.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Umgebung]</td> 
+      <td>Wählen Sie aus, ob Sie eine Verbindung zu einer Produktions- oder Nicht-Produktionsumgebung herstellen.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Typ]</td> 
+      <td>Wählen Sie <b>Service-Konto</b> aus.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Benutzername]</td> 
+      <td>Geben Sie den Benutzernamen aus dem <code>auth</code> Ihres Arbeitsbereichs ein (dem Teil vor dem Doppelpunkt).</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Kennwort]</td> 
+      <td>Geben Sie das Kennwort aus dem <code>auth</code> Ihres Arbeitsbereichs ein (dem Teil nach dem Doppelpunkt).</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL -Namespace]</td> 
+      <td>Geben Sie den <code>namespace</code> Wert aus dem Abschnitt <code>runtime</code> in Ihrer Workspace-Konfigurationsdatei ein.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Klicken Sie **Fortfahren**, um die Verbindung zu speichern.
 
 ## Adobe App Builder-Module
 

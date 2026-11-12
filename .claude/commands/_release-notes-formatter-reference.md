@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # Referenzvorlagen für Versionshinweise
 
@@ -144,8 +143,7 @@ Jeder Abschnitt des H3-Produktbereichs enthält eine HTML-Tabelle. Verwenden Sie
 - Funktionszelle: `<a>` Tag mit `class="MCXref xref" xrefformat="{para}"` gefolgt von `<p>` Beschreibung
 - Die `href` verweist auf die Produktbereichsseite (kein spezifischer Anker)
 - Datumszellen: in `<p>` Tags eingeschlossen
-- Fügen Sie bei außerplanmäßigen Elementen `<p>[!BADGE Off schedule]{type=Neutral}</p>` nach dem Link hinzu
-- Leere `<p></p>` nach dem Link ist akzeptabel, wenn kein Abzeichen benötigt wird
+- Fügen Sie bei außerplanmäßigen Elementen `<p>[!BADGE Off schedule]{type=Neutral}</p>` als eigenen Absatz direkt unter dem Link-Absatz vor dem Beschreibungsabsatz ein - Leere `<p></p>` nach dem Link, der zulässig ist, wenn kein Abzeichen benötigt wird
 - HTML-Einzüge konsistent mit bestehenden Dateien halten
 
 ### Nachfolgende Abschnitte - Übersicht
