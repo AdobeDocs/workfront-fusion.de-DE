@@ -1,13 +1,11 @@
 ---
 name: release-notes-formatter
 description: Formatieren und validieren Sie die Versionshinweise zu Workfront, um Konsistenz, korrekte Struktur und ordnungsgemäße Verknüpfung zu gewährleisten. Wird nur für Versionshinweise in Produktversionsverzeichnissen verwendet oder wenn der Benutzer Versionshinweise, Produktversionen oder vierteljährliche Versionen erwähnt. Gilt nicht für Artikel mit Anleitungen oder allgemeine Dokumentationen.
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 2%
-
+source-wordcount: '1013'
+ht-degree: 1%
 ---
-
 
 # Formatierung von Versionshinweisen
 
@@ -73,7 +71,7 @@ Regeln:
 >Production for everyone: {Month Day, Year}
 ```
 
-&#x200B;5. **Hauptteil**: Funktionsbeschreibung und dann Link zur Hilfedokumentation
+5. **Hauptteil**: Funktionsbeschreibung und dann Link zur Hilfedokumentation
 
 #### Übersichtsseiten
 
@@ -90,16 +88,19 @@ Regeln:
 * [Document enhancements](#document-enhancements)
 ```
 
-&#x200B;5. **H3 pro Produktbereich** mit HTML-Funktionstabelle (siehe .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
-   - Innerhalb jeder Tabelle **Neueste Funktionen zuerst** - die neueste Zeile wird oben in der Tabelle angezeigt (nach der Kopfzeile)
+- Wenn ein Produktbereich auskommentiert ist, entfernen Sie seinen Link vollständig aus dieser Liste. Kommentieren Sie den Link nicht aus.
 
-&#x200B;6. **Nachfolgende Abschnitte** (H2): Versionshinweise für andere Bereiche, Desktop Proofing Viewer-Updates, Ankündigungen, API-Version, Wartungs-Updates, Schulungs-Updates
+5. **H3 pro Produktbereich** mit HTML-Funktionstabelle (siehe .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
+   - Innerhalb jeder Tabelle **Neueste Funktionen zuerst** - die neueste Zeile wird oben in der Tabelle angezeigt (nach der Kopfzeile)
+   - Wenn ein Feature über ein Badge verfügt (z. B. `[!BADGE Off schedule]{type=Neutral}`), fügen Sie es in einem eigenen `<p>` direkt unter dem Feature Link-Absatz vor dem Description-Absatz ein.
+
+6. **Nachfolgende Abschnitte** (H2): Versionshinweise für andere Bereiche, Desktop Proofing Viewer-Updates, Ankündigungen, API-Version, Wartungs-Updates, Schulungs-Updates
 
 ### Schritt 3: Validieren von Links
 
 - **Übersichts-Link in Produktbereichsseiten**: Muss auf dasselbe Quartal verweisen
-   - Richtig: `26-q2-release-activity/26-q2-release-overview.md`
-   - Falsch: `26-q1-release-activity/26-q1-release-overview.md`
+  - Richtig: `26-q2-release-activity/26-q2-release-overview.md`
+  - Falsch: `26-q1-release-activity/26-q1-release-overview.md`
 - **Links in der Übersicht verankern**: Muss mit den H3-IDs übereinstimmen (Kleinbuchstaben, Bindestriche)
 - **Funktionsverknüpfungen in Übersichtstabellen**: Muss `class="MCXref xref" xrefformat="{para}"` verwenden
 - **Hilfe-Dokumentlinks**: Muss mit `/help/quicksilver/` beginnen
@@ -124,6 +125,9 @@ Wenden Sie diese Korrekturen bei der Formatierung an:
 | Zusätzliche Leerzeichen in Legendenlinien | Nachfolgende Leerzeichen kürzen |
 | HTML in den Produktbereichsseiten | Als Markdown beibehalten (HTML dient nur zur Tabellenübersicht) |
 | Fehlende `exl-id` | Lassen Sie es weg - erzeugen Sie keine |
+| Badge platziert nach der Beschreibung in einer Übersichtstabelle | Verschieben Sie sie direkt unter dem Funktions-Link in ihre eigene `<p>` |
+| Mini-Inhaltsverzeichnis-Link zu einem auskommentierten Abschnitt | Entfernen Sie den Link aus der Liste, kommentieren Sie ihn nicht aus |
+| Erweiterungstabelle in der Übersicht ohne Mini-Inhaltsverzeichnis-Link | Fügen Sie der Liste Adobe Workfront-Verbesserungen in der gleichen Reihenfolge wie die Tabellen einen Link hinzu |
 
 ### Schritt 6: Inhaltsverzeichnis aktualisieren
 
@@ -133,9 +137,9 @@ Wo sie hinzugefügt werden soll:
 
 - Das Inhaltsverzeichnis hat einen Abschnitt pro Quartal unter einer Überschrift wie `* 2026 Q3 Release {#release-26-q3}`. Wenn die Überschrift für das Quartal noch nicht vorhanden ist (erste Seite eines neuen Quartals), fügen Sie sie über dem vorherigen Quartal hinzu, sodass das neueste Quartal oben ist.
 - Listen Sie unter der Überschrift „Quartal“ die Seiten in dieser Reihenfolge auf:
-   1. **Übersicht** zuerst (`Third Quarter 2026 release overview`).
-   2. **Produktbereichsseiten** alphabetisch nach Bereichsnamen (Administrator, Dokumente, Unternehmensvorgänge, Projekte, Berichterstellung, Anforderung).
-   3. **Weitere Verbesserungen** zuletzt (immer nach den alphabetischen Produktbereichen).
+  1. **Übersicht** zuerst (`Third Quarter 2026 release overview`).
+  2. **Produktbereichsseiten** alphabetisch nach Bereichsnamen (Administrator, Dokumente, Unternehmensvorgänge, Projekte, Berichterstellung, Anforderung).
+  3. **Weitere Verbesserungen** zuletzt (immer nach den alphabetischen Produktbereichen).
 
 Jeder Inhaltsverzeichniseintrag ist ein Markdown-Link unter Verwendung des Seitentitels und des absoluten Repository-Pfads:
 
@@ -184,6 +188,8 @@ Die vierteljährliche Produktionsfreigabe erfolgt normalerweise am Donnerstag de
 - [ ] Funktionstabellen-Zeilen in der Übersicht stimmen mit dem Inhalt der Produktbereichsseite überein
 - [ ] Keine fehlerhaften internen Links
 - [ ] Anker-Links in der Übersicht stimmen mit den IDs im Abschnitt H3 überein
+- [ ] Jede Verbesserungstabelle in der Übersicht, die nicht auskommentiert ist, enthält im Mini-Inhaltsverzeichnis einen entsprechenden Link, sodass Abschnitte, die wieder hinzugefügt werden, wenn sie nicht auskommentiert sind, nicht verpasst werden
+- [ ] Mini-Inhaltsverzeichnis mit Überblick enthält keine Links zu auskommentierten Abschnitten, und die Abzeichen befinden sich direkt unter dem Funktions-Link
 - [ ] Funktionen werden als „Newest-First“ sortiert (Produktbereichsseiten und Übersichtstabellen)
 - [ ] Neue Versionshinweise werden in `help/quicksilver/TOC.md` unter dem richtigen Quartal aufgeführt, wobei die Übersicht zuerst und die Produktbereiche in alphabetischer Reihenfolge aufgeführt werden (Sonstige Letzte)
 
