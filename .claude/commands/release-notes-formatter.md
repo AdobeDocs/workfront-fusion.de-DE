@@ -71,7 +71,7 @@ Regeln:
 >Production for everyone: {Month Day, Year}
 ```
 
-5. **Hauptteil**: Funktionsbeschreibung und dann Link zur Hilfedokumentation
+&#x200B;5. **Hauptteil**: Funktionsbeschreibung und dann Link zur Hilfedokumentation
 
 #### Übersichtsseiten
 
@@ -90,11 +90,11 @@ Regeln:
 
 - Wenn ein Produktbereich auskommentiert ist, entfernen Sie seinen Link vollständig aus dieser Liste. Kommentieren Sie den Link nicht aus.
 
-5. **H3 pro Produktbereich** mit HTML-Funktionstabelle (siehe .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
+&#x200B;5. **H3 pro Produktbereich** mit HTML-Funktionstabelle (siehe .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
    - Innerhalb jeder Tabelle **Neueste Funktionen zuerst** - die neueste Zeile wird oben in der Tabelle angezeigt (nach der Kopfzeile)
    - Wenn ein Feature über ein Badge verfügt (z. B. `[!BADGE Off schedule]{type=Neutral}`), fügen Sie es in einem eigenen `<p>` direkt unter dem Feature Link-Absatz vor dem Description-Absatz ein.
 
-6. **Nachfolgende Abschnitte** (H2): Versionshinweise für andere Bereiche, Desktop Proofing Viewer-Updates, Ankündigungen, API-Version, Wartungs-Updates, Schulungs-Updates
+&#x200B;6. **Nachfolgende Abschnitte** (H2): Versionshinweise für andere Bereiche, Desktop Proofing Viewer-Updates, Ankündigungen, API-Version, Wartungs-Updates, Schulungs-Updates
 
 ### Schritt 3: Validieren von Links
 
