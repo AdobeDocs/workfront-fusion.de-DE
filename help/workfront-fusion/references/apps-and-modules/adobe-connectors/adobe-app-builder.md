@@ -92,7 +92,7 @@ Die Verbindung verwendet die Adobe I/O Runtime-Anmeldeinformationen eines App Bu
       <td>Geben Sie das Kennwort aus dem <code>auth</code> Ihres Arbeitsbereichs ein (dem Teil nach dem Doppelpunkt).</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL-Namespace]</td> 
+      <td role="rowheader">[!UICONTROL -Namespace]</td> 
       <td>Geben Sie den <code>namespace</code> Wert aus dem Abschnitt <code>runtime</code> in Ihrer Workspace-Konfigurationsdatei ein.</td> 
      </tr> 
     </tbody> 
@@ -136,11 +136,11 @@ Informationen zu Paketen finden Sie unter [Verwenden benutzerdefinierter Funktio
    <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Paket]</td> 
+   <td role="rowheader">[!UICONTROL -Paket]</td> 
    <td>Wählen Sie das Paket aus, das die Funktion enthält, die Sie im Szenario ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Variable] </td> 
+   <td role="rowheader">[!UICONTROL -Variable] </td> 
    <td>Wählen Sie die Funktion aus, die Sie im Szenario ausführen möchten.</p></td> 
   </tr> 
    </tbody> 
@@ -161,11 +161,11 @@ Informationen zu Paketen finden Sie unter [Verwenden benutzerdefinierter Funktio
    <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Paket]</td> 
+   <td role="rowheader">[!UICONTROL -Paket]</td> 
    <td>Wählen Sie das Paket aus, das die Variable enthält, die Sie in das Szenario integrieren möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Variable] </td> 
+   <td role="rowheader">[!UICONTROL -Variable] </td> 
    <td>Wählen Sie die Variable aus, die Sie in das Szenario aufnehmen möchten.</p></td> 
   </tr> 
    </tbody> 
@@ -190,7 +190,7 @@ Anweisungen zum Konfigurieren einer benutzerdefinierten Funktion finden Sie unte
    <td>Wählen Sie die benutzerdefinierte Funktion aus, die Sie ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL-Parameter] </td> 
+   <td role="rowheader">[!UICONTROL -Parameter] </td> 
    <td>Geben Sie die Werte für die Funktionsparameter ein. Die verfügbaren Parameter basieren auf den Parametern, die beim Erstellen der Funktion konfiguriert wurden.<p>Wenn ein Parameter einen Standardwert hat, wird er nicht im Feld angezeigt, Sie können ihn jedoch überschreiben, indem Sie einen Wert in das Feld eingeben oder zuordnen.</p></td> 
   </tr> 
    </tbody> 
