@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 23%
+source-wordcount: '1137'
+ht-degree: 15%
 ---
 # Zuordnen eines Elements mithilfe integrierter Funktionen
 
@@ -126,6 +126,64 @@ So verschachteln Sie eine Funktion:
 1. Klicken Sie im Zuordnungsbereich auf die verschachtelte Funktion. In diesem Beispiel ist dies die `trim`.
 1. Fahren Sie mit der Konfiguration der Funktion wie gewünscht fort.
 1. Fahren Sie mit der Konfiguration des Moduls fort oder klicken Sie auf **OK**.
+
+### Ausdruck mit KI erzeugen
+
+Anstatt die Syntax eines Ausdrucks selbst zu schreiben, können Sie beschreiben, was Sie möchten, und KI generiert den Ausdruck für Sie. Sie können beispielsweise Folgendes anfordern:
+
+* Verbinden Sie diese Namen mit einem Komma.
+* Dem Fälligkeitsdatum drei Tage hinzufügen.
+
+KI wandelt Ihre Anfrage in einen Ausdruck um, der die integrierten Funktionen von Workfront Fusion verwendet, sodass das Ergebnis lesbar und leicht zu überprüfen ist, bevor Sie es verwenden.
+
+So generieren Sie einen Ausdruck:
+
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Szenarien“ im linken Bedienfeld.
+1. Wählen Sie das Szenario aus, in dem Sie Daten zuordnen möchten.
+1. Klicken Sie auf eine beliebige Stelle im Szenario, um den Szenario-Editor aufzurufen.
+1. Klicken Sie auf das Modul, dem Sie einen Ausdruck hinzufügen möchten, und klicken Sie dann auf das Feld .
+
+   Das Zuordnungsbedienfeld wird geöffnet.
+
+1. Klicken Sie auf **[!UICONTROL Registerkarte]** Fill by AI“ (das Zauberstabsymbol) im Zuordnungsbereich.
+
+   ![Registerkarte „Ausfüllen nach KI“](assets/fill-by-ai-tab.png)
+
+1. Beschreiben **[!UICONTROL im Feld „Beschreiben, was dieses Feld enthalten]**&quot; das gewünschte Ergebnis in einfacher Sprache.
+
+   Um ein Feld aus einem vorherigen Modul zu Ihrer Eingabeaufforderung hinzuzufügen, klicken Sie in der Liste **[!UICONTROL Verfügbare Felder]** darauf. Um eine neue Zeile in der Eingabeaufforderung zu beginnen, drücken Sie Umschalt+Eingabe.
+
+   Wenn Sie beispielsweise nur die Domain von einer E-Mail-Adresse abrufen möchten, können Sie die folgende Eingabeaufforderung eingeben:
+
+   `Show only the domain of {{1.data.json.email}} like "user@acme.com" -> "acme.com"`
+
+1. Klicken Sie auf **[!UICONTROL Generieren]**.
+
+   Der von AI generierte Ausdruck erscheint unter **[!UICONTROL Vorgeschlagener Ausdruck]**.
+
+   ![Vorgeschlagener Ausdruck](assets/fill-by-ai-suggested-expression.png)
+
+1. Überprüfen Sie den Ausdruck und führen Sie dann einen der folgenden Schritte aus:
+
+   * Klicken Sie **[!UICONTROL Anwenden]**, um den Ausdruck in das Feld einzufügen.
+   * Klicken Sie **[!UICONTROL Regenerieren]**, damit KI einen anderen Ausdruck generiert.
+
+1. (Optional) Bearbeiten Sie bei Bedarf den Ausdruck im Feld .
+
+1. Fahren Sie mit der Konfiguration des Moduls fort oder klicken Sie auf **[!UICONTROL OK]**.
+
+#### So generiert KI Ausdrücke
+
+Wenn KI einen Ausdruck generiert, bewirkt sie Folgendes:
+
+* **Verwendet den Kontext Ihres Szenarios.** Die KI berücksichtigt die Felder, die für die Zuordnung verfügbar sind, ihre Typen, das Zielfeld sowie Ihre Gebietsschema- und Zeitzoneneinstellungen.
+* **Validiert den Ausdruck.** Bevor die KI einen Ausdruck als erfolgreich zurückgibt, prüft sie auf nicht unterstützte Funktionen, fehlende Argumente, unbekannte Feldverweise und häufige Fehler mit Arrays und Daten.
+* **Korrigiert und vereinfacht den Ausdruck.** KI behebt häufige Syntaxfehler und ersetzt erkannte Problemumgehungen durch integrierte Funktionen.
+* **Wiederholt den Vorgang, wenn die Validierung fehlschlägt.** Die KI verwendet das spezifische Feedback aus der Validierung, um den Ausdruck neu zu generieren. Wenn immer noch kein gültiger Ausdruck erstellt werden kann, wird ein klarer Fehler anstelle eines ungültigen Ergebnisses zurückgegeben.
+
+>[!NOTE]
+>
+>KI-generierte Ausdrücke können unvollständig oder ungenau sein. Überprüfen Sie jeden Ausdruck und testen Sie Ihr Szenario, bevor Sie sich auf das Ergebnis verlassen.
 
 ### [!DNL Google Sheets] verwenden
 

@@ -13,10 +13,10 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 59%
+source-wordcount: '306'
+ht-degree: 57%
 ---
 # Überblick über Funktionen
 
@@ -37,12 +37,14 @@ Das Zuordnungs-Panel enthält die folgenden Registerkarten. Jede Registerkarte u
 
 | Funktionstyp | Weitere Informationen finden Sie unter: |
 | --- | --- |
-| **Aus anderen Modulen zuordnen**<br>![&#x200B; Aus anderen Modulen zuordnen](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Informationen zwischen Modulen zuordnen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-| **Allgemeine Funktionen**<br>![&#x200B; Allgemeine Funktionen](assets/toolbar-icon-general-function.png) | [Allgemeine Funktionen](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
-| **Mathematische Funktionen**<br>![&#x200B; Mathematische Funktionen](assets/toolbar-icon-math-functions.png) | [Mathematische Funktionen](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
-| **Text- und Binärfunktionen**<br>![&#x200B; Zeichenfolgen-Funktionen](assets/toolbar-icon-text-binary-functions.png) | [Zeichenfolgen-Funktionen](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
+| **Aus anderen Modulen zuordnen**<br>![ Aus anderen Modulen zuordnen](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Informationen zwischen Modulen zuordnen](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+| **Fill by AI**<br>![ Fill by AI](assets/toolbar-icon-fill-by-ai.png) | [Generieren eines Ausdrucks mit KI](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai) |
+| **Allgemeine Funktionen**<br>![ Allgemeine Funktionen](assets/toolbar-icon-general-function.png) | [Allgemeine Funktionen](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
+| **Mathematische Funktionen**<br>![ Mathematische Funktionen](assets/toolbar-icon-math-functions.png) | [Mathematische Funktionen](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
+| **Text- und Binärfunktionen**<br>![ Zeichenfolgen-Funktionen](assets/toolbar-icon-text-binary-functions.png) | [Zeichenfolgen-Funktionen](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
 | **Datum und Uhrzeit** <br> ![Datums- und Uhrzeitfunktionen](assets/toolbar-icon-date-time-functions.png) | <ul><li>[Datums- und Uhrzeitfunktionen](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Token zum Formatieren von Datum und Uhrzeit](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Token zum Parsen von Datum und Uhrzeit](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **Funktionen zum Arbeiten mit Arrays**<br> ![Array-Funktionen](assets/toolbar-icon-functions-for-arrays.png) | [Array-Funktionen](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
+
 
 ![Funktionssymbolleiste](assets/new-functions-toolbar.png)
 
