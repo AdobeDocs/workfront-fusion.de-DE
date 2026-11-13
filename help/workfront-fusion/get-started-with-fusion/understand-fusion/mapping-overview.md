@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 75%
+source-wordcount: '522'
+ht-degree: 70%
 ---
 # Überblick über Zuordnungen
 
@@ -68,6 +68,9 @@ Wenn Sie in ein Feld klicken, in dem Sie Daten zuordnen können, wird das Zuordn
 Auf der ersten Registerkarte werden die Elemente angezeigt, die Sie aus anderen Modulen zuordnen können.
 
 Die anderen Registerkarten umfassen Funktionen, Operatoren und Keywords, mit denen Sie Formeln erstellen können. Diese sind je nach Datentyp in verschiedene Registerkarten unterteilt.
+
+Auf **[!UICONTROL Registerkarte „Ausfüllen nach]**&quot; können Sie in einfacher Sprache beschreiben, was ein Feld enthalten soll, und KI generiert einen Ausdruck für Sie. Weitere Informationen finden Sie unter [Generieren eines Ausdrucks mit KI](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai).
+
 
 ![Zuordnungs-Panel](assets/new-mapping-panel-blank.png)
 
