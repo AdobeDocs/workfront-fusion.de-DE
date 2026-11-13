@@ -77,7 +77,7 @@ Auf **[!UICONTROL Registerkarte „Ausfüllen nach]**&quot; können Sie in einfa
 
 Weitere Informationen zu Funktionsregisterkarten finden Sie unter [Überblick über Funktionen](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
-Weitere Informationen zum Zuordnen von Elementen mithilfe von Funktionen [ Sie unter „Zuordnen von Elementen mithilfe integrierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
+Weitere Informationen zum Zuordnen von Elementen mithilfe von Funktionen [&#x200B; Sie unter „Zuordnen von Elementen mithilfe integrierter Funktionen](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Sammlungen
 
