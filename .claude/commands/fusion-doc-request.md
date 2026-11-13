@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: Verarbeiten einer Fusion-Dokumentationsanfrage über #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
-source-git-commit: 535a10407766d054b00d31869e511753bf07a9b7
+source-git-commit: 17a2d521197e676e41b4b899f7be142430a18c2f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1704'
 ht-degree: 0%
 ---
 
@@ -36,6 +36,8 @@ Wenn die Anfrage stattdessen auf eine sekundäre Nicht-Confluence-Quelle (z. B. 
 ## Schritt 2: Erstellen Sie eine Verzweigung für die Anfrage
 
 Bevor Sie Dateien berühren, erstellen Sie eine neue Git-Verzweigung für diese Anfrage und checken Sie sie aus. Verzweigen Sie von der aktuellen Standardverzweigung (`main`) und nicht von der Verzweigung, die ausgecheckt werden soll.
+
+Wenn der/die Benutzende die Verzweigung bereits erstellt und benannt hat, verwenden Sie diese anstelle einer neuen und notieren Sie diesen Namen in Schritt 4 im `Documentation Branch` der Aufgabe.
 
 Benennen Sie die Verzweigung `becky-{short-kebab-case-description}`, abgeleitet von **Feature Title** - das erste Wort muss `becky` werden, das der bestehenden Verzweigungskonvention dieses Repositorys entspricht (z. B. `becky-webhook-update`, `becky-storage-beta-sos`). Halten Sie es kurz - ein paar Worte, nicht den ganzen Titel wörtlich.
 
@@ -74,9 +76,12 @@ Aufgabenfelder:
 | `DE:Preview Date` | Standardmäßig das in der ursprünglichen Slack-Nachricht angegebene Datum (das **Veröffentlichungsdatum der Anfrage**) |
 | `taskConstraint` + `constraintDate` | Legen Sie `taskConstraint` auf `MFO` (Muss abgeschlossen sein am) fest, wobei `constraintDate` = das in der ursprünglichen Slack-Nachricht angegebene Datum (das **erwartete Veröffentlichungsdatum)**, sodass das geplante Abschlussdatum der Aufgabe auch mit diesem übereinstimmt. |
 | `DE:Articles to update` | Die Liste der Artikel, die Sie für diese Anfrage erstellt oder aktualisiert haben (siehe unten) |
+| `DE:Documentation Branch` | Der Name der Git-Verzweigung, in der sich die Änderungen am Dokument befinden (siehe unten) |
 | Produkt/Bereich | Wählen Sie `Fusion` aus (ein Aufzählungsfeld im Produktdokumentationsformular; bestätigen Sie den genauen Feldnamen mit `insights_search_fields`, falls er unklar ist). |
 
 `DE:Articles to update` (ein Textfeld im Produktdokumentationsformular) listet jede Artikeldatei auf, die Sie in Schritt 3 erstellt oder geändert haben, einen repo-relativen Pfad pro Zeile (z. B. `help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`). Fügen Sie neue Artikel (fügen Sie `(new)` nach dem Pfad hinzu) und alle bearbeiteten Inhaltsverzeichnisdateien oder Indexdateien ein. Da die Dokumentbearbeitungen in Schritt 3 erfolgen, ist die Liste zum Zeitpunkt der Erstellung der Aufgabe bekannt. Legen Sie sie daher im selben Erstellungsaufruf fest. Wenn der/die Benutzende Sie auffordert, die Aufgabe zu erstellen, ohne Änderungen am Dokument vorzunehmen, lassen Sie das Feld leer und aktualisieren Sie es später, wenn Änderungen am Dokument vorgenommen wurden.
+
+`DE:Documentation Branch` (ein Textfeld im Produktdokumentationsformular) enthält den genauen Namen der Git-Verzweigung, in der die Änderungen am Dokument vorgenommen werden, z. B. `becky-explain-errors-with-ai`. Verwenden Sie die Verzweigung des Benutzers mit dem Namen oder der Person, die derzeit in dem von Ihnen bearbeiteten Repository ausgecheckt ist. Erfinden Sie keinen Namen. Legen Sie sie im selben Erstellungsaufruf wie die anderen Felder fest. Wenn der/die Benutzende Sie auffordert, die Aufgabe zu erstellen, ohne Änderungen am Dokument vorzunehmen, und noch keine Verzweigung vorhanden ist, lassen Sie das Feld leer und aktualisieren Sie es später.
 
 Legen Sie die Felder für das Vorschaudatum und das geplante Abschlussdatum im Rahmen desselben Erstellungsaufrufs fest - lassen Sie sie nicht auf später oder warten Sie, gefragt zu werden. Wenn der/die Benutzende später ein anderes Datum angibt oder sagt, dass das Datum noch nicht wirklich bekannt ist, aktualisiert dies entsprechend, füllt es aber standardmäßig jedes Mal aus.
 
@@ -108,6 +113,7 @@ Klarer Bericht:
 * Die von Ihnen erstellte Verzweigung (lokal übertragen, nicht gepusht und keine Pull-Anfrage geöffnet - pro Schritt 2).
 * Welche DOC-Datei(en) Sie geändert haben und was Sie hinzugefügt haben.
 * Dass die geänderten Artikel im `Articles to update` der Aufgabe aufgeführt sind.
+* Der Name der Verzweigung, den Sie in das Feld `Documentation Branch` der Aufgabe eingegeben haben.
 * Vergewissern Sie sich, dass die Änderungen in der Verzweigung nicht bestätigt wurden und die Überprüfung durch den Benutzer aussteht.
 * Aufgabenname und URL.
 * Die genauen Feldwerte, die Sie festgelegt haben, einschließlich der Felder für das Vorschaudatum.
@@ -120,4 +126,4 @@ Bestätigen Sie, dass diese immer noch aufgelöst werden, anstatt davon auszugeh
 * Projekt „Produktdokumentationsaufgaben - für Entwicklungsprobleme, die Messaging erfordern“ ist der ID `5e69583f00236b9f767c3e3944100ee4` zugeordnet
 * Die übergeordnete Aufgabe „Becky - Aufgaben aus dem Fusion-Dokumentations-Kanal“ ist der ID `6a9b065100003a7554832780c2015e93` (im selben Projekt) zugeordnet und wird mit `insights_find_id_by_name` (Entity `task`) statt mit Hartkodierung aufgelöst, falls sie sich ändert.
 * Benutzerdefiniertes Formular für die Produktdokumentation (`categoryID`) ist `5d7275b9000514604bd969d418725843`
-* Benutzerdefinierte Felder: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* Benutzerdefinierte Felder: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`, `DE:Articles to update`, `DE:Documentation Branch`
