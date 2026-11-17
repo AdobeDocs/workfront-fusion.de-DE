@@ -16,9 +16,9 @@ feature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 29913d8252c39b66cfe4688d760bffb074dbf56c
+source-git-commit: 88b8663ed3f2ec4da1234e5c1c93531133d1e61c
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2436'
 ht-degree: 0%
 ---
 # Aktuell verfügbare Adobe Workfront Fusion-Vorlagen
@@ -162,36 +162,6 @@ Diese Vorlage nummeriert Ihre Projekte nacheinander. Es wird davon ausgegangen, 
 #### Workfront - Sequenzielle Nummerierungsreihen: Probleme
 
 Diese Vorlage nummeriert Ihre Probleme sequenziell. Es wird davon ausgegangen, dass Sie ein benutzerdefiniertes Formular und ein benutzerdefiniertes Feld mithilfe der Workfront - Sequential Numbering Series: Create Object Custom Form and Field Template erstellt haben, aber Sie können ein vorhandenes Formular und ein vorhandenes Feld verwenden.
-
-### Workfront - Projekt mit AEM-Workflow erstellen
-
-[!BADGE Neu!]{type=Informative}
-
-<!--New November 11, 2026-->
-
-<!-- BECKY CHECK ME: The request is titled "Automation New Templates" and lists the fields of two templates, "Create project with AEM workflow" and "Create multiple records". It does not give the exact template names, the trigger, or a description of what each template does. I wrote the descriptions from the field list. Confirm the template names as they appear in the Templates area, the trigger for each template, and the descriptions. -->
-
-Diese Vorlage erstellt ein Projekt aus einer Projektvorlage und kann die verknüpften AEM-Ordner erstellen, die für die Projektvorlage konfiguriert sind, und sie mit dem neuen Projekt verknüpfen.
-
->[!TIP]
->
->* Verknüpfte AEM-Ordner werden nur erstellt, wenn die ausgewählte Projektvorlage über einen aktivierten [AEM-Workflow](https://experienceleague.adobe.com/de/docs/workfront/using/administration-and-setup/configure-integrations/configure-aacs-integration#set-up-workflows-optional) mit mindestens einer Ordnerstruktur verfügt. Ist dies nicht der Fall, wird das Projekt ohne verknüpfte Ordner erstellt.
->* Die Ordnerbäume werden aus der Projektvorlage übernommen, wenn Sie die Automatisierung speichern. Wenn Sie später Ordnerbäume in der Projektvorlage hinzufügen oder entfernen, müssen Sie die Automatisierung bearbeiten und erneut speichern, um die Änderungen einzuschließen.
-
-### Workfront - Erstellen mehrerer Datensätze
-
-[!BADGE Neu!]{type=Informative}
-
-<!--New November 11, 2026-->
-
-Diese Vorlage erstellt einen oder mehrere Datensätze für einen Datensatztyp, basierend auf der Auswahl in einem Feld für den aktuellen Datensatz.
-
->[!TIP]
->
->* Für jede Auswahl, die sowohl im aktuellen Datensatz vorhanden ist als auch über eine Feldzuordnung verfügt, wird ein Datensatz erstellt. Auswahlmöglichkeiten ohne Zuordnung werden übersprungen und es wird kein Datensatz für sie erstellt.
->* Um die erstellten Datensätze zu benennen, ordnen Sie ein Quellfeld dem primären Feld (Name) des neuen Datensatztyps zu. Jeder Datensatz erhält dann den Namen *[aktueller Datensatzname] Auswahlwert*. Wenn Sie das primäre Feld nicht zuordnen, bleibt der Name des Datensatzes leer.
->* Wenn keiner der ausgewählten Datensätze eine zugeordnete Auswahl im ausgewählten Feld enthält, werden keine Datensätze erstellt und eine Meldung informiert Sie darüber, welches Feld leer ist.
->* Die Feldoptionen und Zuordnungen werden aus dem aktuellen Datensatztyp gelesen, wenn Sie die Automatisierung speichern. Wenn Sie später Felder oder Auswahlmöglichkeiten hinzufügen oder ändern, müssen Sie die Automatisierung erneut bearbeiten und speichern, um die Änderungen einzubeziehen.
 
 ## Workfront - Workfront Proof-Vorlagen
 
