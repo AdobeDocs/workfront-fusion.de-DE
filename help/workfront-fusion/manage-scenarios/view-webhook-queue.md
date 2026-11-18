@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 1c28e4007e3e9d6503618482002e506f9393ee57
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 29%
+source-wordcount: '590'
+ht-degree: 16%
 ---
 # Webhook-Warteschlange anzeigen
 
@@ -61,12 +61,40 @@ Wenn ein Szenario derzeit über eine Warteschlange verfügt, wird in diesem Szen
 
 ![Warteschlangen-Banner](assets/queue-banner.png)
 
-So zeigen Sie die Warteschlange eines Webhooks an:
+Die Warteschlangenseite des Webhooks weist dasselbe Layout auf wie die Listen **[!UICONTROL Szenarien]** und **[!UICONTROL Webhooks]**.
+
+>[!NOTE]
+>
+>Suchen und Sortieren gelten nur für die Ereignisse, die derzeit in der Tabelle geladen sind, nicht für die gesamte Warteschlange. Um weitere Ereignisse einzubeziehen, laden Sie zuerst zusätzliche Ereignisse.
+
+So zeigen Sie die Warteschlange eines Webhooks an und verwalten sie:
 
 1. Klicken Sie **[!UICONTROL Menü]** links auf „Webhooks“.
 1. Suchen Sie den Webhook, für den Sie die Warteschlange anzeigen möchten.
-1. Suchen Sie die Anzahl der Ereignisse in der Schaltfläche Empfangene Ereignisse .
+1. Suchen Sie die Spalte Anzahl der Ereignisse in der vollständigen Warteschlange.
 
    ![Webhook-Warteschlange](assets/webhook-queue.png)
 
-1. Klicken Sie auf die Schaltfläche, um Details zu den Ereignissen in der Warteschlange anzuzeigen.
+1. Klicken Sie auf **Vorgänge**, um Details zu den Ereignissen in der Warteschlange anzuzeigen.
+
+   Die Seite Warteschlange des Webhooks wird geöffnet. Auf der Seite werden die Ereignisse in der Warteschlange in einer Tabelle mit den folgenden Spalten aufgelistet **[!UICONTROL ID]**, **[!UICONTROL Erstellt in]**, **[!UICONTROL Size]** und **[!UICONTROL Details]**.
+
+1. (Optional) Um die Ereignisse in der Tabelle zu filtern, geben Sie Text in das Feld **[!UICONTROL Suche]** über der Tabelle ein.
+1. (Optional) Um die Ereignisse zu sortieren, klicken Sie auf die Spaltenüberschrift **[!UICONTROL ID]**, **[!UICONTROL Erstellt um]** oder **[!UICONTROL Size]**.
+1. (Optional) Um die Anzahl der Ereignisse zu ändern, die auf jeder Seite angezeigt werden, wählen Sie eine Zahl in der **[!UICONTROL Anzeigen]** Dropdown-Liste unten auf der Seite aus.
+1. (Optional) Um zwischen den Ereignisseiten zu wechseln, klicken **[!UICONTROL unten auf]** Seite auf **[!UICONTROL Erste]**, **[!UICONTROL Weiter]** oder **[!UICONTROL Letzte]**.
+
+   Diese Schaltflächen sind nicht verfügbar, wenn die Warteschlange nur eine Ereignisseite hat.
+
+1. (Optional) Um die Payload eines Ereignisses anzuzeigen, klicken Sie auf **[!UICONTROL Details]** in der Zeile für das Ereignis.
+
+   Das Dialogfeld Details wird geöffnet und zeigt die Payload des Ereignisses an.
+
+1. (Optional) So löschen Sie Ereignisse:
+
+   1. Wählen Sie die Ereignisse aus, die Sie löschen möchten, indem Sie einen der folgenden Schritte ausführen:
+
+      * Aktivieren Sie das Kontrollkästchen neben jedem Ereignis, das Sie auswählen möchten.
+      * Aktivieren Sie das **[!UICONTROL Alle auswählen]**, um die gesamte Warteschlange auszuwählen, nicht nur die gerade geladenen Ereignisse. Anschließend können Sie das Kontrollkästchen für alle Ereignisse deaktivieren, die Sie aus der Auswahl ausschließen möchten.
+
+   1. Klicken Sie in der Leiste am unteren Bildschirmrand auf **Löschen**.
