@@ -22,10 +22,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 231f1c67031a396b8752fb84a5ff6d017df94267
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 27%
+source-wordcount: '1542'
+ht-degree: 25%
 ---
 # Adobe Storage-Module
 
@@ -366,4 +366,35 @@ Dieses Aktionsmodul führt eine benutzerdefinierte HTTP-Anfrage an die Adobe-Spe
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
+</table>
+
+#### Datei hochladen
+
+Dieses Aktionsmodul lädt in einem Schritt eine Datei in den Adobe-Speicher hoch. Sie erstellt die Zieldatei, initialisiert den Upload, überträgt den Dateiinhalt über eine vordefinierte URL und schließt den Upload ab. Es müssen keine separaten Übertragungs- und Finalisierungsschritte konfiguriert werden.
+
+Das Modul unterstützt große Dateien.
+
+<!-- BECKY CHECK ME: Add the module's output (the screenshot shows only the setup fields). Confirm what the Project and Folder fields list, whether Folder is required, what the File Content field accepts (the hint says binary or text data), and whether the Limit field applies to this module, since the module uploads one file. Also confirm whether the Show advanced settings option contains any fields, and whether the request's comparison to "Generate Presigned Upload URL" should be mentioned here. That module is not documented in this article. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Verbindung</td> 
+   <td>Anweisungen zum Erstellen einer Verbindung zum Adobe-Speicher finden Sie unter <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Erstellen einer Verbindung zum Adobe-Speicher</a> in diesem Artikel.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Projekt</td> 
+   <td>Wählen Sie das Projekt aus, das den Ordner enthält, in den Sie die Datei hochladen möchten.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Ordner</td> 
+   <td>Wählen Sie den Ordner aus, in den Sie die Datei hochladen möchten. Um die Datei in den Stamm des Projekts hochzuladen, wählen Sie <code>/</code> aus.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Quelldatei</td> 
+   <td>Wählen Sie eine Datei aus einem vorherigen Modul aus oder ordnen Sie den Namen, den Inhalt und den Inhaltstyp der Datei zu.</td> 
+  </tr> 
+ </tbody> 
 </table>
