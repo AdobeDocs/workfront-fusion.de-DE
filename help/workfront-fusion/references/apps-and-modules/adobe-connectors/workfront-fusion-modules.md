@@ -70,11 +70,11 @@ Weitere Details zu den Informationen in dieser Tabelle finden Sie unter [Zugriff
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client-ID]</td> 
-      <td>Geben Sie Ihre [!DNL Adobe]-[!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
+      <td>Geben Sie Ihre [!DNL Adobe]-[!UICONTROL Client-ID] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client-Geheimnis]</td> 
-      <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL-Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
+      <td>Geben Sie Ihr [!DNL Adobe]-[!UICONTROL Client-Geheimnis] ein. Dies finden Sie im Abschnitt mit den [!UICONTROL -Anmeldeinformationen] im [!DNL Adobe Developer Console].</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Organisations-ID]</td> 
