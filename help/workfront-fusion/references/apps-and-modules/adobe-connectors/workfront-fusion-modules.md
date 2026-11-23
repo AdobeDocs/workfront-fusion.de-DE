@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
+source-git-commit: 06b6c3b3a37d2b66eae61951ffc0aaf558d1b180
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 19%
+source-wordcount: '1806'
+ht-degree: 17%
 ---
 # Workfront Fusion-Module
 
@@ -97,9 +97,53 @@ Wenn die Schaltfläche „Zuordnung“ über einem Feld oder einer Funktion ange
 
 ![Umschalter „Zuordnung“](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Auslöser](#triggers)
 * [Aktionen](#actions)
 * [Exportieren](#export)
 * [Sonstiges](#misc)
+
+### Auslöser
+
+* [Einträge beobachten](#watch-records)
+
+#### Einträge beobachten
+
+Dieses Trigger-Modul startet ein Szenario, in dem Workfront Fusion-Datensätze erstellt, aktualisiert oder beides werden. Sie können Filter verwenden, um sich auf die Änderungen zu konzentrieren, die für Ihr Team wichtig sind, sodass Sie Workfront Fusion nicht manuell überprüfen müssen.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Verbindung]</td> 
+   <td> <p>Anweisungen zum Verbinden von Workfront Fusion mit Workfront Fusion finden Sie unter <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Verbinden von Workfront Fusion mit Workfront Fusion</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Beobachten</td> 
+   <td>Wählen Sie die Art der Änderung aus, auf die das Modul achten soll.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Eintragstyp</td> 
+   <td>Wählen Sie den Typ des Datensatzes aus, den Sie überwachen möchten: <b>Szenario</b> oder <b>Ausführung</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Szenario-ID</td> 
+   <td><p>Wenn Sie Ausführungen beobachten, wählen Sie das Szenario aus, für das Sie Ausführungen beobachten möchten, oder ordnen Sie es zu.</p><p>Dieses Feld ist optional. Wenn Sie es leer lassen, sucht das Modul in der gesamten Organisation nach Ausführungen.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Prüfläufe anzeigen</td> 
+   <td><p>Wenn Sie die Ausführung überwachen, wählen Sie aus, ob die Ergebnisse Prüfungen enthalten:</p><ul><li><b>Ja</b>: Prüfläufe einschließen.</li><li><b>Nein</b>: Führen Sie keine Prüfungen durch.</li><li><b>Nicht definiert</b>: Ergebnisse nicht nach Prüfläufen filtern.</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filterung</td> 
+   <td>Klicken Sie unter <b>Eigenschaft</b> für jeden Eigenschaftsfilter, den Sie verwenden möchten, auf <b>Element hinzufügen</b>, wählen Sie das Feld und den Operator aus und geben Sie dann den Wert ein, nach dem Sie filtern möchten, oder ordnen Sie ihn zu. Ein Wertefeld wird nur für Benutzer angezeigt, die eines benötigen. Für einen Operator wie "<b>" ist </b> Wert erforderlich. Die Eigenschaftsfilter sind für die Datensatztypen „Szenario“ und „Ausführung“ identisch.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Beschränkungen</td> 
+   <td>Geben Sie die maximale Anzahl von Ergebnissen ein, mit denen Workfront Fusion während eines Ausführungszyklus arbeitet, oder mappen Sie sie. Der Standardwert lautet 200.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Aktionen
 
@@ -471,8 +515,3 @@ Dieses Modul gibt die Regions- und Organisations-ID für jede Fusion-Organisatio
   </tr> 
  </tbody> 
 </table>
-
-
-
-
-
