@@ -1,9 +1,9 @@
 ---
 title: Adobe Workfront Fusion MCP-Server-Tools
 description: Referenzliste der Tools, die der Adobe Workfront Fusion-MCP-Server für KI-Agentenplattformen und -Mitarbeiter bereitstellt.
-source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
+source-git-commit: daed5498e4830c7eb66e295081dfd486d3ef610b
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1632'
 ht-degree: 7%
 ---
 
@@ -22,6 +22,8 @@ Jedes Tool ist wie folgt klassifiziert:
 
 * **Lesen**: Ruft Informationen ab, ohne etwas zu ändern, z. B. Listenszenarien oder eine Ausführung zu erhalten.
 * **Write**: Erstellt, ändert, führt Fusion-Daten aus oder löscht sie, z. B. durch Klonen eines Szenarios oder Löschen einer Webhook-Warteschlange.
+
+Organisationsverantwortliche und -administratoren können schreibgeschützte Tools und Schreib-Tools für die gesamte Organisation zulassen oder deaktivieren. Deaktivierte Tools werden nicht in der Toolliste angezeigt, und Fusion lehnt sie ab, wenn ein Agent sie aufruft. Diese Einstellung beschränkt nur Tool-Aufrufe, die über den offiziellen Fusion MCP-Server erfolgen. Aktionen, die Benutzer in der Fusion-Benutzeroberfläche, über die API oder über eine andere Integration ausführen, werden weiterhin von den jeweiligen Benutzerberechtigungen in Fusion gesteuert. Weitere Informationen finden Sie unter [Verwalten von MCP-Voreinstellungen für Ihre Organisation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/configure-fusion-mcp-server.md#manage-mcp-preferences-for-your-organization).
 
 ## Organisations-Tools
 
@@ -204,7 +206,7 @@ Beispiel-Eingabeaufforderungen:
 | --- | --- | --- | --- |
 | Feedback senden | `fusion_feedback_submit` | Schreiben | Sendet Ihr Feedback (Fehler, falsches Ergebnis, Funktionsanfrage, Lob oder anderes) an das Fusion-Team. |
 
-## Kollegin
+## Coworker
 
 Alle Tools in diesem Artikel sind in Coworker verfügbar, sowohl eigenständig als auch in der rechten Leiste von Fusion, vorbehaltlich derselben Lese-/Schreibeinstellungen und Ihrer Berechtigungen.
 
