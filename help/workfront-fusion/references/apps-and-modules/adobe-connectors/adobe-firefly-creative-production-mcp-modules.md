@@ -178,7 +178,7 @@ Das -Modul gibt die folgenden Informationen unter &quot;**[!UICONTROL &quot;]**.
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL-Antwort] (<code>data.response</code>)</td> 
+   <td>[!UICONTROL -Antwort] (<code>data.response</code>)</td> 
    <td> <p>Die endgültige Textantwort. Ihr Inhalt hängt von der Eingabeaufforderung und den Ergebnissen des Tools ab. Es wird nicht garantiert, dass es sich um eine URL oder ein strukturiertes JSON handelt.</p> </td> 
   </tr> 
   <tr> 
