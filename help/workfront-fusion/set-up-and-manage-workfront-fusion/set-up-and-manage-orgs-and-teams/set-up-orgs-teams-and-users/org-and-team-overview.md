@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
+source-git-commit: bf67d1764395a48715cd8a5f665318857d0bdff1
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%
@@ -89,8 +89,6 @@ Benutzende haben in jedem ihrer Teams eine der folgenden Rollen:
 Informationen zu bestimmten Aktionen, die Benutzern in den einzelnen Team-Rollen zur Verfügung stehen, finden Sie unter [Organisation und Team-Rollen](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
 
 ### Benutzerdefinierte Team-Rollen
-
-<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
 
 Zusätzlich zu den vordefinierten Team-Rollen verfügt jedes Team über die Registerkarte **[!UICONTROL Rollen]** , auf der Sie Ihre eigenen Rollen erstellen können. Sie können Rollen erstellen, aktualisieren und löschen sowie genau auswählen, welche Berechtigungen jede Rolle enthält. Sie sind nicht mehr auf einen festen Satz von Rollen beschränkt.
 
