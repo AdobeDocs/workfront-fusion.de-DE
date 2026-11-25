@@ -4,10 +4,10 @@ description: Mit dem Adobe App Builder-Connector können Sie benutzerdefinierte 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 16%
+source-wordcount: '787'
+ht-degree: 15%
 ---
 # Adobe App Builder-Modul
 
@@ -64,6 +64,8 @@ Die Verbindung verwendet die Adobe I/O Runtime-Anmeldeinformationen eines App Bu
 
 ### Erstellen der Verbindung
 
+Führen Sie diese Schritte aus, um ein bereits vorhandenes App Builder-Projekt zu verbinden. Die Schritte zum Einrichten benutzerdefinierter Funktionen in Fusion mithilfe dieser Verbindung finden Sie unter [Verbinden eines bestehenden App Builder-Projekts](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project).
+
 1. Klicken Sie im -Modul **Hinzufügen** neben dem Feld **Verbindung**.
 1. Füllen Sie die folgenden Felder aus:
 
@@ -92,7 +94,7 @@ Die Verbindung verwendet die Adobe I/O Runtime-Anmeldeinformationen eines App Bu
       <td>Geben Sie das Kennwort aus dem <code>auth</code> Ihres Arbeitsbereichs ein (dem Teil nach dem Doppelpunkt).</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL -Namespace]</td> 
+      <td role="rowheader">[!UICONTROL-Namespace]</td> 
       <td>Geben Sie den <code>namespace</code> Wert aus dem Abschnitt <code>runtime</code> in Ihrer Workspace-Konfigurationsdatei ein.</td> 
      </tr> 
     </tbody> 
@@ -136,11 +138,11 @@ Informationen zu Paketen finden Sie unter [Verwenden benutzerdefinierter Funktio
    <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Paket]</td> 
+   <td role="rowheader">[!UICONTROL-Paket]</td> 
    <td>Wählen Sie das Paket aus, das die Funktion enthält, die Sie im Szenario ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Variable] </td> 
+   <td role="rowheader">[!UICONTROL-Variable] </td> 
    <td>Wählen Sie die Funktion aus, die Sie im Szenario ausführen möchten.</p></td> 
   </tr> 
    </tbody> 
@@ -161,11 +163,11 @@ Informationen zu Paketen finden Sie unter [Verwenden benutzerdefinierter Funktio
    <td>Wählen Sie die Verbindung aus, die die benutzerdefinierte Funktion enthält, die Sie ausführen möchten. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Paket]</td> 
+   <td role="rowheader">[!UICONTROL-Paket]</td> 
    <td>Wählen Sie das Paket aus, das die Variable enthält, die Sie in das Szenario integrieren möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Variable] </td> 
+   <td role="rowheader">[!UICONTROL-Variable] </td> 
    <td>Wählen Sie die Variable aus, die Sie in das Szenario aufnehmen möchten.</p></td> 
   </tr> 
    </tbody> 
@@ -190,7 +192,7 @@ Anweisungen zum Konfigurieren einer benutzerdefinierten Funktion finden Sie unte
    <td>Wählen Sie die benutzerdefinierte Funktion aus, die Sie ausführen möchten.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL -Parameter] </td> 
+   <td role="rowheader">[!UICONTROL-Parameter] </td> 
    <td>Geben Sie die Werte für die Funktionsparameter ein. Die verfügbaren Parameter basieren auf den Parametern, die beim Erstellen der Funktion konfiguriert wurden.<p>Wenn ein Parameter einen Standardwert hat, wird er nicht im Feld angezeigt, Sie können ihn jedoch überschreiben, indem Sie einen Wert in das Feld eingeben oder zuordnen.</p></td> 
   </tr> 
    </tbody> 
