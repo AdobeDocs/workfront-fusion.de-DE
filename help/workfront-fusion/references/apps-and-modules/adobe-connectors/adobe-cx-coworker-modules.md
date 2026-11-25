@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6efe84af0487893a3c33ba2bf6e3db5200f25446
+source-git-commit: dbe4560cea79834a0d967cbaf6b98772d8ee09ce
 workflow-type: tm+mt
-source-wordcount: '1974'
-ht-degree: 7%
+source-wordcount: '2153'
+ht-degree: 6%
 ---
 # Adobe CX Enterprise Coworker-Module
 
@@ -24,8 +24,6 @@ Der Connector bietet zwei Module:
 * **[!UICONTROL Ausführungsstatus abrufen]** prüft eine Anfrage, die Sie zuvor gestartet haben.
 
 ## Zugriffsanforderungen
-
-<!-- BECKY CHECK ME: This table is copied from other Fusion connector articles. The source material does not list access requirements, but says you need an Adobe account that has access to Coworker. Confirm the requirements and whether Coworker needs its own license or entitlement. -->
 
 +++ Erweitern, um die Zugriffsanforderungen für die in diesem Artikel beschriebene Funktionalität anzuzeigen.
 
@@ -166,6 +164,10 @@ Bei jedem Durchgang wird die Eingabeaufforderung einmal gesendet und eine neue K
    <td> <p>Diese Option ist standardmäßig aktiviert. Aktivieren Sie diese Option, wenn das Modul auf den Abschluss der Aufgabe warten soll oder Aufmerksamkeit benötigt wird. Ausschalten, um das ursprüngliche Ergebnis sofort zurückzugeben.</p><p>Weitere Informationen finden Sie unter <a href="#wait-for-completion">Auf Abschluss warten</a> in diesem Artikel.</p> </td> 
   </tr> 
   <tr> 
+   <td>[!UICONTROL Alle Tool-Aktionen bestätigen] <i>(Optional, erweitert)</i></td> 
+   <td> <p>Diese Option ist standardmäßig deaktiviert. Aktivieren Sie diese Option, wenn der Mitarbeiter während dieser Ausführung automatisch unterstützte Tool-Berechtigungsanfragen genehmigen soll. Tools können Daten ändern oder löschen.</p><p>Weitere Informationen finden Sie unter <a href="#confirm-all-tool-actions">Alle Tool-Aktionen bestätigen</a> in diesem Artikel.</p> </td> 
+  </tr> 
+  <tr> 
    <td>[!UICONTROL Rohergebnis einschließen] <i>(Optional, erweitert)</i></td> 
    <td> <p>Diese Option ist standardmäßig deaktiviert. Aktivieren Sie diese Option, wenn das Modul die vollständige Antwort des Kollegen in die Ausgabe aufnehmen soll. Die Antwort kann vertrauliche Informationen enthalten.</p> </td> 
   </tr> 
@@ -187,6 +189,19 @@ Wenn **[!UICONTROL Auf Abschluss warten]** deaktiviert ist, gibt das Modul das e
 Das Warten unterliegt dem Fusion-Modul-Timeout. Wenn das Modul eine Zeitüberschreitung aufweist oder beendet wird, funktioniert der -Mitarbeiter möglicherweise weiter. In diesem Fall erhalten Sie möglicherweise keine Ausgabe- oder Aufgaben-ID.
 
 Deaktivieren Sie für längere Arbeiten das Warten und speichern Sie die anfängliche **[!UICONTROL Aufgaben-ID]**, damit Sie die Aufgabe später überprüfen können. Die Eingabeaufforderung nach einer Zeitüberschreitung nicht automatisch erneut ausführen. Die erste Anfrage ist möglicherweise bereits in Bearbeitung und eine Wiederholung kann Änderungen duplizieren.
+
+#### Alle Tool-Aktionen bestätigen
+
+Wenn **[!UICONTROL Alle Tool-Aktionen bestätigen]** aktiviert ist, validiert das Modul während des Durchgangs automatisch unterstützte Tool-Berechtigungsanfragen, bis zu 20 Validierungsrunden und 100 Tool-Aufrufe. Diese Option ist standardmäßig deaktiviert.
+
+>[!WARNING]
+>
+>Tools können Daten ändern oder löschen. Das Aktivieren dieser Option ist nur Ihr Einverständnis für diese Ausführung. Es handelt sich nicht um eine dauerhafte Erlaubnis.
+
+Es gelten folgende Bedingungen:
+
+* Diese Option erfordert **[!UICONTROL Auf Abschluss warten]** und einen kompatiblen Live-Berechtigungs-Stream.
+* Einschränkungen, wiederholte Anfragen, Anmeldung, Fragen und andere Genehmigungen müssen manuell überprüft werden.
 
 
 ## Modulausgabe
@@ -238,7 +253,7 @@ Verwenden Sie **[!UICONTROL Abschließender Assistententext]** für die Antwort,
 
 Die Mitarbeiter benötigen möglicherweise weitere Informationen oder Autorisierungen, bevor der Vorgang fortgesetzt werden kann. In diesem Fall ist **[!UICONTROL Erfordert Aufmerksamkeit]** wahr und **[!UICONTROL Abgeschlossen]** ist falsch. Das Ergebnis an eine Person weiterleiten, anstatt es als abgeschlossene Arbeit zu behandeln.
 
-Diese Module können keine Folgefragen beantworten oder eine Aktion in Ihrem Namen genehmigen. **[!UICONTROL Ausführungsstatus abrufen]** kann überprüfen, ob sich der Status der Aufgabe geändert hat, löst jedoch die Eingabe- oder Autorisierungsanfrage nicht auf.
+Diese Module können keine Folgefragen beantworten oder eine Aktion in Ihrem Namen genehmigen, mit Ausnahme der unterstützten Tool-Berechtigungsanfragen, die von **[!UICONTROL Alle Tool-Aktionen bestätigen]** automatisch genehmigt werden. **[!UICONTROL Ausführungsstatus abrufen]** kann überprüfen, ob sich der Status der Aufgabe geändert hat, löst jedoch die Eingabe- oder Autorisierungsanfrage nicht auf.
 
 ### Frühere Antworten verwenden
 
@@ -318,6 +333,7 @@ Führen Sie die ursprüngliche Eingabeaufforderung nicht erneut aus, nur um den 
 * Diese Module bieten keine Möglichkeit, einzelne Tools einzuschränken. Anweisungen wie „nichts ändern“ beschreiben Ihre Absicht, sind aber nicht erzwungen und schreibgeschützt.
 * Die verfügbaren Tools und Fähigkeiten variieren je nach Konto. Der Connector bietet keine Auswahl für Kenntnisse und garantiert keine bestimmte Aktion, z. B. das Erstellen einer Journey oder das Aktualisieren eines Projekts. Gehen Sie nicht davon aus, dass Genehmigungsanfragen unbeaufsichtigt abgeschlossen werden.
 * Der Connector startet und überprüft die Anforderungen der Arbeitskraft. Projektänderungen werden nicht überwacht und Antworten werden nicht automatisch in einer anderen Anwendung gespeichert. Fügen Sie Ihrem Szenario nach Bedarf die entsprechenden Trigger-, Speicher- und Folgemodule hinzu.
+* Aktivieren Sie **[!UICONTROL Alle Tool-Aktionen bestätigen]** nur für vertrauenswürdige Eingabeaufforderungen. Wenn diese Option aktiviert ist, genehmigt Coworker automatisch unterstützte Tool-Berechtigungsanfragen, und Tools können Daten ändern oder löschen.
 * KI-generierte Antworten können unvollständig oder ungenau sein. Validieren Sie wichtige Ergebnisse, bevor Sie sie für Änderungen oder Entscheidungen verwenden.
 * Der Connector versucht eine fehlgeschlagene Anfrage nicht automatisch erneut. Stellen Sie sicher, dass die Fehlerbehandlung in Ihrem Szenario keine Eingabeaufforderung wiederholt, deren Ergebnis unsicher ist.
 
