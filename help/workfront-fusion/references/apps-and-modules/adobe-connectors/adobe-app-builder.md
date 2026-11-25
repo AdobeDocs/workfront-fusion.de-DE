@@ -4,10 +4,10 @@ description: Mit dem Adobe App Builder-Connector können Sie benutzerdefinierte 
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 16%
+source-wordcount: '787'
+ht-degree: 15%
 ---
 # Adobe App Builder-Modul
 
@@ -63,6 +63,8 @@ Die Verbindung verwendet die Adobe I/O Runtime-Anmeldeinformationen eines App Bu
    >Sie können den Namespace und die Authentifizierungswerte auch finden, indem Sie `aio runtime namespace get` oder `aio app use` in der Adobe I/O-CLI ausführen.
 
 ### Erstellen der Verbindung
+
+Führen Sie diese Schritte aus, um ein bereits vorhandenes App Builder-Projekt zu verbinden. Die Schritte zum Einrichten benutzerdefinierter Funktionen in Fusion mithilfe dieser Verbindung finden Sie unter [Verbinden eines bestehenden App Builder-Projekts](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project).
 
 1. Klicken Sie im -Modul **Hinzufügen** neben dem Feld **Verbindung**.
 1. Füllen Sie die folgenden Felder aus:

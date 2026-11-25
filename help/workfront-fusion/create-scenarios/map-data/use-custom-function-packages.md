@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2064'
 ht-degree: 6%
 ---
 
@@ -79,6 +79,8 @@ Wenn Ihr Team diese Funktion zum ersten Mal verwendet, müssen Sie die Umgebung 
    * Um ein vorhandenes Projekt auszuwählen, geben Sie zunächst den Projektnamen ein und wählen Sie ihn aus, wenn er angezeigt wird.
    * Um ein neues Projekt zu erstellen, geben Sie einen Namen ein, der noch nicht vorhanden ist, und klicken Sie auf **Neu erstellen**.
    * Wenn Sie dieses Feld leer lassen, verwendet Fusion ein Standardprojekt.
+
+   Wenn ein vorhandenes Projekt nicht mit &quot;**Runtime“ funktioniert** verbinden Sie es manuell. Anweisungen finden Sie unter [Verbinden eines vorhandenen App Builder-Projekts](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project).
 
 1. Wählen Sie **Weiter**.
 
